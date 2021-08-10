@@ -379,6 +379,7 @@ const HeaderExpanded = ({
                         breakpoints={breakpoints}
                         data-testid="message-header-expanded:more-dropdown"
                         parentMessageRef={parentMessageRef}
+                        mailSettings={mailSettings}
                     />
 
                     {!isNarrow && (

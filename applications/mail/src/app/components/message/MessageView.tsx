@@ -288,6 +288,8 @@ const MessageView = (
             messageLoaded,
             draft,
             conversationMode,
+            mailSettings,
+            messageRef: elementRef,
         },
         {
             onFocus,
@@ -295,6 +297,7 @@ const MessageView = (
             toggleOriginalMessage,
             handleLoadRemoteImages,
             handleLoadEmbeddedImages,
+            onBack,
         }
     );
 
