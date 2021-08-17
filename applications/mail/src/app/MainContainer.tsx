@@ -29,6 +29,8 @@ const MainContainer = () => {
         FeatureCode.BundlePromoShown,
         FeatureCode.EnabledEncryptedSearch,
         FeatureCode.UsedMailMobileApp,
+        FeatureCode.Mnemonic,
+        FeatureCode.CalendarEmailNotification,
     ]);
 
     return (
