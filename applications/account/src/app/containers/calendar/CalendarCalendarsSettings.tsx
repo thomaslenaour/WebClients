@@ -9,7 +9,6 @@ import {
     SettingsLink,
     SettingsPropsShared,
     SettingsSection,
-    SubscribedCalendarsSection,
     useFeature,
 } from '@proton/components';
 import { c } from 'ttag';
@@ -61,7 +60,7 @@ const CalendarCalendarsSettings = ({
     defaultCalendar,
     user,
 }: Props) => {
-    const [personalCalendars, otherCalendars] = partition<Calendar>(calendars, getIsPersonalCalendar);
+    const [personalCalendars] = partition<Calendar>(calendars, getIsPersonalCalendar);
     const [personalActiveCalendars] = partition<Calendar>(activeCalendars, getIsPersonalCalendar);
 
     useFeature(FeatureCode.CalendarEmailNotification);
@@ -75,7 +74,6 @@ const CalendarCalendarsSettings = ({
                 defaultCalendar={defaultCalendar}
                 user={user}
             />
-            <SubscribedCalendarsSection activeAddresses={activeAddresses} calendars={otherCalendars} user={user} />
             <CalendarImportSection
                 activeCalendars={personalActiveCalendars}
                 defaultCalendar={defaultCalendar}
