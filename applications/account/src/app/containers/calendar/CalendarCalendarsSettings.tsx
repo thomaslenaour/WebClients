@@ -30,10 +30,6 @@ const generalSettingsConfig = () => ({
             id: 'my-calendars',
         },
         {
-            text: c('Title').t`Subscribed calendars`,
-            id: 'other-calendars',
-        },
-        {
             text: c('Title').t`Import`,
             id: 'import',
         },
