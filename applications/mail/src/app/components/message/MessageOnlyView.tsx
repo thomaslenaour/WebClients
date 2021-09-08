@@ -40,15 +40,15 @@ const MessageOnlyView = ({
 }: Props) => {
     const [labels = []] = useLabels();
 
-    const { message, messageLoaded, bodyLoaded } = useMessage(messageID);
+    const { message, addAction, loading, messageLoaded } = useMessage(messageID);
     const load = useLoadMessage(message.data || ({ ID: messageID } as Message));
 
-    useShouldMoveOut(false, messageID, !bodyLoaded, onBack);
+    useShouldMoveOut(false, messageID, loading, onBack);
 
     // Manage loading the message
     useEffect(() => {
         if (!messageLoaded) {
-            void load();
+            void addAction(load);
         }
     }, [messageLoaded]);
 

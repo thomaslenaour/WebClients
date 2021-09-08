@@ -9,6 +9,10 @@ export interface MessageKeys {
     privateKeys: OpenPGPKey[];
 }
 
+export interface MessageAction<T = void> {
+    (): Promise<T>;
+}
+
 export interface MessageErrors {
     network?: Error[];
     decryption?: Error[];
@@ -91,6 +95,19 @@ export interface MessageExtended {
      * Needed to keep a unique id on a message even if it's created in session without a server ID
      */
     localID: string;
+
+    /**
+     * List of pending actions on the message
+     */
+    actionQueue?: MessageAction[];
+
+    /**
+     * Whether or not an action is being processed on the message
+     *
+     * True: yes
+     * False / undefined: no
+     */
+    actionInProgress?: boolean;
 
     /**
      * Message object from the server
