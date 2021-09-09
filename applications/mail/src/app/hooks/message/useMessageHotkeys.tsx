@@ -96,7 +96,7 @@ export const useMessageHotkeys = (
     };
 
     const isMessageReady = messageLoaded && bodyLoaded;
-    const hotkeysEnabledAndMessageReady = Shortcuts && isMessageReady && expanded && message.initialized;
+    const hotkeysEnabledAndMessageReady = Shortcuts && isMessageReady && expanded && !message.actionInProgress;
 
     const isScheduledMessage = message.data?.LabelIDs?.includes(MAILBOX_LABEL_IDS.SCHEDULED);
 

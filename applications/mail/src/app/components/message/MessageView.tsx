@@ -95,7 +95,13 @@ const MessageView = (
 
     const elementRef = useRef<HTMLElement>(null);
 
-    const { message, messageLoaded, bodyLoaded } = useMessage(inputMessage.ID, conversationID);
+    const {
+        message,
+        addAction,
+        messageLoaded,
+        bodyLoaded,
+        loading: messageLoading,
+    } = useMessage(inputMessage.ID, conversationID);
     const load = useLoadMessage(inputMessage);
     const initialize = useInitializeMessage(message.localID, labelID);
     const verify = useVerifyMessage(message.localID);
@@ -122,15 +128,15 @@ const MessageView = (
     }, [message]);
 
     const handleLoadRemoteImages = async () => {
-        await loadRemoteImages();
+        await addAction(loadRemoteImages);
     };
 
     const handleResignContact = async () => {
-        await resignContact();
+        await addAction(resignContact);
     };
 
     const handleLoadEmbeddedImages = async () => {
-        await loadEmbeddedImages();
+        await addAction(loadEmbeddedImages);
     };
 
     const handleToggle = (value: boolean) => () => {
@@ -210,7 +216,7 @@ const MessageView = (
     // Manage loading the message
     useEffect(() => {
         if (!loading && !messageLoaded) {
-            void load();
+            void addAction(load);
         }
 
         if (!isComposerOpened && isDraft(message.data) && messageLoaded) {
@@ -222,7 +228,7 @@ const MessageView = (
                 elementRef.current?.parentElement?.focus();
             }
         }
-    }, [loading, messageLoaded, bodyLoaded, message.data?.ID]);
+    }, [loading, messageLoaded, bodyLoaded, message.data?.ID, messageLoading]);
 
     // Manage preparing the content of the message
     useEffect(() => {
@@ -231,14 +237,14 @@ const MessageView = (
                 // Max retries reach, aborting
                 return;
             }
-            void initialize();
+            void addAction(initialize);
         }
     }, [loading, expanded, message.initialized]);
 
     // Manage recomputing signature verification (happens when invalidated after initial load)
     useEffect(() => {
         if (!loading && expanded && message.initialized && message.data && message.verification === undefined) {
-            void verify(message.decryptedRawContent as string, message.signature);
+            void addAction(() => verify(message.decryptedRawContent as string, message.signature));
         }
     }, [loading, expanded, message.initialized, message.verification]);
 
@@ -250,10 +256,10 @@ const MessageView = (
 
     // Mark as read a message already loaded (when user marked as unread)
     useEffect(() => {
-        if (expanded && unread && bodyLoaded) {
+        if (expanded && unread && bodyLoaded && !message.actionInProgress) {
             markAs([message.data as Element], labelID, MARK_AS_STATUS.READ);
         }
-    }, [expanded, unread, bodyLoaded]);
+    }, [expanded, unread, bodyLoaded, message.actionInProgress]);
 
     // Re-initialize context if message is changed without disposing the component
     useEffect(() => {

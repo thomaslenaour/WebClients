@@ -22,7 +22,9 @@ import { c } from 'ttag';
 import { openNewTab } from '@proton/shared/lib/helpers/browser';
 import { oneClickUnsubscribe, markAsUnsubscribed } from '@proton/shared/lib/api/messages';
 import isTruthy from '@proton/shared/lib/helpers/isTruthy';
+
 import { MessageExtended, PartialMessageExtended, MessageExtendedWithData } from '../../../models/message';
+import { useMessage } from '../../../hooks/message/useMessage';
 import { useSendMessage } from '../../../hooks/composer/useSendMessage';
 import { findSender } from '../../../helpers/addresses';
 import { useSendVerifications } from '../../../hooks/composer/useSendVerifications';
@@ -38,6 +40,7 @@ const ExtraUnsubscribe = ({ message }: Props) => {
     const { call } = useEventManager();
     const { createModal } = useModals();
     const [addresses] = useAddresses();
+    const { addAction } = useMessage(message.localID);
     const { extendedVerifications: sendVerification } = useSendVerifications();
     const sendMessage = useSendMessage();
     const [loading, withLoading] = useLoading();
@@ -153,7 +156,7 @@ const ExtraUnsubscribe = ({ message }: Props) => {
             };
 
             const { cleanMessage, mapSendPrefs } = await sendVerification(inputMessage as MessageExtendedWithData, {});
-            await sendMessage({ inputMessage: cleanMessage, mapSendPrefs, onCompose });
+            await addAction(() => sendMessage({ inputMessage: cleanMessage, mapSendPrefs, onCompose }));
         } else if (unsubscribeMethods.HttpClient) {
             await new Promise<void>((resolve, reject) => {
                 createModal(

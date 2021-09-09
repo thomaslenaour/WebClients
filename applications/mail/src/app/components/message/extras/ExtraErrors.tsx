@@ -3,6 +3,7 @@ import { Button, Icon, SettingsLink } from '@proton/components';
 import { c } from 'ttag';
 import { APPS } from '@proton/shared/lib/constants';
 import { MessageExtended, MessageErrors } from '../../../models/message';
+import { useMessage } from '../../../hooks/message/useMessage';
 import { useReloadMessage } from '../../../hooks/message/useLoadMessage';
 
 const getTranslations = (key: keyof MessageErrors, alreadyTried: boolean) => {
@@ -27,6 +28,7 @@ interface Props {
 }
 
 const ExtraErrors = ({ message }: Props) => {
+    const { addAction } = useMessage(message.localID);
     const reloadMessage = useReloadMessage(message.localID);
 
     const [alreadyTried, setAlreadyTried] = useState(false);
@@ -40,7 +42,7 @@ const ExtraErrors = ({ message }: Props) => {
     }
 
     const handleReload = () => {
-        void reloadMessage();
+        void addAction(reloadMessage);
         setAlreadyTried(true);
     };
 

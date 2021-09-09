@@ -1,13 +1,15 @@
 import { Message } from '@proton/shared/lib/interfaces/mail/Message';
 import { useEffect, useState, useMemo } from 'react';
 
-import { MessageExtended } from '../../models/message';
+import { MessageExtended, MessageAction } from '../../models/message';
 import { useMessageCache, getLocalID } from '../../containers/MessageProvider';
 import { useGetElementsFromIDs } from '../mailbox/useElementsCache';
 import { useConversationCache } from '../../containers/ConversationProvider';
 
 interface ReturnValue {
     message: MessageExtended;
+    addAction: <T>(action: MessageAction<T>) => Promise<T>;
+    loading: boolean;
     messageLoaded: boolean;
     bodyLoaded: boolean;
 }
@@ -55,8 +57,25 @@ export const useMessage: UseMessage = (inputLocalID: string, conversationID = ''
         });
     }, [localID, cache]); // The hook can be re-used for a different message
 
+    const addAction = <T>(action: MessageAction<T>) => {
+        return new Promise<T>((resolve, reject) => {
+            const wrapper = async () => {
+                try {
+                    resolve(await action());
+                } catch (error) {
+                    reject(error);
+                }
+            };
+
+            const messageFromCache = cache.get(localID) as MessageExtended;
+            const actionQueue = [...(messageFromCache?.actionQueue || []), wrapper];
+            cache.set(localID, { ...messageFromCache, actionQueue });
+        });
+    };
+
+    const loading = !Object.prototype.hasOwnProperty.call(message, 'actionStatus') || !!message?.actionInProgress;
     const messageLoaded = !!message.data?.Subject;
     const bodyLoaded = !!message.initialized;
 
-    return { message, messageLoaded, bodyLoaded };
+    return { message, addAction, loading, messageLoaded, bodyLoaded };
 };
