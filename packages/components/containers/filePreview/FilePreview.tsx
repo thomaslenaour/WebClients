@@ -1,6 +1,4 @@
-import { isPreviewAvailable, isSupportedImage, isSupportedText, isPDF } from '@proton/shared/lib/helpers/filePreview';
-import { forwardRef, Ref, useRef } from 'react';
-import * as React from 'react';
+import { forwardRef, ReactNode, Ref, useRef } from 'react';
 import { c } from 'ttag';
 import Header, { SharedStatus } from './Header';
 import ImagePreview from './ImagePreview';
@@ -8,6 +6,7 @@ import PreviewLoader from './PreviewLoader';
 import TextPreview from './TextPreview';
 import UnsupportedPreview from './UnsupportedPreview';
 import PDFPreview from './PDFPreview';
+import { isPreviewAvailable, isSupportedImage, isSupportedText, isPDF } from './helpers';
 import { useCombinedRefs, useHotkeys } from '../../hooks';
 import { useFocusTrap } from '../../components';
 
@@ -15,7 +14,7 @@ interface Props {
     loading: boolean;
     fileName?: string;
     mimeType?: string;
-    navigationControls?: React.ReactNode;
+    navigationControls?: ReactNode;
     contents?: Uint8Array[];
     sharedStatus?: SharedStatus;
     onClose?: () => void;
