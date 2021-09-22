@@ -2,6 +2,7 @@ import { RefObject } from 'react';
 import { c } from 'ttag';
 import { useHandler, useMailSettings, useNotifications } from '@proton/components';
 import { Abortable } from '@proton/components/hooks/useHandler';
+import { captureMessage } from '@proton/shared/lib/helpers/sentry';
 import SendingMessageNotification, {
     createSendingMessageNotificationManager,
     SendingMessageNotificationManager,
@@ -76,7 +77,7 @@ export const useSendHandler = ({
 
                 if (
                     [SAVE_DRAFT_ERROR_CODES.MESSAGE_ALREADY_SENT, SEND_EMAIL_ERROR_CODES.MESSAGE_ALREADY_SENT].includes(
-                        error.data.Code
+                        error.data?.Code
                     )
                 ) {
                     onMessageAlreadySent();
@@ -87,7 +88,10 @@ export const useSendHandler = ({
                     text: c('Error').t`Error while sending the message. Message is not sent`,
                     type: 'error',
                 });
-                console.error('Error while sending the message.', error);
+
+                const errorMessage = 'Error while sending the message';
+                captureMessage(errorMessage, { extra: { message: cleanMessage, error } });
+                console.error(errorMessage, error);
                 throw error;
             }
         });
