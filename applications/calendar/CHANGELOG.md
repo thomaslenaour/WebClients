@@ -10,12 +10,7 @@
 -   Ask for confirmation when opening a link in an event if setting is on for emails
 -   Answer invitation from alias email address when invited
 
-
 ## Release: 4.0.3 — August 25, 2021
-
-### New features
-
--   Subscribe to external calendar via link
 
 ### Improvements
 
