@@ -1,3 +1,4 @@
+import useCalendarEmailNotificationsFeature from '@proton/components/hooks/useCalendarEmailNotificationsFeature';
 import { updateAttendeePartstat, updateCalendar, updatePersonalEventPart } from '@proton/shared/lib/api/calendars';
 import { processApiRequestsSafe } from '@proton/shared/lib/api/helpers/safeApiRequests';
 import { toApiPartstat } from '@proton/shared/lib/calendar/attendees';
@@ -48,13 +49,11 @@ import {
     useState,
 } from 'react';
 import {
-    FeatureCode,
     useApi,
     useBeforeUnload,
     useConfig,
     useContactEmails,
     useEventManager,
-    useFeature,
     useGetAddressKeys,
     useGetCalendarEventRaw,
     useModals,
@@ -243,7 +242,7 @@ const InteractiveCalendarView = ({
     const getCanonicalEmailsMap = useGetCanonicalEmailsMap();
     const getSendIcsPreferencesMap = useGetMapSendIcsPreferences();
 
-    const emailNotificationsEnabled = !!useFeature(FeatureCode.CalendarEmailNotification)?.feature?.Value;
+    const emailNotificationsEnabled = useCalendarEmailNotificationsFeature();
 
     const getEventDecrypted = (eventData: CalendarEvent): Promise<DecryptedEventTupleResult> => {
         return Promise.all([

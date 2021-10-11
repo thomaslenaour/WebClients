@@ -1,3 +1,4 @@
+import useCalendarEmailNotificationsFeature from '@proton/components/hooks/useCalendarEmailNotificationsFeature';
 import { ICAL_ATTENDEE_STATUS, ICAL_METHOD } from '@proton/shared/lib/calendar/constants';
 import {
     createInviteIcs,
@@ -20,7 +21,7 @@ import {
 } from '@proton/shared/lib/interfaces/calendar';
 import { VcalVeventComponent } from '@proton/shared/lib/interfaces/calendar/VcalModel';
 import { useCallback } from 'react';
-import { FeatureCode, useApi, useConfig, useFeature } from '@proton/components';
+import { useApi, useConfig } from '@proton/components';
 import { useGetCanonicalEmailsMap } from '@proton/components/hooks/useGetCanonicalEmailsMap';
 import useSendIcs from '@proton/components/hooks/useSendIcs';
 import { serverTime } from 'pmcrypto';
@@ -81,7 +82,7 @@ const useInviteButtons = ({
     const api = useApi();
     const sendIcs = useSendIcs();
     const config = useConfig();
-    const enabledEmailNotifications = !!useFeature(FeatureCode.CalendarEmailNotification)?.feature?.Value;
+    const enabledEmailNotifications = useCalendarEmailNotificationsFeature();
     const getCanonicalEmailsMap = useGetCanonicalEmailsMap();
     const { contactsMap: contactEmailsMap } = useContactCache();
 
