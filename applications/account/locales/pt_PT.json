@@ -2471,7 +2471,7 @@
         "Filtros personalizados"
       ],
       "Spam filters": [
-        "Filtros de assédio"
+        "Filtros de spam"
       ],
       "Folders & labels": [
         "Pastas e etiquetas"
@@ -3171,7 +3171,7 @@
         "Se este domínio está actualmente a receber emails, seleccione o separador ${ boldAddresses } e adicione todos os endereços de email activos antes de alterar o registo MX para assegurar uma transição suave."
       ],
       "If you have set both SPF and DKIM, DMARC allows you to specify how other email services should deliver email for your domain if both SPF and DKIM checks have failed. This can make it harder for spammers pretending to be you but may also cause delivery issues if not done properly.": [
-        "Se definiu SPF e DKIM, o DMARC permite-lhe especificar como outros serviços de email devem entregar emails no seu domínio, se as verificações SPF e DKIM falharam. Isto pode tornar dificultar o assédio, mas também pode causar problemas de entrega se não for feito adequadamente."
+        "Se você tiver definido o SPF e o DKIM, o DMARC permitirá que você especifique como outros serviços de e-mail devem entregar e-mails para o seu domínio se as verificações SPF e DKIM falharem. Isso pode dificultar os spammers que fingem ser você, mas também pode causar problemas de entrega se não forem feitos corretamente."
       ],
       "${ none } has no effect on email delivery, but we recommend ${ quarantine } for better security.": [
         "${ none } não tem efeito na entrega de email, mas recomendamos ${ quarantine } para maior segurança."
@@ -3899,10 +3899,10 @@
         "Insira o código de verificação enviado para ${ destinationText }."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
-        "Se não encontra o email na sua caixa de entrada, veja na pasta de assédio."
+        "Se não encontra o email na sua caixa de entrada, veja na pasta de spam."
       ],
       "To fight spam and abuse, please verify you are human.": [
-        "Para combater o assédio e o abuso, por favor confirme que é um ser humano."
+        "Para combater spam e abuso, verifique se você é humano."
       ],
       "Your email will only be used for this one-time verification.": [
         "O seu email só será usado para esta verificação única."
@@ -4073,7 +4073,7 @@
         "Continuar mesmo assim?"
       ],
       "Enter the code that was sent to ${ email }. If you can't find the message in your inbox, please check your spam folder.": [
-        "Insira o código enviado para ${ email }. Se não encontrar o correio na sua caixa de entrada, por favor verifique a pasta de assédio."
+        "Insira o código enviado para ${ email }. Se não encontrar o correio na sua caixa de entrada, por favor verifique a pasta de spam."
       ],
       "Enter the code sent to your phone number ${ phone }.": [
         "Insira o código enviado para o seu número de telefone ${ phone }."
@@ -6213,7 +6213,7 @@
         "Caixa de entrada"
       ],
       "Spam": [
-        "Assédio"
+        "Spam"
       ],
       "Trash": [
         "Lixo"
@@ -6263,7 +6263,7 @@
         "Adicione um filtro personalizado para executar automaticamente certas acções, como etiquetar ou arquivar mensagens."
       ],
       "Apply sender-specific spam rules. Messages from addresses or domains on the Allow List always go to your Inbox while messages from addresses or domains on the Block List always go to Spam. Marking a message as spam adds its address to the Block List. Marking a message as not spam adds it to the Allow List.": [
-        "Aplica regras de assédio específicas ao remetente. Mensagens de endereços ou domínios na lista de permissões vão sempre para a caixa de entrada, enquanto mensagens de endereços ou domínios na lista de bloqueios vão sempre para o assédio. Marcar uma mensagem como assédio adiciona o remetente à lista de bloqueios. Marcar uma mensagem como não-assédio adiciona o remetente à lista de permissões."
+        "Aplique regras de spam específicas do remetente. As mensagens de endereços ou domínios na Lista de Permissões sempre vão para sua Caixa de Entrada, enquanto as mensagens de endereços ou domínios na Lista de Bloqueios sempre vão para Spam. Marcar uma mensagem como spam adiciona seu endereço à Lista de Bloqueios. Marcar uma mensagem como não spam a adiciona à Lista de Permissões."
       ],
       "Search in Allow List and Block List": [
         "Procurar nas listas de permissões e bloqueios"
@@ -6760,7 +6760,7 @@
         "Funcionalidades personalizáveis"
       ],
       "ProtonMail cannot be used for mass emailing or spamming. Legitimate emails are unlimited.": [
-        "O ProtonMail não pode ser utilizado para enviar emails em lote ou para assédio. O envio de emails legítimos é ilimitado."
+        "O ProtonMail não pode ser utilizado para enviar emails em lote ou para spam. O envio de emails legítimos é ilimitado."
       ]
     },
     "Plan Feature": {
@@ -8299,7 +8299,7 @@
         "Ir para Lixo"
       ],
       "Go to Spam": [
-        "Ir para Assédio"
+        "Ir para Spam"
       ],
       "Go to All Mail": [
         "Ir para Todo o correio"
@@ -8374,7 +8374,7 @@
         "Mover para Arquivo"
       ],
       "Move to Spam": [
-        "Mover para Assédio"
+        "Mover para Spam"
       ],
       "Move to Trash": [
         "Mover para Lixo"
