@@ -1,5 +1,5 @@
 import { c, msgid } from 'ttag';
-import { Icon, useFolders } from '@proton/components';
+import { FeatureCode, Icon, useFeature, useFolders } from '@proton/components';
 import humanSize from '@proton/shared/lib/helpers/humanSize';
 import { Label } from '@proton/shared/lib/interfaces/Label';
 import { MailSettings } from '@proton/shared/lib/interfaces';
@@ -25,6 +25,7 @@ interface Props {
 }
 
 const HeaderExpandedDetails = ({ labelID, labels, message, messageViewIcons, mailSettings }: Props) => {
+    const { feature: spyTrackerFeature } = useFeature(FeatureCode.SpyTrackerProtection);
     const icon = messageViewIcons.globalIcon;
 
     const [customFolders = []] = useFolders();
@@ -37,7 +38,7 @@ const HeaderExpandedDetails = ({ labelID, labels, message, messageViewIcons, mai
         message,
         isDetails: true,
     });
-    const displayTrackerIcon = !(!hasProtection && hasShowImage && numberOfTrackers === 0);
+    const displayTrackerIcon = !(!hasProtection && hasShowImage && numberOfTrackers === 0) && spyTrackerFeature?.Value;
 
     const { pureAttachmentsCount, embeddedAttachmentsCount } = getAttachmentCounts(
         getAttachments(message.data),
