@@ -55,6 +55,7 @@ interface Props {
     planIDs?: PlanIDs;
     onClose?: (e?: any) => void;
     coupon?: string | null;
+    disableBackButton?: boolean;
 }
 
 interface Model {
@@ -78,6 +79,7 @@ const SubscriptionModal = ({
     coupon,
     planIDs = {},
     onClose,
+    disableBackButton,
     ...rest
 }: Props) => {
     const TITLE = {
@@ -328,7 +330,11 @@ const SubscriptionModal = ({
             title={
                 <SubscriptionModalHeader
                     title={TITLE[model.step]}
-                    onBack={backStep !== undefined ? () => setModel({ ...model, step: backStep }) : undefined}
+                    onBack={
+                        disableBackButton || backStep === undefined
+                            ? undefined
+                            : () => setModel({ ...model, step: backStep })
+                    }
                 />
             }
             loading={loading || loadingPlans || loadingOrganization || loadingSubscription}
