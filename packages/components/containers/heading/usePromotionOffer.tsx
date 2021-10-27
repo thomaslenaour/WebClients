@@ -64,12 +64,6 @@ const usePromotionOffer = (): EligibleOffer | undefined => {
               plans: [
                   {
                       name: '',
-                      cycle: CYCLE.MONTHLY,
-                      planIDs: { [plansMap.vpnplus.ID]: 1 },
-                      couponCode: BLACK_FRIDAY.COUPON_CODE,
-                  },
-                  {
-                      name: '',
                       cycle: CYCLE.TWO_YEARS,
                       planIDs: {
                           [plansMap.vpnplus.ID]: 1,
@@ -83,6 +77,12 @@ const usePromotionOffer = (): EligibleOffer | undefined => {
                       planIDs: {
                           [plansMap.vpnplus.ID]: 1,
                       },
+                      couponCode: BLACK_FRIDAY.COUPON_CODE,
+                  },
+                  {
+                      name: '',
+                      cycle: CYCLE.MONTHLY,
+                      planIDs: { [plansMap.vpnplus.ID]: 1 },
                       couponCode: BLACK_FRIDAY.COUPON_CODE,
                   },
               ],
