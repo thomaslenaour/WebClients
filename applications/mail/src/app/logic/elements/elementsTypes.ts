@@ -114,7 +114,6 @@ export interface OptimisticUpdates {
     elements: Element[];
     isMove?: boolean;
     bypass?: boolean;
-    isMessage?: boolean;
     conversationMode?: boolean;
 }
 
