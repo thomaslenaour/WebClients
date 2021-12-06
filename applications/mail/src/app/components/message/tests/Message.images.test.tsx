@@ -1,9 +1,9 @@
-import { SHOW_IMAGES } from '@proton/shared/lib/constants';
+import { IMAGE_PROXY_FLAGS, SHOW_IMAGES } from '@proton/shared/lib/constants';
 import { Message } from '@proton/shared/lib/interfaces/mail/Message';
 import { fireEvent } from '@testing-library/dom';
 import { createDocument } from '../../../helpers/test/message';
 import { defaultProps, initMessage, setup } from './Message.test.helpers';
-import { addToCache, minimalCache } from '../../../helpers/test/cache';
+import { addToCache, minimalCache, addApiMock, clearAll, assertIcon } from '../../../helpers/test/helper';
 import MessageView from '../MessageView';
 import { MessageState } from '../../../logic/messages/messagesTypes';
 
@@ -12,7 +12,9 @@ jest.mock('../../../helpers/dom', () => {
 });
 
 describe('Message images', () => {
-    it('should display all images as expected', async () => {
+    afterEach(clearAll);
+
+    it('should display all elements other than images', async () => {
         addToCache('MailSettings', { ShowImages: SHOW_IMAGES.NONE });
 
         const imageURL = 'imageURL';
@@ -83,7 +85,7 @@ describe('Message images', () => {
         const elementXlinkhref = getByTestId('image-xlinkhref');
         expect(elementXlinkhref.getAttribute('proton-xlink:href')).toEqual(imageURL);
 
-        const loadButton = getByTestId('remote-content:load2');
+        const loadButton = getByTestId('remote-content:load');
 
         fireEvent.click(loadButton);
 
@@ -102,5 +104,64 @@ describe('Message images', () => {
 
         const updatedElementXlinkhref = getByTestId('image-xlinkhref');
         expect(updatedElementXlinkhref.getAttribute('xlink:href')).toEqual(imageURL);
+    });
+
+    it('should be able to load direct when proxy failed at loading', async () => {
+        const imageURL = 'imageURL';
+        const content = `<div><img proton-src="${imageURL}" data-testid="image"/></div>`;
+        const document = createDocument(content);
+        const message: MessageState = {
+            localID: 'messageID',
+            data: {
+                ID: 'messageID',
+            } as Message,
+            messageDocument: { document },
+            messageImages: {
+                hasEmbeddedImages: false,
+                hasRemoteImages: true,
+                showRemoteImages: false,
+                showEmbeddedImages: true,
+                images: [],
+            },
+        };
+
+        addApiMock(`images`, () => {
+            const error = new Error();
+            (error as any).data = { Code: 2902, Error: 'TEST error message' };
+            return Promise.reject(error);
+        });
+
+        minimalCache();
+        addToCache('MailSettings', { ShowImages: SHOW_IMAGES.NONE, ImageProxy: IMAGE_PROXY_FLAGS.PROXY });
+
+        initMessage(message);
+
+        const { getByTestId, getByText, rerender, container } = await setup({}, false);
+
+        const image = await getByTestId('image');
+        expect(image.getAttribute('proton-src')).toEqual(imageURL);
+
+        let loadButton = getByTestId('remote-content:load');
+        fireEvent.click(loadButton);
+
+        // Rerender the message view to check that images have been loaded
+        await rerender(<MessageView {...defaultProps} />);
+
+        const placeholder = container.querySelector('.proton-image-placeholder') as HTMLImageElement;
+
+        expect(placeholder).not.toBe(null);
+        assertIcon(placeholder.querySelector('svg'), 'circle-xmark');
+
+        getByText('Load unprotected', { exact: false });
+
+        loadButton = getByTestId('remote-content:load');
+        fireEvent.click(loadButton);
+
+        // Rerender the message view to check that images have been loaded
+        await rerender(<MessageView {...defaultProps} />);
+
+        const loadedImage = container.querySelector('.proton-image-anchor img') as HTMLImageElement;
+        expect(loadedImage).toBeDefined();
+        expect(loadedImage.getAttribute('src')).toEqual(imageURL);
     });
 });
