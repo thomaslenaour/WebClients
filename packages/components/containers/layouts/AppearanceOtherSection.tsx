@@ -174,7 +174,7 @@ const AppearanceOtherSection = () => {
                     <div>
                         <FontFaceSelect
                             id="fontFace"
-                            fontFace={FontFace}
+                            fontFace={FontFace || DEFAULT_FONT_FACE}
                             onChange={(value) => withLoadingFontFace(handleChangeFontFace(value))}
                             loading={loadingFontFace}
                         />
@@ -182,7 +182,7 @@ const AppearanceOtherSection = () => {
                     <div>
                         <FontSizeSelect
                             id="fontSize"
-                            fontSize={FontSize}
+                            fontSize={FontSize || DEFAULT_FONT_SIZE}
                             onChange={(value) => withLoadingFontSize(handleChangeFontSize(value))}
                             loading={loadingFontSize}
                         />
