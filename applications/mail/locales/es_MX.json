@@ -2693,8 +2693,14 @@
       ]
     },
     "Get started checklist incentive": {
-      "Complete all steps and get a total of 2 GB on your account": [
-        "Complete todos los pasos y obtenga un total de 2 GB en su cuenta"
+      "Complete all steps and get a total of ${ totalGBStorageAfterCompletion } GB on your account": [
+        "Complete todos los pasos y obtenga un total de ${ totalGBStorageAfterCompletion } GB en su cuenta"
+      ],
+      "Expires soon": [
+        "Expira pronto"
+      ],
+      "Expires today": [
+        "Expira hoy"
       ],
       "Only ${ days } day left": [
         "Queda ${ days } día",
