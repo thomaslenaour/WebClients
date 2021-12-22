@@ -2693,12 +2693,18 @@
       ]
     },
     "Get started checklist incentive": {
-      "Complete all steps and get a total of 2 GB on your account": [
-        ""
+      "Complete all steps and get a total of ${ totalGBStorageAfterCompletion } GB on your account": [
+        "Voltooi alle stappen en krijg een totaal van ${ totalGBStorageAfterCompletion } GB op uw account"
+      ],
+      "Expires soon": [
+        "Verloopt binnenkort"
+      ],
+      "Expires today": [
+        "Verloopt vandaag"
       ],
       "Only ${ days } day left": [
-        "",
-        ""
+        "Nog maar één",
+        "Nog maar ${ days } dagen"
       ]
     },
     "Get started checklist instructions": {
