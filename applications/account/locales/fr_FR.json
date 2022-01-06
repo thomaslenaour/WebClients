@@ -62,7 +62,7 @@
         "Ajouter une condition"
       ],
       "Add credit / debit card": [
-        "Ajouter une carte de crédit / débit"
+        "Ajouter une carte de crédit/débit"
       ],
       "Add credits": [
         "Ajouter des crédits"
@@ -960,7 +960,7 @@
     },
     "Autoresponse": {
       "I'm out of the office with limited access to my email.": [
-        "Actuellement hors du bureau, je n'ai qu'un accès limité à mes emails."
+        "Actuellement hors du bureau, je n'ai qu'un accès limité à mes e-mails."
       ]
     },
     "Badge": {
@@ -1247,7 +1247,7 @@
         "Problème de paiement"
       ],
       "Sign in problem": [
-        "Problèmes de connexion"
+        "Problème de connexion"
       ],
       "Sign up problem": [
         "Problème d'inscription"
@@ -1551,7 +1551,7 @@
         "Quotidiennement, à ${ timesString }"
       ],
       "Daily, ${ untilString }": [
-        "Quotidiennement, jusqu'au ${ untilString }"
+        "Quotidiennement, ${ untilString }"
       ],
       "Every ${ interval } day": [
         "Chaque ${ interval } jour",
@@ -1562,8 +1562,8 @@
         "Tous les ${ interval } jours, à ${ timesString }"
       ],
       "Every ${ interval } day, ${ untilString }": [
-        "Chaque ${ interval } jour, jusqu'au ${ untilString }",
-        "Tous les ${ interval } jours, jusqu'au ${ untilString }"
+        "Chaque ${ interval } jour, ${ untilString }",
+        "Tous les ${ interval } jours, ${ untilString }"
       ],
       "until ${ dateString }": [
         "jusqu'au ${ dateString }"
@@ -2072,7 +2072,7 @@
         "Le navigateur que vous utilisez ne permet pas le traitement complet des paiements. Veuillez utiliser un autre navigateur ou vous connecter depuis un ordinateur."
       ],
       "The composer failed to load.": [
-        "Le composeur n'a pas pu être chargé."
+        "Le composeur n'a pas pu être chargé. "
       ],
       "The folder name is too long. Please choose a different name.": [
         "Le nom du dossier est trop long. Veuillez en choisir un autre."
@@ -4045,7 +4045,7 @@
         "Aperçu"
       ],
       "Proton can't help you recover any lost passwords": [
-        "Proton ne peut vous aider à récupérer aucun des mots de passe perdus"
+        "Proton ne peut pas vous aider à récupérer les mots de passe perdus"
       ],
       "Proton paused an import because it lost the connection with your other email provider. Please reconnect.": [
         "Proton a interrompu une importation parce que la connexion avec votre autre fournisseur de messagerie a été perdue. Veuillez vous reconnecter."
@@ -4319,7 +4319,7 @@
         "Authentification à deux facteurs activée"
       ],
       "Two-password mode requires two passwords: one to log in to your account and one to decrypt your mailbox. (Advanced)": [
-        "Le mode à deux mots de passe nécessite deux mots de passe : l'un pour se connecter à votre compte et l'autre pour déchiffrer votre boîte aux lettres. (Avancé)"
+        "Le mode à deux mots de passe nécessite deux mots de passe : l'un pour se connecter à votre compte et l'autre pour déchiffrer votre boîte aux lettres (avancé)."
       ],
       "Two-password mode uses separate passwords for login and mailbox decryption. This provides a minor security benefit in some situations, however we recommend one-password mode for most users. To switch to two password mode, first set a login password and then set a mailbox password.": [
         "Le mode à deux mots de passe utilise des mots de passe distincts pour la connexion à votre compte et pour le déchiffrement de votre messagerie. Ce mode fournit un léger avantage en terme de sécurité dans certains cas. Cependant, nous recommandons le mode à mot de passe unique pour la plupart des utilisateurs. Pour passer en mode à deux mots de passe, définissez d'abord un mot de passe de connexion à votre compte, puis choisissez un mot de passe pour votre messagerie."
@@ -4358,7 +4358,7 @@
         "Lien URL"
       ],
       "Use automatic replies to inform contacts you are out of the office or otherwise unable to respond.": [
-        "Utilisez des réponses automatiques pour informer les contacts que vous êtes hors du bureau ou que vous ne pouvez pas répondre autrement."
+        "Utilisez les réponses automatiques pour informer les contacts que vous êtes absent du bureau ou que vous n'êtes pas en mesure de répondre."
       ],
       "Use the following credentials when connecting to ProtonVPN servers without application. Examples use cases include: Tunnelblick on macOS, OpenVPN on GNU/Linux.": [
         "Utilisez les identifiants suivants lorsque vous vous connectez à des serveurs ProtonVPN sans application. Quelques exemples de cas d'utilisation : Tunnelblick sur macOS, OpenVPN sur GNU/Linux."
@@ -5273,7 +5273,7 @@
         "Nom de domaine"
       ],
       "Duration": [
-        "Durée"
+        "Périodicité"
       ],
       "Email": [
         "E-mail"
@@ -5858,7 +5858,7 @@
         "Confortable"
       ],
       "Compact": [
-        "Compact"
+        "Compacte"
       ]
     },
     "Label to change view layout": {
@@ -6022,7 +6022,7 @@
         "Groupes de contacts"
       ],
       "Custom email addresses": [
-        "Adresses électroniques personnalisées"
+        "Adresses e-mail personnalisées"
       ],
       "Custom filters": [
         "Filtres personnalisés"
@@ -6176,8 +6176,8 @@
         "Tous les ${ interval } mois, le ${ onDayString }, à ${ timesString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ untilString }": [
-        "Chaque ${ interval } mois, ${ onDayString }, jusqu'au ${ untilString }",
-        "Chaque ${ interval } mois, ${ onDayString }, jusqu'au ${ untilString }"
+        "Chaque ${ interval } mois, ${ onDayString }, ${ untilString }",
+        "Chaque ${ interval } mois, ${ onDayString }, ${ untilString }"
       ],
       "Monthly ${ onDayString }": [
         "Mensuellement, le ${ onDayString }"
@@ -6186,7 +6186,7 @@
         "Mensuellement, le ${ onDayString }, à ${ timesString }"
       ],
       "Monthly ${ onDayString }, ${ untilString }": [
-        "Mensuellement, le ${ onDayString }, jusqu'au ${ untilString }"
+        "Mensuellement, le ${ onDayString }, ${ untilString }"
       ]
     },
     "Monthly recurring event, repeats on": {
@@ -6530,7 +6530,7 @@
         "Créer un nouveau groupe"
       ],
       "Fixed duration": [
-        "Durée fixe"
+        "Durée déterminée"
       ],
       "Free server configs": [
         "Configurations des serveurs Free"
@@ -6800,7 +6800,7 @@
         "Nom d'utilisateur"
       ],
       "yourdomain.com": [
-        "votredomaine.com"
+        "votredomaine.fr"
       ],
       "ZIP": [
         "ZIP"
@@ -6872,7 +6872,7 @@
         "Bloqueur de publicités intégré (NetShield)"
       ],
       "Custom email addresses": [
-        "Adresses électroniques personnalisées"
+        "Adresses e-mail personnalisées"
       ],
       "Early access to new products": [
         "Accès anticipé aux nouveaux produits"
@@ -7424,7 +7424,7 @@
         "Filtre supprimé"
       ],
       "Status updated": [
-        "Statut mis à jour"
+        "État mis à jour"
       ]
     },
     "Suffix": {
@@ -7555,7 +7555,7 @@
         "Ajouter le nom du groupe de contacts"
       ],
       "Add credit/debit card": [
-        "Ajouter une carte de crédit / débit"
+        "Ajouter une carte de crédit/débit"
       ],
       "Add credits": [
         "Ajouter des crédits"
@@ -8841,8 +8841,8 @@
         "Toutes les ${ interval } semaines, les ${ multipleDaysString }, à ${ timesString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ untilString }": [
-        "Chaque ${ interval } semaine, les ${ multipleDaysString }, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, les ${ multipleDaysString }, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, les ${ multipleDaysString }, ${ untilString }",
+        "Toutes les ${ interval } semaines, les ${ multipleDaysString }, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
         "Chaque ${ interval } semaine, tous les jours",
@@ -8853,8 +8853,8 @@
         "Toutes les ${ interval } semaines, tous les jours, à ${ timesString }"
       ],
       "Every ${ interval } week on all days, ${ untilString }": [
-        "Chaque ${ interval } semaine, tous les jours, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, tous les jours, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, tous les jours, ${ untilString }",
+        "Toutes les ${ interval } semaines, tous les jours, ${ untilString }"
       ],
       "Every ${ interval } week on Friday": [
         "Chaque ${ interval } semaine, le vendredi",
@@ -8865,8 +8865,8 @@
         "Toutes les ${ interval } semaines, le vendredi, à ${ timesString }"
       ],
       "Every ${ interval } week on Friday, ${ untilString }": [
-        "Chaque ${ interval } semaine, le vendredi, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, le vendredi, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, le vendredi, ${ untilString }",
+        "Toutes les ${ interval } semaines, le vendredi, ${ untilString }"
       ],
       "Every ${ interval } week on Monday": [
         "Chaque ${ interval } semaine, le lundi",
@@ -8877,8 +8877,8 @@
         "Toutes les ${ interval } semaines, le lundi, à ${ timesString }"
       ],
       "Every ${ interval } week on Monday, ${ untilString }": [
-        "Chaque ${ interval } semaine, le lundi, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, le lundi, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, le lundi, ${ untilString }",
+        "Toutes les ${ interval } semaines, le lundi, ${ untilString }"
       ],
       "Every ${ interval } week on Saturday": [
         "Chaque ${ interval } semaine, le samedi",
@@ -8889,8 +8889,8 @@
         "Toutes les ${ interval } semaines, le samedi, à ${ timesString }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
-        "Chaque ${ interval } semaine, le samedi, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, le samedi, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, le samedi, ${ untilString }",
+        "Toutes les ${ interval } semaines, le samedi, ${ untilString }"
       ],
       "Every ${ interval } week on Sunday": [
         "Chaque ${ interval } semaine, le dimanche",
@@ -8901,8 +8901,8 @@
         "Toutes les ${ interval } semaines, le dimanche, à ${ timesString }"
       ],
       "Every ${ interval } week on Sunday, ${ untilString }": [
-        "Chaque ${ interval } semaine, le dimanche, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, le dimanche, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, le dimanche, ${ untilString }",
+        "Toutes les ${ interval } semaines, le dimanche, ${ untilString }"
       ],
       "Every ${ interval } week on Thursday": [
         "Chaque ${ interval } semaine, le jeudi",
@@ -8913,8 +8913,8 @@
         "Toutes les ${ interval } semaines, le jeudi, à ${ timesString }"
       ],
       "Every ${ interval } week on Thursday, ${ untilString }": [
-        "Chaque ${ interval } semaine, le jeudi, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, le jeudi, jusqu’au ${ untilString }"
+        "Chaque ${ interval } semaine, le jeudi, ${ untilString }",
+        "Toutes les ${ interval } semaines, le jeudi, ${ untilString }"
       ],
       "Every ${ interval } week on Tuesday": [
         "Chaque ${ interval } semaine, le mardi",
@@ -8925,8 +8925,8 @@
         "Toutes les ${ interval } semaines, le mardi, à ${ timesString }"
       ],
       "Every ${ interval } week on Tuesday, ${ untilString }": [
-        "Chaque ${ interval } semaine, le mardi, jusqu'au ${ untilString }",
-        "Toutes les ${ interval } semaines, le mardi, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, le mardi, ${ untilString }",
+        "Toutes les ${ interval } semaines, le mardi, ${ untilString }"
       ],
       "Every ${ interval } week on Wednesday": [
         "Chaque ${ interval } semaine, le mercredi",
@@ -8937,8 +8937,8 @@
         "Toutes les ${ interval } semaines, le mercredi, à ${ timesString }"
       ],
       "Every ${ interval } week on Wednesday, ${ untilString }": [
-        "Chaque ${ interval } semaine, le mercredi, jusqu’au ${ untilString }",
-        "Toutes les ${ interval } semaines, le mercredi, jusqu'au ${ untilString }"
+        "Chaque ${ interval } semaine, le mercredi, ${ untilString }",
+        "Toutes les ${ interval } semaines, le mercredi, ${ untilString }"
       ],
       "Weekly on ${ multipleDaysString }": [
         "Hebdomadairement, les ${ multipleDaysString }"
@@ -8947,7 +8947,7 @@
         "Hebdomadairement, les ${ multipleDaysString }, à ${ timesString }"
       ],
       "Weekly on ${ multipleDaysString }, ${ untilString }": [
-        "Hebdomadairement, les ${ multipleDaysString }, jusqu'au ${ untilString }"
+        "Hebdomadairement, les ${ multipleDaysString }, ${ untilString }"
       ],
       "Weekly on all days": [
         "Hebdomadairement, tous les jours de la semaine"
@@ -8956,7 +8956,7 @@
         "Hebdomadairement, tous les jours, à ${ timesString }"
       ],
       "Weekly on all days, ${ untilString }": [
-        "Hebdomadairement, tous les jours, jusqu'au ${ untilString }"
+        "Hebdomadairement, tous les jours, ${ untilString }"
       ],
       "Weekly on Friday": [
         "Tous les vendredis"
@@ -8965,7 +8965,7 @@
         "Tous les vendredis, à ${ timesString }"
       ],
       "Weekly on Friday, ${ untilString }": [
-        "Tous les vendredis, jusqu'au ${ untilString }"
+        "Tous les vendredis, ${ untilString }"
       ],
       "Weekly on Monday": [
         "Tous les lundis"
@@ -8974,7 +8974,7 @@
         "Tous les lundis, à ${ timesString }"
       ],
       "Weekly on Monday, ${ untilString }": [
-        "Tous les lundis, jusqu'au ${ untilString }"
+        "Tous les lundis, ${ untilString }"
       ],
       "Weekly on Saturday": [
         "Hebdomadairement, le samedi"
@@ -8992,7 +8992,7 @@
         "Tous les dimanches, à ${ timesString }"
       ],
       "Weekly on Sunday, ${ untilString }": [
-        "Tous les dimanches, jusqu'au ${ untilString }"
+        "Tous les dimanches, ${ untilString }"
       ],
       "Weekly on Thursday": [
         "Tous les jeudis"
@@ -9001,7 +9001,7 @@
         "Tous les jeudis, à ${ timesString }"
       ],
       "Weekly on Thursday, ${ untilString }": [
-        "Tous les jeudis, jusqu'au ${ untilString }"
+        "Tous les jeudis, ${ untilString }"
       ],
       "Weekly on Tuesday": [
         "Tous les mardis"
@@ -9010,7 +9010,7 @@
         "Tous les mardis, à ${ timesString }"
       ],
       "Weekly on Tuesday, ${ untilString }": [
-        "Tous les mardis, jusqu'au ${ untilString }"
+        "Tous les mardis, ${ untilString }"
       ],
       "Weekly on Wednesday": [
         "Tous les mercredis"
@@ -9019,7 +9019,7 @@
         "Tous les mercredis, à ${ timesString }"
       ],
       "Weekly on Wednesday, ${ untilString }": [
-        "Tous les mercredis, jusqu'au ${ untilString }"
+        "Tous les mercredis, ${ untilString }"
       ]
     },
     "Weekly recurring event, repeats on (multiple days), frequency": {
@@ -9066,8 +9066,8 @@
         "Tous les ${ interval } ans, à ${ timesString }"
       ],
       "Every ${ interval } year, ${ untilString }": [
-        "Chaque ${ interval } année, jusqu'au ${ untilString }",
-        "Tous les ${ interval } ans, jusqu'au ${ untilString }"
+        "Chaque ${ interval } année, ${ untilString }",
+        "Tous les ${ interval } ans, ${ untilString }"
       ],
       "Yearly": [
         "Annuellement"
@@ -9076,7 +9076,7 @@
         "Annuellement, à ${ timesString }"
       ],
       "Yearly, ${ untilString }": [
-        "Annuellement, jusqu'au ${ untilString }"
+        "Annuellement, ${ untilString }"
       ]
     }
   }

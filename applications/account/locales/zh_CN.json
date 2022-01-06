@@ -9,13 +9,13 @@
         "完全"
       ],
       "Full view": [
-        ""
+        "完整查看"
       ],
       "Limited": [
         "受限"
       ],
       "Limited view": [
-        "简视图"
+        "受限查看"
       ]
     },
     "Action": {
@@ -44,7 +44,7 @@
         "激活机构密钥"
       ],
       "Activate recovery": [
-        ""
+        "激活恢复"
       ],
       "Add": [
         "添加"
@@ -653,7 +653,7 @@
         "显示更多"
       ],
       "Show shortcuts": [
-        "显示快捷方式"
+        "显示快捷键"
       ],
       "sign in": [
         "登录"
@@ -773,7 +773,7 @@
         "使用恢复码"
       ],
       "Use two-factor authentication code": [
-        "使用二层验证码"
+        "使用双重验证码"
       ],
       "Use your current email address instead": [
         "改用您当前的电子邮件地址"
@@ -876,10 +876,10 @@
         "生成缺失的密钥"
       ],
       "Make default": [
-        ""
+        "设为默认"
       ],
       "Saving": [
-        ""
+        "正在保存"
       ]
     },
     "Address status": {
@@ -1084,7 +1084,7 @@
         "年费（省 20%）"
       ],
       "Monthly": [
-        "按月"
+        "月费"
       ],
       "Two years SAVE 33%": [
         "两年计费（省 33%）"
@@ -1292,12 +1292,12 @@
     },
     "Calendar import section description": {
       "You can import ICS files from another calendar to ${ CALENDAR_APP_NAME }. This lets you quickly import one event or your entire agenda.": [
-        ""
+        "您可以将其他日历的 ICS 文件导入到 ${ CALENDAR_APP_NAME }，方便您快速导入一个日程或整个议程。"
       ]
     },
     "Calendar limit warning": {
       "You have reached the maximum number of personal calendars you can create within your plan.": [
-        ""
+        "您已达到您账户等级所能创建的个人日历数上限。"
       ],
       "You have reached the maximum of ${ MAX_SUBSCRIBED_CALENDARS_PER_USER } subscribed calendar.": [
         "您已达到订阅日历的最大值 ${ MAX_SUBSCRIBED_CALENDARS_PER_USER } 个。"
@@ -1328,7 +1328,7 @@
         "日历正在同步中"
       ],
       "Calendar is too big": [
-        ""
+        "日历文件太大"
       ],
       "Calendar link is not accessible": [
         "日历链接不能被访问"
@@ -1519,7 +1519,7 @@
     },
     "CountryInfo": {
       "(via ${ entryCountryName })": [
-        "(通过 { entryCountryName })"
+        "(通过 ${ entryCountryName })"
       ]
     },
     "Credits": {
@@ -1634,7 +1634,7 @@
         "我要改用其他 Proton 账户"
       ],
       "Missing feature(s)": [
-        ""
+        "缺失功能"
       ],
       "My reason isn't listed, please comment": [
         "未列原因，请留言"
@@ -1689,7 +1689,7 @@
     },
     "Email body for invitation": {
       "${ eventTitle } has been canceled.": [
-        ""
+        "${ eventTitle } 已取消。"
       ],
       "${ eventTitle } has been updated.\n${ eventDetailsText }": [
         "${ eventTitle } 已更新。\n${ eventDetailsText }"
@@ -1736,7 +1736,7 @@
         "${ formattedStart } 的活动邀请函"
       ],
       "Invitation for an event starting on ${ formattedStart }": [
-        "开始于 { formattedStart } 的活动邀请函"
+        "开始于 ${ formattedStart } 的活动邀请函"
       ],
       "Update for an event on ${ formattedStart }": [
         "更新 ${ formattedStart } 的活动"
@@ -1750,10 +1750,10 @@
         "您想要从 Proton 接收哪些电子邮件？"
       ],
       "You resubscribed to ${ categoriesJsx } emails.": [
-        ""
+        "您已重新订阅 ${ categoriesJsx } 电子邮件。"
       ],
       "You unsubscribed from ${ categoriesJsx } emails.": [
-        ""
+        "您已取消订阅 ${ categoriesJsx } 电子邮件。"
       ]
     },
     "Email Unsubscribe Categories": {
@@ -1823,7 +1823,7 @@
         "找不到邮箱 ${ email }。"
       ],
       "Deselect at least ${ calendarToFixCount } calendar": [
-        ""
+        "取消选择至少 ${ calendarToFixCount } 个日历"
       ],
       "Deselect at least ${ calendarToFixCount } calendar or": [
         "取消选择至少 ${ calendarToFixCount } 个日历或者"
@@ -1895,7 +1895,7 @@
         "有效期不正确"
       ],
       "Invalid invitation link": [
-        ""
+        "无效的邀请链接"
       ],
       "Invalid name": [
         "无效的名称"
@@ -1934,7 +1934,7 @@
         "没有活跃的会话"
       ],
       "No data to import": [
-        ""
+        "没有要导入的数据"
       ],
       "No valid address found": [
         "未找到有效地址"
@@ -1949,7 +1949,7 @@
         "机构密钥尚未解密。"
       ],
       "Organization not recognized. Try again.": [
-        ""
+        "无法识别机构，请重试。"
       ],
       "Passwords do not match": [
         "密码不一致"
@@ -1988,7 +1988,7 @@
         "请刷新页面。"
       ],
       "Please set a recovery email first": [
-        ""
+        "请先设置密保邮箱"
       ],
       "Please set a recovery phone number first": [
         "请先设置密保手机"
@@ -2000,7 +2000,7 @@
         "请尝试重新验证并确保权限正确。"
       ],
       "Please upgrade to a Professional plan with more than 1 user, or a Visionary account, to get multi-user support": [
-        ""
+        "请开通支持多用户的专业版或尊享版账户以使用多用户功能"
       ],
       "Please upgrade to a Professional plan with more than 1 user, or a Visionary account, to manage multiple users.": [
         "开通多用户的专业版或尊享版账户方可管理多个用户。"
@@ -2057,10 +2057,10 @@
         "文件夹名称过长，请更改。"
       ],
       "The keys in your recovery file can't be validated. Please contact support.": [
-        ""
+        "无法验证您恢复文件中的密钥，请联系支持人员。"
       ],
       "The keys in your recovery files can't be validated. Please upload individually for more information.": [
-        ""
+        "无法验证您恢复文件中的密钥，请单独上传以获取更多信息。"
       ],
       "The label name is too long. Please choose a different name.": [
         "标签名称过长，请选择一个不同的名字"
@@ -2179,7 +2179,7 @@
         "文件 ${ formattedFilename } 中的日程数已超过 ${ MAX_IMPORT_EVENTS_STRING }。"
       ],
       "Your file ${ formattedFilename } has an invalid method and cannot be imported.": [
-        ""
+        "您的文件 ${ formattedFilename } 包含一个无效的 method 属性，无法导入。"
       ],
       "Your file ${ formattedFilename } has no events to be imported.": [
         "文件 ${ formattedFilename } 中没有可导入的日程。"
@@ -2284,7 +2284,7 @@
         "缺少启动时间"
       ],
       "No UID, title or start time": [
-        ""
+        "没有 UID、标题或开始时间"
       ],
       "Non-Gregorian": [
         "非格里历"
@@ -2296,7 +2296,7 @@
         "找不到原始重复事件"
       ],
       "Recurring event has no occurrences": [
-        ""
+        "重复事件没有发生"
       ],
       "Recurring rule not supported": [
         "不支持重复规则"
@@ -2375,7 +2375,7 @@
         "无法解密附加的 ICS 文件"
       ],
       "Attached ICS file could not be read": [
-        ""
+        "无法读取 ICS 附件"
       ],
       "Invalid invitation": [
         "邀请无效"
@@ -2583,13 +2583,13 @@
     },
     "Frequency of news": {
       "(1 email per month)": [
-        "（1 封邮件/月）"
+        "（每月 1 封邮件）"
       ],
       "(1 email per quarter)": [
-        "（1 封邮件/季度）"
+        "（每个季度 1 封邮件）"
       ],
       "(1-2 emails per month)": [
-        "（1-2 封邮件/月）"
+        "（每月 1 至 2 封邮件）"
       ]
     },
     "Group": {
@@ -2726,7 +2726,7 @@
     },
     "Import calendar warning": {
       "${ CALENDAR_APP_NAME } currently does not support certain event types, details and formats.": [
-        ""
+        "${ CALENDAR_APP_NAME } 当前不支持某些日程类型、详情和格式。"
       ],
       "vCard versions < 3.0": [
         "vCard 版本小于3.0"
@@ -2737,13 +2737,13 @@
         "导入的邀请在 ${ CALENDAR_APP_NAME } 中显示为没有组织者和参与者详细信息的简单活动。要获取活动更新或者查看参与人员，请让组织者用您的 Proton 邮箱地址邀请您。"
       ],
       "This file contains an event invitation:": [
-        ""
+        "此文件包含活动邀请："
       ],
       "This file contains an invitation response:": [
-        ""
+        "此文件包含邀请回复："
       ],
       "This file contains some data that we cannot import:": [
-        ""
+        "此文件包含一些无法导入的数据："
       ]
     },
     "Import contact": {
@@ -2986,7 +2986,7 @@
     },
     "Import key": {
       "Are you sure you want to import a private key? Importing an insecurely generated or leaked private key can harm the security of your emails.\n\nPlease also note that the public key corresponding to this private key will be publicly available from our key server. If the key contains personal details (such as your full name) which you do not want to publish, please edit the key before importing it.": [
-        ""
+        "您确定要导入私钥吗？导入非安全生成或泄露的私钥可能会危害您的电子邮件安全。\n\n另请注意，与此私钥对应的公钥将公开发布到我们的密钥服务器。如果该密钥包含您不想发布的个人信息（例如您的全名），请在导入之前对其进行编辑。"
       ]
     },
     "Import status": {
@@ -3009,7 +3009,7 @@
         "失败"
       ],
       "In progress": [
-        ""
+        "进行中"
       ],
       "Paused": [
         "已暂停"
@@ -3096,7 +3096,7 @@
         "已找到 ${ providerFoldersNumLocalized } 个文件夹"
       ],
       "${ providerFoldersNumLocalized } label found in Gmail": [
-        "已在 Gmail 中找到 { providerFoldersNumLocalized } 个标签"
+        "已在 Gmail 中找到 ${ providerFoldersNumLocalized } 个标签"
       ],
       "${ save20 } on your subscription by switching to ${ annualBilling }": [
         "{ save20 } 订阅，切换到{ annualBilling }"
@@ -3156,7 +3156,7 @@
         "每个人都应当享有自由的互联网，免受网络审查。"
       ],
       "A recovery file lets you unlock and view your data after an account reset. ": [
-        ""
+        "恢复文件可让您在账户重置后解锁并查看数据。 "
       ],
       "A recovery phrase lets you access your account and recover your encrypted messages if you forget your password.": [
         "如果您不小心忘记了密码，恢复密语可让您访问您的账户并恢复加密邮件。"
@@ -3504,7 +3504,7 @@
         "带有此标签的邮件不会被删除，且仍可在相应文件夹中找到。"
       ],
       "Enabling recovery by phrase again will generate a new recovery phrase.": [
-        ""
+        "再次启用通过密语恢复将生成一个新的恢复密语。"
       ],
       "Encryption setting updated": [
         "加密设置已更改"
@@ -3585,7 +3585,7 @@
         "速度高达 10 Gbps 的全功能 VPN。"
       ],
       "Generating a new recovery phrase will deactivate your old one.": [
-        ""
+        "新生成的恢复密语将取代旧的。"
       ],
       "Give your public key to your friends, or publish it online, so that everyone can send you end-to-end encrypted email!": [
         "把公钥发给亲朋好友，或者挂到网上，这样大家就都能给你发端到端加密的邮件了！"
@@ -3633,13 +3633,13 @@
         "若您同时设定了 SPF 和 DKIM，可以使用 DMARC 来指定其他邮件系统遇到来自您域名的邮件无法通过 SPF 和 DKIM 检查时应采取的措施，这样他人就更难以伪装成您发送垃圾邮件，但如果操作不当也可能导致投递出现问题。"
       ],
       "If you lose your login details and need to reset your account, ${ boldImperative } that you have an ${ boldAccountRecovery } in place.": [
-        ""
+        "如果您丢失了登录信息并需要重置账户，${ boldImperative }您必须正好同时拥有${ boldAccountAndRecovery }。"
       ],
       "If you lose your login details and need to reset your account, ${ boldImperative } that you have both an ${ boldAccountAndRecovery } in place, otherwise you might not be able to access any of your emails, contacts, or files.": [
-        ""
+        "如果您丢失了登录信息并需要重置账户，${ boldImperative }您必须正好同时拥有${ boldAccountAndRecovery }，否则您可能无法访问您的任何电子邮件、联系人或文件。"
       ],
       "If you lose your two-factor-enabled device, these codes can be used instead of the 6-digit two-factor authentication code to log into your account. Each code can only be used once.": [
-        "若您丢失了两步验证设备，这些代码可替代验证码来登录您的账户。每个代码仅可使用一次。"
+        "若双重验证设备丢失，您可以使用这些代码代替验证码登录账户。每段代码只能使用一次。"
       ],
       "If you proceed with the downgrade, you will lose access to ProtonMail and ProtonVPN paid features.": [
         "降级后您将不能再使用 ProtonMail 和 ProtonVPN 的收费功能。"
@@ -3690,10 +3690,10 @@
         "正在将您的数据从 ${ importedEmailAddress } 导入到 ${ toEmail }。"
       ],
       "In case you lose your login details, we’ll send you recovery instructions via email or SMS.": [
-        ""
+        "如果您丢失了登录信息，我们将通过电子邮件或短信向您发送恢复说明指南。"
       ],
       "In case you lose your login details, we’ll send you recovery instructions via email.": [
-        ""
+        "如果您不慎丢失了登录信息，我们将通过电子邮件向您发送恢复说明指南。"
       ],
       "Included": [
         "已包含在内"
@@ -3729,7 +3729,7 @@
         "互联网连接已恢复。"
       ],
       "it’s imperative": [
-        ""
+        "至关重要的是"
       ],
       "Just confirm your selection and we'll do the rest.": [
         "只需确认您的选择，剩下的交由我们！"
@@ -3801,7 +3801,7 @@
         "请确保您记住密码以登录和解密电子邮箱。${ boldAlert }。我们推荐先添加一个恢复电子邮箱。"
       ],
       "Manually enter this information into your two-factor authentication device to set up your account. ${ _switchButton }.": [
-        "手动输入此信息到您的两步验证设备，以便设置您的帐户。${ _switchButton }。"
+        "在验证设备上手动输入下列信息完成账户设置，或${ _switchButton }。"
       ],
       "Merged": [
         "已合并"
@@ -3831,7 +3831,7 @@
         "接下来您需要登录 Google 账户并允许我们获取您的数据。"
       ],
       "No account recovery method set; you are at risk of losing access to your account": [
-        ""
+        "未设置账户恢复方法，您存在失去账户访问权限的风险"
       ],
       "No action selected": [
         "未选择操作"
@@ -3843,7 +3843,7 @@
         "没有联系人加密密钥"
       ],
       "No data recovery method set; you are at risk of losing access to your data": [
-        ""
+        "未设置数据恢复方法，您存在失去数据访问权限的风险"
       ],
       "No folder selected": [
         "未选择文件夹"
@@ -3936,10 +3936,10 @@
         "导出私钥前请先设置一个密码将其加密。"
       ],
       "Please enter the 12-word recovery phrase associated with your account.": [
-        ""
+        "请输入与您的账户关联的 12 字恢复密语。"
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
-        ""
+        "请妥善保管。如果遇到密码重置，您将需要通过它来访问您的账户以及解密您的数据。"
       ],
       "Please note that if you delete this address, you will no longer be able to send or receive emails using this address.": [
         "请注意，如果删除此地址，您将无法再用其收发邮件。"
@@ -4029,10 +4029,10 @@
         "等待中"
       ],
       "read our two-factor authentication Guide first": [
-        "请先阅读我们的双重身份验证指南"
+        "先阅读我们的双重验证指南"
       ],
       "Recovery files have been voided": [
-        ""
+        "恢复文件已作废"
       ],
       "Recovery phrase copied to clipboard": [
         "恢复短语已复制到剪贴板"
@@ -4077,7 +4077,7 @@
         "请选择一个服务提供商以开始导入"
       ],
       "Select which calendars to import. A new calendar will be created for each imported calendar up to the 20 calendars limit.": [
-        ""
+        "请选择要导入的日历。将为每个导入的日历创建一个新日历（最多 20 个）。"
       ],
       "Server is currently down": [
         "服务器目前不可用"
@@ -4164,7 +4164,7 @@
         "此功能只适合专业用户使用。删除此密钥后，您将无法解密由其加密的所有邮件，可能导致数据丢失。"
       ],
       "This is a 12-word phrase that you were prompted to set.": [
-        ""
+        "这是之前提示您设置的 12 字短语。"
       ],
       "This is a recovery file or encryption key you may have previously saved.": [
         "这是您之前可能已保存的恢复文件或加密密钥。"
@@ -4173,7 +4173,7 @@
         "这是您之前可能已保存的加密密钥。"
       ],
       "This is the password you used before the password reset.": [
-        ""
+        "这是您在密码重置之前使用的密码。"
       ],
       "This link may be a homograph attack and cannot be opened by Internet Explorer and Edge browsers. If you are certain the link is legitimate, please use a different browser to open it.": [
         "此链接可能使用了欺骗性域名，IE 和 Edge 浏览器无法打开。若您确认链接可靠，请使用其他浏览器打开。"
@@ -4188,7 +4188,7 @@
         "此用户负责为您的组织付款。降低其权限后，您将负责此组织的付款。"
       ],
       "This will also disable any two-factor authentication method associated with this account.": [
-        "这还将禁用所有与此账户关联的两步验证。"
+        "此账户的双重验证功能也将关闭。"
       ],
       "This will cancel your current paid subscription and you will lose any loyalty benefits you have accumulated. The remaining balance of your subscription will be returned as account credits.": [
         "这将取消您当前的付费订阅，您将失去您累积的任何忠诚福利。 您订阅的剩余部分将作为账户积分退回。"
@@ -4197,7 +4197,7 @@
         "该操作将为您的机构创建密钥。4096 位密钥只适用于性能较高的计算机，我们建议大多数用户使用 2048 位密钥。"
       ],
       "This will disable your current recovery phrase. You won't be able to use it to access your account or decrypt your data.": [
-        ""
+        "这将禁用您当前的恢复密语，您将无法使用它来访问账户或解密数据。"
       ],
       "This will enable PayPal to be used to pay for your Proton subscription. We will redirect you to PayPal in a new browser tab. If you use any pop-up blockers, please disable them to continue.": [
         "完成此操作后您就可以使用 PayPal 支付了。我们将在新标签页中为您打开 PayPal，如果您使用了弹窗屏蔽插件，请将其关闭后再继续。"
@@ -4212,7 +4212,7 @@
         "这将替换您的临时密码。您今后将使用此密码来访问您的 ${ BRAND_NAME } 账户。"
       ],
       "This will sign you out of any active sessions and disable 2-factor authentication.": [
-        ""
+        "您的所有设备都将退出登录状态，双重验证功能也会关闭。"
       ],
       "This wizard will enable Two-Factor Authentication (2FA) on your Proton account. Two-factor authentication will make your Proton account more secure so we recommend enabling it.": [
         "接下来您将为 Proton 账户开启双重验证（2FA），这将提高账户安全性，我们建议您立即开启。"
@@ -4239,7 +4239,7 @@
         "请按下列步骤准备导入您的其他邮箱："
       ],
       "To proceed, select an account recovery method so we can verify the request.": [
-        ""
+        "要想继续，请选择一种账户恢复方法用于验证请求。"
       ],
       "To secure your internet connection, download and install the ProtonVPN application for your device and connect to a ProtonVPN server.": [
         "若想提高上网安全性，请为您的设备安装 ProtonVPN 应用程序并连接到 ProtonVPN 服务器。"
@@ -4254,10 +4254,10 @@
         "将您的数据安全地转移至 Proton。导入助手能够连接您的其他邮箱，并导入您所需邮件和文件夹。"
       ],
       "Two-factor authentication adds an extra layer of security to your account in case your password is compromised.": [
-        "如果你的密码泄露，双因素认证可以在登录时增加一层额外的安全保护机制。"
+        "如果您的密码不慎泄露，双重验证可以作为另一道防线保护账户安全。"
       ],
       "Two-factor authentication disabled": [
-        "双重身份认证已被禁用"
+        "双重验证已关闭"
       ],
       "Two-factor authentication enabled": [
         "双重验证已开启"
@@ -4269,7 +4269,7 @@
         "双密码模式下登录和解密邮箱需要两套密码，某些情况下这样能略微提高安全性，但我们建议大部分用户使用单密码。若要开启双密码模式，请先设置一个登录密码，再设置一个邮箱密码。"
       ],
       "Unable to verify recovery file signature. Please contact support.": [
-        ""
+        "无法验证恢复文件签名，请联系支持人员。"
       ],
       "Unfortunately there is no recovery method saved for this account.": [
         "很不幸，此账户没有设置恢复密码的方式。"
@@ -4368,10 +4368,10 @@
         "只有桌面版能查看周视图和月视图。"
       ],
       "We’ll send a reset code to the email address you provided for account recovery.": [
-        ""
+        "我们会将重置代码发送到您先前提供的密保邮箱。"
       ],
       "We’ll send a reset code to the phone number you provided for account recovery.": [
-        ""
+        "我们会将重置代码发送到您先前提供的密保手机。"
       ],
       "What do you want to import from your Google account?": [
         "您想从您的 Google 账户中导入哪些内容？"
@@ -4410,7 +4410,7 @@
         "您已登录 ${ user.Name }（${ user.Email }），并且权限有限。"
       ],
       "You can also merge imported calendars with existing Proton calendars.": [
-        ""
+        "您也可以将导入日历与现有 Proton 日历合并。"
       ],
       "You can check the progress ${ importProgressLink }.": [
         "您可以在 ${ importProgressLink } 查看导入进度。"
@@ -4485,7 +4485,7 @@
         "即将为您转至 PayPal 确认支付。"
       ],
       "You won't be able to recover encrypted data after an account reset using your downloaded recovery files.": [
-        ""
+        "通过下载的恢复文件重置帐账户后，您将无法恢复加密数据。"
       ],
       "Your ${ BRAND_NAME } Account is associated with ${ externalEmailAddress }. To use ${ toAppName }, please create an address.": [
         "您的 ${ BRAND_NAME } 账户已关联至 ${ externalEmailAddress }。要使用 ${ toAppName }，请先创建账户。"
@@ -4704,25 +4704,25 @@
     },
     "Key generation": {
       "A key with the same encryption algorithm already exists. Generating another key will cause slower account loading. Are you sure you want to continue?": [
-        ""
+        "已存在具有相同加密算法的密钥。生成新密钥会导致账户加载速度变慢，您确定要继续吗？"
       ],
       "A key with the same encryption algorithm is already active for this address. Generating another key will cause slower account loading and deletion of this key can cause issues. If you are generating a new key because your old key is compromised, please mark that key as compromised. Are you sure you want to continue?": [
-        ""
+        "此地址已有采用相同加密算法的密钥，再创建会导致帐户加载速度变慢，而且以后删除此密钥可能会出现问题。如果您是因为旧密钥泄露才创建新密钥，请将其标记为“已泄露”。您确定要继续创建密钥吗？"
       ],
       "Generate key": [
-        ""
+        "生成密钥"
       ],
       "Key with fingerprint ${ fp } successfully created.": [
-        ""
+        "密钥 ${ fp } 已成功创建。"
       ],
       "The encryption keys are being generated. This may take several minutes and temporarily freeze your browser.": [
-        ""
+        "正在生成加密密钥，可能需要几分钟，其间您的浏览器可能会出现卡顿。"
       ],
       "The encryption keys for your address are being generated. This may take several minutes and temporarily freeze your browser.": [
-        ""
+        "正在生成您地址的加密密钥，可能需要几分钟，其间您的浏览器可能会出现卡顿。"
       ],
       "You can generate a new encryption key if you think your previous key has been compromised.": [
-        ""
+        "如果您认定旧密钥已泄露，可以创建一个新密钥。"
       ]
     },
     "Key state badge": {
@@ -4747,10 +4747,10 @@
     },
     "Key type option": {
       "${ compatibility } RSA 4096-bit (Slower, but increased compatibility with legacy software)": [
-        ""
+        "${ compatibility } RSA 4096-bit（较慢，但兼容性好）"
       ],
       "${ stateOfTheArt } ECC Curve25519 (Fastest, most modern)": [
-        ""
+        "${ stateOfTheArt } ECC Curve25519（最快、最前沿）"
       ]
     },
     "Keyboard shortcut name": {
@@ -5078,7 +5078,7 @@
         "比特币金额："
       ],
       "Calendars": [
-        ""
+        "日历"
       ],
       "Cancel": [
         "取消"
@@ -5132,7 +5132,7 @@
         "确认密码"
       ],
       "Contacts": [
-        "通信录"
+        "通讯录"
       ],
       "Conversation grouping": [
         "会话分组"
@@ -5183,13 +5183,13 @@
         "删除"
       ],
       "Density": [
-        "间距"
+        "密度"
       ],
       "Description": [
         "说明："
       ],
       "Digits": [
-        "位"
+        "验证码位数"
       ],
       "Discount": [
         "优惠"
@@ -5276,7 +5276,7 @@
         "文件夹位置"
       ],
       "From: ${ emailFrom }": [
-        ""
+        "来自: ${ emailFrom }"
       ],
       "From: ${ fromEmailAddress }": [
         "来自: ${ fromEmailAddress }"
@@ -5324,7 +5324,7 @@
         "继承母文件夹的颜色"
       ],
       "Interval": [
-        "区间"
+        "验证码更新周期"
       ],
       "Keep messages in Sent/Drafts": [
         "保留消息在发件箱/草稿箱中"
@@ -5459,7 +5459,7 @@
         "短语"
       ],
       "Phrase consists of 12 unique words in a specific order": [
-        ""
+        "密语由特定顺序的 12 个独特单词组成"
       ],
       "Please add all 3 of the following CNAME records. Note, DNS records can take several hours to update.": [
         "请添加下列三条 CNAME 记录。注意：DNS 记录更新可能需要若干小时。"
@@ -5480,7 +5480,7 @@
         "邮编"
       ],
       "Previous password": [
-        ""
+        "先前的密码"
       ],
       "Private User": [
         "私密账户"
@@ -5597,7 +5597,7 @@
         "导入到：${ emailAddress }"
       ],
       "To: ${ emailTo }": [
-        ""
+        "导入到：${ emailTo }"
       ],
       "To: ${ PMEmailAddress }": [
         "导入到：${ PMEmailAddress }"
@@ -5615,7 +5615,7 @@
         "双重验证"
       ],
       "Two-factor authentication code": [
-        "二层验证码"
+        "双重验证码"
       ],
       "Two-password mode": [
         "双密码模式"
@@ -5624,10 +5624,10 @@
         "撤消发送时限"
       ],
       "Upload 1 or more encryption keys": [
-        ""
+        "上传一个或多个加密密钥"
       ],
       "Upload 1 or more recovery files or encryption keys": [
-        ""
+        "上传一个或多个恢复文件或加密密钥"
       ],
       "URL": [
         "网址"
@@ -5760,7 +5760,7 @@
         "Proton 新闻"
       ],
       "Proton offers and promotions": [
-        ""
+        "Proton 优惠与促销"
       ],
       "Proton product announcements": [
         "Proton 产品公告"
@@ -5795,7 +5795,7 @@
     },
     "Label to change density": {
       "Comfortable": [
-        "舒适"
+        "适中"
       ],
       "Compact": [
         "紧凑"
@@ -6021,10 +6021,10 @@
     },
     "Mail import summary": {
       "Import all messages from ${ selectedLabelsCount } out of ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        ""
+        "导入自${ periodFragment }以来 ${ totalLabelsCount } 个标签中 ${ selectedLabelsCount } 个的所有邮件，并将其标记为${ LABEL_MARKUP_PLACEHOLDER }"
       ],
       "Import all messages from ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        ""
+        "导入自${ periodFragment }以来 ${ totalLabelsCount } 个标签的所有邮件，并将其标记为${ LABEL_MARKUP_PLACEHOLDER }"
       ]
     },
     "Mail upsell feature": {
@@ -6064,7 +6064,7 @@
     },
     "Member downgrade modal": {
       "This will permanently delete all sub-users, accounts, and data associated with your organization.": [
-        ""
+        "这将永久删除与您的组织相关的所有子用户、账户和数据。"
       ]
     },
     "Message": {
@@ -6570,7 +6570,7 @@
         "创建新日历"
       ],
       "Merge with calendar": [
-        ""
+        "与日历合并"
       ]
     },
     "Option protection mode": {
@@ -6920,15 +6920,15 @@
         "电话号码"
       ],
       "Phrase": [
-        ""
+        "密语"
       ]
     },
     "Remark about a key type option": {
       "Compatibility": [
-        ""
+        "版本要求"
       ],
       "State of the art": [
-        ""
+        "顶尖加密方式"
       ]
     },
     "Restore administrator panel": {
@@ -6961,7 +6961,7 @@
         "上传"
       ],
       "Upload additional files": [
-        ""
+        "上传其他文件"
       ]
     },
     "Select search results": {
@@ -6971,7 +6971,7 @@
     },
     "Settings description": {
       "You can apply multiple labels to a single message, but messages can usually only be in a single folder. Drag and drop to rearrange the order of your folders and labels.": [
-        ""
+        "一封邮件可以有多个标签，但通常只能位于一个文件夹中。文件夹和标签的顺序可以在下方通过拖动调整。"
       ]
     },
     "Settings section title": {
@@ -7144,7 +7144,7 @@
         "日历链接"
       ],
       "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Subscribed calendars.\n${ kbLink }": [
-        ""
+        "要订阅外部或公共日历及其更新，请输入相应链接。一个只读版日历将添加到您订阅的日历中。\n${ kbLink }"
       ]
     },
     "Subscribe to calendar modal description": {
@@ -7337,7 +7337,7 @@
     },
     "Success notification": {
       "${ label.Name } removed": [
-        "${ label.Name } 标签已删除"
+        "${ label.Name } 已删除"
       ],
       "Address deleted": [
         "地址已删除"
@@ -7736,7 +7736,7 @@
         "删除用户"
       ],
       "Disable two-factor authentication": [
-        "禁用双重身份验证"
+        "关闭双重验证"
       ],
       "Display name & signature": [
         "对外名称与落款"
@@ -8096,7 +8096,7 @@
         "设定机构密码"
       ],
       "Set up two-factor authentication": [
-        "设置双重身份验证"
+        "设置双重验证"
       ],
       "Settings": [
         "设置"
@@ -8156,7 +8156,7 @@
         "切换到双密码模式"
       ],
       "Take precautions to avoid data loss!": [
-        "采取预防措施以避免数据丢失！"
+        "避免数据丢失需要防患于未然！"
       ],
       "Theme": [
         "配色"
@@ -8300,7 +8300,7 @@
     },
     "Tooltip": {
       "Access geo-blocked content (Netflix, Amazon Prime Video, BBC iPlayer, Wikipedia, Facebook, YouTube, etc) no matter where you are.": [
-        "无论身在何方，Netflix, Amazon Prime, BBC iPlayer, Wikipedia, Facebook, YouTube 等均触手可及。"
+        "无论身在何方，Netflix、Amazon Prime、BBC iPlayer、Wikipedia、Facebook、YouTube 均触手可及。"
       ],
       "Account is disconnected": [
         "账户已断开连接"
@@ -8463,18 +8463,18 @@
     },
     "Update font modal": {
       "Today is a good day to write an email": [
-        ""
+        "今天是写邮件的好日子"
       ],
       "Update default font and size": [
-        ""
+        "更改默认字体与字号"
       ],
       "Your default font will look like following:": [
-        ""
+        "您的默认字体将如下所示："
       ]
     },
     "Upgrade": {
       "Upgrade to ${ protonVpnName } ${ PLAN_NAMES[PLANS.VPNPLUS] } to connect up to ${ plusVpnConnections } device to the VPN at once": [
-        ""
+        "升级到 ${ protonVpnName } ${ PLAN_NAMES[PLANS.VPNPLUS] } 以同时将多达 ${ plusVpnConnections } 台设备连接到 VPN"
       ]
     },
     "Upgrade notice": {
@@ -8515,7 +8515,7 @@
         "广告拦截 (NetShield)"
       ],
       "Custom connection profiles": [
-        ""
+        "自定义连接配置"
       ],
       "DNS leak prevention": [
         "DNS 泄露防护"
@@ -8611,18 +8611,18 @@
     },
     "VPN Plan Feature": {
       "${ n } server": [
-        ""
+        "${ n } 台服务器"
       ],
       "${ n } VPN connection": [
-        ""
+        "${ n } 个VPN连接"
       ],
       "${ numberOfServers } in ${ numberOfCountries } country": [
-        ""
+        "${ numberOfCountries } 个国家的 ${ numberOfServers }"
       ]
     },
     "VPN upsell feature": {
       "Access geo-blocked content (Netflix, YouTube, etc.)": [
-        "访问地理受限内容 (Netflix, YouTube 等)"
+        "绕过网站的地区限制（Netflix、YouTube 等）"
       ],
       "Higher speed servers (up to 10Gbps)": [
         "高速服务器（速度可达 10Gbps）"
@@ -8704,7 +8704,7 @@
         "反馈内容不会经过端对端加密，请勿发送敏感信息。"
       ],
       "The date and time settings on your device are out of sync. ${ learnMore }": [
-        ""
+        "您设备上的日期和时间设置未同步。${ learnMore }"
       ],
       "This action will ${ boldWarning }. You will not be able to recover the messages on ${ domain }.": [
         "此操作将${ boldWarning }，您将无法恢复 ${ domain } 上的信息。"

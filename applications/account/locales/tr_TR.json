@@ -44,7 +44,7 @@
         "Kuruluş anahtarını etkinleştir"
       ],
       "Activate recovery": [
-        "Kurtarmayı etkinleştirin"
+        ""
       ],
       "Add": [
         "Ekle"
@@ -56,7 +56,7 @@
         "Adres ekle"
       ],
       "Add calendar": [
-        ""
+        "Takvim ekle"
       ],
       "Add condition": [
         "Koşul ekle"
@@ -503,7 +503,7 @@
         "Yeniden bağlan"
       ],
       "Recover data": [
-        ""
+        "Veri kurtar"
       ],
       "Refresh status": [
         "Durumu yenile"
@@ -626,7 +626,7 @@
         "Tümünü yakalamayı ayarla"
       ],
       "Set recovery phrase": [
-        "Kurtarma anahtar metni oluşturun"
+        ""
       ],
       "Share via link": [
         "Bağlantı yoluyla paylaş"
@@ -794,10 +794,10 @@
         "Faturayı görüntüle"
       ],
       "Void all recovery files": [
-        ""
+        "Tüm kurtarma dosyalarını geçersiz kıl"
       ],
       "Void all recovery files?": [
-        ""
+        "Tüm kurtarma dosyaları geçersiz kılınsın mı?"
       ],
       "Void anyway": [
         ""
@@ -1780,7 +1780,7 @@
     },
     "Error": {
       "${ Local } is your username. To create ${ Local }@${ Domain }, please go to Settings > Addresses > Short domain (pm.me)": [
-        "${ Local } kullanıcı adınızdır. ${ Local } @ $ { Domain } oluşturmak için lütfen Ayarlar > Adresler > Kısa etki alanı (pm.me)"
+        "${ Local } kullanıcı adınızdır. ${ Local } @ ${ Domain } oluşturmak için lütfen Ayarlar > Adresler > Kısa etki alanı (pm.me)"
       ],
       "A group with this name already exists": [
         "Bu ada sahip bir grup zaten var"
@@ -2111,7 +2111,7 @@
         "Bu alan gerekli"
       ],
       "This field requires a minimum of ${ minimumLength } characters.": [
-        "Bu alan en az $ { minimumLength } karakter gerektirir."
+        "Bu alan en az ${ minimumLength } karakter gerektirir."
       ],
       "This folder name is not available. Please choose a different name": [
         "Bu klasör adı kullanılamaz. Lütfen farklı bir isim seçin"
@@ -2802,7 +2802,7 @@
     },
     "Import contacts": {
       "An error occurred while encrypting and adding your contacts. ${ totalImported } out of ${ totalToImport } contacts successfully imported.": [
-        "Kişilerinizi şifrelerken ve eklerken bir hata oluştu. ${ totalImported } /${{ totalToImport } kişi başarıyla içe aktarıldı."
+        "Kişilerinizi şifrelerken ve eklerken bir hata oluştu. ${ totalImported } /${ totalToImport } kişi başarıyla içe aktarıldı."
       ],
       "Contact successfully imported. The imported contact will now appear in your contact list.": [
         "Kişi başarıyla içe aktarıldı. İçe aktarılan kişi artık kişi listenizde görünecektir.",
@@ -3122,8 +3122,8 @@
         "${ number } sunucu"
       ],
       "${ numberOfNonPrivateKeys } uploaded file is not a valid private key. Please verify and try again.": [
-        "",
-        ""
+        "${ numberOfNonPrivateKeys } yüklenen dosya geçerli bir gizli anahtar değil. Lütfen doğrulayın ve yeniden deneyin.",
+        "${ numberOfNonPrivateKeys } yüklenen dosyalar geçerli gizli anahtarlar değil. Lütfen doğrulayın ve yeniden deneyin."
       ],
       "${ numContactGroups } contact group": [
         "",
@@ -3424,7 +3424,7 @@
         "Yeni bir doğrulama kodunun ${ strong } numarasına gönderilmesi için \"Yeni kod iste\" seçeneğine tıklayın. Bu telefon numarası yanlışsa düzeltmek için \"Düzenle\" seçeneğine tıklayın."
       ],
       "Close this screen to exit.": [
-        ""
+        "Çıkmak için bu ekranı kapatın."
       ],
       "Connections": [
         "Bağlantı"
@@ -3727,7 +3727,7 @@
         ""
       ],
       "Import in progress": [
-        ""
+        "İçe aktarma devam ediyor"
       ],
       "Import mailbox": [
         "Posta kutusunu içe aktar"
@@ -3787,7 +3787,7 @@
         ""
       ],
       "Just confirm your selection and we'll do the rest.": [
-        ""
+        "Sadece seçiminizi onaylayın, gerisini biz halledeceğiz."
       ],
       "Justify": [
         "Yasla"
@@ -3859,7 +3859,7 @@
         "Hesabınızı kurmak için bu bilgileri iki faktörlü kimlik doğrulama cihazınıza el ile girin. ${ _switchButton }."
       ],
       "Merged": [
-        ""
+        "Birleştirildi"
       ],
       "Monthly ${ onDayString }": [
         "Aylık ${ onDayString }"
@@ -3898,7 +3898,7 @@
         "Kişinin şifreleme anahtarları yok"
       ],
       "No data recovery method set; you are at risk of losing access to your data": [
-        ""
+        "Veri kurtarma yöntemi ayarlanmadı; verilerinize erişiminizi kaybetme riskiyle karşı karşıyasınız"
       ],
       "No folder selected": [
         "Dosya seçilmedi"
@@ -3991,7 +3991,7 @@
         "Lütfen dışa aktarmadan önce özel anahtarınızı şifrelemek için bir parola girin."
       ],
       "Please enter the 12-word recovery phrase associated with your account.": [
-        ""
+        "Lütfen hesabınızla ilişkili 12 kelimelik kurtarma ifadesini girin."
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
         ""
@@ -4039,7 +4039,7 @@
         "Plus veya Vizyoner aboneliği gerekli"
       ],
       "Prevents content from the sender's server from loading without your permission.": [
-        ""
+        "Göndericinin sunucusundaki içeriğin izniniz olmaksızın yüklenmesini engeller."
       ],
       "Preview": [
         "Önizleme"
@@ -4097,10 +4097,10 @@
         "Kurtarma anahtar metni devre dışı bırakıldı"
       ],
       "Recovery phrase is not associated with any keys.": [
-        ""
+        "Kurtarma ifadesi herhangi bir anahtarla ilintili değildir."
       ],
       "Recovery phrase is not associated with any outdated keys.": [
-        ""
+        "Kurtarma ifadesi geçerliliğini doldurmuş herhangi bir anahtarla ilintili değildir."
       ],
       "Refreshing the page or ${ link } will automatically resolve most issues.": [
         "Sayfayı yenilemek ya da ${ link } çoğu sorunu kendiliğinden çözecektir."
@@ -4220,16 +4220,16 @@
         "Bu özellik sadece ileri düzey kullanıcılar içindir! Bu anahtarı sildikten sonra, bu anahtarla şifrelenmiş herhangi bir iletinin şifresini çözemezsiniz. Veri kaybına neden olabilir. Devam etmek istediğine emin misin."
       ],
       "This is a 12-word phrase that you were prompted to set.": [
-        ""
+        "Bu, ayarlamanız istenen 12 kelimelik bir ifadedir."
       ],
       "This is a recovery file or encryption key you may have previously saved.": [
-        ""
+        "Bu, daha önceden kaydettiğiniz bir kurtarma dosyası ya da şifreleme anahtarı olabilir."
       ],
       "This is an encryption key you may have previously saved.": [
-        ""
+        "Bu, daha önceden kaydettiğiniz bir şifreleme anahtarı olabilir."
       ],
       "This is the password you used before the password reset.": [
-        ""
+        "Bu parola sıfırlama öncesinde kullandığınız paroladır."
       ],
       "This link may be a homograph attack and cannot be opened by Internet Explorer and Edge browsers. If you are certain the link is legitimate, please use a different browser to open it.": [
         "Bu bağlantı bir eşyazım saldırısı olabilir ve Internet Explorer ve Edge tarayıcıları tarafından açılamaz. Bağlantının yasal olduğundan eminseniz, lütfen açmak için farklı bir tarayıcı kullanın."
@@ -4283,7 +4283,7 @@
         "${ toAppName } uygulamasına devam etmek için"
       ],
       "To decrypt and view your locked data after a password reset, select a recovery method.": [
-        ""
+        "Parola sıfırlama sonrası erişime engellenen verilerinizin şifresini çözmek ve bunları görüntülemek için bir kurtarma yöntemi belirleyin."
       ],
       "To fight spam and abuse, please verify you are human.": [
         "Spam ve kötüye kullanımla mücadele etmek için lütfen insan olduğunuzu doğrulayın."
@@ -4352,7 +4352,7 @@
         "Fotoğraf yükle"
       ],
       "Uploaded file is not a valid private key. Please verify and try again.": [
-        ""
+        "Yüklenen dosya geçerli bir gizli anahtar değil. Lütfen doğrulayın ve tekrar deneyin."
       ],
       "URL link": [
         "URL bağlantısı"
@@ -4385,7 +4385,7 @@
         "VPN + ${ mailAppName } aileler ve küçük işletmeler için paket."
       ],
       "Warning:": [
-        ""
+        "Uyarı:"
       ],
       "Warning: deletion is permanent. This also removes access to all connected services and deletes all of your contacts.": [
         "Uyarı: Silme işlemi kalıcıdır. Bu işlem ayrıca, tüm bağlı hizmetlere erişimi keser ve tüm kişilerinizi siler."
@@ -4424,13 +4424,13 @@
         "Hafta ve ay görünümleri yalnızca masaüstü için geçerlidir."
       ],
       "We’ll send a reset code to the email address you provided for account recovery.": [
-        ""
+        "Hesap kurtarma için verdiğiniz e-posta adresine bir sıfırlama kodu göndereceğiz."
       ],
       "We’ll send a reset code to the phone number you provided for account recovery.": [
         ""
       ],
       "What do you want to import from your Google account?": [
-        ""
+        "Google hesabınızdan ne aktarmak istiyorsunuz?"
       ],
       "When disabled, this prevents image files from loading on your device without your knowledge.": [
         "Devre dışı bırakıldığında, görüntü dosyalarının bilginiz olmadan cihazınıza yüklenmesini engeller."
@@ -4574,10 +4574,10 @@
         ""
       ],
       "Your data is ready to import from ${ importedEmailAddressStrong } to your Proton account.": [
-        ""
+        "Verileriniz ${ importedEmailAddressStrong } adresinden Proton hesabınıza aktarılmaya hazır."
       ],
       "Your data recovery method is set": [
-        ""
+        "Veri kurtarma yönteminiz ayarlandı"
       ],
       "Your email will only be used for this one-time verification.": [
         "E-postanız yalnızca bu tek seferlik doğrulama için kullanılacaktır."
@@ -5069,7 +5069,7 @@
         "TÜMÜ"
       ],
       "All-day event notifications": [
-        ""
+        "Tüm gün etkinlik bildirimleri"
       ],
       "Allow recovery by email": [
         "E-posta ile kurtarmaya izin ver"
@@ -5120,7 +5120,7 @@
         "Kişileri otomatik olarak kaydet"
       ],
       "Block email tracking": [
-        ""
+        "E-posta takibini engelle"
       ],
       "bonus storage": [
         "fazladan depolama"
@@ -5159,7 +5159,7 @@
         "Kod"
       ],
       "Color": [
-        ""
+        "Renk"
       ],
       "Composer": [
         "Oluşturucu"
@@ -5312,10 +5312,10 @@
         "Anahtar için parmak iziyle parolayı girin: ${ fingerprintCode }"
       ],
       "Event duration": [
-        ""
+        "Etkinlik süresi"
       ],
       "Event notifications": [
-        ""
+        "Etkinlik bildirimleri"
       ],
       "Expires": [
         "Bitiş tarihi"
@@ -5483,7 +5483,7 @@
         "İşletim sistemi sürümü"
       ],
       "Optional": [
-        ""
+        "İsteğe bağlı"
       ],
       "OR": [
         "VEYA"
@@ -5552,7 +5552,7 @@
         "Orantı"
       ],
       "Protection mode": [
-        ""
+        "Koruma modu"
       ],
       "Proton username": [
         "Proton kullanıcı adı"
@@ -5570,7 +5570,7 @@
         ""
       ],
       "Recovery file": [
-        ""
+        "Kurtarma dosyası"
       ],
       "Recovery phone number": [
         ""
@@ -5684,7 +5684,7 @@
         "Göndermeyi geri al"
       ],
       "Upload 1 or more encryption keys": [
-        ""
+        "1 veya daha fazla şifreleme anahtarı yükleyin"
       ],
       "Upload 1 or more recovery files or encryption keys": [
         ""
@@ -7528,7 +7528,7 @@
         "3. Yapılandırma dosyasını seçin ve indirin"
       ],
       "Account recovery": [
-        ""
+        "Hesap kurtarma"
       ],
       "Account suspended": [
         "Hesap askıya alındı"
@@ -7747,7 +7747,7 @@
         "Özel filtreler"
       ],
       "Customize and confirm": [
-        ""
+        "Özelleştir ve onayla"
       ],
       "Customize calendar import": [
         ""
@@ -7768,7 +7768,7 @@
         ""
       ],
       "Data recovery": [
-        ""
+        "Veri kurtarma"
       ],
       "Date": [
         "Tarih"
@@ -7828,7 +7828,7 @@
         "Engellenen listesini düzenle"
       ],
       "Edit calendar": [
-        ""
+        "Takvimi düzenle"
       ],
       "Edit credit/debit card": [
         "Kredi/banka kartını düzenleyin"
@@ -7852,7 +7852,7 @@
         "E-posta şifreleme anahtarları"
       ],
       "Email privacy": [
-        ""
+        "E-posta gizliliği"
       ],
       "Email subscriptions": [
         "Eposta abonelikleri"
@@ -8102,10 +8102,10 @@
         ""
       ],
       "Recovery": [
-        ""
+        "Kurtarma"
       ],
       "Recovery file": [
-        ""
+        "Kurtarma dosyası"
       ],
       "Remove calendar": [
         "Takvimi kaldır"
@@ -8201,7 +8201,7 @@
         "İstenmeyen filtreleri"
       ],
       "Spy Tracker Protection": [
-        ""
+        "Casus İzleyici Koruması"
       ],
       "Start a new import": [
         "Yeni bir içe aktarma başlatın"
@@ -8210,7 +8210,7 @@
         "İçe aktarma işlemini başlatın"
       ],
       "Start new import": [
-        ""
+        "Yeni içe aktarma başlat"
       ],
       "Status": [
         "Durum"
@@ -8846,7 +8846,7 @@
       ],
       "Every ${ interval } week on all days": [
         "Haftanın her ${ interval } günü",
-        "Her { interval } haftada her gün"
+        "Her ${ interval } haftada her gün"
       ],
       "Every ${ interval } week on all days, ${ timesString }": [
         "Her ${ interval } haftanın her günü, ${ timesString }",

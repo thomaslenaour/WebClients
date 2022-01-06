@@ -218,7 +218,7 @@
         "Buat kalender"
       ],
       "Create folder": [
-        "Buat Folder"
+        "Buat folder"
       ],
       "Create label": [
         "Buat label"
@@ -293,7 +293,7 @@
         "Unduh"
       ],
       "Download all configurations": [
-        "Unduh semua konfigurasi"
+        "Unduh seluruh konfigurasi"
       ],
       "Download recovery file": [
         "Unduh berkas pemulihan"
@@ -308,7 +308,7 @@
         "Edit alamat email"
       ],
       "Edit label": [
-        "Edit label"
+        "Sunting label"
       ],
       "Edit phone number": [
         "Edit nomor telepon"
@@ -380,7 +380,7 @@
         "Saya memiliki sebuah pertanyaan"
       ],
       "Import": [
-        "Import"
+        "Impor"
       ],
       "Import contacts": [
         "Impor kontak"
@@ -665,7 +665,7 @@
         "Keluar"
       ],
       "Sign out all accounts": [
-        "Keluar semua akun"
+        "Keluar dari seluruh akun"
       ],
       "Signing in": [
         "Masuk"
@@ -1524,7 +1524,7 @@
     },
     "Credits": {
       "Unused credits": [
-        "Kredit yang tidak digunakan"
+        "Saldo yang tidak digunakan"
       ]
     },
     "Daily recurring event, frequency": {
@@ -1623,7 +1623,7 @@
     },
     "Domain modal": {
       "'www' subdomains are typically not used for email. Are you sure you want to use this domain value?": [
-        "subdomain 'www' biasanya tidak digunakan untuk email. Yakin ingin menggunakan domain ini?"
+        "Subdomain 'www' pada umumnya tidak digunakan untuk email. Apakah Anda tetap ingin menggunakan domain ini?"
       ]
     },
     "Downgrade account reason": {
@@ -2173,7 +2173,7 @@
         "Ada kesalahan saat mengunggah berkas. Tidak ada berkas yang dipilih."
       ],
       "An unexpected error occurred. Import must be restarted.": [
-        "Ada kesalahan tidak terduga. Proses impor harus diulang."
+        "Terdapat kesalahan yang tidak terduga. Proses impor harus diulang."
       ],
       "Your file ${ formattedFilename } contains more than ${ MAX_IMPORT_EVENTS_STRING } events.": [
         "Berkas ${ formattedFilename } berisi lebih dari ${ MAX_IMPORT_EVENTS_STRING } acara."
@@ -3054,7 +3054,7 @@
         "${ boldWarning } Apabila Anda melanjutkan, Anda akan kehilangan akses menuju seluruh data yang terenkripsi pada akun Anda."
       ],
       "${ calendarName } will be set as default calendar.": [
-        "${ calendarName } akan diatur sebagai kalendar bawaan."
+        "${ calendarName } akan diatur sebagai kalendar default."
       ],
       "${ calendarsToBeCreatedCount } new calendar": [
         "${ calendarsToBeCreatedCount } kalender baru"
@@ -3165,7 +3165,7 @@
         "Konten yang diblokir aksesnya, seperti sosial media, berita, Wikipedia, YouTube, dan masih banyak lagi, di mana pun Anda berada."
       ],
       "Access your streaming services, like ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, no matter where you are.": [
-        "Akses layanan tontonan Anda, seperti ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, di mana pun Anda berada."
+        "Akses berbagai layanan streaming yang Anda kehendaki mulai dari ${ netflix }, ${ disney }, ${ primeVideo }, ${ many } di mana pun Anda berada."
       ],
       "Account access restricted due to unpaid invoices. Please contact your administrator.": [
         "Akses akun dibatasi karena tagihan tidak dibayar. Silakan hubungi administrator Anda."
@@ -3183,7 +3183,7 @@
         "Aktifkan frasa pemulihan Anda"
       ],
       "Add a @pm.me email address to your account. This simple, shorter domain stands for \"ProtonMail me\" or \"Private Message me.\"": [
-        "Buat alamat surel @pm.me untuk akun Anda. Ini sederhana, kependekan dari \"ProtonMail me\" atau \"Private Message me.\""
+        "Buat alamat email khusus dengan akhiran @pm.me untuk akun Anda. Alamat email yang simpel dan sederhana ini merupakan kependekan dari \"ProtonMail me\" atau \"Private Message me.\""
       ],
       "Add a recovery email address": [
         "Tambahkan alamat email pemulihan"
@@ -3231,7 +3231,7 @@
         "Semua kunci berhasil diaktifkan kembali"
       ],
       "All your changes will be lost.": [
-        "Perubahan akan hilang."
+        "Seluruh perubahan yang belum Anda simpan akan hilang."
       ],
       "Allows you to host emails for your own domain(s) at ${ mailAppName }, e.g. john.smith@example.com": [
         "Memungkinkan Anda menghosting email untuk domain Anda sendiri di ${ mailAppName }, misalnya john.smith@example.com"
@@ -3276,7 +3276,7 @@
         "Apakah Anda yakin ingin menghapus label ini?"
       ],
       "Are you sure you want to discard your changes?": [
-        "Yakin ingin membuang perubahan?"
+        "Apakah Anda yakin untuk membatalkan perubahan-perubahan Anda?"
       ],
       "Are you sure you want to permanently delete all your logs?": [
         "Apakah Anda yakin mau menghapus secara permanen seluruh log Anda?"
@@ -3300,7 +3300,7 @@
         "Pesan balasan otomatis akan selalu terkirim pada setiap hari-hari dan jam-jam yang ditentukan."
       ],
       "Available on macOS, Windows, and Linux.": [
-        "Tersedia di macOS, Windows, dan Linux."
+        "Tersedia untuk macOS, Windows, dan Linux."
       ],
       "Background color": [
         "Warna latar belakang"
@@ -3321,13 +3321,13 @@
         "Sebelum Anda dapat mulai mengirim dan menerima email dari alamat baru Anda, Anda perlu membuat kunci enkripsi untuk alamat tersebut."
       ],
       "Billed as ${ billedPrice } every 2 years": [
-        "Ditagih ${ billedPrice } setiap 2 tahun"
+        "Tertagih dengan harga ${ billedPrice } per 2 tahunnya"
       ],
       "Billed as ${ billedPrice } per year": [
-        "Ditagih ${ billedPrice } per tahun"
+        "Tertagih dengan harga ${ billedPrice } per tahunnya"
       ],
       "Billed at the end of your current billing cycle (renews on ${ renewalDate })": [
-        "Ditagih pada akhir siklus penagihan Anda saat ini (diperbarui pada ${ renewalDate })"
+        "Tertagih pada akhir siklus penagihan Anda saat ini (diperbarui pada ${ renewalDate })"
       ],
       "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits.": [
         "Transaksi Bitcoin membutuhkan waktu untuk dikonfirmasi (hingga 24 jam). Setelah dikonfirmasi, kami akan menambahkan kredit ke akun Anda. Setelah konfirmasi transaksi, Anda dapat membayar tagihan Anda dengan kredit."
@@ -3402,7 +3402,7 @@
         "Buat di"
       ],
       "Creating your Proton account": [
-        "Buat akun Proton Anda"
+        "Membuat akun Proton Anda"
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
         "Anda dapat mengimpor berkas-berkas CSV dari Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora, dan beberapa aplikasi lainnya serta berkas-berkas vCard versi 3.1 dan 4.0 (dengan encoding UTF-8)."
@@ -3486,7 +3486,7 @@
         "Setiap koneksi tambahan dapat diberikan kepada pengguna di organisasi Anda."
       ],
       "Edit label": [
-        "Edit label"
+        "Sunting label"
       ],
       "Effortlessly and securely move your emails from your current provider to Proton. If you use Google, we also support calendar and contacts imports.": [
         "Pindahkan email-email Anda dari layanan penyedia email yang Anda gunakan sebelumnya ke Proton secara mudah dan aman. Apabila Anda menggunakan Google, Anda juga dapat mengimpor kalender-kalender dan kontak-kontak yang Anda miliki."
@@ -3519,7 +3519,7 @@
         "Masukkan kode yang terkirim ke ${ email }. Apabila Anda tidak menemukannya di kotak masuk, cek folder spam Anda."
       ],
       "Enter the credentials of the email account you want to import from.": [
-        "Masukkan kredensial akun surel Anda yang ingin Anda impor."
+        "Masukkan kredensial akun email yang berkas-berkasnya ingin Anda impor."
       ],
       "Enter the Organization Password to restore administrator privileges. ${ learnMore }": [
         "Masukkan Kata sandi Organisasi untuk memulihkan hak administrator. ${ learnMore }"
@@ -3555,16 +3555,16 @@
         "Filter bekerja di semua surel, termasuk surel yang masuk dan terkirim. Setiap filter harus memuat minimal nama, kondisi dan tindakan."
       ],
       "For families and small teams; includes both Mail and VPN.": [
-        "Untuk keluarga dan tim kecil; termasuk Mail dan VPN."
+        "Untuk keluarga dan tim kecil; dengan Mail dan VPN yang terbundel di dalamnya."
       ],
       "For getting started with private and secure emailing.": [
         "Untuk memulai pengiriman surel dengan privat dan aman."
       ],
       "For individuals that need a fully-featured mailbox with advanced protection.": [
-        "Untuk individu yang membutuhkan sebuah kotak surat berfitur lengkap dengan perlindungan tingkat lanjut."
+        "Untuk para individu yang membutuhkan sebuah kotak surat berfitur lengkap dengan perlindungan keamanan mutakhir."
       ],
       "For professionals that need secure business communications.": [
-        "Untuk profesional yang membutuhkan komunikasi bisnis yang aman."
+        "Untuk para profesional yang membutuhkan komunikasi bisnis yang aman."
       ],
       "For security reasons, please verify that you are not a robot.": [
         "Demi alasan keamanan, harap verifikasi bahwa Anda bukan robot."
@@ -3579,10 +3579,10 @@
         "Kosongkan beberapa ruang atau hubungi administrator Anda."
       ],
       "free up space by deleting older messages or other data": [
-        "kosongkan ruang dengan menghapus pesan lama atau data lainnya"
+        "menghapus pesan-pesan lama atau data-data lainnya yang sudah tidak diperlukan"
       ],
       "Full-featured VPN with speed up to 10 Gbps.": [
-        "VPN berfitur penuh dengan kecepatan hingga 10 Gbps."
+        "VPN berfitur lengkap dengan kecepatan koneksi hingga 10 Gbps."
       ],
       "Generating a new recovery phrase will deactivate your old one.": [
         "Frasa pemulihan yang baru akan menggantikan frasa pemulihan yang terdahulu."
@@ -3687,7 +3687,7 @@
         "PENTING: Beberapa registrar tidak menerima nilai CNAME dengan titik di belakang (sementara yang lain menerima). Jika registrar Anda tidak menerima data CNAME Anda, mohon hapus titik di belakang pada setiap nilai CNAME dan coba lagi."
       ],
       "Importing your data from ${ importedEmailAddress } to ${ toEmail }.": [
-        "Mengimpor data Anda dari ${ importedEmailAddress } menuju ${ toEmail }."
+        "Mengimpor data-data Anda dari ${ importedEmailAddress } menuju ${ toEmail }."
       ],
       "In case you lose your login details, we’ll send you recovery instructions via email or SMS.": [
         "Apabila Anda kehilangan rincian login Anda, kami akan memberikan Anda arahan untuk memulihkan akses menuju akun Anda melalui email atau SMS."
@@ -3798,7 +3798,7 @@
         "Mail.ru membaca data pribadi Anda untuk memberikan akses bagi pengiklan, lembaga pemerintah Rusia, dan pihak ketiga lainnya. Untuk privasi yang lebih baik, buat alamat email yang aman."
       ],
       "Make sure you remember the password to log in and decrypt emails. ${ boldAlert }. We recommend adding a recovery email first.": [
-        "Pastikan Anda mengingat kata sandi untuk masuk dan mendekripsi email. { boldAlert }. Sebaiknya tambahkan email pemulihan terlebih dahulu."
+        "Pastikan Anda mengingat kata sandi untuk masuk dan mendekripsi email. ${ boldAlert }. Sebaiknya tambahkan email pemulihan terlebih dahulu."
       ],
       "Manually enter this information into your two-factor authentication device to set up your account. ${ _switchButton }.": [
         "Masukkan informasi ini secara manual ke perangkat autentikasi dua faktor Anda untuk menyiapkan akun Anda. ${ _switchButton }."
@@ -3909,7 +3909,7 @@
         "Kunci organisasi dipulihkan"
       ],
       "Other administrators exist in your organization, you are responsible for communicating the new password to them.": [
-        "Administrator lain ada di organisasi Anda, Anda bertanggung jawab untuk memberitahu kata sandi baru kepada mereka."
+        "Berhubung terdapat admin-admin lain pada organisasi Anda, Anda bertanggung jawab untuk memberitahu kata sandi baru ini kepada mereka."
       ],
       "P2P": [
         "P2P"
@@ -3993,10 +3993,10 @@
         "Proton tidak dapat membantu Anda memulihkan kata sandi yang hilang"
       ],
       "Proton paused an import because it lost the connection with your other email provider. Please reconnect.": [
-        "Proton menjeda impor karena terputus sambungan dengan penyedia surel Anda. Mohon sambung ulang."
+        "Proton menjeda proses impor karena sambungan dengan layanan email Anda terputus. Mohon sambungkan ulang."
       ],
       "Proton paused an import because your account is running low on space. You can:": [
-        "Proton menjeda impor karena akun Anda kekurangan ruang peyimpanan. Anda dapat:"
+        "Proton menjeda proses impor karena kuota penyimpanan Anda tidak mencukupi. Anda dapat:"
       ],
       "Proton will try to resume the import as soon as your email provider resets your account’s ${ bandwithLimitLink }. You don’t need to do anything. If you cancel your import, you won't be able to resume it and you will need to start over.": [
         "Proton akan mencoba melanjutkan impor sesegera mungkin saat layanan surel Anda mengatur ulang ${ bandwithLimitLink } akun. Anda tidak perlu melakukan apapun. Jika Anda membatalkan impor, Anda tidak akan dapat melanjutkannya dan Anda harus mengulanginya dari awal."
@@ -4023,7 +4023,7 @@
         "Diperlukan paket ProtonVPN Plus atau Visionary untuk fitur Secure Core."
       ],
       "purchase additional storage": [
-        "beli penyimpanan tambahan"
+        "membeli kuota penyimpanan tambahan"
       ],
       "Queued": [
         "Diantrikan"
@@ -4131,7 +4131,7 @@
         "Aplikasi perlu mendekripsi kontak Anda secara lokal sebelum dapat diekspor. Di akhir proses, berkas VCF akan dibuat dan Anda dapat mengunduhnya."
       ],
       "The calendar will be removed from your account.": [
-        "Kalender akan dihapus dari akun Anda."
+        "Kalender ini akan dihapus dari akun Anda."
       ],
       "The email address you place at the top of the list is your default email address. Drag and drop to reorder your addresses.": [
         "Alamat email yang Anda tempatkan di bagian atas daftar adalah alamat email default Anda. Tarik dan lepas untuk menyusun ulang alamat Anda."
@@ -4182,7 +4182,7 @@
         "Tautan ini mungkin adalah sebuah serangan homograf. Mohon verifikasi tautan yang ingin Anda kunjungi, atau jangan membukanya."
       ],
       "This phone number will only be used for recovery purposes.": [
-        "Nomor telepon ini akan difungsikan sebagai langkah pemulihan."
+        "Nomor telepon ini hanya akan dipergunakan untuk keperluan pemulihan akun."
       ],
       "This user is currently responsible for payments for your organization. By demoting this member, you will become responsible for payments for your organization.": [
         "Pengguna ini saat ini bertanggung jawab atas pembayaran untuk organisasi Anda. Dengan menurunkan anggota ini, Anda akan bertanggung jawab atas pembayaran untuk organisasi Anda."
@@ -4320,7 +4320,7 @@
         "Verifikasi akan berjalan di tab baru. Mohon nonaktifkan pemblokir popup."
       ],
       "Verification will open a new tab, please disable any popup blockers. You will not be charged. Any amount used to verify the card will be refunded immediately.": [
-        "Verifikasi akan berjalan di tab baru. Mohon nonaktifkan pemblokir popup. Anda tidak akan ditagih. Jumlah yang ditarik untuk verifikasi kartu langsung dikembalikan."
+        "Proses verifikasi akan berlangsung pada tab baru. Mohon nonaktifkan pemblokir popup Anda. Proses ini tidak dipungut biaya. Apabila Anda diminta untuk mengeluarkan sejumlah uang, jumlah tersebut akan langsung dikembalikan."
       ],
       "Version ${ appVersion }": [
         "Versi ${ appVersion }"
@@ -4377,13 +4377,13 @@
         "Apa yang hendak Anda impor dari akun Google Anda?"
       ],
       "When disabled, this prevents image files from loading on your device without your knowledge.": [
-        "Saat nonaktif, ini mencegah semua gambar dimuat di perangkat Anda tanpa Anda ketahui."
+        "Ketika dinonaktifkan, opsi ini akan mencegah gambar-gambar yang ada untuk dapat dimuat pada perangkat Anda tanpa Anda ketahui."
       ],
       "When notifications are enabled, we'll send an alert to your recovery/notification address if you have new messages in your ProtonMail account.": [
         "Saat pemberitahuan diaktifkan, kami akan mengirimkan peringatan ke alamat pemulihan/pemberitahuan Anda jika Anda memiliki pesan baru di akun ProtonMail Anda."
       ],
       "When your subscription renews, we will apply any available credits before we charge the payment method above.": [
-        "Saat langganan Anda diperbarui, kami akan menerapkan kredit apaun yang tersedia sebelum kami menagih metode pembayaran di atas."
+        "Pada saat masa langganan Anda telah jatuh tempo, kami akan terlebih dahulu memperbaharui langganan Anda dengan saldo yang tersedia sebelum kami menagih Anda melalui metode-metode pembayaran di atas."
       ],
       "Without activation you will not be able to create new users, add addresses to existing users, or access non-private user accounts.": [
         "Tanpa aktivasi, Anda tidak dapat membuat pengguna baru, menambahkan alamat ke pengguna yang ada, atau mengakses akun pengguna non-pribadi."
@@ -4503,7 +4503,7 @@
         "Metode pemulihan akun Anda telah ditentukan"
       ],
       "Your account will be updated once the payment is cleared.": [
-        "Akun anda akan diperbarui setelah pembayaran sah."
+        "Akun anda akan diperbarui setelah pembayaran Anda diterima."
       ],
       "Your Allow List is empty.": [
         "Daftar Izin Anda kosong."
@@ -4539,7 +4539,7 @@
         "Impor Anda tidak akan diproses."
       ],
       "Your login information will not be saved after the import is completed.": [
-        "Informasi masuk Anda tidak akan disimpan setelah impor selesai."
+        "Informasi seputar akun Anda tidak akan disimpan setelah impor selesai."
       ],
       "Your messages are being imported from": [
         "Pesan-pesan Anda sedang diimpor dari"
@@ -4890,10 +4890,10 @@
         "Pilih / batal pilih semua"
       ],
       "Send email": [
-        "Kirim surel"
+        "Kirim email"
       ],
       "Show all emails": [
-        "Tampilkan semua surel"
+        "Tampilkan semua email"
       ],
       "Show original message": [
         "Tampilkan pesan orisinal"
@@ -5312,7 +5312,7 @@
         "Interval impor"
       ],
       "Import to email address": [
-        "Impor ke alamat surel"
+        "Impor ke alamat email"
       ],
       "Import to:": [
         "Impor ke:"
@@ -5940,7 +5940,7 @@
     },
     "Mail feature": {
       "0.5 GB": [
-        "0,5 GB"
+        "0.5 GB"
       ],
       "20 GB": [
         "20 GB"
@@ -6288,7 +6288,7 @@
     },
     "Notification type": {
       "email": [
-        "surel"
+        "email"
       ],
       "notification": [
         "pemberitahuan"
@@ -6319,7 +6319,7 @@
         "Pilih nama tampilan"
       ],
       "Configure your organization, link your domain name, and create accounts to ensure all members of your organization are protected.": [
-        "Konfigurasi organisasi Anda, tautkan nama domain, dan membuat akun untuk memastikan seluruh anggota organisasi Anda terlindungi."
+        "Kelola organisasi Anda, tautkan nama domain Anda, dan buat akun-akun bagi para karyawan Anda agar seluruh anggota organisasi Anda terlindungi."
       ],
       "Discover all Proton services": [
         "Temukan semua layanan Proton"
@@ -6666,7 +6666,7 @@
         "Alamat email"
       ],
       "Feedback": [
-        "Umpan balik"
+        "Kritik dan Saran"
       ],
       "Fill in the email address and text to test your link": [
         "Isi alamat email dan teks untuk menguji tautan Anda"
@@ -6750,7 +6750,7 @@
     },
     "Plan feature": {
       "0.5 GB storage": [
-        "Penyimpanan 0.5 GB"
+        "Kuota penyimpanan 0.5 GB"
       ],
       "1 - 5000 users *": [
         "1 - 5000 pengguna *"
@@ -6777,10 +6777,10 @@
         "5 alamat / pengguna"
       ],
       "5 GB storage *": [
-        "Penyimpanan 5 GB *"
+        "Kuota penyimpanan 5 GB *"
       ],
       "5 GB storage / user": [
-        "Penyimpanan 5 GB / pengguna"
+        "Kuota penyimpanan 5 GB / pengguna"
       ],
       "50 addresses": [
         "50 alamat"
@@ -6810,7 +6810,7 @@
         "Kecepatan tinggi"
       ],
       "Highest speed (up to 10 Gbps)": [
-        "Kecepatan tertinggi (sampai 10 Gbps)"
+        "Kecepatan tertinggi (hingga 10 Gbps)"
       ],
       "Includes 6 user accounts": [
         "Termasuk 6 akun pengguna"
@@ -6914,7 +6914,7 @@
     },
     "Recovery method": {
       "Email": [
-        "Surel"
+        "Email"
       ],
       "Phone number": [
         "Nomor telepon"
@@ -7070,7 +7070,7 @@
     },
     "Signup label": {
       "Email": [
-        "Surel"
+        "Email"
       ],
       "Username": [
         "Nama pengguna"
@@ -7209,7 +7209,7 @@
         "Kode dikirim ke ${ methodTo }"
       ],
       "Credits added": [
-        "Kredit ditambahkan"
+        "Saldo ditambahkan"
       ],
       "Default calendar updated": [
         "Kalendar bawaan diperbarui"
@@ -8126,7 +8126,7 @@
         "Filter spam"
       ],
       "Spy Tracker Protection": [
-        "Pelindungan Dari Pelacak"
+        "Perlindungan Pelacak"
       ],
       "Start a new import": [
         "Mulai impor baru"
@@ -8156,7 +8156,7 @@
         "Beralih ke mode dua kata sandi"
       ],
       "Take precautions to avoid data loss!": [
-        "Ambil tindakan preventif agar data-data yang ada tidak hilang!"
+        "Bersiagalah agar data-data Anda tidak hilang!"
       ],
       "Theme": [
         "Tema"
@@ -8384,7 +8384,7 @@
         "Mendukung protokol berbagi berkas seperti BitTorrent."
       ],
       "System subfolders will show up as separate folders in ProtonMail": [
-        "Subfolder sistem akan muncul di folder terpisah di ProtonMail"
+        "Sub-folder milik sistem akan muncul sebagai folder terpisah di ProtonMail"
       ],
       "The import will start with the most recent messages.": [
         "Import akan dimulai dengan pesan terbaru."
@@ -8625,7 +8625,7 @@
         "Akses konten yang diblokir secara geografis (Netflix, Youtube, dll.)"
       ],
       "Higher speed servers (up to 10Gbps)": [
-        "Kecepatan server lebih tinggi (hingga 10Gbps)"
+        "Server-server berkecepatan lebih tinggi (hingga 10Gbps)"
       ],
       "Unlock advanced VPN features": [
         "Buka kunci fitur VPN lanjutan"

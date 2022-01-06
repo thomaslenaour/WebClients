@@ -62,10 +62,10 @@
         "新增條件"
       ],
       "Add credit / debit card": [
-        "新增信用卡 / 扣帳卡"
+        "新增信用卡 / 簽帳金融卡"
       ],
       "Add credits": [
-        "增值"
+        "儲值"
       ],
       "Add domain": [
         "新增網域"
@@ -2066,7 +2066,7 @@
         "標籤名稱太長。請換另一個名稱。"
       ],
       "The minimum amount of credit that can be added is ${ _price }": [
-        "增值的最低金額為 ${ _price }"
+        "每次儲值的最低金額為 ${ _price }"
       ],
       "The minimum amount that can be donated is ${ price }": [
         "捐款的最低金額為 ${ price }"
@@ -2296,7 +2296,7 @@
         "找不到原始的週期性事件"
       ],
       "Recurring event has no occurrences": [
-        ""
+        "重複事件並未發生"
       ],
       "Recurring rule not supported": [
         "週期性規則不受支援"
@@ -3633,7 +3633,7 @@
         "如果您已同時設定 SPF 和 DKIM，DMARC 允許您指定一旦 SPF 和 DKIM 檢查皆失敗時，其他電子郵件服務該如何遞送屬於您的網域的電子郵件。這可以增加別人假扮您寄送垃圾郵件的難度，但若設定不當亦可能導致遞送問題。"
       ],
       "If you lose your login details and need to reset your account, ${ boldImperative } that you have an ${ boldAccountRecovery } in place.": [
-        "若你遺失您的登入資訊且需要重設您的帳戶， ${ boldImperative } 後你將會有 ${ boldAccountRecovery } 可用。"
+        "若你遺失您的登入資訊且需要重設您的帳戶， ${ boldImperative } 擁有一個 ${ boldAccountRecovery } 可供使用。"
       ],
       "If you lose your login details and need to reset your account, ${ boldImperative } that you have both an ${ boldAccountAndRecovery } in place, otherwise you might not be able to access any of your emails, contacts, or files.": [
         "若你遺失登入帳戶所需的資訊且需要重設你的帳戶， ${ boldImperative } 後你將會有 ${ boldAccountAndRecovery } 可用，不然你將可能會無法存取你的任何郵件、聯絡人或檔案。"
@@ -3690,7 +3690,7 @@
         "匯入您的資料自 ${ importedEmailAddress } 至 ${ toEmail }。"
       ],
       "In case you lose your login details, we’ll send you recovery instructions via email or SMS.": [
-        "如果您遺失了您的登入資訊，我們將會透過電子郵件或簡訊傳送還原簡介給您。"
+        "如果您遺失了您的登入資訊，我們將會透過電子郵件或簡訊傳送救援資訊給您。"
       ],
       "In case you lose your login details, we’ll send you recovery instructions via email.": [
         "如果您遺失了您的登入資訊，我們將會透過電子郵件傳送還原簡介給您。"
@@ -3729,7 +3729,7 @@
         "網際網路連線已恢復。"
       ],
       "it’s imperative": [
-        "此為至關重要的"
+        "您需要有"
       ],
       "Just confirm your selection and we'll do the rest.": [
         "現在只需確認您的選取，我們就會處理餘下一切。"
@@ -4044,7 +4044,7 @@
         "復原短語並未關連到任何金鑰。"
       ],
       "Recovery phrase is not associated with any outdated keys.": [
-        ""
+        "復原短語並未關聯到任何過期的金鑰。"
       ],
       "Refreshing the page or ${ link } will automatically resolve most issues.": [
         "重新整理此頁面或${ link }將自動解決大部分問題。"
@@ -4167,10 +4167,10 @@
         "此一 12字短語是你過去被要求設定的。"
       ],
       "This is a recovery file or encryption key you may have previously saved.": [
-        ""
+        "這是您先前可能儲存的還原檔案或加密金鑰。"
       ],
       "This is an encryption key you may have previously saved.": [
-        ""
+        "這是您先前可能儲存的加密金鑰。"
       ],
       "This is the password you used before the password reset.": [
         "此密碼是你重設前的舊密碼。"
@@ -4245,7 +4245,7 @@
         "若要保護您的網際網路連線安全，請為您的裝置下載並安裝 ProtonVPN 應用程式並連接到 ProtonVPN 伺服器。"
       ],
       "Top up your account with credits that you can use to subscribe to a new plan or renew your current plan. You get one credit for every ${ i18nCurrency } spent.": [
-        "為您的帳號充值，以便訂閱新方案或為您目前的方案續期。每增值一${ i18nCurrency }，儲值餘額同等充值一元。"
+        "為您的帳號儲值，以便訂閱新方案或為您目前的方案續期。每儲值一${ i18nCurrency }，帳戶餘額將會增加一單位（這些貨幣對餘額來說是一樣的）。"
       ],
       "Tor": [
         "Tor"
@@ -4601,7 +4601,7 @@
     },
     "Info for cash payment method": {
       "Please contact us at ${ email } for instructions on how to pay us with cash.": [
-        "請寄送電子郵件到 ${ email } 聯絡我們，以索取以現金支付給我們的相關指示。"
+        "請寄送電子郵件到 ${ email } 聯絡我們，以獲得如何將現金支付給我們的相關指引。"
       ]
     },
     "Info for domain modal": {
@@ -6021,15 +6021,15 @@
     },
     "Mail import summary": {
       "Import all messages from ${ selectedLabelsCount } out of ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        ""
+        "匯入全部 ${ totalLabelsCount } 個標籤中的 ${ selectedLabelsCount } 個最近 ${ periodFragment } 的訊息並將其貼上標籤： ${ LABEL_MARKUP_PLACEHOLDER }"
       ],
       "Import all messages from ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        ""
+        "從 ${ totalLabelsCount } 個標籤匯入最近 ${ periodFragment } 的訊息並將其貼上標籤： ${ LABEL_MARKUP_PLACEHOLDER }"
       ]
     },
     "Mail upsell feature": {
       "Create separate logins for each user": [
-        "為每個使用者建立獨立登入"
+        "每位使用者都能獨立登入"
       ],
       "Get Multi-user support": [
         "取得多使用者支援"
@@ -7209,7 +7209,7 @@
         "代碼已發送到 ${ methodTo }"
       ],
       "Credits added": [
-        "已增值"
+        "餘額已增加"
       ],
       "Default calendar updated": [
         "預設行事曆已更新"
@@ -7484,7 +7484,7 @@
         "新增信用卡/扣帳卡"
       ],
       "Add credits": [
-        "增值"
+        "儲值"
       ],
       "Add domain": [
         "新增網域"
