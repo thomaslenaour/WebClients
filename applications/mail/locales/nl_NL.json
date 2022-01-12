@@ -4862,7 +4862,7 @@
         "Van:"
       ],
       "From: ${ importedEmail }": [
-        "Van: { importedEmail }"
+        "Van: ${ importedEmail }"
       ],
       "Group": [
         "Groep"

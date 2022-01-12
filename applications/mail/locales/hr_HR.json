@@ -3597,9 +3597,9 @@
         "Unesite potvrdni kôd koji je poslan na ${ destinationText }."
       ],
       "Estimated time remaining: ${ estimatedMinutes } minute": [
-        "Procijenjeno preostalo vrijeme: { estimatedMinutes } minuta",
-        "Procijenjeno preostalo vrijeme: { estimatedMinutes } minute",
-        "Procijenjeno preostalo vrijeme: { estimatedMinutes } minuta"
+        "Procijenjeno preostalo vrijeme: ${ estimatedMinutes } minuta",
+        "Procijenjeno preostalo vrijeme: ${ estimatedMinutes } minute",
+        "Procijenjeno preostalo vrijeme: ${ estimatedMinutes } minuta"
       ],
       "Estimated time remaining: Less than a minute": [
         "Procijenjeno preostalo vrijeme: manje od minute"

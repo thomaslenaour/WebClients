@@ -9,7 +9,7 @@
         "${ boldSave } al cambiar a facturación anual"
       ],
       "${ BRAND_NAME } introduction": [
-        "${ BRAND_NAME } introducción"
+        "Introducción a ${ BRAND_NAME }"
       ],
       "${ BRAND_NAME } shop": [
         "Tienda ${ BRAND_NAME }"
@@ -183,7 +183,7 @@
         "Confirmar"
       ],
       "Confirm opening of link ${ linkToShow }": [
-        ""
+        "Confirmar la apertura del enlace ${ linkToShow }"
       ],
       "Contact group": [
         "Grupo de contactos"
@@ -275,7 +275,7 @@
         "Descartar"
       ],
       "Dismiss get started checklist": [
-        ""
+        "Descartar lista de primeros pasos"
       ],
       "Done": [
         "Hecho"
@@ -320,7 +320,7 @@
         "Expandir el editor"
       ],
       "Expand URL": [
-        ""
+        "Expandir el URL"
       ],
       "Export": [
         "Exportar"
@@ -329,7 +329,7 @@
         "Exportar contactos"
       ],
       "Fewer search options": [
-        ""
+        "Menos opciones de búsqueda"
       ],
       "Filter on...": [
         "Filtrar por..."
@@ -468,7 +468,7 @@
         "Cargar más"
       ],
       "Load unprotected": [
-        ""
+        "Cargar sin protección"
       ],
       "Loading verification": [
         "Cargando verificación"
@@ -480,7 +480,7 @@
         "Iniciar sesión"
       ],
       "Mailbox density": [
-        "Densidad de la bandeja de entrada"
+        "Densidad del buzón"
       ],
       "Mailbox layout": [
         "Diseño del buzón"
@@ -702,7 +702,7 @@
         "Reintentar"
       ],
       "Revert to original display": [
-        ""
+        "Revertir al fondo original"
       ],
       "Save": [
         "Guardar"
@@ -750,13 +750,13 @@
         "Establecer"
       ],
       "Set as default": [
-        ""
+        "Establecer como predeterminado"
       ],
       "Set expiration time": [
-        ""
+        "Establecer fecha de expiración"
       ],
       "Set recovery phrase": [
-        ""
+        "Establezca una frase de recuperación"
       ],
       "Share via link": [
         "Compartir con un enlace"
@@ -777,7 +777,7 @@
         "Mostrar detalles"
       ],
       "Show fewer search options": [
-        ""
+        "Mostrar menos opciones de búsqueda"
       ],
       "Show folders": [
         "Mostrar carpetas"
@@ -810,7 +810,7 @@
         "Omitir"
       ],
       "Some images could not be loaded with tracking protection": [
-        ""
+        "Algunas de las imágenes no han podido ser cargadas con la protección de rastreo"
       ],
       "Start import": [
         "Iniciar importación"
@@ -840,7 +840,7 @@
         "Este mensaje contiene imágenes incrustadas."
       ],
       "This message contains remote content.": [
-        ""
+        "Este mensaje contiene contenido remoto."
       ],
       "Trust": [
         "Confiar"
@@ -859,7 +859,7 @@
         "Prueba con otro método"
       ],
       "Turn on tracker protection": [
-        ""
+        "Activar la protección contra rastreadores"
       ],
       "Underline": [
         "Subrayado"
@@ -1087,7 +1087,7 @@
         "Método no válido"
       ],
       "Unsupported calendar component": [
-        ""
+        "Componente de calendario no compatible"
       ],
       "Unsupported event": [
         "Evento no soportado"
@@ -1125,13 +1125,13 @@
         "Anual"
       ],
       "Annually SAVE 20%": [
-        "AHORRA un 20% anual"
+        "Anual (ahorra un 20%)"
       ],
       "Monthly": [
         "Mensual"
       ],
       "Two years SAVE 33%": [
-        "AHORRA un 33% para 2 años"
+        "Bienal (ahorra un 33%)"
       ],
       "Two-year": [
         "Bienal"
@@ -1402,7 +1402,7 @@
         ""
       ],
       "${ participantName } had accepted an invitation and proposed a new time for this event. Answer and proposal are out of date.": [
-        ""
+        "${ participantName } ha aceptado tu invitación y ha propuesto una nueva hora para este evento. La respuesta y propuesta están desactualizadas."
       ],
       "${ participantName } had accepted an invitation to one occurrence of the event.": [
         ""
@@ -1417,7 +1417,7 @@
         "${ participantName } ya ha aceptado tu invitación y ha propuesto una hora nueva para este evento. La respuesta y la propuesta están desactualizadas."
       ],
       "${ participantName } had declined an invitation and proposed a new time for one occurrence of this event. Answer and proposal are out of date.": [
-        ""
+        "${ participantName } ha rechazado tu invitación y ha propuesto una nueva hora para la repetición de este evento. La respuesta y propuesta están desactulizadas."
       ],
       "${ participantName } had declined an invitation and proposed a new time for this event. Answer and proposal are out of date.": [
         ""
@@ -1531,7 +1531,7 @@
         "Se ha añadido una ocurrencia al evento ${ veventIcsTitle }"
       ],
       "Event refreshing is not supported for the moment": [
-        ""
+        "Por el momento, la actualización de eventos no está soportada"
       ],
       "Event rescheduling is not supported for the moment": [
         ""
@@ -1573,7 +1573,7 @@
         "Has aceptado provisionalmente la invitación."
       ],
       "Your email address is not in the participants list": [
-        ""
+        "Tu dirección de correo electrónico no está en la lista de participantes"
       ]
     },
     "Calendar status": {
@@ -1586,7 +1586,7 @@
     },
     "Calendar subscription not synced error": {
       "Calendar could not be decrypted": [
-        ""
+        "El calendario no se ha podido descifrar"
       ],
       "Calendar is syncing": [
         "El calendario se está sincronizando"
@@ -1601,13 +1601,13 @@
         "El enlace del calendario no está accesible temporalmente"
       ],
       "Failed to sync calendar": [
-        ""
+        "Fallo al sincronizar el calendario"
       ],
       "More than 12 hours passed since last update": [
         "Han pasado más de 12 horas desde la última actualización"
       ],
       "Unsupported calendar format": [
-        ""
+        "Formato de calendario no compatible"
       ]
     },
     "Calendar widget banner": {
@@ -1700,7 +1700,7 @@
         ""
       ],
       "Quit import customization?": [
-        ""
+        "¿Quiere salir de la importación personalizada?"
       ]
     },
     "Contact field label": {
@@ -1831,7 +1831,7 @@
       ],
       "Every ${ interval } day": [
         "Cada ${ interval } día",
-        "Cada { interval } días"
+        "Cada ${ interval } días"
       ],
       "Every ${ interval } day, ${ timesString }": [
         "Cada ${ interval } día, ${ timesString }",
@@ -2125,7 +2125,7 @@
         "Contacta con el administrador de tu organización para resolver esto"
       ],
       "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
-        ""
+        "La búsqueda de contenido no puede ser habilitada en este navegador. Por favor, salga del modo de navegación privada o utilice otro navegador."
       ],
       "Could not find address ${ email }.": [
         "No se ha podido encontrar la dirección ${ email }."
@@ -2166,7 +2166,7 @@
         "Error en una de las condiciones"
       ],
       "Error while saving draft. Please try again.": [
-        ""
+        "Error al guardar el borrador. Por favor, intente de nuevo."
       ],
       "Error while sending the message. Message is not sent.": [
         "Se ha producido un error al enviar el mensaje. El mensaje no se ha enviado."
@@ -2305,7 +2305,7 @@
         "Por favor, actualiza la página."
       ],
       "Please repeat the password": [
-        ""
+        "Por favor, repita la contraseña"
       ],
       "Please set a password": [
         "Por favor, establezca una contraseña"
@@ -2430,7 +2430,7 @@
         "Este mensaje ya ha sido enviado"
       ],
       "This message has already been sent. A new draft has been saved.": [
-        ""
+        "Este mensaje ya se ha enviado. Se ha guardado como un nuevo borrador."
       ],
       "This message may contain some link's URL that cannot be properly opened by your current browser": [
         "Este mensaje puede contener enlaces que no puedan abrirse correctamente en tu navegador actual"
@@ -2467,10 +2467,10 @@
         "Debes establecer un nombre"
       ],
       "Your emails cannot be decrypted due to a recent password reset. If you remember your previous password, you can ${ reActivateKeyLink } in order to access your messages. ${ learnMoreLink }": [
-        ""
+        "Sus emails no pudieron ser desencriptados debido al reciente cambio de contraseña. Si recuerda su anterior contraseña, puede ${ reActivateKeyLink } en orden para acceder a sus mensajes. ${ learnMoreLink }"
       ],
       "Your emails cannot be decrypted. This may be due to a password reset. ${ learnMoreLink }": [
-        ""
+        "Sus emails no pudieron ser desencriptados. Esto puede deberse al reciente cambio de contraseña ${ learnMoreLink }"
       ],
       "Your import will not be processed.": [
         "Tu importación no será procesada."
@@ -2481,7 +2481,7 @@
     },
     "Error adding participants to a calendar event": {
       "At most 100 participants are allowed per invitation": [
-        ""
+        "Solo se permiten hasta 100 participantes por invitación"
       ]
     },
     "Error display when performing invalid move on message": {
@@ -2587,7 +2587,7 @@
         "Hora inicial faltante"
       ],
       "No UID, title or start time": [
-        ""
+        "No hay UID, título, ni hora de inicio"
       ],
       "Non-Gregorian": [
         "No gregoriano"
@@ -2663,10 +2663,10 @@
     },
     "Event invitation error": {
       "Attached ICS file could not be decrypted": [
-        ""
+        "El archivo ICS adjunto no ha podido ser descifrado"
       ],
       "Attached ICS file could not be read": [
-        ""
+        "El archivo ICS adjunto no se ha podido leer"
       ],
       "Invalid invitation": [
         "Invitación no válida"
@@ -2822,7 +2822,7 @@
     },
     "Get started checklist completion": {
       "We've increased the total storage of your account to ${ totalGBStorageAfterCompletion } GB. Get additional storage and unlock premium features today.": [
-        ""
+        "Hemos incrementado la capacidad de almacenamiento total de tu cuenta a ${ totalGBStorageAfterCompletion } GB. Consigue aún más espacio y desbloquea ya las características prémium."
       ],
       "You're all set!": [
         "¡Ya está todo listo!"
@@ -2830,54 +2830,54 @@
     },
     "Get started checklist incentive": {
       "Complete all steps and get a total of ${ totalGBStorageAfterCompletion } GB on your account": [
-        ""
+        "Completa todos los pasos y consigue un total de ${ totalGBStorageAfterCompletion } GB en tu cuenta."
       ],
       "Expires soon": [
-        ""
+        "Expira pronto"
       ],
       "Expires today": [
-        ""
+        "Expira hoy"
       ],
       "Only ${ days } day left": [
-        "",
-        ""
+        "Solo queda ${ days } día",
+        "Solo quedan ${ days } días"
       ]
     },
     "Get started checklist instructions": {
       "Available on iOS and Android.": [
-        ""
+        "Disponible en iOS y Android."
       ],
       "Get the ${ protonMailAppName } mobile app": [
-        ""
+        "Descarga la aplicación móvil de ${ protonMailAppName }"
       ],
       "Import contacts or emails": [
-        ""
+        "Importar contactos o correos electrónicos"
       ],
       "Import your contacts or messages": [
-        ""
+        "Importar tus contactos o mensajes"
       ],
       "Quickly transfer your contacts or emails from any provider using our Easy Switch import assistant.": [
-        ""
+        "Transfiere rápidamente tus contactos o correos electrónicos de cualquier proveedor usando el asistente de importación Easy Switch."
       ],
       "Sign into the mobile app to complete the action": [
-        ""
+        "Inicia sesión en la aplicación móvil para completar la acción"
       ],
       "Using your mobile device, scan this QR code or visit": [
-        ""
+        "Con tu dispositivo móvil, escanea este código QR o visita"
       ]
     },
     "Get started checklist item": {
       "Get mobile app": [
-        ""
+        "Descargar la aplicación móvil"
       ],
       "Import contacts or emails": [
-        ""
+        "Importar contactos o correos electrónicos"
       ],
       "Send a message": [
         "Enviar un mensaje"
       ],
       "Set up a recovery method": [
-        ""
+        "Establecer un método de recuperación"
       ]
     },
     "Get started checklist spotlight": {
@@ -2887,7 +2887,7 @@
     },
     "Get started checklist title": {
       "Get started": [
-        ""
+        "Comenzar"
       ]
     },
     "Group": {
@@ -3041,8 +3041,8 @@
     },
     "Info": {
       "${ addressCount } email address": [
-        "{ addressCount } dirección de correo electrónico",
-        "{ addressCount } direcciones de correo electrónico"
+        "${ addressCount } dirección de correo electrónico",
+        "${ addressCount } direcciones de correo electrónico"
       ],
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
         "${ appName } necesita tu permiso para ${ enableDesktopNotifications }."
@@ -3223,7 +3223,7 @@
         "Una Internet libre y sin censura debería estar disponible para todos."
       ],
       "A recovery phrase is one of the safest ways to protect access to your account. You can use it to access your account and recover your encrypted data if you ever forget your password.": [
-        ""
+        "Una frase de recuperación es una de las maneras más seguras de proteger el acceso a su cuenta. Puede utilizarla para acceder a su cuenta y recuperar sus datos cifrados si es que olvida la contraseña."
       ],
       "A request to unsubscribe from this mailing list will be sent to the sender of the newsletter and automatically processed.": [
         "Se enviará una solicitud para darte de baja de esta lista de correo y se procesará automáticamente."
@@ -3297,10 +3297,10 @@
         "y"
       ],
       "Are you sure you want to delete all messages in this folder?": [
-        ""
+        "¿Estas seguro de que quieres eliminar todos los mensajes en está carpeta?"
       ],
       "Are you sure you want to delete all messages with this label?": [
-        ""
+        "¿Estás seguro de que quieres eliminar todos los mensajes con esta etiqueta?"
       ],
       "Are you sure you want to discard your changes?": [
         "¿Estás seguro de que quieres descartar los cambios?"
@@ -3327,7 +3327,7 @@
         "¿Estás seguro de que quieres eliminar permanentemente este mensaje?"
       ],
       "Attach public key": [
-        ""
+        "Adjuntar clave pública"
       ],
       "Background color": [
         "Color de fondo"
@@ -3418,7 +3418,7 @@
         "Crear en"
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
-        ""
+        "Se admiten archivos CSV de Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora y algunas otras aplicaciones, así como los formatos vCard 3.1 y 4.0 (codificación UTF-8)."
       ],
       "Custom": [
         "Personalizado"
@@ -3498,7 +3498,7 @@
         "Dirección de correo electrónico"
       ],
       "Email tracker protection is disabled": [
-        ""
+        "Protección del rastreador de correo electrónico está deshabilitada"
       ],
       "Email trackers can violate your privacy. Proton did not find any trackers on this message.": [
         ""
@@ -3534,7 +3534,7 @@
         "Tiempo restante estimado..."
       ],
       "Expiration time": [
-        ""
+        "Tiempo de expiración"
       ],
       "Expiration Time": [
         "Tiempo de expiración"
@@ -3621,7 +3621,7 @@
         "URL de la imagen"
       ],
       "Images have been removed because they are not allowed in auto-reply": [
-        ""
+        "Las imágenes han sido eliminadas porque no están permitidas en respuesta automática"
       ],
       "Import ${ contactsFragment } and ${ contactsGroupsFragment }": [
         "Importar ${ contactsFragment } y ${ contactsGroupsFragment }"
@@ -3637,7 +3637,7 @@
         "Importación en curso"
       ],
       "Importing your data from ${ importedEmailAddress } to ${ toEmail }.": [
-        ""
+        "Importando tus datos desde ${ importedEmailAddress } a ${ toEmail }."
       ],
       "Included": [
         "Incluido"
@@ -3730,7 +3730,7 @@
         ""
       ],
       "Message will be sent today at ${ formattedTime }": [
-        ""
+        "Este mensaje se enviará hoy a las ${ formattedTime }"
       ],
       "Message will be sent tomorrow at ${ formattedTime }": [
         ""
@@ -3745,7 +3745,7 @@
         "Nuevo"
       ],
       "Next you'll need to log in to your Google account and allow us to access your data.": [
-        ""
+        "A continuación, deberás iniciar sesión en tu cuenta de Google y permitirnos acceder a sus datos."
       ],
       "No action selected": [
         "Ninguna acción seleccionada"
@@ -3787,7 +3787,7 @@
         "No se han encontrado resultados"
       ],
       "None of the uploaded keys are valid for encryption. Encryption is automatically disabled.": [
-        ""
+        "Ninguna de las claves cargadas son validas para el cifrado. El cifrado se desactiva automáticamente."
       ],
       "Normal": [
         "Normal"
@@ -3829,10 +3829,10 @@
         "Texto plano"
       ],
       "Please add at least one recipient.": [
-        ""
+        "Por favor, añade al menos un destinatario."
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
-        ""
+        "Por favor, manténgalo a salvo. Lo necesitará para acceder a su cuenta y descifrar sus datos en caso de restablecimiento de contraseña."
       ],
       "Please note that addresses assigned to this group will NOT be deleted.": [
         "Ten en cuenta que las direcciones asignadas a este grupo NO se eliminarán."
@@ -3844,7 +3844,7 @@
         "Por favor, ten en cuenta que al hacer clic en el botón Confirmar, tu cuenta tendrá ${ creditsRemaining } créditos restantes."
       ],
       "Please select the folders you would like to import:": [
-        ""
+        "Por favor, selecciona las carpetas que te gustaría importar:"
       ],
       "Please select the type of link you want to insert and fill in all the fields.": [
         "Selecciona el tipo de enlace que quieres insertar y completa todos los campos."
@@ -3896,7 +3896,7 @@
         "Destinatario: "
       ],
       "Recovery phrase copied to clipboard": [
-        ""
+        "Frase de recuperación copiada en el portapapeles"
       ],
       "Refreshing the page or ${ link } will automatically resolve most issues.": [
         "Actualizar la página o ${ link } resolverá automáticamente la mayoría de los problemas."
@@ -3905,7 +3905,7 @@
         "Reportar un mensaje como intento de suplantación de identidad nos enviará el mensaje a nosotros, para analizarlo y mejorar nuestros filtros. Esto significa que podremos ver todo el contenido del mensaje."
       ],
       "Request read receipt": [
-        ""
+        "Solicitar confirmación de lectura"
       ],
       "Right to Left": [
         "Derecha a Izquierda"
@@ -3962,13 +3962,13 @@
         "El envío de mensajes desde la dirección @pm.me es una característica de pago. Tu mensaje será enviado desde tu dirección por defecto ${ email }"
       ],
       "Servers are unreachable. Please try again in a few minutes": [
-        ""
+        "No se puede acceder a los servidores. Por favor, inténtelo de nuevo en unos minutos"
       ],
       "Session timed out.": [
         "El tiempo de la sesión ha expirado."
       ],
       "Set a recovery phrase": [
-        ""
+        "Establezca una frase de recuperación"
       ],
       "Set ProtonMail as your default email application for this browser. ProtonMail will open automatically when you click an email link.": [
         ""
@@ -3986,7 +3986,7 @@
         "Servicio inicial de VPN con soporte P2P."
       ],
       "Storage GB": [
-        "Almacenamiento en GB"
+        "GB de almacenamiento"
       ],
       "Store and share files securely with Proton Drive.": [
         ""
@@ -4131,10 +4131,10 @@
         ""
       ],
       "This message will expire today at ${ formattedTime }": [
-        ""
+        "Este mensaje expira hoy en ${ formattedTime }"
       ],
       "This message will expire tomorrow at ${ formattedTime }": [
-        ""
+        "Este mensaje expira mañana ${ formattedTime }"
       ],
       "This public key will be automatically used for encrypting email sent to this address.": [
         "Esta clave pública se usará automáticamente para cifrar el correo electrónico enviado a esta dirección."
@@ -4221,7 +4221,7 @@
         ""
       ],
       "Use Proton Calendar to keep your agenda private.": [
-        ""
+        "Use Proton Calendar para mantener su agenda privada."
       ],
       "Users": [
         "Usuarios"
@@ -4269,7 +4269,7 @@
         "¿Qué quieres importar de tu cuenta de Google?"
       ],
       "When do you want your message to be sent?": [
-        ""
+        "¿Cuándo quieres que este mensaje sea enviado?"
       ],
       "When you enabled trusted keys for ${ senderName }, the public keys were added to the contact details.": [
         "Cuando habilitaste las claves de confianza para ${ senderName }, las claves públicas fueron añadidas a los datos del contacto."
@@ -4293,7 +4293,7 @@
         "También puede unir calendarios importados con calendarios Proton existentes."
       ],
       "You can check the progress ${ importProgressLink }.": [
-        ""
+        "Puedes comprobar el progreso ${ importProgressLink }."
       ],
       "You can either update your search query or ${ button }": [
         "Puedes actualizar tu consulta de búsqueda o ${ button }"
@@ -4305,7 +4305,7 @@
         "Puedes activar las notificaciones para recibir alertas cuando lleguen mensajes de correo electrónico nuevos a esta carpeta."
       ],
       "You can use ProtonVPN for free today.": [
-        ""
+        "Puedes usar ProtonVPN gratis hoy."
       ],
       "You cannot reply from the invited address.": [
         "No puedes responder desde la dirección invitada."
@@ -4348,10 +4348,10 @@
         "Debes tener una tarjeta de crédito o una cuenta bancaria vinculada a tu cuenta de PayPal. Si tu cuenta de PayPal no lo tiene, haz clic en el botón de abajo."
       ],
       "You must remove any additional personal calendars and any shared calendar links before you can cancel your subscription. ${ linkButton }": [
-        ""
+        "Debes eliminar cualquier calendario adicional y cualquier enlace de calendario compartido, antes de cancelar tu suscripción. ${ linkButton }"
       ],
       "You reached ${ spaceDisplayed }% of your storage capacity. ${ freeUpMessage } ${ upgradeLink }": [
-        "Has alcanzado el{ spaceDisplayed }% de tu capacidad de almacenamiento. Libera algo de espacio o añade más espacio de almacenamiento.${ freeUpMessage } ${ upgradeLink }"
+        "Has alcanzado el${ spaceDisplayed }% de tu capacidad de almacenamiento. Libera algo de espacio o añade más espacio de almacenamiento.${ freeUpMessage } ${ upgradeLink }"
       ],
       "You reached 100% of your storage capacity. You cannot send or receive new emails. ${ freeUpMessage } ${ upgradeLink }": [
         "Has alcanzado el 100% de tu capacidad de almacenamiento. No podrás enviar o recibir nuevos correos electrónicos. Libera algo de espacio o añade más espacio de almacenamiento. ${ freeUpMessage } ${ upgradeLink }"
@@ -4412,7 +4412,7 @@
         "Tu frase de recuperación"
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
-        ""
+        "Su frase de recuperación es una serie de 12 palabras en un orden específico."
       ]
     },
     "info": {
@@ -4706,7 +4706,7 @@
         "Añadir al grupo"
       ],
       "Address": [
-        ""
+        "Dirección"
       ],
       "ALL": [
         "TODO"
@@ -5018,7 +5018,7 @@
         "Selecciona un método"
       ],
       "Select how your composer opens by default.": [
-        "Selecciona como se abrirá el redactor por defecto."
+        "Selecciona como se abrirá el editor por defecto."
       ],
       "Select how your list of messages looks like by default.": [
         "Seleccionar como tu lista de mensajes aparece de forma preestablecida."
@@ -5688,7 +5688,7 @@
         "Grupo de contactos actualizado"
       ],
       "Password has been set successfully": [
-        ""
+        "La contraseña ha sido cambiada con éxito"
       ]
     },
     "Oauth instructions": {
@@ -5769,7 +5769,7 @@
         "Agregar al grupo existente"
       ],
       "All": [
-        ""
+        "Todos"
       ],
       "Create new group": [
         "Crear nuevo grupo"
@@ -6503,7 +6503,7 @@
         "Se ha eliminado la suscripción a la lista de correo"
       ],
       "Message added to ${ labelName }.": [
-        ""
+        "Mensaje añadido a ${ labelName }."
       ],
       "Message content search activated": [
         "Búsqueda de contenido de mensajes activada"
@@ -6677,7 +6677,7 @@
     },
     "Title": {
       "${ appName } customization": [
-        "${ appName } personalización"
+        "Personalización de ${ appName }"
       ],
       "${ appName } Keyboard Shortcuts": [
         "${ appName } Atajos de teclado"
@@ -6760,7 +6760,7 @@
         "Limpiando datos"
       ],
       "Composer mode": [
-        "Modo del redactor"
+        "Modo del editor"
       ],
       "Confirm loss of Proton bonuses": [
         "Confirmar pérdida de beneficios de Proton"
@@ -6957,13 +6957,13 @@
         "Confirmación de enlace"
       ],
       "Load embedded images": [
-        ""
+        "Cargar imágenes incrustadas"
       ],
       "Load remote content": [
         "Cargar contenido remoto"
       ],
       "Mailbox density": [
-        "Densidad de la bandeja de entrada"
+        "Densidad del buzón"
       ],
       "Mailbox layout": [
         "Diseño del buzón"
@@ -7235,7 +7235,7 @@
         "El cifrado del correo electrónico obliga a la firma del correo electrónico a ayudar a autenticar tus mensajes enviados"
       ],
       "Encrypted data": [
-        ""
+        "Datos cifrados"
       ],
       "Encrypted data with verified digital signature": [
         "Datos cifrados con firma digital verificada"
@@ -7465,7 +7465,7 @@
         "Ten en cuenta que al elegir este método de pago, tu cuenta puede no ser actualizada inmediatamente. Actualizaremos tu cuenta una vez que el pago se haya completado."
       ],
       "Proton will merge all folders with the same name. To avoid this, change the names before import.": [
-        ""
+        "Proton fusionará todas las carpetas con el mismo nombre. Para evitarlo, cambia los nombres antes de la importación."
       ],
       "Reports are not end-to-end encrypted, please do not send any sensitive information.": [
         "Los informes no están cifrados de extremo a extremo, no envíes ninguna información confidencial."
@@ -7502,7 +7502,7 @@
         ""
       ],
       "You will lose any customization you made so far.": [
-        ""
+        "Perderás cualquier personalización que hayas realizado hasta ahora."
       ]
     },
     "Weekly recurring event, frequency": {

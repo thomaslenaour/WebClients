@@ -2766,7 +2766,7 @@
         "ГБ"
       ],
       "KB": [
-        "КБ"
+        "кБ"
       ],
       "MB": [
         "МБ"
@@ -3814,7 +3814,7 @@
         "Вставити посилання"
       ],
       "Internet connection lost.": [
-        "Втрачено Інтернет-з'єднання."
+        "Втрачено інтернет-з'єднання."
       ],
       "Internet connection lost. Please check your device's connectivity.": [
         "Відсутнє з'єднання з інтернетом. Перевірте доступ до мережі свого пристрою."
@@ -6600,10 +6600,10 @@
         "${ elementsCount } розмови позначено непрочитаною."
       ],
       "${ elementsCount } conversation moved to ${ folderName } and sender added to Allow List.": [
-        "{ elementsCount } розмову переміщено до ${ folderName }, а відправника додано до списку дозволених.",
-        "{ elementsCount } розмови переміщено до ${ folderName }, а відправника додано до списку дозволених.",
-        "{ elementsCount } розмов переміщено до ${ folderName }, а відправника додано до списку дозволених.",
-        "{ elementsCount } розмов переміщено до ${ folderName }, а відправника додано до списку дозволених."
+        "${ elementsCount } розмову переміщено до ${ folderName }, а відправника додано до списку дозволених.",
+        "${ elementsCount } розмови переміщено до ${ folderName }, а відправника додано до списку дозволених.",
+        "${ elementsCount } розмов переміщено до ${ folderName }, а відправника додано до списку дозволених.",
+        "${ elementsCount } розмов переміщено до ${ folderName }, а відправника додано до списку дозволених."
       ],
       "${ elementsCount } conversation moved to ${ folderName }.": [
         "${ elementsCount } розмову переміщено до ${ folderName }.",
