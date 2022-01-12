@@ -24,7 +24,7 @@
         "Добавить"
       ],
       "Add address": [
-        ""
+        "Добавить адрес"
       ],
       "Add condition": [
         "Добавить условие"
@@ -33,7 +33,7 @@
         "Добавить контакт"
       ],
       "Add email": [
-        ""
+        "Добавить эл. почту"
       ],
       "Add group": [
         "Добавить группу"
@@ -45,7 +45,7 @@
         "Добавить новую группу"
       ],
       "Add phone number": [
-        ""
+        "Добавить номер телефона"
       ],
       "Add screenshot(s)": [
         "Добавить снимки экрана"
@@ -111,7 +111,7 @@
         "Копия, скрытая копия"
       ],
       "CC BCC": [
-        ""
+        "Копия Скрытая копия"
       ],
       "Change page": [
         "Изменить страницу"
@@ -276,7 +276,7 @@
         "Отказаться"
       ],
       "Dismiss get started checklist": [
-        ""
+        "Отклонить контрольный список начала работы"
       ],
       "Done": [
         "Готово"
@@ -321,7 +321,7 @@
         "Раскрыть окно редактора сообщений"
       ],
       "Expand URL": [
-        ""
+        "Развернуть URL"
       ],
       "Export": [
         "Экспорт"
@@ -330,7 +330,7 @@
         "Экспортировать контакты"
       ],
       "Fewer search options": [
-        ""
+        "Меньше настроек поиска"
       ],
       "Filter on...": [
         "Фильтр по..."
@@ -585,7 +585,7 @@
         "OK"
       ],
       "Open ${ CALENDAR_APP_NAME }": [
-        ""
+        "Открыть ${ CALENDAR_APP_NAME }"
       ],
       "Open ${ CALENDAR_APP_NAME } settings": [
         "Открыть настройки ${ CALENDAR_APP_NAME }"
@@ -594,7 +594,7 @@
         "Открыть календарь"
       ],
       "Open get started checklist modal": [
-        ""
+        "Открыть модальное окно с контрольным списком для начала работы"
       ],
       "Open navigation": [
         "Открыть навигацию"
@@ -750,7 +750,7 @@
         "Установить по умолчанию"
       ],
       "Set expiration time": [
-        ""
+        "Установите время истечения срока действия"
       ],
       "Share via link": [
         "Доступ по ссылке"
@@ -771,7 +771,7 @@
         "Показать подробности"
       ],
       "Show fewer search options": [
-        ""
+        "Показать меньше настроек поиска"
       ],
       "Show folders": [
         "Показать папки"
@@ -822,7 +822,7 @@
         "Переключить аккаунт"
       ],
       "Switch to rich text": [
-        ""
+        "Переключиться на обогащенный текст"
       ],
       "Theme": [
         "Тема"
@@ -831,7 +831,7 @@
         "В этом сообщении есть встроенные изображения."
       ],
       "This message contains remote content.": [
-        "Это сообщение содержит удаленное содержимое."
+        "В этом сообщении есть внешнее содержимое."
       ],
       "Trust": [
         "Доверять"
@@ -876,7 +876,7 @@
         "Не доверять"
       ],
       "Update": [
-        ""
+        "Обновить"
       ],
       "Upgrade": [
         "Повысить"
@@ -936,7 +936,7 @@
         "Показать исходный код"
       ],
       "Why not?": [
-        ""
+        "Why not?"
       ],
       "Yes": [
         "Да"
@@ -1433,7 +1433,7 @@
         "(Посещение необязательно)"
       ],
       "Adding occurrences to an event is not supported for the moment": [
-        ""
+        "Добавление повторов к событию в настоящее время не поддерживается"
       ],
       "An occurrence has been added to the event ${ veventIcsTitle }": [
         "К событию «${ veventIcsTitle }» был добавлен повтор"
@@ -1448,22 +1448,22 @@
         "Обновление события в настоящее время не поддерживается"
       ],
       "Event rescheduling is not supported for the moment": [
-        ""
+        "Изменение расписания события в настоящее время не поддерживается"
       ],
       "The sender of this email has not been invited to this event and cannot be added as a participant": [
         "Отправитель этого письма не был приглашен на это мероприятие и не может быть добавлен в качестве участника"
       ],
       "This answer cannot be added to ${ calendarAppName } as we only support answers to all events of a series for the moment": [
-        ""
+        "Этот ответ не может быть добавлен в ${ calendarAppName }, поскольку на данный момент мы поддерживаем ответы только на все события серии"
       ],
       "This event has been canceled.": [
-        ""
+        "Это событие было отменено."
       ],
       "This event has been updated.": [
         "Это событие было обновлено."
       ],
       "This invitation is out of date. The event has been canceled.": [
-        ""
+        "Это приглашение устарело. Событие было отменено."
       ],
       "This invitation is out of date. The event has been deleted.": [
         "Приглашение устарело. Событие было удалено."
@@ -1742,7 +1742,7 @@
         "Ежедневно в ${ timesString }"
       ],
       "Daily, ${ untilString }": [
-        "Ежедневно до ${ untilString }"
+        "Ежедневно ${ untilString }"
       ],
       "Every ${ interval } day": [
         "Каждый ${ interval } день",
@@ -1760,7 +1760,7 @@
         "Каждый ${ interval } день, ${ untilString }",
         "Каждые ${ interval } дня, ${ untilString }",
         "Каждые ${ interval } дней, ${ untilString }",
-        "Каждые ${ interval } дня, ${ untilString }"
+        "Каждые ${ interval } дней, ${ untilString }"
       ],
       "until ${ dateString }": [
         "до ${ dateString }"
@@ -1882,7 +1882,7 @@
     },
     "Email body for invitation": {
       "${ eventTitle } has been canceled.": [
-        ""
+        "Событие «${ eventTitle }» было отменено."
       ],
       "${ eventTitle } has been updated.\n${ eventDetailsText }": [
         "Событие «${ eventTitle }» было обновлено.\n${ eventDetailsText }"
@@ -1926,40 +1926,40 @@
         ""
       ],
       "Event is tomorrow": [
-        ""
+        "Событие состоится завтра"
       ],
       "Event starting now": [
-        ""
+        "Событие начинается сейчас"
       ],
       "Event starts in ${ minutesUntilEvent } minute": [
-        "",
-        "",
-        "",
-        ""
+        "Событие начнется через ${ minutesUntilEvent } минуту",
+        "Событие начнется через ${ minutesUntilEvent } минуты",
+        "Событие начнется через ${ minutesUntilEvent } минут",
+        "Событие начнется через ${ minutesUntilEvent } минуты"
       ],
       "Event starts tomorrow": [
-        ""
+        "Событие начинается завтра"
       ]
     },
     "Email reminder decryption error": {
       "Event details are encrypted. Sign in again to restore Calendar and decrypt your data. ${ learnMoreLink }": [
-        ""
+        "Данные о событиях зашифрованы. Войдите в систему снова, чтобы восстановить Календарь и расшифровать данные. ${ learnMoreLink }"
       ],
       "Event details cannot be decrypted. ${ whyNotLink }": [
-        ""
+        "Детали события не могут быть расшифрованы. ${ whyNotLink }"
       ]
     },
     "Email reminder error": {
       "Event is no longer in your calendar": [
-        ""
+        "Событие больше не находится в вашем календаре"
       ]
     },
     "Email reminder out of date alert": {
       "Event was canceled": [
-        ""
+        "Событие было отменено"
       ],
       "Event was updated. This reminder is out-of-date.": [
-        ""
+        "Событие было обновлено. Это напоминание устарело."
       ]
     },
     "Email subject": {
@@ -2067,10 +2067,10 @@
         "Ошибка расшифровки: при расшифровке зашифрованного содержимого этого сообщения произошёл сбой."
       ],
       "Deselect at least ${ calendarToFixCount } calendar": [
-        "",
-        "",
-        "",
-        ""
+        "Отмените выбор по крайней мере ${ calendarToFixCount } календаря",
+        "Отмените выбор по крайней мере ${ calendarToFixCount } календарей",
+        "Отмените выбор по крайней мере ${ calendarToFixCount } календарей",
+        "Отмените выбор по крайней мере ${ calendarToFixCount } календарей"
       ],
       "Deselect at least ${ calendarToFixCount } calendar or": [
         "Отмените выбор по крайней мере ${ calendarToFixCount } календарь или",
@@ -2187,7 +2187,7 @@
         "Нет адреса с ключами для создания сообщения"
       ],
       "No data to import": [
-        ""
+        "Нет данных для импорта"
       ],
       "No key retrieved for internal user is valid for sending": [
         "Ни один их полученных ключей внутреннего пользователя не годен для отправки"
@@ -2250,10 +2250,10 @@
         "Пожалуйста, обновите страницу."
       ],
       "Please repeat the password": [
-        ""
+        "Пожалуйста, повторите пароль"
       ],
       "Please set a password": [
-        ""
+        "Пожалуйста, задайте пароль"
       ],
       "Preferences could not be saved": [
         "Настройки не могут быть сохранены"
@@ -2595,7 +2595,7 @@
         "Вложенный файл ICS невозможно расшифровать"
       ],
       "Attached ICS file could not be read": [
-        ""
+        "Невозможно прочитать вложенный файл ICS"
       ],
       "Invalid invitation": [
         "Приглашение недействительно"
@@ -2751,63 +2751,63 @@
     },
     "Get started checklist completion": {
       "We've increased the total storage of your account to ${ totalGBStorageAfterCompletion } GB. Get additional storage and unlock premium features today.": [
-        ""
+        "Мы увеличили общее хранилище вашего аккаунта до ${ totalGBStorageAfterCompletion } ГБ. Получите дополнительное хранилище и разблокируйте премиум-функции уже сегодня."
       ],
       "You're all set!": [
-        ""
+        "Все готово!"
       ]
     },
     "Get started checklist incentive": {
       "Complete all steps and get a total of ${ totalGBStorageAfterCompletion } GB on your account": [
-        ""
+        "Выполните все шаги и получите в общей сложности ${ totalGBStorageAfterCompletion } ГБ на вашем аккаунте"
       ],
       "Only ${ days } day left": [
-        "",
-        "",
-        "",
-        ""
+        "Остался только ${ days } день",
+        "Осталось только ${ days } дня",
+        "Осталось только ${ days } дней",
+        "Осталось только ${ days } дня"
       ]
     },
     "Get started checklist instructions": {
       "Available on iOS and Android.": [
-        ""
+        "Доступно для iOS и Android."
       ],
       "Get the ${ protonMailAppName } mobile app": [
-        ""
+        "Скачайте мобильное приложение ${ protonMailAppName }"
       ],
       "Import contacts or emails": [
-        ""
+        "Импортируйте контакты или электронные письма"
       ],
       "Import your contacts or messages": [
-        ""
+        "Импортируйте свои контакты или сообщения"
       ],
       "Quickly transfer your contacts or emails from any provider using our Easy Switch import assistant.": [
-        ""
+        "Быстро перенесите контакты или электронную почту от любого провайдера с помощью нашего помощника по импорту Easy Switch."
       ],
       "Sign into the mobile app to complete the action": [
-        ""
+        "Войдите в мобильное приложение и закончите действие"
       ],
       "Using your mobile device, scan this QR code or visit": [
-        ""
+        "Используя мобильное устройство, отсканируйте этот QR-код или посетите"
       ]
     },
     "Get started checklist item": {
       "Get mobile app": [
-        ""
+        "Получить мобильное приложение"
       ],
       "Import contacts or emails": [
-        ""
+        "Импортируйте контакты или электронные письма"
       ],
       "Send a message": [
         "Отправить сообщение"
       ],
       "Set up a recovery method": [
-        ""
+        "Настроить метод восстановления"
       ]
     },
     "Get started checklist spotlight": {
       "You can access the checklist anytime from here": [
-        ""
+        "Вы можете получить доступ к контрольному списку в любое время отсюда"
       ]
     },
     "Get started checklist title": {
@@ -3048,10 +3048,10 @@
         "${ mailAppName } Professional начинается с одного пользователя, и каждый пользователь добавляет 5 ГБ и 5 адресов электронной почты в пул организации."
       ],
       "${ messagesNotAuthorizedToMove } message could not be moved.": [
-        "Не удалось переместить { messagesNotAuthorizedToMove } сообщение.",
-        "Не удалось переместить { messagesNotAuthorizedToMove } сообщения.",
-        "Не удалось переместить { messagesNotAuthorizedToMove } сообщений.",
-        "Не удалось переместить { messagesNotAuthorizedToMove } сообщений."
+        "Не удалось переместить ${ messagesNotAuthorizedToMove } сообщение.",
+        "Не удалось переместить ${ messagesNotAuthorizedToMove } сообщения.",
+        "Не удалось переместить ${ messagesNotAuthorizedToMove } сообщений.",
+        "Не удалось переместить ${ messagesNotAuthorizedToMove } сообщений."
       ],
       "${ namesWithoutLast } and ${ nameOfLast }": [
         "${ namesWithoutLast } и ${ nameOfLast }"
@@ -3375,7 +3375,7 @@
         "Очистить данные"
       ],
       "Clearing browser data also deactivates message content search on this device. All messages will need to be downloaded again to search within them.": [
-        "Очистка данных браузера также отключает поиск содержимого сообщений на этом устройстве. Для поиска в сообщениях необходимо будет снова загрузить все сообщения."
+        "Очистка данных браузера также отключает поиск содержимого сообщений на этом устройстве. Для поиска в сообщениях необходимо будет снова скачать все сообщения."
       ],
       "Clears browser data related to message content search including downloaded messages": [
         "Очищает данные браузера, связанные с поиском содержимого сообщений, включая загруженные сообщения"
@@ -3477,7 +3477,7 @@
         "Скачайте ваше любимое приложение сегодня и берите конфиденциальность с собой, куда бы вы ни пошли."
       ],
       "Downloading message ${ esProgress } out of ${ totalProgressToShow }": [
-        "Загрузка сообщения ${ esProgress } из ${ totalProgressToShow }"
+        "Скачивание сообщения ${ esProgress } из ${ totalProgressToShow }"
       ],
       "Draft": [
         "Черновик"
@@ -3546,7 +3546,7 @@
         "Оценка оставшегося времени..."
       ],
       "Expiration time": [
-        ""
+        "Срок действия"
       ],
       "Expiration Time": [
         "Срок действия"
@@ -3714,7 +3714,7 @@
         "Загрузка ${ appName }"
       ],
       "Loading message": [
-        "Загрузка сообщения"
+        "Скачивание сообщения"
       ],
       "Loading preview": [
         "Загрузка предпросмотра"
@@ -3726,7 +3726,7 @@
         "Управлять Вашими ярлыками"
       ],
       "members": [
-        ""
+        "участники"
       ],
       "Members": [
         "Участники"
@@ -3747,13 +3747,13 @@
         "Сообщение отправлено."
       ],
       "Message will be sent on ${ dateString } at ${ formattedTime }": [
-        ""
+        "Сообщение будет отправлено ${ dateString } в ${ formattedTime }"
       ],
       "Message will be sent today at ${ formattedTime }": [
-        ""
+        "Сообщение будет отправлено сегодня в ${ formattedTime }"
       ],
       "Message will be sent tomorrow at ${ formattedTime }": [
-        ""
+        "Сообщение будет отправлено завтра в ${ formattedTime }"
       ],
       "Monthly ${ onDayString }": [
         "Ежемесячно ${ onDayString }"
@@ -3849,10 +3849,10 @@
         "Простой текст"
       ],
       "Please add at least one recipient.": [
-        ""
+        "Пожалуйста, добавьте хотя бы одного получателя."
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
-        ""
+        "Пожалуйста, храните ее в безопасности. Он понадобится вам для доступа к вашей учетной записи и расшифровки данных в случае сброса пароля."
       ],
       "Please note that addresses assigned to this group will NOT be deleted.": [
         "Пожалуйста, обратите внимание, что адреса, назначенные этой группе, НЕ будут удалены."
@@ -3972,7 +3972,7 @@
         "Выберите формат писем, который вы хотите использовать по умолчанию для отправки сообщений этим адресатам."
       ],
       "Select which calendars to import. A new calendar will be created for each imported calendar up to the 20 calendars limit.": [
-        ""
+        "Выберите, какие календари необходимо импортировать. Для каждого импортированного календаря будет создан новый календарь, не превышающий лимит в 20 календарей."
       ],
       "Sending": [
         "Отправка"
@@ -3990,7 +3990,7 @@
         "Время сессии истекло."
       ],
       "Set a recovery phrase": [
-        ""
+        "Установите фразу для восстановления"
       ],
       "Set ProtonMail as your default email application for this browser. ProtonMail will open automatically when you click an email link.": [
         "Установить ProtonMail в качестве почтового клиента по умолчанию для этого браузера. ProtonMail будет открываться автоматически после нажатия на почтовую ссылку."
@@ -4083,7 +4083,7 @@
         "Этот аккаунт был приостановлен из-за потенциального нарушения политики."
       ],
       "This action will download all messages so they can be searched locally. Clearing your browser data will disable this option.": [
-        "Это действие загрузит все сообщения, чтобы их можно было искать локально. Очистка данных браузера или выход из системы отключат эту настройку."
+        "Это действие скачает все сообщения, чтобы их можно было искать локально. Очистка данных браузера или выход из системы отключат эту настройку."
       ],
       "This address is disabled. To be able to send to this address, the owner must first enable the address.": [
         "Этот адрес отключён. Чтобы иметь возможность отправки на этот адрес, сначала он должен быть включён его владельцем."
@@ -4131,16 +4131,16 @@
         "Это сообщение будет перемещено в Черновики, поэтому вы можете его редактировать. Его нужно будет снова запланировать перед отправкой."
       ],
       "This message will be sent on ${ dateString } at ${ formattedTime }": [
-        ""
+        "Это сообщение будет отправлено ${ dateString } в ${ formattedTime }"
       ],
       "This message will be sent shortly": [
         "Это сообщение вскоре будет отправлено"
       ],
       "This message will be sent today at ${ formattedTime }": [
-        ""
+        "Это сообщение будет отправлено сегодня в ${ formattedTime }"
       ],
       "This message will be sent tomorrow at ${ formattedTime }": [
-        ""
+        "Это сообщение будет отправлено завтра в ${ formattedTime }"
       ],
       "This message will expire ${ formattedDate }": [
         "Это сообщение истекает ${ formattedDate }"
@@ -4149,13 +4149,13 @@
         "Срок действия этого письма истекает ${ formattedDelay }"
       ],
       "This message will expire on ${ dateString } at ${ formattedTime }": [
-        ""
+        "Срок действия этого сообщения истечет ${ dateString } в ${ formattedTime }"
       ],
       "This message will expire today at ${ formattedTime }": [
-        ""
+        "Срок действия этого сообщения истекает сегодня в ${ formattedTime }"
       ],
       "This message will expire tomorrow at ${ formattedTime }": [
-        ""
+        "Срок действия этого сообщения истечет завтра в ${ formattedTime }"
       ],
       "This public key will be automatically used for encrypting email sent to this address.": [
         "Этот открытый ключ будет автоматически использован для шифрования электронной почты, отправленной на этот адрес."
@@ -4308,10 +4308,10 @@
         "В настоящее время вы вошли как ${ user.Name } (${ user.Email }), и Ваш доступ ограничен."
       ],
       "You can add it as an attachment or display it inline in your mail body.": [
-        ""
+        "Вы можете добавить его в качестве вложения или встроить в тело письма."
       ],
       "You can also merge imported calendars with existing Proton calendars.": [
-        ""
+        "Вы также можете объединить импортированные календари с существующими календарями Proton."
       ],
       "You can check the progress ${ importProgressLink }.": [
         "Вы можете проверить процесс ${ importProgressLink }."
@@ -4416,7 +4416,7 @@
         "Скоро вы будете перенаправлены на PayPal для подтверждения своего платежа."
       ],
       "You wrote “${ attachmentsFoundKeyword }”, but no attachment has been added. Do you want to send your message anyway?": [
-        ""
+        "Вы написали \"${ attachmentsFoundKeyword }\", но ни одно вложение не было добавлено. Хотите ли вы все равно отправить свое сообщение?"
       ],
       "Your account has at least one overdue invoice. Your access has been restricted. ${ payInvoiceLink }": [
         "Для вашего аккаунту есть по крайней мере один просроченный счет. Ваш доступ был ограничен. ${ payInvoiceLink }"
@@ -4457,7 +4457,7 @@
         "(бета)"
       ],
       "Optional": [
-        ""
+        "Необязательно"
       ]
     },
     "Info concerning plan features": {
@@ -4732,7 +4732,7 @@
         "${ firstAddress } и ${ count } другие"
       ],
       "(Coming soon)": [
-        ""
+        "(Скоро появится)"
       ],
       "Actions": [
         "Действия"
@@ -4819,7 +4819,7 @@
         "Условия"
       ],
       "Confirm password": [
-        ""
+        "Подтвердить пароль"
       ],
       "Contacts": [
         "Контакты"
@@ -4954,13 +4954,13 @@
         "Управление метками"
       ],
       "Manage my addresses": [
-        ""
+        "Управление моими адресами"
       ],
       "Mark as": [
         "Отметить как"
       ],
       "Message password": [
-        ""
+        "Пароль сообщения"
       ],
       "Move to": [
         "Переместить в"
@@ -4996,7 +4996,7 @@
         "Пароль"
       ],
       "Password hint": [
-        ""
+        "Подсказка к паролю"
       ],
       "Payer": [
         "Плательщик"
@@ -5328,7 +5328,7 @@
         "Со звёздами"
       ],
       "This ICS file contains more than one event. Please download it and import the events in ${ calendarAppName }": [
-        "Этот ICS файл календаря содержит более, чем одно событие. Пожалуйста, загрузите его и импортируйте события в ${ calendarAppName }"
+        "Этот ICS файл календаря содержит более, чем одно событие. Пожалуйста, скачайте его и импортируйте события в ${ calendarAppName }"
       ],
       "Trash": [
         "Корзина"
@@ -5366,7 +5366,7 @@
     },
     "Link to calendar event": {
       "Open in ${ CALENDAR_APP_NAME }": [
-        ""
+        "Открыть в ${ CALENDAR_APP_NAME }"
       ]
     },
     "Loading info": {
@@ -5475,16 +5475,16 @@
     },
     "Mail import summary": {
       "Import all messages from ${ selectedLabelsCount } out of ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        "",
-        "",
-        "",
-        ""
+        "Импортируйте все сообщения из ${ selectedLabelsCount } из ${ totalLabelsCount } ярлыка с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }",
+        "Импортируйте все сообщения из ${ selectedLabelsCount } из ${ totalLabelsCount } ярлыков с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }",
+        "Импортируйте все сообщения из ${ selectedLabelsCount } из ${ totalLabelsCount } ярлыков с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }",
+        "Импортируйте все сообщения из ${ selectedLabelsCount } из ${ totalLabelsCount } ярлыков с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }"
       ],
       "Import all messages from ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        "",
-        "",
-        "",
-        ""
+        "Импортируйте все сообщения из ярлыка ${ totalLabelsCount } с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }",
+        "Импортируйте все сообщения из ярлыков ${ totalLabelsCount } с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }",
+        "Импортируйте все сообщения из ярлыков ${ totalLabelsCount } с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }",
+        "Импортируйте все сообщения из ярлыков ${ totalLabelsCount } с ${ periodFragment } и пометьте их как ${ LABEL_MARKUP_PLACEHOLDER }"
       ]
     },
     "Mailbox": {
@@ -5586,7 +5586,7 @@
         "Ежемесячно по ${ onDayString } в ${ timesString }"
       ],
       "Monthly ${ onDayString }, ${ untilString }": [
-        "Ежемесячно ${ onDayString } числа, до ${ untilString }"
+        "Ежемесячно ${ onDayString }, ${ untilString }"
       ]
     },
     "Monthly recurring event, repeats on": {
@@ -5726,7 +5726,7 @@
         "Группа контактов обновлена"
       ],
       "Password has been set successfully": [
-        ""
+        "Пароль был успешно установлен"
       ]
     },
     "Onboarding": {
@@ -5867,7 +5867,7 @@
         "Версия браузера"
       ],
       "Confirm password": [
-        ""
+        "Подтвердите пароль"
       ],
       "e.g. Julia Smith": [
         "например, Джулия Смит"
@@ -6382,7 +6382,7 @@
     },
     "Storage": {
       "Get extra storage for free": [
-        ""
+        "Получите дополнительное хранилище бесплатно"
       ],
       "Release notes": [
         "Примечания к выпуску"
@@ -6877,7 +6877,7 @@
         "Подтвердить адрес получателя?"
       ],
       "Contact details": [
-        ""
+        "Информация контакта"
       ],
       "Contact Details": [
         "Контактные данные"
@@ -7072,7 +7072,7 @@
         "Подтверждение ссылки"
       ],
       "Load embedded images": [
-        "Показывать встроенные изображения"
+        "Загрузить встроенные изображения"
       ],
       "Load remote content": [
         "Загрузить внешнее содержимое"
@@ -7192,7 +7192,7 @@
         "Переподписание контактов"
       ],
       "Recipient missing": [
-        ""
+        "Получатель отсутствует"
       ],
       "Recover data": [
         "Восстановление данных"
@@ -7207,7 +7207,7 @@
         "Сообщить о проблеме"
       ],
       "Request new code": [
-        ""
+        "Запросить новый код"
       ],
       "Schedule send": [
         "Запланированная отправка"
@@ -7261,7 +7261,7 @@
         "Предупреждение об объёме хранилища"
       ],
       "Subject missing": [
-        ""
+        "Тема отсутствует"
       ],
       "Subtotal": [
         "Подитог"
@@ -7388,7 +7388,7 @@
         "Импорт начнется с самых последних сообщений."
       ],
       "This action will download all messages so they can be searched locally. Clearing your browser data will disable this option.": [
-        "Это действие загрузит все сообщения, чтобы их можно было искать локально. Очистка данных браузера или выход из системы отключат эту настройку."
+        "Это действие скачает все сообщения, чтобы их можно было искать локально. Очистка данных браузера или выход из системы отключат эту настройку."
       ],
       "This feature is only available for paid users": [
         "Эта функция доступна только пользователям с платными тарифами"
@@ -7408,13 +7408,13 @@
     },
     "Update font modal": {
       "Today is a good day to write an email": [
-        ""
+        "Сегодня хороший день, чтобы написать письмо"
       ],
       "Update default font and size": [
-        ""
+        "Шрифт и размер шрифта по умолчанию"
       ],
       "Your default font will look like following:": [
-        ""
+        "Ваш шрифт по умолчанию будет выглядеть следующим образом:"
       ]
     },
     "Validation": {
@@ -7589,7 +7589,7 @@
         "Некоторые из планируемых к объединению контактов отображают ошибки. Пожалуйста, рассмотрите каждый из них по отдельности"
       ],
       "The attachment's signature failed verification.\nYou can still download this attachment but it might have been tampered with.": [
-        "Не удалось проверить подпись вложения.\nВы можете загрузить это вложение, но оно могло быть изменено.",
+        "Не удалось проверить подпись вложения.\nВы можете скачать это вложение, но оно могло быть изменено.",
         "Не удалось проверить подпись некоторых вложений.\nТем не менее вы можете скачать эти вложения, но оно могли быть подменены.",
         "Не удалось проверить подпись некоторых вложений.\nТем не менее вы можете скачать эти вложения, но оно могли быть подменены.",
         "Не удалось проверить подпись некоторых вложений.\nТем не менее вы можете скачать эти вложения, но оно могли быть подменены."
@@ -7792,7 +7792,7 @@
         "Еженедельно по следующим дням: ${ multipleDaysString } в ${ timesString }"
       ],
       "Weekly on ${ multipleDaysString }, ${ untilString }": [
-        "Еженедельно по следующим дням ${ multipleDaysString } до ${ untilString }"
+        "Еженедельно по ${ multipleDaysString } ${ untilString }"
       ],
       "Weekly on all days": [
         "Еженедельно каждый день"
@@ -7801,7 +7801,7 @@
         "Еженедельно во все дни в ${ timesString }"
       ],
       "Weekly on all days, ${ untilString }": [
-        "Еженедельно, каждый день до ${ untilString }"
+        "Еженедельно, каждый день ${ untilString }"
       ],
       "Weekly on Friday": [
         "Еженедельно в пятницу"
@@ -7810,7 +7810,7 @@
         "Еженедельно по пятницам в ${ timesString }"
       ],
       "Weekly on Friday, ${ untilString }": [
-        "Еженедельно по пятницам до ${ untilString }"
+        "Еженедельно по пятницам ${ untilString }"
       ],
       "Weekly on Monday": [
         "Еженедельно в понедельник"
@@ -7819,7 +7819,7 @@
         "Еженедельно в понедельник в ${ timesString }"
       ],
       "Weekly on Monday, ${ untilString }": [
-        "Еженедельно в понедельник до ${ untilString }"
+        "Еженедельно в понедельник ${ untilString }"
       ],
       "Weekly on Saturday": [
         "Еженедельно в субботу"
@@ -7828,7 +7828,7 @@
         "Еженедельно по субботам в ${ timesString }"
       ],
       "Weekly on Saturday, ${ untilString }": [
-        "Еженедельно по субботам до ${ untilString }"
+        "Еженедельно по субботам ${ untilString }"
       ],
       "Weekly on Sunday": [
         "Еженедельно в воскресенье"
@@ -7837,7 +7837,7 @@
         "Еженедельно в воскресенье в ${ timesString }"
       ],
       "Weekly on Sunday, ${ untilString }": [
-        "Еженедельно по воскресеньям до ${ untilString }"
+        "Еженедельно по воскресеньям ${ untilString }"
       ],
       "Weekly on Thursday": [
         "Еженедельно в четверг"
@@ -7846,7 +7846,7 @@
         "Еженедельно по четвергам в ${ timesString }"
       ],
       "Weekly on Thursday, ${ untilString }": [
-        "Еженедельно по четвергам до ${ untilString }"
+        "Еженедельно по четвергам ${ untilString }"
       ],
       "Weekly on Tuesday": [
         "Еженедельно во вторник"
@@ -7855,7 +7855,7 @@
         "Еженедельно по вторникам в ${ timesString }"
       ],
       "Weekly on Tuesday, ${ untilString }": [
-        "Еженедельно по вторникам до ${ untilString }"
+        "Еженедельно по вторникам ${ untilString }"
       ],
       "Weekly on Wednesday": [
         "Еженедельно в среду"
@@ -7864,7 +7864,7 @@
         "Еженедельно по средам в ${ timesString }"
       ],
       "Weekly on Wednesday, ${ untilString }": [
-        "Еженедельно по средам до ${ untilString }"
+        "Еженедельно по средам ${ untilString }"
       ]
     },
     "Weekly recurring event, repeats on (multiple days), frequency": {
@@ -7905,9 +7905,9 @@
       ],
       "Every ${ interval } year, ${ untilString }": [
         "Каждый ${ interval } год ${ untilString }",
-        "Каждый ${ interval } год ${ untilString }",
-        "Каждый ${ interval } год ${ untilString }",
-        "Каждый ${ interval } год ${ untilString }"
+        "Каждые ${ interval } года ${ untilString }",
+        "Каждый ${ interval } лет ${ untilString }",
+        "Каждый ${ interval } года ${ untilString }"
       ],
       "Yearly": [
         "Ежегодно"
@@ -7916,7 +7916,7 @@
         "Ежегодно в ${ timesString }"
       ],
       "Yearly, ${ untilString }": [
-        "Ежегодно до ${ untilString }"
+        "Ежегодно ${ untilString }"
       ]
     }
   }

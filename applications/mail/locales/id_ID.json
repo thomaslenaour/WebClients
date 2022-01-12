@@ -33,7 +33,7 @@
         "Tambah kontak"
       ],
       "Add email": [
-        "Tambah surel"
+        "Tambah email"
       ],
       "Add group": [
         "Tambah grup"
@@ -201,7 +201,7 @@
         "Salin alamat"
       ],
       "Copy email to clipboard": [
-        "Salin surel ke papan klip"
+        "Salin email ke clipboard"
       ],
       "Create folder": [
         "Buat folder"
@@ -282,10 +282,10 @@
         "Unduh ${ attachmentName }"
       ],
       "Edit": [
-        "Edit"
+        "Sunting"
       ],
       "Edit address": [
-        "Edit alamat"
+        "Sunting alamat"
       ],
       "Edit draft": [
         "Sunting draf"
@@ -300,7 +300,7 @@
         "Ubah nomor telepon"
       ],
       "Email settings": [
-        "Pengaturan surel"
+        "Pengaturan email"
       ],
       "Enable": [
         "Aktifkan"
@@ -363,7 +363,7 @@
         "Ke halaman sebelumnya"
       ],
       "Go to settings": [
-        "Ke pengaturan"
+        "Tuju menu pengaturan"
       ],
       "Got it": [
         "Dimengerti"
@@ -525,7 +525,7 @@
         "Pindah ke"
       ],
       "Move to archive": [
-        "Pindah ke arsip"
+        "Pindahkan ke arsip"
       ],
       "Move to inbox": [
         "Pindahkan ke kotak masuk"
@@ -720,7 +720,7 @@
         "Pilih semua pesan"
       ],
       "Select plan": [
-        "Pilih paket"
+        "Langgan paket ini"
       ],
       "Send": [
         "Kirim"
@@ -963,7 +963,7 @@
     },
     "Addon": {
       "+ ${ addresses } email address": [
-        "+ ${ addresses } alamat surel"
+        "+ ${ addresses } alamat email"
       ],
       "+ ${ domains } custom domain": [
         "+ ${ domains } domain kustom"
@@ -1090,7 +1090,7 @@
         "Bulanan"
       ],
       "Two years SAVE 33%": [
-        "Dua tahun HEMAT 33%"
+        "Per dua tahun HEMAT 33%"
       ],
       "Two-year": [
         "Dwitahunan"
@@ -2025,10 +2025,10 @@
         "Draf tidak dapat disimpan. Coba lagi."
       ],
       "Email address disabled": [
-        "Alamat surel nonaktif"
+        "Alamat email dinonaktifkan"
       ],
       "Email address invalid": [
-        "Alamat surel tidak valid"
+        "Alamat email tidak valid"
       ],
       "Email is not valid": [
         "Email tidak valid"
@@ -2268,7 +2268,7 @@
         "Jangka waktu kedaluwarsa maksimum adalah 4 minggu"
       ],
       "The minimum amount of credit that can be added is ${ _price }": [
-        "Tambahan kredit minimal ${ _price }"
+        "Jumlah saldo minimal yang dapat ditambahkan adalah ${ _price }"
       ],
       "The minimum amount that can be donated is ${ price }": [
         "Sumbangan minimal ${ price }"
@@ -2331,7 +2331,7 @@
         "Anda tidak dapat mengirim vCard ke lebih dari 10 kontak"
       ],
       "You cannot open more than ${ maxActiveComposer } composer window at a time": [
-        "Anda tidak dapat membuka lebih dari ${ maxActiveComposer } dalam satu waktu"
+        "Anda tidak dapat membuka lebih dari ${ maxActiveComposer } jendela komposer dalam satu waktu"
       ],
       "You did not provide a file.": [
         "Anda tidak menyediakan berkas."
@@ -2359,7 +2359,7 @@
     },
     "Error importing calendar": {
       "An unexpected error occurred. Import must be restarted.": [
-        "Ada kesalahan tidak terduga. Proses impor harus diulang."
+        "Terdapat kesalahan yang tidak terduga. Proses impor harus diulang."
       ]
     },
     "Error importing contact": {
@@ -2913,7 +2913,7 @@
         "${ embeddedAttachmentsCount } gambar tertanam"
       ],
       "${ groupCounts } group found": [
-        "ditemukan { groupCounts } grup"
+        "ditemukan ${ groupCounts } grup"
       ],
       "${ mailAppName } Free": [
         "${ mailAppName } Gratis"
@@ -3018,7 +3018,7 @@
         "/bulan."
       ],
       "20% discount applied to your subscription with coupon ${ code }": [
-        "Diskon 20% berlaku untuk langganan dengan kupon ${ code }"
+        "Diskon 20% dengan kupon ${ code } telah diterapkan pada biaya berlangganan Anda"
       ],
       "30 days money-back guarantee.": [
         "Jaminan 30 hari uang kembali."
@@ -3135,22 +3135,22 @@
         "Navigasi dan tindakan dasar tetap tersedia terlepas pintasan papan ketik aktif atau tidak di pengaturan."
       ],
       "Billed as ${ billedPrice } every 2 years": [
-        "Ditagih ${ billedPrice } setiap 2 tahun"
+        "Tertagih dengan harga ${ billedPrice } per 2 tahunnya"
       ],
       "Billed as ${ billedPrice } per year": [
-        "Ditagih ${ billedPrice } per tahun"
+        "Tertagih dengan harga ${ billedPrice } per tahunnya"
       ],
       "Billed at the end of your current billing cycle (renews on ${ renewalDate })": [
-        "Ditagihkan pada akhir siklus penagihan Anda saat ini (diperbarui pada ${ renewalDate })"
+        "Tertagih pada akhir siklus penagihan Anda saat ini (diperbarui pada ${ renewalDate })"
       ],
       "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits.": [
-        "Transaksi bitcoin membutuhkan waktu untuk dikonfirmasi (hingga 24 jam). Setelah dikonfirmasi, kami akan menambahkan kredit ke akun Anda. Setelah konfirmasi transaksi, Anda dapat membayar tagihan Anda dengan kredit."
+        "Transaksi Bitcoin pada umumnya membutuhkan waktu untuk dapat terkonfirmasi (hingga maksimal 24 jam). Apabila sudah terkonfirmasi, kami akan segera menambahkan saldo yang telah Anda beli ke dalam akun Anda. Setelahnya, Anda akan dapat membayar tagihan Anda dengan saldo tersebut."
       ],
       "Black Friday 2018 applied to your subscription": [
-        "Black Friday 2018 berlaku untuk langganan anda"
+        "Diskon Black Friday 2018 telah diterapkan pada biaya berlangganan Anda"
       ],
       "Black Friday 2019 applied to your subscription": [
-        "Black Friday 2019 berlaku untuk langganan Anda"
+        "Diskon Black Friday 2019 telah diterapkan pada biaya berlangganan Anda"
       ],
       "Black Friday 2020 newcomer discount has been applied": [
         "Diskon Black Friday 2020 untuk pengguna baru telah ditambahkan"
@@ -3180,10 +3180,10 @@
         "Membersihkan data peramban yang terkait dengan pencarian konten pesan, termasuk pesan yang dimuat"
       ],
       "Click \"Request new code\" to have a new verification code sent to ${ strong }. If this email address is incorrect, click \"Edit\" to correct it.": [
-        "Klik \"Minta kode baru\" untuk mendapatkan kode verifikasi baru yang dikirim ke ${ strong }. Jika alamat email ini salah, klik \"Edit\" untuk memperbaikinya."
+        "Klik \"Minta kode baru\" untuk mendapatkan kode verifikasi baru yang akan dikirim ke ${ strong }. Apabila alamat email ini tidak tepat, klik \"Sunting\" untuk mengubahnya."
       ],
       "Click \"Request new code\" to have a new verification code sent to ${ strong }. If this phone number is incorrect, click \"Edit\" to correct it.": [
-        "Klik \"Minta kode baru\" untuk mendapatkan kode verifikasi baru di ${ strong }. Jika nomor telepon ini salah, klik \"Edit\" untuk memperbaiki."
+        "Klik \"Minta kode baru\" untuk mendapatkan kode verifikasi baru yang akan dikirim ke ${ strong }. Apabila nomor telepon ini tidak tepat, klik \"Sunting\" untuk mengubahnya."
       ],
       "Click to view group details": [
         "Klik untuk melihat rincian grup"
@@ -3291,7 +3291,7 @@
         "Setiap koneksi tambahan dapat diberikan kepada pengguna di organisasi Anda."
       ],
       "Email address": [
-        "Alamat surel"
+        "Alamat email"
       ],
       "Email tracker protection is disabled": [
         "Perlindungan pelacak email dinonakifkan"
@@ -3303,7 +3303,7 @@
         "Program-program pelacak email dapat mengusik privasi Anda. Proton telah menemukan dan memblokir ${ numberOfTrackers } program pelacak yang terdapat pada email ini."
       ],
       "Email trackers can violate your privacy. Turn on tracker protection to prevent senders from knowing whether and when you have opened a message.": [
-        "Program-program pelacak email dapat mengusik privasi Anda. Aktifkan perlindungan pelacak email agar para pengirim pesan tidak dapat mengetahui apakah Anda telah membuka pesan-pesan yang Anda terima atau belum."
+        "Program-program pelacak email dapat mengusik privasi Anda. Aktifkan perlindungan pelacak agar para pengirim pesan tidak dapat mengetahui apakah Anda telah membuka pesan-pesan yang Anda terima atau belum."
       ],
       "embedded image": [
         "gambar tertanam"
@@ -3345,7 +3345,7 @@
         "Filter bekerja di semua surel, termasuk surel yang masuk dan terkirim. Setiap filter harus memuat minimal nama, kondisi dan tindakan."
       ],
       "For families and small teams; includes both Mail and VPN.": [
-        "Untuk keluarga dan tim kecil; termasuk Mail dan VPN."
+        "Untuk keluarga dan tim kecil; dengan Mail dan VPN yang terbundel di dalamnya."
       ],
       "For getting started with private and secure emailing.": [
         "Untuk memulai pengiriman surel dengan privat dan aman."
@@ -3354,13 +3354,13 @@
         "Untuk mendapatkan keamanan yang lebih, aktifkan 2FA."
       ],
       "For individuals that need a fully-featured mailbox with advanced protection.": [
-        "Untuk individu yang membutuhkan sebuah kotak surat berfitur lengkap dengan perlindungan tingkat lanjut."
+        "Untuk para individu yang membutuhkan sebuah kotak surat berfitur lengkap dengan perlindungan keamanan mutakhir."
       ],
       "For messages newer than ${ oldestDate }": [
         "Untuk pesan yang lebih baru daripada ${ oldestDate }"
       ],
       "For professionals that need secure business communications.": [
-        "Untuk profesional yang membutuhkan komunikasi bisnis yang aman."
+        "Untuk para profesional yang membutuhkan komunikasi bisnis yang aman."
       ],
       "For Visa and MasterCard, the 3 digits on the back of your card. For American Express, the 4 digits on the front of your card.": [
         "Untuk Visa dan MasterCard, 3 digit di belakang kartu Anda. Untuk American Express, 4 digit di depan kartu Anda."
@@ -3390,7 +3390,7 @@
         "di sini"
       ],
       "Hide original message": [
-        "Sembunyikan pesan orisinal"
+        "Sembunyikan pesan asli"
       ],
       "Hour": [
         "Jam"
@@ -3765,7 +3765,7 @@
         "PGP memungkinkan Anda mengirim surel terenkripsi ke penerima non-ProtonMail yang memiliki fitur PGP."
       ],
       "Show original message": [
-        "Tampilkan pesan orisinal"
+        "Tampilkan pesan asli"
       ],
       "Since you're a loyal user, your account has additional features enabled.": [
         "Karena Anda adalah pengguna yang loyal, akun Anda memiliki fitur-fitur tambahan yang diaktifkan."
@@ -3864,7 +3864,7 @@
         "Percakapan ini berisi pesan yang dibuang."
       ],
       "This email has failed its domain's authentication requirements. It may be spoofed or improperly forwarded!": [
-        "Surel ini telah gagal memenuhi persyaratan autentikasi domainnya. Surel ini mungkin palsu atau tidak diteruskan dengan benar!"
+        "Email ini tidak memenuhi syarat otentikasi domainnya. Email ini mungkin telah dipalsukan atau tidak diteruskan dengan benar!"
       ],
       "This invitation is saved in a disabled calendar.": [
         "Undangan ini disimpan di kalender nonaktif."
@@ -3921,7 +3921,7 @@
         "Pesan ini akan kedaluwarsa besok pada pukul ${ formattedTime }"
       ],
       "This public key will be automatically used for encrypting email sent to this address.": [
-        "Kunci publik ini akan dipakai secara otomatis untuk mengenkripsi surel yang dikirim ke alamat ini."
+        "Kunci publik ini akan digunakan secara otomatis untuk mengenkripsi email-email yang dikirim ke alamat ini."
       ],
       "This sender's public key has not been trusted yet.": [
         "Kunci publik pengirim belum dipercaya."
@@ -3939,10 +3939,10 @@
         "Untuk memulihkan data Anda, Anda perlu mengaktivasi ulang kunci enkripsi kontak yang dipakai saat data dibuat. Ini mewajibkan Anda untuk mengingat kata sandi yang dipakai saat kunci dibuat dulu."
       ],
       "To unsubscribe from this mailing list, an email will be sent from ${ boldFrom } with following details as defined by the sender of the newsletter:": [
-        "Untuk berhenti langganan dari milis ini, sebuah surel akan dikirim dari ${ boldFrom } dengan rincian berikut seperti yang didefinisikan oleh pengirim newsletter:"
+        "Untuk dapat berhenti berlangganan dari milis ini, sebuah email akan dikirimkan dari ${ boldFrom } dengan rincian-rincian berikut sebagaimana yang diterakan oleh pengelola milis:"
       ],
       "To unsubscribe from this mailing list, you will be taken to the following URL where instructions will be provided by the sender of the newsletter:": [
-        "Untuk berhenti langganan dari milis ini, Anda akan dibawa ke URL berikut tempat petunjuk disediakan oleh pengirim newsletter:"
+        "Untuk dapat berhenti berlangganan dari milis ini, Anda akan dibawa ke URL berikut yang berisikan arahan-arahan lebih lanjut dari pengelola milis:"
       ],
       "To use Address Verification, you must trust one or more available public keys, including the one you want to use for sending. This prevents the encryption keys from being faked.": [
         "Untuk menggunakan Verifikasi Alamat, anda harus mempercayai satu atau beberapa kunci publik yang tersedia, termasuk yang ingin anda gunakan untuk mengirim. Ini mencegah kunci enkripsi dipalsukan."
@@ -4020,7 +4020,7 @@
         "Verifikasi akan berjalan di tab baru. Mohon nonaktifkan pemblokir popup."
       ],
       "Verification will open a new tab, please disable any popup blockers. You will not be charged. Any amount used to verify the card will be refunded immediately.": [
-        "Verifikasi akan berjalan di tab baru. Mohon nonaktifkan pemblokir popup. Anda tidak akan ditagih. Jumlah yang ditarik untuk verifikasi kartu langsung dikembalikan."
+        "Proses verifikasi akan berlangsung pada tab baru. Mohon nonaktifkan pemblokir popup Anda. Proses ini tidak dipungut biaya. Apabila Anda diminta untuk mengeluarkan sejumlah uang, jumlah tersebut akan langsung dikembalikan."
       ],
       "Visit our shop to get Proton merchandise.": [
         "Kunjungilah toko kami untuk mendapatkan berbagai cinderamata Proton."
@@ -4029,7 +4029,7 @@
         "Bundel VPN + ${ mailAppName } untuk keluarga dan usaha kecil."
       ],
       "We apologize. This might have been a mistake from our side. Can you please confirm that you want to mark this email as a legitimate one?": [
-        "Maaf. Ini mungkin kesalahan dari kami. Maukah Anda mengonfirmasi bahwa Anda ingin menandai surel ini sebagai surel sah?"
+        "Mohon maaf, namun sepertinya terjadi suatu kesalahan pada sistem kami. Dapatkah Anda mengonfirmasi bahwa Anda memang benar ingin menandai email ini sebagai email yang sah?"
       ],
       "We could not verify the sender's trusted keys.": [
         "Kami tidak dapat memverifikasi kunci yang dipercaya pengirim."
@@ -4471,7 +4471,7 @@
         "Tindakan"
       ],
       "Add email address": [
-        "Tambah alamat surel"
+        "Tambah alamat email"
       ],
       "Add image URL": [
         "Tambah URL gambar"
@@ -4582,10 +4582,10 @@
         "Email"
       ],
       "Email address": [
-        "Alamat surel"
+        "Alamat email"
       ],
       "Email format": [
-        "Format surel"
+        "Format email"
       ],
       "Emails": [
         "Email"
@@ -4594,7 +4594,7 @@
         "Aktifkan Akses Beta"
       ],
       "Encrypt emails": [
-        "Enkripsi surel"
+        "Enkripsi email"
       ],
       "Enter organization name to confirm": [
         "Masukkan nama organisasi untuk dapat melanjutkan"
@@ -4786,7 +4786,7 @@
         "Pilih bagaimana kotak surat Anda akan telihat secara bawaan."
       ],
       "Select your country": [
-        "Pilih negara anda"
+        "Pilih negara Anda"
       ],
       "Send auto-reply": [
         "Kirim balasan otomatis"
@@ -4795,7 +4795,7 @@
         "Pengirim"
       ],
       "Sign emails": [
-        "Tanda tangani surel"
+        "Tanda tangani email"
       ],
       "Size:": [
         "Ukuran:"
@@ -4932,10 +4932,10 @@
         "Buat label"
       ],
       "Edit folder": [
-        "Edit folder"
+        "Sunting folder"
       ],
       "Edit label": [
-        "Edit label"
+        "Sunting label"
       ]
     },
     "label/folder notification": {
@@ -5007,7 +5007,7 @@
         "Folder"
       ],
       "Go to subscription plans": [
-        "Ke paket langganan"
+        "Tuju menu pengaturan jenis akun"
       ],
       "Inbox": [
         "Kotak masuk"
@@ -5124,7 +5124,7 @@
     },
     "Mail feature": {
       "0.5 GB": [
-        "0,5 GB"
+        "0.5 GB"
       ],
       "20 GB": [
         "20 GB"
@@ -5700,7 +5700,7 @@
     },
     "Plan feature": {
       "0.5 GB storage": [
-        "Kapasitas 0,5 GB"
+        "Kuota penyimpanan 0.5 GB"
       ],
       "1 - 5000 users *": [
         "1 - 5000 pengguna *"
@@ -5727,10 +5727,10 @@
         "5 alamat / pengguna"
       ],
       "5 GB storage *": [
-        "Kapasitas 5 GB *"
+        "Kuota penyimpanan 5 GB *"
       ],
       "5 GB storage / user": [
-        "Kapasitas 5 GB / pengguna"
+        "Kuota penyimpanan 5 GB / pengguna"
       ],
       "50 addresses": [
         "50 alamat"
@@ -5934,7 +5934,7 @@
     },
     "Send email with errors": {
       "Do you want to send the email anyway?": [
-        "Yakin ingin mengirim surel ini?"
+        "Apakah Anda tetap ingin mengirim email ini?"
       ],
       "We have detected errors. Your email cannot be sent to the email address entered due to the following reason:": [
         "Kami telah mendeteksi kesalahan. Surel Anda tidak dapat dikirim ke alamat surel manapun kerena alasan berikut:"
@@ -5948,7 +5948,7 @@
         "Apakah Anda tetap ingin mengirim email ini?"
       ],
       "If you decide to send the message anyway, the following recipient will receive the email without expiration:": [
-        "Jika Anda memutuskan untuk mengirim pesan ini, penerima berikut akan menerima surel tanpa waktu kedaluwarsa:"
+        "Apabila Anda memutuskan untuk tetap mengirim email ini, para penerima berikut akan menerima email yang bersangkutan tanpa terikat waktu kedaluwarsa:"
       ],
       "The following address is not valid: ${ invalidAddresses }": [
         "Alamat berikut tidak valid: ${ invalidAddresses }"
@@ -6279,7 +6279,7 @@
         "Verifikasi berhasil"
       ],
       "You have successfully unsubscribed": [
-        "Anda telah berhasil berhenti berlangganan"
+        "Anda telah berhenti berlangganan"
       ]
     },
     "Suffix for price": {
@@ -6385,13 +6385,13 @@
     },
     "Title": {
       "${ appName } customization": [
-        "Penyesuaian { appName }"
+        "Penyesuaian ${ appName }"
       ],
       "${ appName } Keyboard Shortcuts": [
         "${ appName } Pintasan Papan Ketik"
       ],
       "${ emailsCount } member": [
-        "{ emailsCount } anggota"
+        "${ emailsCount } anggota"
       ],
       "3-D Secure verification failed": [
         "Verifikasi 3-D Secure gagal"
@@ -6511,7 +6511,7 @@
         "Buat grup baru"
       ],
       "Credits": [
-        "Kredit"
+        "Saldo"
       ],
       "Currency": [
         "Mata uang"
@@ -6541,19 +6541,19 @@
         "Hapus ${ count } grup kontak"
       ],
       "Delete ${ count } conversation": [
-        "Hapus percakapan\n\nHapus ${ count } percakapan"
+        "Hapus ${ count } percakapan"
       ],
       "Delete ${ count } draft": [
         "Hapus ${ count } draf"
       ],
       "Delete ${ count } message": [
-        "Hapus pesan\n\nHapus ${ count } pesan"
+        "Hapus ${ count } pesan"
       ],
       "Delete ${ Name }": [
         "Hapus ${ Name }"
       ],
       "Delete all messages": [
-        "Hapus semua pesan"
+        "Hapus seluruh pesan"
       ],
       "Delete conversation": [
         "Hapus percakapan"
@@ -6577,22 +6577,22 @@
         "Ubah kontak"
       ],
       "Edit contact group": [
-        "Edit grup kontak"
+        "Sunting grup kontak"
       ],
       "Edit filter": [
         "Ubah filter"
       ],
       "Edit image": [
-        "Edit gambar"
+        "Sunting gambar"
       ],
       "Email addresses": [
-        "Alamat surel"
+        "Alamat email"
       ],
       "Email settings": [
-        "Pengaturan surel"
+        "Pengaturan email"
       ],
       "Email settings (${ emailAddress })": [
-        "Pengaturan surel (${ emailAddress })"
+        "Pengaturan email (${ emailAddress })"
       ],
       "Enable message content search": [
         "Aktifkan pencarian konten pesan"
@@ -6601,7 +6601,7 @@
         "Enkripsi"
       ],
       "Enter your password": [
-        "Masukkan sandi Anda"
+        "Masukkan kata sandi Anda"
       ],
       "Enter your username or ProtonMail email address": [
         "Masukkan nama pengguna atau alamat email ProtonMail Anda"
@@ -6649,13 +6649,13 @@
         "Pintasan Papan Ketik"
       ],
       "Label as": [
-        "Label sebagai"
+        "Labeli sebagai"
       ],
       "Link confirmation": [
         "Konfirmasi tautan"
       ],
       "Load embedded images": [
-        "Muat gambar tertanam"
+        "Muat gambar-gambar yang tersemat"
       ],
       "Load remote content": [
         "Muat remote content"
@@ -6691,7 +6691,7 @@
         "Pilihan lainnya"
       ],
       "Move to": [
-        "Pindah ke"
+        "Pindahkan ke"
       ],
       "Move to inbox": [
         "Pindahkan ke kotak masuk"
@@ -6778,7 +6778,7 @@
         "Penerima hilang"
       ],
       "Recover data": [
-        "Memulihkan data"
+        "Pulihkan data"
       ],
       "Reply": [
         "Balas"
@@ -6814,10 +6814,10 @@
         "Kirim email"
       ],
       "Send with changed preferences?": [
-        "Kirim dengan preferensi yang berubah?"
+        "Kirim dengan preferensi yang telah diubah?"
       ],
       "Send without expiration?": [
-        "Kirim tanpa kedaluwarsa?"
+        "Kirim tanpa waktu kedaluwarsa?"
       ],
       "Sending error": [
         "Kesalahan saat mengirim"
@@ -6889,7 +6889,7 @@
         "Selamat datang ${ userName }"
       ],
       "What's new": [
-        "Apa yang baru"
+        "Apa-apa saja yang baru"
       ],
       "ZIP / postal code": [
         "Kode pos"
@@ -6962,7 +6962,7 @@
         "Dukungan untuk protokol berbagi berkas seperti BitTorrent."
       ],
       "System subfolders will show up as separate folders in ProtonMail": [
-        "Subfolder-subfolder milik sistem akan muncul sebagai folder terpisah di ProtonMail"
+        "Sub-folder milik sistem akan muncul sebagai folder terpisah di ProtonMail"
       ],
       "The import will start with the most recent messages.": [
         "Proses impor akan dimulai dari pesan-pesan Anda yang paling baru."

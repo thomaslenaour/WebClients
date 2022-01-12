@@ -825,7 +825,7 @@
         "Dit bericht bevat ingebedde afbeeldingen."
       ],
       "This message contains remote content.": [
-        "Dit bericht bevat externe inhoud."
+        ""
       ],
       "Trust": [
         "Vertrouwen"
@@ -4716,7 +4716,7 @@
         "Van:"
       ],
       "From: ${ importedEmail }": [
-        "Van: { importedEmail }"
+        "Van: ${ importedEmail }"
       ],
       "Group": [
         "Groep"
@@ -6794,7 +6794,7 @@
         "Link bevestigen"
       ],
       "Load embedded images": [
-        "Ingesloten afbeeldingen laden"
+        ""
       ],
       "Load remote content": [
         "Externe inhoud laden"

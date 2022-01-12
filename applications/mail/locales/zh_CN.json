@@ -24,7 +24,7 @@
         "添加"
       ],
       "Add address": [
-        ""
+        "添加地址"
       ],
       "Add condition": [
         "添加条件"
@@ -33,7 +33,7 @@
         "添加联系人"
       ],
       "Add email": [
-        ""
+        "添加电子邮箱"
       ],
       "Add group": [
         "添加群组"
@@ -45,7 +45,7 @@
         "添加新群组"
       ],
       "Add phone number": [
-        ""
+        "添加电话号码"
       ],
       "Add screenshot(s)": [
         "添加屏幕截图"
@@ -111,7 +111,7 @@
         "抄送、密送"
       ],
       "CC BCC": [
-        ""
+        "抄送／密送"
       ],
       "Change page": [
         "页面跳转"
@@ -225,7 +225,7 @@
         "减少"
       ],
       "Default email application": [
-        ""
+        "设为默认邮件应用"
       ],
       "Delete": [
         "删除"
@@ -270,7 +270,7 @@
         "放弃"
       ],
       "Dismiss get started checklist": [
-        ""
+        "忽略入门清单"
       ],
       "Done": [
         "完成"
@@ -315,7 +315,7 @@
         "展开编辑窗"
       ],
       "Expand URL": [
-        ""
+        "展开"
       ],
       "Export": [
         "导出"
@@ -324,7 +324,7 @@
         "导出联系人"
       ],
       "Fewer search options": [
-        ""
+        "较少搜索选项"
       ],
       "Filter on...": [
         "筛选依据..."
@@ -411,7 +411,7 @@
         "增加"
       ],
       "Inline": [
-        "嵌入邮件中"
+        "内嵌图片"
       ],
       "Insert": [
         "插入"
@@ -423,7 +423,7 @@
         "插入联系人"
       ],
       "Insert contacts": [
-        ""
+        "插入联系人"
       ],
       "Insert image": [
         "插入图片"
@@ -708,7 +708,7 @@
         "搜索"
       ],
       "Search message content": [
-        "搜索邮件内容"
+        "搜索邮件全文"
       ],
       "Select all": [
         "全选"
@@ -738,10 +738,10 @@
         "设置"
       ],
       "Set as default": [
-        ""
+        "设为默认"
       ],
       "Set expiration time": [
-        ""
+        "设置有效期"
       ],
       "Share via link": [
         "通过链接分享"
@@ -762,7 +762,7 @@
         "显示详情"
       ],
       "Show fewer search options": [
-        ""
+        "显示较少搜索选项"
       ],
       "Show folders": [
         "显示文件夹"
@@ -813,7 +813,7 @@
         "切换账户"
       ],
       "Switch to rich text": [
-        ""
+        "切换为富文本"
       ],
       "Theme": [
         "配色"
@@ -822,7 +822,7 @@
         "此邮件含有嵌入图像。"
       ],
       "This message contains remote content.": [
-        "此邮件含有外链内容。"
+        "此邮件含有外链内容"
       ],
       "Trust": [
         "信任"
@@ -840,7 +840,7 @@
         "更换验证方式"
       ],
       "Turn on tracker protection": [
-        ""
+        "开启追踪保护"
       ],
       "Underline": [
         "下划线"
@@ -864,7 +864,7 @@
         "取消信任"
       ],
       "Update": [
-        ""
+        "更改"
       ],
       "Upgrade": [
         "升级"
@@ -924,7 +924,7 @@
         "查看源代码"
       ],
       "Why not?": [
-        ""
+        "为什么不呢？"
       ],
       "Yes": [
         "是"
@@ -1073,10 +1073,10 @@
     },
     "Beta access description": {
       "Beta Access lets you use the beta version of ProtonMail, Proton Calendar, and Proton Drive before they are released to the public. This means you can be the first to try new products, get new updates, and use new features.": [
-        "启用 \"测试版功能\" 能让您在正式发布之前使用 ProtonMail, Proton Calendar, Proton Drive 的测试版本。这代表您可以抢先体验新产品，获得最新更新，并使用最新推出的功能"
+        "开启测试版功能后您将使用 ProtonMail、Proton Calendar 和 Proton Drive 未正式发布的公测版本，可以抢先体验新产品和新功能。"
       ],
       "If you encounter issues, you can always disable Beta Access.": [
-        "如果您在使用过程中遇到问题，您可以随时禁用该选项"
+        "如果使用过程中遇到问题，您可以随时关闭该选项。"
       ]
     },
     "Billing cycle option": {
@@ -1409,10 +1409,10 @@
         "（出席可选）"
       ],
       "Adding occurrences to an event is not supported for the moment": [
-        ""
+        "暂不支持增加事件的重复次数"
       ],
       "An occurrence has been added to the event ${ veventIcsTitle }": [
-        "一次活动已添加到活动 ${ veventIcsTitle }"
+        "事件 ${ veventIcsTitle } 已新增一次"
       ],
       "Event already ended": [
         ""
@@ -1421,25 +1421,25 @@
         ""
       ],
       "Event refreshing is not supported for the moment": [
-        ""
+        "暂不支持活动刷新"
       ],
       "Event rescheduling is not supported for the moment": [
-        ""
+        "暂不支持重新安排活动"
       ],
       "The sender of this email has not been invited to this event and cannot be added as a participant": [
         ""
       ],
       "This answer cannot be added to ${ calendarAppName } as we only support answers to all events of a series for the moment": [
-        ""
+        "此回复无法添加到 ${ calendarAppName } 中，因为目前仅支持对全系列事件的回复"
       ],
       "This event has been canceled.": [
-        ""
+        "此活动已被取消。"
       ],
       "This event has been updated.": [
         "此事项已被更新。"
       ],
       "This invitation is out of date. The event has been canceled.": [
-        ""
+        "此邀请已过期，活动已被取消。"
       ],
       "This invitation is out of date. The event has been deleted.": [
         "此邀请已过期，活动已被删除。"
@@ -1466,7 +1466,7 @@
         "您已暂时接受了此邀请。"
       ],
       "Your email address is not in the participants list": [
-        ""
+        "您的邮箱地址不在参与者列表中"
       ]
     },
     "Calendar status": {
@@ -1479,19 +1479,19 @@
     },
     "Calendar subscription not synced error": {
       "Calendar could not be decrypted": [
-        ""
+        "未能解密日历"
       ],
       "Calendar is syncing": [
         "日历正在同步中"
       ],
       "Calendar is too big": [
-        ""
+        "日历文件太大"
       ],
       "Calendar link is not accessible": [
         "日历链接不能被访问"
       ],
       "Calendar link is temporarily inaccessible": [
-        ""
+        "日历链接暂时无法访问"
       ],
       "Calendar link is wrong": [
         "日历链接错误"
@@ -1505,10 +1505,10 @@
     },
     "Collapsible tooltip": {
       "Close": [
-        ""
+        "关闭"
       ],
       "Open": [
-        ""
+        "打开"
       ]
     },
     "Composer email icon": {
@@ -1585,7 +1585,7 @@
         "邮件已保存到草稿箱"
       ],
       "Quit import customization?": [
-        ""
+        "退出导入定制？"
       ]
     },
     "Contact field label": {
@@ -1749,7 +1749,7 @@
     },
     "Density mode": {
       "Comfortable": [
-        "舒适"
+        "适中"
       ],
       "Compact": [
         "紧凑"
@@ -1837,10 +1837,10 @@
     },
     "Email body for invitation": {
       "${ eventTitle } has been canceled.": [
-        ""
+        "${ eventTitle } 已被取消。"
       ],
       "${ eventTitle } has been updated.\n${ eventDetailsText }": [
-        "${ eventTitle } 已更新。\n{ eventDetailsText }"
+        "${ eventTitle } 已更新。\n${ eventDetailsText }"
       ],
       "You are invited to ${ eventTitle }\n${ eventDetailsText }": [
         "您受邀参加 ${ eventTitle }\n${ eventDetailsText }"
@@ -1881,37 +1881,37 @@
         ""
       ],
       "Event is tomorrow": [
-        ""
+        "明天的活动"
       ],
       "Event starting now": [
-        ""
+        "活动现在开始"
       ],
       "Event starts in ${ minutesUntilEvent } minute": [
-        ""
+        "活动将在 ${ minutesUntilEvent } 分钟后开始"
       ],
       "Event starts tomorrow": [
-        ""
+        "活动将于明天进行"
       ]
     },
     "Email reminder decryption error": {
       "Event details are encrypted. Sign in again to restore Calendar and decrypt your data. ${ learnMoreLink }": [
-        ""
+        "活动细节已加密。请重新登陆已刷新日历并解密您的数据。${ learnMoreLink }"
       ],
       "Event details cannot be decrypted. ${ whyNotLink }": [
-        ""
+        "无法解开被加密的活动内容。${ whyNotLink }"
       ]
     },
     "Email reminder error": {
       "Event is no longer in your calendar": [
-        ""
+        "此活动已不在您的日程中"
       ]
     },
     "Email reminder out of date alert": {
       "Event was canceled": [
-        ""
+        "活动已取消"
       ],
       "Event was updated. This reminder is out-of-date.": [
-        ""
+        "活动已更新，此提醒已过期。"
       ]
     },
     "Email subject": {
@@ -1925,7 +1925,7 @@
         "${ formattedStart } 的活动邀请函"
       ],
       "Invitation for an event starting on ${ formattedStart }": [
-        "开始于 { formattedStart } 的活动邀请函"
+        "开始于 ${ formattedStart } 的活动邀请函"
       ],
       "Update for an event on ${ formattedStart }": [
         "更新 ${ formattedStart } 的活动"
@@ -2076,7 +2076,7 @@
         "邮箱密码错误，请重试"
       ],
       "Invalid ${ name } code": [
-        "无效的 { name } 码"
+        "无效的 ${ name } 码"
       ],
       "Invalid card number": [
         "卡号无效"
@@ -2124,10 +2124,10 @@
         "网络错误：请检查网络后重试。"
       ],
       "No address with keys available to compose a message": [
-        ""
+        "没有可用于撰写邮件的密钥"
       ],
       "No data to import": [
-        ""
+        "没有要导入的数据"
       ],
       "No key retrieved for internal user is valid for sending": [
         "没有为内部用户检索到的密钥用于发送"
@@ -2181,10 +2181,10 @@
         "请刷新页面。"
       ],
       "Please repeat the password": [
-        ""
+        "请重新输入密码"
       ],
       "Please set a password": [
-        ""
+        "请设置密码"
       ],
       "Preferences could not be saved": [
         "设置保存失败"
@@ -2443,7 +2443,7 @@
         "缺少启动时间"
       ],
       "No UID, title or start time": [
-        ""
+        "没有 UID、标题或开始时间"
       ],
       "Non-Gregorian": [
         "非格里历"
@@ -2455,7 +2455,7 @@
         "找不到原始重复事件"
       ],
       "Recurring event has no occurrences": [
-        ""
+        "重复事件没有发生"
       ],
       "Recurring rule not supported": [
         "不支持重复规则"
@@ -2517,7 +2517,7 @@
         "无法解密附加的 ICS 文件"
       ],
       "Attached ICS file could not be read": [
-        ""
+        "无法读取 ICS 附件"
       ],
       "Invalid invitation": [
         "邀请无效"
@@ -2673,65 +2673,65 @@
     },
     "Get started checklist completion": {
       "We've increased the total storage of your account to ${ totalGBStorageAfterCompletion } GB. Get additional storage and unlock premium features today.": [
-        ""
+        "我们已将您的存储空间升至 ${ totalGBStorageAfterCompletion } GB。您还可以升级账户，从而获得更大的存储空间和更高级的功能。"
       ],
       "You're all set!": [
-        ""
+        "一切就绪！"
       ]
     },
     "Get started checklist incentive": {
       "Complete all steps and get a total of ${ totalGBStorageAfterCompletion } GB on your account": [
-        ""
+        "完成所有步骤即可将存储空间升至 ${ totalGBStorageAfterCompletion } GB"
       ],
       "Only ${ days } day left": [
-        ""
+        "仅剩 ${ days } 天"
       ]
     },
     "Get started checklist instructions": {
       "Available on iOS and Android.": [
-        ""
+        "支持 iOS 与安卓设备。"
       ],
       "Get the ${ protonMailAppName } mobile app": [
-        ""
+        "下载 ${ protonMailAppName } 移动应用"
       ],
       "Import contacts or emails": [
-        ""
+        "导入您的通讯录或信息"
       ],
       "Import your contacts or messages": [
-        ""
+        "导入您的通讯录或信息"
       ],
       "Quickly transfer your contacts or emails from any provider using our Easy Switch import assistant.": [
-        ""
+        "通过简单转换助手以快速地将您之前的联系人和电子邮件从任何服务提供商转移"
       ],
       "Sign into the mobile app to complete the action": [
-        ""
+        "打开手机APP完成后续操作。"
       ],
       "Using your mobile device, scan this QR code or visit": [
-        ""
+        "使用您的移动设备扫描此二维码或只读打开"
       ]
     },
     "Get started checklist item": {
       "Get mobile app": [
-        ""
+        "下载移动端应用"
       ],
       "Import contacts or emails": [
-        ""
+        "导入通讯录或邮件"
       ],
       "Send a message": [
-        ""
+        "发送邮件"
       ],
       "Set up a recovery method": [
-        ""
+        "设置恢复方法"
       ]
     },
     "Get started checklist spotlight": {
       "You can access the checklist anytime from here": [
-        ""
+        "您可以在任何时候通过这里查看任务进度"
       ]
     },
     "Get started checklist title": {
       "Get started": [
-        ""
+        "入门步骤"
       ]
     },
     "Group": {
@@ -2801,7 +2801,7 @@
     },
     "ICS widget label for event details": {
       "${ totalAttendees } participant": [
-        ""
+        "${ totalAttendees } 个参与者"
       ],
       "Organizer:": [
         "组织者："
@@ -2883,7 +2883,7 @@
         "${ calendarsToBeCreatedCount } 个新日历"
       ],
       "${ calendarsToBeMerged } merged calendar": [
-        ""
+        "${ calendarsToBeMerged } 个合并日历"
       ],
       "${ calendarsToBeMergedCount } merged calendar": [
         "${ calendarsToBeMergedCount } 个合并日历"
@@ -2937,16 +2937,16 @@
         "${ numContacts } 名联系人"
       ],
       "${ occurrencesInBody } occurrence found": [
-        ""
+        "找到 ${ occurrencesInBody } 条结果"
       ],
       "${ occurrencesInBody } occurrence found in the mail content": [
-        ""
+        "邮件正文中找到 ${ occurrencesInBody } 条结果"
       ],
       "${ pureAttachmentsCount } file attached": [
         "${ pureAttachmentsCount } 个文件已添加到附件。"
       ],
       "${ save20 } on your subscription by switching to ${ annualBilling }": [
-        "{ save20 } 订阅，切换到{ annualBilling }"
+        "${ save20 } 订阅，切换到${ annualBilling }"
       ],
       "${ saveExtra20 } on both Mail and VPN by adding a Mail subscription.": [
         "添加邮件订阅，可整体享 ${ saveExtra20 } 优惠。"
@@ -3015,7 +3015,7 @@
         "+${ organization.BonusVPN } 台设备可接入 ProtonVPN"
       ],
       "/month.": [
-        "/月."
+        "/月。"
       ],
       "20% discount applied to your subscription with coupon ${ code }": [
         "优惠券 ${ code } 已提供 20% 优惠"
@@ -3096,7 +3096,7 @@
         "检测到此收件人的一枚未知公钥。"
       ],
       "and": [
-        ""
+        "和"
       ],
       "Are you sure you want to delete all messages in this folder?": [
         "确定要删除此文件夹内的所有邮件吗？"
@@ -3171,13 +3171,13 @@
         "正在检查联系人 ${ progress } / ${ max }..."
       ],
       "Clear data": [
-        ""
+        "清除数据"
       ],
       "Clearing browser data also deactivates message content search on this device. All messages will need to be downloaded again to search within them.": [
-        "清除浏览器数据还会停用此设备的邮件内容搜索，需要重新下载所有邮件后才能进行搜索。"
+        "清除浏览器数据还会停用此设备的邮件全文搜索，需要重新下载所有邮件后才能进行搜索。"
       ],
       "Clears browser data related to message content search including downloaded messages": [
-        "清除与邮件内容搜索相关的浏览器数据，包括已下载的邮件"
+        "清除与邮件全文搜索相关的浏览器数据，包括已下载的邮件"
       ],
       "Click \"Request new code\" to have a new verification code sent to ${ strong }. If this email address is incorrect, click \"Edit\" to correct it.": [
         "点击“请求新验证码”将发送到 ${ strong }。如果此邮箱地址不正确，请点击“编辑”。"
@@ -3213,7 +3213,7 @@
         "创建联系人群组"
       ],
       "Create in": [
-        ""
+        "创建于"
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
         "支持来自 Outlook、Outlook Express、雅虎邮箱、Hotmail、Eudora 和其他一些应用程序的 CSV 文件，以及 vCard 3.1 和 4.0 格式（UTF-8 编码）。"
@@ -3240,10 +3240,10 @@
         "天"
       ],
       "Default email application": [
-        ""
+        "设为默认邮件应用"
       ],
       "Disable message content search": [
-        ""
+        "禁用邮件全文搜索"
       ],
       "Discount applied to your subscription with coupon ${ code }": [
         "优惠券 ${ code } 折扣已计入"
@@ -3294,19 +3294,19 @@
         "邮箱地址"
       ],
       "Email tracker protection is disabled": [
-        ""
+        "已禁用电子邮件跟踪保护"
       ],
       "Email trackers can violate your privacy. Proton did not find any trackers on this message.": [
-        ""
+        "邮件跟踪器会威胁到您的隐私，Proton暂未在此邮件中发现任何跟踪器。"
       ],
       "Email trackers can violate your privacy. Proton found and blocked ${ numberOfTrackers } tracker.": [
-        ""
+        "邮件跟踪器会威胁到您的隐私，Proton找到并阻止了 ${ numberOfTrackers } 个跟踪器。"
       ],
       "Email trackers can violate your privacy. Turn on tracker protection to prevent senders from knowing whether and when you have opened a message.": [
-        ""
+        "邮件跟踪器会威胁到您的隐私，开启跟踪器防护可以避免发件人得知您在何时何地阅览了此邮件。"
       ],
       "embedded image": [
-        "嵌入的图像"
+        "张嵌入图像"
       ],
       "Encrypt for non-ProtonMail users": [
         "为非 ProtonMail 用户加密"
@@ -3327,7 +3327,7 @@
         "正在估算剩余时间..."
       ],
       "Expiration time": [
-        ""
+        "邮件有效期"
       ],
       "Expiration Time": [
         "邮件有效期"
@@ -3495,7 +3495,7 @@
         "管理您的标签"
       ],
       "members": [
-        ""
+        "成员"
       ],
       "Members": [
         "成员"
@@ -3513,16 +3513,16 @@
         "邮件已发送"
       ],
       "Message sent.": [
-        ""
+        "邮件已发送。"
       ],
       "Message will be sent on ${ dateString } at ${ formattedTime }": [
-        ""
+        "邮件将于${ dateString } ${ formattedTime } 发送"
       ],
       "Message will be sent today at ${ formattedTime }": [
-        ""
+        "邮件将于今天 ${ formattedTime } 发送"
       ],
       "Message will be sent tomorrow at ${ formattedTime }": [
-        ""
+        "邮件将于明天 ${ formattedTime } 发送"
       ],
       "Monthly ${ onDayString }": [
         "每月 ${ onDayString }"
@@ -3546,7 +3546,7 @@
         "无邮箱地址"
       ],
       "No email trackers found": [
-        ""
+        "未发现电子邮件跟踪器"
       ],
       "No folder found": [
         "未找到文件夹"
@@ -3618,7 +3618,7 @@
         "纯文本"
       ],
       "Please add at least one recipient.": [
-        ""
+        "请至少添加一个收件人。"
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
         "请妥善保管。如果遇到密码重置，您将需要通过它来访问您的账户以及解密您的数据。"
@@ -3672,7 +3672,7 @@
         "Proton 不会通过滥用用户隐私来赚钱。"
       ],
       "ProtonMail can protect your business as well.": [
-        "ProtonMail 也可以保护您的业务。"
+        "您的商务邮件也可以交由 ProtonMail 保护。"
       ],
       "ProtonMail Plus is limited to one user and starts with 5 GB of storage.": [
         "ProtonMail Plus 仅限一名用户使用，5 GB 存储空间起步。"
@@ -3723,7 +3723,7 @@
         "已加入日程"
       ],
       "Scheduled send of this message will be cancelled.": [
-        ""
+        "此邮件的定时发送将被取消。"
       ],
       "Scheduling message...": [
         "定时发送邮件中..."
@@ -3759,7 +3759,7 @@
         "设置恢复密语"
       ],
       "Set ProtonMail as your default email application for this browser. ProtonMail will open automatically when you click an email link.": [
-        ""
+        "将 ProtonMail 设为此浏览器的默认电子邮件应用程序。这样当您下次点击邮件链接时，ProtonMail 将会自动打开。"
       ],
       "Setting up PGP allows you to send end-to-end encrypted emails with a non-ProtonMail user that uses a PGP compatible service.": [
         "设置 PGP 后，您就可以向 ProtonMail 以外其他兼容 PGP 的邮箱发送端到端加密邮件了。"
@@ -3792,7 +3792,7 @@
         "主题："
       ],
       "Support privacy by upgrading for": [
-        ""
+        "升级账户支持我们的隐私保护事业，仅需"
       ],
       "support team": [
         "客服团队"
@@ -3855,7 +3855,7 @@
         "您目前使用的浏览器不支持查看 PDF 文件，请下载后打开。"
       ],
       "This conversation contains a scheduled message. Sending of this message will be cancelled.": [
-        ""
+        "此会话内包含一封定时发送的邮件，它将被取消发送。"
       ],
       "This conversation contains non-trashed messages.": [
         "此会话包含不在废件箱中的邮件。"
@@ -3894,16 +3894,16 @@
         "此邮件将移至草稿箱，以便您进行编辑。您需要为其重新安排发送时间。"
       ],
       "This message will be sent on ${ dateString } at ${ formattedTime }": [
-        ""
+        "此邮件将于${ dateString } ${ formattedTime } 发送"
       ],
       "This message will be sent shortly": [
         "此邮件将立即发送"
       ],
       "This message will be sent today at ${ formattedTime }": [
-        ""
+        "此邮件将于今天 ${ formattedTime } 发送"
       ],
       "This message will be sent tomorrow at ${ formattedTime }": [
-        ""
+        "此邮件将于明天 ${ formattedTime } 发送"
       ],
       "This message will expire ${ formattedDate }": [
         "此邮件将于 ${ formattedDate } 过期"
@@ -3912,13 +3912,13 @@
         "此消息将于 ${ formattedDelay } 过期"
       ],
       "This message will expire on ${ dateString } at ${ formattedTime }": [
-        ""
+        "此邮件将于${ dateString } ${ formattedTime } 过期"
       ],
       "This message will expire today at ${ formattedTime }": [
-        ""
+        "此邮件将于今天 ${ formattedTime } 过期"
       ],
       "This message will expire tomorrow at ${ formattedTime }": [
-        ""
+        "此邮件将于明天 ${ formattedTime } 过期"
       ],
       "This public key will be automatically used for encrypting email sent to this address.": [
         "该公钥将自动用于加密发送到该地址的电子邮件。"
@@ -3954,7 +3954,7 @@
         "关闭全文搜索，现有进度不会丢失。"
       ],
       "Turn on to search the content of your messages": [
-        ""
+        "开启以搜索您的邮件全文"
       ],
       "Unsupported file": [
         "不支持文件"
@@ -3966,31 +3966,31 @@
         "升级后可向您的账户添加更多地址。"
       ],
       "Upgrade to configure a vacation auto-responder.": [
-        "升级后可配置假期自动回复。"
+        "升级账户即可开启自动回复功能。"
       ],
       "Upgrade to create more folders, filters, and addresses.": [
         "升级账户即可创建更多文件夹、筛选规则和邮箱地址。"
       ],
       "Upgrade to host emails from your own domain name.": [
-        ""
+        "开通付费账户即可使用您自己的域名收发邮件。"
       ],
       "Upgrade to send email from @pm.me addresses.": [
-        "升级后可通过 @pm.me 地址发送电子邮件。"
+        "开通付费账户即可通过 @pm.me 地址发送电子邮件。"
       ],
       "Upgrade to send emails to contact groups easily.": [
         "升级后可轻松向联系人群组发送电子邮件。"
       ],
       "Upgrade to support a privacy-first internet.": [
-        "升级以支持隐私优先的互联网。"
+        "升级账户即可助力我们构建隐私优先的互联网。"
       ],
       "Upgrade to support our mission of privacy for all.": [
-        "升级以支持我们全面隐私的使命。"
+        "升级账户即可支持我们为大众捍卫隐私的使命。"
       ],
       "Upgrade to support privacy and get more features.": [
-        "升级以助力隐私并获取更多功能。"
+        "升级账户不仅可以支持我们的隐私保护事业，还能解锁更多功能。"
       ],
       "Upgrade to use ProtonMail with third-party desktop clients.": [
-        "升级后可配合使用第三方桌面客户端。"
+        "开通付费账户即可通过第三方客户端使用 ProtonMail。"
       ],
       "Upload picture": [
         "上传图片"
@@ -4023,7 +4023,7 @@
         "验证将在新标签页中进行，请停止拦截弹窗。您不必为此付费，验证结束后所用金额将立即退还。"
       ],
       "Visit our shop to get Proton merchandise.": [
-        "访问我们的商店以获取 Proton 商品。"
+        "前往我们的商店即可选购 Proton 特色纪念品。"
       ],
       "VPN + ${ mailAppName } bundle for families and small businesses.": [
         "VPN + ${ mailAppName } 套装，适合家庭和小企业。"
@@ -4071,7 +4071,7 @@
         "您已登录 ${ user.Name }（${ user.Email }），并且权限有限。"
       ],
       "You can add it as an attachment or display it inline in your mail body.": [
-        ""
+        "您可以将其添加为附件或在邮件正文中内嵌显示。"
       ],
       "You can also merge imported calendars with existing Proton calendars.": [
         "您也可以将导入日历与现有 Proton 日历合并。"
@@ -4155,7 +4155,7 @@
         "即将为您转至 PayPal 确认支付。"
       ],
       "You wrote “${ attachmentsFoundKeyword }”, but no attachment has been added. Do you want to send your message anyway?": [
-        ""
+        "您提到了“${ attachmentsFoundKeyword }”，但没有添加附件。是否仍要发送邮件？"
       ],
       "Your account has at least one overdue invoice. Your access has been restricted. ${ payInvoiceLink }": [
         "您有逾期未支付的账单，因此功能已受限。${ payInvoiceLink }"
@@ -4196,7 +4196,7 @@
         "（测试版）"
       ],
       "Optional": [
-        ""
+        "可选"
       ]
     },
     "Info concerning plan features": {
@@ -4274,7 +4274,7 @@
         "添加加密"
       ],
       "Add expiration time": [
-        "添加到期时间"
+        "添加有效期"
       ],
       "Apply / open": [
         "应用 / 打开"
@@ -4465,7 +4465,7 @@
         "${ firstAddress } 及其他 ${ count } 位"
       ],
       "(Coming soon)": [
-        ""
+        "（即将推出）"
       ],
       "Actions": [
         "操作"
@@ -4522,7 +4522,7 @@
         "比特币金额："
       ],
       "Calendars": [
-        ""
+        "日历"
       ],
       "Cancel": [
         "取消"
@@ -4552,10 +4552,10 @@
         "条件"
       ],
       "Confirm password": [
-        ""
+        "确认密码"
       ],
       "Contacts": [
-        ""
+        "通讯录"
       ],
       "Copy": [
         "复制"
@@ -4597,7 +4597,7 @@
         "加密电子邮件"
       ],
       "Enter organization name to confirm": [
-        ""
+        "请输入机构名称进行确认"
       ],
       "Enter the 6-digit code": [
         "请输入 6 位验证码"
@@ -4627,7 +4627,7 @@
         "发件人："
       ],
       "From: ${ importedEmail }": [
-        ""
+        "来自：${ importedEmail }"
       ],
       "Group": [
         "群组"
@@ -4642,16 +4642,16 @@
         "如果"
       ],
       "Import all messages": [
-        ""
+        "导入所有邮件"
       ],
       "Import contacts": [
         "导入联系人"
       ],
       "Import interval": [
-        ""
+        "导入间隔"
       ],
       "Import to email address": [
-        ""
+        "导入到邮箱地址"
       ],
       "Keyboard shortcuts": [
         "快捷键"
@@ -4663,37 +4663,37 @@
         "加标签"
       ],
       "Label messages as": [
-        ""
+        "给导入的邮件加标签"
       ],
       "Labels:": [
         "标记："
       ],
       "Last 12 months only": [
-        ""
+        "仅过去 12 个月"
       ],
       "Last 3 months only": [
-        ""
+        "仅过去 3 个月"
       ],
       "Last month only": [
-        ""
+        "仅上个月"
       ],
       "Mailbox password": [
         "邮箱密码"
       ],
       "Manage folders": [
-        ""
+        "管理文件夹"
       ],
       "Manage labels": [
-        ""
+        "管理标签"
       ],
       "Manage my addresses": [
-        ""
+        "管理邮箱地址"
       ],
       "Mark as": [
         "标为"
       ],
       "Message password": [
-        ""
+        "邮件密码"
       ],
       "Move to": [
         "移至"
@@ -4729,13 +4729,13 @@
         "密码"
       ],
       "Password hint": [
-        ""
+        "密码提示"
       ],
       "Payer": [
         "付款人"
       ],
       "PGP scheme": [
-        ""
+        "PGP 方案"
       ],
       "Phone number": [
         "电话号码"
@@ -4771,7 +4771,7 @@
         "显示密码"
       ],
       "Search in": [
-        ""
+        "在其中搜索"
       ],
       "Select a method": [
         "选择支付方式"
@@ -4780,7 +4780,7 @@
         "请选择编辑窗的默认外观"
       ],
       "Select how your list of messages looks like by default.": [
-        "请选择收件箱列表的默认外观"
+        "调整邮件列表的显示方式。"
       ],
       "Select how your mailbox looks like by default.": [
         "请选择邮箱的默认外观"
@@ -4840,7 +4840,7 @@
         "收件人："
       ],
       "To: ${ emailAddress }": [
-        ""
+        "导入到：${ emailAddress }"
       ],
       "Total": [
         "合计"
@@ -4849,7 +4849,7 @@
         "合计（${ countdown }）"
       ],
       "Two-factor authentication code": [
-        "双重认证验证码"
+        "双重验证码"
       ],
       "Undisclosed Recipients": [
         "非公开收件人"
@@ -4905,7 +4905,7 @@
     },
     "Label to change density": {
       "Comfortable": [
-        "舒适"
+        "适中"
       ],
       "Compact": [
         "紧凑"
@@ -5099,24 +5099,24 @@
     },
     "Link to calendar event": {
       "Open in ${ CALENDAR_APP_NAME }": [
-        ""
+        "在 ${ CALENDAR_APP_NAME } 中打开"
       ]
     },
     "Loading info": {
       "${ createdCalendars } of ${ calendarsToBeCreated } created": [
-        ""
+        "已创建 ${ createdCalendars }/${ calendarsToBeCreated } 个日历"
       ],
       "Almost there": [
-        ""
+        "就快好了"
       ],
       "Creating new calendars": [
-        ""
+        "正在创建新日历"
       ],
       "Gathering your data": [
-        ""
+        "正在收集您的数据"
       ],
       "We're gathering your data from your provider": [
-        ""
+        "我们正在加紧从您的提供商那里收集您的数据"
       ],
       "Your import is starting": [
         "您的导入已开始"
@@ -5205,10 +5205,10 @@
     },
     "Mail import summary": {
       "Import all messages from ${ selectedLabelsCount } out of ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        ""
+        "导入自${ periodFragment }以来 ${ totalLabelsCount } 个标签中 ${ selectedLabelsCount } 个的所有邮件，并将其标记为${ LABEL_MARKUP_PLACEHOLDER }"
       ],
       "Import all messages from ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        ""
+        "导入自${ periodFragment }以来 ${ totalLabelsCount } 个标签的所有邮件，并将其标记为${ LABEL_MARKUP_PLACEHOLDER }"
       ]
     },
     "Mailbox": {
@@ -5241,7 +5241,7 @@
     },
     "Member downgrade modal": {
       "This will permanently delete all sub-users, accounts, and data associated with your organization.": [
-        ""
+        "这将永久删除与您的组织相关的所有子用户、账户和数据。"
       ]
     },
     "Message": {
@@ -5273,7 +5273,7 @@
         "定时发送已取消，邮件已移至草稿箱。"
       ],
       "Sending undone": [
-        "撤回了邮件"
+        "邮件已撤回"
       ]
     },
     "MIME type": {
@@ -5441,7 +5441,7 @@
         "群组已更改"
       ],
       "Password has been set successfully": [
-        ""
+        "密码已设置成功"
       ]
     },
     "Onboarding": {
@@ -5462,7 +5462,7 @@
     },
     "Onboarding Proton": {
       "Choose a display name": [
-        "选择显示名称"
+        "填写对外名称"
       ],
       "Configure your organization, link your domain name, and create accounts to ensure all members of your organization are protected.": [
         "配置您的机构信息、链接您的域名、创建账户以确保您机构的所有成员都受到保护。"
@@ -5539,10 +5539,10 @@
     },
     "Option group label": {
       "Create new calendar": [
-        ""
+        "创建新日历"
       ],
       "Merge with calendar": [
-        ""
+        "与日历合并"
       ]
     },
     "Participant name": {
@@ -5582,7 +5582,7 @@
         "浏览器版本"
       ],
       "Confirm password": [
-        ""
+        "确认密码"
       ],
       "e.g. Julia Smith": [
         "例如：Julia Smith"
@@ -5885,7 +5885,7 @@
     },
     "Refresh on apply warning": {
       "Note: the service will reload after you click the Apply button.": [
-        "请注意：点击 \"应用\" 按钮后，服务将重新加载"
+        "请注意：点击「应用」按钮后网页将重新加载。"
       ]
     },
     "Reply to calendar invitation": {
@@ -5916,7 +5916,7 @@
         "没有找到邮件"
       ],
       "No messages scheduled": [
-        ""
+        "无定时发送的邮件"
       ],
       "No results found": [
         "搜索无结果"
@@ -6037,16 +6037,16 @@
     },
     "Spotlight": {
       "Message Content Search": [
-        ""
+        "邮件全文搜索"
       ],
       "To protect your privacy, Proton blocked email trackers in this message": [
-        ""
+        "为了保护您的隐私，Proton 屏蔽了此邮件中的电子邮件跟踪器"
       ],
       "You can now schedule your messages to be sent later": [
         "您现在可以计划稍后发送邮件"
       ],
       "You can now search the content of your encrypted emails.": [
-        ""
+        "您现在可以搜索加密电子邮件的内容了。"
       ]
     },
     "Status": {
@@ -6073,7 +6073,7 @@
     },
     "Storage": {
       "Get extra storage for free": [
-        ""
+        "免费获取额外的存储空间"
       ],
       "Release notes": [
         "版本说明"
@@ -6099,13 +6099,13 @@
         "${ elementsCount } 条会话已添加 ${ labelName } 标签。"
       ],
       "${ elementsCount } conversation marked as read.": [
-        ""
+        "${ elementsCount } 条会话已标记为已读。"
       ],
       "${ elementsCount } conversation marked as Starred.": [
         "${ elementsCount } 条会话已加星标。"
       ],
       "${ elementsCount } conversation marked as unread.": [
-        ""
+        "${ elementsCount } 条会话已标记为未读。"
       ],
       "${ elementsCount } conversation moved to ${ folderName } and sender added to Allow List.": [
         "${ elementsCount } 条会话已移至${ folderName }，其发件人已添加至白名单。"
@@ -6123,13 +6123,13 @@
         "${ elementsCount } 封邮件已添加 ${ labelName } 标签。"
       ],
       "${ elementsCount } message marked as read.": [
-        ""
+        "${ elementsCount } 封邮件已标记为已读。"
       ],
       "${ elementsCount } message marked as Starred.": [
         "${ elementsCount } 封邮件已加星标。"
       ],
       "${ elementsCount } message marked as unread.": [
-        ""
+        "${ elementsCount } 封邮件已标记为未读。"
       ],
       "${ elementsCount } message moved to ${ folderName } and sender added to Allow List.": [
         "${ elementsCount } 封邮件已移至${ folderName }，其发件人已添加至白名单。"
@@ -6168,19 +6168,19 @@
         "联系人已删除"
       ],
       "Conversation added to ${ labelName }.": [
-        ""
+        "会话已添加 ${ labelName } 标签。"
       ],
       "Conversation deleted": [
         "会话已删除"
       ],
       "Conversation marked as read.": [
-        ""
+        "会话已标记为已读。"
       ],
       "Conversation marked as Starred.": [
-        ""
+        "会话已加星标。"
       ],
       "Conversation marked as unread.": [
-        ""
+        "会话已标记为未读。"
       ],
       "Conversation moved to ${ folderName } and sender added to Allow List.": [
         "会话已移至${ folderName }，其发件人已添加至白名单。"
@@ -6192,7 +6192,7 @@
         "会话中的邮件已标为垃圾邮件，其发件人已加入黑名单。"
       ],
       "Conversation removed from ${ labelName }.": [
-        ""
+        "会话已移除 ${ labelName } 标签。"
       ],
       "Draft deleted": [
         "草稿已删除"
@@ -6219,7 +6219,7 @@
         "邮件订阅已取消订阅"
       ],
       "Message added to ${ labelName }.": [
-        ""
+        "邮件已添加 ${ labelName } 标签。"
       ],
       "Message content search activated": [
         "邮件全文搜索已开启"
@@ -6231,13 +6231,13 @@
         "邮件已标为非垃圾邮件"
       ],
       "Message marked as read.": [
-        ""
+        "邮件已标记为已读。"
       ],
       "Message marked as Starred.": [
-        ""
+        "邮件已加星标。"
       ],
       "Message marked as unread.": [
-        ""
+        "邮件已标记为未读。"
       ],
       "Message moved to ${ folderName } and sender added to Allow List.": [
         "邮件已移至${ folderName }，其发件人已添加至白名单。"
@@ -6249,7 +6249,7 @@
         "邮件已标为垃圾邮件，其发件人已加入黑名单。"
       ],
       "Message removed from ${ labelName }.": [
-        ""
+        "邮件已移除 ${ labelName } 标签。"
       ],
       "Move ${ selectionCount } conversation": [
         "移动 ${ selectionCount } 条会话"
@@ -6351,16 +6351,16 @@
     },
     "Time period": {
       "account creation date": [
-        ""
+        "账户创建日期"
       ],
       "the last 12 months": [
-        ""
+        "最近 12 个月"
       ],
       "the last 3 months": [
-        ""
+        "最近 3 个月"
       ],
       "the last month": [
-        ""
+        "上个月"
       ]
     },
     "Time unit": {
@@ -6391,7 +6391,7 @@
         "${ appName } 快捷键"
       ],
       "${ emailsCount } member": [
-        "{ emailsCount } 位成員"
+        "${ emailsCount } 位成員"
       ],
       "3-D Secure verification failed": [
         "3-D Secure 验证失败"
@@ -6544,7 +6544,7 @@
         "删除 ${ count } 条会话"
       ],
       "Delete ${ count } draft": [
-        "删除 ${ count } 封草稿"
+        "删除 ${ count } 份草稿"
       ],
       "Delete ${ count } message": [
         "删除 ${ count } 封邮件"
@@ -6703,7 +6703,7 @@
         "移至废件箱"
       ],
       "Moving a scheduled message": [
-        ""
+        "正在移动定时发送邮件"
       ],
       "Network error": [
         "网络错误"
@@ -6775,7 +6775,7 @@
         "重新签署联系人"
       ],
       "Recipient missing": [
-        ""
+        "未填写收件人"
       ],
       "Recover data": [
         "恢复数据"
@@ -6790,7 +6790,7 @@
         "反馈问题"
       ],
       "Request new code": [
-        ""
+        "请求新验证码"
       ],
       "Schedule send": [
         "定时发送"
@@ -6844,7 +6844,7 @@
         "存储容量警告"
       ],
       "Subject missing": [
-        ""
+        "未填写主题"
       ],
       "Subtotal": [
         "小计"
@@ -6897,7 +6897,7 @@
     },
     "Today icon tooltip in mini calendar": {
       "Today": [
-        ""
+        "今天"
       ]
     },
     "Tooltip": {
@@ -6923,7 +6923,7 @@
         "两年折扣已计入"
       ],
       "Each imported email will have this label": [
-        ""
+        "每一封导入的邮件都会有这个标签"
       ],
       "Email encryption forces email signature to help authenticate your sent messages": [
         "电子邮件加密迫使电子邮件签名，以帮助验证您发送的信息。"
@@ -6962,7 +6962,7 @@
         "支持诸如 BitTorrent 的文件共享协议。"
       ],
       "System subfolders will show up as separate folders in ProtonMail": [
-        ""
+        "系统子文件夹将在 ProtonMail 中显示为单独的文件夹"
       ],
       "The import will start with the most recent messages.": [
         "导入将从最近的信息开始。"
@@ -6988,13 +6988,13 @@
     },
     "Update font modal": {
       "Today is a good day to write an email": [
-        ""
+        "今天是写邮件的好日子"
       ],
       "Update default font and size": [
-        ""
+        "更新默认字体和大小"
       ],
       "Your default font will look like following:": [
-        ""
+        "您的默认字体将如下所示："
       ]
     },
     "Validation": {
@@ -7016,7 +7016,7 @@
         "广告拦截 (NetShield)"
       ],
       "Custom connection profiles": [
-        ""
+        "自定义连接配置"
       ],
       "DNS leak prevention": [
         "DNS 泄露防护"
@@ -7107,13 +7107,13 @@
     },
     "VPN Plan Feature": {
       "${ n } server": [
-        ""
+        "${ n } 台服务器"
       ],
       "${ n } VPN connection": [
-        ""
+        "${ n } 个VPN连接"
       ],
       "${ numberOfServers } in ${ numberOfCountries } country": [
-        ""
+        "${ numberOfCountries } 个国家的 ${ numberOfServers }"
       ]
     },
     "Warning": {
@@ -7142,7 +7142,7 @@
         "请注意，使用此方式支付不能立即完成账户升级，支付确认过后我们会马上为您升级账户。"
       ],
       "Proton will merge all folders with the same name. To avoid this, change the names before import.": [
-        ""
+        "Proton 将会合并所有同名的文件夹。为了避免这种情况，请在导入前更改名称。"
       ],
       "Reports are not end-to-end encrypted, please do not send any sensitive information.": [
         "反馈内容不会经过端对端加密，请勿发送敏感信息。"
@@ -7154,13 +7154,13 @@
         "该附件的签名验证失败。\n你仍然可以下载这个附件，但它可能被篡改了。"
       ],
       "The contact data is corrupted and cannot be displayed.": [
-        ""
+        "联系人数据损坏，无法显示。"
       ],
       "The contact failed to load.": [
         "联系人加载失败"
       ],
       "The date and time settings on your device are out of sync. ${ learnMore }": [
-        ""
+        "您设备上的日期和时间设置未同步。${ learnMore }"
       ],
       "The decryption of the encrypted content failed.": [
         "解密失败"
@@ -7178,7 +7178,7 @@
         "非常抱歉，我们目前不在线。请填写下面的表格来描述您的问题，我们会进行调查并在上线后联系您。"
       ],
       "You will lose any customization you made so far.": [
-        ""
+        "当前的导入设置将无法恢复。"
       ]
     },
     "Weekly recurring event, frequency": {
@@ -7186,10 +7186,10 @@
         "每 ${ interval } 周的${ multipleDaysString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ timesString }": [
-        "每{ interval } 周的${ multipleDaysString }，${ timesString }"
+        "每${ interval } 周的${ multipleDaysString }，${ timesString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ untilString }": [
-        "每{ interval } 周的${ multipleDaysString }，知道${ untilString }"
+        "每${ interval } 周的${ multipleDaysString }，知道${ untilString }"
       ],
       "Every ${ interval } week on all days": [
         "每 ${ interval } 周整周"

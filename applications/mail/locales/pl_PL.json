@@ -321,7 +321,7 @@
         "Pełny ekran"
       ],
       "Expand URL": [
-        ""
+        "Rozwiń adres URL"
       ],
       "Export": [
         "Eksportuj"
@@ -822,7 +822,7 @@
         "Przełącz konto"
       ],
       "Switch to rich text": [
-        ""
+        "Zmień na standardowy tekst"
       ],
       "Theme": [
         "Motyw"
@@ -967,10 +967,10 @@
         "Spróbuj użyć innego zapytania."
       ],
       "You don't have any contacts.": [
-        "Nie posiadasz żadnych kontaktów."
+        "Nie masz żadnych kontaktów."
       ],
       "You don't have any groups.": [
-        "Nie posiadasz żadnych grup."
+        "Nie masz żadnych grup."
       ]
     },
     "Addon": {
@@ -1340,7 +1340,7 @@
         "Uczestnik ${ participantName } poprosił o najnowsze szczegóły wydarzenia."
       ],
       "${ participantName } asked for the latest updates to an event which does not exist anymore. You have no calendars.": [
-        "Uczestnik ${ participantName } poprosił o najnowsze szczegóły wydarzenia, które nie istnieje. Nie posiadasz kalendarzy."
+        "Uczestnik ${ participantName } poprosił o najnowsze szczegóły wydarzenia, które nie istnieje. Nie masz kalendarzy."
       ],
       "${ participantName } asked for the latest updates to an event which does not exist in your calendar anymore.": [
         "Uczestnik ${ participantName } poprosił o najnowsze szczegóły wydarzenia, które nie istnieje w Twoim kalendarzu."
@@ -1394,7 +1394,7 @@
         "Uczestnik ${ participantName } zaproponował nową godzinę wydarzenia w tej serii, ale propozycja jest nieaktualna. Wydarzenie nie istnieje w Twoim kalendarzu."
       ],
       "${ participantName } had proposed a new time for one occurrence of this event. This proposal is out of date. You have no calendars.": [
-        "Uczestnik ${ participantName } zaproponował nową godzinę wydarzenia w tej serii, ale propozycja jest nieaktualna. Nie posiadasz kalendarzy."
+        "Uczestnik ${ participantName } zaproponował nową godzinę wydarzenia w tej serii, ale propozycja jest nieaktualna. Nie masz kalendarzy."
       ],
       "${ participantName } had proposed a new time for this event. This proposal is out of date.": [
         "Uczestnik ${ participantName } zaproponował nową godzinę wydarzenia, ale propozycja jest nieaktualna."
@@ -1403,7 +1403,7 @@
         "Uczestnik ${ participantName } zaproponował nową godzinę wydarzenia, ale propozycja jest nieaktualna. Wydarzenie nie istnieje w Twoim kalendarzu."
       ],
       "${ participantName } had proposed a new time for this event. This proposal is out of date. You have no calendars.": [
-        "Uczestnik ${ participantName } zaproponował nową godzinę wydarzenia, ale propozycja jest nieaktualna. Nie posiadasz kalendarzy."
+        "Uczestnik ${ participantName } zaproponował nową godzinę wydarzenia, ale propozycja jest nieaktualna. Nie masz kalendarzy."
       ],
       "${ participantName } had tentatively accepted your invitation and proposed a new time for one occurrence of this event. Answer and proposal are out of date.": [
         "Uczestnik ${ participantName } wstępnie zaakceptował zaproszenie do wydarzenia w tej serii i zaproponował nową godzinę, ale propozycja i odpowiedź są nieaktualne."
@@ -1478,16 +1478,16 @@
         "Odpowiedź jest nieaktualna. Wydarzenie zostało zaktualizowane."
       ],
       "This response is out of date. You have no calendars.": [
-        "Odpowiedź jest nieaktualna. Nie posiadasz kalendarzy."
+        "Odpowiedź jest nieaktualna. Nie masz kalendarzy."
       ],
       "You already accepted this invitation.": [
-        "Zaakceptowałeś zaproszenie."
+        "Zaakceptowano zaproszenie."
       ],
       "You already declined this invitation.": [
-        "Odrzuciłeś zaproszenie."
+        "Odrzucono zaproszenie."
       ],
       "You already tentatively accepted this invitation.": [
-        "Wstępnie zaakceptowałeś zaproszenie."
+        "Wstępnie zaakceptowano zaproszenie."
       ],
       "Your email address is not in the participants list": [
         "Twój adres e-mail nie znajduje się na liście uczestników"
@@ -1841,7 +1841,7 @@
     },
     "Desktop notification title": {
       "New email received": [
-        "Otrzymałeś nową wiadomość"
+        "Otrzymano nową wiadomość"
       ]
     },
     "Disney": {
@@ -1951,7 +1951,7 @@
     },
     "Email reminder error": {
       "Event is no longer in your calendar": [
-        ""
+        "Wydarzenie nie istnieje już w Twoim kalendarzu"
       ]
     },
     "Email reminder out of date alert": {
@@ -2456,7 +2456,7 @@
         "Wystąpił błąd podczas przesyłania pliku ${ formattedFilename }. Maksymalny rozmiar pliku wynosi ${ MAX_IMPORT_FILE_SIZE_STRING }."
       ],
       "An error occurred uploading your file ${ formattedFilename }. No .csv or .vcf file selected": [
-        "Wystąpił błąd podczas przesyłania pliku ${ formattedFilename }. Nie wybrałeś pliku CSV lub VCF"
+        "Wystąpił błąd podczas przesyłania pliku ${ formattedFilename }. Nie wybrano pliku CSV lub VCF"
       ],
       "An error occurred uploading your file. No file has been selected.": [
         "Wystąpił błąd podczas przesyłania pliku. Nie został wybrany żaden plik."
@@ -2574,7 +2574,7 @@
         "Wystąpił problem z połączeniem z usługą Proton."
       ],
       "You do not have any contact yet. Start by creating a new contact": [
-        "Nie posiadasz jeszcze żadnego kontaktu. Zacznij od utworzenia nowego kontaktu"
+        "Nie masz jeszcze żadnego kontaktu. Zacznij od utworzenia nowego kontaktu"
       ],
       "You may also ${ refresh } or try again later.": [
         "${ refresh } lub spróbuj ponownie później."
@@ -3516,7 +3516,7 @@
         "Elementy śledzące w wiadomości mogą naruszyć Twoją prywatność. Proton znalazł i zablokował ${ numberOfTrackers } elementów śledzących."
       ],
       "Email trackers can violate your privacy. Turn on tracker protection to prevent senders from knowing whether and when you have opened a message.": [
-        "Elementy śledzące w wiadomości mogą naruszyć Twoją prywatność. Włącz ochronę przed śledzeniem, aby nadawca nie wiedział, czy i kiedy otworzyłeś wiadomość."
+        "Elementy śledzące w wiadomości mogą naruszyć Twoją prywatność. Włącz ochronę przed śledzeniem, aby nadawca nie wiedział, czy i kiedy otwierasz wiadomość."
       ],
       "embedded image": [
         "osadzony obraz",
@@ -3618,7 +3618,7 @@
         "Ukryj oryginalną wiadomość"
       ],
       "Hour": [
-        "godzinę",
+        "godzina",
         "godziny",
         "godzin",
         "godziny"
@@ -3726,7 +3726,7 @@
         "Zarządzaj etykietami"
       ],
       "members": [
-        ""
+        "członków"
       ],
       "Members": [
         "Członkowie"
@@ -3747,13 +3747,13 @@
         "Wiadomość została wysłana."
       ],
       "Message will be sent on ${ dateString } at ${ formattedTime }": [
-        ""
+        "Wiadomość zostanie wysłana w dniu: ${ dateString } o godzinie ${ formattedTime }"
       ],
       "Message will be sent today at ${ formattedTime }": [
-        ""
+        "Wiadomość zostanie wysłana o godzinie ${ formattedTime }"
       ],
       "Message will be sent tomorrow at ${ formattedTime }": [
-        ""
+        "Wiadomość zostanie wysłana jutro o godzinie ${ formattedTime }"
       ],
       "Monthly ${ onDayString }": [
         "Co miesiąc ${ onDayString }"
@@ -3768,7 +3768,7 @@
         "Następnie będziesz musiał zalogować się na konto Google i zezwolić nam na dostęp do Twoich danych."
       ],
       "No action selected": [
-        "Nie wybrałeś akcji"
+        "Nie wybrano akcji"
       ],
       "No contacts added yet": [
         "Nie dodano jeszcze żadnych kontaktów"
@@ -3783,7 +3783,7 @@
         "Nie znaleziono folderu"
       ],
       "No folder selected": [
-        "Nie wybrałeś folderu"
+        "Nie wybrano folderu"
       ],
       "No group found": [
         "Nie znaleziono grupy"
@@ -3792,7 +3792,7 @@
         "Nie znaleziono etykiety"
       ],
       "No label selected": [
-        "Nie wybrałeś etykiety"
+        "Nie wybrano etykiety"
       ],
       "No more results found": [
         "Nie znaleziono więcej wyników"
@@ -3993,7 +3993,7 @@
         "Ustaw hasło odzyskiwania"
       ],
       "Set ProtonMail as your default email application for this browser. ProtonMail will open automatically when you click an email link.": [
-        ""
+        "Ustaw ProtonMail jako domyślną aplikację pocztową dla tej przeglądarki. Aplikacja ProtonMail będzie automatycznie otwierać linki wiadomości."
       ],
       "Setting up PGP allows you to send end-to-end encrypted emails with a non-ProtonMail user that uses a PGP compatible service.": [
         "Konfiguracja PGP pozwala na wysyłanie wiadomości zaszyfrowanych end-to-end do użytkowników spoza ProtonMaila, używających kompatybilnej usługi PGP."
@@ -4131,16 +4131,16 @@
         "Wiadomość zostanie przeniesiona do Szkiców i będzie możliwa do edycji. Musisz zaplanować ponownie wysłanie wiadomości."
       ],
       "This message will be sent on ${ dateString } at ${ formattedTime }": [
-        ""
+        "Wiadomość zostanie wysłana w dniu: ${ dateString } o godzinie ${ formattedTime }"
       ],
       "This message will be sent shortly": [
         "Wiadomość zostanie wkrótce wysłana"
       ],
       "This message will be sent today at ${ formattedTime }": [
-        ""
+        "Wiadomość zostanie wysłana o godzinie ${ formattedTime }"
       ],
       "This message will be sent tomorrow at ${ formattedTime }": [
-        ""
+        "Wiadomość zostanie wysłana jutro o godzinie ${ formattedTime }"
       ],
       "This message will expire ${ formattedDate }": [
         "Wiadomość wygaśnie za ${ formattedDate }"
@@ -4149,13 +4149,13 @@
         "Wiadomość wygaśnie za ${ formattedDelay }"
       ],
       "This message will expire on ${ dateString } at ${ formattedTime }": [
-        ""
+        "Wiadomość wygaśnie w dniu: ${ dateString } o godzinie ${ formattedTime }"
       ],
       "This message will expire today at ${ formattedTime }": [
-        ""
+        "Wiadomość wygaśnie o godzinie ${ formattedTime }"
       ],
       "This message will expire tomorrow at ${ formattedTime }": [
-        ""
+        "Wiadomość wygaśnie jutro o godzinie ${ formattedTime }"
       ],
       "This public key will be automatically used for encrypting email sent to this address.": [
         "Klucz publiczny zostanie automatycznie użyty do zaszyfrowania wiadomości wysłanej na ten adres."
@@ -4308,7 +4308,7 @@
         "Jesteś obecnie zalogowany jako ${ user.Name } (${ user.Email }) i posiadasz ograniczony dostęp."
       ],
       "You can add it as an attachment or display it inline in your mail body.": [
-        ""
+        "Możesz dodać plik jako załącznik lub obraz osadzony w treści wiadomości."
       ],
       "You can also merge imported calendars with existing Proton calendars.": [
         "Możesz również scalić importowane kalendarze z obecnymi kalendarzami Proton."
@@ -4332,43 +4332,43 @@
         "Nie możesz odpowiedzieć z zaproszonego adresu."
       ],
       "You do not have any messages here": [
-        "Nie posiadasz tutaj żadnych wiadomości"
+        "Nie masz tutaj żadnych wiadomości"
       ],
       "You have ${ totalLabel } in your inbox.": [
-        "Posiadasz ${ totalLabel } w swojej skrzynce odbiorczej."
+        "Masz ${ totalLabel } w swojej skrzynce odbiorczej."
       ],
       "You have ${ unreadsLabel } in your inbox.": [
-        "Posiadasz ${ unreadsLabel } w swojej skrzynce odbiorczej."
+        "Masz ${ unreadsLabel } w swojej skrzynce odbiorczej."
       ],
       "You have **${ count } conversation** stored in this folder": [
-        "Posiadasz **${ count } wątek** w tym folderze",
-        "Posiadasz **${ count } wątki** w tym folderze",
-        "Posiadasz **${ count } wątków** w tym folderze",
-        "Posiadasz **${ count } wątków** w tym folderze"
+        "Masz **${ count } wątek** w tym folderze",
+        "Masz **${ count } wątki** w tym folderze",
+        "Masz **${ count } wątków** w tym folderze",
+        "Masz **${ count } wątków** w tym folderze"
       ],
       "You have **${ count } conversation** tagged with this label": [
-        "Posiadasz **${ count } wątek** oznaczony tą etykietą",
-        "Posiadasz **${ count } wątki** oznaczone tą etykietą",
-        "Posiadasz **${ count } wątków** oznaczonych tą etykietą",
-        "Posiadasz **${ count } wątków** oznaczonych tą etykietą"
+        "Masz **${ count } wątek** oznaczony tą etykietą",
+        "Masz **${ count } wątki** oznaczone tą etykietą",
+        "Masz **${ count } wątków** oznaczonych tą etykietą",
+        "Masz **${ count } wątków** oznaczonych tą etykietą"
       ],
       "You have **${ count } message** stored in this folder": [
-        "Posiadasz **${ count } wiadomość** w tym folderze",
-        "Posiadasz **${ count } wiadomości** w tym folderze",
-        "Posiadasz **${ count } wiadomości** w tym folderze",
-        "Posiadasz **${ count } wiadomości** w tym folderze"
+        "Masz **${ count } wiadomość** w tym folderze",
+        "Masz **${ count } wiadomości** w tym folderze",
+        "Masz **${ count } wiadomości** w tym folderze",
+        "Masz **${ count } wiadomości** w tym folderze"
       ],
       "You have **${ count } message** tagged with this label": [
-        "Posiadasz **${ count } wiadomość** oznaczoną tą etykietą",
-        "Posiadasz **${ count } wiadomości** oznaczone tą etykietą",
-        "Posiadasz **${ count } wiadomości** oznaczonych tą etykietą",
-        "Posiadasz **${ count } wiadomości** oznaczonych tą etykietą"
+        "Masz **${ count } wiadomość** oznaczoną tą etykietą",
+        "Masz **${ count } wiadomości** oznaczone tą etykietą",
+        "Masz **${ count } wiadomości** oznaczonych tą etykietą",
+        "Masz **${ count } wiadomości** oznaczonych tą etykietą"
       ],
       "You have not given your email any subject. Do you want to send the message anyway?": [
-        "Nie wpisałeś żadnego tematu wiadomości. Czy chcesz wysłać tę wiadomość mimo to?"
+        "Nie wpisano żadnego tematu wiadomości. Czy chcesz wysłać tę wiadomość mimo to?"
       ],
       "You have reached 100% of your storage capacity. Consider freeing up some space or upgrading your account with additional storage space to compose new messages.": [
-        "Wykorzystałeś 100% dostępnej przestrzeni dyskowej. Rozważ zwolnienie części miejsca lub ulepszenie konta z dodatkową przestrzenią dyskową, aby wysyłać kolejne wiadomości."
+        "Wykorzystano 100% dostępnej przestrzeni dyskowej. Rozważ zwolnienie części miejsca lub ulepszenie konta z dodatkową przestrzenią dyskową, aby wysyłać kolejne wiadomości."
       ],
       "You must have a credit card or bank account linked with your PayPal account in order to add it as a payment method.": [
         "Twoje konto PayPal musi być powiązane z kartą płatniczą lub kontem bankowym, aby dodać je jako metodę płatności."
@@ -4380,34 +4380,34 @@
         "Musisz usunąć wszystkie dodatkowe kalendarze i udostępnione linki kalendarzy, zanim anulujesz subskrypcję. ${ linkButton }"
       ],
       "You reached ${ spaceDisplayed }% of your storage capacity. ${ freeUpMessage } ${ upgradeLink }": [
-        "Wykorzystałeś ${ spaceDisplayed }% dostępnego miejsca w przestrzeni dyskowej. ${ freeUpMessage } ${ upgradeLink }"
+        "Wykorzystano ${ spaceDisplayed }% dostępnego miejsca w przestrzeni dyskowej. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You reached 100% of your storage capacity. You cannot send or receive new emails. ${ freeUpMessage } ${ upgradeLink }": [
-        "Wykorzystałeś 100% dostępnego miejsca w przestrzeni dyskowej. Nie możesz wysyłać ani odbierać wiadomości. ${ freeUpMessage } ${ upgradeLink }"
+        "Wykorzystano 100% dostępnego miejsca w przestrzeni dyskowej. Nie możesz wysyłać ani odbierać wiadomości. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You selected **${ count } conversation** from this folder": [
-        "Zaznaczyłeś **${ count } wątek** z tego folderu",
-        "Zaznaczyłeś **${ count } wątki** z tego folderu",
-        "Zaznaczyłeś **${ count } wątków** z tego folderu",
-        "Zaznaczyłeś **${ count } wątków** z tego folderu"
+        "Zaznaczono **${ count } wątek** z tego folderu",
+        "Zaznaczono **${ count } wątki** z tego folderu",
+        "Zaznaczono **${ count } wątków** z tego folderu",
+        "Zaznaczono **${ count } wątków** z tego folderu"
       ],
       "You selected **${ count } conversation** with this label": [
-        "Zaznaczyłeś **${ count } wątek** z tą etykietą",
-        "Zaznaczyłeś **${ count } wątki** z tą etykietą",
-        "Zaznaczyłeś **${ count } wątków** z tą etykietą",
-        "Zaznaczyłeś **${ count } wątków** z tą etykietą"
+        "Zaznaczono **${ count } wątek** z tą etykietą",
+        "Zaznaczono **${ count } wątki** z tą etykietą",
+        "Zaznaczono **${ count } wątków** z tą etykietą",
+        "Zaznaczono **${ count } wątków** z tą etykietą"
       ],
       "You selected **${ count } message** from this folder": [
-        "Zaznaczyłeś **${ count } wiadomość** z tego folderu",
-        "Zaznaczyłeś **${ count } wiadomości** z tego folderu",
-        "Zaznaczyłeś **${ count } wiadomości** z tego folderu",
-        "Zaznaczyłeś **${ count } wiadomości** z tego folderu"
+        "Zaznaczono **${ count } wiadomość** z tego folderu",
+        "Zaznaczono **${ count } wiadomości** z tego folderu",
+        "Zaznaczono **${ count } wiadomości** z tego folderu",
+        "Zaznaczono **${ count } wiadomości** z tego folderu"
       ],
       "You selected **${ count } message** with this label": [
-        "Zaznaczyłeś **${ count } wiadomość** z tą etykietą",
-        "Zaznaczyłeś **${ count } wiadomości** z tą etykietą",
-        "Zaznaczyłeś **${ count } wiadomości** z tą etykietą",
-        "Zaznaczyłeś **${ count } wiadomości** z tą etykietą"
+        "Zaznaczono **${ count } wiadomość** z tą etykietą",
+        "Zaznaczono **${ count } wiadomości** z tą etykietą",
+        "Zaznaczono **${ count } wiadomości** z tą etykietą",
+        "Zaznaczono **${ count } wiadomości** z tą etykietą"
       ],
       "You will be soon redirected to your bank to verify your payment.": [
         "Wkrótce zostaniesz przekierowany na stronę swojego banku w celu zweryfikowania płatności."
@@ -4416,7 +4416,7 @@
         "W celu zweryfikowania płatności, wkrótce zostaniesz przekierowany na stronę firmy PayPal."
       ],
       "You wrote “${ attachmentsFoundKeyword }”, but no attachment has been added. Do you want to send your message anyway?": [
-        ""
+        "Wiadomość zawiera wyrażenie \"${ attachmentsFoundKeyword }\", ale załącznik nie został dodany. Czy chcesz wysłać wiadomość mimo to?"
       ],
       "Your account has at least one overdue invoice. Your access has been restricted. ${ payInvoiceLink }": [
         "Twoje konto posiada zaległe faktury. Dostęp do konta został ograniczony. ${ payInvoiceLink }"
@@ -4732,7 +4732,7 @@
         "${ firstAddress } i ${ count } innych odbiorców"
       ],
       "(Coming soon)": [
-        ""
+        "(wkrótce)"
       ],
       "Actions": [
         "Akcje"
@@ -4819,7 +4819,7 @@
         "Warunki"
       ],
       "Confirm password": [
-        ""
+        "Potwierdź hasło"
       ],
       "Contacts": [
         "Kontakty"
@@ -4960,7 +4960,7 @@
         "Oznacz jako"
       ],
       "Message password": [
-        ""
+        "Hasło wiadomości"
       ],
       "Move to": [
         "Przenieś do"
@@ -4996,7 +4996,7 @@
         "Hasło"
       ],
       "Password hint": [
-        ""
+        "Podpowiedź do hasła"
       ],
       "Payer": [
         "Płatnik"
@@ -5867,7 +5867,7 @@
         "Wersja przeglądarki"
       ],
       "Confirm password": [
-        ""
+        "Potwierdź hasło"
       ],
       "e.g. Julia Smith": [
         "np. Julia Nowak"
@@ -7364,7 +7364,7 @@
         "Pozwala na posiadanie adresu e-mail z własnymi domenami, np. jan@nowak.pl"
       ],
       "If you purchased a gift code or received one from our support team, you can enter it here.": [
-        "Jeśli kupiłeś kod podarunkowy lub otrzymałeś go od naszej pomocy technicznej, możesz wpisać go tutaj."
+        "Kupiony lub otrzymany kod podarunkowy możesz wpisać tutaj."
       ],
       "Multi-user support is only applicable to plans with 2 or more users": [
         "Obsługa wielu użytkowników jest dostępna w planach z co najmniej 2 użytkownikami"
@@ -7403,12 +7403,12 @@
         "Użyj osobistego adresu nazwaużytkownika@pm.me do wysyłania wiadomości"
       ],
       "You do not have any contacts to export": [
-        "Nie posiadasz żadnych kontaktów do wyeksportowania"
+        "Nie masz żadnych kontaktów do wyeksportowania"
       ]
     },
     "Update font modal": {
       "Today is a good day to write an email": [
-        ""
+        "To jest dobry dzień na napisanie wiadomości"
       ],
       "Update default font and size": [
         "Zaktualizuj domyślną czcionkę i jej rozmiar"

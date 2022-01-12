@@ -232,7 +232,7 @@
       ],
       "Delete ${ selectedCount } contact": [
         "Elimina ${ selectedCount } contatto",
-        "Elimina { selectedCount } contatti"
+        "Elimina ${ selectedCount } contatti"
       ],
       "Delete ${ selectedCount } contact group": [
         "Elimina ${ selectedCount } gruppo di contatto",
@@ -825,7 +825,7 @@
         "Questo messaggio contiene immagini incorporate."
       ],
       "This message contains remote content.": [
-        "Questo messaggio contiene contenuti remoti."
+        "Questo messaggio contiene contenuto remoto."
       ],
       "Trust": [
         "Attendibile"
@@ -6794,7 +6794,7 @@
         "Conferma link"
       ],
       "Load embedded images": [
-        "Carica immagini incorporate"
+        "Carica le immagini incorporate"
       ],
       "Load remote content": [
         "Carica contenuto remoto"

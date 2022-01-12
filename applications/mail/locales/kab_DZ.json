@@ -24,7 +24,7 @@
         "Rnu"
       ],
       "Add address": [
-        ""
+        "Rnu tansa"
       ],
       "Add condition": [
         "Rnu tawtilt"
@@ -33,7 +33,7 @@
         "Rnu anermis"
       ],
       "Add email": [
-        ""
+        "Rnu imayl"
       ],
       "Add group": [
         "Rnu agraw"
@@ -45,7 +45,7 @@
         "Rnu agraw amaynut"
       ],
       "Add phone number": [
-        ""
+        "Rnu uṭṭun n usawal"
       ],
       "Add screenshot(s)": [
         "Rnu tuṭṭfa(win) n ugdil"
@@ -132,7 +132,7 @@
         "Sfeḍ akk imasalen"
       ],
       "Clear browser data": [
-        ""
+        "Sfeḍ isefka n yiminig"
       ],
       "Clear data": [
         "Sfeḍ isefka"
@@ -219,13 +219,13 @@
         "Imsizdeg udmawan"
       ],
       "Customize": [
-        ""
+        "Sagen"
       ],
       "Decrease": [
         "Senqes"
       ],
       "Default email application": [
-        ""
+        "Asnas amezwer n imayl"
       ],
       "Delete": [
         "Kkes"
@@ -296,7 +296,7 @@
         "Ẓreg tansa imayl"
       ],
       "Edit label": [
-        ""
+        "Ẓreg tabzimt"
       ],
       "Edit phone number": [
         "Ẓreg uṭṭun n tiliɣri"
@@ -326,7 +326,7 @@
         "Kter inermisen"
       ],
       "Fewer search options": [
-        ""
+        "Drus n textiṛiyin n unadi"
       ],
       "Filter on...": [
         "Imsizdeg ɣef..."
@@ -338,7 +338,7 @@
         "Welleh am umedday"
       ],
       "Generate recovery phrase": [
-        ""
+        "Sirrew tafyirt n tririt"
       ],
       "Get started": [
         "Bdu"
@@ -383,13 +383,13 @@
         "Ffer ifutas"
       ],
       "Hide folders": [
-        ""
+        "Ffer ikaramen"
       ],
       "Hide info": [
         "Ffer isallen"
       ],
       "Hide labels": [
-        ""
+        "Ffer tibzimin"
       ],
       "Hide messages": [
         "Ffer iznan"
@@ -426,7 +426,7 @@
         "Sekcem anermis"
       ],
       "Insert contacts": [
-        ""
+        "Ger inermisen"
       ],
       "Insert image": [
         "Ger tugna"
@@ -579,7 +579,7 @@
         "Ih"
       ],
       "Open ${ CALENDAR_APP_NAME }": [
-        ""
+        "Ldi ${ CALENDAR_APP_NAME }"
       ],
       "Open ${ CALENDAR_APP_NAME } settings": [
         "Ldi iɣewwaren n ${ CALENDAR_APP_NAME }"
@@ -636,7 +636,7 @@
         "Siggez"
       ],
       "Quit": [
-        ""
+        "Ffeɣ"
       ],
       "Quote": [
         "Bder-d"
@@ -672,7 +672,7 @@
         "Kkes tabzimt-a"
       ],
       "Rename": [
-        ""
+        "Beddel isem"
       ],
       "Report a problem": [
         "Azen aneqqis n wugur"
@@ -741,10 +741,10 @@
         "Wennez"
       ],
       "Set as default": [
-        ""
+        "Sbadu-t d amezwer"
       ],
       "Set expiration time": [
-        ""
+        "Sbadu azemz n ufati"
       ],
       "Share via link": [
         "Bḍu s useɣwen"
@@ -765,16 +765,16 @@
         "Sken ifutas"
       ],
       "Show fewer search options": [
-        ""
+        "Sken drus n textiṛiyin n unadi"
       ],
       "Show folders": [
-        ""
+        "Sken ikaramen"
       ],
       "Show info": [
         "Sken isallen"
       ],
       "Show labels": [
-        ""
+        "Sken tibzimin"
       ],
       "Show less": [
         "Sken-d drus"
@@ -807,7 +807,7 @@
         "Bdu aseqdec n ${ appName }"
       ],
       "Stay": [
-        ""
+        "Qqim"
       ],
       "Submit": [
         "Azen"
@@ -825,7 +825,7 @@
         "Izen-a yegber tugniwin yeddan."
       ],
       "This message contains remote content.": [
-        "Izen-a yegber agbur anmeggag."
+        "Izen-agi yesɛa agbur anmeggag."
       ],
       "Trust": [
         "Amen"
@@ -868,7 +868,7 @@
         "Ur tettamen ara"
       ],
       "Update": [
-        ""
+        "Leqqem"
       ],
       "Upgrade": [
         "Lqem"
@@ -928,7 +928,7 @@
         "Wali tangalt taɣbalut"
       ],
       "Why not?": [
-        ""
+        "Acimi ala?"
       ],
       "Yes": [
         "Ih"
@@ -1408,7 +1408,7 @@
         "${ participantName } yeqbel bizmant tinubga-inek·inem yerna isumer-d akud amaynut i tedyant-a."
       ],
       "${ participantName } tentatively accepted your invitation to one occurrence of the event.": [
-        "${{ participantName } yeqbel bizmant tinubga-inek·inem i yiwet n tikkelt kan n tedyant."
+        "${ participantName } yeqbel bizmant tinubga-inek·inem i yiwet n tikkelt kan n tedyant."
       ],
       "${ participantName } tentatively accepted your invitation.": [
         "${ participantName } yeqbel kan akka tinubga-inek·inem."
@@ -1786,8 +1786,8 @@
         "Asmezdi n yinermasen... Ayagi yezmer ad yeṭṭef kra n tsedidin.\nMi yekfa ukala-agi, ad tizmireḍ ad tmedleḍ tankult-agi n udiwenni."
       ],
       "The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_CONTACTS_STRING } contact. If your file is bigger, please split it into smaller files.": [
-        "Afaylu ilaq ad yesɛu deg teɣzi taddayt { MAX_IMPORT_FILE_SIZE_STRING } yerna ad yesɛu ugar n { MAX_IMPORT_CONTACTS_STRING } n unermis. Ma yella afaylu-inek·inem meqqar aṭas, ttxil-k·m bḍu-t ɣef yifuyla imeẓẓyanen.",
-        "Afaylu ilaq ad yesɛu deg teɣzi taddayt { MAX_IMPORT_FILE_SIZE_STRING } yerna ad yesɛu ugar n { MAX_IMPORT_CONTACTS_STRING } n yinermisen. Ma yella afaylu-inek·inem meqqar aṭas, ttxil-k·m bḍu-t ɣef yifuyla imeẓẓyanen."
+        "Afaylu ilaq ad yesɛu deg teɣzi taddayt ${ MAX_IMPORT_FILE_SIZE_STRING } yerna ad yesɛu ugar n ${ MAX_IMPORT_CONTACTS_STRING } n unermis. Ma yella afaylu-inek·inem meqqar aṭas, ttxil-k·m bḍu-t ɣef yifuyla imeẓẓyanen.",
+        "Afaylu ilaq ad yesɛu deg teɣzi taddayt ${ MAX_IMPORT_FILE_SIZE_STRING } yerna ad yesɛu ugar n ${ MAX_IMPORT_CONTACTS_STRING } n yinermisen. Ma yella afaylu-inek·inem meqqar aṭas, ttxil-k·m bḍu-t ɣef yifuyla imeẓẓyanen."
       ],
       "Use Drag and Drop to rank merging priority between contacts. Uncheck the contacts you do not want to merge.": [
         "Seqdec tawuri Zuɣer Sers iwakken ad tesmizzwireḍ tazwart n usmezdi gar yinermisen. Kkes afran i yinermisen ur tebɣiḍ ara ad tesmezdiḍ."
@@ -2147,7 +2147,7 @@
         "Ulac tansa s tsura yellan i tira n yuzen"
       ],
       "No data to import": [
-        ""
+        "Ulac isefka ara ittwaketren"
       ],
       "No key retrieved for internal user is valid for sending": [
         "Ulac tasarut yettwaffen i useqdac adigan i yeɣtan i tuzna"
@@ -2176,7 +2176,7 @@
         "Kra n yigrawen ulac ɣur-s inermisen: ${ noContactGroupList } "
       ],
       "Organization not recognized. Try again.": [
-        ""
+        "Tuddsa ur tettwaɛqal ara. Eɛreḍ tikkelt-nniḍen."
       ],
       "Passwords do not match": [
         "Awalen uffiren ur menṭaḍen ara"
@@ -2204,10 +2204,10 @@
         "Ttxil smiren asebter."
       ],
       "Please repeat the password": [
-        ""
+        "Ma ulac aɣilif ales awal uffir"
       ],
       "Please set a password": [
-        ""
+        "Ma ulac aɣilif sbadu awal uffir"
       ],
       "Preferences could not be saved": [
         "Ismenyifen gguman ad ttuskelsen"
@@ -2317,7 +2317,7 @@
         "Urti-agi ilaq"
       ],
       "This field requires a minimum of ${ minimumLength } characters.": [
-        "Urti-a isra ma drus { minimumLength } n yizamulen."
+        "Urti-a isra ma drus ${ minimumLength } n yizamulen."
       ],
       "This folder name is not available. Please choose a different name": [
         "Isem n ukaram-a ulac-it. Ttxil-k·m fren isem-nniḍen"
@@ -2803,8 +2803,8 @@
     },
     "Hint": {
       "Found ${ items.length } suggestion, use keyboard to navigate.": [
-        "Af asumer n { items.length }, seqdec anasiw i tunigin.",
-        "Af isumar { items.length }, seqdec anasiw i tunigin."
+        "Af asumer n ${ items.length }, seqdec anasiw i tunigin.",
+        "Af isumar ${ items.length }, seqdec anasiw i tunigin."
       ],
       "Use Up and Down keys to access and browse suggestions after input. Press Enter to confirm your choice, or Escape to close the suggestions box.": [
         "Seqdec tiqeffalin Asawen d Akessar i wakken ad tkecmeḍ ɣer yisumar syen asenqed-nsen seld anekcum. Sit ɣef Enter i wakken ad tesnetmeḍ afran-inek·inem, neɣ Escape i wakken ad tmedleḍ tabewwaḍt n yisumar."
@@ -3004,8 +3004,8 @@
         "${ saveExtra20 } ɣef VPN d yimayl s tmerna n ujerred ɣer VPN."
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendar": [
-        "",
-        ""
+        "${ selectedCalendarsTotal } seg ${ providerCalendars.length } n uwitay",
+        "${ selectedCalendarsTotal } seg ${ providerCalendars.length } n yiwitayen"
       ],
       "${ selectedFoldersCount } folder selected": [
         "${ selectedFoldersCount } d akaram yettwafernen",
@@ -3284,7 +3284,7 @@
         "Snulfu-d di"
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
-        ""
+        "Ifuyla CSV seg Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora akked kra n yinasen-nniḍen akked yimasalen vCard 3.1 akked 4.0 (UTF-8 encoding) ttwadehlen."
       ],
       "Custom": [
         "Udmawan"
@@ -3578,7 +3578,7 @@
         "Imedrawen"
       ],
       "Merged": [
-        ""
+        "Ttusmezdin"
       ],
       "Message expiration works out-of-the-box when sending emails to other ProtonMail users. To send expiring emails to non-ProtonMail users, please cancel and add password protection to your email.": [
         "Keffu n yiznan yewjed i useqdec mi ara ttwaznen yimaylen ɣer yiseqdacen-nniḍen n ProtonMail. I tuzna n yimaylen yemmuten ɣer yiseqdacen ur neswi ara ProtonMail, ttxil-k·m sefsex syen rnu ammesten s wawal uffir ɣer yimaul-ik·im."
@@ -3707,7 +3707,7 @@
         "Ttxil-k•m ẓer belli ayagi yezmer ad yeṭṭef kra n wakud i lmend n tiddi n udlis n tansiwin."
       ],
       "Please note that upon clicking the Confirm button, your account will have ${ creditsRemaining } credits remaining.": [
-        "Ttxil ger tamawt dakken s uttekki ɣef tqeffalt n usentem, amiḍan-ik. im ad yesεu $ { creditsRemaining } ismad i d-yeqqimen."
+        "Ttxil ger tamawt dakken s uttekki ɣef tqeffalt n usentem, amiḍan-ik. im ad yesεu ${ creditsRemaining } ismad i d-yeqqimen."
       ],
       "Please select the folders you would like to import:": [
         "Ttxil-k·m fren ikaramen i tebɣiḍ ad tketreḍ:"
@@ -6376,8 +6376,8 @@
         ""
       ],
       "Move ${ selectionCount } conversation": [
-        "Senkez adiwenni n { selectionCount }",
-        "Senkez idiwenniyen n { selectionCount }"
+        "Senkez adiwenni n ${ selectionCount }",
+        "Senkez idiwenniyen n ${ selectionCount }"
       ],
       "Move ${ selectionCount } message": [
         "Senkez izen n ${ selectionCount }",
@@ -6654,13 +6654,13 @@
         "Aɣawas amiran"
       ],
       "Customize and confirm": [
-        ""
+        "Sagen yerna sentem"
       ],
       "Customize calendar import": [
-        ""
+        "Sagen taktert n uwitay"
       ],
       "Customize your mail import": [
-        ""
+        "Sagen tektert n imayl inek•inem"
       ],
       "Customize your plan": [
         "Mudd udem i uɣawas-ik·im"
@@ -6704,7 +6704,7 @@
         "Kkes ien"
       ],
       "Delete organization?": [
-        ""
+        "Kkes tuddsa?"
       ],
       "Deleting contacts": [
         "Tukksa n yinermisen"
@@ -6914,7 +6914,7 @@
         "Tulsa n uzmel n yinermisen"
       ],
       "Recipient missing": [
-        ""
+        "Ixuṣ uɣerwaḍ"
       ],
       "Recover data": [
         "Err-d isefka"
@@ -6929,7 +6929,7 @@
         "Azen aneqqis n wugur"
       ],
       "Request new code": [
-        ""
+        "Suter tangalt tamaynutt"
       ],
       "Schedule send": [
         "Sɣiwes tuzna"
@@ -6947,7 +6947,7 @@
         "Fren agraw n urmas"
       ],
       "Select what to import": [
-        ""
+        "Fren acu ara tketreḍ"
       ],
       "Send email": [
         "Azen imayl"
@@ -6959,7 +6959,7 @@
         "Azen war azemz n taggara?"
       ],
       "Sending error": [
-        ""
+        "Tuccḍa di tuzzna"
       ],
       "Sending notice": [
         "Tuzzna n tamawt"
@@ -6983,7 +6983,7 @@
         "Alɣu ɣeg tallunt n uḥraz"
       ],
       "Subject missing": [
-        ""
+        "Ixuṣ usentel"
       ],
       "Subtotal": [
         "Adasemday"

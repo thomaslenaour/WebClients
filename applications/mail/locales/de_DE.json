@@ -24,7 +24,7 @@
         "Hinzufügen"
       ],
       "Add address": [
-        "Adresse hinzufügen"
+        "Anschrift hinzufügen"
       ],
       "Add condition": [
         "Bedingung hinzufügen"
@@ -979,7 +979,7 @@
         "${ members } weitere Nutzer"
       ],
       "+ ${ storage } storage": [
-        "{ storage } zusätzlicher Speicher"
+        "${ storage } zusätzlicher Speicher"
       ],
       "+ ${ vpn } connection": [
         "${ vpn } weitere Verbindung",
@@ -1149,7 +1149,7 @@
     },
     "blackfriday: VPNspecialoffer Info": {
       "Discounts are based on standard monthly pricing of ${ standardMonthlyPricing }": [
-        "Rabatte werden auf Grundlage des monatlichen Standardpreises von { standardMonthlyPricing } $ berechnet"
+        "Rabatte werden auf Grundlage des monatlichen Standardpreises von ${ standardMonthlyPricing } berechnet"
       ],
       "Save ${ percentage }%": [
         "${ percentage } %"
@@ -1170,13 +1170,13 @@
     },
     "blackfriday: VPNspecialoffer Title": {
       "(${ notice }) Renews after 1 month at a standard monthly price of ${ amount }": [
-        "(${ notice }) Verlängert sich nach einem Monat zum monatlichen Standardpreis von { amount } $"
+        "(${ notice }) Verlängert sich nach einem Monat zum monatlichen Standardpreis von ${ amount }"
       ],
       "(${ notice }) Renews after 1 year at a standard discounted annual price of ${ amount } (20% discount)": [
-        "(${ notice }) Verlängert sich nach einem Jahr zum ermäßigten Standardpreis von { amount } $ (20 % Rabatt)"
+        "(${ notice }) Verlängert sich nach einem Jahr zum ermäßigten Standardpreis von ${ amount } (20 % Rabatt)"
       ],
       "(${ notice }) Renews after 2 years at a standard discounted 2-year price of ${ amount } (33% discount)": [
-        "(${ notice }) Verlängert sich nach 2 Jahren zum ermäßigten 2-Jahrespreis von { amount } $ (33 % Rabatt)"
+        "(${ notice }) Verlängert sich nach 2 Jahren zum ermäßigten 2-Jahrespreis von ${ amount } (33 % Rabatt)"
       ],
       "1 month": [
         "1 Monat"
@@ -1188,13 +1188,13 @@
         "24 Monate"
       ],
       "Billed at ${ amount } for the first 2 years.${ supNotice }": [
-        "Zum Preis von { amount } $ in den ersten zwei Jahren.${ supNotice }"
+        "Zum Preis von ${ amount } in den ersten zwei Jahren.${ supNotice }"
       ],
       "Billed at ${ amount } for the first month.${ supNotice }": [
-        "Zum Preis von { amount } $ im ersten Monat.${ supNotice }"
+        "Zum Preis von ${ amount } im ersten Monat.${ supNotice }"
       ],
       "Billed at ${ amount } for the first year.${ supNotice }": [
-        "Zum Preis von { amount } $ im ersten Jahr.${ supNotice }"
+        "Zum Preis von ${ amount } im ersten Jahr.${ supNotice }"
       ],
       "Get the special year-end offer on our Premium VPN PLUS plan": [
         "Lass dir das Jahresend-Sonderangebot für unseren Premium VPN PLUS-Tarif nicht entgehen"
@@ -1731,8 +1731,8 @@
         "Alle ${ interval } Tage, ${ timesString }"
       ],
       "Every ${ interval } day, ${ untilString }": [
-        "Alle ${ interval } Tage, ${ untilString }",
-        "Alle ${ interval } Tage, ${ untilString }"
+        "Täglich, ${ untilString }",
+        "Aller ${ interval } Tage, ${ untilString }"
       ],
       "until ${ dateString }": [
         "bis ${ dateString }"
@@ -2926,8 +2926,8 @@
         "${ calendarsToBeMergedCount } zusammengeführte Kalender"
       ],
       "${ contactEmailsLength } Member": [
-        "{ contactEmailsLength } Mitglied",
-        "{ contactEmailsLength } Mitglieder"
+        "${ contactEmailsLength } Mitglied",
+        "${ contactEmailsLength } Mitglieder"
       ],
       "${ contactName } contains multiple email addresses. Please select which email address or addresses to add to ${ groupsEnumeration }.": [
         "${ contactName } enthält mehrere E-Mail-Adressen. Bitte wähle, welche E-Mail-Adresse(n) du zu ${ groupsEnumeration } hinzufügen möchtest."
@@ -2955,7 +2955,7 @@
       ],
       "${ groupCounts } group found": [
         "${ groupCounts } Gruppe gefunden",
-        "{ groupCounts } Gruppen gefunden"
+        "${ groupCounts } Gruppen gefunden"
       ],
       "${ mailAppName } Free": [
         "${ mailAppName } kostenlos"
@@ -3131,7 +3131,7 @@
         "Rechtsbündig"
       ],
       "All (${ totalFoldersCount } folder)": [
-        "Alle ({ totalFoldersCount } $ Ordner)",
+        "Alle (${ totalFoldersCount } Ordner)",
         "Alle (${ totalFoldersCount } Ordner)"
       ],
       "All (${ totalFoldersCount } label)": [
@@ -3166,7 +3166,7 @@
         "Möchten Sie wirklich alle Nachrichten in diesem Ordner löschen?"
       ],
       "Are you sure you want to delete all messages with this label?": [
-        "Möchten Sie wirklich alle Nachrichten mit dieser Kategorie löschen?"
+        "Möchtest du wirklich alle Nachrichten mit dieser Kategorie löschen?"
       ],
       "Are you sure you want to discard your changes?": [
         "Möchten Sie Ihre Änderungen wirklich verwerfen?"
@@ -5054,7 +5054,7 @@
         "Alle Nachrichten"
       ],
       "Archive": [
-        "Archivieren"
+        "Archiv"
       ],
       "clearing your browser cache": [
         "Leeren des Browser-Cache"
@@ -5386,8 +5386,8 @@
         "Alle ${ interval } Monate ${ onDayString }, ${ timesString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ untilString }": [
-        "Alle ${ interval } Monate ${ onDayString }, ${ untilString }",
-        "Alle ${ interval } Monate ${ onDayString }, ${ untilString }"
+        "Monatlich am ${ onDayString }, ${ untilString }",
+        "Aller ${ interval } Monate am ${ onDayString }, ${ untilString }"
       ],
       "Monthly ${ onDayString }": [
         "Monatlich ${ onDayString }"
@@ -6511,7 +6511,7 @@
         "${ minutesCountLeft } Minuten"
       ],
       "${ secondsCountLeft } second": [
-        "{ secondsCountLeft } Sekunde",
+        "${ secondsCountLeft } Sekunde",
         "${ secondsCountLeft } Sekunden"
       ]
     },
@@ -7338,20 +7338,20 @@
         "Alle ${ interval } Wochen am ${ multipleDaysString }, ${ timesString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ untilString }": [
-        "Alle ${ interval } Wochen am ${ multipleDaysString }, ${ untilString }",
-        "Alle ${ interval } Wochen am ${ multipleDaysString }, ${ untilString }"
+        "Wöchentlich am ${ multipleDaysString }, ${ untilString }",
+        "Aller ${ interval } Wochen am ${ multipleDaysString }, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
         "Alle ${ interval } Wochen an allen Tagen",
         "Alle ${ interval } Wochen an allen Tagen"
       ],
       "Every ${ interval } week on all days, ${ timesString }": [
-        "Alle ${ interval } Wochen an allen Tagen, { timesString }",
-        "Alle ${ interval } Wochen an allen Tagen, { timesString }"
+        "Alle ${ interval } Wochen an allen Tagen, ${ timesString }",
+        "Alle ${ interval } Wochen an allen Tagen, ${ timesString }"
       ],
       "Every ${ interval } week on all days, ${ untilString }": [
-        "Alle ${ interval } Wochen an allen Tagen, { untilString }",
-        "Alle ${ interval } Wochen an allen Tagen, ${ untilString }"
+        "Wöchentlich an allen Tagen, ${ untilString }",
+        "Aller ${ interval } Wochen an allen Tagen, ${ untilString }"
       ],
       "Every ${ interval } week on Friday": [
         "Alle ${ interval } Wochen am Freitag",
@@ -7362,8 +7362,8 @@
         "Alle ${ interval } Wochen am Freitag, ${ timesString }"
       ],
       "Every ${ interval } week on Friday, ${ untilString }": [
-        "Alle ${ interval } Wochen am Freitag, ${ untilString }",
-        "Alle ${ interval } Wochen am Freitag, ${ untilString }"
+        "Wöchentlich am Freitag, ${ untilString }",
+        "Aller ${ interval } Wochen am Freitag, ${ untilString }"
       ],
       "Every ${ interval } week on Monday": [
         "Alle ${ interval } Wochen am Montag",
@@ -7374,8 +7374,8 @@
         "Alle ${ interval } Wochen am Montag, ${ timesString }"
       ],
       "Every ${ interval } week on Monday, ${ untilString }": [
-        "Alle ${ interval } Wochen am Montag, ${ untilString }",
-        "Alle ${ interval } Wochen am Montag, ${ untilString }"
+        "Wöchentlich am Montag, ${ untilString }",
+        "Aller ${ interval } Wochen am Montag, ${ untilString }"
       ],
       "Every ${ interval } week on Saturday": [
         "Alle ${ interval } Wochen am Samstag",
@@ -7386,8 +7386,8 @@
         "Alle ${ interval } Wochen am Samstag, ${ timesString }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
-        "Alle ${ interval } Wochen am Samstag, ${ untilString }",
-        "Alle ${ interval } Wochen am Samstag, ${ untilString }"
+        "Wöchentlich am Samstag, ${ untilString }",
+        "Aller ${ interval } Wochen am Samstag, ${ untilString }"
       ],
       "Every ${ interval } week on Sunday": [
         "Alle ${ interval } Wochen am Sonntag",
@@ -7398,8 +7398,8 @@
         "Alle ${ interval } Wochen am Sonntag, ${ timesString }"
       ],
       "Every ${ interval } week on Sunday, ${ untilString }": [
-        "Alle ${ interval } Wochen am Sonntag, ${ untilString }",
-        "Alle ${ interval } Wochen am Sonntag, ${ untilString }"
+        "Wöchentlich am Sonntag, ${ untilString }",
+        "Aller ${ interval } Wochen am Sonntag, ${ untilString }"
       ],
       "Every ${ interval } week on Thursday": [
         "Alle ${ interval } Wochen am Donnerstag",
@@ -7410,8 +7410,8 @@
         "Alle ${ interval } Wochen am Donnerstag, ${ timesString }"
       ],
       "Every ${ interval } week on Thursday, ${ untilString }": [
-        "Alle ${ interval } Wochen am Donnerstag, ${ untilString }",
-        "Alle ${ interval } Wochen am Donnerstag, ${ untilString }"
+        "Wöchentlich am Donnerstag, ${ untilString }",
+        "Aller ${ interval } Wochen am Donnerstag, ${ untilString }"
       ],
       "Every ${ interval } week on Tuesday": [
         "Alle ${ interval } Wochen am Dienstag",
@@ -7422,8 +7422,8 @@
         "Alle ${ interval } Wochen am Dienstag, ${ timesString }"
       ],
       "Every ${ interval } week on Tuesday, ${ untilString }": [
-        "Alle ${ interval } Wochen am Dienstag, ${ untilString }",
-        "Alle ${ interval } Wochen am Dienstag, ${ untilString }"
+        "Wöchentlich am Dienstag, ${ untilString }",
+        "Aller ${ interval } Wochen am Dienstag, ${ untilString }"
       ],
       "Every ${ interval } week on Wednesday": [
         "Alle ${ interval } Wochen am Mittwoch",
@@ -7434,8 +7434,8 @@
         "Alle ${ interval } Wochen am Mittwoch, ${ timesString }"
       ],
       "Every ${ interval } week on Wednesday, ${ untilString }": [
-        "Alle ${ interval } Wochen am Mittwoch, ${ untilString }",
-        "Alle ${ interval } Wochen am Mittwoch, ${ untilString }"
+        "Wöchentlich am Mittwoch, ${ untilString }",
+        "Aller ${ interval } Wochen am Mittwoch, ${ untilString }"
       ],
       "Weekly on ${ multipleDaysString }": [
         "Wöchentlich am ${ multipleDaysString }"
@@ -7552,8 +7552,8 @@
         "Alle ${ interval } Jahre, ${ timesString }"
       ],
       "Every ${ interval } year, ${ untilString }": [
-        "Alle ${ interval } Jahre, ${ untilString }",
-        "Alle ${ interval } Jahre, ${ untilString }"
+        "Jährlich, ${ untilString }",
+        "Aller ${ interval } Jahre, ${ untilString }"
       ],
       "Yearly": [
         "Jährlich"

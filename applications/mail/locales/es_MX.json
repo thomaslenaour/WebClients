@@ -825,7 +825,7 @@
         "Este mensaje contiene imágenes incrustadas."
       ],
       "This message contains remote content.": [
-        "Este mensaje contiene contenido remoto."
+        "Este mensaje incluye contenido remoto."
       ],
       "Trust": [
         "Confiar"
@@ -3991,10 +3991,10 @@
         "Este mensaje expirará en ${ formattedDelay }"
       ],
       "This message will expire on ${ dateString } at ${ formattedTime }": [
-        "Este mensaje expirará en ${ dateString } a las ${ formattedTime }"
+        "Este mensaje expirará el ${ dateString } a las ${ formattedTime }"
       ],
       "This message will expire today at ${ formattedTime }": [
-        "Este mensaje expirará hoy a las ${ formattedTime }"
+        "Este mensaje expira hoy a las ${ formattedTime }"
       ],
       "This message will expire tomorrow at ${ formattedTime }": [
         "Este mensaje expirará mañana a las ${ formattedTime }"
@@ -6689,7 +6689,7 @@
         "Eliminar ${ count } mensajes"
       ],
       "Delete ${ Name }": [
-        "Eliminar { Name }"
+        "Eliminar ${ Name }"
       ],
       "Delete all messages": [
         "Eliminar todos los mensajes"

@@ -585,7 +585,7 @@
         "開啟行事曆"
       ],
       "Open get started checklist modal": [
-        "開啟入門清單模式"
+        "開啟新手教學清單視窗"
       ],
       "Open navigation": [
         "開啟導覽"
@@ -2145,7 +2145,7 @@
         "使用者沒有提取到任何用於寄送的有效 WKD 金鑰"
       ],
       "Not a valid number": [
-        "不是有效的數字"
+        "號碼無效"
       ],
       "One of the contacts has no email address: ${ noEmailsContactNamesList }": [
         "部份聯絡人無電子郵件地址：${ noEmailsContactNamesList }"
@@ -2157,7 +2157,7 @@
         "未識別組織。再試一次。"
       ],
       "Passwords do not match": [
-        "密碼不符合"
+        "密碼不相符"
       ],
       "Payment process cancelled": [
         "付款程序已取消"
@@ -2223,7 +2223,7 @@
         "簽名驗證錯誤。"
       ],
       "Signature verification failed": [
-        "簽章驗證失敗"
+        "簽名驗證失敗"
       ],
       "Some contacts could not be deleted": [
         "一些聯絡人未能刪除"
@@ -6655,7 +6655,7 @@
         "連結確認"
       ],
       "Load embedded images": [
-        "載入嵌入的圖片"
+        "載入內嵌圖片"
       ],
       "Load remote content": [
         "載入遠端內容"

@@ -111,7 +111,7 @@
         "Másolat, titkos másolat"
       ],
       "CC BCC": [
-        ""
+        "Másolat, Titkos másolat"
       ],
       "Change page": [
         "Lapozás"
@@ -174,7 +174,7 @@
         "Levélírás"
       ],
       "Composer size": [
-        ""
+        "Szerkesztő mérete"
       ],
       "Confirm": [
         "Jóváhagyás"
@@ -426,7 +426,7 @@
         "Névjegy beszúrása"
       ],
       "Insert contacts": [
-        ""
+        "Névjegyek beszúrása"
       ],
       "Insert image": [
         "Kép beillesztése"
@@ -474,7 +474,7 @@
         "Bejelentkezés"
       ],
       "Mailbox density": [
-        ""
+        "Megjelenítés tömörsége"
       ],
       "Mailbox layout": [
         ""
@@ -702,10 +702,10 @@
         "Mentés${ _ellipsis }"
       ],
       "Schedule message": [
-        ""
+        "Üzenet ütemezése"
       ],
       "Schedule send": [
-        ""
+        "Ütemezett küldés"
       ],
       "Search": [
         "Keresés"
@@ -744,7 +744,7 @@
         ""
       ],
       "Set expiration time": [
-        ""
+        "Időkorlát megadása"
       ],
       "Share via link": [
         "Megosztás hivatkozással"
@@ -825,7 +825,7 @@
         "Ez az üzenet beágyazott képet tartalmaz."
       ],
       "This message contains remote content.": [
-        "Ez az üzenet \"Távoli tartalmat\" tartalmaz."
+        ""
       ],
       "Trust": [
         "Megbízható"
@@ -916,7 +916,7 @@
         "Kulcsok megtekintése"
       ],
       "View message": [
-        ""
+        "Üzenet megjelenítése"
       ],
       "View recipients": [
         "Címzettek megjelenítése"
@@ -1042,22 +1042,22 @@
     },
     "Attached ics file error": {
       "Empty ICS file": [
-        ""
+        "Üres ICS fájl"
       ],
       "Invalid event": [
-        ""
+        "Érvénytelen esemény"
       ],
       "Invalid ICS file": [
-        ""
+        "Érvénytelen ICS fájl"
       ],
       "Invalid method": [
         "Érvénytelen metódus"
       ],
       "Unsupported calendar component": [
-        ""
+        "Nem támogatott naptár komponens"
       ],
       "Unsupported event": [
-        ""
+        "Nem támogatott esemény"
       ]
     },
     "Attachment radio advanced search": {
@@ -1479,36 +1479,36 @@
     },
     "Calendar status": {
       "Not synced": [
-        ""
+        "Nincs szinkronizálva"
       ],
       "Syncing": [
-        ""
+        "Szinkronizálás"
       ]
     },
     "Calendar subscription not synced error": {
       "Calendar could not be decrypted": [
-        ""
+        "A naptár visszafejtése nem sikerült"
       ],
       "Calendar is syncing": [
-        ""
+        "A naptár szinkronizál"
       ],
       "Calendar is too big": [
-        ""
+        "A naptár túl nagy"
       ],
       "Calendar link is not accessible": [
-        ""
+        "A naptár hivatkozás nem érhető el"
       ],
       "Calendar link is temporarily inaccessible": [
-        ""
+        "A naptár hivatkozás átmenetileg nem érhető el"
       ],
       "Calendar link is wrong": [
         ""
       ],
       "Failed to sync calendar": [
-        ""
+        "A naptár szinkronizálása nem sikerült"
       ],
       "More than 12 hours passed since last update": [
-        ""
+        "Több mint 12 óra telt el a legutóbbi frissítés óta"
       ]
     },
     "Collapsible tooltip": {
@@ -1852,7 +1852,7 @@
     },
     "Email body for invitation": {
       "${ eventTitle } has been canceled.": [
-        ""
+        "${ eventTitle } törlésre került."
       ],
       "${ eventTitle } has been updated.\n${ eventDetailsText }": [
         "${ eventTitle } frissítve.\n${ eventDetailsText }"
@@ -1975,7 +1975,7 @@
         "Túl alacsony összeg."
       ],
       "Attachments are limited to 25 MB": [
-        ""
+        "Mellékletek maximális mérete 25 MB"
       ],
       "Authentication canceled.": [
         "Hitelesítés megszakítva."
@@ -1984,13 +1984,13 @@
         "Hitelesítési hiba."
       ],
       "Calendar limit reached": [
-        ""
+        "Elérte a naptárak maximális számát"
       ],
       "Calendar primary private key is not decrypted": [
         "A naptár elsődleges privát kulcsa nincs visszafejtve"
       ],
       "Can't create new calendars for all imported calendars due to the personal calendar limit.": [
-        ""
+        "Nem lehetséges minden importált naptárhoz egy új naptár létrehozása, a személyes naptár korlátok miatt."
       ],
       "Can't validate email, try again later": [
         "E-mail ellenőrzése nem sikerült, próbálja meg később"
@@ -1999,10 +1999,10 @@
         "Telefonszám ellenőrzése nem sikerült, próbálja meg később"
       ],
       "Checkout expired, please try again": [
-        ""
+        "A fizetés időtúllépéssel megszakadt, kérjük próbálja újra"
       ],
       "Choose a date in the future.": [
-        ""
+        "Egy jövőbeli időpontot válasszon ki."
       ],
       "Choose a date within the next ${ SCHEDULED_MAX_DATE_DAYS } day.": [
         "",
@@ -2021,7 +2021,7 @@
         "Névjegy aláírása nincs ellenőrizve"
       ],
       "Contact your organization’s administrator to resolve this": [
-        ""
+        "A megoldáshoz lépjen kapcsolatba a szervezet adminisztrátorával"
       ],
       "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
         ""
@@ -2033,12 +2033,12 @@
         "Visszafejtési hiba: Az üzenet titkosított tartalmának visszafejtése sikertelen."
       ],
       "Deselect at least ${ calendarToFixCount } calendar": [
-        "",
-        ""
+        "Törölje a kiválasztást legalább ${ calendarToFixCount } naptárnál",
+        "Törölje a kiválasztást legalább ${ calendarToFixCount } naptárnál"
       ],
       "Deselect at least ${ calendarToFixCount } calendar or": [
-        "",
-        ""
+        "Törölje a kiválasztást legalább ${ calendarToFixCount } naptárnál vagy",
+        "Törölje a kiválasztást legalább ${ calendarToFixCount } naptárnál vagy"
       ],
       "Draft could not be saved. Try again.": [
         "Piszkozat mentése nem sikerült. Próbálja újra."
@@ -2068,10 +2068,10 @@
         ""
       ],
       "Error while sending the message. Message is not sent.": [
-        ""
+        "Hiba az üzenet elküldése közben. Nincs elküldve."
       ],
       "Error while uploading attachments. Message is not sent.": [
-        ""
+        "Hiba történt a mellékletek feltöltése közben. Az üzenet nincs elküldve."
       ],
       "Failed to encrypt attachment. Please try again.": [
         "Hiba a melléklet titkosítása során. Próbálja újra."
@@ -2083,7 +2083,7 @@
         "Ilyen nevű szűrő már létezik"
       ],
       "Folder name cannot be empty": [
-        ""
+        "A mappa nevének megadása szükséges"
       ],
       "Image upload failed": [
         "Képfeltöltés sikertelen"
@@ -2107,7 +2107,7 @@
         "Érvénytelen lejárati dátum"
       ],
       "Invalid expiration time": [
-        ""
+        "Érvénytelen időkorlát"
       ],
       "Invalid name": [
         "Érvénytelen név"
@@ -2122,11 +2122,11 @@
         "Érvénytelen ellenőrző kód"
       ],
       "Label name cannot be empty": [
-        ""
+        "A címke nevének megadása szükséges"
       ],
       "Merge at least ${ calendarToFixCount } calendar with an existing Proton calendar": [
-        "",
-        ""
+        "Fűzzön össze legalább ${ calendarToFixCount } naptárat meglévő Proton naptárakkal",
+        "Fűzzön össze legalább ${ calendarToFixCount } naptárat meglévő Proton naptárakkal"
       ],
       "Message needs to be sent first": [
         "Az üzenetet előbb el kell küldeni"
@@ -2144,10 +2144,10 @@
         "Hálózati hiba: Ellenőrizze a kapcsolatot és próbálkozzon újra."
       ],
       "No address with keys available to compose a message": [
-        ""
+        "Nincs elérhető kulcsokkal rendelkező cím az üzenet íráshoz"
       ],
       "No data to import": [
-        ""
+        "Nincs importálandó adat"
       ],
       "No key retrieved for internal user is valid for sending": [
         "Nem található a küldéshez érvényes kulcs a belső felhasználóhoz"
@@ -2156,7 +2156,7 @@
         "Nem található kulcs a belső felhasználóhoz"
       ],
       "No valid address found": [
-        ""
+        "Nincs érvényes cím"
       ],
       "No valid keys retrieved for internal user": [
         "Nem található érvényes kulcs a belső felhasználóhoz"
@@ -2176,7 +2176,7 @@
         "Néhány csoportban nincsenek névjegyek: ${ noContactGroupList } "
       ],
       "Organization not recognized. Try again.": [
-        ""
+        "Nem felismerhető szervezet. Próbálja meg újra."
       ],
       "Passwords do not match": [
         "A jelszavak nem egyeznek"
@@ -2197,8 +2197,8 @@
         "Aktiválja újra az üzenetek tartalmában való keresést"
       ],
       "Please fix the highlighted conflict to proceed.": [
-        "",
-        ""
+        "Javítsa ki a megjelölt hibát a folytatáshoz.",
+        "Javítsa ki a megjelölt hibákat a folytatáshoz."
       ],
       "Please refresh the page.": [
         "Kérjük frissítse az oldalt."
@@ -2207,16 +2207,16 @@
         ""
       ],
       "Please set a password": [
-        ""
+        "Kérjük, állítson be jelszót"
       ],
       "Preferences could not be saved": [
         "Beállítások mentése nem sikerült"
       ],
       "Primary address key is not decrypted": [
-        ""
+        "Az elsődleges cím kulcsa nincs visszafejtve"
       ],
       "Primary address key is not decrypted.": [
-        ""
+        "Az elsődleges cím kulcsa nincs visszafejtve."
       ],
       "Process aborted": [
         "A folyamat megszakítva"
@@ -2253,13 +2253,13 @@
         "Néhány névjegy törlése nem sikerült"
       ],
       "Some groups could not be deleted": [
-        ""
+        "Néhány csoport törlése nem sikerült"
       ],
       "Some of your label names are unavailable. Please customize the import to edit these names.": [
-        ""
+        "Bizonyos címkék neve nem használható. Módosítsa az importálás beállításait, hogy ezek kerüljenek átnevezésre."
       ],
       "Some of your label names exceed ProtonMail's maximum character limit. Please customize the import to edit these names.": [
-        ""
+        "Bizonyos címkék neve túl hosszú a ProtonMailbe importáláshoz. Módosítsa az importálás beállításait, hogy ezek kerüljenek átnevezésre."
       ],
       "Something went wrong, please ${ refresh } in order to proceed. If you still see this error message please contact our ${ supportTeam }.": [
         "Hiba történt. Kérjük, ${ refresh } az oldalt a folytatáshoz. Ha a hiba továbbra is fennáll, kérjük lépjen velünk kapcsolatba: ${ supportTeam }."
@@ -2281,16 +2281,16 @@
         "A szerkesztőt nem sikerült betölteni."
       ],
       "The folder name is too long. Please choose a different name.": [
-        ""
+        "Ez a mappanév túl hosszú. Adjon meg egy másik nevet."
       ],
       "The key properties for ${ emailAddress } could not be extracted": [
         "A ${ emailAddress } cím kulcsadatait nem sikerült kibontani"
       ],
       "The label name is too long. Please choose a different name.": [
-        ""
+        "Ez a címkenév túl hosszú. Adjon meg egy másik nevet."
       ],
       "The maximum expiration is 4 weeks": [
-        ""
+        "A leghosszabb időkorlát 4 hét lehet"
       ],
       "The minimum amount of credit that can be added is ${ _price }": [
         "Legalább ${ _price } kredit feltöltése szükséges"
@@ -2305,10 +2305,10 @@
         "A küldő kulcs érvénytelen"
       ],
       "There are too many folders in your external account. Please customize the import to delete some folders.": [
-        ""
+        "Túl sok mappa van a külső e-mail fiókban. Módosítsa az importálás beállításait, hogy néhány mappát töröljön."
       ],
       "There has been an issue with content search. Default search has been used instead.": [
-        ""
+        "Hiba történt a tartalomban való keresés közben. Alapértelmezett keresés történt."
       ],
       "There was an error when exporting the contacts vCards": [
         "Hiba történt a névjegyek vCard formátumra exportálásakor"
@@ -2320,13 +2320,13 @@
         "Legalább ${ minimumLength } karakter szükséges ebben a mezőben."
       ],
       "This folder name is not available. Please choose a different name": [
-        ""
+        "Ez a mappanév nem érhető el. Adjon meg egy másik nevet"
       ],
       "This label name is not available. Please choose a different name": [
-        ""
+        "Ez a címkenév nem érhető el. Adjon meg egy másik nevet"
       ],
       "This message has already been sent": [
-        ""
+        "Ez az üzenet már el lett küldve"
       ],
       "This message has already been sent. A new draft has been saved.": [
         ""
@@ -2335,7 +2335,7 @@
         "Ez az üzenet olyan linkeket tartalmazhat, amelyeket a böngészője nem tud megfelelően megnyitni"
       ],
       "Too many active filters. Please upgrade to a paid plan to activate more filters.": [
-        ""
+        "Túl sok bekapcsolt szűrő. Váltson nagyobb csomagra további szűrők bekapcsolásához."
       ],
       "Trusted keys are not valid for sending": [
         "A küldéshez nem érvényesek a megbízhatóként megjelölt kulcsok"
@@ -2375,7 +2375,7 @@
         "Az importálás nem lesz feldolgozva."
       ],
       "Your search matched too many results. Please limit your search and try again.": [
-        ""
+        "A keresés túl sok találatot eredményezett. Korlátozza a keresést majd próbálja meg újra."
       ]
     },
     "Error display when performing invalid move on message": {
@@ -2448,7 +2448,7 @@
         "Szabad-elfoglalt információ"
       ],
       "Invalid event": [
-        ""
+        "Érvénytelen esemény"
       ],
       "Journal entry": [
         "Napló elem"
@@ -2469,7 +2469,7 @@
         "Hiányzó kezdő időpont"
       ],
       "No UID, title or start time": [
-        ""
+        "Nincs UID, cím vagy kezdési időpont"
       ],
       "Non-Gregorian": [
         "Nem gergely-naptár"
@@ -2481,7 +2481,7 @@
         "Az ismétlődő esemény eredetije nem található"
       ],
       "Recurring event has no occurrences": [
-        ""
+        "Az ismétlődő eseménynek nincs előfordulása"
       ],
       "Recurring rule not supported": [
         "Ismétlődési szabály nem támogatott"
@@ -2496,7 +2496,7 @@
         "Tennivaló elem"
       ],
       "Unsupported event": [
-        ""
+        "Nem támogatott esemény"
       ]
     },
     "Error message": {
@@ -2540,10 +2540,10 @@
     },
     "Event invitation error": {
       "Attached ICS file could not be decrypted": [
-        ""
+        "Nem sikerült a csatolt ICS fájl visszafejtése"
       ],
       "Attached ICS file could not be read": [
-        ""
+        "Nem sikerült a csatolt ICS fájl olvasása"
       ],
       "Invalid invitation": [
         "Érvénytelen meghívó"
@@ -3284,7 +3284,7 @@
         ""
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
-        ""
+        "Támogatottak az Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora és más alkalmazások CSV fájljai, illetve a vCard 3.1 és 4.0 formátum (UTF-8 kódolással)."
       ],
       "Custom": [
         "Egyéni"
@@ -3400,7 +3400,7 @@
         "Hátralévő idő becslése..."
       ],
       "Expiration time": [
-        ""
+        "Időkorlát"
       ],
       "Expiration Time": [
         "Időkorlát"
@@ -3437,7 +3437,7 @@
         "Üzleti felhasználóknak, akik ki szeretnék használni a biztonságos kommunikáció előnyeit."
       ],
       "For Visa and MasterCard, the 3 digits on the back of your card. For American Express, the 4 digits on the front of your card.": [
-        ""
+        "Visa és MasterCard esetén, a 3 számjegy a kártya hátoldalán. American Express esetén a 4 számjegy a kártya elején."
       ],
       "Free up some space or add more storage space.": [
         "Szabadítson fel helyet vagy vásároljon több területet."
@@ -3487,7 +3487,7 @@
         "Kép URL"
       ],
       "Images have been removed because they are not allowed in auto-reply": [
-        ""
+        "A képek eltávolításra kerültek, mert automatikus válaszban nem engedélyezettek"
       ],
       "Import ${ contactsFragment } and ${ contactsGroupsFragment }": [
         ""
@@ -3572,7 +3572,7 @@
         "Címkék kezelése"
       ],
       "members": [
-        ""
+        "tagok"
       ],
       "Members": [
         "Tagok"
@@ -3590,7 +3590,7 @@
         "Üzenet elküldve"
       ],
       "Message sent.": [
-        ""
+        "Üzenet elküldve."
       ],
       "Message will be sent on ${ dateString } at ${ formattedTime }": [
         ""
@@ -3710,7 +3710,7 @@
         "A megerősítés gombra kattintva a fiókban ${ creditsRemaining } kredit marad."
       ],
       "Please select the folders you would like to import:": [
-        ""
+        "Válassza ki az importálásra kerülő mappákat:"
       ],
       "Please select the type of link you want to insert and fill in all the fields.": [
         "Válassza ki a beszúrandó link típusát és adja meg az adatait."
@@ -3804,7 +3804,7 @@
         ""
       ],
       "Scheduling message...": [
-        ""
+        "Üzenet ütemezése..."
       ],
       "Screenshot(s) attached": [
         "Képernyőkép(ek) csatolva"
@@ -3828,7 +3828,7 @@
         "Üzenetek küldése a @pm.me címről előfizetéshez kötött. Az Ön üzenete az ${ email }, alapértelmezett címről lesz elküldve"
       ],
       "Servers are unreachable. Please try again in a few minutes": [
-        ""
+        "A szerverek nem érhetők el. Próbálja meg egy pár perc múlva"
       ],
       "Session timed out.": [
         "A munkamenet lejárt."
@@ -3991,13 +3991,13 @@
         "Ez az üzenet időkorlátos, lejár: ${ formattedDelay }"
       ],
       "This message will expire on ${ dateString } at ${ formattedTime }": [
-        ""
+        "Ez az üzenet időkorlátos, és ${ dateString } fog lejárni ekkor: ${ formattedTime }"
       ],
       "This message will expire today at ${ formattedTime }": [
-        ""
+        "Ez az üzenet időkorlátos, és ma fog lejárni, ekkor: ${ formattedTime }"
       ],
       "This message will expire tomorrow at ${ formattedTime }": [
-        ""
+        "Ez az üzenet időkorlátos, és holnap fog lejárni, ekkor: ${ formattedTime }"
       ],
       "This public key will be automatically used for encrypting email sent to this address.": [
         "Erre a címre küldéskor automatikusan ez a nyilvános kulcs lesz használva a titkosításhoz."
@@ -4211,7 +4211,7 @@
         "PayPal számlájához hozzá kell rendelnie egy bankkártyát vagy egy bankszámlát. Ha ezek egyike sincs, kattintson a lentebbi gombra."
       ],
       "You must remove any additional personal calendars and any shared calendar links before you can cancel your subscription. ${ linkButton }": [
-        ""
+        "Az előfizetés lemondása előtt törölnie kell minden további személyes naptárat és megosztott naptár hivatkozást. ${ linkButton }"
       ],
       "You reached ${ spaceDisplayed }% of your storage capacity. ${ freeUpMessage } ${ upgradeLink }": [
         "Elérte a tárolási kapacitás ${ spaceDisplayed }% -át. ${ freeUpMessage } ${ upgradeLink }"
@@ -6609,7 +6609,7 @@
         "Elfogadja a címzett címét?"
       ],
       "Contact details": [
-        ""
+        "Névjegy részletei"
       ],
       "Contact Details": [
         "Névjegy részletei"
@@ -6654,13 +6654,13 @@
         "Jelenlegi csomag"
       ],
       "Customize and confirm": [
-        ""
+        "Testreszabás és jóváhagyás"
       ],
       "Customize calendar import": [
-        ""
+        "A naptár importálás testreszabása"
       ],
       "Customize your mail import": [
-        ""
+        "Az e-mail importálás testreszabása"
       ],
       "Customize your plan": [
         "Csomag testreszabása"
@@ -6704,13 +6704,13 @@
         "Üzenet törlése"
       ],
       "Delete organization?": [
-        ""
+        "Szervezet törlése?"
       ],
       "Deleting contacts": [
-        ""
+        "Névjegyek törlése"
       ],
       "Downgrade account": [
-        ""
+        "Váltás kisebb csomagra"
       ],
       "Edit contact": [
         "Névjegy szerkesztése"
@@ -6794,16 +6794,16 @@
         "Link jóváhagyása"
       ],
       "Load embedded images": [
-        "Beágyazott képek betöltése"
+        ""
       ],
       "Load remote content": [
         "Távoli tartalom betöltése"
       ],
       "Mailbox density": [
-        ""
+        "Megjelenítés tömörsége"
       ],
       "Mailbox layout": [
-        ""
+        "Elrendezés"
       ],
       "Mark as unread": [
         "Megjelölés olvasatlanként"
@@ -6947,7 +6947,7 @@
         "Névjegy csoport kiválasztása"
       ],
       "Select what to import": [
-        ""
+        "Válassza ki az importálandó dolgokat"
       ],
       "Send email": [
         "E-mail küldése"
@@ -6959,7 +6959,7 @@
         "Küldés időkorlát nélkül?"
       ],
       "Sending error": [
-        ""
+        "Hiba a küldés közben"
       ],
       "Sending notice": [
         "Küldési információk"
@@ -7252,12 +7252,12 @@
         ""
       ],
       "${ n } VPN connection": [
-        "",
-        ""
+        "${ n } VPN kapcsolódás",
+        "${ n } VPN kapcsolódás"
       ],
       "${ numberOfServers } in ${ numberOfCountries } country": [
-        "",
-        ""
+        "${ numberOfServers } ${ numberOfCountries } országban",
+        "${ numberOfServers } ${ numberOfCountries } országban"
       ]
     },
     "Warning": {
@@ -7548,8 +7548,8 @@
         "Minden ${ interval }. évben"
       ],
       "Every ${ interval } year, ${ timesString }": [
-        "Minden ${ interval }. évben, { timesString }",
-        "Minden ${ interval }. évben, { timesString }"
+        "Minden ${ interval }. évben, ${ timesString }",
+        "Minden ${ interval }. évben, ${ timesString }"
       ],
       "Every ${ interval } year, ${ untilString }": [
         "Minden ${ interval }. évben, ${ untilString }",
