@@ -1,4 +1,4 @@
-import { RefObject, useCallback, useEffect, useMemo, useRef } from 'react';
+import { RefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { isPlainText } from '@proton/shared/lib/mail/messages';
 import { scrollIntoView } from '@proton/shared/lib/helpers/dom';
 
@@ -43,6 +43,7 @@ const MessageBody = ({
     labelID,
     onIframeReady,
 }: Props) => {
+    const [isIframeContentSet, setIsIframeContentSet] = useState(false);
     const bodyRef = useRef<HTMLDivElement>(null);
     const { highlightString, getESDBStatus } = useEncryptedSearchContext();
     const { dbExists, esEnabled } = getESDBStatus();
@@ -79,6 +80,7 @@ const MessageBody = ({
 
     const onContentLoadedCallback = useCallback(
         (iframeRootElement) => {
+            setIsIframeContentSet(true);
             if (!!content && highlightBody) {
                 const el = iframeRootElement.querySelector('[data-auto-scroll]') as HTMLElement;
                 scrollIntoView(el, { block: 'center', behavior: 'smooth' });
@@ -94,8 +96,9 @@ const MessageBody = ({
             ref={bodyRef}
             className={classnames([
                 'message-content relative bg-norm color-norm',
+                !isIframeContentSet && 'message-content-not-set',
                 plain && 'plain',
-                !isPrint && 'pt1 pl1 pr1',
+                isPrint || !isIframeContentSet ? '' : 'pt1 pl1 pr1',
                 hasDarkStyles && 'dark-style',
             ])}
             data-testid="message-content:body"
