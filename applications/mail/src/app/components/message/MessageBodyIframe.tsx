@@ -1,4 +1,4 @@
-import { RefObject, useCallback, useEffect, useRef } from 'react';
+import { RefObject, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { c } from 'ttag';
 import { useLinkHandler } from '@proton/components/hooks/useLinkHandler';
@@ -12,12 +12,12 @@ import useInitIframeContent from './hooks/useInitIframeContent';
 import useIframeDispatchEvents from './hooks/useIframeDispatchEvents';
 
 import { locateHead } from '../../helpers/message/messageHead';
-import useSetIframeHeight from './hooks/useSetIframeHeight';
 import useIframeShowBlockquote from './hooks/useIframeShowBlockquote';
 import { MESSAGE_IFRAME_PRINT_ID } from './constants';
 import MessagePrintHeader from './MessagePrintHeader';
 import MessageBodyImages from './MessageBodyImages';
 import useIframeOffset from './hooks/useIframeOffset';
+import { debouncedSetIframeHeight } from './helpers/setIframeHeight';
 
 interface Props {
     content: string;
@@ -53,12 +53,10 @@ const MessageBodyIframe = ({
 
     const { isResizing } = useMailboxContainerContext();
 
-    const setIframeHeight = useSetIframeHeight(iframeRef);
     const { initStatus, iframeRootDivRef } = useInitIframeContent({
         content,
         messageHead,
         iframeRef,
-        setIframeHeight,
         onContentLoaded,
         isPlainText,
         onReady,
@@ -67,7 +65,6 @@ const MessageBodyIframe = ({
         blockquoteContent,
         iframeRef,
         initStatus,
-        setIframeHeight,
         showBlockquoteProp,
         showBlockquoteToggle,
         onBlockquoteToggle,
@@ -80,16 +77,12 @@ const MessageBodyIframe = ({
         startListening: initStatus === 'done' && iframeRootDivRef.current !== undefined,
     });
 
-    const onImagesLoadedCallback = useCallback(() => {
-        setIframeHeight();
-    }, [setIframeHeight]);
-
-    useObserveWidthChange(wrapperRef, setIframeHeight);
+    useObserveWidthChange(wrapperRef, iframeRef);
     useIframeDispatchEvents(initStatus, iframeRef);
 
     useEffect(() => {
         if (message.messageImages?.showRemoteImages || message.messageImages?.showEmbeddedImages) {
-            setIframeHeight();
+            debouncedSetIframeHeight(iframeRef);
         }
     }, [message.messageImages?.showRemoteImages, message.messageImages?.showEmbeddedImages]);
 
@@ -120,7 +113,6 @@ const MessageBodyIframe = ({
                     iframeRef={iframeRef}
                     isPrint={isPrint}
                     messageImages={message.messageImages}
-                    onImagesLoaded={onImagesLoadedCallback}
                 />
             )}
             {showToggle &&
