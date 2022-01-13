@@ -89,7 +89,7 @@
         "Tilføj PayPal-betalingsmetode"
       ],
       "Add screenshot(s)": [
-        "Tilføj screenshot(s)"
+        "Tilføj skærmfoto(s)"
       ],
       "Add sieve filter": [
         "Tilføj Sieve-filter"
@@ -98,13 +98,13 @@
         "Tilføj bruger"
       ],
       "Align center": [
-        "Centrér"
+        "Centrer"
       ],
       "Align left": [
-        "Venstrejustér"
+        "Venstrestil"
       ],
       "Align right": [
-        "Højrejustér"
+        "Højerstil"
       ],
       "Alignment": [
         "Justering"
@@ -164,7 +164,7 @@
         "Luk"
       ],
       "Close modal": [
-        "Luk dialog"
+        "Luk vindue"
       ],
       "Close navigation": [
         "Luk navigation"
@@ -176,7 +176,7 @@
         "Farve"
       ],
       "Compare all features": [
-        "Sammenlign alle funktioner"
+        "Sammenlign alle features"
       ],
       "Compare plans": [
         "Sammenlign abonnementer"
@@ -302,7 +302,7 @@
         "Rediger e-mailadresse"
       ],
       "Edit label": [
-        "Redigér etiket"
+        "Redigér etikette"
       ],
       "Edit phone number": [
         "Rediger telefonnummer"
@@ -374,7 +374,7 @@
         "Jeg har et spørgsmål"
       ],
       "Import": [
-        "Importér"
+        "Import"
       ],
       "Import calendars": [
         "Importer kalendere"
@@ -428,10 +428,10 @@
         "markér e-mails som"
       ],
       "More": [
-        "Mere"
+        "Flere"
       ],
       "More info: ${ safeTitle }": [
-        "Mere information: ${ safeTitle }"
+        "Yderligere information: ${ safeTitle }"
       ],
       "move emails to": [
         "flyt e-mails til"
@@ -467,7 +467,7 @@
         "Åbn navigation"
       ],
       "Ordered list": [
-        "Sorteret liste"
+        "Rangeret liste"
       ],
       "Organization": [
         "Organisation"
@@ -491,7 +491,7 @@
         "Afslut"
       ],
       "Quote": [
-        "Citér"
+        "Anførselstegn"
       ],
       "Reactivate keys": [
         "Genaktivér nøgler"
@@ -506,10 +506,10 @@
         "Opdater status"
       ],
       "refresh the page": [
-        "genopfrisk siden"
+        "opdater siden"
       ],
       "Refresh the page": [
-        "Genopfrisk siden"
+        "Opdater siden"
       ],
       "Reload": [
         "Genindlæs"
@@ -707,7 +707,7 @@
         "Genopfyld"
       ],
       "Try again": [
-        "Forsøg igen"
+        "Prøv igen"
       ],
       "Try another method": [
         "Prøv en anden metode"
@@ -752,7 +752,7 @@
         "Upload billede"
       ],
       "Use ${ label } theme": [
-        "Brug temaet “${ label }”"
+        "Brug ${ label } tema"
       ],
       "Use a different card": [
         "Benyt et andet kort"
@@ -776,7 +776,7 @@
         "Bruger"
       ],
       "Verify": [
-        "Verificer"
+        "Bekræft"
       ],
       "View": [
         "Vis"
@@ -901,7 +901,7 @@
     },
     "Alert": {
       "By leaving now, some contacts may not be imported": [
-        "Ved at forlade nu, vil nogle kontakter måske ikke blive importeret"
+        "Ved at afslutte nu vil nogle kontakter måske ikke blive importeret"
       ],
       "By leaving now, some events may not be imported": [
         "Ved at forlade nu, vil nogle begivenheder måske ikke blive importeret"
@@ -1090,7 +1090,7 @@
         "To år SPAR 33%"
       ],
       "Two-year": [
-        "To-År"
+        "To-årig"
       ]
     },
     "blackfriday Action": {
@@ -1125,7 +1125,7 @@
     },
     "blackfriday: VPNspecialoffer Action": {
       "Get the deal": [
-        "Få tilbuddet"
+        "Gør brug af tilbuddet"
       ],
       "Get the deal now": [
         "Gør brug af tilduddet nu"
@@ -1217,10 +1217,10 @@
         "Drive-problem"
       ],
       "Feature request": [
-        "Funktionsanmodning"
+        "Anmodning om funktionalitet"
       ],
       "Import / export problem": [
-        "Problem med import / eksport"
+        "Import-/eksportproblem"
       ],
       "Installation problem": [
         "Installationsproblem"
@@ -1247,7 +1247,7 @@
         "Tilmeldingsproblem"
       ],
       "Slow speed problem": [
-        "Problem med lav hastighed"
+        "Lav hastighed problem"
       ],
       "Speed problem": [
         "Hastighedsproblem"
@@ -1262,7 +1262,7 @@
         "VPN-problem"
       ],
       "Website access problem": [
-        "Problemer med adgang til hjemmesiden"
+        "Adgangsproblem på websted"
       ]
     },
     "Calendar feature": {
@@ -1457,7 +1457,7 @@
         "Navn"
       ],
       "Note": [
-        "Notat"
+        "Note"
       ],
       "Organization": [
         "Organisation"
@@ -1492,13 +1492,13 @@
         "Mobil"
       ],
       "Other": [
-        "Andet"
+        "Andre"
       ],
       "Pager": [
         "Personsøger"
       ],
       "Personal": [
-        "Personlig"
+        "Privat"
       ],
       "Work": [
         "Arbejde"
@@ -1592,7 +1592,7 @@
     },
     "Description": {
       "Decrypting contacts... This may take a few minutes. When the process is completed, you will be able to download the file with all your contacts exported.": [
-        "Dekrypterer af kontakter... Behandling kan tage et par minutter. Når den er afsluttet, kan du downloade filen indeholdende dine dekrypterede kontakter."
+        "Dekrypterer kontakter... Dette kan tage et par minutter. Når processen er afsluttet, vil du kunne downloade filen med alle dine eksporterede kontakter."
       ],
       "Encrypting and importing contacts... This may take a few minutes. When the process is completed, you can close this modal.": [
         "Krypterer og importerer kontakter... Dette kan tage et par minutter. Når processen er afsluttet, kan du lukke dette vindue."
@@ -1610,10 +1610,10 @@
     },
     "Description of the purpose of the import CSV modal": {
       "Also, we have automatically matched CSV fields with vCard fields. You can review and change this matching manually.": [
-        "CSV-felterne er også automatisk matchet med vCard-felter. Du kan gennemgå og ændre denne matching manuelt."
+        "Vi har også automatisk matchet CSV-felter med vCard-felter. Du kan gennemgå og ændre denne matchning manuelt."
       ],
       "We have detected the following fields in the CSV file you uploaded. Check the ones you want to import.": [
-        "Flg. felter er fundet i den CSV-fil, du uploadede. Afkryds dem, du vil importere."
+        "Følgende felter er fundet i den CSV-fil, du uploadede. Afkryds dem, du vil importere."
       ]
     },
     "Disney": {
@@ -1783,13 +1783,13 @@
         "Al lagerplads er blevet tildelt. Reducér lagerplads tildelt andre brugere."
       ],
       "Amount above the maximum.": [
-        "Beløb over maksimum."
+        "Beløb overstiger maksimum."
       ],
       "Amount below minimum.": [
         "Beløb under minimum."
       ],
       "Authentication canceled.": [
-        "Autentificering annulleret."
+        "Godkendelse annulleret."
       ],
       "Authentication error.": [
         "Godkendelsesfejl."
@@ -1839,7 +1839,7 @@
         "Domæne er ikke tilgængeligt, prøv igen senere"
       ],
       "Email address invalid": [
-        "Ugyldig emailadresse"
+        "Ugyldig e-mailadresse"
       ],
       "Email is not valid": [
         "E-mail er ikke gyldig"
@@ -1872,10 +1872,10 @@
         "Et filter med dette navn findes allerede"
       ],
       "Folder name cannot be empty": [
-        "Mappenavnet kan ikke være tomt"
+        "Mappenavn må ikke være tomt"
       ],
       "Incorrect login credentials. Please try again": [
-        "Forkerte login-oplysninger. Prøv venligst igen"
+        "Forkerte loginoplysninger. Prøv venligst igen"
       ],
       "Incorrect mailbox password. Please try again": [
         "Forkert adgangskode til postkasse, forsøg igen"
@@ -1920,7 +1920,7 @@
         "Ugyldig Sieve-kode"
       ],
       "Invalid verification code": [
-        "Ugyldig bekræftelseskode"
+        "Ugyldig verifikationskode"
       ],
       "Label name cannot be empty": [
         "Etikettenavn må ikke være tomt"
@@ -1930,10 +1930,10 @@
         "Flet mindst ${ calendarToFixCount } kalendere med eksisterende Proton-kalendere"
       ],
       "Missing signature": [
-        "Mangler signatur"
+        "Manglende signatur"
       ],
       "Name on card required": [
-        "Navn på kort kræves"
+        "Navn på kort er obligatorisk"
       ],
       "Name required": [
         "Navn påkrævet"
@@ -1960,19 +1960,19 @@
         "Organisation ikke genkendt. Prøv igen."
       ],
       "Passwords do not match": [
-        "Adgangskoderne er ikke ens"
+        "Adgangskoder matcher ikke"
       ],
       "Payment process cancelled": [
         "Betalingproces annulleret"
       ],
       "Payment process consumed": [
-        "Betalingsproces forbrugt"
+        "Betalingssession udløbet"
       ],
       "Payment process failed": [
         "Betalingproces mislykkedes"
       ],
       "Payment process not supported": [
-        "Betalingsprocessen understøttes ikke"
+        "Betalingsproces understøttes ikke"
       ],
       "Payments are currently not available, please try again later": [
         "Betaling er pt. ikke mulig, forsøg igen senere"
@@ -1994,7 +1994,7 @@
         "Generér nøgler, inden du forsøger at ændre din adgangskode"
       ],
       "Please refresh the page.": [
-        "Genopfrisk venligst siden."
+        "Genindlæs venligst siden."
       ],
       "Please set a recovery email first": [
         "Angiv først en gendannelsesmail"
@@ -2036,7 +2036,7 @@
         "Signatur ikke bekræftet"
       ],
       "Signature verification failed": [
-        "Signaturbekræftelse mislykkedes"
+        "Bekræftelse af signatur mislykkedes"
       ],
       "Some of your folder names are unavailable. Please customize the import to edit these names.": [
         "Nogle af dine mappenavne er ikke tilgængelige. Tilpas importen for at redigere disse navne."
@@ -2048,22 +2048,22 @@
         "Nogle af dine etikettenavne er ikke tilgængelige. Tilpas venligst importen for at redigere disse navne."
       ],
       "Some of your label names exceed ProtonMail's maximum character limit. Please customize the import to edit these names.": [
-        "Nogle af dine etikettenavne overskrider ProtonMails maksimale tegngrænse. Tilpas venligst importen for at ændre disse navne."
+        "Nogle af dine etikettenavne overskrider ProtonMail's maksimale tegngrænse. Tilpas venligst importen for at ændre disse navne."
       ],
       "Something went wrong, please ${ refresh } in order to proceed. If you still see this error message please contact our ${ supportTeam }.": [
-        "Noget gik galt. ${ refresh } siden for at fortsætte. Ser du fortsat denne fejlmeddelelse, bedes du kontakte vores ${ supportTeam }."
+        "Noget gik galt. ${ refresh } venligst siden for at fortsætte. Ser du fortsat denne fejlmeddelelse, bedes du kontakte vores ${ supportTeam }."
       ],
       "Tab closed": [
         "Fane lukket"
       ],
       "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer.": [
-        "Denne browser understøtter ikke betalingshåndtering, så benyt venligst en anden eller alternativt en computerbrowser."
+        "Din aktuelle browser tillader ikke fuld godkendelse af betalingen. Benyt en anden browser eller log ind via en computer."
       ],
       "The composer failed to load.": [
         "Skriveværktøjet blev ikke indlæst."
       ],
       "The folder name is too long. Please choose a different name.": [
-        "Filnavnet er for langt. Vælg venligst et andet."
+        "Mappenavnet er for langt. Vælg venligst et andet navn."
       ],
       "The keys in your recovery file can't be validated. Please contact support.": [
         "Nøglerne i din gendannelsesfil kan ikke valideres. Kontakt venligst support."
@@ -2075,7 +2075,7 @@
         "Etikettenavnet er for langt. Vælg venligst et andet navn."
       ],
       "The minimum amount of credit that can be added is ${ _price }": [
-        "Det mindste mængde kredit, der kan tilføjes, er ${ _price }"
+        "Det mindste kreditstørrelse, der kan tilføjes, er ${ _price }"
       ],
       "The minimum amount that can be donated is ${ price }": [
         "Det mindste beløb, der kan doneres, er ${ price }"
@@ -2093,10 +2093,10 @@
         "Din session er udløbet. Log venligst ind igen."
       ],
       "There are too many folders in your external account. Please customize the import to delete some folders.": [
-        "Der er for mange mapper i din eksterne konto. Rediger venligst importen, for at slette nogle mapper."
+        "Der er for mange mapper i din eksterne konto. Rediger venligst importen for at slette nogle mapper."
       ],
       "This field is required": [
-        "Dette felt er påkrævet"
+        "Feltet er påkrævet"
       ],
       "This field requires a minimum of ${ minimumLength } characters.": [
         "Dette felt kræver minimum ${ minimumLength } tegn."
@@ -2114,7 +2114,7 @@
         "Ukendt fejl"
       ],
       "Unknown payment token status": [
-        "Ukendt betalingstokens status"
+        "Ukendt betalings-token status"
       ],
       "Uploaded file is not a valid private key. Please verify and try again.": [
         "Uploadet fil er ikke en gyldig privat nøgle. Kontrollér og prøv igen."
@@ -2205,7 +2205,7 @@
         "Kryptering mislykkedes"
       ],
       "vCard versions < 3.0 not supported": [
-        "vCard-versioner < 3. 0 understøttes ikke"
+        "vCard-versioner < 3.0 understøttes ikke"
       ]
     },
     "Error importing contacts": {
@@ -2254,7 +2254,7 @@
         "Element"
       ],
       "Encryption failed": [
-        "Kryptering fejlede"
+        "Kryptering mislykkedes"
       ],
       "End time out of bounds": [
         "Sluttid uden for grænserne"
@@ -2275,7 +2275,7 @@
         "Ugyldig begivenhed"
       ],
       "Journal entry": [
-        "Journaloptegnelse"
+        "Journalindlæg"
       ],
       "Malformed all-day event": [
         "Misdannet heldagsbegivenhed"
@@ -2311,7 +2311,7 @@
         "Tilbagevendende regel understøttes ikke"
       ],
       "Start time out of bounds": [
-        "Starttiden uden for grænserne"
+        "Starttid uden for grænserne"
       ],
       "Timezone": [
         "Tidszone"
@@ -2320,7 +2320,7 @@
         "Tidszone understøttes ikke"
       ],
       "To-do entry": [
-        "Gøremålsoptegnelse"
+        "Gøremålindlæg"
       ],
       "Unknown": [
         "Ukendt"
@@ -2331,7 +2331,7 @@
     },
     "Error message": {
       "Brace yourself till we get the error fixed.": [
-        "Fejlen rettes hurtigst muligt. Tak for din tålmodighed."
+        "Fejlen rettes hurtigst muligt, Tak for din tålmodighed."
       ],
       "Error: ${ errorMessage }": [
         "Fejl: ${ errorMessage }"
@@ -2343,7 +2343,7 @@
         "Ups, noget gik galt"
       ],
       "Please ${ refresh } or check your connection.": [
-        "${ refresh } eller tjek din forbindelse."
+        "Du bedes venligst ${ refresh } eller tjekke din forbindelse."
       ],
       "Please ${ signIn } to update your email subscription preferences.": [
         "${ signIn } for at opdatere dine e-mail-abonnementspræferencer."
@@ -3154,7 +3154,7 @@
         "${ calendarsToBeMergedCount } flettede kalendere"
       ],
       "${ mailAppName } Free": [
-        "${ mailAppName } Free"
+        "${ mailAppName } Gratis"
       ],
       "${ mailAppName } Professional starts with one user, and each user adds 5 GB and 5 email addresses to the organization’s pool.": [
         "${ mailAppName } Professional starter med én bruger, og hver bruger føjer 5 GB og 5 e-mailadresser til organisationens pulje."
@@ -3212,7 +3212,7 @@
         "${ selectedFoldersCount } mapper valgt"
       ],
       "${ selectedFoldersCount } label selected": [
-        "${ selectedFoldersCount } etiket valgt",
+        "${ selectedFoldersCount } etikette valgt",
         "${ selectedFoldersCount } etiketter valgt"
       ],
       "${ selectedFoldersCountLocalized } folder selected": [
@@ -3227,7 +3227,7 @@
         "${ strongAddressAvailable } Du vil bruge denne e-mailadresse til at logge på alle ${ BRAND_NAME } tjenester."
       ],
       "${ vpnAppName } Free": [
-        "${ vpnAppName } Free"
+        "${ vpnAppName } Gratis"
       ],
       "(Filter if ALL of the following conditions are met)": [
         "(Filtrer hvis ALLE af følgende betingelser er opfyldt)"
@@ -3242,20 +3242,20 @@
         "* Funktioner som kan tilpasses"
       ],
       "+${ bonusSpace } bonus storage": [
-        "+${ bonusSpace } bonus lagerplads"
+        "+${ bonusSpace } bonuslagerplads"
       ],
       "+${ organization.BonusVPN } connection for ProtonVPN (allows you to connect more devices to VPN)": [
         "+${ organization.BonusVPN } forbindelse til ProtonVPN (tillader dig at forbinde flere enheder til VPN)",
         "+${ organization.BonusVPN } forbindelser til ProtonVPN (tillader dig at forbinde flere enheder til VPN)"
       ],
       "20% discount applied to your subscription with coupon ${ code }": [
-        "20% rabat anvendt på dit abonnement med kupon ${ code }"
+        "20% rabat anvendes på dit abonnement med kupon ${ code }"
       ],
       "30 days money-back guarantee.": [
         "30 dages pengene-tilbage-garanti."
       ],
       "A free and uncensored Internet should be available to all.": [
-        "Et gratis og ucensureret internet bør være tilgængeligt for alle."
+        "Et frit og ucensureret internet bør være tilgængeligt for alle."
       ],
       "A recovery file lets you unlock and view your data after an account reset. ": [
         "Med en gendannelsesfil kan du låse op for og se dine data efter en kontonulstilling. "
@@ -3267,10 +3267,10 @@
         "Få adgang til blokeret indhold såsom sociale medier, nyheder, Wikipedia, YouTube og mange andre, uanset hvor du er."
       ],
       "Access your streaming services, like ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, no matter where you are.": [
-        "Få adgang til dine streamingtjenester som f. eks. ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, uanset hvor du er."
+        "Få adgang til dine streamingtjenester som f.eks. ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, uanset hvor du er."
       ],
       "Account access restricted due to unpaid invoices. Please contact your administrator.": [
-        "Kontoadgang begrænset grundet ubetalte fakturaer. Kontakt venligst din administrator."
+        "Kontoadgang begrænset grundet manglende betaling. Kontakt din administrator."
       ],
       "account recovery and data recovery method": [
         "kontogenoprettelse og metode til gendannelse af data"
@@ -3313,13 +3313,13 @@
         "Efter en adgangskode-nulstilling er dine data låst i krypteret form for at holde dem sikre."
       ],
       "After making your Bitcoin payment, please follow the instructions below to upgrade.": [
-        "Når du har foretaget din Bitcoin-betaling, så følg anvisningerne nedenfor for at opgradere."
+        "Når du har foretaget din Bitcoin-betaling, skal du følge anvisningerne nedenfor for at opgradere."
       ],
       "Align left": [
-        "Venstrejusteret"
+        "Venstrestil"
       ],
       "Align right": [
-        "Højrejusteret"
+        "Højerstil"
       ],
       "All (${ totalFoldersCount } folder)": [
         "Alle (${ totalFoldersCount } mappe)",
@@ -3438,7 +3438,7 @@
         "Faktureres ved udløbet af din aktuelle faktureringscyklus (fornys den ${ renewalDate })"
       ],
       "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits.": [
-        "Bitcoin-transaktioner kan tage noget tid at bekræfte (op til 24 timer). Efter bekræftelsen vil vi tilføje kreditter til din konto. Efter transaktionsbekræftelsen kan du betale din faktura med kreditterne."
+        "Bitcoin-transaktioner kan tage noget tid at bekræfte (op til 24 timer). Efter bekræftelsen føjer vi kredit til din konto. Efter transaktionsbekræftelsen kan du betale din faktura med kreditten."
       ],
       "Black Friday 2018 applied to your subscription": [
         "Black Friday 2018 anvendes til dit abonnement"
@@ -3453,7 +3453,7 @@
         "Blokerer afsendere fra at se, om og hvornår du har åbnet en besked."
       ],
       "By downgrading to a Free plan, you will permanently lose these benefits, even if you upgrade again in the future.": [
-        "Ved at nedgradere til et gratis abonnement mister du disse fordele permanent, selvom du senere opgraderer igen."
+        "Ved at nedgradere til et Free-abonnement mister du disse fordele permanent, selvom du senere opgraderer igen."
       ],
       "By downgrading you will lose the following benefits. Are you sure you want to proceed?": [
         "Ved at nedgradere mister du følgende fordele. Er du sikker på, at du vil fortsætte?"
@@ -3532,16 +3532,16 @@
         "Brugerdefinerede filtre fungerer på alle nye e-mails, herunder indgående e-mails samt sendte e-mails. Filtre kan redigeres og oprettes direkte via Sieve-programmeringssprog."
       ],
       "Custom monthly": [
-        "Tilpasset månedligt"
+        "Tilpasset månedlig"
       ],
       "Custom weekly": [
         "Tilpasset ugentlig"
       ],
       "Custom yearly": [
-        "Tilpasset årligt"
+        "Tilpasset årlig"
       ],
       "Daily": [
-        "Dagligt"
+        "Daglig"
       ],
       "Delete any other MX records or make sure ProtonMail's Priority is the lowest number.": [
         "Slet eventuelle andre MX-poster eller sørg for, at ProtonMails prioritet har det laveste tal."
@@ -3599,7 +3599,7 @@
         "Redigér etiket"
       ],
       "Email address": [
-        "E-mailadresse"
+        "E-mail"
       ],
       "Emailing preference saved": [
         "E-mail-afsendelsespræference gemt"
@@ -3704,7 +3704,7 @@
         "Google registrerer din onlineaktivitet og læser dine personlige data for at give adgang for annoncører og andre tredjeparter. Opret en sikker e-mailadresse for bedre beskyttelse af dine personlige oplysninger."
       ],
       "here": [
-        "her"
+        "hér"
       ],
       "Hides identifying information by loading remote content through a proxy. Option to store content as attachments.": [
         "Skjuler identifikationsoplysninger ved at indlæse fjernindhold via en proxy. Mulighed for at gemme indhold som vedhæftede filer."
@@ -3846,7 +3846,7 @@
         "er det afgørende"
       ],
       "Just confirm your selection and we'll do the rest.": [
-        "Du skal blot bekræfte dit valg, så klarer vi resten."
+        "Du skal blot bekræfte dit valg, og så klarer vi resten."
       ],
       "Justify": [
         "Lige margener"
@@ -3888,7 +3888,7 @@
         "Linket er slettet"
       ],
       "Link type": [
-        "Link type"
+        "Link-type"
       ],
       "Loading": [
         "Indlæser"
@@ -3921,7 +3921,7 @@
         "Flettet"
       ],
       "Monthly ${ onDayString }": [
-        "Månedligt ${ onDayString }"
+        "Månedlig ${ onDayString }"
       ],
       "more": [
         "mere"
@@ -3933,7 +3933,7 @@
         "Understøttelse af flere brugere ikke aktiveret."
       ],
       "Name your new folder and select the parent folder you want to put it in. If you do not select a parent folder, this new folder will be created as a top level folder.": [
-        "Navngiv din nye mappe og vælg den overordnede mappe, du vil placere den i. Hvis du ikke vælger en overordnet mappe, vil denne nye mappe blive oprettet som en topniveau-mappe."
+        "Navngiv din nye mappe og vælg den overordnede mappe, du vil placere den i. Hvis du ikke vælger en overordnet mappe, vil denne nye mappe blive oprettet som en topniveaumappe."
       ],
       "New": [
         "Ny"
@@ -3972,7 +3972,7 @@
         "Ingen logger endnu."
       ],
       "No payment is required at this time.": [
-        "Betaling er ikke påkrævet på nuværende tidspunkt."
+        "Der kræves ingen betaling på nuværende tidspunkt."
       ],
       "No preview available": [
         "Ingen forhåndsvisning tilgængelig"
@@ -4011,7 +4011,7 @@
         "Én konto til alle Proton-tjenester"
       ],
       "Only change these settings if you are using PGP with non-ProtonMail recipients.": [
-        "Ændr kun disse indstillinger, hvis du benytter PGP ifm. ikke-ProtonMail modtagere."
+        "Ændr kun disse indstillinger, hvis du benytter PGP ifm. ikke-ProtonMail-modtagere."
       ],
       "Only you can see the labels.": [
         "Kun du kan se etiketterne."
@@ -4038,7 +4038,7 @@
         "P2P"
       ],
       "Payment can take a few minutes to fully verify.": [
-        "Betaling kan tage et par minutter til fuld bekræftelse."
+        "Betalingen kan tage et par minutter at bekræfte helt."
       ],
       "Payments are protected with TLS encryption and Swiss privacy laws.": [
         "Betalinger er beskyttet af TLS-kryptering og schweizisk fortrolighedslovgivning."
@@ -4074,7 +4074,7 @@
         "Bemærk, at hvis du sletter dette filter, vil vi stoppe med at udføre alle de automatiserede handlinger, det udløser."
       ],
       "Please note that upon clicking the Confirm button, your account will have ${ creditsRemaining } credits remaining.": [
-        "Bemærk at når du klikker på Bekræft-knappen vil din konto have ${ creditsRemaining } kreditter tilbage."
+        "Bemærk at når du klikker på Bekræft-knappen, vil din konto have ${ creditsRemaining } kreditter tilbage."
       ],
       "Please provide an email address in case we need to contact you.": [
         "Angiv venligst en e-mailadresse i tilfælde af at vi får brug for at kontakte dig."
@@ -4083,10 +4083,10 @@
         "Vælg venligst de mapper, du ønsker at importere:"
       ],
       "Please select the type of link you want to insert and fill in all the fields.": [
-        "Vælg venligst den type link, du vil indsætte og udfyld alle felterne."
+        "Vælg venligst den type link du ønsker at indsætte og udfyld alle felterne."
       ],
       "Please try again, use a different payment method, or call your bank for assistance.": [
-        "Forsøg igen. Benyt en anden betalingsmetode, eller kontakt din bank for assistance."
+        "Forsøg igen. Benyt en anden betalingsmetode, eller kontakt din bank for hjælp."
       ],
       "Please try again, use a different payment method, or contact PayPal for assistance.": [
         "Forsøg venligst igen, benyt en anden betalingsmetode eller kontakt PayPal for hjælp."
@@ -4180,7 +4180,7 @@
         "Spar 20%"
       ],
       "Save extra 20%": [
-        "Spar ekstra 20%"
+        "Spar 20% ekstra"
       ],
       "Save your password somewhere safe.": [
         "Gem din adgangskode et sikkert sted."
@@ -4195,7 +4195,7 @@
         "Skan denne kode med din to-faktor-godkendelsesenhed for at oprette din konto. ${ switchButton }."
       ],
       "Screenshot(s) attached": [
-        "Screenshot(s) vedhæftet"
+        "Skærmfoto(-s) vedhæftet"
       ],
       "Select a service provider to start": [
         "Vælg en tjenesteudbyder for at starte"
@@ -4213,7 +4213,7 @@
         "Servere er utilgængelige. Prøv igen om nogle få minutter"
       ],
       "Session timed out.": [
-        "Session er udløbet."
+        "Din session er udløbet."
       ],
       "Set recovery phrase": [
         "Opsæt gendannelsessætning"
@@ -4249,7 +4249,7 @@
         "Tekstfarve"
       ],
       "Text to display": [
-        "Tekst til visning"
+        "Tekst at vise"
       ],
       "Thank you for supporting our mission.": [
         "Tak for din støtte til vores mission."
@@ -4303,10 +4303,10 @@
         "Dette er den adgangskode, du brugte før adgangskodenulstillingen."
       ],
       "This link may be a homograph attack and cannot be opened by Internet Explorer and Edge browsers. If you are certain the link is legitimate, please use a different browser to open it.": [
-        "Dette link kan være et homografisk angreb og kan ikke åbnes af Internet Explorer og Edge browsere. Er du sikker på, at linket er legitimt, så benyt en anden browser til at åbne det."
+        "Dette link kan være et homografisk angreb og kan ikke åbnes af Internet Explorer og Edge browsere. Benyt en anden browser til at åbne linket, hvis du er sikker på, at det er legitimt."
       ],
       "This link may be a homograph attack. Please verify this is the link you wish to visit, or don't open it.": [
-        "Dette link kan være et homografisk angreb og kan ikke åbnes af Internet Explorer og Edge browsere. Tjek at dette faktisk er det link, du ønsker at besøge, eller undlad at åbne det."
+        "Dette link kan være et homografisk angreb. Bekræft venligst at dette faktisk er det link, du ønsker at besøge, eller undlad at åbne det."
       ],
       "This phone number will only be used for recovery purposes.": [
         "Dette telefonnummer vil kun blive brugt til gendannelsesformål."
@@ -4327,7 +4327,7 @@
         "Dette deaktiverer din nuværende gendannelsessætning. Du vil ikke kunne bruge den til at få adgang til din konto eller dekryptere dine data."
       ],
       "This will enable PayPal to be used to pay for your Proton subscription. We will redirect you to PayPal in a new browser tab. If you use any pop-up blockers, please disable them to continue.": [
-        "Dette gør det muligt at benytte PayPal til betaling af dit Proton-abonnement. Du omdirigeres til PayPal i en ny browserfane. Benytter du pop-up blockers, så deaktivér disse for at fortsætte."
+        "Dette gør det muligt at benytte PayPal til betaling af dit Proton-abonnement. Du omdirigeres til PayPal i en ny browserfane. Benytter du pop-up blockers, bedes du deaktivere disse for at fortsætte."
       ],
       "This will permanently delete the data and all email addresses associated with this user.": [
         "Dette vil permanent slette data og alle e-mailadresser tilknyttet denne bruger."
@@ -4447,13 +4447,13 @@
         "Brugere kan ikke foretage ændringer i organisationsindstillinger. Hvis du har brug for administratorrettigheder, så tag kontakt til din systemadministrator."
       ],
       "Verification can take a few minutes.": [
-        "Bekærftelsen kan tage et par minutter."
+        "Bekærftelse kan tage et par minutter."
       ],
       "Verification will open a new tab, please disable any popup blockers.": [
-        "Bekræftelsesprocessen åbner en ny fane. Deaktivér derfor evt. pop-up blockere."
+        "Bekræftelsesprocessen åbner en ny fane. Deaktivér derfor eventuelle pop-up blockere."
       ],
       "Verification will open a new tab, please disable any popup blockers. You will not be charged. Any amount used to verify the card will be refunded immediately.": [
-        "Bekræftelsesprocessen åbner en ny fane. Deaktivér derfor pop-up blockere. Du vil ikke blive debiteret. Ethvert beløb anvendt til bekræftelse af kortet refunderes straks."
+        "Bekræftelsesprocessen åbner en ny fane. Deaktivér derfor pop-up blockere. Du vil ikke få en opkrævning. Ethvert beløb anvendt til bekræftelse af kortet refunderes straks."
       ],
       "Version ${ appVersion }": [
         "Version ${ appVersion }"
@@ -4534,7 +4534,7 @@
         "Du har allerede en gratis konto"
       ],
       "You are about to open another browser tab and visit:": [
-        "Du er ved at åbne en ny browserfane og besøge:"
+        "Du er ved at åbne en anden browserfane og besøge:"
       ],
       "You are currently signed in as ${ user.Name } (${ user.Email }) and have restricted access.": [
         "Du er i øjeblikket logget ind som ${ user.Name } (${ user.Email }) og har begrænset adgang."
@@ -4612,7 +4612,7 @@
         "Du vil ${ loseAllData } i din ${ BRAND_NAME } konto. For at gendanne det, skal du indtaste din gamle adgangskode."
       ],
       "You will be soon redirected to your bank to verify your payment.": [
-        "Du omdirigeres snart til din bank for at bekræfte din betaling."
+        "Du bliver snart omdirigeret til din bank for at bekræfte din betaling."
       ],
       "You will soon be redirected to PayPal to verify your payment.": [
         "Du omdirigeres snart til PayPal for at bekræfte din betaling."
@@ -4636,7 +4636,7 @@
         "Din metode til kontogenoprettelse er indstillet"
       ],
       "Your account will be updated once the payment is cleared.": [
-        "Din konto vil blive opdateret, når betalingen er godkendt."
+        "Din konto vil blive opdateret når betalingen er godkendt."
       ],
       "Your Allow List is empty.": [
         "Din tilladelsesliste er tom."
@@ -4678,7 +4678,7 @@
         "Dit telefonnummer vil kun blive anvendt til denne engangsbekræftelse."
       ],
       "Your Proton account is currently on hold. To continue using your account, please pay any overdue invoices.": [
-        "Din Proton-konto er i øjeblikket suspenderet. For at fortsætte med at bruge din konto bedes du betale eventuelle forfaldne fakturaer."
+        "Din Proton-konto er suspenderet. For at fortsætte med at bruge din konto skal du betale eventuelle forfaldne fakturaer."
       ],
       "Your ProtonVPN and ProtonMail accounts are linked. To delete them both, please log in at ${ loginLink } and delete your account there.": [
         "Dine ProtonVPN- og ProtonMail-konti er forbundne. For at slette dem begge, så log ind på ${ loginLink } og slet din konto dér."
@@ -4714,15 +4714,15 @@
     },
     "Info concerning plan features": {
       "Customizable features": [
-        "Justérbare funktioner"
+        "Justérbare features"
       ],
       "ProtonMail cannot be used for mass emailing or spamming. Legitimate emails are unlimited.": [
-        "ProtonMail kan ikke bruges til masseemailing eller spam. Legitime emails er ubegrænset."
+        "ProtonMail kan ikke benyttes til masse e-mailing eller spam. Legitime e-mails er ubegrænset."
       ]
     },
     "Info for cash payment method": {
       "Please contact us at ${ email } for instructions on how to pay us with cash.": [
-        "Kontakt os venligst på ${ email } for instruktioner om, hvordan du betaler os med kontanter."
+        "Kontakt os venligst på ${ email } for anvisninger på, hvordan du betaler os med kontanter."
       ]
     },
     "Info for domain modal": {
@@ -5345,7 +5345,7 @@
         "E-mail"
       ],
       "Email address": [
-        "E-mailadresse"
+        "E-mail"
       ],
       "Email or username": [
         "E-mail eller brugernavn"
@@ -5429,7 +5429,7 @@
         "Importer alle beskeder"
       ],
       "Import interval": [
-        "Import interval"
+        "Importinterval"
       ],
       "Import to email address": [
         "Importer til e-mailadresse"
@@ -5738,7 +5738,7 @@
         "To-faktor-godkendelse"
       ],
       "Two-factor authentication code": [
-        "To-faktorgodkendelseskode"
+        "To-faktor-godkendelseskode"
       ],
       "Two-password mode": [
         "To-adgangskodetilstand"
@@ -5774,7 +5774,7 @@
         "Bruger ${ humanUsedSpace } af ${ humanMaxSpace }"
       ],
       "Verification code": [
-        "Bekræftelseskode"
+        "Verifikationskode"
       ],
       "VPN Connections": [
         "VPN-forbindelser"
@@ -5934,7 +5934,7 @@
     },
     "Label, make it short please": {
       "Attach screenshot(s)": [
-        "Vedhæft screenshot(s)"
+        "Vedhæft skærmfoto(s)"
       ]
     },
     "Label/folder modal": {
@@ -5973,7 +5973,7 @@
         "rydder din browser-cache"
       ],
       "click here": [
-        "klik her"
+        "klik hér"
       ],
       "Common sign in issues": [
         "Almindelige tegn på problemer"
@@ -5994,7 +5994,7 @@
         "Gå til abonnementer"
       ],
       "Learn more": [
-        "Få mere at vide"
+        "Få yderligere information"
       ],
       "Not activated": [
         "Ikke aktiveret"
@@ -6073,7 +6073,7 @@
         "20 GB"
       ],
       "Address verification": [
-        "Adresse-bekræftelse"
+        "Adressebekræftelse"
       ],
       "Addresses": [
         "Adresser"
@@ -6106,7 +6106,7 @@
         "Begrænset"
       ],
       "Messages per day": [
-        "Beskeder pr. dag"
+        "Daglige beskeder"
       ],
       "Multi-user support": [
         "Flerbrugerunderstøttelse"
@@ -6645,7 +6645,7 @@
         "Jeg bruger en anden Proton-konto"
       ],
       "Ignore group": [
-        "Ignorér gruppe"
+        "Ignorer gruppe"
       ],
       "iOS": [
         "iOS"
@@ -6782,7 +6782,7 @@
         "Nyt kredit / betalingskort"
       ],
       "PayPal": [
-        "Paypal"
+        "PayPal"
       ]
     },
     "PGP key warning": {
@@ -6807,7 +6807,7 @@
         "Adresse"
       ],
       "Browser name": [
-        "Browsernavn"
+        "Browser"
       ],
       "Browser version": [
         "Browser-version"
@@ -6834,7 +6834,7 @@
         "F.eks., "
       ],
       "Email address": [
-        "E-mailadresse"
+        "E-mail"
       ],
       "Feedback": [
         "Feedback"
@@ -6858,7 +6858,7 @@
         "Navn"
       ],
       "OS name": [
-        "OS-navn"
+        "Operativsystem"
       ],
       "OS version": [
         "OS-version"
@@ -6873,13 +6873,13 @@
         "Telefonnummer"
       ],
       "Please describe the problem and include any error messages": [
-        "Beskriv problemet og inkludér evt. fejlmeddelelser"
+        "Beskriv problemet og medtag evt. fejlmeddelelser"
       ],
       "Postal code": [
         "Postnummer"
       ],
       "Proton username": [
-        "Proton-brugernavn"
+        "Protonbrugernavn"
       ],
       "Search users": [
         "Søg brugere"
@@ -6993,7 +6993,7 @@
         "Mellem hastighed"
       ],
       "Secure Core servers": [
-        "Sikre kerneservere"
+        "Secure Core servere"
       ],
       "Streaming service support": [
         "Understøttelse af streamingtjeneste"
@@ -7055,16 +7055,16 @@
         "Fax"
       ],
       "Home": [
-        "Privat"
+        "Hjem"
       ],
       "Main": [
-        "Hoved"
+        "Primær"
       ],
       "Mobile": [
         "Mobil"
       ],
       "Other": [
-        "Andet"
+        "Andre"
       ],
       "Pager": [
         "Personsøger"
@@ -7464,7 +7464,7 @@
         "Bekræftelse gennemført"
       ],
       "You have successfully unsubscribed": [
-        "Du har afmeldt dig"
+        "Du har nu afmeldt dig"
       ]
     },
     "Success message": {
@@ -7542,7 +7542,7 @@
         "CSV-felt"
       ],
       "Import": [
-        "Importér"
+        "Import"
       ],
       "Name": [
         "Navn"
@@ -7720,7 +7720,7 @@
         "Backup og eksport"
       ],
       "Billing cycle": [
-        "Faktureringscyklus"
+        "Faktureringsperiode"
       ],
       "Billing details": [
         "Faktureringsdetaljer"
@@ -8012,7 +8012,7 @@
         "Importer som simple begivenheder?"
       ],
       "Import contacts": [
-        "Importer kontakter"
+        "Importér kontakter"
       ],
       "Import events": [
         "Importer begivenheder"
@@ -8033,7 +8033,7 @@
         "Import-eksport-app"
       ],
       "Invalid verification code": [
-        "Ugyldig bekræftelseskode"
+        "Ugyldig verifikationskode"
       ],
       "Invitations": [
         "Invitationer"
@@ -8243,7 +8243,7 @@
         "Opsæt to-faktor-godkendelse"
       ],
       "Settings": [
-        "Indstillonger"
+        "Indstillinger"
       ],
       "Share outside Proton": [
         "Del udenfor Proton"
@@ -8324,7 +8324,7 @@
         "Lås din postkasse op"
       ],
       "Unsupported browser": [
-        "Ikke understøttet browser"
+        "Browser understøttes ikke"
       ],
       "Upgrade": [
         "Opgradér"
@@ -8465,13 +8465,13 @@
         "Tilpas import for at reducere antallet af etiketter"
       ],
       "Defends against threats to VPN privacy by passing your Internet traffic through multiple servers.": [
-        "Forsvarer imod trusler mod VPN-privatliv ved at sende din internettrafik gennem flere servere."
+        "Afværger trusler mod VPN-privatliv ved at sende din internettrafik gennem flere servere."
       ],
       "Discount applied for annual billing cycle": [
         "Rabat er fratrukket årlig faktureringsperiode"
       ],
       "Discount applied for two-year billing cycle": [
-        "Rabat fratrukket toårig faktureringsperiode"
+        "Rabat er fratrukket den toårige faktureringsperiode"
       ],
       "Each imported email will have this label": [
         "Hver importeret e-mail vil have denne etiket"
@@ -8504,7 +8504,7 @@
         "Host e-mails til dine egne domæner på ProtonMail, f.eks. jens.hansen@eksempel.dk"
       ],
       "If you purchased a gift code or received one from our support team, you can enter it here.": [
-        "Hvis du har købt en gavekode eller modtaget en fra vores supportteam, kan du indtaste den her."
+        "Har du købt en gavekode eller modtaget en fra vores supportteam, kan du angive den hér."
       ],
       "Messages in the Sent or Drafts folder will continue to appear in that folder, even if you move them to another folder.": [
         "Beskeder i Sendt eller Kladder vil fortsætte med at blive vist i de mapper, selvom du flytter dem til en anden mappe."
@@ -8534,7 +8534,7 @@
         "Understøttelse af fildelingsprotokoller såsom BitTorrent."
       ],
       "System subfolders will show up as separate folders in ProtonMail": [
-        "Systemundermapper vises som separate mapper i ProtonMail"
+        "Systemundermapper vil blive vist som separate mapper i ProtonMail"
       ],
       "The import will start with the most recent messages.": [
         "Importen vil starte med de seneste beskeder."
@@ -8664,10 +8664,10 @@
     },
     "Video control": {
       "Click to replay the video": [
-        ""
+        "Klik for at afspille videoen igen"
       ],
       "Replay video": [
-        ""
+        "Afspil video igen"
       ]
     },
     "VPN feature": {
@@ -8705,7 +8705,7 @@
         "Steder/Lande"
       ],
       "Open Source & audited apps": [
-        "Open Source & auditerede apps"
+        "Open Source & reviderede apps"
       ],
       "P2P/BitTorrent": [
         "P2P/Bittorrent"
@@ -8720,7 +8720,7 @@
         "Router support"
       ],
       "Secure Core servers": [
-        "Sikre kerneservere"
+        "Secure Core servere"
       ],
       "Speed": [
         "Hastighed"
@@ -8864,7 +8864,7 @@
         "Bemærk venligst at ved at vælge denne betalingsmetode kan din konto ikke opgraderes med det samme. Vi opdaterer din konto, når betalingen er gået igennem."
       ],
       "Proton will merge all folders with the same name. To avoid this, change the names before import.": [
-        "Proton vil sammenflette alle mapper med samme navn. For at undgå dette, skal du ændre navnene før importen."
+        "Proton vil sammenflette alle mapper med det samme navn. For at undgå dette, skal du ændre navnene før importen."
       ],
       "Proton will transfer as much data as possible, starting with your most recent messages.": [
         "Proton vil overføre så mange data som muligt, startende med dine seneste beskeder."
@@ -9035,7 +9035,7 @@
         "Ugentligt på ${ multipleDaysString }, ${ untilString }"
       ],
       "Weekly on all days": [
-        "Ugentligt alle dage"
+        "Ugentligt på alle dage"
       ],
       "Weekly on all days, ${ timesString }": [
         "Ugentlig på alle dage, ${ timesString }"
@@ -9144,7 +9144,7 @@
         "Hver ${ interval } år, ${ untilString }"
       ],
       "Yearly": [
-        "Årlig"
+        "Årligt"
       ],
       "Yearly, ${ timesString }": [
         "Årligt, ${ timesString }"

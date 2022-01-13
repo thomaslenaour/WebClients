@@ -119,7 +119,7 @@
         "Autenticar"
       ],
       "Back": [
-        "Volver"
+        "Atrás"
       ],
       "Bold": [
         "Negrita"
@@ -158,7 +158,7 @@
         "Borrar"
       ],
       "Clear all formatting": [
-        "Borrar formato"
+        "Borrar todo el formato"
       ],
       "Close": [
         "Cerrar"
@@ -257,7 +257,7 @@
         "Detalles"
       ],
       "Did not receive the code?": [
-        "¿No recibió el código?"
+        "No recibió el código?"
       ],
       "Didn't receive a code?": [
         "¿No recibió el código?"
@@ -749,7 +749,7 @@
         "Actualizar a Professional"
       ],
       "Upload picture": [
-        "Cargar imagen"
+        "Subir imagen"
       ],
       "Use ${ label } theme": [
         "Usar tema ${ label }"
@@ -758,7 +758,7 @@
         "Use una tarjeta diferente"
       ],
       "Use a different payment method": [
-        "Use otro método de pago"
+        "Use un método de pago diferente"
       ],
       "Use recovery code": [
         "Usar código de recuperación"
@@ -1141,7 +1141,7 @@
         ""
       ],
       "Save ${ percentage }%": [
-        "${ percentage } %"
+        "${ percentage }%"
       ],
       "Special offer Terms and Conditions": [
         ""
@@ -1469,7 +1469,7 @@
         "Foto"
       ],
       "Role": [
-        "Puesto"
+        "Profesión"
       ],
       "Timezone": [
         "Zona horaria"
@@ -1489,7 +1489,7 @@
         "Principal"
       ],
       "Mobile": [
-        "Móvil"
+        "Celular"
       ],
       "Other": [
         "Otro"
@@ -1533,7 +1533,7 @@
         "${ count } veces"
       ],
       "Daily": [
-        "Diariamente"
+        "Diario"
       ],
       "Daily, ${ timesString }": [
         "Diariamente, ${ timesString }"
@@ -1738,16 +1738,16 @@
         "Cancelación de un evento a partir del ${ formattedStart }"
       ],
       "Invitation for an event on ${ formattedStart }": [
-        "Invitación a un evento el ${ formattedStart }"
+        "Invitación de un evento el ${ formattedStart }"
       ],
       "Invitation for an event starting on ${ formattedStart }": [
-        "Invitación a un evento a partir del ${ formattedStart }"
+        "Invitación de un evento a partir del ${ formattedStart }"
       ],
       "Update for an event on ${ formattedStart }": [
-        "Actualización a un evento el ${ formattedStart }"
+        "Actualización de un evento el ${ formattedStart }"
       ],
       "Update for an event starting on ${ formattedStart }": [
-        "Actualización a un evento a partir del ${ formattedStart }"
+        "Actualización de un evento a partir del ${ formattedStart }"
       ]
     },
     "Email Unsubscribe": {
@@ -1810,7 +1810,7 @@
         "No se pueden crear calendarios nuevos para todos los calendarios importados debido al límite de calendarios personales."
       ],
       "Can't validate email, try again later": [
-        "No se puede validar el correo electrónico, intente de nuevo más tarde"
+        "No se puede validar el correo electrónico, intente más tarde"
       ],
       "Can't validate phone, try again later": [
         "No se puede validar el teléfono, intente más tarde"
@@ -1875,10 +1875,10 @@
         "El nombre de la carpeta no puede estar vacío"
       ],
       "Incorrect login credentials. Please try again": [
-        "Credenciales de acceso incorrectas. Por favor, intente de nuevo"
+        "Credenciales de acceso incorrectas. Por favor, inténtelo de nuevo"
       ],
       "Incorrect mailbox password. Please try again": [
-        "Contraseña del buzón incorrecta. Por favor, intente de nuevo"
+        "Contraseña del buzón incorrecta. Por favor, inténtelo de nuevo"
       ],
       "Incorrect password": [
         "Contraseña incorrecta"
@@ -1966,7 +1966,7 @@
         "Proceso de pago cancelado"
       ],
       "Payment process consumed": [
-        "Proceso de pago consumido"
+        "Proceso de pago consumado"
       ],
       "Payment process failed": [
         "Proceso de pago fallido"
@@ -2075,7 +2075,7 @@
         "El nombre de la etiqueta es demasiado largo. Elija un nombre diferente."
       ],
       "The minimum amount of credit that can be added is ${ _price }": [
-        "La cantidad mínima de crédito que se puede agregar es de ${ _price }"
+        "La cantidad mínima de crédito que puede añadirse es de ${ _price }"
       ],
       "The minimum amount that can be donated is ${ price }": [
         "La cantidad mínima que puede donarse es de ${ price }"
@@ -2239,7 +2239,7 @@
         "Calendario"
       ],
       "Calendar timezone not supported": [
-        "Zona horaria del calendario no admitida"
+        "Zona horaria del calendario no compatible"
       ],
       "Component with wrong format": [
         "Componente con formato incorrecto"
@@ -2248,7 +2248,7 @@
         "Zona horaria personalizada"
       ],
       "Edited event not supported": [
-        "Evento editado no soportado"
+        "Evento editado no compatible"
       ],
       "Element": [
         "Elemento"
@@ -2266,7 +2266,7 @@
         "Falló la validación del evento"
       ],
       "Floating times not supported": [
-        "Tiempos flotantes no admitidos"
+        "Tiempos flotantes no compatibles"
       ],
       "Free-busy time information": [
         "Información de disponibilidad por Internet"
@@ -2308,7 +2308,7 @@
         "El evento recurrente no contiene ocurrencias"
       ],
       "Recurring rule not supported": [
-        "Regla recurrente no admitida"
+        "Regla recurrente no compatible"
       ],
       "Start time out of bounds": [
         "Hora inicial fuera de límites"
@@ -2317,7 +2317,7 @@
         "Zona horaria"
       ],
       "Timezone not supported": [
-        "Zona horaria no admitida"
+        "Zona horaria no compatible"
       ],
       "To-do entry": [
         "Entrada de tareas"
@@ -2396,10 +2396,10 @@
         "Error inesperado"
       ],
       "Unsupported invitation": [
-        "Invitación no compatible"
+        "Invitación no soportada"
       ],
       "Unsupported response": [
-        "Respuesta no compatible"
+        "Respuesta no soportada"
       ],
       "We could not cancel the event in your calendar": [
         "No pudimos cancelar el evento en su calendario"
@@ -2795,7 +2795,7 @@
       ],
       "Contact successfully imported. The imported contact will now appear in your contact list.": [
         "Contacto importado con éxito. El contacto importado aparecerá ahora en su lista de contactos.",
-        "contactos importados con éxito. Los contactos importados aparecerán ahora en su lista de contactos."
+        "Contactos importados con éxito. Los contactos importados aparecerán ahora en su lista de contactos."
       ]
     },
     "Import contacts warning": {
@@ -3154,7 +3154,7 @@
         "${ calendarsToBeMergedCount } calendarios fusionados"
       ],
       "${ mailAppName } Free": [
-        "${ mailAppName } gratis"
+        "${ mailAppName } Gratuito"
       ],
       "${ mailAppName } Professional starts with one user, and each user adds 5 GB and 5 email addresses to the organization’s pool.": [
         "${ mailAppName } Professional empieza con un usuario, y cada usuario añade 5 GB y 5 direcciones de correo al grupo de la organización."
@@ -3227,7 +3227,7 @@
         "${ strongAddressAvailable } Usará esta dirección de correo para iniciar sesión en los servicios de ${ BRAND_NAME }."
       ],
       "${ vpnAppName } Free": [
-        "${ vpnAppName } gratis"
+        "${ vpnAppName } Gratuito"
       ],
       "(Filter if ALL of the following conditions are met)": [
         "(Filtra si se cumplen TODAS las siguientes condiciones)"
@@ -3242,7 +3242,7 @@
         "* Funciones personalizables"
       ],
       "+${ bonusSpace } bonus storage": [
-        "+${ bonusSpace } almacenamiento adicional"
+        "+${ bonusSpace } de almacenamiento adicional"
       ],
       "+${ organization.BonusVPN } connection for ProtonVPN (allows you to connect more devices to VPN)": [
         "+${ organization.BonusVPN } conexión para ProtonVPN (le permite conectar más dispositivos a la VPN)",
@@ -3252,7 +3252,7 @@
         "20% de descuento aplicado a su suscripción con el cupón ${ code }"
       ],
       "30 days money-back guarantee.": [
-        "Garantía de reembolso de 30 días."
+        "30 días de garantía de devolución del dinero."
       ],
       "A free and uncensored Internet should be available to all.": [
         "Una Internet libre y sin censura debería estar disponible para todos."
@@ -3264,7 +3264,7 @@
         "Una frase de recuperación le permite acceder a su cuenta y recuperar sus mensajes cifrados si olvida su contraseña."
       ],
       "Access blocked content, like social media, news, Wikipedia, YouTube, and many others, no matter where you are.": [
-        "Acceda a contenidos bloqueados, como redes sociales, noticias, Wikipedia, YouTube, y muchos otros, sin importar dónde esté."
+        "Acceda a contenidos bloqueados, como medios sociales, noticias, Wikipedia, YouTube, y muchos otros, sin importar donde esté."
       ],
       "Access your streaming services, like ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, no matter where you are.": [
         "Acceda a sus servicios de streaming, como ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, no importa donde esté."
@@ -3453,7 +3453,7 @@
         "Impide que los remitentes vean si abrió un mensaje y cuándo lo hizo."
       ],
       "By downgrading to a Free plan, you will permanently lose these benefits, even if you upgrade again in the future.": [
-        "Al degradar a un plan Free, perderá permanentemente estos beneficios, incluso si mejora de nuevo en el futuro."
+        "Al degradar a un plan gratuito, perderá permanentemente estos beneficios, incluso si mejora de nuevo en el futuro."
       ],
       "By downgrading you will lose the following benefits. Are you sure you want to proceed?": [
         "Al degradar la cuenta perderá los siguientes beneficios. ¿Está seguro que desea continuar?"
@@ -3523,7 +3523,7 @@
         "Actualmente todas las conexiones VPN disponibles están asignadas a la cuenta del administrador. Seleccione el número de conexiones que quiere reservar para usuarios adicionales."
       ],
       "Custom": [
-        "Personalizar"
+        "Personalizado"
       ],
       "Custom daily": [
         "Personalización diaria"
@@ -3590,7 +3590,7 @@
         "Descargue sus claves PGP para usarlas con otros servicios compatibles con PGP."
       ],
       "Drop the file here to upload": [
-        "Arrastre el archivo aquí para cargar"
+        "Arrastre el archivo aquí para subir"
       ],
       "Each additional connection can be assigned to users in your organization.": [
         "Cada conexión adicional puede asignarse a los usuarios de su organización."
@@ -3665,7 +3665,7 @@
         "Los filtros funcionan en todos los correos, incluyendo los entrantes y enviados. Cada filtro debe contener al menos un nombre, una condición y una acción."
       ],
       "For families and small teams; includes both Mail and VPN.": [
-        "Para familias y pequeños equipos; incluye correo y VPN."
+        "Para familias y equipos pequeños; incluye correo y VPN."
       ],
       "For getting started with private and secure emailing.": [
         "Para comenzar con el correo electrónico privado y seguro."
@@ -4011,7 +4011,7 @@
         "Una cuenta para todos los servicios de Proton"
       ],
       "Only change these settings if you are using PGP with non-ProtonMail recipients.": [
-        "Solo cambie estos ajustes si está utilizando PGP con remitentes fuera de ProtonMail."
+        "Solo cambie estos ajustes si está utilizando PGP con destinatarios fuera de ProtonMail."
       ],
       "Only you can see the labels.": [
         "Solo usted puede ver las etiquetas."
@@ -4074,7 +4074,7 @@
         "Tome en cuenta que si elimina este filtro, dejaremos de procesar todas las acciones automatizadas que lo activa."
       ],
       "Please note that upon clicking the Confirm button, your account will have ${ creditsRemaining } credits remaining.": [
-        "Tome en cuenta que al hacer clic en el botón Confirmar, su cuenta tendrá ${ creditsRemaining } créditos restantes."
+        "Tenga en cuenta que al hacer clic en el botón Confirmar, su cuenta tendrá ${ creditsRemaining } créditos restantes."
       ],
       "Please provide an email address in case we need to contact you.": [
         "Indique una dirección de correo en caso de que necesitemos contactarle."
@@ -4086,7 +4086,7 @@
         "Seleccione el tipo de enlace que desea insertar y rellenar en todos los campos."
       ],
       "Please try again, use a different payment method, or call your bank for assistance.": [
-        "Intente de nuevo, utilice otro método de pago, o llame a su banco para obtener ayuda."
+        "Intente de nuevo, use un método de pago diferente o llame a su banco para asistencia."
       ],
       "Please try again, use a different payment method, or contact PayPal for assistance.": [
         "Intente de nuevo, use un método de pago diferente o contacte con PayPal por asistencia."
@@ -4303,10 +4303,10 @@
         "Esta es la contraseña que usó anterior al restablecimiento de contraseña."
       ],
       "This link may be a homograph attack and cannot be opened by Internet Explorer and Edge browsers. If you are certain the link is legitimate, please use a different browser to open it.": [
-        "Este enlace puede ser un ataque homógrafo y no puede abrirse por los navegadores Internet Explorer y Edge. Si cree que el enlace es legítimo, deberá abrirlo en un navegador diferente."
+        "Este enlace puede ser un ataque homogéneo y no puede abrirse por los navegadores Internet Explorer y Edge. Si cree que el enlace es legítimo, deberá abrirlo en un navegador diferente."
       ],
       "This link may be a homograph attack. Please verify this is the link you wish to visit, or don't open it.": [
-        "Este enlace puede ser un ataque homógrafo. Verifique que este es el enlace que desea visitar o no lo abra."
+        "Este enlace puede ser un ataque homogéneo. Verifique que este es el enlace que desea visitar o no lo abra."
       ],
       "This phone number will only be used for recovery purposes.": [
         "Este número telefónico solo se usará para propósitos de recuperación."
@@ -4450,7 +4450,7 @@
         "La verificación puede tomar unos minutos."
       ],
       "Verification will open a new tab, please disable any popup blockers.": [
-        "La verificación abrirá una pestaña nueva, desactive los bloqueadores de ventanas emergentes."
+        "La verificación abrirá una pestaña nueva, deshabilite cualquier bloqueador de ventanas."
       ],
       "Verification will open a new tab, please disable any popup blockers. You will not be charged. Any amount used to verify the card will be refunded immediately.": [
         "La verificación abrirá una pestaña nueva, deshabilite cualquier bloqueador de ventanas emergentes. No se le cobrará este proceso. Cualquier monto usado para verificar la tarjeta le será reembolsado inmediatamente."
@@ -4477,7 +4477,7 @@
         "Usamos seguridad 3-D para proteger sus pagos."
       ],
       "We will redirect you to PayPal in a new browser tab to complete this transaction. If you use any pop-up blockers, please disable them to continue.": [
-        "Le redirigiremos a PayPal en una pestaña nueva del navegador para completar esta transacción. Si usa cualquier bloqueador emergente, desactívelo para continuar."
+        "Le redirigiremos a PayPal en una pestaña nueva del navegador para completar esta transacción. Si usa cualquier bloqueador de ventanas, desactívelo para continuar."
       ],
       "We will send a code to this phone number if you forget your password or get locked out of your account.": [
         "Le enviaremos un código a este número telefónico si olvida su contraseña o pierde acceso a su cuenta."
@@ -4630,7 +4630,7 @@
         "Su cuenta tiene al menos una factura atrasada. Su acceso pronto será restringido. ${ payInvoiceLink }"
       ],
       "Your account is being upgraded, this may take up to 30 seconds.": [
-        "Su cuenta se está mejorando, esto puede tomar hasta 30 segundos."
+        "Su cuenta se está actualizando, esto puede tomar hasta 30 segundos."
       ],
       "Your account recovery method is set": [
         "El método de recuperación de su cuenta está configurado"
@@ -4717,7 +4717,7 @@
         "Funciones personalizables"
       ],
       "ProtonMail cannot be used for mass emailing or spamming. Legitimate emails are unlimited.": [
-        "ProtonMail no puede utilizarse para el envío masivo de correos. Los correos legítimos son ilimitados."
+        "ProtonMail no puede usarse para el envío masivo de correos. Los correos legítimos son ilimitados."
       ]
     },
     "Info for cash payment method": {
@@ -5429,7 +5429,7 @@
         "Importar todos los mensajes"
       ],
       "Import interval": [
-        "Intervalo de importación"
+        "Importar intervalo"
       ],
       "Import to email address": [
         "Importar a la dirección de correo"
@@ -5486,7 +5486,7 @@
         "Contraseña del buzón"
       ],
       "Manage folders": [
-        "Gestionar carpetes"
+        "Gestionar carpetas"
       ],
       "Manage labels": [
         "Gestionar etiquetas"
@@ -5504,7 +5504,7 @@
         "Nombre"
       ],
       "Name on card": [
-        "Titular de la tarjeta"
+        "Nombre en la tarjeta"
       ],
       "New login password": [
         "Contraseña nueva de inicio de sesión"
@@ -5573,7 +5573,7 @@
         "Teléfono"
       ],
       "Phone number": [
-        "Número de teléfono"
+        "Número telefónico"
       ],
       "Phrase": [
         "Frase"
@@ -5672,7 +5672,7 @@
         "Firma"
       ],
       "Starred": [
-        "Destacados"
+        "Destacado"
       ],
       "Start date": [
         "Fecha inicial"
@@ -6106,10 +6106,10 @@
         "Limitado"
       ],
       "Messages per day": [
-        "Mensajes por día"
+        "Mensajes enviados por día"
       ],
       "Multi-user support": [
-        "Soporte multi usuario"
+        "Soporte multiusuario"
       ],
       "Priority": [
         "Prioritario"
@@ -6263,19 +6263,19 @@
     },
     "Monthly recurring event, frequency": {
       "Every ${ interval } month ${ onDayString }": [
-        "Cada ${ interval } mes los ${ onDayString }",
+        "Cada mes los ${ onDayString } ${ interval }",
         "Cada ${ interval } meses los ${ onDayString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ timesString }": [
-        "Cada ${ interval } mes ${ onDayString }, ${ timesString }",
+        "Cada mes ${ onDayString }, ${ timesString } ${ interval }",
         "Cada ${ interval } meses ${ onDayString }, ${ timesString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ untilString }": [
-        "Cada ${ interval } mes ${ onDayString }, ${ untilString }",
+        "Cada mes ${ onDayString }, ${ untilString } ${ interval }",
         "Cada ${ interval } meses ${ onDayString }, ${ untilString }"
       ],
       "Monthly ${ onDayString }": [
-        "Mensual los ${ onDayString }"
+        "Mensual ${ onDayString }"
       ],
       "Monthly ${ onDayString }, ${ timesString }": [
         "Mensual ${ onDayString }, ${ timesString }"
@@ -6787,7 +6787,7 @@
     },
     "PGP key warning": {
       "Email address not found among user ids defined in sending key (${ keyUserIds })": [
-        "Dirección de correo no encontrada entre los identificadores de usuario definidos en la clave de envío (${ keyUserIds })"
+        "Dirección de correo electrónico no encontrada entre los identificadores de usuario definidos en la clave de envío (${ keyUserIds })"
       ]
     },
     "Placeholder": {
@@ -6921,7 +6921,7 @@
     },
     "Plan feature": {
       "0.5 GB storage": [
-        "0,5 GB de almacenamiento"
+        "0.5 GB de almacenamiento"
       ],
       "1 - 5000 users *": [
         "1 - 5000 usuarios *"
@@ -6975,13 +6975,13 @@
         "Direcciones de correo personalizadas"
       ],
       "Early access to new products": [
-        "Acceso temprano a productos nuevos"
+        "Acceso anticipado a productos nuevos"
       ],
       "High speed": [
         "Velocidad alta"
       ],
       "Highest speed (up to 10 Gbps)": [
-        "Velocidad máxima (hasta 10 Gbps)"
+        "Máxima velocidad (hasta 10Gbps)"
       ],
       "Includes 6 user accounts": [
         "Incluye 6 cuentas de usuario"
@@ -6996,7 +6996,7 @@
         "Servidores Secure Core"
       ],
       "Streaming service support": [
-        "Soporte al servicio de streaming"
+        "Soporte de servicios de streaming"
       ],
       "Unlimited folders / labels": [
         "Carpetas/etiquetas ilimitadas"
@@ -7464,7 +7464,7 @@
         "Verificación exitosa"
       ],
       "You have successfully unsubscribed": [
-        "Se ha desuscrito satisfactoriamente"
+        "Ha cancelado la suscripción satisfactoriamente"
       ]
     },
     "Success message": {
@@ -8324,7 +8324,7 @@
         "Desbloquee su buzón"
       ],
       "Unsupported browser": [
-        "Navegador no soportado"
+        "Navegador no compatible"
       ],
       "Upgrade": [
         "Actualizar"
@@ -8465,7 +8465,7 @@
         "Personalice la importación para reducir el número de etiquetas"
       ],
       "Defends against threats to VPN privacy by passing your Internet traffic through multiple servers.": [
-        "Defiende contra amenazas a la privacidad VPN pasando su tráfico de Internet a través de múltiples servidores."
+        "Defiende contra amenazas a la privacidad VPN pasando su tráfico de internet a través de servidores múltiples."
       ],
       "Discount applied for annual billing cycle": [
         "Descuento aplicado para el ciclo de facturación anual"
@@ -8492,7 +8492,7 @@
         "Obtenga acceso a todas las funciones de pago de ${ vpnAppName } y ${ mailAppName } (el servicio de correo electrónico cifrado que millones usan para proteger sus datos) con un plan."
       ],
       "Get access to all the paid features for both ProtonVPN and ProtonMail (the encrypted email service that millions use to protect their data) with one plan.": [
-        "Obtenga acceso a todas las funciones de pago de ProtonVPN y ProtonMail (el servicio de correo electrónico cifrado que millones utilizan para proteger sus datos) con un solo plan."
+        "Obtenga acceso a todas las funciones de pago de ProtonVPN y ProtonMail (el servicio de correo electrónico cifrado que millones utilizan para proteger sus datos) en un solo plan."
       ],
       "Group emails in the same conversation together in your Inbox or display them separately.": [
         "Agrupa correos electrónicos en la misma conversación juntos en su bandeja de entrada o los muestra por separado."
@@ -8504,13 +8504,13 @@
         "Aloje correos electrónicos para sus propios dominios en ProtonMail, p. ej. usuario@sudominio.com"
       ],
       "If you purchased a gift code or received one from our support team, you can enter it here.": [
-        "Si compó un código de regalo o recibió uno de nuestro equipo de soporte, puede ingresarlo aquí."
+        "Si compró un código de regalo o recibió uno de nuestro equipo de soporte, puede ingresarlo aquí."
       ],
       "Messages in the Sent or Drafts folder will continue to appear in that folder, even if you move them to another folder.": [
         "Los mensajes en la carpeta enviados o borradores continuarán apareciendo en esa carpeta, incluso si los mueve a otra carpeta."
       ],
       "Multi-user support is only applicable to plans with 2 or more users": [
-        "El soporte multi usuario solo se aplica a planes con 2 o más usuarios"
+        "El soporte multiusuario solo se aplica a planes con 2 o más usuarios"
       ],
       "NetShield protects your device and speeds up your browsing by blocking ads, trackers, and malware.": [
         "NetShield protege su dispositivo y acelera la navegación bloqueando anuncios, rastreadores y malware."
@@ -8537,7 +8537,7 @@
         "Las subcarpetas del sistema se mostrarán como carpetas separadas en ProtonMail"
       ],
       "The import will start with the most recent messages.": [
-        "La importación empezará con los mensajes más recientes."
+        "La importación comenzará con los mensajes más recientes."
       ],
       "This address has been disabled": [
         "Esta dirección fue deshabilitada"
@@ -8729,7 +8729,7 @@
         "Tunelización dividida"
       ],
       "Streaming service support": [
-        "Soporte al servicio de streaming"
+        "Soporte de servicios de streaming"
       ],
       "Strict no-logs policy": [
         "Política estricta de no registros"
@@ -8752,7 +8752,7 @@
     },
     "VPN feature option": {
       "(Android & Windows only)": [
-        "(Sólo Android y Windows)"
+        "(Solo Android y Windows)"
       ],
       "High": [
         "Alta"
@@ -8764,7 +8764,7 @@
         "Media"
       ],
       "None": [
-        "Ninguna"
+        "Ninguno"
       ],
       "Switzerland": [
         "Suiza"
@@ -8918,111 +8918,111 @@
     },
     "Weekly recurring event, frequency": {
       "Every ${ interval } week on ${ multipleDaysString }": [
-        "Cada ${ interval } semana los ${ multipleDaysString }",
+        "Cada semana los ${ multipleDaysString } ${ interval }",
         "Cada ${ interval } semanas los ${ multipleDaysString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ timesString }": [
-        "Cada ${ interval } semana los ${ multipleDaysString }, ${ timesString }",
+        "Cada semana los ${ multipleDaysString }, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los ${ multipleDaysString }, ${ timesString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ untilString }": [
-        "Cada ${ interval } semana los ${ multipleDaysString }, ${ untilString }",
+        "Cada semana los ${ multipleDaysString }, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los ${ multipleDaysString }, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
-        "Cada ${ interval } semana todos los días",
+        "Cada semana todos los días ${ interval }",
         "Cada ${ interval } semanas todos los días"
       ],
       "Every ${ interval } week on all days, ${ timesString }": [
-        "Cada ${ interval } semana todos los días, ${ timesString }",
+        "Cada semana todos los días, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas todos los días, ${ timesString }"
       ],
       "Every ${ interval } week on all days, ${ untilString }": [
-        "Cada ${ interval } semana todos los días, ${ untilString }",
+        "Cada semana todos los días, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas todos los días, ${ untilString }"
       ],
       "Every ${ interval } week on Friday": [
-        "Cada ${ interval } semana los viernes",
+        "Cada semana los viernes ${ interval }",
         "Cada ${ interval } semanas los viernes"
       ],
       "Every ${ interval } week on Friday, ${ timesString }": [
-        "Cada ${ interval } semana los viernes, ${ timesString }",
+        "Cada semana los viernes, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los viernes, ${ timesString }"
       ],
       "Every ${ interval } week on Friday, ${ untilString }": [
-        "Cada ${ interval } semana los viernes, ${ untilString }",
+        "Cada semana los viernes, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los viernes, ${ untilString }"
       ],
       "Every ${ interval } week on Monday": [
-        "Cada ${ interval } semana los lunes",
+        "Cada semana los lunes ${ interval }",
         "Cada ${ interval } semanas los lunes"
       ],
       "Every ${ interval } week on Monday, ${ timesString }": [
-        "Cada ${ interval } semana los lunes, ${ timesString }",
+        "Cada semana los lunes, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los lunes, ${ timesString }"
       ],
       "Every ${ interval } week on Monday, ${ untilString }": [
-        "Cada ${ interval } semana los lunes, ${ untilString }",
+        "Cada semana los lunes, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los lunes, ${ untilString }"
       ],
       "Every ${ interval } week on Saturday": [
-        "Cada ${ interval } semana los sábados",
+        "Cada semana los sábados ${ interval }",
         "Cada ${ interval } semanas los sábados"
       ],
       "Every ${ interval } week on Saturday, ${ timesString }": [
-        "Cada ${ interval } semana los sábados, ${ timesString }",
+        "Cada semana los sábados, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los sábados, ${ timesString }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
-        "Cada ${ interval } semana los sábados, ${ untilString }",
+        "Cada semana los sábados, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los sábados, ${ untilString }"
       ],
       "Every ${ interval } week on Sunday": [
-        "Cada ${ interval } semana los domingos",
+        "Cada semana los domingos ${ interval }",
         "Cada ${ interval } semanas los domingos"
       ],
       "Every ${ interval } week on Sunday, ${ timesString }": [
-        "Cada ${ interval } semana los domingos, ${ timesString }",
+        "Cada semana los domingos, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los domingos, ${ timesString }"
       ],
       "Every ${ interval } week on Sunday, ${ untilString }": [
-        "Cada ${ interval } semana los domingos, ${ untilString }",
+        "Cada semana los domingos, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los domingos, ${ untilString }"
       ],
       "Every ${ interval } week on Thursday": [
-        "Cada ${ interval } semana los jueves",
+        "Cada semana los jueves ${ interval }",
         "Cada ${ interval } semanas los jueves"
       ],
       "Every ${ interval } week on Thursday, ${ timesString }": [
-        "Cada ${ interval } semana los jueves, ${ timesString }",
+        "Cada semana los jueves, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los jueves, ${ timesString }"
       ],
       "Every ${ interval } week on Thursday, ${ untilString }": [
-        "Cada ${ interval } semana los jueves, ${ untilString }",
+        "Cada semana los jueves, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los jueves, ${ untilString }"
       ],
       "Every ${ interval } week on Tuesday": [
-        "Cada ${ interval } semana los martes",
+        "Cada semana los martes ${ interval }",
         "Cada ${ interval } semanas los martes"
       ],
       "Every ${ interval } week on Tuesday, ${ timesString }": [
-        "Cada ${ interval } semana los martes, ${ timesString }",
+        "Cada semana los martes, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los martes, ${ timesString }"
       ],
       "Every ${ interval } week on Tuesday, ${ untilString }": [
-        "Cada ${ interval } semana los martes, ${ untilString }",
+        "Cada semana los martes, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los martes, ${ untilString }"
       ],
       "Every ${ interval } week on Wednesday": [
-        "Cada ${ interval } semana los miércoles",
+        "Cada semana los miércoles ${ interval }",
         "Cada ${ interval } semanas los miércoles"
       ],
       "Every ${ interval } week on Wednesday, ${ timesString }": [
-        "Cada ${ interval } semana los miércoles, ${ timesString }",
+        "Cada semana los miércoles, ${ timesString } ${ interval }",
         "Cada ${ interval } semanas los miércoles, ${ timesString }"
       ],
       "Every ${ interval } week on Wednesday, ${ untilString }": [
-        "Cada ${ interval } semana los miércoles, ${ untilString }",
+        "Cada semana los miércoles, ${ untilString } ${ interval }",
         "Cada ${ interval } semanas los miércoles, ${ untilString }"
       ],
       "Weekly on ${ multipleDaysString }": [
@@ -9132,15 +9132,15 @@
     },
     "Yearly recurring event, frequency": {
       "Every ${ interval } year": [
-        "Cada ${ interval } año",
+        "Cada año ${ interval }",
         "Cada ${ interval } años"
       ],
       "Every ${ interval } year, ${ timesString }": [
-        "Cada ${ interval } año, ${ timesString }",
+        "Cada año, ${ timesString } ${ interval }",
         "Cada ${ interval } años, ${ timesString }"
       ],
       "Every ${ interval } year, ${ untilString }": [
-        "Cada ${ interval } año, ${ untilString }",
+        "Cada año, ${ untilString } ${ interval }",
         "Cada ${ interval } años, ${ untilString }"
       ],
       "Yearly": [

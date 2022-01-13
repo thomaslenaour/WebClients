@@ -53,7 +53,7 @@
         "Dodaj ${ BRAND_NAME } račun"
       ],
       "Add address": [
-        "Dodaj adresu"
+        ""
       ],
       "Add calendar": [
         ""
@@ -227,7 +227,7 @@
         "Stvori poveznicu"
       ],
       "Customize": [
-        "Prilagodi"
+        ""
       ],
       "Customize import": [
         "Prilagodi uvoz"
@@ -302,7 +302,7 @@
         "Uredi adresu e-pošte"
       ],
       "Edit label": [
-        "Uredi oznaku"
+        ""
       ],
       "Edit phone number": [
         "Uredi broj telefona"
@@ -323,7 +323,7 @@
         "Izvoz"
       ],
       "Export contacts": [
-        "Izvezi kontakte"
+        "Uvezi kontakte"
       ],
       "Export ICS": [
         "Izvezi ICS"
@@ -362,13 +362,13 @@
         "Sakrij"
       ],
       "Hide folders": [
-        "Sakrij mape"
+        ""
       ],
       "Hide info": [
         "Sakrij informacije"
       ],
       "Hide labels": [
-        "Sakrij oznake"
+        ""
       ],
       "I have a question": [
         "Imam pitanje"
@@ -488,7 +488,7 @@
         "Nastavite na blagajnu"
       ],
       "Quit": [
-        "Zatvori"
+        ""
       ],
       "Quote": [
         "Citat"
@@ -500,7 +500,7 @@
         "Ponovno poveži"
       ],
       "Recover data": [
-        ""
+        "Oporavi podatke"
       ],
       "Refresh status": [
         "Osvježi status"
@@ -533,7 +533,7 @@
         "Ukloni ovu obavijest"
       ],
       "Rename": [
-        "Preimenuj"
+        ""
       ],
       "Report a problem": [
         "Prijavi problem"
@@ -620,7 +620,7 @@
         "Pošalji moje korisničko ime"
       ],
       "Set as default": [
-        "Postavi kao zadano"
+        ""
       ],
       "Set catch-all": [
         "Postavi dohvati-sve"
@@ -638,16 +638,16 @@
         "Prikaži"
       ],
       "Show folders": [
-        "Prikaži mape"
+        ""
       ],
       "Show info": [
         "Prikaži informacije"
       ],
       "Show labels": [
-        "Prikaži oznake"
+        ""
       ],
       "Show less": [
-        "Prikaži manje"
+        ""
       ],
       "Show more": [
         "Prikaži više"
@@ -689,7 +689,7 @@
         "Započni postavljanje"
       ],
       "Stay": [
-        "Ostani"
+        ""
       ],
       "Submit": [
         "Pošalji"
@@ -728,7 +728,7 @@
         "Otkaži pretplatu"
       ],
       "Update": [
-        "Ažuriraj"
+        ""
       ],
       "Update recovery file": [
         ""
@@ -740,7 +740,7 @@
         "Nadogradnja"
       ],
       "Upgrade now": [
-        "Nadogradi sada"
+        ""
       ],
       "Upgrade to Plus": [
         "Nadogradite na Plus plan"
@@ -1150,7 +1150,7 @@
         ""
       ],
       "Save ${ percentage }%": [
-        "- ${ percentage }%"
+        "${ percentage }%"
       ],
       "Special offer Terms and Conditions": [
         ""
@@ -1325,7 +1325,7 @@
         "Onemogućeno"
       ],
       "Not synced": [
-        "Nije sinkronizirano"
+        ""
       ],
       "Syncing": [
         ""
@@ -1416,7 +1416,7 @@
         "Uvoz nije dovršen!"
       ],
       "Quit import customization?": [
-        "Zatvori prilagođavanje uvoza?"
+        ""
       ],
       "Quit import?": [
         "Zaustavi uvoz?"
@@ -1891,7 +1891,7 @@
         "Filtar s ovim nazivom već postoji"
       ],
       "Folder name cannot be empty": [
-        "Naziv mape ne može biti prazan"
+        ""
       ],
       "Incorrect login credentials. Please try again": [
         "Nevažeći podaci za prijavu. Molimo pokušajte ponovno"
@@ -1942,7 +1942,7 @@
         "Nevažeći kôd za provjeru"
       ],
       "Label name cannot be empty": [
-        "Naziv oznake ne može biti prazan"
+        ""
       ],
       "Merge at least ${ calendarToFixCount } calendar with an existing Proton calendar": [
         "",
@@ -1965,7 +1965,7 @@
         ""
       ],
       "No valid address found": [
-        "Nije pronađena važeća adresa"
+        ""
       ],
       "Not a valid number": [
         "Broj telefona nije važeći"
@@ -2036,10 +2036,10 @@
         "Nadogradite na Professional plan s više od jednog korisnika ili na Visionary plan, kako biste mogli upravljati s više korisnika."
       ],
       "Primary address key is not decrypted": [
-        "Primarni ključ adrese e-pošte nije dešifriran"
+        ""
       ],
       "Primary address key is not decrypted.": [
-        "Primarni ključ adrese e-pošte nije dešifriran."
+        ""
       ],
       "Process aborted": [
         "Proces je prekinut"
@@ -2066,10 +2066,10 @@
         "Neki nazivi vaših mapa premašuju ProtonMailovo maksimalno ograničenje broja znakova. Prilagodite uvoz da biste uredili te nazive."
       ],
       "Some of your label names are unavailable. Please customize the import to edit these names.": [
-        "Neki nazivi vaših oznaka nisu dostupni. Prilagodite uvoz da biste uredili te nazive."
+        ""
       ],
       "Some of your label names exceed ProtonMail's maximum character limit. Please customize the import to edit these names.": [
-        "Neki nazivi vaših oznaka premašuju ProtonMailovo maksimalno ograničenje broja znakova. Prilagodite uvoz da biste uredili te nazive."
+        ""
       ],
       "Something went wrong, please ${ refresh } in order to proceed. If you still see this error message please contact our ${ supportTeam }.": [
         "Nešto je pošlo po zlu. Molimo ${ refresh } kako biste nastavili. Ako i dalje vidite ovu poruku o pogrešci, kontaktirajte naš ${ supportTeam }."
@@ -2084,7 +2084,7 @@
         "Neuspješno učitavanje prozora za novu poruku."
       ],
       "The folder name is too long. Please choose a different name.": [
-        "Naziv mape je predugačak. Odaberite drugi naziv."
+        ""
       ],
       "The keys in your recovery file can't be validated. Please contact support.": [
         ""
@@ -2093,7 +2093,7 @@
         ""
       ],
       "The label name is too long. Please choose a different name.": [
-        "Naziv oznake je predugačak. Odaberite drugi naziv."
+        ""
       ],
       "The minimum amount of credit that can be added is ${ _price }": [
         "Minimalni iznos kredita koji se može dodati je ${ _price }"
@@ -2114,7 +2114,7 @@
         "Sesija je istekla. Prijavite se ponovo."
       ],
       "There are too many folders in your external account. Please customize the import to delete some folders.": [
-        "Vaš vanjski račun ima previše mapa. Prilagodite uvoz kako biste izbrisali neke mape."
+        ""
       ],
       "This field is required": [
         "Ovo polje je obavezno"
@@ -2123,10 +2123,10 @@
         "Ovo polje zahtjeva najmanje ${ minimumLength } znakova."
       ],
       "This folder name is not available. Please choose a different name": [
-        "Naziv mape nije dostupan. Odaberite drugi naziv"
+        ""
       ],
       "This label name is not available. Please choose a different name": [
-        "Naziv oznake nije dostupan. Odaberite drugi naziv"
+        ""
       ],
       "This message may contain some link's URL that cannot be properly opened by your current browser": [
         "Ova poruka može sadržavati URL poveznice koje trenutačni preglednik ne može ispravno otvoriti"
@@ -2796,7 +2796,7 @@
       "${ totalImported }/${ totalToImport } contact encrypted and added to your contact list": [
         "${ totalImported }/${ totalToImport } kontakt šifriran i dodan u vašu listu kontakata",
         "${ totalImported }/${ totalToImport } kontakta šifrirano i dodano u vašu listu kontakata",
-        "${ totalImported }/${ totalToImport } kontakta šifrirano i dodano u vašu listu kontakata"
+        "${ totalImported }/${ totalToImport } kontakata šifrirano i dodano u vašu listu kontakata"
       ],
       "An error occurred while encrypting and adding your contact. No contact could be imported.": [
         "Došlo je do pogreške prilikom šifriranja i dodavanja vašeg kontakta. Nije moguće uvesti nijedan kontakt.",
@@ -2827,8 +2827,8 @@
       ],
       "Contact successfully imported. The imported contact will now appear in your contact list.": [
         "Kontakt je uspješno uvezen. Uvezeni kontakt će se sada pojaviti u vašoj listi kontakata.",
-        "kontakta su uspješno uvezena. Uvezeni kontakti će se sada pojaviti u vašoj listi kontakata.",
-        "kontakta je uspješno uvezeno. Uvezeni kontakti će se sada pojaviti u vašoj listi kontakata."
+        "Kontakti su uspješno uvezeni. Uvezeni kontakti će se sada pojaviti u vašoj listi kontakata.",
+        "Kontakti su uspješno uvezeni. Uvezeni kontakti će se sada pojaviti u vašoj listi kontakata."
       ]
     },
     "Import contacts warning": {
@@ -3254,14 +3254,14 @@
         ""
       ],
       "${ selectedFoldersCount } folder selected": [
-        "${ selectedFoldersCount } mapa odabrana",
-        "${ selectedFoldersCount } mape odabrane",
-        "${ selectedFoldersCount } mapa odabrano"
+        "",
+        "",
+        ""
       ],
       "${ selectedFoldersCount } label selected": [
-        "${ selectedFoldersCount } oznaka odabrana",
-        "${ selectedFoldersCount } oznake odabrane",
-        "${ selectedFoldersCount } oznaka odabrano"
+        "",
+        "",
+        ""
       ],
       "${ selectedFoldersCountLocalized } folder selected": [
         "${ selectedFoldersCountLocalized } mapa odabrana",
@@ -3374,14 +3374,14 @@
         "Poravnaj desno"
       ],
       "All (${ totalFoldersCount } folder)": [
-        "Sve (${ totalFoldersCount } mapa)",
-        "Sve (${ totalFoldersCount } mape)",
-        "Sve (${ totalFoldersCount } mapa)"
+        "",
+        "",
+        ""
       ],
       "All (${ totalFoldersCount } label)": [
-        "Sve (${ totalFoldersCount } oznaka)",
-        "Sve (${ totalFoldersCount } oznake)",
-        "Sve (${ totalFoldersCount } oznaka)"
+        "",
+        "",
+        ""
       ],
       "All keys successfully reactivated": [
         ""
@@ -3507,7 +3507,7 @@
         ""
       ],
       "By downgrading to a Free plan, you will permanently lose these benefits, even if you upgrade again in the future.": [
-        "Prelaskom na Free plan, trajno ćete izgubiti ove prednosti, čak i ako nadogradite plan opet u budućnosti."
+        "Prelaskom na Besplatni plan, trajno ćete izgubiti ove prednosti, čak i ako nadogradite plan opet u budućnosti."
       ],
       "By downgrading you will lose the following benefits. Are you sure you want to proceed?": [
         ""
@@ -3548,10 +3548,10 @@
         ""
       ],
       "Create a label for the imported messages, a time range for this import, and the folders you would like to import.": [
-        "Stvorite oznaku za uvezene poruke, vremenski raspon za taj uvoz i mape koje želite uvesti."
+        ""
       ],
       "Create a label for the imported messages, a time range for this import, and the labels you would like to import.": [
-        "Stvorite oznaku za uvezene poruke, vremenski raspon za taj uvoz i oznake koje želite uvesti."
+        ""
       ],
       "Create a link to your calendar and share it with anyone outside Proton. Only you can add or remove events.": [
         "Stvorite poveznicu do vašeg kalendara i podijelite je sa svima izvan Protona. Samo vi možete dodavati ili uklanjati događaje."
@@ -4137,7 +4137,7 @@
         "Navedite adresu e-pošte u slučaju da vas moramo kontaktirati."
       ],
       "Please select the folders you would like to import:": [
-        "Odaberite mape koje želite uvesti:"
+        ""
       ],
       "Please select the type of link you want to insert and fill in all the fields.": [
         "Odaberite vrstu poveznice koju želite umetnuti i popunite sva polja."
@@ -5179,7 +5179,7 @@
         "Radnje"
       ],
       "Address": [
-        "Adresa"
+        ""
       ],
       "Addresses": [
         "Adrese"
@@ -5311,7 +5311,7 @@
         "Potvrdite organizacijsku lozinku"
       ],
       "Confirm password": [
-        "Potvrdi lozinku"
+        ""
       ],
       "Contacts": [
         ""
@@ -5488,13 +5488,13 @@
         "Ako"
       ],
       "Import all messages": [
-        "Uvoz svih poruka"
+        ""
       ],
       "Import interval": [
-        "Interval uvoza"
+        ""
       ],
       "Import to email address": [
-        "Uvoz na adresu e-pošte"
+        ""
       ],
       "Import to:": [
         "Uvezi u:"
@@ -5524,16 +5524,16 @@
         "Označi kao"
       ],
       "Label messages as": [
-        "Označi poruku kao"
+        ""
       ],
       "Last 12 months only": [
-        "Samo zadnjih 12 mjeseci"
+        ""
       ],
       "Last 3 months only": [
-        "Samo zadnja 3 mjeseca"
+        ""
       ],
       "Last month only": [
-        "Samo posljednji mjesec"
+        ""
       ],
       "Link confirmation": [
         "Potvrda poveznice"
@@ -5548,10 +5548,10 @@
         "Lozinka sandučića e-pošte"
       ],
       "Manage folders": [
-        "Upravljanje mapama"
+        ""
       ],
       "Manage labels": [
-        "Upravljanje oznakama"
+        ""
       ],
       "Mark as": [
         "Označi kao"
@@ -5782,7 +5782,7 @@
         "Vremenska zona"
       ],
       "To: ${ emailAddress }": [
-        "Za: ${ emailAddress }"
+        ""
       ],
       "To: ${ emailTo }": [
         ""
@@ -6860,7 +6860,7 @@
     },
     "PGP key warning": {
       "Email address not found among user ids defined in sending key (${ keyUserIds })": [
-        ""
+        "Adresa e-pošte nije pronađena među korisničkim ID-ovima definiranim u ključu za slanje (${ keyUserIds })"
       ]
     },
     "Placeholder": {
@@ -6898,7 +6898,7 @@
         "Potvrdi"
       ],
       "Confirm password": [
-        "Potvrdi lozinku"
+        ""
       ],
       "e.g. Julia Smith": [
         "npr. Ana Horvat"
@@ -7033,7 +7033,7 @@
         "6 korisnika"
       ],
       "Access blocked content": [
-        "Pristup blokiranom sadržaju"
+        "Pristupi blokiranom sadržaju"
       ],
       "Access to ${ driveAppName } (beta)": [
         "Pristup na ${ driveAppName } (beta)"
@@ -7892,7 +7892,7 @@
         "Vjerodajnice"
       ],
       "Credits": [
-        "Kredit"
+        "Zasluge"
       ],
       "Currency": [
         "Valuta"
@@ -8239,7 +8239,7 @@
         "Ponovno povežite vaš račun"
       ],
       "Recover data": [
-        ""
+        "Oporavi podatke"
       ],
       "Recovery": [
         ""
@@ -8254,7 +8254,7 @@
         "Prijavi problem"
       ],
       "Request new code": [
-        "Zatraži novi kȏd"
+        ""
       ],
       "Reset organization keys": [
         "Poništi organizacijske ključeve"
@@ -8551,7 +8551,7 @@
         "Popust se primjenjuje za dvogodišnji ciklus naplate"
       ],
       "Each imported email will have this label": [
-        "Svaka uvezena poruka će imat ovu oznaku"
+        ""
       ],
       "Edit folder names": [
         "Uredi nazive mapa"
@@ -8581,7 +8581,7 @@
         "Pružajte usluge e-pošte za vaše domene na ProtonMailu, npr. ivan.horvat@primjer.hr"
       ],
       "If you purchased a gift code or received one from our support team, you can enter it here.": [
-        "Ako ste kupili darovni kôd ili ga dobili od našeg tima za podršku, možete ga unijeti ovdje."
+        "Ako ste kupili darovni kȏd ili ga dobili od našeg tima za podršku, možete ga unijeti ovdje."
       ],
       "Messages in the Sent or Drafts folder will continue to appear in that folder, even if you move them to another folder.": [
         "Poruke u Poslano ili Skice mapi će se nastaviti pojavljivati u toj mapi, čak i kada ih pomaknete u drugu datoteku."
@@ -8611,10 +8611,10 @@
         "Podrška za protokole za dijeljenje datoteka poput BitTorrent."
       ],
       "System subfolders will show up as separate folders in ProtonMail": [
-        "Podmape sustava prikazat će se kao zasebne mape u ProtonMailu"
+        ""
       ],
       "The import will start with the most recent messages.": [
-        "Uvoz će započeti s najnovijim porukama."
+        ""
       ],
       "This address has been disabled": [
         "Ova adresa e-pošte je onemogućena"
@@ -8947,7 +8947,7 @@
         "Imajte na umu da odabirom ovog načina plaćanja vaš račun se ne može odmah nadograditi. Ažurirati ćemo vaš račun nakon plaćanja."
       ],
       "Proton will merge all folders with the same name. To avoid this, change the names before import.": [
-        "Proton će spojiti sve mape s istim imenom. Da biste to izbjegli, promijenite imena prije uvoza."
+        ""
       ],
       "Proton will transfer as much data as possible, starting with your most recent messages.": [
         "Proton će prenijeti što više podataka, počevši od vaših najnovijih poruka."
@@ -8974,7 +8974,7 @@
         "Morate ${ activateLink } ključeve organizacije prije dodavanja adrese e-pošte ne privatnom članu."
       ],
       "You will lose any customization you made so far.": [
-        "Izgubiti će te sve prilagodbe koje ste do sada napravili."
+        ""
       ],
       "You will not see this import record in the list anymore.": [
         "Ovaj zapis o uvozu više nećete vidjeti na popisu."

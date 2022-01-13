@@ -44,7 +44,7 @@
         "Szervezeti kulcs aktiválása"
       ],
       "Activate recovery": [
-        "Helyreállítás aktiválása"
+        ""
       ],
       "Add": [
         "Hozzáadás"
@@ -53,7 +53,7 @@
         "${ BRAND_NAME } fiók hozzáadása"
       ],
       "Add address": [
-        "Cím hozzáadása"
+        ""
       ],
       "Add calendar": [
         "Naptár hozzáadása"
@@ -110,7 +110,7 @@
         "Igazítás"
       ],
       "annual billing": [
-        "éves számlázásra"
+        "éves számlázás"
       ],
       "Apply": [
         "Alkalmazás"
@@ -146,10 +146,10 @@
         "Jelszó módosítása"
       ],
       "Chat with us": [
-        "Beszélgetés indítása"
+        ""
       ],
       "Check import progress": [
-        "Importálási folyamat ellenőrzése"
+        ""
       ],
       "Choose a file or drag it here": [
         "Válasszon fájlt vagy ejtse ide"
@@ -182,16 +182,16 @@
         "Csomagok összehasonlítása"
       ],
       "Confirm": [
-        "Megerősítés"
+        "Jóváhagyás"
       ],
       "Confirm opening of link ${ linkToShow }": [
-        "Hivatkozás megnyitásának jóváhagyása: ${ linkToShow }"
+        ""
       ],
       "Contact support": [
         "Kapcsolatfelvétel"
       ],
       "Continue": [
-        "Folytatás"
+        "Tovább"
       ],
       "Continue import": [
         "Importálás folytatása"
@@ -227,7 +227,7 @@
         "Hivatkozás létrehozása"
       ],
       "Customize": [
-        "Testreszabás"
+        ""
       ],
       "Customize import": [
         "Importálás beállításai"
@@ -302,7 +302,7 @@
         "E-mail cím módosítása"
       ],
       "Edit label": [
-        "Címke szerkesztése"
+        ""
       ],
       "Edit phone number": [
         "Telefonszám módosítása"
@@ -344,7 +344,7 @@
         "Új helyreállító jelmondat létrehozása?"
       ],
       "Generate recovery phrase": [
-        "Helyreállító jelmondat létrehozása"
+        ""
       ],
       "Get ProtonVPN Plus": [
         "ProtonVPN Plus választása"
@@ -362,13 +362,13 @@
         "Elrejtés"
       ],
       "Hide folders": [
-        "Mappák elrejtése"
+        ""
       ],
       "Hide info": [
         "Információ elrejtése"
       ],
       "Hide labels": [
-        "Címkék elrejtése"
+        ""
       ],
       "I have a question": [
         "Kérdésem van"
@@ -395,13 +395,13 @@
         "Növel"
       ],
       "Insert": [
-        "Beszúrás"
+        "Beillesztés"
       ],
       "Insert image": [
-        "Kép beszúrása"
+        "Kép beillesztése"
       ],
       "Insert link": [
-        "Link beszúrása"
+        "Link beillesztése"
       ],
       "Italic": [
         "Dőlt"
@@ -488,7 +488,7 @@
         "Tovább a fizetéshez"
       ],
       "Quit": [
-        "Kilépés"
+        ""
       ],
       "Quote": [
         "Idézet"
@@ -506,7 +506,7 @@
         "Állapot frissítése"
       ],
       "refresh the page": [
-        "frissítse"
+        "frissítse az oldalt"
       ],
       "Refresh the page": [
         "Oldal frissítése"
@@ -533,7 +533,7 @@
         "Emlékeztető törlése"
       ],
       "Rename": [
-        "Átnevezés"
+        ""
       ],
       "Report a problem": [
         "Probléma jelentése"
@@ -572,7 +572,7 @@
         "Folytatás"
       ],
       "Retry": [
-        "Újra"
+        "Újrapróbálás"
       ],
       "Return to login": [
         "Vissza a bejelentkezéshez"
@@ -620,13 +620,13 @@
         "Felhasználónevem elküldése"
       ],
       "Set as default": [
-        "Beállítás alapértelmezettként"
+        ""
       ],
       "Set catch-all": [
         "Gyűjtő e-mail beállítása"
       ],
       "Set recovery phrase": [
-        "Helyreállító jelmondat beállítása"
+        ""
       ],
       "Share via link": [
         "Megosztás hivatkozással"
@@ -638,16 +638,16 @@
         "Megjelenítés"
       ],
       "Show folders": [
-        "Mappák megjelenítése"
+        ""
       ],
       "Show info": [
         "Információ megjelenítése"
       ],
       "Show labels": [
-        "Címkék megjelenítése"
+        ""
       ],
       "Show less": [
-        "Kevesebb mutatása"
+        ""
       ],
       "Show more": [
         "Több megjelenítése"
@@ -689,7 +689,7 @@
         "Beállítás megkezdése"
       ],
       "Stay": [
-        "Marad"
+        ""
       ],
       "Submit": [
         "Küldés"
@@ -701,7 +701,7 @@
         "Fiók váltása"
       ],
       "Switch to rich text": [
-        "Váltás formázott szövegre"
+        ""
       ],
       "Top up": [
         "Feltöltés"
@@ -719,7 +719,7 @@
         "Feloldás"
       ],
       "Unlock data": [
-        "Adatok feloldása"
+        ""
       ],
       "Unordered list": [
         "Rendezetlen lista"
@@ -728,19 +728,19 @@
         "Leiratkozás"
       ],
       "Update": [
-        "Frissítés"
+        ""
       ],
       "Update recovery file": [
-        "Helyreállító fájl frissítése"
+        ""
       ],
       "Update recovery phrase": [
-        "Helyreállító jelmondat frissítése"
+        ""
       ],
       "Upgrade": [
-        "Váltás nagyobb csomagra"
+        "Csomagváltás"
       ],
       "Upgrade now": [
-        "Frissítés most"
+        ""
       ],
       "Upgrade to Plus": [
         "Váltás a Plus csomagra"
@@ -923,7 +923,7 @@
         "${ title } megnyitása"
       ],
       "Go to ${ vpnName }": [
-        "${ vpnName } megnyitása"
+        "Menjen ${ vpnName }"
       ],
       "Proton applications": [
         "Proton alkalmazások"
@@ -1078,7 +1078,7 @@
     },
     "Billing cycle option": {
       "Annually": [
-        "Évente"
+        "Éves"
       ],
       "Annually SAVE 20%": [
         "Éves KEDVEZMÉNY 20%"
@@ -1090,7 +1090,7 @@
         "Kétéves KEDVEZMÉNY 33%"
       ],
       "Two-year": [
-        "Kétévente"
+        "Kétéves"
       ]
     },
     "blackfriday Action": {
@@ -1141,7 +1141,7 @@
         ""
       ],
       "Save ${ percentage }%": [
-        "${ percentage } %"
+        "${ percentage }%"
       ],
       "Special offer Terms and Conditions": [
         ""
@@ -1202,13 +1202,13 @@
         "A Birdge-zsel kapcsolatos probléma"
       ],
       "Calendar problem": [
-        "ProtonCalendar probléma"
+        "Naptár probléma"
       ],
       "Connection problem": [
         "Kapcsolódási probléma"
       ],
       "Contacts problem": [
-        "ProtonContacts probléma"
+        "Névjegyzék probléma"
       ],
       "Custom domain problem": [
         "Probléma saját domain névvel"
@@ -1226,7 +1226,7 @@
         "Telepítési probléma"
       ],
       "Mail problem": [
-        "ProtonMail probléma"
+        "Levelezési probléma"
       ],
       "Manual setup problem": [
         "Probléma a kézi beállítással"
@@ -1256,10 +1256,10 @@
         "Videó nézési probléma"
       ],
       "Update problem": [
-        "Probléma a frissítéssel"
+        "Frissítési probléma"
       ],
       "VPN problem": [
-        "ProtonVPN probléma"
+        "VPN probléma"
       ],
       "Website access problem": [
         "Probléma a weboldal elérésével"
@@ -1406,7 +1406,7 @@
         "Az importálás elkészült!"
       ],
       "Quit import customization?": [
-        "Elveti az importálás módosításait?"
+        ""
       ],
       "Quit import?": [
         "Elveti az importálást?"
@@ -1469,7 +1469,7 @@
         "Fénykép"
       ],
       "Role": [
-        "Tevékenység"
+        "Szerepkör"
       ],
       "Timezone": [
         "Időzóna"
@@ -1504,7 +1504,7 @@
         "Munkahelyi"
       ],
       "Yomi": [
-        ""
+        "Yomi"
       ]
     },
     "Countdown unit": {
@@ -1601,8 +1601,8 @@
         "Az importálás alatt álló fájl csoportokat is tartalmaz. Határozza meg, hogyan kerüljenek importálásra a csoportok."
       ],
       "The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_CONTACTS_STRING } contact. If your file is bigger, please split it into smaller files.": [
-        "A fájl maximum ${ MAX_IMPORT_FILE_SIZE_STRING } méretű lehet és maximum ${ MAX_IMPORT_CONTACTS_STRING } névjegyet tartalmazhat. Ha a fájl nagyobb, bontsa szét több kisebbre.",
-        "A fájl maximum ${ MAX_IMPORT_FILE_SIZE_STRING } méretű lehet és maximum ${ MAX_IMPORT_CONTACTS_STRING } névjegyet tartalmazhat. Ha a fájl nagyobb, bontsa szét több kisebbre."
+        "A fájl mérete maximum ${ MAX_IMPORT_FILE_SIZE_STRING } lehet és legfeljebb ${ MAX_IMPORT_CONTACTS_STRING } névjegyet tartalmazhat. Ha nagyobb a fájl, vágja több kisebb darabra.",
+        "A fájl mérete maximum ${ MAX_IMPORT_FILE_SIZE_STRING } lehet és legfeljebb ${ MAX_IMPORT_CONTACTS_STRING } névjegyet tartalmazhat. Ha nagyobb a fájl, vágja több kisebb darabra."
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Eseményeket iCal formátumból (ICS fájl) tud importálni.\nA fájl maximális mérete ${ MAX_IMPORT_FILE_SIZE_STRING } lehet és maximum ${ MAX_IMPORT_EVENTS_STRING } eseményt tartalmazhat. Nagyobb fájl importálásához, kisebb darabokra kell vágnia."
@@ -1735,19 +1735,19 @@
         "Esemény törlése ekkor: ${ formattedStart }"
       ],
       "Cancellation of an event starting on ${ formattedStart }": [
-        "Ekkor kezdődő esemény törlése: ${ formattedStart }"
+        "Esemény törlése: ${ formattedStart }"
       ],
       "Invitation for an event on ${ formattedStart }": [
         "Meghívó egy eseményre ekkor: ${ formattedStart }"
       ],
       "Invitation for an event starting on ${ formattedStart }": [
-        "Meghívó ekkor kezdődő eseményre: ${ formattedStart }"
+        "Meghívó eseményre: ${ formattedStart }"
       ],
       "Update for an event on ${ formattedStart }": [
         "Frissítés egy eseményhez: ${ formattedStart }"
       ],
       "Update for an event starting on ${ formattedStart }": [
-        "Frissítés egy ekkor kezdődő eseményhez: ${ formattedStart }"
+        "Frissítés egy eseményhez: ${ formattedStart }"
       ]
     },
     "Email Unsubscribe": {
@@ -1777,7 +1777,7 @@
         "A cím már társításra került egy felhasználóhoz"
       ],
       "Address primary private key not found": [
-        "A cím elsődleges titkosító kulcsa nem található"
+        "A cím elsődleges privát kulcsa nem található"
       ],
       "All storage space has been allocated. Please reduce storage allocated to other users.": [
         "Minden tárhely terület kiosztásra került. Kérjük csökkentse más felhasználók tárhelyét."
@@ -1801,7 +1801,7 @@
         "Elérte a naptárak maximális számát"
       ],
       "Calendar primary private key is not decrypted": [
-        "A naptár elsődleges titkosító kulcsa nincs visszafejtve"
+        "A naptár elsődleges privát kulcsa nincs visszafejtve"
       ],
       "Can't check username, try again later": [
         "Nem lehet ellenőrizni a felhasználónevet, próbálkozzon újra később"
@@ -1825,7 +1825,7 @@
         "Névjegy aláírása nincs ellenőrizve"
       ],
       "Could not find address ${ email }.": [
-        "A(z) ${ email }. e-mail cím nem található."
+        "Nem található a cím: ${ email }."
       ],
       "Deselect at least ${ calendarToFixCount } calendar": [
         "Törölje a kiválasztást legalább ${ calendarToFixCount } naptárnál",
@@ -1923,7 +1923,7 @@
         "Érvénytelen ellenőrző kód"
       ],
       "Label name cannot be empty": [
-        "A címke neve nem lehet üres"
+        "A címke nevének megadása szükséges"
       ],
       "Merge at least ${ calendarToFixCount } calendar with an existing Proton calendar": [
         "Fűzzön össze legalább ${ calendarToFixCount } naptárat meglévő Proton naptárakkal",
@@ -1945,7 +1945,7 @@
         "Nincs importálandó adat"
       ],
       "No valid address found": [
-        "Nem található érvényes e-mail cím"
+        "Nincs érvényes cím"
       ],
       "Not a valid number": [
         "Érvénytelen szám"
@@ -2021,7 +2021,7 @@
         "Az elsődleges cím kulcsa nincs visszafejtve."
       ],
       "Process aborted": [
-        "Folyamat megszakítva"
+        "A folyamat megszakítva"
       ],
       "Request timed out.": [
         "A kérés túllépte az időkorlátot."
@@ -2096,19 +2096,19 @@
         "Túl sok mappa van a külső e-mail fiókban. Módosítsa az importálás beállításait, hogy néhány mappát töröljön."
       ],
       "This field is required": [
-        "Kötelező mező"
+        "A mező kitöltése kötelező"
       ],
       "This field requires a minimum of ${ minimumLength } characters.": [
         "Legalább ${ minimumLength } karakter szükséges ebben a mezőben."
       ],
       "This folder name is not available. Please choose a different name": [
-        "Ez a mappanév nem használható. Adjon meg egy másik nevet"
+        "Ez a mappanév nem érhető el. Adjon meg egy másik nevet"
       ],
       "This label name is not available. Please choose a different name": [
-        "Ez a címkenév nem használható. Adjon meg egy másik nevet"
+        "Ez a címkenév nem érhető el. Adjon meg egy másik nevet"
       ],
       "This message may contain some link's URL that cannot be properly opened by your current browser": [
-        "Ez az üzenet olyan hivatkozásokat tartalmazhat, amelyeket a böngészője nem tud megfelelően megnyitni"
+        "Ez az üzenet olyan linkeket tartalmazhat, amelyeket a böngészője nem tud megfelelően megnyitni"
       ],
       "Unknown error": [
         "Ismeretlen hiba"
@@ -2202,7 +2202,7 @@
     },
     "Error importing contact": {
       "Encryption failed": [
-        "Titkosítás nem sikerült"
+        "Titkosítás sikertelen"
       ],
       "vCard versions < 3.0 not supported": [
         "3.0-nál régebbi vCard verziók nem támogatottak"
@@ -2579,12 +2579,12 @@
     },
     "Font Face Default": {
       "Default": [
-        "Alap"
+        ""
       ]
     },
     "Font Size Default": {
       "Default": [
-        "Alapértelmezett"
+        ""
       ]
     },
     "Free price": {
@@ -2634,7 +2634,7 @@
         "Mappák"
       ],
       "Get help": [
-        "Súgó megnyitása"
+        ""
       ],
       "Key type": [
         "Kulcs típusa"
@@ -2800,10 +2800,10 @@
     },
     "Import contacts warning": {
       "for now": [
-        "egyelőre"
+        "egyenlőre"
       ],
       "ProtonContacts does not support ${ forNow }:": [
-        "ProtonContacts ${ forNow } nem támogatja:"
+        "A ProtonContacts ${ forNow } nem támogatja:"
       ]
     },
     "Import error": {
@@ -3005,7 +3005,7 @@
         "ICS"
       ],
       "in the next step you need to select all the permissions": [
-        "a következő lépésben ki kell választania az összes jogosultságot"
+        ""
       ],
       "Manage": [
         "Kezelés"
@@ -3133,7 +3133,7 @@
     },
     "Info": {
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
-        "Az ${ appName } alkalmazásnak szüksége van az engedélyére, hogy ${ enableDesktopNotifications }."
+        "A ${ appName } alkalmazásnak szüksége van az engedélyére, hogy ${ enableDesktopNotifications }."
       ],
       "${ boldWarning } You will lose access to all current encrypted data in your account if you continue.": [
         "${ boldWarning } A fiókjában lévő összes titkosított adathoz elveszti a hozzáférést ha folytatja."
@@ -3142,16 +3142,16 @@
         "${ calendarName } lesz az alapértelmezett naptár."
       ],
       "${ calendarsToBeCreatedCount } new calendar": [
-        "${ calendarsToBeCreatedCount } új naptár",
-        "${ calendarsToBeCreatedCount } új naptár"
+        "",
+        ""
       ],
       "${ calendarsToBeMerged } merged calendar": [
-        "${ calendarsToBeMerged } egyesített naptár",
-        "${ calendarsToBeMerged } egyesített naptár"
+        "",
+        ""
       ],
       "${ calendarsToBeMergedCount } merged calendar": [
-        "${ calendarsToBeMergedCount } egyesített naptár",
-        "${ calendarsToBeMergedCount } egyesített naptár"
+        "",
+        ""
       ],
       "${ mailAppName } Free": [
         "${ mailAppName } Ingyenes"
@@ -3179,12 +3179,12 @@
         "${ numberOfNonPrivateKeys } feltöltött fájl nem egy érvényes titkos kulcs. Ellenőrizze és próbálja újra."
       ],
       "${ numContactGroups } contact group": [
-        "${ numContactGroups } névjegy csoport",
-        "${ numContactGroups } névjegy csoport"
+        "",
+        ""
       ],
       "${ numContacts } contact": [
-        "${ numContacts } névjegy",
-        "${ numContacts } névjegy"
+        "",
+        ""
       ],
       "${ providerFoldersNumLocalized } folder found": [
         "${ providerFoldersNumLocalized } mappa található",
@@ -3204,16 +3204,16 @@
         "${ saveExtra20 } a VPN és az e-mail szolgáltatásokon a VPN előfizetés hozzáadásával."
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendar": [
-        "${ selectedCalendarsTotal } a(z) ${ providerCalendars.length } naptárból",
-        "${ selectedCalendarsTotal } a(z) ${ providerCalendars.length } naptárból"
+        "",
+        ""
       ],
       "${ selectedFoldersCount } folder selected": [
-        "${ selectedFoldersCount } mappa kiválasztva",
-        "${ selectedFoldersCount } mappa kiválasztva"
+        "",
+        ""
       ],
       "${ selectedFoldersCount } label selected": [
-        "${ selectedFoldersCount } címke kiválasztva",
-        "${ selectedFoldersCount } címke kiválasztva"
+        "",
+        ""
       ],
       "${ selectedFoldersCountLocalized } folder selected": [
         "${ selectedFoldersCountLocalized } mappa kiválasztva",
@@ -3245,11 +3245,11 @@
         "+${ bonusSpace } bónusz tárterület"
       ],
       "+${ organization.BonusVPN } connection for ProtonVPN (allows you to connect more devices to VPN)": [
-        "+${ organization.BonusVPN } ProtonVPN kapcsolat (lehetővé teszi több készülék csatlakoztatását a VPN-hez)",
-        "+${ organization.BonusVPN } ProtonVPN kapcsolat (lehetővé teszi több készülék csatlakoztatását a VPN-hez)"
+        "+${ organization.BonusVPN } ProtonVPN kapcsolat (lehetővé teszi több eszköz csatlakoztatását a VPN-hez)",
+        "+${ organization.BonusVPN } ProtonVPN kapcsolat (lehetővé teszi több eszköz csatlakoztatását a VPN-hez)"
       ],
       "20% discount applied to your subscription with coupon ${ code }": [
-        "20% kedvezmény érvényesítve a kuponnal: ${ code }"
+        "20% kedvezmény az előfizetéshez a kuponnal: ${ code }"
       ],
       "30 days money-back guarantee.": [
         "30 napos pénz-visszafizetési garancia."
@@ -3270,7 +3270,7 @@
         "Nézze a TV előfizetéseit, mint ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, bárhol is van."
       ],
       "Account access restricted due to unpaid invoices. Please contact your administrator.": [
-        "A fiók hozzáférése korlátozott befizetetlen számla miatt. Lépjen kapcsolatba az adminisztrátorral."
+        "A fiók hozzáférése rendezetlen számla miatt korlátozva lett. Kérjük lépjen kapcsolatba az adminisztrátorral."
       ],
       "account recovery and data recovery method": [
         "fiók helyreállítási és adat helyreállítási mód"
@@ -3322,12 +3322,12 @@
         "Jobbra igazítás"
       ],
       "All (${ totalFoldersCount } folder)": [
-        "Mind (${ totalFoldersCount } mappa)",
-        "Mind (${ totalFoldersCount } mappa)"
+        "",
+        ""
       ],
       "All (${ totalFoldersCount } label)": [
-        "Mind (${ totalFoldersCount } címke)",
-        "Mind (${ totalFoldersCount } címke)"
+        "",
+        ""
       ],
       "All keys successfully reactivated": [
         "Minden kulcsot sikerült újraaktiválni"
@@ -3348,10 +3348,10 @@
         "Van már fiókja? ${ loginLink }"
       ],
       "Amount below minimum (${ amount }).": [
-        "Az összeg a minimum alatt (${ amount })."
+        "Az összeg a minimum alatt. (${ amount })."
       ],
       "and": [
-        "és"
+        ""
       ],
       "Anyone with this link can see all the event details of this calendar such as title, location or participants.": [
         "Bárki a link birtokában megtekintheti a naptár összes eseményének részleteit, beleértve a címét, helyét és résztvevőket."
@@ -3480,23 +3480,23 @@
         "Kattintson az \"Új kód kérése\" gombra, hogy a ${ strong } számra új ellenőrzési kódot küldjünk. Ha hibás ez a szám, kattintson a Szerkesztés gombra."
       ],
       "Close this screen to exit.": [
-        "A kilépéshez zárja be ezt a képernyőt."
+        ""
       ],
       "Connections": [
-        "Kapcsolatok"
+        "Kapcsolódás"
       ],
       "Continue anyway?": [
         "Mindenképp folytatja?"
       ],
       "Create ${ calendarsToBeCreated } new calendar": [
-        "Létrehozandó ${ calendarsToBeCreated } új naptár",
-        "Létrehozandó ${ calendarsToBeCreated } új naptár"
+        "",
+        ""
       ],
       "Create a label for the imported messages, a time range for this import, and the folders you would like to import.": [
-        "Hozzon létre egy címkét az importált levelekhez, válassza ki a kívánt idő intervallumot és adja meg az importálandó mappákat."
+        ""
       ],
       "Create a label for the imported messages, a time range for this import, and the labels you would like to import.": [
-        "Hozzon létre egy címkét az importált levelekhez, válassza ki a kívánt idő intervallumot és adja meg az importálandó címkéket."
+        ""
       ],
       "Create a link to your calendar and share it with anyone outside Proton. Only you can add or remove events.": [
         "Hozzon létre egy linket a naptárra és ossza meg bárkivel a Protonon kívül. Csak ön fog tudni eseményeket létrehozni vagy törölni."
@@ -3508,7 +3508,7 @@
         "Hozzon létre e-mail címeket mások számára, vállalkozásához, iskolájához vagy egy csoporthoz is használhat ProtonMailt. Az induláshoz adja meg a szervezet nevét és a használni kívánt domain nevet (pl. @azöncége.com). "
       ],
       "Create in": [
-        "Létrehozás itt"
+        ""
       ],
       "Creating your Proton account": [
         "Proton fiók létrehozása"
@@ -3569,7 +3569,7 @@
         "domain név használatban"
       ],
       "Domains": [
-        "Domain név"
+        "Domain nevek"
       ],
       "Done": [
         "Kész"
@@ -3770,17 +3770,17 @@
         "A képek eltávolításra kerültek, mert automatikus válaszban nem engedélyezettek"
       ],
       "Import ${ contactsFragment } and ${ contactsGroupsFragment }": [
-        "Importálandó ${ contactsFragment } és ${ contactsGroupsFragment }"
+        ""
       ],
       "Import ${ selectedCalendarsCount } of ${ totalCalendarsCount } calendar": [
-        "Importálandó ${ selectedCalendarsCount } a(z) ${ totalCalendarsCount } naptárból",
-        "Importálandó ${ selectedCalendarsCount } a(z) ${ totalCalendarsCount } naptárból"
+        "",
+        ""
       ],
       "Import from": [
-        "Importálás innen"
+        ""
       ],
       "Import in progress": [
-        "Importálás folyamatban"
+        ""
       ],
       "Import mailbox": [
         "E-mail fiók importálása"
@@ -3798,7 +3798,7 @@
         "FONTOS: Bizonyos regisztrátorok nem engednek pontra végződő CNAME értéket (míg mások megkövetelik a pontot). Ha a regisztrátor nem megfelelőnek találja a CNAME rekordokat, törölje a pontot minden CNAME érték végéről és próbálja meg újra."
       ],
       "Importing your data from ${ importedEmailAddress } to ${ toEmail }.": [
-        "Adatok importálása a(z) ${ importedEmailAddress } címről a(z) ${ toEmail } címre."
+        ""
       ],
       "In case you lose your login details, we’ll send you recovery instructions via email or SMS.": [
         "Ha elveszíti a belépéshez szükséges adatait, e-mail vagy SMS üzenetet fogunk küldeni a helyreállítási útmutatóval."
@@ -3810,13 +3810,13 @@
         "Tartalmazza"
       ],
       "Inherited from parent folder": [
-        "Örökölve a felsőbb szintű mappából"
+        "Örökölve a tartalmazó mappáról"
       ],
       "Insert image": [
         "Kép beillesztése"
       ],
       "Insert link": [
-        "Link beszúrása"
+        "Link beillesztése"
       ],
       "Install a Country configuration file to connect to a random server in the country of your choice.": [
         "Telepítsen egy országkonfigurációs fájlt, ha véletlenszerű szerverhez szeretne kapcsolódni a választott országban."
@@ -3846,7 +3846,7 @@
         "feltétlenül szükséges"
       ],
       "Just confirm your selection and we'll do the rest.": [
-        "Hagyja jóvá a kiválasztást aztán elindul a folyamat."
+        ""
       ],
       "Justify": [
         "Sorkizárás"
@@ -3861,7 +3861,7 @@
         "Az importált üzenetek megjelölése mint"
       ],
       "Large imports can take several days.": [
-        "Egy nagyobb importálás akár napokig is eltarthat."
+        ""
       ],
       "Learn how to log in to ProtonVPN with third-party VPN applications.": [
         "Tudjon meg többet arról, hogyan jelentkezhet be VPN alkalmazásokkal a ProtonVPN-re."
@@ -3918,7 +3918,7 @@
         "Fiókjának beállításához kézileg írja be ezt a kódot a kétlépcsős hitelesítéshez használt eszközén. ${ _switchButton }."
       ],
       "Merged": [
-        "Egyesítve"
+        ""
       ],
       "Monthly ${ onDayString }": [
         "Havonta: ${ onDayString }"
@@ -3933,16 +3933,16 @@
         "Többfelhasználós mód nem engedélyezett."
       ],
       "Name your new folder and select the parent folder you want to put it in. If you do not select a parent folder, this new folder will be created as a top level folder.": [
-        "Adjon nevet a mappának és válassza ki a szülő mappát, amelyben elhelyezi. Ha nem választ szülő mappát, akkor egy új felső szintű mappát hoz létre."
+        "Adjon nevet a mappának és válassza ki a szülő mappát amelyben elhelyezi. Ha nem választ szülő mappát, akkor egy új felső szintű mappát hoz létre."
       ],
       "New": [
-        "Új"
+        ""
       ],
       "New to ${ BRAND_NAME }? ${ signupLink }": [
         "Új ${ BRAND_NAME } felhasználó? ${ signupLink }"
       ],
       "Next you'll need to log in to your Google account and allow us to access your data.": [
-        "Következőként be kell jelentkeznie a Google fiókjába, hogy engedélyezze az adatokhoz való hozzáférést."
+        ""
       ],
       "No account recovery method set; you are at risk of losing access to your account": [
         "Nincs megadva fiók helyreállítási mód; megvan a veszélye, hogy elveszti fiókja elérését"
@@ -4011,7 +4011,7 @@
         "Egy fiók minden Proton szolgáltatáshoz"
       ],
       "Only change these settings if you are using PGP with non-ProtonMail recipients.": [
-        "Csak akkor változtassa meg ezeket a beállításokat, ha PGP-t használ a nem ProtonMail címzettekhez."
+        "Ezeket a beállításokat csak akkor változtassa meg, ha nem ProtonMail címzettekkel használ PGP titkosítást."
       ],
       "Only you can see the labels.": [
         "Csak ön láthatja a címkéket."
@@ -4062,7 +4062,7 @@
         "Írja be a fiókhoz tartozó, 12 szóból álló, helyreállítási jelmondatát."
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
-        "Tartsa biztonságban. Szüksége lesz rá a fiókja eléréshez és adatai visszafejtéséhez, ha visszaállítaná a fiókja jelszavát."
+        ""
       ],
       "Please note that if you delete this address, you will no longer be able to send or receive emails using this address.": [
         "Amennyiben törli ezt a címet, a továbbiakban nem fogadhat és nem küldhet leveleket ezzel a címmel."
@@ -4159,7 +4159,7 @@
         "A helyreállítási fájlok érvénytelenítésre kerültek"
       ],
       "Recovery phrase copied to clipboard": [
-        "A helyreállító jelmondat a vágólapra másolva"
+        ""
       ],
       "Recovery phrase has been disabled": [
         "A helyreállító jelmondat kikpacsolva"
@@ -4177,7 +4177,7 @@
         "Jobbról balra"
       ],
       "Save 20%": [
-        "Takarítson meg 20%-ot"
+        "20% kedvezményt"
       ],
       "Save extra 20%": [
         "Takarítson meg további 20%-ot"
@@ -4201,7 +4201,7 @@
         "Válaszon ki egy szolgáltatót a kezdéshez"
       ],
       "Select which calendars to import. A new calendar will be created for each imported calendar up to the 20 calendars limit.": [
-        "Válassza ki az importálandó naptárakat. Minden importált naptárhoz egy új naptár kerül létrehozásra, a maximum 20-as korlátig."
+        ""
       ],
       "Server is currently down": [
         "A szerver jelenleg nem működik"
@@ -4327,7 +4327,7 @@
         "Ez kikapcsolja a jelenlegi helyreállító jelmondatát. Nem fogja tudni használni a fiók elérésnek helyreállításához vagy titkosított adatai visszafejtéséhez."
       ],
       "This will enable PayPal to be used to pay for your Proton subscription. We will redirect you to PayPal in a new browser tab. If you use any pop-up blockers, please disable them to continue.": [
-        "Ez lehetővé teszi, hogy a Proton előfizetését PayPallal fizesse. Most átirányítjuk a PayPalhoz egy új böngészőfülön. Amennyiben letiltotta a felugró ablakokat, kérjük engedélyezze a folytatáshoz."
+        "Ez lehetővé teszi, hogy a Proton előfizetését PayPallal fizesse. Most átirányítjuk a PayPalhoz egy új böngészőfülön. Amennyiben letiltotta a felugró ablakokat, kérjük engedélyezze a folytatához."
       ],
       "This will permanently delete the data and all email addresses associated with this user.": [
         "Ez véglegesen törli az ehhez a felhasználóhoz tartozó összes adatot és e-mail címet."
@@ -4486,7 +4486,7 @@
         "Erre a címre küldünk egy helyreállító linket, ha elfelejtené a jelszavát vagy kizáródna a fiókjából."
       ],
       "We'll notify you when the import is done.": [
-        "Érdesíteni fogjuk az importálás végeztével."
+        ""
       ],
       "Web URL": [
         "Weblap link"
@@ -4504,7 +4504,7 @@
         "A fiók helyreállítási célra megadott telefonszámára fog kapni egy visszaállító kódot."
       ],
       "What do you want to import from your Google account?": [
-        "Mit szeretne importálni a Google fiókjából?"
+        ""
       ],
       "When disabled, this prevents image files from loading on your device without your knowledge.": [
         "Kikapcsolása megakadályozza, hogy az ön értesítése nélkül töltődjenek le képek az eszközére."
@@ -4528,7 +4528,7 @@
         "A Yandex rögzíti az ön online tevékenységét és olvassa a személyes adatait, hogy ezt hirdetők és más külső felek felhasználhassák. A személyes adatai védelme érdekében, hozza létre titkosított e-mail címét."
       ],
       "Yearly": [
-        "Éves"
+        "Évente"
       ],
       "You already have a free account": [
         "Már van egy ingyenes fiókja"
@@ -4540,10 +4540,10 @@
         "Jelenleg ${ user.Name } (${ user.Email }) fiókkal van bejelentkezve, hozzáférése korlátozott."
       ],
       "You can also merge imported calendars with existing Proton calendars.": [
-        "Az importált naptárokat összefűzheti meglévő Proton naptáraival is."
+        ""
       ],
       "You can check the progress ${ importProgressLink }.": [
-        "Figyelemmel kísérhezi a folyamatot: ${ importProgressLink }."
+        ""
       ],
       "You can create up to ${ MAX_LINKS_PER_CALENDAR } links per calendar. To create a new link to this calendar, delete one from the list below.": [
         "Egy naptárhoz maximum ${ MAX_LINKS_PER_CALENDAR } linket hozhat létre. Újabb link létrehozásához töröljön egyet az alábbi listáról."
@@ -4630,7 +4630,7 @@
         "Lejárt számlatartozása van. Hozzáférése hamarosan korlátozásra kerül. ${ payInvoiceLink }"
       ],
       "Your account is being upgraded, this may take up to 30 seconds.": [
-        "A fiók frissítése folyamatban van, ez akár 30 másodpercig is eltarthat."
+        "A fiókja frissítés alatt, ez akár 30 másodpercig is eltarthat."
       ],
       "Your account recovery method is set": [
         "Be van állítva a fiókja helyreállítási módja"
@@ -4642,19 +4642,19 @@
         "Az engedélyezett lista üres."
       ],
       "Your bank requires 3-D Secure verification for security purposes.": [
-        "Biztonsági okokból a bankja megköveteli a 3-D Secure biztonsági ellenőrzést."
+        "A nagyobb biztonság érdekében az ön bankja megköveteli a 3D Secure biztonsági ellenőrzést."
       ],
       "Your Block List is empty.": [
         "A tiltott lista üres."
       ],
       "Your data is ready to import from ${ importedEmailAddressStrong } to your Proton account.": [
-        "Az adatok a Proton fiókjába importálásra készen állnak a(z) ${ importedEmailAddressStrong } címről."
+        ""
       ],
       "Your data recovery method is set": [
         "Be van állítva az adatok helyreállítási módja"
       ],
       "Your email will only be used for this one-time verification.": [
-        "Az e-mail cím csak erre az egyszeri ellenőrzésre lesz felhasználva."
+        "Az e-mail csak erre az egyszeri ellenőrzésre lesz felhasználva."
       ],
       "Your import from ${ delayedImport.Account } is temporarily delayed.": [
         "Az importálás a(z) ${ delayedImport.Account } címről átmenetileg késik."
@@ -4687,10 +4687,10 @@
         "Az ön helyreállító e-mail címe:"
       ],
       "Your recovery phrase": [
-        "Az ön helyreállító jelmondata"
+        ""
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
-        "A helyreállító jelmondat egy 12 szóból álló sorozat, megadott sorrendben."
+        ""
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Az előfizetését a Mozilla kezeli. Kérjük, forduljon a Mozilla ügyfélszolgálatához az előfizetés lemondásához."
@@ -4901,7 +4901,7 @@
         "Továbbítás"
       ],
       "Go to All Mail": [
-        "Ugrás az Összes Üzenethez"
+        "Áthelyezés az Összes Üzenethez"
       ],
       "Go to Archive": [
         "Ugrás az archívumhoz"
@@ -4982,7 +4982,7 @@
         "Előző üzenet megnyitása"
       ],
       "Open this modal": [
-        "Gyorsbillentyűk listája"
+        "Ablak megnyitása"
       ],
       "Reply": [
         "Válasz"
@@ -5108,7 +5108,7 @@
         "${ UsedMembers } a ${ MaxMembers } felhasználóból"
       ],
       "(Coming soon)": [
-        "(Hamarosan)"
+        ""
       ],
       "Account storage": [
         "Fiók tárhely"
@@ -5117,7 +5117,7 @@
         "Műveletek"
       ],
       "Address": [
-        "Cím"
+        ""
       ],
       "Addresses": [
         "Címek"
@@ -5177,7 +5177,7 @@
         "Beágyazott képek automatikus betöltése"
       ],
       "Automatically save contacts": [
-        "Névjegyek automatikus létrehozása"
+        "Névjegyek automatikus mentése"
       ],
       "Block email tracking": [
         "E-mail követés megakadályozása"
@@ -5189,22 +5189,22 @@
         "Böngésző"
       ],
       "Browser version": [
-        "Böngésző verzió"
+        "Böngésző verziója"
       ],
       "BTC address:": [
-        "BTC cím:"
+        "BTC azonosító:"
       ],
       "BTC amount:": [
         "BTC összeg:"
       ],
       "Calendars": [
-        "Naptárak"
+        ""
       ],
       "Cancel": [
         "Mégsem"
       ],
       "Card holder": [
-        "Kártyatulajdonos"
+        "Kártyabirtokos"
       ],
       "Card number": [
         "Kártyaszám"
@@ -5249,10 +5249,10 @@
         "Szervezeti jelszó megerősítése"
       ],
       "Confirm password": [
-        "Jelszó megerősítése"
+        ""
       ],
       "Contacts": [
-        "Névjegyek"
+        ""
       ],
       "Conversation grouping": [
         "Beszélgetések csoportosítása"
@@ -5351,7 +5351,7 @@
         "Email cím, vagy felhasználónév"
       ],
       "Emails": [
-        "E-mailek"
+        ""
       ],
       "End date": [
         "Befejező dátum"
@@ -5366,7 +5366,7 @@
         "A hét befejező napja"
       ],
       "Enter organization name to confirm": [
-        "Írja be a szervezet nevét a jóváhagyáshoz"
+        ""
       ],
       "Enter password": [
         "Jelszó megadása"
@@ -5405,7 +5405,7 @@
         "Forrás: ${ emailFrom }"
       ],
       "From: ${ importedEmail }": [
-        "Forrás: ${ importedEmail }"
+        ""
       ],
       "From: ${ importedEmailAddress }": [
         "Forrás: ${ importedEmailAddress }"
@@ -5426,13 +5426,13 @@
         "Ha"
       ],
       "Import all messages": [
-        "Összes üzenet importálása"
+        ""
       ],
       "Import interval": [
-        "Importálás intervalluma"
+        ""
       ],
       "Import to email address": [
-        "Importálás e-mail címre"
+        ""
       ],
       "Import to:": [
         "Importálás ide:"
@@ -5462,16 +5462,16 @@
         "Címkézés, mint"
       ],
       "Label messages as": [
-        "Üzenetek megjelölése címkével"
+        ""
       ],
       "Last 12 months only": [
-        "Csak az utolsó 12 hónap"
+        ""
       ],
       "Last 3 months only": [
-        "Csak az utolsó 3 hónap"
+        ""
       ],
       "Last month only": [
-        "Csak az utolsó hónap"
+        ""
       ],
       "Link confirmation": [
         "Link jóváhagyása"
@@ -5486,10 +5486,10 @@
         "E-mail titkosítási jelszó"
       ],
       "Manage folders": [
-        "Mappák kezelése"
+        ""
       ],
       "Manage labels": [
-        "Címkék kezelése"
+        ""
       ],
       "Mark as": [
         "Megjelölés mint"
@@ -5504,7 +5504,7 @@
         "Név"
       ],
       "Name on card": [
-        "A kártyán szereplő név"
+        "Kártyán megjelenített név"
       ],
       "New login password": [
         "Új bejelentkezési jelszó"
@@ -5639,7 +5639,7 @@
         "Helyreállítási telefonszám"
       ],
       "Recovery phrase": [
-        "Helyreállító jelmondat"
+        ""
       ],
       "Repeat password": [
         "Jelszó ismét"
@@ -5696,7 +5696,7 @@
         "Részösszeg"
       ],
       "System information": [
-        "Rendszerinformáció"
+        "Rendszer információk"
       ],
       "The email was sent ${ attachment }": [
         "Az e-mail ${ attachment }"
@@ -5720,7 +5720,7 @@
         "Időzóna"
       ],
       "To: ${ emailAddress }": [
-        "Ide: ${ emailAddress }"
+        ""
       ],
       "To: ${ emailTo }": [
         "Cél: ${ emailTo }"
@@ -6035,26 +6035,26 @@
     },
     "Loading info": {
       "${ createdCalendars } of ${ calendarsToBeCreated } created": [
-        "${ createdCalendars } / ${ calendarsToBeCreated } létrehozva",
-        "${ createdCalendars } / ${ calendarsToBeCreated } létrehozva"
+        "",
+        ""
       ],
       "Almost there": [
-        "Majdnem kész"
+        ""
       ],
       "Connecting to your email provider": [
         "Csatlakozás az e-mailszolgáltatójához"
       ],
       "Creating new calendars": [
-        "Új naptárak lérehozása"
+        ""
       ],
       "Gathering your data": [
-        "Adatok összegyűjtése"
+        ""
       ],
       "We're gathering your data from your provider": [
-        "Összegyűjtjük az adatait a szolgáltatótól"
+        ""
       ],
       "Your import is starting": [
-        "Az importálás indul"
+        ""
       ]
     },
     "Log preference": {
@@ -6073,10 +6073,10 @@
         "20 GB"
       ],
       "Address verification": [
-        "Cím hitelesítés"
+        "Cím ellenőrzése"
       ],
       "Addresses": [
-        "Cím"
+        "Címek"
       ],
       "Autoresponder": [
         "Automatikus válasz"
@@ -6100,19 +6100,19 @@
         "Mappák / címkék"
       ],
       "IMAP / SMTP": [
-        ""
+        "IMAP / SMTP"
       ],
       "Limited": [
         "Korlátozott"
       ],
       "Messages per day": [
-        "Üzenet naponta"
+        "Üzenetek naponta"
       ],
       "Multi-user support": [
         "Többfelhasználós lehetőség"
       ],
       "Priority": [
-        "Elsőbbségi"
+        "Prioritás"
       ],
       "Storage": [
         "Tárhely"
@@ -6124,7 +6124,7 @@
         "@pm.me cím használata"
       ],
       "Users": [
-        "Felhasználó"
+        "Felhasználók"
       ]
     },
     "Mail feature option": {
@@ -6148,12 +6148,12 @@
     },
     "Mail import summary": {
       "Import all messages from ${ selectedLabelsCount } out of ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        "Minden üzenet importálása ${ selectedLabelsCount } címkéből az összes ${ totalLabelsCount } címke közül, ${ periodFragment } időponttól és megjelölés ezzel a címkével: ${ LABEL_MARKUP_PLACEHOLDER }",
-        "Minden üzenet importálása ${ selectedLabelsCount } címkéből az összes ${ totalLabelsCount } címke közül, ${ periodFragment } időponttól és megjelölés ezzel a címkével: ${ LABEL_MARKUP_PLACEHOLDER }"
+        "",
+        ""
       ],
       "Import all messages from ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        "Minden üzenet importálása ${ totalLabelsCount } címkéből, ${ periodFragment } időponttól és megjelölés ezzel a címkével: ${ LABEL_MARKUP_PLACEHOLDER }",
-        "Minden üzenet importálása ${ totalLabelsCount } címkéből, ${ periodFragment } időponttól és megjelölés ezzel a címkével: ${ LABEL_MARKUP_PLACEHOLDER }"
+        "",
+        ""
       ]
     },
     "Mail upsell feature": {
@@ -6194,7 +6194,7 @@
     },
     "Member downgrade modal": {
       "This will permanently delete all sub-users, accounts, and data associated with your organization.": [
-        "Ez véglegesen törli a szervezetéhez tartozó összes al-felhasználót, fiókot és adatot."
+        ""
       ]
     },
     "Message": {
@@ -6482,7 +6482,7 @@
     },
     "Oauth instructions": {
       "Please note that ${ boldNextStep } requested by the application to start your import.": [
-        "Az importlás elindításához ${ boldNextStep } melyet az alkalmazás kér."
+        ""
       ]
     },
     "Onboarding Proton": {
@@ -6502,10 +6502,10 @@
         "Téma kiválasztása"
       ],
       "Set up your organization": [
-        "Állítsa be szervezete adatait"
+        "Állítsa be a szervezet adatait"
       ],
       "This is what people will see when you send them an email, invite them to an event, or share a file with them.": [
-        "Ezt fogják látni a címzettek, ha e-mailt küld, esemény meghívót küld, vagy fájlokat oszt meg."
+        "Ezt fogják látni a címzettek ha e-mailt küld, esemény meghívót küld vagy fájlokat oszt meg."
       ],
       "Use the app selector in the top left to access other Proton services, including VPN, Calendar and Drive.": [
         "Használja a bal felső sarokban található alkalmazás választót a Proton szolgáltatások eléréshez, mint például a VPN, Calendar vagy a Drive."
@@ -6738,10 +6738,10 @@
     },
     "Option group label": {
       "Create new calendar": [
-        "Új naptár lérehozása"
+        ""
       ],
       "Merge with calendar": [
-        "Összefőzés naptárral"
+        ""
       ]
     },
     "Option protection mode": {
@@ -6792,7 +6792,7 @@
     },
     "Placeholder": {
       "A way to contact you": [
-        "Kapcsolatfelvételi lehetőség önnel"
+        "Kapcsolatfelvételi lehetőség"
       ],
       "Add a calendar description": [
         "Adja meg a naptár leírását"
@@ -6825,7 +6825,7 @@
         "Jóváhagyás"
       ],
       "Confirm password": [
-        "Jelszó megerősítése"
+        ""
       ],
       "e.g. Julia Smith": [
         "pl. Kovács János"
@@ -6861,7 +6861,7 @@
         "Operációs rendszer neve"
       ],
       "OS version": [
-        "Operációs rendszer verzió"
+        "Operációs rendszer verziója"
       ],
       "Other": [
         "Egyéb"
@@ -7559,16 +7559,16 @@
     },
     "Time period": {
       "account creation date": [
-        "fiók létrehozásának dátumától"
+        ""
       ],
       "the last 12 months": [
-        "az utóbbi 12 hónapból"
+        ""
       ],
       "the last 3 months": [
-        "az utóbbi 3 hónapból"
+        ""
       ],
       "the last month": [
-        "az utóbbi hónapból"
+        ""
       ]
     },
     "Time unit": {
@@ -7603,7 +7603,7 @@
         "2. Protokoll kiválasztása"
       ],
       "3-D Secure verification failed": [
-        "A 3D Secure ellenőrzés sikertelen"
+        "A 3D Secure biztonsági ellenőrzés sikertelen"
       ],
       "3. Select config file and download": [
         "3. Beállítási fájl kiválasztása és letöltése"
@@ -7732,7 +7732,7 @@
         "Bridge ${ platform } eszközökre"
       ],
       "Card verification": [
-        "Bankkártya ellenőrzése"
+        "Bankkártya ellenőrzés"
       ],
       "Card verification in progress": [
         "Bankkártya ellenőrzése folyamatban"
@@ -7783,7 +7783,7 @@
         "Lemondás megerősítése"
       ],
       "Confirm loss of Proton bonuses": [
-        "Proton-bónuszok elvesztésének megerősítése"
+        "Proton kedvezmények elvesztésének megerősítése"
       ],
       "Confirm phone number": [
         "Telefonszám megerősítése"
@@ -7792,7 +7792,7 @@
         "Partner titkosítási kulcsai"
       ],
       "Contacts": [
-        "Kapcsolatok"
+        "Névjegyek"
       ],
       "Continue with partial import?": [
         "Folytatja részleges importálással?"
@@ -8021,7 +8021,7 @@
         "Importálás sikertelen"
       ],
       "Import groups": [
-        "Csoportok importálása"
+        "Felhasználói csoportok importálása"
       ],
       "Import key": [
         "Kulcs importálása"
@@ -8054,7 +8054,7 @@
         "Elrendezés"
       ],
       "Link confirmation": [
-        "Hivatkozás jóváhagyása"
+        "Link jóváhagyása"
       ],
       "Login password": [
         "Bejelentkezési jelszó"
@@ -8177,7 +8177,7 @@
         "Probléma jelentése"
       ],
       "Request new code": [
-        "Új kód kérése"
+        ""
       ],
       "Reset organization keys": [
         "Szervezeti kulcsok visszaállítása"
@@ -8445,7 +8445,7 @@
     },
     "Today icon tooltip in mini calendar": {
       "Today": [
-        "Ma"
+        ""
       ]
     },
     "Tooltip": {
@@ -8474,7 +8474,7 @@
         "Kétéves fizetés kedvezménye jóváírásra került"
       ],
       "Each imported email will have this label": [
-        "Minden importált üzenet megkapja ezt a címkét"
+        ""
       ],
       "Edit folder names": [
         "Mappa nevek szerkesztése"
@@ -8534,10 +8534,10 @@
         "Támogatja a fájlmegosztási protokollokat, mint például a BitTorrent."
       ],
       "System subfolders will show up as separate folders in ProtonMail": [
-        "A rendszer almappák külön mappákként fognak megjelenni a ProtonMailben"
+        ""
       ],
       "The import will start with the most recent messages.": [
-        "Az importálás a legfrissebb üzenetekkel kezdődik."
+        ""
       ],
       "This address has been disabled": [
         "Ez a cím van letiltva"
@@ -8621,13 +8621,13 @@
     },
     "Update font modal": {
       "Today is a good day to write an email": [
-        "Jó nap ez egy e-mail írására"
+        ""
       ],
       "Update default font and size": [
-        "Alapértelmezett betűtípus és méret frissítése"
+        ""
       ],
       "Your default font will look like following:": [
-        "Így fog kinézni az alapértelmezett betűtípus:"
+        ""
       ]
     },
     "Upgrade": {
@@ -8664,10 +8664,10 @@
     },
     "Video control": {
       "Click to replay the video": [
-        "Kattintson a videó újrajátszásához"
+        ""
       ],
       "Replay video": [
-        "Videó újrajátszása"
+        ""
       ]
     },
     "VPN feature": {
@@ -8678,7 +8678,7 @@
         "30 napos pénz-visszafizetési garancia"
       ],
       "Access blocked content": [
-        "Hozzáférés blokkolt tartalomhoz"
+        "Hozzáférés a blokkolt tartalomhoz"
       ],
       "Adblocker (NetShield)": [
         "Reklámblokkoló (NetShield)"
@@ -8764,7 +8764,7 @@
         "Közepes"
       ],
       "None": [
-        "Nincs"
+        "Egyik sem"
       ],
       "Switzerland": [
         "Svájc"
@@ -8780,8 +8780,8 @@
     },
     "VPN Plan Feature": {
       "${ n } server": [
-        "${ n } kiszolgáló",
-        "${ n }+ kiszolgáló"
+        "",
+        ""
       ],
       "${ n } VPN connection": [
         "${ n } VPN kapcsolódás",
@@ -8861,19 +8861,19 @@
         ""
       ],
       "Please note that by choosing this payment method, your account cannot be upgraded immediately. We will update your account once the payment is cleared.": [
-        "Ha ezt a fizetési módot választja, akkor a csomagját nem tudjuk azonnal frissíteni. A frissítést akkor végezzük, amint a befizetés megérkezik."
+        "Ha ezt a fizetési módot választja, akkor az összeget nem tudjuk automatikusan jóváírni. Számláját frissítjük, amint a befizetés megérkezett."
       ],
       "Proton will merge all folders with the same name. To avoid this, change the names before import.": [
-        "A Proton az azonos nevű mappákat összefésüli. Ha ezt el szeretné kerülni, előzetesen nevezze át az azonos nevű mappákat."
+        ""
       ],
       "Proton will transfer as much data as possible, starting with your most recent messages.": [
         "A Proton annyi adatot áttölt, amennyi lehetséges, a legfrissebb üzenetekkel kezdve."
       ],
       "Reports are not end-to-end encrypted, please do not send any sensitive information.": [
-        "A hibajelentések nem végpontok közt titkosítottak, kérünk ne küldjön semmilyen érzékeny információt."
+        "A hibajelentések nem titkosítottak a végpontok közt, kérjük ne küldjön semmilyen érzékeny információt."
       ],
       "The date and time settings on your device are out of sync. ${ learnMore }": [
-        "Az eszközén a dátum és idő beállítása pontatlan. ${ learnMore }"
+        ""
       ],
       "This feature is only available for ProtonMail Professional plans or higher": [
         "Ez a lehetőség csak ProtonMail Professional vagy magasabb csomagban érhető el"
@@ -8882,7 +8882,7 @@
         "Az importálás helyigénye meghaladhatja a Proton fiókban rendelkezésre álló helyet. Fontolja meg a beállítások finomítását."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
-        "Sajnos a támogatási csoport jelenleg nem elérhető. Kérjük, az alábbi űrlapon írja le a problémáját és amint lehet felvesszük önnel a kapcsolatot."
+        ""
       ],
       "We detected a problem with your DNS configuration. Please make sure your records match the instructions below. If the problem persists, we will have to switch DKIM signing off.": [
         "Probléma van a DNS beállításaival. Kérjük, javítsa, hogy minden az alábbiak szerint legyen beállítva. Ha a probléma továbbra is fennáll, ki kell kapcsolnunk a DKIM aláírást."
@@ -8891,7 +8891,7 @@
         "Mielőtt nem-privát tagnak adna hozzá e-mail címet, ${ activateLink } kell a szervezeti kulcsokat."
       ],
       "You will lose any customization you made so far.": [
-        "Elveszíti az eddigi változtatásokat."
+        ""
       ],
       "You will not see this import record in the list anymore.": [
         "Az importálási elem a továbbiakban nem fog szerepelni a listán."
@@ -8930,8 +8930,8 @@
         "Minden ${ interval }. héten, ${ multipleDaysString }, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
-        "Minden ${ interval }. héten, minden nap",
-        "Minden ${ interval }. héten, minden nap"
+        "Minden ${ interval } héten, minden nap",
+        "Minden ${ interval } héten, minden nap"
       ],
       "Every ${ interval } week on all days, ${ timesString }": [
         "Minden ${ interval }. héten, minden nap, ${ timesString }",
@@ -8954,8 +8954,8 @@
         "Minden ${ interval }. héten, pénteken, ${ untilString }"
       ],
       "Every ${ interval } week on Monday": [
-        "Minden ${ interval }. héten, hétfőn",
-        "Minden ${ interval }. héten, hétfőn"
+        "Minden ${ interval } héten, hétfőn",
+        "Minden ${ interval } héten, hétfőn"
       ],
       "Every ${ interval } week on Monday, ${ timesString }": [
         "Minden ${ interval }. héten, hétfőn, ${ timesString }",
@@ -8970,8 +8970,8 @@
         "Minden ${ interval }. héten, szombaton"
       ],
       "Every ${ interval } week on Saturday, ${ timesString }": [
-        "Minden ${ interval }. héten, szombaton, ${ timesString }",
-        "Minden ${ interval }. héten, szombaton, ${ timesString }"
+        "Minden ${ interval }. héten, vasárnap, ${ timesString }",
+        "Minden ${ interval }. héten, vasárnap, ${ timesString }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
         "Minden ${ interval }. héten, szombaton, ${ untilString }",
@@ -8979,7 +8979,7 @@
       ],
       "Every ${ interval } week on Sunday": [
         "Minden ${ interval }. héten, vasárnap",
-        "Minden ${ interval }. héten, vasárnap"
+        "Minden ${ interval } héten, vasárnap"
       ],
       "Every ${ interval } week on Sunday, ${ timesString }": [
         "Minden ${ interval }. héten, vasárnap, ${ timesString }",
@@ -9053,7 +9053,7 @@
         "Hetente, péntekenként, ${ untilString }"
       ],
       "Weekly on Monday": [
-        "Hetente, hétfőn"
+        "Minden hétfőn"
       ],
       "Weekly on Monday, ${ timesString }": [
         "Minden hétfőn, ${ timesString }"
