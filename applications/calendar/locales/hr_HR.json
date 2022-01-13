@@ -205,7 +205,7 @@
         "Izvoz"
       ],
       "Export contacts": [
-        "Izvezi kontakte"
+        "Uvezi kontakte"
       ],
       "Forward as attachment": [
         "Proslijedi kao privitak"
@@ -373,7 +373,7 @@
         "Ukloni bonuse"
       ],
       "Remove gift code": [
-        "Ukloni darovni kȏd"
+        "Ukloni darovni kôd"
       ],
       "Remove this notification": [
         "Ukloni ovu obavijest"
@@ -430,7 +430,7 @@
         ""
       ],
       "Show less": [
-        "Prikaži manje"
+        ""
       ],
       "Show more": [
         "Prikaži više"
@@ -448,7 +448,7 @@
         "Preskoči"
       ],
       "Start import": [
-        ""
+        "Započni uvoz"
       ],
       "Start setup": [
         "Započni postavljanje"
@@ -484,7 +484,7 @@
         "Označi kao nepouzdano"
       ],
       "Update": [
-        "Ažuriraj"
+        ""
       ],
       "Update recovery file": [
         ""
@@ -555,12 +555,12 @@
       "+ ${ addresses } email address": [
         "+ ${ addresses } adresa e-pošte",
         "+ ${ addresses } adrese e-pošte",
-        "+ ${ addresses } adrese e-pošte"
+        "+ ${ addresses } adresa e-pošte"
       ],
       "+ ${ domains } custom domain": [
         "+ ${ domains } prilagođena domena",
         "+ ${ domains } prilagođene domene",
-        "+ ${ domains } prilagođenih domena"
+        "+ ${ domains } prilagođena domena"
       ],
       "+ ${ members } user": [
         "+ ${ members } korisnik",
@@ -573,7 +573,7 @@
       "+ ${ vpn } connection": [
         "+ ${ vpn } veza",
         "+ ${ vpn } veze",
-        "+ ${ vpn } veze"
+        "+ ${ vpn } veza"
       ]
     },
     "Alarm notification": {
@@ -665,19 +665,19 @@
         ""
       ],
       "Invalid event": [
-        ""
+        "Nevažeći događaj"
       ],
       "Invalid ICS file": [
-        ""
+        "Nevažeća ICS datoteka"
       ],
       "Invalid method": [
-        ""
+        "Nevažeća metoda"
       ],
       "Unsupported calendar component": [
         ""
       ],
       "Unsupported event": [
-        ""
+        "Događaj nije podržan"
       ]
     },
     "Attendee role": {
@@ -758,7 +758,7 @@
         ""
       ],
       "Save ${ percentage }%": [
-        "- ${ percentage }%"
+        "${ percentage }%"
       ],
       "Special offer Terms and Conditions": [
         ""
@@ -1147,12 +1147,12 @@
       ],
       "Every ${ interval } day, ${ timesString }": [
         "Svaki ${ interval } dan, ${ timesString }",
-        "Svakih ${ interval } dana, ${ timesString }",
+        "Svaka ${ interval } dana, ${ timesString }",
         "Svakih ${ interval } dana, ${ timesString }"
       ],
       "Every ${ interval } day, ${ untilString }": [
         "Svaki ${ interval } dan, ${ untilString }",
-        "Svakih ${ interval } dana, ${ untilString }",
+        "Svaka ${ interval } dana, ${ untilString }",
         "Svakih ${ interval } dana, ${ untilString }"
       ],
       "until ${ dateString }": [
@@ -1411,7 +1411,7 @@
         ""
       ],
       "Contact could not be saved": [
-        "Nije moguće spremanje kontakata"
+        "Nije bilo moguće spremanje kontakata"
       ],
       "Contact signature could not be verified": [
         "Nije moguće provjeriti potpis kontakta"
@@ -1457,7 +1457,7 @@
         "Pogreška"
       ],
       "Error connecting to the Bitcoin API.": [
-        "Greška prilikom spajanja na Bitcoin API."
+        "Pogreška prilikom spajanja na Bitcoin API."
       ],
       "Error: ${ errorMessage }": [
         "Pogreška: ${ errorMessage }"
@@ -1487,7 +1487,7 @@
         "Netočan broj kartice"
       ],
       "Invalid code": [
-        "Nevažeći kȏd"
+        "Nevažeći kôd"
       ],
       "Invalid email address": [
         "Nevažeća adresa e-pošte"
@@ -1546,7 +1546,7 @@
         "Nije pronađen nijedan ključ za unutarnjeg korisnika"
       ],
       "No valid address found": [
-        "Nije pronađena važeća adresa"
+        ""
       ],
       "No valid keys retrieved for internal user": [
         "Nije pronađen nijedan valjani ključ za unutarnjeg korisnika"
@@ -1562,8 +1562,8 @@
       ],
       "One of the contacts has no email address: ${ noEmailsContactNamesList }": [
         "Jedan od kontakata nema adresu e-pošte: ${ noEmailsContactNamesList }",
-        "Nekoliko kontakata nema adrese e-pošte: ${ noEmailsContactNamesList } ",
-        "Nekoliko kontakata nema adrese e-pošte: ${ noEmailsContactNamesList } "
+        "Nekoliko kontakata nema adresu e-pošte: ${ noEmailsContactNamesList } ",
+        "Nekoliko kontakata nema adresu e-pošte: ${ noEmailsContactNamesList } "
       ],
       "One of the groups has no contacts: ${ noContactGroupList }": [
         "Jedna od grupa nema kontakata: ${ noContactGroupList }",
@@ -1600,10 +1600,10 @@
         "Postavke nije moguće spremiti"
       ],
       "Primary address key is not decrypted": [
-        "Primarni ključ adrese e-pošte nije dešifriran"
+        ""
       ],
       "Primary address key is not decrypted.": [
-        "Primarni ključ adrese e-pošte nije dešifriran."
+        ""
       ],
       "Process aborted": [
         "Proces je prekinut"
@@ -1776,94 +1776,94 @@
         ""
       ],
       "Calendar timezone not supported": [
-        ""
+        "Vremenska zona kalendara nije podržana"
       ],
       "Component with wrong format": [
-        ""
+        "Komponenta s pogrešnim formatom"
       ],
       "Custom timezone": [
-        ""
+        "Prilagođena vremenska zona"
       ],
       "Edited event not supported": [
-        ""
+        "Uređeni događaj nije podržan"
       ],
       "Element": [
         ""
       ],
       "Encryption failed": [
-        ""
+        "Neuspješno šifriranje"
       ],
       "End time out of bounds": [
-        ""
+        "Krajnje vrijeme je van granica"
       ],
       "Event": [
         ""
       ],
       "Event validation failed": [
-        ""
+        "Neuspjela provjera valjanosti događaja"
       ],
       "Floating times not supported": [
-        ""
+        "Floating vremena nisu podržana"
       ],
       "Free-busy time information": [
-        ""
+        "Informacije o slobodnom/zauzetom vremenu"
       ],
       "Invalid event": [
-        ""
+        "Nevažeći događaj"
       ],
       "Journal entry": [
-        ""
+        "Stavka dnevnika"
       ],
       "Malformed all-day event": [
-        ""
+        "Nevažeći cjelodnevni događaj"
       ],
       "Malformed end time": [
-        ""
+        "Nevažeće krajnje vrijeme"
       ],
       "Malformed recurring event": [
-        ""
+        "Neispravan ponavljajući događaj"
       ],
       "Malformed start time": [
-        ""
+        "Nevažeće početno vrijeme"
       ],
       "Missing start time": [
-        ""
+        "Nedostaje početno vrijeme"
       ],
       "No UID, title or start time": [
         ""
       ],
       "Non-Gregorian": [
-        ""
+        "Ne gregorijanski"
       ],
       "Notification out of bounds": [
-        ""
+        "Obavijest je izvan granica"
       ],
       "Original recurring event could not be found": [
-        ""
+        "Originalni ponavljajući događaj nije pronađen"
       ],
       "Recurring event has no occurrences": [
         ""
       ],
       "Recurring rule not supported": [
-        ""
+        "Ponavljajuće pravilo nije podržano"
       ],
       "Start time out of bounds": [
-        ""
+        "Početno vrijeme je van granica"
       ],
       "Timezone": [
         ""
       ],
       "Timezone not supported": [
-        ""
+        "Vremenska zona nije podržana"
       ],
       "To-do entry": [
-        ""
+        "Stavka liste zadataka"
       ],
       "Unknown": [
         ""
       ],
       "Unsupported event": [
-        ""
+        "Događaj nije podržan"
       ]
     },
     "Error message": {
@@ -1942,34 +1942,34 @@
         ""
       ],
       "Invalid invitation": [
-        ""
+        "Nevažeća pozivnica"
       ],
       "Invalid response": [
-        ""
+        "Nevažeći odgovor"
       ],
       "Unexpected error": [
-        ""
+        "Neočekivana pogreška"
       ],
       "Unsupported invitation": [
-        ""
+        "Nepodržana pozivnica"
       ],
       "Unsupported response": [
-        ""
+        "Odgovor nije podržan"
       ],
       "We could not cancel the event in your calendar": [
-        ""
+        "Nismo mogli otkazati događaj u vašem kalendaru"
       ],
       "We could not retrieve the event from your calendar": [
-        ""
+        "Nismo mogli dohvatiti događaj iz vašeg kalendara"
       ],
       "We could not update the event in your calendar": [
-        ""
+        "Nismo mogli ažurirati događaj u vašem kalendaru"
       ],
       "Your answer was sent, but the event could not be added to your calendar": [
-        ""
+        "Vaš je odgovor poslan, ali događaj nije moguće dodati u vaš kalendar"
       ],
       "Your answer was sent, but the event could not be updated in your calendar": [
-        ""
+        "Vaš je odgovor poslan, ali događaj nije moguće ažurirati u vašem kalendaru"
       ]
     },
     "Event popover close button": {
@@ -2012,12 +2012,12 @@
     },
     "Filter notification": {
       "${ Label.Name } updated": [
-        ""
+        "${ Label.Name } ažurirano"
       ]
     },
     "Free price": {
       "Free": [
-        "Free"
+        "Besplatno"
       ]
     },
     "Group": {
@@ -2435,16 +2435,16 @@
         "Provjera kontakta ${ progress } od ${ max }..."
       ],
       "Click \"Request new code\" to have a new verification code sent to ${ strong }. If this email address is incorrect, click \"Edit\" to correct it.": [
-        "Pritisnite \"Zatraži novi kȏd\" da biste novi potvrdni kȏd poslali na ${ strong }. Ako je ova adresa e-pošte netočan, pritisnite \"Uredi\" da biste je ispravili."
+        "Pritisnite \"Zatraži novi kôd\" da biste novi potvrdni kôd poslali na ${ strong }. Ako je ova adresa e-pošte netočan, pritisnite \"Uredi\" da biste je ispravili."
       ],
       "Click \"Request new code\" to have a new verification code sent to ${ strong }. If this phone number is incorrect, click \"Edit\" to correct it.": [
-        "Pritisnite \"Zatraži novi kȏd\" da biste novi potvrdni kȏd poslali na ${ strong }. Ako je ovaj telefonski broj netočan, pritisnite \"Uredi\" da biste ga ispravili."
+        "Pritisnite \"Zatraži novi kôd\" da biste novi potvrdni kôd poslali na ${ strong }. Ako je ovaj telefonski broj netočan, pritisnite \"Uredi\" da biste ga ispravili."
       ],
       "Close this screen to exit.": [
         ""
       ],
       "Connections": [
-        "Veza"
+        "Veze"
       ],
       "Create ${ calendarsToBeCreated } new calendar": [
         "",
@@ -2583,7 +2583,7 @@
         "Uključeno"
       ],
       "Inherited from parent folder": [
-        ""
+        "Nasljedno iz roditeljske mape"
       ],
       "Internet connection lost.": [
         "Prekinuta je internetska veza."
@@ -2628,7 +2628,7 @@
         "Mjesečno ${ onDayString }"
       ],
       "Name your new folder and select the parent folder you want to put it in. If you do not select a parent folder, this new folder will be created as a top level folder.": [
-        ""
+        "Dodijelite naziv svojoj novoj mapi i odaberite roditeljsku mapu u koju je želite staviti. Ako ne odaberete roditeljsku mapu, nova će se mapa stvoriti kao mapa najviše razine."
       ],
       "New": [
         ""
@@ -2939,7 +2939,7 @@
         "Možete mijenjati samo svojstva osobnih događaja pošto ne možete slati e-poruke s adrese organizatora."
       ],
       "You can turn on notifications to get alerts when new email messages arrive in this folder.": [
-        ""
+        "Možete uključiti obavijesti da biste dobili upozorenja kada u tu mapu stignu nove poruke e-pošte."
       ],
       "You have reactivated your keys and events linked to the following calendars can now be decrypted.": [
         "Poništili ste lozinku te događaji povezani sa sljedećim kalendarima se sada mogu dešifrirati."
@@ -3407,7 +3407,7 @@
         "Produžena adresa"
       ],
       "Folder location": [
-        ""
+        "Lokacija mape"
       ],
       "Frequency": [
         ""
@@ -3470,7 +3470,7 @@
         "Ime na kartici"
       ],
       "Notification": [
-        ""
+        "Obavijest"
       ],
       "Notifications": [
         ""
@@ -3493,7 +3493,7 @@
         ""
       ],
       "Participants": [
-        "Sudionici"
+        ""
       ],
       "Password": [
         "Lozinka"
@@ -3636,21 +3636,21 @@
     },
     "Label/folder modal": {
       "Create folder": [
-        ""
+        "Stvori mapu"
       ],
       "Create label": [
-        ""
+        "Stvori oznaku"
       ],
       "Edit folder": [
-        ""
+        "Uredi mapu"
       ],
       "Edit label": [
-        ""
+        "Uredi oznaku"
       ]
     },
     "label/folder notification": {
       "${ Label.Name } created": [
-        ""
+        "${ Label.Name } stvoreno"
       ]
     },
     "Layout mode": {
@@ -4009,13 +4009,13 @@
     },
     "New Label form": {
       "Color": [
-        ""
+        "Boja"
       ],
       "Folder name": [
-        ""
+        "Naziv mape"
       ],
       "Label name": [
-        ""
+        "Naziv oznake"
       ]
     },
     "Notification": {
@@ -4251,7 +4251,7 @@
         "Mjeseci"
       ],
       "No parent folder": [
-        ""
+        "Nema roditeljske mape"
       ],
       "This and future events": [
         "Ovaj i budući događaji"
@@ -4358,7 +4358,7 @@
         "Filtrirajte grupe"
       ],
       "Gift code": [
-        "Darovni kȏd"
+        "Darovni kôd"
       ],
       "Image URL": [
         "URL slike"
@@ -4448,7 +4448,7 @@
         "6 korisnika"
       ],
       "Access blocked content": [
-        "Pristup blokiranom sadržaju"
+        "Pristupi blokiranom sadržaju"
       ],
       "Access to ${ driveAppName } (beta)": [
         "Pristup na ${ driveAppName } (beta)"
@@ -4497,7 +4497,7 @@
     },
     "Price": {
       "Free": [
-        "Besplatni"
+        "Besplatno"
       ]
     },
     "Prime Video": {
@@ -4646,7 +4646,7 @@
         "Odgovor je poslan, a događaj je izbrisan"
       ],
       "Bug reported": [
-        "Pogreška je prijavljena"
+        "Problem je prijavljen"
       ],
       "Calendar added. It might take a few minutes to sync.": [
         ""
@@ -4673,9 +4673,9 @@
         "Kôd je poslan na ${ methodTo }"
       ],
       "Contact deleted": [
-        "Kontakt je izbrisan",
-        "Kontakti su izbrisani",
-        "Kontakti su izbrisani"
+        "Kontakt je uklonjen",
+        "Kontakti su uklonjeni",
+        "Kontakti su uklonjeni"
       ],
       "Contact group deleted": [
         "Kontaktna grupa je izbrisana",
@@ -4683,10 +4683,10 @@
         "Kontaktne grupe su izbrisane"
       ],
       "Contact saved": [
-        "Kontakt je spremljen"
+        "Kontakt je dodan"
       ],
       "Contacts deleted": [
-        "Kontakti su izbrisani"
+        "Kontakti su uklonjeni"
       ],
       "Email address copied to clipboard": [
         "Adresa e-pošte je kopirana u međuspremnik"

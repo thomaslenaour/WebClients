@@ -9,7 +9,7 @@
         "${ boldSave } en passant à la facturation annuelle"
       ],
       "${ BRAND_NAME } introduction": [
-        "${ BRAND_NAME } présentation"
+        "Présentation de ${ BRAND_NAME }"
       ],
       "${ BRAND_NAME } shop": [
         "Boutique ${ BRAND_NAME }"
@@ -57,7 +57,7 @@
         "Appliquer"
       ],
       "Back": [
-        "Retour"
+        "Précédent"
       ],
       "Beta Access": [
         "Accès à la version bêta"
@@ -69,7 +69,7 @@
         "Dialoguez avec nous"
       ],
       "Check import progress": [
-        "Vérifier la progression de l'importation"
+        "Voir l'évolution de l'importation"
       ],
       "Choose a file or drag it here": [
         "Choisissez un fichier ou faites-le glisser ici"
@@ -81,7 +81,7 @@
         "Effacer les données"
       ],
       "Clear query": [
-        "Effacer la recherche"
+        "Effacer la requête"
       ],
       "Click here.": [
         "Cliquez ici."
@@ -93,7 +93,7 @@
         "Fermer la boite de dialogue de l'événement"
       ],
       "Close modal": [
-        "Fermer"
+        "Fermer la boîte de dialogue"
       ],
       "Close navigation": [
         "Fermer la navigation"
@@ -135,7 +135,7 @@
         "Continuer avec Google"
       ],
       "Copy email to clipboard": [
-        "Copier le courriel dans le presse-papier"
+        "Copier l’adresse électronique dans le presse-papiers"
       ],
       "Create calendar": [
         "Créer un calendrier"
@@ -173,10 +173,10 @@
         "Vous n'avez pas reçu le code?"
       ],
       "Discard": [
-        "Ignorer"
+        "Abandonner"
       ],
       "Done": [
-        "Terminé"
+        "Fait"
       ],
       "Download": [
         "Télécharger"
@@ -194,7 +194,7 @@
         "Modifier le numéro de téléphone"
       ],
       "Email settings": [
-        "Paramètres de courriel"
+        "Paramètres des courriels"
       ],
       "enable desktop notifications": [
         "activer les notifications de bureau"
@@ -236,7 +236,7 @@
         "Masquer les fuseaux horaires"
       ],
       "I have a question": [
-        "J’ai une question"
+        "J'ai une question"
       ],
       "import": [
         "importer"
@@ -263,7 +263,7 @@
         "Chargement de la vérification"
       ],
       "Log in": [
-        "Connexion"
+        "Se connecter"
       ],
       "Mailbox density": [
         "Densité de la boîte aux lettres"
@@ -362,10 +362,10 @@
         "actualiser la page"
       ],
       "Refresh the page": [
-        "Actualiser la page"
+        "Rafraîchir la page"
       ],
       "Remove": [
-        "Retirer"
+        "Supprimer"
       ],
       "Remove bonuses": [
         "Retirer les bonus"
@@ -401,7 +401,7 @@
         "Tout sélectionner"
       ],
       "Select plan": [
-        "Choisir une offre"
+        "Choisissez une offre"
       ],
       "Select timezone": [
         "Sélectionner le fuseau horaire"
@@ -428,7 +428,7 @@
         "Afficher les labels"
       ],
       "Show less": [
-        "En afficher moins"
+        "Afficher moins"
       ],
       "Show more": [
         "En afficher plus"
@@ -446,10 +446,10 @@
         "Ignorer"
       ],
       "Start import": [
-        ""
+        "Démarrer l'importation"
       ],
       "Start setup": [
-        "Débuter la configuration"
+        "Démarrer la configuration"
       ],
       "Stay": [
         "Rester"
@@ -467,7 +467,7 @@
         "Aujourd'hui"
       ],
       "Trust": [
-        "Faire confiance"
+        "Approuver"
       ],
       "Try again": [
         "Réessayer"
@@ -503,7 +503,7 @@
         "Utiliser une autre carte"
       ],
       "Use a different payment method": [
-        "Utiliser un autre mode de paiement"
+        "Utilisez un autre mode de paiement"
       ],
       "Use for sending": [
         "Utiliser pour l'envoi"
@@ -518,7 +518,7 @@
         "Afficher"
       ],
       "View invoice": [
-        "Afficher la facture"
+        "Voir la facture"
       ],
       "Yes": [
         "Oui"
@@ -537,7 +537,7 @@
         "${ addContact } ou ${ importContact }."
       ],
       "No results found.": [
-        "Aucun résultat trouvé."
+        "Aucun résultat n'a été trouvé."
       ],
       "Please try another search term.": [
         "Veuillez essayer un autre terme de recherche."
@@ -551,8 +551,8 @@
     },
     "Addon": {
       "+ ${ addresses } email address": [
-        "+ ${ addresses } adresse électronique",
-        "+ ${ addresses } adresses électroniques"
+        "+ ${ addresses } adresse courriel",
+        "+ ${ addresses } adresses courriel"
       ],
       "+ ${ domains } custom domain": [
         "+ ${ domains } domaine personnalisé",
@@ -662,7 +662,7 @@
         "Événement invalide"
       ],
       "Invalid ICS file": [
-        "Fichier ICS non valide"
+        "Fichier ICS invalide"
       ],
       "Invalid method": [
         "Méthode invalide"
@@ -802,7 +802,7 @@
     },
     "Bug category": {
       "Application problem": [
-        "Problème d'application"
+        "Problème de l'application"
       ],
       "Bridge problem": [
         "Problème avec Bridge"
@@ -853,13 +853,13 @@
         "Problème d'inscription"
       ],
       "Slow speed problem": [
-        "Problème de lenteur du débit"
+        "Problème de vitesse lente"
       ],
       "Speed problem": [
         "Problème de vitesse"
       ],
       "Streaming problem": [
-        "Problème de lecture en continu"
+        "Problème de streaming"
       ],
       "Update problem": [
         "Problème de mise à jour"
@@ -868,7 +868,7 @@
         "Problème avec le RPV"
       ],
       "Website access problem": [
-        "Problème d'accès au site Web"
+        "Problème d'accès au site web"
       ]
     },
     "Calendar feature": {
@@ -1023,10 +1023,10 @@
         "Courriel"
       ],
       "Gender": [
-        "Genre"
+        "Sexe"
       ],
       "Geo": [
-        "Coordonnées géographiques"
+        "Coordonnées géo"
       ],
       "Language": [
         "Langue"
@@ -1085,7 +1085,7 @@
         "Personnel"
       ],
       "Work": [
-        "Bureau"
+        "Travail"
       ],
       "Yomi": [
         "Yomi"
@@ -1122,7 +1122,7 @@
         "${ count } fois"
       ],
       "Daily": [
-        "Quotidien"
+        "Quotidiennement"
       ],
       "Daily, ${ timesString }": [
         "Quotidiennement, à ${ timesString }"
@@ -1204,7 +1204,7 @@
         "De plus, nous avons automatiquement identifié les champs CSV qui correspondent aux champs vCard. Vous pouvez vérifier et modifier cette correspondance manuellement."
       ],
       "We have detected the following fields in the CSV file you uploaded. Check the ones you want to import.": [
-        "Nous avons détecté les champs suivants dans le fichier CSV que vous avez téléversé. Vérifiez ceux que vous souhaitez importer."
+        "Nous avons détecté les champs suivants dans le fichier CSV que vous avez téléchargé. Vérifiez ceux que vous souhaitez importer."
       ]
     },
     "Disabled calendar": {
@@ -1312,7 +1312,7 @@
     },
     "Email subject": {
       "Cancellation of an event on ${ formattedStart }": [
-        "Annulation d'un événement du ${ formattedStart }"
+        "Annulation d'un évènement du ${ formattedStart }"
       ],
       "Cancellation of an event starting on ${ formattedStart }": [
         "Annulation d'un événement commençant le ${ formattedStart }"
@@ -1378,7 +1378,7 @@
         "La clé privée principale du calendrier n'est pas déchiffrée"
       ],
       "Can't create new calendars for all imported calendars due to the personal calendar limit.": [
-        "Impossible de créer de nouveaux calendriers pour tous les calendriers importés en raison de la limite des calendriers personnels."
+        "Impossible de créer de nouveaux calendriers pour tous les calendriers importés en raison de la limite de calendriers personnels."
       ],
       "Can't validate email, try again later": [
         "Impossible de valider l'adresse électronique, veuillez réessayer plus tard"
@@ -1416,13 +1416,13 @@
         "Désélectionnez au moins ${ calendarToFixCount } calendriers ou"
       ],
       "Email address disabled": [
-        "Adresse électronique désactivée"
+        "Adresse courriel désactivée"
       ],
       "Email address invalid": [
         "Adresse courriel invalide"
       ],
       "Email is not valid": [
-        "Adresse électronique non valide"
+        "L'adresse électronique n'est pas valide"
       ],
       "Ends on date cannot be empty": [
         "La date de fin ne peut pas être vide"
@@ -1449,7 +1449,7 @@
         "Le nom de dossier ne peut être vide"
       ],
       "Image upload failed": [
-        "Échec d'importation de l'image"
+        "Échec du téléversement de l'image"
       ],
       "Incorrect login credentials. Please try again": [
         "Identifiants de connexion incorrects. Veuillez réessayer"
@@ -1519,19 +1519,19 @@
         "Aucune donnée à importer"
       ],
       "No key retrieved for internal user is valid for sending": [
-        "Aucune clé récupérée pour l'utilisateur•rice interne n'est valide pour l'envoi"
+        "Aucune clé récupérée pour l'utilisateur interne n'est valide pour l'envoi"
       ],
       "No keys retrieved for internal user": [
-        "Aucune clé récupérée pour l'utilisateur•rice interne"
+        "Aucune clé récupérée pour l'utilisateur interne"
       ],
       "No valid address found": [
         "Aucune adresse valide trouvée"
       ],
       "No valid keys retrieved for internal user": [
-        "Aucune clé valide récupérée pour l'utilisateur•rice interne"
+        "Aucune clé valide récupérée pour l'utilisateur interne"
       ],
       "No WKD key retrieved for user is valid for sending": [
-        "Aucune clé WKD récupérée pour l'utilisateur•rice n'est valide pour l'envoi"
+        "Aucune clé WKD récupérée pour l'utilisateur n'est valide pour l'envoi"
       ],
       "Not a valid number": [
         "Numéro non valide"
@@ -1540,8 +1540,8 @@
         "Le nombre d'occurrences ne peut pas être vide"
       ],
       "One of the contacts has no email address: ${ noEmailsContactNamesList }": [
-        "L’un des contacts n'a pas d'adresse électronique: ${ noEmailsContactNamesList }",
-        "Certains contacts n'ont pas d'adresse électronique: ${ noEmailsContactNamesList } "
+        "Un des contacts n'a pas d'adresse courriel: ${ noEmailsContactNamesList }",
+        "Certains contacts n'ont pas d'adresse courriel: ${ noEmailsContactNamesList } "
       ],
       "One of the groups has no contacts: ${ noContactGroupList }": [
         "Un des groupes n'a pas de contacts: ${ noContactGroupList }",
@@ -1582,10 +1582,10 @@
         "La clé d'adresse principale n'est pas déchiffrée."
       ],
       "Process aborted": [
-        "Processus interrompu"
+        "Processus annulé"
       ],
       "Request timed out.": [
-        "La requête a expiré."
+        "La demande a expiré."
       ],
       "Self invitation not allowed": [
         "L'auto-invitation n'est pas autorisée"
@@ -1597,7 +1597,7 @@
         "Échec de la vérification de la signature"
       ],
       "Some contacts could not be deleted": [
-        "Certains contacts n'ont pas pu être supprimés"
+        "Certains contacts ne peuvent pas être supprimés"
       ],
       "Some groups could not be deleted": [
         "Certains groupes n'ont pas pu être supprimés"
@@ -1657,7 +1657,7 @@
         "Ce nom de label n'est pas disponible. Veuillez en choisir un autre"
       ],
       "This message may contain some link's URL that cannot be properly opened by your current browser": [
-        "Il est possible que ce message contienne des liens URL qui pourraient ne pas être ouverts correctement par votre navigateur actuel"
+        "Ce message peut contenir des liens URL qui pourraient ne pas être correctement ouverts par votre navigateur actuel"
       ],
       "Trusted keys are not valid for sending": [
         "Les clés approuvées ne sont pas valides pour l'envoi"
@@ -1726,7 +1726,7 @@
         "Une erreur s'est produite lors de la lecture de votre fichier ${ formattedFilename }. Le fichier n'a pas le bon format."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Maximum file size is ${ MAX_IMPORT_FILE_SIZE_STRING }.": [
-        "Une erreur s'est produite lors de l'importation de votre fichier ${ formattedFilename }. La taille maximale d’un fichier doit être de ${ MAX_IMPORT_FILE_SIZE_STRING }."
+        "Une erreur s'est produite lors du téléversement de votre fichier ${ formattedFilename }. La taille maximale d’un fichier doit être de ${ MAX_IMPORT_FILE_SIZE_STRING }."
       ],
       "An error occurred uploading your file ${ formattedFilename }. No .csv or .vcf file selected": [
         "Une erreur s'est produite lors du téléversement de votre fichier ${ formattedFilename }. Aucun fichier .csv ou .vcf sélectionné"
@@ -1770,7 +1770,7 @@
         "Échec du chiffrement"
       ],
       "End time out of bounds": [
-        "Date de fin hors limites"
+        "Heure de fin hors limites"
       ],
       "Event": [
         "Événement"
@@ -1821,10 +1821,10 @@
         "L'événement récurrent n'a pas d'occurrence"
       ],
       "Recurring rule not supported": [
-        "Règle de récurrence non prise en charge"
+        "Récurrence non prise en charge"
       ],
       "Start time out of bounds": [
-        "Date de début hors limites"
+        "Heure de début hors limites"
       ],
       "Timezone": [
         "Fuseau horaire"
@@ -1920,7 +1920,7 @@
         "Invitation non valide"
       ],
       "Invalid response": [
-        "Réponse non valide"
+        "Réponse invalide"
       ],
       "Unexpected error": [
         "Erreur inattendue"
@@ -1979,7 +1979,7 @@
         "Go"
       ],
       "KB": [
-        "ko"
+        "Ko"
       ],
       "MB": [
         "Mo"
@@ -2135,7 +2135,7 @@
       ],
       "Contact successfully imported. The imported contact will now appear in your contact list.": [
         "Contact importé correctement. Le contact importé apparaîtra maintenant dans votre liste de contacts.",
-        "Contacts importés correctement. Les contacts importés apparaîtront maintenant dans votre liste de contacts."
+        "Contacts importés correctement. Les contacts importés vont maintenant apparaître dans votre liste de contacts."
       ]
     },
     "Import contacts warning": {
@@ -2235,7 +2235,7 @@
         "${ saveExtra20 } sur Mail et VPN en ajoutant un abonnement Mail."
       ],
       "${ saveExtra20 } on both VPN and Mail by adding a VPN subscription.": [
-        "${ saveExtra20 } sur VPN et Mail en ajoutant un abonnement RPV."
+        "${ saveExtra20 } sur VPN et Mail en ajoutant un abonnement VPN."
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendar": [
         "${ selectedCalendarsTotal } sur ${ providerCalendars.length } calendrier",
@@ -2254,7 +2254,7 @@
         "${ updated } contacts correctement mis à jour."
       ],
       "${ vpnAppName } Free": [
-        "${ vpnAppName } FREE"
+        "${ vpnAppName } Free"
       ],
       "(${ memberCount } member)": [
         "(${ memberCount } membre)",
@@ -2298,7 +2298,7 @@
         "Accédez à vos services de diffusion en continu, comme ${ netflix }, ${ disney }, ${ primeVideo }, ${ many }, où que vous soyez."
       ],
       "Account access restricted due to unpaid invoices. Please contact your administrator.": [
-        "Accès au compte restreint en raison de factures impayées. Veuillez contacter votre administrateur·rice."
+        "Accès au compte restreint en raison de factures impayées. Veuillez contacter votre administrateur."
       ],
       "Account successfully updated": [
         "Compte correctement mis à jour"
@@ -2330,7 +2330,7 @@
         "Tous (${ totalFoldersCount } labels)"
       ],
       "Allows you to host emails for your own domain(s) at ${ mailAppName }, e.g. john.smith@example.com": [
-        "Vous permet d'héberger des courriels pour votre ou vos propres domaines dans ${ mailAppName }, par exemple jean.dupont@exemple.com"
+        "Vous permet d'héberger des courriels pour votre ou vos propres domaines dans ${ mailAppName }, par exemple marie.tremblay@exemple.ca"
       ],
       "Amount below minimum (${ amount }).": [
         "Montant inférieur au minimum requis (${ amount })."
@@ -2372,13 +2372,13 @@
         "La remise du Vendredi fou 2020 pour les nouveaux utilisateurs a été appliquée"
       ],
       "By downgrading to a Free plan, you will permanently lose these benefits, even if you upgrade again in the future.": [
-        "En passant à l'offre FREE, vous perdez définitivement ces avantages, même en cas de nouvelle souscription à un abonnement payant."
+        "En passant à l'offre Free, vous perdez définitivement ces avantages, même en cas de nouvelle souscription à un abonnement payant."
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
         "Vous ne vous souvenez pas de votre mot de passe? Nous pouvons vous aider à effacer les données chiffrées de tous les contacts chiffrés avec cette clé et, par la même occasion, à supprimer l'alerte."
       ],
       "Checking contact ${ progress } of ${ max }...": [
-        "Vérification des contacts: ${ progress } de ${ max }..."
+        "Vérification des contacts: ${ progress } sur ${ max }..."
       ],
       "Click \"Request new code\" to have a new verification code sent to ${ strong }. If this email address is incorrect, click \"Edit\" to correct it.": [
         "Cliquez sur « Demander un nouveau code » pour qu'un nouveau code de vérification soit envoyé à ${ strong }. Si cette adresse électronique est incorrecte, cliquez sur « Modifier » pour la corriger."
@@ -2448,10 +2448,10 @@
         "Clé dupliquée mise à jour"
       ],
       "Each additional connection can be assigned to users in your organization.": [
-        "Chaque connexion supplémentaire peut être attribuée aux utilisateur·rice·s de votre organisation."
+        "Chaque connexion supplémentaire peut être attribuée aux utilisateurs de votre organisation."
       ],
       "Enter the verification code that was sent to ${ destinationText }.": [
-        "Saisissez le code de vérification qui a été envoyé à ${ destinationText }."
+        "Entrez le code de vérification qui a été envoyé à ${ destinationText }."
       ],
       "Existent and added participants will be notified.": [
         "Les participant·e·s existant·e·s et ajouté·e·s seront notifié·e·s."
@@ -2484,13 +2484,13 @@
         "Libérez de l'espace ou ajoutez plus d'espace de stockage."
       ],
       "Free up some space or contact your administrator.": [
-        "Libérez de l'espace ou contactez votre administrateur·rice."
+        "Libérez de l'espace ou contactez votre administrateur."
       ],
       "Frequency modifications will be lost.": [
         "Les modifications de fréquence seront perdues."
       ],
       "Full-featured VPN with speed up to 10 Gbps.": [
-        "RPV complet avec une vitesse jusqu’à 10 Gbit/s."
+        "RPV complet avec une vitesse maximale de 10 Gbit/s."
       ],
       "Group assignment applied": [
         "Affectation de groupe appliquée"
@@ -2508,7 +2508,7 @@
         "Si vous ne trouvez pas le courriel dans votre boîte de réception, veuillez vérifier votre dossier de pourriel."
       ],
       "Import ${ contactsFragment } and ${ contactsGroupsFragment }": [
-        "Importer $ { contactsFragment } et ${ contactsGroupsFragment }"
+        "Importer ${ contactsFragment } et ${ contactsGroupsFragment }"
       ],
       "Import ${ selectedCalendarsCount } of ${ totalCalendarsCount } calendar": [
         "Importer ${ selectedCalendarsCount } de ${ totalCalendarsCount } calendrier",
@@ -2572,7 +2572,7 @@
         "Mensuellement le ${ onDayString }"
       ],
       "Name your new folder and select the parent folder you want to put it in. If you do not select a parent folder, this new folder will be created as a top level folder.": [
-        "Nommez votre nouveau dossier et sélectionnez le dossier parent dans lequel vous voulez le mettre. Si vous ne sélectionnez pas de dossier parent, ce nouveau dossier sera créé en tant que dossier de premier niveau."
+        "Nommez votre nouveau dossier et sélectionnez le dossier parent dans lequel vous voulez le mettre. Si vous ne sélectionnez pas un dossier parent, ce nouveau dossier sera créé en tant que dossier de premier niveau."
       ],
       "New": [
         "Nouveau"
@@ -2614,7 +2614,7 @@
         "Les occurrences précédemment mises à jour par l'organisateur·rice seront conservées."
       ],
       "Only change these settings if you are using PGP with non-ProtonMail recipients.": [
-        "Ne changez ces paramètres que si vous utilisez PGP avec des destinataires qui ne sont pas sur ProtonMail."
+        "Ne modifiez ces paramètres que si vous utilisez PGP avec des destinataires qui n'utilisent pas ProtonMail."
       ],
       "Payment can take a few minutes to fully verify.": [
         "Le paiement peut prendre quelques minutes pour être pleinement vérifié."
@@ -2623,7 +2623,7 @@
         "Les paiements sont protégés par le chiffrement TLS et les lois suisses dédiées à la protection de la vie privée."
       ],
       "PGP/Inline is only compatible with Plain Text format. Please note that ProtonMail always signs encrypted messages.": [
-        "PGP/Inline est uniquement compatible avec le format texte brut. Veuillez noter que ProtonMail signe toujours les messages chiffrés."
+        "PGP/Inline est uniquement compatible avec le format Texte brut. Veuillez noter que ProtonMail signe toujours les messages chiffrés."
       ],
       "PGP/MIME automatically sends the message using the current composer mode. Please note that ProtonMail always signs encrypted messages": [
         "PGP/MIME envoie automatiquement le message en utilisant le mode actuel du composeur. Veuillez noter que ProtonMail signe toujours les messages chiffrés"
@@ -2690,7 +2690,7 @@
         "Économisez 20 % supplémentaires"
       ],
       "Screenshot(s) attached": [
-        "Capture(s) d'écran jointe(s)"
+        "Capture(s) d’écran jointe(s)"
       ],
       "Select the email format you want to be used by default when sending an email to this email address.": [
         "Sélectionnez le format de message que vous souhaitez utiliser par défaut lors de l'envoi d'un courriel à cette adresse électronique."
@@ -2705,16 +2705,16 @@
         "Session expirée."
       ],
       "Setting up PGP allows you to send end-to-end encrypted emails with a non-ProtonMail user that uses a PGP compatible service.": [
-        "La configuration de PGP vous permet d'envoyer des courriels chiffrés de bout en bout à un·e utilisateur·rice qui n'utilise pas ProtonMail et qui utilise un service compatible PGP."
+        "La configuration de PGP vous permet d'envoyer des courriels chiffrés de bout en bout à un utilisateur qui n'utilise pas ProtonMail et qui utilise un service compatible PGP."
       ],
       "Since you're a loyal user, your account has additional features enabled.": [
-        "Puisque vous êtes un utilisateur fidèle, votre compte dispose de fonctionnalités supplémentaires activées."
+        "Puisque vous nous avez été fidèle, votre compte dispose de fonctionnalités supplémentaires activées."
       ],
       "Some of your answers to occurrences previously updated by the organizer will be lost.": [
         "Certaines de vos réponses à des événements précédemment mis à jour par l'organisateur·rice seront perdues."
       ],
       "Starter VPN service with P2P support.": [
-        "Service de RPV pour débuter avec prise en charge du pair-à-pair."
+        "Service RPV pour débuter avec prise en charge du pair-à-pair."
       ],
       "Storage GB": [
         "Stockage (en Go)"
@@ -2726,13 +2726,13 @@
         "Passez à ${ professionalPlan } pour ajouter plus de connexions."
       ],
       "Switch to ${ professionalPlan } to add more users.": [
-        "Passez à ${ professionalPlan } pour ajouter plus d'utilisateur·rice·s."
+        "Passez à ${ professionalPlan } pour ajouter plus d'utilisateurs."
       ],
       "Thank you for supporting our mission.": [
         "Merci de soutenir notre mission."
       ],
       "The application needs to locally decrypt your contacts before they can be exported. At the end of the process, a VCF file will be generated and you will be able to download it.": [
-        "L'application a besoin de déchiffrer localement vos contacts avant de pouvoir les exporter. À la fin du processus, un fichier VCF sera généré et vous pourrez le télécharger."
+        "Nous devons déchiffrer vos contacts localement avant de pouvoir les exporter. À la fin du processus, un fichier VCF sera généré et vous pourrez le télécharger."
       ],
       "The following participants cannot be notified about your changes:": [
         "Les participant·e·s suivant·e·s ne peuvent pas être informé·e·s de vos modifications:"
@@ -2765,7 +2765,7 @@
         "Ce compte a été suspendu en raison d'une violation potentielle des règles d'utilisation."
       ],
       "This address is disabled. To be able to send to this address, the owner must first enable the address.": [
-        "Cette adresse est désactivée. Pour pouvoir envoyer des courriels à cette adresse, son propriétaire doit d’abord l'activer."
+        "Cette adresse est désactivée. Pour pouvoir envoyer à cette adresse, le propriétaire doit d'abord activer cette adresse."
       ],
       "This event has been updated by the organizer. Would you like to change your answer only for this occurrence in this series?": [
         "Cet événement a été mis à jour par l'organisateur·rice. Voulez-vous changer votre réponse uniquement pour cet événement dans la série?"
@@ -2780,16 +2780,16 @@
         "Cet événement a été mis à jour. L'organisateur·rice ne sera pas informé·e que vous refusez l'invitation, car vous ne pouvez pas envoyer de messages depuis l'adresse invitée. Voulez-vous tout de même supprimer cet événement?"
       ],
       "This link may be a homograph attack and cannot be opened by Internet Explorer and Edge browsers. If you are certain the link is legitimate, please use a different browser to open it.": [
-        "Ce lien pourrait être une attaque homographique et ne peut pas être ouvert avec les navigateurs Internet Explorer et Edge. Si vous êtes certain·e de la légitimité de ce lien, veuillez utiliser un autre navigateur pour l'ouvrir."
+        "Ce lien pourrait être une attaque homographique et ne peut pas être ouvert avec les navigateurs Internet Explorer et Edge. Si vous êtes certain de la légitimité de ce lien, veuillez utiliser un autre navigateur pour l'ouvrir."
       ],
       "This link may be a homograph attack. Please verify this is the link you wish to visit, or don't open it.": [
-        "Ce lien pourrait être une attaque homographique. Veuillez vous assurer qu'il s'agit bien du lien que vous souhaitez visiter ou ne l'ouvrez pas."
+        "Ce lien pourrait être une attaque homographique. Assurez vous qu'il s'agit bien du lien que vous souhaitez visiter, ou ne l'ouvrez pas."
       ],
       "This will enable PayPal to be used to pay for your Proton subscription. We will redirect you to PayPal in a new browser tab. If you use any pop-up blockers, please disable them to continue.": [
         "Ceci permettra à PayPal d'être utilisé pour payer votre abonnement Proton. Nous vous redirigerons vers PayPal dans un nouvel onglet du navigateur. Si vous utilisez des bloqueurs de fenêtres surgissantes, veuillez les désactiver pour continuer."
       ],
       "To fight spam and abuse, please verify you are human.": [
-        "Pour lutter contre les pourriels et les abus, veuillez prouver que vous êtes humain."
+        "Pour lutter contre les pourriels et les abus, veuillez vérifier que vous êtes humain."
       ],
       "To re-sign your contacts, we need to check every contact against the list of encryption keys available in your account. If no match is found, your contact will be re-signed with the primary encryption key.": [
         "Pour signer une nouvelle fois vos contacts, nous devons vérifier chaque contact à l'aide de la liste des clés de chiffrement disponible dans votre compte. Si aucune correspondance n'est trouvée, votre contact sera de nouveau signé avec la clé de chiffrement principale."
@@ -2798,7 +2798,7 @@
         "Pour récupérer vos données, vous devez réactiver la clé de chiffrement de contact utilisée au moment de la création des données. Pour ce faire, vous devez vous souvenir du mot de passe utilisé lors de la création de la clé."
       ],
       "To use Address Verification, you must trust one or more available public keys, including the one you want to use for sending. This prevents the encryption keys from being faked.": [
-        "Pour utiliser la vérification d'adresse, vous devez approuver une ou plusieurs clés publiques disponibles, y compris celle que vous souhaitez utiliser pour l'envoi. Ceci empêche la falsification des clés de chiffrement."
+        "Pour utiliser la vérification d'adresse, vous devez approuver une ou plusieurs clés publiques disponibles, y compris celles que vous souhaitez utiliser pour l'envoi. Cela empêche la falsification des clés de chiffrement."
       ],
       "Update recurring event": [
         "Mettre à jour l'événement récurrent"
@@ -2813,7 +2813,7 @@
         "La vérification ouvrira un nouvel onglet, veuillez désactiver tout bloqueur de fenêtres surgissantes."
       ],
       "Verification will open a new tab, please disable any popup blockers. You will not be charged. Any amount used to verify the card will be refunded immediately.": [
-        "La vérification s'effectuera dans un nouvel onglet, veuillez désactiver tous les bloqueurs de fenêtres surgissantes. Vous ne serez pas facturé. Tout montant utilisé pour vérifier la carte sera immédiatement remboursé."
+        "La vérification s'effectuera dans un nouvel onglet, veuillez désactiver tous les bloqueurs de fenêtres surgissantes. Vous ne serez pas facturé·e. Tout montant utilisé pour vérifier la carte sera immédiatement remboursé."
       ],
       "VPN + ${ mailAppName } bundle for families and small businesses.": [
         "Offre groupée RPV + ${ mailAppName } pour les familles et les petites entreprises."
@@ -2903,16 +2903,16 @@
         "Vous avez atteint ${ spaceDisplayed } % de votre capacité de stockage. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You reached 100% of your storage capacity. You cannot send or receive new emails. ${ freeUpMessage } ${ upgradeLink }": [
-        "Vous avez atteint 100 % de votre capacité de stockage. Vous ne pouvez pas envoyer ou recevoir de nouveaux courriels. ${ freeUpMessage } ${ upgradeLink }"
+        "Vous avez atteint 100 % de votre capacité de stockage. Vous ne pouvez pas envoyer ou recevoir de nouveaux courriels. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You will be soon redirected to your bank to verify your payment.": [
-        "Vous serez bientôt redirigé vers votre banque pour vérifier votre paiement."
+        "Vous serez bientôt redirigé·e vers votre banque pour vérifier votre paiement."
       ],
       "You will lose all unsaved changes.": [
         "Vous perdrez toutes les modifications non enregistrées."
       ],
       "You will soon be redirected to PayPal to verify your payment.": [
-        "Vous serez bientôt redirigé vers PayPal pour vérifier votre paiement."
+        "Vous serez bientôt redirigé·e vers PayPal pour vérifier votre paiement."
       ],
       "You will update all the events in this series. Added and removed participants will be notified.": [
         "Vous allez mettre à jour tous les événements de cette série. Les participant·e·s ajouté·e·s et supprimé·e·s seront notifié·e·s."
@@ -2936,7 +2936,7 @@
         "Votre compte possède au moins une facture impayée. Votre accès a été restreint. ${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
-        "Votre compte possède au moins une facture en retard. Votre accès sera bientôt restreint. ${ payInvoiceLink }"
+        "Votre compte a au moins une facture en retard. Votre accès sera bientôt restreint. ${ payInvoiceLink }"
       ],
       "Your account is being upgraded, this may take up to 30 seconds.": [
         "Votre compte est en cours de mise à jour, ceci peut prendre jusqu'à 30 secondes."
@@ -2966,7 +2966,7 @@
         "Votre numéro de téléphone ne sera utilisé que pour cette vérification unique."
       ],
       "Your Proton account is currently on hold. To continue using your account, please pay any overdue invoices.": [
-        "Votre compte Proton est actuellement suspendu. Pour continuer à utiliser votre compte, veuillez régler les factures impayées."
+        "Votre compte Proton est actuellement suspendu. Pour continuer à utiliser votre compte, veuillez payer les factures impayées."
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Le fuseau horaire de votre système semble avoir changé vers ${ timezone }. Voulez-vous mettre à jour votre préférence de fuseau horaire?"
@@ -3010,10 +3010,10 @@
         "Expirée"
       ],
       "Primary": [
-        "Principale"
+        "Principal"
       ],
       "Revoked": [
-        "Révoquée"
+        "Révoqué"
       ],
       "Trusted": [
         "Approuvée"
@@ -3033,13 +3033,13 @@
         "Ajouter un délai d'expiration"
       ],
       "Apply / open": [
-        "Appliquer/ouvrir"
+        "Appliquer / ouvrir"
       ],
       "Attach file": [
         "Joindre un fichier"
       ],
       "Cancel / close": [
-        "Annuler/fermer"
+        "Annuler / fermer"
       ],
       "Close draft": [
         "Fermer le brouillon"
@@ -3054,13 +3054,13 @@
         "Supprimer le brouillon"
       ],
       "Expand / contract composer": [
-        "Développer/réduire le composeur"
+        "Développer / réduire le composeur"
       ],
       "Forward": [
         "Transférer"
       ],
       "Go to All Mail": [
-        "Accéder à tous les messages"
+        "Aller à Tous les messages"
       ],
       "Go to Archive": [
         "Accéder aux archives"
@@ -3075,7 +3075,7 @@
         "Accéder aux messages envoyés"
       ],
       "Go to Spam": [
-        "Accéder aux pourriels"
+        "Aller aux Pourriels"
       ],
       "Go to Starred": [
         "Accéder aux favoris"
@@ -3102,28 +3102,28 @@
         "Marquer comme non lu"
       ],
       "Minimize / maximize composer": [
-        "Minimiser/maximiser le composeur"
+        "Minimiser / maximiser le composeur"
       ],
       "Move down": [
         "Déplacer vers le bas"
       ],
       "Move left / collapse": [
-        "Déplacer vers la gauche/réduire"
+        "Déplacer vers la gauche / réduire"
       ],
       "Move right / expand": [
-        "Déplacer vers la droite/agrandir"
+        "Déplacer vers la droite / agrandir"
       ],
       "Move to Archive": [
         "Déplacer vers les archives"
       ],
       "Move to Inbox": [
-        "Déplacer dans la boîte de réception"
+        "Déplacer vers Boîte de réception"
       ],
       "Move to Spam": [
-        "Déplacer vers les pourriels"
+        "Déplacer vers Pourriels"
       ],
       "Move to Trash": [
-        "Déplacer dans la corbeille"
+        "Déplacer vers Corbeille"
       ],
       "Move to...": [
         "Déplacer vers..."
@@ -3156,10 +3156,10 @@
         "Chercher"
       ],
       "Select / unselect": [
-        "Sélectionner/désélectionner"
+        "Sélectionner / désélectionner"
       ],
       "Select / unselect all": [
-        "Sélectionner/désélectionner tout"
+        "Tout sélectionner / désélectionner"
       ],
       "Send email": [
         "Envoyer le courriel"
@@ -3174,7 +3174,7 @@
         "Afficher les courriels non lus"
       ],
       "Star": [
-        "Ajouter aux favoris"
+        "Favori"
       ]
     },
     "Keyboard shortcut section name": {
@@ -3317,7 +3317,7 @@
         "Activer l'accès à la version bêta"
       ],
       "Encrypt emails": [
-        "Chiffrer les messages"
+        "Chiffrer les courriels"
       ],
       "Ends": [
         "Se termine"
@@ -3398,7 +3398,7 @@
         "Lieu"
       ],
       "Mailbox password": [
-        "Mot de passe de messagerie"
+        "Mot de passe de la messagerie"
       ],
       "Manage folders": [
         "Gérer les dossiers"
@@ -3447,7 +3447,7 @@
         "Schéma PGP"
       ],
       "Phone number": [
-        "Téléphone"
+        "Numéro de téléphone"
       ],
       "Post office box": [
         "Boîte postale"
@@ -3459,7 +3459,7 @@
         "Prorata"
       ],
       "Proton username": [
-        "Nom d'utilisateur•rice Proton"
+        "Nom d'utilisateur Proton"
       ],
       "Public keys": [
         "Clés publiques"
@@ -3495,10 +3495,10 @@
         "Signer les courriels"
       ],
       "Street address": [
-        "Rue"
+        "Adresse postale"
       ],
       "Submit": [
-        "Envoyer"
+        "Soumettre"
       ],
       "System information": [
         "Informations système"
@@ -3516,13 +3516,13 @@
         "Code d'authentification à deux facteurs"
       ],
       "Upload picture": [
-        "Télécharger une image"
+        "Importer une image"
       ],
       "URL": [
         "URL"
       ],
       "Username or ProtonMail address": [
-        "Nom d'utilisateur•rice ou adresse ProtonMail"
+        "Nom d'utilisateur ou adresse ProtonMail"
       ],
       "Verification code": [
         "Code de vérification"
@@ -3573,7 +3573,7 @@
     },
     "Label, make it short please": {
       "Attach screenshot(s)": [
-        "Joindre une ou plusieurs captures d'écran"
+        "Joindre une ou des capture(s) d'écran"
       ]
     },
     "Label/folder modal": {
@@ -3611,7 +3611,7 @@
         "Calendriers"
       ],
       "clearing your browser cache": [
-        "effacement du cache de votre navigateur"
+        "vider le cache de votre navigateur"
       ],
       "click here": [
         "cliquez ici"
@@ -3653,7 +3653,7 @@
         "Création de nouveaux calendriers"
       ],
       "Gathering your data": [
-        "Rassemblement de vos données"
+        "Collecte de vos données"
       ],
       "We're gathering your data from your provider": [
         "Nous récupérons vos données auprès de votre fournisseur"
@@ -3685,7 +3685,7 @@
         "Groupes de contact"
       ],
       "Custom email addresses": [
-        "Adresses électroniques personnalisées"
+        "Adresses courriel personnalisées"
       ],
       "Custom filters": [
         "Filtres personnalisés"
@@ -3706,7 +3706,7 @@
         "Messages par jour"
       ],
       "Multi-user support": [
-        "Prise en charge du multiutilisateur·rice"
+        "Prise en charge multiutilisateur·rice"
       ],
       "Priority": [
         "Priorité"
@@ -4105,7 +4105,7 @@
         "Utilisez le sélecteur d'application en haut à gauche pour accéder à d'autres services Proton, y compris VPN, Calendar et Drive."
       ],
       "Welcome to Proton": [
-        "Bienvenue dans Proton"
+        "Bienvenue sur Proton"
       ],
       "You can change this anytime in your settings.": [
         "Vous pouvez modifier cela à tout moment dans vos paramètres."
@@ -4226,7 +4226,7 @@
     },
     "PGP key warning": {
       "Email address not found among user ids defined in sending key (${ keyUserIds })": [
-        "Adresse électronique introuvable parmi les identifiants des utilisateur•rice•s définis dans la clé d'envoi (${ keyUserIds })"
+        "Adresse électronique non trouvée parmi les identifiants des utilisateurs définis dans la clé d'envoi (${ keyUserIds })"
       ]
     },
     "Placeholder": {
@@ -4261,7 +4261,7 @@
         "p. ex. Julie Tremblay"
       ],
       "E.g., ": [
-        "P. ex., "
+        "p. ex. "
       ],
       "Feedback": [
         "Votre avis"
@@ -4276,7 +4276,7 @@
         "URL de l'image"
       ],
       "Mailbox password": [
-        "Mot de passe de messagerie"
+        "Mot de passe de la messagerie"
       ],
       "Name": [
         "Nom"
@@ -4294,16 +4294,16 @@
         "Code postal"
       ],
       "Proton username": [
-        "Nom d'utilisateur•ice Proton"
+        "Nom d'utilisateur Proton"
       ],
       "Search for group name": [
-        "Rechercher par nom de groupe"
+        "Rechercher un nom de groupe"
       ],
       "Search for name or email": [
         "Rechercher par nom ou adresse courriel"
       ],
       "Start typing an email address": [
-        "Commencez à saisir une adresse courriel"
+        "Commencez à taper une adresse courriel"
       ],
       "ZIP": [
         "Code postal"
@@ -4327,7 +4327,7 @@
         "1 - 5000 utilisateur•rice•(s)*"
       ],
       "1 address": [
-        "1 adresse"
+        "1 addresse"
       ],
       "1 user": [
         "1 utilisateur•rice"
@@ -4345,13 +4345,13 @@
         "5 adresses"
       ],
       "5 addresses / user": [
-        "5 adresses/utilisateur·rice"
+        "5 adresses/utilisateur•rice"
       ],
       "5 GB storage *": [
         "5 Go de stockage*"
       ],
       "5 GB storage / user": [
-        "5 Go de stockage/utilisateur•rice"
+        "5 Go de stockage/utilisateur·rice"
       ],
       "50 addresses": [
         "50 adresses"
@@ -4384,10 +4384,10 @@
         "Vitesse maximale (jusqu’à 10 Gbit/s)"
       ],
       "Includes 6 user accounts": [
-        "6 comptes utilisateur·rice inclus"
+        "6 comptes utilisateur inclus"
       ],
       "Includes Proton Visionary": [
-        "Proton VISIONARY inclus"
+        "Proton Visionary inclus"
       ],
       "Medium speed": [
         "Vitesse moyenne"
@@ -4468,7 +4468,7 @@
         "Téléphone"
       ],
       "Work": [
-        "Bureau"
+        "Travail"
       ]
     },
     "Refresh on apply warning": {
@@ -4478,7 +4478,7 @@
     },
     "Select files": {
       "Upload": [
-        "Téléverser"
+        "Importer"
       ]
     },
     "Select search results": {
@@ -4556,7 +4556,7 @@
         "Réponse envoyée et événement supprimé"
       ],
       "Bug reported": [
-        "Erreur signalée"
+        "Bug signalé"
       ],
       "Calendar added. It might take a few minutes to sync.": [
         "Calendrier ajouté. La synchronisation peut prendre quelques minutes."
@@ -4666,7 +4666,7 @@
         "Vérification réussie"
       ],
       "You have successfully unsubscribed": [
-        "Vous vous êtes correctement désabonné·e"
+        "Vous vous êtes désabonné·e avec succès"
       ]
     },
     "Success notification when user send feedback": {
@@ -4690,10 +4690,10 @@
         "Adresse"
       ],
       "Created": [
-        "Créée le"
+        "Créé"
       ],
       "Expires": [
-        "Expire le"
+        "Expire"
       ],
       "Fingerprint": [
         "Empreinte"
@@ -4719,7 +4719,7 @@
         "Champ CSV"
       ],
       "Import": [
-        "Import"
+        "Importer"
       ],
       "Name": [
         "Nom"
@@ -4738,7 +4738,7 @@
     },
     "Time period": {
       "account creation date": [
-        "date de création du compte"
+        "date de la création du compte"
       ],
       "the last 12 months": [
         "les 12 derniers mois"
@@ -4874,7 +4874,7 @@
         "Poursuivre l'importation partielle?"
       ],
       "Coupon discount": [
-        "Bon de réduction"
+        "Coupon de rabais"
       ],
       "Create calendar": [
         "Créer le calendrier"
@@ -4966,7 +4966,7 @@
         "Saisissez votre mot de passe"
       ],
       "Enter your username or ProtonMail email address": [
-        "Saisissez votre nom d'utilisateur•rice ou votre adresse électronique ProtonMail"
+        "Saisissez votre nom d'utilisateur ou votre adresse électronique ProtonMail"
       ],
       "Error": [
         "Erreur"
@@ -4996,7 +4996,7 @@
         "Masquer les fuseaux horaires pour les heures de début et de fin de l'événement"
       ],
       "Human verification": [
-        "Vérification humaine"
+        "Vérification de l'existence de l'utilisateur"
       ],
       "Import as simple event?": [
         "Importer comme simple événement?",
@@ -5030,7 +5030,7 @@
         "Mise en page de la boîte aux lettres"
       ],
       "Merge contacts": [
-        "Fusionner des contacts"
+        "Fusionner les contacts"
       ],
       "Merging contacts": [
         "Fusion des contacts"
@@ -5051,7 +5051,7 @@
         "L'organisateur·rice ne peut pas être notifié·e"
       ],
       "Other information": [
-        "Autres informations"
+        "Autre information"
       ],
       "Other names": [
         "Autres noms"
@@ -5207,7 +5207,7 @@
         "Afficher les contacts"
       ],
       "Warning": [
-        "Avertissement"
+        "Attention"
       ],
       "What's new": [
         "Nouveautés"
@@ -5276,7 +5276,7 @@
         "Si vous avez acheté un code cadeau ou reçu un code de notre équipe d'assistance, vous pouvez le saisir ici."
       ],
       "Multi-user support is only applicable to plans with 2 or more users": [
-        "La prise en charge du multiutilisateur·rice ne s'applique qu'aux offres avec 2 utilisateur·rice·s ou plus"
+        "La prise en charge du multiutilisateur ne s'applique qu'aux offres avec 2 utilisateur·rice·s ou plus"
       ],
       "NetShield protects your device and speeds up your browsing by blocking ads, trackers, and malware.": [
         "NetShield protège votre appareil et accélère votre navigation en bloquant les publicités, les traqueurs et les logiciels malveillants."
@@ -5297,7 +5297,7 @@
         "L'importation commencera par les messages les plus récents."
       ],
       "Upload a public key to enable sending end-to-end encrypted emails to this email": [
-        "Téléversez une clé publique pour activer l'envoi de courriels chiffrés de bout en bout vers cette adresse électronique"
+        "Téléversez une clé publique pour activer l'envoi de messages électroniques chiffrés de bout en bout vers cette adresse courriel"
       ],
       "Use multiple addresses / aliases linked to your account, e.g. username2@protonmail.com": [
         "Utilisez plusieurs adresses/alias liés à votre compte, par exemple utilisateur2@protonmail.com"
@@ -5434,7 +5434,7 @@
     },
     "Warning": {
       "Are you sure you want to permanently delete ${ count } contact group?": [
-        "Voulez-vous vraiment supprimer définitivement ${ count } groupe de contacts ?",
+        "Voulez-vous vraiment supprimer définitivement ${ count } groupe de contacts?",
         "Voulez-vous vraiment supprimer définitivement ${ count } groupes de contacts?"
       ],
       "Are you sure you want to permanently delete ${ count } contact?": [
@@ -5442,7 +5442,7 @@
         "Êtes-vous sûr·e de vouloir supprimer définitivement ${ count } contacts?"
       ],
       "Are you sure you want to permanently delete this contact group?": [
-        "Êtes-vous sûr de vouloir supprimer définitivement ce groupe de contacts?"
+        "Êtes-vous sûr·e de vouloir supprimer définitivement ce groupe de contacts?"
       ],
       "Are you sure you want to permanently delete this contact?": [
         "Êtes-vous sûr·e de vouloir supprimer définitivement ce contact?"
@@ -5460,13 +5460,13 @@
         "Veuillez noter qu'en choisissant ce mode de paiement, vous ne pourrez avoir accès à votre nouvelle offre immédiatement. Nous mettrons à jour votre compte une fois le paiement effectué."
       ],
       "Proton will merge all folders with the same name. To avoid this, change the names before import.": [
-        "Proton fusionnera tous les dossiers avec le même nom. Pour éviter ceci, changez les noms avant l'importation."
+        "Proton fusionnera tous les dossiers avec le même nom. Pour éviter cela, changez les noms avant l'importation."
       ],
       "Reports are not end-to-end encrypted, please do not send any sensitive information.": [
         "Les rapports d’erreur ne sont pas chiffrés de bout en bout, merci de ne pas envoyer d'informations sensibles."
       ],
       "Some of the contacts to be merged display errors. Please review them individually": [
-        "Certains contacts à fusionner affichent des erreurs. Veuillez les consulter individuellement"
+        "Certains contacts à fusionner affichent des erreurs. Veuillez les examiner individuellement"
       ],
       "The contact data is corrupted and cannot be displayed.": [
         "Les données du contact sont corrompues et ne peuvent pas être affichées."
@@ -5490,7 +5490,7 @@
         "Cette fonctionnalité nécessite un compte Proton payant"
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
-        "Malheureusement, nous ne sommes pas en ligne pour le moment. Veuillez remplir le formulaire ci-dessous pour décrire votre problème, nous l'examinerons et vous contacterons lorsque nous serons de nouveau en ligne."
+        "Malheureusement, nous ne sommes pas en ligne pour le moment. Veuillez remplir le formulaire ci-dessous pour décrire votre problème, et nous l'examinerons et vous contacterons lorsque nous serons de nouveau en ligne."
       ],
       "You will lose any customization you made so far.": [
         "Vous perdrez toutes les personnalisations que vous avez faites jusqu'à présent."
@@ -5522,7 +5522,7 @@
         "Toutes les ${ interval } semaines, tous les jours, ${ untilString }"
       ],
       "Every ${ interval } week on Friday": [
-        "Chaque ${ interval } semaine, le vendredi",
+        "Chaque semaine, le vendredi ${ interval }",
         "Toutes les ${ interval } semaines, le vendredi"
       ],
       "Every ${ interval } week on Friday, ${ timesString }": [
@@ -5534,7 +5534,7 @@
         "Toutes les ${ interval } semaines, le vendredi, ${ untilString }"
       ],
       "Every ${ interval } week on Monday": [
-        "Chaque ${ interval } semaine, le lundi",
+        "Chaque semaine, le lundi ${ interval }",
         "Toutes les ${ interval } semaines, le lundi"
       ],
       "Every ${ interval } week on Monday, ${ timesString }": [
@@ -5546,7 +5546,7 @@
         "Toutes les ${ interval } semaines, le lundi, ${ untilString }"
       ],
       "Every ${ interval } week on Saturday": [
-        "Chaque ${ interval } semaine, le samedi",
+        "Chaque semaine, le samedi ${ interval }",
         "Toutes les ${ interval } semaines, le samedi"
       ],
       "Every ${ interval } week on Saturday, ${ timesString }": [
@@ -5570,7 +5570,7 @@
         "Toutes les ${ interval } semaines, le dimanche, ${ untilString }"
       ],
       "Every ${ interval } week on Thursday": [
-        "Chaque ${ interval } semaine, le jeudi",
+        "Chaque semaine, le jeudi ${ interval }",
         "Toutes les ${ interval } semaines, le jeudi"
       ],
       "Every ${ interval } week on Thursday, ${ timesString }": [
@@ -5582,7 +5582,7 @@
         "Toutes les ${ interval } semaines, le jeudi, ${ untilString }"
       ],
       "Every ${ interval } week on Tuesday": [
-        "Chaque ${ interval } semaine, le mardi",
+        "Chaque semaine, le mardi ${ interval }",
         "Toutes les ${ interval } semaines, le mardi"
       ],
       "Every ${ interval } week on Tuesday, ${ timesString }": [
@@ -5594,7 +5594,7 @@
         "Toutes les ${ interval } semaines, le mardi, ${ untilString }"
       ],
       "Every ${ interval } week on Wednesday": [
-        "Chaque ${ interval } semaine, le mercredi",
+        "Chaque semaine, le mercredi ${ interval }",
         "Toutes les ${ interval } semaines, le mercredi"
       ],
       "Every ${ interval } week on Wednesday, ${ timesString }": [
@@ -5689,25 +5689,25 @@
     },
     "Weekly recurring event, repeats on (multiple days), frequency": {
       "Friday": [
-        "vendredi"
+        "Vendredi"
       ],
       "Monday": [
-        "lundi"
+        "Lundi"
       ],
       "Saturday": [
-        "samedi"
+        "Samedi"
       ],
       "Sunday": [
-        "dimanche"
+        "Dimanche"
       ],
       "Thursday": [
-        "jeudi"
+        "Jeudi"
       ],
       "Tuesday": [
-        "mardi"
+        "Mardi"
       ],
       "Wednesday": [
-        "mercredi"
+        "Mercredi"
       ]
     },
     "Yearly recurring event, frequency": {

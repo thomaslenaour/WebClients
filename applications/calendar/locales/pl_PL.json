@@ -450,7 +450,7 @@
         "Pomiń"
       ],
       "Start import": [
-        ""
+        "Rozpocznij importowanie"
       ],
       "Start setup": [
         "Rozpocznij konfigurację"
@@ -547,10 +547,10 @@
         "Spróbuj użyć innego zapytania."
       ],
       "You don't have any contacts.": [
-        "Nie posiadasz żadnych kontaktów."
+        "Nie masz żadnych kontaktów."
       ],
       "You don't have any groups.": [
-        "Nie posiadasz żadnych grup."
+        "Nie masz żadnych grup."
       ]
     },
     "Addon": {
@@ -764,7 +764,7 @@
         ""
       ],
       "Save ${ percentage }%": [
-        "${ percentage } %"
+        "${ percentage }%"
       ],
       "Special offer Terms and Conditions": [
         ""
@@ -1212,10 +1212,10 @@
         "Trwa scalanie kontaktów... Proces może potrwać kilka minut. Kiedy się zakończy, możesz zamknąć okno."
       ],
       "The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_CONTACTS_STRING } contact. If your file is bigger, please split it into smaller files.": [
-        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może zawierać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontakt. Podziel swój plik na mniejsze, jeśli jest zbyt duży.",
-        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może zawierać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontakty. Podziel swój plik na mniejsze, jeśli jest zbyt duży.",
-        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może zawierać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontaktów. Podziel swój plik na mniejsze, jeśli jest zbyt duży.",
-        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może zawierać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontaktów. Podziel swój plik na mniejsze, jeśli jest zbyt duży."
+        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może posiadać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontakt. Podziel swój plik na mniejsze, jeśli jest zbyt duży.",
+        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może posiadać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontakty. Podziel swój plik na mniejsze, jeśli jest zbyt duży.",
+        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może posiadać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontaktów. Podziel swój plik na mniejsze, jeśli jest zbyt duży.",
+        "Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może posiadać więcej niż ${ MAX_IMPORT_CONTACTS_STRING } kontaktów. Podziel swój plik na mniejsze, jeśli jest zbyt duży."
       ],
       "Use Drag and Drop to rank merging priority between contacts. Uncheck the contacts you do not want to merge.": [
         "Przeciągnij i upuść, aby ustalić priorytet scalania kontaktów. Odznacz kontakty, których nie chcesz scalić."
@@ -2501,7 +2501,7 @@
         "Połączenia"
       ],
       "Create ${ calendarsToBeCreated } new calendar": [
-        "Utwórz nowy kalendarz",
+        "Utwórz ${ calendarsToBeCreated } nowy kalendarz",
         "Utwórz ${ calendarsToBeCreated } nowe kalendarze",
         "Utwórz ${ calendarsToBeCreated } nowych kalendarzy",
         "Utwórz ${ calendarsToBeCreated } nowych kalendarzy"
@@ -2558,7 +2558,7 @@
         "Zduplikowany klucz został zaktualizowany"
       ],
       "Each additional connection can be assigned to users in your organization.": [
-        "Każde dodatkowe połączenie może zostać przypisane do użytkowników organizacji."
+        "Każde dodatkowe połącznie może zostać przypisane do użytkowników organizacji."
       ],
       "Enter the verification code that was sent to ${ destinationText }.": [
         "Wpisz kod weryfikacyjny wysłany do ${ destinationText }."
@@ -2906,7 +2906,7 @@
         "Weryfikacja antyspamowa i nadużyć. Udowodnij, że jesteś człowiekiem."
       ],
       "To re-sign your contacts, we need to check every contact against the list of encryption keys available in your account. If no match is found, your contact will be re-signed with the primary encryption key.": [
-        "Aby podpisać ponownie kontakty, musimy porównać każdy kontakt z listą dostępnych kluczy szyfrowania na koncie. Jeśli dopasowanie zostanie znalezione, kontakt zostanie podpisany ponownie za pomocą głównego klucza szyfrowania."
+        "Aby podpisać ponownie kontakty, musimy porównać każdy kontakt z listą dostępnych kluczy szyfrowania na koncie. Jeśli dopasowanie nie zostanie znalezione, kontakt zostanie podpisany ponownie za pomocą głównego klucza szyfrowania."
       ],
       "To recover your data, you need to re-activate the contact encryption key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
         "Aby odzyskać dane, musisz reaktywować klucz szyfrujący kontakty użyty podczas ich tworzenia. Wymaga to znajomości hasła użytego podczas generowania klucza."
@@ -3080,7 +3080,7 @@
         "Numer telefonu zostanie użyty tylko do jednorazowej weryfikacji."
       ],
       "Your Proton account is currently on hold. To continue using your account, please pay any overdue invoices.": [
-        "Twoje konto jest obecnie zawieszone. Ureguluj zobowiązania."
+        "Twoje konto Proton jest obecnie zawieszone. Ureguluj zobowiązania."
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Twoja strefa czasowa w systemie zmieniła się na ${ timezone }. Czy chcesz zaktualizować ustawienia strefy czasowej?"
@@ -5114,7 +5114,7 @@
         "Usuń ${ count } grupy kontaktów"
       ],
       "Delete ${ Name }": [
-        "Usuń ${ Name }"
+        "Usuń kontakt ${ Name }"
       ],
       "Delete event": [
         "Usuń wydarzenie"
@@ -5285,7 +5285,7 @@
         "Podpisz ponownie wszystkie kontakty"
       ],
       "Re-signing contacts": [
-        "Podpisywanie ponowne kontaktów"
+        "Ponowne podpisywanie kontaktów"
       ],
       "Reactivate calendar keys": [
         "Reaktywacja kluczy kalendarza"
@@ -5504,7 +5504,7 @@
         "Użyj osobistego adresu nazwaużytkownika@pm.me do wysyłania wiadomości"
       ],
       "You do not have any contacts to export": [
-        "Nie posiadasz żadnych kontaktów do wyeksportowania"
+        "Nie masz żadnych kontaktów do wyeksportowania"
       ]
     },
     "Validation": {
@@ -5708,22 +5708,22 @@
     },
     "Weekly recurring event, frequency": {
       "Every ${ interval } week on ${ multipleDaysString }": [
-        "Co tydzień w: ${ multipleDaysString }",
-        "Co ${ interval } tygodnie w: ${ multipleDaysString }",
-        "Co ${ interval } tygodni w: ${ multipleDaysString }",
-        "Co ${ interval } tygodnia w: ${ multipleDaysString }"
+        "Co tydzień w ${ multipleDaysString }",
+        "Co ${ interval } tygodnie w ${ multipleDaysString }",
+        "Co ${ interval } tygodni w ${ multipleDaysString }",
+        "Co ${ interval } tygodnia w ${ multipleDaysString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ timesString }": [
-        "Co tydzień w: ${ multipleDaysString }, ${ timesString }",
-        "Co ${ interval } tygodnie w: ${ multipleDaysString }, ${ timesString }",
-        "Co ${ interval } tygodni w: ${ multipleDaysString }, ${ timesString }",
-        "Co ${ interval } tygodnia w: ${ multipleDaysString }, ${ timesString }"
+        "Co tydzień w ${ multipleDaysString }, ${ timesString }",
+        "Co ${ interval } tygodnie w ${ multipleDaysString }, ${ timesString }",
+        "Co ${ interval } tygodni w ${ multipleDaysString }, ${ timesString }",
+        "Co ${ interval } tygodnia w ${ multipleDaysString }, ${ timesString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ untilString }": [
-        "Co tydzień w: ${ multipleDaysString }, ${ untilString }",
-        "Co ${ interval } tygodnie w: ${ multipleDaysString }, ${ untilString }",
-        "Co ${ interval } tygodni w: ${ multipleDaysString }, ${ untilString }",
-        "Co ${ interval } tygodnia w: ${ multipleDaysString }, ${ untilString }"
+        "Co tydzień w ${ multipleDaysString }, ${ untilString }",
+        "Co ${ interval } tygodnie w ${ multipleDaysString }, ${ untilString }",
+        "Co ${ interval } tygodni w ${ multipleDaysString }, ${ untilString }",
+        "Co ${ interval } tygodnia w ${ multipleDaysString }, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
         "Codziennie",
@@ -5870,13 +5870,13 @@
         "Co ${ interval } tygodnia w środę, ${ untilString }"
       ],
       "Weekly on ${ multipleDaysString }": [
-        "Co tydzień w: ${ multipleDaysString }"
+        "Co tydzień w ${ multipleDaysString }"
       ],
       "Weekly on ${ multipleDaysString }, ${ timesString }": [
-        "Co tydzień w: ${ multipleDaysString }, ${ timesString }"
+        "Co tydzień w ${ multipleDaysString }, ${ timesString }"
       ],
       "Weekly on ${ multipleDaysString }, ${ untilString }": [
-        "Co tydzień w: ${ multipleDaysString }, ${ untilString }"
+        "Co tydzień w ${ multipleDaysString }, ${ untilString }"
       ],
       "Weekly on all days": [
         "Codziennie"
@@ -5953,25 +5953,25 @@
     },
     "Weekly recurring event, repeats on (multiple days), frequency": {
       "Friday": [
-        "piątek"
+        "Piątek"
       ],
       "Monday": [
-        "poniedziałek"
+        "Poniedziałek"
       ],
       "Saturday": [
-        "sobota"
+        "Sobota"
       ],
       "Sunday": [
-        "niedziela"
+        "Niedziela"
       ],
       "Thursday": [
-        "czwartek"
+        "Czwartek"
       ],
       "Tuesday": [
-        "wtorek"
+        "Wtorek"
       ],
       "Wednesday": [
-        "środa"
+        "Środa"
       ]
     },
     "Yearly recurring event, frequency": {

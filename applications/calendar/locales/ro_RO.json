@@ -45,7 +45,7 @@
         "Adăugare număr de telefon"
       ],
       "Add screenshot(s)": [
-        "Adăugare capturi de ecran"
+        "Adăugare captură"
       ],
       "Add to group": [
         "Adăugare la grup"
@@ -105,7 +105,7 @@
         "Închidere norificare"
       ],
       "Compare all features": [
-        "Comparare caracteristici"
+        "Comparare funcții"
       ],
       "Compare plans": [
         "Comparare planuri"
@@ -159,8 +159,8 @@
       ],
       "Delete ${ selectedCount } contact group": [
         "Ștergere grup de contacte",
-        "Ștergere ${ selectedCount } grupuri de contacte",
-        "Ștergere ${ selectedCount } de grupuri de contacte"
+        "Ștergere ${ selectedCount } contacte",
+        "Ștergere ${ selectedCount } de contacte"
       ],
       "Delete contact": [
         "Ștergere contact"
@@ -187,7 +187,7 @@
         "Editare"
       ],
       "Edit email address": [
-        "Editare adresă de e-mail"
+        "Editare adresa de e-mail"
       ],
       "Edit label": [
         "Editare etichetă"
@@ -256,7 +256,7 @@
         "Mărire"
       ],
       "Keyboard shortcuts": [
-        "Combinații de taste"
+        "Combinații de taste listă mesaje"
       ],
       "Load image": [
         "Încărcare imagine"
@@ -370,7 +370,7 @@
         "Eliminare"
       ],
       "Remove bonuses": [
-        "Eliminare bonusuri"
+        "Anulare bonusuri"
       ],
       "Remove gift code": [
         "Eliminare cod cadou"
@@ -448,7 +448,7 @@
         "Omitere"
       ],
       "Start import": [
-        ""
+        "Pornire importare"
       ],
       "Start setup": [
         "Pornire configurare"
@@ -457,7 +457,7 @@
         "Nu închide"
       ],
       "Submit": [
-        "Trimitere"
+        "Trimite"
       ],
       "Switch account": [
         "Comutare cont"
@@ -514,7 +514,7 @@
         "Folosire setarea „${ label }”"
       ],
       "Verify": [
-        "Verificare"
+        "Verifică"
       ],
       "View": [
         "Afișare"
@@ -554,13 +554,13 @@
     "Addon": {
       "+ ${ addresses } email address": [
         "+ o adresă de e-mail",
-        "+ ${ addresses } adrese de e-mail",
-        "+ ${ addresses } de adrese de e-mail"
+        "+ ${ addresses } adrese e-mail",
+        "+ ${ addresses } adrese de e-mail"
       ],
       "+ ${ domains } custom domain": [
         "+ un domeniu personal",
-        "+ ${ domains } domenii personale",
-        "+ ${ domains } de domenii personale"
+        "+ ${ domains } domenii personalizate",
+        "+ ${ domains } de domenii personalizate"
       ],
       "+ ${ members } user": [
         "+ un utilizator",
@@ -665,10 +665,10 @@
         "Fișier ICS gol."
       ],
       "Invalid event": [
-        "Eveniment nevalid."
+        "Eveniment nevalid"
       ],
       "Invalid ICS file": [
-        "Fisier ICS nevalid"
+        "Fisier ICS nevalid."
       ],
       "Invalid method": [
         "Metodă nevalidă"
@@ -677,7 +677,7 @@
         "Componentă de calendar neacceptată."
       ],
       "Unsupported event": [
-        "Eveniment nesuportat."
+        "Eveniment nesuportat"
       ]
     },
     "Attendee role": {
@@ -745,7 +745,7 @@
         "Obțineți oferta"
       ],
       "Get the deal now": [
-        "Obțineți oferta"
+        "Obțineți oferta acum"
       ]
     },
     "blackfriday: VPNspecialoffer Badge popup": {
@@ -1012,7 +1012,7 @@
     },
     "Confirm modal title": {
       "Quit import customization?": [
-        "Părăsiți personalizarea importării?"
+        "Părăsiți modificarea importării?"
       ]
     },
     "Contact field label": {
@@ -1023,7 +1023,7 @@
         "Aniversare"
       ],
       "Birthday": [
-        "Data nașterii"
+        "Data naşterii"
       ],
       "Email": [
         "E-mail"
@@ -1038,7 +1038,7 @@
         "Limba"
       ],
       "Logo": [
-        "Sigla"
+        "Siglă"
       ],
       "Member": [
         "Membru"
@@ -1065,10 +1065,10 @@
         "Fus orar"
       ],
       "Title": [
-        "Adresare"
+        "Titlu"
       ],
       "URL": [
-        "URL"
+        "Adresa URL"
       ]
     },
     "Contact type label": {
@@ -1082,7 +1082,7 @@
         "Mobil"
       ],
       "Other": [
-        "Altul"
+        "Altele"
       ],
       "Pager": [
         "Pager"
@@ -1196,10 +1196,10 @@
         "Se pare că lista de contacte pe care o importați conține unele grupuri. Examinați modul în care aceste grupuri ar trebui importate."
       ],
       "Merging contacts... This may take a few minutes. When the process is completed, you can close this modal.": [
-        "Se îmbină contactele... Ar putea dura câteva minute. După finalizarea operației, veți putea închide această fereastră."
+        "Îmbinare contacte... Ar putea dura câteva minute. După finalizarea operației, veți putea închide această fereastră."
       ],
       "The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_CONTACTS_STRING } contact. If your file is bigger, please split it into smaller files.": [
-        "Fișierul ar trebui să aibă dimensiunea maximă de ${ MAX_IMPORT_FILE_SIZE_STRING } și să aibă un contact. Dacă fișierul este mai mare, împărțiți-l în fișiere mai mici.",
+        "Fișierul ar trebui să aibă dimensiunea maximă de ${ MAX_IMPORT_FILE_SIZE_STRING } și să un contact. Dacă fișierul este mai mare, împărțiți-l în fișiere mai mici.",
         "Fișierul ar trebui să aibă dimensiunea maximă de ${ MAX_IMPORT_FILE_SIZE_STRING } și să aibă până la ${ MAX_IMPORT_CONTACTS_STRING } contacte. Dacă fișierul este mai mare, împărțiți-l în fișiere mai mici.",
         "Fișierul ar trebui să aibă dimensiunea maximă de ${ MAX_IMPORT_FILE_SIZE_STRING } și să aibă până la ${ MAX_IMPORT_CONTACTS_STRING } de contacte. Dacă fișierul este mai mare, împărțiți-l în fișiere mai mici."
       ],
@@ -1243,7 +1243,7 @@
     },
     "Drive feature": {
       "Access via Web": [
-        "Accesare prin Web"
+        "Acces prin Web"
       ],
       "Share files via link": [
         "Partajare fișiere prin legături"
@@ -1366,19 +1366,19 @@
         "Unele grupuri au adrese de e-mail nevalide: ${ list }"
       ],
       "A group with this name already exists": [
-        "Un grup cu acest nume există deja."
+        "Un grup cu acest nume există deja"
       ],
       "A maximum of 10 notifications is allowed": [
         "Sunt permise maxim 10 notificări."
       ],
       "Address primary private key not found": [
-        "Nu s-a găsit adresa cheii private primare."
+        "Nu s-a găsit adresa cheii private primare"
       ],
       "Amount above the maximum.": [
         "Sumă mai mare decât maximul acceptat."
       ],
       "Amount below minimum.": [
-        "Sumă mai mică decât minimul acceptat."
+        "Sumă sub cea minimă acceptată."
       ],
       "Answer failed to be sent": [
         "Răspunsul nu a putut fi trimis."
@@ -1393,7 +1393,7 @@
         "Limita de calendare a fost atinsă."
       ],
       "Calendar primary private key is not decrypted": [
-        "Cheia privată primară a calendarului nu este decriptată."
+        "Cheia privată primară a calendarului nu este decriptată"
       ],
       "Can't create new calendars for all imported calendars due to the personal calendar limit.": [
         "Nu se pot crea calendare noi pentru toate calendarele importate din cauza limitei de calendare personale."
@@ -1472,10 +1472,10 @@
         "Eșuare încărcare imagine"
       ],
       "Incorrect login credentials. Please try again": [
-        "Date de conectare incorecte. Reîncercați."
+        "Date de autentificare incorecte. Mai reîncercați."
       ],
       "Incorrect mailbox password. Please try again": [
-        "Parolă mesaje incorectă. Reîncercați."
+        "Parolă căsuță mesaje incorectă. Mai reîncercaţi."
       ],
       "Interval cannot be empty": [
         "Intervalul nu poate fi gol."
@@ -1499,7 +1499,7 @@
         "Legătură nevalidă la eveniment."
       ],
       "Invalid name": [
-        "Nume nevalid."
+        "Nume nevalid"
       ],
       "Invalid postal code": [
         "Cod poștal incorect."
@@ -1528,7 +1528,7 @@
         "Îmbinați cel puțin ${ calendarToFixCount } de calendare cu calendarele Proton existente"
       ],
       "Missing signature": [
-        "Semnătură lipsă."
+        "Semnătură lipsă"
       ],
       "Name on card required": [
         "Numele de pe card este obligatoriu."
@@ -1540,19 +1540,19 @@
         "Nu sunt date de importat."
       ],
       "No key retrieved for internal user is valid for sending": [
-        "Nicio cheie preluată pentru utilizatorul intern nu este valabilă pentru trimitere."
+        "Nicio cheie preluată pentru utilizatorul intern nu este valabilă pentru trimitere"
       ],
       "No keys retrieved for internal user": [
         "Nicio cheie preluată pentru utilizatorul intern"
       ],
       "No valid address found": [
-        "Nu s-a găsit o adresă de e-mail validă"
+        "Nu s-a găsit o adresă de e-mail validă."
       ],
       "No valid keys retrieved for internal user": [
         "Nicio cheie validă preluată pentru utilizatorul intern"
       ],
       "No WKD key retrieved for user is valid for sending": [
-        "Nicio cheie WKD preluată pentru utilizator nu este validă pentru trimitere."
+        "Nicio cheie WKD recuperată pentru utilizator nu este validă pentru trimitere"
       ],
       "Not a valid number": [
         "Nu este un număr valid"
@@ -1562,8 +1562,8 @@
       ],
       "One of the contacts has no email address: ${ noEmailsContactNamesList }": [
         "Unul dintre contacte nu are adresă de e-mail: ${ noEmailsContactNamesList }",
-        "Câteva contacte nu au adresă de e-mail: ${ noEmailsContactNamesList } ",
-        "Câteva contacte nu au adresă de e-mail: ${ noEmailsContactNamesList } "
+        "Câteva contacte nu au adresă de e-mail: ${ noEmailsContactNamesList }",
+        "Câteva contacte nu au adresă de e-mail: ${ noEmailsContactNamesList }"
       ],
       "One of the groups has no contacts: ${ noContactGroupList }": [
         "Unul dintre grupuri nu are contacte: ${ noContactGroupList }",
@@ -1621,7 +1621,7 @@
         "Eșuare verificare semnătură"
       ],
       "Some contacts could not be deleted": [
-        "Unele contacte nu s-au putut șterge"
+        "Unele contacte nu s-au putut șterge."
       ],
       "Some groups could not be deleted": [
         "Unele grupuri nu s-au putut șterge."
@@ -1660,7 +1660,7 @@
         "Plata minimă acceptată este de ${ _price2 }."
       ],
       "The sending key is not valid": [
-        "Cheia de trimitere nu este validă."
+        "Cheia de trimitere nu este validă"
       ],
       "There are too many folders in your external account. Please customize the import to delete some folders.": [
         "Aveți prea multe foldere în contul extern. Modificați opțiunile de importare pentru a șterge unele foldere."
@@ -1672,7 +1672,7 @@
         "Acest câmp este obligatoriu"
       ],
       "This field requires a minimum of ${ minimumLength } characters.": [
-        "Acest câmp necesită un minim de ${ minimumLength } caractere."
+        "Acest câmp necesită un minimum de ${ minimumLength } caractere."
       ],
       "This folder name is not available. Please choose a different name": [
         "Acest nume de folder nu este disponibil. Alegeți un alt nume."
@@ -1684,22 +1684,22 @@
         "Acest mesaj poate conține unele legături care nu pot fi deschise corect de navigatorul actual."
       ],
       "Trusted keys are not valid for sending": [
-        "Cheile de încredere nu sunt valide pentru trimitere."
+        "Cheile de încredere nu sunt valide pentru trimitere"
       ],
       "Unknown error": [
-        "Eroare necunoscută."
+        "Eroare necunoscută"
       ],
       "Unknown payment token status": [
         "Stare necunoscută cod plată generat."
       ],
       "You can't send a mail to more than 100 recipients": [
-        "Nu puteți trimite un e-mail la mai mult de 100 de destinatari."
+        "Nu puteți trimite un e-mail la mai mult de 100 de destinatari"
       ],
       "You can't send vCards of more than 10 contacts": [
         "Nu puteți trimite cărți de vizită („vCard”) la mai mult de 10 persoane de contact."
       ],
       "You must set a name": [
-        "Trebuie specificat un nume."
+        "Trebuie specificat un nume"
       ],
       "Your import will not be processed.": [
         "Importarea nu va fi procesată."
@@ -1776,7 +1776,7 @@
         "Calendar"
       ],
       "Calendar timezone not supported": [
-        "Fus orar calendar neacceptat."
+        "Fus orar calendar neacceptat"
       ],
       "Component with wrong format": [
         "Componentă cu format greșit"
@@ -1785,49 +1785,49 @@
         "Fus orar personal"
       ],
       "Edited event not supported": [
-        "Evenimentul editat nu este suportat."
+        "Evenimentul editat nu este suportat"
       ],
       "Element": [
         "Element"
       ],
       "Encryption failed": [
-        "Criptare eșuată."
+        "Criptare eșuată"
       ],
       "End time out of bounds": [
-        "Timpul final în afara limitelor."
+        "Timp final în afara limitelor"
       ],
       "Event": [
         "Eveniment"
       ],
       "Event validation failed": [
-        "Validare eveniment eșuată."
+        "Validare eveniment eșuată"
       ],
       "Floating times not supported": [
-        "Orele cu virgulă nu sunt suportate."
+        "Orele flotante nu sunt suportate"
       ],
       "Free-busy time information": [
         "Informații timp liber/ocupat"
       ],
       "Invalid event": [
-        "Eveniment nevalid."
+        "Eveniment nevalid"
       ],
       "Journal entry": [
         "Intrare în jurnal"
       ],
       "Malformed all-day event": [
-        "Eveniment întreaga zi eronat."
+        "Eveniment întreaga zi eronat"
       ],
       "Malformed end time": [
-        "Timp final malformat."
+        "Timp final malformat"
       ],
       "Malformed recurring event": [
-        "Eveniment repetitiv malformat."
+        "Eveniment repetitiv malformat"
       ],
       "Malformed start time": [
-        "Timp de pornire malformat."
+        "Timp de pornire malformat"
       ],
       "Missing start time": [
-        "Lipsește ora de pornire."
+        "Lipsește ora de pornire"
       ],
       "No UID, title or start time": [
         "Lipseşte UID, titlu sau ora de începere."
@@ -1836,10 +1836,10 @@
         "Non-Gregorian"
       ],
       "Notification out of bounds": [
-        "Notificare în afara limitelor."
+        "Notificare în afara limitelor"
       ],
       "Original recurring event could not be found": [
-        "Evenimentul recurent original nu a putut fi găsit."
+        "Evenimentul recurent original nu a putut fi găsit"
       ],
       "Recurring event has no occurrences": [
         "Evenimentul recurent nu are nicio apariție."
@@ -1848,13 +1848,13 @@
         "Regula recurentă nesuportată"
       ],
       "Start time out of bounds": [
-        "Timpul de start în afara limitelor."
+        "Timp de start în afara limitelor"
       ],
       "Timezone": [
         "Fus orar"
       ],
       "Timezone not supported": [
-        "Fus orar nesuportat."
+        "Fus orar nesuportat"
       ],
       "To-do entry": [
         "Intrare de făcut"
@@ -1863,12 +1863,12 @@
         "Necunoscut"
       ],
       "Unsupported event": [
-        "Eveniment nesuportat."
+        "Eveniment nesuportat"
       ]
     },
     "Error message": {
       "Brace yourself till we get the error fixed.": [
-        "Așteptați până când vom rezolva eroarea."
+        "Trebuie să așteptați până când vom rezolva eroarea."
       ],
       "Error: ${ errorMessage }": [
         "Eroare: ${ errorMessage }"
@@ -1899,7 +1899,7 @@
     },
     "Error notification in the bug report modal when the user upload file": {
       "No image selected": [
-        "Nicio imagine selectată"
+        "Imagine neselectată"
       ]
     },
     "Error notification when score is missing in user feedback form modal": {
@@ -1936,7 +1936,7 @@
     },
     "Event invitation error": {
       "Attached ICS file could not be decrypted": [
-        "Fișierul ICS atașat nu a putut fi decriptat."
+        "Fișierul ICS atașat nu a putut fi decriptat"
       ],
       "Attached ICS file could not be read": [
         "Fișierul ICS atașat nu a putut fi citit."
@@ -1951,19 +1951,19 @@
         "Eroare neașteptată"
       ],
       "Unsupported invitation": [
-        "Invitație nesuportată."
+        "Invitație nesuportată"
       ],
       "Unsupported response": [
-        "Răspuns nesuportat."
+        "Răspuns nesuportat"
       ],
       "We could not cancel the event in your calendar": [
-        "Nu s-a putut anula evenimentul din calendar."
+        "Nu s-a putut anula evenimentul din calendar"
       ],
       "We could not retrieve the event from your calendar": [
-        "Nu s-a putut recupera evenimentul din calendar."
+        "Nu s-a putut recupera evenimentul din calendar"
       ],
       "We could not update the event in your calendar": [
-        "Nu s-a putut actualiza evenimentul din calendar."
+        "Nu s-a putut actualiza evenimentul din calendar"
       ],
       "Your answer was sent, but the event could not be added to your calendar": [
         "Răspunsul a fost trimis, dar evenimentul nu a putut fi adăugat în calendar."
@@ -1998,7 +1998,7 @@
     },
     "file size format": {
       "bytes": [
-        "baiți"
+        "octeți"
       ],
       "GB": [
         "GB"
@@ -2012,12 +2012,12 @@
     },
     "Filter notification": {
       "${ Label.Name } updated": [
-        "${ Label.Name } a fost actualizată"
+        "${ Label.Name } actualizată"
       ]
     },
     "Free price": {
       "Free": [
-        "Gratuit"
+        "Gratis"
       ]
     },
     "Group": {
@@ -2072,7 +2072,7 @@
         "Manuală"
       ],
       "No verification method available": [
-        "Nici o metodă de verificare disponibilă"
+        "Nicio metodă de verificare disponibilă"
       ],
       "SMS": [
         "SMS"
@@ -2137,7 +2137,7 @@
     },
     "Import contact": {
       "${ totalImported }/${ totalToImport } contact encrypted and added to your contact list": [
-        "S-a criptat și adăugat în lista de contacte un contact din ${ totalToImport } contacte.",
+        "S-a criptat și adăugat în lista de contacte ${ totalImported }/${ totalToImport } contact.",
         "S-au criptat și adăugat în lista de contacte ${ totalImported }/${ totalToImport } contacte.",
         "S-au criptat și adăugat în lista de contacte ${ totalImported }/${ totalToImport } de contacte."
       ],
@@ -2170,8 +2170,8 @@
       ],
       "Contact successfully imported. The imported contact will now appear in your contact list.": [
         "Contactul a fost importat. Contactul importat va apărea acum în lista de contacte.",
-        "Contacte importate. Contactele importate vor apărea acum în lista de contacte.",
-        "Contacte importate. Contactele importate vor apărea acum în lista de contacte."
+        "Contactele au fost importate. Contactele importate vor apărea acum în lista de contacte.",
+        "Contactele au fost importate. Contactele importate vor apărea acum în lista de contacte."
       ]
     },
     "Import contacts warning": {
@@ -2259,14 +2259,14 @@
         "${ mailAppName } gratuit"
       ],
       "${ mailAppName } Professional starts with one user, and each user adds 5 GB and 5 email addresses to the organization’s pool.": [
-        "${ mailAppName } Profesional începe cu un utilizator și fiecare utilizator adaugă 5 GB și 5 adrese de e-mail la totalul organizației."
+        "${ mailAppName } Profesionist începe cu un utilizator și fiecare utilizator adaugă 5 GB și 5 adrese de e-mail la totalul organizației."
       ],
       "${ namesWithoutLast } and ${ nameOfLast }": [
         "${ namesWithoutLast } și ${ nameOfLast }"
       ],
       "${ numContactGroups } contact group": [
         "Un grup de contacte",
-        "${ numContactGroups } grupuri de contacte",
+        "${ numContactGroups } grupuri de contact",
         "${ numContactGroups } de grupuri de contacte"
       ],
       "${ numContacts } contact": [
@@ -2321,12 +2321,12 @@
         "+ ${ bonusSpace } spațiu bonus"
       ],
       "+${ organization.BonusVPN } connection for ProtonVPN (allows you to connect more devices to VPN)": [
-        "+ o conexiune pentru ProtonVPN (permite conectarea mai multor dispozitive la VPN)",
+        "+${ organization.BonusVPN } conexiune pentru ProtonVPN (vă permite să conectați mai multe dispozitive la VPN)",
         "+${ organization.BonusVPN } conexiuni pentru ProtonVPN (vă permite să conectați mai multe dispozitive la VPN)",
         "+${ organization.BonusVPN } de conexiuni pentru ProtonVPN (vă permite să conectați mai multe dispozitive la VPN)"
       ],
       "20% discount applied to your subscription with coupon ${ code }": [
-        "Cuponul ${ code } a aplicat o reducere de 20%."
+        "Cuponul ${ code } a aplicat o reducere de 20%"
       ],
       "30 days money-back guarantee.": [
         "Banii înapoi în 30 de zile garantat."
@@ -2353,10 +2353,10 @@
         "Accesul la cont a fost restricționat din cauza facturilor neplătite. Contactați-vă administratorul."
       ],
       "Account successfully updated": [
-        "Contul a fost actualizat."
+        "Cont actualizat cu succes"
       ],
       "Add additional addresses to your account like user2@protonmail.com": [
-        "Adăugați adrese suplimentare în cont precum utilizator2@protonmail.com."
+        "Adăugați adrese suplimentare în cont precum utilizator2@protonmail.com"
       ],
       "Added and removed participants will be notified about all the events in this series.": [
         "Participanţii adăugaţi şi eliminaţi vor fi notificaţi cu privire la toate evenimentele din această serie."
@@ -2384,7 +2384,7 @@
         "Toate (${ totalFoldersCount } de etichete)"
       ],
       "Allows you to host emails for your own domain(s) at ${ mailAppName }, e.g. john.smith@example.com": [
-        "Vă permite să găzduiți e-mailuri pe domeniu(ii) personal(e) la ${ mailAppName }, ex. ion.vasile@exemplu.com."
+        "Vă permite să găzduiți e-mailuri pe domeniu(ii) personal(e) la ${ mailAppName }, ex. ion.vasile@exemplu.com"
       ],
       "Amount below minimum (${ amount }).": [
         "Suma este sub minimul acceptat (${ amount })."
@@ -2411,19 +2411,19 @@
         "Facturat cu ${ billedPrice } anual"
       ],
       "Billed at the end of your current billing cycle (renews on ${ renewalDate })": [
-        "Facturat la sfârșitul ciclului curent de facturare (reînnoire la ${ renewalDate })"
+        "Facturat la sfârşitul ciclului curent de facturare (reînnoire la ${ renewalDate })"
       ],
       "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits.": [
         "Tranzacțiile cu Bitcoin pot dura mai mult până la confirmare (până la 24 de ore). După confirmarea tranzacției, vă vom adăuga creditul în cont și veți putea plăti factura cu acesta."
       ],
       "Black Friday 2018 applied to your subscription": [
-        "S-a aplicat reducerea de „Vinerea neagră” 2018 la abonament."
+        "S-a aplicat reducerea de Vinerea Neagră 2018 la abonament"
       ],
       "Black Friday 2019 applied to your subscription": [
-        "S-a aplicat reducerea de „Vinerea neagră” 2019 la abonament."
+        "S-a aplicat reducerea de Vinerea Neagră 2019 la abonament"
       ],
       "Black Friday 2020 newcomer discount has been applied": [
-        "Reducerea de „Vinerea Neagră” 2020 pentru utilizatorii noi a fost aplicată."
+        "Reducerea de Vinerea Neagră 2020 pentru utilizatorii noi a fost aplicată"
       ],
       "By downgrading to a Free plan, you will permanently lose these benefits, even if you upgrade again in the future.": [
         "Revenind la planul gratuit, veți pierde permanent aceste avantaje, chiar dacă ulterior veți trece la unul cu plată."
@@ -2438,7 +2438,7 @@
         "Faceți clic pe «Solicitare cod nou» pentru a primi un cod nou de verificare trimis la ${ strong }. Dacă această adresă de e-mail nu este corectă, apăsați pe «Editare» pentru a o corecta."
       ],
       "Click \"Request new code\" to have a new verification code sent to ${ strong }. If this phone number is incorrect, click \"Edit\" to correct it.": [
-        "Faceți clic pe «Solicitare cod nou» pentru a primi un cod nou de verificare trimis la $ { strong }. Dacă această acest număr de telefon nu este corect, apăsați pe «Editare» pentru a-l corecta."
+        "Faceți clic pe «Solicitare cod nou» pentru a primi un cod nou de verificare trimis la ${ strong }. Dacă această acest număr de telefon nu este corect, apăsați pe «Editare» pentru a-l corecta."
       ],
       "Close this screen to exit.": [
         "Închideți această fereastră pentru a ieși."
@@ -2458,7 +2458,7 @@
         "Creați o etichetă pentru mesajele importate, intervalul de timp de importat și etichetele care trebuie importate."
       ],
       "Create a new contact group": [
-        "Creare grup contacte"
+        "Creare grup de contacte"
       ],
       "Create in": [
         "Creare în"
@@ -2488,7 +2488,7 @@
         "Anulare modificări?"
       ],
       "Discount applied to your subscription with coupon ${ code }": [
-        "Cuponul ${ code } a aplicat o reducere de 20% la abonament."
+        "Cuponul ${ code } a aplicat o reducere de 20% la abonament"
       ],
       "Domains": [
         "Domenii"
@@ -2518,10 +2518,10 @@
         "Participanții existenți, adăugați şi eliminați vor fi notificați."
       ],
       "Expired": [
-        "Expirat"
+        "Expirată"
       ],
       "For families and small teams; includes both Mail and VPN.": [
-        "Pentru familii şi echipe mici; include atât e-mail cât şi VPN."
+        "Pentru familii și echipe mici; include atât Mail, cât și VPN."
       ],
       "For getting started with private and secure emailing.": [
         "Pentru a folosi mesaje private și securizate."
@@ -2554,7 +2554,7 @@
         "aici"
       ],
       "If you are having trouble creating your account, please request an invitation and we will respond within one business day.": [
-        "Dacă aveți probleme cu crearea contului, solicitați o invitație și vă vom răspunde în termen de o zi lucrătoare."
+        "Dacă aveți probleme cu crearea contului, solicitați o invitație și vom răspunde în termen de o zi lucrătoare."
       ],
       "If you believe this is in error, please contact us ${ contactLink }.": [
         "Dacă credeți că acest lucru este o eroare, vă rugăm să ne contactați la ${ contactLink }."
@@ -2583,7 +2583,7 @@
         "Inclus"
       ],
       "Inherited from parent folder": [
-        "Moştenit de la folderul părinte."
+        "Moştenit de la folderul părinte"
       ],
       "Internet connection lost.": [
         "Conexiunea la internet s-a întrerupt."
@@ -2625,7 +2625,7 @@
         "Îmbinat"
       ],
       "Monthly ${ onDayString }": [
-        "Lunar ${ onDayString }"
+        "Lunar, ${ onDayString }"
       ],
       "Name your new folder and select the parent folder you want to put it in. If you do not select a parent folder, this new folder will be created as a top level folder.": [
         "Denumiți noul folder și selectați folderul părinte în care doriți să îl puneți. Dacă nu selectaţi un folder părinte, acest folder nou va fi creat ca un folder de nivel superior."
@@ -2646,7 +2646,7 @@
         "Nu există grupuri"
       ],
       "No payment is required at this time.": [
-        "Momentan nu este necesară nici o plată."
+        "Momentan nu este necesară nicio plată."
       ],
       "No results found": [
         "Nu s-au găsit rezultate"
@@ -2783,7 +2783,7 @@
         "Treceți la ${ professionalPlan } pentru a adăuga mai multe conexiuni."
       ],
       "Switch to ${ professionalPlan } to add more users.": [
-        "Treceți la ${ professionalPlan } pentru a adăuga mai mulți utilizatori."
+        "Treceţi la ${ professionalPlan } pentru a adăuga mai mulți utilizatori."
       ],
       "Thank you for supporting our mission.": [
         "Vă mulțumim pentru că ne sprijiniți misiunea."
@@ -2837,13 +2837,13 @@
         "Acest eveniment a fost actualizat. Organizatorul nu va fi notificat că refuzați invitația deoarece nu puteți trimite e-mailuri de la adresa invitată. Doriți totuși să ștergeți acest eveniment?"
       ],
       "This link may be a homograph attack and cannot be opened by Internet Explorer and Edge browsers. If you are certain the link is legitimate, please use a different browser to open it.": [
-        "Această legătură ar putea fi un atac omoglific (caractere asemănătoare dar cu cod diferit de caracter) și nu poate fi deschisă de către navigatoarele Internet Explorer și Edge. Dacă aveţi siguranţa că legătura este legitimă, folosiți un alt navigator pentru a o deschide."
+        "Această legătură ar putea fi un atac omoglific (caractere asemănătoare dar cu cod diferit de caracter) și nu poate fi deschisă de către navigatoarele Internet Explorer și Edge. Dacă sunteți sigur că legătura este legitimă, folosiți un alt navigator pentru a o deschide."
       ],
       "This link may be a homograph attack. Please verify this is the link you wish to visit, or don't open it.": [
         "Această legătură ar putea fi un atac omoglific. Verificați adresa pe care doriți să o vizitați sau nu o deschideți."
       ],
       "This will enable PayPal to be used to pay for your Proton subscription. We will redirect you to PayPal in a new browser tab. If you use any pop-up blockers, please disable them to continue.": [
-        "Aceasta va activa PayPal ca metodă de plată pentru abonamentul la Proton. Se va deschide o fereastră nouă spre PayPal. Dacă folosiți module sau programe de blocare a ferestrelor flotante, trebuie să le dezactivați înainte de a continua."
+        "Aceasta va activa PayPal ca metodă de plată pentru abonamentul la Proton. Veți fi redirecționat spre PayPal într-o filă nouă. Dacă folosiți module sau programe de blocare a ferestrelor flotante, trebuie să le dezactivați înainte de a continua."
       ],
       "To fight spam and abuse, please verify you are human.": [
         "Pentru a combate abuzurile, dovediți că sunteți o persoană."
@@ -2870,16 +2870,16 @@
         "Pentru verificare se va deschide o filă nouă. Dezactivați programele care blochează ferestrele flotante."
       ],
       "Verification will open a new tab, please disable any popup blockers. You will not be charged. Any amount used to verify the card will be refunded immediately.": [
-        "Verificarea va deschide o filă nouă. Dezactivați programele care blochează ferestrele flotante. Nu se va aplica nici o taxă. Orice sumă retrasă pentru verificarea cardului vă va fi rambursată imediat."
+        "Verificarea va deschide o filă nouă. Dezactivați programele care blochează ferestrele flotante. Nu veți fi taxat. Orice sumă retrasă pentru verificarea cardului vă va fi rambursată imediat."
       ],
       "VPN + ${ mailAppName } bundle for families and small businesses.": [
         "VPN + ${ mailAppName } pachet pentru familii și afaceri mici."
       ],
       "We use 3-D Secure to protect your payments.": [
-        "Folosim 3-D Secure pentru a vă proteja plățile."
+        "Folosim 3-D Secure pentru a proteja plățile."
       ],
       "We will redirect you to PayPal in a new browser tab to complete this transaction. If you use any pop-up blockers, please disable them to continue.": [
-        "Pentru finalizarea tranzacției prin PayPal se va deschide o filă nouă. Dacă folosiți programe de blocat ferestre flotante dezactivați-le înainte de a continua."
+        "Vă vom redirecționa către PayPal într-o filă nouă pentru a finaliza tranzacția. Dacă folosiți programe de blocat ferestre flotante dezactivați-le înainte de a continua."
       ],
       "We'll notify you when the import is done.": [
         "Veți primi o notificare la finalizarea importării."
@@ -2927,7 +2927,7 @@
         "Se va deschide o nouă filă în navigator cu adresa:"
       ],
       "You are currently signed in as ${ user.Name } (${ user.Email }) and have restricted access.": [
-        "V-ați conectat cu ${ user.Name } (${ user.Email }) și aveți acces restricționat."
+        "Sunteți conectat(ă) cu ${ user.Name } (${ user.Email }) și aveți acces restricționat."
       ],
       "You can also merge imported calendars with existing Proton calendars.": [
         "Puteți și să îmbinați calendarele importate cu calendarele Proton existente."
@@ -2951,7 +2951,7 @@
         "Trebuie să aveți un card de credit sau un cont bancar asociat cu contul de PayPal pentru a-l adăuga ca metodă de plată."
       ],
       "You must have a credit card or bank account linked with your PayPal account. If your PayPal account doesn't have that, please click on the button below.": [
-        "Trebuie să aveți un card de credit sau cont bancar asociat la contul de PayPal. Dacă contul de PayPal nu are așa ceva, atunci faceți clic pe butonul de mai jos."
+        "Trebuie să aveți un card de credit sau cont bancar asociat la contul de PayPal. Dacă contul de PayPal nu are așa ceva, atunci faceţi clic pe butonul de mai jos."
       ],
       "You must remove any additional personal calendars and any shared calendar links before you can cancel your subscription. ${ linkButton }": [
         "Trebuie să eliminați toate calendarele personale suplimentare și toate legăturile din calendar partajate înainte de a putea anula abonamentul. ${ linkButton }"
@@ -2963,7 +2963,7 @@
         "S-a atins capacitatea maximă de stocare. Nu se mai pot trimite sau primi mesaje. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You will be soon redirected to your bank to verify your payment.": [
-        "Pentru verificarea efectuării plății se va deschide o filă către bancă."
+        "Veți fi redirecționat spre bancă pentru verificarea efectuării plății."
       ],
       "You will lose all unsaved changes.": [
         "Veți pierde toate modificările nesalvate."
@@ -2996,7 +2996,7 @@
         "Acest cont are cel puțin o factură restantă. În curând accesul va fi restricționat. ${ payInvoiceLink }"
       ],
       "Your account is being upgraded, this may take up to 30 seconds.": [
-        "Contul se convertește, ar putea dura până la 30 de secunde."
+        "Contul este convertit, ar putea dura până la 30 de secunde."
       ],
       "Your account will be updated once the payment is cleared.": [
         "Contul va fi modificat după verificarea plății."
@@ -3008,7 +3008,7 @@
         "Adresa vă este dezactivată. Un e-mail de anulare nu poate fi trimis participanților la eveniment. Doriți totuși să ștergeți acest eveniment?"
       ],
       "Your bank requires 3-D Secure verification for security purposes.": [
-        "Banca solicită verificarea cu sistemul 3-D Secure din motive de securitate."
+        "Banca solicită verificarea cu sistemul 3-D Secure pentru asigurarea securității."
       ],
       "Your data is ready to import from ${ importedEmailAddressStrong } to your Proton account.": [
         "Datele vă sunt pregătite pentru importare din ${ importedEmailAddressStrong } în contul Proton."
@@ -3079,7 +3079,7 @@
         "Doar verificare"
       ],
       "WKD": [
-        "Web Key Directory (WKD)"
+        "WKD"
       ]
     },
     "Keyboard shortcut name": {
@@ -3111,7 +3111,7 @@
         "Aruncare ciornă"
       ],
       "Expand / contract composer": [
-        "Extindere/restrângere editor"
+        "Extindere/restrângere panou editare"
       ],
       "Forward": [
         "Redirecționare"
@@ -3138,7 +3138,7 @@
         "Accesare «Cu stea»"
       ],
       "Go to Trash": [
-        "Accesare «Gunoi»"
+        "Accesare folder «Gunoi»"
       ],
       "Jump to first": [
         "Salt la primul"
@@ -3159,7 +3159,7 @@
         "Marcare ca necitit"
       ],
       "Minimize / maximize composer": [
-        "Micșorare/mărire editor"
+        "Micșorare / mărire panou editare"
       ],
       "Move down": [
         "Mutare în jos"
@@ -3219,7 +3219,7 @@
         "Selectare/deselectare toate"
       ],
       "Send email": [
-        "Trimitere e-mail"
+        "Trimite e-mail"
       ],
       "Show all emails": [
         "Afișare toate mesajele"
@@ -3278,7 +3278,7 @@
         "10 - Extrem de probabil"
       ],
       "Add email address": [
-        "Adăugare adresă de e-mail"
+        "Adăugare e-mail"
       ],
       "Add image URL": [
         "Adăugare URL imagine"
@@ -3329,7 +3329,7 @@
         "Categoria"
       ],
       "City": [
-        "Oraș"
+        "Oraş"
       ],
       "Color": [
         "Culoare"
@@ -3395,7 +3395,7 @@
         "Titlu eveniment"
       ],
       "Expires": [
-        "Expirare"
+        "Expiră"
       ],
       "Expiry date": [
         "Data expirării"
@@ -3407,7 +3407,7 @@
         "Adresa extinsă"
       ],
       "Folder location": [
-        "Folder"
+        "Amplasare folder"
       ],
       "Frequency": [
         "Frecvența"
@@ -3467,7 +3467,7 @@
         "Nume"
       ],
       "Name on card": [
-        "Titular card"
+        "Numele de pe card"
       ],
       "Notification": [
         "Notificare"
@@ -3493,13 +3493,13 @@
         "de participanţi"
       ],
       "Participants": [
-        "Participanţi"
+        "Participanți"
       ],
       "Password": [
         "Parola"
       ],
       "Payer": [
-        "Plătitor"
+        "Payer"
       ],
       "PGP scheme": [
         "Schema PGP"
@@ -3631,7 +3631,7 @@
     },
     "Label, make it short please": {
       "Attach screenshot(s)": [
-        "Atașare capturi de ecran"
+        "Atașare captură ecran"
       ]
     },
     "Label/folder modal": {
@@ -3650,7 +3650,7 @@
     },
     "label/folder notification": {
       "${ Label.Name } created": [
-        "${ Label.Name } a fost creată"
+        "${ Label.Name } creată"
       ]
     },
     "Layout mode": {
@@ -3701,15 +3701,15 @@
     },
     "Loading info": {
       "${ createdCalendars } of ${ calendarsToBeCreated } created": [
-        "S-a creat: ${ createdCalendars } din ${ calendarsToBeCreated }",
-        "S-a creat: ${ createdCalendars } din ${ calendarsToBeCreated }",
-        "S-a creat: ${ createdCalendars } din ${ calendarsToBeCreated }"
+        "S-au creat: ${ createdCalendars } din ${ calendarsToBeCreated }",
+        "S-au creat: ${ createdCalendars } din ${ calendarsToBeCreated }",
+        "S-au creat: ${ createdCalendars } din ${ calendarsToBeCreated }"
       ],
       "Almost there": [
         "Aproape terminat"
       ],
       "Creating new calendars": [
-        "Se crează calendarele"
+        "Se crează calendare noi"
       ],
       "Gathering your data": [
         "Vi se preiau datele"
@@ -3826,10 +3826,10 @@
     },
     "Message": {
       "Fw:": [
-        "Redir:"
+        "Fw:"
       ],
       "Re:": [
-        "Răsp:"
+        "Re:"
       ]
     },
     "Message display when a new app version is available": {
@@ -3886,10 +3886,10 @@
         "Lunar, ${ onDayString }"
       ],
       "Monthly ${ onDayString }, ${ timesString }": [
-        "${ onDayString }, lunar, ${ timesString }"
+        "Lunar, ${ onDayString }, ${ timesString }"
       ],
       "Monthly ${ onDayString }, ${ untilString }": [
-        "${ onDayString }, lunar, ${ untilString }"
+        "Lunar, ${ onDayString }, ${ untilString }"
       ]
     },
     "Monthly recurring event, repeats on": {
@@ -4174,10 +4174,10 @@
         "Descoperiți toate serviciile Proton"
       ],
       "Our mission is to build an internet where you are in control of your data and your privacy. We have recently updated Proton - welcome to the secure internet.": [
-        "Misiunea noastră este să construim un internet în care aveți controlul și confidențialitatea datelor personale. Am actualizat recent Proton - bine ați venit la un internet securizat."
+        "Misiunea noastră este să construim un Internet în care aveți controlul și confidențialitatea datelor personale. Am actualizat recent Proton - bine ați venit la un Internet securizat."
       ],
       "Select a theme": [
-        "Selectați o temă"
+        "Selectaţi o temă"
       ],
       "Set up your organization": [
         "Setați organizația"
@@ -4296,7 +4296,7 @@
         "Bitcoin"
       ],
       "New credit/debit card": [
-        "Card nou de credit / debit"
+        "Card nou de credit/debit"
       ],
       "PayPal": [
         "PayPal"
@@ -4376,7 +4376,7 @@
         "Versiune sistem de operare"
       ],
       "Please describe the problem and include any error messages": [
-        "Descrieți problema incluzând și mesajele de eroare care apar"
+        "Descrieți problema incluzând și mesajele de eroare ce apar"
       ],
       "Postal code": [
         "Cod poștal"
@@ -4424,7 +4424,7 @@
         "20 GB spațiu"
       ],
       "200 folders / labels": [
-        "200 de foldere / etichete"
+        "200 foldere/etichete"
       ],
       "3 folders / labels": [
         "3 foldere / etichete"
@@ -4481,13 +4481,13 @@
         "Viteză medie"
       ],
       "Secure Core servers": [
-        "Server „Secure Core”"
+        "Servere centrale securizate"
       ],
       "Streaming service support": [
         "Suport servicii de transmisie în flux"
       ],
       "Unlimited folders / labels": [
-        "Foldere / Etichete nelimitate"
+        "Foldere/Etichete nelimitate"
       ]
     },
     "Plan info": {
@@ -4516,8 +4516,8 @@
       ],
       "${ model.submitted.length } out of ${ totalBeMerged } contact successfully merged.": [
         "S-a îmbinat un contact.",
-        "S-au îmbinat ${ model.submitted.length } din ${ { totalBeMerged }} contacte.",
-        "S-au îmbinat ${ model.submitted.length } din ${ { totalBeMerged }} de contacte."
+        "S-au îmbinat ${ model.submitted.length } din ${ totalBeMerged } contacte.",
+        "S-au îmbinat ${ model.submitted.length } din ${ totalBeMerged } de contacte."
       ],
       "No contacts exported.": [
         "Nu s-au exportat contacte."
@@ -4549,7 +4549,7 @@
         "Mobil"
       ],
       "Other": [
-        "Altul"
+        "Altele"
       ],
       "Pager": [
         "Pager"
@@ -4782,7 +4782,7 @@
         "Adresa"
       ],
       "Created": [
-        "Creat"
+        "Creat la"
       ],
       "Expires": [
         "Expirare"
@@ -4988,7 +4988,7 @@
         "Credite"
       ],
       "Currency": [
-        "Moneda"
+        "Monedă"
       ],
       "Current plan": [
         "Plan actual"
@@ -5132,13 +5132,13 @@
         "Îmbinare contacte"
       ],
       "Merging contacts": [
-        "Se îmbină contactele"
+        "Îmbinare contacte"
       ],
       "Network error": [
         "Eroare de rețea"
       ],
       "Open actions dropdown": [
-        "Meniu acțiuni deschidere"
+        "Deschidere meniu acțiuni"
       ],
       "Open help menu": [
         "Deschidere meniu ajutor"
@@ -5165,7 +5165,7 @@
         "Verificare plată"
       ],
       "Payment verification in progress": [
-        "Verificare plată în desfășurare"
+        "Verificarea plății în desfășurare"
       ],
       "PayPal verification failed": [
         "Verificarea PayPal a eșuat"
@@ -5315,7 +5315,7 @@
         "Ați invitat participanți cu adrese de e-mail asemănătoare"
       ],
       "ZIP / postal code": [
-        "ZIP / Cod Poștal"
+        "ZIP/Cod poștal"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -5333,10 +5333,10 @@
         "Accesați conținutul blocat geografic (Netflix, Amazon Prime Video, BBC iPlayer, Wikipedia, Facebook, YouTube etc.) indiferent unde vă aflați."
       ],
       "Automatic indicates that the format in the composer is used to send to this user. Plain text indicates that the message will always be converted to plain text on send.": [
-        "„Automat” înseamnă că mesajul va fi trimis acestui contact în formatul din modul de compunere. „Text simplu” înseamnă că mesajul trimis va fi întotdeauna convertit în text simplu fără formatări."
+        "«Automat» înseamnă că mesajul va fi trimis acestui contact în formatul din modul de compunere. «Text simplu» înseamnă că mesajul trimis va fi întotdeauna convertit în text simplu fără formatări."
       ],
       "Create multiple email addresses linked to your account, e.g. username2@protonmail.com": [
-        "Creați mai multe adrese de e-mail legate la cont, ex. utilzator2@protonmail.com."
+        "Creaţi mai multe adrese de e-mail legate la cont, ex. utilzator2@protonmail.com."
       ],
       "Defends against threats to VPN privacy by passing your Internet traffic through multiple servers.": [
         "Vă apără împotriva pierderii confidențialității VPN prin transmiterea traficului pe internet prin mai multe servere."
@@ -5345,7 +5345,7 @@
         "Semnarea digitală a mesajelor ajută la confirmarea că mesajele sunt trimise de către dvs."
       ],
       "Discount applied for annual billing cycle": [
-        "S-a aplicat reducerea pentru plata anuală."
+        "Reducere aplicată pentru plata anuală."
       ],
       "Discount applied for two-year billing cycle": [
         "S-a aplicat reducerea pentru plata la doi ani."
@@ -5360,7 +5360,7 @@
         "Date criptate cu semnătură digitală verificată"
       ],
       "Get access to all the paid features for both ${ vpnAppName } and ${ mailAppName } (the encrypted email service that millions use to protect their data) with one plan.": [
-        "Obțineți acces la toate funcțiile cu plată, pentru ProtonVPN și ProtonMail (serviciul de e-mail criptat folosit de milioane de utilizatori pentru a-și proteja datele) cu un singur plan."
+        "Acces la toate funcțiile plătite, pentru ${ vpnAppName } și ${ mailAppName } (serviciul de e-mail criptat folosit de milioane de utilizatori pentru a-și proteja datele) cu un singur plan."
       ],
       "Get access to all the paid features for both ProtonVPN and ProtonMail (the encrypted email service that millions use to protect their data) with one plan.": [
         "Obțineți acces la toate funcțiile cu plată, pentru ProtonVPN și ProtonMail (serviciul de e-mail criptat folosit de milioane de utilizatori pentru a-și proteja datele) cu un singur plan."
@@ -5369,10 +5369,10 @@
         "Găzduiți e-mailuri pentru domeniu(ii) personal(e) la ${ mailAppName }, ex. ion.vasile@exemplu.com."
       ],
       "Host emails for your own domain(s) at ProtonMail, e.g. john.smith@example.com": [
-        "Găzduiți e-mailuri pentru domeniu(ii) personal(e) la ProtonmMail, ex.: ion.vasile@exemplu.com."
+        "Găzduiți e-mailuri pentru domeniu(ii) personal(e) la ProtonMail, ex.: ion.vasile@exemplu.com."
       ],
       "If you purchased a gift code or received one from our support team, you can enter it here.": [
-        "Dacă ați cumpărat un cod cadou sau ați primit unul de la echipa de suport, îl puteți folosi aici."
+        "Dacă ați cumpărat un cod cadou sau ați primit unul de la echipa de asistență, îl puteți folosi aici."
       ],
       "Multi-user support is only applicable to plans with 2 or more users": [
         "Suportul pentru utilizatori multipli se aplică doar planurilor cu doi sau mai mulți utilizatori."
@@ -5410,7 +5410,7 @@
     },
     "Validation": {
       "Password must contain at least ${ length } character": [
-        "Parola trebuie să conțină cel puțin un caracter.",
+        "Parola trebuie să conțină cel puțin un caracter",
         "Parola trebuie să conțină cel puțin ${ length } caractere.",
         "Parola trebuie să conțină cel puțin ${ length } de caractere."
       ]
@@ -5420,7 +5420,7 @@
         "${ mailAppName } Visionary"
       ],
       "30-days money-back guarantee": [
-        "Garanția returnări banilor în 30 de zile"
+        "Garanția returnării banilor în 30 de zile"
       ],
       "Access blocked content": [
         "Accesare conținut blocat"
@@ -5614,7 +5614,7 @@
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ untilString }": [
         "${ multipleDaysString }, săptâmânal, ${ untilString }",
-        "${ multipleDaysString }, la fiecare ${ interval } săptămâni, ${ untilString }",
+        "${ multipleDaysString }, la fiecare ${ interval } de săptămâni, ${ untilString }",
         "${ multipleDaysString }, la fiecare ${ interval } de săptămâni, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
@@ -5673,9 +5673,9 @@
         "Sâmbătă, la fiecare ${ interval } de săptămâni, ${ timesString }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
-        "Sâmbătă, la fiecare ${ interval } săptămână, ${ untilString }",
+        "Sâmbătă, săptămânal, ${ untilString }",
         "Sâmbătă, la fiecare ${ interval } săptămâni, ${ untilString }",
-        "Sâmbătă, la fiecare ${ interval } săptămâni, ${ untilString }"
+        "Sâmbătă, la fiecare ${ interval } de săptămâni, ${ untilString }"
       ],
       "Every ${ interval } week on Sunday": [
         "Duminică, săptămânal",
@@ -5744,7 +5744,7 @@
         "Săptămânal ${ multipleDaysString }, ${ timesString }"
       ],
       "Weekly on ${ multipleDaysString }, ${ untilString }": [
-        "Săptămânal ${ multipleDaysString }, ${ untilString }"
+        "Săptămânal, ${ multipleDaysString }, ${ untilString }"
       ],
       "Weekly on all days": [
         "Zilnic, săptămânal"
@@ -5836,7 +5836,7 @@
         "Joi"
       ],
       "Tuesday": [
-        "Marți"
+        "Marţi"
       ],
       "Wednesday": [
         "Miercuri"
@@ -5851,7 +5851,7 @@
       "Every ${ interval } year, ${ timesString }": [
         "Anual, ${ timesString }",
         "La fiecare ${ interval } ani, ${ timesString }",
-        "La fiecare ${ interval } ani, ${ timesString }"
+        "La fiecare ${ interval } de ani, ${ timesString }"
       ],
       "Every ${ interval } year, ${ untilString }": [
         "Anual, ${ untilString }",
