@@ -1,6 +1,5 @@
 import { RefObject, useEffect, useState } from 'react';
 import { MESSAGE_IFRAME_BLOCKQUOTE_ID, MESSAGE_IFRAME_TOGGLE_ID } from '../constants';
-import { debouncedSetIframeHeight } from '../helpers/setIframeHeight';
 
 interface Props {
     iframeRef: RefObject<HTMLIFrameElement>;
@@ -37,7 +36,6 @@ const useIframeShowBlockquote = ({
             iframeBlockquoteDiv.innerHTML = '';
         }
 
-        debouncedSetIframeHeight(iframeRef);
         onBlockquoteToggle?.();
     }, [showBlockquote]);
 
