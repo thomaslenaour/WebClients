@@ -1,5 +1,5 @@
 import { c } from 'ttag';
-import { ModalTwo, ModalTwoContent, ModalTwoHeader, ModalTwoFooter, Button } from '@proton/components';
+import { Alert, FormModal } from '@proton/components';
 import { RECURRING_TYPES } from '@proton/shared/lib/calendar/constants';
 import { INVITE_ACTION_TYPES, InviteActions, RecurringActionData } from '../../../interfaces/Invite';
 
@@ -90,26 +90,20 @@ interface Props {
     inviteActions: InviteActions;
     onConfirm: ({ type, inviteActions }: RecurringActionData) => void;
     onClose: () => void;
-    isOpen: boolean;
 }
 
-const EditSingleConfirmModal = ({ inviteActions, onConfirm, onClose, isOpen }: Props) => {
+const EditSingleConfirmModal = ({ inviteActions, onConfirm, ...rest }: Props) => {
     const { title, submit, alertText } = getTexts(inviteActions);
     const handleSubmit = () => {
         onConfirm({ type: RECURRING_TYPES.SINGLE, inviteActions });
-        onClose();
+        rest.onClose();
     };
     return (
-        <ModalTwo size="small" onSubmit={handleSubmit} open={isOpen} onClose={onClose}>
-            <ModalTwoHeader title={title} />
-            <ModalTwoContent>{alertText}</ModalTwoContent>
-            <ModalTwoFooter>
-                <Button onClick={onClose}>{c('Action').t`Cancel`}</Button>
-                <Button color="norm" onClick={handleSubmit}>
-                    {submit}
-                </Button>
-            </ModalTwoFooter>
-        </ModalTwo>
+        <FormModal title={title} small submit={submit} close={c('Action').t`Cancel`} onSubmit={handleSubmit} {...rest}>
+            <Alert className="mb1" type="info">
+                {alertText}
+            </Alert>
+        </FormModal>
     );
 };
 

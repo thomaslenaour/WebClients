@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Alert, AlertModal, Button } from '@proton/components';
+import { Alert, ErrorButton, FormModal, Button } from '@proton/components';
 import { c } from 'ttag';
 import { RECURRING_TYPES } from '@proton/shared/lib/calendar/constants';
 import { INVITE_ACTION_TYPES, InviteActions, RecurringActionData } from '../../../interfaces/Invite';
@@ -104,7 +104,6 @@ interface Props {
     inviteActions: InviteActions;
     onConfirm: (data: RecurringActionData) => void;
     onClose: () => void;
-    isOpen: boolean;
 }
 const DeleteRecurringConfirmModal = ({
     types,
@@ -112,8 +111,7 @@ const DeleteRecurringConfirmModal = ({
     isInvitation,
     inviteActions,
     onConfirm,
-    onClose,
-    isOpen,
+    ...rest
 }: Props) => {
     const [type, setType] = useState(types[0]);
     const { deleteSingleEdits } = inviteActions;
@@ -122,22 +120,21 @@ const DeleteRecurringConfirmModal = ({
     const warningText = showWarning ? getRecurringWarningText(isInvitation, inviteActions) : '';
     const handleConfirm = async () => {
         onConfirm({ type, inviteActions });
-        onClose();
+        rest.onClose();
     };
 
     return (
-        <AlertModal
+        <FormModal
             title={title}
-            buttons={[
-                <Button color="danger" onClick={handleConfirm}>
-                    {confirm}
-                </Button>,
-                <Button type="reset" onClick={onClose} autoFocus>{c('Action').t`Cancel`}</Button>,
-            ]}
+            small
+            submit={<ErrorButton type="submit">{confirm}</ErrorButton>}
+            close={<Button type="reset" autoFocus>{c('Action').t`Cancel`}</Button>}
             onSubmit={handleConfirm}
-            open={isOpen}
+            {...rest}
         >
-            <div className="mb1">{alertText}</div>
+            <Alert className="mb1" type="error">
+                {alertText}
+            </Alert>
             {warningText && (
                 <Alert className="mb1" type="warning">
                     {warningText}
@@ -151,7 +148,7 @@ const DeleteRecurringConfirmModal = ({
                     data-test-id="delete-recurring-popover:delete-option-radio"
                 />
             ) : null}
-        </AlertModal>
+        </FormModal>
     );
 };
 

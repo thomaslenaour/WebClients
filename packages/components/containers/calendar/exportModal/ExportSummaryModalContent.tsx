@@ -111,23 +111,11 @@ const ExportSummaryModalContent = ({ model }: Props) => {
     const shouldShowErrorDetails = !!filteredErrors.length && !hasOnlyPasswordResetErrors;
     const getError = getErrorMessage(hasMultiplePasswordResetErrors);
 
-    const getMessage = () => {
-        const message = getAlertMessage();
-
-        if (isSuccess) {
-            return <div className="mb1">{message}</div>;
-        }
-
-        return (
-            <Alert className="mb1" type={isPartialSuccess ? 'warning' : 'error'}>
-                {message}
-            </Alert>
-        );
-    };
-
     return (
         <>
-            {getMessage()}
+            <Alert className="mb1" type={isSuccess ? 'info' : isPartialSuccess ? 'warning' : 'error'}>
+                {getAlertMessage()}
+            </Alert>
             <DynamicProgress
                 id="progress-export-calendar"
                 value={totalFetched + totalProcessed + totalErrors}

@@ -4,18 +4,10 @@ import { truncateMore } from '@proton/shared/lib/helpers/string';
 import { c } from 'ttag';
 
 import { Calendar } from '@proton/shared/lib/interfaces/calendar';
+import { noop } from '@proton/shared/lib/helpers/function';
 import { isURL } from '@proton/shared/lib/helpers/validators';
 import { getCalendarPayload, getCalendarSettingsPayload, getDefaultModel } from '../calendarModal/calendarModalState';
-import {
-    ModalTwo,
-    ModalTwoHeader,
-    ModalTwoContent,
-    ModalTwoFooter,
-    Href,
-    InputFieldTwo,
-    Loader,
-    Button,
-} from '../../../components';
+import { FormModal, Href, InputFieldTwo, Loader } from '../../../components';
 import { useLoading, useCalendarEmailNotificationsFeature } from '../../../hooks';
 import { GenericError } from '../../error';
 import { classnames } from '../../../helpers';
@@ -27,10 +19,9 @@ const CALENDAR_URL_MAX_LENGTH = 10000;
 interface Props {
     onClose?: () => void;
     onCreateCalendar?: (id: string) => void;
-    isOpen: boolean;
 }
 
-const SubscribeCalendarModal = ({ isOpen, onClose, onCreateCalendar }: Props) => {
+const SubscribeCalendarModal = ({ ...rest }: Props) => {
     const [, setCalendar] = useState<Calendar | undefined>();
     const [calendarURL, setCalendarURL] = useState('');
     const emailNotificationsEnabled = useCalendarEmailNotificationsFeature();
@@ -53,15 +44,11 @@ const SubscribeCalendarModal = ({ isOpen, onClose, onCreateCalendar }: Props) =>
     const isURLValid = isURL(calendarURL);
 
     const { error: setupError, loading: loadingSetup } = useGetCalendarSetup({ setModel });
-    const handleClose = () => {
-        setCalendarURL('');
-        onClose?.();
-    };
     const { handleCreateCalendar } = useGetCalendarActions({
         setCalendar,
         setError,
-        onClose: handleClose,
-        onCreateCalendar,
+        onClose: rest?.onClose,
+        onCreateCalendar: rest?.onCreateCalendar,
         isSubscribedCalendar: true,
     });
 
@@ -80,37 +67,32 @@ const SubscribeCalendarModal = ({ isOpen, onClose, onCreateCalendar }: Props) =>
     const { length: calendarURLLength } = calendarURL;
     const isURLMaxLength = calendarURLLength === CALENDAR_URL_MAX_LENGTH;
 
-    const {
-        title,
-        submitProps,
-        errorContent = null,
-        onSubmit,
-    } = (() => {
+    const { ...modalProps } = (() => {
         if (error || setupError) {
-            const onSubmitError = () => window.location.reload();
-
             return {
                 title: c('Title').t`Error`,
-                errorContent: <GenericError />,
-                onSubmit: onSubmitError,
-                submitProps: {
-                    children: c('Action').t`Close`,
-                    disabled: !calendarURL || !isURLValid,
+                submit: c('Action').t`Close`,
+                hasClose: false,
+                section: <GenericError />,
+                onSubmit() {
+                    window.location.reload();
                 },
             };
         }
 
         const loading = loadingSetup || loadingAction;
-        const onSubmit = () => withLoadingAction(handleProcessCalendar());
         const titleAndSubmitCopy = c('Modal title and action').t`Add calendar`;
 
         return {
             title: titleAndSubmitCopy,
-            onSubmit,
+            submit: titleAndSubmitCopy,
+            loading,
+            hasClose: true,
             submitProps: {
-                loading,
-                children: titleAndSubmitCopy,
                 disabled: !calendarURL || !isURLValid,
+            },
+            onSubmit: () => {
+                void withLoadingAction(handleProcessCalendar());
             },
         };
     })();
@@ -122,51 +104,32 @@ const SubscribeCalendarModal = ({ isOpen, onClose, onCreateCalendar }: Props) =>
     );
 
     return (
-        <ModalTwo
-            open={isOpen}
-            className="modal--shorter-labels w100"
-            onClose={handleClose}
-            as="form"
-            onSubmit={() => {
-                if (!submitProps.loading) {
-                    onSubmit();
-                }
-            }}
-        >
-            <ModalTwoHeader title={title} />
-            <ModalTwoContent>
-                {loadingSetup ? (
-                    <Loader />
-                ) : (
-                    errorContent || (
-                        <>
-                            <p className="mt0 text-pre-wrap">{c('Subscribe to calendar modal')
-                                .jt`To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Subscribed calendars.
+        <FormModal className="modal--shorter-labels w100" onClose={noop} {...modalProps} {...rest}>
+            {loadingSetup ? (
+                <Loader />
+            ) : (
+                <>
+                    <p className="mt0 text-pre-wrap">{c('Subscribe to calendar modal')
+                        .jt`To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Subscribed calendars.
 ${kbLink}
 `}</p>
-                            <InputFieldTwo
-                                autoFocus
-                                hint={
-                                    <span className={classnames([isURLMaxLength && 'color-warning'])}>
-                                        {calendarURLLength}/{CALENDAR_URL_MAX_LENGTH}
-                                    </span>
-                                }
-                                error={calendarURL && !isURLValid && c('Error message').t`Invalid URL`}
-                                warning={warning}
-                                maxLength={CALENDAR_URL_MAX_LENGTH}
-                                label={c('Subscribe to calendar modal').t`Calendar URL`}
-                                value={calendarURL}
-                                onChange={(e: ChangeEvent<HTMLInputElement>) => setCalendarURL(e.target.value.trim())}
-                            />
-                        </>
-                    )
-                )}
-            </ModalTwoContent>
-            <ModalTwoFooter>
-                <Button onClick={onClose}>{c('Action').t`Cancel`}</Button>
-                <Button type="submit" color="norm" {...submitProps} />
-            </ModalTwoFooter>
-        </ModalTwo>
+                    <InputFieldTwo
+                        autoFocus
+                        hint={
+                            <span className={classnames([isURLMaxLength && 'color-warning'])}>
+                                {calendarURLLength}/{CALENDAR_URL_MAX_LENGTH}
+                            </span>
+                        }
+                        error={calendarURL && !isURLValid && c('Error message').t`Invalid URL`}
+                        warning={warning}
+                        maxLength={CALENDAR_URL_MAX_LENGTH}
+                        label={c('Subscribe to calendar modal').t`Calendar URL`}
+                        value={calendarURL}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => setCalendarURL(e.target.value.trim())}
+                    />
+                </>
+            )}
+        </FormModal>
     );
 };
 

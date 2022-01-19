@@ -1,4 +1,3 @@
-import { useMemo, useState } from 'react';
 import { c } from 'ttag';
 
 import {
@@ -8,16 +7,8 @@ import {
     NON_OAUTH_PROVIDER,
 } from '@proton/shared/lib/interfaces/EasySwitch';
 import isTruthy from '@proton/shared/lib/helpers/isTruthy';
-import {
-    DEFAULT_CALENDAR_USER_SETTINGS,
-    getDefaultCalendar,
-    getProbablyActiveCalendars,
-} from '@proton/shared/lib/calendar/calendar';
-import { getIsPersonalCalendar } from '@proton/shared/lib/calendar/subscribe/helpers';
-import { partition } from '@proton/shared/lib/helpers/array';
-import { Calendar } from '@proton/shared/lib/interfaces/calendar';
 
-import { useAddresses, useCalendars, useCalendarUserSettings, useFeature, useModals, useUser } from '../../hooks';
+import { useAddresses, useFeature, useModals, useUser } from '../../hooks';
 import { ProviderCard } from '../../components';
 
 import SettingsSectionWide from './SettingsSectionWide';
@@ -26,8 +17,6 @@ import SettingsParagraph from './SettingsParagraph';
 import { EasySwitchOauthModal, EasySwitchDefaultModal } from '../easySwitch';
 import { ImportProvider } from '../../components/easySwitch/ProviderCard';
 import { FeatureCode } from '../features';
-
-import { ImportModal as ImportCalendarModal } from '../calendar/importModal';
 
 const { GOOGLE, OUTLOOK, YAHOO, OTHER } = ImportProvider;
 
@@ -61,54 +50,15 @@ const AccountEasySwitchSection = () => {
         );
     };
 
-    const [calendars, loadingCalendars] = useCalendars();
-    const [calendarUserSettings = DEFAULT_CALENDAR_USER_SETTINGS, loadingCalendarUserSettings] =
-        useCalendarUserSettings();
-
-    const memoizedCalendars = useMemo(() => calendars || [], [calendars]);
-
-    const { activeCalendars } = useMemo(() => {
-        return {
-            calendars: memoizedCalendars,
-            activeCalendars: getProbablyActiveCalendars(memoizedCalendars),
-        };
-    }, [calendars]);
-
-    const [personalActiveCalendars] = partition<Calendar>(activeCalendars, getIsPersonalCalendar);
-
-    const defaultCalendar = getDefaultCalendar(personalActiveCalendars, calendarUserSettings.DefaultCalendarID);
-
-    const [isImportCalendarModalOpen, setIsImportCalendarModalOpen] = useState(false);
-
-    const onOpenCalendarModal = () => {
-        if (defaultCalendar) {
-            setIsImportCalendarModalOpen(true);
-        }
-    };
-
-    const canImportCalendars = !!personalActiveCalendars.length;
-
     const handleIMAPClick = (provider?: NON_OAUTH_PROVIDER) =>
         createModal(
-            <EasySwitchDefaultModal
-                isLoading={loadingCalendars || loadingCalendarUserSettings}
-                canImportCalendars={canImportCalendars}
-                onOpenCalendarModal={onOpenCalendarModal}
-                addresses={addresses}
-                provider={provider}
-            />
+            <EasySwitchDefaultModal addresses={addresses} provider={provider} featureMap={easySwitchFeatureValue} />
         );
 
     const disabled = isLoading || !user.hasNonDelinquentScope;
 
     return (
         <SettingsSectionWide>
-            <ImportCalendarModal
-                isOpen={isImportCalendarModalOpen}
-                defaultCalendar={defaultCalendar!}
-                calendars={activeCalendars}
-                onClose={() => setIsImportCalendarModalOpen(false)}
-            />
             <SettingsParagraph>
                 {c('Info')
                     .t`Import your emails, calendars, and contacts from another service to Proton. We'll guide you each step of the way and encrypt your data as it gets moved. Welcome to the world of privacy.`}

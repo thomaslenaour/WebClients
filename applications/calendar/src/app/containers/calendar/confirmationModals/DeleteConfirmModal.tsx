@@ -1,5 +1,5 @@
 import { c } from 'ttag';
-import { AlertModal, Button } from '@proton/components';
+import { Alert, ErrorButton, FormModal, Button } from '@proton/components';
 import { RECURRING_TYPES } from '@proton/shared/lib/calendar/constants';
 import { INVITE_ACTION_TYPES, InviteActions, RecurringActionData } from '../../../interfaces/Invite';
 
@@ -49,29 +49,27 @@ interface Props {
     onClose: () => void;
     onConfirm: (data: RecurringActionData) => void;
     inviteActions: InviteActions;
-    isOpen: boolean;
 }
 
-const DeleteConfirmModal = ({ inviteActions, onConfirm, onClose, isOpen }: Props) => {
+const DeleteConfirmModal = ({ inviteActions, onConfirm, ...rest }: Props) => {
     const { title, submit, alertText } = getTexts(inviteActions);
     const handleSubmit = async () => {
         onConfirm({ type: RECURRING_TYPES.SINGLE, inviteActions });
-        onClose();
+        rest.onClose();
     };
     return (
-        <AlertModal
+        <FormModal
             title={title}
-            buttons={[
-                <Button color="danger" onClick={handleSubmit} type="submit">
-                    {submit}
-                </Button>,
-                <Button type="reset" onClick={onClose} autoFocus>{c('Action').t`Cancel`}</Button>,
-            ]}
+            small
+            submit={<ErrorButton type="submit">{submit}</ErrorButton>}
+            close={<Button type="reset" autoFocus>{c('Action').t`Cancel`}</Button>}
             onSubmit={handleSubmit}
-            open={isOpen}
+            {...rest}
         >
-            {alertText}
-        </AlertModal>
+            <Alert className="mb1" type="error">
+                {alertText}
+            </Alert>
+        </FormModal>
     );
 };
 

@@ -21,7 +21,6 @@ import {
     ICAL_ATTENDEE_STATUS,
     MAXIMUM_DATE_UTC,
     MINIMUM_DATE_UTC,
-    RECURRING_TYPES,
     SAVE_CONFIRMATION_TYPES,
 } from '@proton/shared/lib/calendar/constants';
 import getMemberAndAddress from '@proton/shared/lib/calendar/integration/getMemberAndAddress';
@@ -47,11 +46,9 @@ import {
     EventModel,
     SyncMultipleApiResponse,
     UpdateEventPartApiResponse,
-    VcalVeventComponent,
 } from '@proton/shared/lib/interfaces/calendar';
 import { ContactEmail } from '@proton/shared/lib/interfaces/contacts';
 import { SimpleMap } from '@proton/shared/lib/interfaces/utils';
-import { ModalWithProps } from '@proton/shared/lib/interfaces/Modal';
 import {
     useApi,
     useBeforeUnload,
@@ -60,6 +57,7 @@ import {
     useEventManager,
     useGetAddressKeys,
     useGetCalendarEventRaw,
+    useModals,
     useNotifications,
     useCalendarEmailNotificationsFeature,
     Dropzone,
@@ -68,7 +66,6 @@ import {
     useRelocalizeText,
 } from '@proton/components';
 import { useReadCalendarBootstrap } from '@proton/components/hooks/useGetCalendarBootstrap';
-import { useModalsMap } from '@proton/components/hooks/useModalsMap';
 import useGetCalendarEventPersonal from '@proton/components/hooks/useGetCalendarEventPersonal';
 import { useGetCanonicalEmailsMap } from '@proton/components/hooks/useGetCanonicalEmailsMap';
 import { useGetCalendarKeys } from '@proton/components/hooks/useGetDecryptedPassphraseAndCalendarKeys';
@@ -151,7 +148,6 @@ import {
 } from './interface';
 import { getInitialTargetEventData } from './targetEventHelper';
 import DuplicateAttendeesModal from './confirmationModals/DuplicateAttendeesModal';
-import { SendPreferences } from '@proton/shared/lib/interfaces/mail/crypto';
 
 const getNormalizedTime = (isAllDay: boolean, initial: DateTimeModel, dateFromCalendar: Date) => {
     if (!isAllDay) {
@@ -161,47 +157,6 @@ const getNormalizedTime = (isAllDay: boolean, initial: DateTimeModel, dateFromCa
     // If it's an all day event, the hour and minutes are stripped from the temporary event.
     result.setUTCHours(initial.time.getHours(), initial.time.getMinutes());
     return result;
-};
-
-type ModalsMap = {
-    sendWithErrorsConfirmationModal: ModalWithProps<{
-        sendPreferencesMap: Partial<Record<string, SendPreferences>>;
-        vevent?: VcalVeventComponent;
-        inviteActions: InviteActions;
-        cancelVevent?: VcalVeventComponent;
-    }>;
-    deleteConfirmModal: ModalWithProps<{
-        inviteActions: InviteActions;
-    }>;
-    createEventModal: ModalWithProps;
-    confirmModal: ModalWithProps;
-    editRecurringConfirmModal: ModalWithProps<{
-        data: {
-            types: RECURRING_TYPES[];
-            hasSingleModifications: boolean;
-            hasSingleModificationsAfter: boolean;
-            hasRruleModification: boolean;
-            hasCalendarModification: boolean;
-        };
-        inviteActions: InviteActions;
-        isInvitation: boolean;
-    }>;
-    editSingleConfirmModal: ModalWithProps<{
-        inviteActions: InviteActions;
-    }>;
-    duplicateAttendeeModal: ModalWithProps<{
-        duplicateAttendees: string[][];
-    }>;
-    deleteRecurringConfirmModal: ModalWithProps<{
-        inviteActions: InviteActions;
-        types: RECURRING_TYPES[];
-        isInvitation: boolean;
-        hasNonCancelledSingleEdits: boolean;
-    }>;
-    importModal: ModalWithProps<{
-        files: File[];
-        defaultCalendar: Calendar;
-    }>;
 };
 
 interface Props extends SharedViewProps {
@@ -260,6 +215,7 @@ const InteractiveCalendarView = ({
 }: Props) => {
     const api = useApi();
     const { call } = useEventManager();
+    const { createModal, getModal, hideModal, removeModal, modals } = useModals();
     const { createNotification } = useNotifications();
     const { contactEmailsMap } = useContactEmailsCache();
     const sendIcs = useSendIcs();
@@ -268,19 +224,7 @@ const InteractiveCalendarView = ({
     const config = useConfig();
     const isSavingEvent = useRef(false);
 
-    const { modalsMap, closeModal, updateModal } = useModalsMap<ModalsMap>({
-        createEventModal: { isOpen: false },
-        confirmModal: { isOpen: false },
-        editRecurringConfirmModal: { isOpen: false },
-        editSingleConfirmModal: { isOpen: false },
-        duplicateAttendeeModal: { isOpen: false },
-        deleteConfirmModal: { isOpen: false },
-        deleteRecurringConfirmModal: { isOpen: false },
-        sendWithErrorsConfirmationModal: { isOpen: false },
-        importModal: { isOpen: false },
-    });
-
-    const confirm = useRef<{ resolve: (param?: any) => any; reject: () => any }>();
+    const [eventModalID, setEventModalID] = useState<string | undefined>();
 
     const contacts = (useContactEmails()[0] as ContactEmail[]) || [];
     const displayNameEmailMap = useMemo(() => {
@@ -735,16 +679,16 @@ const InteractiveCalendarView = ({
             return { sendPreferencesMap, inviteActions, vevent, cancelVevent };
         }
         return new Promise<CleanSendIcsActionData>((resolve, reject) => {
-            confirm.current = { resolve, reject };
-            updateModal('sendWithErrorsConfirmationModal', {
-                isOpen: true,
-                props: {
-                    sendPreferencesMap,
-                    vevent,
-                    inviteActions,
-                    cancelVevent,
-                },
-            });
+            createModal(
+                <SendWithErrorsConfirmationModal
+                    sendPreferencesMap={sendPreferencesMap}
+                    inviteActions={inviteActions}
+                    vevent={vevent}
+                    cancelVevent={cancelVevent}
+                    onClose={reject}
+                    onConfirm={resolve}
+                />
+            );
         });
     };
 
@@ -796,12 +740,8 @@ const InteractiveCalendarView = ({
     };
 
     const handleCloseConfirmation = () => {
-        updateModal('confirmModal', {
-            isOpen: true,
-        });
-
         return new Promise<void>((resolve, reject) => {
-            confirm.current = { resolve, reject };
+            createModal(<CloseConfirmationModal onClose={reject} onConfirm={resolve} />);
         });
     };
 
@@ -812,23 +752,24 @@ const InteractiveCalendarView = ({
         inviteActions,
     }: OnSaveConfirmationArgs): Promise<RecurringActionData> => {
         return new Promise<RecurringActionData>((resolve, reject) => {
-            confirm.current = { resolve, reject };
             if (type === SAVE_CONFIRMATION_TYPES.RECURRING && data) {
-                updateModal('editRecurringConfirmModal', {
-                    isOpen: true,
-                    props: {
-                        data,
-                        inviteActions,
-                        isInvitation,
-                    },
-                });
+                createModal(
+                    <EditRecurringConfirmModal
+                        types={data.types}
+                        hasSingleModifications={data.hasSingleModifications}
+                        hasSingleModificationsAfter={data.hasSingleModificationsAfter}
+                        hasRruleModification={data.hasRruleModification}
+                        hasCalendarModification={data.hasCalendarModification}
+                        isInvitation={isInvitation}
+                        inviteActions={inviteActions}
+                        onClose={reject}
+                        onConfirm={resolve}
+                    />
+                );
             } else if (type === SAVE_CONFIRMATION_TYPES.SINGLE) {
-                updateModal('editSingleConfirmModal', {
-                    isOpen: true,
-                    props: {
-                        inviteActions,
-                    },
-                });
+                createModal(
+                    <EditSingleConfirmModal inviteActions={inviteActions} onClose={reject} onConfirm={resolve} />
+                );
             } else {
                 return reject(new Error('Unknown type'));
             }
@@ -842,24 +783,19 @@ const InteractiveCalendarView = ({
         inviteActions,
     }: OnDeleteConfirmationArgs): Promise<RecurringActionData> => {
         return new Promise<RecurringActionData>((resolve, reject) => {
-            confirm.current = { resolve, reject };
             if (type === DELETE_CONFIRMATION_TYPES.SINGLE) {
-                updateModal('deleteConfirmModal', {
-                    isOpen: true,
-                    props: {
-                        inviteActions,
-                    },
-                });
+                createModal(<DeleteConfirmModal onClose={reject} onConfirm={resolve} inviteActions={inviteActions} />);
             } else if (type === DELETE_CONFIRMATION_TYPES.RECURRING && data) {
-                updateModal('deleteRecurringConfirmModal', {
-                    isOpen: true,
-                    props: {
-                        inviteActions,
-                        types: data.types,
-                        isInvitation,
-                        hasNonCancelledSingleEdits: data.hasNonCancelledSingleEdits,
-                    },
-                });
+                createModal(
+                    <DeleteRecurringConfirmModal
+                        types={data.types}
+                        isInvitation={isInvitation}
+                        hasNonCancelledSingleEdits={data.hasNonCancelledSingleEdits}
+                        inviteActions={inviteActions}
+                        onClose={reject}
+                        onConfirm={resolve}
+                    />
+                );
             } else {
                 return reject(new Error('Unknown type'));
             }
@@ -904,7 +840,7 @@ const InteractiveCalendarView = ({
         }
         // Close the popover only
         setInteractiveData({ temporaryEvent });
-        updateModal('createEventModal', { isOpen: true });
+        setEventModalID(createModal());
     };
 
     const handleCreateEvent = (attendees: AttendeeModel[]) => {
@@ -1045,15 +981,9 @@ const InteractiveCalendarView = ({
     };
 
     const handleDuplicateAttendees = async (duplicateAttendees: string[][]) => {
-        return new Promise<void>((_resolve, reject) => {
-            confirm.current = { resolve: _resolve, reject };
-            updateModal('duplicateAttendeeModal', {
-                isOpen: true,
-                props: {
-                    duplicateAttendees,
-                },
-            });
-        });
+        return new Promise<void>((_resolve, reject) =>
+            createModal(<DuplicateAttendeesModal duplicateAttendees={duplicateAttendees} onClose={reject} />)
+        );
     };
 
     const handleSaveEvent = async (temporaryEvent: CalendarViewEventTemporaryEvent, inviteActions: InviteActions) => {
@@ -1254,13 +1184,13 @@ const InteractiveCalendarView = ({
             });
         }
 
-        updateModal('importModal', {
-            isOpen: true,
-            props: {
-                files,
-                defaultCalendar,
-            },
-        });
+        return createModal(
+            <ImportModal
+                files={files}
+                defaultCalendar={defaultCalendar}
+                calendars={activeCalendars.filter(getIsPersonalCalendar)}
+            />
+        );
     };
 
     const handleDrop = onlyDragFiles((event: DragEvent) => {
@@ -1269,21 +1199,9 @@ const InteractiveCalendarView = ({
         onAddFiles([...event.dataTransfer.files]);
     });
 
-    const {
-        importModal,
-        sendWithErrorsConfirmationModal,
-        deleteConfirmModal,
-        deleteRecurringConfirmModal,
-        duplicateAttendeeModal,
-        confirmModal,
-        editRecurringConfirmModal,
-        editSingleConfirmModal,
-        createEventModal,
-    } = modalsMap;
-
     return (
         <Dropzone
-            isDisabled={Object.values(modalsMap).some((modal) => modal.isOpen) || !!targetEvent}
+            isDisabled={!!modals.length || !!targetEvent}
             isHovered={isDropzoneHovered}
             onDrop={handleDrop}
             onDragEnter={handleHover(true)}
@@ -1297,111 +1215,6 @@ const InteractiveCalendarView = ({
                 </section>
             }
         >
-            {!!importModal.props && (
-                <ImportModal
-                    {...importModal.props}
-                    isOpen={importModal.isOpen}
-                    onClose={() => {
-                        closeModal('importModal');
-                    }}
-                    calendars={activeCalendars.filter(getIsPersonalCalendar)}
-                />
-            )}
-            {!!sendWithErrorsConfirmationModal.props && (
-                <SendWithErrorsConfirmationModal
-                    isOpen={sendWithErrorsConfirmationModal.isOpen}
-                    {...sendWithErrorsConfirmationModal.props}
-                    onClose={() => {
-                        closeModal('sendWithErrorsConfirmationModal');
-                        confirm.current?.reject();
-                    }}
-                    onConfirm={(props) => {
-                        closeModal('sendWithErrorsConfirmationModal');
-                        confirm.current?.resolve(props);
-                    }}
-                />
-            )}
-            {!!deleteConfirmModal.props && (
-                <DeleteConfirmModal
-                    isOpen={deleteConfirmModal.isOpen}
-                    onClose={() => {
-                        confirm.current?.reject();
-                        closeModal('deleteConfirmModal');
-                    }}
-                    onConfirm={(data) => {
-                        closeModal('deleteConfirmModal');
-                        confirm.current?.resolve(data);
-                    }}
-                    {...deleteConfirmModal.props}
-                />
-            )}
-            {!!deleteRecurringConfirmModal.props && (
-                <DeleteRecurringConfirmModal
-                    isOpen={deleteRecurringConfirmModal.isOpen}
-                    {...deleteRecurringConfirmModal.props}
-                    onClose={() => {
-                        confirm.current?.reject();
-                        closeModal('deleteRecurringConfirmModal');
-                    }}
-                    onConfirm={(data) => {
-                        closeModal('deleteRecurringConfirmModal');
-                        confirm.current?.resolve(data);
-                    }}
-                />
-            )}
-            {!!duplicateAttendeeModal.props && (
-                <DuplicateAttendeesModal
-                    isOpen={duplicateAttendeeModal.isOpen}
-                    {...duplicateAttendeeModal.props}
-                    onClose={() => {
-                        confirm.current?.reject();
-                        closeModal('duplicateAttendeeModal');
-                    }}
-                />
-            )}
-
-            <CloseConfirmationModal
-                isOpen={confirmModal.isOpen}
-                onClose={() => {
-                    closeModal('confirmModal');
-                    confirm.current?.reject();
-                }}
-                onSubmit={() => {
-                    closeModal('confirmModal');
-                    confirm.current?.resolve();
-                }}
-            />
-
-            {!!editRecurringConfirmModal.props && (
-                <EditRecurringConfirmModal
-                    isOpen={editRecurringConfirmModal.isOpen}
-                    {...editRecurringConfirmModal.props.data}
-                    isInvitation={editRecurringConfirmModal.props.isInvitation}
-                    inviteActions={editRecurringConfirmModal.props.inviteActions}
-                    onClose={() => {
-                        closeModal('editRecurringConfirmModal');
-                        confirm.current?.reject();
-                    }}
-                    onConfirm={(data) => {
-                        closeModal('editRecurringConfirmModal');
-                        confirm.current?.resolve(data);
-                    }}
-                />
-            )}
-            {!!editSingleConfirmModal.props && (
-                <EditSingleConfirmModal
-                    isOpen={editSingleConfirmModal.isOpen}
-                    {...editSingleConfirmModal.props}
-                    onClose={() => {
-                        closeModal('editSingleConfirmModal');
-                        confirm.current?.reject();
-                    }}
-                    onConfirm={(data) => {
-                        closeModal('editSingleConfirmModal');
-                        confirm.current?.resolve(data);
-                    }}
-                />
-            )}
             <CalendarView
                 view={view}
                 isNarrow={isNarrow}
@@ -1580,7 +1393,7 @@ const InteractiveCalendarView = ({
                 }}
             />
 
-            {!!tmpData && (
+            {eventModalID && tmpData ? (
                 <CreateEventModal
                     isNarrow={isNarrow}
                     displayWeekNumbers={displayWeekNumbers}
@@ -1588,7 +1401,6 @@ const InteractiveCalendarView = ({
                     tzid={tzid}
                     model={tmpData}
                     setModel={handleSetTemporaryEventModel}
-                    isOpen={createEventModal.isOpen}
                     onSave={async (inviteActions: InviteActions) => {
                         if (!temporaryEvent) {
                             return Promise.reject(new Error('Undefined behavior'));
@@ -1597,7 +1409,7 @@ const InteractiveCalendarView = ({
                         try {
                             await handleSaveEvent(temporaryEvent, inviteActions);
 
-                            closeModal('createEventModal');
+                            return hideModal(eventModalID);
                         } catch (error) {
                             return noop();
                         }
@@ -1610,7 +1422,7 @@ const InteractiveCalendarView = ({
                         try {
                             await handleDeleteEvent(temporaryEvent.tmpOriginalTarget, inviteActions);
 
-                            closeModal('createEventModal');
+                            return hideModal(eventModalID);
                         } catch (error) {
                             return noop();
                         }
@@ -1618,18 +1430,22 @@ const InteractiveCalendarView = ({
                     onClose={async () => {
                         try {
                             await handleConfirmDeleteTemporary({ ask: true });
-                            closeModal('createEventModal');
+
+                            return hideModal(eventModalID);
                         } catch (error) {
                             return noop();
                         }
                     }}
                     onExit={() => {
+                        removeModal(eventModalID);
+                        setEventModalID(undefined);
                         closeAllPopovers();
                     }}
                     isCreateEvent={isCreatingEvent}
                     addresses={addresses}
+                    {...getModal(eventModalID)}
                 />
-            )}
+            ) : null}
         </Dropzone>
     );
 };

@@ -40,21 +40,11 @@ const ImportSummaryModalContent = ({ model }: Props) => {
               )
             : '';
 
-    const getMessage = () => {
-        if (isSuccess) {
-            return <div className="mb1">{alertMessage}</div>;
-        }
-
-        return (
-            <Alert className="mb1" type={isPartialSuccess ? 'warning' : 'error'}>
-                {alertMessage}
-            </Alert>
-        );
-    };
-
     return (
         <>
-            {getMessage()}
+            <Alert className="mb1" type={isSuccess ? 'info' : isPartialSuccess ? 'warning' : 'error'}>
+                {alertMessage}
+            </Alert>
             <DynamicProgress
                 id="progress-import-calendar"
                 value={totalProcessed}

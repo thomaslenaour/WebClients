@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { c } from 'ttag';
 
 import { UserModel } from '@proton/shared/lib/interfaces';
@@ -33,13 +32,10 @@ const CalendarImportSection = ({ activeCalendars, defaultCalendar, user }: Props
     const showAlert = !activeCalendars.length && hasNonDelinquentScope;
     const canManualImport = !!activeCalendars.length && hasNonDelinquentScope;
 
-    const [isImportModalOpen, setIsImportModalOpen] = useState(false);
-
-    const handleManualImport = () => {
-        if (canManualImport && defaultCalendar) {
-            setIsImportModalOpen(true);
-        }
-    };
+    const handleManualImport = () =>
+        canManualImport && defaultCalendar
+            ? createModal(<ImportModal defaultCalendar={defaultCalendar} calendars={activeCalendars} />)
+            : undefined;
 
     const handleOAuthClick = () =>
         createModal(
@@ -57,15 +53,6 @@ const CalendarImportSection = ({ activeCalendars, defaultCalendar, user }: Props
         <Loader />
     ) : (
         <SettingsSection>
-            {isImportModalOpen && (
-                <ImportModal
-                    isOpen={isImportModalOpen}
-                    onClose={() => setIsImportModalOpen(false)}
-                    defaultCalendar={defaultCalendar!}
-                    calendars={activeCalendars}
-                />
-            )}
-
             {showAlert ? (
                 <Alert className="mb1" type="warning">{c('Info')
                     .t`You need to have an active personal calendar to import your events from .ics.`}</Alert>

@@ -3,29 +3,20 @@ import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 
+import { useModals } from '@proton/components';
 import createCache from '@proton/shared/lib/helpers/cache';
 import { CacheProvider } from '@proton/components/containers/cache';
-import { CALENDAR_FLAGS, SETTINGS_VIEW } from '@proton/shared/lib/calendar/constants';
+import ModalsProvider from '@proton/components/containers/modals/Provider';
+import { CALENDAR_FLAGS } from '@proton/shared/lib/calendar/constants';
 import { Calendar, CALENDAR_TYPE } from '@proton/shared/lib/interfaces/calendar';
 import useSubscribedCalendars from '@proton/components/hooks/useSubscribedCalendars';
+import { ModalManager } from '@proton/components/containers/modals/interface';
 import getHasUserReachedCalendarLimit from '@proton/shared/lib/calendar/getHasUserReachedCalendarLimit';
+import CalendarModal from '@proton/components/containers/calendar/calendarModal/CalendarModal';
+import CalendarLimitReachedModal from '@proton/components/containers/calendar/CalendarLimitReachedModal';
+import SubscribeCalendarModal from '@proton/components/containers/calendar/subscribeCalendarModal/SubscribeCalendarModal';
 
 import CalendarSidebar, { CalendarSidebarProps } from './CalendarSidebar';
-
-jest.mock('@proton/components/containers/calendar/calendarModal/CalendarModal', () => ({
-    __esModule: true,
-    CalendarModal: jest.fn(({ isOpen }) => <span>{isOpen ? 'CalendarModal' : null}</span>),
-}));
-
-jest.mock('@proton/components/containers/calendar/subscribeCalendarModal/SubscribeCalendarModal', () => ({
-    __esModule: true,
-    default: jest.fn(({ isOpen }) => <span>{isOpen ? 'SubscribeCalendarModal' : null}</span>),
-}));
-
-jest.mock('@proton/components/hooks/useModals', () => ({
-    __esModule: true,
-    default: jest.fn(() => ({ createModal: jest.fn() })),
-}));
 
 jest.mock('@proton/components/hooks/useEventManager', () => ({
     __esModule: true,
@@ -40,11 +31,7 @@ jest.mock('@proton/components/hooks/useCalendarSubscribeFeature', () => () => ({
 
 jest.mock('@proton/components/hooks/useNotifications', () => () => ({}));
 
-jest.mock('@proton/components/hooks/useUser', () => ({
-    __esModule: true,
-    default: jest.fn(() => [{ isFree: true }, false]),
-    useGetUser: jest.fn(),
-}));
+jest.mock('@proton/components/hooks/useUser', () => jest.fn(() => [{ isFree: true }, false]));
 
 jest.mock('@proton/shared/lib/calendar/getHasUserReachedCalendarLimit', () => jest.fn(() => false));
 
@@ -53,11 +40,22 @@ jest.mock('@proton/components/hooks/useSubscribedCalendars', () => ({
     default: jest.fn(() => ({ loading: true })),
 }));
 
+jest.mock('@proton/components/hooks/useCalendarUserSettings', () => ({
+    __esModule: true,
+    default: jest.fn(),
+    useGetCalendarUserSettings: jest.fn(() => jest.fn(() => ({}))),
+}));
+
 jest.mock('@proton/components/hooks/useUserSettings', () => () => [{}, jest.fn()]);
 
 jest.mock('@proton/components/hooks/useApi', () => ({
     __esModule: true,
     default: jest.fn(),
+}));
+
+jest.mock('@proton/components/hooks/useModals', () => ({
+    __esModule: true,
+    default: jest.fn(() => ({ createModal: jest.fn() })),
 }));
 
 jest.mock('@proton/components/containers/eventManager/calendar/ModelEventManagerProvider', () => ({
@@ -75,18 +73,11 @@ jest.mock('@proton/components/hooks/useConfig', () => ({
     default: jest.fn(() => ({ APP_NAME: 'proton-calendar' })),
 }));
 
+const mockedUseModals = useModals as jest.Mock<ReturnType<typeof useModals>>;
 const mockedUseSubscribedCalendars = useSubscribedCalendars as jest.Mock<ReturnType<typeof useSubscribedCalendars>>;
 const mockedGetHasUserReachedCalendarLimit = getHasUserReachedCalendarLimit as jest.Mock<
     ReturnType<typeof getHasUserReachedCalendarLimit>
 >;
-
-window.ResizeObserver =
-    window.ResizeObserver ||
-    jest.fn().mockImplementation(() => ({
-        disconnect: jest.fn(),
-        observe: jest.fn(),
-        unobserve: jest.fn(),
-    }));
 
 const mockCalendar: Calendar = {
     ID: 'id3',
@@ -105,25 +96,16 @@ function renderComponent(props?: Partial<CalendarSidebarProps>) {
         logo: <span>mockedLogo</span>,
         calendars: [mockCalendar],
         miniCalendar: <span>mockedMiniCalendar</span>,
-        calendarUserSettings: {
-            WeekLength: 7,
-            DisplayWeekNumber: 1,
-            DefaultCalendarID: '1',
-            AutoDetectPrimaryTimezone: 1,
-            PrimaryTimezone: 'America/New_York',
-            DisplaySecondaryTimezone: 0,
-            SecondaryTimezone: undefined,
-            ViewPreference: SETTINGS_VIEW.WEEK,
-            InviteLocale: null,
-        },
         // onCreateEvent: jest.fn(),
     };
     return (
-        <Router history={createMemoryHistory()}>
-            <CacheProvider cache={createCache()}>
-                <CalendarSidebar {...defaultProps} {...props} />
-            </CacheProvider>
-        </Router>
+        <ModalsProvider>
+            <Router history={createMemoryHistory()}>
+                <CacheProvider cache={createCache()}>
+                    <CalendarSidebar {...defaultProps} {...props} />
+                </CacheProvider>
+            </Router>
+        </ModalsProvider>
     );
 }
 
@@ -168,13 +150,17 @@ describe('CalendarSidebar', () => {
     });
 
     it('displays modals when adding calendars', async () => {
+        const mockCreateModal = jest.fn();
+        mockedUseModals.mockImplementation(
+            () =>
+                ({
+                    createModal: mockCreateModal,
+                } as unknown as ModalManager)
+        );
+
         const { rerender } = render(renderComponent());
 
-        const getCalendarModal = () => screen.queryByText(/^CalendarModal/);
-        const getSubscribeCalendarModal = () => screen.queryByText(/^SubscribeCalendarModal/);
-
-        expect(getCalendarModal()).not.toBeInTheDocument();
-        expect(getSubscribeCalendarModal()).not.toBeInTheDocument();
+        expect(mockCreateModal).not.toHaveBeenCalled();
 
         const addCalendarElem = screen.getByText(/Add calendar$/) as HTMLSpanElement;
         const getCreatePersonalCalendarButton = () => screen.queryByText(/Create calendar/) as HTMLButtonElement;
@@ -182,18 +168,19 @@ describe('CalendarSidebar', () => {
             screen.queryByText(/Add calendar from URL/) as HTMLButtonElement;
 
         fireEvent.click(addCalendarElem);
-
         fireEvent.click(getCreatePersonalCalendarButton());
 
         await waitFor(() => {
-            expect(getCalendarModal()).toBeInTheDocument();
+            expect(mockCreateModal).toHaveBeenCalledWith(<CalendarModal activeCalendars={[mockCalendar]} />);
         });
 
         rerender(renderComponent());
         fireEvent.click(addCalendarElem);
         fireEvent.click(getCreateSubscribedCalendarButton());
 
-        expect(getCalendarModal()).toBeInTheDocument();
+        await waitFor(() => {
+            expect(mockCreateModal).toHaveBeenCalledWith(<SubscribeCalendarModal />);
+        });
 
         mockedGetHasUserReachedCalendarLimit.mockImplementation(() => true);
 
@@ -201,23 +188,25 @@ describe('CalendarSidebar', () => {
         fireEvent.click(addCalendarElem);
         fireEvent.click(getCreatePersonalCalendarButton());
 
-        expect(getCalendarModal()).toBeInTheDocument();
-
-        expect(
-            screen.getByText(
-                /Unable to create more calendars. You have reached the maximum of personal calendars within your plan./
-            )
-        ).toBeInTheDocument();
+        await waitFor(() => {
+            expect(mockCreateModal).toHaveBeenCalledWith(
+                <CalendarLimitReachedModal>
+                    Unable to create more calendars. You have reached the maximum of personal calendars within your
+                    plan.
+                </CalendarLimitReachedModal>
+            );
+        });
 
         rerender(renderComponent());
         fireEvent.click(addCalendarElem);
         fireEvent.click(getCreateSubscribedCalendarButton());
 
-        expect(getSubscribeCalendarModal()).toBeInTheDocument();
-        expect(
-            screen.getByText(
-                /Unable to add more calendars. You have reached the maximum of subscribed calendars within your plan./
-            )
-        ).toBeInTheDocument();
+        await waitFor(() => {
+            expect(mockCreateModal).toHaveBeenCalledWith(
+                <CalendarLimitReachedModal>
+                    Unable to add more calendars. You have reached the maximum of subscribed calendars within your plan.
+                </CalendarLimitReachedModal>
+            );
+        });
     });
 });

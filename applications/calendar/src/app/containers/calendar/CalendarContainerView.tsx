@@ -27,7 +27,7 @@ import { c, msgid } from 'ttag';
 import { differenceInCalendarDays } from 'date-fns';
 
 import { fromUTCDate, toLocalDate } from '@proton/shared/lib/date/timezone';
-import { AttendeeModel, Calendar, CalendarUserSettings } from '@proton/shared/lib/interfaces/calendar';
+import { AttendeeModel, Calendar } from '@proton/shared/lib/interfaces/calendar';
 import { getAppName } from '@proton/shared/lib/apps/helper';
 import { APPS } from '@proton/shared/lib/constants';
 import { CONTACT_WIDGET_TABS, CustomActionRenderProps } from '@proton/components/containers/contacts/widget/types';
@@ -74,7 +74,6 @@ interface Props {
     onChangeDateRange: (date: Date, range: number, resetRange?: boolean) => void;
     containerRef: Ref<HTMLDivElement>;
     addresses: Address[];
-    calendarUserSettings: CalendarUserSettings;
 }
 
 const CalendarContainerView = ({
@@ -106,8 +105,6 @@ const CalendarContainerView = ({
     containerRef,
 
     addresses,
-
-    calendarUserSettings,
 }: Props) => {
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const { createNotification } = useNotifications();
@@ -399,7 +396,6 @@ const CalendarContainerView = ({
             onToggleExpand={onToggleExpand}
             onCreateEvent={onCreateEvent ? () => onCreateEvent?.() : undefined}
             onCreateCalendar={onCreateCalendarFromSidebar}
-            calendarUserSettings={calendarUserSettings}
             miniCalendar={
                 <LocalizedMiniCalendar
                     min={MINIMUM_DATE}

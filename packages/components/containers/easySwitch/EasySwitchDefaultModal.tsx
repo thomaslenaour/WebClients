@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { c } from 'ttag';
 
 import { Address } from '@proton/shared/lib/interfaces';
 import { EasySwitchFeatureFlag, ImportType, NON_OAUTH_PROVIDER } from '@proton/shared/lib/interfaces/EasySwitch';
 import { noop } from '@proton/shared/lib/helpers/function';
+import {
+    DEFAULT_CALENDAR_USER_SETTINGS,
+    getDefaultCalendar,
+    getProbablyActiveCalendars,
+} from '@proton/shared/lib/calendar/calendar';
+import { partition } from '@proton/shared/lib/helpers/array';
+import { Calendar } from '@proton/shared/lib/interfaces/calendar';
+import { getIsPersonalCalendar } from '@proton/shared/lib/calendar/subscribe/helpers';
 
 import mailIllu from '@proton/styles/assets/img/import/importTypes/mail.svg';
 import calendarIllu from '@proton/styles/assets/img/import/importTypes/calendar.svg';
 import contactsIllu from '@proton/styles/assets/img/import/importTypes/contacts.svg';
 
 import { Button, ButtonProps, FormModal, Loader, Tooltip } from '../../components';
-import { useModals } from '../../hooks';
+import { useCalendars, useCalendarUserSettings, useModals } from '../../hooks';
 
 import EasySwitchInstructionsModal from './EasySwitchInstructionsModal';
 
@@ -61,9 +69,6 @@ interface Props {
     onClose?: () => void;
     addresses: Address[];
     provider?: NON_OAUTH_PROVIDER;
-    onOpenCalendarModal: () => void;
-    canImportCalendars: boolean;
-    isLoading: boolean;
     featureMap?: EasySwitchFeatureFlag;
 }
 
@@ -71,9 +76,7 @@ const EasySwitchDefaultModal = ({
     addresses,
     onClose = noop,
     provider = NON_OAUTH_PROVIDER.DEFAULT,
-    onOpenCalendarModal,
-    canImportCalendars,
-    isLoading,
+
     featureMap,
     ...rest
 }: Props) => {
@@ -83,7 +86,28 @@ const EasySwitchDefaultModal = ({
 
     const { createModal } = useModals();
 
+    const [calendars, loadingCalendars] = useCalendars();
+    const [calendarUserSettings = DEFAULT_CALENDAR_USER_SETTINGS, loadingCalendarUserSettings] =
+        useCalendarUserSettings();
+
+    const memoizedCalendars = useMemo(() => calendars || [], [calendars]);
+
+    const { activeCalendars } = useMemo(() => {
+        return {
+            calendars: memoizedCalendars,
+            activeCalendars: getProbablyActiveCalendars(memoizedCalendars),
+        };
+    }, [calendars]);
+
+    const [personalActiveCalendars] = partition<Calendar>(activeCalendars, getIsPersonalCalendar);
+
+    const defaultCalendar = getDefaultCalendar(personalActiveCalendars, calendarUserSettings.DefaultCalendarID);
+
+    const canImportCalendars = !!personalActiveCalendars.length;
+
     const handleCancel = () => onClose();
+
+    const isLoading = loadingCalendars || loadingCalendarUserSettings;
 
     const handleClick = (importType: ImportType) => {
         createModal(
@@ -91,7 +115,8 @@ const EasySwitchDefaultModal = ({
                 importType={importType}
                 addresses={addresses}
                 provider={provider}
-                onOpenCalendarModal={onOpenCalendarModal}
+                defaultCalendar={defaultCalendar}
+                activeCalendars={activeCalendars}
             />
         );
         onClose();

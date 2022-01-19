@@ -4,7 +4,7 @@ import { VcalVeventComponent } from '@proton/shared/lib/interfaces/calendar';
 import { SendPreferences } from '@proton/shared/lib/interfaces/mail/crypto';
 import { SimpleMap } from '@proton/shared/lib/interfaces/utils';
 import * as React from 'react';
-import { Button, ModalTwo, ModalTwoContent, ModalTwoHeader, ModalTwoFooter } from '@proton/components';
+import { Alert, ErrorButton, FormModal } from '@proton/components';
 import { c } from 'ttag';
 import { CleanSendIcsActionData, INVITE_ACTION_TYPES, InviteActions } from '../../../interfaces/Invite';
 
@@ -145,12 +145,11 @@ const getCleanSendData = ({
 
 const getModalContent = (
     newInviteActions: InviteActions,
-    originalInviteActions: InviteActions,
-    onClose: () => void,
-    onSubmit: () => void
+    originalInviteActions: InviteActions
 ): {
     title: string;
     warningText: string;
+    alertType?: 'error' | 'info';
     alertText?: string;
     submit?: React.ReactNode;
     close?: React.ReactNode;
@@ -161,7 +160,7 @@ const getModalContent = (
             return {
                 title: c('Title').t`Organizer cannot be notified`,
                 warningText: c('Info').t`The organizer could not be notified that you changed your answer:`,
-                close: <Button onClick={onClose}>{c('Action').t`OK`}</Button>,
+                close: c('Action').t`OK`,
             };
         }
         return {
@@ -173,8 +172,9 @@ const getModalContent = (
         return {
             title: c('Title').t`Organizer cannot be notified`,
             warningText: c('Info').t`The organizer cannot be notified that you decline the invitation:`,
+            alertType: 'error',
             alertText: c('Info').t`Would you like to delete the event anyway?`,
-            submit: <Button onClick={onSubmit} color="danger" type="submit">{c('Action').t`Delete`}</Button>,
+            submit: <ErrorButton type="submit">{c('Action').t`Delete`}</ErrorButton>,
         };
     }
     return {
@@ -183,9 +183,9 @@ const getModalContent = (
             newInviteActions.type === NONE
                 ? c('Info').t`None of the participants can be notified about your changes:`
                 : c('Info').t`The following participants cannot be notified about your changes:`,
+        alertType: 'info',
         alertText: c('Info').t`Would you like to continue anyway?`,
-        close: <Button onClick={onClose}>{c('Action').t`Cancel`}</Button>,
-        submit: <Button color="norm" onClick={onSubmit}>{c('Action').t`Continue`}</Button>,
+        submit: c('Action').t`Continue`,
     };
 };
 
@@ -196,7 +196,6 @@ interface Props {
     cancelVevent?: VcalVeventComponent;
     onConfirm: (data: CleanSendIcsActionData) => void;
     onClose: () => void;
-    isOpen: boolean;
 }
 const SendWithErrorsConfirmationModal = ({
     sendPreferencesMap,
@@ -204,8 +203,7 @@ const SendWithErrorsConfirmationModal = ({
     vevent,
     cancelVevent,
     onConfirm,
-    onClose,
-    isOpen,
+    ...rest
 }: Props) => {
     const errorMap = Object.entries(sendPreferencesMap).reduce<SimpleMap<string>>((acc, [email, sendPrefs]) => {
         const error = sendPrefs?.error;
@@ -223,7 +221,7 @@ const SendWithErrorsConfirmationModal = ({
     });
     const handleConfirm = () => {
         onConfirm(cleanSendData);
-        onClose();
+        rest.onClose();
     };
 
     const renderEmailRow = (email: string) => {
@@ -244,33 +242,23 @@ const SendWithErrorsConfirmationModal = ({
         );
     };
 
-    const { title, warningText, alertText, submit, close } = getModalContent(
+    const { title, warningText, alertText, alertType, submit, close } = getModalContent(
         cleanSendData.inviteActions,
-        inviteActions,
-        onClose,
-        handleConfirm
+        inviteActions
     );
 
     return (
-        <ModalTwo
-            title={title}
-            onSubmit={handleConfirm}
-            size="large"
-            fullscreenOnMobile
-            onClose={onClose}
-            open={isOpen}
-        >
-            <ModalTwoHeader title={title} />
-            <ModalTwoContent>
-                <div className="mb1">{warningText}</div>
-                <ul>{Object.keys(errorMap).map(renderEmailRow)}</ul>
-                {alertText && <div>{alertText}</div>}
-            </ModalTwoContent>
-            <ModalTwoFooter>
-                {close}
-                {submit}
-            </ModalTwoFooter>
-        </ModalTwo>
+        <FormModal title={title} submit={submit} close={close} hasSubmit={!!submit} onSubmit={handleConfirm} {...rest}>
+            <Alert className="mb1" type="warning">
+                {warningText}
+            </Alert>
+            <ul>{Object.keys(errorMap).map(renderEmailRow)}</ul>
+            {alertText && (
+                <Alert className="mb1" type={alertType}>
+                    {alertText}
+                </Alert>
+            )}
+        </FormModal>
     );
 };
 

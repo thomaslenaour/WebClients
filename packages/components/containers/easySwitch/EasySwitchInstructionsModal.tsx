@@ -4,11 +4,13 @@ import { c } from 'ttag';
 import { Address } from '@proton/shared/lib/interfaces';
 import { ImportType, NON_OAUTH_PROVIDER } from '@proton/shared/lib/interfaces/EasySwitch';
 import { noop } from '@proton/shared/lib/helpers/function';
+import { Calendar } from '@proton/shared/lib/interfaces/calendar';
 
 import { FormModal } from '../../components';
 import { useModals } from '../../hooks';
 
 import ImportMailModal from './mail/modals/ImportMailModal';
+import { ImportModal as ImportCalendarModal } from '../calendar/importModal';
 import ImportContactsModal from '../contacts/import/ImportModal';
 
 import YahooMailInstructions from '../../components/easySwitch/instructions/yahoo/YahooMailInstructions';
@@ -28,7 +30,8 @@ interface Props {
     addresses: Address[];
     provider: NON_OAUTH_PROVIDER;
     importType: ImportType;
-    onOpenCalendarModal: () => void;
+    defaultCalendar?: Calendar;
+    activeCalendars: Calendar[];
 }
 
 const { DEFAULT, YAHOO, OUTLOOK } = NON_OAUTH_PROVIDER;
@@ -36,9 +39,10 @@ const { DEFAULT, YAHOO, OUTLOOK } = NON_OAUTH_PROVIDER;
 const EasySwitchInstructionsModal = ({
     addresses,
     onClose = noop,
+    defaultCalendar,
+    activeCalendars,
     importType,
     provider,
-    onOpenCalendarModal,
     ...rest
 }: Props) => {
     const { createModal } = useModals();
@@ -88,8 +92,8 @@ const EasySwitchInstructionsModal = ({
             createModal(<ImportMailModal addresses={addresses} provider={provider} />);
         }
 
-        if (importType === ImportType.CALENDAR) {
-            onOpenCalendarModal();
+        if (importType === ImportType.CALENDAR && defaultCalendar) {
+            createModal(<ImportCalendarModal defaultCalendar={defaultCalendar} calendars={activeCalendars} />);
         }
         if (importType === ImportType.CONTACTS) {
             createModal(<ImportContactsModal />);

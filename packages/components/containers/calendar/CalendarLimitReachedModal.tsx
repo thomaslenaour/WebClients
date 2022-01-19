@@ -1,30 +1,29 @@
 import React from 'react';
 import { c } from 'ttag';
-
-import { Button, ButtonLike } from '../../components/button';
+import { noop } from '@proton/shared/lib/helpers/function';
+import { ButtonLike } from '../../components/button';
 import { SettingsLink } from '../../components/link';
-import { AlertModal } from '../../components/alertModal';
+import { FormModal } from '../../components/modal';
 
 interface Props {
     children: React.ReactNode;
-    onClose: () => void;
-    isOpen: boolean;
 }
 
-const CalendarLimitReachedModal = ({ children, onClose, isOpen }: Props) => (
-    <AlertModal
-        open={isOpen}
+const CalendarLimitReachedModal = ({ children, ...rest }: Props) => (
+    <FormModal
         title={c('Modal title').t`Unable to add more calendars`}
-        buttons={[
+        submit={
             <ButtonLike color="norm" as={SettingsLink} path="/calendars">
                 {c('Modal action').t`Manage calendars`}
-            </ButtonLike>,
-            <Button onClick={onClose}>{c('Modal action').t`Close`}</Button>,
-        ]}
-        onClose={onClose}
+            </ButtonLike>
+        }
+        close={c('Modal action').t`Close`}
+        onSubmit={noop}
+        onClose={noop}
+        {...rest}
     >
         {children}
-    </AlertModal>
+    </FormModal>
 );
 
 export default CalendarLimitReachedModal;

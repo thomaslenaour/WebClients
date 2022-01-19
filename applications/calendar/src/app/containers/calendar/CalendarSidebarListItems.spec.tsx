@@ -5,32 +5,22 @@ import { fireEvent, render, screen } from '@testing-library/react';
 
 import createCache from '@proton/shared/lib/helpers/cache';
 import { CacheProvider } from '@proton/components/containers/cache';
+import { useModals } from '@proton/components';
+import ModalsProvider from '@proton/components/containers/modals/Provider';
 import { CALENDAR_FLAGS } from '@proton/shared/lib/calendar/constants';
 import { Calendar, CALENDAR_TYPE } from '@proton/shared/lib/interfaces/calendar';
+import CalendarModal from '@proton/components/containers/calendar/calendarModal/CalendarModal';
+import { ModalManager } from '@proton/components/containers/modals/interface';
 import {
     getCalendarHasSubscriptionParameters,
     getCalendarIsNotSyncedInfo,
 } from '@proton/shared/lib/calendar/subscribe/helpers';
 import { getIsCalendarDisabled } from '@proton/shared/lib/calendar/calendar';
 
+import { ImportModal } from '@proton/components/containers/calendar/importModal';
 import useUser from '@proton/components/hooks/useUser';
 import { UserModel } from '@proton/shared/lib/interfaces';
 import CalendarSidebarListItems, { CalendarSidebarListItemsProps } from './CalendarSidebarListItems';
-
-jest.mock('@proton/components/containers/calendar/calendarModal/CalendarModal', () => ({
-    __esModule: true,
-    CalendarModal: jest.fn(() => <span>CalendarModal</span>),
-}));
-
-jest.mock('@proton/components/containers/calendar/importModal/ImportModal', () => ({
-    __esModule: true,
-    default: jest.fn(() => <span>ImportModal</span>),
-}));
-
-jest.mock('@proton/components/hooks/useModals', () => ({
-    __esModule: true,
-    default: jest.fn(() => ({ createModal: jest.fn() })),
-}));
 
 jest.mock('@proton/shared/lib/calendar/subscribe/helpers', () => ({
     ...jest.requireActual('@proton/shared/lib/calendar/subscribe/helpers'),
@@ -47,12 +37,17 @@ jest.mock('@proton/components/hooks/useUser', () => ({
     __esModule: true,
     default: jest.fn(() => [{ hasNonDelinquentScope: true }, false]),
 }));
+jest.mock('@proton/components/hooks/useModals', () => ({
+    __esModule: true,
+    default: jest.fn(() => ({ createModal: jest.fn() })),
+}));
 
 jest.mock('@proton/components/hooks/useConfig', () => ({
     __esModule: true,
     default: jest.fn(() => ({ APP_NAME: 'proton-calendar' })),
 }));
 
+const mockedUseModals = useModals as jest.Mock<ReturnType<typeof useModals>>;
 const mockedUseUser = useUser as jest.Mock<ReturnType<typeof useUser>>;
 const mockedGetCalendarHasSubscriptionParameters = getCalendarHasSubscriptionParameters as unknown as jest.Mock<
     ReturnType<typeof getCalendarHasSubscriptionParameters>
@@ -83,7 +78,6 @@ const mockCalendar2: Calendar = {
 };
 
 const getImportButton = () => screen.queryByText(/Import events/) as HTMLButtonElement;
-const getImportModal = () => screen.queryByText(/ImportModal/);
 
 function renderComponent(props?: Partial<CalendarSidebarListItemsProps>) {
     const defaultProps: CalendarSidebarListItemsProps = {
@@ -91,11 +85,13 @@ function renderComponent(props?: Partial<CalendarSidebarListItemsProps>) {
         calendars: [mockCalendar, mockCalendar2],
     };
     return (
-        <Router history={createMemoryHistory()}>
-            <CacheProvider cache={createCache()}>
-                <CalendarSidebarListItems {...defaultProps} {...props} />
-            </CacheProvider>
-        </Router>
+        <ModalsProvider>
+            <Router history={createMemoryHistory()}>
+                <CacheProvider cache={createCache()}>
+                    <CalendarSidebarListItems {...defaultProps} {...props} />
+                </CacheProvider>
+            </Router>
+        </ModalsProvider>
     );
 }
 
@@ -166,12 +162,20 @@ describe('CalendarSidebarListItems', () => {
         expect(getHasWeakColour()).toBe(false);
     });
 
-    it('displays the correct dropdown items for personal calendars', async () => {
+    it('displays the correct dropdown items for personal calendars', () => {
+        const mockCreateModal = jest.fn();
+        mockedUseModals.mockImplementation(
+            () =>
+                ({
+                    createModal: mockCreateModal,
+                } as unknown as ModalManager)
+        );
         render(renderComponent());
 
         fireEvent.click(screen.getAllByRole('button')[1]);
 
-        const editButton = await screen.findByText(/Edit/);
+        const editButton = screen.getByText(/Edit/);
+        expect(editButton).toBeInTheDocument();
         const shareLink = screen.getByText(/Share/) as HTMLAnchorElement;
         expect(shareLink).toBeInTheDocument();
         expect(shareLink.href).toBe('http://localhost/calendar/calendars?share=id2');
@@ -180,16 +184,13 @@ describe('CalendarSidebarListItems', () => {
         expect(moreOptionsLink.href).toBe('http://localhost/calendar/calendars');
         expect(getImportButton()).toBeInTheDocument();
 
-        const getCalendarModal = () => screen.queryByText(/CalendarModal/);
-
-        expect(getCalendarModal()).not.toBeInTheDocument();
-        expect(getImportModal()).not.toBeInTheDocument();
-
         fireEvent.click(editButton);
-        expect(getCalendarModal()).toBeInTheDocument();
+        expect(mockCreateModal).toHaveBeenCalledWith(<CalendarModal calendar={mockCalendar2} />);
 
         fireEvent.click(getImportButton());
-        expect(getImportModal()).toBeInTheDocument();
+        expect(mockCreateModal).toHaveBeenCalledWith(
+            <ImportModal defaultCalendar={mockCalendar2} calendars={[mockCalendar, mockCalendar2]} />
+        );
     });
 
     it('hidess some dropdown items when calendars are disabled', () => {
@@ -204,7 +205,15 @@ describe('CalendarSidebarListItems', () => {
         expect(getImportButton()).not.toBeInTheDocument();
     });
 
-    it(`does not open the import modal when user has a delinquent scope`, async () => {
+    it(`does not open the import modal when user has a delinquent scope`, () => {
+        const mockCreateModal = jest.fn();
+        mockedUseModals.mockImplementation(
+            () =>
+                ({
+                    createModal: mockCreateModal,
+                } as unknown as ModalManager)
+        );
+
         mockedUseUser.mockImplementation(() => [{ hasNonDelinquentScope: false } as UserModel, false, null]);
 
         render(renderComponent());
@@ -212,8 +221,7 @@ describe('CalendarSidebarListItems', () => {
         fireEvent.click(screen.getAllByRole('button')[0]);
 
         fireEvent.click(getImportButton());
-
-        expect(getImportModal()).not.toBeInTheDocument();
+        expect(mockCreateModal).not.toHaveBeenCalled();
     });
 
     it('displays the correct dropdown items for subscribed calendars', () => {

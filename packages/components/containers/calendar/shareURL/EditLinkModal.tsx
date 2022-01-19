@@ -2,17 +2,16 @@ import { useState } from 'react';
 import { Nullable } from '@proton/shared/lib/interfaces/utils';
 import { c } from 'ttag';
 
-import { ModalTwo, ModalTwoHeader, ModalTwoContent, ModalTwoFooter, InputTwo, Button } from '../../../components';
+import { Alert, FormModal, Input } from '../../../components';
 import { useLoading } from '../../../hooks';
 
 interface Props {
     decryptedPurpose: Nullable<string>;
     onClose: () => void;
     onSubmit: (purpose: string) => Promise<void>;
-    isOpen: boolean;
 }
 
-const EditLinkModal = ({ decryptedPurpose, onClose, onSubmit, isOpen }: Props) => {
+const EditLinkModal = ({ decryptedPurpose, onClose, onSubmit, ...rest }: Props) => {
     const [purpose, setPurpose] = useState(decryptedPurpose || '');
     const [isLoading, withLoading] = useLoading();
 
@@ -22,36 +21,26 @@ const EditLinkModal = ({ decryptedPurpose, onClose, onSubmit, isOpen }: Props) =
     };
 
     return (
-        <ModalTwo
-            open={isOpen}
-            size="medium"
-            onSubmit={() => {
-                if (!isLoading) {
-                    withLoading(handleSubmit());
-                }
-            }}
+        <FormModal
+            title={decryptedPurpose ? c('Info').t`Edit label` : c('Info').t`Add label`}
+            onSubmit={() => withLoading(handleSubmit())}
+            submit={c('Action').t`Save`}
             onClose={onClose}
-            as="form"
+            loading={isLoading}
+            {...rest}
         >
-            <ModalTwoHeader title={decryptedPurpose ? c('Info').t`Edit label` : c('Info').t`Add label`} />
-            <ModalTwoContent>
-                <p className="mt0">{c('Info').t`Only you can see the labels.`}</p>
-                <label htmlFor="your-calendar-url-label" className="sr-only">
-                    {c('Label').t`Your calendar URL label`}
-                </label>
-                <InputTwo
-                    id="your-calendar-url-label"
-                    maxLength={50}
-                    autoFocus
-                    value={purpose}
-                    onChange={({ target: { value } }) => setPurpose(value)}
-                />
-            </ModalTwoContent>
-            <ModalTwoFooter>
-                <Button onClick={onClose}>{c('Action').t`Cancel`}</Button>
-                <Button color="norm" type="submit" loading={isLoading}>{c('Action').t`Save`}</Button>
-            </ModalTwoFooter>
-        </ModalTwo>
+            <Alert className="mb1">{c('Info').t`Only you can see the labels.`}</Alert>
+            <label htmlFor="your-calendar-url-label" className="sr-only">
+                {c('Label').t`Your calendar URL label`}
+            </label>
+            <Input
+                id="your-calendar-url-label"
+                maxLength={50}
+                autoFocus
+                value={purpose}
+                onChange={({ target: { value } }) => setPurpose(value)}
+            />
+        </FormModal>
     );
 };
 
