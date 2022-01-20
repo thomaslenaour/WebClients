@@ -1,4 +1,4 @@
-import { RefObject, useRef } from 'react';
+import { RefObject, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { c } from 'ttag';
 import { useLinkHandler } from '@proton/components/hooks/useLinkHandler';
@@ -16,7 +16,7 @@ import { MESSAGE_IFRAME_PRINT_ID } from './constants';
 import MessagePrintHeader from './MessagePrintHeader';
 import MessageBodyImages from './MessageBodyImages';
 import useIframeOffset from './hooks/useIframeOffset';
-import useSetIframeHeightPolling from './hooks/useSetIframeHeightPolling';
+import useObserveIframeHeight from './hooks/useObserveIframeHeight';
 
 interface Props {
     content: string;
@@ -46,6 +46,7 @@ const MessageBodyIframe = ({
     onReady,
 }: Props) => {
     const iframeRef = useRef<HTMLIFrameElement>(null);
+    const [messageImagesLoaded, setMessageImagesLoaded] = useState<boolean>(false);
     const messageHead = locateHead(message.messageDocument?.document);
 
     const { isResizing } = useMailboxContainerContext();
@@ -76,7 +77,7 @@ const MessageBodyIframe = ({
 
     useIframeDispatchEvents(initStatus, iframeRef);
 
-    useSetIframeHeightPolling(initStatus === 'done', isResizing, iframeRef);
+    useObserveIframeHeight(initStatus === 'done', iframeRef, messageImagesLoaded);
 
     const iframePrintDiv = iframeRef.current?.contentDocument?.getElementById(MESSAGE_IFRAME_PRINT_ID);
 
@@ -105,6 +106,7 @@ const MessageBodyIframe = ({
                     iframeRef={iframeRef}
                     isPrint={isPrint}
                     messageImages={message.messageImages}
+                    onImagesLoaded={() => setMessageImagesLoaded(true)}
                 />
             )}
             {showToggle &&
