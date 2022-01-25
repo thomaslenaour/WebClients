@@ -605,7 +605,7 @@
         "Davet e-postaları için dil seçiminizi yapın"
       ],
       "Select plan": [
-        "Plan seçin"
+        "Planı seç"
       ],
       "Select timezone": [
         "Zaman dilimini seçin"
@@ -1742,11 +1742,11 @@
         "${ email } adresi bulunamadı."
       ],
       "Deselect at least ${ calendarToFixCount } calendar": [
-        "",
+        "En az ${ calendarToFixCount } takvimi kaldırın",
         "En az ${ calendarToFixCount } takvimi kaldırın"
       ],
       "Deselect at least ${ calendarToFixCount } calendar or": [
-        "",
+        "En az ${ calendarToFixCount } takvimi kaldırın ya da",
         "En az ${ calendarToFixCount } takvimi kaldırın ya da"
       ],
       "Domain not available, try again later": [
@@ -1840,7 +1840,7 @@
         "Etiket adı boş olamaz"
       ],
       "Merge at least ${ calendarToFixCount } calendar with an existing Proton calendar": [
-        "",
+        "En az ${ calendarToFixCount } takvimi var olan bir Proton takvimine aktarın",
         "En az ${ calendarToFixCount } takvimi var olan bir Proton takvimine aktarın"
       ],
       "Missing signature": [
@@ -2328,7 +2328,7 @@
         "Cevabınız gönderildi, ancak etkinlik takviminize eklenemedi"
       ],
       "Your answer was sent, but the event could not be updated in your calendar": [
-        "Cevabınız gönderildi, ancak etkinlik takviminizde güncellenemedi"
+        "Yanıtınız gönderildi, ancak etkinlik takviminizde güncellenemedi"
       ]
     },
     "Event title": {
@@ -2632,7 +2632,7 @@
         "${ totalImported }/${ totalToImport } etkinlik takviminize eklenip şifrelendi"
       ],
       "An error occurred while encrypting and adding your event. ${ totalImported } out of ${ totalToImport } event successfully imported.": [
-        "",
+        "Etkinliğiniz şifrelenip eklenirken bir sorun çıktı. ${ totalImported }/${ totalToImport } etkinlik içe aktarıldı.",
         "Etkinlikleriniz şifrelenirken ve eklenirken bir sorun çıktı. ${ totalImported } / ${ totalToImport } etkinlik içe aktarıldı."
       ],
       "An error occurred while encrypting and adding your event. No event could be imported.": [
@@ -3032,7 +3032,7 @@
         "${ totalContactsDiscarded }/${ totalContacts } kişi içe aktarılmayacak. Daha fazla bilgi için tıklayın"
       ],
       "${ totalEventsDiscarded } out of ${ totalEvents } event will not be imported. Expand for details.": [
-        "",
+        "${ totalEvents } / ${ totalEventsDiscarded } etkinlik içe aktarılmayacak. Ayrıntılar için genişletin.",
         "${ totalEventsDiscarded } / ${ totalEvents } etkinlik içe aktarılmayacak. Ayrıntıları görmek için genişletin."
       ],
       "No contact can be imported. Click for details": [
@@ -3060,11 +3060,11 @@
         "${ calendarsToBeCreatedCount } adet yeni takvim"
       ],
       "${ calendarsToBeMerged } merged calendar": [
-        "",
+        "${ calendarsToBeMerged } birleştirilmiş takvim",
         "${ calendarsToBeMerged } birleştirilmiş takvim"
       ],
       "${ calendarsToBeMergedCount } merged calendar": [
-        "",
+        "${ calendarsToBeMergedCount } birleştirilmiş takvim",
         "${ calendarsToBeMergedCount } birleştirilmiş takvim"
       ],
       "${ mailAppName } Free": [
@@ -3081,8 +3081,8 @@
         "${ none } seçeneğinin e-posta teslimi üzerinde hiçbir etkisi yoktur, ancak daha iyi güvenlik için ${ quarantine } öneririz."
       ],
       "${ number } city": [
-        "${ number } şehir",
-        "${ number } şehir"
+        "${ number } il",
+        "${ number } il"
       ],
       "${ number } server": [
         "${ number } sunucu",
@@ -3093,7 +3093,7 @@
         "${ numberOfNonPrivateKeys } yüklenen dosyalar geçerli gizli anahtarlar değil. Lütfen doğrulayın ve yeniden deneyin."
       ],
       "${ numContactGroups } contact group": [
-        "",
+        "${ numContactGroups } kişi grubu",
         "${ numContactGroups } kişi grubu"
       ],
       "${ numContacts } contact": [
@@ -3196,7 +3196,7 @@
         "Hesap başarıyla güncellendi"
       ],
       "Add a @pm.me email address to your account. This simple, shorter domain stands for \"ProtonMail me\" or \"Private Message me.\"": [
-        "Hesabınıza @pm.me e-posta adresi ekler. Bu basit ve kısa alan adı \"ProtonMail me\" veya \"Private Message me\" anlamına gelir."
+        "Hesabınıza @pm.me e-posta adresini ekler. Bu basit ve kısa etki alanı \"Bana ProtonMail gönder\" veya \"Bana özel ileti gönder\" şeklinde anlamlandırılabilir"
       ],
       "Add a recovery email address": [
         "Kurtarma e-posta adresi ekleyin"
@@ -3307,19 +3307,19 @@
         "Bu kullanıcıdan yönetici ayrıcalıklarını kaldırmak istediğinizden emin misiniz?"
       ],
       "Auto-reply is active each month between the selected start and end time.": [
-        "Otomatik cevaplama, seçilen başlangıç ​​ve bitiş saatleri arasında her ay aktiftir."
+        "Otomatik yanıtlama, her ay seçilmiş başlangıç ve bitiş saatleri arasında etkinleştiriliyor."
       ],
       "Auto-reply is active each week between the selected start and end time.": [
-        "Otomatik yanıt, seçilen başlangıç ​​ve bitiş saatleri arasında her hafta etkindir."
+        "Otomatik yanıtlama, her hafta seçilmiş başlangıç ​​ve bitiş saatleri arasında etkinleştiriliyor."
       ],
       "Auto-reply is active from the start time to the end time.": [
-        "Otomatik yanıt, başlangıç ​​zamanından bitiş saatine kadar aktiftir."
+        "Otomatik yanıtlama, başlangıç ​​saatinden bitiş saatine kadar etkinleştiriliyor."
       ],
       "Auto-reply is active until you turn it off.": [
-        "Otomatik yanıtlama siz kapatana kadar etkin durumdadır."
+        "Otomatik yanıtlama siz kapatana kadar etkin."
       ],
       "Auto-reply is always active on the days of the week you select, between the selected hours.": [
-        "Otomatik cevaplama, seçtiğiniz saatler arasında seçtiğiniz haftanın günlerinde daima etkindir."
+        "Otomatik yanıtlama, haftanın seçilmiş günlerinde seçilmiş saatler arasında etkinleştiriliyor."
       ],
       "Available on macOS, Windows, and Linux.": [
         "MacOS, Windows ve Linux'ta mevcuttur."
@@ -3334,7 +3334,7 @@
         "Temel gezinme ve eylemler, ayarlarda etkin olan veya olmayan klavye kısayollarından bağımsız olarak kullanılabilir kalır."
       ],
       "Basic, Plus or Visionary subscription required": [
-        "Temel, Plus veya Vizyoner aboneliği gerekli"
+        "Basic, Plus veya Visionary aboneliği gerekli"
       ],
       "Before you can receive emails for your custom domain addresses at ProtonMail, you need to add the following MX records to your DNS. This can typically be done in the control panel of your domain name registrar.": [
         "ProtonMail'deki özel etki alanı adresleriniz için e-postalar almadan önce, aşağıdaki MX kayıtlarını DNS'nize eklemeniz gerekir. Bu genellikle etki alanı kayıt kuruluşunuzun kontrol panelinden yapılabilir."
@@ -3403,7 +3403,7 @@
         "Yine de devam edilsin mi?"
       ],
       "Create ${ calendarsToBeCreated } new calendar": [
-        "",
+        "${ calendarsToBeCreated } yeni takvim ekle",
         "${ calendarsToBeCreated } yeni takvim ekle"
       ],
       "Create a label for the imported messages, a time range for this import, and the folders you would like to import.": [
@@ -3428,7 +3428,7 @@
         "Proton hesabınızı oluşturun"
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
-        "Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora ve diğer bazı uygulamaların CSV dosyalarıyla birlikte vCard 3.1 ve 4.0 biçimli (UTF-8) dosyalar desteklenmektedir."
+        "Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora ve diğer bazı uygulamaların CSV dosyalarıyla vCard 3.1 ve 4.0 biçimindeki (UTF-8) dosyalar desteklenir."
       ],
       "Currently all available storage is allocated to the administrator account. Please reduce the admin account allocation to free up space for additional users. You can increase the total storage at any time by upgrading your account.": [
         "Şu anda kullanılabilir tüm depolama alanı yönetici hesabına ayrılmıştır. Lütfen ek kullanıcılara yer açmak için yönetici hesabı ayırmasını azaltın. Hesabınızı yükselterek istediğiniz zaman toplam depolama alanını artırabilirsiniz."
@@ -3470,10 +3470,10 @@
         "Bu parolayı UNUTMAYIN. Bunu unutursanız, oturum açamaz veya mesajlarınızın şifresini çözemezsiniz."
       ],
       "Do NOT forget this password. If you forget it, you will not be able to manage your organization.": [
-        "Bu parolayı UNUTMAYIN. Bunu unutursanız, kuruluşunuzu yönetemezsiniz."
+        "Bu şifreyi UNUTMAYIN. Bunu unutursanız, kuruluşunuzu yönetemezsiniz."
       ],
       "Do not use the OpenVPN / IKEv2 credentials in ProtonVPN applications or on the ProtonVPN dashboard. ${ learnMore }": [
-        "ProtonVPN uygulamalarında veya ProtonVPN kontrol panelinde OpenVPN / IKEv2 kimlik bilgilerini kullanmayın. ${ learnMore }"
+        "ProtonVPN uygulamalarında veya ProtonVPN kontrol panosunda OpenVPN / IKEv2 kimlik doğrulama bilgilerini kullanmayın. ${ learnMore }"
       ],
       "Do you want to revoke all other sessions than the current one?": [
         "Geçerli oturumun dışındaki diğer oturumları iptal etmek istiyor musunuz?"
@@ -3687,7 +3687,7 @@
         "${ contactsFragment } ve ${ contactsGroupsFragment } değerlerini içe aktar"
       ],
       "Import ${ selectedCalendarsCount } of ${ totalCalendarsCount } calendar": [
-        "",
+        "${ selectedCalendarsCount } / ${ totalCalendarsCount } takvimi içe aktar",
         "${ selectedCalendarsCount } / ${ totalCalendarsCount } takvimi içe aktar"
       ],
       "Import from": [
@@ -3733,13 +3733,13 @@
         "Bağlantı ekle"
       ],
       "Install a Country configuration file to connect to a random server in the country of your choice.": [
-        "Seçtiğiniz ülkede rastgele bir sunucuya bağlanmak için bir ülke yapılandırma dosyası yükleyin."
+        "Seçtiğiniz ülkedeki rastgele bir sunucuya bağlanmak için bir ülke yapılandırma dosyası yükleyin."
       ],
       "Install a Free server configuration file to connect to a specific server in one of the three free locations.": [
-        "Üç ücretsiz konumdan birinde belirli bir sunucuya bağlanmak için ücretsiz bir sunucu yapılandırma dosyası yükleyin."
+        "Üç ücretsiz konumdan birindeki belirli bir sunucuya bağlanmak için bir Free sunucusu yapılandırma dosyası yükleyin."
       ],
       "Install a Secure Core configuration file to benefit from an additional protection against VPN endpoint compromise.": [
-        "VPN uç nokta sızıntısına karşı ek bir korumadan yararlanmak için Secure Core yapılandırma dosyası yükleyin."
+        "VPN uç noktasının ele geçirilme olasılığına karşı ek bir koruma sağlamak için bir Secure Core yapılandırma dosyası yükleyin."
       ],
       "Install a Server configuration file to connect to a specific server in the country of your choice.": [
         "Seçtiğiniz ülkedeki belirli bir sunucuya bağlanmak için bir sunucu yapılandırma dosyası yükleyin."
@@ -3778,7 +3778,7 @@
         "Büyük boyutlu içe aktarmaların tamamlanması bir kaç gün sürebilir."
       ],
       "Learn how to log in to ProtonVPN with third-party VPN applications.": [
-        "Üçüncü taraf VPN uygulamalarıyla ProtonVPN'e nasıl giriş yapacağınızı öğrenin."
+        "Üçüncü taraf VPN uygulamalarında ProtonVPN oturumunu nasıl açabileceğinizi öğrenin."
       ],
       "Learn more": [
         "Daha fazla bilgi edinin"
@@ -3967,7 +3967,7 @@
         "Düz metin"
       ],
       "Plan upgrade required": [
-        "Plan yükseltmesi gerekli"
+        "Tarifenin yükseltilmesi gerekli"
       ],
       "Please enter a password to encrypt your private key with before exporting.": [
         "Lütfen dışa aktarmadan önce özel anahtarınızı şifrelemek için bir parola girin."
@@ -4018,7 +4018,7 @@
         "Lütfen bekleyin..."
       ],
       "Plus or Visionary subscription required": [
-        "Plus veya Vizyoner aboneliği gerekli"
+        "Plus veya Visionary aboneliği gerekli"
       ],
       "Prevents content from the sender's server from loading without your permission.": [
         "Göndericinin sunucusundaki içeriğin izniniz olmaksızın yüklenmesini engeller."
@@ -4055,10 +4055,10 @@
         "ProtonVPN ${ PLAN_NAMES[PLANS.VPNPLUS] }, ${ plansNameMap[PLANS.VPNPLUS].MaxVPN } VPN bağlantısını içerir."
       ],
       "ProtonVPN Basic, Plus or Visionary required for Country level connection.": [
-        "Ülke düzeyinde bağlantı için ProtonVPN Basic, Plus veya Visionary gereklidir."
+        "Ülke düzeyinde bağlantı için ProtonVPN Basic, Plus ya da Visionary tarifesi gereklidir."
       ],
       "ProtonVPN Plus or Visionary required for Secure Core feature.": [
-        "Secure Core özelliği için ProtonVPN Plus veya Visionary gerekir."
+        "Secure Core özelliği için ProtonVPN Plus ya da Visionary tarifesi gereklidir."
       ],
       "purchase additional storage": [
         "ek depolama alanı satın alın"
@@ -4124,7 +4124,7 @@
         "Hangi takvimlerin içe aktarılacağını seçin. Maksimum 20 olmak üzere içe aktarılan her takvim için yeni bir takvim oluşturulur."
       ],
       "Server is currently down": [
-        "Sunucu şu anda kapalı"
+        "Sunucu şu anda çalışmıyor"
       ],
       "Server load": [
         "Sunucu yükü"
@@ -4178,7 +4178,7 @@
         "Misyonumuzu desteklediğiniz için teşekkür ederiz."
       ],
       "The application needs to locally decrypt your contacts before they can be exported. At the end of the process, a VCF file will be generated and you will be able to download it.": [
-        "Kışilerini dışa aktarmadan önce bu uygulamanın yerel şifreye ihtiyacı var. İlerlemenin sonunda, VCF dosyası genelleştirilecek ve indirmeye elvirişli olacaktır."
+        "Uygulamanın, dışa aktarılmadan önce kişilerinizin şifresini yerel olarak çözmesi gerekir. İşlemin sonunda, bir VCF dosyası oluşturulur ve bu dosyayı indirebilirsiniz."
       ],
       "The calendar will be removed from your account.": [
         "Takvim hesabınızdan kaldırılacak."
@@ -4196,7 +4196,7 @@
         "Mevcut aboneliğiniz için fatura bilgisi yok."
       ],
       "These configuration files let you choose which ProtonVPN server you connect to when using a third-party VPN app or setting up a VPN connection on a router.": [
-        "Bu yapılandırma dosyaları, üçüncü taraf bir VPN uygulaması kullanırken veya bir yönlendiricide VPN bağlantısı kurarken hangi ProtonVPN sunucusuna bağlanacağınızı seçmenizi sağlar."
+        "Bu yapılandırma dosyaları, üçüncü taraf bir VPN uygulaması kullanırken veya bir yönelticide VPN bağlantısı kurarken bağlanacağınız ProtonVPN sunucusunu seçmenizi sağlar."
       ],
       "This account has been suspended due to a potential policy violation.": [
         "Bu hesap, olası bir ilke ihlali nedeniyle askıya alındı."
@@ -4295,7 +4295,7 @@
         "Devam etmek için, talebi doğrulayabilmemize yarayacak bir hesap kurtarma yöntemi seçin."
       ],
       "To secure your internet connection, download and install the ProtonVPN application for your device and connect to a ProtonVPN server.": [
-        "İnternet bağlantınızı güvence altına almak için cihazınıza ProtonVPN uygulamasını indirip yükleyin ve bir ProtonVPN sunucusuna bağlanın."
+        "İnternet bağlantınızı güvenli kılmak için aygıtınıza ProtonVPN uygulamasını indirip kurun ve bir ProtonVPN sunucusuna bağlanın."
       ],
       "To use ${ toAppName }, please create an address.": [
         "${ toAppName } kullanabilmek için lütfen bir adres oluşturun."
@@ -4364,7 +4364,7 @@
         "Kişilere ofis dışında olduğunuzu veya başka bir şekilde yanıt veremeyeceğinizi bildirmek için otomatik yanıtları kullanın."
       ],
       "Use the following credentials when connecting to ProtonVPN servers without application. Examples use cases include: Tunnelblick on macOS, OpenVPN on GNU/Linux.": [
-        "ProtonVPN sunucularına uygulama olmadan bağlanırken aşağıdaki kimlik bilgilerini kullanın. Kullanım örnekleri: MacOS'ta Tunnelblick, GNU/Linux'ta OpenVPN."
+        "ProtonVPN sunucularına uygulama olmadan bağlanmak için şu kimlik doğrulama bilgilerini kullanın. Kullanım örnekleri: MacOS üzerinde Tunnelblick, GNU/Linux üzerinde OpenVPN."
       ],
       "Users": [
         "Kullanıcı"
@@ -4394,7 +4394,7 @@
         "Uyarı: Silme işlemi kalıcıdır. Bu işlem ayrıca, tüm bağlı hizmetlere erişimi keser ve tüm kişilerinizi siler."
       ],
       "We advise you to use official ProtonVPN applications when possible.": [
-        "Mümkün oldukça resmi ProtonVPN uygulamalarını kullanmanızı öneririz."
+        "Olabildiğince resmi ProtonVPN uygulamalarını kullanmanızı öneririz."
       ],
       "We recommend using your recovery phrase instead.": [
         "Bunun yerine kurtarma anahtar metni kullanmanızı öneririz."
@@ -4484,7 +4484,7 @@
         "Bir seferde bir veri türünü içe aktarabilirsiniz."
       ],
       "You can now receive messages to your @pm.me address. Upgrade to a paid plan to also send emails using your @pm.me address and create additional @pm.me addresses.": [
-        "Artık, @pm.me adresine iletilerinizi alabilirsiniz. @pm.me adresinizi kullanarak e-postalar göndermek ve ek olarak @pm.me adresleri oluşturmak için paralı bir plana yükseltin."
+        "Artık, @pm.me adresinizle iletiler alabilirsiniz. @pm.me adresinizi kullanarak e-posta göndermek ve başka @pm.me adresleri eklemek için ücretli bir tarifeye geçin."
       ],
       "You can turn on notifications to get alerts when new email messages arrive in this folder.": [
         "Bu klasöre yeni e-posta iletileri geldiğinde uyarı almak için bildirimleri etkinleştirebilirsiniz."
@@ -4493,10 +4493,10 @@
         "Protonmail'i Outlook, Apple Mail ve Thunderbird dahil IMAP/SMTP'yi destekleyen herhangi bir masaüstü e-posta istemcisiyle kullanabilirsiniz."
       ],
       "You can use the following credentials to connect to a ProtonVPN server using a third-party, open source VPN app, like Tunnelblick for macOS or OpenVPN for GNU/Linux.": [
-        "MacOS için Tunnelblick veya GNU/Linux için OpenVPN gibi üçüncü taraf, açık kaynaklı bir VPN uygulaması kullanarak bir ProtonVPN sunucusuna bağlanmak için aşağıdaki kimlik bilgilerini kullanabilirsiniz."
+        "Bir ProtonVPN sunucusuna macOS için Tunnelblick veya GNU/Linux için OpenVPN gibi üçüncü taraf, açık kaynaklı bir VPN uygulaması kullanarak bağlanmak için şu kimlik doğrulama bilgilerini kullanabilirsiniz."
       ],
       "You cannot use the OpenVPN / IKEv2 credentials to log in to ProtonVPN applications or the ProtonVPN dashboard. ${ learnMore }": [
-        "ProtonVPN uygulamalarına veya ProtonVPN kontrol paneline giriş yapmak için OpenVPN / IKEv2 kimlik bilgilerini kullanamazsınız. ${ learnMore }"
+        "ProtonVPN uygulamalarında ya da ProtonVPN kontrol panosunda oturum açmak için OpenVPN / IKEv2 kimlik doğrulama bilgilerini kullanamazsınız. ${ learnMore }"
       ],
       "You did not set a recovery method so account recovery is impossible if you forget your password. Proceed without recovery method?": [
         "Bir kurtarma yöntemi belirlemediniz, bu nedenle parolanızı unutursanız hesap kurtarma işlemi yapılamaz. Kurtarma yöntemi olmadan devam edilsin mi?"
@@ -4505,7 +4505,7 @@
         "Kayıtlı ödeme yöntemleriniz yok."
       ],
       "You must activate your organization private key with the backup organization key password provided to you by your organization administrator.": [
-        "Kuruluşunuzun özel anahtarını, kuruluş yöneticiniz tarafından size sağlanan yedek kuruluş anahtarı parolasıyla etkinleştirmeniz gerekir."
+        "Kuruluşunuzun özel anahtarını, kuruluş yöneticiniz tarafından size sağlanan yedek kuruluş anahtarı şifresiyle etkinleştirmeniz gerekir."
       ],
       "You must disable or remove any additional ProtonMail users, addresses, and custom domains before you can downgrade.": [
         "Düşürmeden önce ek ProtonMail kullanıcılarını, adreslerini ve özel etki alanlarını devre dışı bırakmalı veya kaldırmalısınız."
@@ -5970,8 +5970,8 @@
     },
     "Loading info": {
       "${ createdCalendars } of ${ calendarsToBeCreated } created": [
-        "",
-        "${ calendarsToBeCreated } değerinden ${ createdCalendars } adet oluşturuldu"
+        "${ createdCalendars }/${ calendarsToBeCreated } oluşturuldu",
+        "${ createdCalendars }/${ calendarsToBeCreated } oluşturuldu"
       ],
       "Almost there": [
         "Neredeyse tamam"
@@ -6083,11 +6083,11 @@
     },
     "Mail import summary": {
       "Import all messages from ${ selectedLabelsCount } out of ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        "",
+        "${ periodFragment } öncesinden başlayarak ${ selectedLabelsCount }/${ totalLabelsCount } etiket içindeki tüm iletileri içe aktar ve ${ LABEL_MARKUP_PLACEHOLDER } olarak etiketle",
         "${ selectedLabelsCount } / ${ totalLabelsCount } etiketin ${ periodFragment } zamanından sonraki tüm iletilerini içe aktar ve ${ LABEL_MARKUP_PLACEHOLDER } olarak etiketle"
       ],
       "Import all messages from ${ totalLabelsCount } label since ${ periodFragment } and label them as ${ LABEL_MARKUP_PLACEHOLDER }": [
-        "",
+        "${ periodFragment } öncesinden başlayarak ${ totalLabelsCount } etiket içindeki tüm iletileri içe aktar ve ${ LABEL_MARKUP_PLACEHOLDER } olarak etiketle",
         "${ totalLabelsCount } etiketin ${ periodFragment } zamanından sonraki tüm iletilerini içe aktar ve ${ LABEL_MARKUP_PLACEHOLDER } olarak etiketle"
       ]
     },
@@ -7756,7 +7756,7 @@
         "Kimlik bilgileri"
       ],
       "Credits": [
-        "Krediler"
+        "Kredi"
       ],
       "Currency": [
         "Para birimi"
@@ -8138,7 +8138,7 @@
         "Güvenlik günlüğü"
       ],
       "Select a plan": [
-        "Plan seçin"
+        "Bir plan seçin"
       ],
       "Select action to take on contact group": [
         "Kişi grubunda yapılacak eylemi seçin"
@@ -8720,15 +8720,15 @@
     },
     "VPN Plan Feature": {
       "${ n } server": [
-        "",
+        "${ n } sunucu",
         "${ n } sunucu"
       ],
       "${ n } VPN connection": [
-        "",
+        "${ n } VPN bağlantısı",
         "${ n } VPN bağlantısı"
       ],
       "${ numberOfServers } in ${ numberOfCountries } country": [
-        "",
+        "${ numberOfCountries } ülkede ${ numberOfServers }",
         "${ numberOfCountries } ülkede ${ numberOfServers }"
       ]
     },
