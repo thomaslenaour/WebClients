@@ -7,3 +7,5 @@ export const getToAppName = (toApp?: APP_NAMES) => {
 
     return APPS_CONFIGURATION[toApp]?.name || '';
 };
+
+export const defaultPersistentKey = 'default-persistent';
