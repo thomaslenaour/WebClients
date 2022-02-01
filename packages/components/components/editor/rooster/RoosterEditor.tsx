@@ -15,6 +15,7 @@ import BlockquoteToggle from './BlockquoteToggle';
 import './RoosterEditor.scss';
 import useOnEditorChange from './hooks/useOnEditorChange';
 import { MailSettings } from '@proton/shared/lib/interfaces';
+import { ModalLinkProps } from '../hooks/useModalLink';
 
 interface Props {
     placeholder?: string;
@@ -26,6 +27,7 @@ interface Props {
     setToolbarConfig: SetEditorToolbarConfig;
     onBeforePaste?: (event: BeforePasteEvent) => void;
     mailSettings?: MailSettings;
+    showModalLink: (props: ModalLinkProps) => void;
 }
 
 const RoosterEditor = ({
@@ -37,6 +39,7 @@ const RoosterEditor = ({
     onBlockquoteToggleClick,
     setToolbarConfig,
     onBeforePaste,
+    showModalLink,
 }: Props) => {
     const iframeRef = useRef<HTMLIFrameElement>(null);
 
@@ -52,6 +55,7 @@ const RoosterEditor = ({
         initialContent: placeholder,
         onReady,
         onEditorChange: onEditorChangeCallback,
+        showModalLink,
     });
 
     useBubbleIframeEvents(iframeRef);
