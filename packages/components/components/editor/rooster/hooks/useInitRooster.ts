@@ -62,6 +62,7 @@ const useInitRooster = ({ iframeRef, onReady, onEditorChange, initialContent, sh
             onEditorEvent: onEditorChange,
             initialContent,
             showModalLink,
+            iframeRef,
         });
 
         // Prevent setState execution in case component is unmounted
