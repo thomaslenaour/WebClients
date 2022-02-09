@@ -42,6 +42,7 @@ const RoosterEditor = ({
     onBeforePaste,
     showModalLink,
     onFocus,
+    mailSettings,
 }: Props) => {
     const iframeRef = useRef<HTMLIFrameElement>(null);
 
@@ -59,6 +60,7 @@ const RoosterEditor = ({
         onEditorChange: onEditorChangeCallback,
         showModalLink,
         onFocus,
+        mailSettings,
     });
 
     useBubbleIframeEvents(iframeRef);
