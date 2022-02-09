@@ -197,7 +197,7 @@
         "Importálás folytatása"
       ],
       "Continue with": [
-        ""
+        "Folytatás ezzel:"
       ],
       "Continue with Google": [
         "Folytatás Google fiókkal"
@@ -671,7 +671,7 @@
         "Minden fiók kiléptetése"
       ],
       "Sign out from": [
-        ""
+        "Kijelentkezés innen:"
       ],
       "Signing in": [
         "Bejelentkezés"
@@ -1774,7 +1774,7 @@
         "Hiba az egyik feltételben"
       ],
       "Failed to get active sessions. Please ${ refresh } or try again later.": [
-        ""
+        "Az aktív munkamenetek betöltése nem sikerült, ${ refresh } vagy próbálja meg később."
       ],
       "File has no contents to preview": [
         "Nincs előnézeti tartalom"
@@ -2307,13 +2307,13 @@
         "Érvénytelen válasz"
       ],
       "The event could not be added to your calendar. No answer was sent": [
-        ""
+        "Az eseményt nem sikerült felvenni a naptárába. Válasz nem került elküldésre"
       ],
       "The event could not be updated in your calendar. No answer was sent": [
-        ""
+        "Az eseményt nem sikerült frissíteni a naptárában. Válasz nem került elküldésre"
       ],
       "Unexpected error": [
-        ""
+        "Váratlan hiba"
       ],
       "Unsupported invitation": [
         "Nem támogatott meghívó"
@@ -2334,7 +2334,7 @@
         "A válasz elküldésre került, de az eseményt nem sikerült a naptárához adni"
       ],
       "Your answer was sent, but the event could not be updated in your calendar": [
-        ""
+        "A válasz elküldésre került, de az eseményt nem sikerült a naptárában frissíteni"
       ]
     },
     "Event title": {
@@ -3820,7 +3820,7 @@
         "Előnézet betöltése"
       ],
       "Log in to ProtonMail to activate your address": [
-        ""
+        "Jelentkezzen be a ProtonMailbe a cím aktiválásához"
       ],
       "Logs include authentication attempts for all Proton services that use your Proton credentials.": [
         "A naplók minden azonosítási kísérletet tárolnak az összes Proton szolgáltatáshoz, amelyek az ön Proton bejelentkezését használják."
@@ -3916,7 +3916,7 @@
         "Nincs beállítva"
       ],
       "Not your device? Use a private browsing window to sign in and close it when done. ${ learnMore }": [
-        ""
+        "Nem saját eszköze? Használjon privát ablakot a bejelentkezéshez és zárja be amikor készen van. ${ learnMore }"
       ],
       "Number of VPN connections which can be assigned to users. Each connected device consumes one VPN connection.": [
         "A felhasználókhoz rendelhető összes VPN kapcsolat száma. Minden eszköznek egy VPN kapcsolatra van szüksége."
@@ -4076,7 +4076,7 @@
         "először elolvasni a kétlépcsős hitelesítésről szóló útmutatót"
       ],
       "Recovery file downloaded": [
-        ""
+        "Helyreállító fájl letöltve"
       ],
       "Recovery files have been voided": [
         "A helyreállítási fájlok érvénytelenítésre kerültek"
@@ -4085,7 +4085,7 @@
         "A helyreállító jelmondat a vágólapra másolva"
       ],
       "Recovery phrase downloaded": [
-        ""
+        "Helyreállító jelmondat letöltve"
       ],
       "Recovery phrase has been disabled": [
         "A helyreállító jelmondat kikpacsolva"
@@ -4169,7 +4169,7 @@
         "Váltson ${ professionalPlan } csomagra további felhasználók hozzáadásához."
       ],
       "Temporarily unavailable. Please check back later.": [
-        ""
+        "Átmenetileg nem elérhető. Próbálja meg később."
       ],
       "Test link": [
         "Link kipróbálása"
@@ -4283,7 +4283,7 @@
         "A visszafejtéshez, az e-mailek és egyéb adatok megjelenítéséhez, helyreállító fájlra van szüksége."
       ],
       "To decrypt and view your emails and other data, you need a recovery phrase or recovery file.": [
-        ""
+        "A levelek és egyéb adatok visszafejtéshez és megjelenítéséhez, helyreállító fájlra vagy jelmondatra van szüksége."
       ],
       "To decrypt and view your emails and other data, you need a recovery phrase.": [
         "A visszafejtéshez, az e-mailek és egyéb adatok megjelenítéséhez, helyreállító jelmondatra van szüksége."
@@ -4292,7 +4292,7 @@
         "A jelszó visszaállítás után zárolt adatainak visszafejtéséhez és megjelenítéséhez, válasszon egy helyreállítási módszert."
       ],
       "To ensure continuous access to your account, set an account recovery method": [
-        ""
+        "A fiók folyamatos elérhetőségének biztosításához, állítson be valamilyen helyreállítási módot"
       ],
       "To fight spam and abuse, please verify you are human.": [
         "A visszaélések és a levélszemét megakadályozására kérjük bizonyítsa, hogy nem robot."
@@ -4307,7 +4307,7 @@
         "Az internetkapcsolatának biztonságosabbá tételéhez, töltse le és telepítse a ProtonVPN alkalmazást és kapcsolódjon egy ProtonVPN szerverhez."
       ],
       "To use ${ toAppName }, please create an address.": [
-        ""
+        "${ toAppName } használatához, hozzon létre egy címet."
       ],
       "Top up your account with credits that you can use to subscribe to a new plan or renew your current plan. You get one credit for every ${ i18nCurrency } spent.": [
         "Töltse fel egyenlegét kreditekkel, melyből magasabb előfizetést vásárolhat, vagy meghosszabbíthatja jelenlegi előfizetését. Minden egyes ${ i18nCurrency } egy kreditet ér."
@@ -4352,7 +4352,7 @@
         "Váltson a ${ PLAN_NAMES[PLANS.VISIONARY] } vagy ${ PLAN_NAMES[PLANS.PROFESSIONAL] } csomagra az induláshoz."
       ],
       "Upgrade to a ${ PLAN_NAMES[PLANS.VISIONARY] }, ${ PLAN_NAMES[PLANS.PROFESSIONAL] } or ${ PLAN_NAMES[PLANS.PLUS] } plan to enable automatic replies for when you are out of the office.": [
-        ""
+        "Váltson ${ PLAN_NAMES[PLANS.VISIONARY] }, ${ PLAN_NAMES[PLANS.PROFESSIONAL] } vagy ${ PLAN_NAMES[PLANS.PLUS] } csomagra, hogy távolléte esetén a automatikus válaszokat küldhessen a feladóknak."
       ],
       "Upgrade to a paid plan to access premium features and increase your storage space.": [
         "További prémium funkciókért és nagyobb tárhelyért váltson előfizetéses csomagra."
@@ -4556,7 +4556,7 @@
         "Nem fogja tudni helyreállítani az adatait, egy fiók jelszó visszaállítás után, a letöltött helyreállítási fájlokkal."
       ],
       "You'll stay signed in even after you close the browser.": [
-        ""
+        "Bejelentkezve marad, a böngésző bezárása után is."
       ],
       "Your ${ BRAND_NAME } Account is associated with ${ externalEmailAddress }. To use ${ toAppName }, please create an address.": [
         "A ${ BRAND_NAME } fiókja ${ externalEmailAddress } címhez kapcsolódik. A ${ toAppName } használatához hozzon létre egy címet."
@@ -5229,13 +5229,13 @@
         "A hét napjai"
       ],
       "Default email address": [
-        ""
+        "Alapértelmezett email cím"
       ],
       "Default event duration": [
-        ""
+        "Az események alapértelmezett hossza"
       ],
       "Default full day notifications": [
-        ""
+        "Alapértelmezett emlékeztetők (egész napos)"
       ],
       "Default language": [
         "Alapértelmezett nyelv"
@@ -5244,7 +5244,7 @@
         "Alapértelmezett nyelv (${ defaultLanguage })"
       ],
       "Default notifications": [
-        ""
+        "Alapértelmezett emlékeztetők"
       ],
       "Default PGP scheme": [
         "Alapértelmezett PGP séma"
@@ -5388,7 +5388,7 @@
         "Intervallum"
       ],
       "Keep me signed in": [
-        ""
+        "Maradjon bejelentkezve"
       ],
       "Keep messages in Sent/Drafts": [
         "Üzenetek megőrzése az Elküldött és Piszkozatok mappában"
@@ -5562,7 +5562,7 @@
         "Proton felhasználónév"
       ],
       "ProtonMail address": [
-        ""
+        "ProtonMail cím"
       ],
       "ProtonMail footer": [
         "ProtonMail aláírás"
@@ -7141,7 +7141,7 @@
     },
     "Settings update growler warning": {
       "Failed to update settings": [
-        ""
+        "Beállítások frissítése sikertelen"
       ]
     },
     "Settings/filters": {
@@ -7558,7 +7558,7 @@
         "3. Beállítási fájl kiválasztása és letöltése"
       ],
       "Account and password": [
-        ""
+        "Fiók és jelszó"
       ],
       "Account recovery": [
         "Fiók helyreállítás"
@@ -7666,7 +7666,7 @@
         "Vissza"
       ],
       "Backup and export": [
-        ""
+        "Mentés és exportálás"
       ],
       "Billing cycle": [
         "Számlázási ciklus"
@@ -7771,7 +7771,7 @@
         "Pénznem"
       ],
       "Current and past imports": [
-        ""
+        "Jelenlegi és korábbi importálások"
       ],
       "Current plan": [
         "Jelenlegi csomag"
@@ -7843,7 +7843,7 @@
         "Kétlépcsős hitelesítés kikapcsolása"
       ],
       "Display name and signature": [
-        ""
+        "Megjelenített név és aláírás"
       ],
       "Domain names": [
         "Domain nevek"
@@ -7891,7 +7891,7 @@
         "Gyorsbillentyűk engedélyezése"
       ],
       "Encryption and keys": [
-        ""
+        "Titkosítás és kulcsok"
       ],
       "Error": [
         "Hiba"
@@ -7927,7 +7927,7 @@
         "Mappák"
       ],
       "Folders and labels": [
-        ""
+        "Mappák és címkék"
       ],
       "General": [
         "Általános"
@@ -7945,7 +7945,7 @@
         "Robot ellenőrzés"
       ],
       "Identity and addresses": [
-        ""
+        "Személyazonosság és címek"
       ],
       "IMAP/SMTP": [
         "IMAP/SMTP"
@@ -7997,7 +7997,7 @@
         "Címkék"
       ],
       "Language and time": [
-        ""
+        "Nyelv és idő"
       ],
       "Layout": [
         "Elrendezés"
@@ -8048,7 +8048,7 @@
         "Szervezet"
       ],
       "Organization and keys": [
-        ""
+        "Szervezet és kulcsok"
       ],
       "Other": [
         "Egyéb"
@@ -8057,7 +8057,7 @@
         "Jelszó"
       ],
       "Password and keys": [
-        ""
+        "Jelszó és kulcsok"
       ],
       "Passwords": [
         "Jelszavak"
@@ -8141,7 +8141,7 @@
         "Adminisztrátori jogok visszaállítása"
       ],
       "Security": [
-        ""
+        "Biztonság"
       ],
       "Security logs": [
         "Biztonsági napló"
@@ -8279,7 +8279,7 @@
         "Váltás nagyobb csomagra"
       ],
       "Username": [
-        ""
+        "Felhasználónév"
       ],
       "Users and addresses": [
         "Felhasználók és címek"
@@ -8562,10 +8562,10 @@
     },
     "Tor out of date": {
       "stable release": [
-        ""
+        "stabil kiadásra"
       ],
       "This version of Tor Browser is not supported. Please update to the latest ${ stableRelease }": [
-        ""
+        "Az a Tor Browser verzió nem támogatott. Kérjük, frissítsen a legfrissebb ${ stableRelease }"
       ]
     },
     "Update font modal": {

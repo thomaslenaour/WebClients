@@ -626,7 +626,7 @@
         "Configurar catch-all"
       ],
       "Set recovery phrase": [
-        "Establezca una frase de recuperación"
+        "Configura una frase de recuperación"
       ],
       "Share via link": [
         "Compartir con un enlace"
@@ -2925,7 +2925,7 @@
         "ICS"
       ],
       "in the next step you need to select all the permissions": [
-        "en el paso siguiente, debe seleccionar todos los permisos"
+        "en el siguiente paso, debes seleccionar todos los permisos"
       ],
       "Manage": [
         "Gestionar"
@@ -3193,7 +3193,7 @@
         "Acceso restringido a la cuenta por falta de pago. Contacta con tu administrador."
       ],
       "account recovery and data recovery method": [
-        "método de recuperación de cuentas y recuperación de datos"
+        "método de recuperación de la cuenta y de los datos"
       ],
       "account recovery method": [
         "método de recuperación de cuenta"
@@ -3211,7 +3211,7 @@
         "Agregar un número de teléfono de recuperación"
       ],
       "Add additional addresses to your account like user2@protonmail.com": [
-        "Agrega direcciones adicionales a tu cuenta como user2@protonmail.com"
+        "Agrega direcciones adicionales a tu cuenta como usuario2@protonmail.com"
       ],
       "Add image URL": [
         "Agregar URL de imagen"
@@ -3525,10 +3525,10 @@
         "Preferencias de correo guardadas"
       ],
       "Emails stored in this folder will not be deleted and can still be found in the All Mail folder.": [
-        "Los emails archivados en esta carpeta no serán borrados, y se podrán encontrar en \"Todo el Correo\"."
+        "Los correos electrónicos almacenados en esta carpeta no se eliminarán y aún se pueden encontrar en la carpeta Todos los correos."
       ],
       "Emails tagged with this label will not be deleted and can still be found in the respective folder.": [
-        "Los emails marcados con esta etiqueta no serán borrados, y se podrán encontrar en sus respectivas carpetas."
+        "Los correos electrónicos etiquetados con esta etiqueta no se eliminarán y se podrán encontrar en sus respectivas carpetas."
       ],
       "Enabling recovery by phrase again will generate a new recovery phrase.": [
         "Habilitar la recuperación por frase nuevamente generará una nueva frase de recuperación."
@@ -3651,7 +3651,7 @@
         "Si tienes un dominio personalizado con ProtonMail, puedes establecer una dirección de correo catch-all que recibirá mensajes enviados a tu dominio pero a una dirección de correo electrónico no válida (e.., errores ortográficos)."
       ],
       "If you have a gift code, enter it below to apply your discount.": [
-        "Si tienes un código de regalo, introdúcelo abajo para aplicar tu descuento."
+        "Si tienes un código promocional, introdúcelo abajo para aplicar tu descuento."
       ],
       "If you have never used two-factor authentication before, we strongly recommend you ${ guideButton }.": [
         "Si nunca has utilizado la autenticación de doble factor anteriormente, te recomendamos encarecidamente ${ guideButton }."
@@ -3730,7 +3730,7 @@
         "Incluido"
       ],
       "Inherited from parent folder": [
-        "Heredado de la carpeta padre"
+        "Heredado de la carpeta principal"
       ],
       "Insert image": [
         "Insertar imagen"
@@ -3763,7 +3763,7 @@
         "Parece que algunos de tus datos están encriptados y bloqueados. Esto se debe probablemente a un restablecimiento de la contraseña reciente o anterior. Te sugerimos que utilices un método de recuperación de datos para desbloquearlos."
       ],
       "it’s imperative": [
-        "Es obligarotio"
+        "es obligatorio"
       ],
       "Just confirm your selection and we'll do the rest.": [
         "Simplemente confirme su selección y nosotros haremos el resto."
@@ -3877,7 +3877,7 @@
         "No existen claves de cifrado de contactos"
       ],
       "No data recovery method set; you are at risk of losing access to your data": [
-        "No se ha establecido ningún método de recuperación de datos; corre el riesgo de perder el acceso a sus datos"
+        "No hay establecido ningún método de recuperación de datos,; corres el riesgo de perder el acceso a tus datos"
       ],
       "No folder selected": [
         "Ninguna carpeta seleccionada"
@@ -4142,7 +4142,7 @@
         "El tiempo de la sesión ha expirado."
       ],
       "Set recovery phrase": [
-        "Establezca una frase de recuperación"
+        "Configura una frase de recuperación"
       ],
       "Since you're a loyal user, your account has additional features enabled.": [
         "Como eres un usuario leal, tu cuenta tiene habilitadas características adicionales."
@@ -4193,7 +4193,7 @@
         "La dirección de correo electrónico que has colocado en la parte superior de la lista es tu dirección de correo electrónico predeterminada. Arrastra y suelta para reordenar tus direcciones."
       ],
       "The Import-Export app allows you to export messages for local backups and to restore previous backups to your account.": [
-        "En la opción Import-Export podrás guardar una copia de seguridad local de los emails, y también restaurar copias de seguridad anteriores."
+        "La aplicación Import-Export te permite exportar mensajes para crear copias de seguridad locales y restaurar copias de seguridad anteriores en tu cuenta."
       ],
       "The name will be visible to your users while they are logged in.": [
         "El nombre será visible para tus usuarios mientras estén conectados."
@@ -4442,7 +4442,7 @@
         "¿Qué quieres importar de tu cuenta de Google?"
       ],
       "When disabled, this prevents image files from loading on your device without your knowledge.": [
-        "Cuando está deshabilitado, esto evita que los archivos de imaggen se carguen en tu dispositivo sin tu conocimiento.\t"
+        "Cuando está deshabilitado, esto evita que los archivos de imagen se carguen en tu dispositivo sin tu conocimiento.\t"
       ],
       "When notifications are enabled, we'll send an alert to your recovery/notification address if you have new messages in your ProtonMail account.": [
         "Cuando las notificaciones están habilitadas, enviaremos una alerta a tu dirección de recuperación/notificación cuando tengas nuevos mensajes en tu cuenta de ProtonMail."
@@ -4571,7 +4571,7 @@
         "Tu cuenta se está actualizando, esto puede tardar hasta 30 segundos."
       ],
       "Your account recovery method is set": [
-        "El método de recuperación de su cuenta está configurado"
+        "El método de recuperación de tu cuenta está configurado"
       ],
       "Your account will be updated once the payment is cleared.": [
         "Tu cuenta se actualizará una vez que el pago se haya completado."
@@ -4647,7 +4647,7 @@
     },
     "Info - folder colouring feature": {
       "When enabled, sub-folders inherit the color of the parent folder.": [
-        "Cuando está habilitada, las subcarpetas heredan el color de la carpeta padre."
+        "Cuando está habilitada, las subcarpetas heredan el color de la carpeta principal."
       ]
     },
     "Info concerning plan features": {
@@ -5382,7 +5382,7 @@
         "Bandeja de entrada"
       ],
       "Inherit color from parent folder": [
-        "Heredar color de la carpeta padre"
+        "Heredar el color de la carpeta principal"
       ],
       "Interval": [
         "Intervalo"
@@ -6426,7 +6426,7 @@
     },
     "Oauth instructions": {
       "Please note that ${ boldNextStep } requested by the application to start your import.": [
-        ""
+        "Por favor ten en cuenta que ${ boldNextStep } solicitados por la aplicación para iniciar tu importación."
       ]
     },
     "Onboarding Proton": {
@@ -6745,7 +6745,7 @@
         "Añadir un nombre al calendario"
       ],
       "Add gift code": [
-        "Agregar código de regalo"
+        "Añadir código promocional"
       ],
       "Address": [
         "Dirección"
@@ -6953,8 +6953,8 @@
     },
     "Plan time remaining": {
       "You still have ${ daysRemaining } day left on your ${ BRAND_NAME } ${ currentPlanName } account.": [
-        "",
-        ""
+        "Aún te quedan ${ daysRemaining } día en tu cuenta de ${ BRAND_NAME } ${ currentPlanName }.",
+        "Aún te quedan ${ daysRemaining } días en tu cuenta de ${ BRAND_NAME } ${ currentPlanName }."
       ]
     },
     "Price": {

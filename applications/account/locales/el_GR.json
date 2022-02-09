@@ -197,7 +197,7 @@
         "Συνεχίστε την εισαγωγή"
       ],
       "Continue with": [
-        ""
+        "Συνέχεια με"
       ],
       "Continue with Google": [
         "Συνεχίστε με Google"
@@ -425,7 +425,7 @@
         "Ορισμός ως προεπιλογή"
       ],
       "mark emails as": [
-        "επισημάνετε τα email ως"
+        "σήμανση μηνυμάτων ως"
       ],
       "More": [
         "Περισσότερα"
@@ -506,7 +506,7 @@
         "Ανανέωση κατάστασης"
       ],
       "refresh the page": [
-        "ανανέωσε τη σελίδα"
+        "ανανεώστε τη σελίδα"
       ],
       "Refresh the page": [
         "Ανανέωση της σελίδας"
@@ -671,7 +671,7 @@
         "Αποσύνδεση από όλους τους λογαριασμούς"
       ],
       "Sign out from": [
-        ""
+        "Έξοδος από"
       ],
       "Signing in": [
         "Γίνεται είσοδος"
@@ -1512,10 +1512,10 @@
     },
     "Email body for invitation": {
       "${ eventTitle } has been canceled.": [
-        "${ eventTitle } έχει ακυρωθεί."
+        "Το ${ eventTitle } έχει ακυρωθεί."
       ],
       "${ eventTitle } has been updated.\n${ eventDetailsText }": [
-        "${ eventTitle } έχει ενημερωθεί.\n${ eventDetailsText }"
+        "Το ${ eventTitle } έχει ενημερωθεί.\n${ eventDetailsText }"
       ],
       "You are invited to ${ eventTitle }\n${ eventDetailsText }": [
         "Σας προσκαλούμε σε ${ eventTitle }\n${ eventDetailsText }"
@@ -1678,7 +1678,7 @@
         "Σφάλμα σε μια από τις συνθήκες"
       ],
       "Failed to get active sessions. Please ${ refresh } or try again later.": [
-        ""
+        "Αποτυχία λήψης ενεργών συνεδριών. Παρακαλούμε ${ refresh } ή δοκιμάστε ξανά αργότερα."
       ],
       "File has no contents to preview": [
         "Το αρχείο δεν έχει περιεχόμενα για προεπισκόπηση"
@@ -2217,7 +2217,7 @@
         ""
       ],
       "Unexpected error": [
-        ""
+        "Απροσδόκητο σφάλμα"
       ],
       "Unsupported invitation": [
         "Μη υποστηριζόμενη πρόσκληση"
@@ -3658,7 +3658,7 @@
         "Απώλεια σύνδεσης στο διαδίκτυο."
       ],
       "Internet connection lost. Please check your device's connectivity.": [
-        "Η σύνδεση στο Διαδίκτυο χάθηκε. Ελέγξτε τη συνδεσιμότητα της συσκευής σας."
+        "Απώλεια σύνδεσης στο διαδίκτυο. Παρακαλούμε ελέγξτε τη συνδεσιμότητα της συσκευής σας."
       ],
       "Internet connection restored.": [
         "Έγινε επαναφορά της σύνδεσης στο Διαδίκτυο."
@@ -4073,7 +4073,7 @@
         "Μετάβαση σε ${ professionalPlan } για να προσθέσετε περισσότερους χρήστες."
       ],
       "Temporarily unavailable. Please check back later.": [
-        ""
+        "Προσωρινά μη διαθέσιμο. Παρακαλούμε ελέγξτε ξανά αργότερα."
       ],
       "Test link": [
         "Δοκ. σύνδεσμος"
@@ -4211,7 +4211,7 @@
         "Για να ξεκινήσετε να διασφαλίζετε τη σύνδεση σας στο διαδίκτυο, θα πρέπει να εγκαταστήσετε την εφαρμογή ProtonVPN στη συσκευή σας και να συνδεθείτε σε ένα διακομιστή ProtonVPN."
       ],
       "To use ${ toAppName }, please create an address.": [
-        ""
+        "Για χρήση του ${ toAppName }, παρακαλούμε δημιουργήστε μια διεύθυνση."
       ],
       "Top up your account with credits that you can use to subscribe to a new plan or renew your current plan. You get one credit for every ${ i18nCurrency } spent.": [
         "Προσθέστε στο λογαριασμό πιστωτικές μονάδες, τις οποίες μπορείτε να χρησιμοποιήσετε για να έχετε μια νέα συνδρομή πακέτου/πλάνου ή να ανανεώσετε το τρέχον πακέτο σας. Λαμβάνετε μία πιστωτική μονάδα για κάθε ${ i18nCurrency } που ξοδεύτηκε."
@@ -5067,10 +5067,10 @@
         "Προεπιλεγμένη γραμματοσειρά/μέγεθος συντάκτη"
       ],
       "Composer mode": [
-        "Λειτουργία σύνθεσης"
+        "Λειτουργία συντάκτη"
       ],
       "Composer text direction": [
-        "Κατεύθυνση κειμένου σύνθεσης"
+        "Κατεύθυνση κειμένου συντάκτη"
       ],
       "Conditions": [
         "Προϋποθέσεις"
@@ -5133,13 +5133,13 @@
         "Ημέρα της εβδομάδας"
       ],
       "Default email address": [
-        ""
+        "Προεπιλεγμένη ηλ. διεύθυνση"
       ],
       "Default event duration": [
-        ""
+        "Προεπιλεγμένη διάρκεια εκδήλωσης"
       ],
       "Default full day notifications": [
-        ""
+        "Προεπιλεγμένες ολοήμερες ειδοποιήσεις"
       ],
       "Default language": [
         "Προεπιλεγμένη γλώσσα"
@@ -5148,7 +5148,7 @@
         "Προεπιλεγμένη γλώσσα (${ defaultLanguage })"
       ],
       "Default notifications": [
-        ""
+        "Προεπιλεγμένες ειδοποιήσεις"
       ],
       "Default PGP scheme": [
         "Προεπιλεγμένο σχήμα PGP"
@@ -5472,7 +5472,7 @@
         "Υποσέλιδο ProtonMail"
       ],
       "Read": [
-        "Διαβάστηκε"
+        "Διαβασμένα"
       ],
       "Recovery code": [
         "Κωδικός ανάκτησης"
@@ -7045,7 +7045,7 @@
     },
     "Settings update growler warning": {
       "Failed to update settings": [
-        ""
+        "Αποτυχία ενημέρωσης ρυθμίσεων"
       ]
     },
     "Settings/filters": {
