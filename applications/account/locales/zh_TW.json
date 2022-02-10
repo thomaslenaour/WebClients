@@ -293,7 +293,7 @@
         "下載所有組態設定"
       ],
       "Download recovery file": [
-        "下載還原檔案"
+        "下載帳戶救援檔案"
       ],
       "Download the Import-Export app": [
         "下載 Import-Export 應用程式"
@@ -791,13 +791,13 @@
         "查看帳單"
       ],
       "Void all recovery files": [
-        "捨棄所有復原的檔案"
+        "廢止所有帳戶救援檔案"
       ],
       "Void all recovery files?": [
-        "捨棄所有還原的檔案嗎？"
+        "要廢止所有帳戶救援檔案嗎？"
       ],
       "Void anyway": [
-        "全部捨棄"
+        "仍然廢止"
       ],
       "Warning": [
         "警告"
@@ -1959,10 +1959,10 @@
         "資料夾名稱太長。請換另一個名稱。"
       ],
       "The keys in your recovery file can't be validated. Please contact support.": [
-        "在您恢復檔案內的金鑰無法通過驗證。請聯繫我們。"
+        "在您帳戶救援檔案內的金鑰無法通過驗證。請聯繫我們。"
       ],
       "The keys in your recovery files can't be validated. Please upload individually for more information.": [
-        "在您恢復檔案內的金鑰無法通過驗證。請上傳更多個人資料。"
+        "在您帳戶救援檔案內的金鑰無法通過驗證。請逐一上傳更多資訊。"
       ],
       "The label name is too long. Please choose a different name.": [
         "標籤名稱太長。請換另一個名稱。"
@@ -3121,7 +3121,7 @@
         "每一個人都該可使用免費而不受審查的網際網路。"
       ],
       "A recovery file lets you unlock and view your data after an account reset. ": [
-        "復原檔案讓你夠在重設帳戶後解密你的資料。 "
+        "帳戶救援檔案讓你夠在重設帳戶後解密你的資料。 "
       ],
       "A recovery phrase lets you access your account and recover your encrypted messages if you forget your password.": [
         "如果您忘記密碼，復原短語將讓您可以存取您的帳號並復原您的加密訊息。"
@@ -3136,7 +3136,7 @@
         "由於有帳單未付，因此帳號存取已受限制。請聯絡您的系統管理員。"
       ],
       "account recovery and data recovery method": [
-        "帳戶復原與資料復原方法"
+        "復原帳戶與資料的手段"
       ],
       "account recovery method": [
         "帳戶復原方法"
@@ -3439,7 +3439,7 @@
         "降級將中斷任何與付費 ProtonVPN 伺服器的連線。"
       ],
       "Download recovery file": [
-        "下載還原檔案"
+        "下載帳戶救援檔案"
       ],
       "Download your favorite app today and take privacy with you everywhere you go.": [
         "現在就下載您最愛的應用程式，隱私隨身帶著走。"
@@ -3601,7 +3601,7 @@
         "若你遺失您的登入資訊且需要重設您的帳戶， ${ boldImperative } 擁有一個 ${ boldAccountRecovery } 可供使用。"
       ],
       "If you lose your login details and need to reset your account, ${ boldImperative } that you have both an ${ boldAccountAndRecovery } in place, otherwise you might not be able to access any of your emails, contacts, or files.": [
-        "若你遺失登入帳戶所需的資訊且需要重設你的帳戶， ${ boldImperative } 後你將會有 ${ boldAccountAndRecovery } 可用，不然你將可能會無法存取你的任何郵件、聯絡人或檔案。"
+        "若你遺失登入帳戶所需的資訊且需要重設你的帳戶。 ${ boldImperative } ：你需要準備 ${ boldAccountAndRecovery } ，不然你將可能會無法存取你的任何郵件、聯絡人或檔案。"
       ],
       "If you lose your two-factor-enabled device, these codes can be used instead of the 6-digit two-factor authentication code to log into your account. Each code can only be used once.": [
         "如果您遺失了您的兩步驟驗證裝置，這些代碼可以用來代替 6 位數的兩步驟驗證代碼來登入您的帳號。每個代碼都只能使用一次。"
@@ -3700,7 +3700,7 @@
         "您的部份資料似乎已被加密並鎖定。這可能是因為最近或先前的密碼重設。我們建議您使用資料還原方法來解鎖您的資料。"
       ],
       "it’s imperative": [
-        "您需要"
+        "有件至關重要的事"
       ],
       "Just confirm your selection and we'll do the rest.": [
         "現在只需確認您的選取，我們就會處理餘下一切。"
@@ -3883,7 +3883,7 @@
         "您的組織中還有其他系統管理員，您有責任告知他們新密碼。"
       ],
       "Outdated recovery file; update to ensure access to your data": [
-        "救援檔案已過時，更新以確保您可以存取您的資料"
+        "帳戶救援檔案已過時，更新以確保您可以存取您的資料"
       ],
       "Outdated recovery methods; update to ensure access to your data": [
         "救援手段已過時，更新以確保您可以存取您的資料"
@@ -4012,10 +4012,10 @@
         "先閱讀我們的兩步驟驗證指南"
       ],
       "Recovery file downloaded": [
-        "已下載還原檔案"
+        "已下載帳戶救援金鑰"
       ],
       "Recovery files have been voided": [
-        "復原檔案已被作廢"
+        "帳戶救援金鑰已被作廢"
       ],
       "Recovery phrase copied to clipboard": [
         "復原短語已複製到剪貼簿"
@@ -4159,7 +4159,7 @@
         "此一 12字短語是你過去被要求設定的。"
       ],
       "This is a recovery file or encryption key you may have previously saved.": [
-        "這是您先前可能儲存的還原檔案或加密金鑰。"
+        "這是您先前可能儲存的帳戶救援檔案或加密金鑰。"
       ],
       "This is an encryption key you may have previously saved.": [
         "這是您先前可能儲存的加密金鑰。"
@@ -4219,7 +4219,7 @@
         "為解密您的郵件與其他資料，需要救援檔案或是短語"
       ],
       "To decrypt and view your emails and other data, you need a recovery file.": [
-        "為解密您的郵件與其他資料，需要救援檔案"
+        "為解密您的郵件與其他資料，需要帳戶救援檔案"
       ],
       "To decrypt and view your emails and other data, you need a recovery phrase.": [
         "為解密您的郵件與其他資料，需要救援短語"
@@ -4276,7 +4276,7 @@
         "不支援的檔案"
       ],
       "Update recovery file": [
-        "更新還原檔案"
+        "更新帳戶救援檔案"
       ],
       "Update recovery phrase": [
         "更新還原短語"
@@ -4486,7 +4486,7 @@
         "即將重新導向到 PayPal 驗證您的付款。"
       ],
       "You won't be able to recover encrypted data after an account reset using your downloaded recovery files.": [
-        "在你使用下載的復原檔案重設你的帳戶後，將會無法還原已加密的檔案。"
+        "在你重設帳戶後，你將無法使用先前下載的帳戶救援金鑰復原你的帳戶。"
       ],
       "You'll stay signed in even after you close the browser.": [
         "即使關閉瀏覽器，您仍會維持登入狀態。"
@@ -5506,7 +5506,7 @@
         "備援電子郵件地址"
       ],
       "Recovery file": [
-        "復原檔案"
+        "帳戶救援檔案"
       ],
       "Recovery phone number": [
         "備援電話號碼"
@@ -5620,10 +5620,10 @@
         "取消傳送"
       ],
       "Upload 1 or more encryption keys": [
-        "上傳一個以上的加密金鑰"
+        "上傳一個或以上的加密金鑰"
       ],
       "Upload 1 or more recovery files or encryption keys": [
-        "上傳一個以上的復原檔案或是加密金鑰"
+        "上傳一個或更多的帳戶救援檔案或是加密金鑰"
       ],
       "URL": [
         "網址"
@@ -6978,7 +6978,7 @@
         "瀏覽"
       ],
       "Upload": [
-        "上載"
+        "上傳"
       ],
       "Upload additional files": [
         "上傳額外的檔案"
@@ -8031,7 +8031,7 @@
         "復原"
       ],
       "Recovery file": [
-        "復原檔案"
+        "帳戶救援檔案"
       ],
       "Remove calendar": [
         "移除日曆"
@@ -8754,7 +8754,7 @@
         "您在清單中將再也看不見此匯入記錄。"
       ],
       "Your recovery file is outdated. It can't recover new data if you reset your account again.": [
-        "您的復原檔案已過時，若您再次重置您的帳戶，該復原檔案將無法還原新的資料。"
+        "您的帳戶救援檔案已過時，若您再次重置您的帳戶，該復原檔案將無法還原新的資料。"
       ],
       "Your recovery phrase is outdated. It can't recover new data if you reset your account again.": [
         "您的復原短語已過時，若您再次重置您的帳戶，該短語將無法還原新的資料。"
