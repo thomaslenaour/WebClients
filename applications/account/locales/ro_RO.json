@@ -197,7 +197,7 @@
         "Continuare importare"
       ],
       "Continue with": [
-        "Continuați cu"
+        "Continuare cu"
       ],
       "Continue with Google": [
         "Continuare cu Google"
@@ -671,7 +671,7 @@
         "Deconectare toate conturile"
       ],
       "Sign out from": [
-        "Ieșiți din"
+        "Deconectare din"
       ],
       "Signing in": [
         "Conectare"
@@ -1793,7 +1793,7 @@
         "Eroare în una dintre condiții"
       ],
       "Failed to get active sessions. Please ${ refresh } or try again later.": [
-        "Nu a reușit să obțină sesiuni active. Vă rugăm ${ refresh } sau încercați din nou mai târziu."
+        "Nu s-a reușit obțininerea unei sesiuni active. Vă rugăm să ${ refresh } sau reîncercați mai târziu."
       ],
       "File has no contents to preview": [
         "Fișierul nu are conținut de afișat"
@@ -2328,10 +2328,10 @@
         "Răspuns nevalid"
       ],
       "The event could not be added to your calendar. No answer was sent": [
-        "Evenimentul nu a putut fi adăugat în calendarul dumneavoastră. Nu a fost trimis niciun răspuns"
+        "Evenimentul nu a putut fi adăugat în calendar. Nu a fost trimis niciun răspuns."
       ],
       "The event could not be updated in your calendar. No answer was sent": [
-        "Evenimentul nu a putut fi actualizat în calendarul dumneavoastră. Nu a fost trimis niciun răspuns"
+        "Evenimentul nu a putut fi actualizat în calendar. Nu a fost trimis niciun răspuns."
       ],
       "Unexpected error": [
         "Eroare neașteptată"
@@ -2355,7 +2355,7 @@
         "Răspunsul a fost trimis, dar evenimentul nu a putut fi adăugat în calendar."
       ],
       "Your answer was sent, but the event could not be updated in your calendar": [
-        "Răspunsul a fost trimis, dar evenimentul nu a putut fi actualizat în calendar"
+        "Răspunsul a fost trimis, dar evenimentul nu a putut fi actualizat în calendar."
       ]
     },
     "Event title": {
@@ -4341,7 +4341,7 @@
         "Pentru a decripta și vedea mesajele și alte date aveți nevoie de un fișier de recuperare."
       ],
       "To decrypt and view your emails and other data, you need a recovery phrase or recovery file.": [
-        "Pentru a decripta și vizualiza e-mailurile și alte date, aveți nevoie de o frază de recuperare sau de un fișier de recuperare."
+        "Pentru a decripta și vizualiza e-mailurile și alte date, aveți nevoie de o frază sau de un fișier de recuperare."
       ],
       "To decrypt and view your emails and other data, you need a recovery phrase.": [
         "Pentru a decripta și vedea mesajele și alte date aveți nevoie de o frază de recuperare."
@@ -4350,7 +4350,7 @@
         "Pentru a decripta și vedea datele blocate după resetarea parolei, selectați o metodă de recuperare."
       ],
       "To ensure continuous access to your account, set an account recovery method": [
-        "Pentru a asigura accesul continuu la contul dumneavoastră, setați o metodă de recuperare a contului"
+        "Pentru a vă asigura accesul continuu la cont, setați o metodă de recuperare a contului."
       ],
       "To fight spam and abuse, please verify you are human.": [
         "Pentru a combate abuzurile, dovediți că sunteți o persoană."
@@ -4410,7 +4410,7 @@
         "Migraţi la planul ${ PLAN_NAMES[PLANS.PROFESSIONAL] } sau ${ PLAN_NAMES[PLANS.VISIONARY] } sau pentru a începe."
       ],
       "Upgrade to a ${ PLAN_NAMES[PLANS.VISIONARY] }, ${ PLAN_NAMES[PLANS.PROFESSIONAL] } or ${ PLAN_NAMES[PLANS.PLUS] } plan to enable automatic replies for when you are out of the office.": [
-        "Treceți la un plan ${ PLAN_NAMES[PLANS.VISIONARY] }, ${ PLAN_NAMES[PLANS.PROFESSIONAL] } sau ${ PLAN_NAMES[PLANS.PLUS] } pentru a activa răspunsurile automate atunci când sunteți plecat de la birou."
+        "Treceți la ${ PLAN_NAMES[PLANS.VISIONARY] }, ${ PLAN_NAMES[PLANS.PROFESSIONAL] } sau ${ PLAN_NAMES[PLANS.PLUS] } pentru a activa răspunsurile automate atunci când nu puteți răspunde la mesaje."
       ],
       "Upgrade to a paid plan to access premium features and increase your storage space.": [
         "Treceți la un plan cu plată pentru a accesa funcțiile premium și a crește spațiul de stocare."
@@ -4614,7 +4614,7 @@
         "Nu veți putea recupera datele criptate după o resetare a contului folosind fișierele de recuperare descărcate."
       ],
       "You'll stay signed in even after you close the browser.": [
-        "Veți rămâne conectat chiar și după ce închideți browserul."
+        "Conexiunea va rămâne activă chiar și după ce închideți navigatorul."
       ],
       "Your ${ BRAND_NAME } Account is associated with ${ externalEmailAddress }. To use ${ toAppName }, please create an address.": [
         "Acest cont ${ BRAND_NAME } este asociat cu ${ externalEmailAddress }. Pentru a utiliza ${ toAppName }, trebuie să creați o adresă."

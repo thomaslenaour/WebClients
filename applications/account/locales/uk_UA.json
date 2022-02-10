@@ -3937,7 +3937,7 @@
         "Увійдіть в ProtonMail, щоб активувати вашу адресу"
       ],
       "Logs include authentication attempts for all Proton services that use your Proton credentials.": [
-        "Журнали містять спроби авторизації в усіх службах Proton з використанням ваших облікових даних Proton."
+        "Журнал містить спроби авторизації з використанням ваших облікових даних в усіх службах Proton."
       ],
       "lose access to all current encrypted data": [
         "втратите доступ до всіх наявних зашифрованих даних"
@@ -4096,7 +4096,7 @@
         "Введіть фразу відновлення з 12 слів, пов'язану з вашим обліковим записом."
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
-        "Будь ласка, надійно збережіть його. Він знадобиться вам для доступу до облікового запису та розшифрування ваших даних у разі скидання пароля."
+        "Збережіть її в надійному місці. Вона знадобиться вам для доступу до облікового запису та розшифрування ваших даних у разі скидання пароля."
       ],
       "Please note that if you delete this address, you will no longer be able to send or receive emails using this address.": [
         "Зверніть увагу, якщо ви видалите цю адресу, ви більше не зможете надсилати чи отримувати листи з цією адресою."
@@ -5362,10 +5362,10 @@
         "Типові сповіщення на весь день"
       ],
       "Default language": [
-        "Типова мова"
+        "Мова"
       ],
       "Default language (${ defaultLanguage })": [
-        "Типова мова (${ defaultLanguage })"
+        "Мова (${ defaultLanguage })"
       ],
       "Default notifications": [
         "Типові сповіщення"
@@ -6132,7 +6132,7 @@
         "Увімкнути розширений журнал"
       ],
       "Enable authentication logs": [
-        "Увімкнути журнали авторизації"
+        "Увімкнути журнал авторизації"
       ]
     },
     "Mail feature": {
@@ -8298,7 +8298,7 @@
         "Безпека"
       ],
       "Security logs": [
-        "Журнали безпеки"
+        "Журнал безпеки"
       ],
       "Select a plan": [
         "Оберіть тарифний план"

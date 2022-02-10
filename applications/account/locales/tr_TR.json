@@ -4217,7 +4217,7 @@
         "Bu e-posta adresi yalnızca kurtarma amacıyla kullanılır."
       ],
       "This feature is intended for advanced users only. After deleting this key, you will NOT be able to decrypt any message that has been encrypted with it. It may lead to data loss.": [
-        "Bu özellik yalnızca uzman kullanıcılar içindir! Bu anahtarı sildikten sonra, bu anahtarla şifrelenmiş herhangi bir iletinin şifresini çözemezsiniz. Bu işlem veri kaybına neden olabilir. Devam etmek istediğinize emin misiniz?"
+        "Bu özellik yalnızca uzman kullanıcılar içindir! Bu anahtarı sildikten sonra, bu anahtarla şifrelenmiş herhangi bir iletinin şifresini çözemezsiniz. Bu işlem veri kaybına neden olabilir."
       ],
       "This is a 12-word phrase that you were prompted to set.": [
         "Ayarlanmanız istenen bu ifade 12 sözcükten oluşur."
@@ -4535,7 +4535,7 @@
         "Etkinliklerinizi .ics dosyasından içe aktarmak için etkin bir kişisel takviminiz olmalıdır."
       ],
       "You need to have an active personal calendar to import your events.": [
-        "Etkinliklerinizi .ics dosyasından içe aktarmak için etkin bir kişisel takviminiz olmalıdır."
+        "Etkinliklerinizi içe aktarmak için etkin bir kişisel takviminiz olmalıdır."
       ],
       "You reached ${ spaceDisplayed }% of your storage capacity. ${ freeUpMessage } ${ upgradeLink }": [
         "Depolama kapasitenizi %${ spaceDisplayed } oranında kullanıyorsunuz. ${ freeUpMessage } ${ upgradeLink }"
@@ -5914,7 +5914,7 @@
         "Takvimler"
       ],
       "clearing your browser cache": [
-        "tarayıcınızın ön belleği temizleniyor"
+        "web tarayıcınızın ön belleğini temizlemek"
       ],
       "click here": [
         "buraya tıklayın"

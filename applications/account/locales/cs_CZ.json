@@ -284,7 +284,7 @@
         "Downgradovat účet"
       ],
       "Downgrade to ${ BRAND_NAME } ${ downgradedPlanName }": [
-        ""
+        "Downgrade na ${ BRAND_NAME } ${ downgradedPlanName }"
       ],
       "Download": [
         "Stáhnout"
@@ -1878,10 +1878,10 @@
         "Název štítku nemůže být prázdný"
       ],
       "Merge at least ${ calendarToFixCount } calendar with an existing Proton calendar": [
-        "",
-        "",
-        "",
-        ""
+        "Sloučit nejméně ${ calendarToFixCount } kalendář s existujícím Proton kalendářem",
+        "Sloučit nejméně ${ calendarToFixCount } kalendáře s existujícími Proton kalendáři",
+        "Sloučit nejméně ${ calendarToFixCount } kalendářů s existujícími Proton kalendáři",
+        "Sloučit nejméně ${ calendarToFixCount } kalendářů s existujícími Proton kalendáři"
       ],
       "Missing signature": [
         "Podpis není nastaven"
@@ -2302,7 +2302,7 @@
         "Prosím ${ refresh } nebo zkontrolujte své připojení."
       ],
       "Please ${ signIn } to update your email subscription preferences.": [
-        ""
+        "Prosím ${ signIn } proveďte akualizaci předvolby předplatného emailu."
       ],
       "There was a problem connecting to Proton.": [
         "Při připojování k Proton došlo k chybě."
@@ -3175,16 +3175,16 @@
         "${ number } serverů"
       ],
       "${ numberOfNonPrivateKeys } uploaded file is not a valid private key. Please verify and try again.": [
-        "",
-        "",
-        "",
-        ""
+        "${ numberOfNonPrivateKeys } nahraný soubor není platným soukromým klíčem. Prosím ověřte a zkuste to znovu.",
+        "${ numberOfNonPrivateKeys } nahrané soubory nejsou platné soukromé klíče. Prosím ověřte a zkuste to znovu.",
+        "${ numberOfNonPrivateKeys } nahraných souborů není platným soukromým klíčem. Prosím ověřte a zkuste to znovu.",
+        "${ numberOfNonPrivateKeys } nahraných souborů není platným soukromým klíčem. Prosím ověřte a zkuste to znovu."
       ],
       "${ numContactGroups } contact group": [
-        "",
-        "",
-        "",
-        ""
+        "${ numContactGroups } skupina kontaktů",
+        "${ numContactGroups } skupiny kontaktů",
+        "${ numContactGroups } skupin kontaktů",
+        "${ numContactGroups } skupin kontaktů"
       ],
       "${ numContacts } contact": [
         "${ numContacts } kontakt",
@@ -3215,7 +3215,7 @@
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendar": [
         "${ selectedCalendarsTotal } z ${ providerCalendars.length } kalendáře",
-        "",
+        "${ selectedCalendarsTotal } z ${ providerCalendars.length } kalendářů",
         "${ selectedCalendarsTotal } z ${ providerCalendars.length } kalendářů",
         "${ selectedCalendarsTotal } z ${ providerCalendars.length } kalendářů"
       ],
@@ -3556,19 +3556,19 @@
         "Vlastní"
       ],
       "Custom daily": [
-        ""
+        "Denní zvyk"
       ],
       "Custom filters work on all new emails, including incoming emails as well as sent emails. Filters can be edited and created directly via Sieve programming language.": [
         "Vlastní filtry fungují na všech nových e-mailech, včetně příchozích i odchozích e-mailů. Filtry mohou být editovány a vytvořeny přímo prostřednictvím programovacího jazyka Sieve."
       ],
       "Custom monthly": [
-        ""
+        "Měsíční zvyk"
       ],
       "Custom weekly": [
-        ""
+        "Týdenní zvyk"
       ],
       "Custom yearly": [
-        ""
+        "Roční zvyk"
       ],
       "Daily": [
         "Denně"
@@ -3640,7 +3640,7 @@
         "E-maily uložené v tomto souboru nebudou vymazány a je možné je stále nalézt v souboru Všechna Pošta."
       ],
       "Emails tagged with this label will not be deleted and can still be found in the respective folder.": [
-        ""
+        "Označený email s touto složkou nebude vymazán a je možné jej nalézt v příslušném souboru."
       ],
       "Enabling recovery by phrase again will generate a new recovery phrase.": [
         "Opětovné povolení obnovení pomocí fráze vygeneruje novou frázi pro obnovení."
@@ -3973,7 +3973,7 @@
         "Nové"
       ],
       "New to ${ BRAND_NAME }? ${ signupLink }": [
-        ""
+        "Nováček v ${ BRAND_NAME }? ${ signupLink }"
       ],
       "Next you'll need to log in to your Google account and allow us to access your data.": [
         "Dále se musíte přihlásit ke svému účtu Google a povolit nám přístup k Vašim datům."
@@ -4480,7 +4480,7 @@
         "Nahrát obrázek"
       ],
       "Uploaded file is not a valid private key. Please verify and try again.": [
-        ""
+        "Nahraný soubor není platným soukromým klíčem. Prosím ověřte a zkuste to znovu."
       ],
       "URL link": [
         "Odkaz na URL"
@@ -4693,13 +4693,13 @@
         "Jakmile bude platba zrušena, váš účet bude aktualizován."
       ],
       "Your Allow List is empty.": [
-        ""
+        "Váš povolený seznam je prázdný."
       ],
       "Your bank requires 3-D Secure verification for security purposes.": [
         "Z důvodu bezpečnosti Vaše banka vyžaduje ověření pomocí 3-D Secure."
       ],
       "Your Block List is empty.": [
-        ""
+        "Váš seznam blokace je prázdný."
       ],
       "Your data is ready to import from ${ importedEmailAddressStrong } to your Proton account.": [
         "Vaše data jsou připravena k importu z ${ importedEmailAddressStrong } do vašeho účtu Proton."
@@ -5153,7 +5153,7 @@
       ],
       "${ UsedAddresses } of ${ MaxAddresses } email address": [
         "${ UsedAddresses } z ${ MaxAddresses } emailové adresy",
-        "",
+        "${ UsedAddresses } z ${ MaxAddresses } emailových adres",
         "${ UsedAddresses } z ${ MaxAddresses } emailových adres",
         "${ UsedAddresses } z ${ MaxAddresses } emailových adres"
       ],
@@ -7181,7 +7181,7 @@
     },
     "Remark about a key type option": {
       "Compatibility": [
-        ""
+        "Kompatibilita"
       ],
       "State of the art": [
         "Nejmodernější"
@@ -8749,7 +8749,7 @@
         "Přejděte na placený tarif a vytvořte si ${ MAX_CALENDARS_PER_USER } kalendáře, které můžete použít pro práci, sdílení s přáteli nebo jen pro vás."
       ],
       "Upgrade to a paid plan to share your personal calendar via link with anyone.": [
-        ""
+        "Přejděte na předplatné se sdílením osobního kalendáře prostřednictvím odkazu a to s kýmkoliv."
       ]
     },
     "User role": {

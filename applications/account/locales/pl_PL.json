@@ -2687,9 +2687,9 @@
       ],
       "An error occurred while encrypting and adding your event. ${ totalImported } out of ${ totalToImport } event successfully imported.": [
         "Wystąpił błąd podczas szyfrowania i dodawania wydarzenia. Wydarzenie nie zostało zaimportowane.",
-        "Wystąpił błąd podczas szyfrowania i dodawania wydarzeń. Liczba zaimportowanych wydarzeń: ${ totalImported } na ${ totalToImport }.",
-        "Wystąpił błąd podczas szyfrowania i dodawania wydarzeń. Liczba zaimportowanych wydarzeń: ${ totalImported } na ${ totalToImport }.",
-        "Wystąpił błąd podczas szyfrowania i dodawania wydarzeń. Liczba zaimportowanych wydarzeń: ${ totalImported } na ${ totalToImport }."
+        "Wystąpił błąd podczas szyfrowania i dodawania wydarzeń. Pomyślnie zaimportowano ${ totalImported } z ${ totalToImport } wydarzeń.",
+        "Wystąpił błąd podczas szyfrowania i dodawania wydarzeń. Pomyślnie zaimportowano ${ totalImported } z ${ totalToImport } wydarzeń.",
+        "Wystąpił błąd podczas szyfrowania i dodawania wydarzeń. Pomyślnie zaimportowano ${ totalImported } z ${ totalToImport } wydarzeń."
       ],
       "An error occurred while encrypting and adding your event. No event could be imported.": [
         "Wystąpił błąd podczas szyfrowania i dodawania wydarzenia. Wydarzenie nie może zostać zaimportowane.",
