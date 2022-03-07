@@ -258,6 +258,7 @@ const MessageView = (
         if (message.data?.ID) {
             setExpanded(getInitialExpand);
             setSourceMode(false);
+            setOriginalMessageMode(defaultOriginalMessageMode);
         }
     }, [message.data?.ID]);
 
