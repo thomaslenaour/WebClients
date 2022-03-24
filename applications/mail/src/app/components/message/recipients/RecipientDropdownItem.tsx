@@ -1,3 +1,4 @@
+import { MouseEvent } from 'react';
 import { getInitials } from '@proton/shared/lib/helpers/string';
 import { Copy, useNotifications } from '@proton/components';
 import { c } from 'ttag';
@@ -29,8 +30,13 @@ const RecipientDropdownItem = ({ label, recipient, closeDropdown }: Props) => {
         closeDropdown();
     };
 
+    // Prevent closing dropdown if click inside the recipient info
+    const handleClick = (e: MouseEvent) => {
+        e.stopPropagation();
+    };
+
     return (
-        <div className="flex flex-nowrap flex-align-items-center opacity-on-hover-container p0-5">
+        <div className="flex flex-nowrap flex-align-items-center opacity-on-hover-container p0-5" onClick={handleClick}>
             <span className="item-icon flex flex-item-noshrink rounded mx0-5" aria-hidden="true">
                 <span className="mauto">{initial}</span>
             </span>
@@ -38,7 +44,7 @@ const RecipientDropdownItem = ({ label, recipient, closeDropdown }: Props) => {
                 <span className="text-ellipsis" title={label}>
                     {label}
                 </span>
-                {hasName && <span className="color-weak text-ellipsis">{recipient.Address}</span>}
+                {hasName && <span className="color-weak text-ellipsis">{`<${recipient.Address}>`}</span>}
             </div>
             <Copy
                 value={recipient.Address}
