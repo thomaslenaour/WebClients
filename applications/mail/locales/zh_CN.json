@@ -297,7 +297,7 @@
         "启用"
       ],
       "enable desktop notifications": [
-        "启用桌面通知"
+        "开启推送通知"
       ],
       "Encryption": [
         "加密"
@@ -831,7 +831,7 @@
         "此邮件含有嵌入图像。"
       ],
       "This message contains remote content.": [
-        "此邮件含有外链内容"
+        "此邮件含有外链内容。"
       ],
       "Trust": [
         "信任"
@@ -3774,7 +3774,7 @@
         "正在进行激活"
       ],
       "Add ${ addressToCreate } to your account for free, for a limited time only.": [
-        ""
+        "${ addressToCreate } 邮箱地址限时免费领取。"
       ],
       "Add image URL": [
         "添加图片地址"
@@ -4242,7 +4242,7 @@
         "到底了"
       ],
       "No preview available": [
-        "没有可用的预览"
+        "无法预览此文件"
       ],
       "No results found": [
         "未找到结果"
@@ -5496,7 +5496,7 @@
     },
     "Link": {
       "Activate": [
-        "激活"
+        "立即领取"
       ],
       "Add folder": [
         "添加文件夹"
