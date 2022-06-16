@@ -72,6 +72,8 @@ export enum FeatureCode {
     NudgeProton = 'NudgeProton',
     WelcomeV5TopBanner = 'WelcomeV5TopBanner',
     EORedesign = 'EORedesign',
+    RebrandingFeedbackEnabled = 'RebrandingFeedbackEnabled',
+    RebrandingFeedback = 'RebrandingFeedback',
 }
 
 export interface FeaturesContextValue {
