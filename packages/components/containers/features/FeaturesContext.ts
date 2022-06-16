@@ -71,6 +71,8 @@ export enum FeatureCode {
     MailContextMenu = 'MailContextMenu',
     NudgeProton = 'NudgeProton',
     WelcomeV5TopBanner = 'WelcomeV5TopBanner',
+    RebrandingFeedbackEnabled = 'RebrandingFeedbackEnabled',
+    RebrandingFeedback = 'RebrandingFeedback',
 }
 
 export interface FeaturesContextValue {

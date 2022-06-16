@@ -15,23 +15,21 @@ import {
     TopNavbarListItemSettingsDropdown,
     TopNavbarListItemContactsDropdown,
     TopNavbarListItemFeedbackButton,
-    FeedbackModal,
     Tooltip,
     Button,
     useNotifications,
     useContactGroups,
-    useFeature,
-    FeatureCode,
     TopBanners,
     UserDropdown,
     useModalState,
+    RebrandingFeedbackModal,
+    useHasRebrandingFeedback,
 } from '@proton/components';
 import { c, msgid } from 'ttag';
 import { differenceInCalendarDays } from 'date-fns';
 
 import { fromUTCDate, toLocalDate } from '@proton/shared/lib/date/timezone';
 import { AttendeeModel, CalendarUserSettings, VisualCalendar } from '@proton/shared/lib/interfaces/calendar';
-import { getAppName } from '@proton/shared/lib/apps/helper';
 import { APPS } from '@proton/shared/lib/constants';
 import { CONTACT_WIDGET_TABS, CustomActionRenderProps } from '@proton/components/containers/contacts/widget/types';
 import { emailToAttendee } from '@proton/shared/lib/calendar/attendees';
@@ -116,10 +114,9 @@ const CalendarContainerView = ({
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const { createNotification } = useNotifications();
     const [groups = []] = useContactGroups();
-    const { feature: featureCalendarFeedbackEnabled } = useFeature(FeatureCode.CalendarFeedbackEnabled);
-    const calendarAppName = getAppName(APPS.PROTONCALENDAR);
+    const hasRebrandingFeedback = useHasRebrandingFeedback();
     const [onboardingModal, setOnboardingModal, renderOnboardingModal] = useModalState();
-    const [feedbackModal, setFeedbackModal] = useModalState();
+    const [rebrandingFeedbackModal, setRebrandingFeedbackModal] = useModalState();
 
     const localNowDate = useMemo(() => {
         return new Date(utcDefaultDate.getUTCFullYear(), utcDefaultDate.getUTCMonth(), utcDefaultDate.getUTCDate());
@@ -386,8 +383,8 @@ const CalendarContainerView = ({
                     />
                 }
                 feedbackButton={
-                    featureCalendarFeedbackEnabled?.Value ? (
-                        <TopNavbarListItemFeedbackButton onClick={() => setFeedbackModal(true)} />
+                    hasRebrandingFeedback ? (
+                        <TopNavbarListItemFeedbackButton onClick={() => setRebrandingFeedbackModal(true)} />
                     ) : null
                 }
                 title={c('Title').t`Calendar`}
@@ -396,19 +393,7 @@ const CalendarContainerView = ({
                 isNarrow={isNarrow}
             />
 
-            <FeedbackModal
-                {...feedbackModal}
-                feedbackType="calendar_launch"
-                description={c('Info')
-                    .t`${calendarAppName} has been added to the Proton suite. We would love to hear what you think about it!`}
-                scaleTitle={c('Label').t`How likely are you to recommend ${calendarAppName} to a friend or colleague?`}
-                scaleProps={{
-                    from: 0,
-                    to: 10,
-                    fromLabel: c('Label').t`0 - Not likely`,
-                    toLabel: c('Label').t`10 - Extremely likely`,
-                }}
-            />
+            <RebrandingFeedbackModal {...rebrandingFeedbackModal} />
         </>
     );
 
