@@ -45,6 +45,7 @@ export * from './overview';
 export * from './password';
 export * from './paymentMethods';
 export * from './payments';
+export * from './privacy';
 export * from './recovery';
 export * from './referral';
 export * from './resetPassword';

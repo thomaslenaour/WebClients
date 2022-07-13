@@ -30,6 +30,7 @@ import {
     AutomaticSubscriptionModal,
     PrivateMainArea,
     SettingsPageTitle,
+    PrivacySection,
 } from '@proton/components';
 import { InviteSection, ReferralInvitesContextProvider, RewardSection } from '@proton/components/containers/referral';
 import { getIsSectionAvailable, getSectionPath } from '@proton/components/containers/layout/helper';
@@ -126,6 +127,7 @@ const AccountSettingsRouter = ({
                 <PrivateMainSettingsArea location={location} config={security}>
                     <SessionsSection />
                     <LogsSection />
+                    <PrivacySection />
                 </PrivateMainSettingsArea>
             </Route>
             {getIsSectionAvailable(referral) && (
