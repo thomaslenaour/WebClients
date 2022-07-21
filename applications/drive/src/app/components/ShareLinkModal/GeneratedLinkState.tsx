@@ -224,7 +224,7 @@ function GeneratedLinkState({
                                             />
                                         </div>
                                     </Tooltip>
-                                    <div className="flex-no-min-children flex-item-fluid on-mobile-mb0-5 inputform-icon-container-empty on-mobile-min-h0">
+                                    <div className="flex-no-min-children flex-item-fluid on-mobile-mb0-5 field-two-icon-container-empty on-mobile-min-h0">
                                         {passwordToggledOn && (
                                             <>
                                                 <InputFieldTwo
@@ -261,7 +261,7 @@ function GeneratedLinkState({
                                             data-testid="sharing-modal-expirationTimeModeToggle"
                                         />
                                     </div>
-                                    <div className="flex-no-min-children flex-item-fluid flex-align-items-center on-mobile-mb0-5 inputform-icon-container-empty on-mobile-min-h0">
+                                    <div className="flex-no-min-children flex-item-fluid flex-align-items-center on-mobile-mb0-5 field-two-icon-container-empty on-mobile-min-h0">
                                         {expirationToggledOn && (
                                             <ExpirationTimeDatePicker
                                                 disabled={saving}
