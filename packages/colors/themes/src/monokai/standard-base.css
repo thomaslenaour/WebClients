@@ -33,9 +33,9 @@
 	--border-norm: #34384E;
 	--border-weak: #25283A;
 
-	--background-norm: #171926;
-	--background-weak: #1E2130;
-	--background-strong: #25283A;
+    --background-norm: #16141C;
+    --background-weak: #1e2130;
+    --background-strong: #25283a;
 
 	--interaction-default: transparent;
 	--interaction-default-hover: rgb(52 56 78 / 0.5);
@@ -58,8 +58,10 @@
 	--optional-navigation-current-item-text-color: var(--signal-success);
 	--optional-navigation-item-count-background-color: #8838ff;
 
-	--optional-email-item-read-background-color: #11121d;
-	--optional-email-item-read-text-color: var(--text-norm);
+    --optional-email-item-unread-background-color: #1A1926;
+
+    --optional-email-item-read-background-color: var(--background-norm);
+    --optional-email-item-read-text-color: var(--text-weak);
 
 	--optional-logo-text-proton-color: white;
 	--optional-logo-text-product-color: #8A6EFF;

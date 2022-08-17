@@ -61,7 +61,7 @@
   --field-highlight: rgb(229 50 101 / 0.3);
   --border-norm: #34384e;
   --border-weak: #25283a;
-  --background-norm: #171926;
+  --background-norm: #16141c;
   --background-weak: #1e2130;
   --background-strong: #25283a;
   --interaction-default: transparent;
@@ -77,13 +77,10 @@
   --optional-link-active: var(--interaction-norm-major-3);
   --optional-navigation-current-item-text-color: var(--signal-success);
   --optional-navigation-item-count-background-color: #8838ff;
-  --optional-email-item-read-background-color: #11121d;
-  --optional-email-item-read-text-color: var(--text-norm);
+  --optional-email-item-unread-background-color: #1a1926;
+  --optional-email-item-read-background-color: var(--background-norm);
+  --optional-email-item-read-text-color: var(--text-weak);
   --optional-logo-text-proton-color: white;
   --optional-logo-text-product-color: #8a6eff;
   --optional-logo-icon-text-color: #c5b7ff;
-}
-
-.ui-prominent {
-  --background-norm: #11121d;
 }
