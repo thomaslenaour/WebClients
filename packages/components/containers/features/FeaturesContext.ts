@@ -80,6 +80,8 @@ export enum FeatureCode {
     ApplyFilters = 'ApplyFilters',
     NumberOfPreloadedConversations = 'NumberOfPreloadedConversations',
     PartialEncryptedSearch = 'PartialEncryptedSearch',
+    SLIntegration = 'SLIntegration',
+    SpotlightAutoAddedInvites = 'SpotlightAutoAddedInvites',
 }
 
 export interface FeaturesContextValue {
