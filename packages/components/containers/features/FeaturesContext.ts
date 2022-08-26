@@ -79,6 +79,9 @@ export enum FeatureCode {
     TopBannerDisplayDriveRelease = 'TopBannerDisplayDriveRelease',
     TopBannerVisitedDriveRelease = 'TopBannerVisitedDriveRelease',
     ApplyFilters = 'ApplyFilters',
+    NumberOfPreloadedConversations = 'NumberOfPreloadedConversations',
+    SLIntegration = 'SLIntegration',
+    SpotlightAutoAddedInvites = 'SpotlightAutoAddedInvites',
 }
 
 export interface FeaturesContextValue {
