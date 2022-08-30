@@ -81,6 +81,8 @@ export enum FeatureCode {
     NumberOfPreloadedConversations = 'NumberOfPreloadedConversations',
     PartialEncryptedSearch = 'PartialEncryptedSearch',
     SLIntegration = 'SLIntegration',
+    SpotlightAutoAddedInvites = 'SpotlightAutoAddedInvites',
+    EasySwitchGmailNewScope = 'EasySwitchGmailNewScope',
 }
 
 export interface FeaturesContextValue {
