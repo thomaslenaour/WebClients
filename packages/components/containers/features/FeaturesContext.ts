@@ -80,6 +80,13 @@ export enum FeatureCode {
     ApplyFilters = 'ApplyFilters',
     NumberOfPreloadedConversations = 'NumberOfPreloadedConversations',
     SLIntegration = 'SLIntegration',
+    BlockSender = 'BlockSender',
+    SpotlightAutoAddedInvites = 'SpotlightAutoAddedInvites',
+    ContextFiltering = 'ContextFiltering',
+    EasySwitchGmailNewScope = 'EasySwitchGmailNewScope',
+    TrustedDeviceRecovery = 'TrustedDeviceRecovery',
+    BulkUserUpload = 'BulkUserUpload',
+    DriveBeta = 'DriveBeta',
 }
 
 export interface FeaturesContextValue {
