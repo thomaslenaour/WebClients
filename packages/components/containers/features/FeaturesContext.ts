@@ -84,6 +84,8 @@ export enum FeatureCode {
     ContextFiltering = 'ContextFiltering',
     EasySwitchGmailNewScope = 'EasySwitchGmailNewScope',
     TrustedDeviceRecovery = 'TrustedDeviceRecovery',
+    BulkUserUpload = 'BulkUserUpload',
+    DriveBeta = 'DriveBeta',
 }
 
 export interface FeaturesContextValue {
