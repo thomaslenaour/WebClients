@@ -45,12 +45,9 @@
 
 	/* Optional colors */
 
-	--optional-scrollbar-thumb-color: #D1CFCD;
-	--optional-scrollbar-thumb-hover-color: #C2BFBC;
+    --optional-scrollbar-thumb-color: #d1cfcd;
+    --optional-scrollbar-thumb-hover-color: #c2bfbc;
 
-    --optional-email-item-read-background-color: var(--background-norm);
-    --optional-email-item-read-text-color: var(--text-norm);
-
-	--optional-logo-text-proton-color: #1B1340;
-	--optional-logo-text-product-color: #6D4AFF;
+    --optional-logo-text-proton-color: #1b1340;
+    --optional-logo-text-product-color: #6d4aff;
 }
