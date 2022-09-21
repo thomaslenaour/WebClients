@@ -7,6 +7,7 @@ import noop from '@proton/utils/noop';
 import SignatureIssueModal from '../components/SignatureIssueModal';
 import TransferManager from '../components/TransferManager/TransferManager';
 import DriveWindow from '../components/layout/DriveWindow';
+import GiftFloatingButton from '../components/onboarding/GiftFloatingButton';
 import ConflictModal from '../components/uploads/ConflictModal';
 import { ActiveShareProvider } from '../hooks/drive/useActiveShare';
 import { DriveProvider, useDefaultShare, useDriveEventManager, useSearchControl } from '../store';
@@ -74,6 +75,7 @@ const InitContainer = () => {
             <DriveStartupModals />
             <ModalsChildren />
             <TransferManager />
+            <GiftFloatingButton />
             <DriveWindow>
                 <Switch>
                     <Route path="/trash" component={TrashContainer} />
