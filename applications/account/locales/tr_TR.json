@@ -3446,7 +3446,7 @@
         "İletileri etiketlemek ya da arşivlemek gibi belirli işlemleri otomatik olarak yapacak bir özel süzgeç ekleyin. Süzgeçler düzeltilebilir ve doğrudan Sieve programlama diliyle oluşturulabilir."
       ],
       "Emails from addresses marked as spam by you or Proton will go to your spam folder. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
-        "Siz ya da Proton tarafından istenmeyen olarak işaretlenmiş e-postalar İstenmeyen klasörünüze taşınır. Bu adreslerden gelen e-postalara izin vermek için e-postayı \"İstenmeyen değil\" olarak işaretleyebilirsiniz."
+        "Siz ya da Proton tarafından istenmeyen olarak işaretlenmiş e-postalar İstenmeyen kutunuza taşınır. Bu adreslerden gelen e-postalara izin vermek için e-postayı \"İstenmeyen değil\" olarak işaretleyebilirsiniz."
       ],
       "Emails from blocked addresses won't be delivered.": [
         "Engellenmiş adreslerden gelen e-postalar alınmaz."
@@ -4342,7 +4342,7 @@
         "Hesabı etkinleştirmeden önce bir parola belirtmeli ve yeni adresin şifreleme anahtarlarını oluşturmalısınız."
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
-        "Yeni bir doğrulama kodu istemeden önce istenmeyen e-postalar kutunuza bakın ve ${ strong } adresinin doğru olduğundan emin olun."
+        "Yeni bir doğrulama kodu istemeden önce İstenmeyen kutunuza bakın ve ${ strong } adresinin doğru olduğundan emin olun."
       ],
       "Before you can receive emails for your custom domain addresses at ${ MAIL_APP_NAME }, you need to add the following MX records to your DNS. This can typically be done in the control panel of your domain name registrar.": [
         "SPF etki alanı adına kimlerin e-posta göndermesine izin verildiğini belirtmek için kullanılır. Bu nedenle SPF kaydınıza ${ MAIL_APP_NAME } eklemenizi önemle öneririz. Lütfen DNS kayıtlarınıza aşağıdaki TXT kaydını ekleyin. Bu işlem genellikle etki alanı kayıt kuruluşunuzun kontrol panosundan yapılabilir."
@@ -4551,7 +4551,7 @@
         "${ phone } numaranıza gönderdiğimiz kodu yazın."
       ],
       "Enter the code that was sent to ${ email }. If you can't find the message in your inbox, please check your spam folder.": [
-        "${ email } alıcısına gönderilen doğrulama kodunu yazın. E-postayı gelen kutunuzda bulamazsanız, istenmeyen kutusuna bakmayı unutmayın."
+        "${ email } alıcısına gönderilen doğrulama kodunu yazın. E-postayı Gelen kutunuzda bulamazsanız, İstenmeyen kutusuna bakmayı unutmayın."
       ],
       "Enter the credentials of the email account you want to import from.": [
         "İçe aktarmak istediğiniz e-posta hesabının kimlik doğrulama bilgilerini yazın."
@@ -4644,7 +4644,7 @@
         "Bir hata olduğunu düşünüyorsanız, lütfen ${ contactLink } üzerinden bizimle görüşün."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
-        "E-postayı gelen kutunuzda göremezseniz, istenmeyen kutusuna bakmayı unutmayın."
+        "E-postayı Gelen kutunuzda göremezseniz, İstenmeyen kutusuna bakmayı unutmayın."
       ],
       "If you have a custom domain with ${ MAIL_APP_NAME }, you can set a catch-all email address to receive messages sent to your domain but to an invalid email address (e.g., because of typos).": [
         "${ MAIL_APP_NAME } üzerinde kullandığınız özel bir etki alanınız varsa, etki alanınıza geçersiz bir e-posta adresiyle (yazım hataları gibi) gönderilen iletileri alacak bir tümünü yakalayan e-posta adresi ayarlayabilirsiniz."
@@ -7864,7 +7864,7 @@
       ]
     },
     "new_plans: signup": {
-      "By creating a ${ BRAND_NAME } account, you agree to our ${ terms }.": [
+      "By creating a ${ BRAND_NAME } account, you agree to our ${ terms }": [
         "Bir ${ BRAND_NAME } hesabı oluşturarak ${ terms } metnini kabul etmiş olursunuz."
       ],
       "Payment details": [
@@ -10271,7 +10271,7 @@
         "Gmail bazı e-postaları Sosyal ya da Tanıtım gibi kategorilere ayırır. Bu e-postaların nereye içe aktarılacağını seçebilirsiniz."
       ],
       "Group emails in the same conversation together in your Inbox or display them separately.": [
-        "Aynı yazışmadaki e-postaları gelen kutunuzda gruplayın veya ayrı ayrı görüntüleyin."
+        "Aynı yazışmadaki e-postaları Gelen kutunuzda gruplayın ya da ayrı ayrı görüntüleyin."
       ],
       "If you purchased a gift code or received one from our support team, you can enter it here.": [
         "Satın aldığınız ya da destek ekibimizden verilen bir hediye kodunuz varsa, buraya yazabilirsiniz."
@@ -10286,7 +10286,7 @@
         "Varsayılan oluşturucu açılır pencere boyutunu küçük veya tam ekran olarak ayarlayın."
       ],
       "Set the default layout for your Inbox.": [
-        "Gelen Kutunuzun varsayılan düzenini ayarlayın."
+        "Gelen kutunuzun varsayılan düzenini ayarlayın."
       ],
       "Sets the following footer in the emails you send: ${ signature } The link points to your referral link. The footer will appear below your signature. You can personalise your signature anytime in the settings.": [
         "Gönderdiğiniz e-postalara şu alt bilgi eklenir: ${ signature } Bağlantı, öneri bağlantınıza yönlenir. Alt bilgi, imzanızın altında görüntülenir. İmzanızı istediğiniz zaman ayarlar bölümünden kişiselleştirebilirsiniz."
@@ -10331,7 +10331,7 @@
         "Bir bağlantıya tıkladığınızda, bu kimlik avını önleme özelliği web sayfasının adresini onaylamanızı ister."
       ],
       "When you move an email to spam, you’ll automatically be unsubscribed from the sender’s mailing lists.": [
-        "Bir e-postayı istenmeyen kutusuna taşıdığınızda göndericinin e-posta listesinden otomatik olarak ayrılmanızı sağlar."
+        "Bir e-postayı İstenmeyen kutusuna taşımanız göndericinin e-posta listesinden otomatik olarak ayrılmanızı sağlar."
       ],
       "You have locally decrypted this key": [
         "Bu anahtarın şifresini yerel olarak çözdünüz"

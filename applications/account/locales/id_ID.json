@@ -59,7 +59,7 @@
         "Tambahkan kartu kredit / debit"
       ],
       "Add credits": [
-        "Tambahkan saldo"
+        "Tambah saldo"
       ],
       "Add domain": [
         "Tambah domain"
@@ -2480,7 +2480,7 @@
         "Saya menggunakan akun Proton lain"
       ],
       "Missing feature(s)": [
-        "Terdapat fitur-fitur yang hilang"
+        "Terdapat fitur yang hilang"
       ],
       "My reason isn't listed, please comment": [
         "Lainnya (harap berikan komentar)"
@@ -4300,7 +4300,7 @@
         "Dengan beralih ke paket Free, Anda akan kehilangan berbagai manfaat berikut secara permanen bahkan apabila Anda kembali meningkatkan jenis akun Anda di kemudian hari."
       ],
       "By downgrading you will lose the following benefits. Are you sure you want to proceed?": [
-        "Dengan menurunkan jenis akun Anda, Anda tidak akan lagi dapat menikmati keutamaan-keutamaan berikut. Apakah Anda yakin untuk menurunkan jenis akun Anda?"
+        "Dengan menurunkan jenis akun Anda, Anda tidak akan lagi dapat menikmati berbagai keutamaan berikut. Apakah Anda yakin untuk menurunkan jenis akun Anda?"
       ],
       "By leaving now, changes may not be saved": [
         "Dengan keluar sekarang, perubahan mungkin tidak tersimpan"
@@ -4606,7 +4606,7 @@
         "Apabila Anda baru saja mengatur ulang kata sandi Anda, Anda dapat menggunakan metode pemulihan untuk membuka kunci data Anda"
       ],
       "If you want to keep an existing SPF record, you can just add ${ spf } to it after the ${ spfValue }. Do not create multiple SPF records.": [
-        "Jika Anda ingin mempertahankan data SPF yang sudah ada, Anda dapat menambahkan ${ spf } setelah ${ spfValue }. Jangan buat banyak data SPF."
+        "Apabila Anda ingin mempertahankan data SPF yang telah ada, Anda hanya perlu untuk menambahkan ${ spf } setelah ${ spfValue }. Anda tidak disarankan untuk membuat lebih dari satu data SPF."
       ],
       "If you wish to combine this account with another one, do NOT delete it.": [
         "Apabila Anda ingin menggabungkan akun ini dengan akun lain, JANGAN hapus akun ini."
@@ -6078,7 +6078,7 @@
         "SEMBARANG"
       ],
       "App password": [
-        "Kata Sandi Aplikasi"
+        "Kata sandi aplikasi"
       ],
       "Apply filter to existing emails": [
         "Terapkan filter untuk email yang sudah ada"
@@ -7363,7 +7363,7 @@
         "Dari ${ price }"
       ],
       "Keep my ${ currentPlanName } account": [
-        "Pertahankan akun ${ currentPlanName } $ yang saya miliki saat ini"
+        "Pertahankan akun ${ currentPlanName } yang saya miliki saat ini"
       ],
       "Upgrade now": [
         "Tingkatkan sekarang"
@@ -7730,7 +7730,7 @@
       ]
     },
     "new_plans: signup": {
-      "By creating a ${ BRAND_NAME } account, you agree to our ${ terms }.": [
+      "By creating a ${ BRAND_NAME } account, you agree to our ${ terms }": [
         "Dengan membuat akun ${ BRAND_NAME }, Anda menyatakan diri setuju pada ${ terms } kami."
       ],
       "Payment details": [

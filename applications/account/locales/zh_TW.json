@@ -2917,7 +2917,7 @@
         "錯誤：${ errorMessage }"
       ],
       "Invalid URL": [
-        "網址無效"
+        "URL 無效"
       ],
       "Oops, something went wrong": [
         "糟糕，出了一點問題"
@@ -7033,7 +7033,7 @@
       ]
     },
     "new_plans: signup": {
-      "By creating a ${ BRAND_NAME } account, you agree to our ${ terms }.": [
+      "By creating a ${ BRAND_NAME } account, you agree to our ${ terms }": [
         "建立 ${ BRAND_NAME } 帳號，即表示您同意我們的${ terms }。"
       ],
       "Payment details": [
@@ -7043,7 +7043,7 @@
         "保存您的電子郵件或手機號碼，當您需要重設帳戶時可用於驗證。"
       ],
       "Subscription": [
-        "訂閲"
+        "訂閱"
       ],
       "terms and conditions": [
         "條款及細則"
