@@ -283,30 +283,36 @@ const MessageView = (
         }
     }, [hasProcessingErrors]);
 
-    const { labelDropdownToggleRef, moveDropdownToggleRef, moveScheduledModal, moveAllModal, moveToSpamModal } =
-        useMessageHotkeys(
-            elementRef,
-            {
-                labelID,
-                conversationIndex,
-                message,
-                bodyLoaded,
-                expanded,
-                messageLoaded,
-                draft,
-                conversationMode,
-                mailSettings,
-                messageRef: elementRef,
-            },
-            {
-                hasFocus: !!hasFocus,
-                setExpanded,
-                toggleOriginalMessage,
-                handleLoadRemoteImages,
-                handleLoadEmbeddedImages,
-                onBack,
-            }
-        );
+    const {
+        labelDropdownToggleRef,
+        moveDropdownToggleRef,
+        filterDropdownToggleRef,
+        moveScheduledModal,
+        moveAllModal,
+        moveToSpamModal,
+    } = useMessageHotkeys(
+        elementRef,
+        {
+            labelID,
+            conversationIndex,
+            message,
+            bodyLoaded,
+            expanded,
+            messageLoaded,
+            draft,
+            conversationMode,
+            mailSettings,
+            messageRef: elementRef,
+        },
+        {
+            hasFocus: !!hasFocus,
+            setExpanded,
+            toggleOriginalMessage,
+            handleLoadRemoteImages,
+            handleLoadEmbeddedImages,
+            onBack,
+        }
+    );
 
     function handleFocus(context: 'IFRAME'): () => void;
     function handleFocus(context: 'BUBBLED_EVENT'): (event: FocusEvent) => void;
@@ -371,6 +377,7 @@ const MessageView = (
                         breakpoints={breakpoints}
                         labelDropdownToggleRef={labelDropdownToggleRef}
                         moveDropdownToggleRef={moveDropdownToggleRef}
+                        filterDropdownToggleRef={filterDropdownToggleRef}
                         parentMessageRef={elementRef}
                     />
                     <MessageBody
