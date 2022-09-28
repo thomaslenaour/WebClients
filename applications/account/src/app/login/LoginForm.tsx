@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { KeyboardEvent, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { c } from 'ttag';
@@ -86,7 +86,10 @@ const LoginForm = ({
         if (challengeLoading) {
             return;
         }
-        usernameRef.current?.focus();
+        // Special focus management for challenge
+        setTimeout(() => {
+            challengeRefLogin.current?.focus('#username');
+        }, 0);
     }, [challengeLoading]);
 
     const { validator, onFormSubmit } = useFormErrors();
@@ -113,6 +116,17 @@ const LoginForm = ({
 
     const loading = challengeLoading || trustedDeviceRecoveryFeature?.loading;
 
+    const handleSubmit = () => {
+        if (submitting || !onFormSubmit()) {
+            return;
+        }
+        const run = async () => {
+            const payload = await challengeRefLogin.current?.getChallenge();
+            return onSubmit({ username, password, persistent, payload });
+        };
+        withSubmitting(run()).catch(noop);
+    };
+
     return (
         <>
             {loading && (
@@ -125,14 +139,7 @@ const LoginForm = ({
                 className={loading ? 'visibility-hidden' : undefined}
                 onSubmit={(event) => {
                     event.preventDefault();
-                    if (submitting || !onFormSubmit()) {
-                        return;
-                    }
-                    const run = async () => {
-                        const payload = await challengeRefLogin.current?.getChallenge();
-                        return onSubmit({ username, password, persistent, payload });
-                    };
-                    withSubmitting(run()).catch(noop);
+                    handleSubmit();
                 }}
                 method="post"
             >
@@ -161,6 +168,12 @@ const LoginForm = ({
                         value={username}
                         onValue={setUsername}
                         ref={usernameRef}
+                        onKeyDown={(event: KeyboardEvent<HTMLInputElement>) => {
+                            if (event.key === 'Enter') {
+                                // formRef.submit does not trigger handler
+                                handleSubmit();
+                            }
+                        }}
                     />
                 </Challenge>
                 <InputFieldTwo
