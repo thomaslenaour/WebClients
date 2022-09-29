@@ -1,32 +1,34 @@
 import { Dispatch, SetStateAction, useCallback } from 'react';
-import { c, msgid } from 'ttag';
 import { useDispatch } from 'react-redux';
+
+import { c, msgid } from 'ttag';
+
 import { classnames, useApi, useEventManager, useLabels, useMailSettings, useNotifications } from '@proton/components';
 import { useModalTwo } from '@proton/components/components/modalTwo/useModalTwo';
-import { MAILBOX_LABEL_IDS } from '@proton/shared/lib/constants';
-import { Message } from '@proton/shared/lib/interfaces/mail/Message';
-import { isUnsubscribable } from '@proton/shared/lib/mail/messages';
+import { labelConversations } from '@proton/shared/lib/api/conversations';
+import { updateSpamAction } from '@proton/shared/lib/api/mailSettings';
 import { undoActions } from '@proton/shared/lib/api/mailUndoActions';
 import { labelMessages } from '@proton/shared/lib/api/messages';
-import { labelConversations } from '@proton/shared/lib/api/conversations';
-import isTruthy from '@proton/utils/isTruthy';
+import { MAILBOX_LABEL_IDS } from '@proton/shared/lib/constants';
 import { SpamAction } from '@proton/shared/lib/interfaces';
-import { updateSpamAction } from '@proton/shared/lib/api/mailSettings';
+import { Message } from '@proton/shared/lib/interfaces/mail/Message';
+import { isUnsubscribable } from '@proton/shared/lib/mail/messages';
+import isTruthy from '@proton/utils/isTruthy';
 
-import { useOptimisticApplyLabels } from '../optimistic/useOptimisticApplyLabels';
-import { useMoveAll } from './useMoveAll';
 import MoveScheduledModal from '../../components/message/modals/MoveScheduledModal';
-import { Conversation } from '../../models/conversation';
-import { getMessagesAuthorizedToMove } from '../../helpers/message/messages';
-import { isMessage as testIsMessage } from '../../helpers/elements';
+import MoveToSpamModal from '../../components/message/modals/MoveToSpamModal';
+import MoveAllButton from '../../components/notifications/MoveAllButton';
 import UndoActionNotification from '../../components/notifications/UndoActionNotification';
 import { PAGE_SIZE, SUCCESS_NOTIFICATION_EXPIRATION } from '../../constants';
+import { isMessage as testIsMessage } from '../../helpers/elements';
 import { isLabel } from '../../helpers/labels';
+import { getMessagesAuthorizedToMove } from '../../helpers/message/messages';
 import { backendActionFinished, backendActionStarted } from '../../logic/elements/elementsActions';
+import { Conversation } from '../../models/conversation';
 import { Element } from '../../models/element';
-import MoveAllButton from '../../components/notifications/MoveAllButton';
-import MoveToSpamModal from '../../components/message/modals/MoveToSpamModal';
+import { useOptimisticApplyLabels } from '../optimistic/useOptimisticApplyLabels';
 import { useCreateFilters } from './useCreateFilters';
+import { useMoveAll } from './useMoveAll';
 
 const { SPAM, TRASH, SCHEDULED, SENT, ALL_SENT, DRAFTS, ALL_DRAFTS, INBOX } = MAILBOX_LABEL_IDS;
 
@@ -50,7 +52,7 @@ const getNotificationTextMoved = (
     if (folderID === SPAM) {
         if (isMessage) {
             if (elementsCount === 1) {
-                return c('Success').t`Message moved to spam and sender added to Block List.`;
+                return c('Success').t`Message moved to spam and sender added to your block list.`;
             }
             return joinSentences(
                 c('Success').ngettext(
@@ -62,7 +64,7 @@ const getNotificationTextMoved = (
             );
         }
         if (elementsCount === 1) {
-            return c('Success').t`Conversation moved to spam and sender added to Block List.`;
+            return c('Success').t`Conversation moved to spam and sender added to your block list.`;
         }
         return c('Success').ngettext(
             msgid`${elementsCount} conversation moved to spam and sender added to Block List.`,
@@ -75,7 +77,7 @@ const getNotificationTextMoved = (
         if (isMessage) {
             if (elementsCount === 1) {
                 // translator: Strictly 1 message moved from spam, the variable is the name of the destination folder
-                return c('Success').t`Message moved to ${folderName} and sender added to Allow List.`;
+                return c('Success').t`Message moved to ${folderName} and sender added to your allow list.`;
             }
             return joinSentences(
                 c('Success').ngettext(
@@ -277,7 +279,9 @@ export const useMoveToFolder = (setContainFocus?: Dispatch<SetStateAction<boolea
                     rollback = optimisticApplyLabels(authorizedToMove, { [folderID]: true }, true, [], fromLabelID);
 
                     const [{ UndoToken }] = await Promise.all([
-                        api<{ UndoToken: { Token: string } }>(action({ LabelID: folderID, IDs: elementIDs, SpamAction: spamAction })),
+                        api<{ UndoToken: { Token: string } }>(
+                            action({ LabelID: folderID, IDs: elementIDs, SpamAction: spamAction })
+                        ),
                         createFilters ? doCreateFilters(elements, [folderID], true) : undefined,
                     ]);
 
