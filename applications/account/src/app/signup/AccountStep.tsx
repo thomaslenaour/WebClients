@@ -215,8 +215,8 @@ const AccountStep = ({
                 }
                 return setEmail;
             })()}
-            onKeyDown={(event: KeyboardEvent<HTMLInputElement>) => {
-                if (event.key === 'Enter') {
+            onKeyDown={(e: KeyboardEvent<HTMLInputElement>) => {
+                if (e.key === 'Enter') {
                     // formRef.submit does not trigger handler
                     handleSubmit();
                 }
