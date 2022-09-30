@@ -43,6 +43,7 @@ const Spams = () => {
     const isMounted = useIsMounted();
     const [modalProps, openModal, renderModal] = useModalState();
     const { feature: blockSenderFeature, loading: blockSenderLoading } = useFeature(FeatureCode.BlockSender);
+    const blockSenderFeatureEnabled = blockSenderFeature?.Value === true && !blockSenderLoading;
 
     const { createNotification } = useNotifications();
 
@@ -127,7 +128,7 @@ const Spams = () => {
 
     return blockSenderLoading ? null : (
         <>
-            {blockSenderFeature?.Value === true ? (
+            {blockSenderFeatureEnabled ? (
                 <div className="mb2">
                     <SpamsButtonDropdown
                         title={c('Action').t`Add address`}
@@ -174,7 +175,7 @@ const Spams = () => {
                     <SpamsNav
                         selected={display}
                         onChange={(nextDisplay) => dispatch({ type: 'setDisplay', payload: nextDisplay })}
-                        showBlockSender={blockSenderFeature?.Value === true}
+                        showBlockSender={blockSenderFeatureEnabled}
                     />
                 </>
             )}
@@ -201,7 +202,11 @@ const Spams = () => {
                                     <TableCell className="text-right">
                                         <SpamsButtonDropdown
                                             title="…"
-                                            actions={getActionsByLocation(item, handleMoveSpam)}
+                                            actions={getActionsByLocation(
+                                                item,
+                                                handleMoveSpam,
+                                                blockSenderFeatureEnabled
+                                            )}
                                         />
                                     </TableCell>
                                 </TableRow>
