@@ -1,30 +1,29 @@
-import { getVisualCalendars } from '@proton/shared/lib/calendar/calendar';
 import { useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { CALENDAR_FLAGS } from '@proton/shared/lib/calendar/constants';
-import { getIsPersonalCalendar } from '@proton/shared/lib/calendar/subscribe/helpers';
-import unary from '@proton/utils/unary';
 import {
     ErrorBoundary,
     FeatureCode,
     StandardErrorPage,
     useAddresses,
     useCalendars,
-    useFeature,
+    useFeatures,
     useUser,
     useWelcomeFlags,
 } from '@proton/components';
 import { useInstance } from '@proton/hooks/index';
+import { getVisualCalendars } from '@proton/shared/lib/calendar/calendar';
+import { CALENDAR_FLAGS } from '@proton/shared/lib/calendar/constants';
+import { getIsPersonalCalendar } from '@proton/shared/lib/calendar/subscribe/helpers';
+import unary from '@proton/utils/unary';
 
+import Favicon from '../../components/Favicon';
+import { getIsSideApp } from '../../helpers/views';
 import CalendarOnboardingContainer from '../setup/CalendarOnboardingContainer';
 import CalendarSetupContainer from '../setup/CalendarSetupContainer';
 import ResetContainer from '../setup/ResetContainer';
 import MainContainerSetup from './MainContainerSetup';
-
-import Favicon from '../../components/Favicon';
 import { fromUrlParams } from './getUrlHelper';
-import { getIsSideApp } from '../../helpers/views';
 
 const MainContainer = () => {
     const [addresses] = useAddresses();
@@ -40,7 +39,7 @@ const MainContainer = () => {
         return view;
     });
 
-    useFeature(FeatureCode.SubscribedCalendarReminder);
+    useFeatures([FeatureCode.SpotlightSubscribedCalendars, FeatureCode.SubscribedCalendarReminder]);
 
     const memoedCalendars = useMemo(() => getVisualCalendars(calendars || [], addresses || []), [calendars, addresses]);
     const memoedAddresses = useMemo(() => addresses || [], [addresses]);
