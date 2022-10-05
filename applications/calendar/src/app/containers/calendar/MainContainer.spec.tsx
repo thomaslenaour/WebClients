@@ -179,7 +179,7 @@ jest.mock('@proton/components/hooks/useAuthentication', () => () => ({}));
 jest.mock('@proton/components/hooks/useConfig', () => () => ({ APP_NAME: 'proton-calendar', APP_VERSION: 'test' }));
 jest.mock('@proton/components/hooks/useSubscribedCalendars', () => () => ({}));
 jest.mock('@proton/components/hooks/useContactEmails', () => () => []);
-jest.mock('@proton/components/hooks/useFeature', () => () => ({}));
+jest.mock('@proton/components/hooks/useFeatures', () => () => [{}]);
 jest.mock('@proton/components/hooks/useCalendarSubscribeFeature', () => () => ({ unavailable: false, enabled: true }));
 jest.mock('@proton/components/hooks/useNotifications', () => () => ({}));
 jest.mock('@proton/components/hooks/useWelcomeFlags', () => () => [{}]);
@@ -276,7 +276,7 @@ describe('MainContainer', () => {
         jest.useFakeTimers('modern').setSystemTime(fakeNow.getTime());
     });
 
-    it.skip(`should disable the new event button when there are no calendars, or they're all disabled or subscribed calendars`, async () => {
+    it(`should disable the new event button when there are no calendars, or they're all disabled or subscribed calendars`, async () => {
         const mockedNoCreateCalendars = [
             {
                 ID: 'id1',
@@ -342,7 +342,7 @@ describe('MainContainer', () => {
             mockedUseCalendars.mockImplementation(() => [[mockedCreatableCalendar], false, undefined]);
         });
 
-        it.skip('displays the correct fields when setting up recurring events', async () => {
+        it('displays the correct fields when setting up recurring events', async () => {
             render(renderComponent());
 
             act(() => {
@@ -394,7 +394,7 @@ describe('MainContainer', () => {
             expect(screen.getByTitle(/Choose how many times this event will repeat/)).toBeInTheDocument();
         });
 
-        it.skip('disables saving when there are over 100 participants and shows warnings', () => {
+        it('disables saving when there are over 100 participants and shows warnings', () => {
             const contactEmails = Array(101)
                 .fill(1)
                 .map((item, index) => ({
@@ -445,7 +445,7 @@ describe('MainContainer', () => {
             expect(screen.getByText(/Save/)).toBeDisabled();
         });
 
-        it.skip('validates inputs and submits', async () => {
+        it('validates inputs and submits', async () => {
             const contactEmails = Array(1)
                 .fill(1)
                 .map((item, index) => ({
