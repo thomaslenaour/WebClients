@@ -89,7 +89,6 @@ export enum FeatureCode {
     TrustedDeviceRecovery = 'TrustedDeviceRecovery',
     BulkUserUpload = 'BulkUserUpload',
     DriveBeta = 'DriveBeta',
-    PartialEncryptedSearch = 'PartialEncryptedSearch',
     ConversationHeaderInScroll = 'ConversationHeaderInScroll',
 }
 
