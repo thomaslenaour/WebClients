@@ -2614,19 +2614,19 @@
     },
     "Domain spam notification": {
       "${ name } added": [
-        "${ name } přidán"
+        "Doména ${ name } přidána"
       ],
       "${ name } deletion failed": [
         "Smazání ${ name } selhalo"
       ],
       "${ name } failed to move to Non spam List": [
-        "${ name } se nepodařilo přesunout na Seznam vyžádaných e-mailů"
+        "Doménu ${ name } se nepodařilo přesunout na Seznam vyžádaných e-mailů"
       ],
       "${ name } moved to Non spam list": [
-        "${ name } přesunut na Seznam vyžádaných e-mailů"
+        "Doména ${ name } přesunuta na Seznam vyžádaných e-mailů"
       ],
       "${ name } successfully deleted": [
-        "${ name } úspěšně smazán"
+        "Doména ${ name } úspěšně smazána"
       ]
     },
     "Downgrade account reason": {
@@ -2719,19 +2719,19 @@
     },
     "Email spam notification": {
       "${ name } added": [
-        "${ name } přidán"
+        "Doména ${ name } přidána"
       ],
       "${ name } deletion failed": [
         "Smazání ${ name } selhalo"
       ],
       "${ name } failed to move to Non spam List": [
-        "${ name } se nepodařilo přesunout na Seznam vyžádaných e-mailů"
+        "Doménu ${ name } se nepodařilo přesunout na Seznam vyžádaných e-mailů"
       ],
       "${ name } moved to Non spam list": [
-        "${ name } přesunut na Seznam vyžádaných e-mailů"
+        "Doména ${ name } přesunuta na Seznam vyžádaných e-mailů"
       ],
       "${ name } successfully deleted": [
-        "${ name } úspěšně smazán"
+        "Doména ${ name } úspěšně smazána"
       ]
     },
     "Email subject": {
@@ -5670,7 +5670,7 @@
         "Toto nahradí vaše dočasné heslo. V budoucnu jej použijete pro přístup k vašemu ${ BRAND_NAME } Účtu."
       ],
       "This will sign you out of any active sessions and disable 2-factor authentication.": [
-        "Tím se odhlásíte ze všech aktivních relací a zakážete 2-faktorové ověřování."
+        "Tím se odhlásíte ze všech aktivních relací a zakážete dvoufázové ověřování."
       ],
       "This wizard will enable Two-Factor Authentication (2FA) on your Proton account. Two-factor authentication will make your Proton account more secure so we recommend enabling it.": [
         "Tento průvodce zapne dvoufázové ověřování (2FA) na vašem Proton účtu. Doporučujeme 2FA zapnout, zajistí vám bezpečnější Proton účet."
@@ -5856,7 +5856,7 @@
         "Když si předplatí placený tarif, bude na váš účet připsáno 1 až 3 měsíce ${ planName }."
       ],
       "When you set up two-factor authentication, we provide recovery codes which you can use to sign in if you lose access to your authenticator app.": [
-        "Při nastavení dvoufaktorového ověřování poskytujeme kódy pro obnovení, které můžete použít k přihlášení, pokud ztratíte přístup k ověřovací aplikaci."
+        "Při nastavení dvoufázového ověřování poskytujeme kódy pro obnovení, které můžete použít k přihlášení, pokud ztratíte přístup k ověřovací aplikaci."
       ],
       "When your subscription renews, we will apply any available credits before we charge the payment method above.": [
         "Až se Vaše předplatné obnoví, použijeme všechny dostupné kredity před tím, než budeme účtovat výše uvedenou platební metodu."
@@ -10604,7 +10604,7 @@
         "Vyzkoušejte zdarma to nejlepší z ${ MAIL_APP_NAME }"
       ],
       "Two-factor authentication": [
-        "Dvoufaktorové ověření"
+        "Dvoufázové ověření"
       ],
       "Type": [
         "Typ"
