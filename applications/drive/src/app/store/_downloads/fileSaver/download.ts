@@ -50,12 +50,6 @@ async function wakeUpServiceWorker() {
     return worker as ServiceWorker;
 }
 
-function serviceWorkerKeepAlive() {
-    const interval = setInterval(() => {
-        wakeUpServiceWorker().catch(() => clearInterval(interval));
-    }, 10000);
-}
-
 export async function initDownloadSW() {
     if (isUnsupported()) {
         throw new Error('Saving file via download is unsupported by this browser');
@@ -67,7 +61,6 @@ export async function initDownloadSW() {
             scope: `/${stripLeadingAndTrailingSlash(PUBLIC_PATH)}`,
         }
     );
-    serviceWorkerKeepAlive();
 }
 
 /**
