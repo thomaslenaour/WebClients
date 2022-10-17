@@ -65,6 +65,10 @@ export async function initDownloadSW() {
         new URL('./downloadSW', import.meta.url),
         {
             scope: `/${stripLeadingAndTrailingSlash(PUBLIC_PATH)}`,
+            // Browsers update resources for service worker with any fetch
+            // and to avoid re-fetching it from API every few milisecond
+            // when something is ongoing, we ask to use cache if possible.
+            updateViaCache: 'all',
         }
     );
     serviceWorkerKeepAlive();
