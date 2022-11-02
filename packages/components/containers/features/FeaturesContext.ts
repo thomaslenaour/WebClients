@@ -96,6 +96,7 @@ export enum FeatureCode {
     TrustedDeviceRecovery = 'TrustedDeviceRecovery',
     BulkUserUpload = 'BulkUserUpload',
     ConversationHeaderInScroll = 'ConversationHeaderInScroll',
+    MigrationModalLastShown = 'MigrationModalLastShown',
 }
 
 export interface FeaturesContextValue {
