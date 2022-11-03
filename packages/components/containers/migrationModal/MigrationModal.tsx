@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 
 import { c } from 'ttag';
 
-import { Button, ButtonLike } from '@proton/atoms';
 import {
+    Button,
+    ButtonLike,
     FeatureCode,
     Href,
     ModalProps,
