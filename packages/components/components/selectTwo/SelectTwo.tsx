@@ -30,6 +30,7 @@ export interface Props<V> extends SelectProps<V> {
     originalPlacement?: string;
     anchorRef?: MutableRefObject<HTMLButtonElement | null>;
     getSearchableValue?: (value: V) => string;
+    sameAnchorWidth?: boolean;
 }
 
 const SelectTwo = <V extends any>({
@@ -50,6 +51,7 @@ const SelectTwo = <V extends any>({
     onValue,
     getSearchableValue,
     renderSelected,
+    sameAnchorWidth = true,
     ...rest
 }: Props<V>) => {
     const anchorRef = useRef<HTMLButtonElement | null>(null);
@@ -194,7 +196,7 @@ const SelectTwo = <V extends any>({
                 noCaret
                 noMaxWidth={noMaxWidth}
                 originalPlacement={originalPlacement}
-                sameAnchorWidth
+                sameAnchorWidth={sameAnchorWidth}
                 disableDefaultArrowNavigation
                 className={classnames(['select-dropdown', allowOptionToggling && 'select-dropdown--togglable'])}
             >

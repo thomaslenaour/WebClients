@@ -188,6 +188,7 @@ const AccountStep = ({
                         id="select-domain"
                         originalPlacement="bottom-end"
                         anchorRef={anchorRef}
+                        sameAnchorWidth={false}
                         unstyled
                         onOpen={() => setRerender({})}
                         onClose={() => setRerender({})}
