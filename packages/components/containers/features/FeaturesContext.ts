@@ -91,6 +91,10 @@ export enum FeatureCode {
     TrustedDeviceRecovery = 'TrustedDeviceRecovery',
     BulkUserUpload = 'BulkUserUpload',
     ConversationHeaderInScroll = 'ConversationHeaderInScroll',
+    MigrationModalLastShown = 'MigrationModalLastShown',
+    LegacyMessageMigrationEnabled = 'LegacyMessageMigrationEnabled',
+    ProtonBadge = 'ProtonBadge',
+    ProtonMailDomainMigrationEnabled = 'ProtonMailDomainMigrationEnabled',
 }
 
 export interface FeaturesContextValue {
