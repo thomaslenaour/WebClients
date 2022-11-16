@@ -4197,7 +4197,7 @@
         "${ contactCount } 名联系人各有多个邮箱地址。"
       ],
       "${ contactEmailsLength } Members": [
-        "${ contactEmailsLength } 会员"
+        "${ contactEmailsLength } 位成员"
       ],
       "${ contactGroupName } (${ numberOfSelectedContacts }/${ numberOfContactsInGroup } members)": [
         "${ contactGroupName }（${ numberOfSelectedContacts }/${ numberOfContactsInGroup } 名成员）"
@@ -4284,7 +4284,7 @@
         "${ unreadCount } 封未读邮件"
       ],
       "${ updated } contacts updated successfully.": [
-        "${ updated } 联系人更新成功。"
+        "已成功更新 ${ updated } 位联系人。"
       ],
       "(${ memberCount } members)": [
         "（${ memberCount } 位成员）"
