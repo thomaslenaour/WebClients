@@ -475,7 +475,7 @@ const SignupContainer = ({ toApp, toAppName, onBack, onLogin, clientType }: Prop
                         if (toAppName) {
                             return c('Info').t`to continue to ${toAppName}`;
                         }
-                        return c('Info').t`One account for all ${BRAND_NAME} services.`;
+                        return c('Info').t`One account. All ${BRAND_NAME} services.`;
                     })()}
                     defaultEmail={accountData?.email}
                     defaultUsername={accountData?.username}
