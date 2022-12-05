@@ -59,7 +59,7 @@ export function DevicesListingProvider({ children }: { children: React.ReactNode
         return () => {
             ac.abort();
         };
-    }, []);
+    }, [isDevicesFlagEnabled]);
 
     return (
         <LinksListingContext.Provider
