@@ -5,10 +5,10 @@ import { useLoading } from '@proton/components/hooks';
 import { sendErrorReport } from '../../utils/errorHandling';
 import { DevicesState } from './interface';
 import useDevicesApi from './useDevicesApi';
+import useDevicesFeatureFlag from './useDevicesFeatureFlag';
 
 export function useDevicesListingProvider() {
     const devicesApi = useDevicesApi();
-
     const [state, setState] = useState<DevicesState>({});
     const [isLoading, withLoading] = useLoading();
 
@@ -46,8 +46,13 @@ const LinksListingContext = createContext<{
 
 export function DevicesListingProvider({ children }: { children: React.ReactNode }) {
     const value = useDevicesListingProvider();
+    const isDevicesFlagEnabled = useDevicesFeatureFlag();
 
     useEffect(() => {
+        if (!isDevicesFlagEnabled) {
+            return;
+        }
+
         const ac = new AbortController();
         value.loadDevices(ac.signal).catch(sendErrorReport);
 
