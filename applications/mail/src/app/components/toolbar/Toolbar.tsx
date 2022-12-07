@@ -120,11 +120,9 @@ const Toolbar = ({
                     <LabelsAndFolders
                         labelID={labelID}
                         selectedIDs={selectedIDs}
-                        conversationMode={conversationMode}
                         breakpoints={breakpoints}
                         labelDropdownToggleRef={labelDropdownToggleRef}
                         moveDropdownToggleRef={moveDropdownToggleRef}
-                        onBack={onBack}
                     />
                 ) : null}
                 <MoreActions selectedIDs={selectedIDs} />
@@ -142,9 +140,7 @@ const Toolbar = ({
                             isExtraTiny={breakpoint === 'extratiny'}
                             onMove={onMove}
                             onDelete={onDelete}
-                            onBack={onBack}
                             breakpoints={breakpoints}
-                            conversationMode={conversationMode}
                         />
                         <PagingControls
                             narrowMode={isNarrow}

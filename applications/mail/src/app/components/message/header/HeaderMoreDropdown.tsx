@@ -165,10 +165,8 @@ const HeaderMoreDropdown = ({
                       <MoveDropdown
                           labelID={fromFolderID}
                           selectedIDs={selectedIDs}
-                          conversationMode={false}
                           onClose={onClose}
                           onLock={onLock}
-                          onBack={onBack}
                           breakpoints={breakpoints}
                       />
                   ),
@@ -316,10 +314,8 @@ const HeaderMoreDropdown = ({
                                 <MoveDropdown
                                     labelID={fromFolderID}
                                     selectedIDs={selectedIDs}
-                                    conversationMode={false}
                                     onClose={onClose}
                                     onLock={onLock}
-                                    onBack={onBack}
                                     breakpoints={breakpoints}
                                 />
                             ),
