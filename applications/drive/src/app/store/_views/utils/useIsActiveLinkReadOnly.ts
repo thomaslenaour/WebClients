@@ -2,9 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 
 import { ShareType } from '../..';
 import useActiveShare from '../../../hooks/drive/useActiveShare';
-import { sendErrorReport } from '../../../utils/errorHandling';
+import { isIgnoredError, sendErrorReport } from '../../../utils/errorHandling';
 import { DecryptedLink, useLink } from '../../_links';
-import { isIgnoredError } from '../../_utils';
 import { useShareType } from './useShareType';
 
 const isLinkReadOnly = (link: DecryptedLink, shareType: ShareType) => {
