@@ -98,6 +98,8 @@ export enum FeatureCode {
     LegacyMessageMigrationEnabled = 'LegacyMessageMigrationEnabled',
     ProtonBadge = 'ProtonBadge',
     TelemetrySetting = 'TelemetrySetting',
+    QuickReply = 'QuickReply',
+    EasySwitchGmailSync = 'EasySwitchGmailSync',
 }
 
 export interface FeaturesContextValue {
