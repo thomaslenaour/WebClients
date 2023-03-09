@@ -7,7 +7,7 @@ import { Icon, Tooltip, classnames, useApi } from '@proton/components';
 import { SimpleMap } from '@proton/shared/lib/interfaces';
 
 import { getAnchor } from '../../helpers/message/messageImages';
-import { loadRemoteProxy } from '../../logic/messages/images/messagesImagesActions';
+import { failedRemoteDirectLoading, loadRemoteProxy } from '../../logic/messages/images/messagesImagesActions';
 import { MessageImage } from '../../logic/messages/messagesTypes';
 import { useAppDispatch } from '../../logic/store';
 
@@ -82,6 +82,8 @@ const MessageBodyImage = ({
     const dispatch = useAppDispatch();
     const api = useApi();
     const imageRef = useRef<HTMLImageElement>(null);
+    // Ref used to trigger an action after a onError while trying to load the image
+    const hasLoadedAfterError = useRef({ hasLoadedProxy: false, hasLoadedDirect: false });
     const { type, error, url, status, original } = image;
     const showPlaceholder =
         error || status !== 'loaded' || (type === 'remote' ? !showRemoteImages : !showEmbeddedImages);
@@ -114,8 +116,14 @@ const MessageBodyImage = ({
         // Only make this call when user is using proxy.
         // - Without proxy we are already trying to load direct
         // - With EO, we are also already trying to load direct
-        if (type === 'remote' && useProxy) {
+        // However, if we are trying to load the image without the proxy, we don't want to trigger the load remote onError
+        if (type === 'remote' && useProxy && !hasLoadedAfterError.current.hasLoadedProxy) {
+            hasLoadedAfterError.current.hasLoadedProxy = true;
             await dispatch(loadRemoteProxy({ ID: localID, imageToLoad: image, api }));
+        } else if (type === 'remote' && !hasLoadedAfterError.current.hasLoadedDirect) {
+            // Instead, we want to add an error to the image in the state to display a placeholder
+            hasLoadedAfterError.current.hasLoadedDirect = true;
+            await dispatch(failedRemoteDirectLoading({ ID: localID, image }));
         }
     };
 
