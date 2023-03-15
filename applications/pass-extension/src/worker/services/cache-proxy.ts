@@ -119,3 +119,5 @@ export const createCacheProxyService = () => {
         }
     };
 };
+
+export type CacheProxyService = ReturnType<typeof createCacheProxyService>;

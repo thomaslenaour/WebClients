@@ -1,12 +1,13 @@
 import browser from 'webextension-polyfill';
 
 import { itemAutofillIntent, selectAutofillCandidates, selectItemByShareIdAndId } from '@proton/pass/store';
-import { Maybe, Realm, SafeLoginItem, WorkerMessageType } from '@proton/pass/types';
+import type { Maybe, Realm, SafeLoginItem } from '@proton/pass/types';
+import { WorkerMessageType } from '@proton/pass/types';
 import { parseSender, parseUrl } from '@proton/pass/utils/url';
 
 import { setPopupIconBadge } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
-import { waitForContext } from '../context';
+import WorkerContext from '../context';
 import store from '../store';
 
 export const createAutoFillService = () => {
@@ -105,7 +106,7 @@ export const createAutoFillService = () => {
     };
 
     WorkerMessageBroker.registerMessage(WorkerMessageType.AUTOFILL_QUERY, async (_, sender) => {
-        await waitForContext();
+        await WorkerContext.get().waitForReady();
 
         const { realm, tabId, subdomain } = parseSender(sender);
         const items = getAutofillCandidates({ realm, subdomain });
@@ -114,7 +115,7 @@ export const createAutoFillService = () => {
     });
 
     WorkerMessageBroker.registerMessage(WorkerMessageType.AUTOFILL_SELECT, async (message) => {
-        await waitForContext();
+        await WorkerContext.get().waitForReady();
 
         const credentials = getAutofillData(message.payload);
         if (credentials === undefined) {
@@ -134,7 +135,7 @@ export const createAutoFillService = () => {
          * ensure context is ready so autofill
          * candidates can be resolved
          */
-        await waitForContext();
+        await WorkerContext.get().waitForReady();
         const { domain: realm, subdomain } = parseUrl(tab.url ?? '');
 
         if (tabId && realm) {

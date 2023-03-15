@@ -8,7 +8,8 @@ import {
     selectAutofillCandidates,
     selectDefaultVaultOrThrow,
 } from '@proton/pass/store';
-import { AutoSavePromptOptions, AutoSaveType, CommittedFormSubmission, WorkerMessageType } from '@proton/pass/types';
+import { AutoSaveType, WorkerMessageType } from '@proton/pass/types';
+import type { AutoSavePromptOptions, CommittedFormSubmission } from '@proton/pass/types';
 import { first } from '@proton/pass/utils/array';
 import { getEpoch } from '@proton/pass/utils/time';
 

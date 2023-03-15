@@ -1,14 +1,12 @@
-import { Store } from 'redux';
 import { c } from 'ttag';
 
 import { initApi } from '@proton/pass/api';
 import { consumeFork, getPersistedSession, initAuthentication, persistSession, resumeSession } from '@proton/pass/auth';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
 import { notification, signout } from '@proton/pass/store';
-import { Api, WorkerForkMessage, WorkerMessageResponse, WorkerMessageType, WorkerStatus } from '@proton/pass/types';
-import { pipe, tap } from '@proton/pass/utils/fp';
+import type { Api, WorkerForkMessage, WorkerMessageResponse } from '@proton/pass/types';
+import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
-import { workerBusy } from '@proton/pass/utils/worker';
 import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 import createAuthenticationStore, {
     AuthenticationStore,
@@ -19,6 +17,7 @@ import noop from '@proton/utils/noop';
 
 import WorkerMessageBroker from '../channel';
 import WorkerContext from '../context';
+import store from '../store';
 
 /* eslint-disable @typescript-eslint/no-throw-literal */
 export interface AuthService {
@@ -37,44 +36,46 @@ export interface AuthService {
 
 type CreateAuthServiceOptions = {
     api: Api;
-    store: Store;
     onAuthorized?: () => void;
     onUnauthorized?: () => void;
 };
 
-export const createAuthService = ({
-    api,
-    store,
-    onAuthorized,
-    onUnauthorized,
-}: CreateAuthServiceOptions): AuthService => {
+export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateAuthServiceOptions): AuthService => {
+    /* safe-guards multiple auth inits */
+    let pendingInit: Promise<boolean> | null = null;
+
     const authService: AuthService = {
         store: createAuthenticationStore(createStore()),
-        /**
-         * don't re-init if currently booting: this may be the case
-         * if multiple endpoints communicating with the service worker
-         * are triggering an action that require a worker initialization
-         */
+
         init: async () => {
-            const context = WorkerContext.get();
-            if (!workerBusy(context.status)) {
-                logger.info(`[Worker] Initialization start`);
+            logger.info(`[Worker::Auth] Initialization start`);
 
-                const { UID, AccessToken, RefreshToken, keyPassword } = await browserSessionStorage.getItems([
-                    'UID',
-                    'AccessToken',
-                    'RefreshToken',
-                    'keyPassword',
-                ]);
-
-                if (UID && keyPassword && AccessToken && RefreshToken) {
-                    return authService.login({ UID, keyPassword, AccessToken, RefreshToken });
-                }
-
-                return authService.resumeSession();
+            if (pendingInit !== null) {
+                logger.info(`[Worker::Auth] Ongoing auth initialization..`);
+                return pendingInit;
             }
 
-            return false;
+            pendingInit = Promise.resolve(
+                (async () => {
+                    const { UID, AccessToken, RefreshToken, keyPassword } = await browserSessionStorage.getItems([
+                        'UID',
+                        'AccessToken',
+                        'RefreshToken',
+                        'keyPassword',
+                    ]);
+
+                    if (UID && keyPassword && AccessToken && RefreshToken) {
+                        return authService.login({ UID, keyPassword, AccessToken, RefreshToken });
+                    }
+
+                    return authService.resumeSession();
+                })()
+            );
+
+            const result = await pendingInit;
+            pendingInit = null;
+
+            return result;
         },
         /**
          * Consumes a session fork request and sends response
@@ -221,24 +222,14 @@ export const createAuthService = ({
         },
     };
 
+    /* FIXME: we should avoid relying on globals here */
     initAuthentication(authService.store);
     initApi(api);
 
-    const bootEffect = () => {
-        const context = WorkerContext.get();
-        if (context.status === WorkerStatus.AUTHORIZED) {
-            context.boot();
-        }
-    };
+    WorkerMessageBroker.registerMessage(WorkerMessageType.FORK, (message) => authService.consumeFork(message.payload));
 
-    WorkerMessageBroker.registerMessage(
-        WorkerMessageType.FORK,
-        pipe((message) => authService.consumeFork(message.payload), tap(bootEffect))
-    );
-
-    WorkerMessageBroker.registerMessage(
-        WorkerMessageType.RESUME_SESSION_SUCCESS,
-        pipe((message) => authService.login(message.payload), tap(bootEffect))
+    WorkerMessageBroker.registerMessage(WorkerMessageType.RESUME_SESSION_SUCCESS, (message) =>
+        authService.login(message.payload)
     );
 
     return authService;

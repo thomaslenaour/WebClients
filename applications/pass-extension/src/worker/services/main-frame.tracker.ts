@@ -1,6 +1,6 @@
 import browser from 'webextension-polyfill';
 
-import { Realm, TabId } from '@proton/pass/types';
+import type { Realm, TabId } from '@proton/pass/types';
 import { isFailedRequest } from '@proton/pass/utils/requests';
 import { parseUrl } from '@proton/pass/utils/url';
 

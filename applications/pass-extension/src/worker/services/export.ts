@@ -1,12 +1,12 @@
 import { ExportPayload, createExportZip, decryptZip, encryptZip } from '@proton/pass/export';
 import { selectShareOrThrow } from '@proton/pass/store';
 import { unwrapOptimisticState } from '@proton/pass/store/optimistic/utils/transformers';
-import { VaultShareContent, WorkerMessageType } from '@proton/pass/types';
+import { type VaultShareContent, WorkerMessageType } from '@proton/pass/types';
 import { uint8ArrayToBase64String } from '@proton/shared/lib/helpers/encoding';
 
 import * as config from '../../app/config';
 import WorkerMessageBroker from '../channel';
-import { waitForContext } from '../context';
+import WorkerContext from '../context';
 import store from '../store';
 
 export const createExportService = () => {
@@ -43,7 +43,8 @@ export const createExportService = () => {
     };
 
     WorkerMessageBroker.registerMessage(WorkerMessageType.EXPORT_REQUEST, async ({ payload }) => {
-        await waitForContext(); /* make sure context initialized */
+        await WorkerContext.get().waitForReady();
+
         const exportData = await getExportData(payload.encrypted);
         const zip = await createExportZip(exportData);
 

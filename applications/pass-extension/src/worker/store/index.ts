@@ -55,7 +55,7 @@ sagaMiddleware.run(
 
         onSignout: async () => {
             await Promise.all([browserLocalStorage.clear(), browserSessionStorage.clear()]);
-            WorkerContext.get().auth.logout();
+            WorkerContext.get().service.auth.logout();
         },
 
         /**
@@ -63,8 +63,7 @@ sagaMiddleware.run(
          * item state change
          */
         onItemsChange: () => {
-            const { autofill } = WorkerContext.get();
-            return autofill.updateTabsBadgeCount();
+            return WorkerContext.get().service.autofill.updateTabsBadgeCount();
         },
 
         onShareEventDisabled: (shareId) => {

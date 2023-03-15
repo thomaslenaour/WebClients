@@ -1,14 +1,14 @@
 import { WorkerMessageType } from '@proton/pass/types';
 
 import WorkerMessageBroker from '../channel';
-import { waitForContext } from '../context';
+import WorkerContext from '../context';
 import store from '../store';
 
 export const createStoreService = () => {
     WorkerMessageBroker.registerMessage(WorkerMessageType.STORE_ACTION, async (message) => {
-        await waitForContext();
-        store.dispatch(message.payload.action);
+        await WorkerContext.get().waitForReady();
 
+        store.dispatch(message.payload.action);
         return true;
     });
 
