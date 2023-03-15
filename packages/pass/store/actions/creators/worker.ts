@@ -8,8 +8,16 @@ import { Address, User } from '@proton/shared/lib/interfaces';
 import { SynchronizationResult } from '../../sagas/workers/sync';
 import * as requests from '../requests';
 import withNotification from '../with-notification';
-import withReceiver from '../with-receiver';
+import withReceiver, { WithReceiverOptions } from '../with-receiver';
 import withRequest from '../with-request';
+
+/**
+ * do not cast payload::cache to type `State`
+ * in order to avoid circular type refs
+ */
+export const stateSync = createAction('state sync', (state: any, options?: WithReceiverOptions) =>
+    withReceiver(options ?? {})({ payload: { state } })
+);
 
 export const wakeup = createAction(
     'wakeup',
@@ -20,13 +28,11 @@ export const wakeup = createAction(
         )({ payload })
 );
 
-export const wakeupSuccess = createAction(
-    'wakeup success',
-    (payload: { state: any; endpoint: ExtensionEndpoint; tabId: TabId }) =>
-        pipe(
-            withReceiver({ receiver: payload.endpoint, tabId: payload.tabId }),
-            withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'success' })
-        )({ payload })
+export const wakeupSuccess = createAction('wakeup success', (payload: { endpoint: ExtensionEndpoint; tabId: TabId }) =>
+    pipe(
+        withReceiver({ receiver: payload.endpoint, tabId: payload.tabId }),
+        withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'success' })
+    )({ payload })
 );
 
 export const boot = createAction('boot', withRequest({ id: requests.boot(), type: 'start' }));
@@ -40,6 +46,12 @@ export const bootFailure = createAction('boot failure', (error: unknown) =>
             error,
         })
     )({ payload: {} })
+);
+
+export const bootSuccess = createAction(
+    'boot success',
+    (payload: { user: Maybe<User>; addresses: Maybe<Address[]>; sync: Maybe<SynchronizationResult> }) =>
+        withRequest({ id: requests.boot(), type: 'success' })({ payload })
 );
 
 export const syncIntent = createAction('sync intent', withRequest({ id: requests.syncing(), type: 'start' }));
@@ -60,14 +72,4 @@ export const syncFailure = createAction('sync failure', (error: unknown) =>
             error,
         })
     )({ payload: {} })
-);
-
-/**
- * do not cast payload::cache to type `State`
- * in order to avoid circular type refs
- */
-export const bootSuccess = createAction(
-    'boot success',
-    (payload: { state: any; user: Maybe<User>; addresses: Maybe<Address[]>; sync: Maybe<SynchronizationResult> }) =>
-        withRequest({ id: requests.boot(), type: 'success' })({ payload })
 );

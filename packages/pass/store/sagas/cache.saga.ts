@@ -1,3 +1,4 @@
+import type { AnyAction } from 'redux';
 import { select, take } from 'redux-saga/effects';
 
 import { authentication } from '@proton/pass/auth/authentication';
@@ -9,7 +10,8 @@ import { invert, or } from '@proton/pass/utils/fp/predicates';
 import { objectDelete } from '@proton/pass/utils/object';
 import { stringToUint8Array, uint8ArrayToString } from '@proton/shared/lib/helpers/encoding';
 
-import { boot, bootFailure, notification, signout, signoutSuccess, wakeup, wakeupSuccess } from '../actions';
+import { boot, bootFailure, notification, signout, signoutSuccess, stateSync, wakeup, wakeupSuccess } from '../actions';
+import { acceptActionWithReceiver } from '../actions/with-receiver';
 import { asIfNotOptimistic } from '../optimistic/selectors/select-is-optimistic';
 import { reducerMap } from '../reducers';
 import { State } from '../types';
@@ -22,6 +24,8 @@ const CACHE_BLOCK_ACTIONS = [
     signout.match,
     signoutSuccess.match,
     notification.match,
+    /* do not cache on state synchronisation to receiver apps */
+    (action: AnyAction) => stateSync.match(action) && !acceptActionWithReceiver(action, 'background'),
 ];
 
 function* cacheWorker() {

@@ -12,7 +12,7 @@ export const isActionWithReceiver = <T extends AnyAction>(action?: T): action is
     return meta?.receiver !== undefined || meta?.tabId !== undefined;
 };
 
-export const acceptActionWithReceiver = (action: AnyAction, receiver: ExtensionEndpoint, tabId: TabId) => {
+export const acceptActionWithReceiver = (action: AnyAction, receiver: ExtensionEndpoint, tabId?: TabId) => {
     if (isActionWithReceiver(action)) {
         const { meta } = action;
         return (
