@@ -69,7 +69,7 @@ export type WorkerForkMessage = {
 
 export type WorkerWakeUpMessage = {
     type: WorkerMessageType.WORKER_WAKEUP;
-    payload: { origin: ExtensionOrigin; tabId: TabId };
+    payload: { tabId: TabId };
 };
 
 export type WorkerInitMessage = {
@@ -176,10 +176,10 @@ export type WorkerMessage =
     | ImportDecryptMessage
     | ShareServerEventMessage;
 
-export type ExtensionOrigin = 'popup' | 'content-script' | 'background' | 'page';
+export type ExtensionEndpoint = 'popup' | 'content-script' | 'background' | 'page';
 
-export type WorkerMessageWithOrigin<T extends WorkerMessage = WorkerMessage> = T & {
-    origin: ExtensionOrigin;
+export type WorkerMessageWithSender<T extends WorkerMessage = WorkerMessage> = T & {
+    sender: ExtensionEndpoint;
 };
 
 export type MessageFailure = { type: 'error'; error: string; payload?: string };
@@ -187,7 +187,7 @@ export type MessageSuccess<T> = T extends { [key: string]: any } ? T & { type: '
 export type MaybeMessage<T> = MessageSuccess<T> | MessageFailure;
 
 export type WorkerMessageResponse<MessageType> = MessageType extends WorkerMessageType.WORKER_WAKEUP
-    ? WorkerState & { buffered?: WorkerMessageWithOrigin[] }
+    ? WorkerState & { buffered?: WorkerMessageWithSender[] }
     : MessageType extends WorkerMessageType.WORKER_INIT
     ? WorkerState
     : MessageType extends WorkerMessageType.RESOLVE_TAB
@@ -210,7 +210,7 @@ export type WorkerMessageResponse<MessageType> = MessageType extends WorkerMessa
     ? { data: string }
     : boolean;
 
-export type WorkerResponse<T extends Maybe<WorkerMessage | WorkerMessageWithOrigin>> = T extends undefined
+export type WorkerResponse<T extends Maybe<WorkerMessage | WorkerMessageWithSender>> = T extends undefined
     ? MessageFailure
     : T extends WorkerMessage
     ? T['type'] extends infer MessageType

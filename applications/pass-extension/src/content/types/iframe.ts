@@ -29,7 +29,8 @@ export enum IFrameAppMessageType {
     DIMENSIONS = 'IFRAME_DIMENSIONS',
 }
 
-export type IFrameMessageWithOrigin<T> = T & { origin: string };
+export type IFrameEndpoint = 'script' | 'notification' | 'dropdown';
+export type IFrameMessageWithSender<T> = T & { sender: IFrameEndpoint };
 
 export type IFrameAppMessage =
     | {

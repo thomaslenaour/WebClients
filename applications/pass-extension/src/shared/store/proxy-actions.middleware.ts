@@ -1,8 +1,8 @@
 import { Middleware } from 'redux';
 
-import { MessageWithOriginFactory, sendMessage } from '@proton/pass/extension/message';
+import { MessageWithSenderFactory, sendMessage } from '@proton/pass/extension/message';
 import { isSynchronous } from '@proton/pass/store/actions/creators/utils';
-import { WorkerMessageType, WorkerMessageWithOrigin } from '@proton/pass/types';
+import { WorkerMessageType, WorkerMessageWithSender } from '@proton/pass/types';
 import noop from '@proton/utils/noop';
 
 import { ExtensionContext } from '../extension';
@@ -16,11 +16,11 @@ import { ExtensionContext } from '../extension';
  * its local pipeline.
  */
 export const proxyActionsMiddleware =
-    (messageFactory: MessageWithOriginFactory): Middleware =>
+    (messageFactory: MessageWithSenderFactory): Middleware =>
     () =>
     (next) => {
-        ExtensionContext.get().port.onMessage.addListener((message: WorkerMessageWithOrigin) => {
-            if (message.origin === 'background' && message.type === WorkerMessageType.STORE_ACTION) {
+        ExtensionContext.get().port.onMessage.addListener((message: WorkerMessageWithSender) => {
+            if (message.sender === 'background' && message.type === WorkerMessageType.STORE_ACTION) {
                 if (!isSynchronous(message.payload.action)) {
                     next(message.payload.action);
                 }

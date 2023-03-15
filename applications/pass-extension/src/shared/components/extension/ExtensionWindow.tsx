@@ -10,21 +10,22 @@ import {
     RightToLeftProvider,
 } from '@proton/components';
 import { Portal } from '@proton/components/components/portal';
+import { ExtensionEndpoint } from '@proton/pass/types';
 
 import * as config from '../../../app/config';
 import { setupExtensionContext } from '../../extension/context';
 import { ThemeProvider } from '../../theme/ThemeProvider';
 
 export const ExtensionWindow: FC<{
-    id: string;
+    endpoint: ExtensionEndpoint;
     className?: string;
     style?: CSSProperties;
     children: (ready: boolean) => ReactNode;
-}> = ({ id, style, className, children }) => {
+}> = ({ endpoint, style, className, children }) => {
     const [ready, setReady] = useState(false);
 
     useEffect(() => {
-        setupExtensionContext({ origin: id, onDisconnect: () => window.location.reload() })
+        setupExtensionContext({ endpoint, onDisconnect: () => window.location.reload() })
             .then(() => setReady(true))
             .catch(console.warn);
     }, []);

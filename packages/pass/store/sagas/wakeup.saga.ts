@@ -7,7 +7,7 @@ import * as action from '../actions';
 import { boot, wakeupSuccess } from '../actions';
 import { State } from '../types';
 
-function* wakeupWorker({ payload: { status, tabId, origin } }: ReturnType<typeof action.wakeup>) {
+function* wakeupWorker({ payload: { status, tabId, endpoint } }: ReturnType<typeof action.wakeup>) {
     const loggedIn = authentication?.hasSession();
 
     switch (status) {
@@ -37,7 +37,7 @@ function* wakeupWorker({ payload: { status, tabId, origin } }: ReturnType<typeof
      * extra overhead of consuming a "noop" action
      * - it acts as a "state setter" on both ends)
      */
-    yield put(wakeupSuccess({ state: (yield select()) as State, tabId, origin }));
+    yield put(wakeupSuccess({ state: (yield select()) as State, tabId, endpoint }));
 }
 
 export default function* wakeup(): Generator {

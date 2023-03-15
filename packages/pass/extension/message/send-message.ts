@@ -1,6 +1,6 @@
 import browser from 'webextension-polyfill';
 
-import { MessageFailure, WorkerMessage, WorkerMessageWithOrigin, WorkerResponse } from '@proton/pass/types';
+import { MessageFailure, WorkerMessage, WorkerMessageWithSender, WorkerResponse } from '@proton/pass/types';
 
 /**
  * Wraps the untyped browser.runtime.sendMessage
@@ -8,7 +8,7 @@ import { MessageFailure, WorkerMessage, WorkerMessageWithOrigin, WorkerResponse 
  * casting the response types every time we use extension
  * messaging
  */
-export const sendMessage = async <T extends WorkerMessageWithOrigin>(
+export const sendMessage = async <T extends WorkerMessageWithSender>(
     message: T
 ): Promise<WorkerResponse<typeof message> | MessageFailure> => {
     try {
@@ -24,7 +24,7 @@ export const sendMessage = async <T extends WorkerMessageWithOrigin>(
  * awaiting the sendMessage response and handling
  * it imperatively
  */
-sendMessage.map = async <R, T extends WorkerMessageWithOrigin>(
+sendMessage.map = async <R, T extends WorkerMessageWithSender>(
     message: T,
     onResponse: (res: WorkerResponse<typeof message> | MessageFailure) => R
 ): Promise<R> => {
@@ -41,7 +41,7 @@ sendMessage.map = async <R, T extends WorkerMessageWithOrigin>(
  * Allows triggering an effect with
  * the worker response
  */
-sendMessage.on = async <T extends WorkerMessageWithOrigin>(
+sendMessage.on = async <T extends WorkerMessageWithSender>(
     message: T,
     onResponse: (res: WorkerResponse<typeof message> | MessageFailure) => void
 ): Promise<void> => {
@@ -58,7 +58,7 @@ sendMessage.on = async <T extends WorkerMessageWithOrigin>(
  * Allows triggering an effect only if the
  * worker response is of type "success"
  */
-sendMessage.onSuccess = async <T extends WorkerMessageWithOrigin>(
+sendMessage.onSuccess = async <T extends WorkerMessageWithSender>(
     message: T,
     onSuccess: (res: Exclude<WorkerResponse<typeof message>, MessageFailure>) => void
 ): Promise<void> =>
@@ -74,7 +74,7 @@ sendMessage.onSuccess = async <T extends WorkerMessageWithOrigin>(
  * Tabs require a dedicated sendMessage call per tab
  * to ensure multi-channel broadcasting.
  */
-sendMessage.broadcast = async <T extends WorkerMessageWithOrigin>(message: T) => {
+sendMessage.broadcast = async <T extends WorkerMessageWithSender>(message: T) => {
     await Promise.all([
         sendMessage(message),
         browser.tabs
@@ -83,24 +83,24 @@ sendMessage.broadcast = async <T extends WorkerMessageWithOrigin>(message: T) =>
     ]);
 };
 
-export type MessageWithOriginFactory = <T extends WorkerMessage>(message: T) => WorkerMessageWithOrigin<T>;
+export type MessageWithSenderFactory = <T extends WorkerMessage>(message: T) => WorkerMessageWithSender<T>;
 
-export const popupMessage: MessageWithOriginFactory = (message) => ({
+export const popupMessage: MessageWithSenderFactory = (message) => ({
     ...message,
-    origin: 'popup',
+    sender: 'popup',
 });
 
-export const backgroundMessage: MessageWithOriginFactory = (message) => ({
+export const backgroundMessage: MessageWithSenderFactory = (message) => ({
     ...message,
-    origin: 'background',
+    sender: 'background',
 });
 
-export const contentScriptMessage: MessageWithOriginFactory = (message) => ({
+export const contentScriptMessage: MessageWithSenderFactory = (message) => ({
     ...message,
-    origin: 'content-script',
+    sender: 'content-script',
 });
 
-export const pageMessage: MessageWithOriginFactory = (message) => ({
+export const pageMessage: MessageWithSenderFactory = (message) => ({
     ...message,
-    origin: 'page',
+    sender: 'page',
 });

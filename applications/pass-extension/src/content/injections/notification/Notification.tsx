@@ -38,7 +38,7 @@ const Notification: React.FC = () => {
 
     useEffect(() => {
         IFrameMessageBroker.postMessage<NotificationIframeMessage>({
-            origin: 'notification',
+            sender: 'notification',
             type: IFrameAppMessageType.READY,
         });
 
@@ -82,7 +82,7 @@ const Notification: React.FC = () => {
                                         setState(INITIAL_STATE);
                                         IFrameMessageBroker.postMessage({
                                             type: IFrameAppMessageType.CLOSE,
-                                            origin: 'notification',
+                                            sender: 'notification',
                                         });
                                     }}
                                 />

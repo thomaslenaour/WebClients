@@ -25,7 +25,7 @@ const AppOrLobby = () => {
 
 const Popup = () => {
     return (
-        <ExtensionWindow id="popup" style={POPUP_DIMENSIONS} className="anime-fade-in block overflow-hidden">
+        <ExtensionWindow endpoint="popup" style={POPUP_DIMENSIONS} className="anime-fade-in block overflow-hidden">
             {(ready) =>
                 ready ? (
                     <ReduxProvider store={createClientStore('popup', popupMessage)}>

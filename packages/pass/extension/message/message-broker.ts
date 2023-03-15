@@ -7,7 +7,7 @@ import {
     WorkerMessage,
     WorkerMessageResponse,
     WorkerMessageType,
-    WorkerMessageWithOrigin,
+    WorkerMessageWithSender,
     WorkerResponse,
 } from '@proton/pass/types';
 import { pipe, tap } from '@proton/pass/utils/fp';
@@ -24,7 +24,7 @@ export const errorMessage = (error?: string): MessageFailure => ({
 
 type MessageHandlerCallback<
     T extends WorkerMessageType = WorkerMessageType,
-    M extends WorkerMessageWithOrigin = Extract<WorkerMessageWithOrigin, { type: T }>
+    M extends WorkerMessageWithSender = Extract<WorkerMessageWithSender, { type: T }>
 > = (message: M, sender: browser.Runtime.MessageSender) => WorkerMessageResponse<T> | Promise<WorkerMessageResponse<T>>;
 
 export type ExtensionMessageBroker = ReturnType<typeof createMessageBroker>;
@@ -32,7 +32,7 @@ export type ExtensionMessageBroker = ReturnType<typeof createMessageBroker>;
 export const createMessageBroker = () => {
     const handlers: Map<WorkerMessageType, MessageHandlerCallback> = new Map();
     const ports: Map<string, browser.Runtime.Port> = new Map();
-    const buffer: Set<WorkerMessageWithOrigin> = new Set();
+    const buffer: Set<WorkerMessageWithSender> = new Set();
 
     const registerMessage = <T extends WorkerMessageType>(message: T, handler: MessageHandlerCallback<T>) => {
         if (handlers.has(message)) {
@@ -43,9 +43,9 @@ export const createMessageBroker = () => {
     };
 
     const onMessage = async (
-        message: WorkerMessageWithOrigin,
+        message: WorkerMessageWithSender,
         sender: browser.Runtime.MessageSender
-    ): Promise<WorkerResponse<WorkerMessageWithOrigin> | void> => {
+    ): Promise<WorkerResponse<WorkerMessageWithSender> | void> => {
         /**
          * During development, while using the webpack dev-server
          * with hot module replacement - we sometimes end up in a
@@ -53,7 +53,7 @@ export const createMessageBroker = () => {
          * messages to itself while it is updating or going stale.
          */
         if (process.env.NODE_ENV === 'development') {
-            if (message.origin === 'background') {
+            if (message.sender === 'background') {
                 browser.runtime.reload();
                 return errorMessage();
             }
@@ -107,7 +107,7 @@ export const createMessageBroker = () => {
         registerMessage,
         onMessage,
         buffer: {
-            push: (message: WorkerMessageWithOrigin) => buffer.add(message),
+            push: (message: WorkerMessageWithSender) => buffer.add(message),
             flush: pipe(
                 () => Array.from(buffer.values()),
                 tap(() => buffer.clear())

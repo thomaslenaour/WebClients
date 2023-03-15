@@ -4,15 +4,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { noop } from 'lodash';
 
 import { CircleLoader } from '@proton/atoms/CircleLoader';
-import { MessageWithOriginFactory, sendMessage } from '@proton/pass/extension/message';
+import { MessageWithSenderFactory, sendMessage } from '@proton/pass/extension/message';
 import { selectWorkerAlive } from '@proton/pass/store';
 import * as actions from '@proton/pass/store/actions';
 import {
-    ExtensionOrigin,
+    ExtensionEndpoint,
     TabId,
     WorkerMessageResponse,
     WorkerMessageType,
-    WorkerMessageWithOrigin,
+    WorkerMessageWithSender,
     WorkerState,
     WorkerStatus,
 } from '@proton/pass/types';
@@ -28,8 +28,8 @@ import { ExtensionAppContextValue, INITIAL_WORKER_STATE } from './ExtensionConte
 
 const setup = async (options: {
     tabId: TabId;
-    origin: ExtensionOrigin;
-    messageFactory: MessageWithOriginFactory;
+    endpoint: ExtensionEndpoint;
+    messageFactory: MessageWithSenderFactory;
 }): Promise<WorkerMessageResponse<WorkerMessageType.WORKER_WAKEUP>> => {
     const locales = initLocales(require.context('../../../../locales', true, /.json$/, 'lazy'));
     await loadLocale(DEFAULT_LOCALE, locales);
@@ -37,7 +37,7 @@ const setup = async (options: {
     return sendMessage.map(
         options.messageFactory({
             type: WorkerMessageType.WORKER_WAKEUP,
-            payload: { origin: options.origin, tabId: options.tabId },
+            payload: { tabId: options.tabId },
         }),
         (response) =>
             response.type === 'success'
@@ -58,10 +58,10 @@ export const ExtensionAppContext = createContext<ExtensionAppContextValue>({
 });
 
 export const ExtensionContextProvider: FC<{
-    origin: ExtensionOrigin;
-    messageFactory: MessageWithOriginFactory;
-    onWorkerMessage?: (message: WorkerMessageWithOrigin) => void;
-}> = ({ origin, messageFactory, onWorkerMessage, children }) => {
+    endpoint: ExtensionEndpoint;
+    messageFactory: MessageWithSenderFactory;
+    onWorkerMessage?: (message: WorkerMessageWithSender) => void;
+}> = ({ endpoint: origin, messageFactory, onWorkerMessage, children }) => {
     useEffect(() => {
         sentry({
             config,
@@ -86,8 +86,8 @@ export const ExtensionContextProvider: FC<{
     };
 
     useEffect(() => {
-        const onMessage = (message: WorkerMessageWithOrigin) => {
-            if (message.origin === 'background') {
+        const onMessage = (message: WorkerMessageWithSender) => {
+            if (message.sender === 'background') {
                 if (message.type === WorkerMessageType.WORKER_STATUS) {
                     const { status, loggedIn, UID } = message.payload.state;
                     setState({ status, loggedIn, UID });
@@ -100,7 +100,7 @@ export const ExtensionContextProvider: FC<{
 
         ExtensionContext.get().port.onMessage.addListener(onMessage);
 
-        setup({ tabId, origin, messageFactory })
+        setup({ tabId, endpoint: origin, messageFactory })
             .then(({ buffered = [], ...workerState }) => {
                 buffered.forEach(onMessage);
                 const { UID } = workerState;

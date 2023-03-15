@@ -160,12 +160,12 @@ WorkerMessageBroker.registerMessage(WorkerMessageType.WORKER_WAKEUP, async (mess
 
     return Promise.resolve<WorkerState>(
         (async () => {
-            switch (message.payload.origin) {
+            switch (message.sender) {
                 case 'popup':
                 case 'page': {
                     store.dispatch(
                         wakeup({
-                            origin: message.payload.origin,
+                            endpoint: message.sender,
                             tabId: message.payload.tabId,
                             status,
                         })

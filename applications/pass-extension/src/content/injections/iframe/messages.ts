@@ -1,7 +1,7 @@
-import { IFrameAppMessage, IFrameMessageWithOrigin } from '../../types/iframe';
+import { IFrameAppMessage, IFrameMessageWithSender } from '../../types/iframe';
 
 export const IFrameMessageBroker = {
-    postMessage: <T = {}>(message: IFrameMessageWithOrigin<IFrameAppMessage | T>) =>
+    postMessage: <T = {}>(message: IFrameMessageWithSender<IFrameAppMessage | T>) =>
         window.parent.postMessage(message, '*'),
 
     onContentScriptMessage: <DomainMessage extends { type?: string } = IFrameAppMessage>(
@@ -22,16 +22,16 @@ export const IFrameMessageBroker = {
         return () => window.removeEventListener('message', handler);
     },
     onInjectedFrameMessage: <DomainMessage extends { type?: string } = IFrameAppMessage>(
-        origin: string,
-        messageHandler: (message: IFrameMessageWithOrigin<IFrameAppMessage | DomainMessage>) => void
+        endpoint: string,
+        messageHandler: (message: IFrameMessageWithSender<IFrameAppMessage | DomainMessage>) => void
     ) => {
         /**
          * Allows registering an iframe message listener for a
          * specific injected iframe app : catches all posted
          * messages but ignores if origins don't match
          */
-        const handler = ({ data }: MessageEvent<IFrameMessageWithOrigin<IFrameAppMessage | DomainMessage>>) => {
-            if (data.origin === origin && data.type !== undefined) {
+        const handler = ({ data }: MessageEvent<IFrameMessageWithSender<IFrameAppMessage | DomainMessage>>) => {
+            if (data.sender === endpoint && data.type !== undefined) {
                 messageHandler(data);
             }
         };

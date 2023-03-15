@@ -10,7 +10,7 @@ import { CircleLoader } from '@proton/atoms/CircleLoader';
 import { Tabs, useNotifications } from '@proton/components';
 import { pageMessage } from '@proton/pass/extension/message';
 import { selectUser } from '@proton/pass/store';
-import { Unpack, WorkerMessageType, WorkerMessageWithOrigin } from '@proton/pass/types';
+import { Unpack, WorkerMessageType, WorkerMessageWithSender } from '@proton/pass/types';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 import noop from '@proton/utils/noop';
 
@@ -88,7 +88,7 @@ const SettingsTabs: FC<{ pathname: string }> = ({ pathname }) => {
 const SettingsApp: FC = () => {
     const { createNotification } = useNotifications();
 
-    const handleWorkerMessage = useCallback((message: WorkerMessageWithOrigin) => {
+    const handleWorkerMessage = useCallback((message: WorkerMessageWithSender) => {
         if (message.type === WorkerMessageType.NOTIFICATION && message.payload.notification.target === 'page') {
             const { text, type } = message.payload.notification;
             createNotification({ text, type });
@@ -99,7 +99,7 @@ const SettingsApp: FC = () => {
         <ReduxProvider store={createClientStore('settings', pageMessage)}>
             <HashRouter>
                 <ExtensionContextProvider
-                    origin="page"
+                    endpoint="page"
                     messageFactory={pageMessage}
                     onWorkerMessage={handleWorkerMessage}
                 >
@@ -123,6 +123,6 @@ const SettingsApp: FC = () => {
 export const Settings: FC = () => (
     <>
         <ExtensionHead title={c('Title').t`${PASS_APP_NAME} Settings`} />
-        <ExtensionWindow id="page">{(ready) => (ready ? <SettingsApp /> : <CircleLoader />)}</ExtensionWindow>
+        <ExtensionWindow endpoint="page">{(ready) => (ready ? <SettingsApp /> : <CircleLoader />)}</ExtensionWindow>
     </>
 );
