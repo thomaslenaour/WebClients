@@ -1,7 +1,6 @@
 import { c } from 'ttag';
 
-import { initApi } from '@proton/pass/api';
-import { consumeFork, getPersistedSession, initAuthentication, persistSession, resumeSession } from '@proton/pass/auth';
+import { consumeFork, exposeAuthStore, getPersistedSession, persistSession, resumeSession } from '@proton/pass/auth';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
 import { notification, signout } from '@proton/pass/store';
 import type { Api, WorkerForkMessage, WorkerMessageResponse } from '@proton/pass/types';
@@ -21,7 +20,7 @@ import store from '../store';
 
 /* eslint-disable @typescript-eslint/no-throw-literal */
 export interface AuthService {
-    store: AuthenticationStore;
+    authStore: AuthenticationStore;
     resumeSession: () => Promise<boolean>;
     consumeFork: (data: WorkerForkMessage['payload']) => Promise<WorkerMessageResponse<WorkerMessageType.FORK>>;
     login: (options: {
@@ -45,8 +44,7 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
     let pendingInit: Promise<boolean> | null = null;
 
     const authService: AuthService = {
-        store: createAuthenticationStore(createStore()),
-
+        authStore: exposeAuthStore(createAuthenticationStore(createStore())),
         init: async () => {
             logger.info(`[Worker::Auth] Initialization start`);
 
@@ -129,8 +127,8 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
             api.configure({ UID, AccessToken, RefreshToken });
             api.unsubscribe();
 
-            authService.store.setUID(UID);
-            authService.store.setPassword(keyPassword);
+            authService.authStore.setUID(UID);
+            authService.authStore.setPassword(keyPassword);
 
             api.subscribe((event) => {
                 switch (event.type) {
@@ -159,8 +157,8 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
         logout: () => {
             const context = WorkerContext.get();
 
-            authService.store.setUID(undefined);
-            authService.store.setPassword(undefined);
+            authService.authStore.setUID(undefined);
+            authService.authStore.setPassword(undefined);
 
             api.unsubscribe();
             api.configure();
@@ -221,10 +219,6 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
             return false;
         },
     };
-
-    /* FIXME: we should avoid relying on globals here */
-    initAuthentication(authService.store);
-    initApi(api);
 
     WorkerMessageBroker.registerMessage(WorkerMessageType.FORK, (message) => authService.consumeFork(message.payload));
 

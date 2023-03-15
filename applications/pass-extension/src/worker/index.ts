@@ -1,6 +1,6 @@
 import browser from 'webextension-polyfill';
 
-import createApi from '@proton/pass/api';
+import createApi, { exposeApi } from '@proton/pass/api';
 import { getPersistedSession, setPersistedSession } from '@proton/pass/auth';
 import { browserLocalStorage, browserSessionStorage } from '@proton/pass/extension/storage';
 import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
@@ -42,18 +42,20 @@ sentry({
     ignore: () => false,
 });
 
-const api = createApi({
-    config,
-    onSessionRefresh: async ({ AccessToken, RefreshToken }) => {
-        const persistedSession = await getPersistedSession();
-        if (persistedSession) {
-            await Promise.all([
-                setPersistedSession({ ...persistedSession, AccessToken, RefreshToken }),
-                browserSessionStorage.setItems({ AccessToken, RefreshToken }),
-            ]);
-        }
-    },
-});
+const api = exposeApi(
+    createApi({
+        config,
+        onSessionRefresh: async ({ AccessToken, RefreshToken }) => {
+            const persistedSession = await getPersistedSession();
+            if (persistedSession) {
+                await Promise.all([
+                    setPersistedSession({ ...persistedSession, AccessToken, RefreshToken }),
+                    browserSessionStorage.setItems({ AccessToken, RefreshToken }),
+                ]);
+            }
+        },
+    })
+);
 
 const context = createWorkerContext({ api, status: WorkerStatus.IDLE });
 
