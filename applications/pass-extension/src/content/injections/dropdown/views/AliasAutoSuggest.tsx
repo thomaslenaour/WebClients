@@ -19,7 +19,7 @@ export const AliasAutoSuggest: FC<{ options: AliasState['aliasOptions']; prefix:
                 options !== null &&
                 defaultSuffix !== undefined &&
                 IFrameMessageBroker.postMessage<DropdownIframeMessage>({
-                    origin: 'dropdown',
+                    sender: 'dropdown',
                     type: DropdownMessageType.AUTOFILL_ALIAS,
                     payload: {
                         alias: {

@@ -1,8 +1,10 @@
-import { ExtensionOrigin, TabId } from '@proton/pass/types';
+import { ExtensionEndpoint, TabId } from '@proton/pass/types';
 
 export const boot = () => 'boot';
 export const syncing = () => 'syncing';
-export const wakeup = (origin: ExtensionOrigin, tabId: TabId) => `wakeup-${origin}-${tabId}`;
+export const wakeup = (endpoint: ExtensionEndpoint, tabId: TabId) => `wakeup-${endpoint}-${tabId}`;
+
+export const workerReady = (endpoint: ExtensionEndpoint, tabId: TabId) => `wakeup-${endpoint}-${tabId}`;
 
 export const shares = () => 'shares';
 

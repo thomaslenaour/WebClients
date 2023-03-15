@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { ShareEventType, WorkerMessageType, WorkerMessageWithOrigin } from '@proton/pass/types';
+import { ShareEventType, WorkerMessageType, WorkerMessageWithSender } from '@proton/pass/types';
 
 import { ExtensionContext } from '../extension';
 
@@ -13,8 +13,8 @@ export const useShareEventEffect = (options: UseShareServerEventHookOptions) => 
     useEffect(() => {
         const { port } = ExtensionContext.get();
 
-        const handleShareServerEvent = (message: WorkerMessageWithOrigin) => {
-            if (message.origin === 'background' && message.type === WorkerMessageType.SHARE_SERVER_EVENT) {
+        const handleShareServerEvent = (message: WorkerMessageWithSender) => {
+            if (message.sender === 'background' && message.type === WorkerMessageType.SHARE_SERVER_EVENT) {
                 const { payload } = message;
 
                 switch (payload.type) {

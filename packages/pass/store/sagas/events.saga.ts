@@ -195,7 +195,9 @@ const createEventChannelForks = (eventsChannel: EventsChannel, options: WorkerRo
             try {
                 yield call(manager.call);
                 while (
-                    yield take((action: AnyAction) => wakeupSuccess.match(action) && action.payload.origin === 'popup')
+                    yield take(
+                        (action: AnyAction) => wakeupSuccess.match(action) && action.payload.endpoint === 'popup'
+                    )
                 ) {
                     yield call(manager.call);
                 }

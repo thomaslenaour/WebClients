@@ -1,6 +1,6 @@
 import { AnyAction } from 'redux';
 
-import { ExtensionOrigin } from '@proton/pass/types';
+import { ExtensionEndpoint } from '@proton/pass/types';
 import { merge } from '@proton/pass/utils/object';
 import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 
@@ -11,7 +11,7 @@ export type Notification = {
     expiry?: number;
     text: string;
     type: NotificationType;
-    target?: ExtensionOrigin;
+    target?: ExtensionEndpoint;
 };
 
 export type NotificationOptions = Notification & ({ type: 'error'; error: unknown } | { type: 'success' | 'info' });

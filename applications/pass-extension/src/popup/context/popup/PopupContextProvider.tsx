@@ -6,7 +6,7 @@ import { NotificationsContext } from '@proton/components';
 import { useNotifications } from '@proton/components/hooks';
 import { popupMessage } from '@proton/pass/extension/message';
 import { selectWorkerSyncing, syncIntent } from '@proton/pass/store';
-import { WorkerMessageType, WorkerMessageWithOrigin, WorkerStatus } from '@proton/pass/types';
+import { WorkerMessageType, WorkerMessageWithSender, WorkerStatus } from '@proton/pass/types';
 
 import { ExtensionContextProvider } from '../../../shared/components/extension';
 import { ExtensionContext } from '../../../shared/extension';
@@ -57,7 +57,7 @@ const ExtendedExtensionContext: FC = ({ children }) => {
 export const PopupContextProvider: FC = ({ children }) => {
     const { createNotification, clearNotifications } = useNotifications();
 
-    const onWorkerMessage = (message: WorkerMessageWithOrigin) => {
+    const onWorkerMessage = (message: WorkerMessageWithSender) => {
         if (message.type === WorkerMessageType.NOTIFICATION) {
             const { text, type } = message.payload.notification;
             clearNotifications();
@@ -66,7 +66,7 @@ export const PopupContextProvider: FC = ({ children }) => {
     };
 
     return (
-        <ExtensionContextProvider origin="popup" messageFactory={popupMessage} onWorkerMessage={onWorkerMessage}>
+        <ExtensionContextProvider endpoint="popup" messageFactory={popupMessage} onWorkerMessage={onWorkerMessage}>
             <ExtendedExtensionContext>{children}</ExtendedExtensionContext>
         </ExtensionContextProvider>
     );

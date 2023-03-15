@@ -20,7 +20,7 @@ export const ItemsList: React.FC<{
             (response) =>
                 response.type === 'success' &&
                 IFrameMessageBroker.postMessage<DropdownIframeMessage>({
-                    origin: 'dropdown',
+                    sender: 'dropdown',
                     type: DropdownMessageType.AUTOFILL,
                     payload: response,
                 })

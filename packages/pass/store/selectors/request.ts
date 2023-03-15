@@ -1,4 +1,4 @@
-import { ExtensionOrigin, Maybe, TabId } from '@proton/pass/types';
+import { ExtensionEndpoint, Maybe, TabId } from '@proton/pass/types';
 import { invert } from '@proton/pass/utils/fp/predicates';
 
 import { boot, syncing, wakeup } from '../actions/requests';
@@ -21,8 +21,8 @@ export const selectRequestInFlight =
     (state: State): boolean =>
         selectRequestStatus(namespaceOrId)(state) === 'start';
 
-export const selectWorkerAlive = (origin: ExtensionOrigin, tabId: TabId) =>
-    invert(selectRequestInFlight(wakeup(origin, tabId)));
+export const selectWorkerAlive = (endpoint: ExtensionEndpoint, tabId: TabId) =>
+    invert(selectRequestInFlight(wakeup(endpoint, tabId)));
 
 export const selectWorkerSyncing = selectRequestInFlight(syncing());
 export const selectBooting = selectRequestInFlight(boot());

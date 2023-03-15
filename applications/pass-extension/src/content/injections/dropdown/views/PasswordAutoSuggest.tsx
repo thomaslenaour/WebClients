@@ -15,7 +15,7 @@ export const PasswordAutoSuggest: FC = () => {
         <DropdownItem
             onClick={() =>
                 IFrameMessageBroker.postMessage<DropdownIframeMessage>({
-                    origin: 'dropdown',
+                    sender: 'dropdown',
                     type: DropdownMessageType.AUTOFILL_PASSWORD,
                     payload: { password },
                 })

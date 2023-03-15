@@ -59,7 +59,7 @@ export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSave
 
             IFrameMessageBroker.postMessage<NotificationIframeMessage>({
                 type: NotificationMessageType.AUTOSAVE_REQUEST,
-                origin: 'notification',
+                sender: 'notification',
                 payload: {
                     submission: submission,
                     item: {
@@ -125,7 +125,7 @@ export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSave
                             onClick={() =>
                                 IFrameMessageBroker.postMessage({
                                     type: IFrameAppMessageType.CLOSE,
-                                    origin: 'notification',
+                                    sender: 'notification',
                                 })
                             }
                         >
@@ -165,7 +165,7 @@ export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSave
                         onClick={() =>
                             IFrameMessageBroker.postMessage({
                                 type: IFrameAppMessageType.CLOSE,
-                                origin: 'notification',
+                                sender: 'notification',
                             })
                         }
                     >

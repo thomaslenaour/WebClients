@@ -65,7 +65,7 @@ const Dropdown: React.FC = () => {
 
     useEffect(() => {
         IFrameMessageBroker.postMessage<DropdownIframeMessage>({
-            origin: 'dropdown',
+            sender: 'dropdown',
             type: IFrameAppMessageType.READY,
         });
 
@@ -80,7 +80,7 @@ const Dropdown: React.FC = () => {
                 case IFrameAppMessageType.OPEN: {
                     const { height } = dropdownRef.current!.getBoundingClientRect();
                     return IFrameMessageBroker.postMessage({
-                        origin: 'dropdown',
+                        sender: 'dropdown',
                         type: IFrameAppMessageType.DIMENSIONS,
                         payload: { height },
                     });
@@ -106,7 +106,7 @@ const Dropdown: React.FC = () => {
                     <DropdownItem
                         onClick={async () => {
                             IFrameMessageBroker.postMessage({
-                                origin: 'dropdown',
+                                sender: 'dropdown',
                                 type: IFrameAppMessageType.CLOSE,
                             });
                             await navigateToLogin();
@@ -125,7 +125,7 @@ const Dropdown: React.FC = () => {
                         <DropdownItem
                             onClick={() =>
                                 IFrameMessageBroker.postMessage({
-                                    origin: 'dropdown',
+                                    sender: 'dropdown',
                                     type: IFrameAppMessageType.CLOSE,
                                 })
                             }

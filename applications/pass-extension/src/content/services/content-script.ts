@@ -1,5 +1,5 @@
 import { contentScriptMessage, sendMessage } from '@proton/pass/extension/message';
-import { WorkerMessageType, WorkerMessageWithOrigin, WorkerState, WorkerStatus } from '@proton/pass/types';
+import { WorkerMessageType, WorkerMessageWithSender, WorkerState, WorkerStatus } from '@proton/pass/types';
 import { isMainFrame } from '@proton/pass/utils/dom';
 import { createListenerStore } from '@proton/pass/utils/listener';
 import { logger } from '@proton/pass/utils/logger';
@@ -65,8 +65,8 @@ export const createContentScriptService = () => {
         }
     };
 
-    const onPortMessage = async (message: WorkerMessageWithOrigin): Promise<void> => {
-        if (message.origin === 'background') {
+    const onPortMessage = async (message: WorkerMessageWithSender): Promise<void> => {
+        if (message.sender === 'background') {
             switch (message.type) {
                 case WorkerMessageType.WORKER_STATUS:
                     return onWorkerStateChange(message.payload.state);
@@ -94,7 +94,7 @@ export const createContentScriptService = () => {
             const res = await sendMessage(
                 contentScriptMessage({
                     type: WorkerMessageType.WORKER_WAKEUP,
-                    payload: { origin: 'content-script', tabId },
+                    payload: { endpoint: 'content-script', tabId },
                 })
             );
 
@@ -116,7 +116,7 @@ export const createContentScriptService = () => {
     const setup = async () => {
         try {
             return await setupExtensionContext({
-                origin: 'content-script',
+                endpoint: 'content-script',
                 onDisconnect: (prevContext) => prevContext.port.onMessage.removeListener(onPortMessage),
                 onContextChange: (nextContext) => {
                     context.formManager.sleep();

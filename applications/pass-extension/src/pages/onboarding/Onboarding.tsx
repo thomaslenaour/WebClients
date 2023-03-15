@@ -8,7 +8,7 @@ import InstallationSuccess from './views/InstallationSuccess';
 import ResumeSession from './views/ResumeSession';
 
 export const Onboarding: FC = () => (
-    <ExtensionWindow id="onboarding">
+    <ExtensionWindow endpoint="page">
         {(ready) =>
             ready ? (
                 <HashRouter>
