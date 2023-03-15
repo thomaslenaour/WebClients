@@ -8,18 +8,25 @@ import { Address, User } from '@proton/shared/lib/interfaces';
 import { SynchronizationResult } from '../../sagas/workers/sync';
 import * as requests from '../requests';
 import withNotification from '../with-notification';
+import withReceiver from '../with-receiver';
 import withRequest from '../with-request';
 
 export const wakeup = createAction(
     'wakeup',
     (payload: { status: WorkerStatus; endpoint: ExtensionEndpoint; tabId: TabId }) =>
-        withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'start' })({ payload })
+        pipe(
+            withReceiver({ receiver: payload.endpoint, tabId: payload.tabId }),
+            withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'start' })
+        )({ payload })
 );
 
 export const wakeupSuccess = createAction(
     'wakeup success',
     (payload: { state: any; endpoint: ExtensionEndpoint; tabId: TabId }) =>
-        withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'success' })({ payload })
+        pipe(
+            withReceiver({ receiver: payload.endpoint, tabId: payload.tabId }),
+            withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'success' })
+        )({ payload })
 );
 
 export const boot = createAction('boot', withRequest({ id: requests.boot(), type: 'start' }));
