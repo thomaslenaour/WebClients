@@ -1,21 +1,21 @@
 import { configureStore } from '@reduxjs/toolkit';
 import devToolsEnhancer from 'remote-redux-devtools';
 
-import { MessageWithSenderFactory } from '@proton/pass/extension/message';
 import reducer from '@proton/pass/store/reducers';
+import type { ExtensionEndpoint, TabId } from '@proton/pass/types';
 
 import { ENV } from '../extension';
 import { proxyActionsMiddleware } from './proxy-actions.middleware';
 
-const createClientStore = (id: string, createMessage: MessageWithSenderFactory) => {
+const createClientStore = (endpoint: ExtensionEndpoint, tabId: TabId) => {
     const store = configureStore({
         reducer,
-        middleware: [proxyActionsMiddleware(createMessage)],
+        middleware: [proxyActionsMiddleware({ endpoint, tabId })],
         enhancers:
             ENV === 'development'
                 ? [
                       devToolsEnhancer({
-                          name: id,
+                          name: `${endpoint}-${tabId}`,
                           port: 8000,
                           realtime: true,
                           secure: true,

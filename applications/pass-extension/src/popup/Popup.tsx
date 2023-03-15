@@ -3,9 +3,9 @@ import { Provider as ReduxProvider } from 'react-redux';
 import { HashRouter as Router } from 'react-router-dom';
 
 import { ErrorBoundary } from '@proton/components';
-import { popupMessage } from '@proton/pass/extension/message';
 
 import { ExtensionError, ExtensionWindow } from '../shared/components/extension';
+import { ExtensionContext } from '../shared/extension';
 import createClientStore from '../shared/store/client-store';
 import { App } from './App';
 import { PopupContextProvider, usePopupContext } from './context';
@@ -28,7 +28,7 @@ const Popup = () => {
         <ExtensionWindow endpoint="popup" style={POPUP_DIMENSIONS} className="anime-fade-in block overflow-hidden">
             {(ready) =>
                 ready ? (
-                    <ReduxProvider store={createClientStore('popup', popupMessage)}>
+                    <ReduxProvider store={createClientStore('popup', ExtensionContext.get().tabId)}>
                         <Router>
                             <ErrorBoundary component={<ExtensionError />}>
                                 <PopupContextProvider>

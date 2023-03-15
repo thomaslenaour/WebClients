@@ -1,6 +1,12 @@
 import browser from 'webextension-polyfill';
 
-import { MessageFailure, WorkerMessage, WorkerMessageWithSender, WorkerResponse } from '@proton/pass/types';
+import {
+    ExtensionEndpoint,
+    MessageFailure,
+    WorkerMessage,
+    WorkerMessageWithSender,
+    WorkerResponse,
+} from '@proton/pass/types';
 
 /**
  * Wraps the untyped browser.runtime.sendMessage
@@ -85,14 +91,14 @@ sendMessage.broadcast = async <T extends WorkerMessageWithSender>(message: T) =>
 
 export type MessageWithSenderFactory = <T extends WorkerMessage>(message: T) => WorkerMessageWithSender<T>;
 
-export const popupMessage: MessageWithSenderFactory = (message) => ({
-    ...message,
-    sender: 'popup',
-});
-
 export const backgroundMessage: MessageWithSenderFactory = (message) => ({
     ...message,
     sender: 'background',
+});
+
+export const popupMessage: MessageWithSenderFactory = (message) => ({
+    ...message,
+    sender: 'popup',
 });
 
 export const contentScriptMessage: MessageWithSenderFactory = (message) => ({
@@ -104,3 +110,16 @@ export const pageMessage: MessageWithSenderFactory = (message) => ({
     ...message,
     sender: 'page',
 });
+
+export const resolveMessageFactory = (endpoint: ExtensionEndpoint) => {
+    switch (endpoint) {
+        case 'background':
+            return backgroundMessage;
+        case 'popup':
+            return popupMessage;
+        case 'content-script':
+            return contentScriptMessage;
+        case 'page':
+            return pageMessage;
+    }
+};

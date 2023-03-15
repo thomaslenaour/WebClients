@@ -16,6 +16,7 @@ import noop from '@proton/utils/noop';
 
 import { ExtensionContextProvider, ExtensionWindow } from '../../shared/components/extension';
 import { ExtensionHead } from '../../shared/components/page/ExtensionHead';
+import { ExtensionContext } from '../../shared/extension';
 import { useExtensionContext } from '../../shared/hooks';
 import createClientStore from '../../shared/store/client-store';
 import { Export } from './views/Export';
@@ -96,7 +97,7 @@ const SettingsApp: FC = () => {
     }, []);
 
     return (
-        <ReduxProvider store={createClientStore('settings', pageMessage)}>
+        <ReduxProvider store={createClientStore('page', ExtensionContext.get().tabId)}>
             <HashRouter>
                 <ExtensionContextProvider
                     endpoint="page"
