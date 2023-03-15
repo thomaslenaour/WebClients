@@ -9,7 +9,8 @@ import {
     itemCreationSuccess,
     selectDefaultVaultOrThrow,
 } from '@proton/pass/store';
-import { ItemCreateIntent, WorkerMessageType } from '@proton/pass/types';
+import type { ItemCreateIntent } from '@proton/pass/types';
+import { WorkerMessageType } from '@proton/pass/types';
 import { getEpoch } from '@proton/pass/utils/time';
 import { parseSender } from '@proton/pass/utils/url';
 

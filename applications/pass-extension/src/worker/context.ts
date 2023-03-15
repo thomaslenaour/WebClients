@@ -1,38 +1,144 @@
-import { WorkerState, WorkerStatus } from '@proton/pass/types';
+import { backgroundMessage } from '@proton/pass/extension/message';
+import type { Api, WorkerState } from '@proton/pass/types';
+import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { createSharedContext } from '@proton/pass/utils/context';
-import { waitUntil } from '@proton/pass/utils/fp';
-import { invert } from '@proton/pass/utils/fp/predicates';
-import { workerBusy } from '@proton/pass/utils/worker';
+import { invert, waitUntil } from '@proton/pass/utils/fp';
+import { logger } from '@proton/pass/utils/logger';
+import { workerBusy, workerCanBoot, workerLoggedOut, workerReady } from '@proton/pass/utils/worker';
+import { setUID as setSentryUID } from '@proton/shared/lib/helpers/sentry';
+import noop from '@proton/utils/noop';
 
-import { AliasService } from './services/alias';
-import { AuthService } from './services/auth';
-import { AutoFillService } from './services/autofill';
-import { AutoSaveService } from './services/autosave';
+import { setPopupIcon } from '../shared/extension';
+import WorkerMessageBroker from './channel';
+import { type ActivationService, createActivationService } from './services/activation';
+import { type AliasService, createAliasService } from './services/alias';
+import { type AuthService, createAuthService } from './services/auth';
+import { type AutoFillService, createAutoFillService } from './services/autofill';
+import { type AutoSaveService, createAutoSaveService } from './services/autosave';
+import { type CacheProxyService, createCacheProxyService } from './services/cache-proxy';
+import { type ExportService, createExportService } from './services/export';
+import { type FormTrackerService, createFormTrackerService } from './services/form.tracker';
+import { type SettingsService, createSettingsService } from './services/settings';
+import { type StoreService, createStoreService } from './services/store';
 
 export type WorkerInitOptions = {
     sync?: boolean /* will clear local storage */;
     force?: boolean /* will bypass busy state */;
 };
 
-export type ServiceWorkerContext = {
+export interface ServiceWorkerContext {
     status: WorkerStatus;
-    alias: AliasService;
-    auth: AuthService;
-    autosave: AutoSaveService;
-    autofill: AutoFillService;
+    service: {
+        auth: AuthService;
+        activation: ActivationService;
+        alias: AliasService;
+        autofill: AutoFillService;
+        autosave: AutoSaveService;
+        cacheProxy: CacheProxyService;
+        export: ExportService;
+        formTracker: FormTrackerService;
+        settings: SettingsService;
+        store: StoreService;
+    };
+    /* status update : side-effects will be triggered */
     setStatus: (status: WorkerStatus) => void;
+    /* returns the current worker state */
     getState: () => WorkerState;
+    /* Returned promise will resolve when worker "ready" */
+    waitForReady: () => Promise<ServiceWorkerContext>;
+    /* init the worker - or force re-init using sync|force parameters */
+    init: (options: WorkerInitOptions) => Promise<ServiceWorkerContext>;
+    /* will start the boot sequence only if the worker states permits it */
     boot: () => void;
-    init: (options: WorkerInitOptions) => Promise<WorkerState>;
-};
+}
 
 const WorkerContext = createSharedContext<ServiceWorkerContext>('worker');
+export default WorkerContext;
 
-export const waitForContext = async (): Promise<ServiceWorkerContext> => {
-    const context = WorkerContext.get();
-    await waitUntil(() => invert(workerBusy)(context.getState().status), 50);
+export const createWorkerContext = (options: { api: Api; status: WorkerStatus }) => {
+    const auth = createAuthService({
+        api: options.api,
+        onAuthorized: () => {
+            const ctx = WorkerContext.get();
+            ctx.boot();
+            ctx.service.autofill.updateTabsBadgeCount().catch(noop);
+            setSentryUID(auth.store.getUID());
+        },
+        onUnauthorized: () => {
+            const ctx = WorkerContext.get();
+            ctx.service.autofill.clearTabsBadgeCount().catch(noop);
+            ctx.service.formTracker.clear();
+            setSentryUID(undefined);
+        },
+    });
+
+    const context = WorkerContext.set({
+        status: options.status,
+        service: {
+            auth,
+            activation: createActivationService(),
+            alias: createAliasService(),
+            autofill: createAutoFillService(),
+            autosave: createAutoSaveService(),
+            cacheProxy: createCacheProxyService(),
+            export: createExportService(),
+            formTracker: createFormTrackerService(),
+            settings: createSettingsService(),
+            store: createStoreService(),
+        },
+
+        async waitForReady() {
+            const context = WorkerContext.get();
+            await waitUntil(() => invert(workerBusy)(context.getState().status), 50);
+
+            return context;
+        },
+
+        getState: () => ({
+            loggedIn: auth.store.hasSession() && workerReady(context.status),
+            status: context.status,
+            UID: auth.store.getUID(),
+        }),
+
+        setStatus(status: WorkerStatus) {
+            logger.info(`[Worker] Status update : ${context.status} -> ${status}`);
+            context.status = status;
+
+            if (workerLoggedOut(status)) {
+                setPopupIcon({ loggedIn: false }).catch(noop);
+            }
+
+            if (workerReady(status)) {
+                setPopupIcon({ loggedIn: true }).catch(noop);
+            }
+
+            WorkerMessageBroker.ports.broadcast(
+                backgroundMessage({
+                    type: WorkerMessageType.WORKER_STATUS,
+                    payload: { state: context.getState() },
+                })
+            );
+        },
+
+        async init({ sync, force }) {
+            const shouldInit = Boolean((sync ?? !workerReady(context.status)) || force);
+
+            /* only re-trigger boot sequence when required
+            and if auth initialization succeeds */
+            if (shouldInit && (await auth.init())) {
+                context.boot();
+            }
+
+            return context;
+        },
+
+        boot() {
+            if (workerCanBoot(context.status)) {
+                context.setStatus(WorkerStatus.BOOTING);
+                context.service.activation.boot();
+            }
+        },
+    });
 
     return context;
 };
-
-export default WorkerContext;

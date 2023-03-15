@@ -32,7 +32,9 @@ const createExtensionSetting = (id: string, setting: browser.Types.Setting): Ext
     };
 };
 
-export const createPrivacySettingsService = () => {
+export type SettingsService = ReturnType<typeof createSettingsService>;
+
+export const createSettingsService = () => {
     const settings = [createExtensionSetting('passwordSavingEnabled', browser.privacy.services.passwordSavingEnabled)];
 
     const init = async () => {

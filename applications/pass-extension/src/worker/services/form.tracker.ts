@@ -1,14 +1,13 @@
-import {
+import type {
     CommittedFormSubmission,
     FormIdentifier,
     FormSubmission,
-    FormSubmissionStatus,
     Maybe,
     Realm,
     TabId,
     WithAutoSavePromptOptions,
-    WorkerMessageType,
 } from '@proton/pass/types';
+import { FormSubmissionStatus, WorkerMessageType } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
 import { merge } from '@proton/pass/utils/object';
 import { parseSender } from '@proton/pass/utils/url';
@@ -29,7 +28,7 @@ const isPartialFormData = ({ type, data }: Pick<FormSubmission, 'data' | 'type'>
 
 const getFormId = (tabId: TabId, realm: Realm): FormIdentifier => `${tabId}:${realm}`;
 
-export const createFormSubmissionTracker = () => {
+export const createFormTrackerService = () => {
     const submissions: Map<FormIdentifier, FormSubmission> = new Map();
 
     const get = (tabId: TabId, realm: string): FormSubmission | undefined => {
@@ -145,7 +144,7 @@ export const createFormSubmissionTracker = () => {
             const committed = commit(tabId, realm, reason);
 
             if (committed !== undefined) {
-                const promptOptions = context.autosave.resolvePromptOptions(committed);
+                const promptOptions = context.service.autosave.resolvePromptOptions(committed);
 
                 return promptOptions.shouldPrompt
                     ? { committed: merge(committed, { autosave: promptOptions }) }
@@ -171,7 +170,7 @@ export const createFormSubmissionTracker = () => {
                     submission !== undefined
                         ? (merge(submission, {
                               autosave: isCommitted
-                                  ? context.autosave.resolvePromptOptions(submission)
+                                  ? context.service.autosave.resolvePromptOptions(submission)
                                   : { shouldPrompt: false },
                           }) as WithAutoSavePromptOptions<FormSubmission>)
                         : submission,
@@ -187,3 +186,5 @@ export const createFormSubmissionTracker = () => {
 
     return { get, stage, stash, commit, clear };
 };
+
+export type FormTrackerService = ReturnType<typeof createFormTrackerService>;
