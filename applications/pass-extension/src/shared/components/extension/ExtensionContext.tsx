@@ -1,10 +1,10 @@
 import { WorkerState, WorkerStatus } from '@proton/pass/types';
 
-export type ExtensionAppContextValue = {
+export interface ExtensionAppContextValue {
     state: WorkerState;
     ready: boolean;
     logout: (options: { soft: boolean }) => void;
-};
+}
 
 export const INITIAL_WORKER_STATE: WorkerState = {
     loggedIn: false,

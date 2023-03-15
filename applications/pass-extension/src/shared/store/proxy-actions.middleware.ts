@@ -1,8 +1,9 @@
 import { Middleware } from 'redux';
 
-import { MessageWithSenderFactory, sendMessage } from '@proton/pass/extension/message';
+import { resolveMessageFactory, sendMessage } from '@proton/pass/extension/message';
 import { isSynchronous } from '@proton/pass/store/actions/creators/utils';
-import { WorkerMessageType, WorkerMessageWithSender } from '@proton/pass/types';
+import { acceptActionWithReceiver } from '@proton/pass/store/actions/with-receiver';
+import { ExtensionEndpoint, TabId, WorkerMessageType, WorkerMessageWithSender } from '@proton/pass/types';
 import noop from '@proton/utils/noop';
 
 import { ExtensionContext } from '../extension';
@@ -15,13 +16,22 @@ import { ExtensionContext } from '../extension';
  * It also listens for actions being emitted by the worker to re-integrate into
  * its local pipeline.
  */
-export const proxyActionsMiddleware =
-    (messageFactory: MessageWithSenderFactory): Middleware =>
-    () =>
-    (next) => {
+
+type ProxyActionsMiddlewareOptions = {
+    endpoint: ExtensionEndpoint;
+    tabId: TabId;
+};
+
+export const proxyActionsMiddleware = ({ endpoint, tabId }: ProxyActionsMiddlewareOptions): Middleware => {
+    const messageFactory = resolveMessageFactory(endpoint);
+
+    return () => (next) => {
         ExtensionContext.get().port.onMessage.addListener((message: WorkerMessageWithSender) => {
             if (message.sender === 'background' && message.type === WorkerMessageType.STORE_ACTION) {
-                if (!isSynchronous(message.payload.action)) {
+                const unprocessedAction = !isSynchronous(message.payload.action);
+                const acceptAction = acceptActionWithReceiver(message.payload.action, endpoint, tabId);
+
+                if (unprocessedAction && acceptAction) {
                     next(message.payload.action);
                 }
             }
@@ -35,3 +45,4 @@ export const proxyActionsMiddleware =
             sendMessage(messageFactory({ type: WorkerMessageType.STORE_ACTION, payload: { action } })).catch(noop);
         };
     };
+};
