@@ -3,7 +3,7 @@ import { Reducer, combineReducers } from 'redux';
 import { or } from '@proton/pass/utils/fp';
 import { merge } from '@proton/pass/utils/object';
 
-import { bootSuccess, signoutSuccess, wakeupSuccess } from '../actions';
+import { signoutSuccess, stateSync } from '../actions';
 import { State } from '../types';
 import addresses from './addresses';
 import alias from './alias';
@@ -46,8 +46,7 @@ const wrappedRootReducer: Reducer<State> = (state, action) => {
      * environments
      */
     return rootReducer(
-        (() =>
-            or(bootSuccess.match, wakeupSuccess.match)(action) ? merge(state ?? {}, action.payload.state) : state)(),
+        (() => (or(stateSync.match)(action) ? merge(state ?? {}, action.payload.state) : state))(),
         action
     );
 };
