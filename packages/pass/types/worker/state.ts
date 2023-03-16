@@ -5,6 +5,7 @@ export enum WorkerStatus {
     AUTHORIZING = 'AUTHORIZING' /* worker is forking a session to login */,
     UNAUTHORIZED = 'UNAUTHORIZED' /* worker is pending login */,
     AUTHORIZED = 'AUTHORIZED' /* user is logged in */,
+    LOCKED = 'LOCKED' /* worker is locked (session may not) */,
     RESUMING = 'RESUMING' /* worker is trying to resume session */,
     RESUMING_FAILED = 'RESUMING_FAILED' /* session resuming failed */,
     BOOTING = 'BOOTING' /* worker is currently in the boot sequence */,
