@@ -30,9 +30,9 @@ const decrypt = async <T extends object>(options: {
 };
 
 const getCachedState = async (): Promise<Maybe<ExtensionCache>> => {
-    const encryptedDataString = await browserLocalStorage.getItem<string>('state');
-    const encryptedSnapshot = await browserLocalStorage.getItem<string>('snapshot');
-    const cacheSalt = await browserLocalStorage.getItem<string>('salt');
+    const encryptedDataString = await browserLocalStorage.getItem('state');
+    const encryptedSnapshot = await browserLocalStorage.getItem('snapshot');
+    const cacheSalt = await browserLocalStorage.getItem('salt');
 
     if (cacheSalt) {
         const cacheKey = await getCacheEncryptionKey(stringToUint8Array(cacheSalt));

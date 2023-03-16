@@ -28,7 +28,7 @@ export const setLastRefreshDate = async (UID: string, now: Date): Promise<void> 
 };
 
 export const getLastRefreshDate = async (UID: string): Promise<Maybe<Date>> => {
-    const oldString = await browserLocalStorage.getItem<string>(getRefreshKey(UID));
+    const oldString = await browserLocalStorage.getItem<Record<string, string>>(getRefreshKey(UID));
     const parsed = Number.parseInt(oldString ?? '', 10);
     const date = new Date(parsed);
     return Number.isNaN(+date) ? undefined : date;

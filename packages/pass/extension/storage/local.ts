@@ -1,19 +1,22 @@
 import browser from 'webextension-polyfill';
 
-import { Storage, StorageData } from './types';
+import type { Storage, StorageData } from './types';
 
-const getItems = <T extends StorageData>(keys: string[]) => browser.storage.local.get(keys) as Promise<Partial<T>>;
+const getItems = async <T extends StorageData>(keys: (keyof T)[]) =>
+    browser.storage.local.get(keys) as Promise<Partial<T>>;
 
-const getItem = async <T extends any>(key: string): Promise<T | null> =>
-    (await getItems<Record<string, T>>([key]))?.[key] ?? null;
+const getItem = async <T extends StorageData>(key: keyof T): Promise<T[typeof key] | null> =>
+    (await getItems<T>([key]))?.[key] ?? null;
 
-const setItems = (items: any): Promise<void> => browser.storage.local.set(items);
+const setItems = async <T extends StorageData>(items: T): Promise<void> => browser.storage.local.set(items);
 
-const setItem = (key: string, value: any): Promise<void> => setItems({ [key]: value });
+const setItem = async <T extends StorageData>(key: keyof T, value: T[typeof key]): Promise<void> =>
+    setItems({ [key]: value });
 
-const removeItems = (keys: string[]): Promise<void> => browser.storage.local.remove(keys);
+const removeItems = async <T extends StorageData>(keys: (keyof T)[]): Promise<void> =>
+    browser.storage.local.remove(keys as string[]);
 
-const removeItem = (key: string): Promise<void> => removeItems([key]);
+const removeItem = async <T extends StorageData>(key: keyof T): Promise<void> => removeItems([key]);
 
 const clear = async (): Promise<void> => browser.storage.local.clear();
 

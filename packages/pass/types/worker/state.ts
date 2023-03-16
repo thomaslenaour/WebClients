@@ -17,3 +17,17 @@ export type WorkerState = {
     loggedIn: boolean;
     UID: Maybe<string>;
 };
+
+export type ExtensionSessionData = {
+    UID?: string;
+    AccessToken?: string;
+    RefreshToken?: string;
+    keyPassword?: string;
+};
+
+export type ExtensionLocalData = {
+    state?: string;
+    snapshot?: string;
+    salt?: string;
+    ps?: string;
+};
