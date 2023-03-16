@@ -1,6 +1,13 @@
 import { c } from 'ttag';
 
-import { consumeFork, exposeAuthStore, getPersistedSession, persistSession, resumeSession } from '@proton/pass/auth';
+import {
+    consumeFork,
+    exposeAuthStore,
+    getPersistedSession,
+    isSessionLocked,
+    persistSession,
+    resumeSession,
+} from '@proton/pass/auth';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
 import { notification, signout } from '@proton/pass/store';
 import type { Api, WorkerForkMessage, WorkerMessageResponse } from '@proton/pass/types';
@@ -38,9 +45,16 @@ type CreateAuthServiceOptions = {
     api: Api;
     onAuthorized?: () => void;
     onUnauthorized?: () => void;
+    onSessionLocked?: () => void;
+    onSessionUnlocked?: () => void;
 };
 
-export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateAuthServiceOptions): AuthService => {
+export const createAuthService = ({
+    api,
+    onAuthorized,
+    onUnauthorized,
+    onSessionLocked,
+}: CreateAuthServiceOptions): AuthService => {
     /* safe-guards multiple auth inits */
     let pendingInit: Promise<boolean> | null = null;
 
@@ -150,9 +164,16 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
                 }
             });
 
+            if (await isSessionLocked()) {
+                logger.info(`[Worker::Auth] Session locked`);
+                context.setStatus(WorkerStatus.LOCKED);
+                onSessionLocked?.();
+                return false;
+            }
+
+            logger.info(`[Worker::Auth] Session unlocked - user authorized`);
             context.setStatus(WorkerStatus.AUTHORIZED);
             onAuthorized?.();
-
             return true;
         },
         logout: () => {
@@ -198,8 +219,7 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
 
                     if (session !== undefined) {
                         logger.info(`[Worker] Session successfuly resumed`);
-                        await authService.login(session);
-                        return true;
+                        return await authService.login(session);
                     }
                 } catch (e) {
                     context.setStatus(WorkerStatus.RESUMING_FAILED);
