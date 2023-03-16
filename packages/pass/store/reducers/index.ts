@@ -10,6 +10,7 @@ import alias from './alias';
 import events from './events';
 import items from './items';
 import request from './request';
+import settings from './settings';
 import shares from './shares';
 import user from './user';
 
@@ -27,6 +28,7 @@ export const reducerMap = {
     events,
     items,
     request,
+    settings,
     shares,
     user,
 };
