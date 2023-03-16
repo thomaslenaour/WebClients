@@ -14,6 +14,9 @@ import itemRestore from './item-restore.saga';
 import itemTrash from './item-trash.saga';
 import itemsRequest from './items-request.saga';
 import notification from './notification.saga';
+import sessionLockDisable from './session-lock-disable';
+import sessionLockEnable from './session-lock-enable';
+import sessionUnlock from './session-unlock';
 import signout from './signout.saga';
 import sync from './sync.saga';
 import trashDelete from './trash-delete.saga';
@@ -41,6 +44,9 @@ export function* workerRootSaga(options: WorkerRootSagaOptions) {
             trashDelete,
             trashRestore,
             notification,
+            sessionLockDisable,
+            sessionLockEnable,
+            sessionUnlock,
             signout,
             sync,
             vaultCreation,
