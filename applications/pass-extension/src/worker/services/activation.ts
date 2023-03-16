@@ -1,12 +1,88 @@
-import { boot, wakeup } from '@proton/pass/store/actions';
-import type { WorkerMessageResponse, WorkerMessageWithSender, WorkerWakeUpMessage } from '@proton/pass/types';
-import { WorkerMessageType } from '@proton/pass/types';
+import browser, { type Runtime } from 'webextension-polyfill';
 
+import { getPersistedSession } from '@proton/pass/auth';
+import { browserLocalStorage, browserSessionStorage } from '@proton/pass/extension/storage';
+import { boot, wakeup } from '@proton/pass/store/actions';
+import {
+    WorkerInitMessage,
+    WorkerMessageResponse,
+    WorkerMessageWithSender,
+    WorkerStatus,
+    WorkerWakeUpMessage,
+} from '@proton/pass/types';
+import { WorkerMessageType } from '@proton/pass/types';
+import { getErrorMessage } from '@proton/pass/utils/errors';
+import { logger } from '@proton/pass/utils/logger';
+import { workerCanBoot } from '@proton/pass/utils/worker';
+
+import { ENV, RESUME_FALLBACK } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
 import WorkerContext from '../context';
 import store from '../store';
 
 export const createActivationService = () => {
+    /**
+     * Safety-net around worker boot-sequence :
+     * Ensures no on-going boot.
+     */
+    const handleBoot = () => {
+        const ctx = WorkerContext.get();
+
+        if (workerCanBoot(ctx.status)) {
+            ctx.setStatus(WorkerStatus.BOOTING);
+            store.dispatch(boot({}));
+        }
+    };
+    /**
+     * Try recovering the session when browser starts up
+     * if any session was locally persisted
+     * if not in production - use sync.html session to workaround the
+     * the SSL handshake (net:ERR_SSL_CLIENT_AUTH_CERT_NEEDED)
+     */
+    const handleStartup = async () => {
+        const ctx = WorkerContext.get();
+
+        const { loggedIn } = (await ctx.init({ force: true })).getState();
+
+        if (ENV === 'development' && RESUME_FALLBACK) {
+            if (!loggedIn && (await getPersistedSession())) {
+                const url = browser.runtime.getURL('/onboarding.html#/resume');
+                return browser.windows.create({ url, type: 'popup', height: 600, width: 540 });
+            }
+        }
+    };
+
+    /**
+     * On extension update :
+     * - Re-init so as to resume session as soon as possible
+     * - In production : clear the state/snapshot cache in
+     * order to gracefully handle any possible store structure
+     * changes
+     */
+    const handleInstall = async (details: Runtime.OnInstalledDetailsType) => {
+        const ctx = WorkerContext.get();
+
+        if (details.reason === 'update') {
+            if (ENV === 'production') {
+                await browserLocalStorage.removeItems(['state', 'snapshot']);
+            }
+
+            return ctx.init({ force: true });
+        }
+
+        if (details.reason === 'install') {
+            try {
+                await Promise.all([browserLocalStorage.clear(), browserSessionStorage.clear()]);
+                const url = browser.runtime.getURL('/onboarding.html#/success');
+                await browser.tabs.create({ url });
+            } catch (error: any) {
+                logger.warn(`[Worker] requesting fork failed: ${getErrorMessage(error)}`);
+            }
+
+            await ctx.service.settings.init();
+        }
+    };
+
     /**
      * When waking up from the pop-up (or page) we need to trigger the background wakeup
      * saga while immediately resolving the worker state so the UI can respond to state
@@ -43,10 +119,17 @@ export const createActivationService = () => {
         });
     };
 
+    const handleInit = async (message: WorkerMessageWithSender<WorkerInitMessage>) =>
+        (await WorkerContext.get().init({ sync: message.payload.sync })).getState();
+
     WorkerMessageBroker.registerMessage(WorkerMessageType.WORKER_WAKEUP, handleWakeup);
+    WorkerMessageBroker.registerMessage(WorkerMessageType.WORKER_INIT, handleInit);
+    WorkerMessageBroker.registerMessage(WorkerMessageType.RESOLVE_TAB, (_, { tab }) => ({ tab }));
 
     return {
-        boot: () => store.dispatch(boot({})),
+        boot: handleBoot,
+        onInstall: handleInstall,
+        onStartup: handleStartup,
     };
 };
 
