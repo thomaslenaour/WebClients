@@ -17,16 +17,20 @@ import browser from 'webextension-polyfill';
 
 import noop from '@proton/utils/noop';
 
-import { Storage, StorageData } from './types';
+import type { Storage, StorageData } from './types';
 
 const MEMORY_STORAGE_EVENT = 'MEMORY_STORAGE_EVENT';
 
-type StorageAction = { type: typeof MEMORY_STORAGE_EVENT } & (
+type StorageAction<T extends StorageData = StorageData> =
     | { action: 'get' }
-    | { action: 'set'; items: Record<string, any> }
-    | { action: 'remove'; items: string[] }
-    | { action: 'clear' }
-);
+    | { action: 'set'; items: Partial<T> }
+    | { action: 'remove'; keys: (keyof T)[] }
+    | { action: 'clear' };
+
+type StorageMessage<T extends StorageData = StorageData> = { type: typeof MEMORY_STORAGE_EVENT } & StorageAction<T>;
+
+const isStorageMessage = <T extends StorageData>(message: any): message is StorageMessage<T> =>
+    message.type === MEMORY_STORAGE_EVENT;
 
 const isBackground = async (): Promise<boolean> => {
     try {
@@ -36,54 +40,53 @@ const isBackground = async (): Promise<boolean> => {
     }
 };
 
-const isStorageAction = (message: any): message is StorageAction => message.type === MEMORY_STORAGE_EVENT;
+export const createMemoryStorage = (): Storage => {
+    const context: { store: any } = { store: {} };
 
-const createMemoryStorage = (): Storage => {
-    const context: { store: StorageData } = { store: {} };
-
-    const applyStorageAction = async <T extends Omit<StorageAction, 'type'>>(
-        action: T
-    ): Promise<T['action'] extends 'get' ? StorageData : void> =>
+    const applyStorageAction = async <T extends StorageData, Action extends StorageAction<T>['action']>(
+        action: Extract<StorageAction<T>, { action: Action }>
+    ): Promise<Action extends 'get' ? T : void> =>
         browser.runtime.sendMessage(browser.runtime.id, { type: MEMORY_STORAGE_EVENT, ...action });
 
-    const resolveStorage = async (): Promise<StorageData> =>
-        (await isBackground()) ? context.store : applyStorageAction({ action: 'get' });
+    const resolveStorage = async <T extends StorageData>(): Promise<T> =>
+        (await isBackground()) ? (context.store as T) : applyStorageAction<T, 'get'>({ action: 'get' });
 
-    const getItems = async <T extends StorageData>(keys: string[]): Promise<Partial<T>> => {
+    const getItems = async <T extends StorageData>(keys: (keyof T)[]): Promise<Partial<T>> => {
         const store = await resolveStorage();
         return keys.reduce(
             (result, key) => ({
                 ...result,
-                ...(store?.[key] !== undefined ? { [key]: store?.[key] } : {}),
+                ...((store as T)?.[key] !== undefined ? { [key]: (store as T)?.[key] } : {}),
             }),
             {}
         );
     };
 
-    const getItem = async <T extends any>(key: string): Promise<T | null> => {
+    const getItem = async <T extends StorageData>(key: keyof T): Promise<T[typeof key] | null> => {
         const store = await resolveStorage();
-        return Promise.resolve(store?.[key] ?? null);
+        return Promise.resolve((store as T)?.[key] ?? null);
     };
 
-    const setItems = async (items: Record<string, any>): Promise<void> => {
+    const setItems = async <T extends StorageData>(items: Partial<T>): Promise<void> => {
         if (!(await isBackground())) {
-            return applyStorageAction({ action: 'set', items });
+            return applyStorageAction<T, 'set'>({ action: 'set', items });
         }
 
         context.store = { ...context.store, ...items };
     };
 
-    const setItem = async (key: string, value: any): Promise<void> => setItems({ [key]: value });
+    const setItem = async <T extends StorageData>(key: keyof T, value: T[typeof key]): Promise<void> =>
+        setItems({ [key]: value } as Partial<T>);
 
-    const removeItems = async (items: string[]): Promise<void> => {
+    const removeItems = async <T extends StorageData>(keys: (keyof T)[]): Promise<void> => {
         if (!(await isBackground())) {
-            return applyStorageAction({ action: 'remove', items });
+            return applyStorageAction<T, 'remove'>({ action: 'remove', keys });
         }
 
-        items.forEach((key) => delete context.store[key]);
+        keys.forEach((key) => delete context.store[key]);
     };
 
-    const removeItem = async (key: string): Promise<void> => removeItems([key]);
+    const removeItem = async <T extends StorageData>(key: keyof T): Promise<void> => removeItems([key]);
 
     const clear = async (): Promise<void> => {
         if (!(await isBackground())) {
@@ -101,14 +104,14 @@ const createMemoryStorage = (): Storage => {
         .then((inBackgroundPage) => {
             if (inBackgroundPage) {
                 browser.runtime.onMessage.addListener((message): any => {
-                    if (isStorageAction(message)) {
+                    if (isStorageMessage(message)) {
                         switch (message.action) {
                             case 'get':
                                 return Promise.resolve(context.store);
                             case 'set':
                                 return setItems(message.items);
                             case 'remove':
-                                return removeItems(message.items);
+                                return removeItems(message.keys as string[]);
                             case 'clear':
                                 return clear();
                         }
@@ -130,5 +133,3 @@ const createMemoryStorage = (): Storage => {
         clear,
     };
 };
-
-export default createMemoryStorage();

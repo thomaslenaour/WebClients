@@ -69,7 +69,7 @@ export const getDecryptedPersistedSessionBlob = async (
 };
 
 export const getPersistedSession = async (): Promise<ExtensionPersistedSession | undefined> => {
-    const persistedSession = await browserLocalStorage.getItem<string>(LOCAL_SESSION_KEY);
+    const persistedSession = await browserLocalStorage.getItem(LOCAL_SESSION_KEY);
 
     if (persistedSession) {
         try {

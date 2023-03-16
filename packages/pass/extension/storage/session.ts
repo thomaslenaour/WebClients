@@ -10,10 +10,10 @@
  * ⚠️ ⚠️ ⚠️
  */
 import { isFirefox } from '../browser/firefox';
-import memoryStorage from './memory';
-import { Storage, StorageData } from './types';
+import { createMemoryStorage } from './memory';
+import type { Storage, StorageData } from './types';
 
-const getItems = <T extends StorageData>(keys: string[]): Promise<Partial<T>> => {
+const getItems = <T extends StorageData>(keys: (keyof T)[]): Promise<Partial<T>> => {
     return new Promise((resolve, reject) => {
         chrome.storage.session.get(keys, (items: any) => {
             let err = chrome.runtime.lastError;
@@ -26,15 +26,15 @@ const getItems = <T extends StorageData>(keys: string[]): Promise<Partial<T>> =>
     });
 };
 
-export const getItem = async <T extends any>(key: string): Promise<T | null> => {
+export const getItem = async <T extends StorageData>(key: keyof T): Promise<T[typeof key] | null> => {
     try {
-        return (await getItems([key]))?.[key];
+        return (await getItems<T>([key]))?.[key] ?? null;
     } catch (_) {
         return null;
     }
 };
 
-const setItems = (items: Record<string, any>): Promise<void> => {
+const setItems = <T extends StorageData>(items: Partial<T>): Promise<void> => {
     return new Promise((resolve, reject) => {
         chrome.storage.session.set(items, () => {
             let err = chrome.runtime.lastError;
@@ -47,15 +47,15 @@ const setItems = (items: Record<string, any>): Promise<void> => {
     });
 };
 
-export const setItem = async (key: string, value: any): Promise<void> => {
+export const setItem = async <T extends StorageData>(key: keyof T, value: T[typeof key]): Promise<void> => {
     try {
         return await setItems({ [key]: value });
     } catch (_) {}
 };
 
-export const removeItems = async (keys: string[]): Promise<void> => {
+export const removeItems = async <T extends StorageData>(keys: (keyof T)[]): Promise<void> => {
     return new Promise((resolve, reject) => {
-        chrome.storage.session.remove(keys, () => {
+        chrome.storage.session.remove(keys as string[], () => {
             let err = chrome.runtime.lastError;
             if (err) {
                 reject(err);
@@ -66,7 +66,7 @@ export const removeItems = async (keys: string[]): Promise<void> => {
     });
 };
 
-const removeItem = async (key: string): Promise<void> => {
+const removeItem = async <T extends StorageData>(key: keyof T): Promise<void> => {
     try {
         return await removeItems([key]);
     } catch (_) {}
@@ -88,4 +88,4 @@ const chromeSessionStorage: Storage = {
     clear,
 };
 
-export default isFirefox() ? memoryStorage : chromeSessionStorage;
+export default isFirefox() ? createMemoryStorage() : chromeSessionStorage;
