@@ -4,7 +4,7 @@ import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { createSharedContext } from '@proton/pass/utils/context';
 import { invert, waitUntil } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
-import { workerBusy, workerCanBoot, workerLoggedOut, workerReady } from '@proton/pass/utils/worker';
+import { workerBusy, workerLoggedOut, workerReady } from '@proton/pass/utils/worker';
 import { setUID as setSentryUID } from '@proton/shared/lib/helpers/sentry';
 import noop from '@proton/utils/noop';
 
@@ -48,8 +48,6 @@ export interface ServiceWorkerContext {
     waitForReady: () => Promise<ServiceWorkerContext>;
     /* init the worker - or force re-init using sync|force parameters */
     init: (options: WorkerInitOptions) => Promise<ServiceWorkerContext>;
-    /* will start the boot sequence only if the worker states permits it */
-    boot: () => void;
 }
 
 const WorkerContext = createSharedContext<ServiceWorkerContext>('worker');
@@ -60,7 +58,7 @@ export const createWorkerContext = (options: { api: Api; status: WorkerStatus })
         api: options.api,
         onAuthorized: () => {
             const ctx = WorkerContext.get();
-            ctx.boot();
+            ctx.service.activation.boot();
             ctx.service.autofill.updateTabsBadgeCount().catch(noop);
             setSentryUID(auth.authStore.getUID());
         },
@@ -122,21 +120,13 @@ export const createWorkerContext = (options: { api: Api; status: WorkerStatus })
 
         async init({ sync, force }) {
             const shouldInit = Boolean((sync ?? !workerReady(context.status)) || force);
+            const shouldBoot = shouldInit && (await auth.init());
 
-            /* only re-trigger boot sequence when required
-            and if auth initialization succeeds */
-            if (shouldInit && (await auth.init())) {
-                context.boot();
+            if (shouldBoot) {
+                context.service.activation.boot();
             }
 
             return context;
-        },
-
-        boot() {
-            if (workerCanBoot(context.status)) {
-                context.setStatus(WorkerStatus.BOOTING);
-                context.service.activation.boot();
-            }
         },
     });
 
