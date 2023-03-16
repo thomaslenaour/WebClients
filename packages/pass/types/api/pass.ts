@@ -108,6 +108,18 @@ export type PendingShareKeyPromoteRequest = {
     Keys: EncryptedKeyWithRotation[];
 };
 
+export type UserSessionLockRequest = {
+    /* Lock code to attach to this session */
+    LockCode: string;
+    /* Number of seconds the session will stay unlocked */
+    UnlockedSecs: number;
+};
+
+export type UserSessionUnlockRequest = {
+    /* Lock code to attach to this session */
+    LockCode: string;
+};
+
 export type InviteCreateRequest = {
     /* List of keys encrypted for the other user's address key and signed with your address key */
     Keys: KeyRotationKeyPair[];
@@ -126,18 +138,6 @@ export type ShareUpdateRequest = {
     Permission?: number | null;
     /* Expiration time to set for this share */
     ExpireTime?: number | null;
-};
-
-export type UserSessionLockRequest = {
-    /* Lock code to attach to this session */
-    LockCode: string;
-    /* Number of seconds the session will stay unlocked */
-    UnlockedSecs: number;
-};
-
-export type UserSessionUnlockRequest = {
-    /* Lock code to attach to this session */
-    LockCode: string;
 };
 
 export type VaultCreateRequest = {
@@ -283,6 +283,11 @@ export type PassEventListResponse = {
     FullRefresh?: boolean;
 };
 
+export type UserSessionLockResponse = {
+    /* Storage token to encrypt the local storage */
+    StorageToken: string;
+};
+
 export type SharesGetResponse = {
     /* List of shares */
     Shares: ShareGetResponse[];
@@ -340,11 +345,6 @@ export type ActiveShareGetResponse = {
     ExpireTime?: number | null;
     /* Creation time of this share */
     CreateTime: number;
-};
-
-export type UserSessionLockResponse = {
-    /* Storage token to encrypt the local storage */
-    StorageToken: string;
 };
 
 export type ItemCreateRequest2 = {};
@@ -517,15 +517,23 @@ export type ApiResponse<Path extends string, Method extends ApiMethod> = Path ex
     ? Method extends `post`
         ? { Code?: ResponseCodeSuccess; Share?: ShareGetResponse }
         : never
-    : Path extends `pass/v1/user/session/unlock`
+    : Path extends `pass/v1/user/session/lock/unlock`
     ? Method extends `post`
-        ? { Code?: ResponseCodeSuccess; ShareKeys?: UserSessionLockResponse }
+        ? { Code?: ResponseCodeSuccess; LockData?: UserSessionLockResponse }
+        : never
+    : Path extends `pass/v1/user/session/lock/force_lock`
+    ? Method extends `post`
+        ? { Code?: ResponseCodeSuccess }
+        : never
+    : Path extends `pass/v1/user/session/lock/check`
+    ? Method extends `get`
+        ? { Code?: ResponseCodeSuccess }
         : never
     : Path extends `pass/v1/user/session/lock`
     ? Method extends `post`
-        ? { Code?: ResponseCodeSuccess; ShareKeys?: UserSessionLockResponse }
+        ? { Code?: ResponseCodeSuccess; LockData?: UserSessionLockResponse }
         : Method extends `delete`
-        ? { Code?: ResponseCodeSuccess; ShareKeys?: UserSessionLockResponse }
+        ? { Code?: ResponseCodeSuccess; LockData?: UserSessionLockResponse }
         : never
     : Path extends `pass/v1/user/access`
     ? Method extends `post`
@@ -680,9 +688,17 @@ export type ApiRequest<Path extends string, Method extends ApiMethod> = Path ext
     ? Method extends `post`
         ? VaultCreateRequest
         : never
-    : Path extends `pass/v1/user/session/unlock`
+    : Path extends `pass/v1/user/session/lock/unlock`
     ? Method extends `post`
         ? UserSessionUnlockRequest
+        : never
+    : Path extends `pass/v1/user/session/lock/force_lock`
+    ? Method extends `post`
+        ? never
+        : never
+    : Path extends `pass/v1/user/session/lock/check`
+    ? Method extends `get`
+        ? never
         : never
     : Path extends `pass/v1/user/session/lock`
     ? Method extends `post`
