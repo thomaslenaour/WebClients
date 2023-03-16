@@ -5,6 +5,7 @@ import { browserSessionStorage } from '@proton/pass/extension/storage';
 import { notification, signout } from '@proton/pass/store';
 import type { Api, WorkerForkMessage, WorkerMessageResponse } from '@proton/pass/types';
 import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
+import { withPayload } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
 import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 import createAuthenticationStore, {
@@ -220,11 +221,8 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
         },
     };
 
-    WorkerMessageBroker.registerMessage(WorkerMessageType.FORK, (message) => authService.consumeFork(message.payload));
-
-    WorkerMessageBroker.registerMessage(WorkerMessageType.RESUME_SESSION_SUCCESS, (message) =>
-        authService.login(message.payload)
-    );
+    WorkerMessageBroker.registerMessage(WorkerMessageType.FORK, withPayload(authService.consumeFork));
+    WorkerMessageBroker.registerMessage(WorkerMessageType.RESUME_SESSION_SUCCESS, withPayload(authService.login));
 
     return authService;
 };
