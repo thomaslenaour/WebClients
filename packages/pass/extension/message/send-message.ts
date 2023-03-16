@@ -74,21 +74,6 @@ sendMessage.onSuccess = async <T extends WorkerMessageWithSender>(
         }
     });
 
-/**
- * Broadcasts a single message to every tab running
- * the content-script and to the pop-up page :
- * Tabs require a dedicated sendMessage call per tab
- * to ensure multi-channel broadcasting.
- */
-sendMessage.broadcast = async <T extends WorkerMessageWithSender>(message: T) => {
-    await Promise.all([
-        sendMessage(message),
-        browser.tabs
-            .query({ active: true })
-            .then((tabs) => Promise.all(tabs.map((tab) => tab.id && browser.tabs.sendMessage(tab.id, message)))),
-    ]);
-};
-
 export type MessageWithSenderFactory = <T extends WorkerMessage>(message: T) => WorkerMessageWithSender<T>;
 
 export const backgroundMessage: MessageWithSenderFactory = (message) => ({
