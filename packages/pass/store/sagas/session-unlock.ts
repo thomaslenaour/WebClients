@@ -10,9 +10,9 @@ function* unlockSessionWorker(
     action: ReturnType<typeof sessionUnlockIntent>
 ) {
     try {
-        yield unlockSession(action.payload.pin);
-        yield put(sessionUnlockSuccess());
-        onSessionUnlocked?.();
+        const storageToken: string = yield unlockSession(action.payload.pin);
+        yield put(sessionUnlockSuccess({ storageToken }));
+        onSessionUnlocked?.(storageToken);
     } catch (e) {
         yield put(sessionUnlockFailure(e));
     }

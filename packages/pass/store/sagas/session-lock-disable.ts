@@ -10,9 +10,9 @@ function* disableSessionLockWorker(
     action: ReturnType<typeof sessionLockDisableIntent>
 ) {
     try {
-        yield deleteSessionLock(action.payload.pin);
+        const storageToken: string = yield deleteSessionLock(action.payload.pin);
         yield put(sessionLockDisableSuccess());
-        onSessionUnlocked?.();
+        onSessionUnlocked?.(storageToken);
     } catch (e) {
         yield put(sessionLockDisableFailure(e));
     }
