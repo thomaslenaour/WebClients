@@ -8,6 +8,7 @@ import { getDateHeader } from '@proton/shared/lib/fetch/helpers';
 import { wait } from '@proton/shared/lib/helpers/promise';
 
 import { ApiCallFn, ApiContext, ApiOptions } from '../types/api';
+import { LockedSessionError } from './errors';
 import { RefreshHandler } from './refresh';
 
 type ApiHandlersOptions = {
@@ -31,7 +32,8 @@ export const withApiHandlers = ({ apiContext, refreshHandler }: ApiHandlersOptio
         } = options || {};
 
         const next = async (attempts: number, maxAttempts?: number): Promise<any> => {
-            if (apiContext.status.invalidated) throw InactiveSessionError();
+            if (apiContext.status.sessionLocked) throw LockedSessionError();
+            if (apiContext.status.sessionInactive) throw InactiveSessionError();
             if (apiContext.status.appVersionBad) throw AppVersionBadError();
 
             try {
@@ -61,6 +63,10 @@ export const withApiHandlers = ({ apiContext, refreshHandler }: ApiHandlersOptio
                 if (name === 'TimeoutError') {
                     if (attempts > retriesOnTimeout) throw error;
                     return next(attempts + 1, retriesOnTimeout);
+                }
+
+                if (code === 300008 /* Inactive extension session */) {
+                    throw LockedSessionError();
                 }
 
                 if (

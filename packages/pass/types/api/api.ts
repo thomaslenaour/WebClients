@@ -1,9 +1,9 @@
-import { Subscriber } from '@proton/pass/utils/pubsub';
-import { RefreshSessionResponse } from '@proton/shared/lib/authentication/interface';
-import { ProtonConfig } from '@proton/shared/lib/interfaces';
+import type { Subscriber } from '@proton/pass/utils/pubsub';
+import type { RefreshSessionResponse } from '@proton/shared/lib/authentication/interface';
+import type { ProtonConfig } from '@proton/shared/lib/interfaces';
 
-import { Maybe } from '../utils';
-import { ApiResponse } from './pass';
+import type { Maybe } from '../utils';
+import type { ApiResponse } from './pass';
 
 export type ApiCreateOptions = {
     config: ProtonConfig;
@@ -24,7 +24,8 @@ export type ApiStatus = {
     offline: boolean;
     unreachable: boolean;
     appVersionBad: boolean;
-    invalidated: boolean;
+    sessionInactive: boolean;
+    sessionLocked: boolean;
 };
 
 export type ApiContext = {
@@ -89,4 +90,6 @@ export type ApiResponseMapper<T extends any = void, U extends string = string, M
     (response: T extends void ? ApiResponse<`${U}`, `${M}`> : T) => any
 >;
 
-export type ApiSubscribtionEvent = { type: 'invalidated' } | { type: 'error'; error: string };
+export type ApiSubscribtionEvent =
+    | { type: 'session'; status: 'inactive' | 'locked' }
+    | { type: 'error'; error: string };
