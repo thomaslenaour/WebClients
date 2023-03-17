@@ -54,6 +54,10 @@ sagaMiddleware.run(
             ctx.service.auth.logout();
         }),
 
+        onSessionLocked: withContext((ctx) => {
+            ctx.service.auth.lock();
+        }),
+
         onSessionUnlocked: withContext(async (ctx) => {
             ctx.service.auth.unlock();
             await ctx.init({ force: true });
