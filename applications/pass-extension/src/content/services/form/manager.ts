@@ -122,7 +122,9 @@ export const createFormManager = () => {
     };
 
     const detect = (reason: string) => {
-        logger.info(`[FormTracker]: Running detection for "${reason}" on ${ctx.mainFrame ? 'main_frame' : 'iframe'}`);
+        logger.info(
+            `[FormTracker::Detector]: Running detection for "${reason}" on ${ctx.mainFrame ? 'main_frame' : 'iframe'}`
+        );
         garbagecollect();
         trackForms(runDetection(document));
     };

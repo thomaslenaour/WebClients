@@ -124,7 +124,7 @@ export const createContentScriptService = () => {
                 },
             });
         } catch (e) {
-            logger.warn(e);
+            logger.warn('[ContentScript::Setup]', e);
         }
     };
 

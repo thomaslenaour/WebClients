@@ -58,7 +58,7 @@ export const createCacheProxyService = () => {
         const response = api<Response>({ url: url.toString(), method: 'get', output: 'raw' })
             .then((res) => {
                 logger.debug('[CacheProxy] Caching succesful network response', res.url);
-                apiProxyCache.put(url, res.clone()).catch(logger.warn);
+                apiProxyCache.put(url, res.clone()).catch((e) => logger.warn('[Cache::Proxy]', e));
 
                 return res;
             })
@@ -83,7 +83,7 @@ export const createCacheProxyService = () => {
                             'Cache-Control': `max-age=${API_IMAGE_FALLBACK_MAX_AGE}`,
                         },
                     });
-                    apiProxyCache.put(url, res.clone()).catch(logger.warn);
+                    apiProxyCache.put(url, res.clone()).catch((e) => logger.warn('[CacheProxy]', e));
 
                     return res;
                 }

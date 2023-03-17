@@ -30,7 +30,7 @@ export const handleForkFallback = () => {
                     );
                 }
             } catch (e) {
-                logger.warn(e);
+                logger.warn('[ContentScript::Fork]', e);
             }
         });
     }

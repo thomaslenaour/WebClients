@@ -18,7 +18,7 @@ import { SyncType, SynchronizationResult, synchronize } from './workers/sync';
 function* bootWorker({ onBoot }: WorkerRootSagaOptions) {
     try {
         const cache: Maybe<ExtensionCache> = yield getCachedState();
-        logger.info(`[Worker] ${cache !== undefined ? 'Booting from cache' : 'Cache not found during boot'}`);
+        logger.info(`[Saga::Boot] ${cache !== undefined ? 'Booting from cache' : 'Cache not found during boot'}`);
 
         const state = cache?.state ?? ((yield select()) as State);
 
@@ -46,7 +46,7 @@ function* bootWorker({ onBoot }: WorkerRootSagaOptions) {
 
         onBoot?.({ ok: true });
     } catch (error) {
-        logger.warn(error);
+        logger.warn('[Saga::Boot]', error);
         yield put(bootFailure(error));
 
         onBoot?.({ ok: false });

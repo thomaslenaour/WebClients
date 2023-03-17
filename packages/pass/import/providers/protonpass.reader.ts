@@ -64,7 +64,7 @@ export const readProtonPassData = async (payload: ProtonPassReaderPayload): Prom
             ),
         }));
     } catch (e) {
-        logger.warn(e);
+        logger.warn('[Importer::Proton]', e);
         throw new Error(c('Error').t`File could not be parsed`);
     }
 };

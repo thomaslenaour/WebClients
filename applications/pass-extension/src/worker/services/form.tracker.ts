@@ -180,12 +180,13 @@ export const createFormTrackerService = () => {
                             : submission,
                 };
             }
-            throw new Error('Cannot request submission while logged out');
+
+            return {};
         })
     );
 
     const clear = () => {
-        logger.info(`[FormTracker::clear]: removing every submission`);
+        logger.info(`[FormTracker::Clear]: removing every submission`);
         submissions.clear();
     };
 

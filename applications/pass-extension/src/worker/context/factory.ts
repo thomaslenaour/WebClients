@@ -66,7 +66,7 @@ export const createWorkerContext = (options: { api: Api; status: WorkerStatus })
         }),
 
         setStatus(status: WorkerStatus) {
-            logger.info(`[Worker] Status update : ${context.status} -> ${status}`);
+            logger.info(`[Worker::Context] Status update : ${context.status} -> ${status}`);
             context.status = status;
 
             if (workerLoggedOut(status)) {

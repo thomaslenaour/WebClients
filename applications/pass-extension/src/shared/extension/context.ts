@@ -38,10 +38,10 @@ export const setupExtensionContext = async (options: ExtensionContextOptions): P
                 subdomain,
             });
 
-            logger.info('[ExtensionContext] tabId resolved & port opened');
+            logger.info('[Context::Extension] tabId resolved & port opened');
 
             ctx.port.onDisconnect.addListener(async () => {
-                logger.info('[ExtensionContext] port disconnected - reconnecting');
+                logger.info('[Context::Extension] port disconnected - reconnecting');
                 onDisconnect?.(ExtensionContext.get());
                 onContextChange?.(await setupExtensionContext(options));
             });
@@ -49,9 +49,9 @@ export const setupExtensionContext = async (options: ExtensionContextOptions): P
             return ctx;
         }
 
-        throw new Error('[ExtensionContext] Invalid runtime');
+        throw new Error('Invalid runtime');
     } catch (e) {
-        logger.warn(e);
-        throw new Error('[ExtensionContext] Initalization failed');
+        logger.warn('[Context::Extension]', e);
+        throw new Error('Initalization failed');
     }
 };

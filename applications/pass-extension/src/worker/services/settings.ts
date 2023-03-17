@@ -25,7 +25,7 @@ const createExtensionSetting = (id: string, setting: browser.Types.Setting): Ext
                     await setting.set({ value });
                 }
             } catch (e) {
-                logger.warn(e);
+                logger.warn(`[Settings::${id}]`, e);
             }
         },
         get: async () => (await setting.get({})).value,

@@ -89,7 +89,7 @@ function* importWorker(
                     }
                 }
             } catch (e) {
-                logger.warn(e);
+                logger.warn('[Saga::Import]', e);
                 yield put(
                     notification({
                         target: 'page',

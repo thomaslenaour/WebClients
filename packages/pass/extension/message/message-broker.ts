@@ -38,7 +38,7 @@ export const createMessageBroker = () => {
         if (handlers.has(message)) {
             throw new Error(`Message handler for "${message}" already registered`);
         }
-        logger.info(`[MessageHandler] Registering handler for "${message}"`);
+        logger.info(`[MessageBroker::Register] Registering handler for "${message}"`);
         handlers.set(message, handler as MessageHandlerCallback);
     };
 
@@ -75,6 +75,7 @@ export const createMessageBroker = () => {
 
                 return successMessage(res);
             } catch (error: any) {
+                logger.warn(`[MessageBroker::Message] error`, error);
                 return error instanceof Error ? errorMessage(error?.message) : { ...error, type: 'error' };
             }
         }
@@ -82,7 +83,7 @@ export const createMessageBroker = () => {
 
     const onConnect = (port: browser.Runtime.Port) => {
         ports.set(port.name, port);
-        port.onMessage.addListener((message) => logger.info(message));
+        port.onMessage.addListener((message) => logger.info(`[MessageBroker::Port] ${message}`));
         port.onDisconnect.addListener(({ name }) => ports.delete(name));
     };
 
