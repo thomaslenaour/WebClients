@@ -139,11 +139,11 @@ const createShareEventChannel = ({ shareId, eventId }: Share) =>
 const closeChannel = ({ channel, config }: EventsChannel): void => {
     switch (config.type) {
         case 'user': {
-            logger.info(`[ServerEvents::User] Closing event-loop channel`);
+            logger.info(`[ServerEvents::User] Closing user events channel`);
             break;
         }
         case 'share': {
-            logger.info(`[ServerEvents::Share] Closing channel for share ${config.shareId.slice(0, 10)}…`);
+            logger.info(`[ServerEvents::Share] Closing share events channel ${config.shareId.slice(0, 10)}…`);
             break;
         }
     }
@@ -176,7 +176,7 @@ const createEventChannelForks = (eventsChannel: EventsChannel, options: WorkerRo
                             yield put(disabledShareEvent(share));
                         }
                         /* handle share deleted error here */
-                        logger.warn(`[EventConsumer] ${error?.name}`);
+                        logger.warn(`[Saga::Events] ${error?.name}`);
                     }
                 }
             } finally {

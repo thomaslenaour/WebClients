@@ -73,12 +73,14 @@ export const createAuthService = ({
         authStore: exposeAuthStore(createAuthenticationStore(createStore())),
 
         lock: withContext((ctx) => {
+            logger.info(`[Worker::Auth] Locking context`);
             authCtx.locked = true;
             ctx.setStatus(WorkerStatus.LOCKED);
             onSessionLocked?.();
         }),
 
         unlock: () => {
+            logger.info(`[Worker::Auth] Unlocking context`);
             authCtx.locked = false;
             onSessionUnlocked?.();
         },
@@ -206,16 +208,13 @@ export const createAuthService = ({
             });
 
             if (authCtx.locked || (await isSessionLocked())) {
-                logger.info(`[Worker::Auth] Session locked`);
-
+                logger.info(`[Worker::Auth] Detected locked session`);
                 authService.lock();
 
                 return false;
             }
 
-            logger.info(`[Worker::Auth] Session unlocked - user authorized`);
-
-            authService.unlock();
+            logger.info(`[Worker::Auth] User is authorized`);
             ctx.setStatus(WorkerStatus.AUTHORIZED);
             onAuthorized?.();
 
@@ -236,7 +235,7 @@ export const createAuthService = ({
         }),
 
         resumeSession: withContext(async (ctx) => {
-            logger.info(`[Worker] Trying to resume session`);
+            logger.info(`[Worker::Auth] Trying to resume session`);
             ctx.setStatus(WorkerStatus.RESUMING);
 
             const persistedSession = await getPersistedSession();
@@ -261,7 +260,7 @@ export const createAuthService = ({
                     const session = await resumeSession({ session: persistedSession, api });
 
                     if (session !== undefined) {
-                        logger.info(`[Worker] Session successfuly resumed`);
+                        logger.info(`[Worker::Auth] Session successfuly resumed`);
                         return await authService.login(session);
                     }
                 } catch (e) {

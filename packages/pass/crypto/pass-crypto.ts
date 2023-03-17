@@ -3,8 +3,8 @@ import * as Comlink from 'comlink';
 
 import { getDecryptedUserKeysHelper } from '@proton/shared/lib/keys/getDecryptedUserKeys';
 
-import { ShareType } from '../types';
 import type { PassCryptoManagerContext, PassCryptoWorker, ShareManager } from '../types';
+import { ShareType } from '../types';
 import { logger } from '../utils/logger';
 import * as processes from './processes';
 import { createShareManager } from './share-manager';
@@ -43,7 +43,7 @@ const createPassCrypto = (): PassCryptoWorker => {
 
     const worker: PassCryptoWorker = {
         async hydrate({ user, addresses, keyPassword, snapshot }) {
-            logger.info('[PassCrypto] Hydrating...');
+            logger.info('[PassCrypto::Worker] Hydrating...');
 
             const userKeys = await getDecryptedUserKeysHelper(user, keyPassword);
             const activeAddresses = addresses.filter(getSupportedAddresses);
@@ -67,7 +67,7 @@ const createPassCrypto = (): PassCryptoWorker => {
                     )
                 );
 
-                logger.info('[PassCrypto] Hydrated from snapshot');
+                logger.info('[PassCrypto::Worker] Hydrated from snapshot');
             }
         },
 

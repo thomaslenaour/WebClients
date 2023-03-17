@@ -70,7 +70,7 @@ export const createActivationService = () => {
                 const url = browser.runtime.getURL('/onboarding.html#/success');
                 await browser.tabs.create({ url });
             } catch (error: any) {
-                logger.warn(`[Worker] requesting fork failed: ${getErrorMessage(error)}`);
+                logger.warn(`[Extension::OnInstall] requesting fork failed: ${getErrorMessage(error)}`);
             }
 
             await ctx.service.settings.init();

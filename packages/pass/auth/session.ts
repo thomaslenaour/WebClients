@@ -11,7 +11,6 @@ import { base64StringToUint8Array, uint8ArrayToBase64String } from '@proton/shar
 import { User as UserType } from '@proton/shared/lib/interfaces';
 
 import { Api } from '../types';
-import { logger } from '../utils/logger';
 import {
     ExtensionPersistedSession,
     getDecryptedPersistedSessionBlob,
@@ -100,7 +99,6 @@ export const resumeSession = async ({
                 persistent: session.persistent,
             };
         } catch (e: any) {
-            logger.warn(e);
             if (getIs401Error(e) || e instanceof InvalidPersistentSessionError) {
                 await removePersistedSession();
             }

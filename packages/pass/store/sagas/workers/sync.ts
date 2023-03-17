@@ -51,7 +51,7 @@ export function* synchronize(state: State, type: SyncType): Generator<unknown, S
      * vault share
      */
     if (vaults.length === 0) {
-        logger.info(`[Boot]: No vault - creating..`);
+        logger.info(`[Saga::Sync] No vault found, creating default..`);
         synced.push(
             (yield createVault({
                 name: 'Default',
