@@ -9,7 +9,7 @@ import { ExtensionContext } from '../shared/extension';
 import createClientStore from '../shared/store/client-store';
 import { App } from './App';
 import { PopupContextProvider, usePopupContext } from './context';
-import Lobby from './views/Lobby';
+import Lobby from './views/Lobby/Lobby';
 
 import './Popup.scss';
 
