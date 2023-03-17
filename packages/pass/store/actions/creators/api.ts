@@ -7,11 +7,6 @@ import { isVaultShare } from '@proton/pass/utils/pass/share';
 
 import withNotification from '../with-notification';
 
-export const offline = createAction('offline');
-export const online = createAction('online');
-export const unlock = createAction('unlock');
-export const verification = createAction('verification');
-
 export const serverEvent = createAction('server event', (event: ServerEvent) => ({ payload: { event } }));
 
 export const disabledShareEvent = createAction('share disabled', (share: Share) =>

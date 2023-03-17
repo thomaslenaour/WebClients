@@ -6,6 +6,7 @@ import { pipe } from '@proton/pass/utils/fp';
 
 import { AliasState } from '../../reducers';
 import * as requests from '../requests';
+import withCacheBlock from '../with-cache-block';
 import withCallback, { ActionCallback } from '../with-callback';
 import withNotification from '../with-notification';
 import withRequest from '../with-request';
@@ -19,6 +20,7 @@ export const aliasOptionsRequested = createAction(
         >
     ) =>
         pipe(
+            withCacheBlock,
             withCallback(callback),
             withRequest({
                 id: requests.aliasOptions(),
@@ -53,10 +55,13 @@ export const aliasOptionsRequestFailure = createAction('alias options request fa
 export const aliasDetailsRequested = createAction(
     'alias details requested',
     (payload: { shareId: string; itemId: string; aliasEmail: string }) =>
-        withRequest({
-            id: requests.aliasDetails(payload.aliasEmail),
-            type: 'start',
-        })({ payload })
+        pipe(
+            withCacheBlock,
+            withRequest({
+                id: requests.aliasDetails(payload.aliasEmail),
+                type: 'start',
+            })
+        )({ payload })
 );
 
 export const aliasDetailsRequestSuccess = createAction(

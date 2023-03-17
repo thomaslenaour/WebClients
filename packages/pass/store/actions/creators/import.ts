@@ -6,18 +6,23 @@ import { ItemRevision } from '@proton/pass/types';
 import { pipe } from '@proton/pass/utils/fp';
 
 import * as requests from '../requests';
+import withCacheBlock from '../with-cache-block';
 import withNotification from '../with-notification';
 import withRequest from '../with-request';
 
 export const importItemsRequest = createAction('import items request', (payload: { data: ImportPayload }) =>
-    withRequest({
-        id: requests.importItems(),
-        type: 'start',
-    })({ payload })
+    pipe(
+        withCacheBlock,
+        withRequest({
+            id: requests.importItems(),
+            type: 'start',
+        })
+    )({ payload })
 );
 
 export const importItemsRequestSuccess = createAction('import items success', ({ total }: { total: number }) =>
     pipe(
+        withCacheBlock,
         withRequest({
             id: requests.importItems(),
             type: 'success',
@@ -32,6 +37,7 @@ export const importItemsRequestSuccess = createAction('import items success', ({
 
 export const importItemsRequestFailure = createAction('import items failure', (error: unknown) =>
     pipe(
+        withCacheBlock,
         withRequest({
             id: requests.importItems(),
             type: 'failure',
@@ -44,6 +50,6 @@ export const importItemsRequestFailure = createAction('import items failure', (e
     )({ payload: {}, error })
 );
 
-export const itemsImported = createAction('item imported', (payload: { shareId: string; items: ItemRevision[] }) => ({
-    payload,
-}));
+export const itemsImported = createAction('item imported', (payload: { shareId: string; items: ItemRevision[] }) =>
+    withCacheBlock({ payload })
+);
