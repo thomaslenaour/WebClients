@@ -96,12 +96,12 @@ export const sessionUnlockFailure = createAction('unlock session lock failure', 
     )({ payload: {}, error })
 );
 
-export const sessionUnlockSuccess = createAction('unlock session lock success', () =>
+export const sessionUnlockSuccess = createAction('unlock session lock success', (payload: { storageToken: string }) =>
     pipe(
         withCacheBlock,
         withRequest({
             id: unlockSession,
             type: 'success',
         })
-    )({ payload: {} })
+    )({ payload })
 );
