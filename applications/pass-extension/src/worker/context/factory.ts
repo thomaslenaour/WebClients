@@ -1,4 +1,6 @@
 import { backgroundMessage } from '@proton/pass/extension/message';
+import { acknowledge } from '@proton/pass/store';
+import { unlockSession } from '@proton/pass/store/actions/requests';
 import type { Api } from '@proton/pass/types';
 import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { invert, waitUntil } from '@proton/pass/utils/fp';
@@ -19,6 +21,7 @@ import { createExportService } from '../services/export';
 import { createFormTrackerService } from '../services/form.tracker';
 import { createSettingsService } from '../services/settings';
 import { createStoreService } from '../services/store';
+import store from '../store';
 import { WorkerContext } from './context';
 import { withContext } from './helpers';
 
@@ -29,6 +32,7 @@ export const createWorkerContext = (options: { api: Api; status: WorkerStatus })
             ctx.service.activation.boot();
             ctx.service.autofill.updateTabsBadgeCount().catch(noop);
             setSentryUID(auth.authStore.getUID());
+            store.dispatch(acknowledge(unlockSession));
         }),
         onUnauthorized: withContext((ctx) => {
             ctx.service.autofill.clearTabsBadgeCount().catch(noop);
