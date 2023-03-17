@@ -29,13 +29,13 @@ const decrypt = async <T extends object>(options: {
     }
 };
 
-const getCachedState = async (): Promise<Maybe<ExtensionCache>> => {
+const getCachedState = async (sessionLockToken?: string): Promise<Maybe<ExtensionCache>> => {
     const encryptedDataString = await browserLocalStorage.getItem('state');
     const encryptedSnapshot = await browserLocalStorage.getItem('snapshot');
     const cacheSalt = await browserLocalStorage.getItem('salt');
 
     if (cacheSalt) {
-        const cacheKey = await getCacheEncryptionKey(stringToUint8Array(cacheSalt));
+        const cacheKey = await getCacheEncryptionKey(stringToUint8Array(cacheSalt), sessionLockToken);
 
         const [state, snapshot] = await Promise.all([
             decrypt<State>({ data: encryptedDataString, key: cacheKey, useTextDecoder: true }),
