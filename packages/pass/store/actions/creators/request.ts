@@ -1,3 +1,7 @@
 import { createAction } from '@reduxjs/toolkit';
 
-export const acknowledge = createAction('acknowledge request', (requestId: string) => ({ payload: { requestId } }));
+import withCacheBlock from '../with-cache-block';
+
+export const acknowledge = createAction('acknowledge request', (requestId: string) =>
+    withCacheBlock({ payload: { requestId } })
+);

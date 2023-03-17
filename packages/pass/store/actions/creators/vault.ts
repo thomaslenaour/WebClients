@@ -6,8 +6,9 @@ import { pipe } from '@proton/pass/utils/fp';
 
 import { createOptimisticAction } from '../../optimistic/action/create-optimistic-action';
 import { vaultCreate, vaultDelete, vaultEdit } from '../requests';
-import withCallback from '../with-callback';
+import withCacheBlock from '../with-cache-block';
 import type { ActionCallback } from '../with-callback';
+import withCallback from '../with-callback';
 import withNotification from '../with-notification';
 import withRequest from '../with-request';
 
@@ -18,6 +19,7 @@ export const vaultCreationIntent = createOptimisticAction(
         callback?: ActionCallback<ReturnType<typeof vaultCreationSuccess> | ReturnType<typeof vaultCreationFailure>>
     ) =>
         pipe(
+            withCacheBlock,
             withRequest({
                 type: 'start',
                 id: vaultCreate(payload.id),
@@ -31,6 +33,7 @@ export const vaultCreationFailure = createOptimisticAction(
     'vault creation failure',
     (payload: { id: string; content: ShareContent<ShareType.Vault> }, error: unknown) =>
         pipe(
+            withCacheBlock,
             withRequest({
                 type: 'failure',
                 id: vaultCreate(payload.id),
@@ -69,10 +72,13 @@ export const vaultCreationSuccess = createOptimisticAction(
 export const vaultEditIntent = createOptimisticAction(
     'vault edit intent',
     (payload: { id: string; content: ShareContent<ShareType.Vault> }) =>
-        withRequest({
-            type: 'start',
-            id: vaultEdit(payload.id),
-        })({ payload }),
+        pipe(
+            withCacheBlock,
+            withRequest({
+                type: 'start',
+                id: vaultEdit(payload.id),
+            })
+        )({ payload }),
     ({ payload }) => payload.id
 );
 
@@ -80,6 +86,7 @@ export const vaultEditFailure = createOptimisticAction(
     'vault edit failure',
     (payload: { id: string; content: ShareContent<ShareType.Vault> }, error: unknown) =>
         pipe(
+            withCacheBlock,
             withRequest({
                 type: 'failure',
                 id: vaultEdit(payload.id),
@@ -118,10 +125,13 @@ export const vaultEditSync = createAction(
 export const vaultDeleteIntent = createOptimisticAction(
     'vault delete intent',
     (payload: { id: string; content: ShareContent<ShareType.Vault> }) =>
-        withRequest({
-            type: 'start',
-            id: vaultDelete(payload.id),
-        })({ payload }),
+        pipe(
+            withCacheBlock,
+            withRequest({
+                type: 'start',
+                id: vaultDelete(payload.id),
+            })
+        )({ payload }),
     ({ payload }) => payload.id
 );
 
@@ -129,6 +139,7 @@ export const vaultDeleteFailure = createOptimisticAction(
     'vault delete failure',
     (payload: { id: string; content: ShareContent<ShareType.Vault> }, error: unknown) =>
         pipe(
+            withCacheBlock,
             withRequest({
                 type: 'failure',
                 id: vaultDelete(payload.id),

@@ -1,7 +1,7 @@
 import type { AnyAction } from 'redux';
 
-import { ShareType } from '@proton/pass/types';
 import type { Share } from '@proton/pass/types';
+import { ShareType } from '@proton/pass/types';
 import { or } from '@proton/pass/utils/fp';
 import { fullMerge, objectDelete, partialMerge } from '@proton/pass/utils/object';
 
@@ -9,7 +9,6 @@ import {
     bootSuccess,
     disabledShareEvent,
     serverEvent,
-    sharesRequestSuccess,
     syncSuccess,
     vaultCreationFailure,
     vaultCreationIntent,
@@ -99,18 +98,6 @@ export const withOptimisticShares = withOptimistic<SharesState>(
 
         if (disabledShareEvent.match(action)) {
             return objectDelete(state, action.payload.shareId);
-        }
-
-        if (sharesRequestSuccess.match(action)) {
-            const { shares } = action.payload;
-
-            return fullMerge(
-                state,
-                shares.reduce<SharesState>((acc, next) => {
-                    acc[next.shareId] = next;
-                    return acc;
-                }, {})
-            );
         }
 
         return state;

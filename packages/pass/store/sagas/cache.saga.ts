@@ -1,34 +1,24 @@
 import type { AnyAction } from 'redux';
-import { select, take } from 'redux-saga/effects';
+import { select, takeLatest } from 'redux-saga/effects';
 
 import { authentication } from '@proton/pass/auth/authentication';
 import { PassCrypto } from '@proton/pass/crypto';
 import { CACHE_SALT_LENGTH, encryptData, getCacheEncryptionKey } from '@proton/pass/crypto/utils';
 import { browserLocalStorage } from '@proton/pass/extension/storage';
 import { EncryptionTag } from '@proton/pass/types';
-import { invert, or } from '@proton/pass/utils/fp/predicates';
+import { logger } from '@proton/pass/utils/logger';
 import { objectDelete } from '@proton/pass/utils/object';
 import { stringToUint8Array, uint8ArrayToString } from '@proton/shared/lib/helpers/encoding';
+import { wait } from '@proton/shared/lib/helpers/promise';
 
-import { boot, bootFailure, notification, signout, signoutSuccess, stateSync, wakeup, wakeupSuccess } from '../actions';
-import { acceptActionWithReceiver } from '../actions/with-receiver';
+import { isCacheTriggeringAction } from '../actions/with-cache-block';
 import { asIfNotOptimistic } from '../optimistic/selectors/select-is-optimistic';
 import { reducerMap } from '../reducers';
 import { State } from '../types';
 
-const CACHE_BLOCK_ACTIONS = [
-    boot.match,
-    bootFailure.match,
-    wakeup.match,
-    wakeupSuccess.match,
-    signout.match,
-    signoutSuccess.match,
-    notification.match,
-    /* do not cache on state synchronisation to receiver apps */
-    (action: AnyAction) => stateSync.match(action) && !acceptActionWithReceiver(action, 'background'),
-];
+function* cacheWorker(action: AnyAction) {
+    yield wait(500);
 
-function* cacheWorker() {
     if (authentication?.hasSession()) {
         try {
             const cacheSalt = crypto.getRandomValues(new Uint8Array(CACHE_SALT_LENGTH));
@@ -55,6 +45,7 @@ function* cacheWorker() {
                 EncryptionTag.Cache
             );
 
+            logger.info(`[Saga::Cache] Caching store and crypto state @ action["${action.type}"]`);
             yield browserLocalStorage.setItem('salt', uint8ArrayToString(cacheSalt));
             yield browserLocalStorage.setItem('state', uint8ArrayToString(encryptedData));
             yield browserLocalStorage.setItem('snapshot', uint8ArrayToString(encryptedWorkerSnapshot));
@@ -62,8 +53,6 @@ function* cacheWorker() {
     }
 }
 
-export default function* watcher(): Generator {
-    while (yield take(invert(or(...CACHE_BLOCK_ACTIONS)))) {
-        yield cacheWorker();
-    }
+export default function* watcher() {
+    yield takeLatest(isCacheTriggeringAction, cacheWorker);
 }
