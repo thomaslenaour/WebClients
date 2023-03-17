@@ -20,7 +20,6 @@ import createAuthenticationStore, {
 } from '@proton/shared/lib/authentication/createAuthenticationStore';
 import { MAIL_APP_NAME, PASS_APP_NAME } from '@proton/shared/lib/constants';
 import createStore from '@proton/shared/lib/helpers/store';
-import noop from '@proton/utils/noop';
 
 import WorkerMessageBroker from '../channel';
 import { withContext } from '../context';
@@ -137,18 +136,23 @@ export const createAuthService = ({
                 const result = await consumeFork({ api, ...data });
                 const { AccessToken, RefreshToken } = result;
 
-                await authService.login({
-                    UID: result.UID,
-                    AccessToken,
-                    RefreshToken,
-                    keyPassword,
-                });
-
-                /* api will have been configured in authService::login */
                 await Promise.all([
-                    api({ url: `pass/v1/user/access`, method: 'post' }).catch(noop),
                     persistSession(api, result),
+                    authService.login({
+                        UID: result.UID,
+                        AccessToken,
+                        RefreshToken,
+                        keyPassword,
+                    }),
                 ]);
+
+                /* if we get a locked session error on user/access we should not
+                show a login error : user will have to unlock */
+                await api({ url: `pass/v1/user/access`, method: 'post' }).catch((e) => {
+                    if (e.name !== 'LockedSession') {
+                        throw e;
+                    }
+                });
 
                 return {
                     payload: {
