@@ -58,6 +58,13 @@ sagaMiddleware.run(
             WorkerContext.get().service.auth.logout();
         },
 
+        onSessionUnlocked: async () => {
+            const context = WorkerContext.get();
+
+            context.service.auth.unlock();
+            await context.init({ force: true });
+        },
+
         /**
          * Update the extension's badge count on every
          * item state change
