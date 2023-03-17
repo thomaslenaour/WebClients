@@ -33,10 +33,11 @@ import { getSilenced } from './utils';
 
 const INITIAL_API_STATUS: ApiStatus = {
     serverTime: undefined,
-    invalidated: false,
     appVersionBad: false,
     offline: false,
     unreachable: false,
+    sessionInactive: false,
+    sessionLocked: false,
 };
 
 /**
@@ -118,11 +119,16 @@ const createApi = ({ config, auth, onSessionRefresh }: ApiCreateOptions): Api =>
                     unreachable: isUnreachable,
                     offline: isOffline || defaultApiStatus.offline,
                     appVersionBad: e.name === 'AppVersionBadError',
-                    invalidated: e.name === 'InactiveSession',
+                    sessionInactive: e.name === 'InactiveSession',
+                    sessionLocked: e.name === 'LockedSession',
                 };
 
-                if (ctx.status.invalidated) {
-                    pubsub.publish({ type: 'invalidated' });
+                if (ctx.status.sessionLocked) {
+                    pubsub.publish({ type: 'session', status: 'locked' });
+                }
+
+                if (ctx.status.sessionInactive) {
+                    pubsub.publish({ type: 'session', status: 'inactive' });
                 }
 
                 if (errorMessage && !getSilenced(e.config, code)) {
