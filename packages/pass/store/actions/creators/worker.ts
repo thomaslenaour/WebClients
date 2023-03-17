@@ -1,14 +1,15 @@
 import { createAction } from '@reduxjs/toolkit';
 import { c } from 'ttag';
 
-import { ExtensionEndpoint, Maybe, TabId, WorkerStatus } from '@proton/pass/types';
+import type { ExtensionEndpoint, Maybe, TabId } from '@proton/pass/types';
+import { WorkerStatus } from '@proton/pass/types';
 import { pipe } from '@proton/pass/utils/fp';
 import { Address, User } from '@proton/shared/lib/interfaces';
 
-import { SynchronizationResult } from '../../sagas/workers/sync';
+import type { SynchronizationResult } from '../../sagas/workers/sync';
 import * as requests from '../requests';
 import withNotification from '../with-notification';
-import withReceiver, { WithReceiverOptions } from '../with-receiver';
+import withReceiver, { type WithReceiverOptions } from '../with-receiver';
 import withRequest from '../with-request';
 
 /**
@@ -18,6 +19,8 @@ import withRequest from '../with-request';
 export const stateSync = createAction('state sync', (state: any, options?: WithReceiverOptions) =>
     withReceiver(options ?? {})({ payload: { state } })
 );
+
+export const stateLock = createAction('state lock');
 
 export const wakeup = createAction(
     'wakeup',

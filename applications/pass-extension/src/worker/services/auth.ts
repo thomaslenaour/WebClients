@@ -9,9 +9,8 @@ import {
     resumeSession,
 } from '@proton/pass/auth';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
-import { notification, signout } from '@proton/pass/store';
-import type { Api, WorkerForkMessage, WorkerMessageResponse } from '@proton/pass/types';
-import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
+import { notification, signout, stateLock } from '@proton/pass/store';
+import { Api, WorkerForkMessage, WorkerMessageResponse, WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { withPayload } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
 import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelper';
@@ -39,6 +38,8 @@ export interface AuthService {
     }) => Promise<boolean>;
     logout: () => boolean;
     init: () => Promise<boolean>;
+    lock: () => void;
+    unlock: () => void;
 }
 
 type CreateAuthServiceOptions = {
@@ -49,26 +50,48 @@ type CreateAuthServiceOptions = {
     onSessionUnlocked?: () => void;
 };
 
+type AuthContext = {
+    pendingInit: Promise<boolean> | null;
+    locked: boolean;
+};
+
 export const createAuthService = ({
     api,
     onAuthorized,
     onUnauthorized,
     onSessionLocked,
+    onSessionUnlocked,
 }: CreateAuthServiceOptions): AuthService => {
-    /* safe-guards multiple auth inits */
-    let pendingInit: Promise<boolean> | null = null;
+    const authCtx: AuthContext = {
+        pendingInit: null,
+        locked: false,
+    };
 
     const authService: AuthService = {
         authStore: exposeAuthStore(createAuthenticationStore(createStore())),
+
+        lock: () => {
+            authCtx.locked = true;
+
+            const ctx = WorkerContext.get();
+            ctx.setStatus(WorkerStatus.LOCKED);
+            onSessionLocked?.();
+        },
+
+        unlock: () => {
+            authCtx.locked = false;
+            onSessionUnlocked?.();
+        },
+
         init: async () => {
             logger.info(`[Worker::Auth] Initialization start`);
 
-            if (pendingInit !== null) {
+            if (authCtx.pendingInit !== null) {
                 logger.info(`[Worker::Auth] Ongoing auth initialization..`);
-                return pendingInit;
+                return authCtx.pendingInit;
             }
 
-            pendingInit = Promise.resolve(
+            authCtx.pendingInit = Promise.resolve(
                 (async () => {
                     const { UID, AccessToken, RefreshToken, keyPassword } = await browserSessionStorage.getItems([
                         'UID',
@@ -85,8 +108,8 @@ export const createAuthService = ({
                 })()
             );
 
-            const result = await pendingInit;
-            pendingInit = null;
+            const result = await authCtx.pendingInit;
+            authCtx.pendingInit = null;
 
             return result;
         },
@@ -135,6 +158,7 @@ export const createAuthService = ({
                 };
             }
         },
+
         login: async ({ UID, keyPassword, AccessToken, RefreshToken }) => {
             const context = WorkerContext.get();
             await browserSessionStorage.setItems({ UID, keyPassword, AccessToken, RefreshToken });
@@ -147,35 +171,57 @@ export const createAuthService = ({
 
             api.subscribe((event) => {
                 switch (event.type) {
-                    case 'invalidated': {
+                    case 'session': {
                         api.unsubscribe();
 
-                        store.dispatch(
-                            notification({
-                                type: 'error',
-                                text: c('Warning').t`Please log back in`,
-                            })
-                        );
+                        /* inactive session means user needs to log back in */
+                        if (event.status === 'inactive') {
+                            store.dispatch(
+                                notification({
+                                    type: 'error',
+                                    text: c('Warning').t`Please log back in`,
+                                })
+                            );
 
-                        return store.dispatch(signout({ soft: false }));
+                            return store.dispatch(signout({ soft: false }));
+                        }
+
+                        /* locked session means user needs to enter PIN */
+                        if (event.status === 'locked') {
+                            authService.lock();
+
+                            store.dispatch(
+                                notification({
+                                    type: 'error',
+                                    text: c('Warning').t`Your session was locked due to inactivity`,
+                                })
+                            );
+
+                            return store.dispatch(stateLock());
+                        }
                     }
-                    default:
-                        return;
+                    case 'error': {
+                    }
                 }
             });
 
-            if (await isSessionLocked()) {
+            if (authCtx.locked || (await isSessionLocked())) {
                 logger.info(`[Worker::Auth] Session locked`);
-                context.setStatus(WorkerStatus.LOCKED);
-                onSessionLocked?.();
+
+                authService.lock();
+
                 return false;
             }
 
             logger.info(`[Worker::Auth] Session unlocked - user authorized`);
+
+            authService.unlock();
             context.setStatus(WorkerStatus.AUTHORIZED);
             onAuthorized?.();
+
             return true;
         },
+
         logout: () => {
             const context = WorkerContext.get();
 

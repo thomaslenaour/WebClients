@@ -26,6 +26,7 @@ import {
     itemEditSync,
     serverEvent,
     signoutSuccess,
+    stateLock,
     vaultCreationSuccess,
     vaultDeleteSuccess,
     vaultEditSync,
@@ -264,7 +265,7 @@ export default function* watcher(options: WorkerRootSagaOptions): Generator {
          *
          * TODO: handle InvalidSession error in eventsManager to avoid this ?
          */
-        yield take([boot.match, signoutSuccess.match]);
+        yield take([boot.match, signoutSuccess.match, stateLock.match]);
         yield cancel(events);
     }
 }
