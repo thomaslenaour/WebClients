@@ -1,6 +1,6 @@
-import { AnyAction } from 'redux';
+import type { AnyAction } from 'redux';
 
-import { ExtensionEndpoint } from '@proton/pass/types';
+import type { ExtensionEndpoint } from '@proton/pass/types';
 import { merge } from '@proton/pass/utils/object';
 import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 
@@ -31,7 +31,9 @@ const parseNotification = (notification: NotificationOptions): Notification => {
                 ...notification,
                 text:
                     notification.error instanceof Error
-                        ? getApiErrorMessage(notification.error) ?? notification.error?.message
+                        ? `${notification.text}: ${
+                              getApiErrorMessage(notification.error) ?? notification.error?.message ?? ''
+                          }`
                         : notification.text,
             };
 
