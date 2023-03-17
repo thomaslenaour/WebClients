@@ -11,7 +11,7 @@ import { logger } from '@proton/pass/utils/logger';
 
 import { ENV } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
-import WorkerContext from '../context';
+import { withContext } from '../context/helpers';
 import { workerMiddleware } from './worker.middleware';
 
 const sagaMiddleware = createSagaMiddleware();
@@ -32,8 +32,6 @@ const store = configureStore({
             : [],
 });
 
-export default store;
-
 sagaMiddleware.run(
     workerRootSaga.bind(null, {
         /**
@@ -41,37 +39,31 @@ sagaMiddleware.run(
          * boot sequence's result. On boot failure,
          * clear
          */
-        onBoot: async (result) => {
-            const context = WorkerContext.get();
-
+        onBoot: withContext(async (ctx, result) => {
             if (result.ok) {
-                context.setStatus(WorkerStatus.READY);
+                ctx.setStatus(WorkerStatus.READY);
                 WorkerMessageBroker.buffer.flush();
             } else {
-                context.setStatus(WorkerStatus.ERROR);
+                ctx.setStatus(WorkerStatus.ERROR);
                 await Promise.all([browserLocalStorage.clear(), browserSessionStorage.clear()]);
             }
-        },
+        }),
 
-        onSignout: async () => {
+        onSignout: withContext(async (ctx) => {
             await Promise.all([browserLocalStorage.clear(), browserSessionStorage.clear()]);
-            WorkerContext.get().service.auth.logout();
-        },
+            ctx.service.auth.logout();
+        }),
 
-        onSessionUnlocked: async () => {
-            const context = WorkerContext.get();
-
-            context.service.auth.unlock();
-            await context.init({ force: true });
-        },
+        onSessionUnlocked: withContext(async (ctx) => {
+            ctx.service.auth.unlock();
+            await ctx.init({ force: true });
+        }),
 
         /**
          * Update the extension's badge count on every
          * item state change
          */
-        onItemsChange: () => {
-            return WorkerContext.get().service.autofill.updateTabsBadgeCount();
-        },
+        onItemsChange: withContext((ctx) => ctx.service.autofill.updateTabsBadgeCount()),
 
         onShareEventDisabled: (shareId) => {
             WorkerMessageBroker.ports.broadcast(
@@ -123,3 +115,5 @@ sagaMiddleware.run(
         },
     })
 );
+
+export default store;

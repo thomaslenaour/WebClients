@@ -14,7 +14,7 @@ import { parseSender } from '@proton/pass/utils/url';
 
 import { canCommitSubmission, isSubmissionCommitted } from '../../shared/form';
 import WorkerMessageBroker from '../channel';
-import WorkerContext from '../context';
+import { withContext } from '../context';
 import { createMainFrameRequestTracker } from './main-frame.tracker';
 import { createXMLHTTPRequestTracker } from './xmlhttp-request.tracker';
 
@@ -112,72 +112,77 @@ export const createFormTrackerService = () => {
         onFailedRequest: (tabId, realm) => stash(tabId, realm, 'XMLHTTP_ERROR_DETECTED'),
     });
 
-    WorkerMessageBroker.registerMessage(WorkerMessageType.STAGE_FORM_SUBMISSION, ({ payload, reason }, sender) => {
-        const context = WorkerContext.get();
-        const { type, data } = payload;
+    WorkerMessageBroker.registerMessage(
+        WorkerMessageType.STAGE_FORM_SUBMISSION,
+        withContext((ctx, { payload, reason }, sender) => {
+            const { type, data } = payload;
 
-        if (context.getState().loggedIn) {
-            const { tabId, realm, subdomain, url } = parseSender(sender);
-            return { staged: stage(tabId, { realm, subdomain, url, type, data }, reason) };
-        }
-
-        throw new Error('Cannot stage submission while logged out');
-    });
-
-    WorkerMessageBroker.registerMessage(WorkerMessageType.STASH_FORM_SUBMISSION, ({ reason }, sender) => {
-        const context = WorkerContext.get();
-
-        if (context.getState().loggedIn) {
-            const { tabId, realm } = parseSender(sender);
-            stash(tabId, realm, reason);
-            return true;
-        }
-
-        return false;
-    });
-
-    WorkerMessageBroker.registerMessage(WorkerMessageType.COMMIT_FORM_SUBMISSION, ({ reason }, sender) => {
-        const context = WorkerContext.get();
-
-        if (context.getState().loggedIn) {
-            const { tabId, realm } = parseSender(sender);
-            const committed = commit(tabId, realm, reason);
-
-            if (committed !== undefined) {
-                const promptOptions = context.service.autosave.resolvePromptOptions(committed);
-
-                return promptOptions.shouldPrompt
-                    ? { committed: merge(committed, { autosave: promptOptions }) }
-                    : { committed: undefined };
+            if (ctx.getState().loggedIn) {
+                const { tabId, realm, subdomain, url } = parseSender(sender);
+                return { staged: stage(tabId, { realm, subdomain, url, type, data }, reason) };
             }
 
-            throw new Error(`Cannot commit form submission for tab#${tabId} on realm "${realm}"`);
-        }
+            throw new Error('Cannot stage submission while logged out');
+        })
+    );
 
-        throw new Error('Cannot commit submission while logged out');
-    });
+    WorkerMessageBroker.registerMessage(
+        WorkerMessageType.STASH_FORM_SUBMISSION,
+        withContext((ctx, { reason }, sender) => {
+            if (ctx.getState().loggedIn) {
+                const { tabId, realm } = parseSender(sender);
+                stash(tabId, realm, reason);
+                return true;
+            }
 
-    WorkerMessageBroker.registerMessage(WorkerMessageType.REQUEST_FORM_SUBMISSION, (_, sender) => {
-        const context = WorkerContext.get();
+            return false;
+        })
+    );
 
-        if (context.getState().loggedIn) {
-            const { tabId, realm } = parseSender(sender);
-            const submission = get(tabId, realm);
-            const isCommitted = submission !== undefined && isSubmissionCommitted(submission);
+    WorkerMessageBroker.registerMessage(
+        WorkerMessageType.COMMIT_FORM_SUBMISSION,
+        withContext((ctx, { reason }, sender) => {
+            if (ctx.getState().loggedIn) {
+                const { tabId, realm } = parseSender(sender);
+                const committed = commit(tabId, realm, reason);
 
-            return {
-                submission:
-                    submission !== undefined
-                        ? (merge(submission, {
-                              autosave: isCommitted
-                                  ? context.service.autosave.resolvePromptOptions(submission)
-                                  : { shouldPrompt: false },
-                          }) as WithAutoSavePromptOptions<FormSubmission>)
-                        : submission,
-            };
-        }
-        throw new Error('Cannot request submission while logged out');
-    });
+                if (committed !== undefined) {
+                    const promptOptions = ctx.service.autosave.resolvePromptOptions(committed);
+
+                    return promptOptions.shouldPrompt
+                        ? { committed: merge(committed, { autosave: promptOptions }) }
+                        : { committed: undefined };
+                }
+
+                throw new Error(`Cannot commit form submission for tab#${tabId} on realm "${realm}"`);
+            }
+
+            throw new Error('Cannot commit submission while logged out');
+        })
+    );
+
+    WorkerMessageBroker.registerMessage(
+        WorkerMessageType.REQUEST_FORM_SUBMISSION,
+        withContext((ctx, _, sender) => {
+            if (ctx.getState().loggedIn) {
+                const { tabId, realm } = parseSender(sender);
+                const submission = get(tabId, realm);
+                const isCommitted = submission !== undefined && isSubmissionCommitted(submission);
+
+                return {
+                    submission:
+                        submission !== undefined
+                            ? (merge(submission, {
+                                  autosave: isCommitted
+                                      ? ctx.service.autosave.resolvePromptOptions(submission)
+                                      : { shouldPrompt: false },
+                              }) as WithAutoSavePromptOptions<FormSubmission>)
+                            : submission,
+                };
+            }
+            throw new Error('Cannot request submission while logged out');
+        })
+    );
 
     const clear = () => {
         logger.info(`[FormTracker::clear]: removing every submission`);

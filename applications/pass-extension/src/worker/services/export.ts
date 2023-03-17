@@ -1,4 +1,4 @@
-import { ExportPayload, createExportZip, decryptZip, encryptZip } from '@proton/pass/export';
+import { type ExportPayload, createExportZip, decryptZip, encryptZip } from '@proton/pass/export';
 import { selectShareOrThrow } from '@proton/pass/store';
 import { unwrapOptimisticState } from '@proton/pass/store/optimistic/utils/transformers';
 import { type VaultShareContent, WorkerMessageType } from '@proton/pass/types';
@@ -6,7 +6,7 @@ import { uint8ArrayToBase64String } from '@proton/shared/lib/helpers/encoding';
 
 import * as config from '../../app/config';
 import WorkerMessageBroker from '../channel';
-import WorkerContext from '../context';
+import { onContextReady } from '../context';
 import store from '../store';
 
 export const createExportService = () => {
@@ -42,14 +42,17 @@ export const createExportService = () => {
         };
     };
 
-    WorkerMessageBroker.registerMessage(WorkerMessageType.EXPORT_REQUEST, async ({ payload }) => {
-        await WorkerContext.get().waitForReady();
+    WorkerMessageBroker.registerMessage(
+        WorkerMessageType.EXPORT_REQUEST,
+        onContextReady(async ({ payload }) => {
+            const exportData = await getExportData(payload.encrypted);
+            const zip = await createExportZip(exportData);
 
-        const exportData = await getExportData(payload.encrypted);
-        const zip = await createExportZip(exportData);
-
-        return { data: payload.encrypted ? await encryptZip(zip, payload.passphrase) : uint8ArrayToBase64String(zip) };
-    });
+            return {
+                data: payload.encrypted ? await encryptZip(zip, payload.passphrase) : uint8ArrayToBase64String(zip),
+            };
+        })
+    );
 
     WorkerMessageBroker.registerMessage(
         WorkerMessageType.EXPORT_DECRYPT,

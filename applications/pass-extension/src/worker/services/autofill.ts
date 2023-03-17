@@ -7,7 +7,7 @@ import { parseSender, parseUrl } from '@proton/pass/utils/url';
 
 import { setPopupIconBadge } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
-import WorkerContext from '../context';
+import { onContextReady } from '../context';
 import store from '../store';
 
 export const createAutoFillService = () => {
@@ -105,44 +105,43 @@ export const createAutoFillService = () => {
         } catch (_) {}
     };
 
-    WorkerMessageBroker.registerMessage(WorkerMessageType.AUTOFILL_QUERY, async (_, sender) => {
-        await WorkerContext.get().waitForReady();
+    WorkerMessageBroker.registerMessage(
+        WorkerMessageType.AUTOFILL_QUERY,
+        onContextReady((_, sender) => {
+            const { realm, tabId, subdomain } = parseSender(sender);
+            const items = getAutofillCandidates({ realm, subdomain });
 
-        const { realm, tabId, subdomain } = parseSender(sender);
-        const items = getAutofillCandidates({ realm, subdomain });
+            return { items: tabId !== undefined && items.length > 0 ? items : [] };
+        })
+    );
 
-        return { items: tabId !== undefined && items.length > 0 ? items : [] };
-    });
+    WorkerMessageBroker.registerMessage(
+        WorkerMessageType.AUTOFILL_SELECT,
+        onContextReady(async (message) => {
+            const credentials = getAutofillData(message.payload);
+            if (credentials === undefined) {
+                throw new Error('Could not get credentials for autofill request');
+            }
 
-    WorkerMessageBroker.registerMessage(WorkerMessageType.AUTOFILL_SELECT, async (message) => {
-        await WorkerContext.get().waitForReady();
-
-        const credentials = getAutofillData(message.payload);
-        if (credentials === undefined) {
-            throw new Error('Could not get credentials for autofill request');
-        }
-
-        return credentials;
-    });
+            return credentials;
+        })
+    );
 
     /**
      * onUpdated will be triggered every time a tab
      * has been loaded with a new url : update the
      * badge count accordingly
      */
-    browser.tabs.onUpdated.addListener(async (tabId, _, tab) => {
-        /**
-         * ensure context is ready so autofill
-         * candidates can be resolved
-         */
-        await WorkerContext.get().waitForReady();
-        const { domain: realm, subdomain } = parseUrl(tab.url ?? '');
+    browser.tabs.onUpdated.addListener(
+        onContextReady(async (tabId, _, tab) => {
+            const { domain: realm, subdomain } = parseUrl(tab.url ?? '');
 
-        if (tabId && realm) {
-            const items = getAutofillCandidates({ realm, subdomain });
-            return setPopupIconBadge(tabId, items.length);
-        }
-    });
+            if (tabId && realm) {
+                const items = getAutofillCandidates({ realm, subdomain });
+                return setPopupIconBadge(tabId, items.length);
+            }
+        })
+    );
 
     return { getAutofillCandidates, updateTabsBadgeCount, clearTabsBadgeCount };
 };

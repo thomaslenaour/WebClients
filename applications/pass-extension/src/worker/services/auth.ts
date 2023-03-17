@@ -22,20 +22,22 @@ import createStore from '@proton/shared/lib/helpers/store';
 import noop from '@proton/utils/noop';
 
 import WorkerMessageBroker from '../channel';
-import WorkerContext from '../context';
+import { withContext } from '../context';
 import store from '../store';
 
 /* eslint-disable @typescript-eslint/no-throw-literal */
+
+type LoginOptions = {
+    UID: string;
+    AccessToken: string;
+    RefreshToken: string;
+    keyPassword: string;
+};
 export interface AuthService {
     authStore: AuthenticationStore;
     resumeSession: () => Promise<boolean>;
     consumeFork: (data: WorkerForkMessage['payload']) => Promise<WorkerMessageResponse<WorkerMessageType.FORK>>;
-    login: (options: {
-        UID: string;
-        AccessToken: string;
-        RefreshToken: string;
-        keyPassword: string;
-    }) => Promise<boolean>;
+    login: (options: LoginOptions) => Promise<boolean>;
     logout: () => boolean;
     init: () => Promise<boolean>;
     lock: () => void;
@@ -70,13 +72,11 @@ export const createAuthService = ({
     const authService: AuthService = {
         authStore: exposeAuthStore(createAuthenticationStore(createStore())),
 
-        lock: () => {
+        lock: withContext((ctx) => {
             authCtx.locked = true;
-
-            const ctx = WorkerContext.get();
             ctx.setStatus(WorkerStatus.LOCKED);
             onSessionLocked?.();
-        },
+        }),
 
         unlock: () => {
             authCtx.locked = false;
@@ -114,15 +114,15 @@ export const createAuthService = ({
             return result;
         },
         /**
-         * Consumes a session fork request and sends response
+         * Consumes a session fork request and sends response.
+         * Reset api in case it was in an invalid session state.
          * to see full data flow : `applications/account/src/app/content/PublicApp.tsx`
          */
-        consumeFork: async (data): Promise<WorkerMessageResponse<WorkerMessageType.FORK>> => {
-            api.configure(); /** reset api in case it was in an invalid session state */
-            const context = WorkerContext.get();
+        consumeFork: withContext(async (ctx, data) => {
+            api.configure();
 
             try {
-                context.setStatus(WorkerStatus.AUTHORIZING);
+                ctx.setStatus(WorkerStatus.AUTHORIZING);
 
                 const { keyPassword } = data;
                 const result = await consumeFork({ api, ...data });
@@ -149,7 +149,7 @@ export const createAuthService = ({
                     },
                 };
             } catch (error: any) {
-                context.setStatus(WorkerStatus.UNAUTHORIZED);
+                ctx.setStatus(WorkerStatus.UNAUTHORIZED);
                 throw {
                     payload: {
                         title: error.title ?? c('Error').t`Something went wrong`,
@@ -157,10 +157,10 @@ export const createAuthService = ({
                     },
                 };
             }
-        },
+        }),
 
-        login: async ({ UID, keyPassword, AccessToken, RefreshToken }) => {
-            const context = WorkerContext.get();
+        login: withContext(async (ctx, options) => {
+            const { UID, keyPassword, AccessToken, RefreshToken } = options;
             await browserSessionStorage.setItems({ UID, keyPassword, AccessToken, RefreshToken });
 
             api.configure({ UID, AccessToken, RefreshToken });
@@ -216,31 +216,28 @@ export const createAuthService = ({
             logger.info(`[Worker::Auth] Session unlocked - user authorized`);
 
             authService.unlock();
-            context.setStatus(WorkerStatus.AUTHORIZED);
+            ctx.setStatus(WorkerStatus.AUTHORIZED);
             onAuthorized?.();
 
             return true;
-        },
+        }),
 
-        logout: () => {
-            const context = WorkerContext.get();
-
+        logout: withContext((ctx) => {
             authService.authStore.setUID(undefined);
             authService.authStore.setPassword(undefined);
 
             api.unsubscribe();
             api.configure();
 
-            context.setStatus(WorkerStatus.UNAUTHORIZED);
+            ctx.setStatus(WorkerStatus.UNAUTHORIZED);
             onUnauthorized?.();
 
             return true;
-        },
-        resumeSession: async () => {
-            const context = WorkerContext.get();
+        }),
 
+        resumeSession: withContext(async (ctx) => {
             logger.info(`[Worker] Trying to resume session`);
-            context.setStatus(WorkerStatus.RESUMING);
+            ctx.setStatus(WorkerStatus.RESUMING);
 
             const persistedSession = await getPersistedSession();
 
@@ -268,7 +265,7 @@ export const createAuthService = ({
                         return await authService.login(session);
                     }
                 } catch (e) {
-                    context.setStatus(WorkerStatus.RESUMING_FAILED);
+                    ctx.setStatus(WorkerStatus.RESUMING_FAILED);
                     const description = e instanceof Error ? getApiErrorMessage(e) ?? e?.message : '';
 
                     store.dispatch(
@@ -282,9 +279,9 @@ export const createAuthService = ({
                 }
             }
 
-            context.setStatus(WorkerStatus.UNAUTHORIZED);
+            ctx.setStatus(WorkerStatus.UNAUTHORIZED);
             return false;
-        },
+        }),
     };
 
     WorkerMessageBroker.registerMessage(WorkerMessageType.FORK, withPayload(authService.consumeFork));

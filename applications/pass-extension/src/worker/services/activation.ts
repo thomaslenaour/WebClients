@@ -6,18 +6,18 @@ import { boot, wakeup } from '@proton/pass/store/actions';
 import {
     WorkerInitMessage,
     WorkerMessageResponse,
+    WorkerMessageType,
     WorkerMessageWithSender,
     WorkerStatus,
     WorkerWakeUpMessage,
 } from '@proton/pass/types';
-import { WorkerMessageType } from '@proton/pass/types';
 import { getErrorMessage } from '@proton/pass/utils/errors';
 import { logger } from '@proton/pass/utils/logger';
 import { workerCanBoot } from '@proton/pass/utils/worker';
 
 import { ENV, RESUME_FALLBACK } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
-import WorkerContext from '../context';
+import { withContext } from '../context';
 import store from '../store';
 
 export const createActivationService = () => {
@@ -25,23 +25,19 @@ export const createActivationService = () => {
      * Safety-net around worker boot-sequence :
      * Ensures no on-going boot.
      */
-    const handleBoot = () => {
-        const ctx = WorkerContext.get();
-
+    const handleBoot = withContext((ctx) => {
         if (workerCanBoot(ctx.status)) {
             ctx.setStatus(WorkerStatus.BOOTING);
             store.dispatch(boot({}));
         }
-    };
+    });
     /**
      * Try recovering the session when browser starts up
      * if any session was locally persisted
      * if not in production - use sync.html session to workaround the
      * the SSL handshake (net:ERR_SSL_CLIENT_AUTH_CERT_NEEDED)
      */
-    const handleStartup = async () => {
-        const ctx = WorkerContext.get();
-
+    const handleStartup = withContext(async (ctx) => {
         const { loggedIn } = (await ctx.init({ force: true })).getState();
 
         if (ENV === 'development' && RESUME_FALLBACK) {
@@ -50,7 +46,7 @@ export const createActivationService = () => {
                 return browser.windows.create({ url, type: 'popup', height: 600, width: 540 });
             }
         }
-    };
+    });
 
     /**
      * On extension update :
@@ -59,9 +55,7 @@ export const createActivationService = () => {
      * order to gracefully handle any possible store structure
      * changes
      */
-    const handleInstall = async (details: Runtime.OnInstalledDetailsType) => {
-        const ctx = WorkerContext.get();
-
+    const handleInstall = withContext(async (ctx, details: Runtime.OnInstalledDetailsType) => {
         if (details.reason === 'update') {
             if (ENV === 'production') {
                 await browserLocalStorage.removeItems(['state', 'snapshot']);
@@ -81,7 +75,7 @@ export const createActivationService = () => {
 
             await ctx.service.settings.init();
         }
-    };
+    });
 
     /**
      * When waking up from the pop-up (or page) we need to trigger the background wakeup
@@ -89,9 +83,8 @@ export const createActivationService = () => {
      * changes as soon as possible. Regarding the content-script, we simply wait for a
      * ready state as its less "critical".
      */
-    const handleWakeup = async (message: WorkerMessageWithSender<WorkerWakeUpMessage>) => {
-        const context = WorkerContext.get();
-        const { status } = await context.init({});
+    const handleWakeup = withContext(async (ctx, message: WorkerMessageWithSender<WorkerWakeUpMessage>) => {
+        const { status } = await ctx.init({});
 
         return new Promise<WorkerMessageResponse<WorkerMessageType.WORKER_WAKEUP>>(async (resolve) => {
             const { sender: endpoint, payload } = message;
@@ -106,21 +99,22 @@ export const createActivationService = () => {
                     store.dispatch(wakeup({ endpoint, tabId, status }));
 
                     resolve({
-                        ...context.getState(),
+                        ...ctx.getState(),
                         buffered: WorkerMessageBroker.buffer.flush(),
                     });
                 }
                 case 'content-script': {
                     /* no need for any redux operations on content-script
                     wakeup as it doesn't hold any store. */
-                    return resolve((await context.waitForReady()).getState());
+                    return resolve((await ctx.ensureReady()).getState());
                 }
             }
         });
-    };
+    });
 
-    const handleInit = async (message: WorkerMessageWithSender<WorkerInitMessage>) =>
-        (await WorkerContext.get().init({ sync: message.payload.sync })).getState();
+    const handleInit = withContext(async (ctx, message: WorkerMessageWithSender<WorkerInitMessage>) =>
+        (await ctx.init({ sync: message.payload.sync })).getState()
+    );
 
     WorkerMessageBroker.registerMessage(WorkerMessageType.WORKER_WAKEUP, handleWakeup);
     WorkerMessageBroker.registerMessage(WorkerMessageType.WORKER_INIT, handleInit);
