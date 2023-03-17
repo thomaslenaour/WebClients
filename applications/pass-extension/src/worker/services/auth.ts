@@ -13,6 +13,7 @@ import { notification, signout, stateLock } from '@proton/pass/store';
 import { Api, WorkerForkMessage, WorkerMessageResponse, WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { withPayload } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
+import { workerReady } from '@proton/pass/utils/worker';
 import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 import createAuthenticationStore, {
     AuthenticationStore,
@@ -74,6 +75,12 @@ export const createAuthService = ({
 
         lock: withContext((ctx) => {
             logger.info(`[Worker::Auth] Locking context`);
+
+            if (workerReady(ctx.status)) {
+                logger.info(`[Worker::Auth] Locking state`);
+                store.dispatch(stateLock());
+            }
+
             authCtx.locked = true;
             ctx.setStatus(WorkerStatus.LOCKED);
             onSessionLocked?.();
@@ -199,7 +206,7 @@ export const createAuthService = ({
                                 })
                             );
 
-                            return store.dispatch(stateLock());
+                            return;
                         }
                     }
                     case 'error': {
