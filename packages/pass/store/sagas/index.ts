@@ -16,6 +16,7 @@ import itemsRequest from './items-request.saga';
 import notification from './notification.saga';
 import sessionLockDisable from './session-lock-disable';
 import sessionLockEnable from './session-lock-enable';
+import sessionLockImmediate from './session-lock-immediate';
 import sessionUnlock from './session-unlock';
 import signout from './signout.saga';
 import sync from './sync.saga';
@@ -46,6 +47,7 @@ export function* workerRootSaga(options: WorkerRootSagaOptions) {
             notification,
             sessionLockDisable,
             sessionLockEnable,
+            sessionLockImmediate,
             sessionUnlock,
             signout,
             sync,

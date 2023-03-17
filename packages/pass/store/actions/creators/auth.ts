@@ -14,6 +14,8 @@ export const signoutSuccess = createAction('signout success', (payload: { soft: 
     withCacheBlock({ payload })
 );
 
+export const sessionLockImmediate = createAction('immediate session lock', () => withCacheBlock({ payload: {} }));
+
 export const sessionLockEnableIntent = createAction('enable session lock', (payload: { pin: string; ttl: number }) =>
     pipe(withCacheBlock, withRequest({ id: settingsEdit('session-lock'), type: 'start' }))({ payload })
 );
