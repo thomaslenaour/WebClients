@@ -10,17 +10,18 @@ import { getUser } from '@proton/shared/lib/api/user';
 import { Address, User } from '@proton/shared/lib/interfaces';
 
 import { boot, bootFailure, bootSuccess, stateSync } from '../actions';
-import { selectAllAddresses, selectUser } from '../selectors';
+import { selectAllAddresses, selectSessionLockToken, selectUser } from '../selectors';
 import { State, WorkerRootSagaOptions } from '../types';
 import getCachedState, { ExtensionCache } from './workers/cache';
 import { SyncType, SynchronizationResult, synchronize } from './workers/sync';
 
 function* bootWorker({ onBoot }: WorkerRootSagaOptions) {
     try {
-        const cache: Maybe<ExtensionCache> = yield getCachedState();
-        logger.info(`[Saga::Boot] ${cache !== undefined ? 'Booting from cache' : 'Cache not found during boot'}`);
-
+        const sessionLockToken: Maybe<string> = yield select(selectSessionLockToken);
+        const cache: Maybe<ExtensionCache> = yield getCachedState(sessionLockToken);
         const state = cache?.state ?? ((yield select()) as State);
+
+        logger.info(`[Saga::Boot] ${cache !== undefined ? 'Booting from cache' : 'Cache not found during boot'}`);
 
         const cachedUser = selectUser(state);
         const cachedAddresses = selectAllAddresses(state) ?? [];

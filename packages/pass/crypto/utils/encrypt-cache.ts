@@ -19,7 +19,7 @@ const HKDF_PARAMS: Omit<HkdfParams, 'salt'> = {
  * @param salt - randomly generated salt of `SALT_LENGTH` size, ideally regenerated at each snapshot
  * @returns key to use with `encryptData` and `decryptData`
  */
-export const getCacheEncryptionKey = async (salt: Uint8Array): Promise<CryptoKey> => {
+export const getCacheEncryptionKey = async (salt: Uint8Array, sessionLockToken?: string): Promise<CryptoKey> => {
     // sanity check to avoid problems when using the key
     if (ENCRYPTION_ALGORITHM !== KEY_ALGORITHM.name) {
         throw new Error('Key algorithm does not match encryption algorithm');
@@ -29,7 +29,7 @@ export const getCacheEncryptionKey = async (salt: Uint8Array): Promise<CryptoKey
     // future GCM key-recovery attacks.
     // Since the password is already salted using bcrypt, we consider it entropic enough for HKDF: see
     // discussion on key-stretching step in https://eprint.iacr.org/2010/264.pdf (Section 9).
-    const saltedUserPassword = authentication.getPassword();
+    const saltedUserPassword = `${authentication.getPassword()}${sessionLockToken ?? ''}`;
     const passwordBytes = stringToUint8Array(saltedUserPassword).slice(0, KEY_LENGTH);
     const keyToSalt = await crypto.subtle.importKey('raw', passwordBytes.buffer, HKDF_PARAMS.name, false, [
         'deriveKey',

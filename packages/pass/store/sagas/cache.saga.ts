@@ -5,7 +5,7 @@ import { authentication } from '@proton/pass/auth/authentication';
 import { PassCrypto } from '@proton/pass/crypto';
 import { CACHE_SALT_LENGTH, encryptData, getCacheEncryptionKey } from '@proton/pass/crypto/utils';
 import { browserLocalStorage } from '@proton/pass/extension/storage';
-import { EncryptionTag } from '@proton/pass/types';
+import { EncryptionTag, type Maybe } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
 import { objectDelete } from '@proton/pass/utils/object';
 import { stringToUint8Array, uint8ArrayToString } from '@proton/shared/lib/helpers/encoding';
@@ -14,6 +14,7 @@ import { wait } from '@proton/shared/lib/helpers/promise';
 import { isCacheTriggeringAction } from '../actions/with-cache-block';
 import { asIfNotOptimistic } from '../optimistic/selectors/select-is-optimistic';
 import { reducerMap } from '../reducers';
+import { selectSessionLockToken } from '../selectors';
 import { State } from '../types';
 
 function* cacheWorker(action: AnyAction) {
@@ -21,8 +22,9 @@ function* cacheWorker(action: AnyAction) {
 
     if (authentication?.hasSession()) {
         try {
+            const sessionLockToken: Maybe<string> = yield select(selectSessionLockToken);
             const cacheSalt = crypto.getRandomValues(new Uint8Array(CACHE_SALT_LENGTH));
-            const key: CryptoKey = yield getCacheEncryptionKey(cacheSalt);
+            const key: CryptoKey = yield getCacheEncryptionKey(cacheSalt, sessionLockToken);
 
             const state = (yield select()) as State;
             const nonOptimisticState = asIfNotOptimistic(state, reducerMap);
