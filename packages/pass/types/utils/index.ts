@@ -1,3 +1,5 @@
+export type Callback<T extends any[] = any[]> = (...args: T) => any;
+
 export type Maybe<T> = T | undefined;
 export type MaybeNull<T> = T | null;
 export type Unpack<T> = T extends (infer U)[] ? U : never;
