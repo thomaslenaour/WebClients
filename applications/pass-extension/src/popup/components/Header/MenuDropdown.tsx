@@ -1,5 +1,5 @@
 import { type VFC, memo, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { c } from 'ttag';
 import browser from 'webextension-polyfill';
@@ -14,8 +14,9 @@ import {
     Icon,
     usePopperAnchor,
 } from '@proton/components';
-import { vaultDeleteIntent } from '@proton/pass/store';
+import { selectCanLockSession, vaultDeleteIntent } from '@proton/pass/store';
 import type { MaybeNull, VaultShare } from '@proton/pass/types';
+import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
 import { ConfirmationModal } from '../../../../src/shared/components/confirmation';
 import { VaultModal, VaultModalProps } from '../../../../src/shared/components/vaults/VaultModal';
@@ -31,8 +32,9 @@ const DROPDOWN_SIZE: NonNullable<DropdownProps['size']> = {
 };
 
 const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
-    const { sync, logout, ready } = usePopupContext();
+    const { sync, lock, logout, ready } = usePopupContext();
     const { vaultId, vaultBeingDeleted, setVaultId, setVaultBeingDeleted } = useItemsFilteringContext();
+    const canLock = useSelector(selectCanLockSession);
 
     const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLButtonElement>();
     const dispatch = useDispatch();
@@ -123,6 +125,17 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                             <Icon name="arrow-rotate-right" className="mr0-5" />
                             {c('Action').t`Sync`}
                         </DropdownMenuButton>
+
+                        {canLock && (
+                            <DropdownMenuButton
+                                className="flex flex-align-items-center text-left"
+                                onClick={lock}
+                                disabled={!ready}
+                            >
+                                <Icon name="lock" className="mr0-5" />
+                                {c('Action').t`Lock ${PASS_APP_NAME}`}
+                            </DropdownMenuButton>
+                        )}
 
                         <DropdownMenuButton
                             className="flex flex-align-items-center text-left"

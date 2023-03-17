@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { NotificationsContext } from '@proton/components';
 import { useNotifications } from '@proton/components/hooks';
 import { popupMessage } from '@proton/pass/extension/message';
-import { selectWorkerSyncing, syncIntent } from '@proton/pass/store';
+import { selectWorkerSyncing, sessionLockImmediate, syncIntent } from '@proton/pass/store';
 import { WorkerMessageType, WorkerMessageWithSender, WorkerStatus } from '@proton/pass/types';
 
 import { ExtensionContextProvider } from '../../../shared/components/extension';
@@ -24,7 +24,11 @@ const ExtendedExtensionContext: FC = ({ children }) => {
     const dispatch = useDispatch();
 
     const syncing = useSelector(selectWorkerSyncing) || state.status === WorkerStatus.BOOTING;
-    const sync = useCallback(() => dispatch(syncIntent({})), [syncing]);
+
+    /* SESSION LOCK START */
+    const sync = useCallback(() => dispatch(syncIntent({})), []);
+    const lock = useCallback(() => dispatch(sessionLockImmediate()), []);
+    /* SESSION LOCK END */
 
     useEffect(() => {
         if (syncing) {
@@ -39,18 +43,21 @@ const ExtendedExtensionContext: FC = ({ children }) => {
     useEffect(() => notificationsManager.setOffset({ y: 10 }), []);
 
     return (
+        /* SESSION LOCK START */
         <PopupContext.Provider
             value={{
                 state,
                 ready,
                 sync,
                 logout,
+                lock,
                 realm: realm ?? undefined,
                 subdomain: subdomain ?? undefined,
             }}
         >
             {children}
         </PopupContext.Provider>
+        /* SESSION LOCK END */
     );
 };
 

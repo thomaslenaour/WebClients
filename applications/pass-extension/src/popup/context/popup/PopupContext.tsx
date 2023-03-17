@@ -9,6 +9,7 @@ export interface PopupContextValue extends ExtensionAppContextValue {
     realm: Maybe<Realm>;
     subdomain: Maybe<string>;
     sync: () => void;
+    lock: () => void;
 }
 
 export const PopupContext = createContext<PopupContextValue>({
@@ -17,5 +18,6 @@ export const PopupContext = createContext<PopupContextValue>({
     subdomain: undefined,
     ready: false,
     logout: noop,
+    lock: noop,
     sync: noop,
 });
