@@ -5,6 +5,7 @@ import { authentication } from '@proton/pass/auth/authentication';
 import { PassCrypto } from '@proton/pass/crypto';
 import { Maybe } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
+import { merge } from '@proton/pass/utils/object';
 import { getAllAddresses } from '@proton/shared/lib/api/addresses';
 import { getUser } from '@proton/shared/lib/api/user';
 import { Address, User } from '@proton/shared/lib/interfaces';
@@ -19,7 +20,9 @@ function* bootWorker({ onBoot }: WorkerRootSagaOptions) {
     try {
         const sessionLockToken: Maybe<string> = yield select(selectSessionLockToken);
         const cache: Maybe<ExtensionCache> = yield getCachedState(sessionLockToken);
-        const state = cache?.state ?? ((yield select()) as State);
+
+        const currentState: State = yield select();
+        const state = merge(cache?.state ?? {}, currentState);
 
         logger.info(`[Saga::Boot] ${cache !== undefined ? 'Booting from cache' : 'Cache not found during boot'}`);
 

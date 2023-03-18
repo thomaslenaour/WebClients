@@ -1,20 +1,18 @@
 import { Reducer } from 'redux';
 
 import { or } from '@proton/pass/utils/fp';
-import { partialMerge } from '@proton/pass/utils/object';
 
 import { sessionLockDisableSuccess, sessionLockEnableSuccess, sessionUnlockSuccess } from '../actions';
 
-export type SettingsState = { sessionLockEnabled: boolean; sessionLockToken: null | string };
-const INITIAL_STATE: SettingsState = { sessionLockEnabled: false, sessionLockToken: null };
+export type SettingsState = { sessionLockToken?: string };
 
-const reducer: Reducer<SettingsState> = (state = INITIAL_STATE, action) => {
+const reducer: Reducer<SettingsState> = (state = {}, action) => {
     if (or(sessionLockEnableSuccess.match, sessionUnlockSuccess.match)(action)) {
-        return partialMerge(state, { sessionLockEnabled: true, sessionLockToken: action.payload.storageToken });
+        return { sessionLockToken: action.payload.storageToken };
     }
 
     if (sessionLockDisableSuccess.match(action)) {
-        return partialMerge(state, { sessionLockEnabled: false, sessionLockToken: null });
+        return {};
     }
 
     return state;

@@ -1,10 +1,10 @@
-import { select, takeLeading } from 'redux-saga/effects';
+import { fork, put, select, takeLeading } from 'redux-saga/effects';
 
 import { lockSessionImmediate } from '@proton/pass/auth/session-lock';
 import type { Maybe } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
 
-import { sessionLockImmediate } from '../actions';
+import { offlineLock, sessionLockImmediate } from '../actions';
 import { selectSessionLockToken } from '../selectors';
 import type { WorkerRootSagaOptions } from '../types';
 
@@ -15,15 +15,18 @@ import type { WorkerRootSagaOptions } from '../types';
  */
 function* lockSessionImmediateWorker({ onSessionLocked }: WorkerRootSagaOptions) {
     const storageToken: Maybe<string> = yield select(selectSessionLockToken);
-
     if (storageToken) {
-        try {
-            yield lockSessionImmediate();
-        } catch (e) {
-            logger.info('[Saga::SessionLock] Could not lock session on back-end');
-        } finally {
-            onSessionLocked?.(storageToken);
-        }
+        /* fork for non-blocking action -> immediate UI effect */
+        yield fork(function* () {
+            try {
+                yield lockSessionImmediate();
+            } catch (e) {
+                logger.info('[Saga::SessionLock] Could not lock session on back-end');
+                yield put(offlineLock()); /* TODO: handle offline locking -> lock on next boot */
+            }
+        });
+
+        onSessionLocked?.(storageToken);
     }
 }
 
