@@ -16,8 +16,6 @@ import { TabId } from './runtime';
 import { WorkerState } from './state';
 
 export enum WorkerMessageType {
-    /* DEV */
-    DEV_SERVER = 'DEV_SERVER',
     /* AUTH */
     FORK = 'fork',
     RESUME_SESSION_SUCCESS = 'RESUME_SESSION_SUCCESS',
@@ -50,11 +48,6 @@ export enum WorkerMessageType {
     /* SERVER EVENT */
     SHARE_SERVER_EVENT = 'SHARE_SERVER_EVENT',
 }
-
-export type WorkerDevServerMessage = {
-    type: WorkerMessageType.DEV_SERVER;
-    payload: { action: 'reload' };
-};
 
 export type WorkerForkMessage = {
     type: WorkerMessageType.FORK;
@@ -153,7 +146,6 @@ export type ShareServerEventMessage = {
 };
 
 export type WorkerMessage =
-    | WorkerDevServerMessage
     | StoreActionMessage
     | NotificationMessage
     | WorkerForkMessage

@@ -8,7 +8,8 @@ import debounce from '@proton/utils/debounce';
 import noop from '@proton/utils/noop';
 
 import * as config from '../../app/config';
-import { ENV, ExtensionContext, ExtensionContextType, setupExtensionContext } from '../../shared/extension';
+import { ExtensionContext, ExtensionContextType, setupExtensionContext } from '../../shared/extension';
+import { CONTENT_SCRIPT_INJECTED } from '../constants';
 import CSContext, { ContentScriptContext } from '../context';
 import { getAllFields } from '../handles/form';
 import { isIFrameRootAttached } from '../injections/iframe/create-iframe-root';
@@ -17,12 +18,15 @@ import { createDropdown } from './iframes/dropdown';
 import { createNotification } from './iframes/notification';
 
 export const createContentScriptService = () => {
+    const listeners = createListenerStore();
+
     const createIFrames = () => ({
         dropdown: createDropdown(),
         notification: isMainFrame() ? createNotification() : null,
     });
 
     const context: ContentScriptContext = CSContext.set({
+        active: true,
         formManager: createFormManager(),
         iframes: createIFrames(),
         state: {
@@ -41,8 +45,6 @@ export const createContentScriptService = () => {
         },
         ignore: () => false,
     });
-
-    const listeners = createListenerStore();
 
     const onWorkerStateChange = (workerState: WorkerState) => {
         const { loggedIn, UID } = workerState;
@@ -73,12 +75,6 @@ export const createContentScriptService = () => {
                 case WorkerMessageType.AUTOFILL_SYNC: {
                     return context.formManager.autofill.setLoginItemsCount(message.payload.count);
                 }
-                case WorkerMessageType.DEV_SERVER: {
-                    if (ENV === 'development' && isMainFrame()) {
-                        return window.location.reload();
-                    }
-                    break;
-                }
             }
         }
     };
@@ -100,37 +96,97 @@ export const createContentScriptService = () => {
 
             if (res.type === 'success') {
                 const workerState = { loggedIn: res.loggedIn, status: res.status, UID: res.UID };
+                onWorkerStateChange(workerState);
+
                 logger.info(`[ContentScript::Start] Worker "${workerState.status}"`);
 
-                onWorkerStateChange(workerState);
                 context.formManager.observe();
                 context.formManager.detect('VisibilityChange');
 
                 port.onMessage.addListener(onPortMessage);
                 listeners.addObserver(debounce(ensureIFramesAttached, 500), document.body, { childList: true });
+
+                context.active = true;
             }
+        } catch (_) {
+            context.active = false;
+        }
+    };
+
+    const destroy = () => {
+        const extensionContext = ExtensionContext.get();
+
+        context.formManager.sleep();
+        context.iframes.dropdown.close();
+        context.iframes.notification?.close();
+        context.active = false;
+
+        try {
+            /* may fail if context already invalidated */
+            extensionContext.port.disconnect();
         } catch (_) {}
+
+        listeners.removeAll();
     };
 
     const setup = async () => {
         try {
             return await setupExtensionContext({
                 endpoint: 'content-script',
-                onDisconnect: (prevContext) => prevContext.port.onMessage.removeListener(onPortMessage),
-                onContextChange: (nextContext) => {
-                    context.formManager.sleep();
-                    handleStart(nextContext).catch(noop);
-                },
+                onDisconnect: () => destroy(),
+                onContextChange: (nextCtx) => handleStart(nextCtx).catch(noop),
             });
         } catch (e) {
-            logger.warn('[ContentScript::Setup]', e);
+            logger.warn('[ContentScript::SetupError]', e);
         }
     };
+
+    const handleVisibilityChange = async () => {
+        try {
+            switch (document.visibilityState) {
+                case 'visible': {
+                    const extensionContext = await setup();
+                    return extensionContext && (await handleStart(extensionContext));
+                }
+                case 'hidden': {
+                    return destroy();
+                }
+            }
+        } catch (e) {
+            logger.warn(`[ContentScript::InvalidationError]`, e);
+            /**
+             * Reaching this catch block will likely happen
+             * when the setup function fails due to an extension
+             * update. At this point we should remove any listeners
+             * in this now-stale content-script and delete any
+             * allocated resources
+             */
+            context.active = false;
+            destroy();
+        }
+    };
+
+    /**
+     * If another content-script is being injected - if
+     * the extension updates - we should destroy the current
+     * one and let the incoming one take over.
+     */
+    window.addEventListener('message', (message) => {
+        if (message.data === CONTENT_SCRIPT_INJECTED) {
+            logger.info(`[ContentScript::Invalidated] a newer content-script was injected`);
+            context.active = false;
+            context.iframes.dropdown.destroy();
+            context.iframes.notification?.destroy();
+
+            window.removeEventListener('visibilitychange', handleVisibilityChange);
+            destroy();
+        }
+    });
 
     return {
         watch: (mainFrame: boolean) => {
             setup()
-                .then((context) => {
+                .then((extensionContext) => {
                     /**
                      * When browser recovers a browsing session (ie: upon
                      * restarting after an exit) content-scripts will be
@@ -138,8 +194,8 @@ export const createContentScriptService = () => {
                      * want to only "start" the content-script if the tab
                      * is visible to avoid swarming the worker with wake-ups.
                      */
-                    if (document.visibilityState === 'visible' && context) {
-                        return handleStart(context);
+                    if (document.visibilityState === 'visible' && extensionContext && context.active) {
+                        return handleStart(extensionContext);
                     }
                 })
                 .then(() => {
@@ -148,25 +204,7 @@ export const createContentScriptService = () => {
                      * root main frame to avoid unnecessary detections
                      */
                     if (mainFrame) {
-                        window.addEventListener('visibilitychange', async () => {
-                            try {
-                                switch (document.visibilityState) {
-                                    case 'visible': {
-                                        const context = await setup();
-                                        return context && (await handleStart(context));
-                                    }
-                                    case 'hidden': {
-                                        context.formManager.sleep();
-                                        context.iframes.dropdown.close();
-                                        ExtensionContext.get().port.disconnect();
-                                        listeners.removeAll();
-                                        return;
-                                    }
-                                }
-                            } catch (e) {
-                                logger.warn(`[ContentScript::Error]`, e);
-                            }
-                        });
+                        window.addEventListener('visibilitychange', handleVisibilityChange);
                     }
                 })
                 .catch(noop);

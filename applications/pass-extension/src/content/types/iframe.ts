@@ -8,17 +8,19 @@ export type IFrameState = {
 export interface IFrameApp<DomainMessage> {
     element: HTMLIFrameElement;
     state: IFrameState;
+    sendMessage: (message: IFrameAppMessage | DomainMessage) => void;
     open: (scrollRef?: HTMLElement) => void;
     close: () => void;
     reset: (workerState: WorkerState) => void;
-    sendMessage: (message: IFrameAppMessage | DomainMessage) => void;
+    destroy: () => void;
 }
 export interface IFrameService<DomainMessage = {}, OpenOptions = {}> {
     getState: () => IFrameState;
     sendMessage: (message: DomainMessage | IFrameAppMessage) => void;
     open: (options: OpenOptions) => void;
     close: () => void;
-    reset: (state: WorkerState) => void;
+    reset: (workerState: WorkerState) => void;
+    destroy: () => void;
 }
 
 export enum IFrameAppMessageType {

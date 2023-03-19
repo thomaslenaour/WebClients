@@ -1,5 +1,5 @@
 import { Maybe, WorkerState } from '@proton/pass/types';
-import { createElement, pixelEncoder } from '@proton/pass/utils/dom';
+import { createElement, pixelEncoder, safeRemoveChild } from '@proton/pass/utils/dom';
 import { createListenerStore } from '@proton/pass/utils/listener';
 import { logger } from '@proton/pass/utils/logger';
 import { merge } from '@proton/pass/utils/object';
@@ -135,6 +135,11 @@ export const createIFrameApp = <DomainMessage = {}>({
         });
     };
 
+    const destroy = () => {
+        listeners.removeAll();
+        safeRemoveChild(iframeRoot, iframe);
+    };
+
     const app: IFrameApp<DomainMessage> = {
         element: iframe,
         state,
@@ -142,6 +147,7 @@ export const createIFrameApp = <DomainMessage = {}>({
         reset,
         open,
         close,
+        destroy,
     };
 
     return app;

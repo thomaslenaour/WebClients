@@ -68,6 +68,7 @@ export const createNotification = (): InjectedNotification => {
         sendMessage: app.sendMessage,
         reset: app.reset,
         close: app.close,
+        destroy: app.destroy,
         open,
     };
 
