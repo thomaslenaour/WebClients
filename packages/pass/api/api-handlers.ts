@@ -32,9 +32,14 @@ export const withApiHandlers = ({ apiContext, refreshHandler }: ApiHandlersOptio
         } = options || {};
 
         const next = async (attempts: number, maxAttempts?: number): Promise<any> => {
-            if (apiContext.status.sessionLocked) throw LockedSessionError();
             if (apiContext.status.sessionInactive) throw InactiveSessionError();
             if (apiContext.status.appVersionBad) throw AppVersionBadError();
+            if (
+                options.url?.startsWith('pass') &&
+                options.url !== 'pass/v1/user/session/lock/unlock' &&
+                apiContext.status.sessionLocked
+            )
+                throw LockedSessionError();
 
             try {
                 const response = await apiContext.call(
