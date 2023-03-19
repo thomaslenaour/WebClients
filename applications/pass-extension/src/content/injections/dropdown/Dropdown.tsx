@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import { c } from 'ttag';
 
@@ -63,6 +63,15 @@ const Dropdown: React.FC = () => {
         }
     };
 
+    const handleClose = useCallback(
+        () =>
+            IFrameMessageBroker.postMessage({
+                sender: 'dropdown',
+                type: IFrameAppMessageType.CLOSE,
+            }),
+        []
+    );
+
     useEffect(() => {
         IFrameMessageBroker.postMessage<DropdownIframeMessage>({
             sender: 'dropdown',
@@ -99,16 +108,24 @@ const Dropdown: React.FC = () => {
 
     const content = useMemo(() => {
         if (state !== undefined) {
-            const { loggedIn, action } = state;
+            const { loggedIn, action, status } = state;
+
+            if (status === WorkerStatus.LOCKED) {
+                return (
+                    <DropdownItem
+                        onClick={handleClose}
+                        title={c('Title').t`${PASS_APP_NAME} locked`}
+                        subTitle={c('Info').t`Unlock with your pin`}
+                        icon="lock-filled"
+                    />
+                );
+            }
 
             if (!loggedIn) {
                 return (
                     <DropdownItem
                         onClick={async () => {
-                            IFrameMessageBroker.postMessage({
-                                sender: 'dropdown',
-                                type: IFrameAppMessageType.CLOSE,
-                            });
+                            handleClose();
                             await navigateToLogin();
                         }}
                         title={PASS_APP_NAME}

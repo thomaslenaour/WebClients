@@ -54,7 +54,7 @@ export const createContentScriptService = () => {
         context.formManager.getForms().forEach((form) => {
             const fields = getAllFields(form);
             fields.forEach((field) => {
-                field.icon?.setActive(loggedIn);
+                field.icon?.setStatus(workerState.status);
                 return !loggedIn && field?.icon?.setCount(0);
             });
         });
@@ -98,18 +98,17 @@ export const createContentScriptService = () => {
                 })
             );
 
-            const workerState =
-                res.type === 'success'
-                    ? { loggedIn: res.loggedIn, status: res.status, UID: res.UID }
-                    : { loggedIn: false, status: WorkerStatus.ERROR, UID: undefined };
+            if (res.type === 'success') {
+                const workerState = { loggedIn: res.loggedIn, status: res.status, UID: res.UID };
+                logger.info(`[ContentScript::Start] Worker "${workerState.status}"`);
 
-            context.formManager.observe();
-            context.formManager.detect('VisibilityChange');
+                onWorkerStateChange(workerState);
+                context.formManager.observe();
+                context.formManager.detect('VisibilityChange');
 
-            onWorkerStateChange(workerState);
-            port.onMessage.addListener(onPortMessage);
-
-            listeners.addObserver(debounce(ensureIFramesAttached, 500), document.body, { childList: true });
+                port.onMessage.addListener(onPortMessage);
+                listeners.addObserver(debounce(ensureIFramesAttached, 500), document.body, { childList: true });
+            }
         } catch (_) {}
     };
 
@@ -164,7 +163,9 @@ export const createContentScriptService = () => {
                                         return;
                                     }
                                 }
-                            } catch (_) {}
+                            } catch (e) {
+                                logger.warn(`[ContentScript::Error]`, e);
+                            }
                         });
                     }
                 })
