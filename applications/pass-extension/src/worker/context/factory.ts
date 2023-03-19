@@ -3,9 +3,9 @@ import { acknowledge } from '@proton/pass/store';
 import { unlockSession } from '@proton/pass/store/actions/requests';
 import type { Api } from '@proton/pass/types';
 import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
-import { invert, waitUntil } from '@proton/pass/utils/fp';
+import { waitUntil } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
-import { workerBusy, workerLoggedOut, workerReady } from '@proton/pass/utils/worker';
+import { workerLoggedOut, workerReady, workerStatusResolved } from '@proton/pass/utils/worker';
 import { setUID as setSentryUID } from '@proton/shared/lib/helpers/sentry';
 import noop from '@proton/utils/noop';
 
@@ -58,7 +58,7 @@ export const createWorkerContext = (options: { api: Api; status: WorkerStatus })
 
         async ensureReady() {
             const context = WorkerContext.get();
-            await waitUntil(() => invert(workerBusy)(context.getState().status), 50);
+            await waitUntil(() => workerStatusResolved(context.getState().status), 50);
 
             return context;
         },
