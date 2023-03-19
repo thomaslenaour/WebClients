@@ -1,14 +1,15 @@
-import { Maybe } from '@proton/pass/types';
+import { Maybe, WorkerStatus } from '@proton/pass/types';
+import { safeRemoveChild } from '@proton/pass/utils/dom';
 import { createListenerStore } from '@proton/pass/utils/listener';
 
 import { EXTENSION_PREFIX, ICON_CLASSNAME } from '../constants';
 import CSContext from '../context';
 import { applyInjectionStyles, cleanupInjectionStyles, createIcon } from '../injections/icon';
-import { createCircleLoader } from '../injections/icon/loader';
+import { createCircleLoader, createLockIcon } from '../injections/icon/svg';
 import { DropdownAction, FieldHandles, FieldIconHandles } from '../types';
 
 type CreateIconOptions = { field: FieldHandles };
-type IconHandlesContext = { loading: boolean; timer: Maybe<NodeJS.Timeout> };
+type IconHandlesContext = { timer: Maybe<NodeJS.Timeout>; loading: boolean };
 
 const handleIconClick = (field: FieldHandles) => (action: DropdownAction) => {
     const dropdown = CSContext.get().iframes.dropdown;
@@ -16,18 +17,32 @@ const handleIconClick = (field: FieldHandles) => (action: DropdownAction) => {
 };
 
 export const createFieldIconHandles = ({ field }: CreateIconOptions): FieldIconHandles => {
-    const ctx: IconHandlesContext = { loading: false, timer: undefined };
-
     const context = CSContext.get();
     const listeners = createListenerStore();
-
-    const loader = createCircleLoader();
     const input = field.element as HTMLInputElement;
     const inputBox = field.boxElement;
     const { icon, wrapper } = createIcon(field);
+    const loader = createCircleLoader();
+    const lock = createLockIcon();
 
-    const setActive = (active: boolean) => {
-        icon.classList[active ? 'remove' : 'add'](`${ICON_CLASSNAME}--disabled`);
+    const ctx: IconHandlesContext = { timer: undefined, loading: false };
+
+    const setStatus = (status: WorkerStatus) => {
+        icon.classList.remove(`${ICON_CLASSNAME}--loading`);
+        safeRemoveChild(icon, loader);
+        safeRemoveChild(icon, lock);
+
+        switch (status) {
+            case WorkerStatus.READY:
+                return icon.classList.remove(`${ICON_CLASSNAME}--disabled`);
+
+            case WorkerStatus.LOCKED:
+                icon.classList.add(`${ICON_CLASSNAME}--disabled`);
+                return icon.appendChild(lock);
+
+            default:
+                return icon.classList.add(`${ICON_CLASSNAME}--disabled`);
+        }
     };
 
     const setCount = (count: number) => {
@@ -56,13 +71,13 @@ export const createFieldIconHandles = ({ field }: CreateIconOptions): FieldIconH
     };
 
     listeners.addListener(window, 'resize', handleResize);
-    setActive(context.state.loggedIn);
+    setStatus(context.state.status);
 
     return {
         element: icon,
-        setActive,
-        setCount,
+        setStatus,
         setLoading,
+        setCount,
         setOnClickAction: (action) => {
             listeners.addListener(icon, 'click', (e) => {
                 e.preventDefault();
