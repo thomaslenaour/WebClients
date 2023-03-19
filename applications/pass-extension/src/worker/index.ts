@@ -60,6 +60,5 @@ const context = createWorkerContext({ api, status: WorkerStatus.IDLE });
 browser.runtime.onConnect.addListener(WorkerMessageBroker.ports.onConnect);
 browser.runtime.onMessageExternal.addListener(WorkerMessageBroker.onMessage);
 browser.runtime.onMessage.addListener(WorkerMessageBroker.onMessage);
-
 browser.runtime.onStartup.addListener(context.service.activation.onStartup);
 browser.runtime.onInstalled.addListener(context.service.activation.onInstall);

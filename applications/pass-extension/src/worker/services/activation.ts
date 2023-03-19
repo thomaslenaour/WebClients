@@ -28,6 +28,7 @@ export const createActivationService = () => {
     const handleBoot = withContext((ctx) => {
         if (workerCanBoot(ctx.status)) {
             ctx.setStatus(WorkerStatus.BOOTING);
+
             store.dispatch(boot({}));
         }
     });

@@ -210,8 +210,8 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
 
             if (authCtx.locked || (await isSessionLocked())) {
                 logger.info(`[Worker::Auth] Detected locked session`);
-                authService.lock();
 
+                authService.lock();
                 return false;
             }
 
