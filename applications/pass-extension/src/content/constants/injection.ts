@@ -1,6 +1,7 @@
 import browser from 'webextension-polyfill';
 
 export const EXTENSION_PREFIX = 'protonpass';
+export const CONTENT_SCRIPT_INJECTED = `${EXTENSION_PREFIX}-cs-injected`;
 export const INJECTOR_FLAG = `data-${EXTENSION_PREFIX}-injected`;
 export const ICON_ROOT_CLASSNAME = `${EXTENSION_PREFIX}-input`;
 export const ICON_WRAPPER_CLASSNAME = `${ICON_ROOT_CLASSNAME}--wrapper`;

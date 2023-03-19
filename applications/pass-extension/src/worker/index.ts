@@ -3,7 +3,7 @@ import browser from 'webextension-polyfill';
 import createApi, { exposeApi } from '@proton/pass/api';
 import { getPersistedSession, setPersistedSession } from '@proton/pass/auth';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
-import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
+import { WorkerStatus } from '@proton/pass/types';
 import sentry from '@proton/shared/lib/helpers/sentry';
 
 import * as config from '../app/config';
@@ -20,14 +20,7 @@ globalScope.oninstall = () => globalScope.skipWaiting();
  * since CSP policies may block our local WSServer
  */
 if (ENV === 'development') {
-    createDevReloader(() => {
-        WorkerMessageBroker.ports.broadcast(
-            { type: WorkerMessageType.DEV_SERVER, payload: { action: 'reload' } },
-            (name) => name.includes('content-script')
-        );
-        WorkerMessageBroker.ports.disconnect();
-        browser.runtime.reload();
-    }, 'reloading chrome runtime');
+    createDevReloader(() => browser.runtime.reload(), 'reloading chrome runtime');
 }
 
 sentry({
