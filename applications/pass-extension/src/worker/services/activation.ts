@@ -52,15 +52,31 @@ export const createActivationService = () => {
     /**
      * On extension update :
      * - Re-init so as to resume session as soon as possible
-     * - In production : clear the state/snapshot cache in
-     * order to gracefully handle any possible store structure
-     * changes
+     * - Re-inject content-scripts to avoid stale extension contexts
      */
     const handleInstall = withContext(async (ctx, details: Runtime.OnInstalledDetailsType) => {
         if (details.reason === 'update') {
-            if (ENV === 'production') {
-                await browserLocalStorage.removeItems(['state', 'snapshot']);
-            }
+            /* FIXME: Firefox handles content-script reloading when
+            extension updates - this step becomes unnecessary */
+            await Promise.all(
+                (browser.runtime.getManifest().content_scripts ?? []).flatMap(async (cs) => {
+                    const tabs = await browser.tabs.query({ url: cs.matches });
+                    return tabs.map((tab) => {
+                        logger.info(`[ActivationService::onInstall] Re-injecting content-script on tab ${tab.id}`);
+                        return (
+                            tab.id !== undefined &&
+                            browser.scripting
+                                .executeScript({
+                                    target: { tabId: tab.id! },
+                                    files: cs.js,
+                                })
+                                .catch((e) =>
+                                    logger.info(`[ActivationService::onInstall] Injection error on tab ${tab.id}`, e)
+                                )
+                        );
+                    });
+                })
+            );
 
             return ctx.init({ force: true });
         }
@@ -71,7 +87,7 @@ export const createActivationService = () => {
                 const url = browser.runtime.getURL('/onboarding.html#/success');
                 await browser.tabs.create({ url });
             } catch (error: any) {
-                logger.warn(`[Extension::OnInstall] requesting fork failed: ${getErrorMessage(error)}`);
+                logger.warn(`[ActivationService::onInstall] requesting fork failed: ${getErrorMessage(error)}`);
             }
 
             await ctx.service.settings.init();
