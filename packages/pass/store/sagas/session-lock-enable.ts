@@ -6,15 +6,14 @@ import { sessionLockEnableFailure, sessionLockEnableIntent, sessionLockEnableSuc
 import { WorkerRootSagaOptions } from '../types';
 
 function* enableSessionLockWorker(
-    { onSessionLocked }: WorkerRootSagaOptions,
-    action: ReturnType<typeof sessionLockEnableIntent>
+    _: WorkerRootSagaOptions,
+    { meta, payload }: ReturnType<typeof sessionLockEnableIntent>
 ) {
     try {
-        const storageToken: string = yield lockSession(action.payload.pin, action.payload.ttl);
-        yield put(sessionLockEnableSuccess({ storageToken }));
-        onSessionLocked?.(storageToken);
+        const storageToken: string = yield lockSession(payload.pin, payload.ttl);
+        yield put(sessionLockEnableSuccess({ storageToken, ttl: payload.ttl }, meta.receiver));
     } catch (e) {
-        yield put(sessionLockEnableFailure(e));
+        yield put(sessionLockEnableFailure(e, meta.receiver));
     }
 }
 

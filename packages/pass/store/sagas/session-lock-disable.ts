@@ -6,15 +6,14 @@ import { sessionLockDisableFailure, sessionLockDisableIntent, sessionLockDisable
 import { WorkerRootSagaOptions } from '../types';
 
 function* disableSessionLockWorker(
-    { onSessionUnlocked }: WorkerRootSagaOptions,
-    action: ReturnType<typeof sessionLockDisableIntent>
+    _: WorkerRootSagaOptions,
+    { meta, payload }: ReturnType<typeof sessionLockDisableIntent>
 ) {
     try {
-        const storageToken: string = yield deleteSessionLock(action.payload.pin);
-        yield put(sessionLockDisableSuccess());
-        onSessionUnlocked?.(storageToken);
+        yield deleteSessionLock(payload.pin);
+        yield put(sessionLockDisableSuccess(meta.receiver));
     } catch (e) {
-        yield put(sessionLockDisableFailure(e));
+        yield put(sessionLockDisableFailure(e, meta.receiver));
     }
 }
 
