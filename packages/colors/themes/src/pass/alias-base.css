@@ -1,0 +1,9 @@
+.ui-alias {
+    --interaction-norm-minor-2: rgb(106 189 179 / 0.08);
+    --interaction-norm-minor-1: rgb(106 189 179 / 0.16);
+    --interaction-norm: rgb(106 189 179 / 0.8);
+    --interaction-norm-major-1: #6ABDB3;
+    --interaction-norm-major-2: #88CAC2;
+    --interaction-norm-major-3: #97D1CA;
+    --interaction-norm-contrast: #000000;
+}

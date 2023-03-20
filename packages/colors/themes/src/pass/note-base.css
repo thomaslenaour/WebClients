@@ -1,0 +1,9 @@
+.ui-note {
+    --interaction-norm-minor-2: rgb(255 202 138 / 0.08);
+    --interaction-norm-minor-1: rgb(255 202 138 / 0.16);
+    --interaction-norm: rgb(255 202 138 / 0.8);
+    --interaction-norm-major-1: #FFCA8A;
+    --interaction-norm-major-2: #FFD5A1;
+    --interaction-norm-major-3: #FFDAAD;
+    --interaction-norm-contrast: #000000;
+}
