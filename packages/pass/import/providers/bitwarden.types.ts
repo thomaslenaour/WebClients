@@ -1,4 +1,4 @@
-import { MaybeNull } from '@proton/pass/types';
+import type { MaybeNull } from '@proton/pass/types';
 
 export enum BitwardenType {
     LOGIN = 1,

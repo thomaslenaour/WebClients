@@ -2,14 +2,14 @@ import JSZip from 'jszip';
 import { c } from 'ttag';
 import uniqid from 'uniqid';
 
-import { ExportPayload } from '@proton/pass/export';
+import type { ExportPayload } from '@proton/pass/export';
 import { pageMessage, sendMessage } from '@proton/pass/extension/message';
-import { ItemImportIntent, ItemState, WorkerMessageType } from '@proton/pass/types';
+import { type ItemImportIntent, ItemState, WorkerMessageType } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 import { base64StringToUint8Array } from '@proton/shared/lib/helpers/encoding';
 
-import { ImportPayload } from '../types';
+import type { ImportPayload } from '../types';
 
 type ProtonPassReaderPayload =
     | { data: ArrayBuffer; encrypted: false }

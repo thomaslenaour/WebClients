@@ -4,7 +4,7 @@ import { read1Password1PuxData } from './providers/1password.reader.1pux';
 import { readBitwardenData } from './providers/bitwarden.reader';
 import { readChromeData } from './providers/chrome.reader';
 import { readProtonPassData } from './providers/protonpass.reader';
-import { ImportPayload, ImportProvider, ImportReaderPayload } from './types';
+import { type ImportPayload, ImportProvider, type ImportReaderPayload } from './types';
 
 export const fileReader = async (payload: ImportReaderPayload): Promise<ImportPayload> => {
     switch (payload.provider) {
