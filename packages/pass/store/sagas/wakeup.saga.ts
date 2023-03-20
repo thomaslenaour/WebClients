@@ -7,7 +7,8 @@ import * as action from '../actions';
 import { boot, stateSync, wakeupSuccess } from '../actions';
 import { State } from '../types';
 
-function* wakeupWorker({ payload: { status, tabId, endpoint } }: ReturnType<typeof action.wakeup>) {
+function* wakeupWorker({ payload: { status }, meta }: ReturnType<typeof action.wakeup>) {
+    const { tabId, receiver } = meta;
     const loggedIn = authentication?.hasSession();
 
     switch (status) {
@@ -30,8 +31,8 @@ function* wakeupWorker({ payload: { status, tabId, endpoint } }: ReturnType<type
     }
 
     /* synchronise the consumer app */
-    yield put(stateSync((yield select()) as State, { receiver: endpoint, tabId }));
-    yield put(wakeupSuccess({ tabId, endpoint }));
+    yield put(stateSync((yield select()) as State, { receiver, tabId }));
+    yield put(wakeupSuccess(receiver!, tabId!));
 }
 
 export default function* wakeup(): Generator {

@@ -113,7 +113,7 @@ export const createActivationService = () => {
                     /* dispatch a wakeup action for this specific receiver.
                     tracking the wakeup's request metadata can be consumed
                     in the UI to infer wakeup result - see `wakeup.saga.ts` */
-                    store.dispatch(wakeup({ endpoint, tabId, status }));
+                    store.dispatch(wakeup({ status }, endpoint, tabId));
 
                     resolve({
                         ...ctx.getState(),
