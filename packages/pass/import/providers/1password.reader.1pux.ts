@@ -2,17 +2,12 @@ import jszip from 'jszip';
 import { c } from 'ttag';
 import uniqid from 'uniqid';
 
-import { ItemImportIntent, Maybe } from '@proton/pass/types';
+import type { ItemImportIntent, Maybe } from '@proton/pass/types';
 import { isValidURL, parseTotp } from '@proton/pass/utils/url';
 
-import { ImportPayload, ImportVault } from '../types';
-import {
-    OnePass1PuxData,
-    OnePassCategory,
-    OnePassItem,
-    OnePassItemDetails,
-    OnePassLoginDesignation,
-} from './1password.1pux.types';
+import type { ImportPayload, ImportVault } from '../types';
+import type { OnePass1PuxData, OnePassItem, OnePassItemDetails } from './1password.1pux.types';
+import { OnePassCategory, OnePassLoginDesignation } from './1password.1pux.types';
 
 const extractFullNote = (details: OnePassItemDetails): string => {
     let note = details.notesPlain || '';

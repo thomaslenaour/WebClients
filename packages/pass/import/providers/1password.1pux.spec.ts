@@ -2,7 +2,6 @@ import fs from 'fs';
 
 import { ItemImportIntent } from '@proton/pass/types';
 
-import { ImportPayload } from '../types';
 import { read1Password1PuxData } from './1password.reader.1pux';
 
 describe('Import 1password 1pux', () => {
@@ -13,7 +12,7 @@ describe('Import 1password 1pux', () => {
     });
 
     it('transforms .1pux into ImportPayload', async () => {
-        const payload = (await read1Password1PuxData(sourceData)) as ImportPayload;
+        const payload = await read1Password1PuxData(sourceData);
         expect(payload.length).toEqual(3);
 
         const [main, secondary, shared] = payload;

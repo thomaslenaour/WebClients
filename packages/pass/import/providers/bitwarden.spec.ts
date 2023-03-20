@@ -2,7 +2,6 @@ import fs from 'fs';
 
 import { ItemImportIntent } from '@proton/pass/types';
 
-import { ImportPayload } from '../types';
 import { readBitwardenData } from './bitwarden.reader';
 
 describe('Import bitwarden json', () => {
@@ -23,7 +22,7 @@ describe('Import bitwarden json', () => {
     });
 
     it('transforms bitwarden json into ImportPayload', () => {
-        const payload = readBitwardenData(sourceData) as ImportPayload;
+        const payload = readBitwardenData(sourceData);
         const [vaultData] = payload;
 
         expect(payload.length).toEqual(1);

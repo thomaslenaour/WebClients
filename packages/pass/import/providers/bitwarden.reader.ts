@@ -2,7 +2,7 @@
 import { c } from 'ttag';
 import uniqid from 'uniqid';
 
-import { ItemImportIntent, Maybe } from '@proton/pass/types';
+import type { ItemImportIntent, Maybe } from '@proton/pass/types';
 import {
     BITWARDEN_ANDROID_APP_FLAG,
     isBitwardenLinkedAndroidAppUrl,
@@ -10,8 +10,8 @@ import {
     parseTotp,
 } from '@proton/pass/utils/url';
 
-import { ImportPayload } from '../types';
-import { BitwardenData, BitwardenType } from './bitwarden.types';
+import type { ImportPayload } from '../types';
+import { type BitwardenData, BitwardenType } from './bitwarden.types';
 
 export const readBitwardenData = (data: string): ImportPayload => {
     try {
