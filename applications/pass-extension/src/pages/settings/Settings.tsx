@@ -3,16 +3,14 @@ import { Provider as ReduxProvider, useSelector } from 'react-redux';
 import { HashRouter, Route, Switch, useHistory } from 'react-router-dom';
 
 import { c } from 'ttag';
-import browser from 'webextension-polyfill';
 
 import { Avatar } from '@proton/atoms/Avatar';
 import { CircleLoader } from '@proton/atoms/CircleLoader';
-import { Tabs, useNotifications } from '@proton/components';
+import { Icon, Tabs, useNotifications } from '@proton/components';
 import { pageMessage } from '@proton/pass/extension/message';
 import { selectUser } from '@proton/pass/store';
-import { Unpack, WorkerMessageType, WorkerMessageWithSender } from '@proton/pass/types';
+import { Unpack, WorkerMessageType, WorkerMessageWithSender, WorkerStatus } from '@proton/pass/types';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
-import noop from '@proton/utils/noop';
 
 import { ExtensionContextProvider, ExtensionWindow } from '../../shared/components/extension';
 import { ExtensionHead } from '../../shared/components/page/ExtensionHead';
@@ -22,6 +20,7 @@ import createClientStore from '../../shared/store/client-store';
 import { Export } from './views/Export';
 import { General } from './views/General';
 import { Import } from './views/Import';
+import { Security } from './views/Security';
 
 type Tab = Unpack<Exclude<ComponentProps<typeof Tabs>['tabs'], undefined>>;
 
@@ -30,6 +29,11 @@ const SETTINGS_TABS: (Tab & { pathname: string })[] = [
         pathname: '/',
         title: c('Label').t`General`,
         content: <General />,
+    },
+    {
+        pathname: '/security',
+        title: c('Label').t`Security`,
+        content: <Security />,
     },
     {
         pathname: '/import',
@@ -61,28 +65,31 @@ const SettingsTabs: FC<{ pathname: string }> = ({ pathname }) => {
         setActiveTab(pathnameToIndex(pathname));
     }, [pathname]);
 
-    useEffect(() => {
-        if (!context.state.loggedIn) {
-            browser.tabs
-                .getCurrent()
-                .then((tab) => browser.tabs.remove(tab.id ?? []))
-                .catch(noop);
-        }
-    }, [context]);
+    if (context.state.loggedIn) {
+        return (
+            <>
+                <div className="mb2">
+                    <div className="flex flex-align-items-center">
+                        <Avatar className="mr1">{user?.DisplayName?.toUpperCase()?.[0]}</Avatar>
+                        <span>
+                            <span className="block text-ellipsis">{user?.DisplayName}</span>
+                            <span className="block text-xs text-ellipsis">{user?.Email}</span>
+                        </span>
+                    </div>
+                </div>
+                <Tabs tabs={SETTINGS_TABS} value={activeTab} onChange={handleOnChange} />
+            </>
+        );
+    }
 
     return (
-        <>
-            <div className="mb2">
-                <div className="flex flex-align-items-center">
-                    <Avatar className="mr1">{user?.DisplayName?.toUpperCase()?.[0]}</Avatar>
-                    <span>
-                        <span className="block text-ellipsis">{user?.DisplayName}</span>
-                        <span className="block text-xs text-ellipsis">{user?.Email}</span>
-                    </span>
-                </div>
-            </div>
-            <Tabs tabs={SETTINGS_TABS} value={activeTab} onChange={handleOnChange} />
-        </>
+        <div className="flex flex-justify-center">
+            <Icon name="lock-filled" size={42} className="block mb1" />
+            {context.state.status === WorkerStatus.LOCKED && (
+                <span className="mb1 text-center color-weak">{c('Info')
+                    .t`Your ${PASS_APP_NAME} session is locked. Unlock it with your PIN to access the settings`}</span>
+            )}
+        </div>
     );
 };
 
@@ -104,7 +111,7 @@ const SettingsApp: FC = () => {
                     messageFactory={pageMessage}
                     onWorkerMessage={handleWorkerMessage}
                 >
-                    <div className="protonpass-lobby protonpass-lobby--full" style={{ height: '100vh' }}>
+                    <div className="protonpass-lobby" style={{ height: '100vh' }}>
                         <main className="ui-standard w100 relative sign-layout shadow-lifted mw30r max-w100 flex center rounded-lg">
                             <div className="p2 w100">
                                 <Switch>
