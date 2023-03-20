@@ -103,7 +103,8 @@ sagaMiddleware.run(
          */
         onNotification: (notification) => {
             const { target } = notification;
-            const ports = WorkerMessageBroker.ports.query((key) => key.startsWith(target ?? 'popup'));
+            const reg = new RegExp(`^${target ?? 'popup'}`);
+            const ports = WorkerMessageBroker.ports.query((key) => reg.test(key));
             const canConsume = ports.length > 0;
 
             const message = backgroundMessage({

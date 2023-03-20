@@ -8,6 +8,7 @@ import { logger } from '@proton/pass/utils/logger';
 import { parseUrl } from '@proton/pass/utils/url';
 
 export type ExtensionContextType = {
+    endpoint: ExtensionEndpoint;
     tabId: TabId;
     port: browser.Runtime.Port;
     realm: Realm | null;
@@ -32,6 +33,7 @@ export const setupExtensionContext = async (options: ExtensionContextOptions): P
             const name = `${endpoint}-${tab.id}-${uniqid()}`;
 
             const ctx = ExtensionContext.set({
+                endpoint,
                 port: browser.runtime.connect(browser.runtime.id, { name }),
                 tabId: tab.id,
                 realm: domain!,
