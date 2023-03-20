@@ -1,0 +1,31 @@
+//  Slider.scss override
+//  Something fishy happening here with the order of the css loading into the dom.
+//  It's only in pass (or maybe only in the extension) for some reason, maybe something
+//  to do with the webpack config. In any case, this gets overwritten by the word-break
+//  defined in the tooltip.
+.slider-thumb-tooltip {
+	word-break: initial !important;
+}
+
+// Scroll.scss override
+// Allow overlay scrollbar in scrollable
+// containers in extension : this css feature
+// has limited support but we're targetting modern
+// browsers. TODO: double check when supporting Firefox
+.scroll-overlay.scroll-outer-vertical {
+	.scroll-inner {
+		overflow-y: overlay;
+	}
+}
+
+// _notification.scss override
+// We want to align the notifications container
+// to the extension's internal padding
+// We also set the z-index to be lower
+// than a dropdown's tooltip but higher than
+// a modal's container to allow notifications
+// over modals
+.notifications-container {
+	inset-block-start: 0.75em;
+	z-index: 850;
+}

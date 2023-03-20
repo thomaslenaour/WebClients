@@ -1,0 +1,8 @@
+.button.pass-item-list--item {
+	border-radius: 0;
+	padding: 0;
+}
+
+.button.is-active.pass-item-list--item {
+	background-color: var(--interaction-norm-minor-1);
+}

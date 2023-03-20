@@ -1,0 +1,14 @@
+.protonpass-lobby {
+	block-size: 100%;
+	inline-size: 100%;
+	background: url(./assets/swirl.png);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&--full {
+		background: url(~@proton/styles/assets/img/backgrounds/proton-wave-1500.jpg);
+		background-size: cover;
+	}
+}
