@@ -31,20 +31,20 @@ export const stateLock = createAction('state lock');
 
 export const wakeup = createAction(
     'wakeup',
-    (payload: { status: WorkerStatus; endpoint: ExtensionEndpoint; tabId: TabId }) =>
+    (payload: { status: WorkerStatus }, endpoint: ExtensionEndpoint, tabId: TabId) =>
         pipe(
             withCacheBlock,
-            withReceiver({ receiver: payload.endpoint, tabId: payload.tabId }),
-            withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'start' })
+            withReceiver({ receiver: endpoint, tabId }),
+            withRequest({ id: requests.wakeup(endpoint, tabId), type: 'start' })
         )({ payload })
 );
 
-export const wakeupSuccess = createAction('wakeup success', (payload: { endpoint: ExtensionEndpoint; tabId: TabId }) =>
+export const wakeupSuccess = createAction('wakeup success', (endpoint: ExtensionEndpoint, tabId: TabId) =>
     pipe(
         withCacheBlock,
-        withReceiver({ receiver: payload.endpoint, tabId: payload.tabId }),
-        withRequest({ id: requests.wakeup(payload.endpoint, payload.tabId), type: 'success' })
-    )({ payload })
+        withReceiver({ receiver: endpoint, tabId }),
+        withRequest({ id: requests.wakeup(endpoint, tabId), type: 'success' })
+    )({ payload: {} })
 );
 
 export const boot = createAction('boot', pipe(withCacheBlock, withRequest({ id: requests.boot(), type: 'start' })));
