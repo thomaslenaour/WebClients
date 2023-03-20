@@ -1,0 +1,9 @@
+.ui-login {
+    --interaction-norm-minor-2: rgb(167 121 255 / 0.08);
+    --interaction-norm-minor-1: rgb(167 121 255 / 0.16);
+    --interaction-norm: rgb(167 121 255 / 0.8);
+    --interaction-norm-major-1: #A779FF;
+    --interaction-norm-major-2: #B994FF;
+    --interaction-norm-major-3: #C1A1FF;
+    --interaction-norm-contrast: #FFFFFF;
+}
