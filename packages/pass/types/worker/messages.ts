@@ -1,0 +1,223 @@
+import { AnyAction } from 'redux';
+import browser from 'webextension-polyfill';
+
+import { ResumedSessionResult } from '@proton/pass/auth';
+import { AliasState } from '@proton/pass/store';
+import { Notification } from '@proton/pass/store/actions/with-notification';
+import { ExtensionForkResultPayload } from '@proton/shared/lib/authentication/sessionForking';
+
+import { ShareEventType } from '../api';
+import { AliasCreationDTO, Item } from '../data';
+import { Maybe } from '../utils';
+import { WithAutoSavePromptOptions } from './autosave';
+import { SafeLoginItem } from './data';
+import { FormSubmission, FormSubmissionPayload, PromptedFormSubmission } from './form';
+import { TabId } from './runtime';
+import { WorkerState } from './state';
+
+export enum WorkerMessageType {
+    /* DEV */
+    DEV_SERVER = 'DEV_SERVER',
+    /* AUTH */
+    FORK = 'fork',
+    RESUME_SESSION_SUCCESS = 'RESUME_SESSION_SUCCESS',
+    /* WORKER */
+    WORKER_WAKEUP = 'WORKER_WAKEUP',
+    WORKER_INIT = 'WORKER_INIT',
+    WORKER_STATUS = 'WORKER_STATUS',
+    /* TABS */
+    RESOLVE_TAB = 'RESOLVE_TAB',
+    /* REDUX */
+    NOTIFICATION = 'NOTIFICATION',
+    STORE_ACTION = 'STORE_ACTION',
+    /* AUTOFILL */
+    AUTOFILL_QUERY = 'AUTOFILL_QUERY',
+    AUTOFILL_SELECT = 'AUTOFILL_SELECT',
+    AUTOFILL_SYNC = 'AUTOFILL_SYNC',
+    /* AUTOSAVE */
+    AUTOSAVE_REQUEST = 'AUTOSAVE_REQUEST',
+    /* ALIAS */
+    ALIAS_OPTIONS = 'ALIAS_OPTIONS',
+    ALIAS_CREATE = 'ALIAS_CREATE',
+    /* FORM SUBMISSION */
+    STAGE_FORM_SUBMISSION = 'STAGE_FORM_SUBMISSION',
+    STASH_FORM_SUBMISSION = 'STASH_FORM_SUBMISSION',
+    COMMIT_FORM_SUBMISSION = 'COMMIT_FORM_SUBMISSION',
+    REQUEST_FORM_SUBMISSION = 'REQUEST_FORM_SUBMISSION',
+    /* EXPORT/IMPORT */
+    EXPORT_REQUEST = 'EXPORT_REQUEST',
+    EXPORT_DECRYPT = 'EXPORT_DECRYPT',
+    /* SERVER EVENT */
+    SHARE_SERVER_EVENT = 'SHARE_SERVER_EVENT',
+}
+
+export type WorkerDevServerMessage = {
+    type: WorkerMessageType.DEV_SERVER;
+    payload: { action: 'reload' };
+};
+
+export type WorkerForkMessage = {
+    type: WorkerMessageType.FORK;
+    payload: {
+        selector: string;
+        keyPassword: string;
+        persistent: boolean;
+        trusted: boolean;
+        state: string;
+    };
+};
+
+export type WorkerWakeUpMessage = {
+    type: WorkerMessageType.WORKER_WAKEUP;
+    payload: { origin: ExtensionOrigin; tabId: TabId };
+};
+
+export type WorkerInitMessage = {
+    type: WorkerMessageType.WORKER_INIT;
+    payload: { sync: boolean };
+};
+
+export type WorkerStatusMessage = {
+    type: WorkerMessageType.WORKER_STATUS;
+    payload: { state: WorkerState };
+};
+
+export type StoreActionMessage = {
+    type: WorkerMessageType.STORE_ACTION;
+    payload: { action: AnyAction };
+};
+
+export type NotificationMessage = {
+    type: WorkerMessageType.NOTIFICATION;
+    payload: { notification: Notification };
+};
+
+export type ResumeSessionSuccessMessage = {
+    type: WorkerMessageType.RESUME_SESSION_SUCCESS;
+    payload: ResumedSessionResult;
+};
+
+export type AutofillQueryMessage = { type: WorkerMessageType.AUTOFILL_QUERY };
+export type AutofillSyncMessage = { type: WorkerMessageType.AUTOFILL_SYNC; payload: { count: number } };
+
+export type AutofillSelectMessage = {
+    type: WorkerMessageType.AUTOFILL_SELECT;
+    payload: { itemId: string; shareId: string };
+};
+
+export type AutoSaveRequestMessage = {
+    type: WorkerMessageType.AUTOSAVE_REQUEST;
+    payload: { item: Item<'login'>; submission: PromptedFormSubmission };
+};
+
+export type StageFormSubmissionMessage = {
+    type: WorkerMessageType.STAGE_FORM_SUBMISSION;
+    reason: string;
+    payload: Pick<FormSubmissionPayload, 'type' | 'action' | 'data'>;
+};
+
+export type StashFormSubmissionMessage = {
+    type: WorkerMessageType.STASH_FORM_SUBMISSION;
+    reason: string;
+};
+
+export type CommitFormSubmissionMessage = {
+    type: WorkerMessageType.COMMIT_FORM_SUBMISSION;
+    reason: string;
+};
+
+export type RequestFormSubmissionMessage = {
+    type: WorkerMessageType.REQUEST_FORM_SUBMISSION;
+};
+
+export type AliasOptionsMessage = { type: WorkerMessageType.ALIAS_OPTIONS };
+export type AliasCreateMessage = { type: WorkerMessageType.ALIAS_CREATE; payload: { alias: AliasCreationDTO } };
+
+export type ResolveTabIdMessage = { type: WorkerMessageType.RESOLVE_TAB };
+
+export type ExportRequestMessage = {
+    type: WorkerMessageType.EXPORT_REQUEST;
+    payload: { encrypted: true; passphrase: string } | { encrypted: false };
+};
+
+export type ImportDecryptMessage = {
+    type: WorkerMessageType.EXPORT_DECRYPT;
+    payload: { data: string; passphrase: string };
+};
+
+export type ShareServerEventMessage = {
+    type: WorkerMessageType.SHARE_SERVER_EVENT;
+    payload:
+        | { type: ShareEventType.SHARE_DISABLED; shareId: string }
+        | { type: ShareEventType.ITEMS_DELETED; shareId: string; itemIds: string[] };
+};
+
+export type WorkerMessage =
+    | WorkerDevServerMessage
+    | StoreActionMessage
+    | NotificationMessage
+    | WorkerForkMessage
+    | WorkerWakeUpMessage
+    | WorkerInitMessage
+    | WorkerStatusMessage
+    | ResumeSessionSuccessMessage
+    | AutofillQueryMessage
+    | AutofillSelectMessage
+    | AutofillSyncMessage
+    | AutoSaveRequestMessage
+    | StageFormSubmissionMessage
+    | StashFormSubmissionMessage
+    | CommitFormSubmissionMessage
+    | RequestFormSubmissionMessage
+    | AliasOptionsMessage
+    | AliasCreateMessage
+    | ResolveTabIdMessage
+    | ExportRequestMessage
+    | ImportDecryptMessage
+    | ShareServerEventMessage;
+
+export type ExtensionOrigin = 'popup' | 'content-script' | 'background' | 'page';
+
+export type WorkerMessageWithOrigin<T extends WorkerMessage = WorkerMessage> = T & {
+    origin: ExtensionOrigin;
+};
+
+export type MessageFailure = { type: 'error'; error: string; payload?: string };
+export type MessageSuccess<T> = T extends { [key: string]: any } ? T & { type: 'success' } : { type: 'success' };
+export type MaybeMessage<T> = MessageSuccess<T> | MessageFailure;
+
+export type WorkerMessageResponse<MessageType> = MessageType extends WorkerMessageType.WORKER_WAKEUP
+    ? WorkerState & { buffered?: WorkerMessageWithOrigin[] }
+    : MessageType extends WorkerMessageType.WORKER_INIT
+    ? WorkerState
+    : MessageType extends WorkerMessageType.RESOLVE_TAB
+    ? { tab: Maybe<browser.Tabs.Tab> }
+    : MessageType extends WorkerMessageType.FORK
+    ? { payload: ExtensionForkResultPayload }
+    : MessageType extends WorkerMessageType.REQUEST_FORM_SUBMISSION
+    ? { submission: Maybe<WithAutoSavePromptOptions<FormSubmission>> }
+    : MessageType extends WorkerMessageType.COMMIT_FORM_SUBMISSION
+    ? { committed: Maybe<PromptedFormSubmission> }
+    : MessageType extends WorkerMessageType.STAGE_FORM_SUBMISSION
+    ? { staged: FormSubmission }
+    : MessageType extends WorkerMessageType.AUTOFILL_QUERY
+    ? { items: SafeLoginItem[] }
+    : MessageType extends WorkerMessageType.AUTOFILL_SELECT
+    ? { username: string; password: string }
+    : MessageType extends WorkerMessageType.ALIAS_OPTIONS
+    ? { options: AliasState['aliasOptions'] }
+    : MessageType extends WorkerMessageType.EXPORT_REQUEST | WorkerMessageType.EXPORT_DECRYPT
+    ? { data: string }
+    : boolean;
+
+export type WorkerResponse<T extends Maybe<WorkerMessage | WorkerMessageWithOrigin>> = T extends undefined
+    ? MessageFailure
+    : T extends WorkerMessage
+    ? T['type'] extends infer MessageType
+        ? MaybeMessage<WorkerMessageResponse<MessageType>>
+        : never
+    : never;
+
+export type WorkerSendResponse<T extends Maybe<WorkerMessage> = Maybe<WorkerMessage>> = (
+    response: WorkerResponse<T>
+) => void;

@@ -1,0 +1,98 @@
+@import '../shared/styles/common';
+@import '~@proton/styles/scss/config/variables';
+@import '~@proton/styles/scss/config/functions/easing';
+@import '~@proton/styles/scss/specifics/placeholder-loading';
+
+body {
+	// Extensions seem to have injected style sheets
+	// by default which override the font-family to
+	// "system-ui" and "font-size: 75%"
+	font-family: var(--optional-font-family, 'Inter', #{$fallback-fonts});
+}
+
+.extension {
+	&-skeleton {
+		&::before {
+			@extend %item-loading-pseudo;
+			@extend %placeholder-loading;
+		}
+
+		&--logo {
+			filter: grayscale(1);
+			animation: anime-loading-logo 0.5s calc(var(--index, 0) * 20ms) easing(ease-out-sine) infinite alternate;
+		}
+
+		&--select {
+			&::before {
+				inline-size: 80%;
+			}
+		}
+
+		&--item-heading {
+			&::before {
+				inline-size: 90%;
+			}
+		}
+
+		&--item-subheading {
+			&::before {
+				inline-size: 65%;
+			}
+		}
+
+		&--item-icon {
+			&::before {
+				inline-size: em(16);
+				block-size: em(16);
+			}
+		}
+
+		&--alias-preview,
+		&--alias-mailbox {
+			&::before {
+				inline-size: 50%;
+			}
+		}
+	}
+}
+
+.anime-fade-in {
+	animation: anime-fade-in 0.25s easing(ease-out-sine) var(--anime-delay, 0.1s) both;
+}
+
+@keyframes anime-loading-logo {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 0.25;
+	}
+}
+
+@keyframes anime-fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.button {
+	&.button-ghost-norm {
+		background-color: var(--interaction-norm-minor-2);
+	}
+}
+
+.dropdown {
+	background-color: var(--background-weak);
+	border: 1px solid var(--border-norm);
+
+	.dropdown-content,
+	.dropdown-content::before,
+	.dropdown-content::after {
+		background-color: var(--background-weak);
+	}
+}
