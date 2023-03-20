@@ -12,14 +12,7 @@ export enum ImportProvider {
 export type ImportReaderPayload = {
     file: File;
 } & (
-    | {
-          provider:
-              | ImportProvider.BITWARDEN
-              | ImportProvider.ONEPASSWORD
-              | ImportProvider.LASTPASS
-              | ImportProvider.PROTONPASS
-              | ImportProvider.CHROME;
-      }
+    | { provider: Exclude<ImportProvider, ImportProvider.PROTONPASS_PGP> }
     | { provider: ImportProvider.PROTONPASS_PGP; passphrase: string }
 );
 
