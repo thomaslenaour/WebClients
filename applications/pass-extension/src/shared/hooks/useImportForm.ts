@@ -16,6 +16,8 @@ import { isEmptyString } from '@proton/pass/utils/string';
 import { splitExtension } from '@proton/shared/lib/helpers/file';
 import identity from '@proton/utils/identity';
 
+import { ExtensionContext } from '../extension';
+
 type DropzoneProps = ComponentProps<typeof Dropzone>;
 type FileInputProps = ComponentProps<typeof FileInput>;
 
@@ -79,6 +81,7 @@ export const useImportForm = ({
     onImported,
 }: UseImportFormOptions): ImportFormContext => {
     const dispatch = useDispatch();
+    const { endpoint } = ExtensionContext.get();
 
     const [busy, setBusy] = useState(false);
     const [dropzoneHovered, setDropzoneHovered] = useState(false);
@@ -111,7 +114,7 @@ export const useImportForm = ({
                     return setBusy(false);
                 }
 
-                dispatch(importItemsRequest({ data: result.payload }));
+                dispatch(importItemsRequest({ data: result.payload }, endpoint));
             } catch (e) {
                 setBusy(false);
                 if (e instanceof Error) {

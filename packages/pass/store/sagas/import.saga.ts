@@ -50,7 +50,7 @@ function* createVaultForImport(vaultName: string) {
 
 function* importWorker(
     { onItemsChange }: WorkerRootSagaOptions,
-    { payload: { data } }: ReturnType<typeof importItemsRequest>
+    { payload: { data }, meta }: ReturnType<typeof importItemsRequest>
 ) {
     let total: number = 0;
 
@@ -81,7 +81,7 @@ function* importWorker(
 
                         yield put(
                             notification({
-                                target: 'page',
+                                target: meta.receiver,
                                 type: 'error',
                                 text: c('Error').t`Import failed for vault "${vaultData.vaultName}" : ${description}`,
                             })
@@ -92,7 +92,7 @@ function* importWorker(
                 logger.warn('[Saga::Import]', e);
                 yield put(
                     notification({
-                        target: 'page',
+                        target: meta.receiver,
                         type: 'error',
                         text: c('Error').t`Vault "${vaultData.vaultName}" could not be created`,
                     })
@@ -100,10 +100,10 @@ function* importWorker(
             }
         }
 
-        yield put(importItemsRequestSuccess({ total }));
+        yield put(importItemsRequestSuccess({ total }, meta.receiver));
         onItemsChange?.();
     } catch (error: any) {
-        yield put(importItemsRequestFailure(error));
+        yield put(importItemsRequestFailure(error, meta.receiver));
     }
 }
 
