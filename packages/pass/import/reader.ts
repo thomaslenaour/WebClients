@@ -2,6 +2,7 @@ import { c } from 'ttag';
 
 import { read1Password1PuxData } from './providers/1password.reader.1pux';
 import { readBitwardenData } from './providers/bitwarden.reader';
+import { readChromeData } from './providers/chrome.reader';
 import { readProtonPassData } from './providers/protonpass.reader';
 import { ImportPayload, ImportProvider, ImportReaderPayload } from './types';
 
@@ -9,6 +10,8 @@ export const fileReader = async (payload: ImportReaderPayload): Promise<ImportPa
     switch (payload.provider) {
         case ImportProvider.BITWARDEN:
             return readBitwardenData(await payload.file.text());
+        case ImportProvider.CHROME:
+            return readChromeData(await payload.file.text());
         case ImportProvider.ONEPASSWORD:
             return read1Password1PuxData(await payload.file.arrayBuffer());
         case ImportProvider.PROTONPASS:

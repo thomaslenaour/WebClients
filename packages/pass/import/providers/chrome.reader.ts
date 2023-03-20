@@ -9,14 +9,16 @@ import { readCSV } from '../helpers/csv.reader';
 import type { ImportPayload } from '../types';
 import type { ChromeItem } from './chrome.types';
 
+const CHROME_HEADERS: (keyof ChromeItem)[] = ['name', 'url', 'username', 'password'];
+
 export const readChromeData = async (data: string): Promise<ImportPayload> => {
     try {
-        const items = await readCSV<ChromeItem>(data, ['name', 'url', 'username', 'password']);
+        const items = await readCSV<ChromeItem>(data, CHROME_HEADERS);
 
         return [
             {
                 type: 'new',
-                vaultName: c('Title').t`Bitwarden import`,
+                vaultName: c('Title').t`Chrome import`,
                 id: uniqid(),
                 items: items.map((item): ItemImportIntent<'login'> => {
                     const validUrl = item.url ? isValidURL(item.url)?.valid : false;
@@ -25,18 +27,15 @@ export const readChromeData = async (data: string): Promise<ImportPayload> => {
                     return {
                         type: 'login',
                         metadata: {
-                            name: item.name ?? item.username ?? 'Unnamed chrome-saved item',
+                            name: item.name || item.username || 'Unnamed Chrome item',
                             note: '',
                             itemUuid: uniqid(),
                         },
                         content: {
-                            username: item.username ?? '',
-                            password: item.password ?? '',
+                            username: item.username || '',
+                            password: item.password || '',
                             urls,
                             totpUri: '',
-                        },
-                        platformSpecific: {
-                            android: { allowedApps: [] },
                         },
                         extraFields: [],
                         trashed: false,
