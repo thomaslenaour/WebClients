@@ -3,6 +3,7 @@ import { ItemImportIntent } from '../types';
 export enum ImportProvider {
     BITWARDEN = 'Bitwarden',
     CHROME = 'Chrome',
+    LASTPASS = 'LastPass',
     ONEPASSWORD = '1Password (1PUX format)',
     PROTONPASS = 'Proton Pass',
     PROTONPASS_PGP = 'Proton Pass (PGP encrypted)',
@@ -15,6 +16,7 @@ export type ImportReaderPayload = {
           provider:
               | ImportProvider.BITWARDEN
               | ImportProvider.ONEPASSWORD
+              | ImportProvider.LASTPASS
               | ImportProvider.PROTONPASS
               | ImportProvider.CHROME;
       }
