@@ -4,7 +4,7 @@ import { c } from 'ttag';
 
 import { PasswordFieldValue, TextFieldValue, UrlFieldValue } from '../../../../shared/components/fields';
 import type { ItemTypeViewProps } from '../../../../shared/items/types';
-import { ItemViewPanel } from '../../../components/Panel/ItemPanel';
+import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
 
 export const LoginView: VFC<ItemTypeViewProps<'login'>> = ({
     vault,

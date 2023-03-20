@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { type VFC, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { Field, Form, FormikProvider, useFormik } from 'formik';
@@ -20,14 +20,15 @@ import {
     UrlGroupField,
     createNewUrl,
 } from '../../../../shared/components/fields';
-import { ItemHeaderControlled, ItemLayout } from '../../../../shared/components/item';
-import { onBlurFallback } from '../../../../shared/form';
 import { ItemNewProps } from '../../../../shared/items';
+import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
 import { usePopupContext } from '../../../context';
 import AliasModal from '../Alias/Alias.modal';
 import { NewLoginItemFormValues, validateNewLoginForm } from './Login.validation';
 
-const LoginNew: FC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCancel }) => {
+const FORM_ID = 'new-login';
+
+export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCancel }) => {
     const dispatch = useDispatch();
     const { realm, subdomain } = usePopupContext();
     const isValidURL = realm !== undefined;
@@ -107,100 +108,74 @@ const LoginNew: FC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCancel }) =>
         validateOnChange: true,
     });
 
+    const valid = form.isValid;
+
     return (
         <>
-            <FormikProvider value={form}>
-                <Form className="h100">
-                    <ItemLayout
-                        header={
-                            <ItemHeaderControlled
-                                type="login"
-                                inputProps={{
-                                    name: 'name',
-                                    value: form.values.name,
-                                    onChange: form.handleChange,
-                                    onBlur: onBlurFallback(form, 'name', defaultName),
-                                }}
+            <ItemCreatePanel type="login" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
+                <FormikProvider value={form}>
+                    <Form id={FORM_ID}>
+                        <Field name="name" label={c('Label').t`Name`} component={TextField} />
+                        <Field
+                            name="username"
+                            label={c('Label').t`Username`}
+                            placeholder={c('Placeholder').t`Enter email or username`}
+                            component={TextField}
+                            {...(form.values.withAlias
+                                ? {
+                                      suffix: form.values.aliasSuffix?.value,
+                                      action: (
+                                          <Button
+                                              icon
+                                              onClick={() =>
+                                                  form.setValues((values) => ({
+                                                      ...omit(
+                                                          values as NewLoginItemFormValues & {
+                                                              withAlias: true;
+                                                          },
+                                                          ['aliasPrefix', 'aliasSuffix', 'mailboxes']
+                                                      ),
+                                                      withAlias: false,
+                                                  }))
+                                              }
+                                              className="ml0-5 flex-align-self-end"
+                                          >
+                                              <Icon name="trash" />
+                                          </Button>
+                                      ),
+                                  }
+                                : {
+                                      action: (
+                                          <Tooltip title={c('Action').t`Generate alias`}>
+                                              <Button icon onClick={() => setAliasModalOpen(true)} className="ml0-5">
+                                                  <Icon name="alias" />
+                                              </Button>
+                                          </Tooltip>
+                                      ),
+                                  })}
+                        />
+                        {form.values.withAlias && (
+                            <AliasPreview
+                                prefix={form.values.username}
+                                suffix={form.values.aliasSuffix!.value}
+                                className="mt0-5"
                             />
-                        }
-                        main={
-                            <>
-                                <Field
-                                    name="username"
-                                    label={c('Label').t`Username`}
-                                    placeholder={c('Placeholder').t`Enter email or username`}
-                                    component={TextField}
-                                    {...(form.values.withAlias
-                                        ? {
-                                              suffix: form.values.aliasSuffix?.value,
-                                              action: (
-                                                  <Button
-                                                      icon
-                                                      onClick={() =>
-                                                          form.setValues((values) => ({
-                                                              ...omit(
-                                                                  values as NewLoginItemFormValues & {
-                                                                      withAlias: true;
-                                                                  },
-                                                                  ['aliasPrefix', 'aliasSuffix', 'mailboxes']
-                                                              ),
-                                                              withAlias: false,
-                                                          }))
-                                                      }
-                                                      className="ml0-5 flex-align-self-end"
-                                                  >
-                                                      <Icon name="trash" />
-                                                  </Button>
-                                              ),
-                                          }
-                                        : {
-                                              action: (
-                                                  <Tooltip title={c('Action').t`Generate alias`}>
-                                                      <Button
-                                                          icon
-                                                          onClick={() => setAliasModalOpen(true)}
-                                                          className="ml0-5"
-                                                      >
-                                                          <Icon name="alias" />
-                                                      </Button>
-                                                  </Tooltip>
-                                              ),
-                                          })}
-                                />
-                                {form.values.withAlias && (
-                                    <AliasPreview
-                                        prefix={form.values.username}
-                                        suffix={form.values.aliasSuffix!.value}
-                                        className="mt0-5"
-                                    />
-                                )}
+                        )}
 
-                                <Field name="password" label={c('Label').t`Password`} component={PasswordField} />
+                        <Field name="password" label={c('Label').t`Password`} component={PasswordField} />
 
-                                <UrlGroupField form={form} />
+                        <UrlGroupField form={form} />
 
-                                <Field
-                                    name="note"
-                                    label={c('Label').t`Note`}
-                                    component={TextAreaField}
-                                    rootClassName="mb0"
-                                    rows={5}
-                                />
-                            </>
-                        }
-                        actions={
-                            <div className="flex flex-justify-end">
-                                <Button type="button" className="mr0-5" onClick={onCancel}>
-                                    {c('Action').t`Cancel`}
-                                </Button>
-                                <Button type="submit" color="norm" disabled={!form.isValid}>
-                                    {c('Action').t`Save`}
-                                </Button>
-                            </div>
-                        }
-                    />
-                </Form>
-            </FormikProvider>
+                        <Field
+                            name="note"
+                            label={c('Label').t`Note`}
+                            component={TextAreaField}
+                            rootClassName="mb0"
+                            rows={5}
+                        />
+                    </Form>
+                </FormikProvider>
+            </ItemCreatePanel>
 
             <AliasModal
                 open={aliasModalOpen}
@@ -223,5 +198,3 @@ const LoginNew: FC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCancel }) =>
         </>
     );
 };
-
-export default LoginNew;

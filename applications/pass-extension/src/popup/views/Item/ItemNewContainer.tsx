@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { type VFC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
 
@@ -8,17 +8,17 @@ import { ItemCreateIntent, ItemType } from '@proton/pass/types';
 import { ItemNewProps } from '../../../shared/items/types';
 import { useNavigationContext } from '../../context';
 import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
-import AliasNew from './Alias/Alias.new';
-import LoginNew from './Login/Login.new';
-import NoteNew from './Note/Note.new';
+import { AliasNew } from './Alias/Alias.new';
+import { LoginNew } from './Login/Login.new';
+import { NoteNew } from './Note/Note.new';
 
-const itemNewMap: { [T in ItemType]: FC<ItemNewProps<T>> } = {
+const itemNewMap: { [T in ItemType]: VFC<ItemNewProps<T>> } = {
     login: LoginNew,
     note: NoteNew,
     alias: AliasNew,
 };
 
-export const ItemNewContainer: FC = () => {
+export const ItemNewContainer: VFC = () => {
     const history = useHistory();
     const dispatch = useDispatch();
 

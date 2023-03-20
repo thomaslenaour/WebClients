@@ -1,19 +1,19 @@
-import { FC } from 'react';
+import { type VFC } from 'react';
 
 import { Field, Form, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 import uniqid from 'uniqid';
 
-import { Button } from '@proton/atoms';
 import { getEpoch } from '@proton/pass/utils/time';
 
-import { TextAreaField } from '../../../../shared/components/fields';
-import { ItemHeaderControlled, ItemLayout } from '../../../../shared/components/item';
-import { onBlurFallback } from '../../../../shared/form';
+import { TextAreaField, TextField } from '../../../../shared/components/fields';
 import { ItemNewProps } from '../../../../shared/items';
+import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
 import { validateNoteForm } from './Note.validation';
 
-const NoteNew: FC<ItemNewProps<'note'>> = ({ vaultId, onSubmit, onCancel }) => {
+const FORM_ID = 'new-note';
+
+export const NoteNew: VFC<ItemNewProps<'note'>> = ({ vaultId, onSubmit, onCancel }) => {
     const defaultName = c('Placeholder').t`Unnamed`;
     const form = useFormik({
         initialValues: {
@@ -43,36 +43,16 @@ const NoteNew: FC<ItemNewProps<'note'>> = ({ vaultId, onSubmit, onCancel }) => {
         validateOnChange: true,
     });
 
+    const valid = form.isValid;
+
     return (
-        <FormikProvider value={form}>
-            <Form className="h100">
-                <ItemLayout
-                    header={
-                        <ItemHeaderControlled
-                            type="note"
-                            inputProps={{
-                                name: 'name',
-                                value: form.values.name,
-                                onChange: form.handleChange,
-                                onBlur: onBlurFallback(form, 'name', defaultName),
-                            }}
-                        />
-                    }
-                    main={<Field name="note" label="Note" component={TextAreaField} />}
-                    actions={
-                        <div className="flex flex-justify-end">
-                            <Button type="button" className="mr0-5" onClick={onCancel}>
-                                {c('Action').t`Cancel`}
-                            </Button>
-                            <Button type="submit" color="norm" disabled={!form.isValid}>
-                                {c('Action').t`Save`}
-                            </Button>
-                        </div>
-                    }
-                />
-            </Form>
-        </FormikProvider>
+        <ItemCreatePanel type="note" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
+            <FormikProvider value={form}>
+                <Form id={FORM_ID}>
+                    <Field name="name" label="Name" component={TextField} />
+                    <Field name="note" label="Note" component={TextAreaField} />
+                </Form>
+            </FormikProvider>
+        </ItemCreatePanel>
     );
 };
-
-export default NoteNew;

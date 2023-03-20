@@ -7,25 +7,42 @@ import './Header.scss';
 
 type Props = {
     className?: string;
-    title: string;
+    title?: string;
     subtitle?: string;
     subtitleIcon?: IconName;
     actions?: ReactNode[];
 };
 
-export const PanelHeader: VFC<Props> = ({ className, title, subtitle, subtitleIcon, actions }) => {
+export const PanelHeader: VFC<Props> = ({ className, actions, ...props }) => {
+    const title = 'title' in props ? props.title : undefined;
+    const subtitle = 'subtitle' in props ? props.subtitle : undefined;
+    const subtitleIcon = 'subtitleIcon' in props ? props.subtitleIcon : undefined;
+
+    const withActions = Array.isArray(actions) && actions.length > 0;
+    const onlyActions = withActions && [title, subtitle].every((prop) => prop === undefined);
+
     return (
         <header className={clsx('flex flex-nowrap flex-justify-space-between flex-align-items-center', className)}>
-            <div>
-                <h2 className="text-2xl text-bold text-ellipsis">{title}</h2>
-                {subtitle && (
-                    <em className="flex flex-align-items-center color-weak">
-                        {subtitleIcon && <Icon name={subtitleIcon} style={{ marginRight: '0.25rem' }} />}
-                        {subtitle}
-                    </em>
-                )}
-            </div>
-            {Array.isArray(actions) && actions.length > 0 && <div>{actions}</div>}
+            {title !== undefined && (
+                <div>
+                    <h2 className="text-2xl text-bold text-ellipsis">{title}</h2>
+                    {subtitle !== undefined && (
+                        <em className="flex flex-align-items-center color-weak">
+                            {subtitleIcon && <Icon name={subtitleIcon} className="m-1" />}
+                            {subtitle}
+                        </em>
+                    )}
+                </div>
+            )}
+            {withActions && (
+                <div
+                    className={clsx(
+                        onlyActions && 'flex flex-nowrap flex-justify-space-between flex-align-items-center w100'
+                    )}
+                >
+                    {actions}
+                </div>
+            )}
         </header>
     );
 };
