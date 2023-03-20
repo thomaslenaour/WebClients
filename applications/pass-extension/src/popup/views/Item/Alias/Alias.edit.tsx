@@ -1,21 +1,21 @@
-import { FC, useState } from 'react';
+import { type VFC, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import { Field, Form, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 
-import { Button } from '@proton/atoms';
 import { InputFieldTwo, Option, SelectTwo } from '@proton/components';
 import { selectMailboxesForAlias } from '@proton/pass/store';
 
-import { TextAreaField, TextFieldValue } from '../../../../shared/components/fields';
-import { ItemHeaderControlled, ItemLayout } from '../../../../shared/components/item';
-import { onBlurFallback } from '../../../../shared/form';
+import { TextAreaField, TextField, TextFieldValue } from '../../../../shared/components/fields';
 import { useAliasOptions } from '../../../../shared/hooks';
 import { ItemEditProps } from '../../../../shared/items';
+import { ItemEditPanel } from '../../../components/Panel/ItemEditPanel';
 import { EditAliasFormValues, validateEditAliasForm } from './Alias.validation';
 
-const AliasEdit: FC<ItemEditProps<'alias'>> = ({ vault, revision, onCancel, onSubmit }) => {
+const FORM_ID = 'edit-alias';
+
+export const AliasEdit: VFC<ItemEditProps<'alias'>> = ({ vault, revision, onCancel, onSubmit }) => {
     const { data: item, itemId, aliasEmail, revision: lastRevision } = revision;
     const { metadata, ...uneditable } = item;
     const { name, note, itemUuid } = metadata;
@@ -61,74 +61,47 @@ const AliasEdit: FC<ItemEditProps<'alias'>> = ({ vault, revision, onCancel, onSu
         },
     });
 
+    const valid = ready && form.isValid;
+
     return (
-        <FormikProvider value={form}>
-            <Form className="h100">
-                <ItemLayout
-                    header={
-                        <ItemHeaderControlled
-                            type="alias"
-                            inputProps={{
-                                name: 'name',
-                                value: form.values.name,
-                                onChange: form.handleChange,
-                                onBlur: onBlurFallback(form, 'name', name),
-                            }}
-                        />
-                    }
-                    main={
-                        <>
-                            <div className="text-semibold mb0-5">{c('Label').t`Alias`}</div>
-                            <TextFieldValue>{aliasEmail!}</TextFieldValue>
+        <ItemEditPanel type="alias" formId={FORM_ID} handleCancelClick={onCancel} valid={valid}>
+            <FormikProvider value={form}>
+                <Form id={FORM_ID}>
+                    <Field name="name" label={c('Label').t`Name`} component={TextField} />
 
-                            <hr className="my0-5" />
+                    <div className="text-semibold mb0-5">{c('Label').t`Alias`}</div>
+                    <TextFieldValue>{aliasEmail!}</TextFieldValue>
 
-                            <InputFieldTwo
-                                label={c('Label').t`Mailboxes`}
-                                as={SelectTwo}
-                                name="mailboxes"
-                                value={form.values.mailboxes}
-                                onValue={(mailboxes: any) => form.setFieldValue('mailboxes', mailboxes)}
-                                multiple
-                                dense
-                                {...(aliasOptionsLoading
-                                    ? {
-                                          renderSelected: () => (
-                                              <div className="extension-skeleton extension-skeleton--select" />
-                                          ),
-                                      }
-                                    : {})}
-                            >
-                                {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
-                                    <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
-                                        {mailbox.email}
-                                    </Option>
-                                ))}
-                            </InputFieldTwo>
+                    <hr className="my0-5" />
 
-                            <hr className="mt1 mb0-5" />
+                    <InputFieldTwo
+                        label={c('Label').t`Mailboxes`}
+                        as={SelectTwo}
+                        name="mailboxes"
+                        value={form.values.mailboxes}
+                        onValue={(mailboxes: any) => form.setFieldValue('mailboxes', mailboxes)}
+                        multiple
+                        dense
+                        {...(aliasOptionsLoading
+                            ? {
+                                  renderSelected: () => (
+                                      <div className="extension-skeleton extension-skeleton--select" />
+                                  ),
+                              }
+                            : {})}
+                    >
+                        {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
+                            <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
+                                {mailbox.email}
+                            </Option>
+                        ))}
+                    </InputFieldTwo>
 
-                            <Field name="note" label="Note" component={TextAreaField} rows={5} />
-                        </>
-                    }
-                    actions={
-                        <div className="flex flex-justify-end">
-                            <Button type="button" className="mr0-5" onClick={onCancel}>
-                                {c('Action').t`Cancel`}
-                            </Button>
-                            <Button
-                                type="submit"
-                                color="norm"
-                                disabled={aliasOptionsLoading || !ready || !form.isValid}
-                            >
-                                {c('Action').t`Save`}
-                            </Button>
-                        </div>
-                    }
-                />
-            </Form>
-        </FormikProvider>
+                    <hr className="mt1 mb0-5" />
+
+                    <Field name="note" label="Note" component={TextAreaField} rows={5} />
+                </Form>
+            </FormikProvider>
+        </ItemEditPanel>
     );
 };
-
-export default AliasEdit;

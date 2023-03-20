@@ -1,21 +1,21 @@
-import { FC, useState } from 'react';
+import { type VFC, useState } from 'react';
 
 import { Field, Form, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 import uniqid from 'uniqid';
 
-import { Button } from '@proton/atoms';
 import { getEpoch } from '@proton/pass/utils/time/get-epoch';
 
-import { TextAreaField } from '../../../../shared/components/fields';
-import { ItemHeaderControlled, ItemLayout } from '../../../../shared/components/item';
-import { onBlurFallback } from '../../../../shared/form';
+import { TextAreaField, TextField } from '../../../../shared/components/fields';
 import { ItemNewProps } from '../../../../shared/items';
+import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
 import { usePopupContext } from '../../../context';
 import AliasForm from './Alias.form';
 import { NewAliasFormValues, validateNewAliasForm } from './Alias.validation';
 
-const AliasNew: FC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCancel }) => {
+const FORM_ID = 'new-alias';
+
+export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCancel }) => {
     const [ready, setReady] = useState(false);
 
     const { realm, subdomain } = usePopupContext();
@@ -61,66 +61,42 @@ const AliasNew: FC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCancel }) =>
         validateOnChange: true,
     });
 
+    const valid = ready && form.isValid;
+
     return (
-        <FormikProvider value={form}>
-            <Form className="h100">
-                <ItemLayout
-                    header={
-                        <ItemHeaderControlled
-                            type="alias"
-                            inputProps={{
-                                name: 'name',
-                                value: form.values.name,
-                                onChange: form.handleChange,
-                                onBlur: onBlurFallback(form, 'name', defaultName),
-                            }}
-                        />
-                    }
-                    main={
-                        <>
-                            <AliasForm<NewAliasFormValues>
-                                form={form}
-                                shareId={vaultId}
-                                onAliasOptionsLoaded={async (aliasOptions) => {
-                                    const firstSuffix = aliasOptions.suffixes?.[0];
-                                    const firstMailBox = aliasOptions.mailboxes?.[0];
+        <ItemCreatePanel type="alias" formId={FORM_ID} handleCancelClick={onCancel} valid={valid}>
+            <FormikProvider value={form}>
+                <Form id={FORM_ID}>
+                    <Field name="name" label={c('Label').t`Name`} component={TextField} />
+                    <AliasForm<NewAliasFormValues>
+                        form={form}
+                        shareId={vaultId}
+                        onAliasOptionsLoaded={async (aliasOptions) => {
+                            const firstSuffix = aliasOptions.suffixes?.[0];
+                            const firstMailBox = aliasOptions.mailboxes?.[0];
 
-                                    await form.setValues(
-                                        (values) => ({
-                                            ...values,
-                                            ...(firstSuffix !== undefined ? { aliasSuffix: firstSuffix } : {}),
-                                            ...(firstMailBox !== undefined ? { mailboxes: [firstMailBox] } : {}),
-                                        }),
-                                        true
-                                    );
+                            await form.setValues(
+                                (values) => ({
+                                    ...values,
+                                    ...(firstSuffix !== undefined ? { aliasSuffix: firstSuffix } : {}),
+                                    ...(firstMailBox !== undefined ? { mailboxes: [firstMailBox] } : {}),
+                                }),
+                                true
+                            );
 
-                                    setReady(true);
-                                }}
-                            />
-                            <br />
-                            <Field
-                                name="note"
-                                label={c('Label').t`Note`}
-                                component={TextAreaField}
-                                assistContainerClassName="hidden-empty"
-                                rows={5}
-                            />
-                        </>
-                    }
-                    actions={
-                        <div className="flex flex-justify-end">
-                            <Button type="button" className="mr0-5" onClick={onCancel}>
-                                {c('Action').t`Cancel`}
-                            </Button>
-                            <Button disabled={!ready || !form.isValid} type="submit" color="norm">
-                                {c('Action').t`Save`}
-                            </Button>
-                        </div>
-                    }
-                />
-            </Form>
-        </FormikProvider>
+                            setReady(true);
+                        }}
+                    />
+                    <br />
+                    <Field
+                        name="note"
+                        label={c('Label').t`Note`}
+                        component={TextAreaField}
+                        assistContainerClassName="hidden-empty"
+                        rows={5}
+                    />
+                </Form>
+            </FormikProvider>
+        </ItemCreatePanel>
     );
 };
-
-export default AliasNew;

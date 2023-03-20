@@ -14,7 +14,7 @@ import * as requests from '@proton/pass/store/actions/requests';
 
 import { TextFieldValue } from '../../../../shared/components/fields';
 import { ItemTypeViewProps } from '../../../../shared/items/types';
-import { ItemViewPanel } from '../../../components/Panel/ItemPanel';
+import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
 
 export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
     vault,

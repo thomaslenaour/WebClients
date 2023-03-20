@@ -7,9 +7,9 @@ import { ItemEditIntent, ItemType, ShareType } from '@proton/pass/types';
 
 import { ItemEditProps } from '../../../shared/items';
 import { useNavigationContext } from '../../context';
-import AliasEdit from './Alias/Alias.edit';
-import LoginEdit from './Login/Login.edit';
-import NoteEdit from './Note/Note.edit';
+import { AliasEdit } from './Alias/Alias.edit';
+import { LoginEdit } from './Login/Login.edit';
+import { NoteEdit } from './Note/Note.edit';
 
 const itemEditMap: { [T in ItemType]: VFC<ItemEditProps<T>> } = {
     login: LoginEdit,

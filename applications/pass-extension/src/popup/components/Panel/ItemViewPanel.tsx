@@ -8,7 +8,7 @@ import { DropdownMenuButton, Icon } from '@proton/components';
 import { selectAllVaults } from '@proton/pass/store';
 import type { ItemType } from '@proton/pass/types';
 
-import { QuickActionsDropdown } from '../../components/QuickActionsDropdown';
+import { QuickActionsDropdown } from '../QuickActionsDropdown';
 import { ItemHeader } from './ItemPanelHeader';
 import { Panel } from './Panel';
 
@@ -56,7 +56,7 @@ export const ItemViewPanel: FC<Props> = ({
                 <Button
                     key="dismiss-item-button"
                     pill
-                    style={{ marginRight: '0.25rem' }}
+                    className="mr-1"
                     color="danger"
                     shape="outline"
                     onClick={handleDismissClick}
@@ -95,7 +95,7 @@ export const ItemViewPanel: FC<Props> = ({
                 pill
                 shape="solid"
                 color="norm"
-                style={{ marginRight: '0.25rem' }}
+                className="mr-1"
                 onClick={handleEditClick}
                 disabled={optimistic}
             >
