@@ -3,27 +3,18 @@
 /* eslint-disable max-classes-per-file */
 
 /* eslint-disable no-underscore-dangle */
-import {
-    MaybeArray,
-    decryptKey,
-    encryptKey,
-    enums,
-    readCleartextMessage,
-    readKey,
-    readKeys,
-    readMessage,
-    readPrivateKey,
-    readSignature,
-} from 'pmcrypto-v7/lib/openpgp';
+import { enums } from 'pmcrypto-v7/lib/openpgp';
 import {
     SHA256,
     SHA512,
     armorBytes,
     canKeyEncrypt,
     checkKeyStrength,
+    decryptKey,
     decryptMessage,
     decryptMessageLegacy,
     decryptSessionKey,
+    encryptKey,
     encryptMessage,
     encryptSessionKey,
     generateKey,
@@ -34,6 +25,12 @@ import {
     isExpiredKey,
     isRevokedKey,
     processMIME,
+    readCleartextMessage,
+    readKey,
+    readKeys,
+    readMessage,
+    readPrivateKey,
+    readSignature,
     reformatKey,
     signMessage,
     unsafeMD5,
@@ -48,6 +45,7 @@ import {
     ComputeHashStreamOptions,
     KeyInfo,
     KeyReference,
+    MaybeArray,
     MessageInfo,
     PrivateKeyReference,
     PublicKeyReference,

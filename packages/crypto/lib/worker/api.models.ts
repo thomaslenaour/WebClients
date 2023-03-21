@@ -22,7 +22,7 @@ import type {
 
 export type { enums } from 'pmcrypto-v7/lib/openpgp';
 
-type MaybeArray<T> = T[] | T;
+export type MaybeArray<T> = T[] | T;
 export type { SessionKey, AlgorithmInfo, MIMEAttachment };
 
 // TODO TS: do not allow mutually exclusive properties
