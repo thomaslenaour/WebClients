@@ -1,4 +1,4 @@
-import { FC, useCallback, useContext, useEffect } from 'react';
+import { FC, useContext, useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ import { WorkerMessageType, WorkerMessageWithSender, WorkerStatus } from '@proto
 import { ExtensionContextProvider } from '../../../shared/components/extension';
 import { ExtensionContext } from '../../../shared/extension';
 import { useExtensionContext } from '../../../shared/hooks';
-import { PopupContext } from './PopupContext';
+import { PopupContext, PopupContextValue } from './PopupContext';
 
 /**
  * PopupContext is an extension of the base
@@ -19,16 +19,12 @@ import { PopupContext } from './PopupContext';
  * syncing behaviours & active tab data.
  */
 const ExtendedExtensionContext: FC = ({ children }) => {
-    const { state, ready: extensionContextReady, logout } = useExtensionContext();
+    const extensionContext = useExtensionContext();
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const syncing = useSelector(selectWorkerSyncing) || state.status === WorkerStatus.BOOTING;
-
-    /* SESSION LOCK START */
-    const sync = useCallback(() => dispatch(syncIntent({})), []);
-    const lock = useCallback(() => dispatch(sessionLockImmediate()), []);
-    /* SESSION LOCK END */
+    const syncing = useSelector(selectWorkerSyncing) || extensionContext.state.status === WorkerStatus.BOOTING;
+    const ready = extensionContext.ready && !syncing;
 
     useEffect(() => {
         if (syncing) {
@@ -36,29 +32,25 @@ const ExtendedExtensionContext: FC = ({ children }) => {
         }
     }, [syncing]);
 
-    const ready = extensionContextReady && !syncing;
     const { realm, subdomain } = ExtensionContext.get();
 
     const notificationsManager = useContext(NotificationsContext);
     useEffect(() => notificationsManager.setOffset({ y: 10 }), []);
 
-    return (
-        /* SESSION LOCK START */
-        <PopupContext.Provider
-            value={{
-                state,
-                ready,
-                sync,
-                logout,
-                lock,
-                realm: realm ?? undefined,
-                subdomain: subdomain ?? undefined,
-            }}
-        >
-            {children}
-        </PopupContext.Provider>
-        /* SESSION LOCK END */
-    );
+    const popupContext = useMemo<PopupContextValue>(() => {
+        const { state, logout } = extensionContext;
+        return {
+            state,
+            ready,
+            logout,
+            sync: () => dispatch(syncIntent({})),
+            lock: () => dispatch(sessionLockImmediate()),
+            realm: realm ?? undefined,
+            subdomain: subdomain ?? undefined,
+        };
+    }, [extensionContext, ready]);
+
+    return <PopupContext.Provider value={popupContext}>{children}</PopupContext.Provider>;
 };
 
 export const PopupContextProvider: FC = ({ children }) => {
