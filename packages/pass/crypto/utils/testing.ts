@@ -1,6 +1,6 @@
 import { CryptoProxy, PrivateKeyReference } from '@proton/crypto';
-import { CONTENT_FORMAT_VERSION, ShareType } from '@proton/pass/types';
 import type { TypedOpenedShare } from '@proton/pass/types';
+import { CONTENT_FORMAT_VERSION, ShareType } from '@proton/pass/types';
 import { ADDRESS_TYPE } from '@proton/shared/lib/constants';
 import type { Address, DecryptedKey } from '@proton/shared/lib/interfaces';
 

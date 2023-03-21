@@ -4,7 +4,6 @@ import { all, call, cancel, cancelled, fork, put, select, take } from 'redux-sag
 
 import { api } from '@proton/pass/api';
 import { PassCrypto } from '@proton/pass/crypto';
-import { ShareType } from '@proton/pass/types';
 import type {
     OpenedItem,
     PassEventListResponse,
@@ -13,6 +12,7 @@ import type {
     ShareKeyResponse,
     TypedOpenedShare,
 } from '@proton/pass/types';
+import { ShareType } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
 import { decodeVaultContent, parseOpenedItem } from '@proton/pass/utils/protobuf';
 import { getLatestID } from '@proton/shared/lib/api/events';
