@@ -1,16 +1,14 @@
 import { call, put, select, takeEvery } from 'redux-saga/effects';
 
 import { api } from '@proton/pass/api';
-import { PassCrypto } from '@proton/pass/crypto';
-import { ItemEditIntent, ItemRevision, ItemRevisionContentsResponse, OpenedItem } from '@proton/pass/types';
-import { parseOpenedItem } from '@proton/pass/utils/protobuf';
+import type { ItemEditIntent, ItemRevision, ItemRevisionContentsResponse } from '@proton/pass/types';
 import { isEqual } from '@proton/pass/utils/set/is-equal';
 
 import { aliasDetailsEditSuccess, itemEditFailure, itemEditIntent, itemEditSuccess } from '../actions';
-import { AliasState } from '../reducers';
+import type { AliasState } from '../reducers';
 import { selectAliasOptions, selectItemByShareIdAndId, selectMailboxesForAlias } from '../selectors';
-import { WorkerRootSagaOptions } from '../types';
-import { editItem } from './workers/items';
+import type { WorkerRootSagaOptions } from '../types';
+import { editItem, parseItemRevision } from './workers/items';
 
 function* editMailboxesWorker(aliasEditIntent: ItemEditIntent<'alias'>) {
     const { itemId, shareId } = aliasEditIntent;
@@ -57,8 +55,7 @@ function* itemEditWorker(
         }
 
         const encryptedItem: ItemRevisionContentsResponse = yield editItem(editIntent, lastRevision);
-        const openedItem: OpenedItem = yield PassCrypto.openItem({ shareId, encryptedItem });
-        const item: ItemRevision = parseOpenedItem({ openedItem, shareId });
+        const item: ItemRevision = yield parseItemRevision(shareId, encryptedItem);
 
         const itemEditSuccessAction = itemEditSuccess({ item, itemId, shareId });
         yield put(itemEditSuccessAction);

@@ -5,7 +5,7 @@ import { all, call, cancel, cancelled, fork, put, select, take } from 'redux-sag
 import { api } from '@proton/pass/api';
 import { PassCrypto } from '@proton/pass/crypto';
 import type {
-    OpenedItem,
+    ItemRevision,
     PassEventListResponse,
     ServerEvent,
     Share,
@@ -35,6 +35,7 @@ import {
 import { selectAllShares, selectEventId, selectShare } from '../selectors';
 import { WorkerRootSagaOptions } from '../types';
 import createEventsChannel, { EventsChannel } from './workers/events';
+import { parseItemRevision } from './workers/items';
 import { getAllShareKeys } from './workers/vaults';
 
 /**
@@ -93,14 +94,8 @@ function* eventConsumer(
                 ...DeletedItemIDs.map((itemId) => put(itemDeleteSync({ itemId, shareId }))),
                 ...UpdatedItems.map((encryptedItem) =>
                     call(function* () {
-                        const openedItem: OpenedItem = yield PassCrypto.openItem({ shareId, encryptedItem });
-                        yield put(
-                            itemEditSync({
-                                shareId: event.shareId,
-                                itemId: openedItem.itemId,
-                                item: parseOpenedItem({ openedItem, shareId }),
-                            })
-                        );
+                        const item: ItemRevision = yield parseItemRevision(shareId, encryptedItem);
+                        yield put(itemEditSync({ shareId: item.shareId, itemId: item.itemId, item }));
                     })
                 ),
             ]);
