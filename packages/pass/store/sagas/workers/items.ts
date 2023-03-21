@@ -1,6 +1,6 @@
 import { api } from '@proton/pass/api';
 import { PassCrypto } from '@proton/pass/crypto';
-import {
+import type {
     CustomAliasCreateRequest,
     ImportItemBatchRequest,
     ItemCreateIntent,
@@ -11,6 +11,7 @@ import {
     ItemType,
 } from '@proton/pass/types';
 import { parseOpenedItem, serializeItemContent } from '@proton/pass/utils/protobuf';
+import { getEpoch } from '@proton/pass/utils/time';
 
 /**
  * Item creation API request for all items
@@ -111,8 +112,8 @@ export const editItem = async (
     return Item!;
 };
 
-export const trashItem = async (item: ItemRevision) => {
-    await api({
+export const trashItem = (item: ItemRevision) =>
+    api({
         url: `pass/v1/share/${item.shareId}/item/trash`,
         method: 'post',
         data: {
@@ -124,7 +125,15 @@ export const trashItem = async (item: ItemRevision) => {
             ],
         },
     });
-};
+
+export const updateItemLastUseTime = async (shareId: string, itemId: string) =>
+    (
+        await api({
+            url: `pass/v1/share/${shareId}/item/${itemId}/lastuse`,
+            method: 'put',
+            data: { LastUseTime: getEpoch() },
+        })
+    ).Revision!;
 
 export const parseItemRevision = async (
     shareId: string,

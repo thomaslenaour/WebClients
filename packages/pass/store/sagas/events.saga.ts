@@ -24,6 +24,7 @@ import {
     disabledShareEvent,
     itemDeleteSync,
     itemEditSync,
+    itemLastUseTimeUpdated,
     serverEvent,
     signoutSuccess,
     stateLock,
@@ -58,7 +59,7 @@ function* eventConsumer(
             return;
         case 'share': {
             const {
-                Events: { LatestEventID, DeletedItemIDs, UpdatedItems, UpdatedShare },
+                Events: { LatestEventID, DeletedItemIDs, UpdatedItems, UpdatedShare, LastUseItems },
                 shareId,
             } = event;
             logger.info(`[ServerEvents::Share] ${logId(LatestEventID)} for share ${logId(shareId)}`);
@@ -97,6 +98,9 @@ function* eventConsumer(
                         const item: ItemRevision = yield parseItemRevision(shareId, encryptedItem);
                         yield put(itemEditSync({ shareId: item.shareId, itemId: item.itemId, item }));
                     })
+                ),
+                ...(LastUseItems ?? []).map(({ ItemID, LastUseTime }) =>
+                    put(itemLastUseTimeUpdated({ shareId, itemId: ItemID, lastUseTime: LastUseTime }))
                 ),
             ]);
 

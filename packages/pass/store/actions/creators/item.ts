@@ -219,6 +219,12 @@ export const itemRestoreSuccess = createOptimisticAction(
     ({ payload }) => getOptimisticItemActionId(payload)
 );
 
+export const itemUsed = createAction('item used', (payload: { shareId: string; itemId: string }) => ({ payload }));
+export const itemLastUseTimeUpdated = createAction(
+    'item lastUseTime updated',
+    (payload: { shareId: string; itemId: string; lastUseTime: number }) => ({ payload })
+);
+
 export const itemsRequested = createAction('items requested', (shareId: string) =>
     pipe(
         withCacheBlock,

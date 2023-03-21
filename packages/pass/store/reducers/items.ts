@@ -1,6 +1,6 @@
-import { AnyAction, Reducer } from 'redux';
+import type { AnyAction, Reducer } from 'redux';
 
-import { CONTENT_FORMAT_VERSION, ItemRevision, ItemState } from '@proton/pass/types';
+import { CONTENT_FORMAT_VERSION, type ItemRevision, ItemState } from '@proton/pass/types';
 import { fullMerge, objectDelete, partialMerge } from '@proton/pass/utils/object';
 import { isTrashed } from '@proton/pass/utils/pass/trash';
 import { getEpoch } from '@proton/pass/utils/time';
@@ -26,6 +26,7 @@ import {
     itemEditIntent,
     itemEditSuccess,
     itemEditSync,
+    itemLastUseTimeUpdated,
     itemRestoreFailure,
     itemRestoreIntent,
     itemRestoreSuccess,
@@ -187,6 +188,12 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
             const { itemId } = item;
 
             return fullMerge(state, { [shareId]: { [itemId]: item } });
+        }
+
+        if (itemLastUseTimeUpdated.match(action)) {
+            const { shareId, itemId, lastUseTime } = action.payload;
+
+            return partialMerge(state, { [shareId]: { [itemId]: { lastUseTime } } });
         }
 
         if (itemDeleteIntent.match(action)) {
