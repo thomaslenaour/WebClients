@@ -12,6 +12,7 @@ import itemDelete from './item-delete.saga';
 import itemEdit from './item-edit.saga';
 import itemRestore from './item-restore.saga';
 import itemTrash from './item-trash.saga';
+import itemUsed from './item-used.saga';
 import itemsRequest from './items-request.saga';
 import notification from './notification.saga';
 import sessionLockDisable from './session-lock-disable';
@@ -44,6 +45,7 @@ export function* workerRootSaga(options: WorkerRootSagaOptions) {
             itemsImport,
             trashDelete,
             trashRestore,
+            itemUsed,
             notification,
             sessionLockDisable,
             sessionLockEnable,
