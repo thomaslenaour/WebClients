@@ -13,7 +13,7 @@ import {
 import { settingsEdit } from '@proton/pass/store/actions/requests';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
-import { useConfirmSessionLockPin } from '../../../shared//components/session-lock/useConfirmSessionLockPin';
+import { useSessionLockConfirmContext } from '../../../shared/components/session-lock/SessionLockConfirmContextProvider';
 import { SessionLockCreate } from '../../../shared/components/session-lock/SessionLockCreate';
 import { SessionLockTTLUpdate } from '../../../shared/components/session-lock/SessionLockTTLUpdate';
 import { ExtensionContext } from '../../../shared/extension';
@@ -23,7 +23,7 @@ export const Security: VFC = () => {
     const { endpoint } = ExtensionContext.get();
 
     const [lockCreationModalOpened, setLockCreationModalOpened] = useState(false);
-    const [confirmPin, confirmSessionLockPinModal] = useConfirmSessionLockPin();
+    const { confirmPin } = useSessionLockConfirmContext();
 
     const { sessionLockToken, sessionLockTTL } = useSelector(selectSessionLockSettings);
     const sessionLockStatus = useSelector(selectRequestStatus(settingsEdit('session-lock')));
@@ -32,9 +32,10 @@ export const Security: VFC = () => {
 
     const handleSessionLockToggle = async () =>
         hasLock
-            ? confirmPin((pin) => dispatch(sessionLockDisableIntent({ pin }, endpoint)), {
-                  text: c('Info')
-                      .t`Please confirm your PIN code in order to unregister your current lock. ${PASS_APP_NAME} will then never lock.`,
+            ? confirmPin({
+                  onSubmit: (pin) => dispatch(sessionLockDisableIntent({ pin }, endpoint)),
+                  text: c('Info').t`Please confirm your PIN code in order to unregister your current lock.
+                        ${PASS_APP_NAME} will then never lock.`,
               })
             : setLockCreationModalOpened(true);
 
@@ -57,8 +58,6 @@ export const Security: VFC = () => {
 
             <SessionLockCreate opened={lockCreationModalOpened} onClose={() => setLockCreationModalOpened(false)} />
             <SessionLockTTLUpdate ttl={sessionLockTTL} disabled={!sessionLockToken || sessionLockLoading} />
-
-            {confirmSessionLockPinModal}
         </div>
     );
 };
