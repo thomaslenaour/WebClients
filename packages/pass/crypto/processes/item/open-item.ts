@@ -1,5 +1,5 @@
-import { EncryptionTag } from '@proton/pass/types';
 import type { ItemRevisionContentsResponse, OpenedItem, VaultKey } from '@proton/pass/types';
+import { EncryptionTag } from '@proton/pass/types';
 import { base64StringToUint8Array } from '@proton/shared/lib/helpers/encoding';
 
 import { decryptData } from '../../utils/crypto-helpers';
@@ -46,6 +46,7 @@ export const openItem = async ({ encryptedItem, vaultKey }: OpenItemKeyProcessPa
         aliasEmail: encryptedItem.AliasEmail ?? null,
         createTime: encryptedItem.CreateTime,
         revisionTime: encryptedItem.RevisionTime,
+        modifyTime: encryptedItem.ModifyTime,
         lastUseTime: encryptedItem.LastUseTime ?? null,
     };
 };
