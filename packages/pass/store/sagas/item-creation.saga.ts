@@ -1,9 +1,9 @@
 import { put, takeEvery } from 'redux-saga/effects';
 
-import { ItemRevision, ItemRevisionContentsResponse } from '@proton/pass/types';
+import type { ItemRevision, ItemRevisionContentsResponse } from '@proton/pass/types';
 
 import { itemCreationFailure, itemCreationIntent, itemCreationSuccess } from '../actions';
-import { WorkerRootSagaOptions } from '../types';
+import type { WorkerRootSagaOptions } from '../types';
 import { createAlias, createItem, parseItemRevision } from './workers/items';
 
 function* itemCreationWorker({ onItemsChange }: WorkerRootSagaOptions, action: ReturnType<typeof itemCreationIntent>) {
@@ -16,11 +16,11 @@ function* itemCreationWorker({ onItemsChange }: WorkerRootSagaOptions, action: R
     const isAlias = createIntent.type === 'alias';
 
     try {
-        const revision: ItemRevisionContentsResponse = yield isAlias
+        const encryptedItem: ItemRevisionContentsResponse = yield isAlias
             ? createAlias(createIntent)
             : createItem(createIntent);
 
-        const item: ItemRevision = yield parseItemRevision(shareId, revision);
+        const item: ItemRevision = yield parseItemRevision(shareId, encryptedItem);
 
         const itemCreationSuccessAction = itemCreationSuccess({ optimisticId, shareId, item });
         yield put(itemCreationSuccessAction);
