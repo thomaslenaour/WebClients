@@ -5,6 +5,7 @@ import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
 import { releaseCryptoProxy, setupCryptoProxyForTesting } from '../crypto/utils/testing';
 import { CONTENT_FORMAT_VERSION, ItemState } from '../types';
+import { getEpoch } from '../utils/time';
 import { ExportPayload, createExportZip, encryptZip } from './export';
 
 const EXPORT_TEST_VAULT_ID = 'vault-share-id';
@@ -34,6 +35,8 @@ const EXPORT_TEST_PAYLOAD: ExportPayload = {
                     },
                     contentFormatVersion: CONTENT_FORMAT_VERSION,
                     aliasEmail: null,
+                    createTime: getEpoch(),
+                    modifyTime: getEpoch() + 100,
                 },
             ],
         },

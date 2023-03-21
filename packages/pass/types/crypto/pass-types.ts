@@ -68,5 +68,6 @@ export type OpenedItem = {
     aliasEmail: MaybeNull<string>;
     createTime: number;
     revisionTime: number;
+    modifyTime: number;
     lastUseTime: MaybeNull<number>;
 };

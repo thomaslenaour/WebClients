@@ -29,6 +29,8 @@ export const createExportService = () => {
                             state: item.state,
                             aliasEmail: item.aliasEmail,
                             contentFormatVersion: item.contentFormatVersion,
+                            createTime: item.createTime,
+                            modifyTime: item.modifyTime,
                         })),
                     },
                 ];

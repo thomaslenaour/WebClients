@@ -131,6 +131,7 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
                         aliasEmail: item.type === 'alias' ? item.extraData.aliasEmail : null,
                         state: ItemState.Active,
                         createTime,
+                        modifyTime: createTime,
                         revisionTime: createTime,
                         lastUseTime: null,
                         contentFormatVersion: CONTENT_FORMAT_VERSION,
