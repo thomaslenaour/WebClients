@@ -70,6 +70,8 @@ const processNoteItem = (
         content: {},
         extraFields: [],
         trashed: false,
+        createTime: item.createdAt,
+        modifyTime: item.updatedAt,
     };
 };
 
@@ -111,6 +113,8 @@ const processLoginItem = (
         },
         extraFields: totps.map((totpUri) => ({ fieldName: 'totp', content: { oneofKind: 'totp', totp: { totpUri } } })),
         trashed: false,
+        createTime: item.createdAt,
+        modifyTime: item.updatedAt,
     };
 };
 const processPasswordItem = (
@@ -138,6 +142,8 @@ const processPasswordItem = (
         },
         extraFields: [],
         trashed: false,
+        createTime: item.createdAt,
+        modifyTime: item.updatedAt,
     };
 };
 
