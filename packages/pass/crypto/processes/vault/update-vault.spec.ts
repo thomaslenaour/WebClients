@@ -3,13 +3,10 @@ import { base64StringToUint8Array } from '@proton/shared/lib/helpers/encoding';
 
 import { decryptData, generateKey, getSymmetricKey } from '../../utils/crypto-helpers';
 import { PassCryptoVaultError } from '../../utils/errors';
-import { randomContents, releaseCryptoProxy, setupCryptoProxyForTesting } from '../../utils/testing';
+import { randomContents } from '../../utils/testing';
 import { updateVault } from './update-vault';
 
 describe('updateVault crypto process', () => {
-    beforeAll(async () => setupCryptoProxyForTesting());
-    afterAll(async () => releaseCryptoProxy());
-
     test('should re-encrypt vault content with supplied vault key', async () => {
         const key = generateKey();
         const shareKey = await getSymmetricKey(key);

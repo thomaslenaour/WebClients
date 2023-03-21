@@ -1,10 +1,9 @@
 module.exports = {
     setupFilesAfterEnv: ['./jest.setup.js'],
     moduleDirectories: ['<rootDir>/node_modules', 'node_modules'],
-    collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
     testEnvironment: './jest.env.js',
     transformIgnorePatterns: [
-        'node_modules/(?!(@proton/shared|@proton/components|@protontech/mutex-browser|pmcrypto-v7|openpgp|@openpgp/web-stream-tools|@openpgp/asmcrypto.js|@protontech/bip39|emoji-mart)/)',
+        'node_modules/(?!(@proton/shared|@proton/components|@protontech/mutex-browser|pmcrypto|openpgp|@openpgp/web-stream-tools|@protontech/bip39|emoji-mart)/)',
     ],
     transform: {
         '^.+\\.(m?js|tsx?)$': '<rootDir>/jest.transform.js',
@@ -16,6 +15,5 @@ module.exports = {
         '@protontech/sieve.js': '@proton/components/__mocks__/sieve.js',
     },
     reporters: ['default', ['jest-junit', { outputName: 'test-report.xml' }]],
-    coverageReporters: ['text', 'lcov', 'cobertura'],
     testTimeout: 30000,
 };

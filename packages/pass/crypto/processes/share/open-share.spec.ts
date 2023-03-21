@@ -1,4 +1,4 @@
-import { CONTENT_FORMAT_VERSION, ShareGetResponse, ShareType } from '@proton/pass/types';
+import { CONTENT_FORMAT_VERSION, type ShareGetResponse, ShareType } from '@proton/pass/types';
 
 import { createRandomKey, randomContents, releaseCryptoProxy, setupCryptoProxyForTesting } from '../../utils/testing';
 import { createVault } from '../vault/create-vault';

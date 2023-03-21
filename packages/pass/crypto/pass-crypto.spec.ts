@@ -36,6 +36,7 @@ describe('PassCrypto', () => {
 
     beforeAll(async () => {
         await setupCryptoProxyForTesting();
+
         userKey = await createRandomKey();
         const PrivateKey = await CryptoProxy.exportPrivateKey({
             privateKey: userKey.privateKey,

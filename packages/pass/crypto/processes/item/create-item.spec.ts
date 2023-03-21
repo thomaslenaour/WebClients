@@ -3,13 +3,10 @@ import { base64StringToUint8Array } from '@proton/shared/lib/helpers/encoding';
 
 import { decryptData, generateKey, getSymmetricKey } from '../../utils/crypto-helpers';
 import { PassCryptoItemError } from '../../utils/errors';
-import { randomContents, releaseCryptoProxy, setupCryptoProxyForTesting } from '../../utils/testing';
+import { randomContents } from '../../utils/testing';
 import { createItem } from './create-item';
 
 describe('createItem crypto process', () => {
-    beforeAll(async () => setupCryptoProxyForTesting());
-    afterAll(async () => releaseCryptoProxy());
-
     const key = generateKey();
     const content = randomContents();
 
