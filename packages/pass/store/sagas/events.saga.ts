@@ -13,8 +13,8 @@ import type {
     TypedOpenedShare,
 } from '@proton/pass/types';
 import { ShareType } from '@proton/pass/types';
-import { logger } from '@proton/pass/utils/logger';
-import { decodeVaultContent, parseOpenedItem } from '@proton/pass/utils/protobuf';
+import { logId, logger } from '@proton/pass/utils/logger';
+import { decodeVaultContent } from '@proton/pass/utils/protobuf';
 import { getLatestID } from '@proton/shared/lib/api/events';
 import { getApiError } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 
@@ -53,14 +53,14 @@ function* eventConsumer(
 
     switch (event.type) {
         case 'user':
-            logger.info(`[ServerEvents::User] ${event.EventID?.slice(0, 10)}…`);
+            logger.info(`[ServerEvents::User] ${logId(event.EventID!)}`);
             return;
         case 'share': {
             const {
                 Events: { LatestEventID, DeletedItemIDs, UpdatedItems, UpdatedShare },
                 shareId,
             } = event;
-            logger.info(`[ServerEvents::Share] ${LatestEventID.slice(0, 10)}… for share ${shareId.slice(0, 10)}…`);
+            logger.info(`[ServerEvents::Share] ${logId(LatestEventID)} for share ${logId(shareId)}`);
 
             /* TODO: handle ItemShares when we support them */
             if (UpdatedShare && UpdatedShare.TargetType === ShareType.Vault) {
@@ -143,7 +143,7 @@ const closeChannel = ({ channel, config }: EventsChannel): void => {
             break;
         }
         case 'share': {
-            logger.info(`[ServerEvents::Share] Closing share events channel ${config.shareId.slice(0, 10)}…`);
+            logger.info(`[ServerEvents::Share] Closing share events channel ${logId(config.shareId)}`);
             break;
         }
     }
