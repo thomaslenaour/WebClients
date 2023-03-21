@@ -50,4 +50,8 @@ export type ItemEditIntent<T extends ItemType = ItemType> = Item<T, ItemEditInte
     lastRevision: number;
 };
 
-export type ItemImportIntent<T extends ItemType = ItemType> = Item<T, ItemImportIntentDTO> & { trashed: boolean };
+export type ItemImportIntent<T extends ItemType = ItemType> = Item<T, ItemImportIntentDTO> & {
+    trashed: boolean;
+    createTime?: number;
+    modifyTime?: number;
+};
