@@ -60,6 +60,8 @@ export const readProtonPassData = async (payload: ProtonPassReaderPayload): Prom
                         ...item.data,
                         ...(item.data.type === 'alias' ? { extraData: { aliasEmail: item.aliasEmail! } } : {}),
                         trashed: item.state === ItemState.Trashed,
+                        createTime: item.createTime,
+                        modifyTime: item.modifyTime,
                     } as ItemImportIntent)
             ),
         }));
