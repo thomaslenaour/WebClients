@@ -3,6 +3,7 @@ import { PassCrypto } from '@proton/pass/crypto';
 import type {
     CustomAliasCreateRequest,
     ImportItemBatchRequest,
+    ImportItemRequest,
     ItemCreateIntent,
     ItemEditIntent,
     ItemImportIntent,
@@ -40,12 +41,14 @@ export const importItemsBatch = async (
 ): Promise<ItemRevisionContentsResponse[]> => {
     const data: ImportItemBatchRequest = {
         Items: await Promise.all(
-            importIntents.map(async ({ trashed, ...item }) => {
+            importIntents.map(async ({ trashed, createTime, modifyTime, ...item }): Promise<ImportItemRequest> => {
                 const content = serializeItemContent(item);
                 return {
                     Item: await PassCrypto.createItem({ shareId, content }),
                     AliasEmail: item.type === 'alias' ? item.extraData.aliasEmail : null,
                     Trashed: trashed,
+                    CreateTime: createTime ?? null,
+                    ModifyTime: modifyTime ?? null,
                 };
             })
         ),
