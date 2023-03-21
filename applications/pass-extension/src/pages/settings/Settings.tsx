@@ -14,6 +14,7 @@ import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
 import { ExtensionContextProvider, ExtensionWindow } from '../../shared/components/extension';
 import { ExtensionHead } from '../../shared/components/page/ExtensionHead';
+import { SessionLockConfirmContextProvider } from '../../shared/components/session-lock/SessionLockConfirmContextProvider';
 import { ExtensionContext } from '../../shared/extension';
 import { useExtensionContext } from '../../shared/hooks';
 import createClientStore from '../../shared/store/client-store';
@@ -116,7 +117,11 @@ const SettingsApp: FC = () => {
                             <div className="p2 w100">
                                 <Switch>
                                     <Route
-                                        render={({ location: { pathname } }) => <SettingsTabs pathname={pathname} />}
+                                        render={({ location: { pathname } }) => (
+                                            <SessionLockConfirmContextProvider>
+                                                <SettingsTabs pathname={pathname} />
+                                            </SessionLockConfirmContextProvider>
+                                        )}
                                     />
                                 </Switch>
                             </div>

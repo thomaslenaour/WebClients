@@ -7,7 +7,7 @@ import { InputFieldTwo, Option, SelectTwo } from '@proton/components/index';
 import { sessionLockEnableIntent } from '@proton/pass/store';
 
 import { ExtensionContext } from '../../extension';
-import { useConfirmSessionLockPin } from './useConfirmSessionLockPin';
+import { useSessionLockConfirmContext } from './SessionLockConfirmContextProvider';
 
 type Props = {
     ttl?: number;
@@ -27,19 +27,14 @@ const getSessionLockTTLOptions = () => [
 export const SessionLockTTLUpdate: VFC<Props> = ({ ttl, disabled }) => {
     const { endpoint } = ExtensionContext.get();
     const dispatch = useDispatch();
-
-    const [confirmPin, confirmSessionLockPinModal] = useConfirmSessionLockPin();
+    const { confirmPin } = useSessionLockConfirmContext();
 
     const handleOnChange = async (ttl: number) =>
-        confirmPin(
-            (pin) => {
-                dispatch(sessionLockEnableIntent({ pin, ttl }, endpoint));
-            },
-            {
-                title: c('Title').t`Auto-lock update`,
-                text: c('Info').t`Please confirm your PIN code to edit this setting.`,
-            }
-        );
+        confirmPin({
+            onSubmit: (pin) => dispatch(sessionLockEnableIntent({ pin, ttl }, endpoint)),
+            title: c('Title').t`Auto-lock update`,
+            text: c('Info').t`Please confirm your PIN code to edit this setting.`,
+        });
 
     return (
         <>
@@ -55,8 +50,6 @@ export const SessionLockTTLUpdate: VFC<Props> = ({ ttl, disabled }) => {
                     <Option key={value} title={title} value={value} />
                 ))}
             </InputFieldTwo>
-
-            {confirmSessionLockPinModal}
         </>
     );
 };
