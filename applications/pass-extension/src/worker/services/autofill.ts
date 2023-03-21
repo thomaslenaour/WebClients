@@ -1,6 +1,6 @@
 import browser from 'webextension-polyfill';
 
-import { itemAutofillIntent, selectAutofillCandidates, selectItemByShareIdAndId } from '@proton/pass/store';
+import { itemAutofillIntent, itemUsed, selectAutofillCandidates, selectItemByShareIdAndId } from '@proton/pass/store';
 import type { Maybe, Realm, SafeLoginItem } from '@proton/pass/types';
 import { WorkerMessageType } from '@proton/pass/types';
 import { parseSender, parseUrl } from '@proton/pass/utils/url';
@@ -119,10 +119,12 @@ export const createAutoFillService = () => {
         WorkerMessageType.AUTOFILL_SELECT,
         onContextReady(async (message) => {
             const credentials = getAutofillData(message.payload);
+
             if (credentials === undefined) {
                 throw new Error('Could not get credentials for autofill request');
             }
 
+            store.dispatch(itemUsed(message.payload));
             return credentials;
         })
     );
