@@ -23,6 +23,8 @@ export enum WorkerMessageType {
     WORKER_WAKEUP = 'WORKER_WAKEUP',
     WORKER_INIT = 'WORKER_INIT',
     WORKER_STATUS = 'WORKER_STATUS',
+    /* CONTENT-SCRIPT */
+    UNLOAD_CONTENT_SCRIPT = 'UNLOAD_CONTENT_SCRIPT',
     /* TABS */
     RESOLVE_TAB = 'RESOLVE_TAB',
     /* REDUX */
@@ -74,6 +76,8 @@ export type WorkerStatusMessage = {
     type: WorkerMessageType.WORKER_STATUS;
     payload: { state: WorkerState };
 };
+
+export type UnloadContentScriptMessage = { type: WorkerMessageType.UNLOAD_CONTENT_SCRIPT };
 
 export type StoreActionMessage = {
     type: WorkerMessageType.STORE_ACTION;
@@ -152,6 +156,7 @@ export type WorkerMessage =
     | WorkerWakeUpMessage
     | WorkerInitMessage
     | WorkerStatusMessage
+    | UnloadContentScriptMessage
     | ResumeSessionSuccessMessage
     | AutofillQueryMessage
     | AutofillSelectMessage
