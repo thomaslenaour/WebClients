@@ -7,19 +7,19 @@ import { WorkerStatus } from '@proton/pass/types';
 import sentry from '@proton/shared/lib/helpers/sentry';
 
 import * as config from '../app/config';
-import { ENV, createDevReloader } from '../shared/extension';
+import { createDevReloader } from '../shared/extension';
 import WorkerMessageBroker from './channel';
 import { createWorkerContext } from './context';
 
-/* https://bugs.chromium.org/p/chromium/issues/detail?id=1271154#c66 */
-const globalScope = self as any as ServiceWorkerGlobalScope;
-globalScope.oninstall = () => globalScope.skipWaiting();
+if (BUILD_TARGET === 'chrome') {
+    /* https://bugs.chromium.org/p/chromium/issues/detail?id=1271154#c66 */
+    const globalScope = self as any as ServiceWorkerGlobalScope;
+    globalScope.oninstall = () => globalScope.skipWaiting();
+}
 
-/**
- * forward dev-server WS messages to content-scripts ports
- * since CSP policies may block our local WSServer
- */
 if (ENV === 'development') {
+    /* forward dev-server WS messages to content-scripts ports
+     * since CSP policies may block our local WSServer */
     createDevReloader(() => browser.runtime.reload(), 'reloading chrome runtime');
 }
 

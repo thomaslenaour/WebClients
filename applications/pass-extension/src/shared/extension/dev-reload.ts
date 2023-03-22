@@ -1,5 +1,3 @@
-import { RUNTIME_RELOAD } from './constants';
-
 /**
  * Allows triggering custom callback function when the
  * ProtonPassExtensionReloader webpack plugin sends a

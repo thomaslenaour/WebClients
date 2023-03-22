@@ -15,7 +15,6 @@ import { getErrorMessage } from '@proton/pass/utils/errors';
 import { logger } from '@proton/pass/utils/logger';
 import { workerCanBoot } from '@proton/pass/utils/worker';
 
-import { ENV, RESUME_FALLBACK } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
 import { withContext } from '../context';
 import store from '../store';

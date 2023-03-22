@@ -4,7 +4,6 @@ import devToolsEnhancer from 'remote-redux-devtools';
 import reducer from '@proton/pass/store/reducers';
 import type { ExtensionEndpoint, TabId } from '@proton/pass/types';
 
-import { ENV } from '../extension';
 import { proxyActionsMiddleware } from './proxy-actions.middleware';
 
 const createClientStore = (endpoint: ExtensionEndpoint, tabId: TabId) => {

@@ -9,14 +9,22 @@ const getCssLoaders = require('@proton/pack/webpack/css.loader');
 const getAssetsLoaders = require('@proton/pack/webpack/assets.loader');
 const getOptimizations = require('@proton/pack/webpack/optimization');
 
-const SUPPORTED_TARGETS = ['chrome', 'firefox'];
-
 const production = process.env.NODE_ENV === 'production';
-const target = process.env.TARGET ?? SUPPORTED_TARGETS[0];
 
-if (!SUPPORTED_TARGETS.includes(target)) {
-    throw new Error(`Build target "${target}" is not supported`);
+const SUPPORTED_TARGETS = ['chrome', 'firefox'];
+const BUILD_TARGET = process.env.BUILD_TARGET ?? SUPPORTED_TARGETS[0];
+const RUNTIME_RELOAD = Boolean(process.env.RUNTIME_RELOAD);
+const RESUME_FALLBACK = Boolean(process.env.RESUME_FALLBACK);
+
+if (!SUPPORTED_TARGETS.includes(BUILD_TARGET)) {
+    throw new Error(`Build target "${BUILD_TARGET}" is not supported`);
 }
+console.log({
+    ENV: JSON.stringify(process.env.NODE_ENV),
+    BUILD_TARGET: JSON.stringify(BUILD_TARGET),
+    RUNTIME_RELOAD: RUNTIME_RELOAD,
+    RESUME_FALLBACK: RESUME_FALLBACK,
+});
 
 const options = {
     isProduction: production,
@@ -90,7 +98,12 @@ module.exports = {
     },
     plugins: [
         new webpack.EnvironmentPlugin({ NODE_ENV: process.env.NODE_ENV ?? 'development' }),
-        new webpack.DefinePlugin({ WEBPACK_ENV: JSON.stringify(process.env.NODE_ENV) }),
+        new webpack.DefinePlugin({
+            ENV: JSON.stringify(process.env.NODE_ENV),
+            BUILD_TARGET: JSON.stringify(BUILD_TARGET),
+            RUNTIME_RELOAD: RUNTIME_RELOAD,
+            RESUME_FALLBACK: RESUME_FALLBACK,
+        }),
         new ESLintPlugin({
             extensions: ['js', 'ts'],
             overrideConfigFile: path.resolve(__dirname, '.eslintrc.js'),
@@ -99,7 +112,7 @@ module.exports = {
             filename: 'styles/[name].css',
         }),
         new CopyPlugin({
-            patterns: [{ from: 'public' }, { from: `manifest-${target}.json`, to: 'manifest.json' }],
+            patterns: [{ from: 'public' }, { from: `manifest-${BUILD_TARGET}.json`, to: 'manifest.json' }],
         }),
     ],
 };
