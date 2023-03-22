@@ -6,22 +6,20 @@ import { c } from 'ttag';
 import uniqid from 'uniqid';
 
 import { Button } from '@proton/atoms';
-import { Icon, Tooltip } from '@proton/components';
+import { DropdownMenuButton, Icon } from '@proton/components';
 import { itemCreationIntent } from '@proton/pass/store';
 import { isEmptyString } from '@proton/pass/utils/string';
 import { getEpoch } from '@proton/pass/utils/time/get-epoch';
 import { omit } from '@proton/shared/lib/helpers/object';
 
-import AliasPreview from '../../../../shared/components/alias/Alias.preview';
-import {
-    PasswordField,
-    TextAreaField,
-    TextField,
-    UrlGroupField,
-    createNewUrl,
-} from '../../../../shared/components/fields';
+import { TextAreaField, UrlGroupField, createNewUrl } from '../../../../shared/components/fields';
 import { ItemNewProps } from '../../../../shared/items';
+import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { PasswordFieldWIP } from '../../../components/Fields/PasswordField';
+import { TextFieldWIP } from '../../../components/Fields/TextField';
+import { TitleField } from '../../../components/Fields/TitleField';
 import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
+import { QuickActionsDropdown } from '../../../components/QuickActionsDropdown';
 import { usePopupContext } from '../../../context';
 import AliasModal from '../Alias/Alias.modal';
 import { NewLoginItemFormValues, validateNewLoginForm } from './Login.validation';
@@ -33,7 +31,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
     const { realm, subdomain } = usePopupContext();
     const isValidURL = realm !== undefined;
     const url = subdomain !== undefined ? subdomain : realm;
-    const defaultName = isValidURL ? url! : c('Placeholder').t`Unnamed`;
+    const defaultName = isValidURL ? url! : '';
 
     const [aliasModalOpen, setAliasModalOpen] = useState(false);
 
@@ -115,54 +113,66 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
             <ItemCreatePanel type="login" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
                 <FormikProvider value={form}>
                     <Form id={FORM_ID}>
-                        <Field name="name" label={c('Label').t`Name`} component={TextField} />
-                        <Field
-                            name="username"
-                            label={c('Label').t`Username`}
-                            placeholder={c('Placeholder').t`Enter email or username`}
-                            component={TextField}
-                            {...(form.values.withAlias
-                                ? {
-                                      suffix: form.values.aliasSuffix?.value,
-                                      action: (
-                                          <Button
-                                              icon
-                                              onClick={() =>
-                                                  form.setValues((values) => ({
-                                                      ...omit(
-                                                          values as NewLoginItemFormValues & {
-                                                              withAlias: true;
-                                                          },
-                                                          ['aliasPrefix', 'aliasSuffix', 'mailboxes']
-                                                      ),
-                                                      withAlias: false,
-                                                  }))
-                                              }
-                                              className="ml0-5 flex-align-self-end"
-                                          >
-                                              <Icon name="trash" />
-                                          </Button>
-                                      ),
-                                  }
-                                : {
-                                      action: (
-                                          <Tooltip title={c('Action').t`Generate alias`}>
-                                              <Button icon onClick={() => setAliasModalOpen(true)} className="ml0-5">
-                                                  <Icon name="alias" />
-                                              </Button>
-                                          </Tooltip>
-                                      ),
-                                  })}
-                        />
-                        {form.values.withAlias && (
-                            <AliasPreview
-                                prefix={form.values.username}
-                                suffix={form.values.aliasSuffix!.value}
-                                className="mt0-5"
+                        <FieldsetCluster>
+                            <Field
+                                name="name"
+                                label={c('Label').t`Title`}
+                                placeholder={c('Placeholder').t`Untitled`}
+                                component={TitleField}
                             />
-                        )}
+                        </FieldsetCluster>
 
-                        <Field name="password" label={c('Label').t`Password`} component={PasswordField} />
+                        <FieldsetCluster>
+                            <Field
+                                name="username"
+                                label={c('Label').t`Username`}
+                                placeholder={c('Placeholder').t`Enter email or username`}
+                                component={TextFieldWIP}
+                                itemType="login"
+                                {...(form.values.withAlias
+                                    ? {
+                                          suffix: form.values.aliasSuffix?.value,
+                                          actions: (
+                                              <QuickActionsDropdown>
+                                                  <DropdownMenuButton
+                                                      className="flex flex-align-items-center text-left"
+                                                      onClick={() => {
+                                                          void form.setValues((values) => ({
+                                                              ...omit(
+                                                                  values as NewLoginItemFormValues & {
+                                                                      withAlias: true;
+                                                                  },
+                                                                  ['aliasPrefix', 'aliasSuffix', 'mailboxes']
+                                                              ),
+                                                              withAlias: false,
+                                                          }));
+                                                      }}
+                                                  >
+                                                      <Icon name="trash" className="mr0-5" />
+                                                      {c('Action').t`Delete alias`}
+                                                  </DropdownMenuButton>
+                                              </QuickActionsDropdown>
+                                          ),
+                                      }
+                                    : {
+                                          actions: (
+                                              <Button
+                                                  icon
+                                                  pill
+                                                  color="weak"
+                                                  shape="solid"
+                                                  size="small"
+                                                  className="pass-item-icon"
+                                                  title={c('Action').t`Generate alias`}
+                                                  onClick={() => setAliasModalOpen(true)}
+                                              >
+                                                  <Icon name="alias" size={24} />
+                                              </Button>
+                                          ),
+                                      })}
+                            />
+                            <Field name="password" label={c('Label').t`Password`} component={PasswordFieldWIP} />
+                        </FieldsetCluster>
 
                         <UrlGroupField form={form} />
 

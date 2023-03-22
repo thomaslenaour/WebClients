@@ -5,7 +5,7 @@ import { FieldProps } from 'formik';
 import { InputFieldTwo, PasswordInputTwo } from '@proton/components';
 import { InputFieldOwnProps } from '@proton/components/components/v2/field/InputField';
 
-import { PasswordGeneratorButton } from '../password-generator';
+import { PasswordGeneratorButton } from '../password-generator/PasswordGeneratorButton';
 
 type PasswordFieldProps = FieldProps &
     InputFieldOwnProps & {

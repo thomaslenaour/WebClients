@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { type VFC, memo, useState } from 'react';
 
 import { c } from 'ttag';
 
-import { Button, ButtonProps } from '@proton/atoms';
-import { Icon, Tooltip } from '@proton/components/components';
+import { Button, type ButtonProps } from '@proton/atoms';
+import { Icon } from '@proton/components/components';
 
 import { PasswordGeneratorModal } from './PasswordGeneratorModal';
 
-type PasswordGeneratorButtonProps = ButtonProps & { onDone: (password: string) => void };
+type Props = ButtonProps & { onDone: (password: string) => void };
 
-export const PasswordGeneratorButton = ({ onDone, ...rest }: PasswordGeneratorButtonProps) => {
+const PasswordGeneratorButtonRaw: VFC<Props> = ({ onDone, ...rest }) => {
     const [passwordModalOpen, setPasswordModalOpen] = useState(false);
 
     const onSubmit = (password: string) => {
@@ -19,11 +19,19 @@ export const PasswordGeneratorButton = ({ onDone, ...rest }: PasswordGeneratorBu
 
     return (
         <>
-            <Tooltip title={c('Action').t`Generate password`}>
-                <Button icon onClick={() => setPasswordModalOpen(true)} {...rest}>
-                    <Icon name="arrows-rotate" />
-                </Button>
-            </Tooltip>
+            <Button
+                icon
+                pill
+                color="weak"
+                shape="solid"
+                size="small"
+                className="pass-item-icon"
+                title={c('Action').t`Generate password`}
+                onClick={() => setPasswordModalOpen(true)}
+                {...rest}
+            >
+                <Icon name="arrows-rotate" size={24} />
+            </Button>
 
             <PasswordGeneratorModal
                 open={passwordModalOpen}
@@ -33,3 +41,5 @@ export const PasswordGeneratorButton = ({ onDone, ...rest }: PasswordGeneratorBu
         </>
     );
 };
+
+export const PasswordGeneratorButton = memo(PasswordGeneratorButtonRaw);
