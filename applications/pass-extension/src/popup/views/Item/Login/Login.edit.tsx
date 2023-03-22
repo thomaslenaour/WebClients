@@ -5,15 +5,13 @@ import { c } from 'ttag';
 
 import { isEmptyString } from '@proton/pass/utils/string';
 
-import {
-    PasswordField,
-    TextAreaField,
-    TextField,
-    UrlGroupField,
-    createNewUrl,
-} from '../../../../shared/components/fields';
-import { onBlurFallback } from '../../../../shared/form';
 import { ItemEditProps } from '../../../../shared/items';
+import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { PasswordFieldWIP } from '../../../components/Fields/PasswordField';
+import { TextFieldWIP } from '../../../components/Fields/TextField';
+import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
+import { TitleField } from '../../../components/Fields/TitleField';
+import { UrlGroupFieldCluster, createNewUrl } from '../../../components/Fields/UrlGroupFieldCluster';
 import { ItemEditPanel } from '../../../components/Panel/ItemEditPanel';
 import { EditLoginItemFormValues, validateEditLoginForm } from './Login.validation';
 
@@ -61,25 +59,33 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
         <ItemEditPanel type="login" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
-                    <Field name="name" label={c('Label').t`Name`} component={TextField} />
-                    <Field
-                        name="username"
-                        label={c('Label').t`Username`}
-                        component={TextField}
-                        onBlur={onBlurFallback(form, 'username', username)}
-                        placeholder={c('Placeholder').t`Enter email or username`}
-                    />
+                    <FieldsetCluster>
+                        <Field name="name" label={c('Label').t`Title`} component={TitleField} />
+                    </FieldsetCluster>
+                    <FieldsetCluster>
+                        <Field
+                            name="username"
+                            label={c('Label').t`Username`}
+                            placeholder={c('Placeholder').t`Enter email or username`}
+                            component={TextFieldWIP}
+                            itemType="login"
+                            icon="user"
+                        />
+                        <Field name="password" label={c('Label').t`Password`} component={PasswordFieldWIP} icon="key" />
+                    </FieldsetCluster>
 
-                    <Field
-                        name="password"
-                        label={c('Label').t`Password`}
-                        component={PasswordField}
-                        onBlur={onBlurFallback(form, 'password', password)}
-                    />
+                    <UrlGroupFieldCluster form={form} />
 
-                    <UrlGroupField form={form} />
-
-                    <Field name="note" label={c('Label').t`Note`} component={TextAreaField} rows={5} />
+                    <FieldsetCluster>
+                        <Field
+                            name="note"
+                            label={c('Label').t`Note`}
+                            placeholder={c('Placeholder').t`Enter a note ...`}
+                            component={TextAreaFieldWIP}
+                            icon="note"
+                            rows={2}
+                        />
+                    </FieldsetCluster>
                 </Form>
             </FormikProvider>
         </ItemEditPanel>

@@ -1,10 +1,12 @@
-import type { VFC } from 'react';
+import type { ElementType, VFC } from 'react';
 
 import type { FieldProps } from 'formik';
 
+import { InputFieldTwo } from '@proton/components';
+
 import { InputControl, type Props as InputControlProps } from '../Controls/Input';
 
-export type Props = FieldProps & InputControlProps;
+export type Props<T extends ElementType = typeof InputFieldTwo> = FieldProps & InputControlProps<T>;
 
 export const TextFieldWIP: VFC<Props> = ({ field, form, ...rest }) => {
     const { name } = field;
