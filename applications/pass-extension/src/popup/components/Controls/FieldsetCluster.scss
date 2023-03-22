@@ -1,0 +1,17 @@
+.pass-fieldset-cluster > * {
+	border: 1px solid var(--border-norm);
+	margin-block-start: -1px;
+	position: relative;
+
+	&:first-child,
+	&:first-child::before {
+		border-start-start-radius: var(--border-radius-xl);
+		border-start-end-radius: var(--border-radius-xl);
+	}
+
+	&:last-child,
+	&:last-child::before {
+		border-end-start-radius: var(--border-radius-xl);
+		border-end-end-radius: var(--border-radius-xl);
+	}
+}
