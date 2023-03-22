@@ -19,6 +19,7 @@ import {
     ICON_PADDING,
     ICON_ROOT_CLASSNAME,
     ICON_WRAPPER_CLASSNAME,
+    INPUT_STYLES_ATTR,
 } from '../../constants';
 import type { FieldHandles } from '../../types';
 
@@ -33,6 +34,13 @@ type SharedInjectionOptions = {
     inputBox: HTMLElement;
     getInputStyle: BoundComputeStyles;
     getBoxStyle: BoundComputeStyles;
+};
+
+/* input styles we may override */
+type InputInitialStyles = {
+    width?: string;
+    ['max-width']?: string;
+    ['padding-right']?: string;
 };
 
 /**
@@ -124,13 +132,24 @@ const computeIconInjectionStyles = (
     };
 };
 
+export const getInputInitialStyles = (el: HTMLElement): InputInitialStyles => {
+    const initialStyles = el.getAttribute(INPUT_STYLES_ATTR);
+    return initialStyles ? JSON.parse(initialStyles) : {};
+};
+
+export const cleanupInputInjectedStyles = (input: HTMLInputElement) =>
+    Object.entries(getInputInitialStyles(input)).forEach(
+        ([prop, value]) =>
+            Boolean(value)
+                ? input.style.setProperty(prop, value) /* if has initial style -> reset */
+                : input.style.removeProperty(prop) /* else remove override */
+    );
+
 export const cleanupInjectionStyles = ({ wrapper, input }: Pick<InjectionElements, 'wrapper' | 'input'>) => {
     wrapper.style.removeProperty('float');
     wrapper.style.removeProperty('max-width');
     wrapper.style.removeProperty('margin-left');
-    input.style.removeProperty('width');
-    input.style.removeProperty('max-width');
-    input.style.removeProperty('padding-right');
+    cleanupInputInjectedStyles(input);
 };
 
 /**
@@ -163,6 +182,18 @@ const applyIconInjectionStyles = (elements: InjectionElements, shared: SharedInj
         pixelTransformer(styles.icon.size, (size) => size / 2.2)
     );
 
+    /**
+     * Content-script may be destroyed and re-injected
+     * on extension update or on code hot-reload. Keep
+     * track of the previous input styles for clean-up.
+     */
+    const initialInputStyles: InputInitialStyles = {
+        width: input.style.width,
+        'max-width': input.style.maxWidth,
+        'padding-right': input.style.paddingRight,
+    };
+
+    input.setAttribute(INPUT_STYLES_ATTR, JSON.stringify(initialInputStyles));
     input.style.setProperty('padding-right', styles.input.paddingRight, 'important');
 
     if (shared.getInputStyle('box-sizing') === 'content-box') {
