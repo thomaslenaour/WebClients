@@ -36,9 +36,9 @@ import {
     unsafeSHA1,
     verifyCleartextMessage,
     verifyMessage,
-} from 'pmcrypto';
-import type { Data, Key, PrivateKey, PublicKey } from 'pmcrypto';
-import { enums } from 'pmcrypto/lib/openpgp';
+} from 'pmcrypto-v7';
+import type { Data, Key, PrivateKey, PublicKey } from 'pmcrypto-v7';
+import { enums } from 'pmcrypto-v7/lib/openpgp';
 
 import { arrayToHexString } from '../utils';
 import {
