@@ -55,7 +55,7 @@ export function randomAddress(): Address {
     };
 }
 
-export function randomContents(length: Number = 20): Uint8Array {
+export function randomContents(length: number = 20): Uint8Array {
     let a = [];
     for (let i = 0; i < length; i++) {
         a[i] = Math.ceil(Math.random() * 255);
