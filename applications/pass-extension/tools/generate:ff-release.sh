@@ -70,8 +70,8 @@ fi
 
 # Build and zip release for FF
 echo "📄 Generating release for $BUILD_ID"
-NODE_ENV=production TARGET=firefox yarn run build >/dev/null
-echo "  ↳ Built production release [TARGET=firefox]"
+NODE_ENV=production BUILD_TARGET=firefox yarn run build >/dev/null
+echo "  ↳ Built production release [BUILD_TARGET=firefox]"
 (cd dist && zip -vr $OUT_DIR/$BUILD_ID.zip * -x "*.DS_Store" >/dev/null)
 echo "  ↳ Compressed release : \"$OUT_DIR/$BUILD_ID.zip\""
 

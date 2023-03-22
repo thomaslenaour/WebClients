@@ -9,10 +9,10 @@ echo "Building for chrome & firefox"
 mkdir -p "./release/ProtonPass-chrome-${VERSION}"
 mkdir -p "./release/ProtonPass-chrome-${VERSION}-black"
 
-TARGET=chrome yarn run build
+BUILD_TARGET=chrome yarn run build
 mv ./dist/* "./release/ProtonPass-chrome-${VERSION}"
 
-TARGET=chrome yarn run build:dev
+BUILD_TARGET=chrome yarn run build:dev
 mv ./dist/* "./release/ProtonPass-chrome-${VERSION}-black"
 
 cp -R "./release/ProtonPass-chrome-${VERSION}" "./release/ProtonPass-firefox-${VERSION}"

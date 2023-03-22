@@ -9,7 +9,6 @@ import { workerRootSaga } from '@proton/pass/store/sagas';
 import { ShareEventType, WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { logger } from '@proton/pass/utils/logger';
 
-import { ENV } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
 import { withContext } from '../context/helpers';
 import { workerMiddleware } from './worker.middleware';

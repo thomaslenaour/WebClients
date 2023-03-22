@@ -14,8 +14,7 @@ const createReduxDevTools = require('./dev:redux-tools');
 const config = require('../webpack.config');
 
 const WEBPACK_DEV_PORT = process.env.WEBPACK_DEV_PORT ?? 1337;
-const RUNTIME_RELOAD = JSON.parse(process.env.RUNTIME_RELOAD ?? 'false');
-const RESUME_FALLBACK = JSON.parse(process.env.RESUME_FALLBACK ?? 'true');
+const RUNTIME_RELOAD = Boolean(process.env.RUNTIME_RELOAD);
 const EXCLUDED_WEBPACK_ENTRIES = ['background', 'content', 'notification', 'dropdown'];
 
 const sanitizeWebpackConfig = (config) => {
@@ -41,14 +40,7 @@ const sanitizeWebpackConfig = (config) => {
      * activating the getPlugins() helper from the parent
      * webpack.config.js
      */
-    config.plugins = [
-        new ReactRefreshWebpackPlugin({ overlay: false }),
-        new webpack.DefinePlugin({
-            WEBPACK_RUNTIME_RELOAD: RUNTIME_RELOAD,
-            WEBPACK_RESUME_FALLBACK: RESUME_FALLBACK,
-        }),
-        ...config.plugins,
-    ];
+    config.plugins = [new ReactRefreshWebpackPlugin({ overlay: false }), ...config.plugins];
     return config;
 };
 
