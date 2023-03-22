@@ -13,9 +13,12 @@ import Lobby from './views/Lobby/Lobby';
 
 import './Popup.scss';
 
+document.documentElement.style.setProperty('--popup-width', '600px');
+document.documentElement.style.setProperty('--popup-height', '430px');
+
 const POPUP_DIMENSIONS: CSSProperties = {
-    width: 600,
-    height: 430,
+    '--width-custom': 'var(--popup-width)',
+    '--height-custom': 'var(--popup-height)',
 };
 
 const AppOrLobby = () => {
@@ -25,7 +28,11 @@ const AppOrLobby = () => {
 
 const Popup = () => {
     return (
-        <ExtensionWindow endpoint="popup" style={POPUP_DIMENSIONS} className="anime-fade-in block overflow-hidden">
+        <ExtensionWindow
+            endpoint="popup"
+            style={POPUP_DIMENSIONS}
+            className="w-custom h-custom anime-fade-in block overflow-hidden"
+        >
             {(ready) =>
                 ready ? (
                     <ReduxProvider store={createClientStore('popup', ExtensionContext.get().tabId)}>
