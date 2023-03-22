@@ -4,8 +4,6 @@ import { createElement } from '@proton/pass/utils/dom';
 
 import { ICON_CIRCLE_LOADER, ICON_ROOT_CLASSNAME, ICON_SVG } from '../../constants';
 
-import './icon.injection.scss';
-
 export const CIRCLE_LOADER_SVG = `
 <svg xmlns="http://www.w3.org/2000/svg" class="circle-loader" viewBox="0 0 16 16">
    <defs>
