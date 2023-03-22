@@ -2,8 +2,10 @@ import type { VFC } from 'react';
 
 import { type Props as TextFieldProps, TextFieldWIP } from './TextField';
 
+import "./TitleField.scss";
+
 const OVERRIDEN_PROPS = {
-    inputClassName: 'text-4xl text-bold color-norm p-0',
+    inputClassName: 'pass-title-field text-bold color-norm p-0',
 } as const;
 
 type TitleFieldProps = TextFieldProps;

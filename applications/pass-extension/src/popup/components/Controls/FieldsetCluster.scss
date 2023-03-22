@@ -3,6 +3,9 @@
 	margin-block-start: -1px;
 	position: relative;
 
+	font-size: 0.75rem;
+	line-height: 1rem;
+
 	&:first-child,
 	&:first-child::before {
 		border-start-start-radius: var(--border-radius-xl);
@@ -14,4 +17,8 @@
 		border-end-start-radius: var(--border-radius-xl);
 		border-end-end-radius: var(--border-radius-xl);
 	}
+}
+
+.pass-fieldset-cluster textarea {
+	min-height: 2.25em;
 }

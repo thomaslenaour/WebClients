@@ -3,8 +3,8 @@ import { c } from 'ttag';
 
 import { isEmptyString } from '@proton/pass/utils/string';
 
-import { UrlGroupValues, validateUrl, validateUrls } from '../../../../shared/components/fields';
 import { AliasFormValues, validateAliasForm } from '../Alias/Alias.validation';
+import { UrlGroupValues, validateUrl, validateUrls } from '../../../components/Fields/UrlGroupFieldCluster';
 
 type BaseLoginItemFormValues = {
     name: string;

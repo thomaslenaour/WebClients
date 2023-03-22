@@ -12,12 +12,13 @@ import { isEmptyString } from '@proton/pass/utils/string';
 import { getEpoch } from '@proton/pass/utils/time/get-epoch';
 import { omit } from '@proton/shared/lib/helpers/object';
 
-import { TextAreaField, UrlGroupField, createNewUrl } from '../../../../shared/components/fields';
 import { ItemNewProps } from '../../../../shared/items';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
 import { PasswordFieldWIP } from '../../../components/Fields/PasswordField';
 import { TextFieldWIP } from '../../../components/Fields/TextField';
+import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
 import { TitleField } from '../../../components/Fields/TitleField';
+import { UrlGroupFieldCluster, createNewUrl } from '../../../components/Fields/UrlGroupFieldCluster';
 import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
 import { QuickActionsDropdown } from '../../../components/QuickActionsDropdown';
 import { usePopupContext } from '../../../context';
@@ -129,6 +130,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
                                 placeholder={c('Placeholder').t`Enter email or username`}
                                 component={TextFieldWIP}
                                 itemType="login"
+                                icon="user"
                                 {...(form.values.withAlias
                                     ? {
                                           suffix: form.values.aliasSuffix?.value,
@@ -137,7 +139,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
                                                   <DropdownMenuButton
                                                       className="flex flex-align-items-center text-left"
                                                       onClick={() => {
-                                                          void form.setValues((values) => ({
+                                                          void form.setValues((values: any) => ({
                                                               ...omit(
                                                                   values as NewLoginItemFormValues & {
                                                                       withAlias: true;
@@ -171,18 +173,27 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
                                           ),
                                       })}
                             />
-                            <Field name="password" label={c('Label').t`Password`} component={PasswordFieldWIP} />
+                            <Field
+                                name="password"
+                                label={c('Label').t`Password`}
+                                placeholder={c('Placeholder').t`Enter password`}
+                                icon="key"
+                                component={PasswordFieldWIP}
+                            />
                         </FieldsetCluster>
 
-                        <UrlGroupField form={form} />
+                        <UrlGroupFieldCluster form={form} />
 
-                        <Field
-                            name="note"
-                            label={c('Label').t`Note`}
-                            component={TextAreaField}
-                            rootClassName="mb0"
-                            rows={5}
-                        />
+                        <FieldsetCluster>
+                            <Field
+                                name="note"
+                                label={c('Label').t`Note`}
+                                placeholder={c('Placeholder').t`Enter a note ...`}
+                                component={TextAreaFieldWIP}
+                                icon="note"
+                                rows={2}
+                            />
+                        </FieldsetCluster>
                     </Form>
                 </FormikProvider>
             </ItemCreatePanel>
@@ -194,7 +205,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
                 initialPrefix={url ?? form.values.username}
                 onAliasSubmit={({ aliasPrefix, aliasSuffix, mailboxes }) => {
                     if (aliasPrefix !== undefined && aliasSuffix !== undefined && mailboxes.length > 0) {
-                        form.setValues((values) => ({
+                        form.setValues((values: any) => ({
                             ...values,
                             withAlias: true,
                             username: aliasPrefix,
