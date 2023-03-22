@@ -37,7 +37,7 @@ import {
     ThemesSection,
     TopBanners,
     TopNavbarUpsell,
-    UnAuthenticated,
+    Unauthenticated,
     UserDropdown,
     UsernameSection,
     WireGuardConfigurationSection,
@@ -192,9 +192,9 @@ const MainContainer = () => {
             {renderFreeUserLiveChatModal && <FreeUserLiveChatModal {...freeUserLiveChatModal} />}
             <Switch>
                 <Route path="/tv">
-                    <UnAuthenticated>
+                    <Unauthenticated>
                         <TVContainer />
-                    </UnAuthenticated>
+                    </Unauthenticated>
                 </Route>
                 <Route path="*">
                     <PrivateAppContainer top={top} header={header} sidebar={sidebar}>

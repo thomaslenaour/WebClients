@@ -27,8 +27,6 @@ export const getAppVersionHeaders = (clientID: string, appVersion: string) => {
     };
 };
 
-export const getUIDHeaderValue = (headers: Headers) => headers?.['x-pm-uid'];
-
 export const getUIDHeaders = (UID: string) => ({
     'x-pm-uid': UID,
 });

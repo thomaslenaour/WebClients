@@ -26,7 +26,7 @@ export interface ValidateResetTokenResponse {
 }
 
 interface MnemonicData {
-    api: Api;
+    authApi: Api;
     decryptedUserKeys: DecryptedKey[];
     authResponse: AuthResponse;
 }

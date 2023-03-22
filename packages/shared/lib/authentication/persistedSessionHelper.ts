@@ -1,8 +1,9 @@
 import { updateVersionCookie, versionCookieAtLoad } from '@proton/components/hooks/useEarlyAccess';
 import { PersistedSessionWithLocalID } from '@proton/shared/lib/authentication/SessionInterface';
 import { getIsIframe } from '@proton/shared/lib/helpers/browser';
+import getRandomString from '@proton/utils/getRandomString';
 
-import { getLocalKey, getLocalSessions, setLocalKey } from '../api/auth';
+import { getLocalKey, getLocalSessions, setCookies, setLocalKey } from '../api/auth';
 import { getIs401Error } from '../api/helpers/apiErrorHelper';
 import { InactiveSessionError } from '../api/helpers/withApiHandlers';
 import { getUser } from '../api/user';
@@ -195,6 +196,7 @@ export const persistSession = async ({
     User,
     UID,
     LocalID,
+    RefreshToken,
     persistent,
     trusted,
 }: PersistLoginArgs) => {
@@ -209,6 +211,8 @@ export const persistSession = async ({
             trusted,
         });
     }
+
+    await api(setCookies({ UID, RefreshToken, State: getRandomString(24), Persistent: persistent }));
 };
 
 export const getActiveSessionByUserID = (UserID: string, isSubUser: boolean) => {

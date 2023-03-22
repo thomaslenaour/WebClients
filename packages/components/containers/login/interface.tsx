@@ -39,6 +39,7 @@ export interface AuthCacheResult {
     authVersion: AuthVersion;
     authResponse: AuthResponse;
     api: Api;
+    authApi: Api;
     data: { user?: tsUser; salts?: tsKeySalt[]; addresses?: Address[] };
     authTypes: AuthTypes;
     username: string;

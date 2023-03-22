@@ -1,6 +1,6 @@
 import { getAppVersionHeaders, getUIDHeaders } from './fetch/headers';
 
-const addClientSecret = ['core/v4/auth', 'core/v4/auth/info', 'auth/v4/sessions'];
+const ADD_CLIENT_SECRET = ['core/v4/auth', 'core/v4/auth/info'];
 
 /**
  * Create a function that can call the API with the correct parameters.
@@ -25,7 +25,7 @@ export default ({ xhr, UID, API_URL, APP_VERSION, clientID, CLIENT_SECRET }) => 
     return ({ url, data, headers, ...rest }) => {
         // Special case for the admin panel
         const dataWithClientSecret =
-            CLIENT_SECRET && addClientSecret.includes(url) ? { ...data, ClientSecret: CLIENT_SECRET } : data;
+            CLIENT_SECRET && data && ADD_CLIENT_SECRET.includes(url) ? { ...data, ClientSecret: CLIENT_SECRET } : data;
         return xhr({
             url: /^https?:\/\//.test(url) ? url : `${API_URL}/${url}`,
             data: dataWithClientSecret,
