@@ -5,7 +5,9 @@ import useInstance from '@proton/hooks/useInstance';
 import usePrevious from '@proton/hooks/usePrevious';
 import { modalTwoRootClassName } from '@proton/shared/lib/busy';
 
-import { classnames, generateUID } from '../../helpers';
+import clsx from '@proton/utils/clsx';
+
+import { generateUID } from '../../helpers';
 import { useHotkeys } from '../../hooks';
 import Dialog from '../dialog/Dialog';
 import { useFocusTrap } from '../focus';
@@ -48,6 +50,10 @@ export interface ModalOwnProps {
      */
     id?: string;
     /**
+     * Allow an additional classname on the root element
+     */
+    rootClassName?: string;
+    /**
      * Fires when the user clicks on the close button or when he
      * presses the escape key, unless 'disableCloseOnEscape' is
      * set to true.
@@ -78,6 +84,7 @@ const Modal = <E extends ElementType = typeof defaultElement>({
     onExit,
     disableCloseOnEscape,
     className,
+    rootClassName,
     behind,
     as,
     ...rest
@@ -139,8 +146,9 @@ const Modal = <E extends ElementType = typeof defaultElement>({
     return (
         <Portal>
             <div
-                className={classnames([
+                className={clsx([
                     modalTwoRootClassName,
+                    rootClassName,
                     exiting && 'modal-two--out',
                     fullscreenOnMobile && 'modal-two--fullscreen-on-mobile',
                     fullscreen && 'modal-two--fullscreen',
@@ -158,7 +166,7 @@ const Modal = <E extends ElementType = typeof defaultElement>({
                     aria-labelledby={id}
                     aria-describedby={`${id}-description`}
                     {...focusTrapProps}
-                    className={classnames([
+                    className={clsx([
                         'modal-two-dialog outline-none',
                         className,
                         size === 'small' && 'modal-two-dialog--small',
