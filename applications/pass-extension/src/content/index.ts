@@ -8,6 +8,8 @@ import { handleForkFallback } from './auth/fork';
 import { CONTENT_SCRIPT_INJECTED } from './constants';
 import { createContentScriptService } from './services/content-script';
 
+import './injections/injection.scss';
+
 const { isVisible } = fathom.utils;
 
 /* notify any other injected content-script of

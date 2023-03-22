@@ -20,9 +20,7 @@ import {
     ICON_ROOT_CLASSNAME,
     ICON_WRAPPER_CLASSNAME,
 } from '../../constants';
-import { FieldHandles } from '../../types';
-
-import './icon.injection.scss';
+import type { FieldHandles } from '../../types';
 
 type InjectionElements = {
     icon: HTMLButtonElement;
