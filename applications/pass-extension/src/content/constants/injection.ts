@@ -1,8 +1,13 @@
 import browser from 'webextension-polyfill';
 
 export const EXTENSION_PREFIX = 'protonpass';
-export const CONTENT_SCRIPT_INJECTED = `${EXTENSION_PREFIX}-cs-injected`;
-export const INJECTOR_FLAG = `data-${EXTENSION_PREFIX}-injected`;
+
+export const CONTENT_SCRIPT_INJECTED_MESSAGE = `${EXTENSION_PREFIX}-cs-injected`;
+
+export const INPUT_STYLES_ATTR = `data-${EXTENSION_PREFIX}-styles-reset`;
+export const DETECTED_FORM_ID_ATTR = `data-${EXTENSION_PREFIX}-form-id`;
+export const PROCESSED_INPUT_ATTR = `data-${EXTENSION_PREFIX}-processed`;
+
 export const ICON_ROOT_CLASSNAME = `${EXTENSION_PREFIX}-input`;
 export const ICON_WRAPPER_CLASSNAME = `${ICON_ROOT_CLASSNAME}--wrapper`;
 export const ICON_CLASSNAME = `${ICON_ROOT_CLASSNAME}--icon`;
@@ -18,5 +23,3 @@ export const NOTIFICATION_WIDTH = 320;
 export const ACTIVE_ICON_SRC = browser.runtime.getURL('/assets/protonpass-icon-32.png');
 export const DROPDOWN_IFRAME_SRC = browser.runtime.getURL('/dropdown.html');
 export const NOTIFICATION_IFRAME_SRC = browser.runtime.getURL('/notification.html');
-export const DETECTED_FORM_ID_ATTR = `data-${EXTENSION_PREFIX}-form-id`;
-export const PROCESSED_INPUT_ATTR = `data-${EXTENSION_PREFIX}-processed`;
