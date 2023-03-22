@@ -1,5 +1,7 @@
 import { VFC, useMemo } from 'react';
 
+import { API_URL } from '../../../app/config';
+
 export enum ImageStatus {
     LOADING,
     READY,
@@ -12,6 +14,13 @@ interface Props {
     status: ImageStatus;
     url: string;
 }
+
+const getImageURL = (domain?: string) => {
+    if (domain) {
+        const basePath = BUILD_TARGET === 'firefox' ? API_URL : 'api-proxy';
+        return `${basePath}/core/v4/images/logo?Domain=${domain}&Size=64&Mode=light`;
+    }
+};
 
 export const ProxiedDomainImage: VFC<Props> = ({ className, onStatusChange, status, url }) => {
     const domain = useMemo(() => {
@@ -31,7 +40,7 @@ export const ProxiedDomainImage: VFC<Props> = ({ className, onStatusChange, stat
             className={className}
             onError={() => onStatusChange(ImageStatus.ERROR)}
             onLoad={() => onStatusChange(ImageStatus.READY)}
-            src={`/api-proxy/core/v4/images/logo?Domain=${domain}&Size=64&Mode=light`}
+            src={getImageURL(domain)}
             style={style}
         />
     );
