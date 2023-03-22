@@ -1,4 +1,3 @@
-import { isFirefox } from '@proton/pass/extension/browser/firefox';
 import { contentScriptMessage, sendMessage } from '@proton/pass/extension/message';
 import { WorkerMessageType } from '@proton/pass/types';
 import { isMainFrame } from '@proton/pass/utils/dom';
@@ -10,7 +9,7 @@ import { logger } from '@proton/pass/utils/logger';
  * to iframe postmessaging via the injected content-script
  */
 export const handleForkFallback = () => {
-    if (isFirefox() && isMainFrame()) {
+    if (isMainFrame()) {
         window.addEventListener('message', async (message) => {
             try {
                 if (message.data && message.data.type === 'fork') {

@@ -1,6 +1,7 @@
 import browser, { type Runtime } from 'webextension-polyfill';
 
 import { getPersistedSession } from '@proton/pass/auth';
+import { backgroundMessage } from '@proton/pass/extension/message';
 import { browserLocalStorage, browserSessionStorage } from '@proton/pass/extension/storage';
 import { boot, wakeup } from '@proton/pass/store/actions';
 import {
@@ -15,11 +16,23 @@ import { getErrorMessage } from '@proton/pass/utils/errors';
 import { logger } from '@proton/pass/utils/logger';
 import { workerCanBoot } from '@proton/pass/utils/worker';
 
+import { createDevReloader } from '../../shared/extension';
 import WorkerMessageBroker from '../channel';
 import { withContext } from '../context';
 import store from '../store';
 
 export const createActivationService = () => {
+    if (ENV === 'development') {
+        createDevReloader(() => {
+            WorkerMessageBroker.ports.broadcast(
+                backgroundMessage({
+                    type: WorkerMessageType.UNLOAD_CONTENT_SCRIPT,
+                })
+            );
+            setTimeout(() => browser.runtime.reload(), 100);
+        }, 'reloading chrome runtime');
+    }
+
     /**
      * Safety-net around worker boot-sequence :
      * Ensures no on-going boot.
@@ -55,27 +68,36 @@ export const createActivationService = () => {
      */
     const handleInstall = withContext(async (ctx, details: Runtime.OnInstalledDetailsType) => {
         if (details.reason === 'update') {
-            /* FIXME: Firefox handles content-script reloading when
-            extension updates - this step becomes unnecessary */
-            await Promise.all(
-                (browser.runtime.getManifest().content_scripts ?? []).flatMap(async (cs) => {
-                    const tabs = await browser.tabs.query({ url: cs.matches });
-                    return tabs.map((tab) => {
-                        logger.info(`[ActivationService::onInstall] Re-injecting content-script on tab ${tab.id}`);
-                        return (
-                            tab.id !== undefined &&
-                            browser.scripting
-                                .executeScript({
-                                    target: { tabId: tab.id! },
-                                    files: cs.js,
-                                })
-                                .catch((e) =>
-                                    logger.info(`[ActivationService::onInstall] Injection error on tab ${tab.id}`, e)
-                                )
-                        );
-                    });
-                })
-            );
+            /**
+             * firefox will automatically re-inject the content-script
+             * if an update is detected (when the extension runtime is
+             * reloaded with the update). This is not the case on chrome
+             * so we need to manually re-inject the updated script.
+             */
+            if (BUILD_TARGET === 'chrome') {
+                await Promise.all(
+                    (browser.runtime.getManifest().content_scripts ?? []).flatMap(async (cs) => {
+                        const tabs = await browser.tabs.query({ url: cs.matches });
+                        return tabs.map((tab) => {
+                            logger.info(`[ActivationService::onInstall] Re-injecting content-script on tab ${tab.id}`);
+                            return (
+                                tab.id !== undefined &&
+                                browser.scripting
+                                    .executeScript({
+                                        target: { tabId: tab.id! },
+                                        files: cs.js,
+                                    })
+                                    .catch((e) =>
+                                        logger.info(
+                                            `[ActivationService::onInstall] Injection error on tab ${tab.id}`,
+                                            e
+                                        )
+                                    )
+                            );
+                        });
+                    })
+                );
+            }
 
             return ctx.init({ force: true });
         }

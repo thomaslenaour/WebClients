@@ -6,6 +6,7 @@ import { InjectedDropdown, InjectedNotification } from './types';
 
 export type WorkerStateChangeHandler = (state: WorkerState) => void;
 export interface ContentScriptContext {
+    id: string;
     active: boolean;
     state: WorkerState;
     iframes: { dropdown: InjectedDropdown; notification: InjectedNotification | null };

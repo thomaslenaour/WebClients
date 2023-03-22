@@ -9,23 +9,26 @@ import noop from '@proton/utils/noop';
 
 import * as config from '../../app/config';
 import { ExtensionContext, ExtensionContextType, setupExtensionContext } from '../../shared/extension';
-import { CONTENT_SCRIPT_INJECTED } from '../constants';
+import { CONTENT_SCRIPT_INJECTED_MESSAGE } from '../constants';
 import CSContext, { ContentScriptContext } from '../context';
 import { getAllFields } from '../handles/form';
+import { DOMCleanUp } from '../injections/cleanup';
 import { isIFrameRootAttached } from '../injections/iframe/create-iframe-root';
 import { createFormManager } from './form/manager';
 import { createDropdown } from './iframes/dropdown';
 import { createNotification } from './iframes/notification';
 
-export const createContentScriptService = () => {
-    const listeners = createListenerStore();
+export const createContentScriptService = (id: string) => {
+    logger.info(`[ContentScript::${id}] Registering content-script`);
 
+    const listeners = createListenerStore();
     const createIFrames = () => ({
         dropdown: createDropdown(),
         notification: isMainFrame() ? createNotification() : null,
     });
 
     const context: ContentScriptContext = CSContext.set({
+        id,
         active: true,
         formManager: createFormManager(),
         iframes: createIFrames(),
@@ -45,6 +48,25 @@ export const createContentScriptService = () => {
         },
         ignore: () => false,
     });
+
+    const destroy = (options: { dom?: boolean; reason: string }) => {
+        logger.info(`[ContentScript::${id}] destroying.. [reason: "${options.reason}"]`);
+
+        listeners.removeAll();
+        context.formManager.sleep();
+        context.iframes.dropdown.close();
+        context.iframes.notification?.close();
+        context.active = false;
+
+        try {
+            /* may fail if context already invalidated */
+            ExtensionContext.get().port.disconnect();
+        } catch (_) {}
+
+        if (options.dom) {
+            DOMCleanUp();
+        }
+    };
 
     const onWorkerStateChange = (workerState: WorkerState) => {
         const { loggedIn, UID } = workerState;
@@ -70,6 +92,8 @@ export const createContentScriptService = () => {
     const onPortMessage = async (message: WorkerMessageWithSender): Promise<void> => {
         if (message.sender === 'background') {
             switch (message.type) {
+                case WorkerMessageType.UNLOAD_CONTENT_SCRIPT:
+                    return destroy({ dom: true, reason: 'unload script' });
                 case WorkerMessageType.WORKER_STATUS:
                     return onWorkerStateChange(message.payload.state);
                 case WorkerMessageType.AUTOFILL_SYNC: {
@@ -96,10 +120,9 @@ export const createContentScriptService = () => {
 
             if (res.type === 'success') {
                 const workerState = { loggedIn: res.loggedIn, status: res.status, UID: res.UID };
+                logger.info(`[ContentScript::${id}] Worker status resolved "${workerState.status}"`);
+
                 onWorkerStateChange(workerState);
-
-                logger.info(`[ContentScript::Start] Worker "${workerState.status}"`);
-
                 context.formManager.observe();
                 context.formManager.detect('VisibilityChange');
 
@@ -113,31 +136,15 @@ export const createContentScriptService = () => {
         }
     };
 
-    const destroy = () => {
-        const extensionContext = ExtensionContext.get();
-
-        context.formManager.sleep();
-        context.iframes.dropdown.close();
-        context.iframes.notification?.close();
-        context.active = false;
-
-        try {
-            /* may fail if context already invalidated */
-            extensionContext.port.disconnect();
-        } catch (_) {}
-
-        listeners.removeAll();
-    };
-
     const setup = async () => {
         try {
             return await setupExtensionContext({
                 endpoint: 'content-script',
-                onDisconnect: () => destroy(),
+                onDisconnect: () => destroy({ dom: false, reason: 'port disconnected' }),
                 onContextChange: (nextCtx) => handleStart(nextCtx).catch(noop),
             });
         } catch (e) {
-            logger.warn('[ContentScript::SetupError]', e);
+            logger.warn(`[ContentScript::${id}] Setup error`, e);
         }
     };
 
@@ -149,11 +156,11 @@ export const createContentScriptService = () => {
                     return extensionContext && (await handleStart(extensionContext));
                 }
                 case 'hidden': {
-                    return destroy();
+                    return destroy({ dom: false, reason: 'visibility change' });
                 }
             }
         } catch (e) {
-            logger.warn(`[ContentScript::InvalidationError]`, e);
+            logger.warn(`[ContentScript::${id}] invalidation error`, e);
             /**
              * Reaching this catch block will likely happen
              * when the setup function fails due to an extension
@@ -162,7 +169,7 @@ export const createContentScriptService = () => {
              * allocated resources
              */
             context.active = false;
-            destroy();
+            destroy({ dom: true, reason: 'context invalidated' });
         }
     };
 
@@ -171,17 +178,21 @@ export const createContentScriptService = () => {
      * the extension updates - we should destroy the current
      * one and let the incoming one take over.
      */
-    window.addEventListener('message', (message) => {
-        if (message.data === CONTENT_SCRIPT_INJECTED) {
-            logger.info(`[ContentScript::Invalidated] a newer content-script was injected`);
+    const handlePostMessage = (message: MessageEvent) => {
+        if (message.data?.type === CONTENT_SCRIPT_INJECTED_MESSAGE && message?.data?.id !== id) {
+            logger.info(`[ContentScript::${id}] a newer content-script::${message.data.id} was detected !`);
             context.active = false;
             context.iframes.dropdown.destroy();
             context.iframes.notification?.destroy();
 
             window.removeEventListener('visibilitychange', handleVisibilityChange);
-            destroy();
+            window.removeEventListener('message', handlePostMessage);
+
+            destroy({ dom: true, reason: 'incoming injection' });
         }
-    });
+    };
+
+    window.addEventListener('message', handlePostMessage);
 
     return {
         watch: (mainFrame: boolean) => {

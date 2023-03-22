@@ -2,11 +2,12 @@ import { createElement } from '@proton/pass/utils/dom';
 
 import { EXTENSION_PREFIX } from '../../constants';
 
-export const isIFrameRootAttached = () =>
-    document.querySelector<HTMLDivElement>(`#${EXTENSION_PREFIX}-iframe--root`) !== null;
+export const getIFrameRoot = () => document.querySelector<HTMLDivElement>(`#${EXTENSION_PREFIX}-iframe--root`);
+
+export const isIFrameRootAttached = () => getIFrameRoot !== null;
 
 export const createIframeRoot = (): HTMLDivElement => {
-    const root = document.querySelector<HTMLDivElement>(`#${EXTENSION_PREFIX}-iframe--root`);
+    const root = getIFrameRoot();
 
     if (root !== null) {
         return root;
