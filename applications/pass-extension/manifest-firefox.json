@@ -15,8 +15,8 @@
             "run_at": "document_end"
         }
     ],
-    "permissions": ["webRequest", "storage", "activeTab", "privacy"],
-    "host_permissions": ["https://*/*", "http://*/*", "ws://*/*"],
+    "permissions": ["storage", "activeTab", "privacy", "scripting", "webRequest", "webRequestBlocking"],
+    "host_permissions": ["https://*/*", "http://*/*", "wss://*/*"],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
