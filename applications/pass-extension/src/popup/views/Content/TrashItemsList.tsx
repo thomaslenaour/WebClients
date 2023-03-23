@@ -7,25 +7,24 @@ import { ContentVirtualList } from '../../../shared/components/content/ContentVi
 import ItemListItem from '../../../shared/components/item/ItemListItem';
 import { ListItemLink } from '../../../shared/components/router';
 import { useNavigationContext } from '../../context';
-import { useTrashedItems } from '../../hooks/useTrashedItems';
+import { useItems } from '../../hooks/useItems';
 
 export const TrashItemsList: FC = () => {
     const { selectedItem, selectItem } = useNavigationContext();
-    const items = useTrashedItems();
+    const { matchedTrash: items } = useItems();
     const listRef = useRef<List>(null);
 
     return items.length === 0 ? (
-        <div className="absolute-center flex flex-justify-center flex-align-items-center w70">
-            <span className="block text-break color-weak text-sm p0-5 text-center">
-                <>{c('Info').t`Empty trash`}</>
-            </span>
+        <div className="absolute-center flex flex-column flex-align-items-center">
+            <h6 className="text-bold">{c('Title').t`Trash empty`}</h6>
+            <span className="block color-weak">{c('Info').t`Deleted items will be moved here first`}</span>
         </div>
     ) : (
         <ContentVirtualList
             ref={listRef}
             rowCount={items.length}
             rowRenderer={({ style, index }) => {
-                const item = { ...items[index], optimistic: false, failed: false };
+                const item = items[index];
                 return (
                     <div style={style} className="px0-75" key={item.itemId}>
                         <ItemListItem

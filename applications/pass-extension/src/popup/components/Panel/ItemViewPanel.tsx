@@ -8,7 +8,7 @@ import { DropdownMenuButton, Icon } from '@proton/components';
 import { selectAllVaults } from '@proton/pass/store';
 import type { ItemType } from '@proton/pass/types';
 
-import { QuickActionsDropdown } from '../QuickActionsDropdown';
+import { QuickActionsDropdown } from '../../components/Dropdown/QuickActionsDropdown';
 import { ItemHeader } from './ItemPanelHeader';
 import { Panel } from './Panel';
 

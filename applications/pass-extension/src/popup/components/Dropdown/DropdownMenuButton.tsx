@@ -1,16 +1,66 @@
-import type { FC, ReactNode } from 'react';
+import type { FC, MouseEvent, ReactNode, RefObject } from 'react';
 
-import { Icon, DropdownMenuButton as _DropdownMenuButton } from '@proton/components';
+import { Dropdown, DropdownMenu, Icon, usePopperAnchor } from '@proton/components';
+import {
+    default as _DropdownMenuButton,
+    Props as _DropdownMenuButtonProps,
+} from '@proton/components/components/dropdown/DropdownMenuButton';
+import clsx from '@proton/utils/clsx';
 
-interface Props {
+const QuickActionsDropdown: FC<{ children: ReactNode }> = ({ children }) => {
+    const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLButtonElement>();
+
+    const handleClick = (evt: MouseEvent) => {
+        evt.stopPropagation();
+        toggle();
+    };
+
+    return (
+        <>
+            <Icon
+                color="color-weak"
+                name="three-dots-vertical"
+                onClick={handleClick}
+                ref={anchorRef as unknown as RefObject<SVGSVGElement>}
+            />
+
+            <Dropdown isOpen={isOpen} anchorRef={anchorRef} onClose={close}>
+                <DropdownMenu>{children}</DropdownMenu>
+            </Dropdown>
+        </>
+    );
+};
+
+type Size = 'small' | 'medium';
+
+interface DropdownMenuButtonProps extends _DropdownMenuButtonProps {
     children: ReactNode;
+    className?: string;
     isSelected?: boolean;
-    onClick: () => void;
+    quickActions?: ReactNode;
+    size?: Size;
 }
 
-export const DropdownMenuButton: FC<Props> = ({ children, isSelected, onClick }) => (
-    <_DropdownMenuButton className="flex text-left text-sm" onClick={onClick}>
-        {children}
-        {isSelected && <Icon className="mlauto" name="checkmark" color="var(--interaction-norm-major-1)" />}
+export const DropdownMenuButton: FC<DropdownMenuButtonProps> = ({
+    children,
+    className,
+    isSelected,
+    quickActions,
+    size = 'medium',
+    ...rest
+}) => (
+    <_DropdownMenuButton
+        className={clsx(
+            'flex flex-align-items-center flex-nowrap flex-justify-space-between text-left',
+            size === 'small' && 'text-sm',
+            className
+        )}
+        {...rest}
+    >
+        <div className="flex flex-align-items-center">{children}</div>
+        <div className="flex flex-align-items-center">
+            {isSelected && <Icon className="mlauto" name="checkmark" color="var(--interaction-norm-major-1)" />}
+            {quickActions && <QuickActionsDropdown>{quickActions}</QuickActionsDropdown>}
+        </div>
     </_DropdownMenuButton>
 );

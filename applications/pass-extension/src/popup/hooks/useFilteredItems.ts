@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
-import { type MatchItemsSelectorOptions, type State, selectMatchItems } from '@proton/pass/store';
+import { type State, selectMatchItems } from '@proton/pass/store';
 import type { ItemRevisionWithOptimistic } from '@proton/pass/types';
 import identity from '@proton/utils/identity';
 
@@ -14,17 +14,18 @@ const filterBy =
         arr.filter(predicate as any);
 
 export const useFilteredItems = ({ search, sort, filter, vaultId }: ItemsFilteringContextType) => {
-    const matchOptions = useMemo<MatchItemsSelectorOptions>(
-        () => ({ shareId: vaultId ?? undefined, needle: search, matchItem }),
-        [search, vaultId]
-    );
+    const activeMatchOptions = { shareId: vaultId ?? undefined, needle: search, matchItem };
+    const activeItems = useSelector((state: State) => selectMatchItems(state, activeMatchOptions));
 
-    const matchedItems = useSelector((state: State) => selectMatchItems(state, matchOptions));
+    const trashMatchOptions = { needle: search, matchItem, trash: true };
+    const trashItems = useSelector((state: State) => selectMatchItems(state, trashMatchOptions)).sort(
+        (a, b) => b.revisionTime - a.revisionTime
+    );
 
     const filteredItems = useMemo<ItemRevisionWithOptimistic[]>(() => {
         const filterByType = filter === '*' ? identity : filterBy((item) => item.data.type === filter);
 
-        return filterByType(matchedItems).sort((a, b) => {
+        return filterByType(activeItems).sort((a, b) => {
             switch (sort) {
                 case 'createTimeASC':
                     return a.createTime - b.createTime;
@@ -39,7 +40,7 @@ export const useFilteredItems = ({ search, sort, filter, vaultId }: ItemsFilteri
                     return a.data.metadata.name.localeCompare(b.data.metadata.name);
             }
         });
-    }, [sort, filter, matchedItems]);
+    }, [sort, filter, activeItems]);
 
-    return { matched: matchedItems, filtered: filteredItems };
+    return { matched: activeItems, matchedTrash: trashItems, filtered: filteredItems };
 };
