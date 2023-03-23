@@ -7,7 +7,7 @@ import { InputControlProps } from '../Controls/InputControl';
 export type AbstractFieldProps<T extends InputControlProps> = T & FieldProps;
 
 export const AbstractField = <T extends InputControlProps>(
-    props: AbstractFieldProps<T> & { children: (props: T) => ReactNode }
+    props: Omit<AbstractFieldProps<T>, 'children'> & { children: (props: T) => ReactNode }
 ) => {
     const { field, form, meta, children, ...rest } = props;
 
