@@ -1,4 +1,4 @@
-import { type VFC, useState } from 'react';
+import type { MouseEvent, VFC } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { c } from 'ttag';
@@ -11,16 +11,18 @@ import {
     Header as HeaderComponent,
     Icon,
     Tooltip,
+    useNotifications,
     usePopperAnchor,
 } from '@proton/components';
 import type { ItemType } from '@proton/pass/types';
 import { pipe } from '@proton/pass/utils/fp';
+import { textToClipboard } from '@proton/shared/lib/helpers/browser';
 
-import { PasswordGeneratorModal } from '../../../shared/components/password-generator';
 import { itemTypeToIconName } from '../../../shared/items';
 import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { usePopupContext } from '../../context';
 import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
+import { usePasswordGeneratorContext } from '../PasswordGenerator/PasswordGeneratorContext';
 import { MenuDropdown } from './MenuDropdown';
 import { Searchbar } from './Searchbar';
 
@@ -43,18 +45,27 @@ export const Header: VFC<{}> = () => {
     const history = useHistory();
     const { ready } = usePopupContext();
     const { search, setSearch } = useItemsFilteringContext();
-
+    const { createNotification } = useNotifications();
     const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLButtonElement>();
-    const [passwordModalOpen, setPasswordModalOpen] = useState(false);
-    const handleModalAction = (action: () => void) => pipe(action, close);
+    const { generatePassword } = usePasswordGeneratorContext();
+    const withClose = <T extends (...args: any[]) => void>(action: T) => pipe(action, close) as T;
 
-    const handleNewItemClick = (type: ItemType) => () => {
+    const handleNewItemClick = (type: ItemType) => {
         // Trick to be able to return to the initial route using history.goBack() if user switches
         // from iteam creation routes for multiple subsequent item types.
         const shouldReplace = history.location.pathname.includes('/item/new/');
         history[shouldReplace ? 'replace' : 'push'](`/item/new/${type}`);
+    };
 
-        close();
+    const handleNewPasswordClick = (e: MouseEvent<HTMLElement>) => {
+        void generatePassword({
+            actionLabel: c('Action').t`Copy & close`,
+            className: 'ui-password',
+            onSubmit: (password) => {
+                textToClipboard(password, e.currentTarget);
+                createNotification({ type: 'success', text: c('Info').t`Copied to clipboard` });
+            },
+        });
     };
 
     return (
@@ -91,7 +102,7 @@ export const Header: VFC<{}> = () => {
                                 <DropdownMenuButton
                                     key={type}
                                     className="text-left flex flex-align-items-center bg-norm"
-                                    onClick={handleNewItemClick(type)}
+                                    onClick={withClose(() => handleNewItemClick(type))}
                                 >
                                     <span
                                         className="mr1 w-custom h-custom rounded-50 overflow-hidden relative pass-item-icon"
@@ -111,7 +122,7 @@ export const Header: VFC<{}> = () => {
 
                         <DropdownMenuButton
                             className="text-left flex flex-align-items-center ui-password bg-norm"
-                            onClick={handleModalAction(() => setPasswordModalOpen(true))}
+                            onClick={withClose(handleNewPasswordClick)}
                         >
                             <span
                                 className="mr1 w-custom h-custom rounded-50 overflow-hidden relative pass-item-icon"
@@ -125,11 +136,6 @@ export const Header: VFC<{}> = () => {
                     </DropdownMenu>
                 </Dropdown>
             </HeaderComponent>
-            <PasswordGeneratorModal
-                open={passwordModalOpen}
-                onClose={() => setPasswordModalOpen(false)}
-                allowCopyToClipboard
-            />
         </>
     );
 };

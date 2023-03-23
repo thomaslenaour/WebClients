@@ -1,10 +1,9 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 
 import { c } from 'ttag';
 
-import { getCharsGroupedByColor } from '../../../../shared/components/password-generator';
-import { generatePassword } from '../../../../shared/hooks';
-import { DropdownIframeMessage, DropdownMessageType } from '../../../types';
+import { generatePassword, getCharsGroupedByColor } from '../../../../shared/hooks/usePasswordGenerator';
+import { type DropdownIframeMessage, DropdownMessageType } from '../../../types';
 import { IFrameMessageBroker } from '../../iframe/messages';
 import { DropdownItem } from '../components/DropdownItem';
 
