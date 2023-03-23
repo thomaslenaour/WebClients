@@ -8,24 +8,22 @@ const { getJsLoader } = require('@proton/pack/webpack/js.loader');
 const getCssLoaders = require('@proton/pack/webpack/css.loader');
 const getAssetsLoaders = require('@proton/pack/webpack/assets.loader');
 const getOptimizations = require('@proton/pack/webpack/optimization');
-
-const production = process.env.NODE_ENV === 'production';
+const parseEnvVar = require('./tools/env-var.parser');
 
 const SUPPORTED_TARGETS = ['chrome', 'firefox'];
-const BUILD_TARGET = process.env.BUILD_TARGET ?? SUPPORTED_TARGETS[0];
-const RUNTIME_RELOAD = Boolean(process.env.RUNTIME_RELOAD);
-const RESUME_FALLBACK = Boolean(process.env.RESUME_FALLBACK);
+
+const ENV = parseEnvVar('NODE_ENV', 'development', String);
+const BUILD_TARGET = parseEnvVar('BUILD_TARGET', SUPPORTED_TARGETS[0], String);
+const RUNTIME_RELOAD = parseEnvVar('RUNTIME_RELOAD', false, Boolean);
+const RESUME_FALLBACK = parseEnvVar('RESUME_FALLBACK', false, Boolean);
 
 if (!SUPPORTED_TARGETS.includes(BUILD_TARGET)) {
     throw new Error(`Build target "${BUILD_TARGET}" is not supported`);
 }
-console.log({
-    ENV: JSON.stringify(process.env.NODE_ENV),
-    BUILD_TARGET: JSON.stringify(BUILD_TARGET),
-    RUNTIME_RELOAD: RUNTIME_RELOAD,
-    RESUME_FALLBACK: RESUME_FALLBACK,
-});
 
+console.log(`Building with env`, JSON.stringify({ ENV, BUILD_TARGET, RUNTIME_RELOAD, RESUME_FALLBACK }, null, 4));
+
+const production = ENV === 'production';
 const options = {
     isProduction: production,
     browserslist: production
@@ -97,9 +95,9 @@ module.exports = {
         publicPath: '/',
     },
     plugins: [
-        new webpack.EnvironmentPlugin({ NODE_ENV: process.env.NODE_ENV ?? 'development' }),
+        new webpack.EnvironmentPlugin({ NODE_ENV: ENV }),
         new webpack.DefinePlugin({
-            ENV: JSON.stringify(process.env.NODE_ENV),
+            ENV: JSON.stringify(ENV),
             BUILD_TARGET: JSON.stringify(BUILD_TARGET),
             RUNTIME_RELOAD: RUNTIME_RELOAD,
             RESUME_FALLBACK: RESUME_FALLBACK,
