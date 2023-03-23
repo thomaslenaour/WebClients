@@ -19,11 +19,11 @@ import type { MaybeNull, VaultShare } from '@proton/pass/types';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
 import { ConfirmationModal } from '../../../../src/shared/components/confirmation';
-import { VaultModal, VaultModalProps } from '../../../../src/shared/components/vaults/VaultModal';
 import { usePopupContext } from '../../context';
 import { handleVaultDeletionEffects } from '../../context/items/ItemEffects';
 import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
 import { useNavigationContext } from '../../context/navigation/useNavigationContext';
+import { VaultModal, type Props as VaultModalProps } from '../../views/Vault/VaultModal';
 import { VaultSubmenu } from './VaultSubmenu';
 
 const DROPDOWN_SIZE: NonNullable<DropdownProps['size']> = {
