@@ -130,7 +130,7 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                                         unstyled
                                                         assistContainerClassName="hidden-empty"
                                                         inputClassName="color-norm p-0"
-                                                        placeholder={c('Placeholder').t`Enter a domain or a URL`}
+                                                        placeholder={c('Placeholder').t`https://`}
                                                         {...inputProps}
                                                     />
                                                 )}
@@ -138,29 +138,14 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                         </li>
                                     ))}
                                 </ul>
-                                <CustomInputControl
-                                    className="pass-input-group--no-focus"
-                                    actions={
-                                        <Button
-                                            icon
-                                            pill
-                                            color="weak"
-                                            shape="ghost"
-                                            size="small"
-                                            title={c('Action').t`Add`}
-                                            onClick={handleAdd}
-                                        >
-                                            <Icon name="plus" />
-                                        </Button>
-                                    }
-                                >
+                                <CustomInputControl className="pass-input-group--no-focus">
                                     {(inputProps) => (
                                         <InputFieldTwo
                                             id="next-url-field"
                                             unstyled
                                             assistContainerClassName="hidden-empty"
                                             inputClassName="color-norm p-0"
-                                            placeholder={c('Placeholder').t`Enter a domain or a URL`}
+                                            placeholder={c('Placeholder').t`https://`}
                                             name="url"
                                             value={values.url}
                                             error={errors.url}
@@ -173,6 +158,20 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                         />
                                     )}
                                 </CustomInputControl>
+
+                                {values.url || values.urls.length > 0 ? (
+                                    <Button
+                                        icon
+                                        color="weak"
+                                        shape="ghost"
+                                        size="small"
+                                        title={c('Action').t`Add`}
+                                        className="flex gap-2"
+                                        onClick={handleAdd}
+                                    >
+                                        <Icon name="plus" /> Add another website
+                                    </Button>
+                                ) : null}
                             </>
                         );
                     }}
