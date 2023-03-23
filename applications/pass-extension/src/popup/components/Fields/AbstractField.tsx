@@ -15,7 +15,7 @@ export const AbstractField = <T extends InputControlProps>(
     const { touched, errors } = form;
     const error = touched[name] && errors[name];
     const status = error ? 'error' : 'default';
-    const inputControlProps = { ...rest, ...field, status, error } as InputControlProps;
+    const inputControlProps = { ...field, ...rest, status, error } as InputControlProps;
 
     return <>{children(inputControlProps)}</>;
 };
