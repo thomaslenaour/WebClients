@@ -1,4 +1,4 @@
-import { FC, useMemo, useState } from 'react';
+import { type FC, useMemo, useState } from 'react';
 
 import { c } from 'ttag';
 
@@ -8,7 +8,7 @@ import { Copy, Icon, Tooltip } from '@proton/components/components';
 import { isEmptyString } from '@proton/pass/utils/string';
 import range from '@proton/utils/range';
 
-import { getCharsGroupedByColor } from '../password-generator';
+import { getCharsGroupedByColor } from '../../hooks/usePasswordGenerator';
 
 const PASSWORD_LENGTH = 10;
 

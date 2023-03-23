@@ -55,7 +55,7 @@ export const PasswordGeneratorModal: VFC<Props> = ({ onSubmit, actionLabel, ...p
                     />
                 }
             >
-                <PasswordGenerator {...passwordGenerator} standalone />
+                <PasswordGenerator {...passwordGenerator} />
             </Panel>
         </SidebarModal>
     );

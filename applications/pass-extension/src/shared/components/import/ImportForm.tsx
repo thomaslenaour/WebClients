@@ -1,4 +1,4 @@
-import React from 'react';
+import { type VFC } from 'react';
 
 import { Field } from 'formik';
 import { c } from 'ttag';
@@ -7,10 +7,10 @@ import { AttachedFile, Bordered, Dropzone, FileInput, Option, SelectTwo } from '
 import { ImportProvider } from '@proton/pass/import';
 import clsx from '@proton/utils/clsx';
 
-import { ImportFormContext, SUPPORTED_IMPORT_FILE_TYPES } from '../../hooks/useImportForm';
+import { type ImportFormContext, SUPPORTED_IMPORT_FILE_TYPES } from '../../hooks/useImportForm';
 import { PasswordField } from '../fields';
 
-export const ImportForm: React.FC<Omit<ImportFormContext, 'reset'>> = ({ form, dropzone, busy }) => {
+export const ImportForm: VFC<Omit<ImportFormContext, 'reset'>> = ({ form, dropzone, busy }) => {
     return (
         <>
             <label className="field-two-label mb0-5 block">{c('Label').t`Provider`}</label>
@@ -69,7 +69,6 @@ export const ImportForm: React.FC<Omit<ImportFormContext, 'reset'>> = ({ form, d
                 name="passphrase"
                 label={c('Label').t`Passphrase`}
                 component={PasswordField}
-                allowGenerate={false}
                 disabled={form.values.provider !== ImportProvider.PROTONPASS_PGP}
             />
         </>

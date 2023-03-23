@@ -1,36 +1,27 @@
-import { FC } from 'react';
+/**
+ * TODO: this component is still used in the Exporter
+ * and the ImportForm components. Disabled password
+ * generation on this component for now.. It was used
+ * in the Exporter to generate a password for PGP
+ * encryption but we can do without for now..
+ */
+import type { FC } from 'react';
 
-import { FieldProps } from 'formik';
+import type { FieldProps } from 'formik';
 
 import { InputFieldTwo, PasswordInputTwo } from '@proton/components';
-import { InputFieldOwnProps } from '@proton/components/components/v2/field/InputField';
+import type { InputFieldOwnProps } from '@proton/components/components/v2/field/InputField';
 
-import { PasswordGeneratorButton } from '../password-generator/PasswordGeneratorButton';
+type PasswordFieldProps = FieldProps & InputFieldOwnProps;
 
-type PasswordFieldProps = FieldProps &
-    InputFieldOwnProps & {
-        allowGenerate?: boolean;
-    };
-
-const PasswordField: FC<PasswordFieldProps> = ({ field, form, allowGenerate = true, ...rest }) => {
+const PasswordField: FC<PasswordFieldProps> = ({ field, form, ...rest }) => {
     const { name } = field;
     const { touched, errors } = form;
     const error = touched[name] && errors[name];
 
-    const handlePasswordGeneratorDone = (password: string) => {
-        form.setFieldValue(field.name, password);
-    };
-
     return (
         <div className="flex flex-nowrap flex-align-items-end mb0-75">
             <InputFieldTwo dense as={PasswordInputTwo} error={error} {...field} {...rest} />
-            {allowGenerate && (
-                <PasswordGeneratorButton
-                    onDone={handlePasswordGeneratorDone}
-                    className="ml0-5"
-                    disabled={rest.disabled}
-                />
-            )}
         </div>
     );
 };
