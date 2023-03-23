@@ -10,6 +10,52 @@ export enum CharType {
     Special,
 }
 
+export const charTypeToClassName = {
+    [CharType.Alphabetic]: '',
+    [CharType.Digit]: 'password-generator-char-digit',
+    [CharType.Special]: 'password-generator-char-special',
+};
+
+export const getTypeFromChar = (char: string) => {
+    if (alphabeticChars.includes(char)) {
+        return CharType.Alphabetic;
+    }
+
+    if (digits.includes(char)) {
+        return CharType.Digit;
+    }
+
+    return CharType.Special;
+};
+
+export const getCharsGroupedByColor = (password: string) => {
+    if (password.length === 0) {
+        return [];
+    }
+
+    const [head, ...chars] = Array.from(password);
+    const startType = getTypeFromChar(head);
+
+    return chars
+        .reduce(
+            (state, currentChar) => {
+                const currentElement = state[state.length - 1];
+                const previousType = currentElement.color;
+                const currentType = getTypeFromChar(currentChar);
+
+                return previousType !== currentType
+                    ? [...state, { color: currentType, content: currentChar }]
+                    : [...state.slice(0, -1), { color: previousType, content: currentElement.content + currentChar }];
+            },
+            [{ color: startType, content: head }]
+        )
+        .map(({ color, content }, index) => (
+            <span className={charTypeToClassName[color]} key={index}>
+                {content}
+            </span>
+        ));
+};
+
 export const generatePassword = (options: { useSpecialChars: boolean; length: number }) => {
     const chars = Array.from(alphabeticChars + digits + (options.useSpecialChars ? specialChars : ''));
     const randomValues = window.crypto.getRandomValues(new Uint8Array(options.length));
@@ -46,4 +92,4 @@ export const usePasswordGenerator = () => {
     };
 };
 
-export type PasswordGeneratorContextValue = ReturnType<typeof usePasswordGenerator>;
+export type UsePasswordGeneratorResult = ReturnType<typeof usePasswordGenerator>;
