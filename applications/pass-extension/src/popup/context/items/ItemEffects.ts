@@ -30,7 +30,7 @@ export const ItemEffects = () => {
     const { selectedItem, selectItem, unselectItem, isCreating, isEditing, inTrash } = useNavigationContext();
     const {
         filtering: { vaultId, vaultBeingDeleted, setVaultId, setVaultBeingDeleted },
-        trashed,
+        matchedTrash,
         filtered,
     } = useItems();
 
@@ -64,7 +64,7 @@ export const ItemEffects = () => {
      * Auto-selection, would then just be a matter of `push` or `replace` the history,
      * from the currently filtered or trashed items (depending if we're viewing the items list or trash).
      */
-    const items = inTrash ? trashed : filtered;
+    const items = inTrash ? matchedTrash : filtered;
     useEffect(() => {
         if (selectedItem) {
             const unselect =

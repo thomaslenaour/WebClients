@@ -14,7 +14,7 @@ import {
     Icon,
     usePopperAnchor,
 } from '@proton/components';
-import { selectCanLockSession, vaultDeleteIntent } from '@proton/pass/store';
+import { emptyTrashIntent, restoreTrashIntent, selectCanLockSession, vaultDeleteIntent } from '@proton/pass/store';
 import type { MaybeNull, VaultShare } from '@proton/pass/types';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
@@ -23,6 +23,7 @@ import { VaultModal, VaultModalProps } from '../../../../src/shared/components/v
 import { usePopupContext } from '../../context';
 import { handleVaultDeletionEffects } from '../../context/items/ItemEffects';
 import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
+import { useNavigationContext } from '../../context/navigation/useNavigationContext';
 import { VaultSubmenu } from './VaultSubmenu';
 
 const DROPDOWN_SIZE: NonNullable<DropdownProps['size']> = {
@@ -35,6 +36,7 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
     const { sync, lock, logout, ready } = usePopupContext();
     const { vaultId, vaultBeingDeleted, setVaultId, setVaultBeingDeleted } = useItemsFilteringContext();
     const canLock = useSelector(selectCanLockSession);
+    const { inTrash } = useNavigationContext();
 
     const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLButtonElement>();
     const dispatch = useDispatch();
@@ -54,6 +56,10 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
             dispatch(vaultDeleteIntent({ id: deleteVault.shareId, content: deleteVault.content }));
         }
     };
+
+    const [deleteAllConfirm, setDeleteAllConfirm] = useState(false);
+    const handleRestoreTrash = () => dispatch(restoreTrashIntent());
+    const handleDeleteAllItemsInTrash = () => dispatch(emptyTrashIntent());
 
     const openSettings = async (page?: string) => {
         const settingsUrl = browser.runtime.getURL('/settings.html');
@@ -84,6 +90,7 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                 >
                     <DropdownMenu>
                         <VaultSubmenu
+                            closeMenuDropdown={close}
                             selectedVaultId={vaultId}
                             handleVaultSelectClick={setVaultId}
                             handleVaultDeleteClick={setDeleteVault}
@@ -91,6 +98,9 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                                 setVaultModalProps({ open: true, payload: { type: 'edit', vault } })
                             }
                             handleVaultCreateClick={() => setVaultModalProps({ open: true, payload: { type: 'new' } })}
+                            inTrash={inTrash}
+                            handleRestoreTrash={handleRestoreTrash}
+                            handleEmptyTrash={() => setDeleteAllConfirm(true)}
                         />
 
                         <hr className="dropdown-item-hr my0-5" aria-hidden="true" />
@@ -158,6 +168,15 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
             >
                 {c('Warning')
                     .t`Vault "${deleteVault?.content.name}" and all its items will be permanently deleted. You can not undo this action`}
+            </ConfirmationModal>
+            <ConfirmationModal
+                title={c('Title').t`Permanently remove all items ?`}
+                open={deleteAllConfirm}
+                onClose={() => setDeleteAllConfirm(false)}
+                onSubmit={handleDeleteAllItemsInTrash}
+                submitText={c('Action').t`Delete all`}
+            >
+                {c('Warning').t`All your trashed items will be permanently deleted. You can not undo this action.`}
             </ConfirmationModal>
         </>
     );

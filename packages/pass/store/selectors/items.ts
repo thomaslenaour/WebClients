@@ -17,9 +17,7 @@ export const selectByShareId = (state: State) => state.items.byShareId;
 export const selectByOptimisticIds = (state: State) => state.items.byOptimistcId;
 export const selectItems = createSelector([selectByShareId], unwrapOptimisticState);
 export const selectAllItems = createSelector(selectItems, flattenItemsByShareId);
-export const selectAllTrashedItems = createSelector([selectAllItems], (items) =>
-    items.filter(isTrashed).sort((a, b) => b.revisionTime - a.revisionTime)
-);
+export const selectAllTrashedItems = createSelector([selectAllItems], (items) => items.filter(isTrashed));
 
 export const selectItemsByShareId = createSelector(
     [selectItems, (_: State, shareId?: string) => shareId],
@@ -77,14 +75,15 @@ export const selectItemWithOptimistic = (shareId: string, itemId: string) =>
 export type MatchItemsSelectorOptions = {
     shareId?: string;
     needle?: string;
+    trash?: boolean;
     matchItem: (item: Item) => (searchTerm: string) => boolean;
 };
 
 export const selectMatchItems = createSelector(
     [selectItemsWithOptimistic, (_: State, options: MatchItemsSelectorOptions) => options],
-    (items, { shareId, needle = '', matchItem }) =>
+    (items, { shareId, needle = '', trash = false, matchItem }) =>
         (needle.trim() === '' ? items : items.filter((item) => matchItem(item.data)(needle))).filter(
-            (item) => (!shareId || shareId === item.shareId) && !isTrashed(item)
+            (item) => (!shareId || shareId === item.shareId) && (trash ? isTrashed(item) : !isTrashed(item))
         )
 );
 

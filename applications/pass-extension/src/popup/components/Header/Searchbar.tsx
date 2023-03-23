@@ -5,6 +5,8 @@ import { c } from 'ttag';
 import { Button } from '@proton/atoms';
 import { Icon, InputTwo } from '@proton/components/components';
 
+import { useNavigationContext } from '../../context/navigation/useNavigationContext';
+
 /**
  * FIXME: if we get reports of the search ever feeling slow or sluggish,
  * we might have to either debounce the search query value handling and/or
@@ -16,6 +18,7 @@ const SearchbarRaw: VFC<{ disabled?: boolean; value: string; handleValue: (value
     handleValue,
 }) => {
     const inputRef = useRef<HTMLInputElement>(null);
+    const { inTrash } = useNavigationContext();
 
     const handleClear = () => {
         handleValue('');
@@ -25,7 +28,7 @@ const SearchbarRaw: VFC<{ disabled?: boolean; value: string; handleValue: (value
     return (
         <InputTwo
             ref={inputRef}
-            placeholder={c('Placeholder').t`Search`}
+            placeholder={c('Placeholder').t`${inTrash ? 'Search in Trash...' : 'Search...'}`}
             prefix={<Icon name="magnifier" />}
             suffix={
                 value !== '' && (

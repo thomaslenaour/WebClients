@@ -12,12 +12,14 @@ interface ItemsSortProps {
     sort: ItemsSortOption;
 }
 
-const sortOptionLabelMap: { [key in ItemsSortOption]: string } = {
-    createTimeASC: c('Label').t`Oldest to newest`,
-    createTimeDESC: c('Label').t`Newest to oldest`,
-    recent: c('Label').t`Most recent`,
-    titleASC: c('Label').t`Alphabetical`,
-};
+function getSortOptionLabel(option: ItemsSortOption) {
+    return {
+        createTimeASC: c('Label').t`Oldest to newest`,
+        createTimeDESC: c('Label').t`Newest to oldest`,
+        recent: c('Label').t`Most recent`,
+        titleASC: c('Label').t`Alphabetical`,
+    }[option];
+}
 
 const DROPDOWN_SIZE: DropdownProps['size'] = { width: '11rem' };
 
@@ -40,8 +42,13 @@ export const ItemsSort: VFC<ItemsSortProps> = ({ sort, onSortChange }) => {
             >
                 <DropdownMenu>
                     {ITEM_LIST_SORT_OPTIONS.map((type) => (
-                        <DropdownMenuButton key={type} onClick={() => onSortChange(type)} isSelected={sort === type}>
-                            {sortOptionLabelMap[type]}
+                        <DropdownMenuButton
+                            key={type}
+                            onClick={() => onSortChange(type)}
+                            isSelected={sort === type}
+                            size="small"
+                        >
+                            {getSortOptionLabel(type)}
                         </DropdownMenuButton>
                     ))}
                 </DropdownMenu>

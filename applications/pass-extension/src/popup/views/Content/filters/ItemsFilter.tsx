@@ -85,8 +85,13 @@ export const ItemsFilter: VFC<ItemsFilterProps> = ({ value, onChange }) => {
             >
                 <DropdownMenu>
                     {options.map(({ type, count, label, icon }) => (
-                        <DropdownMenuButton key={type} onClick={() => onChange(type)} isSelected={type === value}>
-                            <Icon className="mr0-5 text-weak" name={icon} />
+                        <DropdownMenuButton
+                            key={type}
+                            onClick={() => onChange(type)}
+                            isSelected={type === value}
+                            size="small"
+                        >
+                            <Icon className="mr0-5 color-weak" name={icon} />
                             {`${label} (${count})`}
                         </DropdownMenuButton>
                     ))}
