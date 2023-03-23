@@ -1,15 +1,10 @@
 import type { VFC } from 'react';
 
-import { type Props as TextFieldProps, TextFieldWIP } from './TextField';
+import { InputTwo } from '@proton/components/index';
 
-import "./TitleField.scss";
+import { type AbstractFieldProps } from './AbstractField';
+import { TextFieldWIP } from './TextField';
 
-const OVERRIDEN_PROPS = {
-    inputClassName: 'pass-title-field text-bold color-norm p-0',
-} as const;
-
-type TitleFieldProps = TextFieldProps;
-
-export const TitleField: VFC<TitleFieldProps> = ({ field, form, ...rest }) => {
-    return <TextFieldWIP form={form} field={field} {...OVERRIDEN_PROPS} {...rest} />;
-};
+export const TitleField: VFC<AbstractFieldProps<typeof InputTwo>> = (props) => (
+    <TextFieldWIP {...props} inputClassName="pass-title-field text-bold color-norm p-0" />
+);

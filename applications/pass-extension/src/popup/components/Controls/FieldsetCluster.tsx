@@ -2,9 +2,7 @@ import { type FC } from 'react';
 
 import './FieldsetCluster.scss';
 
-type Props = {
-    as?: 'fieldset' | 'div' | 'span';
-};
+type Props = { as?: 'fieldset' | 'div' | 'span' };
 
 export const FieldsetCluster: FC<Props> = ({ children, as = 'fieldset' }) => {
     const Component = as;
