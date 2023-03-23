@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import { FieldArray, type FormikContextType, type FormikErrors } from 'formik';
 import { c } from 'ttag';
@@ -68,6 +68,8 @@ export const validateUrls = <V extends UrlGroupValues>({ urls }: V) => {
 export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGroupProps<T>) => {
     const { values, errors, handleChange } = form;
     const inputRef = useRef<HTMLInputElement>(null);
+    const [showExtraField, setShowExtraField] = useState(!values.urls.length);
+    const showAddButton = values.url || !!values.urls.length;
 
     return (
         <FieldsetCluster>
@@ -95,6 +97,7 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                 form.setFieldValue('url', '');
                             }
 
+                            setShowExtraField(true);
                             inputRef.current?.focus();
                         };
 
@@ -130,7 +133,7 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                                         unstyled
                                                         assistContainerClassName="hidden-empty"
                                                         inputClassName="color-norm p-0"
-                                                        placeholder={c('Placeholder').t`https://`}
+                                                        placeholder="https://"
                                                         {...inputProps}
                                                     />
                                                 )}
@@ -138,28 +141,30 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                         </li>
                                     ))}
                                 </ul>
-                                <CustomInputControl className="pass-input-group--no-focus">
-                                    {(inputProps) => (
-                                        <InputFieldTwo
-                                            id="next-url-field"
-                                            unstyled
-                                            assistContainerClassName="hidden-empty"
-                                            inputClassName="color-norm p-0"
-                                            placeholder={c('Placeholder').t`https://`}
-                                            name="url"
-                                            value={values.url}
-                                            error={errors.url}
-                                            onChange={handleChange}
-                                            onBlur={() =>
-                                                !errors.url && form.setFieldValue('url', isValidURL(values.url).url)
-                                            }
-                                            ref={inputRef}
-                                            {...inputProps}
-                                        />
-                                    )}
-                                </CustomInputControl>
+                                {showExtraField && (
+                                    <CustomInputControl className="pass-input-group--no-focus">
+                                        {(inputProps) => (
+                                            <InputFieldTwo
+                                                id="next-url-field"
+                                                unstyled
+                                                assistContainerClassName="hidden-empty"
+                                                inputClassName="color-norm p-0"
+                                                placeholder="https://"
+                                                name="url"
+                                                value={values.url}
+                                                error={errors.url}
+                                                onChange={handleChange}
+                                                onBlur={() =>
+                                                    !errors.url && form.setFieldValue('url', isValidURL(values.url).url)
+                                                }
+                                                ref={inputRef}
+                                                {...inputProps}
+                                            />
+                                        )}
+                                    </CustomInputControl>
+                                )}
 
-                                {values.url || values.urls.length > 0 ? (
+                                {showAddButton && (
                                     <Button
                                         icon
                                         color="weak"
@@ -169,9 +174,9 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                         className="flex gap-2"
                                         onClick={handleAdd}
                                     >
-                                        <Icon name="plus" /> Add another website
+                                        <Icon name="plus" /> {c('Action').t`Add another website`}
                                     </Button>
-                                ) : null}
+                                )}
                             </>
                         );
                     }}
