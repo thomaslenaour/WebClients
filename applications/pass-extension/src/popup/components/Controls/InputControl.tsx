@@ -1,5 +1,6 @@
 import type { ElementType, ReactNode, VFC } from 'react';
 
+import clsx from '@proton/utils/clsx';
 import { Icon, type IconName, InputFieldTwo } from '@proton/components';
 import type { InputFieldProps } from '@proton/components/components/v2/field/InputField';
 import type { ItemType, MaybeArray } from '@proton/pass/types';
@@ -16,6 +17,7 @@ type BaseProps = {
     itemType?: ItemType;
     icon?: IconName;
     customInputGroupProps?: Partial<BaseInputGroupProps>;
+    className?: string;
 };
 type CustomInputControlProps = BaseProps & { children: (renderProps: StatusProps['input']) => ReactNode };
 export type InputControlProps<T extends ElementType = ElementType> = InputFieldProps<T> & BaseProps;
@@ -40,12 +42,14 @@ export const CustomInputControl: VFC<CustomInputControlProps> = ({
     itemType,
     customInputGroupProps,
     children,
+    className,
 }) => (
     <BaseInputGroup
         icon={icon && <Icon name={icon} size={24} {...STATUS_PROPS_MAP[status].icon} />}
         actions={actions}
         actionsContainerClassName={itemType ? itemTypeToItemClassName[itemType] : undefined}
         {...customInputGroupProps}
+        className={clsx([customInputGroupProps?.className, className])}
     >
         {children(STATUS_PROPS_MAP[status].input)}
     </BaseInputGroup>
@@ -69,7 +73,7 @@ export const InputControl = <T extends ElementType>({
             customInputGroupProps={{ className: 'px-4 py-3' }}
         >
             {(inputProps) => (
-                <InputFieldTwo<T> assistContainerClassName="hidden-empty" {...inputProps} {...fieldProps} />
+                <InputFieldTwo<T> assistContainerClassName="hidden-empty" unstyled {...inputProps} {...fieldProps} />
             )}
         </CustomInputControl>
     );
