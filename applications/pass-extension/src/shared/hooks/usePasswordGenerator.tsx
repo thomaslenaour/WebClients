@@ -10,10 +10,14 @@ export enum CharType {
     Special,
 }
 
+/**
+ * Designers mixed the colors of different ui-${type}
+ * sub-themes for the character colors..
+ */
 export const charTypeToClassName = {
     [CharType.Alphabetic]: '',
-    [CharType.Digit]: 'password-generator-char-digit',
-    [CharType.Special]: 'password-generator-char-special',
+    [CharType.Digit]: 'ui-login pass-password-generator--char-digit',
+    [CharType.Special]: 'ui-alias pass-password-generator--char-special',
 };
 
 export const getTypeFromChar = (char: string) => {
