@@ -1,4 +1,4 @@
-import { ForwardRefRenderFunction, forwardRef, useEffect, useImperativeHandle, useMemo } from 'react';
+import { type ForwardRefRenderFunction, forwardRef, useEffect, useImperativeHandle, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { Form, FormikProvider, useFormik } from 'formik';
@@ -7,9 +7,9 @@ import uniqid from 'uniqid';
 import { selectRequestStatus, vaultCreationIntent } from '@proton/pass/store';
 import { vaultCreate } from '@proton/pass/store/actions/requests';
 
+import type { VaultFormHandle, VaultFormValues } from './Vault.form';
 import { VaultForm } from './Vault.form';
 import { validateVaultValues } from './Vault.validation';
-import type { VaultFormHandle, VaultFormValues } from './types';
 
 const VaultNewRef: ForwardRefRenderFunction<
     VaultFormHandle,

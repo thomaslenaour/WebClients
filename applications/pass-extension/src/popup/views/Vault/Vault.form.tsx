@@ -1,9 +1,12 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 
 import { Field } from 'formik';
 import { c } from 'ttag';
 
-import { TextAreaField, TextField } from '../fields';
+import { TextAreaField, TextField } from '../../../shared/components/fields';
+
+export type VaultFormValues = { name: string; description: string };
+export type VaultFormHandle = { submit: () => void };
 
 export const VaultForm: FC = () => {
     return (

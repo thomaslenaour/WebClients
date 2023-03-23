@@ -7,9 +7,9 @@ import { acknowledge, selectRequestStatus, vaultEditIntent } from '@proton/pass/
 import { vaultEdit } from '@proton/pass/store/actions/requests';
 import type { VaultShare } from '@proton/pass/types';
 
+import type { VaultFormHandle, VaultFormValues } from './Vault.form';
 import { VaultForm } from './Vault.form';
 import { validateVaultValues } from './Vault.validation';
-import type { VaultFormHandle, VaultFormValues } from './types';
 
 const VaultEditRef: ForwardRefRenderFunction<
     VaultFormHandle,
