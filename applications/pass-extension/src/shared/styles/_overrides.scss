@@ -29,3 +29,57 @@
 	inset-block-start: 0.75em;
 	z-index: 850;
 }
+
+// Slider component
+.slider {
+	&.slider-small {
+		block-size: rem(4);
+	}
+
+	.slider-rail {
+		background-color: var(--interaction-norm-minor-1);
+	}
+
+	span.slider-thumb {
+		block-size: rem(24);
+		inline-size: rem(24);
+		border-radius: rem(12);
+		background-color: white;
+	}
+}
+
+// Toggle component
+.toggle-label {
+	.toggle-container {
+		background-color: var(--interaction-norm-minor-1);
+		transition: background-color 0.2s;
+
+		&::before {
+			background-color: var(--interaction-weak-major-3);
+		}
+
+		&:hover::before {
+			background-color: white;
+		}
+
+		&.toggle-container--checked {
+			background-color: var(--interaction-norm);
+
+			&::before {
+				background-color: var(--interaction-weak-contrast);
+			}
+
+			&:hover {
+				&::before {
+					background-color: white;
+				}
+			}
+		}
+	}
+
+	.toggle-container-text {
+		svg {
+			display: none;
+		}
+	}
+}
