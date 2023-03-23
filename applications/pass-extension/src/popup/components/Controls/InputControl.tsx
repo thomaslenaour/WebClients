@@ -8,7 +8,7 @@ import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { BaseInputGroup, Props as BaseInputGroupProps } from './InputGroup';
 
 type Status = 'default' | 'error';
-type StatusProps = { icon: { style: { color: string } }; input: { labelContainerClassName?: string } };
+type StatusProps = { icon: { style: { color: string } }; input: { labelContainerClassName: string } };
 type StatusPropsMap = { [K in Status]: StatusProps };
 type BaseProps = {
     status?: Status;
@@ -23,7 +23,9 @@ export type InputControlProps<T extends ElementType = ElementType> = InputFieldP
 const STATUS_PROPS_MAP: StatusPropsMap = {
     default: {
         icon: { style: { color: 'var(--field-placeholder-color)' } },
-        input: {},
+        input: {
+            labelContainerClassName: 'color-norm text-normal',
+        },
     },
     error: {
         icon: { style: { color: 'var(--signal-danger)' } },
@@ -57,6 +59,7 @@ export const InputControl = <T extends ElementType>({
     ...rest
 }: InputControlProps<T>) => {
     const fieldProps = rest as InputFieldProps<T>;
+
     return (
         <CustomInputControl
             icon={icon}
@@ -65,7 +68,9 @@ export const InputControl = <T extends ElementType>({
             itemType={itemType}
             customInputGroupProps={{ className: 'px-4 py-3' }}
         >
-            {(inputProps) => <InputFieldTwo<T> {...fieldProps} {...inputProps} />}
+            {(inputProps) => (
+                <InputFieldTwo<T> assistContainerClassName="hidden-empty" {...inputProps} {...fieldProps} />
+            )}
         </CustomInputControl>
     );
 };
