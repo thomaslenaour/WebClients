@@ -4,8 +4,11 @@ import { useFormik } from 'formik';
 import { c } from 'ttag';
 
 import { Button } from '@proton/atoms';
-import { ModalProps, ModalTwo, ModalTwoContent, ModalTwoFooter, ModalTwoHeader } from '@proton/components/components';
+import { Icon, ModalProps } from '@proton/components/components';
 
+import { SidebarModal } from '../../../../shared/components/sidebarmodal/SidebarModal';
+import { PanelHeader } from '../../../components/Panel/Header';
+import { Panel } from '../../../components/Panel/Panel';
 import AliasForm from './Alias.form';
 import { AliasFormValues, validateAliasForm } from './Alias.validation';
 
@@ -13,7 +16,7 @@ export type AliasModalRef = {
     open: () => void;
 };
 
-export type AliasModalProps = {
+export type Props = {
     initialPrefix?: string;
     shareId: string;
     onAliasSubmit: (values: AliasFormValues) => void;
@@ -25,7 +28,7 @@ const initialValues: AliasFormValues = {
     mailboxes: [],
 };
 
-const AliasModal: FC<AliasModalProps> = ({ initialPrefix, shareId, onAliasSubmit, ...modalProps }) => {
+const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props }) => {
     const [ready, setReady] = useState(false);
 
     const form = useFormik<AliasFormValues>({
@@ -33,7 +36,7 @@ const AliasModal: FC<AliasModalProps> = ({ initialPrefix, shareId, onAliasSubmit
         initialErrors: validateAliasForm(initialValues),
         onSubmit: (values) => {
             onAliasSubmit(values);
-            modalProps.onClose?.();
+            props.onClose?.();
 
             form.setValues(initialValues)
                 .then(() => form.setErrors({}))
@@ -50,9 +53,28 @@ const AliasModal: FC<AliasModalProps> = ({ initialPrefix, shareId, onAliasSubmit
     }, [initialPrefix]);
 
     return (
-        <ModalTwo {...modalProps} size="small">
-            <ModalTwoHeader title={c('Action').t`Generate alias`} />
-            <ModalTwoContent>
+        <SidebarModal {...props}>
+            <Panel
+                header={
+                    <PanelHeader
+                        actions={[
+                            <Button className="flex-item-noshrink" icon pill shape="solid" onClick={props.onClose}>
+                                <Icon className="modal-close-icon" name="cross-big" alt={c('Action').t`Close`} />
+                            </Button>,
+
+                            <Button
+                                onClick={() => form.handleSubmit()}
+                                color="norm"
+                                pill
+                                className=""
+                                disabled={!(ready && form.isValid)}
+                            >
+                                {c('Action').t`Use alias`}
+                            </Button>,
+                        ]}
+                    />
+                }
+            >
                 <AliasForm
                     shareId={shareId}
                     form={form}
@@ -71,13 +93,8 @@ const AliasModal: FC<AliasModalProps> = ({ initialPrefix, shareId, onAliasSubmit
                         setReady(true);
                     }}
                 />
-            </ModalTwoContent>
-            <ModalTwoFooter>
-                <Button disabled={!ready || !form.isValid} fullWidth onClick={() => form.handleSubmit()}>
-                    {c('Action').t`Fill in & save alias`}
-                </Button>
-            </ModalTwoFooter>
-        </ModalTwo>
+            </Panel>
+        </SidebarModal>
     );
 };
 
