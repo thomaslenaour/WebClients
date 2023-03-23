@@ -1,11 +1,12 @@
 import type { FC, ReactNode } from 'react';
 
+import type { MaybeArray } from '@proton/pass/types';
 import clsx from '@proton/utils/clsx';
 
 import './InputGroup.scss';
 
 export type Props = {
-    actions?: ReactNode | ReactNode[];
+    actions?: MaybeArray<ReactNode>;
     actionsContainerClassName?: string;
     icon?: ReactNode;
     className?: string;

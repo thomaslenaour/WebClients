@@ -1,12 +1,13 @@
 import { type VFC } from 'react';
 
-import { Field, Form, FormikProvider, useFormik } from 'formik';
+import { Form, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 
 import { isEmptyString } from '@proton/pass/utils/string';
 
 import { ItemEditProps } from '../../../../shared/items';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { Field } from '../../../components/Fields/Field';
 import { PasswordFieldWIP } from '../../../components/Fields/PasswordField';
 import { TextFieldWIP } from '../../../components/Fields/TextField';
 import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
@@ -65,9 +66,9 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                     <FieldsetCluster>
                         <Field
                             name="username"
+                            component={TextFieldWIP}
                             label={c('Label').t`Username`}
                             placeholder={c('Placeholder').t`Enter email or username`}
-                            component={TextFieldWIP}
                             itemType="login"
                             icon="user"
                         />
