@@ -18,7 +18,7 @@ type BaseProps = {
     customInputGroupProps?: Partial<BaseInputGroupProps>;
 };
 type CustomInputControlProps = BaseProps & { children: (renderProps: StatusProps['input']) => ReactNode };
-export type InputControlProps<T extends ElementType> = InputFieldProps<T> & BaseProps & { type?: 'text' | 'password' };
+export type InputControlProps<T extends ElementType> = InputFieldProps<T> & BaseProps;
 
 const STATUS_PROPS_MAP: StatusPropsMap = {
     default: {

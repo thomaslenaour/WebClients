@@ -10,7 +10,7 @@ import { isEmptyString } from '@proton/pass/utils/string';
 import { isValidURL } from '@proton/pass/utils/url';
 
 import { FieldsetCluster } from '../Controls/FieldsetCluster';
-import { CustomInputControl } from '../Controls/Input';
+import { CustomInputControl } from '../Controls/InputControl';
 import { InputGroup } from '../Controls/InputGroup';
 
 type UrlItem = { url: string; id: string };

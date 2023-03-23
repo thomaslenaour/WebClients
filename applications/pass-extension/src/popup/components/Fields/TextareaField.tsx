@@ -1,9 +1,10 @@
 import type { VFC } from 'react';
 
-import { TextAreaTwo } from '@proton/components/index';
-
+import { Props as TextareControlProps, TextareaControl } from '../Controls/TextareaControl';
 import { AbstractField, type AbstractFieldProps } from './AbstractField';
 
-export const TextAreaFieldWIP: VFC<AbstractFieldProps<typeof TextAreaTwo>> = (props) => (
-    <AbstractField as={TextAreaTwo} autoGrow minRows={2} rows={15} {...props} />
+export const TextAreaFieldWIP: VFC<AbstractFieldProps<TextareControlProps>> = (props) => (
+    <AbstractField<TextareControlProps> {...props}>
+        {(inputControlProps) => <TextareaControl {...inputControlProps} />}
+    </AbstractField>
 );

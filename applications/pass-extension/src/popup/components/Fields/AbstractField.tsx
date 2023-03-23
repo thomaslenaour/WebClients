@@ -1,17 +1,26 @@
-import type { ElementType } from 'react';
+import type { ReactNode } from 'react';
 
 import type { FieldProps } from 'formik';
 
-import { InputControl, type InputControlProps } from '../Controls/Input';
+import { Props as TextInputControlProps } from '../Controls/TextInputControl';
+import { Props as TextareaControlProps } from '../Controls/TextareaControl';
 
-export type AbstractFieldProps<T extends ElementType> = FieldProps & InputControlProps<T>;
+type ControlProps = TextInputControlProps | TextareaControlProps;
 
-export const AbstractField = <T extends ElementType>({ field, form, meta, ...rest }: AbstractFieldProps<T>) => {
+export type AbstractFieldProps<T extends ControlProps> = FieldProps & T;
+
+export const AbstractField = <T extends ControlProps>({
+    field,
+    form,
+    meta,
+    children,
+    ...rest
+}: AbstractFieldProps<T> & { children: (props: T) => ReactNode }) => {
     const { name } = field;
     const { touched, errors } = form;
     const error = touched[name] && errors[name];
     const status = error ? 'error' : 'default';
-    const inputControlProps = { ...rest, ...field, status, error } as InputControlProps<T>;
+    const inputControlProps = { ...rest, ...field, status, error } as unknown as T;
 
-    return <InputControl<T> {...inputControlProps} assistContainerClassName="hidden-empty" />;
+    return <>{children(inputControlProps)}</>;
 };
