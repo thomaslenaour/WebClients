@@ -119,6 +119,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
                                 name="name"
                                 label={c('Label').t`Title`}
                                 placeholder={c('Placeholder').t`Untitled`}
+                                autoFocus
                                 component={TitleField}
                             />
                         </FieldsetCluster>
