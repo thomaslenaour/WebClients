@@ -1,10 +1,13 @@
 import { c } from 'ttag';
 
-import { InputFieldTwo, Option, SelectTwo } from '@proton/components';
+import { InputFieldTwo, Option } from '@proton/components';
 import { normalize } from '@proton/shared/lib/helpers/string';
 
 import AliasPreview from '../../../../shared/components/alias/Alias.preview';
 import { useAliasOptions } from '../../../../shared/hooks';
+import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { Field } from '../../../components/Fields/Field';
+import { SelectFieldWIP } from '../../../components/Fields/SelectField';
 import { AliasFormProps, AliasFormValues } from './Alias.validation';
 
 /*  Ensures we do not allow spaces of any kind in prefix */
@@ -34,46 +37,42 @@ const AliasForm = <V extends AliasFormValues = AliasFormValues>({
                 dense
             />
 
-            <SelectTwo
-                disabled={disabled}
-                value={form.values.aliasSuffix}
-                name="aliasSuffix"
-                onValue={(suffix) => form.setFieldValue('aliasSuffix', suffix)}
-                className="mb0-5"
-                error={form.touched.aliasSuffix && form.errors.aliasSuffix}
-                {...(disabled
-                    ? { renderSelected: () => <div className="extension-skeleton extension-skeleton--select" /> }
-                    : {})}
-            >
-                {(aliasOptions?.suffixes ?? []).map((suffix) => (
-                    <Option key={suffix.value} value={suffix} title={suffix.value}>
-                        {suffix.value}
-                    </Option>
-                ))}
-            </SelectTwo>
+            <FieldsetCluster>
+                <Field
+                    component={SelectFieldWIP}
+                    disabled={disabled}
+                    label={c('Label').t`Alias address`}
+                    name="aliasSuffix"
+                >
+                    {(aliasOptions?.suffixes ?? []).map((suffix) => (
+                        <Option key={suffix.value} value={suffix} title={suffix.value}>
+                            {suffix.value}
+                        </Option>
+                    ))}
+                </Field>
+            </FieldsetCluster>
 
             <AliasPreview loading={disabled} prefix={displayedPrefix} suffix={form.values.aliasSuffix?.value ?? ''} />
 
-            <InputFieldTwo
-                disabled={disabled}
-                label={c('Label').t`Mailboxes`}
-                as={SelectTwo}
-                name="mailboxes"
-                value={form.values.mailboxes}
-                onValue={(mailboxes: any) => form.setFieldValue('mailboxes', mailboxes)}
-                multiple
-                dense
-                error={form.touched.mailboxes && form.errors.mailboxes}
-                {...(disabled
-                    ? { renderSelected: () => <div className="extension-skeleton extension-skeleton--select" /> }
-                    : {})}
-            >
-                {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
-                    <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
-                        {mailbox.email}
-                    </Option>
-                ))}
-            </InputFieldTwo>
+            {
+                <FieldsetCluster>
+                    <Field
+                        name="mailboxes"
+                        label={c('Label').t`Forwarded to`}
+                        placeholder={c('Label').t`Select an email address`}
+                        component={SelectFieldWIP}
+                        icon="arrow-up-and-right-big"
+                        disabled={disabled}
+                        multiple
+                    >
+                        {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
+                            <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
+                                {mailbox.email}
+                            </Option>
+                        ))}
+                    </Field>
+                </FieldsetCluster>
+            }
         </>
     );
 };
