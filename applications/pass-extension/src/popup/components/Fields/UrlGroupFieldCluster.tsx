@@ -99,43 +99,47 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                         };
 
                         return (
-                            <ul className="unstyled m0">
-                                {values.urls.map(({ url, id }, index) => (
-                                    <li key={id}>
-                                        <CustomInputControl
-                                            actions={
-                                                <Button
-                                                    icon
-                                                    pill
-                                                    color="weak"
-                                                    shape="ghost"
-                                                    size="small"
-                                                    title={c('Action').t`Delete`}
-                                                    onClick={handleRemove(index)}
-                                                >
-                                                    <Icon name="cross" />
-                                                </Button>
-                                            }
-                                        >
-                                            {(inputProps) => (
-                                                <InputFieldTwo
-                                                    error={(errors.urls?.[index] as FormikErrors<UrlItem>)?.url}
-                                                    onValue={handleReplace(index)}
-                                                    onBlur={() =>
-                                                        helpers.replace(index, { id, url: isValidURL(url).url })
-                                                    }
-                                                    value={url}
-                                                    unstyled
-                                                    assistContainerClassName="hidden-empty"
-                                                    inputClassName="color-norm p-0"
-                                                    placeholder={c('Placeholder').t`Enter a domain or a URL`}
-                                                    {...inputProps}
-                                                />
-                                            )}
-                                        </CustomInputControl>
-                                    </li>
-                                ))}
+                            <>
+                                <ul className="unstyled m0">
+                                    {values.urls.map(({ url, id }, index) => (
+                                        <li key={id}>
+                                            <CustomInputControl
+                                                className="pass-input-group--no-focus"
+                                                actions={
+                                                    <Button
+                                                        icon
+                                                        pill
+                                                        color="weak"
+                                                        shape="ghost"
+                                                        size="small"
+                                                        title={c('Action').t`Delete`}
+                                                        onClick={handleRemove(index)}
+                                                    >
+                                                        <Icon name="cross" />
+                                                    </Button>
+                                                }
+                                            >
+                                                {(inputProps) => (
+                                                    <InputFieldTwo
+                                                        error={(errors.urls?.[index] as FormikErrors<UrlItem>)?.url}
+                                                        onValue={handleReplace(index)}
+                                                        onBlur={() =>
+                                                            helpers.replace(index, { id, url: isValidURL(url).url })
+                                                        }
+                                                        value={url}
+                                                        unstyled
+                                                        assistContainerClassName="hidden-empty"
+                                                        inputClassName="color-norm p-0"
+                                                        placeholder={c('Placeholder').t`Enter a domain or a URL`}
+                                                        {...inputProps}
+                                                    />
+                                                )}
+                                            </CustomInputControl>
+                                        </li>
+                                    ))}
+                                </ul>
                                 <CustomInputControl
+                                    className="pass-input-group--no-focus"
                                     actions={
                                         <Button
                                             icon
@@ -169,7 +173,7 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                         />
                                     )}
                                 </CustomInputControl>
-                            </ul>
+                            </>
                         );
                     }}
                 />

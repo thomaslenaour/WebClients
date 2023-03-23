@@ -1,23 +1,27 @@
-.pass-input-group::before {
-	content: '';
-	border: 1px solid transparent;
-	position: absolute;
-	inset: -1px;
-	z-index: 1;
-	pointer-events: none;
-	transition: 0.15s ease;
-}
+.pass-input-group {
+	&:not(.pass-input-group--no-focus) {
+		&::before {
+			content: '';
+			border: 1px solid transparent;
+			position: absolute;
+			inset: -1px;
+			z-index: 1;
+			pointer-events: none;
+			transition: 0.15s ease;
+		}
 
-.pass-input-group:has(input:focus-visible)::before,
-.pass-input-group:has(button[aria-expanded='false']:focus)::before {
-	border-color: var(--focus-outline);
-}
+		&:has(input:focus-visible, textarea:focus-visible)::before,
+		&:has(button[aria-expanded='false']:focus)::before {
+			border-color: var(--focus-outline);
+		}
+	}
 
-.pass-input-group:has(button[aria-expanded='false']:focus) button {
-	outline: none;
-}
+	&:has(button[aria-expanded='false']:focus) button {
+		outline: none;
+	}
 
-.pass-input-group .field-two-container button svg {
-	position: relative;
-	inset-block-end: var(--space-2);
+	.field-two-container button svg {
+		position: relative;
+		inset-block-end: var(--space-2);
+	}
 }
