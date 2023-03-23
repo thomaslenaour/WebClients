@@ -1,13 +1,16 @@
 import { type VFC, useState } from 'react';
 
-import { Field, Form, FormikProvider, useFormik } from 'formik';
+import { Form, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 import uniqid from 'uniqid';
 
 import { getEpoch } from '@proton/pass/utils/time/get-epoch';
 
-import { TextAreaField, TextField } from '../../../../shared/components/fields';
 import { ItemNewProps } from '../../../../shared/items';
+import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { Field } from '../../../components/Fields/Field';
+import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
+import { TitleField } from '../../../components/Fields/TitleField';
 import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
 import { usePopupContext } from '../../../context';
 import AliasForm from './Alias.form';
@@ -67,7 +70,16 @@ export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCanc
         <ItemCreatePanel type="alias" formId={FORM_ID} handleCancelClick={onCancel} valid={valid}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
-                    <Field name="name" label={c('Label').t`Name`} component={TextField} />
+                    <FieldsetCluster>
+                        <Field
+                            name="name"
+                            label={c('Label').t`Title`}
+                            autoFocus
+                            placeholder={c('Label').t`Untitled`}
+                            component={TitleField}
+                        />
+                    </FieldsetCluster>
+
                     <AliasForm<NewAliasFormValues>
                         form={form}
                         shareId={vaultId}
@@ -87,14 +99,17 @@ export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCanc
                             setReady(true);
                         }}
                     />
-                    <br />
-                    <Field
-                        name="note"
-                        label={c('Label').t`Note`}
-                        component={TextAreaField}
-                        assistContainerClassName="hidden-empty"
-                        rows={5}
-                    />
+
+                    <FieldsetCluster>
+                        <Field
+                            name="note"
+                            label={c('Label').t`Note`}
+                            placeholder={c('Placeholder').t`Enter a note ...`}
+                            component={TextAreaFieldWIP}
+                            icon="note"
+                            rows={2}
+                        />
+                    </FieldsetCluster>
                 </Form>
             </FormikProvider>
         </ItemCreatePanel>

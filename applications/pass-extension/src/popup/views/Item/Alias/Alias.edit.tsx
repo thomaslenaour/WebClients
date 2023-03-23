@@ -1,15 +1,19 @@
 import { type VFC, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { Field, Form, FormikProvider, useFormik } from 'formik';
+import { Form, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 
 import { InputFieldTwo, Option, SelectTwo } from '@proton/components';
 import { selectMailboxesForAlias } from '@proton/pass/store';
 
-import { TextAreaField, TextField, TextFieldValue } from '../../../../shared/components/fields';
+import { TextFieldValue } from '../../../../shared/components/fields';
 import { useAliasOptions } from '../../../../shared/hooks';
 import { ItemEditProps } from '../../../../shared/items';
+import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { Field } from '../../../components/Fields/Field';
+import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
+import { TitleField } from '../../../components/Fields/TitleField';
 import { ItemEditPanel } from '../../../components/Panel/ItemEditPanel';
 import { EditAliasFormValues, validateEditAliasForm } from './Alias.validation';
 
@@ -67,12 +71,17 @@ export const AliasEdit: VFC<ItemEditProps<'alias'>> = ({ vault, revision, onCanc
         <ItemEditPanel type="alias" formId={FORM_ID} handleCancelClick={onCancel} valid={valid}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
-                    <Field name="name" label={c('Label').t`Name`} component={TextField} />
+                    <FieldsetCluster>
+                        <Field
+                            name="name"
+                            label={c('Label').t`Title`}
+                            placeholder={c('Label').t`Untitled`}
+                            component={TitleField}
+                        />
+                    </FieldsetCluster>
 
                     <div className="text-semibold mb0-5">{c('Label').t`Alias`}</div>
                     <TextFieldValue>{aliasEmail!}</TextFieldValue>
-
-                    <hr className="my0-5" />
 
                     <InputFieldTwo
                         label={c('Label').t`Mailboxes`}
@@ -97,9 +106,16 @@ export const AliasEdit: VFC<ItemEditProps<'alias'>> = ({ vault, revision, onCanc
                         ))}
                     </InputFieldTwo>
 
-                    <hr className="mt1 mb0-5" />
-
-                    <Field name="note" label="Note" component={TextAreaField} rows={5} />
+                    <FieldsetCluster>
+                        <Field
+                            name="note"
+                            label={c('Label').t`Note`}
+                            placeholder={c('Placeholder').t`Enter a note ...`}
+                            component={TextAreaFieldWIP}
+                            icon="note"
+                            rows={2}
+                        />
+                    </FieldsetCluster>
                 </Form>
             </FormikProvider>
         </ItemEditPanel>
