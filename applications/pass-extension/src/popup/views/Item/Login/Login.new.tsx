@@ -14,13 +14,13 @@ import { omit } from '@proton/shared/lib/helpers/object';
 
 import { ItemNewProps } from '../../../../shared/items';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { QuickActionsDropdown } from '../../../components/Dropdown/QuickActionsDropdown';
 import { PasswordFieldWIP } from '../../../components/Fields/PasswordField';
 import { TextFieldWIP } from '../../../components/Fields/TextField';
 import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
 import { TitleField } from '../../../components/Fields/TitleField';
 import { UrlGroupFieldCluster, createNewUrl } from '../../../components/Fields/UrlGroupFieldCluster';
 import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
-import { QuickActionsDropdown } from '../../../components/QuickActionsDropdown';
 import { usePopupContext } from '../../../context';
 import AliasModal from '../Alias/Alias.modal';
 import { NewLoginItemFormValues, validateNewLoginForm } from './Login.validation';
