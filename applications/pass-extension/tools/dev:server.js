@@ -10,11 +10,14 @@ const fs = require('fs');
 const path = require('path');
 const createReloadRuntimeServer = require('./dev:reload-runtime');
 const createReduxDevTools = require('./dev:redux-tools');
+const parseEnvVar = require('./env-var.parser');
 
 const config = require('../webpack.config');
 
-const WEBPACK_DEV_PORT = process.env.WEBPACK_DEV_PORT ?? 1337;
-const RUNTIME_RELOAD = Boolean(process.env.RUNTIME_RELOAD);
+const WEBPACK_DEV_PORT = parseEnvVar('WEBPACK_DEV_PORT', 1337, Number);
+const RUNTIME_RELOAD = parseEnvVar('RUNTIME_RELOAD', false, Boolean);
+const REDUX_DEVTOOLS_PORT = parseEnvVar('REDUX_DEVTOOLS_PORT', 8000, Number);
+
 const EXCLUDED_WEBPACK_ENTRIES = ['background', 'content', 'notification', 'dropdown'];
 
 const sanitizeWebpackConfig = (config) => {
@@ -72,7 +75,7 @@ const server = new WebpackDevServer(
 
 const main = async () => {
     await server.start();
-    await createReduxDevTools({ key, cert, port: process.env.REDUX_DEVTOOLS_PORT ?? 8000 });
+    await createReduxDevTools({ key, cert, port: REDUX_DEVTOOLS_PORT });
 
     if (RUNTIME_RELOAD) {
         const { reload } = createReloadRuntimeServer({ cert, key });
