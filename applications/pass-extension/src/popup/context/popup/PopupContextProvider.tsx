@@ -58,9 +58,8 @@ export const PopupContextProvider: FC = ({ children }) => {
 
     const onWorkerMessage = (message: WorkerMessageWithSender) => {
         if (message.type === WorkerMessageType.NOTIFICATION) {
-            const { text, type } = message.payload.notification;
             clearNotifications();
-            createNotification({ text, type });
+            createNotification(message.payload.notification);
         }
     };
 
