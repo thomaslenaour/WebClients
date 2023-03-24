@@ -36,6 +36,7 @@ export const importItemsSuccess = createAction(
             withNotification({
                 type: 'info',
                 target,
+                expiration: -1,
                 text: c('Info').ngettext(msgid`Imported ${total} item`, `Imported ${total} items`, total),
             })
         )({ payload: { total } })
@@ -51,6 +52,7 @@ export const importItemsFailure = createAction('import items failure', (error: u
         withNotification({
             type: 'error',
             target,
+            expiration: -1,
             text: c('Error').t`Importing items failed`,
             error,
         })
