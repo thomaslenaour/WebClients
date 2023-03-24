@@ -192,7 +192,6 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
                                 placeholder={c('Placeholder').t`Enter a note ...`}
                                 component={TextAreaFieldWIP}
                                 icon="note"
-                                rows={2}
                             />
                         </FieldsetCluster>
                     </Form>
