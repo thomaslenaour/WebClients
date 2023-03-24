@@ -111,8 +111,6 @@ const TrashItem: VFC<TrashItemProps> = ({ onSelect, selected, handleRestoreTrash
 };
 
 export const VaultSubmenu: VFC<{
-    closeMenuDropdown: () => void;
-    setSearch: (query: string) => void;
     selectedVaultId: MaybeNull<string>;
     handleVaultSelectClick: (vaultId: MaybeNull<string>) => void;
     handleVaultDeleteClick: (vault: VaultShare) => void;
@@ -122,8 +120,6 @@ export const VaultSubmenu: VFC<{
     handleRestoreTrash: () => void;
     handleEmptyTrash: () => void;
 }> = ({
-    closeMenuDropdown,
-    setSearch,
     selectedVaultId,
     handleVaultSelectClick,
     handleVaultDeleteClick,
@@ -141,8 +137,6 @@ export const VaultSubmenu: VFC<{
     const handleSelect = (vault: VaultOption) => {
         const { id, path } = getVaultOptionInfo(vault);
         handleVaultSelectClick(id);
-        closeMenuDropdown();
-        setSearch('');
         history.push(path);
     };
 
