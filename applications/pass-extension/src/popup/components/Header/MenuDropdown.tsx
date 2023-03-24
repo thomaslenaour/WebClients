@@ -36,7 +36,7 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
     const { sync, lock, logout, ready } = usePopupContext();
     const { vaultId, vaultBeingDeleted, setSearch, setVaultId, setVaultBeingDeleted } = useItemsFilteringContext();
     const canLock = useSelector(selectCanLockSession);
-    const { inTrash } = useNavigationContext();
+    const { inTrash, unselectItem } = useNavigationContext();
 
     const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLButtonElement>();
     const dispatch = useDispatch();
@@ -93,7 +93,10 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                             closeMenuDropdown={close}
                             setSearch={setSearch}
                             selectedVaultId={vaultId}
-                            handleVaultSelectClick={setVaultId}
+                            handleVaultSelectClick={(vaultId) => {
+                                unselectItem();
+                                setVaultId(vaultId);
+                            }}
                             handleVaultDeleteClick={setDeleteVault}
                             handleVaultEditClick={(vault: VaultShare) =>
                                 setVaultModalProps({ open: true, payload: { type: 'edit', vault } })
