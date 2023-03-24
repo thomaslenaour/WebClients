@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from 'react';
 
-import { useFormik } from 'formik';
+import { FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 
 import { Button } from '@proton/atoms';
@@ -9,7 +9,7 @@ import { Icon, ModalProps } from '@proton/components/components';
 import { SidebarModal } from '../../../../shared/components/sidebarmodal/SidebarModal';
 import { PanelHeader } from '../../../components/Panel/Header';
 import { Panel } from '../../../components/Panel/Panel';
-import AliasForm from './Alias.form';
+import { AliasForm } from './Alias.form';
 import { AliasFormValues, validateAliasForm } from './Alias.validation';
 
 export type AliasModalRef = {
@@ -83,6 +83,7 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
                     />
                 }
             >
+                <FormikProvider value={form}>
                 <AliasForm
                     shareId={shareId}
                     form={form}
@@ -101,6 +102,7 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
                         setReady(true);
                     }}
                 />
+                </FormikProvider>
             </Panel>
         </SidebarModal>
     );

@@ -13,7 +13,7 @@ import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
 import { TitleField } from '../../../components/Fields/TitleField';
 import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
 import { usePopupContext } from '../../../context';
-import AliasForm from './Alias.form';
+import { AliasForm } from './Alias.form';
 import { NewAliasFormValues, validateNewAliasForm } from './Alias.validation';
 
 const FORM_ID = 'new-alias';
@@ -107,7 +107,6 @@ export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCanc
                             placeholder={c('Placeholder').t`Enter a note ...`}
                             component={TextAreaFieldWIP}
                             icon="note"
-                            rows={2}
                         />
                     </FieldsetCluster>
                 </Form>

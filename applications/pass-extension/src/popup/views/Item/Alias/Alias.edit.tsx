@@ -4,14 +4,15 @@ import { useSelector } from 'react-redux';
 import { Form, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
 
-import { InputFieldTwo, Option, SelectTwo } from '@proton/components';
+import { Option } from '@proton/components';
 import { selectMailboxesForAlias } from '@proton/pass/store';
 
-import { TextFieldValue } from '../../../../shared/components/fields';
 import { useAliasOptions } from '../../../../shared/hooks';
 import { ItemEditProps } from '../../../../shared/items';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { ValueControl } from '../../../components/Controls/ValueControl';
 import { Field } from '../../../components/Fields/Field';
+import { SelectFieldWIP } from '../../../components/Fields/SelectField';
 import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
 import { TitleField } from '../../../components/Fields/TitleField';
 import { ItemEditPanel } from '../../../components/Panel/ItemEditPanel';
@@ -80,31 +81,30 @@ export const AliasEdit: VFC<ItemEditProps<'alias'>> = ({ vault, revision, onCanc
                         />
                     </FieldsetCluster>
 
-                    <div className="text-semibold mb0-5">{c('Label').t`Alias`}</div>
-                    <TextFieldValue>{aliasEmail!}</TextFieldValue>
+                    <FieldsetCluster mode="read" as="div">
+                        <ValueControl icon="alias" label={c('Label').t`Alias address`}>
+                            {aliasEmail}
+                        </ValueControl>
+                    </FieldsetCluster>
 
-                    <InputFieldTwo
-                        label={c('Label').t`Mailboxes`}
-                        as={SelectTwo}
-                        name="mailboxes"
-                        value={form.values.mailboxes}
-                        onValue={(mailboxes: any) => form.setFieldValue('mailboxes', mailboxes)}
-                        multiple
-                        dense
-                        {...(aliasOptionsLoading
-                            ? {
-                                  renderSelected: () => (
-                                      <div className="extension-skeleton extension-skeleton--select" />
-                                  ),
-                              }
-                            : {})}
-                    >
-                        {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
-                            <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
-                                {mailbox.email}
-                            </Option>
-                        ))}
-                    </InputFieldTwo>
+                    <FieldsetCluster>
+                        <Field
+                            name="mailboxes"
+                            label={c('Label').t`Forwarded to`}
+                            placeholder={c('Label').t`Select an email address`}
+                            component={SelectFieldWIP}
+                            icon="arrow-up-and-right-big"
+                            multiple
+                            disabled={aliasOptionsLoading || !aliasOptions || aliasOptions.mailboxes.length <= 1}
+                            loading={aliasOptionsLoading}
+                        >
+                            {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
+                                <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
+                                    {mailbox.email}
+                                </Option>
+                            ))}
+                        </Field>
+                    </FieldsetCluster>
 
                     <FieldsetCluster>
                         <Field
@@ -113,7 +113,6 @@ export const AliasEdit: VFC<ItemEditProps<'alias'>> = ({ vault, revision, onCanc
                             placeholder={c('Placeholder').t`Enter a note ...`}
                             component={TextAreaFieldWIP}
                             icon="note"
-                            rows={2}
                         />
                     </FieldsetCluster>
                 </Form>

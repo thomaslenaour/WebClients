@@ -84,7 +84,6 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                             placeholder={c('Placeholder').t`Enter a note ...`}
                             component={TextAreaFieldWIP}
                             icon="note"
-                            rows={2}
                         />
                     </FieldsetCluster>
                 </Form>

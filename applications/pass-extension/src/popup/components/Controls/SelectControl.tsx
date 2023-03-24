@@ -14,6 +14,9 @@ export const SelectControl: VFC<Props> = (props) => {
             caretIconName="chevron-down"
             labelContainerClassName="increase-click-surface color-weak text-normal"
             unstyled
+            renderSelected={
+                props.loading ? () => <div className="extension-skeleton extension-skeleton--select" /> : undefined
+            }
             {...props}
         />
     );
