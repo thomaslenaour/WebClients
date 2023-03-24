@@ -33,7 +33,7 @@ import {
     itemTrashFailure,
     itemTrashIntent,
     itemTrashSuccess,
-    itemsImported,
+    itemsBatchImported,
     itemsRequestSuccess,
     restoreTrashFailure,
     restoreTrashIntent,
@@ -146,7 +146,7 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
             return fullMerge(state, { [shareId]: { [item.itemId]: item } });
         }
 
-        if (itemsImported.match(action)) {
+        if (itemsBatchImported.match(action)) {
             const { shareId, items } = action.payload;
             return fullMerge(state, { [shareId]: toMap(items, 'itemId') });
         }
