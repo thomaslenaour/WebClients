@@ -8,7 +8,7 @@ import {
 import clsx from '@proton/utils/clsx';
 
 const QuickActionsDropdown: FC<{ children: ReactNode }> = ({ children }) => {
-    const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLButtonElement>();
+    const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLElement>();
 
     const handleClick = (evt: MouseEvent) => {
         evt.stopPropagation();

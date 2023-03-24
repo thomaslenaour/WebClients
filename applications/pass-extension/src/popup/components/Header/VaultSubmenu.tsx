@@ -15,7 +15,6 @@ import {
 import { selectAllVaults, selectShare } from '@proton/pass/store';
 import type { MaybeNull, ShareType, VaultShare } from '@proton/pass/types';
 
-import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
 import { DropdownMenuButton } from '../Dropdown/DropdownMenuButton';
 
 type VaultOption = 'all' | 'trash' | VaultShare;
@@ -23,11 +22,11 @@ type VaultOption = 'all' | 'trash' | VaultShare;
 const getVaultOptionInfo = (vault: VaultOption): { id: null | string; label: string; path: string } => {
     switch (vault) {
         case 'all':
-            return { id: null, label: 'All vaults', path: '/' };
+            return { id: null, label: c('Label').t`All vaults`, path: '/' };
         case 'trash':
-            return { id: null, label: 'Trash', path: '/trash' };
+            return { id: null, label: c('Label').t`Trash`, path: '/trash' };
         default:
-            return { id: vault.vaultId, label: vault.content.name, path: '/' };
+            return { id: vault.vaultId, label: vault.content.name, path: `/share/${vault.shareId}` };
     }
 };
 
@@ -106,13 +105,14 @@ const TrashItem: VFC<TrashItemProps> = ({ onSelect, selected, handleRestoreTrash
             }
         >
             <Icon name="trash" className="mr0-5" />
-            {c('Action').t`${getVaultOptionInfo('trash').label}`}
+            {getVaultOptionInfo('trash').label}
         </DropdownMenuButton>
     );
 };
 
 export const VaultSubmenu: VFC<{
     closeMenuDropdown: () => void;
+    setSearch: (query: string) => void;
     selectedVaultId: MaybeNull<string>;
     handleVaultSelectClick: (vaultId: MaybeNull<string>) => void;
     handleVaultDeleteClick: (vault: VaultShare) => void;
@@ -123,6 +123,7 @@ export const VaultSubmenu: VFC<{
     handleEmptyTrash: () => void;
 }> = ({
     closeMenuDropdown,
+    setSearch,
     selectedVaultId,
     handleVaultSelectClick,
     handleVaultDeleteClick,
@@ -136,7 +137,6 @@ export const VaultSubmenu: VFC<{
     const vaults = useSelector(selectAllVaults);
     const selectedVault = useSelector(selectShare<ShareType.Vault>(selectedVaultId ?? ''));
     const canDelete = vaults.length > 1;
-    const { setSearch } = useItemsFilteringContext();
 
     const handleSelect = (vault: VaultOption) => {
         const { id, path } = getVaultOptionInfo(vault);
@@ -159,7 +159,8 @@ export const VaultSubmenu: VFC<{
                 }
             >
                 <span className="flex flex-align-items-center">
-                    <Icon name={'vault'} className="inline mr0-25" /> {c('Label').t`${selectedVaultOptionLabel}`}
+                    <Icon name={'vault'} className="inline mr0-25" />
+                    {selectedVaultOptionLabel}
                 </span>
             </CollapsibleHeader>
             <CollapsibleContent>
@@ -190,9 +191,11 @@ export const VaultSubmenu: VFC<{
                     selected={inTrash}
                 />
 
-                <Button className="w100 mt0-5" color="norm" shape="ghost" onClick={handleVaultCreateClick}>
-                    {c('Action').t`Create vault`}
-                </Button>
+                <div className="pl0-5 pr0-5 mt0-5">
+                    <Button className="w100" color="norm" shape="ghost" onClick={handleVaultCreateClick}>
+                        {c('Action').t`Create vault`}
+                    </Button>
+                </div>
             </CollapsibleContent>
         </Collapsible>
     );

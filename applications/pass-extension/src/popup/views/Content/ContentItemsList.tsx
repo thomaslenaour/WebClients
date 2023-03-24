@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from 'react';
+import { VFC, useEffect, useRef } from 'react';
 import { List } from 'react-virtualized';
 
 import { c } from 'ttag';
@@ -10,7 +10,7 @@ import { useNavigationContext } from '../../context';
 import { useItems } from '../../hooks/useItems';
 import { ItemsFilter, ItemsSort } from './filters';
 
-const SidebarItemList: FC = () => {
+export const ContentItemsList: VFC = () => {
     const { selectItem, selectedItem } = useNavigationContext();
     const {
         filtering: { search, filter, sort, setSort, setFilter },
@@ -69,5 +69,3 @@ const SidebarItemList: FC = () => {
         </>
     );
 };
-
-export default SidebarItemList;
