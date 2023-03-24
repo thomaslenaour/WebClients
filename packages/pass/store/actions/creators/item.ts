@@ -27,7 +27,6 @@ export const itemCreationFailure = createOptimisticAction(
         pipe(
             withCacheBlock,
             withNotification({
-                id: payload.optimisticId,
                 type: 'error',
                 text: c('Error').t`Item creation failed`,
                 error,
@@ -42,7 +41,6 @@ export const itemCreationDismiss = createOptimisticAction(
         pipe(
             withCacheBlock,
             withNotification({
-                id: payload.optimisticId,
                 type: 'info',
                 text: c('Info').t`"${payload.item.data.metadata.name}" item was dismissed`,
             })
@@ -75,7 +73,6 @@ export const itemEditFailure = createOptimisticAction(
         pipe(
             withCacheBlock,
             withNotification({
-                id: payload.itemId,
                 type: 'error',
                 text: c('Error').t`Editing item failed`,
                 error,
@@ -90,7 +87,6 @@ export const itemEditDismiss = createOptimisticAction(
         pipe(
             withCacheBlock,
             withNotification({
-                id: payload.itemId,
                 type: 'info',
                 text: c('Info').t`"${payload.item.data.metadata.name}" update was dismissed`,
             })
@@ -128,7 +124,6 @@ export const itemTrashFailure = createOptimisticAction(
         pipe(
             withCacheBlock,
             withNotification({
-                id: payload.itemId,
                 type: 'error',
                 text: c('Error').t`Trashing item failed`,
                 error,
@@ -162,7 +157,6 @@ export const itemDeleteFailure = createOptimisticAction(
         pipe(
             withCacheBlock,
             withNotification({
-                id: payload.itemId,
                 type: 'error',
                 text: c('Error').t`Deleting item failed`,
                 error,
@@ -200,7 +194,6 @@ export const itemRestoreFailure = createOptimisticAction(
         pipe(
             withCacheBlock,
             withNotification({
-                id: payload.itemId,
                 type: 'error',
                 text: c('Error').t`Restoring item failed`,
                 error,
