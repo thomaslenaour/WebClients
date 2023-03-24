@@ -8,10 +8,10 @@ import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelpe
 import chunk from '@proton/utils/chunk';
 
 import {
-    importItemsRequest,
-    importItemsRequestFailure,
-    importItemsRequestSuccess,
-    itemsImported,
+    importItemsFailure,
+    importItemsIntent,
+    importItemsSuccess,
+    itemsBatchImported,
     notification,
     vaultCreationIntent,
     vaultCreationSuccess,
@@ -50,7 +50,7 @@ function* createVaultForImport(vaultName: string) {
 
 function* importWorker(
     { onItemsChange }: WorkerRootSagaOptions,
-    { payload: { data }, meta }: ReturnType<typeof importItemsRequest>
+    { payload: { data }, meta }: ReturnType<typeof importItemsIntent>
 ) {
     let total: number = 0;
 
@@ -75,7 +75,7 @@ function* importWorker(
 
                         total += revisions.length;
 
-                        yield put(itemsImported({ shareId, items }));
+                        yield put(itemsBatchImported({ shareId, items }));
                     } catch (e) {
                         const description = e instanceof Error ? getApiErrorMessage(e) ?? e?.message : '';
 
@@ -100,13 +100,13 @@ function* importWorker(
             }
         }
 
-        yield put(importItemsRequestSuccess({ total }, meta.receiver));
+        yield put(importItemsSuccess({ total }, meta.receiver));
         onItemsChange?.();
     } catch (error: any) {
-        yield put(importItemsRequestFailure(error, meta.receiver));
+        yield put(importItemsFailure(error, meta.receiver));
     }
 }
 
 export default function* watcher(options: WorkerRootSagaOptions) {
-    yield takeLeading(importItemsRequest.match, importWorker, options);
+    yield takeLeading(importItemsIntent.match, importWorker, options);
 }

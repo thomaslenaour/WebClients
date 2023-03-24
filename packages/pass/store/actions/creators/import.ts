@@ -11,8 +11,8 @@ import withNotification from '../with-notification';
 import withReceiver from '../with-receiver';
 import withRequest from '../with-request';
 
-export const importItemsRequest = createAction(
-    'import items request',
+export const importItemsIntent = createAction(
+    'import items intent',
     (payload: { data: ImportPayload }, endpoint?: ExtensionEndpoint) =>
         pipe(
             withCacheBlock,
@@ -24,7 +24,7 @@ export const importItemsRequest = createAction(
         )({ payload })
 );
 
-export const importItemsRequestSuccess = createAction(
+export const importItemsSuccess = createAction(
     'import items success',
     ({ total }: { total: number }, target?: ExtensionEndpoint) =>
         pipe(
@@ -41,24 +41,23 @@ export const importItemsRequestSuccess = createAction(
         )({ payload: { total } })
 );
 
-export const importItemsRequestFailure = createAction(
-    'import items failure',
-    (error: unknown, target?: ExtensionEndpoint) =>
-        pipe(
-            withCacheBlock,
-            withRequest({
-                id: requests.importItems(),
-                type: 'failure',
-            }),
-            withNotification({
-                type: 'error',
-                target,
-                text: c('Error').t`Importing items failed`,
-                error,
-            })
-        )({ payload: {}, error })
+export const importItemsFailure = createAction('import items failure', (error: unknown, target?: ExtensionEndpoint) =>
+    pipe(
+        withCacheBlock,
+        withRequest({
+            id: requests.importItems(),
+            type: 'failure',
+        }),
+        withNotification({
+            type: 'error',
+            target,
+            text: c('Error').t`Importing items failed`,
+            error,
+        })
+    )({ payload: {}, error })
 );
 
-export const itemsImported = createAction('item imported', (payload: { shareId: string; items: ItemRevision[] }) =>
-    withCacheBlock({ payload })
+export const itemsBatchImported = createAction(
+    'item batch imported',
+    (payload: { shareId: string; items: ItemRevision[] }) => withCacheBlock({ payload })
 );

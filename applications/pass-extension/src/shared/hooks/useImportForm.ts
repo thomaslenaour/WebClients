@@ -7,7 +7,7 @@ import { c } from 'ttag';
 import { Dropzone, FileInput, onlyDragFiles } from '@proton/components/components';
 import { useNotifications } from '@proton/components/hooks';
 import { ImportPayload, ImportProvider, ImportReaderPayload, fileReader } from '@proton/pass/import';
-import { importItemsRequest, selectRequestStatus } from '@proton/pass/store';
+import { importItemsIntent, selectRequestStatus } from '@proton/pass/store';
 import { importItems } from '@proton/pass/store/actions/requests';
 import { Maybe } from '@proton/pass/types';
 import { first } from '@proton/pass/utils/array';
@@ -114,7 +114,7 @@ export const useImportForm = ({
                     return setBusy(false);
                 }
 
-                dispatch(importItemsRequest({ data: result.payload }, endpoint));
+                dispatch(importItemsIntent({ data: result.payload }, endpoint));
             } catch (e) {
                 setBusy(false);
                 if (e instanceof Error) {
