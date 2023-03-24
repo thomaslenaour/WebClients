@@ -28,7 +28,7 @@ const SearchbarRaw: VFC<{ disabled?: boolean; value: string; handleValue: (value
     return (
         <InputTwo
             ref={inputRef}
-            placeholder={c('Placeholder').t`${inTrash ? 'Search in Trash...' : 'Search...'}`}
+            placeholder={`${inTrash ? c('Placeholder').t`Search in Trash` : c('Placeholder').t`Search`}...`}
             prefix={<Icon name="magnifier" />}
             suffix={
                 value !== '' && (

@@ -82,9 +82,9 @@ export type MatchItemsSelectorOptions = {
 export const selectMatchItems = createSelector(
     [selectItemsWithOptimistic, (_: State, options: MatchItemsSelectorOptions) => options],
     (items, { shareId, needle = '', trash = false, matchItem }) =>
-        (needle.trim() === '' ? items : items.filter((item) => matchItem(item.data)(needle))).filter(
-            (item) => (!shareId || shareId === item.shareId) && (trash ? isTrashed(item) : !isTrashed(item))
-        )
+        (needle.trim() === '' ? items : items.filter((item) => matchItem(item.data)(needle)))
+            .filter((item) => (!shareId || shareId === item.shareId) && (trash ? isTrashed(item) : !isTrashed(item)))
+            .sort((a, b) => b.modifyTime - a.modifyTime)
 );
 
 export const selectAutofillCandidates = createSelector(

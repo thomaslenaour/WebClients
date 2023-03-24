@@ -14,13 +14,13 @@ const filterBy =
         arr.filter(predicate as any);
 
 export const useFilteredItems = ({ search, sort, filter, vaultId }: ItemsFilteringContextType) => {
-    const activeMatchOptions = { shareId: vaultId ?? undefined, needle: search, matchItem };
-    const activeItems = useSelector((state: State) => selectMatchItems(state, activeMatchOptions));
-
-    const trashMatchOptions = { needle: search, matchItem, trash: true };
-    const trashItems = useSelector((state: State) => selectMatchItems(state, trashMatchOptions)).sort(
-        (a, b) => b.revisionTime - a.revisionTime
+    const activeMatchOptions = useMemo(
+        () => ({ shareId: vaultId ?? undefined, needle: search, matchItem }),
+        [search, vaultId]
     );
+    const activeItems = useSelector((state: State) => selectMatchItems(state, activeMatchOptions));
+    const trashMatchOptions = useMemo(() => ({ needle: search, matchItem, trash: true }), [search]);
+    const trashItems = useSelector((state: State) => selectMatchItems(state, trashMatchOptions));
 
     const filteredItems = useMemo<ItemRevisionWithOptimistic[]>(() => {
         const filterByType = filter === '*' ? identity : filterBy((item) => item.data.type === filter);
@@ -33,8 +33,8 @@ export const useFilteredItems = ({ search, sort, filter, vaultId }: ItemsFilteri
                     return b.createTime - a.createTime;
                 case 'recent':
                     return (
-                        Math.max(b.lastUseTime ?? b.revisionTime, b.revisionTime) -
-                        Math.max(a.lastUseTime ?? a.revisionTime, a.revisionTime)
+                        Math.max(b.lastUseTime ?? b.modifyTime, b.modifyTime) -
+                        Math.max(a.lastUseTime ?? a.modifyTime, a.modifyTime)
                     );
                 case 'titleASC':
                     return a.data.metadata.name.localeCompare(b.data.metadata.name);
