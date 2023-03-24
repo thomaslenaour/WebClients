@@ -10,17 +10,16 @@ export function handleVaultDeletionEffects(
     shareId: string,
     itemsFilteringVaultUtilities: {
         vaultId: ItemsFilteringContextType['vaultId'];
-        vaultBeingDeleted: ItemsFilteringContextType['vaultBeingDeleted'];
         setVaultBeingDeleted: ItemsFilteringContextType['setVaultBeingDeleted'];
         setVaultId: ItemsFilteringContextType['setVaultId'];
     }
 ) {
-    const { vaultId, vaultBeingDeleted, setVaultId, setVaultBeingDeleted } = itemsFilteringVaultUtilities;
+    const { vaultId, setVaultId, setVaultBeingDeleted } = itemsFilteringVaultUtilities;
     // ensure the currently selected item is not from this vault
     setVaultBeingDeleted(shareId);
 
     // ensure the currently selected vault is not this vault
-    if (vaultId === vaultBeingDeleted) {
+    if (vaultId === shareId) {
         setVaultId(null);
     }
 }
@@ -42,7 +41,6 @@ export const ItemEffects = () => {
                 onShareDisabled(shareId) {
                     handleVaultDeletionEffects(shareId, {
                         vaultId,
-                        vaultBeingDeleted,
                         setVaultBeingDeleted,
                         setVaultId,
                     });
@@ -87,7 +85,10 @@ export const ItemEffects = () => {
             }
 
             if (vaultBeingDeleted) {
-                setVaultBeingDeleted(null);
+                const stillItemsPendingDeletion = items.some(({ shareId }) => shareId === vaultBeingDeleted);
+                if (!stillItemsPendingDeletion) {
+                    setVaultBeingDeleted(null);
+                }
             }
         }
     }, [selectedItem, inTrash, items, autoselect, vaultBeingDeleted]);
