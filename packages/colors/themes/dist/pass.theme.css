@@ -45,6 +45,7 @@
   --background-norm: #191927;
   --background-weak: #1F1F31;
   --background-strong: rgb(18 18 27 / 0.8);
+  --background-invert: white;
 
   --interaction-norm-minor-2: rgb(97 96 253 / 0.08);
   --interaction-norm-minor-1: rgb(97 96 253 / 0.16);
