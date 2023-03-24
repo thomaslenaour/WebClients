@@ -34,7 +34,7 @@ const DROPDOWN_SIZE: NonNullable<DropdownProps['size']> = {
 
 const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
     const { sync, lock, logout, ready } = usePopupContext();
-    const { vaultId, vaultBeingDeleted, setSearch, setVaultId, setVaultBeingDeleted } = useItemsFilteringContext();
+    const { vaultId, setSearch, setVaultId, setVaultBeingDeleted } = useItemsFilteringContext();
     const canLock = useSelector(selectCanLockSession);
     const { inTrash, unselectItem } = useNavigationContext();
 
@@ -48,7 +48,6 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
         if (deleteVault !== null) {
             handleVaultDeletionEffects(deleteVault.shareId, {
                 vaultId,
-                vaultBeingDeleted,
                 setVaultBeingDeleted,
                 setVaultId,
             });
