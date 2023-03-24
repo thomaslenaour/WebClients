@@ -90,12 +90,12 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                 >
                     <DropdownMenu>
                         <VaultSubmenu
-                            closeMenuDropdown={close}
-                            setSearch={setSearch}
                             selectedVaultId={vaultId}
                             handleVaultSelectClick={(vaultId) => {
                                 unselectItem();
                                 setVaultId(vaultId);
+                                setSearch('');
+                                close();
                             }}
                             handleVaultDeleteClick={setDeleteVault}
                             handleVaultEditClick={(vault: VaultShare) =>
