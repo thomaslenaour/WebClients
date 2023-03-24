@@ -1,20 +1,15 @@
 import type { AnyAction } from 'redux';
 
+import { CreateNotificationOptions, NotificationType } from '@proton/components/index';
 import type { ExtensionEndpoint } from '@proton/pass/types';
 import { merge } from '@proton/pass/utils/object';
 import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 
-type NotificationType = 'error' | 'success' | 'info';
+export type Notification = CreateNotificationOptions & { target?: ExtensionEndpoint };
 
-export type Notification = {
-    id?: string;
-    expiry?: number;
-    text: string;
-    type: NotificationType;
-    target?: ExtensionEndpoint;
-};
+export type NotificationOptions = Notification &
+    ({ type: 'error'; error: unknown } | { type: Exclude<NotificationType, 'error'> });
 
-export type NotificationOptions = Notification & ({ type: 'error'; error: unknown } | { type: 'success' | 'info' });
 export type WithNotification<T = AnyAction> = T & { meta: { notification: Notification } };
 
 /* type guard utility */
@@ -25,6 +20,7 @@ const parseNotification = (notification: NotificationOptions): Notification => {
     switch (notification.type) {
         case 'success':
         case 'info':
+        case 'warning':
             return notification;
         case 'error': {
             const serializedNotification: Notification = {
