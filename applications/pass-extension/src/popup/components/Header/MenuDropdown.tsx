@@ -14,6 +14,7 @@ import {
     Icon,
     usePopperAnchor,
 } from '@proton/components';
+import { isFirefox as _isFirefox } from '@proton/pass/extension/browser/firefox';
 import { emptyTrashIntent, restoreTrashIntent, selectCanLockSession, vaultDeleteIntent } from '@proton/pass/store';
 import type { MaybeNull, VaultShare } from '@proton/pass/types';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
@@ -72,6 +73,8 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
         window.close();
     };
 
+    const isFirefox = _isFirefox();
+
     return (
         <>
             <nav className={className}>
@@ -113,20 +116,35 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                             onClick={() => openSettings()}
                         >
                             <span className="flex flex-align-items-center">
-                                <Icon name="cog-wheel" className="mr0-5" />
+                                <Icon name="cog-wheel" className="mr0-5 color-weak" />
                                 {c('Label').t`Settings`}
                             </span>
 
-                            <Icon name="arrow-out-square" className="ml0-5" />
+                            <Icon name="arrow-out-square" className="ml0-5 color-weak" />
                         </DropdownMenuButton>
 
                         <hr className="dropdown-item-hr my0-5" aria-hidden="true" />
+
+                        {!isFirefox && (
+                            <DropdownMenuButton
+                                className="flex flex-align-items-center text-left"
+                                onClick={() =>
+                                    window.open(
+                                        'https://chrome.google.com/webstore/detail/proton-pass/ghmbeldphafepmbegfdlkpapadhbakde',
+                                        '_blank'
+                                    )
+                                }
+                            >
+                                <Icon name="star" className="mr0-5 color-weak" />
+                                {c('Action').t`Rate Pass`}
+                            </DropdownMenuButton>
+                        )}
 
                         <DropdownMenuButton
                             className="flex flex-align-items-center text-left"
                             onClick={() => window.open('mailto:pass@proton.me', '_blank')}
                         >
-                            <Icon name="bug" className="mr0-5" />
+                            <Icon name="bug" className="mr0-5 color-weak" />
                             {c('Action').t`Report a problem`}
                         </DropdownMenuButton>
 
@@ -135,7 +153,7 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                             onClick={sync}
                             disabled={!ready}
                         >
-                            <Icon name="arrow-rotate-right" className="mr0-5" />
+                            <Icon name="arrow-rotate-right" className="mr0-5 color-weak" />
                             {c('Action').t`Sync`}
                         </DropdownMenuButton>
 
@@ -145,7 +163,7 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                                 onClick={lock}
                                 disabled={!ready}
                             >
-                                <Icon name="lock" className="mr0-5" />
+                                <Icon name="lock" className="mr0-5 color-weak" />
                                 {c('Action').t`Lock ${PASS_APP_NAME}`}
                             </DropdownMenuButton>
                         )}
@@ -154,7 +172,7 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                             className="flex flex-align-items-center text-left"
                             onClick={() => logout({ soft: false })}
                         >
-                            <Icon name="arrow-out-from-rectangle" className="mr0-5" />
+                            <Icon name="arrow-out-from-rectangle" className="mr0-5 color-weak" />
                             {c('Action').t`Sign out`}
                         </DropdownMenuButton>
                     </DropdownMenu>
