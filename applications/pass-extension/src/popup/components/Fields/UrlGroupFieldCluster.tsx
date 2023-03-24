@@ -69,7 +69,7 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
     const { values, errors, handleChange } = form;
     const inputRef = useRef<HTMLInputElement>(null);
     const [showExtraField, setShowExtraField] = useState(!values.urls.length);
-    const showAddButton = values.url || !!values.urls.length;
+    const showAddButton = !!values.url || values.urls.length > 0;
 
     return (
         <FieldsetCluster>
