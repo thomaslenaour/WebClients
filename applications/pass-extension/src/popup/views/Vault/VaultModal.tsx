@@ -46,11 +46,19 @@ export const VaultModal: FC<Props> = ({ payload, ...props }) => {
                 header={
                     <PanelHeader
                         actions={[
-                            <Button className="flex-item-noshrink" icon pill shape="solid" onClick={props.onClose}>
+                            <Button
+                                key="modal-close-button"
+                                className="flex-item-noshrink"
+                                icon
+                                pill
+                                shape="solid"
+                                onClick={props.onClose}
+                            >
                                 <Icon className="modal-close-icon" name="cross-big" alt={c('Action').t`Close`} />
                             </Button>,
 
                             <Button
+                                key="modal-submit-button"
                                 onClick={() => vaultFormRef?.current?.submit()}
                                 color="norm"
                                 pill
