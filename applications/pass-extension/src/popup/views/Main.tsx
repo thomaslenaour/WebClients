@@ -15,7 +15,7 @@ import './Main.scss';
 
 const MainRaw: VFC = () => {
     return (
-        <div id="main" className="flex flex-column flex-nowrap w100 h100">
+        <div id="main" className="flex flex-column flex-nowrap w100 h100 overflow-hidden anime-fade-in">
             <Header />
             <main className="flex flex-align-items-center flex-justify-center flex-nowrap w100 h100">
                 <ContentLayout>
