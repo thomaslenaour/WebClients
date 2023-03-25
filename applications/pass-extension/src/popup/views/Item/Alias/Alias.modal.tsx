@@ -58,11 +58,19 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
                 header={
                     <PanelHeader
                         actions={[
-                            <Button className="flex-item-noshrink" icon pill shape="solid" onClick={props.onClose}>
+                            <Button
+                                key="modal-close-button"
+                                className="flex-item-noshrink"
+                                icon
+                                pill
+                                shape="solid"
+                                onClick={props.onClose}
+                            >
                                 <Icon className="modal-close-icon" name="cross-big" alt={c('Action').t`Close`} />
                             </Button>,
 
                             <Button
+                                key="modal-submit-button"
                                 onClick={() => form.handleSubmit()}
                                 color="norm"
                                 pill

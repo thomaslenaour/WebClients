@@ -32,10 +32,17 @@ export const PasswordGeneratorModal: VFC<Props> = ({ onSubmit, actionLabel, ...p
                 header={
                     <PanelHeader
                         actions={[
-                            <Button className="flex-item-noshrink" icon pill shape="solid" onClick={props.onClose}>
+                            <Button
+                                key="close-modal-button"
+                                className="flex-item-noshrink"
+                                icon
+                                pill
+                                shape="solid"
+                                onClick={props.onClose}
+                            >
                                 <Icon className="modal-close-icon" name="cross-big" alt={c('Action').t`Close`} />
                             </Button>,
-                            <div className="flex gap-x-2">
+                            <div className="flex gap-x-2" key="modal-actions-group">
                                 {actionLabel && (
                                     <Button onClick={handleActionClick} color="norm" pill className="">
                                         {actionLabel}
