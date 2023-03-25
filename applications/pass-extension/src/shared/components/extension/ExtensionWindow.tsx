@@ -1,4 +1,4 @@
-import { CSSProperties, FC, ReactNode, useEffect, useState } from 'react';
+import { type FC, type ReactNode, useEffect, useState } from 'react';
 
 import {
     ConfigProvider,
@@ -7,7 +7,6 @@ import {
     ModalsProvider,
     NotificationsChildren,
     NotificationsProvider,
-    RightToLeftProvider,
 } from '@proton/components';
 import { Portal } from '@proton/components/components/portal';
 import { ExtensionEndpoint } from '@proton/pass/types';
@@ -18,10 +17,8 @@ import { ThemeProvider } from '../../theme/ThemeProvider';
 
 export const ExtensionWindow: FC<{
     endpoint: ExtensionEndpoint;
-    className?: string;
-    style?: CSSProperties;
     children: (ready: boolean) => ReactNode;
-}> = ({ endpoint, style, className, children }) => {
+}> = ({ endpoint, children }) => {
     const [ready, setReady] = useState(false);
 
     useEffect(() => {
@@ -31,24 +28,18 @@ export const ExtensionWindow: FC<{
     }, []);
 
     return (
-        <>
-            <div style={style} className={className}>
-                <ConfigProvider config={config}>
-                    <RightToLeftProvider>
-                        <Icons />
-                        <ThemeProvider />
-                        <NotificationsProvider>
-                            <ModalsProvider>
-                                {children(ready)}
-                                <Portal>
-                                    <ModalsChildren />
-                                    <NotificationsChildren />
-                                </Portal>
-                            </ModalsProvider>
-                        </NotificationsProvider>
-                    </RightToLeftProvider>
-                </ConfigProvider>
-            </div>
-        </>
+        <ConfigProvider config={config}>
+            <Icons />
+            <ThemeProvider />
+            <NotificationsProvider>
+                <ModalsProvider>
+                    {children(ready)}
+                    <Portal>
+                        <ModalsChildren />
+                        <NotificationsChildren />
+                    </Portal>
+                </ModalsProvider>
+            </NotificationsProvider>
+        </ConfigProvider>
     );
 };
