@@ -218,10 +218,20 @@ const createPassCrypto = (): PassCryptoWorker => {
             assertHydrated(context);
 
             const shareManager = getShareManager(shareId);
-            const shareKey = shareManager.getVaultKey(latestItemKey.KeyRotation);
-            const itemKey = await processes.openItemKey({ encryptedItemKey: latestItemKey, vaultKey: shareKey });
+            const vaultKey = shareManager.getVaultKey(latestItemKey.KeyRotation);
+            const itemKey = await processes.openItemKey({ encryptedItemKey: latestItemKey, vaultKey });
 
             return processes.updateItem({ itemKey, content, lastRevision });
+        },
+
+        async moveItem({ destinationShareId, content }) {
+            assertHydrated(context);
+
+            const shareManager = getShareManager(destinationShareId);
+            const latestRotation = shareManager.getLatestRotation();
+            const destinationVaultKey = shareManager.getVaultKey(latestRotation);
+
+            return processes.moveItem({ destinationShareId, destinationVaultKey, content });
         },
 
         serialize: () => ({

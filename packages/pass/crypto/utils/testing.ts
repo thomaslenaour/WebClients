@@ -1,8 +1,10 @@
 import { CryptoProxy, PrivateKeyReference } from '@proton/crypto';
-import type { TypedOpenedShare } from '@proton/pass/types';
+import type { ShareGetResponse, ShareKeyResponse, TypedOpenedShare } from '@proton/pass/types';
 import { CONTENT_FORMAT_VERSION, ShareType } from '@proton/pass/types';
 import { ADDRESS_TYPE } from '@proton/shared/lib/constants';
 import type { Address, DecryptedKey } from '@proton/shared/lib/interfaces';
+
+import { createVault } from '../processes/vault/create-vault';
 
 /**
  * Load Crypto API outside of web workers, for testing purposes.
@@ -62,6 +64,35 @@ export function randomContents(length: number = 20): Uint8Array {
     }
     return new Uint8Array(a);
 }
+
+export const createRandomShareResponses = async (
+    userKey: DecryptedKey,
+    addressId: string,
+    content?: Uint8Array
+): Promise<[ShareGetResponse, ShareKeyResponse]> => {
+    const vault = await createVault({ content: content ?? randomContents(), userKey, addressId });
+
+    return [
+        {
+            ShareID: `shareId-${Math.random()}`,
+            VaultID: `vaultId-${Math.random()}`,
+            AddressID: vault.AddressID,
+            TargetType: ShareType.Vault,
+            TargetID: `targetId-${Math.random()}`,
+            Content: vault.Content,
+            Permission: 1,
+            ContentKeyRotation: 1,
+            ContentFormatVersion: CONTENT_FORMAT_VERSION,
+            ExpireTime: 0,
+            CreateTime: 0,
+        },
+        {
+            Key: vault.EncryptedVaultKey,
+            KeyRotation: 1,
+            CreateTime: 0,
+        },
+    ];
+};
 
 export const createRandomShare = <T extends ShareType>(targetType: T): TypedOpenedShare<T> => {
     const base = {

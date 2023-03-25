@@ -1,4 +1,4 @@
-import { ItemMoveToShareRequest, VaultKey } from '@proton/pass/types';
+import type { ItemMoveToShareRequest, VaultKey } from '@proton/pass/types';
 
 import { PassCryptoItemError } from '../../utils/errors';
 import { createItem } from './create-item';
