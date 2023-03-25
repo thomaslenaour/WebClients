@@ -17,7 +17,7 @@ export const PasswordGenerator: VFC<UsePasswordGeneratorResult> = ({
     setUseSpecialChars,
 }) => (
     <div className="flex-column flex gap-y-5">
-        <div className="pass-password-generator--preview text-center text-break-all text-monospace mb1 p1">
+        <div className="pass-password-generator--preview text-center text-break-all text-monospace mb-4 p-4">
             {getCharsGroupedByColor(password)}
         </div>
 
