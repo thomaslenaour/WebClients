@@ -19,6 +19,7 @@ import {
     TEST_KEY_ID,
     TEST_KEY_PASSWORD,
     createRandomKey,
+    createRandomShareResponses,
     randomContents,
     releaseCryptoProxy,
     setupCryptoProxyForTesting,
@@ -248,35 +249,16 @@ describe('PassCrypto', () => {
         test('should register only new vaults keys on shareManager', async () => {
             await PassCrypto.hydrate({ user, addresses: [address], keyPassword: TEST_KEY_PASSWORD });
 
-            /* create a vault */
-            const content = randomContents();
-            const vault = await PassCrypto.createVault(content);
-            const shareKey = {
-                Key: vault.EncryptedVaultKey,
-                KeyRotation: 1,
-                CreateTime: 0,
-            };
+            const [encryptedShare, shareKey] = await createRandomShareResponses(userKey, address.ID);
+            const shareId = encryptedShare.ShareID;
+            await PassCrypto.openShare({ encryptedShare, shareKeys: [shareKey] });
 
-            /* mock response */
-            const encryptedShare: ShareGetResponse = {
-                ShareID: `shareId-${Math.random()}`,
-                VaultID: `vaultId-${Math.random()}`,
-                AddressID: vault.AddressID,
-                TargetType: ShareType.Vault,
-                TargetID: `targetId-${Math.random()}`,
-                Content: vault.Content,
-                Permission: 1,
-                ContentKeyRotation: 1,
-                ContentFormatVersion: CONTENT_FORMAT_VERSION,
-                ExpireTime: 0,
-                CreateTime: 0,
-            };
-
-            const { shareId } = await PassCrypto.openShare({ encryptedShare, shareKeys: [shareKey] });
             const shareManager = PassCrypto.getShareManager(encryptedShare.ShareID);
 
             jest.spyOn(shareManager, 'addVaultKey');
 
+            const content = randomContents();
+            const vault = await processes.createVault({ content, userKey, addressId: address.ID });
             const newShareKey = {
                 Key: vault.EncryptedVaultKey,
                 KeyRotation: 2,
@@ -325,30 +307,7 @@ describe('PassCrypto', () => {
         test('should decrypt item with shareManager vault key', async () => {
             await PassCrypto.hydrate({ user, addresses: [address], keyPassword: TEST_KEY_PASSWORD });
 
-            /* create a vault */
-            const content = randomContents();
-            const vault = await PassCrypto.createVault(content);
-            const shareKey = {
-                Key: vault.EncryptedVaultKey,
-                KeyRotation: 1,
-                CreateTime: 0,
-            };
-
-            /* mock response */
-            const encryptedShare: ShareGetResponse = {
-                ShareID: `shareId-${Math.random()}`,
-                VaultID: `vaultId-${Math.random()}`,
-                AddressID: vault.AddressID,
-                TargetType: ShareType.Vault,
-                TargetID: `targetId-${Math.random()}`,
-                Content: vault.Content,
-                Permission: 1,
-                ContentKeyRotation: 1,
-                ContentFormatVersion: CONTENT_FORMAT_VERSION,
-                ExpireTime: 0,
-                CreateTime: 0,
-            };
-
+            const [encryptedShare, shareKey] = await createRandomShareResponses(userKey, address.ID);
             await PassCrypto.openShare({ encryptedShare, shareKeys: [shareKey] });
             const vaultKey = await processes.openVaultKey({ shareKey, userKeys: [userKey] });
 
@@ -374,6 +333,43 @@ describe('PassCrypto', () => {
             expect(openedItem.content).toEqual(itemContent);
             expect(openedItem.revision).toEqual(encryptedItem.Revision);
             expect(openedItem.state).toEqual(encryptedItem.State);
+        });
+    });
+
+    describe('PassCrypto::moveItem', () => {
+        afterEach(() => PassCrypto.clear());
+
+        test('should throw if PassCrypto not hydrated', async () => {
+            await expect(PassCrypto.moveItem({} as any)).rejects.toThrow(PassCryptoNotHydratedError);
+        });
+
+        test('should re-encrypt item and create new item key with correct destination vault key', async () => {
+            await PassCrypto.hydrate({ user, addresses: [address], keyPassword: TEST_KEY_PASSWORD });
+
+            const content = randomContents();
+            const [targetShare, targetVaultKey] = await createRandomShareResponses(userKey, address.ID);
+            await PassCrypto.openShare({ encryptedShare: targetShare, shareKeys: [targetVaultKey] });
+
+            const { Item } = await PassCrypto.moveItem({ content, destinationShareId: targetShare.ShareID });
+
+            expect(Item.ContentFormatVersion).toEqual(CONTENT_FORMAT_VERSION);
+            expect(Item.KeyRotation).toEqual(targetVaultKey.KeyRotation);
+
+            const encryptedItem: ItemRevisionContentsResponse = {
+                ItemID: `itemId-${Math.random()}`,
+                Revision: 1,
+                ContentFormatVersion: CONTENT_FORMAT_VERSION,
+                KeyRotation: 1,
+                Content: Item.Content,
+                ItemKey: Item.ItemKey,
+                State: ItemState.Active,
+                CreateTime: 0,
+                ModifyTime: 0,
+                RevisionTime: 0,
+            };
+
+            const movedItem = await PassCrypto.openItem({ shareId: targetShare.ShareID, encryptedItem });
+            expect(movedItem.content).toEqual(content);
         });
     });
 });

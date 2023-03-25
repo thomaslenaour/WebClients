@@ -3,6 +3,7 @@ import { Address, DecryptedKey, User } from '@proton/shared/lib/interfaces';
 import {
     ItemCreateRequest,
     ItemKeyResponse,
+    ItemMoveToShareRequest,
     ItemRevisionContentsResponse,
     ItemUpdateRequest,
     ShareGetResponse,
@@ -56,6 +57,7 @@ export interface PassCryptoWorker extends SerializableCryptoContext<PassCryptoSn
         latestItemKey: ItemKeyResponse;
         lastRevision: number;
     }) => Promise<ItemUpdateRequest>;
+    moveItem: (data: { destinationShareId: string; content: Uint8Array }) => Promise<ItemMoveToShareRequest>;
 }
 
 export type ShareContext<T extends ShareType = ShareType> = {
