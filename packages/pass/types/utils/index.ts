@@ -10,3 +10,5 @@ export type DefinedKeys<S extends {}, K = keyof S> = Extract<
     K,
     K extends keyof S ? (S[K] extends undefined ? never : K) : never
 >;
+
+export type ColorRGB = `${number}, ${number}, ${number}`;
