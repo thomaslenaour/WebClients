@@ -13,8 +13,8 @@ import { detectBrowser } from '../browser';
 import { createMemoryStorage } from './memory';
 import type { Storage, StorageData } from './types';
 
-const getItems = <T extends StorageData>(keys: (keyof T)[]): Promise<Partial<T>> => {
-    return new Promise((resolve, reject) => {
+const getItems = <T extends StorageData, K = keyof T>(keys: K[]): Promise<Partial<T>> =>
+    new Promise((resolve, reject) => {
         chrome.storage.session.get(keys, (items: any) => {
             let err = chrome.runtime.lastError;
             if (err) {
@@ -24,9 +24,8 @@ const getItems = <T extends StorageData>(keys: (keyof T)[]): Promise<Partial<T>>
             }
         });
     });
-};
 
-export const getItem = async <T extends StorageData>(key: keyof T): Promise<T[typeof key] | null> => {
+export const getItem = async <T extends StorageData, K extends keyof T = keyof T>(key: K): Promise<T[K] | null> => {
     try {
         return (await getItems<T>([key]))?.[key] ?? null;
     } catch (_) {
@@ -34,8 +33,8 @@ export const getItem = async <T extends StorageData>(key: keyof T): Promise<T[ty
     }
 };
 
-const setItems = <T extends StorageData>(items: Partial<T>): Promise<void> => {
-    return new Promise((resolve, reject) => {
+const setItems = <T extends StorageData>(items: Partial<T>): Promise<void> =>
+    new Promise((resolve, reject) => {
         chrome.storage.session.set(items, () => {
             let err = chrome.runtime.lastError;
             if (err) {
@@ -45,16 +44,12 @@ const setItems = <T extends StorageData>(items: Partial<T>): Promise<void> => {
             }
         });
     });
-};
 
-export const setItem = async <T extends StorageData>(key: keyof T, value: T[typeof key]): Promise<void> => {
-    try {
-        return await setItems({ [key]: value });
-    } catch (_) {}
-};
+export const setItem = <T extends StorageData, K extends keyof T = keyof T>(key: K, value: T[K]): Promise<void> =>
+    setItems({ [key]: value });
 
-export const removeItems = async <T extends StorageData>(keys: (keyof T)[]): Promise<void> => {
-    return new Promise((resolve, reject) => {
+export const removeItems = <T extends StorageData, K = keyof T>(keys: K[]): Promise<void> =>
+    new Promise((resolve, reject) => {
         chrome.storage.session.remove(keys as string[], () => {
             let err = chrome.runtime.lastError;
             if (err) {
@@ -64,19 +59,10 @@ export const removeItems = async <T extends StorageData>(keys: (keyof T)[]): Pro
             }
         });
     });
-};
 
-const removeItem = async <T extends StorageData>(key: keyof T): Promise<void> => {
-    try {
-        return await removeItems([key]);
-    } catch (_) {}
-};
+const removeItem = <T extends StorageData, K = keyof T>(key: K): Promise<void> => removeItems([key]);
 
-const clear = async (): Promise<void> => {
-    try {
-        return await chrome.storage.session.clear();
-    } catch (_) {}
-};
+const clear = (): Promise<void> => chrome.storage.session.clear();
 
 const chromeSessionStorage: Storage = {
     getItems,

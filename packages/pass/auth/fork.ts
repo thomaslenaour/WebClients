@@ -6,10 +6,11 @@ import { PullForkResponse, RefreshSessionResponse } from '@proton/shared/lib/aut
 import { APPS, SSO_PATHS } from '@proton/shared/lib/constants';
 import { withAuthHeaders, withUIDHeaders } from '@proton/shared/lib/fetch/headers';
 import { encodeBase64URL, uint8ArrayToString } from '@proton/shared/lib/helpers/encoding';
-import { User as tsUser } from '@proton/shared/lib/interfaces';
+import type { User as tsUser } from '@proton/shared/lib/interfaces';
 
 import { browserSessionStorage } from '../extension/storage';
-import { Api } from '../types';
+import type { StorageData } from '../extension/storage/types';
+import type { Api } from '../types';
 
 export const requestFork = async (host: string) => {
     const state = encodeBase64URL(uint8ArrayToString(crypto.getRandomValues(new Uint8Array(32))));
@@ -19,7 +20,7 @@ export const requestFork = async (host: string) => {
     searchParams.append('state', state);
     searchParams.append('t', FORK_TYPE.SWITCH);
 
-    await browserSessionStorage.setItem(`f${state}`, JSON.stringify({}));
+    await browserSessionStorage.setItem<StorageData>(`f${state}`, JSON.stringify({}));
 
     return `${host}${SSO_PATHS.AUTHORIZE}?${searchParams.toString()}`;
 };
@@ -40,7 +41,7 @@ export const consumeFork = async ({
     trusted: boolean;
 }) => {
     const stateKey = `f${state}`;
-    const maybeStoredState = await browserSessionStorage.getItem(stateKey);
+    const maybeStoredState = await browserSessionStorage.getItem<StorageData>(stateKey);
 
     if (!maybeStoredState) {
         throw new Error('Invalid state');
