@@ -104,7 +104,10 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                             handleVaultEditClick={(vault: VaultShare) =>
                                 setVaultModalProps({ open: true, payload: { type: 'edit', vault } })
                             }
-                            handleVaultCreateClick={() => setVaultModalProps({ open: true, payload: { type: 'new' } })}
+                            handleVaultCreateClick={() => {
+                                setVaultModalProps({ open: true, payload: { type: 'new' } });
+                                close();
+                            }}
                             inTrash={inTrash}
                             handleRestoreTrash={handleRestoreTrash}
                             handleEmptyTrash={() => setDeleteAllConfirm(true)}
