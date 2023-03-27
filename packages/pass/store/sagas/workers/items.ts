@@ -14,6 +14,14 @@ import type {
 import { parseOpenedItem, serializeItemContent } from '@proton/pass/utils/protobuf';
 import { getEpoch } from '@proton/pass/utils/time';
 
+export const parseItemRevision = async (
+    shareId: string,
+    encryptedItem: ItemRevisionContentsResponse
+): Promise<ItemRevision> => {
+    const openedItem = await PassCrypto.openItem({ shareId, encryptedItem });
+    return parseOpenedItem({ openedItem, shareId });
+};
+
 /**
  * Item creation API request for all items
  * except for alias items
@@ -115,6 +123,25 @@ export const editItem = async (
     return Item!;
 };
 
+export const moveItem = async (
+    item: ItemRevision,
+    shareId: string,
+    destinationShareId: string
+): Promise<ItemRevision> => {
+    const content = serializeItemContent(item.data);
+    const data = await PassCrypto.moveItem({ destinationShareId, content });
+
+    const encryptedItem = (
+        await api({
+            url: `pass/v1/share/${shareId}/item/${item.itemId}/share`,
+            method: 'put',
+            data,
+        })
+    ).Item!;
+
+    return parseItemRevision(destinationShareId, encryptedItem);
+};
+
 export const trashItem = (item: ItemRevision) =>
     api({
         url: `pass/v1/share/${item.shareId}/item/trash`,
@@ -137,14 +164,6 @@ export const updateItemLastUseTime = async (shareId: string, itemId: string) =>
             data: { LastUseTime: getEpoch() },
         })
     ).Revision!;
-
-export const parseItemRevision = async (
-    shareId: string,
-    encryptedItem: ItemRevisionContentsResponse
-): Promise<ItemRevision> => {
-    const openedItem = await PassCrypto.openItem({ shareId, encryptedItem });
-    return parseOpenedItem({ openedItem, shareId });
-};
 
 const requestAllItemsForShareId = async (shareId: string): Promise<ItemRevisionContentsResponse[]> => {
     const pageIterator = async (Since?: string): Promise<ItemRevisionContentsResponse[]> => {

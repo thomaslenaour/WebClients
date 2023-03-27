@@ -109,6 +109,36 @@ export const itemEditSync = createAction(
     (payload: { item: ItemRevision; itemId: string; shareId: string }) => ({ payload })
 );
 
+export const itemMoveIntent = createOptimisticAction(
+    'item move intent',
+    (payload: { item: ItemRevision; shareId: string; optimisticId: string }) => withCacheBlock({ payload }),
+    ({ payload }) => getOptimisticItemActionId(payload)
+);
+
+export const itemMoveFailure = createOptimisticAction(
+    'item move failure',
+    (payload: { optimisticId: string; shareId: string }, error: unknown) =>
+        pipe(
+            withCacheBlock,
+            withNotification({
+                type: 'error',
+                text: c('Error').t`Moving item failed`,
+                error,
+            })
+        )({ payload, error }),
+    ({ payload }) => getOptimisticItemActionId(payload)
+);
+
+export const itemMoveSuccess = createOptimisticAction(
+    'item move success',
+    (payload: { item: ItemRevision; optimisticId: string; shareId: string }) =>
+        withNotification({
+            type: 'success',
+            text: c('Info').t`Item successfully moved`,
+        })({ payload }),
+    ({ payload }) => getOptimisticItemActionId(payload)
+);
+
 export const itemTrashIntent = createOptimisticAction(
     'item trash intent',
     (
