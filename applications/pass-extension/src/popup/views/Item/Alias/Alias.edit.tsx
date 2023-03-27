@@ -27,8 +27,11 @@ export const AliasEdit: VFC<ItemEditProps<'alias'>> = ({ vault, revision, onCanc
     const [ready, setReady] = useState(false);
     const mailboxesForAlias = useSelector(selectMailboxesForAlias(aliasEmail!));
 
+    const initialValues = { name, note, mailboxes: [] };
+
     const form = useFormik<EditAliasFormValues>({
-        initialValues: { name, note, mailboxes: [] },
+        initialValues,
+        initialErrors: validateEditAliasForm(initialValues),
         onSubmit: ({ name, note, mailboxes }) => {
             onSubmit({
                 ...uneditable,

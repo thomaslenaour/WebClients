@@ -23,7 +23,7 @@ export type LoginItemFormValues<WithAlias extends boolean = boolean> = MaybeWith
     BaseLoginItemFormValues
 >;
 
-export type EditLoginItemFormValues = BaseLoginItemFormValues;
+export type EditLoginItemFormValues = LoginItemFormValues | BaseLoginItemFormValues;
 export type NewLoginItemFormValues = LoginItemFormValues;
 
 const validateLoginFormBase = (values: BaseLoginItemFormValues): FormikErrors<BaseLoginItemFormValues> => {
