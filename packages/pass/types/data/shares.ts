@@ -1,3 +1,5 @@
+import { VaultColor, VaultIcon } from '../protobuf/vault-v1';
+
 export enum ShareType {
     Vault = 1,
     Item = 2,
@@ -6,6 +8,10 @@ export enum ShareType {
 export type VaultShareContent = {
     name: string;
     description: string;
+    display: {
+        icon?: VaultIcon;
+        color?: VaultColor;
+    };
 };
 
 export type ItemShareContent = {};

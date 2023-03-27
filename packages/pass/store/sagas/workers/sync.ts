@@ -56,6 +56,7 @@ export function* synchronize(state: State, type: SyncType): Generator<unknown, S
             (yield createVault({
                 name: 'Default',
                 description: 'Default vault',
+                display: {},
             })) as Share<ShareType.Vault>
         );
     }

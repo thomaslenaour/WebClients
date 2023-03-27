@@ -8,6 +8,7 @@ describe('VaultContentTransformer', () => {
         const source: ShareContent<ShareType.Vault> = {
             name: getRandomString(10),
             description: getRandomString(10),
+            display: {},
         };
 
         const encoded = encodeVaultContent(source);

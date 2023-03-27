@@ -17,6 +17,7 @@ const EXPORT_TEST_PAYLOAD: ExportPayload = {
         [EXPORT_TEST_VAULT_ID]: {
             name: 'Default vault',
             description: 'This is my super secret test vault',
+            display: {},
             items: [
                 {
                     itemId: `itemId-${Math.random()}`,
