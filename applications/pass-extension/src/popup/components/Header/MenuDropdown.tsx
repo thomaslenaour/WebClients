@@ -14,7 +14,7 @@ import {
     Icon,
     usePopperAnchor,
 } from '@proton/components';
-import { isFirefox as _isFirefox } from '@proton/pass/extension/browser/firefox';
+import { detectBrowser, getWebStoreUrl } from '@proton/pass/extension/browser';
 import { emptyTrashIntent, restoreTrashIntent, selectCanLockSession, vaultDeleteIntent } from '@proton/pass/store';
 import type { MaybeNull, VaultShare } from '@proton/pass/types';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
@@ -73,7 +73,7 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
         window.close();
     };
 
-    const isFirefox = _isFirefox();
+    const webStoreURL = getWebStoreUrl(detectBrowser());
 
     return (
         <>
@@ -125,15 +125,10 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
 
                         <hr className="dropdown-item-hr my0-5" aria-hidden="true" />
 
-                        {!isFirefox && (
+                        {webStoreURL && (
                             <DropdownMenuButton
                                 className="flex flex-align-items-center text-left"
-                                onClick={() =>
-                                    window.open(
-                                        'https://chrome.google.com/webstore/detail/proton-pass/ghmbeldphafepmbegfdlkpapadhbakde',
-                                        '_blank'
-                                    )
-                                }
+                                onClick={() => window.open(webStoreURL, '_blank')}
                             >
                                 <Icon name="star" className="mr0-5 color-weak" />
                                 {c('Action').t`Rate Pass`}

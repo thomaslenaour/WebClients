@@ -9,7 +9,7 @@
  * safely port it to webextension-polyfill
  * ⚠️ ⚠️ ⚠️
  */
-import { isFirefox } from '../browser/firefox';
+import { detectBrowser } from '../browser';
 import { createMemoryStorage } from './memory';
 import type { Storage, StorageData } from './types';
 
@@ -88,4 +88,4 @@ const chromeSessionStorage: Storage = {
     clear,
 };
 
-export default isFirefox() ? createMemoryStorage() : chromeSessionStorage;
+export default detectBrowser() === 'firefox' ? createMemoryStorage() : chromeSessionStorage;
