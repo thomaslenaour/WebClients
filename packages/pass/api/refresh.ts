@@ -2,7 +2,7 @@ import { setRefreshCookies as refreshTokens } from '@proton/shared/lib/api/auth'
 import { retryHandler } from '@proton/shared/lib/api/helpers/retryHandler';
 import { InactiveSessionError } from '@proton/shared/lib/api/helpers/withApiHandlers';
 import { createOnceHandler } from '@proton/shared/lib/apiHandlers';
-import { RefreshSessionResponse } from '@proton/shared/lib/authentication/interface';
+import type { RefreshSessionResponse } from '@proton/shared/lib/authentication/interface';
 import { OFFLINE_RETRY_ATTEMPTS_MAX, OFFLINE_RETRY_DELAY, RETRY_ATTEMPTS_MAX } from '@proton/shared/lib/constants';
 import { HTTP_ERROR_CODES } from '@proton/shared/lib/errors';
 import { withUIDHeaders } from '@proton/shared/lib/fetch/headers';
@@ -12,7 +12,8 @@ import { wait } from '@proton/shared/lib/helpers/promise';
 import randomIntFromInterval from '@proton/utils/randomIntFromInterval';
 
 import { browserLocalStorage } from '../extension/storage';
-import { ApiContext, Maybe } from '../types';
+import type { StorageData } from '../extension/storage/types';
+import type { ApiContext, Maybe } from '../types';
 
 export type RefreshHandler = (responseDate?: Date) => Promise<void>;
 
@@ -24,18 +25,18 @@ type CreateRefreshHandlerOptions = {
 const getRefreshKey = (UID: string): string => encodeBase64URL(`r-${UID}`);
 
 export const setLastRefreshDate = async (UID: string, now: Date): Promise<void> => {
-    await browserLocalStorage.setItem(getRefreshKey(UID), `${+now}`);
+    await browserLocalStorage.setItem<StorageData>(getRefreshKey(UID), `${+now}`);
 };
 
 export const getLastRefreshDate = async (UID: string): Promise<Maybe<Date>> => {
-    const oldString = await browserLocalStorage.getItem<Record<string, string>>(getRefreshKey(UID));
+    const oldString = await browserLocalStorage.getItem<StorageData>(getRefreshKey(UID));
     const parsed = Number.parseInt(oldString ?? '', 10);
     const date = new Date(parsed);
     return Number.isNaN(+date) ? undefined : date;
 };
 
 export const removeLastRefreshDate = async (UID: string): Promise<void> => {
-    await browserLocalStorage.removeItem(getRefreshKey(UID));
+    await browserLocalStorage.removeItem<StorageData>(getRefreshKey(UID));
 };
 
 /**

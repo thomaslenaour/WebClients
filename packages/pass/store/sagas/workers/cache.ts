@@ -34,7 +34,7 @@ const getCachedState = async (sessionLockToken?: string): Promise<Maybe<Extensio
     const encryptedSnapshot = await browserLocalStorage.getItem('snapshot');
     const cacheSalt = await browserLocalStorage.getItem('salt');
 
-    if (cacheSalt) {
+    if (encryptedDataString && encryptedSnapshot && cacheSalt) {
         const cacheKey = await getCacheEncryptionKey(stringToUint8Array(cacheSalt), sessionLockToken);
 
         const [state, snapshot] = await Promise.all([

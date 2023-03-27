@@ -21,10 +21,10 @@ import type { Storage, StorageData } from './types';
 
 const MEMORY_STORAGE_EVENT = 'MEMORY_STORAGE_EVENT';
 
-type StorageAction<T extends StorageData = StorageData> =
+type StorageAction<T extends StorageData = StorageData, K extends keyof T = keyof T> =
     | { action: 'get' }
     | { action: 'set'; items: Partial<T> }
-    | { action: 'remove'; keys: (keyof T)[] }
+    | { action: 'remove'; keys: K[] }
     | { action: 'clear' };
 
 type StorageMessage<T extends StorageData = StorageData> = { type: typeof MEMORY_STORAGE_EVENT } & StorageAction<T>;
@@ -43,7 +43,7 @@ const isBackground = async (): Promise<boolean> => {
 export const createMemoryStorage = (): Storage => {
     const context: { store: any } = { store: {} };
 
-    const applyStorageAction = async <T extends StorageData, Action extends StorageAction<T>['action']>(
+    const applyStorageAction = <T extends StorageData, Action extends StorageAction<T>['action']>(
         action: Extract<StorageAction<T>, { action: Action }>
     ): Promise<Action extends 'get' ? T : void> =>
         browser.runtime.sendMessage(browser.runtime.id, { type: MEMORY_STORAGE_EVENT, ...action });
@@ -51,7 +51,7 @@ export const createMemoryStorage = (): Storage => {
     const resolveStorage = async <T extends StorageData>(): Promise<T> =>
         (await isBackground()) ? (context.store as T) : applyStorageAction<T, 'get'>({ action: 'get' });
 
-    const getItems = async <T extends StorageData>(keys: (keyof T)[]): Promise<Partial<T>> => {
+    const getItems = async <T extends StorageData, K extends keyof T = keyof T>(keys: K[]): Promise<Partial<T>> => {
         const store = await resolveStorage();
         return keys.reduce(
             (result, key) => ({
@@ -62,7 +62,7 @@ export const createMemoryStorage = (): Storage => {
         );
     };
 
-    const getItem = async <T extends StorageData>(key: keyof T): Promise<T[typeof key] | null> => {
+    const getItem = async <T extends StorageData, K extends keyof T = keyof T>(key: K): Promise<T[K] | null> => {
         const store = await resolveStorage();
         return Promise.resolve((store as T)?.[key] ?? null);
     };
@@ -75,10 +75,10 @@ export const createMemoryStorage = (): Storage => {
         context.store = { ...context.store, ...items };
     };
 
-    const setItem = async <T extends StorageData>(key: keyof T, value: T[typeof key]): Promise<void> =>
-        setItems({ [key]: value } as Partial<T>);
+    const setItem = async <T extends StorageData, K extends keyof T = keyof T>(key: K, value: T[K]): Promise<void> =>
+        setItems({ [key]: value });
 
-    const removeItems = async <T extends StorageData>(keys: (keyof T)[]): Promise<void> => {
+    const removeItems = async <T extends StorageData, K extends keyof T = keyof T>(keys: K[]): Promise<void> => {
         if (!(await isBackground())) {
             return applyStorageAction<T, 'remove'>({ action: 'remove', keys });
         }
@@ -86,7 +86,8 @@ export const createMemoryStorage = (): Storage => {
         keys.forEach((key) => delete context.store[key]);
     };
 
-    const removeItem = async <T extends StorageData>(key: keyof T): Promise<void> => removeItems([key]);
+    const removeItem = async <T extends StorageData, K extends keyof T = keyof T>(key: K): Promise<void> =>
+        removeItems<T>([key]);
 
     const clear = async (): Promise<void> => {
         if (!(await isBackground())) {
@@ -131,5 +132,5 @@ export const createMemoryStorage = (): Storage => {
         removeItems,
         removeItem,
         clear,
-    };
+    } as Storage;
 };
