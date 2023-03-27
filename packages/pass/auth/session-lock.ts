@@ -11,7 +11,7 @@ export const isSessionLocked = async () => {
         const { Code } = await api({ url: 'pass/v1/user/session/lock/check', method: 'get' });
         return Code !== ResponseCodeSuccess.ProtonResponseCode_1000;
     } catch (e) {
-        return true;
+        return false;
     }
 };
 
