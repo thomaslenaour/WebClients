@@ -1,9 +1,9 @@
-import type { FormikErrors } from 'formik';
+import { type FormikErrors } from 'formik';
 import { c } from 'ttag';
 
 import { isEmptyString } from '@proton/pass/utils/string';
 
-import { VaultFormValues } from './Vault.form';
+import { VaultFormValues } from '../../components/Vault/VaultForm';
 
 export const validateVaultValues = async ({ name }: VaultFormValues) => {
     let errors: FormikErrors<VaultFormValues> = {};
