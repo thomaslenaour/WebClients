@@ -34,7 +34,7 @@ function* createVaultForImport(vaultName: string) {
 
     yield put(
         vaultCreationIntent(
-            { id: uniqid(), content: { name: vaultName, description: c('Info').t`Imported on ${date}` } },
+            { id: uniqid(), content: { name: vaultName, description: c('Info').t`Imported on ${date}`, display: {} } },
             (action) => (vaultCreationSuccess.match(action) ? resolver(action.payload.share.shareId) : undefined)
         )
     );

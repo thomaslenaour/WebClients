@@ -4,6 +4,10 @@ export const encodeVaultContent = (content: ShareContent<ShareType.Vault>): Uint
     const creation = Vault.create({
         name: content.name,
         description: content.description,
+        display: {
+            color: content.display?.color,
+            icon: content.display?.icon,
+        },
     });
 
     return Vault.toBinary(creation);
@@ -11,9 +15,12 @@ export const encodeVaultContent = (content: ShareContent<ShareType.Vault>): Uint
 
 export const decodeVaultContent = (content: Uint8Array): ShareContent<ShareType.Vault> => {
     const decoded = Vault.fromBinary(content);
-
     return {
         name: decoded.name,
         description: decoded.description,
+        display: {
+            color: decoded.display?.color,
+            icon: decoded.display?.icon,
+        },
     };
 };
