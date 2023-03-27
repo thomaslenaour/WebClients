@@ -45,29 +45,34 @@ const createPassCrypto = (): PassCryptoWorker => {
         async hydrate({ user, addresses, keyPassword, snapshot }) {
             logger.info('[PassCrypto::Worker] Hydrating...');
 
-            const userKeys = await getDecryptedUserKeysHelper(user, keyPassword);
-            const activeAddresses = addresses.filter(getSupportedAddresses);
+            try {
+                const userKeys = await getDecryptedUserKeysHelper(user, keyPassword);
+                const activeAddresses = addresses.filter(getSupportedAddresses);
 
-            if (userKeys.length === 0) throw new PassCryptoHydrationError('No user keys found');
-            if (activeAddresses.length === 0) throw new PassCryptoHydrationError('No active user addresses found');
+                if (userKeys.length === 0) throw new PassCryptoHydrationError('No user keys found');
+                if (activeAddresses.length === 0) throw new PassCryptoHydrationError('No active user addresses found');
 
-            context.user = user;
-            context.addresses = addresses;
-            context.primaryAddress = activeAddresses[0];
-            context.userKeys = userKeys;
-            context.primaryUserKey = userKeys[0];
+                context.user = user;
+                context.addresses = addresses;
+                context.primaryAddress = activeAddresses[0];
+                context.userKeys = userKeys;
+                context.primaryUserKey = userKeys[0];
 
-            if (snapshot) {
-                context.shareManagers = new Map(
-                    await Promise.all(
-                        Object.values(snapshot.shareManagers).map(
-                            async ([shareId, shareSnapshot]) =>
-                                [shareId, await createShareManager.fromSnapshot(shareSnapshot)] as const
+                if (snapshot) {
+                    context.shareManagers = new Map(
+                        await Promise.all(
+                            Object.values(snapshot.shareManagers).map(
+                                async ([shareId, shareSnapshot]) =>
+                                    [shareId, await createShareManager.fromSnapshot(shareSnapshot)] as const
+                            )
                         )
-                    )
-                );
+                    );
 
-                logger.info('[PassCrypto::Worker] Hydrated from snapshot');
+                    logger.info('[PassCrypto::Worker] Hydrated from snapshot');
+                }
+            } catch (e) {
+                logger.warn('[PassCrypto::Worker] hydration failed', e);
+                throw new PassCryptoHydrationError('Hydration failure');
             }
         },
 
