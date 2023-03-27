@@ -1,32 +1,89 @@
+import { useState } from 'react';
+
+import type { FormikContextType } from 'formik';
 import { c } from 'ttag';
 
-import { Option } from '@proton/components';
+import { Button } from '@proton/atoms';
+import { Icon, Option } from '@proton/components';
 
-import AliasPreview from '../../../../shared/components/alias/Alias.preview';
-import { useAliasOptions } from '../../../../shared/hooks';
+import type { UseAliasOptionsResult } from '../../../../shared/hooks/useAliasOptions';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
 import { Field } from '../../../components/Fields/Field';
 import { SelectFieldWIP } from '../../../components/Fields/SelectField';
 import { TextFieldWIP } from '../../../components/Fields/TextField';
-import { AliasFormProps, AliasFormValues } from './Alias.validation';
+import { AliasFormValues } from './Alias.validation';
+
+type AliasFormProps<V extends AliasFormValues> = {
+    form: FormikContextType<V>;
+    aliasOptionsLoading: UseAliasOptionsResult['aliasOptionsLoading'];
+    aliasOptions: UseAliasOptionsResult['aliasOptions'];
+};
 
 export const AliasForm = <V extends AliasFormValues = AliasFormValues>({
+    aliasOptionsLoading,
+    aliasOptions,
     form,
-    shareId,
-    onAliasOptionsLoaded,
 }: AliasFormProps<V>) => {
-    const { aliasOptions, aliasOptionsLoading } = useAliasOptions({ shareId, onAliasOptionsLoaded });
-
-    const displayedPrefix = form.values.aliasPrefix || '<prefix>';
+    const [showAdvanced, setShowAdvanced] = useState(false);
     const disabled = aliasOptionsLoading || aliasOptions === null;
+
+    const mailboxesSelect = (
+        <FieldsetCluster>
+            <Field
+                name="mailboxes"
+                label={c('Label').t`Forwarded to`}
+                placeholder={c('Label').t`Select an email address`}
+                component={SelectFieldWIP}
+                icon="arrow-up-and-right-big"
+                multiple
+                disabled={disabled || aliasOptions.mailboxes.length <= 1}
+                loading={aliasOptionsLoading}
+            >
+                {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
+                    <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
+                        {mailbox.email}
+                    </Option>
+                ))}
+            </Field>
+        </FieldsetCluster>
+    );
+
+    if (!showAdvanced) {
+        return (
+            <>
+                <div className="flex flex-justify-end mb-2">
+                    <Button shape="ghost" onClick={() => setShowAdvanced(true)}>
+                        <span className="flex flex-align-items-center">
+                            <Icon name="cog-wheel" className="mr0-5" />
+                            {c('Action').t`Advanced options`}
+                        </span>
+                    </Button>
+                </div>
+                {mailboxesSelect}
+            </>
+        );
+    }
 
     return (
         <>
-            <AliasPreview loading={disabled} prefix={displayedPrefix} suffix={form.values.aliasSuffix?.value ?? ''} />
-
             <FieldsetCluster>
-                <Field name="aliasPrefix" label={c('Label').t`Prefix`} component={TextFieldWIP} />
-                <Field name="aliasSuffix" label={c('Label').t`Suffix`} component={SelectFieldWIP} disabled={disabled}>
+                <Field
+                    name="aliasPrefix"
+                    label={c('Label').t`Prefix`}
+                    placeholder={c('Placeholder').t`Enter a prefix`}
+                    component={TextFieldWIP}
+                    onFocus={() => {
+                        form.setFieldTouched('aliasPrefix', true);
+                    }}
+                />
+                <Field
+                    name="aliasSuffix"
+                    label={c('Label').t`Suffix`}
+                    placeholder={c('Placeholder').t`Select a suffix`}
+                    component={SelectFieldWIP}
+                    disabled={disabled}
+                    loading={aliasOptionsLoading}
+                >
                     {(aliasOptions?.suffixes ?? []).map((suffix) => (
                         <Option key={suffix.value} value={suffix} title={suffix.value}>
                             {suffix.value}
@@ -34,25 +91,7 @@ export const AliasForm = <V extends AliasFormValues = AliasFormValues>({
                     ))}
                 </Field>
             </FieldsetCluster>
-
-            <FieldsetCluster>
-                <Field
-                    name="mailboxes"
-                    label={c('Label').t`Forwarded to`}
-                    placeholder={c('Label').t`Select an email address`}
-                    component={SelectFieldWIP}
-                    icon="arrow-up-and-right-big"
-                    multiple
-                    disabled={disabled || aliasOptions.mailboxes.length <= 1}
-                    loading={aliasOptionsLoading}
-                >
-                    {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
-                        <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
-                            {mailbox.email}
-                        </Option>
-                    ))}
-                </Field>
-            </FieldsetCluster>
+            {mailboxesSelect}
         </>
     );
 };
