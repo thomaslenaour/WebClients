@@ -5,10 +5,10 @@ import { c } from 'ttag';
 import uniqid from 'uniqid';
 
 import { getEpoch } from '@proton/pass/utils/time/get-epoch';
-import { normalize } from '@proton/shared/lib/helpers/string';
 
 import { useAliasOptions } from '../../../../shared/hooks/useAliasOptions';
 import { ItemNewProps } from '../../../../shared/items';
+import { deriveAliasPrefixFromName } from '../../../../shared/items/alias';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
 import { ValueControl } from '../../../components/Controls/ValueControl';
 import { Field } from '../../../components/Fields/Field';
@@ -20,18 +20,6 @@ import { AliasForm } from './Alias.form';
 import { NewAliasFormValues, validateNewAliasForm } from './Alias.validation';
 
 const FORM_ID = 'new-alias';
-
-function deriveAliasPrefixFromName(name: string) {
-    // Normalize unicode representation of the string
-    // Remove diacritics (accents)
-    return (
-        normalize(name, true)
-            // Ensure only allowed characters in the output
-            .replace(/[^a-z0-9\-\_.]/g, '')
-            // 20 max characters length for the auto-derived alias name
-            .slice(0, 20)
-    );
-}
 
 export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ shareId, onSubmit, onCancel }) => {
     const [ready, setReady] = useState(false);
@@ -77,6 +65,7 @@ export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ shareId, onSubmit, onCanc
         },
         validate: validateNewAliasForm,
         validateOnChange: true,
+        validateOnMount: true,
     });
 
     const { aliasOptions, aliasOptionsLoading } = useAliasOptions({

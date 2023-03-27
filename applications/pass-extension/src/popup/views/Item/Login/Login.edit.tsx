@@ -5,7 +5,7 @@ import { c } from 'ttag';
 
 import { isEmptyString } from '@proton/pass/utils/string';
 
-import { ItemEditProps } from '../../../../shared/items';
+import type { ItemEditProps } from '../../../../shared/items';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
 import { Field } from '../../../components/Fields/Field';
 import { PasswordFieldWIP } from '../../../components/Fields/PasswordField';
@@ -14,7 +14,7 @@ import { TextAreaFieldWIP } from '../../../components/Fields/TextareaField';
 import { TitleField } from '../../../components/Fields/TitleField';
 import { UrlGroupFieldCluster, createNewUrl } from '../../../components/Fields/UrlGroupFieldCluster';
 import { ItemEditPanel } from '../../../components/Panel/ItemEditPanel';
-import { EditLoginItemFormValues, validateEditLoginForm } from './Login.validation';
+import { validateEditLoginForm, type EditLoginItemFormValues } from './Login.validation';
 
 const FORM_ID = 'edit-login';
 
@@ -63,6 +63,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                     <FieldsetCluster>
                         <Field name="name" label={c('Label').t`Title`} component={TitleField} />
                     </FieldsetCluster>
+
                     <FieldsetCluster>
                         <Field
                             name="username"

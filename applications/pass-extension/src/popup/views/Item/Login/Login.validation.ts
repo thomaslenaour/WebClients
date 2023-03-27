@@ -1,10 +1,10 @@
-import { FormikErrors } from 'formik';
+import type { FormikErrors } from 'formik';
 import { c } from 'ttag';
 
 import { isEmptyString } from '@proton/pass/utils/string';
 
-import { AliasFormValues, validateAliasForm } from '../Alias/Alias.validation';
-import { UrlGroupValues, validateUrl, validateUrls } from '../../../components/Fields/UrlGroupFieldCluster';
+import { type UrlGroupValues, validateUrl, validateUrls } from '../../../components/Fields/UrlGroupFieldCluster';
+import { type AliasFormValues, validateAliasForm } from '../Alias/Alias.validation';
 
 type BaseLoginItemFormValues = {
     name: string;
@@ -14,19 +14,23 @@ type BaseLoginItemFormValues = {
     note: string;
 } & UrlGroupValues;
 
-export type NewLoginItemFormValues =
-    | ({ withAlias: false } & BaseLoginItemFormValues)
-    | ({ withAlias: true } & BaseLoginItemFormValues & AliasFormValues);
+type MaybeWithAlias<WithAlias extends boolean, T extends {}> = WithAlias extends true
+    ? T & { withAlias: true } & AliasFormValues
+    : T & { withAlias: false };
+
+export type LoginItemFormValues<WithAlias extends boolean = boolean> = MaybeWithAlias<
+    WithAlias,
+    BaseLoginItemFormValues
+>;
 
 export type EditLoginItemFormValues = BaseLoginItemFormValues;
+export type NewLoginItemFormValues = LoginItemFormValues;
 
-const validateLoginFormBase = (
-    values: NewLoginItemFormValues | EditLoginItemFormValues
-): FormikErrors<NewLoginItemFormValues | EditLoginItemFormValues> => {
-    const errors: FormikErrors<NewLoginItemFormValues | EditLoginItemFormValues> = {};
+const validateLoginFormBase = (values: BaseLoginItemFormValues): FormikErrors<BaseLoginItemFormValues> => {
+    const errors: FormikErrors<BaseLoginItemFormValues> = {};
 
     if (isEmptyString(values.name)) {
-        errors.name = c('Warning').t`Name is required`;
+        errors.name = c('Warning').t`Title is required`;
     }
 
     const urlError = validateUrl(values);
@@ -41,12 +45,7 @@ const validateLoginFormBase = (
 
 export const validateNewLoginForm = (values: NewLoginItemFormValues): FormikErrors<NewLoginItemFormValues> => {
     const errors: FormikErrors<NewLoginItemFormValues> = validateLoginFormBase(values);
-
-    const aliasErrors = values.withAlias ? validateAliasForm({ ...values, aliasPrefix: values.username }) : {};
-
-    if (aliasErrors.aliasPrefix) {
-        errors.username = c('Warning').t`Username from created alias is invalid`;
-    }
+    const aliasErrors = values.withAlias && validateAliasForm(values);
 
     return {
         ...errors,
@@ -55,6 +54,6 @@ export const validateNewLoginForm = (values: NewLoginItemFormValues): FormikErro
 };
 
 export const validateEditLoginForm = (values: EditLoginItemFormValues): FormikErrors<EditLoginItemFormValues> => {
-    const errors: FormikErrors<NewLoginItemFormValues> = validateLoginFormBase(values);
+    const errors: FormikErrors<EditLoginItemFormValues> = validateLoginFormBase(values);
     return errors;
 };
