@@ -47,6 +47,8 @@
   --background-strong: rgb(18 18 27 / 0.8);
   --background-invert: white;
 
+  --focus-ring: rgb(255 255 255 / 0.5); /* FIXME */
+
   --interaction-norm-minor-2: rgb(97 96 253 / 0.08);
   --interaction-norm-minor-1: rgb(97 96 253 / 0.16);
   --interaction-norm: rgb(97 96 253 / 0.8);
