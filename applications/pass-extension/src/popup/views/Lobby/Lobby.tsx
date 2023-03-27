@@ -3,7 +3,7 @@ import { c } from 'ttag';
 import { Button } from '@proton/atoms';
 import { popupMessage, sendMessage } from '@proton/pass/extension/message';
 import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
-import { workerBusy } from '@proton/pass/utils/worker';
+import { workerBusy, workerErrored } from '@proton/pass/utils/worker';
 import { BRAND_NAME } from '@proton/shared/lib/constants';
 
 import logo from '../../../../public/assets/protonpass-logo.svg';
@@ -23,7 +23,7 @@ const Lobby = () => {
     const login = useNavigateToLogin();
 
     const handleSignInClick = async () =>
-        state.status === WorkerStatus.RESUMING_FAILED
+        workerErrored(state.status)
             ? sendMessage(popupMessage({ type: WorkerMessageType.WORKER_INIT, payload: { sync: true } }))
             : login();
 
@@ -36,7 +36,7 @@ const Lobby = () => {
                     <Button shape="solid" color={'norm'} onClick={handleSignInClick} disabled={busy} loading={busy}>
                         {!busy && (
                             <>
-                                {state.status === WorkerStatus.RESUMING_FAILED
+                                {workerErrored(state.status)
                                     ? c('Action').t`Sign back in`
                                     : c('Action').t`Sign in with ${BRAND_NAME}`}
                             </>
