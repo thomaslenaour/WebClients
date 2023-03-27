@@ -6,7 +6,7 @@ export type State = ReturnType<typeof rootReducer>;
 export type Action = ReturnType<(typeof actions)[keyof typeof actions]>;
 
 export type WorkerRootSagaOptions = {
-    onBoot?: (result: { ok: boolean }) => void;
+    onBoot?: (result: { ok: true } | { ok: false; clearCache: boolean }) => void;
     onSignout?: () => void;
     onSessionLocked?: (storageToken: string) => void;
     onSessionUnlocked?: (storageToken: string) => void;

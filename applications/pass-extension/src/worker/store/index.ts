@@ -44,7 +44,9 @@ sagaMiddleware.run(
                 WorkerMessageBroker.buffer.flush();
             } else {
                 ctx.setStatus(WorkerStatus.ERROR);
-                await Promise.all([browserLocalStorage.clear(), browserSessionStorage.clear()]);
+                if (result.clearCache) {
+                    await browserLocalStorage.removeItems(['salt', 'state', 'snapshot']);
+                }
             }
         }),
 
