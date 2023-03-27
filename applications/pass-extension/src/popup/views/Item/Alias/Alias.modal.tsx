@@ -7,6 +7,7 @@ import { Button } from '@proton/atoms';
 import { Icon, ModalProps } from '@proton/components/components';
 
 import { SidebarModal } from '../../../../shared/components/sidebarmodal/SidebarModal';
+import { useAliasOptions } from '../../../../shared/hooks/useAliasOptions';
 import { PanelHeader } from '../../../components/Panel/Header';
 import { Panel } from '../../../components/Panel/Panel';
 import { AliasForm } from './Alias.form';
@@ -52,6 +53,25 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
             .catch(console.warn);
     }, [initialPrefix]);
 
+    const { aliasOptions, aliasOptionsLoading } = useAliasOptions({
+        shareId,
+        onAliasOptionsLoaded: async (aliasOptions) => {
+            const firstSuffix = aliasOptions.suffixes?.[0];
+            const firstMailBox = aliasOptions.mailboxes?.[0];
+
+            await form.setValues(
+                (values) => ({
+                    ...values,
+                    ...(firstSuffix && { aliasSuffix: firstSuffix }),
+                    ...(firstMailBox && { mailboxes: [firstMailBox] }),
+                }),
+                true
+            );
+
+            setReady(true);
+        },
+    });
+
     return (
         <SidebarModal {...props}>
             <Panel
@@ -84,24 +104,7 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
                 }
             >
                 <FormikProvider value={form}>
-                <AliasForm
-                    shareId={shareId}
-                    form={form}
-                    onAliasOptionsLoaded={async (aliasOptions) => {
-                        const firstSuffix = aliasOptions.suffixes?.[0];
-                        const firstMailBox = aliasOptions.mailboxes?.[0];
-
-                        await form.setValues(
-                            (values) => ({
-                                ...values,
-                                ...(firstSuffix !== undefined ? { aliasSuffix: firstSuffix } : {}),
-                                ...(firstMailBox !== undefined ? { mailboxes: [firstMailBox] } : {}),
-                            }),
-                            true
-                        );
-                        setReady(true);
-                    }}
-                />
+                    <AliasForm form={form} aliasOptions={aliasOptions} aliasOptionsLoading={aliasOptionsLoading} />
                 </FormikProvider>
             </Panel>
         </SidebarModal>

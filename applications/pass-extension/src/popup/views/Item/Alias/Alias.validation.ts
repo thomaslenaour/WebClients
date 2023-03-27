@@ -1,11 +1,9 @@
-import { FormikContextType, FormikErrors } from 'formik';
+import { FormikErrors } from 'formik';
 import { c } from 'ttag';
 
 import { AliasMailbox } from '@proton/pass/types/data/alias';
 import { isEmptyString } from '@proton/pass/utils/string';
 import { validateLocalPart } from '@proton/shared/lib/helpers/email';
-
-import { UseAliasOptionsConfig } from '../../../../shared/hooks';
 
 export type AliasFormValues = {
     aliasPrefix?: string;
@@ -22,12 +20,6 @@ export type NewAliasFormValues = AliasFormValues & {
 export type EditAliasFormValues = Pick<AliasFormValues, 'mailboxes'> & {
     name: string;
     note: string;
-};
-
-export type AliasFormProps<V> = {
-    form: FormikContextType<V>;
-    shareId: string;
-    onAliasOptionsLoaded?: UseAliasOptionsConfig['onAliasOptionsLoaded'];
 };
 
 export const validateAliasForm = ({
@@ -57,7 +49,7 @@ export const validateNewAliasForm = (values: NewAliasFormValues): FormikErrors<N
     const { aliasPrefix, aliasSuffix, mailboxes } = values;
 
     if (isEmptyString(values.name)) {
-        errors.name = c('Warning').t`Name is required`;
+        errors.name = c('Warning').t`Title is required`;
     }
 
     if (aliasPrefix === undefined || aliasPrefix.trim() === '') {
@@ -70,6 +62,10 @@ export const validateNewAliasForm = (values: NewAliasFormValues): FormikErrors<N
 
     if (aliasPrefix && !/^[a-z0-9\-\_.]*$/.test(aliasPrefix)) {
         errors.aliasPrefix = c('Warning').t`Only alphanumeric characters, dots, hyphens and underscores are allowed`;
+    }
+
+    if (aliasPrefix && aliasPrefix.length > 40) {
+        errors.aliasPrefix = c('Warning').t`The alias prefix cannot be longer than 40 characters`;
     }
 
     if (aliasSuffix === undefined) {
@@ -87,7 +83,7 @@ export const validateEditAliasForm = ({ name, mailboxes }: EditAliasFormValues):
     const errors: FormikErrors<EditAliasFormValues> = {};
 
     if (isEmptyString(name)) {
-        errors.name = c('Warning').t`Name is required`;
+        errors.name = c('Warning').t`Title is required`;
     }
 
     if (mailboxes.length === 0) {
