@@ -1,57 +1,35 @@
-import { FC, useEffect, useState } from 'react';
+import { useState } from 'react';
 
-import { FormikProvider, useFormik } from 'formik';
+import { type FormikContextType, FormikProvider } from 'formik';
 import { c } from 'ttag';
 
 import { Button } from '@proton/atoms';
-import { Icon, ModalProps } from '@proton/components/components';
+import { Icon, type ModalProps } from '@proton/components/components';
 
 import { SidebarModal } from '../../../../shared/components/sidebarmodal/SidebarModal';
 import { useAliasOptions } from '../../../../shared/hooks/useAliasOptions';
 import { PanelHeader } from '../../../components/Panel/Header';
 import { Panel } from '../../../components/Panel/Panel';
 import { AliasForm } from './Alias.form';
-import { AliasFormValues, validateAliasForm } from './Alias.validation';
+import { AliasFormValues } from './Alias.validation';
 
 export type AliasModalRef = {
     open: () => void;
 };
 
-export type Props = {
-    initialPrefix?: string;
+type AliasModalProps<T extends AliasFormValues> = {
+    form: FormikContextType<T>;
+    handleSubmitClick: () => void;
     shareId: string;
-    onAliasSubmit: (values: AliasFormValues) => void;
 } & ModalProps;
 
-const initialValues: AliasFormValues = {
-    aliasPrefix: '',
-    aliasSuffix: undefined,
-    mailboxes: [],
-};
-
-const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props }) => {
+export const AliasModal = <T extends AliasFormValues>({
+    form,
+    shareId,
+    handleSubmitClick,
+    ...modalProps
+}: AliasModalProps<T>) => {
     const [ready, setReady] = useState(false);
-
-    const form = useFormik<AliasFormValues>({
-        initialValues,
-        initialErrors: validateAliasForm(initialValues),
-        onSubmit: (values) => {
-            onAliasSubmit(values);
-            props.onClose?.();
-
-            form.setValues(initialValues)
-                .then(() => form.setErrors({}))
-                .catch(console.warn);
-        },
-        validate: validateAliasForm,
-        validateOnChange: true,
-    });
-
-    useEffect(() => {
-        form.setFieldValue('aliasPrefix', initialPrefix ?? '')
-            .then(() => form.setErrors({}))
-            .catch(console.warn);
-    }, [initialPrefix]);
 
     const { aliasOptions, aliasOptionsLoading } = useAliasOptions({
         shareId,
@@ -73,7 +51,7 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
     });
 
     return (
-        <SidebarModal {...props}>
+        <SidebarModal {...modalProps}>
             <Panel
                 header={
                     <PanelHeader
@@ -84,14 +62,14 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
                                 icon
                                 pill
                                 shape="solid"
-                                onClick={props.onClose}
+                                onClick={modalProps.onClose}
                             >
                                 <Icon className="modal-close-icon" name="cross-big" alt={c('Action').t`Close`} />
                             </Button>,
 
                             <Button
                                 key="modal-submit-button"
-                                onClick={() => form.handleSubmit()}
+                                onClick={handleSubmitClick}
                                 color="norm"
                                 pill
                                 className=""
@@ -104,11 +82,9 @@ const AliasModal: FC<Props> = ({ initialPrefix, shareId, onAliasSubmit, ...props
                 }
             >
                 <FormikProvider value={form}>
-                    <AliasForm form={form} aliasOptions={aliasOptions} aliasOptionsLoading={aliasOptionsLoading} />
+                    <AliasForm<T> form={form} aliasOptions={aliasOptions} aliasOptionsLoading={aliasOptionsLoading} />
                 </FormikProvider>
             </Panel>
         </SidebarModal>
     );
 };
-
-export default AliasModal;
