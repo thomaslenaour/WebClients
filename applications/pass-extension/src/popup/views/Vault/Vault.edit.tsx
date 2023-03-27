@@ -1,37 +1,48 @@
-import { ForwardRefRenderFunction, forwardRef, useEffect, useImperativeHandle, useMemo } from 'react';
+import { type VFC, useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Form, FormikProvider, useFormik } from 'formik';
+import { FormikProvider, useFormik } from 'formik';
 
 import { acknowledge, selectRequestStatus, vaultEditIntent } from '@proton/pass/store';
 import { vaultEdit } from '@proton/pass/store/actions/requests';
 import type { VaultShare } from '@proton/pass/types';
+import { VaultColor, VaultIcon } from '@proton/pass/types/protobuf/vault-v1';
 
-import type { VaultFormHandle, VaultFormValues } from './Vault.form';
-import { VaultForm } from './Vault.form';
+import { VaultForm, VaultFormValues } from '../../components/Vault/VaultForm';
 import { validateVaultValues } from './Vault.validation';
 
-const VaultEditRef: ForwardRefRenderFunction<
-    VaultFormHandle,
-    {
-        vault: VaultShare;
-        onSubmit?: () => void;
-        onSuccess?: () => void;
-        onFailure?: () => void;
-    }
-> = ({ vault, onSubmit, onSuccess, onFailure }, ref) => {
+type Props = {
+    vault: VaultShare;
+    onSubmit?: () => void;
+    onSuccess?: () => void;
+    onFailure?: () => void;
+};
+
+export const FORM_ID = 'vault-edit';
+
+export const VaultEdit: VFC<Props> = ({ vault, onSubmit, onSuccess, onFailure }) => {
     const dispatch = useDispatch();
 
     const requestId = useMemo(() => vaultEdit(vault.shareId), [vault.shareId]);
     const status = useSelector(selectRequestStatus(requestId));
 
     const form = useFormik<VaultFormValues>({
-        initialValues: { name: vault.content.name, description: vault.content.description },
+        initialValues: {
+            name: vault.content.name,
+            description: vault.content.description,
+            color: vault.content.display.color ?? VaultColor.COLOR1,
+            icon: vault.content.display.icon ?? VaultIcon.ICON1,
+        },
         validateOnChange: true,
         validate: validateVaultValues,
-        onSubmit: ({ name, description }) => {
+        onSubmit: ({ name, description, color, icon }) => {
             onSubmit?.();
-            dispatch(vaultEditIntent({ id: vault.shareId, content: { name, description } }));
+            dispatch(
+                vaultEditIntent({
+                    id: vault.shareId,
+                    content: { name, description, display: { color, icon } },
+                })
+            );
         },
     });
 
@@ -55,15 +66,9 @@ const VaultEditRef: ForwardRefRenderFunction<
         }
     }, [status, requestId]);
 
-    useImperativeHandle(ref, () => ({ submit: form.submitForm }), [form]);
-
     return (
         <FormikProvider value={form}>
-            <Form>
-                <VaultForm />
-            </Form>
+            <VaultForm form={form} formId={FORM_ID} />
         </FormikProvider>
     );
 };
-
-export const VaultEdit = forwardRef(VaultEditRef);

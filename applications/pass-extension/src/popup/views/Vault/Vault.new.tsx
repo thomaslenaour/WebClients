@@ -1,24 +1,25 @@
-import { type ForwardRefRenderFunction, forwardRef, useEffect, useImperativeHandle, useMemo } from 'react';
+import { type VFC, useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Form, FormikProvider, useFormik } from 'formik';
+import { FormikProvider, useFormik } from 'formik';
 import uniqid from 'uniqid';
 
 import { selectRequestStatus, vaultCreationIntent } from '@proton/pass/store';
 import { vaultCreate } from '@proton/pass/store/actions/requests';
+import { VaultColor, VaultIcon } from '@proton/pass/types/protobuf/vault-v1';
 
-import type { VaultFormHandle, VaultFormValues } from './Vault.form';
-import { VaultForm } from './Vault.form';
+import { VaultForm, VaultFormValues } from '../../components/Vault/VaultForm';
 import { validateVaultValues } from './Vault.validation';
 
-const VaultNewRef: ForwardRefRenderFunction<
-    VaultFormHandle,
-    {
-        onSubmit?: () => void;
-        onSuccess?: () => void;
-        onFailure?: () => void;
-    }
-> = ({ onSubmit, onSuccess, onFailure }, ref) => {
+type Props = {
+    onSubmit?: () => void;
+    onSuccess?: () => void;
+    onFailure?: () => void;
+};
+
+export const FORM_ID = 'vault-create';
+
+export const VaultNew: VFC<Props> = ({ onSubmit, onSuccess, onFailure }) => {
     const dispatch = useDispatch();
 
     const optimisticId = useMemo(() => uniqid(), []);
@@ -26,12 +27,29 @@ const VaultNewRef: ForwardRefRenderFunction<
     const status = useSelector(selectRequestStatus(requestId));
 
     const form = useFormik<VaultFormValues>({
-        initialValues: { name: '', description: '' },
+        initialValues: {
+            name: '',
+            description: '',
+            color: VaultColor.COLOR1,
+            icon: VaultIcon.ICON1,
+        },
         validateOnChange: true,
         validate: validateVaultValues,
-        onSubmit: ({ name, description }) => {
+        onSubmit: ({ name, description, color, icon }) => {
             onSubmit?.();
-            dispatch(vaultCreationIntent({ id: optimisticId, content: { name, description } }));
+            dispatch(
+                vaultCreationIntent({
+                    id: optimisticId,
+                    content: {
+                        name,
+                        description,
+                        display: {
+                            color,
+                            icon,
+                        },
+                    },
+                })
+            );
         },
     });
 
@@ -44,15 +62,9 @@ const VaultNewRef: ForwardRefRenderFunction<
         }
     }, [status]);
 
-    useImperativeHandle(ref, () => ({ submit: form.submitForm }), [form]);
-
     return (
         <FormikProvider value={form}>
-            <Form>
-                <VaultForm />
-            </Form>
+            <VaultForm form={form} formId={FORM_ID} />
         </FormikProvider>
     );
 };
-
-export const VaultNew = forwardRef(VaultNewRef);

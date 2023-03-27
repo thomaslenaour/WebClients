@@ -1,4 +1,4 @@
-import { FC, useMemo, useRef, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 
 import { c } from 'ttag';
 
@@ -11,9 +11,8 @@ import noop from '@proton/utils/noop';
 import { SidebarModal } from '../../../shared/components/sidebarmodal/SidebarModal';
 import { PanelHeader } from '../../components/Panel/Header';
 import { Panel } from '../../components/Panel/Panel';
-import { VaultEdit } from './Vault.edit';
-import { VaultFormHandle } from './Vault.form';
-import { VaultNew } from './Vault.new';
+import { VaultEdit, FORM_ID as VaultEditFormId } from './Vault.edit';
+import { VaultNew, FORM_ID as VaultNewFormId } from './Vault.new';
 
 export type Props = {
     payload:
@@ -26,7 +25,6 @@ export type Props = {
 
 export const VaultModal: FC<Props> = ({ payload, ...props }) => {
     const [loading, setLoading] = useState(false);
-    const vaultFormRef = useRef<VaultFormHandle>(null);
 
     const vaultViewProps = useMemo(
         () => ({
@@ -59,21 +57,30 @@ export const VaultModal: FC<Props> = ({ payload, ...props }) => {
 
                             <Button
                                 key="modal-submit-button"
-                                onClick={() => vaultFormRef?.current?.submit()}
+                                type="submit"
+                                form={payload.type === 'new' ? VaultNewFormId : VaultEditFormId}
                                 color="norm"
                                 pill
                                 loading={loading}
                                 disabled={loading}
                             >
-                                {payload.type === 'new' && c('Action').t`Create vault`}
-                                {payload.type === 'edit' && c('Action').t`Save`}
+                                {(() => {
+                                    switch (payload.type) {
+                                        case 'new':
+                                            return loading
+                                                ? c('Action').t`Creating vault`
+                                                : c('Action').t`Create vault`;
+                                        case 'edit':
+                                            return loading ? c('Action').t`Saving` : c('Action').t`Save`;
+                                    }
+                                })()}
                             </Button>,
                         ]}
                     />
                 }
             >
-                {payload.type === 'new' && <VaultNew ref={vaultFormRef} {...vaultViewProps} />}
-                {payload.type === 'edit' && <VaultEdit vault={payload.vault} ref={vaultFormRef} {...vaultViewProps} />}
+                {payload.type === 'new' && <VaultNew {...vaultViewProps} />}
+                {payload.type === 'edit' && <VaultEdit vault={payload.vault} {...vaultViewProps} />}
             </Panel>
         </SidebarModal>
     );
