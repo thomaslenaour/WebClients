@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import type { Item, ItemRevision, ItemRevisionWithOptimistic, Maybe } from '@proton/pass/types';
+import type { Item, ItemRevision, ItemRevisionWithOptimistic, ItemType, Maybe } from '@proton/pass/types';
 import { invert } from '@proton/pass/utils/fp';
 import { isTrashed } from '@proton/pass/utils/pass/trash';
 import { matchLoginItemsByUrl } from '@proton/pass/utils/search';
@@ -78,6 +78,12 @@ export type MatchItemsSelectorOptions = {
     trash?: boolean;
     matchItem: (item: Item) => (searchTerm: string) => boolean;
 };
+
+export const selectItemsByType = <T extends ItemType>(type: T) =>
+    createSelector(
+        [selectAllItems, () => type],
+        (items, type) => items.filter((item) => item.data.type === type) as ItemRevision<T>[]
+    );
 
 export const selectMatchItems = createSelector(
     [selectItemsWithOptimistic, (_: State, options: MatchItemsSelectorOptions) => options],
