@@ -1,6 +1,7 @@
 import type { AnyAction, Reducer } from 'redux';
 
 import { CONTENT_FORMAT_VERSION, type ItemRevision, ItemState } from '@proton/pass/types';
+import { or } from '@proton/pass/utils/fp';
 import { fullMerge, objectDelete, partialMerge } from '@proton/pass/utils/object';
 import { isTrashed } from '@proton/pass/utils/pass/trash';
 import { getEpoch } from '@proton/pass/utils/time';
@@ -27,6 +28,9 @@ import {
     itemEditSuccess,
     itemEditSync,
     itemLastUseTimeUpdated,
+    itemMoveFailure,
+    itemMoveIntent,
+    itemMoveSuccess,
     itemRestoreFailure,
     itemRestoreIntent,
     itemRestoreSuccess,
@@ -75,6 +79,11 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
             fail: itemEditFailure.optimisticMatch,
             commit: itemEditSuccess.optimisticMatch,
             revert: itemEditDismiss.optimisticMatch,
+        },
+        {
+            initiate: itemMoveIntent.optimisticMatch,
+            commit: itemMoveSuccess.optimisticMatch,
+            revert: itemMoveFailure.optimisticMatch,
         },
         {
             initiate: itemTrashIntent.optimisticMatch,
@@ -209,6 +218,38 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
             return { ...state, [shareId]: objectDelete(state[shareId], itemId) };
         }
 
+        /**
+         * BE side and under the hood, moving an item
+         * will delete the item and re-create a new one.
+         * That's why we are relying on an optimisticId
+         * on an `itemMoveIntent`. This is similar to
+         * the `itemCreationIntent` flow with the extra
+         * deletion of the item to be moved.
+         */
+        if (itemMoveIntent.match(action)) {
+            const { item, optimisticId, shareId } = action.payload;
+            return fullMerge(
+                { ...state, [item.shareId]: objectDelete(state[item.shareId], item.itemId) },
+                {
+                    [shareId]: {
+                        [optimisticId]: {
+                            ...item,
+                            shareId,
+                            itemId: optimisticId,
+                        },
+                    },
+                }
+            );
+        }
+
+        if (itemMoveSuccess.match(action)) {
+            const { item, shareId, optimisticId } = action.payload;
+            return fullMerge(
+                { ...state, [shareId]: objectDelete(state[item.shareId], optimisticId) },
+                { [shareId]: { [item.itemId]: item } }
+            );
+        }
+
         if (emptyTrashIntent.match(action)) {
             return Object.fromEntries(
                 Object.entries(state).map(([shareId, itemsById]) => [
@@ -268,9 +309,8 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
 );
 
 const itemIdByOptimisticId: Reducer<ItemIdByOptimisticId> = (state = {}, action) => {
-    if (itemCreationSuccess.match(action)) {
+    if (or(itemCreationSuccess.match, itemMoveSuccess.match)(action)) {
         const { optimisticId, item } = action.payload;
-
         return fullMerge(state, { [optimisticId]: item.itemId });
     }
 

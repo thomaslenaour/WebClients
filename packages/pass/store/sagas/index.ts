@@ -10,6 +10,7 @@ import itemsImport from './import.saga';
 import itemCreation from './item-creation.saga';
 import itemDelete from './item-delete.saga';
 import itemEdit from './item-edit.saga';
+import itemMove from './item-move.saga';
 import itemRestore from './item-restore.saga';
 import itemTrash from './item-trash.saga';
 import itemUsed from './item-used.saga';
@@ -39,6 +40,7 @@ export function* workerRootSaga(options: WorkerRootSagaOptions) {
             itemsRequest,
             itemCreation,
             itemEdit,
+            itemMove,
             itemTrash,
             itemDelete,
             itemRestore,
