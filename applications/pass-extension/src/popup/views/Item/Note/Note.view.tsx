@@ -39,9 +39,7 @@ export const NoteView: VFC<ItemTypeViewProps<'note'>> = ({
             handleRestoreClick={handleRestoreClick}
             handleDeleteClick={handleDeleteClick}
         >
-            <div className="pass-note-view text-break">
-                <pre>{note}</pre>
-            </div>
+            <pre className="pass-note-view text-break">{note}</pre>
         </ItemViewPanel>
     );
 };
