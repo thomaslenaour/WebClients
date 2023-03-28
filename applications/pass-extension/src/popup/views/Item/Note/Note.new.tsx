@@ -13,13 +13,15 @@ import { validateNoteForm } from './Note.validation';
 
 const FORM_ID = 'new-note';
 
+const initialFieldValues = { name: '', note: '' };
+
 export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel }) => {
     const form = useFormik({
         initialValues: {
-            name: '',
-            note: '',
+            ...initialFieldValues,
             shareId,
         },
+        initialErrors: validateNoteForm(initialFieldValues),
         onSubmit: ({ name, note, shareId }) => {
             const optimisticId = uniqid();
 
@@ -44,7 +46,7 @@ export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel
     const valid = form.isValid;
 
     return (
-        <ItemCreatePanel type="note" formId={FORM_ID} valid={form.dirty && valid} handleCancelClick={onCancel}>
+        <ItemCreatePanel type="note" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
                     <Field
