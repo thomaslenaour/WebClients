@@ -37,16 +37,14 @@ export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel
                 extraFields: [],
             });
         },
-
         validate: validateNoteForm,
         validateOnChange: true,
-        validateOnMount: true,
     });
 
     const valid = form.isValid;
 
     return (
-        <ItemCreatePanel type="note" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
+        <ItemCreatePanel type="note" formId={FORM_ID} valid={form.dirty && valid} handleCancelClick={onCancel}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
                     <Field
