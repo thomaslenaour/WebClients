@@ -1,9 +1,10 @@
 import { type VFC } from 'react';
 
 import { Field, Form, FormikProvider, useFormik } from 'formik';
+import { c } from 'ttag';
 
-import { TextAreaField, TextField } from '../../../../shared/components/fields';
 import { ItemEditProps } from '../../../../shared/items';
+import { NoteTextAreaField, NoteTitleField } from '../../../components/Fields/Note/index';
 import { ItemEditPanel } from '../../../components/Panel/ItemEditPanel';
 import { validateNoteForm } from './Note.validation';
 
@@ -40,8 +41,19 @@ export const NoteEdit: VFC<ItemEditProps<'note'>> = ({ vault, revision, onSubmit
         <ItemEditPanel type="note" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
-                    <Field name="name" label="Name" component={TextField} />
-                    <Field name="note" label="Note" component={TextAreaField} />
+                    <Field
+                        autoFocus
+                        component={NoteTitleField}
+                        label=""
+                        name="name"
+                        placeholder={c('Placeholder').t`Untitled`}
+                    />
+                    <Field
+                        component={NoteTextAreaField}
+                        label=""
+                        name="note"
+                        placeholder={c('Placeholder').t`Write your message`}
+                    />
                 </Form>
             </FormikProvider>
         </ItemEditPanel>

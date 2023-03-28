@@ -1,0 +1,7 @@
+@import '../../../../shared/styles/common';
+
+.pass-note-view {
+	pre {
+		font-family: var(--optional-font-family, 'Inter', #{$fallback-fonts});
+	}
+}

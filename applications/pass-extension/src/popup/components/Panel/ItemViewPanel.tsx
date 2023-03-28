@@ -101,7 +101,7 @@ export const ItemViewPanel: FC<Props> = ({
             >
                 {c('Action').t`Edit`}
             </Button>,
-            <QuickActionsDropdown key="item-quick-actions-dropdown" color="weak" disabled={optimistic} shape="outline">
+            <QuickActionsDropdown key="item-quick-actions-dropdown" color="norm" disabled={optimistic} shape="ghost">
                 <DropdownMenuButton className="flex flex-align-items-center text-left" onClick={handleMoveToTrashClick}>
                     <Icon name="trash" className="mr0-5" />
                     {c('Action').t`Move to Trash`}
