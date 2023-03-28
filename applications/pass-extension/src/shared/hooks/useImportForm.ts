@@ -41,7 +41,7 @@ export type UseImportFormBeforeSubmit = (payload: ImportPayload) => Promise<UseI
 
 export type UseImportFormOptions = {
     beforeSubmit?: UseImportFormBeforeSubmit;
-    onImported: () => void;
+    onImported?: () => void;
 };
 
 export const SUPPORTED_IMPORT_FILE_TYPES = ['json', '1pux', 'pgp', 'zip', 'csv'];
@@ -159,7 +159,7 @@ export const useImportForm = ({
             switch (requestStatus) {
                 case 'success': {
                     reset();
-                    onImported();
+                    onImported?.();
                     break;
                 }
                 case 'failure': {
