@@ -1,15 +1,10 @@
-import { type VFC, useEffect, useState } from 'react';
+import { type VFC, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { c } from 'ttag';
 
 import { Checkbox } from '@proton/components';
-import {
-    acknowledge,
-    selectRequestStatus,
-    selectSessionLockSettings,
-    sessionLockDisableIntent,
-} from '@proton/pass/store';
+import { selectRequestStatus, selectSessionLockSettings, sessionLockDisableIntent } from '@proton/pass/store';
 import { settingsEdit } from '@proton/pass/store/actions/requests';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
@@ -38,12 +33,6 @@ export const Security: VFC = () => {
                         ${PASS_APP_NAME} will then never lock.`,
               })
             : setLockCreationModalOpened(true);
-
-    useEffect(() => {
-        if (sessionLockStatus === 'success') {
-            dispatch(acknowledge(settingsEdit('session-lock')));
-        }
-    }, [sessionLockStatus]);
 
     return (
         <div className="my1">

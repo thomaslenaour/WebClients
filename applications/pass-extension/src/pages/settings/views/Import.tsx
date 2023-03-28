@@ -1,5 +1,5 @@
-import { FC, useCallback, useRef, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { type FC, useCallback, useRef, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import { Form, FormikProvider } from 'formik';
 import { c } from 'ttag';
@@ -7,19 +7,21 @@ import { c } from 'ttag';
 import { Button } from '@proton/atoms/Button';
 import { Card } from '@proton/atoms/Card';
 import { ModalTwo, ModalTwoContent, ModalTwoFooter, ModalTwoHeader } from '@proton/components';
-import { ImportPayload } from '@proton/pass/import';
-import { acknowledge, selectRequestInFlight } from '@proton/pass/store';
+import type { ImportPayload } from '@proton/pass/import';
+import { selectRequestInFlight } from '@proton/pass/store';
 import { importItems } from '@proton/pass/store/actions/requests';
-import { MaybeNull } from '@proton/pass/types';
+import type { MaybeNull } from '@proton/pass/types';
 import { pipe, tap } from '@proton/pass/utils/fp';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
-import { ImportForm, ImportVaultsPicker, ImportVaultsPickerHandle } from '../../../shared/components/import';
-import { UseImportFormBeforeSubmit, UseImportFormBeforeSubmitValue, useImportForm } from '../../../shared/hooks';
+import { ImportForm, ImportVaultsPicker, type ImportVaultsPickerHandle } from '../../../shared/components/import';
+import {
+    type UseImportFormBeforeSubmit,
+    type UseImportFormBeforeSubmitValue,
+    useImportForm,
+} from '../../../shared/hooks';
 
 export const Import: FC = () => {
-    const dispatch = useDispatch();
-
     const [importData, setImportData] = useState<MaybeNull<ImportPayload>>(null);
     const vaultPickerRef = useRef<ImportVaultsPickerHandle>(null);
     const beforeSubmitResolver = useRef<(value: UseImportFormBeforeSubmitValue) => void>();
@@ -40,10 +42,7 @@ export const Import: FC = () => {
         []
     );
 
-    const { form, dropzone, busy } = useImportForm({
-        beforeSubmit,
-        onImported: () => dispatch(acknowledge(importItems())),
-    });
+    const { form, dropzone, busy } = useImportForm({ beforeSubmit });
 
     const importing = useSelector(selectRequestInFlight(importItems())) || busy;
 

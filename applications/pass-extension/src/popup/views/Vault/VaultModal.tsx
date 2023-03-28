@@ -1,4 +1,4 @@
-import { FC, useMemo, useState } from 'react';
+import { type FC, useMemo, useState } from 'react';
 
 import { c } from 'ttag';
 
@@ -28,7 +28,7 @@ export const VaultModal: FC<Props> = ({ payload, ...props }) => {
 
     const vaultViewProps = useMemo(
         () => ({
-            onSubmit: () => setLoading(false),
+            onSubmit: () => setLoading(true),
             onFailure: () => setLoading(false),
             onSuccess: pipe(
                 props.onClose ?? noop,
@@ -51,6 +51,7 @@ export const VaultModal: FC<Props> = ({ payload, ...props }) => {
                                 pill
                                 shape="solid"
                                 onClick={props.onClose}
+                                disabled={loading}
                             >
                                 <Icon className="modal-close-icon" name="cross-big" alt={c('Action').t`Close`} />
                             </Button>,
