@@ -14,19 +14,29 @@ import {
 } from '@proton/components';
 import { selectAllVaults, selectShare } from '@proton/pass/store';
 import type { MaybeNull, ShareType, VaultShare } from '@proton/pass/types';
+import { VaultColor as VaultColorEnum, VaultIcon as VaultIconEnum } from '@proton/pass/types/protobuf/vault-v1';
 
 import { DropdownMenuButton } from '../Dropdown/DropdownMenuButton';
+import { VaultIcon } from '../Vault/VaultIcon';
 
 type VaultOption = 'all' | 'trash' | VaultShare;
 
-const getVaultOptionInfo = (vault: VaultOption): { id: null | string; label: string; path: string } => {
+const getVaultOptionInfo = (
+    vault: VaultOption
+): { id: null | string; label: string; path: string; color?: VaultColorEnum; icon?: VaultIconEnum } => {
     switch (vault) {
         case 'all':
             return { id: null, label: c('Label').t`All vaults`, path: '/' };
         case 'trash':
             return { id: null, label: c('Label').t`Trash`, path: '/trash' };
         default:
-            return { id: vault.shareId, label: vault.content.name, path: `/share/${vault.shareId}` };
+            return {
+                id: vault.shareId,
+                label: vault.content.name,
+                path: `/share/${vault.shareId}`,
+                color: vault.content.display.color,
+                icon: vault.content.display.icon,
+            };
     }
 };
 
@@ -45,8 +55,9 @@ const handleClickEvent = (handler: () => void) => (evt: React.MouseEvent) => {
     handler();
 };
 
-export const VaultItem = ({ label, selected, onSelect, onDelete, onEdit }: VaultItemProps) => {
+export const VaultItem: VFC<VaultItemProps> = ({ share, label, selected, onSelect, onDelete, onEdit }) => {
     const withActions = !!(onDelete || onEdit);
+
     return (
         <DropdownMenuButton
             className="pl0 pr0"
@@ -59,7 +70,7 @@ export const VaultItem = ({ label, selected, onSelect, onDelete, onEdit }: Vault
                             className="flex flex-align-items-center text-left"
                             onClick={onEdit ? (evt) => handleClickEvent(onEdit)(evt) : undefined}
                         >
-                            <Icon name="pen" className="mr0-5" />
+                            <Icon name="pen" className="mr-2" />
                             {c('Action').t`Edit vault`}
                         </DropdownMenuButton>
                         <DropdownMenuButton
@@ -67,14 +78,19 @@ export const VaultItem = ({ label, selected, onSelect, onDelete, onEdit }: Vault
                             disabled={!onDelete}
                             onClick={onDelete ? handleClickEvent(onDelete) : undefined}
                         >
-                            <Icon name="trash" className="mr0-5" />
+                            <Icon name="trash" className="mr-2" />
                             {c('Action').t`Delete vault`}
                         </DropdownMenuButton>
                     </>
                 )
             }
         >
-            <Icon name="vault" className="mr0-5" />
+            <VaultIcon
+                className="mr-2"
+                size="small"
+                color={share?.content.display.color}
+                icon={share?.content.display.icon}
+            />
             <span className="text-ellipsis inline-block max-w100">{label}</span>
         </DropdownMenuButton>
     );
@@ -104,7 +120,7 @@ const TrashItem: VFC<TrashItemProps> = ({ onSelect, selected, handleRestoreTrash
                 </>
             }
         >
-            <Icon name="trash" className="mr0-5" />
+            <Icon name="trash" className="mr-2" />
             {getVaultOptionInfo('trash').label}
         </DropdownMenuButton>
     );
@@ -140,25 +156,30 @@ export const VaultSubmenu: VFC<{
         history.push(path);
     };
 
-    const selectedVaultOptionLabel = getVaultOptionInfo(selectedVault || (inTrash ? 'trash' : 'all')).label;
+    const selectedVaultOption = getVaultOptionInfo(selectedVault || (inTrash ? 'trash' : 'all'));
 
     return (
         <Collapsible>
             <CollapsibleHeader
                 className="pr1 pl1"
                 suffix={
-                    <CollapsibleHeaderIconButton>
+                    <CollapsibleHeaderIconButton className="pr-0">
                         <Icon name="chevron-down" />
                     </CollapsibleHeaderIconButton>
                 }
             >
                 <span className="flex flex-align-items-center">
-                    <Icon name={'vault'} className="inline mr0-25" />
-                    {selectedVaultOptionLabel}
+                    <VaultIcon
+                        className="mr-2"
+                        size="small"
+                        color={selectedVaultOption?.color}
+                        icon={selectedVaultOption?.icon}
+                    />
+                    {selectedVaultOption.label}
                 </span>
             </CollapsibleHeader>
             <CollapsibleContent>
-                <hr className="dropdown-item-hr my0-5" aria-hidden="true" />
+                <hr className="dropdown-item-hr my-2" aria-hidden="true" />
 
                 <VaultItem
                     label={c('Label').t`${getVaultOptionInfo('all').label}`}
@@ -185,7 +206,7 @@ export const VaultSubmenu: VFC<{
                     selected={inTrash}
                 />
 
-                <div className="pl0-5 pr0-5 mt0-5">
+                <div className="px-2 mt-2">
                     <Button className="w100" color="norm" shape="ghost" onClick={handleVaultCreateClick}>
                         {c('Action').t`Create vault`}
                     </Button>

@@ -8,4 +8,10 @@
 		inline-size: rem(40);
 		block-size: rem(40);
 	}
+
+	&.small {
+		background-color: transparent;
+		inline-size: rem(16);
+		block-size: rem(16);
+	}
 }
