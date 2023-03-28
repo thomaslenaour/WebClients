@@ -29,7 +29,7 @@ export const Security: VFC = () => {
         hasLock
             ? confirmPin({
                   onSubmit: (pin) => dispatch(sessionLockDisableIntent({ pin }, endpoint)),
-                  text: c('Info').t`Please confirm your PIN code in order to unregister your current lock.
+                  assistiveText: c('Info').t`Please confirm your PIN code in order to unregister your current lock.
                         ${PASS_APP_NAME} will then never lock.`,
               })
             : setLockCreationModalOpened(true);

@@ -33,7 +33,7 @@ export const SessionLockTTLUpdate: VFC<Props> = ({ ttl, disabled }) => {
         confirmPin({
             onSubmit: (pin) => dispatch(sessionLockEnableIntent({ pin, ttl }, endpoint)),
             title: c('Title').t`Auto-lock update`,
-            text: c('Info').t`Please confirm your PIN code to edit this setting.`,
+            assistiveText: c('Info').t`Please confirm your PIN code to edit this setting.`,
         });
 
     return (

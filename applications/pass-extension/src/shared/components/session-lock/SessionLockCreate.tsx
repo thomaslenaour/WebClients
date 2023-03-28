@@ -1,4 +1,4 @@
-import { type VFC, useCallback, useState } from 'react';
+import { type VFC, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { c } from 'ttag';
@@ -19,24 +19,17 @@ type Props = {
 export const SessionLockCreate: VFC<Props> = ({ opened, onClose }) => {
     const dispatch = useDispatch();
     const { createNotification } = useNotifications();
-
-    const [processing, setProcessing] = useState(false);
     const { confirmPin } = useSessionLockConfirmContext();
-
-    const handleClose = useCallback(() => {
-        setProcessing(false);
-        onClose();
-    }, [onClose]);
 
     const handleOnSubmit = useCallback(
         async (pin: string) => {
-            await confirmPin({
-                title: c('Title').t`Confirm PIN code`,
-                text: c('Info').t`Please confirm your PIN code in order to finish registering your auto-lock settings.`,
-                onClose: handleClose,
-                onSubmit: (pinConfirmation) => {
-                    setProcessing(true);
+            onClose();
 
+            const options: Parameters<typeof confirmPin>[0] = {
+                title: c('Title').t`Confirm PIN code`,
+                assistiveText: c('Info').t`Please confirm your PIN code to finish registering your auto-lock settings.`,
+                onError: () => confirmPin(options) /* recurse on error */,
+                onSubmit: (pinConfirmation) => {
                     if (pin !== pinConfirmation) {
                         createNotification({
                             type: 'error',
@@ -51,22 +44,22 @@ export const SessionLockCreate: VFC<Props> = ({ opened, onClose }) => {
                             ExtensionContext.get().endpoint
                         )
                     );
-
-                    return handleClose();
                 },
-            });
+            };
+
+            await confirmPin(options);
         },
-        [handleClose]
+        [onClose]
     );
 
     return (
         <SessionLockPinModal
-            open={opened && !processing}
+            open={opened}
             title={c('Title').t`Create PIN code`}
             assistiveText={c('Info')
                 .t`You will use this PIN to unlock ${PASS_APP_NAME} once it auto-locks after a period of inactivity.`}
             onSubmit={handleOnSubmit}
-            onClose={handleClose}
+            onClose={onClose}
         />
     );
 };
