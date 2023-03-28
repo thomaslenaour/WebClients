@@ -35,7 +35,8 @@ const DROPDOWN_SIZE: NonNullable<DropdownProps['size']> = {
 
 const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
     const { sync, lock, logout, ready } = usePopupContext();
-    const { vaultId, setSearch, setVaultId, setVaultBeingDeleted } = useItemsFilteringContext();
+    const { shareId, setSearch, setShareId, setShareBeingDeleted } = useItemsFilteringContext();
+
     const canLock = useSelector(selectCanLockSession);
     const { inTrash, unselectItem } = useNavigationContext();
 
@@ -48,9 +49,9 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
     const handleVaultDelete = () => {
         if (deleteVault !== null) {
             handleVaultDeletionEffects(deleteVault.shareId, {
-                vaultId,
-                setVaultBeingDeleted,
-                setVaultId,
+                shareId,
+                setShareBeingDeleted,
+                setShareId,
             });
 
             dispatch(vaultDeleteIntent({ id: deleteVault.shareId, content: deleteVault.content }));
@@ -92,10 +93,10 @@ const MenuDropdownRaw: VFC<{ className: string }> = ({ className }) => {
                 >
                     <DropdownMenu>
                         <VaultSubmenu
-                            selectedVaultId={vaultId}
-                            handleVaultSelectClick={(vaultId) => {
+                            selectedShareId={shareId}
+                            handleVaultSelectClick={(vaultShareId) => {
                                 unselectItem();
-                                setVaultId(vaultId);
+                                setShareId(vaultShareId);
                                 setSearch('');
                                 close();
                             }}

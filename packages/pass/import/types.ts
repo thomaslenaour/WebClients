@@ -23,7 +23,7 @@ export type ImportReaderPayload = {
 export type ImportVault = (
     | {
           type: 'existing';
-          vaultId: string;
+          shareId: string;
       }
     | { type: 'new' }
 ) & {

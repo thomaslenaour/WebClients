@@ -157,7 +157,7 @@ describe('PassCrypto', () => {
             /* register the share */
             const share = await PassCrypto.openShare({ encryptedShare, shareKeys: [shareKey] });
             const contentUpdate = randomContents();
-            const vaultUpdate = await PassCrypto.updateVault({ vaultId: share.shareId, content: contentUpdate });
+            const vaultUpdate = await PassCrypto.updateVault({ shareId: share.shareId, content: contentUpdate });
             const vaultKey = PassCrypto.getShareManager(share.shareId).getVaultKey(42);
 
             const decryptedContent = await decryptData(

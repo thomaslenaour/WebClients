@@ -13,10 +13,10 @@ const filterBy =
     (arr: T) =>
         arr.filter(predicate as any);
 
-export const useFilteredItems = ({ search, sort, filter, vaultId }: ItemsFilteringContextType) => {
+export const useFilteredItems = ({ search, sort, filter, shareId }: ItemsFilteringContextType) => {
     const activeMatchOptions = useMemo(
-        () => ({ shareId: vaultId ?? undefined, needle: search, matchItem }),
-        [search, vaultId]
+        () => ({ shareId: shareId ?? undefined, needle: search, matchItem }),
+        [search, shareId]
     );
     const activeItems = useSelector((state: State) => selectMatchItems(state, activeMatchOptions));
     const trashMatchOptions = useMemo(() => ({ needle: search, matchItem, trash: true }), [search]);

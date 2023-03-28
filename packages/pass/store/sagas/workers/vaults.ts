@@ -47,22 +47,22 @@ export async function createVault(vault: ShareContent<ShareType.Vault>): Promise
 }
 
 export async function editVault(
-    vaultId: string,
+    shareId: string,
     content: ShareContent<ShareType.Vault>
 ): Promise<Share<ShareType.Vault>> {
     /**
      * Future-proofing : retrieve all share keys
      * and update the share in the crypto context
      */
-    const [eventId, shareKeys] = await Promise.all([getShareLatestEventId(vaultId), getAllShareKeys(vaultId)]);
-    await PassCrypto.updateShareKeys({ shareId: vaultId, shareKeys });
+    const [eventId, shareKeys] = await Promise.all([getShareLatestEventId(shareId), getAllShareKeys(shareId)]);
+    await PassCrypto.updateShareKeys({ shareId, shareKeys });
 
     const encoded = encodeVaultContent(content);
-    const encryptedVaultUpdate = await PassCrypto.updateVault({ vaultId, content: encoded });
+    const encryptedVaultUpdate = await PassCrypto.updateVault({ shareId, content: encoded });
 
     const encryptedShare = (
         await api({
-            url: `pass/v1/vault/${vaultId}`,
+            url: `pass/v1/vault/${shareId}`,
             method: 'put',
             data: encryptedVaultUpdate,
         })

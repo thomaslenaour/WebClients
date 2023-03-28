@@ -8,19 +8,15 @@ import type { ItemsFilteringContextType } from './ItemsFilteringContext';
 
 export function handleVaultDeletionEffects(
     shareId: string,
-    itemsFilteringVaultUtilities: {
-        vaultId: ItemsFilteringContextType['vaultId'];
-        setVaultBeingDeleted: ItemsFilteringContextType['setVaultBeingDeleted'];
-        setVaultId: ItemsFilteringContextType['setVaultId'];
-    }
+    itemsFilteringVaultUtilities: Pick<ItemsFilteringContextType, 'shareId' | 'setShareBeingDeleted' | 'setShareId'>
 ) {
-    const { vaultId, setVaultId, setVaultBeingDeleted } = itemsFilteringVaultUtilities;
+    const { shareId: selectedShareId, setShareId, setShareBeingDeleted } = itemsFilteringVaultUtilities;
     // ensure the currently selected item is not from this vault
-    setVaultBeingDeleted(shareId);
+    setShareBeingDeleted(shareId);
 
     // ensure the currently selected vault is not this vault
-    if (vaultId === shareId) {
-        setVaultId(null);
+    if (selectedShareId === shareId) {
+        setShareId(null);
     }
 }
 
@@ -28,7 +24,7 @@ export const ItemEffects = () => {
     const { ready } = usePopupContext();
     const { selectedItem, selectItem, unselectItem, isCreating, isEditing, inTrash } = useNavigationContext();
     const {
-        filtering: { vaultId, vaultBeingDeleted, setVaultId, setVaultBeingDeleted },
+        filtering: { shareId, shareBeingDeleted, setShareId, setShareBeingDeleted },
         matchedTrash,
         filtered,
     } = useItems();
@@ -40,9 +36,9 @@ export const ItemEffects = () => {
             () => ({
                 onShareDisabled(shareId) {
                     handleVaultDeletionEffects(shareId, {
-                        vaultId,
-                        setVaultBeingDeleted,
-                        setVaultId,
+                        shareId,
+                        setShareBeingDeleted,
+                        setShareId,
                     });
                 },
                 onItemsDeleted(shareId, itemIds) {
@@ -51,7 +47,7 @@ export const ItemEffects = () => {
                     }
                 },
             }),
-            [vaultId, vaultBeingDeleted, selectedItem, unselectItem]
+            [shareId, shareBeingDeleted, selectedItem, unselectItem]
         )
     );
 
@@ -66,7 +62,7 @@ export const ItemEffects = () => {
     useEffect(() => {
         if (selectedItem) {
             const unselect =
-                selectedItem.shareId === vaultBeingDeleted ||
+                selectedItem.shareId === shareBeingDeleted ||
                 !items.some(
                     ({ shareId, itemId }) => shareId === selectedItem.shareId && itemId === selectedItem.itemId
                 );
@@ -76,7 +72,7 @@ export const ItemEffects = () => {
             }
         } else {
             if (autoselect) {
-                const next = vaultBeingDeleted ? items.find(({ shareId }) => shareId !== vaultBeingDeleted) : items[0];
+                const next = shareBeingDeleted ? items.find(({ shareId }) => shareId !== shareBeingDeleted) : items[0];
 
                 if (next) {
                     const { shareId, itemId } = next;
@@ -84,14 +80,14 @@ export const ItemEffects = () => {
                 }
             }
 
-            if (vaultBeingDeleted) {
-                const stillItemsPendingDeletion = items.some(({ shareId }) => shareId === vaultBeingDeleted);
+            if (shareBeingDeleted) {
+                const stillItemsPendingDeletion = items.some(({ shareId }) => shareId === shareBeingDeleted);
                 if (!stillItemsPendingDeletion) {
-                    setVaultBeingDeleted(null);
+                    setShareBeingDeleted(null);
                 }
             }
         }
-    }, [selectedItem, inTrash, items, autoselect, vaultBeingDeleted]);
+    }, [selectedItem, inTrash, items, autoselect, shareBeingDeleted]);
 
     return null;
 };
