@@ -22,7 +22,7 @@ export type ItemEditProps<T extends ItemType = ItemType> = {
 };
 
 export type ItemNewProps<T extends ItemType = ItemType> = {
-    vaultId: string;
+    shareId: string;
     onSubmit: (item: ItemCreateIntent<T>) => void;
     onCancel: () => void;
 };

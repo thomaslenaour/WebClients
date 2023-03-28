@@ -26,7 +26,7 @@ const getVaultOptionInfo = (vault: VaultOption): { id: null | string; label: str
         case 'trash':
             return { id: null, label: c('Label').t`Trash`, path: '/trash' };
         default:
-            return { id: vault.vaultId, label: vault.content.name, path: `/share/${vault.shareId}` };
+            return { id: vault.shareId, label: vault.content.name, path: `/share/${vault.shareId}` };
     }
 };
 
@@ -111,8 +111,8 @@ const TrashItem: VFC<TrashItemProps> = ({ onSelect, selected, handleRestoreTrash
 };
 
 export const VaultSubmenu: VFC<{
-    selectedVaultId: MaybeNull<string>;
-    handleVaultSelectClick: (vaultId: MaybeNull<string>) => void;
+    selectedShareId: MaybeNull<string>;
+    handleVaultSelectClick: (shareId: MaybeNull<string>) => void;
     handleVaultDeleteClick: (vault: VaultShare) => void;
     handleVaultEditClick: (vault: VaultShare) => void;
     handleVaultCreateClick: () => void;
@@ -120,7 +120,7 @@ export const VaultSubmenu: VFC<{
     handleRestoreTrash: () => void;
     handleEmptyTrash: () => void;
 }> = ({
-    selectedVaultId,
+    selectedShareId,
     handleVaultSelectClick,
     handleVaultDeleteClick,
     handleVaultEditClick,
@@ -131,7 +131,7 @@ export const VaultSubmenu: VFC<{
 }) => {
     const history = useHistory();
     const vaults = useSelector(selectAllVaults);
-    const selectedVault = useSelector(selectShare<ShareType.Vault>(selectedVaultId ?? ''));
+    const selectedVault = useSelector(selectShare<ShareType.Vault>(selectedShareId ?? ''));
     const canDelete = vaults.length > 1;
 
     const handleSelect = (vault: VaultOption) => {
@@ -162,7 +162,7 @@ export const VaultSubmenu: VFC<{
 
                 <VaultItem
                     label={c('Label').t`${getVaultOptionInfo('all').label}`}
-                    selected={!inTrash && selectedVaultId === null}
+                    selected={!inTrash && selectedShareId === null}
                     onSelect={() => handleSelect('all')}
                 />
 
@@ -171,7 +171,7 @@ export const VaultSubmenu: VFC<{
                         key={vault.shareId}
                         share={vault}
                         label={vault.content.name}
-                        selected={!inTrash && selectedVaultId === vault.shareId}
+                        selected={!inTrash && selectedShareId === vault.shareId}
                         onSelect={() => handleSelect(vault)}
                         onDelete={canDelete ? () => handleVaultDeleteClick(vault) : undefined}
                         onEdit={() => handleVaultEditClick(vault)}

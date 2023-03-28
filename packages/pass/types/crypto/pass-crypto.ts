@@ -45,7 +45,7 @@ export interface PassCryptoWorker extends SerializableCryptoContext<PassCryptoSn
     clear: () => void;
     getShareManager: (shareId: string) => ShareManager;
     createVault: (content: Uint8Array) => Promise<VaultCreateRequest>;
-    updateVault: (data: { vaultId: string; content: Uint8Array }) => Promise<VaultUpdateRequest>;
+    updateVault: (data: { shareId: string; content: Uint8Array }) => Promise<VaultUpdateRequest>;
     openShare: (data: { encryptedShare: ShareGetResponse; shareKeys: ShareKeyResponse[] }) => Promise<OpenedShare>;
     updateShareKeys: (data: { shareId: string; shareKeys: ShareKeyResponse[] }) => Promise<void>;
     removeShare: (shareId: string) => void;

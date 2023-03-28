@@ -33,7 +33,7 @@ function deriveAliasPrefixFromName(name: string) {
     );
 }
 
-export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCancel }) => {
+export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ shareId, onSubmit, onCancel }) => {
     const [ready, setReady] = useState(false);
 
     const { realm, subdomain } = usePopupContext();
@@ -45,7 +45,7 @@ export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCanc
         initialValues: {
             name: defaultName,
             note: isValidURL ? c('Placeholder').t`Used on ${url}` : '',
-            shareId: vaultId,
+            shareId,
             aliasPrefix: '',
             aliasSuffix: undefined,
             mailboxes: [],
@@ -80,7 +80,7 @@ export const AliasNew: VFC<ItemNewProps<'alias'>> = ({ vaultId, onSubmit, onCanc
     });
 
     const { aliasOptions, aliasOptionsLoading } = useAliasOptions({
-        shareId: vaultId,
+        shareId,
         onAliasOptionsLoaded: async (aliasOptions) => {
             const firstSuffix = aliasOptions.suffixes?.[0];
             const firstMailBox = aliasOptions.mailboxes?.[0];

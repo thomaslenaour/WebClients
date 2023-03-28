@@ -13,13 +13,13 @@ import { validateNoteForm } from './Note.validation';
 
 const FORM_ID = 'new-note';
 
-export const NoteNew: VFC<ItemNewProps<'note'>> = ({ vaultId, onSubmit, onCancel }) => {
+export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel }) => {
     const defaultName = c('Placeholder').t`Unnamed`;
     const form = useFormik({
         initialValues: {
             name: defaultName,
             note: '',
-            shareId: vaultId,
+            shareId,
         },
         onSubmit: ({ name, note, shareId }) => {
             const optimisticId = uniqid();

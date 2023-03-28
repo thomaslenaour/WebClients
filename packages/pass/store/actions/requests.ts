@@ -8,9 +8,9 @@ export const workerReady = (endpoint: ExtensionEndpoint, tabId: TabId) => `wakeu
 
 export const shares = () => 'shares';
 
-export const vaultCreate = (vaultId: string) => `vault-create-request-${vaultId}`;
-export const vaultEdit = (vaultId: string) => `vault-edit-request-${vaultId}`;
-export const vaultDelete = (vaultId: string) => `vault-delete-request-${vaultId}`;
+export const vaultCreate = (shareId: string) => `vault-create-request-${shareId}`;
+export const vaultEdit = (shareId: string) => `vault-edit-request-${shareId}`;
+export const vaultDelete = (shareId: string) => `vault-delete-request-${shareId}`;
 
 export const items = () => 'items';
 export const importItems = () => `import-items`;

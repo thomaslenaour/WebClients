@@ -24,10 +24,10 @@ export const ItemNewContainer: VFC = () => {
 
     const { itemType } = useParams<{ shareId: string; itemType: ItemType }>();
     const { selectItem } = useNavigationContext();
-    const { vaultId: selectedVaultId } = useItemsFilteringContext();
+    const { shareId: selectedShareId } = useItemsFilteringContext();
 
     const defaultVault = useSelector(selectDefaultVaultOrThrow);
-    const vaultId = selectedVaultId ?? defaultVault.shareId;
+    const shareId = selectedShareId ?? defaultVault.shareId;
 
     const ItemNewComponent = itemNewMap[itemType];
 
@@ -40,5 +40,5 @@ export const ItemNewContainer: VFC = () => {
 
     const handleCancel = () => history.goBack();
 
-    return <ItemNewComponent vaultId={vaultId} onSubmit={handleSubmit} onCancel={handleCancel} />;
+    return <ItemNewComponent shareId={shareId} onSubmit={handleSubmit} onCancel={handleCancel} />;
 };

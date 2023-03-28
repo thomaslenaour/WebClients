@@ -29,8 +29,8 @@ export const ItemsFilteringContextProvider: FC = ({ children }) => {
     const [sort, setSort] = useState<ItemsSortOption>(INITIAL_SORT);
     const [filter, setFilter] = useState<ItemsFilterOption>(getInitialFilter(hasCandidates));
     // eslint-disable-next-line @typescript-eslint/naming-convention
-    const [vaultId, setVaultId] = useState<MaybeNull<string>>(null);
-    const [vaultBeingDeleted, setVaultBeingDeleted] = useState<MaybeNull<string>>(null);
+    const [shareId, setShareId] = useState<MaybeNull<string>>(null);
+    const [shareBeingDeleted, setShareBeingDeleted] = useState<MaybeNull<string>>(null);
 
     // Memoize the context value to avoid unnecessarily re-rendering all context consumers when this component re-renders.
     const context: ItemsFilteringContextType = useMemo(
@@ -38,15 +38,15 @@ export const ItemsFilteringContextProvider: FC = ({ children }) => {
             search,
             sort,
             filter,
-            vaultId,
-            vaultBeingDeleted,
+            shareId,
+            shareBeingDeleted,
             setSearch,
             setSort,
             setFilter,
-            setVaultId,
-            setVaultBeingDeleted,
+            setShareId,
+            setShareBeingDeleted,
         }),
-        [search, sort, filter, vaultId, vaultBeingDeleted]
+        [search, sort, filter, shareId, shareBeingDeleted]
     );
 
     return <ItemsFilteringContext.Provider value={context}>{children}</ItemsFilteringContext.Provider>;

@@ -63,7 +63,7 @@ function* importWorker(
             try {
                 const shareId: string =
                     vaultData.type === 'existing'
-                        ? vaultData.vaultId
+                        ? vaultData.shareId
                         : yield call(createVaultForImport, vaultData.vaultName);
 
                 for (const batch of chunk(vaultData.items, 50)) {

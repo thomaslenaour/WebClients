@@ -11,13 +11,13 @@ export type ItemsFilteringContextType = {
     search: string;
     sort: ItemsSortOption;
     filter: ItemsFilterOption;
-    vaultId: MaybeNull<string>;
-    vaultBeingDeleted: MaybeNull<string>;
+    shareId: MaybeNull<string>;
+    shareBeingDeleted: MaybeNull<string>;
     setSearch: (query: string) => void;
     setSort: (value: ItemsSortOption) => void;
     setFilter: (value: ItemsFilterOption) => void;
-    setVaultId: (vaultId: MaybeNull<string>) => void;
-    setVaultBeingDeleted: (vaultId: MaybeNull<string>) => void;
+    setShareId: (shareId: MaybeNull<string>) => void;
+    setShareBeingDeleted: (shareId: MaybeNull<string>) => void;
 };
 
 export const INITIAL_SORT: ItemsSortOption = 'recent';
@@ -29,11 +29,11 @@ export const ItemsFilteringContext = createContext<ItemsFilteringContextType>({
     search: '',
     sort: INITIAL_SORT,
     filter: getInitialFilter(false),
-    vaultId: null,
-    vaultBeingDeleted: null,
+    shareId: null,
+    shareBeingDeleted: null,
     setSearch: noop,
     setSort: noop,
     setFilter: noop,
-    setVaultId: noop,
-    setVaultBeingDeleted: noop,
+    setShareId: noop,
+    setShareBeingDeleted: noop,
 });

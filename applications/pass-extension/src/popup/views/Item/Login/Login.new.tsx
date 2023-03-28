@@ -27,7 +27,7 @@ import { NewLoginItemFormValues, validateNewLoginForm } from './Login.validation
 
 const FORM_ID = 'new-login';
 
-export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCancel }) => {
+export const LoginNew: VFC<ItemNewProps<'login'>> = ({ shareId, onSubmit, onCancel }) => {
     const dispatch = useDispatch();
     const { realm, subdomain } = usePopupContext();
     const isValidURL = realm !== undefined;
@@ -38,7 +38,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
 
     const initialValues: NewLoginItemFormValues = {
         name: defaultName,
-        shareId: vaultId,
+        shareId,
         username: '',
         password: '',
         note: '',
@@ -201,7 +201,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ vaultId, onSubmit, onCanc
             <AliasModal
                 open={aliasModalOpen}
                 onClose={() => setAliasModalOpen(false)}
-                shareId={vaultId}
+                shareId={shareId}
                 initialPrefix={url ?? form.values.username}
                 onAliasSubmit={({ aliasPrefix, aliasSuffix, mailboxes }) => {
                     if (aliasPrefix !== undefined && aliasSuffix !== undefined && mailboxes.length > 0) {

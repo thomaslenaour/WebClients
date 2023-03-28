@@ -60,7 +60,7 @@ const ImportVaultsPickerRef: ForwardRefRenderFunction<ImportVaultsPickerHandle, 
                             className="mb0-75"
                         >
                             <ImportVaultPickerOption
-                                value={value.type === 'existing' ? value.vaultId : value.id}
+                                value={value.type === 'existing' ? value.shareId : value.id}
                                 selected={value.selected}
                                 onToggle={(checked) =>
                                     form.setFieldValue(
@@ -71,13 +71,13 @@ const ImportVaultsPickerRef: ForwardRefRenderFunction<ImportVaultsPickerHandle, 
                                         }))
                                     )
                                 }
-                                onChange={(id) => {
+                                onChange={async (id) => {
                                     const update: VaultPickerValue =
                                         id === importedVault.id
                                             ? { ...importedVault, selected: true }
-                                            : { ...importedVault, type: 'existing', vaultId: id, selected: true };
+                                            : { ...importedVault, type: 'existing', shareId: id, selected: true };
 
-                                    form.setFieldValue(
+                                    await form.setFieldValue(
                                         'vaults',
                                         form.values.vaults.map((vault) => (vault.id === value.id ? update : vault))
                                     );

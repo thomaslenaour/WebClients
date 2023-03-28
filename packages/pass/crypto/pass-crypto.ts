@@ -110,10 +110,10 @@ const createPassCrypto = (): PassCryptoWorker => {
          * -proof this, each vault update should be preceded by a
          * call to retrieve the latest shareKeys.
          */
-        async updateVault({ vaultId, content }) {
+        async updateVault({ shareId, content }) {
             assertHydrated(context);
 
-            const shareManager = getShareManager(vaultId);
+            const shareManager = getShareManager(shareId);
             const latestRotation = shareManager.getLatestRotation();
             const vaultKey = shareManager.getVaultKey(latestRotation);
 
