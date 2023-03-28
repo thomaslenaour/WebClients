@@ -1,67 +1,22 @@
-/**
- * Similar to `SessionLockConfirmContextProvider`
- * FIXME: the overall pattern with a context exposing
- * modal controls with an async resolver could be
- * abstracted to reduce boilerplate code.
- */
-import { type FC, createContext, useCallback, useContext, useMemo, useRef, useState } from 'react';
+import { type FC, createContext, useContext, useMemo } from 'react';
 
-import type { Maybe } from '@proton/pass/types';
-
+import { type UseAsyncModalHandle, useAsyncModalHandles } from '../../../shared/hooks/useAsyncModalHandles';
 import { PasswordGeneratorModal, type BaseProps as PasswordGeneratorModalProps } from './PasswordGeneratorModal';
 
 type ModalState = Omit<PasswordGeneratorModalProps, 'onSubmit'>;
-type PasswordGeneratorModalState = ModalState & { opened: boolean };
-type PasswordGeneratorOptions = ModalState & { onSubmit?: (password: string) => Promise<void> | void };
-type PasswordGeneratorContextValue = { generatePassword: (options: PasswordGeneratorOptions) => Promise<void> };
+type PasswordGeneratorContextValue = { generatePassword: UseAsyncModalHandle<string, ModalState> };
 
 const PasswordGeneratorContext = createContext<PasswordGeneratorContextValue>({ generatePassword: async () => {} });
-const getInitialModalState = (): PasswordGeneratorModalState => ({ opened: false, actionLabel: '' });
+const getInitialModalState = (): ModalState => ({ actionLabel: '' });
 
 export const PasswordGeneratorContextProvider: FC = ({ children }) => {
-    const passwordResolver = useRef<Maybe<(password: string) => void>>();
-    const passwordRejector = useRef<Maybe<() => void>>();
-
-    const [{ opened, actionLabel, className }, setState] = useState<PasswordGeneratorModalState>(
-        getInitialModalState()
-    );
-
-    const abort = useCallback(() => {
-        passwordRejector.current?.();
-        setState(getInitialModalState());
-    }, []);
-
-    const contextValue = useMemo<PasswordGeneratorContextValue>(
-        () => ({
-            generatePassword: async (opts) => {
-                const { onSubmit, ...modalOptions } = opts;
-                setState((state) => ({ ...state, ...modalOptions, opened: true }));
-
-                try {
-                    const password = await new Promise<string>((resolve, reject) => {
-                        passwordResolver.current = resolve;
-                        passwordRejector.current = reject;
-                    });
-                    await onSubmit?.(password);
-                } catch (_) {
-                } finally {
-                    setState(getInitialModalState());
-                }
-            },
-        }),
-        []
-    );
+    const { resolver, state, handler, abort } = useAsyncModalHandles<string, ModalState>({ getInitialModalState });
+    const contextValue = useMemo<PasswordGeneratorContextValue>(() => ({ generatePassword: handler }), [handler]);
 
     return (
         <PasswordGeneratorContext.Provider value={contextValue}>
             {children}
-            <PasswordGeneratorModal
-                open={opened}
-                onClose={abort}
-                actionLabel={actionLabel}
-                onSubmit={passwordResolver.current}
-                className={className}
-            />
+            <PasswordGeneratorModal onClose={abort} onSubmit={resolver} {...state} />
         </PasswordGeneratorContext.Provider>
     );
 };
