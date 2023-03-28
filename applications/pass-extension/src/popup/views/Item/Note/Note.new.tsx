@@ -6,18 +6,17 @@ import uniqid from 'uniqid';
 
 import { getEpoch } from '@proton/pass/utils/time';
 
-import { TextAreaField, TextField } from '../../../../shared/components/fields';
 import { ItemNewProps } from '../../../../shared/items';
+import { NoteTextAreaField, NoteTitleField } from '../../../components/Fields/Note/index';
 import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
 import { validateNoteForm } from './Note.validation';
 
 const FORM_ID = 'new-note';
 
 export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel }) => {
-    const defaultName = c('Placeholder').t`Unnamed`;
     const form = useFormik({
         initialValues: {
-            name: defaultName,
+            name: '',
             note: '',
             shareId,
         },
@@ -41,6 +40,7 @@ export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel
 
         validate: validateNoteForm,
         validateOnChange: true,
+        validateOnMount: true,
     });
 
     const valid = form.isValid;
@@ -49,8 +49,19 @@ export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel
         <ItemCreatePanel type="note" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
-                    <Field name="name" label="Name" component={TextField} />
-                    <Field name="note" label="Note" component={TextAreaField} />
+                    <Field
+                        autoFocus
+                        component={NoteTitleField}
+                        label=""
+                        name="name"
+                        placeholder={c('Placeholder').t`Untitled`}
+                    />
+                    <Field
+                        component={NoteTextAreaField}
+                        label=""
+                        name="note"
+                        placeholder={c('Placeholder').t`Write your message`}
+                    />
                 </Form>
             </FormikProvider>
         </ItemCreatePanel>

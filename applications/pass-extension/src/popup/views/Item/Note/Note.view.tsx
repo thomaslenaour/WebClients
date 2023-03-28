@@ -3,6 +3,8 @@ import { type VFC } from 'react';
 import type { ItemTypeViewProps } from '../../../../shared/items/types';
 import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
 
+import './Note.view.scss';
+
 export const NoteView: VFC<ItemTypeViewProps<'note'>> = ({
     vault,
     revision,
@@ -37,7 +39,9 @@ export const NoteView: VFC<ItemTypeViewProps<'note'>> = ({
             handleRestoreClick={handleRestoreClick}
             handleDeleteClick={handleDeleteClick}
         >
-            <div className="text-break">{note}</div>
+            <div className="pass-note-view text-break">
+                <pre>{note}</pre>
+            </div>
         </ItemViewPanel>
     );
 };

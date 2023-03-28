@@ -76,7 +76,6 @@
   --interaction-norm-major-1: #A779FF;
   --interaction-norm-major-2: #B994FF;
   --interaction-norm-major-3: #C1A1FF;
-  --interaction-norm-contrast: #FFFFFF;
 }
 
 .ui-alias {
@@ -86,7 +85,6 @@
   --interaction-norm-major-1: #6ABDB3;
   --interaction-norm-major-2: #88CAC2;
   --interaction-norm-major-3: #97D1CA;
-  --interaction-norm-contrast: #000000;
 }
 
 .ui-note {
@@ -96,7 +94,6 @@
   --interaction-norm-major-1: #FFCA8A;
   --interaction-norm-major-2: #FFD5A1;
   --interaction-norm-major-3: #FFDAAD;
-  --interaction-norm-contrast: #000000;
 }
 
 .ui-password {
@@ -106,5 +103,4 @@
   --interaction-norm-major-1: #FC9C9F;
   --interaction-norm-major-2: #FDB0B2;
   --interaction-norm-major-3: #FDBABC;
-  --interaction-norm-contrast: #000000;
 }
