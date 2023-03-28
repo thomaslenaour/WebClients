@@ -2,12 +2,15 @@ import { put, takeEvery } from 'redux-saga/effects';
 
 import { Share, ShareType } from '@proton/pass/types';
 
-import { vaultCreationFailure, vaultCreationIntent, vaultCreationSuccess } from '../actions';
+import { acknowledge, vaultCreationFailure, vaultCreationIntent, vaultCreationSuccess } from '../actions';
 import { createVault } from './workers/vaults';
 
 function* createVaultWorker({ payload, meta }: ReturnType<typeof vaultCreationIntent>) {
     const { callback: onCreateVaultProcessed } = meta;
     try {
+        if (Math.random() < 0.8) {
+            throw new Error('lololo');
+        }
         const share: Share<ShareType.Vault> = yield createVault(payload.content);
 
         const vaultCreationSuccessAction = vaultCreationSuccess({ id: payload.id, share });
@@ -19,6 +22,8 @@ function* createVaultWorker({ payload, meta }: ReturnType<typeof vaultCreationIn
         yield put(vaultCreationFailureAction);
 
         onCreateVaultProcessed?.(vaultCreationFailureAction);
+    } finally {
+        yield put(acknowledge(meta.request.id));
     }
 }
 
