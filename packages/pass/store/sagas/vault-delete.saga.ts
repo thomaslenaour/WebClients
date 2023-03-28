@@ -3,12 +3,12 @@ import { put, takeEvery } from 'redux-saga/effects';
 import { api } from '@proton/pass/api';
 import { PassCrypto } from '@proton/pass/crypto';
 
-import { vaultDeleteFailure, vaultDeleteIntent, vaultDeleteSuccess } from '../actions';
+import { acknowledge, vaultDeleteFailure, vaultDeleteIntent, vaultDeleteSuccess } from '../actions';
 import type { WorkerRootSagaOptions } from '../types';
 
 function* deleteVault(
     { onItemsChange }: WorkerRootSagaOptions,
-    { payload: { id, content } }: ReturnType<typeof vaultDeleteIntent>
+    { payload: { id, content }, meta }: ReturnType<typeof vaultDeleteIntent>
 ): Generator {
     try {
         yield api({ url: `pass/v1/vault/${id}`, method: 'delete' });
@@ -18,6 +18,8 @@ function* deleteVault(
         onItemsChange?.();
     } catch (e) {
         yield put(vaultDeleteFailure({ id, content }, e));
+    } finally {
+        yield put(acknowledge(meta.request.id));
     }
 }
 

@@ -155,17 +155,13 @@ export const useImportForm = ({
     const requestStatus = useSelector(selectRequestStatus(importItems()));
 
     useEffect(() => {
-        if (requestStatus !== undefined) {
-            switch (requestStatus) {
-                case 'success': {
-                    reset();
-                    onImported?.();
-                    break;
-                }
-                case 'failure': {
-                    setBusy(false);
-                    break;
-                }
+        switch (requestStatus) {
+            case 'success': {
+                reset();
+                return onImported?.();
+            }
+            case 'failure': {
+                return setBusy(false);
             }
         }
     }, [requestStatus]);

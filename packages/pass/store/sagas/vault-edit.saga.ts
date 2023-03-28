@@ -2,15 +2,17 @@ import { put, takeEvery } from 'redux-saga/effects';
 
 import { Share, ShareType } from '@proton/pass/types';
 
-import { vaultEditFailure, vaultEditIntent, vaultEditSuccess } from '../actions';
+import { acknowledge, vaultEditFailure, vaultEditIntent, vaultEditSuccess } from '../actions';
 import { editVault } from './workers/vaults';
 
-function* editVaultWorker({ payload }: ReturnType<typeof vaultEditIntent>) {
+function* editVaultWorker({ payload, meta }: ReturnType<typeof vaultEditIntent>) {
     try {
         const share: Share<ShareType.Vault> = yield editVault(payload.id, payload.content);
         yield put(vaultEditSuccess({ id: payload.id, share }));
     } catch (e) {
         yield put(vaultEditFailure(payload, e));
+    } finally {
+        yield put(acknowledge(meta.request.id));
     }
 }
 

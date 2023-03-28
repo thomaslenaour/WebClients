@@ -52,8 +52,6 @@ export const VaultEdit: VFC<Props> = ({ vault, onSubmit, onSuccess, onFailure })
                 return onSuccess?.();
             case 'failure':
                 return onFailure?.();
-            default:
-                return;
         }
     }, [status, requestId]);
 

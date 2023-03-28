@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { c } from 'ttag';
 
 import { Checkbox } from '@proton/components';
-import { selectRequestStatus, selectSessionLockSettings, sessionLockDisableIntent } from '@proton/pass/store';
+import { selectRequestInFlight, selectSessionLockSettings, sessionLockDisableIntent } from '@proton/pass/store';
 import { settingsEdit } from '@proton/pass/store/actions/requests';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
@@ -21,8 +21,8 @@ export const Security: VFC = () => {
     const { confirmPin } = useSessionLockConfirmContext();
 
     const { sessionLockToken, sessionLockTTL } = useSelector(selectSessionLockSettings);
-    const sessionLockStatus = useSelector(selectRequestStatus(settingsEdit('session-lock')));
-    const sessionLockLoading = sessionLockStatus === 'start';
+    const sessionLockLoading = useSelector(selectRequestInFlight(settingsEdit('session-lock')));
+
     const hasLock = sessionLockToken !== undefined;
 
     const handleSessionLockToggle = async () =>

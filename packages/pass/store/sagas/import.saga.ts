@@ -8,6 +8,7 @@ import { getApiErrorMessage } from '@proton/shared/lib/api/helpers/apiErrorHelpe
 import chunk from '@proton/utils/chunk';
 
 import {
+    acknowledge,
     importItemsFailure,
     importItemsIntent,
     importItemsSuccess,
@@ -104,6 +105,8 @@ function* importWorker(
         onItemsChange?.();
     } catch (error: any) {
         yield put(importItemsFailure(error, meta.receiver));
+    } finally {
+        yield put(acknowledge(meta.request.id));
     }
 }
 
