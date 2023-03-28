@@ -172,6 +172,13 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
             authService.authStore.setUID(UID);
             authService.authStore.setPassword(keyPassword);
 
+            if (authCtx.locked || (await isSessionLocked())) {
+                logger.info(`[Worker::Auth] Detected locked session`);
+
+                authService.lock();
+                return false;
+            }
+
             api.subscribe((event) => {
                 switch (event.type) {
                     case 'session': {
@@ -207,13 +214,6 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
                     }
                 }
             });
-
-            if (authCtx.locked || (await isSessionLocked())) {
-                logger.info(`[Worker::Auth] Detected locked session`);
-
-                authService.lock();
-                return false;
-            }
 
             logger.info(`[Worker::Auth] User is authorized`);
             ctx.setStatus(WorkerStatus.AUTHORIZED);
