@@ -141,7 +141,7 @@ const BaseColors = () => (
 
 export const BaseStandard = () => (
     <>
-        <div className="ui-standard border rounded p1">
+        <div className="border rounded p1">
             <BaseColors />
         </div>
     </>
