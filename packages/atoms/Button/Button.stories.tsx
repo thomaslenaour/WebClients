@@ -96,7 +96,7 @@ export const Sandbox = () => {
                 <strong className="block mb1">Toggles</strong>
                 {toggles.map((prop, i) => {
                     return (
-                        <div className="mb0-5">
+                        <div className="mb0-5" key={i}>
                             <Checkbox
                                 checked={selectedToggles[i]}
                                 onChange={({ target: { checked } }) => {
