@@ -27,23 +27,10 @@ import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
 import { ValueControl } from '../../../components/Controls/ValueControl';
 import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
 
-export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
-    vault,
-    revision,
-    optimistic,
-    failed,
-    trashed,
-    handleEditClick,
-    handleMoveToTrashClick,
-    handleRetryClick,
-    handleDismissClick,
-    handleRestoreClick,
-    handleDeleteClick,
-}) => {
-    const { data: item, aliasEmail, createTime, itemId, revision: revisionNumber } = revision;
-    const {
-        metadata: { name, note },
-    } = item;
+export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({ vault, revision, ...itemViewProps }) => {
+    const { data: item, itemId, aliasEmail, createTime, revision: revisionNumber } = revision;
+    const { name, note } = item.metadata;
+    const { optimistic } = itemViewProps;
 
     const dispatch = useDispatch();
     const { createNotification } = useNotifications();
@@ -70,20 +57,7 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
     }, [requestFailure]);
 
     return (
-        <ItemViewPanel
-            type="alias"
-            name={name}
-            vaultName={vault.content.name}
-            optimistic={optimistic}
-            failed={failed}
-            trashed={trashed}
-            handleEditClick={handleEditClick}
-            handleRetryClick={handleRetryClick}
-            handleDismissClick={handleDismissClick}
-            handleMoveToTrashClick={handleMoveToTrashClick}
-            handleRestoreClick={handleRestoreClick}
-            handleDeleteClick={handleDeleteClick}
-        >
+        <ItemViewPanel type="alias" name={name} vaultName={vault.content.name} {...itemViewProps}>
             <FieldsetCluster mode="read" as="div">
                 <ClickToCopyValue value={aliasEmail ?? ''}>
                     <ValueControl interactive icon="alias" label={c('Label').t`Alias address`}>

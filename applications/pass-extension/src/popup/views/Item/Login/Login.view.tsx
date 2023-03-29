@@ -6,39 +6,14 @@ import { PasswordFieldValue, TextFieldValue, UrlFieldValue } from '../../../../s
 import type { ItemTypeViewProps } from '../../../../shared/items/types';
 import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
 
-export const LoginView: VFC<ItemTypeViewProps<'login'>> = ({
-    vault,
-    revision,
-    optimistic,
-    failed,
-    trashed,
-    handleEditClick,
-    handleMoveToTrashClick,
-    handleRetryClick,
-    handleDismissClick,
-    handleRestoreClick,
-    handleDeleteClick,
-}) => {
+export const LoginView: VFC<ItemTypeViewProps<'login'>> = ({ vault, revision, ...itemViewProps }) => {
     const { data: item } = revision;
     const { metadata, content } = item;
     const { name, note } = metadata;
     const { username, password, urls } = content;
 
     return (
-        <ItemViewPanel
-            type="login"
-            name={name}
-            vaultName={vault.content.name}
-            optimistic={optimistic}
-            failed={failed}
-            trashed={trashed}
-            handleEditClick={handleEditClick}
-            handleRetryClick={handleRetryClick}
-            handleDismissClick={handleDismissClick}
-            handleMoveToTrashClick={handleMoveToTrashClick}
-            handleRestoreClick={handleRestoreClick}
-            handleDeleteClick={handleDeleteClick}
-        >
+        <ItemViewPanel type="login" name={name} vaultName={vault.content.name} {...itemViewProps}>
             <div className="text-semibold mb0-5"> {c('Label').t`Username`}</div>
             <TextFieldValue fallback={c('Info').t`None`}>{username}</TextFieldValue>
 

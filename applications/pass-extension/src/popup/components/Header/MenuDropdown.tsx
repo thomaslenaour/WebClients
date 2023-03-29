@@ -24,7 +24,7 @@ import { usePopupContext } from '../../context';
 import { handleVaultDeletionEffects } from '../../context/items/ItemEffects';
 import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
 import { useNavigationContext } from '../../context/navigation/useNavigationContext';
-import { VaultModal, type Props as VaultModalProps } from '../../views/Vault/VaultModal';
+import { VaultModal, type Props as VaultModalProps } from '../../views/Vault/Vault.modal';
 import { VaultSubmenu } from './VaultSubmenu';
 
 const DROPDOWN_SIZE: NonNullable<DropdownProps['size']> = {
@@ -179,6 +179,7 @@ const MenuDropdownRaw: VFC<{ className?: string }> = ({ className }) => {
             </nav>
 
             {vaultModalProps !== null && <VaultModal {...vaultModalProps} onClose={() => setVaultModalProps(null)} />}
+
             <ConfirmationModal
                 title={c('Title').t`Delete vault ?`}
                 open={deleteVault !== null}
@@ -189,6 +190,7 @@ const MenuDropdownRaw: VFC<{ className?: string }> = ({ className }) => {
                 {c('Warning')
                     .t`Vault "${deleteVault?.content.name}" and all its items will be permanently deleted. You can not undo this action`}
             </ConfirmationModal>
+
             <ConfirmationModal
                 title={c('Title').t`Permanently remove all items ?`}
                 open={deleteAllConfirm}

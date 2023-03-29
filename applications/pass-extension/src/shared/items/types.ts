@@ -3,15 +3,16 @@ import type { ItemCreateIntent, ItemEditIntent, ItemRevision, ItemType, VaultSha
 export type ItemTypeViewProps<T extends ItemType = ItemType> = {
     vault: VaultShare;
     revision: ItemRevision<T>;
+    optimistic: boolean;
+    failed: boolean;
+    trashed: boolean;
     handleEditClick: () => void;
     handleRetryClick: () => void;
     handleDismissClick: () => void;
     handleMoveToTrashClick: () => void;
+    handleMoveToVaultClick: () => void;
     handleRestoreClick: () => void;
     handleDeleteClick: () => void;
-    optimistic: boolean;
-    failed: boolean;
-    trashed: boolean;
 };
 
 export type ItemEditProps<T extends ItemType = ItemType> = {

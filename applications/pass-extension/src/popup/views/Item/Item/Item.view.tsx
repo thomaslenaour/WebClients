@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import type { AnyAction } from 'redux';
+import uniqid from 'uniqid';
 
 import {
     itemCreationDismiss,
@@ -10,6 +11,7 @@ import {
     itemDeleteIntent,
     itemEditDismiss,
     itemEditIntent,
+    itemMoveIntent,
     itemRestoreIntent,
     itemTrashIntent,
 } from '@proton/pass/store';
@@ -17,6 +19,7 @@ import type { ItemRevisionWithOptimistic, ItemType, Maybe, VaultShare } from '@p
 import { isTrashed } from '@proton/pass/utils/pass/trash';
 
 import type { ItemTypeViewProps } from '../../../../shared/items/types';
+import { VaultSelectModal, useVaultSelectModalHandles } from '../../Vault/VaultSelect.modal';
 import { AliasView } from '../Alias/Alias.view';
 import { LoginView } from '../Login/Login.view';
 import { NoteView } from '../Note/Note.view';
@@ -38,6 +41,8 @@ const itemTypeViewMap: { [T in ItemType]: VFC<ItemTypeViewProps<T>> } = {
 export const ItemView: VFC<Props> = ({ item, failureAction, shareId, itemId, vault }) => {
     const dispatch = useDispatch();
     const history = useHistory();
+
+    const { closeVaultSelect, openVaultSelect, modalState } = useVaultSelectModalHandles();
 
     const { optimistic, failed, revision } = useMemo(() => {
         const { optimistic, failed, ...revision } = item;
@@ -66,6 +71,26 @@ export const ItemView: VFC<Props> = ({ item, failureAction, shareId, itemId, vau
         dispatch(itemTrashIntent({ itemId, shareId, item }));
     }, [itemId, shareId, item]);
 
+    const handleMove = useCallback(() => openVaultSelect(item.shareId), [item.shareId]);
+
+    const handleVaultSelect = useCallback(
+        (destinationShareId: string) => {
+            const optimisticId = uniqid();
+
+            dispatch(
+                itemMoveIntent({
+                    item: revision,
+                    shareId: destinationShareId,
+                    optimisticId,
+                })
+            );
+
+            history.push(`/share/${destinationShareId}/item/${optimisticId}`);
+            closeVaultSelect();
+        },
+        [revision]
+    );
+
     const handleRestore = useCallback(() => {
         dispatch(itemRestoreIntent({ item, itemId, shareId }));
     }, [itemId, shareId, item]);
@@ -77,19 +102,24 @@ export const ItemView: VFC<Props> = ({ item, failureAction, shareId, itemId, vau
     const ItemTypeViewComponent = itemTypeViewMap[item.data.type] as VFC<ItemTypeViewProps>;
 
     return (
-        <ItemTypeViewComponent
-            key={item.itemId}
-            vault={vault}
-            revision={item}
-            handleEditClick={handleEdit}
-            handleRetryClick={handleRetry}
-            handleMoveToTrashClick={handleTrash}
-            handleDismissClick={handleDismiss}
-            handleRestoreClick={handleRestore}
-            handleDeleteClick={handleDelete}
-            optimistic={optimistic}
-            failed={failed}
-            trashed={trashed}
-        />
+        <>
+            <ItemTypeViewComponent
+                key={item.itemId}
+                vault={vault}
+                revision={item}
+                handleEditClick={handleEdit}
+                handleRetryClick={handleRetry}
+                handleMoveToTrashClick={handleTrash}
+                handleMoveToVaultClick={handleMove}
+                handleDismissClick={handleDismiss}
+                handleRestoreClick={handleRestore}
+                handleDeleteClick={handleDelete}
+                optimistic={optimistic}
+                failed={failed}
+                trashed={trashed}
+            />
+
+            <VaultSelectModal onSubmit={handleVaultSelect} onClose={closeVaultSelect} {...modalState} />
+        </>
     );
 };
