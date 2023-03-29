@@ -2,9 +2,9 @@ import browser from 'webextension-polyfill';
 
 import { requestFork } from '@proton/pass/auth';
 
-import * as config from '../../app/config';
+import { SSO_URL } from '../../app/config';
 
 export const useNavigateToLogin = () => async () => {
-    const url = await requestFork(config.API_URL.replace('/api', ''));
+    const url = await requestFork(SSO_URL);
     await browser.tabs.create({ url });
 };
