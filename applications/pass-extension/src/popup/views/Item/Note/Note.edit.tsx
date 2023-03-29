@@ -44,15 +44,15 @@ export const NoteEdit: VFC<ItemEditProps<'note'>> = ({ vault, revision, onSubmit
                     <Field
                         autoFocus
                         component={NoteTitleField}
-                        label=""
+                        label="Name"
                         name="name"
                         placeholder={c('Placeholder').t`Untitled`}
                     />
                     <Field
                         component={NoteTextAreaField}
-                        label=""
+                        label="Note"
                         name="note"
-                        placeholder={c('Placeholder').t`Write your message`}
+                        placeholder={c('Placeholder').t`Write your note`}
                     />
                 </Form>
             </FormikProvider>
