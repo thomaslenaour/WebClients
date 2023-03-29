@@ -49,13 +49,13 @@ export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel
                     <Field
                         autoFocus
                         component={NoteTitleField}
-                        label="Name"
+                        label={c('Label').t`Name`}
                         name="name"
                         placeholder={c('Placeholder').t`Untitled`}
                     />
                     <Field
                         component={NoteTextAreaField}
-                        label="Note"
+                        label={c('Label').t`Note`}
                         name="note"
                         placeholder={c('Placeholder').t`Write your note`}
                     />
