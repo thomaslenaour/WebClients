@@ -3,8 +3,6 @@ import { type VFC } from 'react';
 import type { ItemTypeViewProps } from '../../../../shared/items/types';
 import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
 
-import './Note.view.scss';
-
 export const NoteView: VFC<ItemTypeViewProps<'note'>> = ({
     vault,
     revision,

@@ -1,0 +1,7 @@
+.pass-value-control--clickable {
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--background-weak);
+	}
+}
