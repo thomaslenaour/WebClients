@@ -11,13 +11,14 @@ import withCacheBlock from '../with-cache-block';
 import withCallback, { ActionCallback } from '../with-callback';
 import withNotification from '../with-notification';
 import withRequest from '../with-request';
+import withSynchronousClientAction from '../with-synchronous-client-action';
 
 export const itemCreationIntent = createOptimisticAction(
     'item creation intent',
     (
         payload: ItemCreateIntent,
         callback?: ActionCallback<ReturnType<typeof itemCreationSuccess> | ReturnType<typeof itemCreationFailure>>
-    ) => pipe(withCacheBlock, withCallback(callback))({ payload }),
+    ) => pipe(withSynchronousClientAction, withCacheBlock, withCallback(callback))({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
 );
 
@@ -63,7 +64,7 @@ export const itemEditIntent = createOptimisticAction(
     (
         payload: ItemEditIntent,
         callback?: ActionCallback<ReturnType<typeof itemEditSuccess> | ReturnType<typeof itemEditFailure>>
-    ) => pipe(withCacheBlock, withCallback(callback))({ payload }),
+    ) => pipe(withSynchronousClientAction, withCacheBlock, withCallback(callback))({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
 );
 
@@ -110,13 +111,14 @@ export const itemEditSync = createAction('item edit sync', (payload: { item: Ite
 
 export const itemMoveIntent = createOptimisticAction(
     'item move intent',
-    (payload: { item: ItemRevision; shareId: string; optimisticId: string }) => withCacheBlock({ payload }),
+    (payload: { item: ItemRevision; shareId: string; optimisticId: string }) =>
+        pipe(withSynchronousClientAction, withCacheBlock)({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
 );
 
 export const itemMoveFailure = createOptimisticAction(
     'item move failure',
-    (payload: { optimisticId: string; shareId: string }, error: unknown) =>
+    (payload: { optimisticId: string; shareId: string; item: ItemRevision }, error: unknown) =>
         pipe(
             withCacheBlock,
             withNotification({
