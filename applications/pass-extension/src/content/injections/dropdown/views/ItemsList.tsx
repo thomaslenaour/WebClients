@@ -1,41 +1,29 @@
-import React, { useCallback } from 'react';
+import type { VFC } from 'react';
 
-import { contentScriptMessage, sendMessage } from '@proton/pass/extension/message';
-import { SafeLoginItem, WorkerMessageType } from '@proton/pass/types';
+import { SafeLoginItem } from '@proton/pass/types';
 
-import { DropdownIframeMessage, DropdownMessageType } from '../../../types';
-import { IFrameMessageBroker } from '../../iframe/messages';
+import { IFrameMessageType } from '../../../types';
+import { useIFrameContext } from '../../iframe/IFrameContextProvider';
 import { DropdownItem } from '../components/DropdownItem';
 import { DropdownItemsList } from '../components/DropdownItemsList';
 
-export const ItemsList: React.FC<{
-    items: SafeLoginItem[];
-}> = ({ items }) => {
-    const requestAutofill = useCallback(async (shareId: string, itemId: string) => {
-        await sendMessage.map(
-            contentScriptMessage({
-                type: WorkerMessageType.AUTOFILL_SELECT,
-                payload: { shareId, itemId },
-            }),
-            (response) =>
-                response.type === 'success' &&
-                IFrameMessageBroker.postMessage<DropdownIframeMessage>({
-                    sender: 'dropdown',
-                    type: DropdownMessageType.AUTOFILL,
-                    payload: response,
-                })
-        );
-    }, []);
+export const ItemsList: VFC<{ items: SafeLoginItem[] }> = ({ items }) => {
+    const { postMessage } = useIFrameContext();
 
     return (
         <DropdownItemsList>
-            {items.map(({ name, username, shareId, itemId }) => (
+            {items.map((item) => (
                 <DropdownItem
-                    key={itemId}
-                    onClick={() => requestAutofill(shareId, itemId)}
-                    title={name}
-                    subTitle={username}
+                    key={item.itemId}
                     icon="key"
+                    title={item.name}
+                    subTitle={item.username}
+                    onClick={() =>
+                        postMessage({
+                            type: IFrameMessageType.DROPDOWN_AUTOFILL_LOGIN,
+                            payload: { item },
+                        })
+                    }
                 />
             ))}
         </DropdownItemsList>

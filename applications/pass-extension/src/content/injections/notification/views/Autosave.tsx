@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import { type VFC, useState } from 'react';
 
 import { Field, Form, FormikProvider, useFormik } from 'formik';
-import { FieldProps } from 'formik/dist/Field';
+import type { FieldProps } from 'formik/dist/Field';
 import { c } from 'ttag';
 import uniqid from 'uniqid';
 
 import { Button } from '@proton/atoms/Button';
 import { Icon, InputFieldTwo, PasswordInputTwo } from '@proton/components/components';
 import { useNotifications } from '@proton/components/hooks';
-import { AutoSaveType, PromptedFormSubmission } from '@proton/pass/types';
+import { contentScriptMessage, sendMessage } from '@proton/pass/extension/message';
+import { AutoSaveType, PromptedFormSubmission, WorkerMessageType } from '@proton/pass/types';
 import { isValidURL } from '@proton/pass/utils/url';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
-import { IFrameAppMessageType, NotificationIframeMessage, NotificationMessageType } from '../../../types';
-import { IFrameMessageBroker } from '../../iframe/messages';
+import { useIFrameContext } from '../../iframe/IFrameContextProvider';
 
 import './Autosave.scss';
 
@@ -23,10 +23,11 @@ type AutosaveFormValues = {
     password: string;
 };
 
-export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSaved: () => void }> = ({
+export const Autosave: VFC<{ submission: PromptedFormSubmission; onAutoSaved: () => void }> = ({
     submission,
     onAutoSaved,
 }) => {
+    const { closeIFrame } = useIFrameContext();
     const { createNotification } = useNotifications();
     const [busy, setBusy] = useState(false);
     const submissionURL = submission.subdomain ?? submission.realm;
@@ -42,7 +43,9 @@ export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSave
         },
         validateOnChange: true,
 
-        onSubmit: ({ title, username, password }) => {
+        onSubmit: async ({ title, username, password }) => {
+            setBusy(true);
+
             const { valid, url } = isValidURL(submissionURL);
             const revision =
                 submission.autosave.data.action === AutoSaveType.UPDATE
@@ -57,54 +60,34 @@ export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSave
                           urls: valid ? [url] : [],
                       };
 
-            IFrameMessageBroker.postMessage<NotificationIframeMessage>({
-                type: NotificationMessageType.AUTOSAVE_REQUEST,
-                sender: 'notification',
-                payload: {
-                    submission: submission,
-                    item: {
-                        type: 'login',
-                        metadata: {
-                            name: title,
-                            note: revision.note,
-                            itemUuid: uniqid(),
+            try {
+                const result = await sendMessage(
+                    contentScriptMessage({
+                        type: WorkerMessageType.AUTOSAVE_REQUEST,
+                        payload: {
+                            submission,
+                            item: {
+                                type: 'login',
+                                metadata: { name: title, note: revision.note, itemUuid: uniqid() },
+                                content: { username, password, urls: revision.urls, totpUri: '' },
+                                extraFields: [],
+                            },
                         },
-                        content: {
-                            username,
-                            password,
-                            urls: revision.urls,
-                            totpUri: '',
-                        },
-                        extraFields: [],
-                    },
-                },
-            });
+                    })
+                );
 
-            setBusy(true);
+                return result.type === 'success'
+                    ? onAutoSaved()
+                    : createNotification({
+                          text: c('Warning').t`Unable to save`,
+                          type: 'error',
+                      });
+            } catch (_) {
+            } finally {
+                setBusy(false);
+            }
         },
     });
-
-    useEffect(
-        () =>
-            IFrameMessageBroker.onContentScriptMessage<NotificationIframeMessage>((message) => {
-                switch (message.type) {
-                    case NotificationMessageType.AUTOSAVE_FAILURE: {
-                        createNotification({
-                            text: c('Warning').t`Unable to save`,
-                            type: 'error',
-                        });
-                        return setBusy(false);
-                    }
-
-                    case NotificationMessageType.AUTOSAVE_SUCCESS: {
-                        return onAutoSaved();
-                    }
-                    default:
-                        break;
-                }
-            }),
-        []
-    );
 
     return (
         <FormikProvider value={form}>
@@ -118,17 +101,7 @@ export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSave
                         </h3>
                     </div>
                     <div className="modal-two-header-actions flex flex-item-noshrink flex-nowrap flex-align-items-stretch">
-                        <Button
-                            className="flex-item-noshrink"
-                            shape="ghost"
-                            icon
-                            onClick={() =>
-                                IFrameMessageBroker.postMessage({
-                                    type: IFrameAppMessageType.CLOSE,
-                                    sender: 'notification',
-                                })
-                            }
-                        >
+                        <Button className="flex-item-noshrink" shape="ghost" icon onClick={closeIFrame}>
                             <Icon name="cross-big" />
                         </Button>
                     </div>
@@ -161,19 +134,16 @@ export const Autosave: React.FC<{ submission: PromptedFormSubmission; onAutoSave
                     </Field>
                 </div>
                 <div className="flex flex-justify-space-between">
-                    <Button
-                        onClick={() =>
-                            IFrameMessageBroker.postMessage({
-                                type: IFrameAppMessageType.CLOSE,
-                                sender: 'notification',
-                            })
-                        }
-                    >
-                        {c('Action').t`Not now`}
-                    </Button>
+                    <Button onClick={closeIFrame}>{c('Action').t`Not now`}</Button>
                     <Button color="norm" type="submit" loading={busy} disabled={busy}>
-                        {submission.autosave.data.action === AutoSaveType.NEW && c('Action').t`Add`}
-                        {submission.autosave.data.action === AutoSaveType.UPDATE && c('Action').t`Update`}
+                        {(() => {
+                            switch (submission.autosave.data.action) {
+                                case AutoSaveType.NEW:
+                                    return busy ? c('Action').t`Saving` : c('Action').t`Add`;
+                                case AutoSaveType.UPDATE:
+                                    return busy ? c('Action').t`Updating` : c('Action').t`Update`;
+                            }
+                        })()}
                     </Button>
                 </div>
             </Form>

@@ -1,21 +1,21 @@
-import type { FC } from 'react';
+import type { VFC } from 'react';
 
 import { c } from 'ttag';
 
 import { generatePassword, getCharsGroupedByColor } from '../../../../shared/hooks/usePasswordGenerator';
-import { type DropdownIframeMessage, DropdownMessageType } from '../../../types';
-import { IFrameMessageBroker } from '../../iframe/messages';
+import { IFrameMessageType } from '../../../types';
+import { useIFrameContext } from '../../iframe/IFrameContextProvider';
 import { DropdownItem } from '../components/DropdownItem';
 
-export const PasswordAutoSuggest: FC = () => {
+export const PasswordAutoSuggest: VFC = () => {
+    const { postMessage } = useIFrameContext();
     const password = generatePassword({ useSpecialChars: true, length: 24 });
 
     return (
         <DropdownItem
             onClick={() =>
-                IFrameMessageBroker.postMessage<DropdownIframeMessage>({
-                    sender: 'dropdown',
-                    type: DropdownMessageType.AUTOFILL_PASSWORD,
+                postMessage({
+                    type: IFrameMessageType.DROPDOWN_AUTOSUGGEST_PASSWORD,
                     payload: { password },
                 })
             }
