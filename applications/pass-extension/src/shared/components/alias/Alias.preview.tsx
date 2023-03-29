@@ -1,11 +1,11 @@
-import { FC } from 'react';
+import { type VFC } from 'react';
 
 import { c } from 'ttag';
 
 import { MiddleEllipsis } from '@proton/components/components';
 import clsx from '@proton/utils/clsx';
 
-const AliasPreview: FC<{
+export const AliasPreview: VFC<{
     loading?: boolean;
     prefix: string;
     suffix: string;
@@ -29,5 +29,3 @@ const AliasPreview: FC<{
         </div>
     );
 };
-
-export default AliasPreview;

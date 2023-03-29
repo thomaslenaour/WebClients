@@ -47,7 +47,12 @@ body {
 			}
 		}
 
-		&--alias-preview,
+		&--alias-preview {
+			&::before {
+				inline-size: 80%;
+			}
+		}
+
 		&--alias-mailbox {
 			&::before {
 				inline-size: 50%;
