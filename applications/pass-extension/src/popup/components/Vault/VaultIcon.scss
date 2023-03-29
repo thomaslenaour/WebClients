@@ -1,7 +1,7 @@
 @import '~@proton/styles/scss/config';
 
 .pass-vault-icon {
-	background-color: rgb(var(--vault-icon-color) 0.16);
+	background-color: rgb(var(--vault-icon-color) / 0.16);
 	color: rgb(var(--vault-icon-color));
 
 	&.large {

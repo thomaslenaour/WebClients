@@ -23,7 +23,7 @@ export const VaultIcon: VFC<Props> = ({ icon, color, size = 'large', className }
         <Icon
             className="absolute-center"
             name={icon ? VAULT_ICON_MAP[icon] : 'vault'}
-            size={size === 'large' ? 24 : 16}
+            size={size === 'large' ? 22 : 16}
         />
     </span>
 );
