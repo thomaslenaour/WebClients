@@ -19,6 +19,7 @@ import type { ItemRevisionWithOptimistic, ItemType, Maybe, VaultShare } from '@p
 import { isTrashed } from '@proton/pass/utils/pass/trash';
 
 import type { ItemTypeViewProps } from '../../../../shared/items/types';
+import { useNavigationContext } from '../../../context';
 import { VaultSelectModal, useVaultSelectModalHandles } from '../../Vault/VaultSelect.modal';
 import { AliasView } from '../Alias/Alias.view';
 import { LoginView } from '../Login/Login.view';
@@ -42,6 +43,7 @@ export const ItemView: VFC<Props> = ({ item, failureAction, shareId, itemId, vau
     const dispatch = useDispatch();
     const history = useHistory();
 
+    const { selectItem } = useNavigationContext();
     const { closeVaultSelect, openVaultSelect, modalState } = useVaultSelectModalHandles();
 
     const { optimistic, failed, revision } = useMemo(() => {
@@ -85,7 +87,7 @@ export const ItemView: VFC<Props> = ({ item, failureAction, shareId, itemId, vau
                 })
             );
 
-            history.push(`/share/${destinationShareId}/item/${optimisticId}`);
+            selectItem(destinationShareId, optimisticId);
             closeVaultSelect();
         },
         [revision]
