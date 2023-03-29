@@ -1,4 +1,4 @@
-import { Maybe } from '@proton/pass/types';
+import type { Maybe } from '@proton/pass/types';
 
 /**
  * Removing every listener from a DOM node
@@ -9,12 +9,24 @@ export const removeListeners = (el: HTMLElement): void => {
     el.replaceWith(el.cloneNode(true));
 };
 
-export type Listener =
+type EventSource = Window | Document | HTMLElement;
+
+type EventMap<T extends EventSource> = T extends Window
+    ? WindowEventMap
+    : T extends Document
+    ? DocumentEventMap
+    : T extends HTMLElement
+    ? HTMLElementEventMap
+    : never;
+
+type EventType<T extends EventSource, E extends keyof EventMap<T>> = EventMap<T>[E];
+
+export type Listener<T extends EventSource = any, E extends keyof EventMap<T> = any> =
     | {
           kind: 'listener';
-          fn: (e: Event) => void;
-          element: HTMLElement | Document | Window;
-          type: keyof HTMLElementEventMap | keyof WindowEventMap | keyof DocumentEventMap;
+          fn: (e: EventType<T, E>) => void;
+          element: T;
+          type: E;
       }
     | {
           kind: 'observer';
@@ -26,14 +38,14 @@ export type ListenerStore = ReturnType<typeof createListenerStore>;
 export const createListenerStore = () => {
     const listeners: Listener[] = [];
 
-    const addListener = <T extends Maybe<Window | Document | HTMLElement>>(
-        element: T,
-        type: keyof HTMLElementEventMap | keyof WindowEventMap | keyof DocumentEventMap,
-        fn: (e: Event) => void
+    const addListener = <T extends EventSource, E extends keyof EventMap<T>>(
+        element: Maybe<T>,
+        type: E,
+        fn: (e: EventType<T, E>) => void
     ) => {
         if (element !== undefined) {
             listeners.push({ kind: 'listener', element, type, fn });
-            element.addEventListener(type, fn);
+            (element as any).addEventListener(type, fn);
         }
     };
 
