@@ -1,5 +1,6 @@
 import type { VFC } from 'react';
 
+import type { RadioValue } from '../Controls/RadioButtonGroup';
 import { RadioButtonGroupControl, type Props as RadioGroupControlProps } from '../Controls/RadioButtonGroupControl';
 import { AbstractField, type AbstractFieldProps } from './AbstractField';
 
@@ -9,7 +10,7 @@ export const RadioButtonGroupFieldWIP: VFC<AbstractFieldProps<RadioGroupControlP
             {(inputControlProps) => (
                 <RadioButtonGroupControl
                     {...inputControlProps}
-                    onValue={(value: unknown) => {
+                    onValue={(value: RadioValue) => {
                         inputControlProps.onValue?.(value);
                         props.form.setFieldValue(props.field.name, value);
                     }}
