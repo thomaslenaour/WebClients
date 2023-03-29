@@ -5,13 +5,13 @@ import { c } from 'ttag';
 
 import { VaultColor as VaultColorEnum, VaultIcon as VaultIconEnum } from '@proton/pass/types/protobuf/vault-v1';
 
-import { FieldsetCluster } from '../Controls/FieldsetCluster';
-import { RadioButton } from '../Controls/RadioButtonGroup';
-import { Field } from '../Fields/Field';
-import { RadioButtonGroupFieldWIP } from '../Fields/RadioButtonGroupField';
-import { TitleField } from '../Fields/TitleField';
-import { VaultIcon } from './VaultIcon';
-import { VAULT_COLORS, VAULT_ICONS } from './constants';
+import { FieldsetCluster } from '../../components/Controls/FieldsetCluster';
+import { RadioButton } from '../../components/Controls/RadioButtonGroup';
+import { Field } from '../../components/Fields/Field';
+import { RadioButtonGroupFieldWIP } from '../../components/Fields/RadioButtonGroupField';
+import { TitleField } from '../../components/Fields/TitleField';
+import { VaultIcon } from '../../components/Vault/VaultIcon';
+import { VAULT_COLORS, VAULT_ICONS } from '../../components/Vault/constants';
 
 export type VaultFormValues = { name: string; description: string; color: VaultColorEnum; icon: VaultIconEnum };
 type Props = { formId: string; form: FormikContextType<VaultFormValues> };
@@ -33,13 +33,21 @@ export const VaultForm: VFC<Props> = ({ formId, form }) => {
                 </div>
             </div>
 
-            <Field name="color" component={RadioButtonGroupFieldWIP}>
+            <Field
+                name="color"
+                component={RadioButtonGroupFieldWIP}
+                className="flex-justify-space-between gap-x-6 gap-y-4"
+            >
                 {VAULT_COLORS.map(([vaultColor, rgb]) => (
                     <RadioButton<VaultColorEnum> key={`vault-color-${vaultColor}`} value={vaultColor} color={rgb} />
                 ))}
             </Field>
 
-            <Field name="icon" component={RadioButtonGroupFieldWIP}>
+            <Field
+                name="icon"
+                component={RadioButtonGroupFieldWIP}
+                className="flex-justify-space-between gap-x-6 gap-y-4"
+            >
                 {VAULT_ICONS.map(([vaultIcon, icon]) => (
                     <RadioButton<VaultIconEnum> key={`vault-icon-${vaultIcon}`} value={vaultIcon} icon={icon} />
                 ))}
