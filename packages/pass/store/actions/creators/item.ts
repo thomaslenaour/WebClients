@@ -1,7 +1,7 @@
 import { createAction } from '@reduxjs/toolkit';
 import { c } from 'ttag';
 
-import { ItemCreateIntent, ItemEditIntent, ItemRevision } from '@proton/pass/types';
+import type { ItemCreateIntent, ItemEditIntent, ItemRevision, SelectedItem } from '@proton/pass/types';
 import { pipe } from '@proton/pass/utils/fp';
 import { getOptimisticItemActionId } from '@proton/pass/utils/pass/items';
 
@@ -69,7 +69,7 @@ export const itemEditIntent = createOptimisticAction(
 
 export const itemEditFailure = createOptimisticAction(
     'item edit failure',
-    (payload: { itemId: string; shareId: string }, error: unknown) =>
+    (payload: SelectedItem, error: unknown) =>
         pipe(
             withCacheBlock,
             withNotification({
@@ -96,7 +96,7 @@ export const itemEditDismiss = createOptimisticAction(
 
 export const itemEditSuccess = createOptimisticAction(
     'item edit success',
-    (payload: { item: ItemRevision; itemId: string; shareId: string }) =>
+    (payload: { item: ItemRevision } & SelectedItem) =>
         withNotification({
             type: 'success',
             text: c('Info').t`Item successfully updated`,
@@ -104,10 +104,9 @@ export const itemEditSuccess = createOptimisticAction(
     ({ payload }) => getOptimisticItemActionId(payload)
 );
 
-export const itemEditSync = createAction(
-    'item edit sync',
-    (payload: { item: ItemRevision; itemId: string; shareId: string }) => ({ payload })
-);
+export const itemEditSync = createAction('item edit sync', (payload: { item: ItemRevision } & SelectedItem) => ({
+    payload,
+}));
 
 export const itemMoveIntent = createOptimisticAction(
     'item move intent',
@@ -142,7 +141,7 @@ export const itemMoveSuccess = createOptimisticAction(
 export const itemTrashIntent = createOptimisticAction(
     'item trash intent',
     (
-        payload: { item: ItemRevision; shareId: string; itemId: string },
+        payload: { item: ItemRevision } & SelectedItem,
         callback?: ActionCallback<ReturnType<typeof itemTrashSuccess> | ReturnType<typeof itemTrashFailure>>
     ) => pipe(withCacheBlock, withCallback(callback))({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
@@ -150,7 +149,7 @@ export const itemTrashIntent = createOptimisticAction(
 
 export const itemTrashFailure = createOptimisticAction(
     'item trash failure',
-    (payload: { itemId: string; shareId: string }, error: unknown) =>
+    (payload: SelectedItem, error: unknown) =>
         pipe(
             withCacheBlock,
             withNotification({
@@ -164,7 +163,7 @@ export const itemTrashFailure = createOptimisticAction(
 
 export const itemTrashSuccess = createOptimisticAction(
     'item trash success',
-    (payload: { itemId: string; shareId: string }) =>
+    (payload: SelectedItem) =>
         withNotification({
             type: 'success',
             text: c('Info').t`Item moved to trash`,
@@ -175,7 +174,7 @@ export const itemTrashSuccess = createOptimisticAction(
 export const itemDeleteIntent = createOptimisticAction(
     'item delete intent',
     (
-        payload: { item: ItemRevision; itemId: string; shareId: string },
+        payload: { item: ItemRevision } & SelectedItem,
         callback?: ActionCallback<ReturnType<typeof itemDeleteSuccess> | ReturnType<typeof itemDeleteFailure>>
     ) => pipe(withCacheBlock, withCallback(callback))({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
@@ -183,7 +182,7 @@ export const itemDeleteIntent = createOptimisticAction(
 
 export const itemDeleteFailure = createOptimisticAction(
     'item delete failure',
-    (payload: { itemId: string; shareId: string }, error: unknown) =>
+    (payload: SelectedItem, error: unknown) =>
         pipe(
             withCacheBlock,
             withNotification({
@@ -197,7 +196,7 @@ export const itemDeleteFailure = createOptimisticAction(
 
 export const itemDeleteSuccess = createOptimisticAction(
     'item delete success',
-    (payload: { itemId: string; shareId: string }) =>
+    (payload: SelectedItem) =>
         withNotification({
             type: 'success',
             text: c('Info').t`Item permanently deleted`,
@@ -205,14 +204,14 @@ export const itemDeleteSuccess = createOptimisticAction(
     ({ payload }) => getOptimisticItemActionId(payload)
 );
 
-export const itemDeleteSync = createAction('item delete sync', (payload: { itemId: string; shareId: string }) => ({
+export const itemDeleteSync = createAction('item delete sync', (payload: SelectedItem) => ({
     payload,
 }));
 
 export const itemRestoreIntent = createOptimisticAction(
     'restore item intent',
     (
-        payload: { item: ItemRevision; itemId: string; shareId: string },
+        payload: { item: ItemRevision } & SelectedItem,
         callback?: ActionCallback<ReturnType<typeof itemRestoreSuccess> | ReturnType<typeof itemRestoreFailure>>
     ) => pipe(withCacheBlock, withCallback(callback))({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
@@ -220,7 +219,7 @@ export const itemRestoreIntent = createOptimisticAction(
 
 export const itemRestoreFailure = createOptimisticAction(
     'restore item failure',
-    (payload: { itemId: string; shareId: string }, error: unknown) =>
+    (payload: SelectedItem, error: unknown) =>
         pipe(
             withCacheBlock,
             withNotification({
@@ -234,7 +233,7 @@ export const itemRestoreFailure = createOptimisticAction(
 
 export const itemRestoreSuccess = createOptimisticAction(
     'restore item success',
-    (payload: { itemId: string; shareId: string }) =>
+    (payload: SelectedItem) =>
         withNotification({
             type: 'success',
             text: c('Info').t`Item restored`,
@@ -242,7 +241,7 @@ export const itemRestoreSuccess = createOptimisticAction(
     ({ payload }) => getOptimisticItemActionId(payload)
 );
 
-export const itemUsed = createAction('item used', (payload: { shareId: string; itemId: string }) => ({ payload }));
+export const itemUsed = createAction('item used', (payload: SelectedItem) => ({ payload }));
 export const itemLastUseTimeUpdated = createAction(
     'item lastUseTime updated',
     (payload: { shareId: string; itemId: string; lastUseTime: number }) => ({ payload })
