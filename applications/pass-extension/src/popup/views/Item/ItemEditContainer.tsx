@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Redirect, useParams } from 'react-router-dom';
 
 import { itemEditIntent, selectItemByShareIdAndId, selectShareOrThrow } from '@proton/pass/store';
-import { ItemEditIntent, ItemType, ShareType } from '@proton/pass/types';
+import type { ItemEditIntent, ItemType, SelectedItem } from '@proton/pass/types';
+import { ShareType } from '@proton/pass/types';
 
 import { ItemEditProps } from '../../../shared/items';
 import { useNavigationContext } from '../../context';
@@ -21,7 +22,7 @@ export const ItemEditContainer: VFC = () => {
     const { selectItem } = useNavigationContext();
     const dispatch = useDispatch();
 
-    const { shareId, itemId } = useParams<{ shareId: string; itemId: string }>();
+    const { shareId, itemId } = useParams<SelectedItem>();
     const vault = useSelector(selectShareOrThrow<ShareType.Vault>(shareId));
     const item = useSelector(selectItemByShareIdAndId(shareId, itemId));
 
