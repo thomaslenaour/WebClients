@@ -1,19 +1,19 @@
-import { AnyAction } from 'redux';
+import type { AnyAction } from 'redux';
 import browser from 'webextension-polyfill';
 
-import { ResumedSessionResult } from '@proton/pass/auth';
-import { AliasState } from '@proton/pass/store';
-import { Notification } from '@proton/pass/store/actions/with-notification';
-import { ExtensionForkResultPayload } from '@proton/shared/lib/authentication/sessionForking';
+import type { ResumedSessionResult } from '@proton/pass/auth';
+import type { AliasState } from '@proton/pass/store';
+import type { Notification } from '@proton/pass/store/actions/with-notification';
+import type { ExtensionForkResultPayload } from '@proton/shared/lib/authentication/sessionForking';
 
 import { ShareEventType } from '../api';
-import { AliasCreationDTO, Item } from '../data';
-import { Maybe } from '../utils';
-import { WithAutoSavePromptOptions } from './autosave';
-import { SafeLoginItem } from './data';
-import { FormSubmission, FormSubmissionPayload, PromptedFormSubmission } from './form';
-import { TabId } from './runtime';
-import { WorkerState } from './state';
+import type { AliasCreationDTO, Item, SelectedItem } from '../data';
+import type { Maybe } from '../utils';
+import type { WithAutoSavePromptOptions } from './autosave';
+import type { SafeLoginItem } from './data';
+import type { FormSubmission, FormSubmissionPayload, PromptedFormSubmission } from './form';
+import type { TabId } from './runtime';
+import type { WorkerState } from './state';
 
 export enum WorkerMessageType {
     /* AUTH */
@@ -99,7 +99,7 @@ export type AutofillSyncMessage = { type: WorkerMessageType.AUTOFILL_SYNC; paylo
 
 export type AutofillSelectMessage = {
     type: WorkerMessageType.AUTOFILL_SELECT;
-    payload: { itemId: string; shareId: string };
+    payload: SelectedItem;
 };
 
 export type AutoSaveRequestMessage = {

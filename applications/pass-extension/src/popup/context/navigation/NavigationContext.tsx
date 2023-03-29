@@ -1,9 +1,8 @@
 import { createContext } from 'react';
 
-import { Maybe } from '@proton/pass/types';
+import type { Maybe, SelectedItem } from '@proton/pass/types';
 import noop from '@proton/utils/noop';
 
-export type SelectedItem = { shareId: string; itemId: string };
 export type NavigationOptions = { inTrash?: boolean; action?: 'replace' | 'push' };
 
 export type NavigationContextValue = {

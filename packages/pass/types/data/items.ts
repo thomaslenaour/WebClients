@@ -1,6 +1,6 @@
-import { OpenedItem } from '../crypto';
-import { ItemType, Metadata, ProtobufContentMap } from '../protobuf';
-import { ExtraField, PlatformSpecific } from '../protobuf/item-v1';
+import type { OpenedItem } from '../crypto';
+import type { ItemType, Metadata, ProtobufContentMap } from '../protobuf';
+import type { ExtraField, PlatformSpecific } from '../protobuf/item-v1';
 
 /**
  * Derives a generic "distributive object type" over all possible
@@ -45,3 +45,5 @@ export type ItemRevisionWithOptimistic = ItemRevision & { optimistic: boolean; f
 export type ItemMap<T> = {
     [type in ItemType]: T;
 };
+
+export type SelectedItem = { shareId: string; itemId: string };

@@ -1,9 +1,9 @@
-import { FC, useCallback, useState } from 'react';
+import { type FC, useCallback, useState } from 'react';
 import { useHistory, useRouteMatch } from 'react-router-dom';
 
-import { Maybe } from '@proton/pass/types';
+import type { Maybe, SelectedItem } from '@proton/pass/types';
 
-import { NavigationContext, NavigationOptions, SelectedItem } from './NavigationContext';
+import { NavigationContext, type NavigationOptions } from './NavigationContext';
 
 export const NavigationContextProvider: FC = ({ children }) => {
     const history = useHistory();
