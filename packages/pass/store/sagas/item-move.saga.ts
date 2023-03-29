@@ -12,7 +12,7 @@ function* itemCreationWorker({ payload }: ReturnType<typeof itemMoveIntent>) {
         const item: ItemRevision = yield moveItem(itemToMove, itemToMove.shareId, shareId);
         yield put(itemMoveSuccess({ item, optimisticId, shareId }));
     } catch (e: unknown) {
-        yield put(itemMoveFailure({ optimisticId, shareId }, e));
+        yield put(itemMoveFailure({ optimisticId, shareId, item: itemToMove }, e));
     }
 }
 
