@@ -1,13 +1,15 @@
 import { type VFC, useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { Form, type FormikContextType, FormikProvider, useFormik } from 'formik';
 import { c } from 'ttag';
+import uniqid from 'uniqid';
 
 import { Button } from '@proton/atoms';
 import { Icon } from '@proton/components';
-import { type State, selectAliasByAliasEmail } from '@proton/pass/store';
+import { type State, itemCreationIntent, selectAliasByAliasEmail } from '@proton/pass/store';
 import { isEmptyString } from '@proton/pass/utils/string';
+import { getEpoch } from '@proton/pass/utils/time';
 import { omit } from '@proton/shared/lib/helpers/object';
 
 import type { ItemEditProps } from '../../../../shared/items';
@@ -28,11 +30,15 @@ import { type EditLoginItemFormValues, LoginItemFormValues, validateEditLoginFor
 const FORM_ID = 'edit-login';
 
 export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubmit, onCancel }) => {
+    const { shareId } = vault;
     const { data: item, itemId, revision: lastRevision } = revision;
-    const { metadata, content, extraFields } = item;
-    const { name, note, itemUuid } = metadata;
-    const { username, password, urls } = content;
+    const {
+        metadata: { name, note, itemUuid },
+        content: { username, password, urls },
+        extraFields,
+    } = item;
 
+    const dispatch = useDispatch();
     const [aliasModalOpen, setAliasModalOpen] = useState(false);
 
     const relatedAlias = useSelector((state: State) => selectAliasByAliasEmail(state, username));
@@ -42,7 +48,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
         username,
         password,
         note,
-        shareId: vault.shareId,
+        shareId,
         url: '',
         urls: urls.map(createNewUrl),
         ...(!relatedAlias && {
@@ -53,11 +59,45 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
     const form = useFormik<EditLoginItemFormValues>({
         initialValues,
         initialErrors: validateEditLoginForm(initialValues),
-        onSubmit: ({ name, username, password, url, urls, note }) => {
+        onSubmit: ({ name, username, password, url, urls, note, ...values }) => {
+            const mutationTime = getEpoch();
+            const withAlias =
+                'withAlias' in values &&
+                values.withAlias &&
+                values.aliasSuffix !== undefined &&
+                values.aliasPrefix !== undefined &&
+                values.mailboxes.length > 0;
+
+            if (withAlias) {
+                const aliasOptimisticId = uniqid();
+
+                dispatch(
+                    itemCreationIntent({
+                        type: 'alias',
+                        optimisticId: aliasOptimisticId,
+                        shareId,
+                        createTime: mutationTime - 1 /* alias will be created before login in saga */,
+                        metadata: {
+                            name: `Alias for ${name}`,
+                            note: '',
+                            itemUuid: aliasOptimisticId,
+                        },
+                        content: {},
+                        extraData: {
+                            mailboxes: values.mailboxes,
+                            prefix: values.aliasPrefix!,
+                            signedSuffix: values.aliasSuffix!.signature,
+                            aliasEmail: username,
+                        },
+                        extraFields: [],
+                    })
+                );
+            }
+
             onSubmit({
                 type: 'login',
                 itemId,
-                shareId: vault.shareId,
+                shareId,
                 lastRevision,
                 metadata: { name, note, itemUuid },
                 content: {
@@ -227,7 +267,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                         setAliasModalOpen(false);
                     }}
                     form={form as FormikContextType<LoginItemFormValues<true>>}
-                    shareId={vault.shareId}
+                    shareId={shareId}
                 />
             )}
         </>
