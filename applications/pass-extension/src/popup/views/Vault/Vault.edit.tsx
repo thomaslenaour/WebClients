@@ -8,7 +8,7 @@ import { vaultEdit } from '@proton/pass/store/actions/requests';
 import type { VaultShare } from '@proton/pass/types';
 import { VaultColor, VaultIcon } from '@proton/pass/types/protobuf/vault-v1';
 
-import { VaultForm, VaultFormValues } from '../../components/Vault/VaultForm';
+import { VaultForm, type VaultFormValues } from './Vault.form';
 import { validateVaultValues } from './Vault.validation';
 
 type Props = {
