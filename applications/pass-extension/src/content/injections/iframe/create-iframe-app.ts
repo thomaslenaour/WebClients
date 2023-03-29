@@ -1,13 +1,24 @@
-import { Maybe, WorkerState } from '@proton/pass/types';
+import uniqid from 'uniqid';
+import browser from 'webextension-polyfill';
+
+import type { Maybe, WorkerState } from '@proton/pass/types';
 import { createElement, pixelEncoder, safeRemoveChild } from '@proton/pass/utils/dom';
+import { waitUntil } from '@proton/pass/utils/fp';
 import { createListenerStore } from '@proton/pass/utils/listener';
 import { logger } from '@proton/pass/utils/logger';
 import { merge } from '@proton/pass/utils/object';
 
+import { ExtensionContext } from '../../../shared/extension';
 import { EXTENSION_PREFIX } from '../../constants';
-import { IFrameApp, IFrameAppMessage, IFrameAppMessageType } from '../../types/iframe';
+import type {
+    IFrameApp,
+    IFrameEndpoint,
+    IFrameMessageWithSender,
+    IFramePortMessageHandler,
+    IFrameState,
+} from '../../types/iframe';
+import { IFrameMessage, IFrameMessageType } from '../../types/iframe';
 import { createIframeRoot } from './create-iframe-root';
-import { IFrameMessageBroker } from './messages';
 
 import './iframe.scss';
 
@@ -15,7 +26,7 @@ export type IframePosition = { top: number; left?: number; right?: number; zInde
 export type IframeDimensions = { width: number; height: number };
 
 type CreateIFrameAppOptions = {
-    id: string;
+    id: IFrameEndpoint;
     src: string;
     animation: 'slidein' | 'fadein';
     classNames?: string[];
@@ -28,24 +39,23 @@ type CreateIFrameAppOptions = {
     getIframeDimensions: () => IframeDimensions;
 };
 
-type IFrameAppState = { visible: boolean; ready: boolean };
-
-export const createIFrameApp = <DomainMessage = {}>({
+export const createIFrameApp = ({
     id,
     src,
     animation,
     classNames = [],
     backdropClose,
     backdropExclude,
-    onReady,
     onOpen,
     onClose,
     getIframePosition,
     getIframeDimensions,
-}: CreateIFrameAppOptions): IFrameApp<DomainMessage> => {
+}: CreateIFrameAppOptions): IFrameApp => {
     const iframeRoot = createIframeRoot();
 
-    const state: IFrameAppState = { visible: false, ready: false };
+    const state: IFrameState = { visible: false, ready: false, loaded: false };
+    const portMessageHandlers: Map<IFrameMessageType, IFramePortMessageHandler> = new Map();
+
     const listeners = createListenerStore();
 
     const iframe = createElement<HTMLIFrameElement>({
@@ -56,9 +66,33 @@ export const createIFrameApp = <DomainMessage = {}>({
     });
 
     iframe.style.setProperty(`--${EXTENSION_PREFIX}-iframe-animation`, animation);
+    iframe.addEventListener('load', () => (state.loaded = true), { once: true });
 
-    const sendMessage = (message: IFrameAppMessage | DomainMessage) => {
-        iframe.contentWindow?.postMessage(message, '*');
+    /**
+     * Securing the posted message's allowed target origins.
+     * Ensure the iframe has been correctly loaded before sending
+     * out any message: the iframe.contentWindow::origin may be
+     * incorrect otherwise.
+     */
+    const sendPostMessage = (rawMessage: IFrameMessage) => {
+        const message: IFrameMessageWithSender = { ...rawMessage, sender: 'content-script' };
+        void waitUntil(() => state.loaded, 100).then(() => iframe.contentWindow?.postMessage(message, iframe.src));
+    };
+
+    const sendPortMessage = (rawMessage: IFrameMessage) => {
+        const message: IFrameMessageWithSender = { ...rawMessage, sender: 'content-script' };
+        void waitUntil(() => state.ready, 100).then(() => state.port?.postMessage(message));
+    };
+
+    const registerMessageHandler = <M extends IFrameMessageType>(
+        type: M,
+        handler: (message: IFrameMessageWithSender<M>) => void
+    ) => {
+        const safeHandler = (message: Maybe<IFrameMessageWithSender>) =>
+            message?.type === type && handler(message as IFrameMessageWithSender<M>);
+
+        portMessageHandlers.set(type, safeHandler);
+        return () => portMessageHandlers.delete(type);
     };
 
     const setIframePosition = ({ top, left, right, zIndex }: IframePosition) => {
@@ -103,52 +137,64 @@ export const createIFrameApp = <DomainMessage = {}>({
             listeners.addListener(window, 'mousedown', close);
         }
 
-        sendMessage({ type: IFrameAppMessageType.OPEN });
+        sendPortMessage({ type: IFrameMessageType.IFRAME_OPEN });
         onOpen?.();
     };
 
-    IFrameMessageBroker.onInjectedFrameMessage(id, (message) => {
-        logger.debug(`[Iframe::${id}]: emitted "${message.type}"`);
+    const init = () => {
+        const tabId = ExtensionContext.get().tabId;
+        const portName = `iframe-${id}-${tabId}-${uniqid()}`;
 
-        switch (message.type) {
-            case IFrameAppMessageType.READY: {
-                state.ready = true;
-                return onReady?.();
+        /* ⚠️ This should be the only postMessage sent */
+        sendPostMessage({ type: IFrameMessageType.IFRAME_SET_PORT, payload: { portName } });
+
+        browser.runtime.onConnect.addListener((port) => {
+            if (port.name === portName) {
+                state.port = port;
+
+                logger.info(`[IFrame::CS] connected to secure port ${port.name}`);
+
+                port.onMessage.addListener(
+                    (message: Maybe<IFrameMessageWithSender>) =>
+                        message?.type !== undefined && portMessageHandlers.get(message.type)?.(message)
+                );
             }
-            case IFrameAppMessageType.DIMENSIONS: {
-                const { width, height } = merge(getIframeDimensions(), { height: message.payload.height });
-                return setIframeDimensions({ width, height });
-            }
-            case IFrameAppMessageType.CLOSE: {
-                return close();
-            }
-            default:
-                return;
-        }
-    });
+        });
+    };
 
     const reset = (workerState: WorkerState) => {
         close();
-        sendMessage({
-            type: IFrameAppMessageType.INIT,
-            payload: { workerState },
-        });
+        sendPortMessage({ type: IFrameMessageType.IFRAME_INIT, payload: { workerState } });
     };
 
     const destroy = () => {
         listeners.removeAll();
         safeRemoveChild(iframeRoot, iframe);
+
+        try {
+            /* may-fail if context invalidated */
+            state?.port?.disconnect();
+        } catch (_) {}
     };
 
-    const app: IFrameApp<DomainMessage> = {
+    registerMessageHandler(IFrameMessageType.IFRAME_READY, () => (state.ready = true));
+    registerMessageHandler(IFrameMessageType.IFRAME_CLOSE, () => close());
+
+    registerMessageHandler(IFrameMessageType.IFRAME_DIMENSIONS, (message) => {
+        const { width, height } = merge(getIframeDimensions(), { height: message.payload.height });
+        return setIframeDimensions({ width, height });
+    });
+
+    return {
         element: iframe,
         state,
-        sendMessage,
+        sendPostMessage,
+        sendPortMessage,
+        registerMessageHandler,
         reset,
         open,
         close,
         destroy,
+        init,
     };
-
-    return app;
 };

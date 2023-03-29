@@ -1,5 +1,5 @@
 import { contentScriptMessage, sendMessage } from '@proton/pass/extension/message';
-import { WorkerMessageType, WorkerMessageWithSender, WorkerState, WorkerStatus } from '@proton/pass/types';
+import { WorkerMessageType, type WorkerMessageWithSender, type WorkerState, WorkerStatus } from '@proton/pass/types';
 import { isMainFrame } from '@proton/pass/utils/dom';
 import { createListenerStore } from '@proton/pass/utils/listener';
 import { logger } from '@proton/pass/utils/logger';
@@ -8,7 +8,7 @@ import debounce from '@proton/utils/debounce';
 import noop from '@proton/utils/noop';
 
 import * as config from '../../app/config';
-import { ExtensionContext, ExtensionContextType, setupExtensionContext } from '../../shared/extension';
+import { ExtensionContext, type ExtensionContextType, setupExtensionContext } from '../../shared/extension';
 import { CONTENT_SCRIPT_INJECTED_MESSAGE } from '../constants';
 import CSContext, { ContentScriptContext } from '../context';
 import { getAllFields } from '../handles/form';
@@ -53,6 +53,7 @@ export const createContentScriptService = (id: string) => {
         logger.info(`[ContentScript::${id}] destroying.. [reason: "${options.reason}"]`);
 
         listeners.removeAll();
+
         context.formManager.sleep();
         context.iframes.dropdown.close();
         context.iframes.notification?.close();
@@ -117,6 +118,9 @@ export const createContentScriptService = (id: string) => {
                     payload: { endpoint: 'content-script', tabId },
                 })
             );
+
+            context.iframes.dropdown.init();
+            context.iframes.notification?.init();
 
             if (res.type === 'success') {
                 const workerState = { loggedIn: res.loggedIn, status: res.status, UID: res.UID };

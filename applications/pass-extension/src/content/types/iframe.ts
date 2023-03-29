@@ -1,55 +1,77 @@
-import { WorkerState } from '@proton/pass/types';
+import browser from 'webextension-polyfill';
+
+import type { AliasCreationDTO, SafeLoginItem, WorkerState } from '@proton/pass/types';
+
+import type { DropdownSetActionPayload } from './dropdown';
+import type { NotificationSetActionPayload } from './notification';
 
 export type IFrameState = {
     visible: boolean;
     ready: boolean;
+    loaded: boolean;
+    port?: browser.Runtime.Port;
 };
 
-export interface IFrameApp<DomainMessage> {
+export type IFramePortMessageHandler<T extends IFrameMessageType = IFrameMessageType> = (
+    message: IFrameMessageWithSender<T>
+) => void;
+
+export interface IFrameApp {
     element: HTMLIFrameElement;
     state: IFrameState;
-    sendMessage: (message: IFrameAppMessage | DomainMessage) => void;
+    sendPostMessage: (message: IFrameMessage) => void;
+    sendPortMessage: (message: IFrameMessage) => void;
+    registerMessageHandler: <M extends IFrameMessage['type']>(type: M, handler: IFramePortMessageHandler<M>) => void;
     open: (scrollRef?: HTMLElement) => void;
     close: () => void;
+    init: () => void;
     reset: (workerState: WorkerState) => void;
     destroy: () => void;
 }
-export interface IFrameService<DomainMessage = {}, OpenOptions = {}> {
+
+export interface IFrameService<OpenOptions = {}> {
     getState: () => IFrameState;
-    sendMessage: (message: DomainMessage | IFrameAppMessage) => void;
     open: (options: OpenOptions) => void;
     close: () => void;
+    init: () => void;
     reset: (workerState: WorkerState) => void;
     destroy: () => void;
 }
 
-export enum IFrameAppMessageType {
-    READY = 'IFRAME_READY',
-    INIT = 'IFRAME_INIT',
-    OPEN = 'IFRAME_OPEN',
-    CLOSE = 'IFRAME_CLOSE',
-    DIMENSIONS = 'IFRAME_DIMENSIONS',
+export enum IFrameMessageType {
+    IFRAME_SET_PORT = 'IFRAME_SET_PORT' /* this message is the only one sent via postMessaging */,
+    IFRAME_READY = 'IFRAME_READY',
+    IFRAME_INIT = 'IFRAME_INIT',
+    IFRAME_OPEN = 'IFRAME_OPEN',
+    IFRAME_CLOSE = 'IFRAME_CLOSE',
+    IFRAME_DIMENSIONS = 'IFRAME_DIMENSIONS',
+    DROPDOWN_ACTION = 'DROPDOWN_ACTION',
+    DROPDOWN_AUTOFILL_LOGIN = 'DROPDOWN_AUTOFILL_LOGIN',
+    DROPDOWN_AUTOSUGGEST_PASSWORD = 'DROPDOWN_AUTOSUGGEST_PASSWORD',
+    DROPDOWN_AUTOSUGGEST_ALIAS = 'DROPDOWN_AUTOSUGGEST_ALIAS',
+    NOTIFICATION_ACTION = 'NOTIFICATION_ACTION',
+    NOTIFICATION_AUTOSAVE_REQUEST = 'NOTIFICATION_AUTOSAVE_REQUEST',
+    NOTIFICATION_AUTOSAVE_SUCCESS = 'NOTIFICATION_AUTOSAVE_SUCCESS',
+    NOTIFICATION_AUTOSAVE_FAILURE = 'NOTIFICATION_AUTOSAVE_FAILURE',
 }
 
-export type IFrameEndpoint = 'script' | 'notification' | 'dropdown';
-export type IFrameMessageWithSender<T> = T & { sender: IFrameEndpoint };
+export type IFrameEndpoint = 'content-script' | 'notification' | 'dropdown';
 
-export type IFrameAppMessage =
-    | {
-          type: IFrameAppMessageType.READY;
-      }
-    | {
-          type: IFrameAppMessageType.INIT;
-          payload: { workerState: WorkerState };
-      }
-    | {
-          type: IFrameAppMessageType.OPEN;
-      }
-    | {
-          type: IFrameAppMessageType.CLOSE;
-      }
-    | {
-          type: IFrameAppMessageType.DIMENSIONS;
-          payload: { height: number; width?: number };
-      }
-    | { type: undefined };
+export type IFrameMessageWithSender<T extends IFrameMessageType = IFrameMessageType> = {
+    sender: IFrameEndpoint;
+} & IFrameMessage<T>;
+
+export type IFrameMessage<T extends IFrameMessageType = IFrameMessageType> = Extract<
+    | { type: IFrameMessageType.IFRAME_READY }
+    | { type: IFrameMessageType.IFRAME_SET_PORT; payload: { portName: string } }
+    | { type: IFrameMessageType.IFRAME_INIT; payload: { workerState: WorkerState } }
+    | { type: IFrameMessageType.IFRAME_OPEN }
+    | { type: IFrameMessageType.IFRAME_CLOSE }
+    | { type: IFrameMessageType.IFRAME_DIMENSIONS; payload: { height: number; width?: number } }
+    | { type: IFrameMessageType.DROPDOWN_ACTION; payload: DropdownSetActionPayload }
+    | { type: IFrameMessageType.DROPDOWN_AUTOFILL_LOGIN; payload: { item: SafeLoginItem } }
+    | { type: IFrameMessageType.DROPDOWN_AUTOSUGGEST_PASSWORD; payload: { password: string } }
+    | { type: IFrameMessageType.DROPDOWN_AUTOSUGGEST_ALIAS; payload: { alias: AliasCreationDTO } }
+    | { type: IFrameMessageType.NOTIFICATION_ACTION; payload: NotificationSetActionPayload },
+    { type: T }
+>;
