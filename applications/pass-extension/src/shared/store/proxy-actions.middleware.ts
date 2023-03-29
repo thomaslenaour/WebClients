@@ -1,8 +1,8 @@
 import { Middleware } from 'redux';
 
 import { resolveMessageFactory, sendMessage } from '@proton/pass/extension/message';
-import { isSynchronous } from '@proton/pass/store/actions/creators/utils';
 import { acceptActionWithReceiver } from '@proton/pass/store/actions/with-receiver';
+import { isClientSynchronousAction } from '@proton/pass/store/actions/with-synchronous-client-action';
 import { ExtensionEndpoint, TabId, WorkerMessageType, WorkerMessageWithSender } from '@proton/pass/types';
 import noop from '@proton/utils/noop';
 
@@ -28,7 +28,7 @@ export const proxyActionsMiddleware = ({ endpoint, tabId }: ProxyActionsMiddlewa
     return () => (next) => {
         ExtensionContext.get().port.onMessage.addListener((message: WorkerMessageWithSender) => {
             if (message.sender === 'background' && message.type === WorkerMessageType.STORE_ACTION) {
-                const unprocessedAction = !isSynchronous(message.payload.action);
+                const unprocessedAction = !isClientSynchronousAction(message.payload.action);
                 const acceptAction = acceptActionWithReceiver(message.payload.action, endpoint, tabId);
 
                 if (unprocessedAction && acceptAction) {
@@ -38,7 +38,7 @@ export const proxyActionsMiddleware = ({ endpoint, tabId }: ProxyActionsMiddlewa
         });
 
         return (action) => {
-            if (isSynchronous(action)) {
+            if (isClientSynchronousAction(action)) {
                 next(action);
             }
 
