@@ -1,26 +1,26 @@
-import { FC } from 'react';
+import type { VFC } from 'react';
 
 import { c } from 'ttag';
 
-import { AliasState } from '@proton/pass/store';
+import type { AliasState } from '@proton/pass/store';
 
 import { AliasPreview } from '../../../../shared/components/alias/Alias.preview';
-import { DropdownIframeMessage, DropdownMessageType } from '../../../types';
-import { IFrameMessageBroker } from '../../iframe/messages';
+import { IFrameMessageType } from '../../../types';
+import { useIFrameContext } from '../../iframe/IFrameContextProvider';
 import { DropdownItem } from '../components/DropdownItem';
 
-export const AliasAutoSuggest: FC<{ options: AliasState['aliasOptions']; prefix: string }> = ({ options, prefix }) => {
+export const AliasAutoSuggest: VFC<{ options: AliasState['aliasOptions']; prefix: string }> = ({ options, prefix }) => {
+    const { postMessage } = useIFrameContext();
     const defaultSuffix = options?.suffixes?.[0];
+    const validAlias = options !== null && defaultSuffix !== undefined;
 
     return (
         <DropdownItem
             disabled={options === null || defaultSuffix === undefined}
             onClick={() =>
-                options !== null &&
-                defaultSuffix !== undefined &&
-                IFrameMessageBroker.postMessage<DropdownIframeMessage>({
-                    sender: 'dropdown',
-                    type: DropdownMessageType.AUTOFILL_ALIAS,
+                validAlias &&
+                postMessage({
+                    type: IFrameMessageType.DROPDOWN_AUTOSUGGEST_ALIAS,
                     payload: {
                         alias: {
                             mailboxes: [options.mailboxes?.[0]],
