@@ -1,13 +1,13 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import type { Item, ItemRevision, ItemRevisionWithOptimistic, ItemType, Maybe } from '@proton/pass/types';
+import type { Item, ItemRevision, ItemRevisionWithOptimistic, ItemType, Maybe, SelectedItem } from '@proton/pass/types';
 import { invert } from '@proton/pass/utils/fp';
 import { isTrashed } from '@proton/pass/utils/pass/trash';
 import { matchLoginItemsByUrl } from '@proton/pass/utils/search';
 
 import { unwrapOptimisticState } from '../optimistic/utils/transformers';
 import { withOptimisticItemsByShareId } from '../reducers/items';
-import { State } from '../types';
+import type { State } from '../types';
 
 const flattenItemsByShareId = (itemsByShareId: {
     [shareId: string]: { [itemId: string]: ItemRevision };
@@ -25,12 +25,14 @@ export const selectItemsByShareId = createSelector(
         flattenItemsByShareId(shareId && items[shareId] ? { shareId: items[shareId] } : items).filter(invert(isTrashed))
 );
 
-export const selectItemIdByOptimisticId = (optimisticItemId: string) => (state: State) =>
-    selectByOptimisticIds(state)[optimisticItemId];
+export const selectItemIdByOptimisticId =
+    (optimisticItemId: string) =>
+    (state: State): Maybe<SelectedItem> =>
+        selectByOptimisticIds(state)?.[optimisticItemId];
 
 export const selectItemByShareIdAndId = (shareId: string, itemId: string) =>
     createSelector([selectItems, selectByOptimisticIds], (items, byOptimisticId): Maybe<ItemRevision> => {
-        const idFromOptimisticId = byOptimisticId[itemId];
+        const idFromOptimisticId = byOptimisticId[itemId]?.itemId;
         const byItemId = items[shareId];
 
         return idFromOptimisticId ? byItemId?.[idFromOptimisticId] : byItemId?.[itemId];

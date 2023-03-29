@@ -1,6 +1,6 @@
 import type { AnyAction, Reducer } from 'redux';
 
-import { CONTENT_FORMAT_VERSION, type ItemRevision, ItemState } from '@proton/pass/types';
+import { CONTENT_FORMAT_VERSION, type ItemRevision, ItemState, type SelectedItem } from '@proton/pass/types';
 import { or } from '@proton/pass/utils/fp';
 import { fullMerge, objectDelete, partialMerge } from '@proton/pass/utils/object';
 import { isTrashed } from '@proton/pass/utils/pass/trash';
@@ -60,11 +60,11 @@ export type ItemsByShareId = {
     };
 };
 
-type ItemIdByOptimisticId = { [optimisticId: string]: string };
+type ItemsByOptimisticId = { [optimisticId: string]: SelectedItem };
 
 export type ItemsState = {
     byShareId: WrappedOptimisticState<ItemsByShareId>;
-    byOptimistcId: ItemIdByOptimisticId;
+    byOptimistcId: ItemsByOptimisticId;
 };
 
 export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
@@ -308,10 +308,12 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
     { sanitizeAction: sanitizeWithCallbackAction }
 );
 
-const itemIdByOptimisticId: Reducer<ItemIdByOptimisticId> = (state = {}, action) => {
-    if (or(itemCreationSuccess.match, itemMoveSuccess.match)(action)) {
+const itemsByOptimisticId: Reducer<ItemsByOptimisticId> = (state = {}, action) => {
+    if (or(itemCreationSuccess.match, itemMoveSuccess.match, itemMoveFailure.match)(action)) {
         const { optimisticId, item } = action.payload;
-        return fullMerge(state, { [optimisticId]: item.itemId });
+        const { itemId, shareId } = item;
+
+        return fullMerge(state, { [optimisticId]: { shareId, itemId } });
     }
 
     return state;
@@ -319,5 +321,5 @@ const itemIdByOptimisticId: Reducer<ItemIdByOptimisticId> = (state = {}, action)
 
 export default combineOptimisticReducers({
     byShareId: withOptimisticItemsByShareId.reducer,
-    byOptimistcId: itemIdByOptimisticId,
+    byOptimistcId: itemsByOptimisticId,
 });
