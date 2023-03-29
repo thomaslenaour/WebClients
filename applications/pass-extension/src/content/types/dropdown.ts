@@ -1,15 +1,8 @@
-import { AliasState } from '@proton/pass/store';
-import { AliasCreationDTO, Maybe, Realm, SafeLoginItem } from '@proton/pass/types';
+import type { AliasState } from '@proton/pass/store';
+import type { Maybe, Realm, SafeLoginItem } from '@proton/pass/types';
 
-import { FieldHandles, FormField, FormType } from './form';
-import { IFrameService } from './iframe';
-
-export enum DropdownMessageType {
-    SET_ACTION = 'DROPDOWN_SET_ACTION',
-    AUTOFILL = 'DROPDOWN_AUTOFILL',
-    AUTOFILL_PASSWORD = 'DROPDOWN_AUTOFILL_PASSWORD',
-    AUTOFILL_ALIAS = 'DROPDOWN_AUTOFILL_ALIAS',
-}
+import type { FieldHandles, FormField, FormType } from './form';
+import type { IFrameService } from './iframe';
 
 export enum DropdownAction {
     AUTOFILL,
@@ -23,28 +16,7 @@ export type DropdownSetActionPayload =
     | { action: DropdownAction.AUTOSUGGEST_PASSWORD }
     | { action: DropdownAction.AUTOSUGGEST_ALIAS; options: AliasState['aliasOptions']; realm: Realm };
 
-export type DropdownIframeMessage =
-    | {
-          type: DropdownMessageType.AUTOFILL;
-          payload: { username: string; password: string };
-      }
-    | {
-          type: DropdownMessageType.AUTOFILL_PASSWORD;
-          payload: { password: string };
-      }
-    | {
-          type: DropdownMessageType.AUTOFILL_ALIAS;
-          payload: { alias: AliasCreationDTO };
-      }
-    | {
-          type: DropdownMessageType.SET_ACTION;
-          payload: DropdownSetActionPayload;
-      }
-    | { type: undefined };
-
-export type DropdownState = {
-    field: Maybe<FieldHandles<FormType, FormField>>;
-};
+export type DropdownState = { field: Maybe<FieldHandles<FormType, FormField>> };
 
 export type OpenDropdownOptions = {
     field: FieldHandles;
@@ -52,4 +24,4 @@ export type OpenDropdownOptions = {
     focus?: boolean;
 };
 
-export interface InjectedDropdown extends IFrameService<DropdownIframeMessage, OpenDropdownOptions> {}
+export interface InjectedDropdown extends IFrameService<OpenDropdownOptions> {}
