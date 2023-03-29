@@ -11,6 +11,5 @@ export type DefinedKeys<S extends {}, K = keyof S> = Extract<
     K extends keyof S ? (S[K] extends undefined ? never : K) : never
 >;
 
-export type ColorRGB = `${number}, ${number}, ${number}`;
-
 export type Compute<A extends any> = A extends Function ? A : { [K in keyof A]: A[K] } & unknown;
+export type ColorRGB = `${number} ${number} ${number}`;
