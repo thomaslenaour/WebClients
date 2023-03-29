@@ -1,11 +1,14 @@
 import { createSelector } from '@reduxjs/toolkit';
 
 import { Maybe, Share, ShareType, VaultShare } from '@proton/pass/types';
+import { invert } from '@proton/pass/utils/fp';
 import { isVaultShare } from '@proton/pass/utils/pass/share';
+import { isTrashed } from '@proton/pass/utils/pass/trash';
 
 import { unwrapOptimisticState } from '../optimistic/utils/transformers';
 import { State } from '../types';
 import { SelectorError } from './errors';
+import { selectItems } from './items';
 
 export const selectAllShares = createSelector(
     ({ shares }: State) => shares,
@@ -13,6 +16,12 @@ export const selectAllShares = createSelector(
 );
 
 export const selectAllVaults = createSelector([selectAllShares], (shares) => shares.filter(isVaultShare));
+export const selectAllVaultWithItemsCount = createSelector([selectAllVaults, selectItems], (shares, itemsByShareId) =>
+    shares.map((share) => ({
+        ...share,
+        count: Object.values(itemsByShareId?.[share.shareId] ?? {}).filter(invert(isTrashed)).length,
+    }))
+);
 
 export const selectShare =
     <T extends ShareType = ShareType>(shareId: string) =>
