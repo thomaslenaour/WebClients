@@ -44,13 +44,13 @@ export const NoteEdit: VFC<ItemEditProps<'note'>> = ({ vault, revision, onSubmit
                     <Field
                         autoFocus
                         component={NoteTitleField}
-                        label="Name"
+                        label={c('Label').t`Name`}
                         name="name"
                         placeholder={c('Placeholder').t`Untitled`}
                     />
                     <Field
                         component={NoteTextAreaField}
-                        label="Note"
+                        label={c('Label').t`Note`}
                         name="note"
                         placeholder={c('Placeholder').t`Write your note`}
                     />
