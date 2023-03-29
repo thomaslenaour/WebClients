@@ -1,8 +1,0 @@
-@import '../../../../shared/styles/common';
-
-.pass-note-view {
-	/*
-	* override default monospaced font applied to pre tag
-	*/
-	font-family: var(--optional-font-family, 'Inter', #{$fallback-fonts});
-}
