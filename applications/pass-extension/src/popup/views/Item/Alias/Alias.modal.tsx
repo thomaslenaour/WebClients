@@ -8,6 +8,7 @@ import { Icon, type ModalProps } from '@proton/components/components';
 
 import { SidebarModal } from '../../../../shared/components/sidebarmodal/SidebarModal';
 import { useAliasOptions } from '../../../../shared/hooks/useAliasOptions';
+import { AliasPreview } from '../../../components/Alias/Alias.preview';
 import { PanelHeader } from '../../../components/Panel/Header';
 import { Panel } from '../../../components/Panel/Panel';
 import { AliasForm } from './Alias.form';
@@ -82,6 +83,11 @@ export const AliasModal = <T extends AliasFormValues>({
                 }
             >
                 <FormikProvider value={form}>
+                    <AliasPreview
+                        prefix={form.values.aliasPrefix ?? '<prefix>'}
+                        suffix={form.values.aliasSuffix?.value ?? '<suffix>'}
+                        loading={aliasOptionsLoading}
+                    />
                     <AliasForm<T> form={form} aliasOptions={aliasOptions} aliasOptionsLoading={aliasOptionsLoading} />
                 </FormikProvider>
             </Panel>

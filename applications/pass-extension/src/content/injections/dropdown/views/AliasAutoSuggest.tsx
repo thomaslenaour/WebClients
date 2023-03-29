@@ -4,7 +4,7 @@ import { c } from 'ttag';
 
 import { AliasState } from '@proton/pass/store';
 
-import AliasPreview from '../../../../shared/components/alias/Alias.preview';
+import { AliasPreview } from '../../../../shared/components/alias/Alias.preview';
 import { DropdownIframeMessage, DropdownMessageType } from '../../../types';
 import { IFrameMessageBroker } from '../../iframe/messages';
 import { DropdownItem } from '../components/DropdownItem';

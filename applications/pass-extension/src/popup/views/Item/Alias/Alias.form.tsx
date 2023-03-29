@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { type FC, useState } from 'react';
 
 import type { FormikContextType } from 'formik';
 import { c } from 'ttag';
 
 import { Button } from '@proton/atoms';
 import { Icon, Option } from '@proton/components';
+import type { AliasMailbox } from '@proton/pass/types';
 
 import type { UseAliasOptionsResult } from '../../../../shared/hooks/useAliasOptions';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
@@ -19,6 +20,36 @@ type AliasFormProps<V extends AliasFormValues> = {
     aliasOptions: UseAliasOptionsResult['aliasOptions'];
 };
 
+const Wrapper: FC<{
+    disabled: boolean;
+    loading: boolean;
+    mailboxes: AliasMailbox[];
+}> = ({ children, disabled, loading, mailboxes }) => {
+    return (
+        <>
+            {children}
+            <FieldsetCluster>
+                <Field
+                    name="mailboxes"
+                    label={c('Label').t`Forwarded to`}
+                    placeholder={c('Label').t`Select an email address`}
+                    component={SelectFieldWIP}
+                    icon="arrow-up-and-right-big"
+                    multiple
+                    disabled={disabled || mailboxes.length <= 1}
+                    loading={loading}
+                >
+                    {mailboxes.map((mailbox) => (
+                        <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
+                            {mailbox.email}
+                        </Option>
+                    ))}
+                </Field>
+            </FieldsetCluster>
+        </>
+    );
+};
+
 export const AliasForm = <V extends AliasFormValues = AliasFormValues>({
     aliasOptionsLoading,
     aliasOptions,
@@ -27,30 +58,11 @@ export const AliasForm = <V extends AliasFormValues = AliasFormValues>({
     const [showAdvanced, setShowAdvanced] = useState(false);
     const disabled = aliasOptionsLoading || aliasOptions === null;
 
-    const mailboxesSelect = (
-        <FieldsetCluster>
-            <Field
-                name="mailboxes"
-                label={c('Label').t`Forwarded to`}
-                placeholder={c('Label').t`Select an email address`}
-                component={SelectFieldWIP}
-                icon="arrow-up-and-right-big"
-                multiple
-                disabled={disabled || aliasOptions.mailboxes.length <= 1}
-                loading={aliasOptionsLoading}
-            >
-                {(aliasOptions?.mailboxes ?? []).map((mailbox) => (
-                    <Option value={mailbox} title={mailbox.email} key={mailbox.id}>
-                        {mailbox.email}
-                    </Option>
-                ))}
-            </Field>
-        </FieldsetCluster>
-    );
+    const wrapperProps = { disabled, loading: aliasOptionsLoading, mailboxes: aliasOptions?.mailboxes ?? [] };
 
     if (!showAdvanced) {
         return (
-            <>
+            <Wrapper {...wrapperProps}>
                 <div className="flex flex-justify-end mb-2">
                     <Button shape="ghost" onClick={() => setShowAdvanced(true)}>
                         <span className="flex flex-align-items-center">
@@ -59,13 +71,12 @@ export const AliasForm = <V extends AliasFormValues = AliasFormValues>({
                         </span>
                     </Button>
                 </div>
-                {mailboxesSelect}
-            </>
+            </Wrapper>
         );
     }
 
     return (
-        <>
+        <Wrapper {...wrapperProps}>
             <FieldsetCluster>
                 <Field
                     name="aliasPrefix"
@@ -91,7 +102,6 @@ export const AliasForm = <V extends AliasFormValues = AliasFormValues>({
                     ))}
                 </Field>
             </FieldsetCluster>
-            {mailboxesSelect}
-        </>
+        </Wrapper>
     );
 };
