@@ -85,7 +85,7 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
             handleDeleteClick={handleDeleteClick}
         >
             <FieldsetCluster mode="read" as="div">
-                <ClickToCopyValue value={aliasEmail as string}>
+                <ClickToCopyValue value={aliasEmail ?? ''}>
                     <ValueControl interactive icon="alias" label={c('Label').t`Alias address`}>
                         {aliasEmail}
                     </ValueControl>
