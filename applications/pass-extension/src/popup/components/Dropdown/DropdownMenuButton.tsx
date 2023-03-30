@@ -52,7 +52,7 @@ export const DropdownMenuButton: FC<DropdownMenuButtonProps> = ({
     <_DropdownMenuButton
         className={clsx(
             'flex flex-align-items-center flex-nowrap flex-justify-space-between text-left',
-            size === 'small' && 'text-sm',
+            size === 'small' && 'text-sm py-2 px-4',
             className
         )}
         {...rest}
