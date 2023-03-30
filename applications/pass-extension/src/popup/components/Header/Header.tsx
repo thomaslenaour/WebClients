@@ -70,20 +70,12 @@ export const Header: VFC<{}> = () => {
 
     return (
         <>
-            <HeaderComponent className="flex-align-items-center p0-5 border-bottom">
-                <MenuDropdown className="mr0-5" />
+            <HeaderComponent className="flex-align-items-center gap-2 p-2 border-bottom hauto">
+                <MenuDropdown />
                 <Searchbar disabled={!ready} value={search} handleValue={setSearch} />
                 <div>
                     <Tooltip title={c('Action').t`Add new item`}>
-                        <Button
-                            icon
-                            pill
-                            color="norm"
-                            className="ml1"
-                            disabled={!ready}
-                            onClick={toggle}
-                            ref={anchorRef}
-                        >
+                        <Button icon pill color="norm" disabled={!ready} onClick={toggle} ref={anchorRef}>
                             <Icon name="plus" />
                         </Button>
                     </Tooltip>
@@ -101,11 +93,11 @@ export const Header: VFC<{}> = () => {
                             <span className={itemTypeToItemClassName[type]} key={`item-type-dropdown-button-${type}`}>
                                 <DropdownMenuButton
                                     key={type}
-                                    className="text-left flex flex-align-items-center bg-norm"
+                                    className="text-left flex flex-align-items-center"
                                     onClick={withClose(() => handleNewItemClick(type))}
                                 >
                                     <span
-                                        className="mr1 w-custom h-custom rounded-50 overflow-hidden relative pass-item-icon"
+                                        className="mr-4 w-custom h-custom rounded-50 overflow-hidden relative pass-item-icon"
                                         style={{ '--width-custom': `2em`, '--height-custom': `2em` }}
                                     >
                                         <Icon
@@ -121,7 +113,7 @@ export const Header: VFC<{}> = () => {
                         ))}
 
                         <DropdownMenuButton
-                            className="text-left flex flex-align-items-center ui-password bg-norm"
+                            className="text-left flex flex-align-items-center ui-password"
                             onClick={withClose(handleNewPasswordClick)}
                         >
                             <span
