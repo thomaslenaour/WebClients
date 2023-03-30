@@ -7,6 +7,8 @@ import { Icon, InputTwo } from '@proton/components/components';
 
 import { useNavigationContext } from '../../context/navigation/useNavigationContext';
 
+import './Searchbar.scss';
+
 /**
  * FIXME: if we get reports of the search ever feeling slow or sluggish,
  * we might have to either debounce the search query value handling and/or
@@ -28,6 +30,7 @@ const SearchbarRaw: VFC<{ disabled?: boolean; value: string; handleValue: (value
     return (
         <InputTwo
             ref={inputRef}
+            className="pass-searchbar"
             placeholder={`${inTrash ? c('Placeholder').t`Search in Trash` : c('Placeholder').t`Search`}...`}
             prefix={<Icon name="magnifier" />}
             suffix={
@@ -37,6 +40,7 @@ const SearchbarRaw: VFC<{ disabled?: boolean; value: string; handleValue: (value
                         size="small"
                         color="weak"
                         icon
+                        pill
                         onClick={handleClear}
                         title={c('Action').t`Clear search`}
                     >
