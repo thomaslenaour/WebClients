@@ -65,14 +65,14 @@ export const ItemsFilter: VFC<ItemsFilterProps> = ({ value, onChange }) => {
             <DropdownButton
                 hasCaret
                 icon
-                className="flex text-sm text-semibold mr0-25"
+                className="flex text-sm text-semibold"
                 onClick={toggle}
                 ref={anchorRef}
-                color="norm"
-                shape="ghost"
+                color="weak"
+                shape="solid"
                 size="small"
             >
-                <Icon name={selectedOption.icon} className="inline mr0-25" />
+                <Icon name={selectedOption.icon} className="inline mr-1" />
                 {`${selectedOption.label} (${selectedOption.count})`}
             </DropdownButton>
 
@@ -91,7 +91,7 @@ export const ItemsFilter: VFC<ItemsFilterProps> = ({ value, onChange }) => {
                             isSelected={type === value}
                             size="small"
                         >
-                            <Icon className="mr0-5 color-weak" name={icon} />
+                            <Icon className="mr-2 color-weak" name={icon} />
                             {`${label} (${count})`}
                         </DropdownMenuButton>
                     ))}

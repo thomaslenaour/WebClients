@@ -28,7 +28,7 @@ export const ItemsSort: VFC<ItemsSortProps> = ({ sort, onSortChange }) => {
 
     return (
         <>
-            <DropdownButton hasCaret icon onClick={toggle} ref={anchorRef} color="norm" shape="ghost" size="small">
+            <DropdownButton hasCaret icon onClick={toggle} ref={anchorRef} color="weak" shape="solid" size="small">
                 <Icon name="arrow-down-arrow-up" className="inline" />
             </DropdownButton>
 
