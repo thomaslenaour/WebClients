@@ -41,66 +41,139 @@
   --text-disabled: rgb(255 255 255 / 0.08);
   --text-invert: #191927;
   --field-norm: rgb(255 255 255 / 0.04);
-  --border-norm: #2B2B38;
+  --field-disabled: #4c4c65;
+  --border-norm: #2b2b38;
   --background-norm: #191927;
-  --background-weak: #1F1F31;
+  --background-weak: #1f1f31;
   --background-strong: rgb(18 18 27 / 0.8);
   --background-invert: white;
-
-  --focus-ring: rgb(255 255 255 / 0.5); /* FIXME */
-
-  --interaction-norm-minor-2: rgb(97 96 253 / 0.08);
-  --interaction-norm-minor-1: rgb(97 96 253 / 0.16);
-  --interaction-norm: rgb(97 96 253 / 0.8);
-  --interaction-norm-major-1: #6160FD;
-  --interaction-norm-major-2: #8180FD;
-  --interaction-norm-major-3: #9090FE;
+  --interaction-norm-minor-2: #131333;
+  --interaction-norm-minor-1: #1d1d4c;
+  --interaction-norm: #6160fd;
+  --interaction-norm-major-1: #7170fd;
+  --interaction-norm-major-2: #8180fd;
+  --interaction-norm-major-3: #9090fe;
+  --interaction-norm-contrast: #ffffff;
   --interaction-norm-contrast: #191927;
-
-  --interaction-weak-minor-2: #0a0b10;
-  --interaction-weak-minor-1: #101117;
-  --interaction-weak: #34384e;
-  --interaction-weak-major-1: #484c60;
-  --interaction-weak-major-2: #5d6071;
-  --interaction-weak-major-3: #717483;
+  --interaction-weak-minor-2: rgba(19, 19, 51, 0.16);
+  --interaction-weak-minor-1: rgba(29, 29, 76, 0.16);
+  --interaction-weak: rgba(97, 96, 253, 0.16);
+  --interaction-weak-major-1: rgba(113, 112, 253, 0.16);
+  --interaction-weak-major-2: rgba(129, 128, 253, 0.16);
+  --interaction-weak-major-3: rgba(144, 144, 254, 0.16);
   --interaction-weak-contrast: #ffffff;
+  --interaction-weak-major-1: #32306c;
+  --interaction-weak-major-2: #343187;
+  --interaction-default: transparent;
+  --interaction-default-hover: rgb(255 255 255 / 0.04);
+  --interaction-default-active: rgb(255 255 255 / 0.08);
   --shadow-norm-opacity: 0.32;
   --shadow-lifted-opacity: 0.4;
   --backdrop-norm: rgb(0 0 0 / 0.32);
+  --focus-outline: var(--interaction-norm-major-2);
+  --focus-ring: var(--interaction-norm-minor-1);
+  --search-field-focus-background: #0e0e0e;
+  .button-solid-weak {
+    --button-default-text-color: var(--interaction-norm);
+    --button-hover-text-color: var(--interaction-norm);
+    --button-active-text-color: var(--interaction-norm);
+  }
 }
 
 .ui-login {
-  --interaction-norm-minor-2: rgb(167 121 255 / 0.08);
-  --interaction-norm-minor-1: rgb(167 121 255 / 0.16);
-  --interaction-norm: rgb(167 121 255 / 0.8);
-  --interaction-norm-major-1: #A779FF;
-  --interaction-norm-major-2: #B994FF;
-  --interaction-norm-major-3: #C1A1FF;
+  --interaction-norm-minor-2: #211833;
+  --interaction-norm-minor-1: #32244d;
+  --interaction-norm: #a779ff;
+  --interaction-norm-major-1: #b086ff;
+  --interaction-norm-major-2: #b994ff;
+  --interaction-norm-major-3: #c1a1ff;
+  --interaction-norm-contrast: #ffffff;
+  --interaction-weak-minor-2: #0a080f;
+  --interaction-weak-minor-1: #0e0c16;
+  --interaction-weak: #30284a;
+  --interaction-weak-major-1: #453e5c;
+  --interaction-weak-major-2: #59536e;
+  --interaction-weak-major-3: #6e6980;
+  --interaction-weak-contrast: #ffffff;
+  --focus-outline: var(--interaction-norm-major-2);
+  --focus-ring: var(--interaction-norm-minor-1);
+  --interaction-norm-hover: var(--interaction-norm-major-1);
+  --interaction-norm-active: var(--interaction-norm-major-2);
+  --interaction-weak-hover: var(--interaction-weak-major-1);
+  --interaction-weak-active: var(--interaction-weak-major-2);
+  .button-solid-norm {
+    --button-default-text-color: var(--text-invert);
+    --button-hover-text-color: var(--text-invert);
+    --button-active-text-color: var(--text-invert);
+  }
 }
 
 .ui-alias {
-  --interaction-norm-minor-2: rgb(106 189 179 / 0.08);
-  --interaction-norm-minor-1: rgb(106 189 179 / 0.16);
-  --interaction-norm: rgb(106 189 179 / 0.8);
-  --interaction-norm-major-1: #6ABDB3;
-  --interaction-norm-major-2: #88CAC2;
-  --interaction-norm-major-3: #97D1CA;
+  --interaction-norm-minor-2: #152624;
+  --interaction-norm-minor-1: #203936;
+  --interaction-norm: #6abdb3;
+  --interaction-norm-major-1: #79c4bb;
+  --interaction-norm-major-2: #88cac2;
+  --interaction-norm-major-3: #97d1ca;
+  --interaction-norm-contrast: #000000;
+  --interaction-weak-minor-2: #080a0c;
+  --interaction-weak-minor-1: #0b0f12;
+  --interaction-weak: #26333d;
+  --interaction-weak-major-1: #3c4750;
+  --interaction-weak-major-2: #515c64;
+  --interaction-weak-major-3: #677077;
+  --interaction-weak-contrast: #ffffff;
+  --focus-outline: var(--interaction-norm-major-2);
+  --focus-ring: var(--interaction-norm-minor-1);
+  --interaction-norm-hover: var(--interaction-norm-major-1);
+  --interaction-norm-active: var(--interaction-norm-major-2);
+  --interaction-weak-hover: var(--interaction-weak-major-1);
+  --interaction-weak-active: var(--interaction-weak-major-2);
+  .button-solid-norm {
+    --button-default-text-color: var(--text-invert);
+    --button-hover-text-color: var(--text-invert);
+    --button-active-text-color: var(--text-invert);
+  }
 }
 
 .ui-note {
-  --interaction-norm-minor-2: rgb(255 202 138 / 0.08);
-  --interaction-norm-minor-1: rgb(255 202 138 / 0.16);
-  --interaction-norm: rgb(255 202 138 / 0.8);
-  --interaction-norm-major-1: #FFCA8A;
-  --interaction-norm-major-2: #FFD5A1;
-  --interaction-norm-major-3: #FFDAAD;
+  --interaction-norm-minor-2: #332620;
+  --interaction-norm-minor-1: #4c3930;
+  --interaction-norm: #ffd5a1;
+  --interaction-norm-major-1: #ffd9aa;
+  --interaction-norm-major-2: #ffddb4;
+  --interaction-norm-major-3: #ffe2bd;
+  --interaction-norm-contrast: #000000;
+  --interaction-weak-minor-2: #131011;
+  --interaction-weak-minor-1: #1f1b1c;
+  --interaction-weak: #3e3537;
+  --interaction-weak-major-1: #51494b;
+  --interaction-weak-major-2: #655d5f;
+  --interaction-weak-major-3: #787273;
+  --interaction-weak-contrast: #ffffff;
+  --interaction-norm-hover: var(--interaction-norm-major-1);
+  --interaction-norm-active: var(--interaction-norm-major-2);
+  --interaction-weak-hover: var(--interaction-weak-major-1);
+  --interaction-weak-active: var(--interaction-weak-major-2);
 }
 
 .ui-password {
-  --interaction-norm-minor-2: rgb(252 156 159 / 0.08);
-  --interaction-norm-minor-1: rgb(252 156 159 / 0.16);
-  --interaction-norm: rgb(252 156 159 / 0.8);
-  --interaction-norm-major-1: #FC9C9F;
-  --interaction-norm-major-2: #FDB0B2;
-  --interaction-norm-major-3: #FDBABC;
+  --interaction-norm-minor-2: #321f20;
+  --interaction-norm-minor-1: #4c2f30;
+  --interaction-norm: #fc9c9f;
+  --interaction-norm-major-1: #fca6a9;
+  --interaction-norm-major-2: #fdb0b2;
+  --interaction-norm-major-3: #fdbabc;
+  --interaction-norm-contrast: #000000;
+  --interaction-weak-minor-2: #120e11;
+  --interaction-weak-minor-1: #1f171d;
+  --interaction-weak: #3d2e3a;
+  --interaction-weak-major-1: #50434e;
+  --interaction-weak-major-2: #645861;
+  --interaction-weak-major-3: #776d75;
+  --interaction-weak-contrast: #ffffff;
+  --interaction-norm-hover: var(--interaction-norm-major-1);
+  --interaction-norm-active: var(--interaction-norm-major-2);
+  --interaction-weak-hover: var(--interaction-weak-major-1);
+  --interaction-weak-active: var(--interaction-weak-major-2);
 }
