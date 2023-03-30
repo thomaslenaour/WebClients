@@ -15,6 +15,8 @@
     --text-invert: #191927;
 
     --field-norm: rgb(255 255 255 / 0.04);
+    --field-disabled: #4C4C65;
+
     --border-norm: #2B2B38;
 
     --background-norm: #191927;
@@ -22,20 +24,30 @@
     --background-strong: rgb(18 18 27 / 0.8);
     --background-invert: white;
 
-    --focus-ring: rgb(255 255 255 / 0.5); /* FIXME */
-
-    --interaction-norm-minor-2: rgb(97 96 253 / 0.08);
-    --interaction-norm-minor-1: rgb(97 96 253 / 0.16);
-    --interaction-norm: rgb(97 96 253 / 0.8);
-    --interaction-norm-major-1: #6160FD;
-    --interaction-norm-major-2: #8180FD;
-    --interaction-norm-major-3: #9090FE;
+    --interaction-norm: #6160FD;
     --interaction-norm-contrast: #191927;
 
-    --interaction-weak: #34384e;
+    --interaction-weak: rgba(97, 96, 253, 0.16);
+    --interaction-weak-major-1: #32306c;
+    --interaction-weak-major-2: #343187;
+
+    --interaction-default: transparent;
+    --interaction-default-hover: rgb(255 255 255 / 0.04);
+    --interaction-default-active: rgb(255 255 255 / 0.08);
 
     --shadow-norm-opacity: 0.32;
     --shadow-lifted-opacity: 0.4;
 
     --backdrop-norm: rgb(0 0 0 / 0.32);
+
+    --focus-outline: var(--interaction-norm-major-2);
+    --focus-ring: var(--interaction-norm-minor-1);
+
+    --search-field-focus-background: #0E0E0E;
+
+    .button-solid-weak {
+        --button-default-text-color: var(--interaction-norm);
+        --button-hover-text-color: var(--interaction-norm);
+        --button-active-text-color: var(--interaction-norm);
+    }
 }

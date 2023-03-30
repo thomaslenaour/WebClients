@@ -1,8 +1,19 @@
 .ui-login {
-    --interaction-norm-minor-2: rgb(167 121 255 / 0.08);
-    --interaction-norm-minor-1: rgb(167 121 255 / 0.16);
-    --interaction-norm: rgb(167 121 255 / 0.8);
-    --interaction-norm-major-1: #A779FF;
-    --interaction-norm-major-2: #B994FF;
-    --interaction-norm-major-3: #C1A1FF;
+    --interaction-norm: #A779FF;
+
+    --interaction-weak: #30284A;
+
+    --focus-outline: var(--interaction-norm-major-2);
+    --focus-ring: var(--interaction-norm-minor-1);
+
+    --interaction-norm-hover: var(--interaction-norm-major-1);
+    --interaction-norm-active: var(--interaction-norm-major-2);
+    --interaction-weak-hover: var(--interaction-weak-major-1);
+    --interaction-weak-active: var(--interaction-weak-major-2);
+
+    .button-solid-norm {
+        --button-default-text-color: var(--text-invert);
+        --button-hover-text-color: var(--text-invert);
+        --button-active-text-color: var(--text-invert);
+    }
 }

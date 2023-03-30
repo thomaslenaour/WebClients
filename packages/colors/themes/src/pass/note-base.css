@@ -1,8 +1,9 @@
 .ui-note {
-    --interaction-norm-minor-2: rgb(255 202 138 / 0.08);
-    --interaction-norm-minor-1: rgb(255 202 138 / 0.16);
-    --interaction-norm: rgb(255 202 138 / 0.8);
-    --interaction-norm-major-1: #FFCA8A;
-    --interaction-norm-major-2: #FFD5A1;
-    --interaction-norm-major-3: #FFDAAD;
+    --interaction-norm: #FFD5A1;
+    --interaction-weak: #3E3537;
+
+    --interaction-norm-hover: var(--interaction-norm-major-1);
+    --interaction-norm-active: var(--interaction-norm-major-2);
+    --interaction-weak-hover: var(--interaction-weak-major-1);
+    --interaction-weak-active: var(--interaction-weak-major-2);
 }
