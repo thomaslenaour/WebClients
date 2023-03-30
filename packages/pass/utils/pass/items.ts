@@ -11,3 +11,13 @@ export const getOptimisticItemActionId = (
         | { optimisticId: string; itemId?: string; shareId: string }
         | { optimisticId?: string; itemId: string; shareId: string }
 ) => `${payload.shareId}-${payload?.optimisticId ?? payload.itemId!}`;
+
+export const itemEq =
+    <T extends { itemId: string; shareId: string }>(a: T) =>
+    (b: T): boolean =>
+        a.shareId === b.shareId && a.itemId === b.itemId;
+
+export const belongsToShare =
+    (shareId: string) =>
+    <T extends { itemId: string; shareId: string }>(item: T): boolean =>
+        item.shareId === shareId;

@@ -26,9 +26,9 @@ export const selectItemsByShareId = createSelector(
 );
 
 export const selectItemIdByOptimisticId =
-    (optimisticItemId: string) =>
+    (optimisticItemId?: string) =>
     (state: State): Maybe<SelectedItem> =>
-        selectByOptimisticIds(state)?.[optimisticItemId];
+        optimisticItemId ? selectByOptimisticIds(state)?.[optimisticItemId] : undefined;
 
 export const selectItemByShareIdAndId = (shareId: string, itemId: string) =>
     createSelector([selectItems, selectByOptimisticIds], (items, byOptimisticId): Maybe<ItemRevision> => {
