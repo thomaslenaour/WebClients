@@ -22,14 +22,14 @@ export const ContentItemsList: VFC = () => {
 
     return (
         <>
-            <div className="flex p0-5">
+            <div className="flex px-3 py-2 gap-1">
                 <ItemsFilter value={filter} onChange={setFilter} />
                 <ItemsSort sort={sort} onSortChange={setSort} />
             </div>
 
             {filteredItems.length === 0 ? (
                 <div className="absolute-center flex flex-justify-center flex-align-items-center w70">
-                    <span className="block text-break color-weak text-sm p0-5 text-center">
+                    <span className="block text-break color-weak text-sm p-2 text-center">
                         {search.trim() ? (
                             <>
                                 {c('Warning').t`No items matching`}
