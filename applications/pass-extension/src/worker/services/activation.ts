@@ -68,12 +68,17 @@ export const createActivationService = () => {
      */
     const handleInstall = withContext(async (ctx, details: Runtime.OnInstalledDetailsType) => {
         if (details.reason === 'update') {
-            /**
-             * firefox will automatically re-inject the content-script
+            if (ENV === 'production') {
+                /* in production clear the cache on each extension
+                 * update in case the state/snapshot data-structure
+                 * has changed. FIXME: use version migrations */
+                await browserLocalStorage.removeItems(['salt', 'state', 'snapshot']);
+            }
+
+            /* firefox will automatically re-inject the content-script
              * if an update is detected (when the extension runtime is
              * reloaded with the update). This is not the case on chrome
-             * so we need to manually re-inject the updated script.
-             */
+             * so we need to manually re-inject the updated script. */
             if (BUILD_TARGET === 'chrome') {
                 await Promise.all(
                     (browser.runtime.getManifest().content_scripts ?? []).flatMap(async (cs) => {
