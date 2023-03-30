@@ -4,15 +4,14 @@ body {
 	background: transparent;
 }
 
+#root {
+	block-size: 100%;
+}
+
 .item-icon {
 	background-color: rgba(#6d4aff, 0.16);
 	padding: em(4);
 	block-size: em(24);
 	inline-size: em(24);
 	border-radius: var(--border-radius-md);
-}
-
-/* _notifications.scss override */
-.notifications-container [class*='notification-'] {
-	inline-size: 100%;
 }

@@ -18,18 +18,6 @@
 	}
 }
 
-// _notification.scss override
-// We want to align the notifications container
-// to the extension's internal padding
-// We also set the z-index to be lower
-// than a dropdown's tooltip but higher than
-// a modal's container to allow notifications
-// over modals
-.notifications-container {
-	inset-block-start: 0.75em;
-	z-index: 850;
-}
-
 // Slider component
 .slider {
 	&.slider-small {
