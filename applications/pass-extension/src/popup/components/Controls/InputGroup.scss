@@ -12,7 +12,7 @@
 
 		&:has(input:focus-visible, textarea:focus-visible)::before,
 		&:has(button[aria-expanded='false']:focus)::before {
-			border-color: var(--focus-outline);
+			border-color: var(--interaction-norm);
 		}
 	}
 
