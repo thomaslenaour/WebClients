@@ -24,9 +24,18 @@ const Wrapper: FC<{
     disabled: boolean;
     loading: boolean;
     mailboxes: AliasMailbox[];
-}> = ({ children, disabled, loading, mailboxes }) => {
+    toggleShowAdvanced: () => void;
+}> = ({ children, disabled, loading, mailboxes, toggleShowAdvanced }) => {
     return (
         <>
+            <div className="flex flex-justify-end mb-2">
+                <Button shape="ghost" onClick={toggleShowAdvanced}>
+                    <span className="flex flex-align-items-center">
+                        <Icon name="cog-wheel" className="mr0-5" />
+                        {c('Action').t`Advanced options`}
+                    </span>
+                </Button>
+            </div>
             {children}
             <FieldsetCluster>
                 <Field
@@ -56,23 +65,18 @@ export const AliasForm = <V extends AliasFormValues = AliasFormValues>({
     form,
 }: AliasFormProps<V>) => {
     const [showAdvanced, setShowAdvanced] = useState(false);
+    const toggleShowAdvanced = () => setShowAdvanced((state) => !state);
     const disabled = aliasOptionsLoading || aliasOptions === null;
 
-    const wrapperProps = { disabled, loading: aliasOptionsLoading, mailboxes: aliasOptions?.mailboxes ?? [] };
+    const wrapperProps = {
+        disabled,
+        loading: aliasOptionsLoading,
+        mailboxes: aliasOptions?.mailboxes ?? [],
+        toggleShowAdvanced,
+    };
 
     if (!showAdvanced) {
-        return (
-            <Wrapper {...wrapperProps}>
-                <div className="flex flex-justify-end mb-2">
-                    <Button shape="ghost" onClick={() => setShowAdvanced(true)}>
-                        <span className="flex flex-align-items-center">
-                            <Icon name="cog-wheel" className="mr0-5" />
-                            {c('Action').t`Advanced options`}
-                        </span>
-                    </Button>
-                </div>
-            </Wrapper>
-        );
+        return <Wrapper {...wrapperProps} />;
     }
 
     return (
