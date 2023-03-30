@@ -19,8 +19,10 @@ import {
 } from '@proton/pass/store';
 import * as requests from '@proton/pass/store/actions/requests';
 import { getFormattedDateFromTimestamp } from '@proton/pass/utils/time/format';
+import clsx from '@proton/utils/clsx';
 
 import { ItemTypeViewProps } from '../../../../shared/items/types';
+import { ClickToCopyValue } from '../../../components/Controls/ClickToCopyValue';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
 import { ValueControl } from '../../../components/Controls/ValueControl';
 import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
@@ -38,7 +40,7 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
     handleRestoreClick,
     handleDeleteClick,
 }) => {
-    const { data: item, aliasEmail, createTime, itemId } = revision;
+    const { data: item, aliasEmail, createTime, itemId, revision: revisionNumber } = revision;
     const {
         metadata: { name, note },
     } = item;
@@ -67,13 +69,6 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
         }
     }, [requestFailure]);
 
-    const copyAliasEmail = () => {
-        if (aliasEmail) {
-            navigator.clipboard.writeText(aliasEmail);
-            createNotification({ type: 'success', text: c('Info').t`Copied to clipboard` });
-        }
-    };
-
     return (
         <ItemViewPanel
             type="alias"
@@ -90,24 +85,30 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
             handleDeleteClick={handleDeleteClick}
         >
             <FieldsetCluster mode="read" as="div">
-                <ValueControl icon="alias" label={c('Label').t`Alias address`} onClick={copyAliasEmail}>
-                    {aliasEmail}
-                </ValueControl>
-                <ValueControl icon="arrow-up-and-right-big" label={c('Label').t`Forwarded to`}>
+                <ClickToCopyValue value={aliasEmail as string}>
+                    <ValueControl interactive icon="alias" label={c('Label').t`Alias address`}>
+                        {aliasEmail}
+                    </ValueControl>
+                </ClickToCopyValue>
+
+                <ValueControl as="ul" icon="arrow-up-and-right-big" label={c('Label').t`Forwarded to`}>
                     {requestFailure && <div className="extension-skeleton extension-skeleton--select" />}
                     {ready &&
-                        mailboxesForAlias.map(({ email }) => (
-                            <div key={email} className="text-ellipsis mb0-5">
+                        mailboxesForAlias.map(({ email }, i) => (
+                            <li
+                                key={email}
+                                className={clsx('text-ellipsis', i < mailboxesForAlias.length - 1 && 'mb-2')}
+                            >
                                 {email}
-                            </div>
+                            </li>
                         ))}
                 </ValueControl>
             </FieldsetCluster>
 
             {note && (
                 <FieldsetCluster mode="read" as="div">
-                    <ValueControl icon="note" label={c('Label').t`Note`}>
-                        <pre>{note}</pre>
+                    <ValueControl as="pre" icon="note" label={c('Label').t`Note`}>
+                        {note}
                     </ValueControl>
                 </FieldsetCluster>
             )}
@@ -131,6 +132,7 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({
                         <ValueControl label={c('Label').t`Created on`}>
                             {getFormattedDateFromTimestamp(createTime)}
                         </ValueControl>
+                        <ValueControl label={c('Label').t`Revision number`}>{revisionNumber}</ValueControl>
                     </FieldsetCluster>
                 </CollapsibleContent>
             </Collapsible>
