@@ -11,7 +11,7 @@
         "check-types": "tsc",
         "check-types:watch": "tsc --watch",
         "clean": "rm -rf ./dist/",
-        "config": "yarn config:extension --api=https://api-pass.proton.me --sso=https://account.proton.me",
+        "config": "yarn config:extension --api=https://api-pass.proton.me/api --sso=https://account.proton.me",
         "config:dev": "yarn config:extension --api=https://account.proton.black/api --sso=https://account.proton.black",
         "config:extension": "proton-pack config --no-api-proxy --version=$(cat ./manifest-chrome.json | jq -r .version)",
         "generate:ff-release": "./tools/generate:ff-release.sh",
