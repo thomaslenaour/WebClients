@@ -152,6 +152,7 @@ describe('PassCrypto', () => {
                 ContentFormatVersion: CONTENT_FORMAT_VERSION,
                 ExpireTime: 0,
                 CreateTime: 0,
+                Primary: false,
             };
 
             /* register the share */
@@ -204,6 +205,7 @@ describe('PassCrypto', () => {
                 ContentFormatVersion: CONTENT_FORMAT_VERSION,
                 ExpireTime: 0,
                 CreateTime: 0,
+                Primary: false,
             };
 
             const share = await PassCrypto.openShare({ encryptedShare, shareKeys: [shareKey] });

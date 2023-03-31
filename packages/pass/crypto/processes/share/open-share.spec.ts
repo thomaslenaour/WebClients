@@ -41,6 +41,7 @@ describe('openShare crypto process', () => {
             ContentKeyRotation: 1,
             ContentFormatVersion: CONTENT_FORMAT_VERSION,
             CreateTime: createTime,
+            Primary: false,
         };
 
         const share = await openShare({ type: ShareType.Vault, encryptedShare, vaultKey });

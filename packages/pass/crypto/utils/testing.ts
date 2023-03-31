@@ -85,6 +85,7 @@ export const createRandomShareResponses = async (
             ContentFormatVersion: CONTENT_FORMAT_VERSION,
             ExpireTime: 0,
             CreateTime: 0,
+            Primary: false,
         },
         {
             Key: vault.EncryptedVaultKey,
