@@ -78,7 +78,7 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                     htmlFor="next-url-field"
                     className="field-two-label-container flex flex-justify-space-between flex-nowrap flex-align-items-end flex-gap-0-5 color-norm text-normal"
                 >
-                    <span className="field-two-label">{c('Label').t`Websites`}</span>
+                    <span className="field-two-label text-sm">{c('Label').t`Websites`}</span>
                 </label>
                 <FieldArray
                     name="urls"
