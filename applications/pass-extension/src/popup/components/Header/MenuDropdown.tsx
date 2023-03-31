@@ -113,7 +113,7 @@ const MenuDropdownRaw: VFC<{ className?: string }> = ({ className }) => {
                             handleEmptyTrash={() => setDeleteAllConfirm(true)}
                         />
 
-                        <hr className="dropdown-item-hr my0-5" aria-hidden="true" />
+                        <hr className="dropdown-item-hr my-2 mx-3" aria-hidden="true" />
 
                         <DropdownMenuButton
                             className="text-left flex flex-align-items-center flex-justify-space-between"
@@ -127,7 +127,7 @@ const MenuDropdownRaw: VFC<{ className?: string }> = ({ className }) => {
                             <Icon name="arrow-out-square" className="ml0-5 color-weak" />
                         </DropdownMenuButton>
 
-                        <hr className="dropdown-item-hr my0-5" aria-hidden="true" />
+                        <hr className="dropdown-item-hr my-2 mx-3" aria-hidden="true" />
 
                         {webStoreURL && (
                             <DropdownMenuButton
