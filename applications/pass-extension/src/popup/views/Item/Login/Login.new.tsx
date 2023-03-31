@@ -8,6 +8,7 @@ import uniqid from 'uniqid';
 import { Button } from '@proton/atoms';
 import { DropdownMenuButton, Icon } from '@proton/components';
 import { itemCreationIntent } from '@proton/pass/store';
+import { normalizeOtpUriFromUserInput } from '@proton/pass/utils/otp';
 import { isEmptyString } from '@proton/pass/utils/string';
 import { getEpoch } from '@proton/pass/utils/time/get-epoch';
 import { omit } from '@proton/shared/lib/helpers/object';
@@ -52,7 +53,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ shareId, onSubmit, onCanc
     const form = useFormik<NewLoginItemFormValues>({
         initialValues,
         initialErrors: validateNewLoginForm(initialValues),
-        onSubmit: ({ name, note, username, password, shareId, url, urls, ...values }) => {
+        onSubmit: ({ name, note, username, password, shareId, totpUri, url, urls, ...values }) => {
             const createTime = getEpoch();
             const optimisticId = uniqid();
 
@@ -88,6 +89,11 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ shareId, onSubmit, onCanc
                 );
             }
 
+            const normalizedOtpUri = normalizeOtpUriFromUserInput(totpUri, {
+                label: username || undefined,
+                issuer: name || undefined,
+            });
+
             onSubmit({
                 type: 'login',
                 optimisticId,
@@ -102,7 +108,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ shareId, onSubmit, onCanc
                     username,
                     password,
                     urls: Array.from(new Set(urls.map(({ url }) => url).concat(isEmptyString(url) ? [] : [url]))),
-                    totpUri: '',
+                    totpUri: normalizedOtpUri,
                 },
                 extraFields: [],
             });
@@ -215,6 +221,15 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ shareId, onSubmit, onCanc
                                 placeholder={c('Placeholder').t`Enter password`}
                                 icon="key"
                                 component={PasswordFieldWIP}
+                            />
+
+                            <Field
+                                name="totpUri"
+                                label={c('Label').t`OTP`}
+                                placeholder={c('Placeholder').t`Enter a OTP URI or Secret`}
+                                component={PasswordFieldWIP}
+                                actions={null}
+                                icon="lock"
                             />
                         </FieldsetCluster>
 
