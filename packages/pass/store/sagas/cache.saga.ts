@@ -1,16 +1,19 @@
 import type { AnyAction } from 'redux';
-import { select, takeLatest } from 'redux-saga/effects';
+import type { Task } from 'redux-saga';
+import { cancel, fork, select, take, takeLatest } from 'redux-saga/effects';
 
 import { authentication } from '@proton/pass/auth/authentication';
 import { PassCrypto } from '@proton/pass/crypto';
 import { CACHE_SALT_LENGTH, encryptData, getCacheEncryptionKey } from '@proton/pass/crypto/utils';
 import { browserLocalStorage } from '@proton/pass/extension/storage';
 import { EncryptionTag, type Maybe } from '@proton/pass/types';
+import { or } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
 import { objectDelete } from '@proton/pass/utils/object';
 import { stringToUint8Array, uint8ArrayToString } from '@proton/shared/lib/helpers/encoding';
 import { wait } from '@proton/shared/lib/helpers/promise';
 
+import { signout, stateLock } from '../actions';
 import { isCacheTriggeringAction } from '../actions/with-cache-block';
 import { asIfNotOptimistic } from '../optimistic/selectors/select-is-optimistic';
 import { reducerMap } from '../reducers';
@@ -56,5 +59,12 @@ function* cacheWorker(action: AnyAction) {
 }
 
 export default function* watcher() {
-    yield takeLatest(isCacheTriggeringAction, cacheWorker);
+    yield takeLatest(isCacheTriggeringAction, function* (action: AnyAction) {
+        const cacheTask: Task = yield fork(cacheWorker, action);
+
+        yield take(or(stateLock.match, signout.match));
+
+        logger.info(`[Saga::Cache] Invalidating all caching tasks`);
+        yield cancel(cacheTask);
+    });
 }
