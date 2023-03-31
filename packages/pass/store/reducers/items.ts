@@ -1,6 +1,6 @@
 import type { AnyAction, Reducer } from 'redux';
 
-import { CONTENT_FORMAT_VERSION, type ItemRevision, ItemState, type SelectedItem } from '@proton/pass/types';
+import { CONTENT_FORMAT_VERSION, type ItemRevision, ItemState, type UniqueItem } from '@proton/pass/types';
 import { or } from '@proton/pass/utils/fp';
 import { fullMerge, objectDelete, partialMerge } from '@proton/pass/utils/object';
 import { isTrashed } from '@proton/pass/utils/pass/trash';
@@ -60,7 +60,7 @@ export type ItemsByShareId = {
     };
 };
 
-type ItemsByOptimisticId = { [optimisticId: string]: SelectedItem };
+type ItemsByOptimisticId = { [optimisticId: string]: UniqueItem };
 
 export type ItemsState = {
     byShareId: WrappedOptimisticState<ItemsByShareId>;

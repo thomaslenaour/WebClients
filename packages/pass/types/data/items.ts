@@ -46,4 +46,5 @@ export type ItemMap<T> = {
     [type in ItemType]: T;
 };
 
-export type SelectedItem = { shareId: string; itemId: string };
+export type UniqueItem = { shareId: string; itemId: string };
+export type SelectedItem = UniqueItem;
