@@ -15,18 +15,13 @@
         "test": "NODE_NO_WARNINGS=1 jest --runInBand --ci --verbose"
     },
     "dependencies": {
-        "@protobuf-ts/plugin": "^2.4.0",
-        "@proton/components": "workspace:packages/components",
         "@proton/crypto": "workspace:packages/crypto",
         "@proton/pack": "workspace:packages/pack",
         "@proton/polyfill": "workspace:packages/polyfill",
         "@proton/shared": "workspace:packages/shared",
-        "@proton/styles": "workspace:packages/styles",
         "@reduxjs/toolkit": "^1.9.3",
-        "formik": "^2.2.9",
         "lodash.flow": "^3.5.0",
         "lodash.isequal": "^4.5.0",
-        "lodash.merge": "^4.6.2",
         "loglevel": "^1.8.0",
         "otpauth": "^9.1.1",
         "papaparse": "^5.4.0",
@@ -37,12 +32,12 @@
         "webextension-polyfill": "^0.10.0"
     },
     "devDependencies": {
+        "@protobuf-ts/plugin": "^2.4.0",
         "@proton/eslint-config-proton": "workspace:packages/eslint-config-proton",
         "@proton/i18n": "workspace:packages/i18n",
         "@proton/pack": "workspace:packages/pack",
         "@types/chrome": "^0.0.202",
         "@types/lodash.flow": "^3.5.6",
-        "@types/lodash.merge": "^4.6.6",
         "@types/webextension-polyfill": "^0.9.1",
         "babel-plugin-transform-import-meta": "^2.1.0",
         "babel-plugin-transform-require-context": "^0.1.1",
