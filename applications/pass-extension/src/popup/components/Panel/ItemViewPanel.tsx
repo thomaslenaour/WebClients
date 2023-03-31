@@ -39,7 +39,7 @@ export const ItemViewPanel: FC<Props> = ({
     children,
 }) => {
     const vaults = useSelector(selectAllVaults);
-    const showVaultSubtitle = vaults.length > 1;
+    const hasMultipleVaults = vaults.length > 1;
 
     return (
         <Panel
@@ -110,6 +110,16 @@ export const ItemViewPanel: FC<Props> = ({
                                 disabled={optimistic}
                                 shape="ghost"
                             >
+                                {hasMultipleVaults && (
+                                    <DropdownMenuButton
+                                        className="flex flex-align-items-center text-left"
+                                        onClick={handleMoveToVaultClick}
+                                    >
+                                        <Icon name="folder-arrow-in" className="mr-2" />
+                                        {c('Action').t`Move to another vault`}
+                                    </DropdownMenuButton>
+                                )}
+
                                 <DropdownMenuButton
                                     className="flex flex-align-items-center text-left"
                                     onClick={handleMoveToTrashClick}
@@ -117,18 +127,10 @@ export const ItemViewPanel: FC<Props> = ({
                                     <Icon name="trash" className="mr0-5" />
                                     {c('Action').t`Move to Trash`}
                                 </DropdownMenuButton>
-
-                                <DropdownMenuButton
-                                    className="flex flex-align-items-center text-left"
-                                    onClick={handleMoveToVaultClick}
-                                >
-                                    <Icon name="folder-arrow-in" className="mr-2" />
-                                    {c('Action').t`Move to another vault`}
-                                </DropdownMenuButton>
                             </QuickActionsDropdown>,
                         ];
                     })()}
-                    vaultName={showVaultSubtitle ? vaultName : undefined}
+                    vaultName={hasMultipleVaults ? vaultName : undefined}
                 />
             }
         >
