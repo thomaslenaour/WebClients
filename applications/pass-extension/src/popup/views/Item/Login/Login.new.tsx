@@ -43,6 +43,7 @@ export const LoginNew: VFC<ItemNewProps<'login'>> = ({ shareId, onSubmit, onCanc
         username: '',
         password: '',
         note: '',
+        totpUri: '',
         url: isValidURL ? createNewUrl(url!).url : '',
         urls: [],
         withAlias: false,

@@ -13,12 +13,18 @@ export const PasswordFieldWIP: VFC<AbstractFieldProps<TextInputControlProps>> = 
         [form, field.name]
     );
 
-    const actions = <PasswordGeneratorButton key="password-generator-button" onSubmit={handlePasswordGeneratorDone} />;
+    const actions =
+        rest.actions !== null ? (
+            <PasswordGeneratorButton key="password-generator-button" onSubmit={handlePasswordGeneratorDone} />
+        ) : undefined;
 
     return (
         <TextFieldWIP
             onFocus={() => setType('text')}
-            onBlur={() => setType('password')}
+            onBlur={(evt) => {
+                setType('password');
+                field.onBlur(evt);
+            }}
             form={form}
             field={field}
             {...rest}
