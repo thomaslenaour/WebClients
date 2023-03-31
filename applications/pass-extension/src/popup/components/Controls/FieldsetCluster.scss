@@ -1,3 +1,11 @@
+.pass-fieldset-cluster {
+	--fieldset-cluster-icon-color: var(--interaction-norm);
+
+	&--write {
+		--fieldset-cluster-icon-color: var(--field-placeholder-color);
+	}
+}
+
 .pass-fieldset-cluster > * {
 	border: 1px solid var(--border-norm);
 	margin-block-start: -1px;

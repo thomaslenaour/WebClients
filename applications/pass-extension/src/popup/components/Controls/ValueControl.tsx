@@ -35,7 +35,7 @@ export const ValueControl: VFC<Props> = ({
     return (
         <div className={clsx(interactive && 'pass-value-control--interactive')}>
             <InputGroup
-                icon={icon && <Icon name={icon} size={24} style={{ color: 'var(--field-placeholder-color)' }} />}
+                icon={icon && <Icon name={icon} size={24} style={{ color: 'var(--fieldset-cluster-icon-color)' }} />}
                 actions={actions}
                 actionsContainerClassName={itemType ? itemTypeToItemClassName[itemType] : undefined}
             >
