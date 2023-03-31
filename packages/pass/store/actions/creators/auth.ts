@@ -60,6 +60,10 @@ export const sessionLockEnableSuccess = createAction(
         )({ payload })
 );
 
+export const sessionLockSync = createAction('session lock sync', (payload: { storageToken?: string; ttl: number }) => ({
+    payload,
+}));
+
 export const sessionLockDisableIntent = createAction(
     'disable session lock',
     (payload: { pin: string }, endpoint?: ExtensionEndpoint) =>

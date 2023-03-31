@@ -1,16 +1,18 @@
+/* eslint-disable @typescript-eslint/no-throw-literal */
 import { c } from 'ttag';
 
 import {
+    checkSessionLock,
     consumeFork,
     exposeAuthStore,
     getPersistedSession,
-    isSessionLocked,
     persistSession,
     resumeSession,
 } from '@proton/pass/auth';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
-import { notification, signout, stateLock } from '@proton/pass/store';
-import { Api, WorkerForkMessage, WorkerMessageResponse, WorkerMessageType, WorkerStatus } from '@proton/pass/types';
+import { notification, sessionLockSync, signout, stateLock } from '@proton/pass/store';
+import type { Api, MaybeNull, WorkerForkMessage, WorkerMessageResponse } from '@proton/pass/types';
+import { SessionLockStatus, WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { withPayload } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
 import { workerReady } from '@proton/pass/utils/worker';
@@ -24,8 +26,6 @@ import createStore from '@proton/shared/lib/helpers/store';
 import WorkerMessageBroker from '../channel';
 import { withContext } from '../context';
 import store from '../store';
-
-/* eslint-disable @typescript-eslint/no-throw-literal */
 
 type LoginOptions = {
     UID: string;
@@ -51,15 +51,12 @@ type CreateAuthServiceOptions = {
 };
 
 type AuthContext = {
-    pendingInit: Promise<boolean> | null;
-    locked: boolean;
+    pendingInit: MaybeNull<Promise<boolean>>;
+    lockStatus: MaybeNull<SessionLockStatus>;
 };
 
 export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateAuthServiceOptions): AuthService => {
-    const authCtx: AuthContext = {
-        pendingInit: null,
-        locked: false,
-    };
+    const authCtx: AuthContext = { pendingInit: null, lockStatus: null };
 
     const authService: AuthService = {
         authStore: exposeAuthStore(createAuthenticationStore(createStore())),
@@ -72,13 +69,13 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
                 store.dispatch(stateLock());
             }
 
-            authCtx.locked = true;
+            authCtx.lockStatus = SessionLockStatus.LOCKED;
             ctx.setStatus(WorkerStatus.LOCKED);
         }),
 
         unlock: () => {
             logger.info(`[Worker::Auth] Unlocking context`);
-            authCtx.locked = false;
+            authCtx.lockStatus = SessionLockStatus.REGISTERED;
         },
 
         init: async () => {
@@ -124,6 +121,7 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
 
                 const { keyPassword } = data;
                 const result = await consumeFork({ api, ...data });
+
                 const { AccessToken, RefreshToken } = result;
 
                 await Promise.all([
@@ -172,11 +170,19 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
             authService.authStore.setUID(UID);
             authService.authStore.setPassword(keyPassword);
 
-            if (authCtx.locked || (await isSessionLocked())) {
+            const cachedLockStatus = authCtx.lockStatus;
+            const lock = cachedLockStatus ? { status: cachedLockStatus } : await checkSessionLock();
+
+            if (lock.status === SessionLockStatus.LOCKED) {
                 logger.info(`[Worker::Auth] Detected locked session`);
 
                 authService.lock();
                 return false;
+            }
+
+            if (lock.status === SessionLockStatus.REGISTERED && lock.ttl) {
+                logger.info(`[Worker::Auth] Detected a registered session lock`);
+                store.dispatch(sessionLockSync({ ttl: lock.ttl }));
             }
 
             api.subscribe((event) => {
