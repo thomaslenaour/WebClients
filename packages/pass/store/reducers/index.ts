@@ -1,10 +1,11 @@
-import { Reducer, combineReducers } from 'redux';
+import { type Reducer, combineReducers } from 'redux';
 
+import type { Maybe } from '@proton/pass/types';
 import { or } from '@proton/pass/utils/fp';
 import { merge } from '@proton/pass/utils/object';
 
-import { signoutSuccess, stateSync } from '../actions';
-import { State } from '../types';
+import { signout, stateLock, stateSync } from '../actions';
+import type { State } from '../types';
 import addresses from './addresses';
 import alias from './alias';
 import events from './events';
@@ -35,20 +36,22 @@ export const reducerMap = {
 
 export const rootReducer = combineReducers(reducerMap);
 
-const wrappedRootReducer: Reducer<State> = (state, action) => {
-    if (signoutSuccess.match(action)) {
-        return rootReducer(undefined, action);
-    }
-
-    /**
-     * wakeupSuccess & bootSuccess actions both
-     * act as state setters before the actions
-     * are consumed by the underlying reducers.
-     * This allows state synchronization accross
-     * environments
-     */
+const wrappedRootReducer: Reducer<State> = (previousState, action) => {
+    /* Certain actions act as `state` overrides :
+     * - on `signout` or `stateLock` : reset to initial state
+     * - on `stateSync` : merge the incoming state */
     return rootReducer(
-        (() => (or(stateSync.match)(action) ? merge(state ?? {}, action.payload.state) : state))(),
+        ((): Maybe<State> => {
+            if (or(signout.match, stateLock.match)(action)) {
+                return undefined;
+            }
+
+            if (stateSync.match(action)) {
+                return merge(previousState ?? {}, action.payload.state);
+            }
+
+            return previousState;
+        })(),
         action
     );
 };
