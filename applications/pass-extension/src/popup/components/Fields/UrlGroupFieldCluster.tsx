@@ -167,11 +167,11 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
                                 {showAddButton && (
                                     <Button
                                         icon
-                                        color="weak"
+                                        color="norm"
                                         shape="ghost"
                                         size="small"
                                         title={c('Action').t`Add`}
-                                        className="flex gap-2"
+                                        className="flex gap-2 mt-1"
                                         onClick={handleAdd}
                                     >
                                         <Icon name="plus" /> {c('Action').t`Add another website`}
