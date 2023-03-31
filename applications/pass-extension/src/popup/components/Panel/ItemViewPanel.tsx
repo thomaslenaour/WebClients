@@ -72,7 +72,6 @@ export const ItemViewPanel: FC<Props> = ({
                                     key="item-quick-actions-dropdown"
                                     color="weak"
                                     disabled={optimistic}
-                                    shape="outline"
                                 >
                                     <DropdownMenuButton
                                         className="flex flex-align-items-center text-left"
@@ -98,7 +97,6 @@ export const ItemViewPanel: FC<Props> = ({
                                 pill
                                 shape="solid"
                                 color="norm"
-                                className="mr-1"
                                 onClick={handleEditClick}
                                 disabled={optimistic}
                             >
@@ -106,9 +104,9 @@ export const ItemViewPanel: FC<Props> = ({
                             </Button>,
                             <QuickActionsDropdown
                                 key="item-quick-actions-dropdown"
-                                color="norm"
+                                color="weak"
                                 disabled={optimistic}
-                                shape="ghost"
+                                shape="solid"
                             >
                                 {hasMultipleVaults && (
                                     <DropdownMenuButton

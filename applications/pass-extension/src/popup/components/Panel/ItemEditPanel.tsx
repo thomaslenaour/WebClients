@@ -23,8 +23,8 @@ export const ItemEditPanel: FC<Props> = ({ type, formId, valid, handleCancelClic
                 key="cancel-button"
                 icon
                 pill
-                shape="ghost"
-                color="norm"
+                shape="solid"
+                color="weak"
                 aria-label={c('Action').t`Cancel`}
                 onClick={handleCancelClick}
             >

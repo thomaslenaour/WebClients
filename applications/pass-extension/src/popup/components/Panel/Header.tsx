@@ -22,10 +22,16 @@ export const PanelHeader: VFC<Props> = ({ className, actions, ...props }) => {
     const onlyActions = withActions && [title, subtitle].every((prop) => prop === undefined);
 
     return (
-        <header className={clsx('flex flex-nowrap flex-justify-space-between flex-align-items-center', className)}>
+        <header
+            className={clsx(
+                'flex flex-nowrap flex-justify-space-between flex-align-items-start gap-2',
+                subtitle !== undefined ? 'flex-align-items-start' : 'flex-align-items-center',
+                className
+            )}
+        >
             {title !== undefined && (
                 <div>
-                    <h2 className="text-2xl text-bold text-ellipsis">{title}</h2>
+                    <h2 className="text-2xl text-bold text-ellipsis lh100">{title}</h2>
                     {subtitle !== undefined && (
                         <em className="flex flex-align-items-center color-weak">
                             {subtitleIcon && <Icon name={subtitleIcon} className="m-1" />}
@@ -37,7 +43,8 @@ export const PanelHeader: VFC<Props> = ({ className, actions, ...props }) => {
             {withActions && (
                 <div
                     className={clsx(
-                        onlyActions && 'flex flex-nowrap flex-justify-space-between flex-align-items-center w100'
+                        'flex flex-nowrap flex-no-shrink flex-justify-space-between flex-align-items-center flex-item-noshrink gap-2',
+                        onlyActions && 'w100'
                     )}
                 >
                     {actions}
