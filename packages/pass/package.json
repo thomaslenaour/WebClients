@@ -16,7 +16,6 @@
     },
     "dependencies": {
         "@proton/crypto": "workspace:packages/crypto",
-        "@proton/pack": "workspace:packages/pack",
         "@proton/polyfill": "workspace:packages/polyfill",
         "@proton/shared": "workspace:packages/shared",
         "@reduxjs/toolkit": "^1.9.3",
@@ -33,7 +32,6 @@
         "@protobuf-ts/plugin": "^2.4.0",
         "@proton/eslint-config-proton": "workspace:packages/eslint-config-proton",
         "@proton/i18n": "workspace:packages/i18n",
-        "@proton/pack": "workspace:packages/pack",
         "@types/chrome": "^0.0.202",
         "@types/lodash.flow": "^3.5.6",
         "@types/webextension-polyfill": "^0.9.1",
