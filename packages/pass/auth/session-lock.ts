@@ -1,17 +1,19 @@
 import { api } from '../api';
-import { ResponseCodeSuccess } from '../types';
+import { type MaybeNull, SessionLockStatus } from '../types';
 
-/**
- * The lock check endpoint will throw if the session
- * is locked - if the session is unlocked we'll get the
- * a { Code: 1000 } response
- */
-export const isSessionLocked = async () => {
+export const checkSessionLock = async (): Promise<{ status: SessionLockStatus; ttl?: MaybeNull<number> }> => {
     try {
-        const { Code } = await api({ url: 'pass/v1/user/session/lock/check', method: 'get' });
-        return Code !== ResponseCodeSuccess.ProtonResponseCode_1000;
+        const { LockInfo } = await api({ url: 'pass/v1/user/session/lock/check', method: 'get' });
+        return {
+            status: LockInfo?.Exists ? SessionLockStatus.REGISTERED : SessionLockStatus.NO_LOCK,
+            ttl: LockInfo?.UnlockedSecs,
+        };
     } catch (e: any) {
-        return e?.name === 'LockedSession';
+        if (e?.name === 'LockedSession') {
+            return { status: SessionLockStatus.LOCKED };
+        }
+
+        throw e;
     }
 };
 

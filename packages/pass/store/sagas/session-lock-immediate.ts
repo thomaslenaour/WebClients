@@ -15,7 +15,7 @@ import type { WorkerRootSagaOptions } from '../types';
  */
 function* lockSessionImmediateWorker({ onSessionLocked }: WorkerRootSagaOptions) {
     const storageToken: Maybe<string> = yield select(selectSessionLockToken);
-    if (storageToken) {
+    if (storageToken !== undefined) {
         /* fork for non-blocking action -> immediate UI effect */
         yield fork(function* () {
             try {

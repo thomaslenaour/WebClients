@@ -46,7 +46,7 @@ export const Security: VFC = () => {
             </Checkbox>
 
             <SessionLockCreate opened={lockCreationModalOpened} onClose={() => setLockCreationModalOpened(false)} />
-            <SessionLockTTLUpdate ttl={sessionLockTTL} disabled={!sessionLockToken || sessionLockLoading} />
+            <SessionLockTTLUpdate ttl={sessionLockTTL} disabled={!hasLock || sessionLockLoading} />
         </div>
     );
 };
