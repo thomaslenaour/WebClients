@@ -26,12 +26,12 @@ const STATUS_PROPS_MAP: StatusPropsMap = {
     default: {
         icon: { style: { color: 'var(--fieldset-cluster-icon-color)' } },
         input: {
-            labelContainerClassName: 'color-norm text-normal',
+            labelContainerClassName: 'color-norm text-normal text-sm',
         },
     },
     error: {
         icon: { style: { color: 'var(--signal-danger)' } },
-        input: { labelContainerClassName: 'color-danger text-normal' },
+        input: { labelContainerClassName: 'color-danger text-normal text-sm' },
     },
 };
 
