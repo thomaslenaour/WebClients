@@ -73,7 +73,7 @@ export const UrlGroupFieldCluster = <T extends UrlGroupValues>({ form }: UrlGrou
 
     return (
         <FieldsetCluster>
-            <InputGroup icon={<Icon name="earth" size={24} style={{ color: 'var(--field-placeholder-color)' }} />}>
+            <InputGroup icon={<Icon name="earth" size={24} style={{ color: 'var(--fieldset-cluster-icon-color)' }} />}>
                 <label
                     htmlFor="next-url-field"
                     className="field-two-label-container flex flex-justify-space-between flex-nowrap flex-align-items-end flex-gap-0-5 color-norm text-normal"

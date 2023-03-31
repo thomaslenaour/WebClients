@@ -1,9 +1,9 @@
 import type { ElementType, ReactNode, VFC } from 'react';
 
-import clsx from '@proton/utils/clsx';
 import { Icon, type IconName, InputFieldTwo } from '@proton/components';
 import type { InputFieldProps } from '@proton/components/components/v2/field/InputField';
 import type { ItemType, MaybeArray } from '@proton/pass/types';
+import clsx from '@proton/utils/clsx';
 
 import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { BaseInputGroup, Props as BaseInputGroupProps } from './InputGroup';
@@ -24,7 +24,7 @@ export type InputControlProps<T extends ElementType = ElementType> = InputFieldP
 
 const STATUS_PROPS_MAP: StatusPropsMap = {
     default: {
-        icon: { style: { color: 'var(--field-placeholder-color)' } },
+        icon: { style: { color: 'var(--fieldset-cluster-icon-color)' } },
         input: {
             labelContainerClassName: 'color-norm text-normal',
         },
