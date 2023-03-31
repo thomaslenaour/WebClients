@@ -1,6 +1,8 @@
 @import '~@proton/styles/scss/config';
 
 .pass-radio-group--button {
+	--focus-ring: var(--text-hint);
+
 	.input-button-input {
 		+ span {
 			transition: opacity 0.12s, outline 0.12s, outline-offset 0.12s;
