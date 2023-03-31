@@ -250,6 +250,8 @@ export type ShareKeyResponse = {
     KeyRotation: number;
     /* Base64 encoded key */
     Key: string;
+    /* UserKeyID to open this key */
+    UserKeyID?: string;
     /* When was this key created */
     CreateTime: number;
 };
@@ -283,9 +285,16 @@ export type PassEventListResponse = {
     FullRefresh?: boolean;
 };
 
-export type UserSessionLockResponse = {
+export type SessionLockStorageTokenResponse = {
     /* Storage token to encrypt the local storage */
     StorageToken: string;
+};
+
+export type SessionLockCheckExistsResponse = {
+    /* Whether this session has a lock registered or not */
+    Exists: boolean;
+    /* If the lock exists, that is the unlocked time */
+    UnlockedSecs?: number | null;
 };
 
 export type SharesGetResponse = {
@@ -298,6 +307,8 @@ export type ShareGetResponse = {
     VaultID: string;
     /* AddressID that will be displayed as the owner of the share */
     AddressID: string;
+    /* Whether this vault is primary for this user */
+    Primary: boolean;
     /* Type of share. 1 for vault, 2 for item */
     TargetType: number;
     /* TargetID for this share */
@@ -345,6 +356,11 @@ export type ActiveShareGetResponse = {
     ExpireTime?: number | null;
     /* Creation time of this share */
     CreateTime: number;
+};
+
+export type GetMissingAliasResponse = {
+    /* MissingAlias */
+    MissingAlias?: MissingAliasDto[];
 };
 
 export type ItemCreateRequest2 = {};
@@ -436,6 +452,8 @@ export type InviteDataForUser = {
     TargetID: string;
     /* Email of the inviter */
     InviterEmail: string;
+    /* Invited email */
+    InvitedEmail?: string;
     /* Keys for the invite */
     Keys: KeyRotationKeyPair[];
     /* Creation time for the invite */
@@ -501,6 +519,13 @@ export type VaultInviteData = {
     ModifyTime: number;
 };
 
+export type MissingAliasDto = {
+    /* Email of the alias */
+    Email?: string;
+    /* Email note as stored in SL */
+    Note?: string;
+};
+
 export type ApiMethod = string;
 
 export type ApiResponse<Path extends string, Method extends ApiMethod> = Path extends `pass/v1/vault/${string}/primary`
@@ -519,7 +544,7 @@ export type ApiResponse<Path extends string, Method extends ApiMethod> = Path ex
         : never
     : Path extends `pass/v1/user/session/lock/unlock`
     ? Method extends `post`
-        ? { Code?: ResponseCodeSuccess; LockData?: UserSessionLockResponse }
+        ? { Code?: ResponseCodeSuccess; LockData?: SessionLockStorageTokenResponse }
         : never
     : Path extends `pass/v1/user/session/lock/force_lock`
     ? Method extends `post`
@@ -527,13 +552,17 @@ export type ApiResponse<Path extends string, Method extends ApiMethod> = Path ex
         : never
     : Path extends `pass/v1/user/session/lock/check`
     ? Method extends `get`
-        ? { Code?: ResponseCodeSuccess }
+        ? { Code?: ResponseCodeSuccess; LockInfo?: SessionLockCheckExistsResponse }
         : never
     : Path extends `pass/v1/user/session/lock`
     ? Method extends `post`
-        ? { Code?: ResponseCodeSuccess; LockData?: UserSessionLockResponse }
+        ? { Code?: ResponseCodeSuccess; LockData?: SessionLockStorageTokenResponse }
         : Method extends `delete`
-        ? { Code?: ResponseCodeSuccess; LockData?: UserSessionLockResponse }
+        ? { Code?: ResponseCodeSuccess; LockData?: SessionLockStorageTokenResponse }
+        : never
+    : Path extends `pass/v1/user/missing_alias`
+    ? Method extends `get`
+        ? GetMissingAliasResponse & { Code?: ResponseCodeSuccess }
         : never
     : Path extends `pass/v1/user/access`
     ? Method extends `post`
@@ -705,6 +734,10 @@ export type ApiRequest<Path extends string, Method extends ApiMethod> = Path ext
         ? UserSessionLockRequest
         : Method extends `delete`
         ? UserSessionUnlockRequest
+        : never
+    : Path extends `pass/v1/user/missing_alias`
+    ? Method extends `get`
+        ? never
         : never
     : Path extends `pass/v1/user/access`
     ? Method extends `post`
