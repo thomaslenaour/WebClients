@@ -1,6 +1,7 @@
 import type { FormikErrors } from 'formik';
 import { c } from 'ttag';
 
+import { normalizeOtpUriFromUserInput } from '@proton/pass/utils/otp';
 import { isEmptyString } from '@proton/pass/utils/string';
 
 import { type UrlGroupValues, validateUrl, validateUrls } from '../../../components/Fields/UrlGroupFieldCluster';
@@ -12,6 +13,7 @@ type BaseLoginItemFormValues = {
     username: string;
     password: string;
     note: string;
+    totpUri: string;
 } & UrlGroupValues;
 
 type MaybeWithAlias<WithAlias extends boolean, T extends {}> = WithAlias extends true
@@ -26,6 +28,16 @@ export type LoginItemFormValues<WithAlias extends boolean = boolean> = MaybeWith
 export type EditLoginItemFormValues = LoginItemFormValues | BaseLoginItemFormValues;
 export type NewLoginItemFormValues = LoginItemFormValues;
 
+const validateTotpUri = (values: BaseLoginItemFormValues) => {
+    if (!isEmptyString(values.totpUri)) {
+        const normalized = normalizeOtpUriFromUserInput(values.totpUri);
+        if (!normalized) {
+            return { totpUri: c('Validation').t`OTP Secret or URI is invalid` };
+        }
+        return {};
+    }
+};
+
 const validateLoginFormBase = (values: BaseLoginItemFormValues): FormikErrors<BaseLoginItemFormValues> => {
     const errors: FormikErrors<BaseLoginItemFormValues> = {};
 
@@ -36,10 +48,13 @@ const validateLoginFormBase = (values: BaseLoginItemFormValues): FormikErrors<Ba
     const urlError = validateUrl(values);
     const urlsErrors = validateUrls(values);
 
+    const totpUriErrors = validateTotpUri(values);
+
     return {
         ...errors,
         ...urlError,
         ...urlsErrors,
+        ...totpUriErrors,
     };
 };
 

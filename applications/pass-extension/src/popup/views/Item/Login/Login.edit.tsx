@@ -8,6 +8,7 @@ import uniqid from 'uniqid';
 import { Button } from '@proton/atoms';
 import { Icon } from '@proton/components';
 import { type State, itemCreationIntent, selectAliasByAliasEmail } from '@proton/pass/store';
+import { normalizeOtpUriFromUserInput } from '@proton/pass/utils/otp';
 import { isEmptyString } from '@proton/pass/utils/string';
 import { getEpoch } from '@proton/pass/utils/time';
 import { omit } from '@proton/shared/lib/helpers/object';
@@ -34,7 +35,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
     const { data: item, itemId, revision: lastRevision } = revision;
     const {
         metadata: { name, note, itemUuid },
-        content: { username, password, urls },
+        content: { username, password, totpUri, urls },
         extraFields,
     } = item;
 
@@ -49,6 +50,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
         password,
         note,
         shareId,
+        totpUri,
         url: '',
         urls: urls.map(createNewUrl),
         ...(!relatedAlias && {
@@ -59,7 +61,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
     const form = useFormik<EditLoginItemFormValues>({
         initialValues,
         initialErrors: validateEditLoginForm(initialValues),
-        onSubmit: ({ name, username, password, url, urls, note, ...values }) => {
+        onSubmit: ({ name, username, password, totpUri, url, urls, note, ...values }) => {
             const mutationTime = getEpoch();
             const withAlias =
                 'withAlias' in values &&
@@ -67,6 +69,11 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                 values.aliasSuffix !== undefined &&
                 values.aliasPrefix !== undefined &&
                 values.mailboxes.length > 0;
+
+            const normalizedOtpUri = normalizeOtpUriFromUserInput(totpUri, {
+                label: username || undefined,
+                issuer: name || undefined,
+            });
 
             if (withAlias) {
                 const aliasOptimisticId = uniqid();
@@ -104,7 +111,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                     username,
                     password,
                     urls: Array.from(new Set(urls.map(({ url }) => url).concat(isEmptyString(url) ? [] : [url]))),
-                    totpUri: '',
+                    totpUri: normalizedOtpUri,
                 },
                 extraFields,
             });
@@ -212,6 +219,14 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                                 label={c('Label').t`Password`}
                                 component={PasswordFieldWIP}
                                 icon="key"
+                            />
+
+                            <Field
+                                name="totpUri"
+                                label={c('Label').t`OTP`}
+                                component={PasswordFieldWIP}
+                                actions={null}
+                                icon="lock"
                             />
                         </FieldsetCluster>
 
