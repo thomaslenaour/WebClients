@@ -57,8 +57,8 @@ export const DropdownMenuButton: FC<DropdownMenuButtonProps> = ({
         )}
         {...rest}
     >
-        <div className="flex flex-align-items-center">{children}</div>
-        <div className="flex flex-align-items-center">
+        <div className="flex flex-align-items-center flex-nowrap">{children}</div>
+        <div className="flex flex-align-items-center flex-item-noshrink">
             {isSelected && <Icon className="mlauto" name="checkmark" color="var(--interaction-norm-major-1)" />}
             {quickActions && <QuickActionsDropdown>{quickActions}</QuickActionsDropdown>}
         </div>
