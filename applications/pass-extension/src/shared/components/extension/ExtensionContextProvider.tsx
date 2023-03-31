@@ -1,4 +1,4 @@
-import { FC, createContext, useEffect, useState } from 'react';
+import { type FC, createContext, useCallback, useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { noop } from 'lodash';
@@ -6,16 +6,15 @@ import { noop } from 'lodash';
 import { CircleLoader } from '@proton/atoms/CircleLoader';
 import { MessageWithSenderFactory, sendMessage } from '@proton/pass/extension/message';
 import { selectWorkerAlive } from '@proton/pass/store';
-import * as actions from '@proton/pass/store/actions';
-import {
+import { sessionLockImmediate, signout } from '@proton/pass/store/actions';
+import type {
     ExtensionEndpoint,
     TabId,
     WorkerMessageResponse,
-    WorkerMessageType,
     WorkerMessageWithSender,
     WorkerState,
-    WorkerStatus,
 } from '@proton/pass/types';
+import { WorkerMessageType, WorkerStatus } from '@proton/pass/types';
 import { workerReady } from '@proton/pass/utils/worker';
 import { DEFAULT_LOCALE } from '@proton/shared/lib/constants';
 import sentry, { setUID as setSentryUID } from '@proton/shared/lib/helpers/sentry';
@@ -24,7 +23,7 @@ import { initLocales } from '@proton/shared/lib/i18n/locales';
 
 import * as config from '../../../app/config';
 import { ExtensionContext } from '../../extension';
-import { ExtensionAppContextValue, INITIAL_WORKER_STATE } from './ExtensionContext';
+import { type ExtensionAppContextValue, INITIAL_WORKER_STATE } from './ExtensionContext';
 
 const setup = async (options: {
     tabId: TabId;
@@ -55,6 +54,7 @@ export const ExtensionAppContext = createContext<ExtensionAppContextValue>({
     state: INITIAL_WORKER_STATE,
     ready: false,
     logout: noop,
+    lock: noop,
 });
 
 export const ExtensionContextProvider: FC<{
@@ -80,10 +80,15 @@ export const ExtensionContextProvider: FC<{
     const [state, setState] = useState<WorkerState>(INITIAL_WORKER_STATE);
     const ready = useSelector(selectWorkerAlive(origin, tabId)) && workerReady(state.status);
 
-    const logout = ({ soft }: { soft: boolean }) => {
-        setState(INITIAL_WORKER_STATE); /* don't wait for worker response */
-        dispatch(actions.signout({ soft }));
-    };
+    const logout = useCallback(({ soft }: { soft: boolean }) => {
+        setState(INITIAL_WORKER_STATE);
+        dispatch(signout({ soft }));
+    }, []);
+
+    const lock = useCallback(() => {
+        setState({ ...INITIAL_WORKER_STATE, status: WorkerStatus.LOCKED });
+        dispatch(sessionLockImmediate());
+    }, []);
 
     useEffect(() => {
         const onMessage = (message: WorkerMessageWithSender) => {
@@ -117,8 +122,10 @@ export const ExtensionContextProvider: FC<{
         };
     }, []);
 
+    const context = useMemo<ExtensionAppContextValue>(() => ({ state, ready, logout, lock }), [state, ready]);
+
     return (
-        <ExtensionAppContext.Provider value={{ state, ready, logout }}>
+        <ExtensionAppContext.Provider value={context}>
             {state.status === WorkerStatus.IDLE ? (
                 <div className="anime-fade-in">
                     <CircleLoader />

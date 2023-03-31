@@ -1,17 +1,17 @@
-import { FC, useContext, useEffect, useMemo } from 'react';
+import { type FC, useContext, useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import { NotificationsContext } from '@proton/components';
 import { useNotifications } from '@proton/components/hooks';
 import { popupMessage } from '@proton/pass/extension/message';
-import { selectWorkerSyncing, sessionLockImmediate, syncIntent } from '@proton/pass/store';
-import { WorkerMessageType, WorkerMessageWithSender, WorkerStatus } from '@proton/pass/types';
+import { selectWorkerSyncing, syncIntent } from '@proton/pass/store';
+import { WorkerMessageType, type WorkerMessageWithSender, WorkerStatus } from '@proton/pass/types';
 
 import { ExtensionContextProvider } from '../../../shared/components/extension';
 import { ExtensionContext } from '../../../shared/extension';
 import { useExtensionContext } from '../../../shared/hooks';
-import { PopupContext, PopupContextValue } from './PopupContext';
+import { PopupContext, type PopupContextValue } from './PopupContext';
 
 /**
  * PopupContext is an extension of the base
@@ -38,13 +38,14 @@ const ExtendedExtensionContext: FC = ({ children }) => {
     useEffect(() => notificationsManager.setOffset({ y: 10 }), []);
 
     const popupContext = useMemo<PopupContextValue>(() => {
-        const { state, logout } = extensionContext;
+        const { state, logout, lock } = extensionContext;
+
         return {
             state,
             ready,
             logout,
+            lock,
             sync: () => dispatch(syncIntent({})),
-            lock: () => dispatch(sessionLockImmediate()),
             realm: realm ?? undefined,
             subdomain: subdomain ?? undefined,
         };
