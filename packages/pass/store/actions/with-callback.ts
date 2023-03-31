@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import { AnyAction } from 'redux';
 
 import { merge } from '@proton/pass/utils/object';

@@ -1,6 +1,4 @@
-import flow from 'lodash.flow';
-
-export const pipe = flow;
+export { default as pipe } from 'lodash/flow';
 
 export const tap =
     <A, P = A extends Promise<infer U> ? U : A>(effect: (arg: P) => void) =>

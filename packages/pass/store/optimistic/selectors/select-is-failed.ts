@@ -1,5 +1,6 @@
 import { Selector } from '@reduxjs/toolkit';
-import isEqual from 'lodash.isequal';
+
+import isDeepEqual from '@proton/shared/lib/helpers/isDeepEqual';
 
 import {
     MaybeOptimisticStateObject,
@@ -51,7 +52,7 @@ const selectIsFailed =
         const stateWithoutFailed = selector(asIfNotFailed(state, reducerMap));
         const stateWithOptimistic = selector(state as StateFromOptimisticReducersMapObject<M>);
 
-        return !isEqual(stateWithOptimistic, stateWithoutFailed);
+        return !isDeepEqual(stateWithOptimistic, stateWithoutFailed);
     };
 
 export default selectIsFailed;

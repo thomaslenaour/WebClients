@@ -1,8 +1,6 @@
 import { type FC, createContext, useCallback, useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { noop } from 'lodash';
-
 import { CircleLoader } from '@proton/atoms/CircleLoader';
 import { MessageWithSenderFactory, sendMessage } from '@proton/pass/extension/message';
 import { selectWorkerAlive } from '@proton/pass/store';
@@ -20,6 +18,7 @@ import { DEFAULT_LOCALE } from '@proton/shared/lib/constants';
 import sentry, { setUID as setSentryUID } from '@proton/shared/lib/helpers/sentry';
 import { loadLocale } from '@proton/shared/lib/i18n/loadLocale';
 import { initLocales } from '@proton/shared/lib/i18n/locales';
+import noop from '@proton/utils/noop';
 
 import * as config from '../../../app/config';
 import { ExtensionContext } from '../../extension';
