@@ -224,6 +224,7 @@ export const LoginEdit: VFC<ItemEditProps<'login'>> = ({ vault, revision, onSubm
                             <Field
                                 name="totpUri"
                                 label={c('Label').t`OTP`}
+                                placeholder={c('Placeholder').t`Enter a OTP URI or Secret`}
                                 component={PasswordFieldWIP}
                                 actions={null}
                                 icon="lock"
