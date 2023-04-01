@@ -1,13 +1,14 @@
-import { type VFC, useEffect, useMemo } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { type VFC, useMemo } from 'react';
+import { useDispatch } from 'react-redux';
 
 import { FormikProvider, useFormik } from 'formik';
 import uniqid from 'uniqid';
 
-import { selectRequestStatus, vaultCreationIntent } from '@proton/pass/store';
+import { vaultCreationIntent } from '@proton/pass/store';
 import { vaultCreate } from '@proton/pass/store/actions/requests';
 import { VaultColor, VaultIcon } from '@proton/pass/types/protobuf/vault-v1';
 
+import { useRequestStatusEffect } from '../../../shared/hooks/useRequestStatusEffect';
 import { VaultForm, type VaultFormValues } from './Vault.form';
 import { validateVaultValues } from './Vault.validation';
 
@@ -24,7 +25,7 @@ export const VaultNew: VFC<Props> = ({ onSubmit, onSuccess, onFailure }) => {
 
     const optimisticId = useMemo(() => uniqid(), []);
     const requestId = useMemo(() => vaultCreate(optimisticId), [optimisticId]);
-    const status = useSelector(selectRequestStatus(requestId));
+    useRequestStatusEffect(requestId, { onSuccess, onFailure });
 
     const form = useFormik<VaultFormValues>({
         initialValues: {
@@ -52,15 +53,6 @@ export const VaultNew: VFC<Props> = ({ onSubmit, onSuccess, onFailure }) => {
             );
         },
     });
-
-    useEffect(() => {
-        switch (status) {
-            case 'success':
-                return onSuccess?.();
-            case 'failure':
-                return onFailure?.();
-        }
-    }, [status]);
 
     return (
         <FormikProvider value={form}>
