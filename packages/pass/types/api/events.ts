@@ -4,17 +4,26 @@
  * specifies the keys we're consuming
  * in the extension sagas for now
  */
-import { Address, User } from '@proton/shared/lib/interfaces';
+import type { Address, User } from '@proton/shared/lib/interfaces';
 
-import { PassEventListResponse } from './pass';
+import type { PassEventListResponse, SharesGetResponse } from './pass';
 
-enum EventActions {
+export enum ChannelType {
+    USER = 'user',
+    SHARE = 'share',
+    SHARES = 'shares',
+}
+
+export enum ShareEventType {
+    SHARE_DISABLED = 'SHARE_DISABLED',
+    ITEMS_DELETED = 'ITEMS_DELETED',
+}
+
+export enum EventActions {
     DELETE,
     CREATE,
     UPDATE,
 }
-
-export type EventsChannelType = 'user' | 'share';
 
 export type UserEvent = {
     More?: 0 | 1;
@@ -28,13 +37,9 @@ export type UserEvent = {
     }[];
 };
 
-export type ServerEvents =
-    | ({ type: 'user' } & UserEvent)
-    | ({ type: 'share' } & { Events: PassEventListResponse; shareId: string });
-
-export type ServerEvent<T extends EventsChannelType = EventsChannelType> = Extract<ServerEvents, { type: T }>;
-
-export enum ShareEventType {
-    SHARE_DISABLED = 'SHARE_DISABLED',
-    ITEMS_DELETED = 'ITEMS_DELETED',
-}
+export type ServerEvent<T extends ChannelType = ChannelType> = Extract<
+    | ({ type: ChannelType.USER } & UserEvent)
+    | ({ type: ChannelType.SHARE } & { Events: PassEventListResponse; shareId: string })
+    | ({ type: ChannelType.SHARES } & SharesGetResponse),
+    { type: T }
+> & { error?: unknown };
