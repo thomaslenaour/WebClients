@@ -17,6 +17,7 @@ import {
 import { detectBrowser, getWebStoreUrl } from '@proton/pass/extension/browser';
 import { emptyTrashIntent, restoreTrashIntent, selectCanLockSession, vaultDeleteIntent } from '@proton/pass/store';
 import type { MaybeNull, VaultShare } from '@proton/pass/types';
+import { pipe, tap } from '@proton/pass/utils/fp';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 
 import { ConfirmationModal } from '../../../../src/shared/components/confirmation';
@@ -41,6 +42,8 @@ const MenuDropdownRaw: VFC<{ className?: string }> = ({ className }) => {
     const { inTrash, unselectItem } = useNavigationContext();
 
     const { anchorRef, isOpen, toggle, close } = usePopperAnchor<HTMLButtonElement>();
+    const withClose = <F extends (...args: any[]) => any>(cb: F) => pipe(cb, tap(close));
+
     const dispatch = useDispatch();
 
     const [deleteVault, setDeleteVault] = useState<MaybeNull<VaultShare>>(null);
@@ -94,20 +97,18 @@ const MenuDropdownRaw: VFC<{ className?: string }> = ({ className }) => {
                     <DropdownMenu>
                         <VaultSubmenu
                             selectedShareId={shareId}
-                            handleVaultSelectClick={(vaultShareId) => {
+                            handleVaultSelectClick={withClose((vaultShareId) => {
                                 unselectItem();
                                 setShareId(vaultShareId);
                                 setSearch('');
-                                close();
-                            }}
+                            })}
                             handleVaultDeleteClick={setDeleteVault}
-                            handleVaultEditClick={(vault: VaultShare) =>
+                            handleVaultEditClick={withClose((vault: VaultShare) =>
                                 setVaultModalProps({ open: true, payload: { type: 'edit', vault } })
-                            }
-                            handleVaultCreateClick={() => {
-                                setVaultModalProps({ open: true, payload: { type: 'new' } });
-                                close();
-                            }}
+                            )}
+                            handleVaultCreateClick={withClose(() =>
+                                setVaultModalProps({ open: true, payload: { type: 'new' } })
+                            )}
                             inTrash={inTrash}
                             handleRestoreTrash={handleRestoreTrash}
                             handleEmptyTrash={() => setDeleteAllConfirm(true)}
@@ -149,7 +150,7 @@ const MenuDropdownRaw: VFC<{ className?: string }> = ({ className }) => {
 
                         <DropdownMenuButton
                             className="flex flex-align-items-center text-left"
-                            onClick={sync}
+                            onClick={withClose(sync)}
                             disabled={!ready}
                         >
                             <Icon name="arrow-rotate-right" className="mr-3 color-weak" />
