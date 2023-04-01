@@ -1,16 +1,20 @@
 import { type FC, useContext, useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
 
+import { c } from 'ttag';
+
+import { CircleLoader } from '@proton/atoms/CircleLoader';
 import { NotificationsContext } from '@proton/components';
 import { useNotifications } from '@proton/components/hooks';
 import { popupMessage } from '@proton/pass/extension/message';
 import { selectWorkerSyncing, syncIntent } from '@proton/pass/store';
+import * as requests from '@proton/pass/store/actions/requests';
 import { WorkerMessageType, type WorkerMessageWithSender, WorkerStatus } from '@proton/pass/types';
 
 import { ExtensionContextProvider } from '../../../shared/components/extension';
 import { ExtensionContext } from '../../../shared/extension';
 import { useExtensionContext } from '../../../shared/hooks';
+import { useRequestStatusEffect } from '../../../shared/hooks/useRequestStatusEffect';
 import { PopupContext, type PopupContextValue } from './PopupContext';
 
 /**
@@ -20,22 +24,28 @@ import { PopupContext, type PopupContextValue } from './PopupContext';
  */
 const ExtendedExtensionContext: FC = ({ children }) => {
     const extensionContext = useExtensionContext();
-    const history = useHistory();
-    const dispatch = useDispatch();
+    const notificationsManager = useContext(NotificationsContext);
+    const { createNotification } = useNotifications();
+    useEffect(() => notificationsManager.setOffset({ y: 10 }), []);
 
+    const dispatch = useDispatch();
     const syncing = useSelector(selectWorkerSyncing) || extensionContext.state.status === WorkerStatus.BOOTING;
     const ready = extensionContext.ready && !syncing;
 
-    useEffect(() => {
-        if (syncing) {
-            history.replace('/syncing');
-        }
-    }, [syncing]);
-
     const { realm, subdomain } = ExtensionContext.get();
 
-    const notificationsManager = useContext(NotificationsContext);
-    useEffect(() => notificationsManager.setOffset({ y: 10 }), []);
+    useRequestStatusEffect(requests.syncing(), {
+        onStart: () =>
+            createNotification({
+                key: requests.syncing(),
+                showCloseButton: false,
+                text: (
+                    <>
+                        {c('Info').t`Syncing your vaults…`} <CircleLoader />
+                    </>
+                ),
+            }),
+    });
 
     const popupContext = useMemo<PopupContextValue>(() => {
         const { state, logout, lock } = extensionContext;
