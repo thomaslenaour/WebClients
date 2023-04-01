@@ -8,7 +8,6 @@ import { TrashItemsList } from './Content/TrashItemsList';
 import { ItemEditContainer } from './Item/ItemEditContainer';
 import { ItemNewContainer } from './Item/ItemNewContainer';
 import { ItemViewContainer } from './Item/ItemViewContainer';
-import { LoadingView } from './LoadingView';
 import { Sidebar } from './Sidebar/Sidebar';
 
 import './Main.scss';
@@ -41,10 +40,6 @@ const MainRaw: VFC = () => {
 
                         <Route exact path="/item/new/:itemType">
                             <ItemNewContainer />
-                        </Route>
-
-                        <Route exact path="/syncing">
-                            <LoadingView />
                         </Route>
                     </Switch>
                 </Sidebar>
