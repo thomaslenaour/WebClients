@@ -9,7 +9,6 @@ import { toMap } from '@proton/shared/lib/helpers/object';
 
 import {
     bootSuccess,
-    disabledShareEvent,
     emptyTrashFailure,
     emptyTrashIntent,
     emptyTrashSuccess,
@@ -42,6 +41,8 @@ import {
     restoreTrashFailure,
     restoreTrashIntent,
     restoreTrashSuccess,
+    shareDeleteSync,
+    sharesSync,
     syncSuccess,
     vaultDeleteSuccess,
 } from '../actions';
@@ -118,6 +119,10 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
 
         if (syncSuccess.match(action)) {
             return action.payload.items;
+        }
+
+        if (sharesSync.match(action)) {
+            return fullMerge(state, action.payload.items);
         }
 
         if (itemCreationIntent.match(action)) {
@@ -299,7 +304,7 @@ export const withOptimisticItemsByShareId = withOptimistic<ItemsByShareId>(
             return objectDelete(state, action.payload.id);
         }
 
-        if (disabledShareEvent.match(action)) {
+        if (shareDeleteSync.match(action)) {
             return objectDelete(state, action.payload.shareId);
         }
 

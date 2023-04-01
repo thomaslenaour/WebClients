@@ -7,8 +7,10 @@ import { fullMerge, objectDelete, partialMerge } from '@proton/pass/utils/object
 
 import {
     bootSuccess,
-    disabledShareEvent,
     serverEvent,
+    shareDeleteSync,
+    shareEditSync,
+    sharesSync,
     syncSuccess,
     vaultCreationFailure,
     vaultCreationIntent,
@@ -19,7 +21,6 @@ import {
     vaultEditFailure,
     vaultEditIntent,
     vaultEditSuccess,
-    vaultEditSync,
 } from '../actions';
 import { sanitizeWithCallbackAction } from '../actions/with-callback';
 import withOptimistic from '../optimistic/with-optimistic';
@@ -56,6 +57,10 @@ export const withOptimisticShares = withOptimistic<SharesState>(
             return action.payload.shares;
         }
 
+        if (sharesSync.match(action)) {
+            return fullMerge(state, action.payload.shares);
+        }
+
         if (serverEvent.match(action) && state !== null && action.payload.event.type === 'share') {
             return partialMerge(state, {
                 [action.payload.event.shareId]: { eventId: action.payload.event.Events.LatestEventID },
@@ -87,7 +92,7 @@ export const withOptimisticShares = withOptimistic<SharesState>(
             return partialMerge(state, { [id]: { content } });
         }
 
-        if (or(vaultEditSuccess.match, vaultEditSync.match)(action)) {
+        if (or(vaultEditSuccess.match, shareEditSync.match)(action)) {
             const { id, share } = action.payload;
             return fullMerge(state, { [id]: share });
         }
@@ -96,7 +101,7 @@ export const withOptimisticShares = withOptimistic<SharesState>(
             return objectDelete(state, action.payload.id);
         }
 
-        if (disabledShareEvent.match(action)) {
+        if (shareDeleteSync.match(action)) {
             return objectDelete(state, action.payload.shareId);
         }
 

@@ -19,12 +19,12 @@ import { getApiError } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 import { INTERVAL_EVENT_TIMER } from '@proton/shared/lib/constants';
 
 import {
-    disabledShareEvent,
     itemDeleteSync,
     itemEditSync,
     itemLastUseTimeUpdated,
+    shareDeleteSync,
+    shareEditSync,
     vaultDeleteSuccess,
-    vaultEditSync,
 } from '../../actions';
 import { selectAllShares, selectShare } from '../../selectors';
 import type { WorkerRootSagaOptions } from '../../types';
@@ -58,7 +58,7 @@ export function* onShareEvent(
         });
 
         yield put(
-            vaultEditSync({
+            shareEditSync({
                 id: share.shareId,
                 share: {
                     shareId: share.shareId,
@@ -106,13 +106,13 @@ function* onShareEventError(
 
         const share: Share = yield select(selectShare(shareId));
         onShareEventDisabled?.(shareId);
-        yield put(disabledShareEvent(share));
+        yield put(shareDeleteSync(share));
     }
 }
 
 function* onShareDeleted({ channel, shareId }: EventChannel<ChannelType.SHARE>): Generator {
     yield take((action: AnyAction) => vaultDeleteSuccess.match(action) && action.payload.id === shareId);
-    logger.info(`[Saga::SharesChannel] share ${logId(shareId)} deleted`);
+    logger.info(`[Saga::ShareChannel] share ${logId(shareId)} deleted`);
     channel.close();
 }
 

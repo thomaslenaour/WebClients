@@ -1,4 +1,3 @@
-import { createAction } from '@reduxjs/toolkit';
 import { c } from 'ttag';
 
 import type { Share, ShareContent, ShareType } from '@proton/pass/types';
@@ -114,11 +113,6 @@ export const vaultEditSuccess = createOptimisticAction(
             })
         )({ payload }),
     ({ payload }) => payload.id
-);
-
-export const vaultEditSync = createAction(
-    'vault edit sync',
-    (payload: { id: string; share: Share<ShareType.Vault> }) => ({ payload })
 );
 
 export const vaultDeleteIntent = createOptimisticAction(

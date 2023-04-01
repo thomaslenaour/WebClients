@@ -12,8 +12,8 @@ import { loadShare, requestShares } from './shares';
 import { createVault } from './vaults';
 
 export type SynchronizationResult = {
-    shares: SharesState /* (cached + synced - deleted) shares */;
-    items: ItemsByShareId /*  (cached + synced - deleted) items */;
+    shares: SharesState;
+    items: ItemsByShareId;
 };
 
 export enum SyncType {
@@ -25,6 +25,7 @@ export enum SyncType {
  * TODO: Handle offline mode here
  * If no network, fallback to using the initial state
  * as our only source of truth
+ * FIXME: handle ItemShares
  */
 export function* synchronize(state: State, type: SyncType): Generator<unknown, SynchronizationResult> {
     const cachedShares = selectAllShares(state);
