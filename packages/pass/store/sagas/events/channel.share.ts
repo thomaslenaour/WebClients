@@ -143,6 +143,8 @@ export const createShareChannel = (api: Api, { shareId, eventId }: Share) =>
     });
 
 export const getShareChannelForks = (api: Api, options: WorkerRootSagaOptions) => (share: Share) => {
+    logger.info(`[Saga::ShareChannel] start polling for share ${logId(share.shareId)}`);
+
     const eventsChannel = createShareChannel(api, share);
     const events = fork(channelEventsWorker<ChannelType.SHARE>, eventsChannel, options);
     const wakeup = fork(channelWakeupWorker<ChannelType.SHARE>, eventsChannel);
