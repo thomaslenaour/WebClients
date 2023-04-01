@@ -28,6 +28,8 @@ export const createUserChannel = (api: Api, eventID: string) =>
     });
 
 export function* userChannel(api: Api, options: WorkerRootSagaOptions) {
+    logger.info(`[Saga::UserChannel] start polling for user events`);
+
     const eventID =
         ((yield select(selectEventId)) as ReturnType<typeof selectEventId>) ??
         ((yield api(getLatestID())) as { EventID: string }).EventID;

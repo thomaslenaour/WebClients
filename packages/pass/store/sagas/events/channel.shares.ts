@@ -1,18 +1,58 @@
-import { all, fork, takeEvery } from 'redux-saga/effects';
+/* eslint-disable curly */
+import { all, fork, put, select, takeEvery } from 'redux-saga/effects';
 
-import type { Api, ServerEvent, SharesGetResponse } from '@proton/pass/types';
-import { ChannelType } from '@proton/pass/types';
-import { logId, logger } from '@proton/pass/utils/logger';
+import type { Api, ServerEvent, Share, SharesGetResponse } from '@proton/pass/types';
+import { ChannelType, ShareType } from '@proton/pass/types';
+import { logger } from '@proton/pass/utils/logger';
+import { merge } from '@proton/pass/utils/object/merge';
 import { INTERVAL_EVENT_TIMER } from '@proton/shared/lib/constants';
+import { toMap } from '@proton/shared/lib/helpers/object';
 
-import { vaultCreationSuccess } from '../../actions';
+import { sharesSync, vaultCreationSuccess } from '../../actions';
+import { ItemsByShareId } from '../../reducers';
+import { selectAllShares } from '../../selectors';
 import type { WorkerRootSagaOptions } from '../../types';
+import { requestItemsForShareId } from '../workers/items';
+import { loadShare } from '../workers/shares';
 import { eventChannelFactory } from './channel.factory';
 import { getShareChannelForks } from './channel.share';
 import { channelEventsWorker, channelWakeupWorker } from './channel.worker';
+import type { EventChannel } from './types';
 
-function* onSharesEvent(event: ServerEvent<ChannelType.SHARES>) {
-    logger.info(`[Saga::SharesChannel]`, `${event.Shares.length} remote shares`);
+/* We're only interested in new shares in this effect :
+ * deleted shares will be handled by the share's EventChannel
+ * error handling. see `channel.share.ts` code `300004`
+ * FIXME: handle ItemShares
+ */
+function* onSharesEvent(
+    event: ServerEvent<ChannelType.SHARES>,
+    { api }: EventChannel<ChannelType.SHARES>,
+    options: WorkerRootSagaOptions
+) {
+    const localShares: Share[] = yield select(selectAllShares);
+    const localShareIds = localShares.map(({ shareId }) => shareId);
+
+    const newShares = event.Shares.filter((share) => !localShareIds.includes(share.ShareID));
+    logger.info(`[Saga::SharesChannel]`, `${newShares.length} new share(s)`);
+
+    if (newShares.length) {
+        const shares: Share[] = yield Promise.all(
+            newShares
+                .filter((share) => share.TargetType === ShareType.Vault)
+                .map(({ ShareID }) => loadShare(ShareID, ShareType.Vault))
+        );
+
+        const items = (
+            (yield Promise.all(
+                shares.map(async ({ shareId }) => ({
+                    [shareId]: toMap(await requestItemsForShareId(shareId), 'itemId'),
+                }))
+            )) as ItemsByShareId[]
+        ).reduce(merge);
+
+        yield put(sharesSync({ shares: toMap(shares, 'shareId'), items }));
+        yield all(shares.map(getShareChannelForks(api, options)).flat());
+    }
 }
 
 const NOOP_EVENT = '*';
@@ -45,12 +85,12 @@ export const createSharesChannel = (api: Api) =>
  * channels to start polling for this new share's events */
 function* onNewShare(api: Api, options: WorkerRootSagaOptions) {
     yield takeEvery(vaultCreationSuccess.match, function* ({ payload: { share } }) {
-        logger.info(`[Saga::SharesChannel] new share ${logId(share.shareId)} : start polling`);
         yield all(getShareChannelForks(api, options)(share));
     });
 }
 
 export function* sharesChannel(api: Api, options: WorkerRootSagaOptions) {
+    logger.info(`[Saga::SharesChannel] start polling for new shares`);
     const eventsChannel = createSharesChannel(api);
     const events = fork(channelEventsWorker<ChannelType.SHARES>, eventsChannel, options);
     const wakeup = fork(channelWakeupWorker<ChannelType.SHARES>, eventsChannel);
