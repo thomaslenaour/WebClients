@@ -84,7 +84,7 @@ export const createActivationService = () => {
                     (browser.runtime.getManifest().content_scripts ?? []).flatMap(async (cs) => {
                         const tabs = await browser.tabs.query({ url: cs.matches });
                         return tabs.map((tab) => {
-                            logger.info(`[ActivationService::onInstall] Re-injecting content-script on tab ${tab.id}`);
+                            logger.info(`[ActivationService::onInstall] Re-injecting script on tab ${tab.id}`);
                             return (
                                 tab.id !== undefined &&
                                 browser.scripting
