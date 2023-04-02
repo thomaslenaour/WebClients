@@ -1,12 +1,14 @@
 import browser from 'webextension-polyfill';
 
-import {
+import type {
     ExtensionEndpoint,
     MessageFailure,
+    PortFrameForwardingMessage,
     WorkerMessage,
     WorkerMessageWithSender,
     WorkerResponse,
 } from '@proton/pass/types';
+import { WorkerMessageType } from '@proton/pass/types';
 
 /**
  * Wraps the untyped browser.runtime.sendMessage
@@ -94,6 +96,12 @@ export const contentScriptMessage: MessageWithSenderFactory = (message) => ({
 export const pageMessage: MessageWithSenderFactory = (message) => ({
     ...message,
     sender: 'page',
+});
+
+export const portForwardingMessage = <T extends any>(forwardTo: string, payload: T): PortFrameForwardingMessage => ({
+    type: WorkerMessageType.PORT_FORWARDING_MESSAGE,
+    payload,
+    forwardTo,
 });
 
 export const resolveMessageFactory = (endpoint: ExtensionEndpoint) => {

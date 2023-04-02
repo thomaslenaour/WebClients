@@ -27,6 +27,8 @@ export enum WorkerMessageType {
     UNLOAD_CONTENT_SCRIPT = 'UNLOAD_CONTENT_SCRIPT',
     /* TABS */
     RESOLVE_TAB = 'RESOLVE_TAB',
+    /* PORTS */
+    PORT_FORWARDING_MESSAGE = 'PORT_FORWARDING',
     /* REDUX */
     NOTIFICATION = 'NOTIFICATION',
     STORE_ACTION = 'STORE_ACTION',
@@ -218,3 +220,9 @@ export type WorkerResponse<T extends Maybe<WorkerMessage | WorkerMessageWithSend
 export type WorkerSendResponse<T extends Maybe<WorkerMessage> = Maybe<WorkerMessage>> = (
     response: WorkerResponse<T>
 ) => void;
+
+export type PortFrameForwardingMessage<T = any> = {
+    type: WorkerMessageType.PORT_FORWARDING_MESSAGE;
+    forwardTo: string;
+    payload: T;
+};
