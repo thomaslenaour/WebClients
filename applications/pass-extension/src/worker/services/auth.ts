@@ -63,14 +63,18 @@ export const createAuthService = ({ api, onAuthorized, onUnauthorized }: CreateA
 
         lock: withContext((ctx) => {
             logger.info(`[Worker::Auth] Locking context`);
+            const shouldLockState = workerReady(ctx.status);
 
-            if (workerReady(ctx.status)) {
+            /* set the lock status before dispatching
+             * the `stateLock` so the UI can pick up
+             * the locked state before wiping the store */
+            authCtx.lockStatus = SessionLockStatus.LOCKED;
+            ctx.setStatus(WorkerStatus.LOCKED);
+
+            if (shouldLockState) {
                 logger.info(`[Worker::Auth] Locking state`);
                 store.dispatch(stateLock());
             }
-
-            authCtx.lockStatus = SessionLockStatus.LOCKED;
-            ctx.setStatus(WorkerStatus.LOCKED);
         }),
 
         unlock: () => {
