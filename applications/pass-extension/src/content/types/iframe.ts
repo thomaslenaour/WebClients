@@ -1,6 +1,6 @@
 import browser from 'webextension-polyfill';
 
-import type { AliasCreationDTO, SafeLoginItem, WorkerState } from '@proton/pass/types';
+import type { AliasCreationDTO, MaybeNull, SafeLoginItem, WorkerState } from '@proton/pass/types';
 
 import type { DropdownSetActionPayload } from './dropdown';
 import type { NotificationSetActionPayload } from './notification';
@@ -9,7 +9,8 @@ export type IFrameState = {
     visible: boolean;
     ready: boolean;
     loaded: boolean;
-    port?: browser.Runtime.Port;
+    port: MaybeNull<browser.Runtime.Port>;
+    framePort: MaybeNull<string>;
 };
 
 export type IFramePortMessageHandler<T extends IFrameMessageType = IFrameMessageType> = (
@@ -24,7 +25,7 @@ export interface IFrameApp {
     registerMessageHandler: <M extends IFrameMessage['type']>(type: M, handler: IFramePortMessageHandler<M>) => void;
     open: (scrollRef?: HTMLElement) => void;
     close: () => void;
-    init: () => void;
+    init: (port: browser.Runtime.Port) => void;
     reset: (workerState: WorkerState) => void;
     destroy: () => void;
 }
@@ -33,14 +34,14 @@ export interface IFrameService<OpenOptions = {}> {
     getState: () => IFrameState;
     open: (options: OpenOptions) => void;
     close: () => void;
-    init: () => void;
+    init: (port: browser.Runtime.Port) => void;
     reset: (workerState: WorkerState) => void;
     destroy: () => void;
 }
 
 export enum IFrameMessageType {
-    IFRAME_SET_PORT = 'IFRAME_SET_PORT' /* this message is the only one sent via postMessaging */,
-    IFRAME_READY = 'IFRAME_READY',
+    IFRAME_INJECT_PORT = 'IFRAME_INJECT_PORT',
+    IFRAME_CONNECTED = 'IFRAME_CONNECTED',
     IFRAME_INIT = 'IFRAME_INIT',
     IFRAME_OPEN = 'IFRAME_OPEN',
     IFRAME_CLOSE = 'IFRAME_CLOSE',
@@ -59,11 +60,12 @@ export type IFrameEndpoint = 'content-script' | 'notification' | 'dropdown';
 
 export type IFrameMessageWithSender<T extends IFrameMessageType = IFrameMessageType> = {
     sender: IFrameEndpoint;
+    frameId?: number;
 } & IFrameMessage<T>;
 
 export type IFrameMessage<T extends IFrameMessageType = IFrameMessageType> = Extract<
-    | { type: IFrameMessageType.IFRAME_READY }
-    | { type: IFrameMessageType.IFRAME_SET_PORT; payload: { portName: string } }
+    | { type: IFrameMessageType.IFRAME_INJECT_PORT; payload: { port: string } }
+    | { type: IFrameMessageType.IFRAME_CONNECTED; payload: { framePort: string; id: IFrameEndpoint } }
     | { type: IFrameMessageType.IFRAME_INIT; payload: { workerState: WorkerState } }
     | { type: IFrameMessageType.IFRAME_OPEN }
     | { type: IFrameMessageType.IFRAME_CLOSE }
