@@ -17,7 +17,7 @@ type Props = {
 
 export const VaultIcon: VFC<Props> = ({ icon, color, size = 'large', className }) => (
     <span
-        className={clsx([`pass-vault-icon ${size} rounded-50 relative inline-flex flex-justify-center`, className])}
+        className={clsx([`pass-vault-icon ${size} rounded-50 relative`, className])}
         style={{ '--vault-icon-color': VAULT_COLOR_MAP[color ?? VaultColorEnum.COLOR1] }}
     >
         <Icon
