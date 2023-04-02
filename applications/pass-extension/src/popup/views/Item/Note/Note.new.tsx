@@ -9,27 +9,28 @@ import { getEpoch } from '@proton/pass/utils/time';
 import { ItemNewProps } from '../../../../shared/items';
 import { NoteTextAreaField, NoteTitleField } from '../../../components/Fields/Note/index';
 import { ItemCreatePanel } from '../../../components/Panel/ItemCreatePanel';
-import { validateNoteForm } from './Note.validation';
+import { VaultSelectField } from '../../../components/Vault/VaultSelectField';
+import { NoteFormValues, validateNoteForm } from './Note.validation';
 
 const FORM_ID = 'new-note';
 
-const initialValues = { name: '', note: '' };
-
 export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel }) => {
-    const form = useFormik({
+    const initialValues: NoteFormValues = { name: '', note: '', shareId };
+
+    const form = useFormik<NoteFormValues>({
         initialValues,
         initialErrors: validateNoteForm(initialValues),
-        onSubmit: ({ name, note }) => {
+        onSubmit: (values) => {
             const optimisticId = uniqid();
 
             onSubmit({
                 type: 'note',
                 optimisticId,
-                shareId,
+                shareId: values.shareId,
                 createTime: getEpoch(),
                 metadata: {
-                    name,
-                    note,
+                    name: values.name,
+                    note: values.note,
                     itemUuid: optimisticId,
                 },
                 content: {},
@@ -46,6 +47,7 @@ export const NoteNew: VFC<ItemNewProps<'note'>> = ({ shareId, onSubmit, onCancel
         <ItemCreatePanel type="note" formId={FORM_ID} valid={valid} handleCancelClick={onCancel}>
             <FormikProvider value={form}>
                 <Form id={FORM_ID}>
+                    <Field component={VaultSelectField} label={c('Label').t`Vault`} name="shareId" />
                     <Field
                         autoFocus
                         component={NoteTitleField}

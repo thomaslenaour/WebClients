@@ -3,9 +3,10 @@ import { c } from 'ttag';
 
 import { isEmptyString } from '@proton/pass/utils/string';
 
-type NoteFormValues = {
+export type NoteFormValues = {
     name: string;
     note: string;
+    shareId: string;
 };
 
 export const validateNoteForm = (values: NoteFormValues): FormikErrors<NoteFormValues> => {
