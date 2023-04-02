@@ -1,9 +1,10 @@
 /* eslint-disable curly */
 import { type FC, createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
-import browser from 'webextension-polyfill';
+import type { Runtime } from 'webextension-polyfill';
 
 import { portForwardingMessage } from '@proton/pass/extension/message';
+import browser from '@proton/pass/globals/browser';
 import type { Maybe, MaybeNull, WorkerState } from '@proton/pass/types';
 import noop from '@proton/utils/noop';
 
@@ -17,13 +18,13 @@ import {
 
 type IFrameContextValue = {
     workerState: Maybe<Omit<WorkerState, 'UID'>>;
-    port: MaybeNull<browser.Runtime.Port>;
+    port: MaybeNull<Runtime.Port>;
     closeIFrame: () => void;
     postMessage: (message: IFrameMessage) => void;
     registerHandler: <M extends IFrameMessage['type']>(type: M, handler: IFramePortMessageHandler<M>) => void;
 };
 
-type PortContext = { port: MaybeNull<browser.Runtime.Port>; forwardTo: MaybeNull<string> };
+type PortContext = { port: MaybeNull<Runtime.Port>; forwardTo: MaybeNull<string> };
 
 const IFrameContext = createContext<IFrameContextValue>({
     workerState: undefined,
@@ -45,7 +46,7 @@ export const IFrameContextProvider: FC<{ endpoint: IFrameEndpoint }> = ({ endpoi
     const [workerState, setWorkerState] = useState<IFrameContextValue['workerState']>();
 
     useEffect(() => {
-        let framePortRef: browser.Runtime.Port;
+        let framePortRef: Runtime.Port;
 
         const portInitHandler = (event: MessageEvent<Maybe<IFrameMessageWithSender>>) => {
             if (

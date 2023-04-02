@@ -1,5 +1,5 @@
 import { parse } from 'tldts';
-import browser from 'webextension-polyfill';
+import type { Runtime } from 'webextension-polyfill';
 
 import { isValidURL } from './is-valid-url';
 
@@ -23,7 +23,7 @@ export const parseUrl = (url?: string) => {
     };
 };
 
-export const parseSender = (sender: browser.Runtime.MessageSender) => {
+export const parseSender = (sender: Runtime.MessageSender) => {
     const { url, tab } = sender;
     const { domain: realm, subdomain } = parseUrl(url ?? '');
     const tabId = tab?.id;

@@ -1,5 +1,6 @@
-import browser from 'webextension-polyfill';
+import type { Types } from 'webextension-polyfill';
 
+import browser from '@proton/pass/globals/browser';
 import { logger } from '@proton/pass/utils/logger';
 
 type ExtensionSetting = {
@@ -10,7 +11,7 @@ type ExtensionSetting = {
     get: () => Promise<boolean>;
 };
 
-const createExtensionSetting = (id: string, setting: browser.Types.Setting): ExtensionSetting => {
+const createExtensionSetting = (id: string, setting: Types.Setting): ExtensionSetting => {
     return {
         id,
         platform: 'all',

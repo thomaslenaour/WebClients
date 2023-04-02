@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@proton/pass/globals/browser';
 
 import type { Storage, StorageData } from './types';
 

@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import type { Runtime } from 'webextension-polyfill';
 
 import type { AliasCreationDTO, MaybeNull, SafeLoginItem, WorkerState } from '@proton/pass/types';
 
@@ -9,7 +9,7 @@ export type IFrameState = {
     visible: boolean;
     ready: boolean;
     loaded: boolean;
-    port: MaybeNull<browser.Runtime.Port>;
+    port: MaybeNull<Runtime.Port>;
     framePort: MaybeNull<string>;
 };
 
@@ -25,7 +25,7 @@ export interface IFrameApp {
     registerMessageHandler: <M extends IFrameMessage['type']>(type: M, handler: IFramePortMessageHandler<M>) => void;
     open: (scrollRef?: HTMLElement) => void;
     close: () => void;
-    init: (port: browser.Runtime.Port) => void;
+    init: (port: Runtime.Port) => void;
     reset: (workerState: WorkerState) => void;
     destroy: () => void;
 }
@@ -34,7 +34,7 @@ export interface IFrameService<OpenOptions = {}> {
     getState: () => IFrameState;
     open: (options: OpenOptions) => void;
     close: () => void;
-    init: (port: browser.Runtime.Port) => void;
+    init: (port: Runtime.Port) => void;
     reset: (workerState: WorkerState) => void;
     destroy: () => void;
 }

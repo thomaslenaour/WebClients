@@ -1,6 +1,5 @@
-import browser from 'webextension-polyfill';
-
 import { requestFork } from '@proton/pass/auth';
+import browser from '@proton/pass/globals/browser';
 
 import { SSO_URL } from '../../app/config';
 

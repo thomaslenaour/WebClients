@@ -1,12 +1,11 @@
 import { FC, useEffect } from 'react';
 
-import browser from 'webextension-polyfill';
-
 import { CircleLoader } from '@proton/atoms/CircleLoader';
 import createApi from '@proton/pass/api/create-api';
 import { getPersistedSession, resumeSession, setPersistedSession } from '@proton/pass/auth';
 import { contentScriptMessage, sendMessage } from '@proton/pass/extension/message';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
+import browser from '@proton/pass/globals/browser';
 import { WorkerMessageType } from '@proton/pass/types';
 
 import * as config from '../../../app/config';

@@ -1,6 +1,5 @@
-import browser from 'webextension-polyfill';
-
 import { api } from '@proton/pass/api';
+import browser from '@proton/pass/globals/browser';
 import { logger } from '@proton/pass/utils/logger';
 import { getApiError } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 

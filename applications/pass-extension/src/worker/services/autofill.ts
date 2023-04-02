@@ -1,5 +1,4 @@
-import browser from 'webextension-polyfill';
-
+import browser from '@proton/pass/globals/browser';
 import { itemAutofillIntent, itemUsed, selectAutofillCandidates, selectItemByShareIdAndId } from '@proton/pass/store';
 import type { Maybe, Realm, SafeLoginItem } from '@proton/pass/types';
 import { WorkerMessageType } from '@proton/pass/types';

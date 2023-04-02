@@ -9,14 +9,16 @@
  * safely port it to webextension-polyfill
  * ⚠️ ⚠️ ⚠️
  */
+import { chromeAPI } from '@proton/pass/globals/browser';
+
 import { detectBrowser } from '../browser';
 import { createMemoryStorage } from './memory';
 import type { Storage, StorageData } from './types';
 
 const getItems = <T extends StorageData, K = keyof T>(keys: K[]): Promise<Partial<T>> =>
     new Promise((resolve, reject) => {
-        chrome.storage.session.get(keys, (items: any) => {
-            let err = chrome.runtime.lastError;
+        chromeAPI.storage.session.get(keys, (items: any) => {
+            let err = chromeAPI.runtime.lastError;
             if (err) {
                 reject(err);
             } else {
@@ -35,8 +37,8 @@ export const getItem = async <T extends StorageData, K extends keyof T = keyof T
 
 const setItems = <T extends StorageData>(items: Partial<T>): Promise<void> =>
     new Promise((resolve, reject) => {
-        chrome.storage.session.set(items, () => {
-            let err = chrome.runtime.lastError;
+        chromeAPI.storage.session.set(items, () => {
+            let err = chromeAPI.runtime.lastError;
             if (err) {
                 reject(err);
             } else {
@@ -50,8 +52,8 @@ export const setItem = <T extends StorageData, K extends keyof T = keyof T>(key:
 
 export const removeItems = <T extends StorageData, K = keyof T>(keys: K[]): Promise<void> =>
     new Promise((resolve, reject) => {
-        chrome.storage.session.remove(keys as string[], () => {
-            let err = chrome.runtime.lastError;
+        chromeAPI.storage.session.remove(keys as string[], () => {
+            let err = chromeAPI.runtime.lastError;
             if (err) {
                 reject(err);
             } else {
@@ -62,7 +64,7 @@ export const removeItems = <T extends StorageData, K = keyof T>(keys: K[]): Prom
 
 const removeItem = <T extends StorageData, K = keyof T>(key: K): Promise<void> => removeItems([key]);
 
-const clear = (): Promise<void> => chrome.storage.session.clear();
+const clear = (): Promise<void> => chromeAPI.storage.session.clear();
 
 const chromeSessionStorage: Storage = {
     getItems,

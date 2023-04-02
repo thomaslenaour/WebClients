@@ -1,11 +1,12 @@
-import browser from 'webextension-polyfill';
+import type { WebRequest } from 'webextension-polyfill';
 
+import browser from '@proton/pass/globals/browser';
 import type { Realm, TabId } from '@proton/pass/types';
 import { merge } from '@proton/pass/utils/object';
 import { isFailedRequest, requestHasBodyFormData } from '@proton/pass/utils/requests';
 import { parseUrl } from '@proton/pass/utils/url';
 
-const filter: browser.WebRequest.RequestFilter = {
+const filter: WebRequest.RequestFilter = {
     urls: ['<all_urls>'],
     types: ['xmlhttprequest'],
 };
@@ -16,9 +17,9 @@ type XMLHTTPRequestTrackerOptions = {
 };
 
 export const createXMLHTTPRequestTracker = ({ shouldTakeRequest, onFailedRequest }: XMLHTTPRequestTrackerOptions) => {
-    const pendingRequests: Map<string, browser.WebRequest.OnBeforeRequestDetailsType & { realm: Realm }> = new Map();
+    const pendingRequests: Map<string, WebRequest.OnBeforeRequestDetailsType & { realm: Realm }> = new Map();
 
-    const onBeforeRequest = async (request: browser.WebRequest.OnBeforeRequestDetailsType) => {
+    const onBeforeRequest = async (request: WebRequest.OnBeforeRequestDetailsType) => {
         const { tabId, requestId } = request;
         if (tabId >= 0 && requestHasBodyFormData(request)) {
             const tab = await browser.tabs.get(tabId);
@@ -34,7 +35,7 @@ export const createXMLHTTPRequestTracker = ({ shouldTakeRequest, onFailedRequest
         return {}; /* non-blocking */
     };
 
-    const onCompleted = async (request: browser.WebRequest.OnCompletedDetailsType) => {
+    const onCompleted = async (request: WebRequest.OnCompletedDetailsType) => {
         const { requestId, tabId } = request;
         const pending = pendingRequests.get(requestId);
 
@@ -47,7 +48,7 @@ export const createXMLHTTPRequestTracker = ({ shouldTakeRequest, onFailedRequest
         }
     };
 
-    const onErrorOccured = async (request: browser.WebRequest.OnErrorOccurredDetailsType) => {
+    const onErrorOccured = async (request: WebRequest.OnErrorOccurredDetailsType) => {
         const { requestId, tabId } = request;
         const pending = pendingRequests.get(requestId);
 

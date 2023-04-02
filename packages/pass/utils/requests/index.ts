@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import type { WebRequest } from 'webextension-polyfill';
 
 /**
  * When intercepting xmlhttprequests, only
@@ -6,9 +6,9 @@ import browser from 'webextension-polyfill';
  * a form submission : presence of formData in
  * the body without any errors.
  */
-export const requestHasBodyFormData = ({ requestBody }: browser.WebRequest.OnBeforeRequestDetailsType) => {
+export const requestHasBodyFormData = ({ requestBody }: WebRequest.OnBeforeRequestDetailsType) => {
     return requestBody && !requestBody.error && (requestBody.formData || requestBody.raw);
 };
 
-export const isFailedRequest = ({ statusCode }: browser.WebRequest.OnCompletedDetailsType) =>
+export const isFailedRequest = ({ statusCode }: WebRequest.OnCompletedDetailsType) =>
     statusCode < 600 && statusCode >= 400;

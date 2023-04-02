@@ -1,5 +1,6 @@
-import browser from 'webextension-polyfill';
+import type { WebRequest } from 'webextension-polyfill';
 
+import browser from '@proton/pass/globals/browser';
 import type { Realm, TabId } from '@proton/pass/types';
 import { isFailedRequest } from '@proton/pass/utils/requests';
 import { parseUrl } from '@proton/pass/utils/url';
@@ -19,13 +20,13 @@ type MainFrameRequestTrackerOptions = {
     onTabDelete: (tabId: TabId) => void;
 };
 
-const filter: browser.WebRequest.RequestFilter = {
+const filter: WebRequest.RequestFilter = {
     urls: ['<all_urls>'],
     types: ['main_frame'],
 };
 
 export const createMainFrameRequestTracker = ({ onTabDelete, onTabError }: MainFrameRequestTrackerOptions) => {
-    const onMainFrameCompleted = (req: browser.WebRequest.OnCompletedDetailsType) =>
+    const onMainFrameCompleted = (req: WebRequest.OnCompletedDetailsType) =>
         isFailedRequest(req) && onTabError(req.tabId, parseUrl(req.url).domain);
 
     browser.tabs.onRemoved.addListener(onTabDelete);

@@ -1,8 +1,9 @@
-import browser, { type Runtime } from 'webextension-polyfill';
+import type { Runtime } from 'webextension-polyfill';
 
 import { getPersistedSession } from '@proton/pass/auth';
 import { backgroundMessage } from '@proton/pass/extension/message';
 import { browserLocalStorage, browserSessionStorage } from '@proton/pass/extension/storage';
+import browser from '@proton/pass/globals/browser';
 import { boot, wakeup } from '@proton/pass/store/actions';
 import {
     WorkerInitMessage,
