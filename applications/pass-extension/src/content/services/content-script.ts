@@ -118,8 +118,8 @@ export const createContentScriptService = (id: string) => {
                 })
             );
 
-            context.iframes.dropdown.init();
-            context.iframes.notification?.init();
+            context.iframes.dropdown.init(port);
+            context.iframes.notification?.init(port);
 
             if (res.type === 'success') {
                 const workerState = { loggedIn: res.loggedIn, status: res.status, UID: res.UID };
