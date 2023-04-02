@@ -1,4 +1,4 @@
-/* eslint-disable curly */
+/* eslint-disable @typescript-eslint/no-throw-literal, curly */
 import { all, fork, put, select, takeEvery } from 'redux-saga/effects';
 
 import type { Api, ServerEvent, Share, SharesGetResponse } from '@proton/pass/types';
@@ -29,6 +29,8 @@ function* onSharesEvent(
     { api }: EventChannel<ChannelType.SHARES>,
     options: WorkerRootSagaOptions
 ) {
+    if (event.error) throw event.error;
+
     const localShares: Share[] = yield select(selectAllShares);
     const localShareIds = localShares.map(({ shareId }) => shareId);
 

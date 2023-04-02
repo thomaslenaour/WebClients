@@ -6,13 +6,29 @@ import { merge } from '@proton/pass/utils/object/merge';
 import createEventManager, { type EventManager } from '@proton/shared/lib/eventManager/eventManager';
 import identity from '@proton/utils/identity';
 
-import type { EventChannel, EventChannelOptions } from './types';
+import { WorkerRootSagaOptions } from '../../types';
+import type { EventChannel, EventChannelOnError, EventChannelOptions } from './types';
 
-export const eventChannelFactory = <T extends ChannelType = ChannelType>(config: EventChannelOptions<T>) => {
-    const { mapEvent = identity, onClose, type } = config;
+const channelErrorHandler = <T extends ChannelType, O>(onError?: EventChannelOnError<T, O>) => {
+    const wrappedOnError: EventChannelOnError<T, O> = function* (error, eventsChannel, options) {
+        if (error instanceof Error && ['LockedSession', 'InactiveSession'].includes(error.name)) {
+            eventsChannel.channel.close();
+        }
+
+        onError?.(error, eventsChannel, options);
+    };
+
+    return wrappedOnError;
+};
+
+export const eventChannelFactory = <T extends ChannelType = ChannelType, O = WorkerRootSagaOptions>(
+    config: EventChannelOptions<T, O>
+) => {
+    const { type, onClose, onError, mapEvent = identity } = config;
     const manager: EventManager = createEventManager(config);
 
     return merge(config, {
+        onError: channelErrorHandler<T, O>(onError),
         manager,
         channel: eventChannel<ServerEvent>((emitter) => {
             const unsubscribe = manager.subscribe((event) => emitter(mapEvent({ ...event, type })));
@@ -25,8 +41,4 @@ export const eventChannelFactory = <T extends ChannelType = ChannelType>(config:
             };
         }),
     }) as EventChannel<T>;
-};
-
-export const closeChannel = ({ channel }: EventChannel): void => {
-    return channel.close();
 };
