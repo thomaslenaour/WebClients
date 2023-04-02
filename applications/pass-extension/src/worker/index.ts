@@ -47,3 +47,15 @@ browser.runtime.onMessageExternal.addListener(WorkerMessageBroker.onMessage);
 browser.runtime.onMessage.addListener(WorkerMessageBroker.onMessage);
 browser.runtime.onStartup.addListener(context.service.activation.onStartup);
 browser.runtime.onInstalled.addListener(context.service.activation.onInstall);
+
+if (BUILD_TARGET === 'firefox' && ENV === 'production') {
+    /* Block direct access to certain `web_accessible_resources`
+     * at their direct runtime url: only allow through page actions
+     * or iframe injections. Only works on FF as we don't have access
+     * to tab information on chrome for `web_accessible_resources` */
+    browser.tabs.onUpdated.addListener(async (tabId, _, { url, status }) => {
+        const BLOCKING = ['/dropdown.html', '/notification.html', '/popup.html'];
+        const regex = new RegExp(`^(${BLOCKING.map((path) => browser.runtime.getURL(path)).join('|')})`);
+        void (status === 'complete' && regex.test(url ?? '') && browser.tabs.remove(tabId));
+    });
+}

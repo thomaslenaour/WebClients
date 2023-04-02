@@ -28,12 +28,13 @@ const sanitizeWebpackConfig = (config) => {
      */
     Object.keys(config.entry).forEach((entryName) => {
         if (!EXCLUDED_WEBPACK_ENTRIES.includes(entryName)) {
+            const entries = [config.entry[entryName]].flat();
             config.entry[entryName] = [
                 /* runtime code for hotmodule replacement */
                 'webpack/hot/dev-server',
                 /* dev-server client for web socket transport */
                 `webpack-dev-server/client?hot=true&hostname=localhost&port=${WEBPACK_DEV_PORT}&protocol=wss:`,
-                config.entry[entryName],
+                ...entries,
             ];
         }
     });
@@ -83,7 +84,4 @@ const main = async () => {
     }
 };
 
-main().catch((e) => {
-    console.warn(e);
-    process.exit(0);
-});
+main().catch(() => process.exit(0));
