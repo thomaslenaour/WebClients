@@ -1,15 +1,17 @@
 import browser from 'webextension-polyfill';
 
 import { backgroundMessage } from '@proton/pass/extension/message';
-import {
+import type {
+    Maybe,
     MessageFailure,
     MessageSuccess,
+    PortFrameForwardingMessage,
     WorkerMessage,
     WorkerMessageResponse,
-    WorkerMessageType,
     WorkerMessageWithSender,
     WorkerResponse,
 } from '@proton/pass/types';
+import { WorkerMessageType } from '@proton/pass/types';
 import { pipe, tap } from '@proton/pass/utils/fp';
 import { logger } from '@proton/pass/utils/logger';
 
@@ -33,6 +35,21 @@ export const createMessageBroker = () => {
     const handlers: Map<WorkerMessageType, MessageHandlerCallback> = new Map();
     const ports: Map<string, browser.Runtime.Port> = new Map();
     const buffer: Set<WorkerMessageWithSender> = new Set();
+
+    const broadcast = <M extends WorkerMessage>(message: M, matchPort?: string | ((name: string) => boolean)) => {
+        ports.forEach(
+            (port) =>
+                (matchPort === undefined ||
+                    (typeof matchPort === 'string' && port.name === matchPort) ||
+                    (typeof matchPort === 'function' && matchPort(port.name))) &&
+                port.postMessage(backgroundMessage(message))
+        );
+    };
+
+    const query = (match: (key: string) => boolean) =>
+        Array.from(ports)
+            .filter(([key]) => match(key))
+            .map(([, port]) => port);
 
     const registerMessage = <T extends WorkerMessageType>(message: T, handler: MessageHandlerCallback<T>) => {
         if (handlers.has(message)) {
@@ -83,26 +100,17 @@ export const createMessageBroker = () => {
 
     const onConnect = (port: browser.Runtime.Port) => {
         ports.set(port.name, port);
-        port.onMessage.addListener((message) => logger.info(`[MessageBroker::Port] ${message}`));
+
+        port.onMessage.addListener(async (message: Maybe<PortFrameForwardingMessage>) => {
+            if (message && message.type === WorkerMessageType.PORT_FORWARDING_MESSAGE) {
+                ports.get(message.forwardTo)?.postMessage({ ...message.payload, forwarded: true });
+            }
+        });
+
         port.onDisconnect.addListener(({ name }) => ports.delete(name));
     };
 
     const disconnect = () => ports.forEach((port) => port.disconnect());
-
-    const broadcast = <M extends WorkerMessage>(message: M, matchPort?: string | ((name: string) => boolean)) => {
-        ports.forEach(
-            (port) =>
-                (matchPort === undefined ||
-                    (typeof matchPort === 'string' && port.name === matchPort) ||
-                    (typeof matchPort === 'function' && matchPort(port.name))) &&
-                port.postMessage(backgroundMessage(message))
-        );
-    };
-
-    const query = (match: (key: string) => boolean) =>
-        Array.from(ports)
-            .filter(([key]) => match(key))
-            .map(([, port]) => port);
 
     return {
         registerMessage,
