@@ -2,8 +2,8 @@ import uniqid from 'uniqid';
 import browser from 'webextension-polyfill';
 
 import type { Maybe, WorkerState } from '@proton/pass/types';
-import { createElement, pixelEncoder, safeRemoveChild } from '@proton/pass/utils/dom';
-import { waitUntil } from '@proton/pass/utils/fp';
+import { createElement, pixelEncoder } from '@proton/pass/utils/dom';
+import { safeCall, waitUntil } from '@proton/pass/utils/fp';
 import { createListenerStore } from '@proton/pass/utils/listener';
 import { logger } from '@proton/pass/utils/logger';
 import { merge } from '@proton/pass/utils/object';
@@ -169,12 +169,8 @@ export const createIFrameApp = ({
 
     const destroy = () => {
         listeners.removeAll();
-        safeRemoveChild(iframeRoot, iframe);
-
-        try {
-            /* may-fail if context invalidated */
-            state?.port?.disconnect();
-        } catch (_) {}
+        safeCall(iframeRoot.removeChild)(iframe);
+        safeCall(state?.port?.disconnect)();
     };
 
     registerMessageHandler(IFrameMessageType.IFRAME_READY, () => (state.ready = true));

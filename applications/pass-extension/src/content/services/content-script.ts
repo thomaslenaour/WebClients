@@ -1,6 +1,7 @@
 import { contentScriptMessage, sendMessage } from '@proton/pass/extension/message';
 import { WorkerMessageType, type WorkerMessageWithSender, type WorkerState, WorkerStatus } from '@proton/pass/types';
 import { isMainFrame } from '@proton/pass/utils/dom';
+import { safeCall } from '@proton/pass/utils/fp';
 import { createListenerStore } from '@proton/pass/utils/listener';
 import { logger } from '@proton/pass/utils/logger';
 import sentry, { setUID as setSentryUID } from '@proton/shared/lib/helpers/sentry';
@@ -59,10 +60,8 @@ export const createContentScriptService = (id: string) => {
         context.iframes.notification?.close();
         context.active = false;
 
-        try {
-            /* may fail if context already invalidated */
-            ExtensionContext.get().port.disconnect();
-        } catch (_) {}
+        /* may fail if context already invalidated */
+        safeCall(ExtensionContext.get().port.disconnect);
 
         if (options.dom) {
             DOMCleanUp();

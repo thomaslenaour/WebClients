@@ -7,5 +7,4 @@ export * from './overlap';
 export * from './predicates';
 export * from './repaint';
 export * from './root-body';
-export * from './safe-remove-child';
 export * from './zindex';
