@@ -1,5 +1,5 @@
 import { Maybe, WorkerStatus } from '@proton/pass/types';
-import { safeRemoveChild } from '@proton/pass/utils/dom';
+import { safeCall } from '@proton/pass/utils/fp';
 import { createListenerStore } from '@proton/pass/utils/listener';
 
 import { EXTENSION_PREFIX, ICON_CLASSNAME } from '../constants';
@@ -29,8 +29,8 @@ export const createFieldIconHandles = ({ field }: CreateIconOptions): FieldIconH
 
     const setStatus = (status: WorkerStatus) => {
         icon.classList.remove(`${ICON_CLASSNAME}--loading`);
-        safeRemoveChild(icon, loader);
-        safeRemoveChild(icon, lock);
+        safeCall(icon.removeChild)(loader);
+        safeCall(icon.removeChild)(lock);
 
         switch (status) {
             case WorkerStatus.READY:
@@ -53,12 +53,14 @@ export const createFieldIconHandles = ({ field }: CreateIconOptions): FieldIconH
     const setLoading = (loading: boolean) => {
         clearTimeout(ctx.timer);
 
-        ctx.timer = setTimeout(() => {
-            try {
-                icon.classList[loading ? 'add' : 'remove'](`${ICON_CLASSNAME}--loading`);
-                icon[loading ? 'appendChild' : 'removeChild'](loader);
-            } catch (_) {}
-        }, 50);
+        ctx.timer = setTimeout(
+            () =>
+                safeCall(() => {
+                    icon.classList[loading ? 'add' : 'remove'](`${ICON_CLASSNAME}--loading`);
+                    icon[loading ? 'appendChild' : 'removeChild'](loader);
+                })(),
+            50
+        );
 
         ctx.loading = loading;
     };
