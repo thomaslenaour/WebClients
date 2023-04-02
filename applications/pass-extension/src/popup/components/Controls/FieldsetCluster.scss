@@ -4,6 +4,11 @@
 	&--write {
 		--fieldset-cluster-icon-color: var(--field-placeholder-color);
 	}
+	// Set min-width: 0 on the parent of the flexbox to enable text-ellipsis
+	// and prevent content overflow. This allows the flex item to shrink to its
+	// content size, which is especially helpful when the item has a fixed or
+	// percentage-based width that causes issues with the Flexbox layout.
+	min-inline-size: 0;
 }
 
 .pass-fieldset-cluster > * {
