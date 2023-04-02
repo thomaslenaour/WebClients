@@ -8,7 +8,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["http://*/*", "https://*/*"],
+            "matches": ["https://*/*"],
             "js": ["content.js"],
             "css": ["styles/content.css"],
             "all_frames": true,
@@ -34,8 +34,15 @@
     },
     "web_accessible_resources": [
         {
-            "resources": ["*.html", "assets/*.png", "assets/*.svg", "assets/*.woff", "assets/*.woff2"],
-            "matches": ["<all_urls>"]
+            "resources": [
+                "dropdown.html",
+                "notification.html",
+                "assets/*.png",
+                "assets/*.svg",
+                "assets/*.woff",
+                "assets/*.woff2"
+            ],
+            "matches": ["https://*/*"]
         }
     ],
     "browser_specific_settings": {
