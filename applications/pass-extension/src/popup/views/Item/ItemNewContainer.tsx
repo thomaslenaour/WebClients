@@ -24,7 +24,7 @@ export const ItemNewContainer: VFC = () => {
 
     const { itemType } = useParams<{ shareId: string; itemType: ItemType }>();
     const { selectItem } = useNavigationContext();
-    const { shareId: selectedShareId } = useItemsFilteringContext();
+    const { shareId: selectedShareId, setShareId } = useItemsFilteringContext();
 
     const defaultVault = useSelector(selectDefaultVaultOrThrow);
     const shareId = selectedShareId ?? defaultVault.shareId;
@@ -34,6 +34,13 @@ export const ItemNewContainer: VFC = () => {
     const handleSubmit = (createIntent: ItemCreateIntent) => {
         const action = itemCreationIntent(createIntent);
         dispatch(action);
+
+        /* if the user put the item in a vault which is
+         * currently not selected - autoselect it so the
+         * following call to `selectItem` passes */
+        if (selectedShareId && selectedShareId !== createIntent.shareId) {
+            setShareId(createIntent.shareId);
+        }
 
         selectItem(createIntent.shareId, action.payload.optimisticId);
     };
