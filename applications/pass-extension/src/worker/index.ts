@@ -1,8 +1,7 @@
-import browser from 'webextension-polyfill';
-
 import createApi, { exposeApi } from '@proton/pass/api';
 import { getPersistedSession, setPersistedSession } from '@proton/pass/auth';
 import { browserSessionStorage } from '@proton/pass/extension/storage';
+import browser from '@proton/pass/globals/browser';
 import { WorkerStatus } from '@proton/pass/types';
 import sentry from '@proton/shared/lib/helpers/sentry';
 

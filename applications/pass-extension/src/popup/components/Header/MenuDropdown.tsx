@@ -2,7 +2,6 @@ import { type VFC, memo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { c } from 'ttag';
-import browser from 'webextension-polyfill';
 
 import { Button } from '@proton/atoms';
 import {
@@ -15,6 +14,7 @@ import {
     usePopperAnchor,
 } from '@proton/components';
 import { detectBrowser, getWebStoreUrl } from '@proton/pass/extension/browser';
+import browser from '@proton/pass/globals/browser';
 import { emptyTrashIntent, restoreTrashIntent, selectCanLockSession, vaultDeleteIntent } from '@proton/pass/store';
 import type { MaybeNull, VaultShare } from '@proton/pass/types';
 import { pipe, tap } from '@proton/pass/utils/fp';

@@ -1,7 +1,8 @@
 import uniqid from 'uniqid';
-import browser from 'webextension-polyfill';
+import type { Runtime } from 'webextension-polyfill';
 
 import { getCurrentTab } from '@proton/pass/extension/tabs';
+import browser from '@proton/pass/globals/browser';
 import { ExtensionEndpoint, Realm, TabId } from '@proton/pass/types';
 import { createSharedContext } from '@proton/pass/utils/context';
 import { logger } from '@proton/pass/utils/logger';
@@ -10,7 +11,7 @@ import { parseUrl } from '@proton/pass/utils/url';
 export type ExtensionContextType = {
     endpoint: ExtensionEndpoint;
     tabId: TabId;
-    port: browser.Runtime.Port;
+    port: Runtime.Port;
     realm: Realm | null;
     subdomain: string | null;
 };

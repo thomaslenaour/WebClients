@@ -13,8 +13,7 @@
  * This gives us the benefit of not having to modify existing code
  * to handle Firefox specifics when dealing with the session API.
  */
-import browser from 'webextension-polyfill';
-
+import browser from '@proton/pass/globals/browser';
 import noop from '@proton/utils/noop';
 
 import type { Storage, StorageData } from './types';

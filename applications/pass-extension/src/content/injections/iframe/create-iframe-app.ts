@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import type { Runtime } from 'webextension-polyfill';
 
 import { portForwardingMessage } from '@proton/pass/extension/message';
 import type { Maybe, WorkerState } from '@proton/pass/types';
@@ -152,7 +152,7 @@ export const createIFrameApp = ({
         onOpen?.();
     };
 
-    const init = (port: browser.Runtime.Port) => {
+    const init = (port: Runtime.Port) => {
         sendPostMessage({
             type: IFrameMessageType.IFRAME_INJECT_PORT,
             payload: { port: port.name },

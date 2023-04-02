@@ -1,6 +1,7 @@
-import browser from 'webextension-polyfill';
+import type { Runtime } from 'webextension-polyfill';
 
 import { backgroundMessage } from '@proton/pass/extension/message';
+import browser from '@proton/pass/globals/browser';
 import type {
     Maybe,
     MessageFailure,
@@ -27,13 +28,13 @@ export const errorMessage = (error?: string): MessageFailure => ({
 type MessageHandlerCallback<
     T extends WorkerMessageType = WorkerMessageType,
     M extends WorkerMessageWithSender = Extract<WorkerMessageWithSender, { type: T }>
-> = (message: M, sender: browser.Runtime.MessageSender) => WorkerMessageResponse<T> | Promise<WorkerMessageResponse<T>>;
+> = (message: M, sender: Runtime.MessageSender) => WorkerMessageResponse<T> | Promise<WorkerMessageResponse<T>>;
 
 export type ExtensionMessageBroker = ReturnType<typeof createMessageBroker>;
 
 export const createMessageBroker = () => {
     const handlers: Map<WorkerMessageType, MessageHandlerCallback> = new Map();
-    const ports: Map<string, browser.Runtime.Port> = new Map();
+    const ports: Map<string, Runtime.Port> = new Map();
     const buffer: Set<WorkerMessageWithSender> = new Set();
 
     const broadcast = <M extends WorkerMessage>(message: M, matchPort?: string | ((name: string) => boolean)) => {
@@ -61,7 +62,7 @@ export const createMessageBroker = () => {
 
     const onMessage = async (
         message: WorkerMessageWithSender,
-        sender: browser.Runtime.MessageSender
+        sender: Runtime.MessageSender
     ): Promise<WorkerResponse<WorkerMessageWithSender> | void> => {
         /**
          * During development, while using the webpack dev-server
@@ -98,7 +99,7 @@ export const createMessageBroker = () => {
         }
     };
 
-    const onConnect = (port: browser.Runtime.Port) => {
+    const onConnect = (port: Runtime.Port) => {
         ports.set(port.name, port);
 
         port.onMessage.addListener(async (message: Maybe<PortFrameForwardingMessage>) => {

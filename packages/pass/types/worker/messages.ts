@@ -1,5 +1,5 @@
 import type { AnyAction } from 'redux';
-import browser from 'webextension-polyfill';
+import type { Tabs } from 'webextension-polyfill';
 
 import type { ResumedSessionResult } from '@proton/pass/auth';
 import type { AliasState } from '@proton/pass/store';
@@ -190,7 +190,7 @@ export type WorkerMessageResponse<MessageType> = MessageType extends WorkerMessa
     : MessageType extends WorkerMessageType.WORKER_INIT
     ? WorkerState
     : MessageType extends WorkerMessageType.RESOLVE_TAB
-    ? { tab: Maybe<browser.Tabs.Tab> }
+    ? { tab: Maybe<Tabs.Tab> }
     : MessageType extends WorkerMessageType.FORK
     ? { payload: ExtensionForkResultPayload }
     : MessageType extends WorkerMessageType.REQUEST_FORM_SUBMISSION

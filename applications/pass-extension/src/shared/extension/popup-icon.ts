@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@proton/pass/globals/browser';
 
 export const setPopupIcon = (options: { loggedIn: boolean }): Promise<void> =>
     browser.action.setIcon({

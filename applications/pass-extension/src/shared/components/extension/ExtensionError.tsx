@@ -1,10 +1,10 @@
 import { FC } from 'react';
 
 import { c } from 'ttag';
-import browser from 'webextension-polyfill';
 
 import { Button } from '@proton/atoms/Button';
 import { IllustrationPlaceholder } from '@proton/components';
+import browser from '@proton/pass/globals/browser';
 import { PASS_APP_NAME } from '@proton/shared/lib/constants';
 import errorImg from '@proton/styles/assets/img/extension/proton-extension/error.svg';
 
