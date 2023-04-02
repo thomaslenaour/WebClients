@@ -31,24 +31,20 @@ const options = {
         : 'last 1 chrome version, last 1 firefox version, last 1 safari version',
 };
 
+const nonAccessibleWebResource = (entry) => [entry, './src/shared/extension/web-accessible-resource.ts'];
+
 module.exports = {
     ...(production
-        ? {
-              mode: 'production',
-              devtool: 'source-map',
-          }
-        : {
-              mode: 'development',
-              devtool: 'inline-source-map',
-          }),
+        ? { mode: 'production', devtool: 'source-map' }
+        : { mode: 'development', devtool: 'inline-source-map' }),
     entry: {
-        background: path.resolve(__dirname, './src/worker/index.ts'),
-        content: path.resolve(__dirname, './src/content/index.ts'),
-        dropdown: path.resolve(__dirname, './src/content/injections/dropdown/index.tsx'),
-        notification: path.resolve(__dirname, './src/content/injections/notification/index.tsx'),
-        onboarding: path.resolve(__dirname, './src/pages/onboarding/index.tsx'),
-        settings: path.resolve(__dirname, './src/pages/settings/index.tsx'),
-        popup: path.resolve(__dirname, './src/popup/index.tsx'),
+        background: './src/worker/index.ts',
+        content: './src/content/index.ts',
+        dropdown: nonAccessibleWebResource('./src/content/injections/dropdown/index.tsx'),
+        notification: nonAccessibleWebResource('./src/content/injections/notification/index.tsx'),
+        onboarding: './src/pages/onboarding/index.tsx',
+        popup: nonAccessibleWebResource('./src/popup/index.tsx'),
+        settings: './src/pages/settings/index.tsx',
     },
     module: {
         strictExportPresence: true,
@@ -73,6 +69,7 @@ module.exports = {
             path: false,
             punycode: false,
         },
+        modules: [path.resolve(__dirname), 'node_modules'],
     },
     cache: {
         type: 'filesystem',
