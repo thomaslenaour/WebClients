@@ -19,7 +19,14 @@ export const BaseInputGroup: FC<Props> = ({ className, actions, actionsContainer
 
             <div className="w100">{children}</div>
 
-            {actions && <span className={clsx('flex-item-noshrink', actionsContainerClassName)}>{actions}</span>}
+            {actions && (
+                <span
+                    onClick={(evt) => evt.stopPropagation()}
+                    className={clsx('flex-item-noshrink', actionsContainerClassName)}
+                >
+                    {actions}
+                </span>
+            )}
         </div>
     );
 };
