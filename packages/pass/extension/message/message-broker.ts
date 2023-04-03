@@ -102,9 +102,17 @@ export const createMessageBroker = () => {
     const onConnect = (port: Runtime.Port) => {
         ports.set(port.name, port);
 
-        port.onMessage.addListener(async (message: Maybe<PortFrameForwardingMessage>) => {
+        /* If a port forwarding message references a port we have
+         * no reference of - reply with a `PORT_UNAUTHORIZED` message
+         * on the source port. This can be used in injected frames to
+         * detect they're not controlled by a content-script */
+        port.onMessage.addListener(async (message: Maybe<PortFrameForwardingMessage>, source) => {
             if (message && message.type === WorkerMessageType.PORT_FORWARDING_MESSAGE) {
-                ports.get(message.forwardTo)?.postMessage({ ...message.payload, forwarded: true });
+                if (ports.has(message.forwardTo)) {
+                    ports.get(message.forwardTo)!.postMessage({ ...message.payload, forwarded: true });
+                } else {
+                    source.postMessage(backgroundMessage({ type: WorkerMessageType.PORT_UNAUTHORIZED }));
+                }
             }
         });
 

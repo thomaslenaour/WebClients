@@ -5,7 +5,8 @@ import type { Runtime } from 'webextension-polyfill';
 
 import { portForwardingMessage } from '@proton/pass/extension/message';
 import browser from '@proton/pass/globals/browser';
-import type { Maybe, MaybeNull, WorkerState } from '@proton/pass/types';
+import { Maybe, MaybeNull, WorkerMessage, WorkerMessageType, WorkerState } from '@proton/pass/types';
+import { logger } from '@proton/pass/utils/logger';
 import noop from '@proton/utils/noop';
 
 import {
@@ -56,14 +57,28 @@ export const IFrameContextProvider: FC<{ endpoint: IFrameEndpoint }> = ({ endpoi
             ) {
                 window.removeEventListener('message', portInitHandler);
 
-                const message = event.data as Extract<
-                    IFrameMessageWithSender,
-                    { type: IFrameMessageType.IFRAME_INJECT_PORT }
-                >;
-
                 /* Open a new dedicated port with the worker */
+                const message = event.data;
                 const framePortName = `${message.payload.port}-${endpoint}`;
                 framePortRef = browser.runtime.connect({ name: framePortName });
+
+                framePortRef.onMessage.addListener((message: Maybe<IFrameMessage | WorkerMessage>) => {
+                    switch (message?.type) {
+                        case IFrameMessageType.IFRAME_INIT: {
+                            return setWorkerState(message.payload.workerState);
+                        }
+
+                        /* If for any reason we get a `PORT_UNAUTHORIZED`
+                         * message : it likely means the iframe was injected
+                         * without being controlled by a content-script either
+                         * accidentally or intentionnally. Just to be safe, clear
+                         * the frame's innerHTML */
+                        case WorkerMessageType.PORT_UNAUTHORIZED: {
+                            logger.warn(`[IFrame::${endpoint}] Unauthorized iframe injection`);
+                            return window.document.documentElement.remove();
+                        }
+                    }
+                });
 
                 framePortRef.postMessage(
                     portForwardingMessage<IFrameMessageWithSender<IFrameMessageType.IFRAME_CONNECTED>>(
@@ -75,14 +90,6 @@ export const IFrameContextProvider: FC<{ endpoint: IFrameEndpoint }> = ({ endpoi
                         }
                     )
                 );
-
-                framePortRef.onMessage.addListener((message: Maybe<IFrameMessage>) => {
-                    switch (message?.type) {
-                        case IFrameMessageType.IFRAME_INIT: {
-                            return setWorkerState(message.payload.workerState);
-                        }
-                    }
-                });
 
                 setPortContext({ port: framePortRef, forwardTo: message.payload.port });
             }

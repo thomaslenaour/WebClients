@@ -29,6 +29,7 @@ export enum WorkerMessageType {
     RESOLVE_TAB = 'RESOLVE_TAB',
     /* PORTS */
     PORT_FORWARDING_MESSAGE = 'PORT_FORWARDING',
+    PORT_UNAUTHORIZED = 'PORT_UNAUTHORIZED',
     /* REDUX */
     NOTIFICATION = 'NOTIFICATION',
     STORE_ACTION = 'STORE_ACTION',
@@ -134,6 +135,14 @@ export type AliasCreateMessage = { type: WorkerMessageType.ALIAS_CREATE; payload
 
 export type ResolveTabIdMessage = { type: WorkerMessageType.RESOLVE_TAB };
 
+export type PortFrameForwardingMessage<T = any> = {
+    type: WorkerMessageType.PORT_FORWARDING_MESSAGE;
+    forwardTo: string;
+    payload: T;
+};
+
+export type PortUnauthorizedMessage = { type: WorkerMessageType.PORT_UNAUTHORIZED };
+
 export type ExportRequestMessage = {
     type: WorkerMessageType.EXPORT_REQUEST;
     payload: { encrypted: true; passphrase: string } | { encrypted: false };
@@ -173,7 +182,9 @@ export type WorkerMessage =
     | ResolveTabIdMessage
     | ExportRequestMessage
     | ImportDecryptMessage
-    | ShareServerEventMessage;
+    | ShareServerEventMessage
+    | PortFrameForwardingMessage
+    | PortUnauthorizedMessage;
 
 export type ExtensionEndpoint = 'popup' | 'content-script' | 'background' | 'page';
 
@@ -220,9 +231,3 @@ export type WorkerResponse<T extends Maybe<WorkerMessage | WorkerMessageWithSend
 export type WorkerSendResponse<T extends Maybe<WorkerMessage> = Maybe<WorkerMessage>> = (
     response: WorkerResponse<T>
 ) => void;
-
-export type PortFrameForwardingMessage<T = any> = {
-    type: WorkerMessageType.PORT_FORWARDING_MESSAGE;
-    forwardTo: string;
-    payload: T;
-};
