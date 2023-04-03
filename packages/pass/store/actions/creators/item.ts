@@ -4,6 +4,7 @@ import { c } from 'ttag';
 import type { ItemCreateIntent, ItemEditIntent, ItemRevision, SelectedItem } from '@proton/pass/types';
 import { pipe } from '@proton/pass/utils/fp';
 import { getOptimisticItemActionId } from '@proton/pass/utils/pass/items';
+import capitalize from '@proton/utils/capitalize';
 
 import { createOptimisticAction } from '../../optimistic/action/create-optimistic-action';
 import * as requests from '../requests';
@@ -54,7 +55,7 @@ export const itemCreationSuccess = createOptimisticAction(
     (payload: { optimisticId: string; shareId: string; item: ItemRevision }) =>
         withNotification({
             type: 'success',
-            text: c(`Info`).t`Item saved to vault`,
+            text: c(`Info`).t`${capitalize(payload.item.data.type)} "${payload.item.data.metadata.name}" created`,
         })({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
 );
@@ -100,7 +101,7 @@ export const itemEditSuccess = createOptimisticAction(
     (payload: { item: ItemRevision } & SelectedItem) =>
         withNotification({
             type: 'success',
-            text: c('Info').t`Item successfully updated`,
+            text: c(`Info`).t`${capitalize(payload.item.data.type)} "${payload.item.data.metadata.name}" updated`,
         })({ payload }),
     ({ payload }) => getOptimisticItemActionId(payload)
 );
