@@ -9,7 +9,6 @@ export enum ExperimentCode {
     ReferralProgramSignup = 'ReferralProgramSignup',
     ExternalSignupGeneric = 'ExternalSignupGeneric',
     ExternalSignupDrive = 'ExternalSignupDrive',
-    ExperimentPoc = 'ExperimentPoc',
 }
 
 export interface ExperimentsContextValue {
