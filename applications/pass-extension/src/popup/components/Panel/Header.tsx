@@ -35,7 +35,7 @@ export const PanelHeader: VFC<Props> = ({ className, actions, ...props }) => {
                     {subtitle !== undefined && (
                         <em className="flex flex-align-items-center color-weak">
                             {subtitleIcon && <Icon name={subtitleIcon} className="m-1" />}
-                            {subtitle}
+                            <span className="text-ellipsis flex-item-fluid">{subtitle}</span>
                         </em>
                     )}
                 </div>
