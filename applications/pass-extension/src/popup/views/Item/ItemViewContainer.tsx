@@ -8,6 +8,7 @@ import type { SelectedItem, ShareType } from '@proton/pass/types';
 import { pipe } from '@proton/pass/utils/fp';
 import { getOptimisticItemActionId } from '@proton/pass/utils/pass/items';
 
+import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { Panel } from '../../components/Panel/Panel';
 import { ItemView } from './Item/Item.view';
 
@@ -23,7 +24,11 @@ export const ItemViewContainer: VFC = () => {
     const failure = useSelector(failedItemActionSelector);
 
     if (item !== undefined) {
-        return <ItemView item={item} vault={vault} shareId={shareId} itemId={itemId} failureAction={failure?.action} />;
+        return (
+            <div className={itemTypeToItemClassName[item.data.type]}>
+                <ItemView item={item} vault={vault} shareId={shareId} itemId={itemId} failureAction={failure?.action} />
+            </div>
+        );
     }
 
     return <Panel />;

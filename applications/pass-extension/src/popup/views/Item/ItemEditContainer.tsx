@@ -7,6 +7,7 @@ import type { ItemEditIntent, ItemType, SelectedItem } from '@proton/pass/types'
 import { ShareType } from '@proton/pass/types';
 
 import { ItemEditProps } from '../../../shared/items';
+import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { useNavigationContext } from '../../context';
 import { AliasEdit } from './Alias/Alias.edit';
 import { LoginEdit } from './Login/Login.edit';
@@ -39,5 +40,9 @@ export const ItemEditContainer: VFC = () => {
 
     const EditViewComponent = itemEditMap[item.data.type] as VFC<ItemEditProps>;
 
-    return <EditViewComponent vault={vault} revision={item} onSubmit={handleSubmit} onCancel={handleCancel} />;
+    return (
+        <div className={itemTypeToItemClassName[item.data.type]}>
+            <EditViewComponent vault={vault} revision={item} onSubmit={handleSubmit} onCancel={handleCancel} />
+        </div>
+    );
 };

@@ -3,14 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { c } from 'ttag';
 
-import {
-    Collapsible,
-    CollapsibleContent,
-    CollapsibleHeader,
-    CollapsibleHeaderIconButton,
-    Icon,
-    useNotifications,
-} from '@proton/components';
+import { useNotifications } from '@proton/components';
 import {
     aliasDetailsRequested,
     selectMailboxesForAlias,
@@ -19,16 +12,16 @@ import {
 } from '@proton/pass/store';
 import * as requests from '@proton/pass/store/actions/requests';
 import { getFormattedDateFromTimestamp } from '@proton/pass/utils/time/format';
-import clsx from '@proton/utils/clsx';
 
 import { ItemTypeViewProps } from '../../../../shared/items/types';
 import { ClickToCopyValue } from '../../../components/Controls/ClickToCopyValue';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
 import { ValueControl } from '../../../components/Controls/ValueControl';
+import { MoreInfoDropdown } from '../../../components/Dropdown/MoreInfoDropdown';
 import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
 
 export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({ vault, revision, ...itemViewProps }) => {
-    const { data: item, itemId, aliasEmail, createTime, revision: revisionNumber } = revision;
+    const { data: item, itemId, aliasEmail, createTime, modifyTime, revision: revisionNumber } = revision;
     const { name, note } = item.metadata;
     const { optimistic } = itemViewProps;
 
@@ -68,11 +61,8 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({ vault, revision, ..
                 <ValueControl as="ul" icon="arrow-up-and-right-big" label={c('Label').t`Forwarded to`}>
                     {requestFailure && <div className="extension-skeleton extension-skeleton--select" />}
                     {ready &&
-                        mailboxesForAlias.map(({ email }, i) => (
-                            <li
-                                key={email}
-                                className={clsx('text-ellipsis', i < mailboxesForAlias.length - 1 && 'mb-2')}
-                            >
+                        mailboxesForAlias.map(({ email }) => (
+                            <li key={email} className="text-ellipsis">
                                 {email}
                             </li>
                         ))}
@@ -87,29 +77,18 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({ vault, revision, ..
                 </FieldsetCluster>
             )}
 
-            <Collapsible>
-                <CollapsibleHeader
-                    disableFullWidth
-                    suffix={
-                        <CollapsibleHeaderIconButton>
-                            <Icon name="chevron-down" className="color-weak" />
-                        </CollapsibleHeaderIconButton>
-                    }
-                >
-                    <span className="flex flex-align-items-center color-weak">
-                        <Icon className="mr-1" name="info-circle" />
-                        <span>{c('Button').t`More info`}</span>
-                    </span>
-                </CollapsibleHeader>
-                <CollapsibleContent>
-                    <FieldsetCluster mode="read" as="div">
-                        <ValueControl label={c('Label').t`Created on`}>
-                            {getFormattedDateFromTimestamp(createTime)}
-                        </ValueControl>
-                        <ValueControl label={c('Label').t`Revision number`}>{revisionNumber}</ValueControl>
-                    </FieldsetCluster>
-                </CollapsibleContent>
-            </Collapsible>
+            <MoreInfoDropdown
+                items={[
+                    {
+                        label: c('Label').t`Modified`,
+                        values: [
+                            `${revisionNumber} ${c('Info').t`time(s)`}`,
+                            getFormattedDateFromTimestamp(modifyTime),
+                        ],
+                    },
+                    { label: c('Label').t`Created`, values: [getFormattedDateFromTimestamp(createTime)] },
+                ]}
+            />
         </ItemViewPanel>
     );
 };

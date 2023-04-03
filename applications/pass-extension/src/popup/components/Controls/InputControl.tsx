@@ -5,7 +5,6 @@ import type { InputFieldProps } from '@proton/components/components/v2/field/Inp
 import type { ItemType, MaybeArray } from '@proton/pass/types';
 import clsx from '@proton/utils/clsx';
 
-import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { BaseInputGroup, Props as BaseInputGroupProps } from './InputGroup';
 
 type Status = 'default' | 'error';
@@ -39,7 +38,6 @@ export const CustomInputControl: VFC<CustomInputControlProps> = ({
     icon,
     status = 'default',
     actions,
-    itemType,
     customInputGroupProps,
     children,
     className,
@@ -47,7 +45,6 @@ export const CustomInputControl: VFC<CustomInputControlProps> = ({
     <BaseInputGroup
         icon={icon && <Icon name={icon} size={24} {...STATUS_PROPS_MAP[status].icon} />}
         actions={actions}
-        actionsContainerClassName={itemType ? itemTypeToItemClassName[itemType] : undefined}
         {...customInputGroupProps}
         className={clsx([customInputGroupProps?.className, className])}
     >

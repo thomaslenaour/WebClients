@@ -4,7 +4,6 @@ import { Icon, type IconName } from '@proton/components';
 import type { ItemType, MaybeArray } from '@proton/pass/types';
 import clsx from '@proton/utils/clsx';
 
-import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { InputGroup } from './InputGroup';
 
 import './ValueControl.scss';
@@ -21,15 +20,7 @@ type Props = {
     label: string;
 };
 
-export const ValueControl: VFC<Props> = ({
-    actions,
-    as = 'div',
-    children,
-    icon,
-    interactive = false,
-    itemType,
-    label,
-}) => {
+export const ValueControl: VFC<Props> = ({ actions, as = 'div', children, icon, interactive = false, label }) => {
     const ValueContainer = as;
 
     return (
@@ -37,10 +28,9 @@ export const ValueControl: VFC<Props> = ({
             <InputGroup
                 icon={icon && <Icon name={icon} size={24} style={{ color: 'var(--fieldset-cluster-icon-color)' }} />}
                 actions={actions}
-                actionsContainerClassName={itemType ? itemTypeToItemClassName[itemType] : undefined}
             >
-                <span className="color-weak text-sm mb-1">{label}</span>
-                <ValueContainer className="m-0 p-0">{children}</ValueContainer>
+                <div className="color-weak text-ellipsis text-sm">{label}</div>
+                <ValueContainer className="pass-value-control--value m-0 p-0 text-ellipsis">{children}</ValueContainer>
             </InputGroup>
         </div>
     );

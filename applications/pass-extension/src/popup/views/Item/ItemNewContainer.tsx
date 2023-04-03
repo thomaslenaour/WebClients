@@ -5,6 +5,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import { itemCreationIntent, selectDefaultVaultOrThrow } from '@proton/pass/store';
 import { ItemCreateIntent, ItemType } from '@proton/pass/types';
 
+import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { ItemNewProps } from '../../../shared/items/types';
 import { useNavigationContext } from '../../context';
 import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
@@ -47,5 +48,9 @@ export const ItemNewContainer: VFC = () => {
 
     const handleCancel = () => history.goBack();
 
-    return <ItemNewComponent shareId={shareId} onSubmit={handleSubmit} onCancel={handleCancel} />;
+    return (
+        <div className={itemTypeToItemClassName[itemType]}>
+            <ItemNewComponent shareId={shareId} onSubmit={handleSubmit} onCancel={handleCancel} />
+        </div>
+    );
 };
