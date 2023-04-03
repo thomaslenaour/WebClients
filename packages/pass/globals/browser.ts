@@ -27,10 +27,14 @@ export default (() => {
                 ((globalThis as any)[key] = new Proxy(value, {
                     get(target, prop, receiver) {
                         if (process.env.NODE_ENV !== 'development') {
-                            return logger.error(`[Extension::Error] access is protected`);
+                            return logger.error(`[Extension::Error] extension API is protected`);
                         }
 
                         return Reflect.get(target, prop, receiver);
+                    },
+                    set() {
+                        logger.error(`[Extension::Error] extension API is read-only`);
+                        return false;
                     },
                 }))
         );
