@@ -6,6 +6,18 @@
 		border-color: transparent;
 		box-shadow: none;
 	}
+
+	mark.is-light {
+		color: var(--interaction-norm);
+		font-weight: var(--font-weight-normal);
+	}
+
+	.pass-item-list--subtitle {
+		mark.is-light {
+			color: var(--interaction-weak-contrast);
+			font-weight: var(--font-weight-normal);
+		}
+	}
 }
 
 .button.is-active.pass-item-list--item {

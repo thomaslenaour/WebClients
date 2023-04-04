@@ -74,7 +74,7 @@ const ItemListItem: VFC<ItemListItemProps> = ({ item, search = '', active = fals
                     </span>
                     <div
                         className={clsx([
-                            'block color-weak text-sm text-ellipsis',
+                            'pass-item-list--subtitle block color-weak text-sm text-ellipsis',
                             item.data.type === 'note' && isEmptyString(item.data.metadata.note) && 'text-italic',
                         ])}
                     >
