@@ -9,6 +9,7 @@ export enum ExperimentCode {
     ReferralProgramSignup = 'ReferralProgramSignup',
     ExternalSignupGeneric = 'ExternalSignupGeneric',
     ExternalSignupDrive = 'ExternalSignupDrive',
+    GmailSyncOnboarding = 'GmailSyncOnboarding',
     ExperimentPoc = 'ExperimentPoc',
 }
 
