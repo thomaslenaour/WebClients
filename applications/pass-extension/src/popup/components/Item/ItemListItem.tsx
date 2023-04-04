@@ -59,13 +59,18 @@ const ItemListItem: VFC<ItemListItemProps> = ({ item, search = '', active = fals
                     className={clsx('mr-3  flex-item-noshrink', itemTypeToItemClassName[data.type])}
                 />
                 <div className="text-left">
-                    <span className="block text-ellipsis">
-                        <VaultIcon
-                            size="small"
-                            icon={vault?.content.display.icon}
-                            color={vault?.content.display.color}
-                        />
-                        <Marks chunks={getItemNameSearchChunks(heading, search)}>{heading}</Marks>
+                    <span className="flex flex-align-items-center">
+                        {search && (
+                            <VaultIcon
+                                size="small"
+                                icon={vault?.content.display.icon}
+                                color={vault?.content.display.color}
+                                className="mr-1"
+                            />
+                        )}
+                        <span className="flex-item-fluid text-ellipsis">
+                            <Marks chunks={getItemNameSearchChunks(heading, search)}>{heading}</Marks>
+                        </span>
                     </span>
                     <div
                         className={clsx([
