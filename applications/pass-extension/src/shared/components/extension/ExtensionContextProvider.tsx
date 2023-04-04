@@ -17,10 +17,11 @@ import { workerReady } from '@proton/pass/utils/worker';
 import { DEFAULT_LOCALE } from '@proton/shared/lib/constants';
 import sentry, { setUID as setSentryUID } from '@proton/shared/lib/helpers/sentry';
 import { loadLocale } from '@proton/shared/lib/i18n/loadLocale';
-import { initLocales } from '@proton/shared/lib/i18n/locales';
+import { setLocales } from '@proton/shared/lib/i18n/locales';
 import noop from '@proton/utils/noop';
 
 import * as config from '../../../app/config';
+import locales from '../../../app/locales';
 import { ExtensionContext } from '../../extension';
 import { type ExtensionAppContextValue, INITIAL_WORKER_STATE } from './ExtensionContext';
 
@@ -29,7 +30,9 @@ const setup = async (options: {
     endpoint: ExtensionEndpoint;
     messageFactory: MessageWithSenderFactory;
 }): Promise<WorkerMessageResponse<WorkerMessageType.WORKER_WAKEUP>> => {
-    const locales = initLocales(require.context('../../../../locales', true, /.json$/, 'lazy'));
+    /* FIXME: localisation not initialised in
+     * content-script, worker or injected frames */
+    setLocales(locales);
     await loadLocale(DEFAULT_LOCALE, locales);
 
     return sendMessage.map(
