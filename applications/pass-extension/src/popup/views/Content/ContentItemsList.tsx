@@ -4,8 +4,8 @@ import { List } from 'react-virtualized';
 import { c } from 'ttag';
 
 import { ContentVirtualList } from '../../../shared/components/content/ContentVirtualList';
-import ItemListItem from '../../../shared/components/item/ItemListItem';
 import { ListItemLink } from '../../../shared/components/router';
+import ItemListItem from '../../components/Item/ItemListItem';
 import { useNavigationContext } from '../../context';
 import { useItems } from '../../hooks/useItems';
 import { ItemsFilter, ItemsSort } from './filters';

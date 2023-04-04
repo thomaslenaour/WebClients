@@ -1,16 +1,19 @@
-import { VFC, memo } from 'react';
-import { Link, LinkProps } from 'react-router-dom';
+import { type VFC, memo } from 'react';
+import { useSelector } from 'react-redux';
+import { Link, type LinkProps } from 'react-router-dom';
 
-import { ButtonLike, ButtonLikeProps } from '@proton/atoms/Button';
+import { ButtonLike, type ButtonLikeProps } from '@proton/atoms/Button';
 import { Marks } from '@proton/components/components';
-import type { ItemRevisionWithOptimistic } from '@proton/pass/types';
+import { selectShare } from '@proton/pass/store';
+import { ItemRevisionWithOptimistic, ShareType } from '@proton/pass/types';
 import { isEmptyString } from '@proton/pass/utils/string';
 import { escapeRegex, getMatches } from '@proton/shared/lib/helpers/regex';
 import { normalize } from '@proton/shared/lib/helpers/string';
 import clsx from '@proton/utils/clsx';
 
+import { presentListItem } from '../../../shared/items';
 import { itemTypeToItemClassName } from '../../../shared/items/className';
-import { presentListItem } from '../../items';
+import { VaultIcon } from '../Vault/VaultIcon';
 import { ItemIcon } from './ItemIcon';
 
 import './ItemListItem.scss';
@@ -32,8 +35,9 @@ type ItemListItemProps = Partial<LinkProps> &
     };
 
 const ItemListItem: VFC<ItemListItemProps> = ({ item, search = '', active = false, ...rest }) => {
-    const { data, optimistic, failed } = item;
+    const { data, optimistic, failed, shareId } = item;
     const { heading, subheading } = presentListItem(item);
+    const vault = useSelector(selectShare<ShareType.Vault>(shareId));
 
     return (
         <ButtonLike
@@ -56,6 +60,11 @@ const ItemListItem: VFC<ItemListItemProps> = ({ item, search = '', active = fals
                 />
                 <div className="text-left">
                     <span className="block text-ellipsis">
+                        <VaultIcon
+                            size="small"
+                            icon={vault?.content.display.icon}
+                            color={vault?.content.display.color}
+                        />
                         <Marks chunks={getItemNameSearchChunks(heading, search)}>{heading}</Marks>
                     </span>
                     <div

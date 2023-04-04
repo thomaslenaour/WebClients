@@ -1,4 +1,4 @@
-import { VFC, useMemo } from 'react';
+import { type VFC, useMemo } from 'react';
 
 import { API_URL } from '../../../app/config';
 
