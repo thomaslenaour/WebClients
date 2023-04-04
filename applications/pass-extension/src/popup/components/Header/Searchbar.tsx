@@ -1,10 +1,14 @@
 import { type VFC, memo, useRef } from 'react';
+import { useSelector } from 'react-redux';
 
 import { c } from 'ttag';
 
 import { Button } from '@proton/atoms';
 import { Icon, InputTwo } from '@proton/components/components';
+import { selectShare } from '@proton/pass/store';
+import { ShareType } from '@proton/pass/types';
 
+import { useItemsFilteringContext } from '../../context/items/useItemsFilteringContext';
 import { useNavigationContext } from '../../context/navigation/useNavigationContext';
 
 import './Searchbar.scss';
@@ -21,6 +25,12 @@ const SearchbarRaw: VFC<{ disabled?: boolean; value: string; handleValue: (value
 }) => {
     const inputRef = useRef<HTMLInputElement>(null);
     const { inTrash } = useNavigationContext();
+    const { shareId } = useItemsFilteringContext();
+
+    const vault = useSelector(selectShare<ShareType.Vault>(shareId));
+    const placeholder = vault
+        ? c('Placeholder').t`Search in ${vault.content.name}`
+        : c('Placeholder').t`Search in all vaults`;
 
     const handleClear = () => {
         handleValue('');
@@ -31,7 +41,8 @@ const SearchbarRaw: VFC<{ disabled?: boolean; value: string; handleValue: (value
         <InputTwo
             ref={inputRef}
             className="pass-searchbar"
-            placeholder={`${inTrash ? c('Placeholder').t`Search in Trash` : c('Placeholder').t`Search`}...`}
+            placeholder={`${inTrash ? c('Placeholder').t`Search in Trash` : placeholder}…
+`}
             prefix={<Icon name="magnifier" />}
             suffix={
                 value !== '' && (
