@@ -22,12 +22,16 @@ a {
 	text-decoration: none;
 }
 
+/*
+* FIXME
+* handle line-height within core spacing-two?
+*/
 .text-sm {
-	line-height: 18px;
+	line-height: 1rem;
 }
 
 .text-2xl {
-	line-height: 24px;
+	line-height: 1.5rem;
 }
 
 .extension {

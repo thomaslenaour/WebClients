@@ -6,6 +6,7 @@ import { Button } from '@proton/atoms';
 import { Icon } from '@proton/components';
 import type { ItemType } from '@proton/pass/types';
 
+import { itemTypeToItemClassName } from '../../../shared/items/className';
 import { ItemHeader } from './ItemPanelHeader';
 import { Panel } from './Panel';
 
@@ -36,5 +37,9 @@ export const ItemEditPanel: FC<Props> = ({ type, formId, valid, handleCancelClic
         ];
     }, [type, formId, valid, handleCancelClick]);
 
-    return <Panel header={<ItemHeader type={type} actions={actions} />}>{children}</Panel>;
+    return (
+        <Panel className={itemTypeToItemClassName[type]} header={<ItemHeader type={type} actions={actions} />}>
+            {children}
+        </Panel>
+    );
 };

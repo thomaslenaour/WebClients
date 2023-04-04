@@ -8,6 +8,7 @@ import { DropdownMenuButton, Icon } from '@proton/components';
 import { selectAllVaults } from '@proton/pass/store';
 import type { ItemType } from '@proton/pass/types';
 
+import { itemTypeToItemClassName } from '../../../shared/items/className';
 import type { ItemTypeViewProps } from '../../../shared/items/types';
 import { QuickActionsDropdown } from '../../components/Dropdown/QuickActionsDropdown';
 import { ItemHeader } from './ItemPanelHeader';
@@ -43,6 +44,7 @@ export const ItemViewPanel: FC<Props> = ({
 
     return (
         <Panel
+            className={itemTypeToItemClassName[type]}
             header={
                 <ItemHeader
                     type={type}

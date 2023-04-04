@@ -11,10 +11,10 @@ import {
 } from '@proton/components';
 
 type Props = {
-    items: { label: string; values: string[] }[];
+    info: { label: string; values: string[] }[];
 };
 
-export const MoreInfoDropdown: VFC<Props> = ({ items }) => {
+export const MoreInfoDropdown: VFC<Props> = ({ info }) => {
     return (
         <Collapsible>
             <CollapsibleHeader
@@ -31,10 +31,10 @@ export const MoreInfoDropdown: VFC<Props> = ({ items }) => {
                     <span>{c('Button').t`More info`}</span>
                 </span>
             </CollapsibleHeader>
-            <CollapsibleContent className="color-weak pt-4 pl-4 text-sm">
-                {items.map(({ label, values }) => (
-                    <div className="flex mb-2" key={label}>
-                        <div className="mr-4 w20">{`${label}:`}</div>
+            <CollapsibleContent className="color-weak pt-4 text-sm">
+                {info.map(({ label, values }, idx) => (
+                    <div className="flex mb-2" key={`${label}-${idx}`}>
+                        <div className="mr-6 text-right w80p">{`${label}:`}</div>
                         <div>
                             {values.map((value) => (
                                 <div key={value}>{value}</div>
