@@ -86,7 +86,7 @@ export const VaultItem: VFC<VaultItemProps> = ({ share, label, selected, onSelec
         >
             <VaultIcon
                 className="flex-item-noshrink mr-3"
-                size="small"
+                size="medium"
                 color={share?.content.display.color}
                 icon={share?.content.display.icon}
             />
@@ -170,7 +170,7 @@ export const VaultSubmenu: VFC<{
                 <span className="flex flex-align-items-center">
                     <VaultIcon
                         className="mr-3"
-                        size="small"
+                        size="medium"
                         color={selectedVaultOption?.color}
                         icon={selectedVaultOption?.icon}
                     />

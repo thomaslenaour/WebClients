@@ -9,9 +9,18 @@
 		block-size: rem(40);
 	}
 
-	&.small {
+	&.small,
+	&.medium {
 		background-color: transparent;
+	}
+
+	&.medium {
 		inline-size: rem(16);
 		block-size: rem(16);
+	}
+
+	&.small {
+		inline-size: rem(12);
+		block-size: rem(12);
 	}
 }

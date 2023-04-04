@@ -43,7 +43,11 @@ export const VaultSelectField: VFC<Props> = (props) => {
                         {vaults.map(({ shareId, content }) => (
                             <Option key={shareId} value={shareId} title={content.name}>
                                 <div className="flex gap-x-3 flex-align-items-center">
-                                    <VaultIcon icon={content.display.icon} color={content.display.color} size="small" />
+                                    <VaultIcon
+                                        icon={content.display.icon}
+                                        color={content.display.color}
+                                        size="medium"
+                                    />
                                     <span className="flex-item-fluid text-ellipsis">{content.name}</span>
                                 </div>
                             </Option>
