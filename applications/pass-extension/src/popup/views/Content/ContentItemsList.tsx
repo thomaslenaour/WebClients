@@ -1,7 +1,9 @@
-import { VFC, useEffect, useRef } from 'react';
+import { type VFC, useEffect, useMemo, useRef } from 'react';
 import { List } from 'react-virtualized';
 
 import { c } from 'ttag';
+
+import { interpolateRecentItems } from '@proton/pass/utils/pass/items';
 
 import { ContentVirtualList } from '../../../shared/components/content/ContentVirtualList';
 import { ListItemLink } from '../../../shared/components/router';
@@ -19,6 +21,11 @@ export const ContentItemsList: VFC = () => {
 
     const listRef = useRef<List>(null);
     useEffect(() => listRef.current?.scrollToRow(0), [filter, sort]);
+
+    const { interpolation, interpolationIndexes } = useMemo(
+        () => interpolateRecentItems(filteredItems)(sort === 'recent'),
+        [filteredItems, sort]
+    );
 
     return (
         <>
@@ -43,26 +50,41 @@ export const ContentItemsList: VFC = () => {
             ) : (
                 <ContentVirtualList
                     ref={listRef}
-                    rowCount={filteredItems.length}
+                    rowCount={interpolation.length}
+                    interpolationIndexes={interpolationIndexes}
                     rowRenderer={({ style, index }) => {
-                        const item = filteredItems[index];
-                        return (
-                            <div style={style} key={item.itemId}>
-                                <ItemListItem
-                                    item={item}
-                                    component={ListItemLink}
-                                    onClick={(evt) => {
-                                        evt.preventDefault();
-                                        selectItem(item.shareId, item.itemId);
-                                    }}
-                                    id={`item-${item.shareId}-${item.itemId}`}
-                                    search={search}
-                                    active={
-                                        selectedItem?.itemId === item.itemId && selectedItem?.shareId === item.shareId
-                                    }
-                                />
-                            </div>
-                        );
+                        const row = interpolation[index];
+
+                        switch (row.type) {
+                            case 'entry': {
+                                const item = row.entry;
+                                return (
+                                    <div style={style} key={item.itemId}>
+                                        <ItemListItem
+                                            item={item}
+                                            component={ListItemLink}
+                                            onClick={(evt) => {
+                                                evt.preventDefault();
+                                                selectItem(item.shareId, item.itemId);
+                                            }}
+                                            id={`item-${item.shareId}-${item.itemId}`}
+                                            search={search}
+                                            active={
+                                                selectedItem?.itemId === item.itemId &&
+                                                selectedItem?.shareId === item.shareId
+                                            }
+                                        />
+                                    </div>
+                                );
+                            }
+                            case 'interpolation': {
+                                return (
+                                    <div style={style} key={`divider-${index}`} className="flex color-weak pl-4">
+                                        <span className="my-auto">{row.cluster.label}</span>
+                                    </div>
+                                );
+                            }
+                        }
                     }}
                 />
             )}
