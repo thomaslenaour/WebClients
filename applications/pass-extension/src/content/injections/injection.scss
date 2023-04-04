@@ -5,8 +5,8 @@
 	$inter-font-path: '~inter-ui/Inter (web)'
 );
 
-@import '@proton/styles/scss/config';
-@import '@proton/styles/scss/helpers/shadow';
+@import '@proton/styles/scss/lib';
+@import '@proton/styles/scss/utilities/shadow';
 @import '@proton/styles/scss/base/custom-properties/';
 
 @include default.weight-600-normal;
