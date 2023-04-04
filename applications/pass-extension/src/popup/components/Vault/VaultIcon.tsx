@@ -1,6 +1,6 @@
 import type { VFC } from 'react';
 
-import { Icon } from '@proton/components/components';
+import { Icon, IconSize } from '@proton/components/components';
 import { VaultColor as VaultColorEnum, VaultIcon as VaultIconEnum } from '@proton/pass/types/protobuf/vault-v1';
 import clsx from '@proton/utils/clsx';
 
@@ -8,11 +8,19 @@ import { VAULT_COLOR_MAP, VAULT_ICON_MAP } from '../../components/Vault/constant
 
 import './VaultIcon.scss';
 
+type Size = 'large' | 'medium' | 'small';
+
 type Props = {
     color?: VaultColorEnum;
     icon?: VaultIconEnum;
-    size?: 'large' | 'small';
+    size?: Size;
     className?: string;
+};
+
+const SIZE_MAP: { [key in Size]: IconSize } = {
+    large: 22,
+    medium: 16,
+    small: 12,
 };
 
 export const VaultIcon: VFC<Props> = ({ icon, color, size = 'large', className }) => (
@@ -20,10 +28,6 @@ export const VaultIcon: VFC<Props> = ({ icon, color, size = 'large', className }
         className={clsx([`pass-vault-icon ${size} rounded-50 relative`, className])}
         style={{ '--vault-icon-color': VAULT_COLOR_MAP[color ?? VaultColorEnum.COLOR1] }}
     >
-        <Icon
-            className="absolute-center"
-            name={icon ? VAULT_ICON_MAP[icon] : 'vault'}
-            size={size === 'large' ? 22 : 16}
-        />
+        <Icon className="absolute-center" name={icon ? VAULT_ICON_MAP[icon] : 'vault'} size={SIZE_MAP[size]} />
     </span>
 );
