@@ -6,10 +6,11 @@ import clsx from '@proton/utils/clsx';
 type ContentVirtualListProps = {
     rowRenderer: ListRowRenderer;
     rowCount: number;
+    interpolationIndexes?: number[];
 };
 
 const ContentVirtualListRender: ForwardRefRenderFunction<List, ContentVirtualListProps> = (
-    { rowRenderer, rowCount },
+    { rowRenderer, rowCount, interpolationIndexes = [] },
     virtualListRef
 ) => {
     const [shadows, setShadows] = useState({ top: false, bottom: false });
@@ -46,7 +47,7 @@ const ContentVirtualListRender: ForwardRefRenderFunction<List, ContentVirtualLis
                         rowCount={rowCount}
                         height={height}
                         width={width - 1} /* account for react-virtualized ceiling */
-                        rowHeight={52}
+                        rowHeight={({ index }) => (interpolationIndexes.includes(index) ? 35 : 52)}
                     />
                 )}
             </AutoSizer>
