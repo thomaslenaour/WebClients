@@ -29,7 +29,7 @@ export const ValueControl: VFC<Props> = ({ actions, as = 'div', children, icon, 
                 icon={icon && <Icon name={icon} size={24} style={{ color: 'var(--fieldset-cluster-icon-color)' }} />}
                 actions={actions}
             >
-                <div className="color-weak text-ellipsis text-sm">{label}</div>
+                <div className="color-weak text-sm">{label}</div>
                 <ValueContainer className="pass-value-control--value m-0 p-0 text-ellipsis">{children}</ValueContainer>
             </InputGroup>
         </div>

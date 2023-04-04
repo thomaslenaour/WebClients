@@ -1,10 +1,18 @@
 import type { ReactNode, VFC } from 'react';
 
+import clsx from '@proton/utils/clsx';
+
 import './Panel.scss';
 
-export const Panel: VFC<{ header?: ReactNode; children?: ReactNode }> = ({ header, children }) => {
+type Props = {
+    header?: ReactNode;
+    children?: ReactNode;
+    className?: string;
+};
+
+export const Panel: VFC<Props> = ({ header, children, className }) => {
     return (
-        <article className="pass-panel">
+        <article className={clsx('pass-panel', className)}>
             {header && <div className="mb-3">{header}</div>}
             {children}
         </article>

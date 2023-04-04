@@ -78,7 +78,7 @@ export const AliasView: VFC<ItemTypeViewProps<'alias'>> = ({ vault, revision, ..
             )}
 
             <MoreInfoDropdown
-                items={[
+                info={[
                     {
                         label: c('Label').t`Modified`,
                         values: [

@@ -1,15 +1,14 @@
-import { type VFC, useState } from 'react';
+import { type VFC } from 'react';
 
 import { c } from 'ttag';
 
-import { Button, Href } from '@proton/atoms';
-import { Icon, Tooltip } from '@proton/components/components';
+import { Href } from '@proton/atoms';
 import { getFormattedDateFromTimestamp } from '@proton/pass/utils/time/format';
 
-import { PasswordFieldValue } from '../../../../shared/components/fields';
 import type { ItemTypeViewProps } from '../../../../shared/items/types';
 import { ClickToCopyValue } from '../../../components/Controls/ClickToCopyValue';
 import { FieldsetCluster } from '../../../components/Controls/FieldsetCluster';
+import { PasswordValueControl } from '../../../components/Controls/PasswordValueControl';
 import { ValueControl } from '../../../components/Controls/ValueControl';
 import { MoreInfoDropdown } from '../../../components/Dropdown/MoreInfoDropdown';
 import { ItemViewPanel } from '../../../components/Panel/ItemViewPanel';
@@ -20,8 +19,6 @@ export const LoginView: VFC<ItemTypeViewProps<'login'>> = ({ vault, revision, ..
     const { name, note } = metadata;
     const { username, password, urls } = content;
 
-    const [passwordMasked, setPasswordMasked] = useState(true);
-
     return (
         <ItemViewPanel type="login" name={name} vaultName={vault.content.name} {...itemViewProps}>
             <FieldsetCluster mode="read" as="div">
@@ -31,31 +28,7 @@ export const LoginView: VFC<ItemTypeViewProps<'login'>> = ({ vault, revision, ..
                     </ValueControl>
                 </ClickToCopyValue>
 
-                <ClickToCopyValue value={password}>
-                    <ValueControl
-                        interactive
-                        actions={
-                            <Tooltip
-                                title={passwordMasked ? c('Action').t`Show password` : c('Action').t`Hide password`}
-                            >
-                                <Button
-                                    icon
-                                    pill
-                                    color="weak"
-                                    onClick={() => setPasswordMasked((prev) => !prev)}
-                                    size="medium"
-                                    shape="solid"
-                                >
-                                    <Icon name={passwordMasked ? 'eye' : 'eye-slash'} />
-                                </Button>
-                            </Tooltip>
-                        }
-                        icon="key"
-                        label={c('Label').t`Password`}
-                    >
-                        <PasswordFieldValue fallback={c('Info').t`None`} masked={passwordMasked} password={password} />
-                    </ValueControl>
-                </ClickToCopyValue>
+                <PasswordValueControl password={password} />
             </FieldsetCluster>
 
             {urls.length > 0 && (
@@ -79,10 +52,11 @@ export const LoginView: VFC<ItemTypeViewProps<'login'>> = ({ vault, revision, ..
             )}
 
             <MoreInfoDropdown
-                items={[
-                    ...(lastUseTime
-                        ? [{ label: c('Label').t`Last used`, values: [getFormattedDateFromTimestamp(lastUseTime)] }]
-                        : []),
+                info={[
+                    {
+                        label: c('Label').t`Last autofill`,
+                        values: [lastUseTime ? getFormattedDateFromTimestamp(lastUseTime) : c('Info').t`None`],
+                    },
                     {
                         label: c('Label').t`Modified`,
                         values: [
