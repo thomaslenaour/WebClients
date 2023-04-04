@@ -1,10 +1,10 @@
-import { VFC, useState } from 'react';
+import { type VFC, useState } from 'react';
 
 import { CircleLoader } from '@proton/atoms/CircleLoader';
 import { Icon } from '@proton/components';
 import type { ItemRevisionWithOptimistic } from '@proton/pass/types';
 
-import { presentItemIcon } from '../../items';
+import { presentItemIcon } from '../../../shared/items';
 import { ImageStatus, ProxiedDomainImage } from './ProxiedDomainImage';
 
 import './ItemIcon.scss';
