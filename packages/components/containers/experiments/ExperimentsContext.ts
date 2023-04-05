@@ -10,7 +10,6 @@ export enum ExperimentCode {
     ExternalSignupGeneric = 'ExternalSignupGeneric',
     ExternalSignupDrive = 'ExternalSignupDrive',
     GmailSyncOnboarding = 'GmailSyncOnboarding',
-    ExperimentPoc = 'ExperimentPoc',
 }
 
 export interface ExperimentsContextValue {
