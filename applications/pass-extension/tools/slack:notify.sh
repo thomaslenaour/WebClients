@@ -8,7 +8,7 @@ else
     PREVIOUS_TAG=$(git tag -l "proton-pass-extension@*" --sort=-committerdate | sed -n '2p')
 fi
 
-JIRA_TICKET_IDS=$(git log $PREVIOUS_TAG..$CI_COMMIT_TAG | grep -o "IDTEAM-[0-9]*" | uniq)
+JIRA_TICKET_IDS=$(git log $PREVIOUS_TAG..$CI_COMMIT_TAG | grep -o "IDTEAM-[0-9]*")
 
 echo "Previous tag is : $PREVIOUS_TAG"
 
@@ -19,17 +19,28 @@ else
     echo $JIRA_TICKET_IDS
 fi
 
-JIRA_LINKS=()
+JIRA_KEYS=()
+JIRA_SECTION=""
+
 for ticket in $JIRA_TICKET_IDS; do
-    link="https://jira.protontech.ch/secure/RapidBoard.jspa?view=detail&selectedIssue=$ticket"
-    section=", {
-        \"type\": \"section\",
-        \"text\": {
-            \"type\": \"mrkdwn\",
-            \"text\": \":jira: <$link|[$ticket]>\"
-        }
-    }"
-    JIRA_LINKS+=("$section")
+    link="https://jira.protontech.ch/browse/$ticket"
+    key_exists=0
+    for key in "${JIRA_KEYS[@]}"; do
+        if [[ $key == $ticket ]]; then
+            key_exists=1
+            break
+        fi
+    done
+    if [[ $key_exists -eq 0 ]]; then
+        JIRA_KEYS+=($ticket)
+        JIRA_SECTION+=", {
+            \"type\": \"section\",
+            \"text\": {
+                \"type\": \"mrkdwn\",
+                \"text\": \":jira: $ticket <$link|[link]>\"
+            }
+        }"
+    fi
 done
 
 SLACK_POST_BODY=$(echo "{
@@ -50,7 +61,7 @@ SLACK_POST_BODY=$(echo "{
                 \"text\":\"Download the *_unpacked extension_* <https://gitlab.protontech.ch/web/clients/-/jobs/$CI_JOB_ID/artifacts/download|here> (expires in 1 week)\"
                 }
             }
-            ${JIRA_LINKS[@]}
+            $JIRA_SECTION
         ]
     }" | jq -r '.')
 
