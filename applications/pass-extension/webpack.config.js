@@ -4,10 +4,11 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const { getJsLoader } = require('@proton/pack/webpack/js.loader');
 const getCssLoaders = require('@proton/pack/webpack/css.loader');
 const getAssetsLoaders = require('@proton/pack/webpack/assets.loader');
 const getOptimizations = require('@proton/pack/webpack/optimization');
+const { excludeNodeModulesExcept, excludeFiles, createRegex } = require('@proton/pack/webpack/helpers/regex');
+const { BABEL_EXCLUDE_FILES, BABEL_INCLUDE_NODE_MODULES } = require('@proton/pack/webpack/constants');
 const parseEnvVar = require('./tools/env-var.parser');
 
 const SUPPORTED_TARGETS = ['chrome', 'firefox'];
@@ -24,12 +25,6 @@ if (!SUPPORTED_TARGETS.includes(BUILD_TARGET)) {
 console.log(`Building with env`, JSON.stringify({ ENV, BUILD_TARGET, RUNTIME_RELOAD, RESUME_FALLBACK }, null, 4));
 
 const production = ENV === 'production';
-const options = {
-    isProduction: production,
-    browserslist: production
-        ? `> 0.5%, not IE 11, Firefox ESR, Safari 11`
-        : 'last 1 chrome version, last 1 firefox version, last 1 safari version',
-};
 
 const nonAccessibleWebResource = (entry) => [entry, './src/shared/extension/web-accessible-resource.ts'];
 
@@ -49,13 +44,20 @@ module.exports = {
     module: {
         strictExportPresence: true,
         rules: [
-            getJsLoader({ ...options, hasReactRefresh: !production }),
-            ...getCssLoaders(options),
+            {
+                test: /\.js$|\.tsx?$/,
+                exclude: createRegex(
+                    excludeNodeModulesExcept(BABEL_INCLUDE_NODE_MODULES),
+                    excludeFiles([...BABEL_EXCLUDE_FILES, 'pre.ts', 'unsupported.ts'])
+                ),
+                use: require.resolve('babel-loader'),
+            },
+            ...getCssLoaders({ browserslist: undefined, logical: false }),
             ...getAssetsLoaders(),
         ],
     },
     optimization: {
-        ...getOptimizations(options),
+        ...getOptimizations({ isProduction: production }),
         runtimeChunk: false,
         splitChunks: undefined,
     },
