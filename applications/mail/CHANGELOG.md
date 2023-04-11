@@ -637,7 +637,7 @@ Proton - Privacy by default.
 -   Fixed an issue where selecting a date field in contacts and then changing the selection would result in the value being displayed incorrectly
 -   Fixed an issue where on some occasions the Unsubscribe URL would be shown twice in the Unsubscribe confirmation modal
 
-# Introducing the new ProtonMail!
+# Introducing the new ProtonMail
 
 ## Release: 4.0.0 — June 8, 2021
 
