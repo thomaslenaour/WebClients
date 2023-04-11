@@ -4151,11 +4151,8 @@ __metadata:
     "@protontech/mimemessage": ~v1.1.4
     "@protontech/mutex-browser": ^1.0.5
     "@protontech/sieve.js": ^2.0.6
-    "@protontech/timezone-support": ^1.0.0
-    "@sentry/browser": ^7.45.0
-    "@types/dompurify": ^3.0.0
+    "@protontech/timezone-support": ^3.0.0
     "@types/jasmine": ^4.3.1
-    "@types/node": ^18.15.7
     "@types/papaparse": ^5.3.7
     "@types/ua-parser-js": ^0.7.36
     "@types/webpack-env": ^1.18.0
@@ -4299,14 +4296,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protontech/timezone-support@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@protontech/timezone-support@npm:1.0.0"
+"@protontech/timezone-support@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@protontech/timezone-support@npm:3.0.0"
   dependencies:
     commander: 2.20.0
   bin:
     create-timezone-data: bin/create-timezone-data
-  checksum: 8532e83f95e7066ae4b39278462bac3c38aec8bbfaa79ebe65dee02d37f4dbcca97510ffacb6c43ee8d1ad28581d522ef7872f91e1df0efea4834d9149b34be5
+  checksum: 3251871cbb570550ab5b86e0fd6c53aa6ea595176eb0ccd5c8a301da285337d3c2de41cf0bf9ad92b5198d128ef41eb6af6517dc7ce4236f3d230adb13f201c8
   languageName: node
   linkType: hard
 
@@ -4399,71 +4396,6 @@ __metadata:
     zen-observable:
       optional: true
   checksum: 8ec6d43370f419975295f306699f87989dd64a099a29cf62ddacbbbe32df634f87451504d340e15321e74b0a3ca8a9b447736472f792102e234faa207395e6c9
-  languageName: node
-  linkType: hard
-
-"@sentry-internal/tracing@npm:7.45.0":
-  version: 7.45.0
-  resolution: "@sentry-internal/tracing@npm:7.45.0"
-  dependencies:
-    "@sentry/core": 7.45.0
-    "@sentry/types": 7.45.0
-    "@sentry/utils": 7.45.0
-    tslib: ^1.9.3
-  checksum: 64cb8ddca80d4c3a8b7d7fab8ebfc38e5eeb56753b72fc7fbcc6003a190f0492fe89075f7e7d7a2621f4746c52613c79eec2695368cc44da134b0be42bd0f71b
-  languageName: node
-  linkType: hard
-
-"@sentry/browser@npm:^7.45.0":
-  version: 7.45.0
-  resolution: "@sentry/browser@npm:7.45.0"
-  dependencies:
-    "@sentry-internal/tracing": 7.45.0
-    "@sentry/core": 7.45.0
-    "@sentry/replay": 7.45.0
-    "@sentry/types": 7.45.0
-    "@sentry/utils": 7.45.0
-    tslib: ^1.9.3
-  checksum: 6f9328e32fbe92a31e891ec00f6fbd72397d6e6f9a53ec4025da8682bcb484fda49ad05ee73a95b1f0554f9a4543d9d5f40e26273eb9c70617a475939dfd29ad
-  languageName: node
-  linkType: hard
-
-"@sentry/core@npm:7.45.0":
-  version: 7.45.0
-  resolution: "@sentry/core@npm:7.45.0"
-  dependencies:
-    "@sentry/types": 7.45.0
-    "@sentry/utils": 7.45.0
-    tslib: ^1.9.3
-  checksum: c0453edf833b7ed86bcde6d341090bd3f4cfdb08b50a5e96cbe9d240d3955ea90c4af5550af37f95e8b987c13fa178cb004dd7bea9071145e63ce0dc7c635ec6
-  languageName: node
-  linkType: hard
-
-"@sentry/replay@npm:7.45.0":
-  version: 7.45.0
-  resolution: "@sentry/replay@npm:7.45.0"
-  dependencies:
-    "@sentry/core": 7.45.0
-    "@sentry/types": 7.45.0
-    "@sentry/utils": 7.45.0
-  checksum: 6e960f50cb1b3fae97482edfc2458542a254af0060481e369740c1e9f93093ca662f130c400fafff092e75079929c21f59ea78d85a095b59a07250976d478b84
-  languageName: node
-  linkType: hard
-
-"@sentry/types@npm:7.45.0":
-  version: 7.45.0
-  resolution: "@sentry/types@npm:7.45.0"
-  checksum: feb7de474f486f52f8f2594dc0559872c51c770b8511d90383eb4aadac8dffc2ddfb8fd7747cfd1486e629eba47bc7c9fae72fdad28cddaaeaf8dd1a52fabdfa
-  languageName: node
-  linkType: hard
-
-"@sentry/utils@npm:7.45.0":
-  version: 7.45.0
-  resolution: "@sentry/utils@npm:7.45.0"
-  dependencies:
-    "@sentry/types": 7.45.0
-    tslib: ^1.9.3
-  checksum: 5d4d2ab4fe85d7231a35859cbeecc3d0c95368c818f15d8d6332f8c57604a67c0e12d5a81c23e5dcb1c53b4e44faf753028592792eb98e4af1440ee375b2292e
   languageName: node
   linkType: hard
 
@@ -30859,7 +30791,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.8.1, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
+"tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
