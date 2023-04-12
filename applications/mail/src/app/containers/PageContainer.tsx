@@ -108,7 +108,7 @@ const PageContainer = (
     return (
         <PrivateLayout
             ref={ref}
-            isBlurred={derivedValues.displayOnboarding}
+            isBlurred={renderSyncModal || derivedValues.displayOnboarding}
             labelID={labelID}
             elementID={elementID}
             breakpoints={breakpoints}
