@@ -108,7 +108,7 @@ const PageContainer = (
     return (
         <PrivateLayout
             ref={ref}
-            isBlurred={onboardingOpen}
+            isBlurred={derivedValues.displayOnboarding}
             labelID={labelID}
             elementID={elementID}
             breakpoints={breakpoints}
@@ -126,10 +126,7 @@ const PageContainer = (
                         />
                     )}
                     {derivedValues.displayOnboarding && (
-                        <MailStartupModals
-                            onboardingOpen={derivedValues.displayOnboarding}
-                            onOnboardingDone={() => setWelcomeFlagsDone()}
-                        />
+                        <MailStartupModals onboardingOpen onOnboardingDone={() => setWelcomeFlagsDone()} />
                     )}
                 </>
             </EasySwitchProvider>
