@@ -2,7 +2,7 @@
 
 ### New features
 
--   Mark your event to self-destruct on a chosen day if you benefit from a paid plan
+-   Mark your email to self-destruct on a chosen day if you benefit from a paid plan
 
 ### Improvements
 
