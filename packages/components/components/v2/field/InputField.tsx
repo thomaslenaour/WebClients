@@ -97,7 +97,7 @@ const InputFieldBase = <E extends ElementType = typeof defaultElement>(
             'field-two-label-container flex flex-justify-space-between flex-nowrap flex-align-items-end gap-2',
             labelContainerClassName,
         ]),
-        inputContainer: 'field-two-input-container relative',
+        inputContainer: 'field-two-input-container flex relative',
         assistContainer: classnames([
             'field-two-assist flex flex-nowrap flex-align-items-start',
             isDense && 'sr-only',
