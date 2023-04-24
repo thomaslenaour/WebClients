@@ -80,6 +80,19 @@ const PromotionBanner = ({
                     </>
                 )}
             </div>
+            {hasDismissAction && !loading && (
+                <Button
+                    onClick={handleClose}
+                    icon
+                    size="small"
+                    color="weak"
+                    shape="ghost"
+                    className="ml-2 myauto"
+                    title={c('Action').t`Close`}
+                >
+                    <Icon name="cross" alt={c('Action').t`Close`} />
+                </Button>
+            )}
         </div>
     );
 };
