@@ -173,7 +173,7 @@
         "Crear enlace"
       ],
       "Create new folder": [
-        "Crear una carpeta"
+        "Crear una nueva carpeta"
       ],
       "Create new text file": [
         "Crear un archivo de texto"
@@ -2184,7 +2184,7 @@
         "Error con el cifrado"
       ],
       "vCard versions < 3.0 not supported": [
-        "Versiones vCard menores a 3.0 no compatibles"
+        "Versiones vCard menores a 3.0 no soportadas"
       ]
     },
     "Error importing contacts": {
@@ -2982,7 +2982,7 @@
         "Atención requerida"
       ],
       "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access\nor decrypt your files for you. To unlock your drive after a password reset,\nyou must have one of the following:": [
-        "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:"
+        "Debido a que ${ DRIVE_APP_NAME } está cifrado de extremo a extremo, no podemos acceder\no descifrar tus archivos. Para desbloquear tu unidad después de restablecer la contraseña,\ndebes tener uno de los siguientes:"
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
         "Antes de solicitar un nuevo código de verificación, verifica tu carpeta de spam y verifica que ${ strong } la dirección es correcta."
@@ -3246,7 +3246,7 @@
         "Si no encuentras el correo electrónico en tu bandeja de entrada, verifica tu carpeta de spam."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
-        "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process."
+        "Si tienes uno de estos, continúa con la configuración de la cuenta de ${ BRAND_NAME } para\ncomenzar con el proceso de desbloqueo."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "Importar ${ calendarCount } de ${ totalCalendarsCount } calendario",
@@ -3328,7 +3328,7 @@
         "Enlace copiado al portapapeles"
       ],
       "Link owner has the password": [
-        "El propietario del enlace tiene la contraseña."
+        "El propietario del enlace tiene la contraseña"
       ],
       "Loading": [
         "Cargando"
@@ -3415,7 +3415,7 @@
         "Nota: Los datos pueden seguir estando disponibles localmente en los dispositivos en los que hayas instalado ${ DRIVE_APP_NAME }."
       ],
       "Nothing here yet": [
-        "No hay nada aquí en este momento."
+        "Todavía no hay nada aquí"
       ],
       "of": [
         "de"
@@ -3546,7 +3546,7 @@
         "Enlace compartible para ${ boldNameText }"
       ],
       "Shared link not found": [
-        "No se ha encontrado el enlace compartido."
+        "Enlace compartido no encontrado"
       ],
       "Signature cannot be validated due to network error, please try again later.": [
         "Error al validar la firma debido a errores de red. Inténtalo de nuevo más tarde."
@@ -3603,7 +3603,7 @@
         "Este navegador no admite la previsualización de documentos PDF. Descarga el archivo."
       ],
       "This file may have been deleted, moved or made unavailable. Try reaching out to the file owner.": [
-        "Es posible que este archivo se haya eliminado, movido o dejado de estar disponible. Póngate en contacto con el propietario del archivo."
+        "Es posible que este archivo se haya eliminado, movido o no esté disponible. Ponte en contacto con el propietario del archivo."
       ],
       "This link leads to a website that might be trying to steal your information, such as passwords and credit card details.": [
         "Este enlace conduce a un sitio web que podría estar intentando robar tus datos, como contraseñas y datos de tarjetas de crédito."
@@ -3634,7 +3634,7 @@
         "Esta acción sobreescribirá la carpeta existente."
       ],
       "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on\nthe device won’t be affected.": [
-        "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected."
+        "Esto elimina de ${ DRIVE_APP_NAME } el dispositivo sincronizado ${ deviceName }. Los archivos locales en el dispositivo no se verán afectados."
       ],
       "To enable truly private search ${ DRIVE_APP_NAME } needs to index your files locally.": [
         "Para habilitar una búsqueda realmente privada, ${ DRIVE_APP_NAME } necesita indexar tus archivos localmente."
@@ -4045,7 +4045,7 @@
         "Cifrar correos electrónicos"
       ],
       "Enter device name": [
-        "Introduce el nombre del dispositivo."
+        "Introduce el nombre del dispositivo"
       ],
       "Expired": [
         "Expirado"
@@ -5327,7 +5327,7 @@
         "Grupos"
       ],
       "Hm, we couldn't find that one": [
-        "No hemos podido encontrar este elemento."
+        "¡Ups! No pudimos encontrar lo que buscas."
       ],
       "Human verification": [
         "Verificación humana"
@@ -5385,7 +5385,7 @@
         "Nombre"
       ],
       "No results found": [
-        "No se han encontrado resultados."
+        "No hay resultados"
       ],
       "Number of files": [
         "Número de archivos"

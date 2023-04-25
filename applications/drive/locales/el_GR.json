@@ -1945,7 +1945,7 @@
       ],
       "One of the groups has no contacts: ${ noContactGroupList }": [
         "Μία από τις ομάδες δεν έχει επαφές: : ${ noContactGroupList }",
-        "Κάποιες ομάδες δεν έχουν επαφές: : ${ noContactGroupList }"
+        "Κάποιες ομάδες δεν έχουν επαφές: : ${ noContactGroupList } "
       ],
       "Password is required": [
         "Απαιτείται κωδικός πρόσβασης"
@@ -2652,8 +2652,8 @@
         "${ canceledCount } ακυρώθηκαν"
       ],
       "${ contactCount } contact contains multiple email addresses.": [
-        "${ contactCount } επαφή περιέχει πολλές διευθύνσεις ηλεκτρονικού ταχυδρομείου.",
-        "${ contactCount } επαφές περιέχουν πολλές διευθύνσεις ηλεκτρονικού ταχυδρομείου."
+        "${ contactCount } επαφή περιέχει πολλαπλές διευθύνσεις ηλεκτρονικού ταχυδρομείου.",
+        "${ contactCount } επαφές περιέχουν πολλαπλές διευθύνσεις ηλεκτρονικού ταχυδρομείου."
       ],
       "${ contactEmailsLength } Member": [
         "${ contactEmailsLength } Μέλος",
@@ -2800,7 +2800,7 @@
         "Χρειάζεται προσοχή"
       ],
       "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access\nor decrypt your files for you. To unlock your drive after a password reset,\nyou must have one of the following:": [
-        "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:"
+        "Επειδή το ${ DRIVE_APP_NAME } είναι διατερματικά κρυπτογραφημένο, δεν μπορούμε να προσπελάσουμε ή να αποκρυπτογραφήσουμε τα αρχεία σας για εσάς. Για να ξεκλειδώσετε την αρχειοθήκη σας μετά από επαναφορά κωδικού πρόσβασης, πρέπει να έχετε ένα από τα εξής:"
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
         "Πριν αιτηθείτε νέο κωδικό επαλήθευσης, ελέγξτε τον φάκελό σας Ενοχλητικά και ότι η ${ strong } είναι η σωστή διεύθυνση."
@@ -2882,8 +2882,8 @@
         "Υποστηρίζονται αρχεία CSV από Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora και κάποιες άλλες εφαρμογές, καθώς και μορφές vCard 3.1 και 4.0 (κωδικοποίηση UTF-8)."
       ],
       "Delete locked drive": [
-        "Διαγραφή κλειδωμένης μονάδας δίσκου",
-        "Διαγραφή κλειδωμένων μονάδων δίσκου"
+        "Διαγραφή κλειδωμένης αρχειοθήκης",
+        "Διαγραφή κλειδωμένων αρχειοθηκών"
       ],
       "Digital signature verified. This file was securely uploaded by ${ emailAddress }.": [
         "Η ψηφιακή υπογραφή επαληθεύτηκε. Το αρχείο ανέβηκε διασφαλισμένα από ${ emailAddress }."
@@ -3040,7 +3040,7 @@
         "Αν δεν βρείτε το μήνυμα στα Εισερχόμενα, παρακαλούμε ελέγξτε τον φάκελο Ενοχλητικά."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
-        "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process."
+        "Εάν έχετε ένα από αυτά, συνεχίστε στη ρύθμιση λογαριασμού ${ BRAND_NAME }\nγια να αρχίσετε τη διαδικασία ξεμπλοκαρίσματος."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "Εισαγωγή ${ calendarCount } από ${ totalCalendarsCount } ημερολόγιο",
@@ -3401,7 +3401,7 @@
         "Αυτή η εγγραφή θα διαγράψει τον φάκελο που ήδη υπάρχει"
       ],
       "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on\nthe device won’t be affected.": [
-        "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected."
+        "Αυτό θα διαγράψει από ${ DRIVE_APP_NAME } τη συγχρονισμένη συσκευή ${ deviceName }. Τοπικά αρχεία στη συσκευή δεν θα επηρεαστούν."
       ],
       "To enable truly private search ${ DRIVE_APP_NAME } needs to index your files locally.": [
         "Για την ενεργοποίηση αληθινά ιδιωτικής αναζήτησης, το ${ DRIVE_APP_NAME } χρειάζεται να δεικτοδοτήσει τα αρχεία σας τοπικά."
@@ -4348,7 +4348,7 @@
       ],
       "Move ${ itemsToMoveCount } file": [
         "Μετακίνηση ${ itemsToMoveCount } αρχείου",
-        "Μετακίνηση ${ itemsToMoveCount} αρχείων"
+        "Μετακίνηση ${ itemsToMoveCount } αρχείων"
       ],
       "Move ${ itemsToMoveCount } folder": [
         "Μετακίνηση ${ itemsToMoveCount } φακέλου",
@@ -4363,8 +4363,8 @@
         "Μετακίνηση ${ movingCount } αρχείων"
       ],
       "Move ${ movingCount } folder": [
-        "Μετακίνηση ${ movingCount } φάκελου",
-        "Μετακίνηση ${ movingCount } φάκελων"
+        "Μετακίνηση ${ movingCount } φακέλου",
+        "Μετακίνηση ${ movingCount } φακέλων"
       ],
       "Move ${ movingCount } item": [
         "Μετακίνηση ${ movingCount } στοιχείου",
@@ -4770,12 +4770,12 @@
     },
     "Time unit for duration; displayed in the time picker": {
       "${ hours } h": [
-        "${ hours } ώ.",
-        "${ hours } ώ."
+        "${ hours } ώ",
+        "${ hours } ώ"
       ],
       "${ hoursInt }.5 h": [
-        "${ hoursInt }.5 ώ.",
-        "${ hoursInt }.5 ώ."
+        "${ hoursInt }.5 ώ",
+        "${ hoursInt }.5 ώ"
       ],
       "${ minutes } min": [
         "${ minutes } λ.",
@@ -5368,8 +5368,8 @@
         "Θέλετε σίγουρα να απορρίψετε την εισαγωγή σας;"
       ],
       "Are you sure you want to permanently delete ${ count } contact group?": [
-        "Θέλετε σίγουρα να εξαλείψετε οριστικά ${ count } ομάδα επαφών;",
-        "Θέλετε σίγουρα να εξαλείψετε οριστικά ${ count } ομάδες επαφών;"
+        "Θέλετε σίγουρα να διαγράψετε οριστικά ${ count } ομάδα επαφών;",
+        "Θέλετε σίγουρα να διαγράψετε οριστικά ${ count } ομάδες επαφών;"
       ],
       "Are you sure you want to permanently delete ${ count } contact?": [
         "Είστε βέβαιοι ότι θέλετε να διαγράψετε οριστικά ${ count } επαφή;",

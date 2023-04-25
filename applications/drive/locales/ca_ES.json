@@ -2184,7 +2184,7 @@
         "Error en el xifratge"
       ],
       "vCard versions < 3.0 not supported": [
-        "versions vCard < 3.0 no suportades"
+        "Versions de vCard < 3.0 no suportades"
       ]
     },
     "Error importing contacts": {
@@ -2552,7 +2552,7 @@
         "${ CALENDAR_APP_NAME } actualment no permet determinats tipus d'esdeveniments, detalls i formats."
       ],
       "vCard versions < 3.0": [
-        "versions vCard < 3.0"
+        "Versions de vCard < 3.0"
       ]
     },
     "Import calendar; import invitation": {
@@ -2979,7 +2979,7 @@
         "Requereix atenció"
       ],
       "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access\nor decrypt your files for you. To unlock your drive after a password reset,\nyou must have one of the following:": [
-        "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:"
+        "Perquè ${ DRIVE_APP_NAME } és xifrada punt a punt, no podem accedir o desxifrar els teus fitxers per tu. Per a desbloquejar la teva unitat després d'un canvi de password, has de tenir un dels següents:"
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
         "Abans de sol·licitar un nou codi de verificació, reviseu la carpeta de correu brossa i si ${ strong } és l'adreça correcta."
@@ -3243,7 +3243,7 @@
         "Si no trobeu el correu electrònic a la safata d'entrada, comproveu la vostra carpeta de correu brossa."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
-        "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process."
+        "Si tens un d'aquests, aneu a la configuració del Compte ${ BRAND_NAME } per a iniciar el procés de desbloqueig."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "Importa ${ calendarCount } de ${ totalCalendarsCount } calendari",
@@ -3631,7 +3631,7 @@
         "Se sobreescriurà la carpeta existent"
       ],
       "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on\nthe device won’t be affected.": [
-        "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected."
+        "Això eliminarà des de ${ DRIVE_APP_NAME } el dispositiu sincronitzat ${ deviceName }. Els fitxers locals al dispositiu no es veuran afectats."
       ],
       "To enable truly private search ${ DRIVE_APP_NAME } needs to index your files locally.": [
         "Per activar la cerca realment privada ${ DRIVE_APP_NAME } necessita indexar els teus fitxers localment."

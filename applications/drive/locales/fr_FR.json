@@ -32,7 +32,7 @@
         "Ajouter un contact"
       ],
       "Add email": [
-        "Ajouter une adresse e-mail"
+        "Ajouter un e-mail"
       ],
       "Add group": [
         "Ajouter un groupe"
@@ -331,7 +331,7 @@
         "Importer des calendriers"
       ],
       "Import contacts": [
-        "Importer les contacts"
+        "Importer des contacts"
       ],
       "Import emails": [
         "Importer des e-mails"
@@ -1882,7 +1882,7 @@
         "L'authentification a été annulée."
       ],
       "Authentication error.": [
-        "Erreur d'authentification."
+        "Erreur d'authentification"
       ],
       "Calendar limit reached": [
         "La limite du nombre de calendriers est atteinte."
@@ -1917,7 +1917,7 @@
         "L'adresse e-mail est nécessaire."
       ],
       "Email is not valid": [
-        "L'adresse e-mail n'est pas valide."
+        "L'e-mail n'est pas valide."
       ],
       "Enter 6 digits": [
         "Saisissez 6 chiffres."
@@ -2184,7 +2184,7 @@
         "Le chiffrement n'a pas abouti."
       ],
       "vCard versions < 3.0 not supported": [
-        "versions de vCard < 3.0 non prises en charge"
+        "Versions de vCard < 3.0 non prises en charge"
       ]
     },
     "Error importing contacts": {
@@ -2510,7 +2510,7 @@
         "CAPTCHA"
       ],
       "Email": [
-        "Adresse e-mail"
+        "E-mail"
       ],
       "Manual": [
         "Manuel"
@@ -2558,7 +2558,7 @@
         "${ CALENDAR_APP_NAME } ne prend actuellement pas en charge certains types d'événements, détails et formats."
       ],
       "vCard versions < 3.0": [
-        "versions de vCard < 3.0"
+        "Versions de vCard < 3.0"
       ]
     },
     "Import calendar; import invitation": {
@@ -2893,7 +2893,7 @@
         "${ selectedCalendarsTotal } calendriers sur ${ providerCalendars.length }"
       ],
       "${ selectedCount } selected": [
-        "${ selectedCount } sélectionné(s)"
+        "Sélection : ${ selectedCount }"
       ],
       "${ selectedFoldersCount } folder selected": [
         "${ selectedFoldersCount } dossier sélectionné",
@@ -2985,7 +2985,7 @@
         "Attention requise"
       ],
       "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access\nor decrypt your files for you. To unlock your drive after a password reset,\nyou must have one of the following:": [
-        "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:"
+        "${ DRIVE_APP_NAME } étant chiffré de bout en bout, nous ne pouvons pas accéder à vos fichiers, ni les déchiffrer pour vous. Pour déverrouiller votre drive après une réinitialisation de mot de passe, vous devez avoir l'un des éléments suivants :"
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
         "Avant de demander un nouveau code de vérification, nous vous recommandons de vérifier votre dossier indésirables/spam et de vous assurer que l'adresse ${ strong } est correcte."
@@ -3249,7 +3249,7 @@
         "Si vous ne trouvez pas le message dans votre boîte de réception, vérifiez votre dossier Indésirables/spam."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
-        "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process."
+        "Si vous avez un de ces éléments, passez à la configuration du compte ${ BRAND_NAME } pour commencer le processus de déblocage."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "Importer ${ calendarCount } calendrier sur ${ totalCalendarsCount }",
@@ -3268,7 +3268,7 @@
         "Importer une messagerie"
       ],
       "Import your emails, calendars, and contacts from another service to ${ BRAND_NAME }.": [
-        "Importez vos e-mails, calendriers et contacts depuis un autre service vers ${ BRAND_NAME }."
+        "Importez vos messages, calendriers et contacts depuis un autre service vers ${ BRAND_NAME }."
       ],
       "Importing your data from ${ fromEmail } to ${ toEmail }.": [
         "Vos données sont en cours d'importation depuis ${ fromEmail } vers ${ toEmail }."
@@ -3458,7 +3458,7 @@
         "Notez que les adresses assignées à ce groupe ne seront PAS supprimées."
       ],
       "Please note that this process may take some time depending on the size of your address book.": [
-        "Notez que ce processus peut prendre un certain temps en fonction de la taille de votre carnet d'adresses."
+        "Notez que ce processus peut prendre un certain temps selon la taille de votre carnet d'adresses."
       ],
       "Please select the folders you would like to import:": [
         "Sélectionnez les dossiers que vous voulez importer :"
@@ -3600,7 +3600,7 @@
         "Ce compte a été suspendu en raison d’une violation potentielle des règles d’utilisation."
       ],
       "This address is disabled. To be able to send to this address, the owner must first enable the address.": [
-        "Cette adresse est désactivée. Pour pouvoir envoyer des e-mails à cette adresse, son propriétaire doit d’abord l’activer."
+        "Cette adresse est désactivée. Pour pouvoir envoyer des messages à cette adresse, son propriétaire doit d’abord l’activer."
       ],
       "This browser does not support previewing PDF documents. Please download the file.": [
         "Ce navigateur ne prend pas en charge l'aperçu des documents PDF. Téléchargez le fichier."
@@ -3637,7 +3637,7 @@
         "Ceci écrasera et remplacera le dossier existant."
       ],
       "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on\nthe device won’t be affected.": [
-        "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected."
+        "Cela supprimera l'appareil synchronisé ${ deviceName } de ${ DRIVE_APP_NAME }. Les fichiers locaux\nsur l'appareil ne seront pas affectés."
       ],
       "To enable truly private search ${ DRIVE_APP_NAME } needs to index your files locally.": [
         "Pour que la recherche soit réellement privée, ${ DRIVE_APP_NAME } doit indexer vos fichiers localement."
@@ -3694,7 +3694,7 @@
         "Actualisation de la recherche dans Drive..."
       ],
       "Upgrade now to get premium features, products and storage at a special price": [
-        "Passez à la version supérieure pour bénéficier de fonctions, de produits et d'un espace de stockage premium à un tarif avantageux"
+        "Passez à la version supérieure pour profiter de fonctionnalités, de produits et d'espace de stockage premium à un tarif avantageux."
       ],
       "Uploaded": [
         "Importé"
@@ -4027,7 +4027,7 @@
         "Format du message"
       ],
       "Email or username": [
-        "Adresse e-mail ou nom d'utilisateur"
+        "E-mail ou nom d'utilisateur"
       ],
       "Emails": [
         "E-mails"
@@ -4460,10 +4460,10 @@
         "Comment importer des contacts depuis Yahoo"
       ],
       "How to import emails from another service": [
-        "Comment importer des e-mails depuis un autre service"
+        "Comment importer des messages depuis un autre service"
       ],
       "How to import emails from Yahoo": [
-        "Comment importer des e-mails depuis Yahoo"
+        "Comment importer des messages depuis Yahoo"
       ]
     },
     "New Label form": {
@@ -4848,7 +4848,7 @@
         "Rechercher un nom de groupe"
       ],
       "Search for name or email": [
-        "Rechercher par nom ou par adresse e-mail"
+        "Rechercher par nom ou par e-mail"
       ],
       "Select": [
         "Sélectionner"
@@ -4890,7 +4890,7 @@
         "Adresse"
       ],
       "Email": [
-        "Adresse e-mail"
+        "E-mail"
       ],
       "Fax": [
         "Fax"
@@ -5523,7 +5523,7 @@
         "Adresses e-mail"
       ],
       "Email settings": [
-        "Paramètres d'adresse e-mail"
+        "Paramètres d'e-mail"
       ],
       "Empty trash": [
         "Vider le dossier Corbeille"
@@ -5892,7 +5892,7 @@
         "L'importation commencera par les messages les plus récents."
       ],
       "Upload a public key to enable sending end-to-end encrypted emails to this email": [
-        "Chargez une clé publique pour activer l'envoi de messages chiffrés de bout en bout vers cette adresse e-mail."
+        "Chargez une clé publique pour activer l'envoi d'e-mails chiffrés de bout en bout à destination de cet e-mail."
       ],
       "You do not have any contacts to export": [
         "Vous n'avez aucun contact à exporter."

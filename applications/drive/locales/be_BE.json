@@ -434,7 +434,7 @@
         "Паўторна падпісаць"
       ],
       "Reconnect": [
-        "Перападлучыцца"
+        "Перападключыцца"
       ],
       "Recover data": [
         "Аднавіць даныя"
@@ -749,7 +749,7 @@
         "Праблема з календаром"
       ],
       "Connection problem": [
-        "Праблема са злучэннем"
+        "Праблема з падключэннем"
       ],
       "Contacts problem": [
         "Праблема з кантактамі"
@@ -2204,7 +2204,7 @@
         "Не ўдалося зашыфраваць"
       ],
       "vCard versions < 3.0 not supported": [
-        "Версіі vCard < 3.0 не падтрымліваюцца"
+        "Верcіі vCard ніжэйшыя за 3.0 не падтрымліваюцца"
       ]
     },
     "Error importing contacts": {
@@ -2662,19 +2662,19 @@
     },
     "Import error": {
       "${ BRAND_NAME } can't connect to your account. Please make sure that:": [
-        "${ BRAND_NAME } не можа злучыцца з вашым уліковым запісам. Пераканайцеся, што:"
+        "${ BRAND_NAME } не можа падключыцца да вашага ўліковага запісу. Пераканайцеся, што:"
       ],
       "${ BRAND_NAME } can't connect to your external account. Please make sure that the mail server address and port number are correct.": [
-        "${ BRAND_NAME } не можа злучыцца з вашым знешнім уліковым запісам Gmail. Пераканайцеся, што вы правільна пазначылі паштовы сервер і нумар парта."
+        "${ BRAND_NAME } не можа падключыцца да вашага знешняга ўліковага запісу. Пераканайцеся, што вы правільна пазначылі паштовы сервер і нумар парта."
       ],
       "${ BRAND_NAME } can't connect to your external account. Please make sure that:": [
-        "${ BRAND_NAME } не можа злучыцца з вашым знешнім уліковым запісам Yahoo. Пераканайцеся, што:"
+        "${ BRAND_NAME } не можа падключыцца да вашага знешняга ўліковага запісу. Пераканайцеся, што:"
       ],
       "${ BRAND_NAME } can't connect to your Yahoo account. Please make sure that the mail server address and port number are correct.": [
-        "${ BRAND_NAME } не можа злучыцца з вашым уліковым запісам Yahoo. Пераканайцеся, што вы правільна пазначылі паштовы сервер і нумар парта."
+        "${ BRAND_NAME } не можа падключыцца да вашага ўліковага запісу Yahoo. Пераканайцеся, што вы правільна пазначылі паштовы сервер і нумар парта."
       ],
       "${ BRAND_NAME } can't connect to your Yahoo account. Please make sure that:": [
-        "${ BRAND_NAME } не можа злучыцца з вашым уліковым запісам Yahoo. Пераканайцеся, што:"
+        "${ BRAND_NAME } не можа падключыцца да вашага ўліковага запісу Yahoo. Пераканайцеся, што:"
       ],
       "2-step verification is enabled in your external account.": [
         "Двухэтапная праверка ўключана ў вашым знешнім уліковым запісе."
@@ -3083,7 +3083,7 @@
         "Патрабуецца ўвага"
       ],
       "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access\nor decrypt your files for you. To unlock your drive after a password reset,\nyou must have one of the following:": [
-        "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:"
+        "Паколькі праграма ${ DRIVE_APP_NAME } зашыфравана скразным метадам, мы не можам атрымаць доступ або расшыфраваць вашы файлы. Для разблакіравання вашага дыска пасля скідання пароля вы павінны мець адну з наступных прылад:"
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
         "Перад запытам новага праверачнага кода праверце папку са спамам, а таксама ці правільна азначаны адрас ${ strong }."
@@ -3209,7 +3209,7 @@
         "Спампоўванне файла ${ downloadFileName } было перарвана"
       ],
       "Download paused due to connection issue; it will resume automatically": [
-        "Спампоўванне прыпынена па прычыне праблем са злучэннем; яно будзе ўзноўлена аўтаматычна"
+        "Спампоўванне прыпынена па прычыне праблем з падключэннем; яно будзе ўзноўлена аўтаматычна"
       ],
       "Downloaded": [
         "Спампавана"
@@ -3350,10 +3350,10 @@
         "Калі вы ўпэўнены, што гэта памылка, напішыце нам на адрас ${ contactLink }."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
-        "Калі паведамлення няма ў папцы \"Уваходныя\", то магчыма, што яно трапіла ў папку \"Спам\"."
+        "Калі паведамлення няма ў папцы з уваходнымі лістамі, то магчыма, што яно трапіла ў папку са спамам."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
-        "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process."
+        "Калі ў вас ёсць што-небудзь з гэтага, перайдзіце ў налады ўліковага запісу ${ BRAND_NAME }, каб працягнуць працэс разблакіроўкі."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "Імпартаванне ${ calendarCount } календара з ${ totalCalendarsCount }",
@@ -3395,13 +3395,13 @@
         "Ініцыялізацыя"
       ],
       "Internet connection lost": [
-        "Злучэнне з інтэрнэтам страчана"
+        "Падключэнне да інтэрнэту страчана"
       ],
       "Internet connection lost. Please check your device's connectivity.": [
-        "Злучэнне з інтэрнэтам страчана. Праверце, ці падлучана ваша прылада."
+        "Падключэнне да інтэрнэту страчана. Праверце падключэнне вашай прылады."
       ],
       "Internet connection restored.": [
-        "Злучэнне з інтэрнэтам адноўлена."
+        "Падключэнне да інтэрнэту адноўлена."
       ],
       "It looks like you recently tried to upload ${ uploadName }. If the upload failed, please ${ replaceFile }. If the upload is still in progress, replacing it will cancel the ongoing upload.": [
         "Здаецца, што вы нядаўна спрабавалі запампаваць ${ uploadName }. Калі гэта спроба была няўдалай, ${ replaceFile }. Калі ўсё яшчэ выконваецца запампоўванне, замена файла скасуе бягучае запампоўванне."
@@ -3749,7 +3749,7 @@
         "Гэта перазапіша існуючую папку"
       ],
       "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on\nthe device won’t be affected.": [
-        "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected."
+        "Гэта выдаліць з ${ DRIVE_APP_NAME } сінхранізаваную прыладу з назвай ${ deviceName }. Лакальныя файлы застануцца не змененымі."
       ],
       "To enable truly private search ${ DRIVE_APP_NAME } needs to index your files locally.": [
         "${ DRIVE_APP_NAME } неабходна лакальна праіндэксаваць вашы файлы для таго, каб задзейнічаць сапраўды прыватны пошук."
@@ -4508,7 +4508,7 @@
         "Колькасць створаных календароў: ${ createdCalendarCount } з ${ calendarsToBeCreated }"
       ],
       "Connecting to your email provider": [
-        "Злучэнне з вашым пастаўшчыком паслуг электроннай пошты"
+        "Падключэнне да вашага пастаўшчыка паслуг электроннай пошты"
       ],
       "Creating new calendars": [
         "Стварэнне новых календароў"
@@ -5635,7 +5635,7 @@
         "Паўторна падпісаць кантакты"
       ],
       "Reconnect your account": [
-        "Перападлучыць свой уліковы запіс"
+        "Перападключыць свой уліковы запіс"
       ],
       "Recover data": [
         "Аднаўленне даных"

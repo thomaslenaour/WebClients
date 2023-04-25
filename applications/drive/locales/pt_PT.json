@@ -24,7 +24,7 @@
         "Adicionar contacto"
       ],
       "Add email": [
-        "Adicionar e-mail"
+        "Adicionar um correio electrónico"
       ],
       "Add group": [
         "Adicionar grupo"
@@ -194,7 +194,7 @@
         "Editar"
       ],
       "Edit email address": [
-        "Editar o endereço de email"
+        "Editar o endereço de correio electrónico"
       ],
       "Edit label": [
         "Editar etiqueta"
@@ -206,13 +206,13 @@
         "Editar detalhes do início de sessão"
       ],
       "Email settings": [
-        "Definições de email"
+        "Definições de correio electrónico"
       ],
       "Empty trash": [
         "Esvaziar lixo"
       ],
       "enable desktop notifications": [
-        "activar as notificações"
+        "ativar as notificações"
       ],
       "Export": [
         "Exportar"
@@ -245,7 +245,7 @@
         "Ir para as definições"
       ],
       "Got it": [
-        "Percebi"
+        "Entendido"
       ],
       "Hide advanced PGP settings": [
         "Ocultar definições de PGP avançadas"
@@ -266,13 +266,13 @@
         "importar"
       ],
       "Import calendars": [
-        "Importar agendas"
+        "Importar calendários"
       ],
       "Import contacts": [
         "Importar contactos"
       ],
       "Import emails": [
-        "Importar e-mails"
+        "Importar correios electrónicos"
       ],
       "Import from .csv or vCard": [
         "Importar de .csv ou vCard"
@@ -365,10 +365,10 @@
         "Referencie um amigo"
       ],
       "Refresh the page": [
-        "Actualizar a página"
+        "Atualizar a página"
       ],
       "refresh the page": [
-        "actualizar a página"
+        "atualizar a página"
       ],
       "Remove": [
         "Remover"
@@ -395,7 +395,7 @@
         "Reenviar código"
       ],
       "Reset to default": [
-        "Repor predefinição"
+        "Reinicialização por defeito"
       ],
       "Restart download": [
         "Reiniciar transferência"
@@ -518,7 +518,7 @@
         "Atualizar frase de recuperação"
       ],
       "Upgrade": [
-        "Actualizar"
+        "Atualizar"
       ],
       "Upgrade now": [
         "Atualizar agora"
@@ -571,7 +571,7 @@
         "Nenhum resultado."
       ],
       "Please try another search term.": [
-        "Por favor, tente outro termo de procura."
+        "Tente outro termo de procura."
       ],
       "You don't have any contacts.": [
         "Ainda não tem contactos."
@@ -590,13 +590,13 @@
     },
     "Attached ics file error": {
       "Invalid event": [
-        "Evento inválido"
+        "Evento não válido"
       ],
       "Invalid ICS file": [
-        "Ficheiro ICS inválido"
+        "Ficheiro ICS não válido"
       ],
       "Invalid method": [
-        "Método inválido"
+        "Método não válido"
       ],
       "Unsupported event": [
         "Evento não suportado"
@@ -604,7 +604,7 @@
     },
     "Beta access description": {
       "If you encounter issues, you can always disable Beta Access.": [
-        "Se encontrar problemas, pode sempre desactivar o acesso Beta."
+        "Se encontrar problemas, pode sempre desativar o acesso Beta."
       ]
     },
     "Bug category": {
@@ -615,7 +615,7 @@
         "Problema na Bridge"
       ],
       "Calendar problem": [
-        "Problema na agenda"
+        "Problema no calendário"
       ],
       "Connection problem": [
         "Problema com a ligação"
@@ -669,7 +669,7 @@
         "Problema de transmissão"
       ],
       "Update problem": [
-        "Problema de actualização"
+        "Problema de atualização"
       ],
       "VPN problem": [
         "Problema de VPN"
@@ -702,7 +702,7 @@
         "Data de nascimento"
       ],
       "Email": [
-        "Email"
+        "Correio electrónico"
       ],
       "Gender": [
         "Sexo"
@@ -1554,7 +1554,7 @@
         "A encriptar e importar contactos... Pode levar alguns minutos. Quando o processo terminar, poderá fechar este diálogo."
       ],
       "It looks like the contact list you are importing contains some groups. Please review how these groups should be imported.": [
-        "Parece que a lista de contactos que está a importar já contém grupos. Por favor, reveja como esses grupos devem ser importados."
+        "Parece que a lista de contactos que está a importar já contém grupos. Reveja como esses grupos devem ser importados."
       ],
       "Merging contacts... This may take a few minutes. When the process is completed, you can close this modal.": [
         "A unir contactos... Pode levar alguns minutos. Quando o processo terminar, poderá fechar este diálogo."
@@ -1563,7 +1563,7 @@
         "Arraste e largue para alterar a prioridade de união entre contactos. Desmarque os contactos que não deseja unir."
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
-        "Pode importar eventos em formato iCal (ficheiro ICS). O ficheiro deve ter um tamanho máximo de ${ MAX_IMPORT_FILE_SIZE_STRING } e ter até ${ MAX_IMPORT_EVENTS_STRING } eventos. Se o seu ficheiro for maior, por favor divida-o."
+        "Pode importar eventos em formato iCal (ficheiro ICS). O ficheiro deve ter um tamanho máximo de ${ MAX_IMPORT_FILE_SIZE_STRING } e ter até ${ MAX_IMPORT_EVENTS_STRING } eventos. Se o seu ficheiro for maior, divida-o."
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Pode marcar para eliminação os contactos que não deseja unir nem manter. A eliminação só ocorrerá depois de clicar no botão de união"
@@ -1574,7 +1574,7 @@
         "Também fizemos corresponder campos CSV com campos vCard. Pode rever e alterar as correspondências manualmente."
       ],
       "We have detected the following fields in the CSV file you uploaded. Check the ones you want to import.": [
-        "Encontrámos os seguintes campos no ficheiro CSV que enviou. Por favor, marque aqueles que deseja importar."
+        "Encontrámos os seguintes campos no ficheiro CSV que enviou. Marque aqueles que deseja importar."
       ]
     },
     "Email body for description (description part)": {
@@ -1587,7 +1587,7 @@
         "${ eventTitle } foi cancelado."
       ],
       "${ eventTitle } has been updated.\n${ eventDetailsText }": [
-        "${ eventTitle } foi actualizado.\n${ eventDetailsText }"
+        "${ eventTitle } foi atualizado.\n${ eventDetailsText }"
       ],
       "You are invited to ${ eventTitle }\n${ eventDetailsText }": [
         "Tem um convite para ${ eventTitle }\n${ eventDetailsText }"
@@ -1634,10 +1634,10 @@
         "Convite para um evento começando em ${ formattedStart }"
       ],
       "Update for an event on ${ formattedStart }": [
-        "Actualização para um evento em ${ formattedStart }"
+        "Atualização para um evento em ${ formattedStart }"
       ],
       "Update for an event starting on ${ formattedStart }": [
-        "Actualização para um evento começando em ${ formattedStart }"
+        "Atualização para um evento começando em ${ formattedStart }"
       ]
     },
     "Error": {
@@ -1666,7 +1666,7 @@
         "Domínio indisponível, tente novamente mais tarde"
       ],
       "Email is not valid": [
-        "Email inválido"
+        "O correio electrónico não é válido."
       ],
       "Enter 6 digits": [
         "Insira 6 algarismos"
@@ -1678,39 +1678,39 @@
         "Credenciais de início de sessão incorrectas. Tente novamente."
       ],
       "Incorrect mailbox password. Please try again.": [
-        "Senha da caixa de correio incorrecta. Por favor, tente novamente."
+        "Palavra-passe da caixa de correio incorrecta. Tente novamente."
       ],
       "Incorrect password. Please try again.": [
-        "Senha incorrecta, tente novamente."
+        "Palavra-passe incorrecta. Tente novamente."
       ],
       "Invalid email address": [
-        "Endereço electrónico inválido"
+        "Endereço electrónico não válido"
       ],
       "Invalid name": [
-        "Nome inválido"
+        "Nome não válido"
       ],
       "Invalid public key file": [
-        "Ficheiro de chave pública inválido"
+        "Ficheiro de chave pública não válido"
       ],
       "Invalid verification code": [
-        "Código de verificação inválido"
+        "Código de verificação não válido"
       ],
       "Missing signature": [
         "Assinatura em falta"
       ],
       "Not a valid number": [
-        "Número inválido"
+        "Número não válido"
       ],
       "One of the contacts has no email address: ${ noEmailsContactNamesList }": [
-        "Um dos contactos não tem endereço de email: ${ noEmailsContactNamesList }",
-        "Alguns contactos não têm endereço de email: ${ noEmailsContactNamesList } "
+        "Um dos contactos não tem um endereço de correio electrónico: ${ noEmailsContactNamesList }",
+        "Alguns contactos não têm endereços de correio electrónico: ${ noEmailsContactNamesList } "
       ],
       "One of the groups has no contacts: ${ noContactGroupList }": [
         "Um dos grupos não tem contactos: ${ noContactGroupList }",
         "Alguns grupos não têm contactos: ${ noContactGroupList } "
       ],
       "Passwords do not match": [
-        "As senhas não coincidem"
+        "As palavras-passe não coincidem."
       ],
       "Signature not verified": [
         "Assinatura não verificada"
@@ -1725,16 +1725,16 @@
         "Alguns grupos não puderam ser eliminados"
       ],
       "Some of your folder names are unavailable. Please customize the import to edit these names.": [
-        "Alguns dos seus nomes de pasta estão indisponíveis. Por favor, personalize esses nomes antes de importar."
+        "Alguns dos seus nomes de pasta estão indisponíveis. Personalize esses nomes antes de importar."
       ],
       "Something went wrong, please ${ refresh } in order to proceed. If you still see this error message please contact our ${ supportTeam }.": [
-        "Algo correu mal, por favor ${ refresh } para continuar. Se ainda vir esta mensagem de erro, por favor, contacte a nossa ${ supportTeam }."
+        "Ocorreu um problema. ${ refresh } para continuar. Se ainda vir esta mensagem de erro, contacte a nossa ${ supportTeam }."
       ],
       "The folder name is invalid. Please choose a different name.": [
-        "O nome da pasta é inválido. Por favor, escolha um nome diferente."
+        "O nome da pasta não é válido. Escolha um nome diferente."
       ],
       "The label name is invalid. Please choose a different name.": [
-        "O nome da etiqueta é inválido. Por favor, escolha um nome diferente."
+        "O nome da etiqueta não é válido. Escolha um nome diferente."
       ],
       "There was an error when exporting the contacts vCards": [
         "Ocorreu um erro ao exportar os vCards dos contactos"
@@ -1749,7 +1749,7 @@
         "Erro desconhecido"
       ],
       "You can't send a mail to more than 100 recipients": [
-        "Não pode enviar um email para mais de 100 destinatários"
+        "Não pode enviar um correio electrónico para mais de 100 destinatários."
       ],
       "You must set a name": [
         "Tem de definir um nome"
@@ -1782,7 +1782,7 @@
         "O ficheiro ${ formattedFilename } está vazio."
       ],
       "Your file ${ formattedFilename } is not a calendar.": [
-        "O ficheiro ${ formattedFilename } não é uma agenda."
+        "O ficheiro ${ formattedFilename } não é um calendário."
       ]
     },
     "Error importing contact": {
@@ -1818,7 +1818,7 @@
         "Formato errado. O componente não pode ser lido."
       ],
       "Calendar": [
-        "Agenda"
+        "Calendário"
       ],
       "Component with wrong format": [
         "Componente com formato errado"
@@ -1848,7 +1848,7 @@
         "Informação de tempo livre/ocupado"
       ],
       "Invalid event": [
-        "Evento inválido"
+        "Evento não válido"
       ],
       "Journal entry": [
         "Entrada de diário"
@@ -1919,7 +1919,7 @@
         "Também pode ${ refresh } ou tentar mais tarde."
       ],
       "You may also refresh the page or try again later.": [
-        "Também pode actualizar a página ou tentar de novo mais tarde."
+        "Também pode atualizar a página ou tentar de novo mais tarde."
       ]
     },
     "Error notification": {
@@ -1937,10 +1937,10 @@
         "O ficheiro ICS anexado não pôde ser desencriptado"
       ],
       "Invalid invitation": [
-        "Convite inválido"
+        "Convite não válido"
       ],
       "Invalid response": [
-        "Resposta inválida"
+        "Resposta não válida"
       ],
       "Unexpected error": [
         "Erro inesperado"
@@ -1952,16 +1952,16 @@
         "Resposta não suportada"
       ],
       "We could not cancel the event in your calendar": [
-        "Impossível cancelar o evento na sua agenda"
+        "Impossível cancelar o evento no seu calendário"
       ],
       "We could not retrieve the event from your calendar": [
-        "Impossível obter o evento da sua agenda"
+        "Impossível obter o evento do seu calendário"
       ],
       "We could not update the event in your calendar": [
-        "Impossível actualizar o evento na sua agenda"
+        "Impossível atualizar o evento no seu calendário"
       ],
       "Your answer was sent, but the event could not be added to your calendar": [
-        "A sua resposta foi enviada, mas o evento não pôde ser adicionado à sua agenda"
+        "A sua resposta foi enviada, mas o evento não pôde ser adicionado ao seu calendário."
       ]
     },
     "Event title": {
@@ -2004,7 +2004,7 @@
     },
     "Filter notification": {
       "${ Label.Name } updated": [
-        "${ Label.Name } actualizada"
+        "${ Label.Name } atualizada"
       ]
     },
     "Group": {
@@ -2051,21 +2051,21 @@
     },
     "Import calendar": {
       "${ totalImported }/${ totalToImport } event encrypted and added to your calendar": [
-        "${ totalImported }/${ totalToImport } evento encriptado e adicionado à agenda",
-        "${ totalImported }/${ totalToImport } eventos encriptados e adicionados à agenda"
+        "${ totalImported }/${ totalToImport } evento encriptado e adicionado ao calendário",
+        "${ totalImported }/${ totalToImport } eventos encriptados e adicionados ao calendário"
       ],
       "An error occurred while encrypting and adding your event. ${ totalImported } out of ${ totalToImport } event successfully imported.": [
         "Ocorreu um erro ao encriptar e adicionar o seu evento. ${ totalImported } de ${ totalToImport } evento importado.",
-        "Ocorreu um erro ao encriptar e adicionar os seus eventos. ${ totalImported } de ${ totalToImport } eventos importados com sucesso."
+        "Ocorreu um erro ao encriptar e adicionar os seus eventos. ${ totalImported } de ${ totalToImport } eventos importados."
       ],
       "Encrypting and adding contacts: ${ totalImported }/${ totalToImport }": [
         "A encriptar e adicionar contactos: ${ totalImported }/${ totalToImport }"
       ],
       "Encrypting and adding events to your calendar: ${ totalImported }/${ totalToImport }": [
-        "Encriptar e adicionar eventos à agenda: ${ totalImported }/${ totalToImport }"
+        "Encriptar e adicionar eventos ao calendário: ${ totalImported }/${ totalToImport }"
       ],
       "Please don't close the tab before the importing process is finished.": [
-        "Por favor, não feche o separador antes de o processo de importação terminar."
+        "Não feche o separador antes de o processo de importação terminar."
       ]
     },
     "Import calendar warning": {
@@ -2118,19 +2118,19 @@
         "A verificação em 2 passos está ativada na sua conta externa."
       ],
       "Too many recent requests. Please try again in a few moments.": [
-        "Demasiados pedidos recentes. Por favor, tente mais tarde."
+        "Demasiados pedidos recentes. Tente novamente mais tarde."
       ],
       "Use your app password if:": [
-        "Use a senha da aplicação se:"
+        "Use a palavra-passe da aplicação se:"
       ],
       "Use your app password instead of your regular password if:": [
-        "Use a senha da aplicação em vez da sua senha normal se:"
+        "Use a palavra-passe da aplicação em vez da sua palavra-passe normal se:"
       ],
       "Your email account requires one to export your data.": [
-        "A sua conta de e-mail requer uma para exportar os seus dados."
+        "A sua conta de correio electrónico requer uma para exportar os seus dados."
       ],
       "Your password is correct.": [
-        "A sua senha está correta."
+        "A sua palavra-passe está correta."
       ]
     },
     "Import error emphasis": {
@@ -2151,7 +2151,7 @@
     },
     "Import instructions link": {
       "app password": [
-        "senha da aplicação"
+        "palavra-passe da aplicação"
       ],
       "ICS file": [
         "Ficheiro ICS"
@@ -2177,32 +2177,32 @@
         "Nenhum evento pode ser importado. Expande para detalhes."
       ],
       "Part of your calendar content is not supported and will not be imported.": [
-        "Parte do conteúdo da sua agenda não é suportado e não será importado."
+        "Parte do conteúdo do seu calendário não é suportado e não será importado."
       ]
     },
     "Info": {
       "${ addressCount } email address": [
-        "${ addressCount } endereço de email",
-        "${ addressCount } endereços de email"
+        "${ addressCount } endereço de correio electrónico",
+        "${ addressCount } endereços de correio electrónico"
       ],
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
         "O ${ appName } precisa da sua permissão para ${ enableDesktopNotifications }."
       ],
       "${ calendarsToBeCreatedCount } new calendar": [
-        "${ calendarsToBeCreatedCount } nova agenda",
-        "${ calendarsToBeCreatedCount } novas agendas"
+        "${ calendarsToBeCreatedCount } novo calendário",
+        "${ calendarsToBeCreatedCount } novos calendários"
       ],
       "${ calendarsToBeMergedCount } merged calendar": [
-        "${ calendarsToBeCreatedCount } agenda unida",
-        "${ calendarsToBeCreatedCount } agendas unidas"
+        "${ calendarsToBeMergedCount } calendário unido",
+        "${ calendarsToBeMergedCount } calendários unidos"
       ],
       "${ canceledCount } canceled": [
         "${ canceledCount } cancelado",
         "${ canceledCount } cancelados"
       ],
       "${ contactCount } contact contains multiple email addresses.": [
-        "${ contactCount } contacto contém vários endereços de e-mail.",
-        "${ contactCount } contactos contêm vários endereços de e-mail."
+        "${ contactCount } contacto contém vários endereços de correio electrónico.",
+        "${ contactCount } contactos contêm vários endereços de correio electrónico."
       ],
       "${ contactEmailsLength } Member": [
         "${ contactEmailsLength } membro",
@@ -2248,8 +2248,8 @@
         "${ providerFoldersNumLocalized } etiquetas encontradas no Gmail"
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendar": [
-        "${ selectedCalendarsTotal } de ${ providerCalendars.length } agenda",
-        "${ selectedCalendarsTotal } de ${ providerCalendars.length } agendas"
+        "${ selectedCalendarsTotal } de ${ providerCalendars.length } calendário",
+        "${ selectedCalendarsTotal } de ${ providerCalendars.length } calendários"
       ],
       "${ selectedFoldersCount } folder selected": [
         "${ selectedFoldersCount } pasta selecionada",
@@ -2268,8 +2268,8 @@
         "${ selectedFoldersCountLocalized } etiquetas seleccionadas"
       ],
       "${ updated } contact updated successfully.": [
-        "${ updated } contacto actualizado com sucesso.",
-        "${ updated } contactos actualizados com sucesso."
+        "${ updated } contacto atualizado.",
+        "${ updated } contactos atualizados."
       ],
       "${ uploadName } already exists in this location.": [
         "${ uploadName } já existe neste local."
@@ -2285,10 +2285,10 @@
         "Será adicionado um número ao nome da pasta"
       ],
       "Account access restricted due to unpaid invoices. Please contact your administrator.": [
-        "Acesso à conta restringido devido a facturas por pagar. Por favor, contacte o administrador."
+        "O acesso à conta restringido devido a facturas por pagar. Contacte o administrador."
       ],
       "Address Verification with Trusted Keys is enabled for this address. To be able to send to this address, first trust public keys that can be used for sending.": [
-        "Está activada a verificação de endereço com chaves confiadas para este endereço. Para poder enviar para este endereço, primeiro confie nas chaves públicas que podem ser usadas para enviar."
+        "Está ativada a verificação de endereço com chaves confiadas para este endereço. Para poder enviar para este endereço, primeiro confie nas chaves públicas que podem ser usadas para enviar."
       ],
       "All (${ totalFoldersCount } folder)": [
         "Tudo (${ totalFoldersCount } pasta)",
@@ -2320,7 +2320,7 @@
         "Cancelado"
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
-        "Não se lembra da senha? Podemos ajudá-lo a limpar os dados encriptados de todos os contactos encriptados com esta chave e no processo descartar o alerta."
+        "Não se lembra da palavra-passe? Podemos ajudá-lo a limpar os dados encriptados de todos os contactos encriptados com esta chave e no processo descartar o alerta."
       ],
       "Checking contact ${ progress } of ${ max }...": [
         "A verificar contacto ${ progress } de ${ max }..."
@@ -2365,13 +2365,13 @@
         "Largue o ficheiro aqui para enviar"
       ],
       "Duplicate key updated": [
-        "Chave duplicada actualizada"
+        "Chave duplicada atualizada"
       ],
       "Enter the code from your authenticator app": [
         "Introduza o código da sua aplicação de autenticação."
       ],
       "Enter the credentials of the email account you want to import from.": [
-        "Insira as credenciais da conta de email da qual deseja importar."
+        "Insira as credenciais da conta de correio electrónico da qual deseja importar."
       ],
       "Enter the verification code that was sent to ${ destinationText }.": [
         "Insira o código de verificação que foi enviado para ${ destinationText }."
@@ -2380,7 +2380,7 @@
         "Introduzir o código de verificação. Digite ${ digit }."
       ],
       "Enter your own password (as organization admin).": [
-        "Insira a sua senha (como administrador da organização)."
+        "Insira a sua palavra-passe (como administrador da organização)."
       ],
       "Estimated time remaining: ${ estimatedMinutes } minute": [
         "Tempo restante estimado: ${ estimatedMinutes } minuto",
@@ -2429,13 +2429,13 @@
         "aqui"
       ],
       "If you are having trouble creating your account, please request an invitation and we will respond within one business day.": [
-        "Se tiver problemas ao criar a conta, por favor solicite um convite e responderemos dentro de um dia útil."
+        "Se tiver problemas ao criar a conta, solicite um convite e responderemos dentro de um dia útil."
       ],
       "If you believe this is in error, please contact us ${ contactLink }.": [
-        "Se acredita que houve um erro, por favor, contacte-nos em ${ contactLink }."
+        "Se acredita que houve um erro, contacte-nos em ${ contactLink }."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
-        "Se não encontrar o e-mail na sua caixa de entrada, verifique a pasta de spam."
+        "Se não encontrar o correio electrónico na sua caixa de entrada, verifique a pasta de spam."
       ],
       "Import from": [
         "Importar de"
@@ -2450,7 +2450,7 @@
         "Importando os seus dados de ${ importedEmailAddress } para ${ toEmail }."
       ],
       "Inherited from parent folder": [
-        "Herança da pasta-mãe"
+        "Herança da pasta principal"
       ],
       "Initializing": [
         "A inicializar"
@@ -2507,7 +2507,7 @@
         "As minhas ligações"
       ],
       "Name your new folder and select the parent folder you want to put it in. If you do not select a parent folder, this new folder will be created as a top level folder.": [
-        "Nomeie a sua nova pasta e seleccione a pasta-mãe onde deseja colocá-la. Se não seleccionar uma pasta-mãe, esta nova pasta será criada como uma pasta de nível superior."
+        "Nomeie a sua nova pasta e seleccione a pasta principalonde deseja colocá-la. Se não seleccionar uma pasta principal, esta nova pasta será criada como uma pasta de nível superior."
       ],
       "Network issue": [
         "Problema de rede"
@@ -2519,7 +2519,7 @@
         "Ainda não adicionou contactos"
       ],
       "No email address": [
-        "Sem endereço de email"
+        "Sem endereço de correio electrónico"
       ],
       "No files or folders in trash": [
         "Não há ficheiros/pastas no lixo"
@@ -2543,32 +2543,32 @@
         "de"
       ],
       "Only the people with the link and the password can access this file.": [
-        "Só as pessoas com a ligação e a senha podem aceder ao ficheiro."
+        "Só as pessoas com a ligação e a palavra-passe podem aceder ao ficheiro."
       ],
       "Paused": [
         "Em pausa"
       ],
       "Please note that addresses assigned to this group will NOT be deleted.": [
-        "Por favor, note que os endereços atribuídos a este grupo NÃO serão eliminados."
+        "Note que os endereços atribuídos a este grupo NÃO serão eliminados."
       ],
       "Please note that this process may take some time depending on the size of your address book.": [
-        "Por favor, note que este processo pode levar algum tempo dependendo do tamanho do seu livro de endereços."
+        "Note que este processo pode levar algum tempo dependendo do tamanho do seu livro de endereços."
       ],
       "Please select the folders you would like to import:": [
-        "Por favor, selecione as pastas que deseja importar:"
+        "Selecione as pastas que deseja importar:"
       ],
       "Please select which email address or addresses to add to ${ groupCount } group.": [
-        "Por favor, selecione os endereços eletrónicos a adicionar ao grupo ${ groupCount }.",
-        "Por favor, selecione os endereços eletrónicos a adicionar aos grupos ${ groupCount }."
+        "Selecione os endereços eletrónicos a adicionar ao grupo ${ groupCount }.",
+        "Selecione os endereços eletrónicos a adicionar aos grupos ${ groupCount }."
       ],
       "Please select which email address or addresses to add to ${ groupName }.": [
-        "Por favor, selecione os endereços eletrónicos a adicionar a ${ groupName }."
+        "Selecione os endereços eletrónicos a adicionar a ${ groupName }."
       ],
       "Please wait while we look for contacts that can be re-signed with the primary encryption key.": [
-        "Por favor, aguarde enquanto procuramos contactos que possam ser re-assinados com a chave de encriptação principal."
+        "Aguarde enquanto procuramos contactos que possam ser re-assinados com a chave de encriptação principal."
       ],
       "Please wait while we look for contacts that contain data encrypted with the inactive key.": [
-        "Por favor, aguarde enquanto procuramos contactos que contenham dados encriptados com a chave inactiva."
+        "Aguarde enquanto procuramos contactos que contenham dados encriptados com a chave inativa."
       ],
       "Preparing link to file": [
         "A preparar ligação ao ficheiro"
@@ -2583,10 +2583,10 @@
         "O processo de recuperação pode levar algum tempo."
       ],
       "Refreshing the page or ${ link } will automatically resolve most issues.": [
-        "Actualizar a página ou ${ link } resolve automaticamente a maioria dos problemas."
+        "Atualizar a página ou ${ link } resolve automaticamente a maioria dos problemas."
       ],
       "Select the email format you want to be used by default when sending an email to this email address.": [
-        "Seleccione o formato de email predefinido a utilizar para este endereço de email."
+        "Seleccione o formato de correio electrónico predefinido a utilizar para este endereço de correio electrónico."
       ],
       "Session timed out": [
         "A sessão expirou."
@@ -2601,7 +2601,7 @@
         "Problema de assinatura"
       ],
       "Something went wrong, please try again later.": [
-        "Algo correu mal. Por favor, tente mais tarde."
+        "Algo correu mal. Tente novamente mais tarde."
       ],
       "support team": [
         "equipa de assistência"
@@ -2616,16 +2616,16 @@
         "Esta conta foi suspensa devido a uma potencial violação da política."
       ],
       "This address is disabled. To be able to send to this address, the owner must first enable the address.": [
-        "Este endereço está desactivado. Para poder enviar para este endereço, o proprietário tem de activar primeiro o endereço."
+        "Este endereço está desativado. Para poder enviar para este endereço, o proprietário tem de ativar primeiro o endereço."
       ],
       "This browser does not support previewing PDF documents. Please download the file.": [
-        "Este navegador não suporta a antevisão de documentos PDF. Por favor, transfira o ficheiro."
+        "Este navegador não suporta a antevisão de documentos PDF. Transfira o ficheiro."
       ],
       "This link may be a homograph attack. Please verify this is the link you wish to visit, or don't open it.": [
-        "Esta ligação pode ser um ataque homográfico. Por favor, verifique se esta é a ligação que deseja visitar, ou não a abra."
+        "Esta ligação pode ser um ataque homográfico. Verifique se esta é a ligação que deseja visitar, ou não a abra."
       ],
       "This link will be permanently disabled. No one with this link will be able to access your file. To reshare the file, you will need a new link.": [
-        "A ligação será permanentemente desactivada. Ninguém poderá aceder ao ficheiro com ela. Para voltar a partilhá-lo, precisará de uma nova ligação."
+        "A ligação será permanentemente desativada. Ninguém poderá aceder ao ficheiro com ela. Para voltar a partilhá-lo, precisará de uma nova ligação."
       ],
       "This will overwrite the existing file": [
         "Isto vai sobrescrever o ficheiro existente"
@@ -2640,7 +2640,7 @@
         "Para assinar novamente os contactos, temos de os verificar todos contra a lista de chaves de encriptação disponíveis na conta. Se não houver correspondências, o contacto será assinado de novo com a chave principal."
       ],
       "To recover your data, you need to re-activate the contact encryption key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
-        "Para recuperar os seus dados, é necessário reactivar a chave de encriptação do contacto, usada quando os dados foram criados. Isto requer que se lembre da senha usada quando a chave foi gerada."
+        "Para recuperar os seus dados, é necessário reativar a chave de encriptação do contacto, usada quando os dados foram criados. Isto requer que se lembre da palavra-passe usada quando a chave foi gerada."
       ],
       "To use Address Verification, you must trust one or more available public keys, including the one you want to use for sending. This prevents the encryption keys from being faked.": [
         "Para usar a verificação de endereço, tem de confiar numa ou mais chaves públicas disponíveis, incluindo a que pretende utilizar para envio. Isto impede que as chaves de encriptação sejam falsificadas."
@@ -2694,7 +2694,7 @@
         "Tem atualmente sessão iniciada como ${ user.Name } (${ user.Email })."
       ],
       "You can turn on notifications to get alerts when new email messages arrive in this folder.": [
-        "Pode activar as notificações para receber alertas quando novas mensagens chegarem a esta pasta."
+        "Pode ativar as notificações para receber alertas quando novas mensagens chegarem a esta pasta."
       ],
       "You cannot undo this action.": [
         "Esta acção não pode ser desfeita."
@@ -2703,19 +2703,19 @@
         "Atingiu ${ spaceDisplayed }% da sua capacidade de armazenamento. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You reached 100% of your storage capacity. You cannot send or receive new emails. ${ freeUpMessage } ${ upgradeLink }": [
-        "Atingiu os 100% da sua capacidade de armazenamento. Não pode enviar ou receber novos emails. ${ freeUpMessage } ${ upgradeLink }"
+        "Atingiu os 100% da sua capacidade de armazenamento. Não pode enviar ou receber novos correios electrónicos. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You will lose all unsaved changes.": [
         "Perderá todas as alterações por gravar."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
-        "A sua conta ${ BRAND_NAME } de momento está suspensa. Após 28 dias, os emails deixarão de ser entregues na sua caixa de entrada, as suas ligações de partilha de disco serão bloqueadas, e não poderá carregar novos ficheiros. Para retomar o serviço normal, por favor pague quaisquer faturas em atraso."
+        "A sua conta ${ BRAND_NAME } de momento está suspensa. Após 28 dias, os correios electrónicos deixarão de ser entregues na sua caixa de entrada, as suas ligações de partilha de disco serão bloqueadas, e não poderá carregar novos ficheiros. Para retomar o serviço normal, pague quaisquer faturas em atraso."
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
         "A sua conta tem pelo menos uma factura em atraso. O acesso em breve será restrito. ${ payInvoiceLink }"
       ],
       "Your email will only be used for this one-time verification.": [
-        "O seu email só será usado para esta verificação única."
+        "O seu correio electrónico só será usado para esta verificação única."
       ],
       "Your files will be encrypted and then saved.": [
         "Os seus ficheiros serão encriptados e gravados."
@@ -2760,7 +2760,7 @@
         "(expirou)"
       ],
       "Add email address": [
-        "Adicionar endereço de email"
+        "Adicionar um endereço de correio electrónico"
       ],
       "Add image URL": [
         "Adicionar URL da imagem"
@@ -2769,7 +2769,7 @@
         "Adicionar ao grupo"
       ],
       "App password": [
-        "Senha da aplicação"
+        "Palavra-passe da aplicação"
       ],
       "Apply to all duplicated files": [
         "Aplicar a todos os ficheiros duplicados"
@@ -2802,7 +2802,7 @@
         "Versão do navegador"
       ],
       "Calendar": [
-        "Agenda"
+        "Calendário"
       ],
       "Cancel download": [
         "Cancelar transferência"
@@ -2839,22 +2839,22 @@
         "Eliminado"
       ],
       "Email": [
-        "Email"
+        "Correio electrónico"
       ],
       "Email address": [
-        "Endereço de email"
+        "Endereço de correio electrónico"
       ],
       "Email format": [
-        "Formato do email"
+        "Formato do correio electrónico"
       ],
       "Email or username": [
         "Email ou utilizador"
       ],
       "Enable Beta Access": [
-        "Activar acesso Beta"
+        "Ativar o acesso Beta"
       ],
       "Encrypt emails": [
-        "Encriptar emails"
+        "Encriptar os correios electrónicos"
       ],
       "Expired": [
         "Expirado"
@@ -2890,7 +2890,7 @@
         "Bom"
       ],
       "Hide password": [
-        "Ocultar senha"
+        "Ocultar a palavra-passe"
       ],
       "I understand the risk": [
         "Eu compreendo o risco."
@@ -2905,7 +2905,7 @@
         "Importar contactos"
       ],
       "Import to email address": [
-        "Importar para endereço de email"
+        "Importar para o endereço de correio electrónico"
       ],
       "Import to:": [
         "Importar para:"
@@ -2917,10 +2917,10 @@
         "Localização"
       ],
       "Mail Server (IMAP)": [
-        "Servidor de email (IMAP)"
+        "Servidor de correio electrónico (IMAP)"
       ],
       "Mailbox password": [
-        "Senha da caixa de correio"
+        "Palavra-passe da caixa de correio"
       ],
       "Main": [
         "Principal"
@@ -2962,7 +2962,7 @@
         "Outro"
       ],
       "Password": [
-        "Senha"
+        "Palavra-passe"
       ],
       "Phone number": [
         "Número de telefone"
@@ -2977,7 +2977,7 @@
         "Código postal"
       ],
       "Protect with password": [
-        "Proteger com senha"
+        "Proteger com uma palavra-passe"
       ],
       "Public keys": [
         "Chaves públicas"
@@ -2992,13 +2992,13 @@
         "Substituir pasta"
       ],
       "Reveal password": [
-        "Mostrar senha"
+        "Mostrar a palavra-passe"
       ],
       "Set expiration date": [
         "Definir data de validade"
       ],
       "Sign emails": [
-        "Assinar emails"
+        "Assinar os correios electrónicos"
       ],
       "Size": [
         "Tamanho"
@@ -3049,7 +3049,7 @@
         "Maravilhoso"
       ],
       "Your password (admin)": [
-        "A sua senha (admin)"
+        "A sua palavra-passe (admin)"
       ]
     },
     "Label for contact group color": {
@@ -3106,7 +3106,7 @@
         "Lixo"
       ],
       "Upgrade account": [
-        "Actualizar conta"
+        "Atualizar conta"
       ],
       "What’s this?": [
         "O que é isto?"
@@ -3117,7 +3117,7 @@
         "A ligar ao seu fornecedor de correio electrónico"
       ],
       "Creating new calendars": [
-        "A criar as novas agendas"
+        "Criação de calendários"
       ]
     },
     "Message display when a new app version is available": {
@@ -3135,10 +3135,10 @@
     },
     "Modal title": {
       "How to import calendars from another service": [
-        "Como importar agendas de outro serviço"
+        "Como importar calendários de outro serviço"
       ],
       "How to import calendars from Yahoo": [
-        "Como importar agendas do Yahoo"
+        "Como importar calendários do Yahoo"
       ],
       "How to import contacts from another service": [
         "Como importar contatos de outro serviço"
@@ -3147,10 +3147,10 @@
         "Como importar contatos do Yahoo"
       ],
       "How to import emails from another service": [
-        "Como importar e-mails de outro serviço"
+        "Como importar correios electrónicos de outro serviço"
       ],
       "How to import emails from Yahoo": [
-        "Como importar e-mails do Yahoo"
+        "Como importar correios electrónicos do Yahoo"
       ]
     },
     "New Label form": {
@@ -3171,7 +3171,7 @@
     },
     "Notification": {
       "\"${ name }\" created successfully": [
-        "\"${ name }\" criado com sucesso"
+        "\"${ name }\" criado"
       ],
       "\"${ name }\" deleted permanently from trash": [
         "\"${ name }\" permanentemente eliminado do lixo"
@@ -3189,13 +3189,13 @@
         "\"${ name }\" restaurado do lixo"
       ],
       "\"${ name }\" successfully moved": [
-        "\"${ name }\" movido com sucesso"
+        "\"${ name }\" movido"
       ],
       "\"${ newName }\" failed to be renamed": [
         "Falha ao renomear \"${ newName }\""
       ],
       "\"${ newName }\" renamed successfully": [
-        "\"${ newName }\" renomeado com sucesso"
+        "\"${ newName }\" renomeado"
       ],
       "All items will soon be permanently deleted from trash": [
         "Todos os itens serão permanentemente eliminados do lixo"
@@ -3204,10 +3204,10 @@
         "Grupo de contactos criado"
       ],
       "Contact group updated": [
-        "Grupo de contactos actualizado"
+        "Grupo de contactos atualizado"
       ],
       "Failed to move, please try again": [
-        "Falha ao mover, por favor tente novamente"
+        "Falha ao mover. Tente novamente."
       ],
       "Move ${ itemsToMoveCount } file": [
         "Mover ${ itemsToMoveCount } ficheiro",
@@ -3267,15 +3267,15 @@
         "Ignorar grupo"
       ],
       "No parent folder": [
-        "Nenhuma pasta-mãe"
+        "Nenhuma pasta principal"
       ]
     },
     "Option group label": {
       "Create new calendar": [
-        "Criar nova agenda"
+        "Criar um calendários"
       ],
       "Merge with calendar": [
-        "Unir com agenda"
+        "Unir com o calendário"
       ]
     },
     "Participant name": {
@@ -3290,7 +3290,7 @@
     },
     "PGP key warning": {
       "Email address not found among user ids defined in sending key (${ keyUserIds })": [
-        "Endereço de email não encontrado entre as IDs de utilizador definidas na chave de envio (${ keyUserIds })"
+        "Endereço de correio electrónico não encontrado entre as ID de utilizador definidas na chave de envio (${ keyUserIds })"
       ]
     },
     "Placeholder": {
@@ -3313,28 +3313,28 @@
         "Nome"
       ],
       "Name or email address": [
-        "Nome ou endereço de email"
+        "Nome ou endereço de correio electrónico"
       ],
       "New name": [
         "Novo nome"
       ],
       "Password": [
-        "Senha"
+        "Palavra-passe"
       ],
       "Please describe the problem and include any error messages": [
-        "Por favor, descreva o problema e inclua quaisquer mensagens de erro"
+        "Descreva o problema e inclua quaisquer mensagens de erro."
       ],
       "Search for group name": [
         "Procurar grupo pelo nome"
       ],
       "Search for name or email": [
-        "Procurar por nome ou email"
+        "Procurar por nome ou correio electrónico"
       ],
       "Select": [
         "Selecionar"
       ],
       "Start typing an email address": [
-        "Comece a escrever um endereço de email"
+        "Comece a escrever um endereço de correio electrónico"
       ]
     },
     "Placeholder for contact group name": {
@@ -3348,12 +3348,12 @@
         "${ contactsExported.length } de ${ countContacts } contactos exportados."
       ],
       "${ model.deleted.length } out of ${ totalBeDeleted } contact successfully deleted.": [
-        "${ model.deleted.length } de ${ totalBeDeleted } contacto eliminado com sucesso.",
-        "${ model.deleted.length } de ${ totalBeDeleted } contactos eliminados com sucesso."
+        "${ model.deleted.length } de ${ totalBeDeleted } contacto eliminado.",
+        "${ model.deleted.length } de ${ totalBeDeleted } contactos eliminados."
       ],
       "${ model.submitted.length } out of ${ totalBeMerged } contact successfully merged.": [
-        "${ model.submitted.length } de ${ totalBeMerged } contacto unido com sucesso.",
-        "${ model.submitted.length } de ${ totalBeMerged } contactos unidos com sucesso."
+        "${ model.submitted.length } de ${ totalBeMerged } contacto unido.",
+        "${ model.submitted.length } de ${ totalBeMerged } contactos unidos."
       ],
       "No contacts exported.": [
         "Nenhum contacto exportado."
@@ -3414,10 +3414,10 @@
         "Notas de lançamento"
       ],
       "Upgrade storage": [
-        "Actualizar armazenamento"
+        "Atualizar armazenamento"
       ],
       "Your current storage:": [
-        "O seu armazenamento actual:"
+        "O seu armazenamento atual:"
       ]
     },
     "Success": {
@@ -3467,7 +3467,7 @@
         "Preferências gravadas"
       ],
       "Verification successful": [
-        "Verificação com sucesso"
+        "A verificação é terminada."
       ]
     },
     "Table header": {
@@ -3579,7 +3579,7 @@
         "Continue com uma importação parcial?"
       ],
       "Create a new folder": [
-        "Criar uma nova pasta"
+        "Criar uma pasta"
       ],
       "Create contact": [
         "Criar contacto"
@@ -3641,16 +3641,16 @@
         "Editar imagem"
       ],
       "Email addresses": [
-        "Endereços de email"
+        "Endereços de correio electrónico"
       ],
       "Email settings": [
-        "Definições de email"
+        "Definições de correio electrónico"
       ],
       "Empty trash": [
         "Esvaziar lixo"
       ],
       "Enter your password": [
-        "Insira a sua senha"
+        "Insira a sua palavra-passe"
       ],
       "Exporting contacts": [
         "A exportar contactos"
@@ -3693,7 +3693,7 @@
         "Falha na importação"
       ],
       "Invalid verification code": [
-        "Código de verificação inválido"
+        "Código de verificação não válido"
       ],
       "Link confirmation": [
         "Confirmação de hiperligação"
@@ -3837,7 +3837,7 @@
         "Tipo"
       ],
       "Upgrade required": [
-        "Actualização requerida"
+        "Atualização requerida"
       ],
       "Uploaded": [
         "Enviado"
@@ -3883,7 +3883,7 @@
         "Personalize a importação para reduzir o número de etiquetas"
       ],
       "Digitally signing emails helps authenticating that messages are sent by you": [
-        "Assinar digitalmente emails ajuda a confirmar que as mensagens são enviadas por si"
+        "Assinar digitalmente correios electrónicos ajuda a confirmar que as mensagens são enviadas por si"
       ],
       "Edit folder names": [
         "Editar nomes de pastas"
@@ -3892,7 +3892,7 @@
         "Editar nomes de etiqueta"
       ],
       "Email encryption forces email signature to help authenticate your sent messages": [
-        "A encriptação do email força a assinatura para ajudar a autenticar as suas mensagens enviadas"
+        "A encriptação do correio electrónico força a assinatura para ajudar a autenticar as suas mensagens enviadas"
       ],
       "Encrypted data with verified digital signature": [
         "Dados encriptados com assinatura digital verificada"
@@ -3910,7 +3910,7 @@
         "A importação começará com as mensagens mais recentes."
       ],
       "Upload a public key to enable sending end-to-end encrypted emails to this email": [
-        "Envie uma chave pública para permitir o envio de emails encriptados ponta-a-ponta para este email"
+        "Envie uma chave pública para permitir o envio de correios electrónicos encriptados ponta-a-ponta para este correio electrónico."
       ],
       "You do not have any contacts to export": [
         "Não tem contactos para exportar"
@@ -3918,8 +3918,8 @@
     },
     "Validation": {
       "Password must contain at least ${ length } character": [
-        "A senha deve conter pelo menos ${ length } carácter",
-        "A senha deve conter pelo menos ${ length } caracteres"
+        "A palavra-passe deve conter pelo menos ${ length } carácter.",
+        "A palavra-passe deve conter pelo menos ${ length } caracteres."
       ]
     },
     "Validation Error": {
@@ -3965,16 +3965,16 @@
         "Não foi possível unir os contactos"
       ],
       "If you don’t remember your password, it is impossible to re-activate your key. We can help you dismiss the alert banner but in the process you will permanently lose access to all the data encrypted with that key.": [
-        "Se não se lembra da senha, é impossível reactivar a chave. Podemos ajudar a descartar o alerta, mas no processo perderá permanentemente o acesso a todos os dados encriptados com esta chave."
+        "Se não se lembra da palavra-passe, é impossível reativar a chave. Podemos ajudar a descartar o alerta, mas no processo perderá permanentemente o acesso a todos os dados encriptados com esta chave."
       ],
       "Reports are not end-to-end encrypted, please do not send any sensitive information.": [
-        "Os relatórios não são encriptados de ponta-a-ponta. Por favor, não envie nenhuma informação sensível."
+        "Os relatórios não são encriptados de ponta-a-ponta. Não envie nenhuma informação sensível."
       ],
       "Skip verification?": [
         "Saltar verificação?"
       ],
       "Some of the contacts to be merged display errors. Please review them individually": [
-        "Alguns dos contactos a unir mostram erros. Por favor, reveja-os individualmente"
+        "Alguns dos contactos a unir mostram erros. Reveja-os individualmente."
       ],
       "The contact failed to load.": [
         "Falha ao carregar o contacto."
@@ -3986,7 +3986,7 @@
         "Falha ao verificar a assinatura dos detalhes do contacto."
       ],
       "This action is irreversible. Please enter the word ${ boldDanger } in the field to proceed.": [
-        "Esta acção é irreversível. Por favor, insira a palavra ${ boldDanger } no campo para continuar."
+        "Esta acção é irreversível. Insira a palavra ${ boldDanger } no campo para continuar."
       ]
     }
   }

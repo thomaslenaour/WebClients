@@ -593,10 +593,10 @@
         "Тема"
       ],
       "Toggle Calendar app": [
-        "Перемкніть додаток Календар"
+        "Відкрити календар"
       ],
       "Toggle Contact app": [
-        "Перемкніть додаток Контакти"
+        "Відкрити контакти"
       ],
       "Trust": [
         "Довіряти"
@@ -1787,7 +1787,7 @@
         "Ви можете імпортувати події в форматі iCal (файл ICS). Максимальний розмір файлу повинен бути ${ MAX_IMPORT_FILE_SIZE_STRING } та містити до ${ MAX_IMPORT_EVENTS_STRING } подій. Якщо ваш файл більший, розділіть його на менші файли."
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
-        "Ви можете позначити ті контакти, які ви не хочете ані об’єднувати, ані зберігати. Видалення відбудеться лише після натискання кнопки об'єднання"
+        "Ви можете позначити ті контакти, які ви не хочете ані об'єднувати, ані зберігати. Видалення відбудеться лише після натискання кнопки об'єднання"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2204,7 +2204,7 @@
         "Не вдалося зашифрувати"
       ],
       "vCard versions < 3.0 not supported": [
-        "vCard версій < 3.0 не підтримуються"
+        "vCard версії < 3.0 не підтримуються"
       ]
     },
     "Error importing contacts": {
@@ -3083,7 +3083,7 @@
         "Потребує уваги"
       ],
       "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access\nor decrypt your files for you. To unlock your drive after a password reset,\nyou must have one of the following:": [
-        "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:"
+        "Оскільки ${ DRIVE_APP_NAME } наскрізно зашифровано, ми не можемо отримати доступ\nчи розшифрувати ваші файли. Щоб розблокувати сховище після скидання пароля,\nвам необхідно мати будь-що з вказаного:"
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
         "Перш ніж запитувати новий код підтвердження, перевірте теку зі спамом та перевірте, чи правильно вказано адресу ${ strong }."
@@ -3176,7 +3176,7 @@
         "Підтримуються файли CSV з Outlook, Outlook Express, Yahoo! Maіl, Hotmaіl, Eudora і деяких інших додатків, а також формати vCard 3.1 і 4.0 (кодування UTF- 8)."
       ],
       "Decrypting files": [
-        "Розшифрування файлу"
+        "Розшифрування файлів"
       ],
       "Delete locked drive": [
         "Видалити заблокований диск",
@@ -3299,7 +3299,7 @@
         "Теку \"${ link.name }\" було видалено під час завантаження"
       ],
       "Folder contents will merge into a single folder": [
-        "Вміст тек об’єднається в одну теку"
+        "Вміст тек об'єднається в одну теку"
       ],
       "Folder is missing signature. We couldn’t verify that ${ emailAddress } uploaded ${ fileName }.": [
         "У теці відсутній підпис. Ми не можемо підтвердити, що ${ emailAddress } вивантажив ${ fileName }."
@@ -3353,7 +3353,7 @@
         "Якщо ви не можете знайти лист у вхідних повідомленнях, перевірте свою теку спаму."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
-        "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process."
+        "Якщо у вас є будь-що з вказаного, перейдіть до налаштувань облікового запису ${ BRAND_NAME },\nщоб розпочати процес розблокування."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "Імпорт ${ calendarCount } з ${ totalCalendarsCount } календаря",
@@ -3476,7 +3476,7 @@
         "Дайте назву своїй новій теці та виберіть теку вищого рівня, в яку ви хочете її вкласти. Якщо ви не виберете теку вищого рівня, цю нову теку буде створено як теку вищого рівня."
       ],
       "Need to share a file? Then get ${ DRIVE_APP_NAME },\nthe safest way to share, store, and sync your files.": [
-        "Потрібно поділитись файлом? Тоді отримайте ${ DRIVE_APP_NAME },\nнайнадійніший спосіб поділитися, розмістити та синхронізувати ваші файли."
+        "Потрібно поділитися файлом? Тоді отримайте ${ DRIVE_APP_NAME } – найнадійніший спосіб зберігання, поширення та синхронізації ваших файлів."
       ],
       "Network issue": [
         "Проблема з мережею"
@@ -3749,7 +3749,7 @@
         "Це перезапише наявну теку"
       ],
       "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on\nthe device won’t be affected.": [
-        "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected."
+        "Ця дія вилучить з ${ DRIVE_APP_NAME } синхронізований пристрій ${ deviceName }. Ці зміни не вплинуть на локальні файли пристрою."
       ],
       "To enable truly private search ${ DRIVE_APP_NAME } needs to index your files locally.": [
         "Щоб увімкнути повноцінний приватний пошук, ${ DRIVE_APP_NAME } повинен індексувати ваші файли локально."
@@ -5530,7 +5530,7 @@
         "Групи"
       ],
       "Hm, we couldn't find that one": [
-        "Гм, ми не змогли знайти таку сторінку"
+        "Такої сторінки не знайдено"
       ],
       "Human verification": [
         "Перевірка \"Я не робот\""

@@ -802,7 +802,7 @@
         "VPN sorunu"
       ],
       "Website access problem": [
-        "Web sitesi erişim sorunu"
+        "Site erişim sorunu"
       ]
     },
     "Button": {
@@ -2140,7 +2140,7 @@
         "Bir ad belirtmelisiniz"
       ],
       "Your browser does not support uploading folders": [
-        "Web tarayıcınız klasör yüklemeyi desteklemiyor"
+        "Tarayıcınız klasör yüklemeyi desteklemiyor"
       ],
       "Your import will not be processed.": [
         "İçe aktarma işleminiz yapılmayacak."
@@ -2184,7 +2184,7 @@
         "Şifrelenemedi"
       ],
       "vCard versions < 3.0 not supported": [
-        "vCard 3.0 altındaki sürümler desteklenmiyor"
+        "vCard 3.0 öncesi sürümler desteklenmiyor"
       ]
     },
     "Error importing contacts": {
@@ -2979,7 +2979,7 @@
         "İlgilenmeniz gerekiyor"
       ],
       "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access\nor decrypt your files for you. To unlock your drive after a password reset,\nyou must have one of the following:": [
-        "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:"
+        "${ DRIVE_APP_NAME } uçtan uca şifrelenmiş olduğundan, dosyalarınıza erişemeyiz ve şifrelerini çözemeyiz. Şifreyi yeniledikten sonra Drive kilidini açmak için şunlardan birine sahip olmanız gerekir:"
       ],
       "Before requesting a new verification code, check your spam folder and check that ${ strong } is the correct address.": [
         "Yeni bir doğrulama kodu istemeden önce İstenmeyen kutunuza bakın ve ${ strong } adresinin doğru olduğundan emin olun."
@@ -3243,7 +3243,7 @@
         "E-postayı Gelen kutunuzda göremezseniz, İstenmeyen kutusuna bakmayı unutmayın."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
-        "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process."
+        "Bunlardan birine sahipseniz, engellemeyi kaldırmak için ${ BRAND_NAME } hesabı ayarıyla ilerleyin."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "${ calendarCount } / ${ totalCalendarsCount } takvimi içe aktar",
@@ -3492,7 +3492,7 @@
         "Sıraya alındı"
       ],
       "recommended browser": [
-        "önerilen web tarayıcı"
+        "önerilen tarayıcı"
       ],
       "Recovery information will remain on this device unless you select to delete it.": [
         "Siz silmeyi seçmedikçe kurtarma bilgileri bu aygıt üzerinde kalacak."
@@ -3597,16 +3597,16 @@
         "Bu adres devre dışı. Bu adrese e-posta gönderebilmek için önce sahibi adresi etkinleştirmelidir."
       ],
       "This browser does not support previewing PDF documents. Please download the file.": [
-        "Bu web tarayıcı, PDF belgelerinin ön izlemesini desteklemiyor. Lütfen dosyayı indirin."
+        "Bu tarayıcı, PDF belgelerinin ön izlemesini desteklemiyor. Lütfen dosyayı indirin."
       ],
       "This file may have been deleted, moved or made unavailable. Try reaching out to the file owner.": [
         "Bu dosya silinmiş, taşınmış ya da kullanılamıyor olabilir. Dosyanın sahibine ulaşmayı deneyin."
       ],
       "This link leads to a website that might be trying to steal your information, such as passwords and credit card details.": [
-        "Bu bağlantı, parola ve kredi kartı gibi bilgilerinizi çalmayı deneyen bir web sitesine gidiyor olabilir."
+        "Bu bağlantı, parola ve kredi kartı gibi bilgilerinizi çalmayı deneyen bir siteye gidiyor olabilir."
       ],
       "This link may be a homograph attack and cannot be opened by the Edge browser. If you are certain the link is legitimate, please use a different browser to open it.": [
-        "Bu bağlantı göründüğü gibi olmayan bir sahtecilik girişimi olabilir ve Edge web tarayıcısı ile açılamaz. Bağlantının göründüğü gibi olduğundan eminseniz, açmak için farklı bir web tarayıcısı kullanın."
+        "Bu bağlantı göründüğü gibi olmayan bir sahtecilik girişimi olabilir ve Edge tarayıcısı ile açılamaz. Bağlantının göründüğü gibi olduğundan eminseniz, açmak için farklı bir tarayıcı kullanın."
       ],
       "This link may be a homograph attack. Please verify this is the link you wish to visit, or don't open it.": [
         "Bu bağlantı göründüğü gibi olmayan bir sahtecilik girişimi olabilir. Lütfen bu bağlantının gerçekten ziyaret etmek istediğiniz bağlantı olduğunu doğrulayın ya da açmayın."
@@ -3631,7 +3631,7 @@
         "Bu işlem var olan klasörün üzerine yazacak"
       ],
       "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on\nthe device won’t be affected.": [
-        "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected."
+        "Bu işlem ${ DRIVE_APP_NAME } ile eşitlenmiş ${ deviceName } aygıtının eşitlemesini kaldıracak. Aygıt üzerindeki yerel dosyalar bu işlemden etkilenmeyecek."
       ],
       "To enable truly private search ${ DRIVE_APP_NAME } needs to index your files locally.": [
         "Gizliliği koruyarak arama yapabilmek için ${ DRIVE_APP_NAME } dosyalarınızı yerel dizine eklemeli."
@@ -3730,7 +3730,7 @@
         "Ne yapmak istersiniz?"
       ],
       "When you set up two-factor authentication, we provide recovery codes which you can use to sign in if you lose access to your authenticator app.": [
-        "İki adımlı doğrulamayı kurduğunuzda, kimlik doğrulama uygulamanızda sorun olması durumunda oturum açmak için kullanabileceğiniz kurtarma kodları vereceğiz."
+        "İki aşamalı doğrulamayı kurduğunuzda, kimlik doğrulama uygulamanızda sorun olması durumunda oturum açmak için kullanabileceğiniz kurtarma kodları vereceğiz."
       ],
       "Would you like to receive a new verification code or use an alternative verification method?": [
         "Yeni bir doğrulama kodu almak ya da alternatif bir doğrulama yöntemi kullanmak ister misiniz?"
@@ -3793,7 +3793,7 @@
         "Hesabınızda süresi geçmiş en az bir fatura var. Hesabınıza erişim kısıtlandı. Ödeme yapmazsanız e-postalarınız ve paylaşım bağlantılarınız engellenecek. ${ payInvoiceLink }"
       ],
       "Your current browser does not support the downloading of large files due to the unavailability of service workers. Downloading large files may freeze or leave the browser unresponsive. Please use the latest versions of a ${ recommendedBrowser } and try again.": [
-        "Hizmet çalışanları kullanılamadığından kullandığınız web tarayıcı büyük dosyaların indirilmesini desteklemiyor. Büyük dosyaları indirmek web tarayıcının donmasına ya da yanıt vermemesine neden olabilir. Lütfen güncel ${ recommendedBrowser } sürümünü kullanarak yeniden deneyin."
+        "Hizmet işlemleri kullanılamadığından kullandığınız tarayıcı büyük dosyaların indirilmesini desteklemiyor. Büyük dosyaları indirmek tarayıcının donmasına ya da yanıt vermemesine neden olabilir. Lütfen güncel ${ recommendedBrowser } sürümünü kullanarak yeniden deneyin."
       ],
       "Your data is ready to import from ${ importedEmailAddressStrong } to your ${ BRAND_NAME } account.": [
         "Verileriniz ${ importedEmailAddressStrong } üzerinden ${ BRAND_NAME } hesabınız içine aktarılmaya hazır."
@@ -3859,7 +3859,7 @@
         "Ele geçirilmiş"
       ],
       "Expired": [
-        "Süresi geçmiş"
+        "Geçerlilik süresi dolmuş"
       ],
       "Obsolete": [
         "Eskimiş"
@@ -3882,7 +3882,7 @@
         "${ BRAND_NAME } kullanıcı adı"
       ],
       "(Expired)": [
-        "(Süresi geçmiş)"
+        "(Geçerlilik süresi dolmuş)"
       ],
       "(Temporarily unavailable. Please check back later.)": [
         "(Geçici olarak kullanılamıyor. Lütfen bir süre sonra yeniden bakın.)"
@@ -4045,7 +4045,7 @@
         "Aygıt adını yazın"
       ],
       "Expired": [
-        "Süresi geçmiş"
+        "Geçerlilik süresi dolmuş"
       ],
       "Expires": [
         "Geçerlilik sonu"
@@ -4353,7 +4353,7 @@
     },
     "Link": {
       "clearing your browser cache": [
-        "web tarayıcınızın ön belleğini temizlemek"
+        "tarayıcınızın ön belleğini temizlemek"
       ],
       "Learn more": [
         "Ayrıntılı bilgi alın"
@@ -5163,7 +5163,7 @@
         "Beta erişimi"
       ],
       "Browser might run out of memory": [
-        "Web tarayıcı için bellek yetersiz olabilir"
+        "Bellek tarayıcı için yetersiz olabilir"
       ],
       "Cannot load link": [
         "Bağlantı yüklenemedi"
@@ -5512,10 +5512,10 @@
         "Aktarımlar durdurulsun mu?"
       ],
       "The link either does not exist or has expired": [
-        "Bağlantı bulunamadı ya da geçerlilik süresi geçmiş"
+        "Bağlantı bulunamadı ya da geçerlilik süresi dolmuş"
       ],
       "The link expired": [
-        "Bağlantının süresi geçmiş"
+        "Bağlantının geçerlilik süresi dolmuş"
       ],
       "This file has a missing or invalid signature. Go to Menu (⋮) → Details for info.": [
         "Bu dosyanın imzası eksik ya da geçersiz. Bilgi almak için Menü (⋮) → Ayrıntılar bölümüne gidin."
@@ -5557,7 +5557,7 @@
         "Uyarı"
       ],
       "Warning: suspected fake website": [
-        "Uyarı: Şüpheli sahte web sitesi"
+        "Uyarı: Sahte olma olasılığı bulunan şüpheli site"
       ],
       "What would you like to import?": [
         "Neyi içe aktarmak istersiniz?"
