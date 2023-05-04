@@ -41,7 +41,7 @@ const MainContainer = () => {
     const { feature: featureSw, loading: loadingSw } = getFeature(FeatureCode.MailServiceWorker);
 
     // Service Worker registration
-    // Including a kill switch with a feature flag
+    // Includes kill switch with feature flag
     useEffect(() => {
         if ('serviceWorker' in navigator && !loadingSw) {
             const unregister = async () => {
