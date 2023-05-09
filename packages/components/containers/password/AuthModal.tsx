@@ -9,6 +9,7 @@ import { PASSWORD_WRONG_ERROR, getInfo } from '@proton/shared/lib/api/auth';
 import { getApiError } from '@proton/shared/lib/api/helpers/apiErrorHelper';
 import { Fido2Data, InfoAuthedResponse } from '@proton/shared/lib/authentication/interface';
 import { requiredValidator } from '@proton/shared/lib/helpers/formValidators';
+import { captureMessage } from '@proton/shared/lib/helpers/sentry';
 import { Unwrap } from '@proton/shared/lib/interfaces';
 import { Credentials, SrpConfig, srpAuth } from '@proton/shared/lib/srp';
 import { getAuthentication } from '@proton/shared/lib/webauthn/get';
@@ -214,6 +215,7 @@ const AuthModal = ({ config, onSuccess, onError, onClose, onCancel, prioritised2
         } catch (error) {
             if (twoFa?.type === 'fido2') {
                 setFidoError(true);
+                captureMessage('Security key auth', { level: 'error', extra: { error } });
                 // Purposefully logging the error for somewhat easier debugging
                 console.error(error);
             }
