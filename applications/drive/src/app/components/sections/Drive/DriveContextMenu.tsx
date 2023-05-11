@@ -1,4 +1,4 @@
-import { ContextSeparator } from '@proton/components';
+import { ContextSeparator, FeatureCode, useFeature } from '@proton/components';
 import { isPreviewAvailable } from '@proton/shared/lib/helpers/preview';
 
 import { DecryptedLink } from '../../../store';
@@ -47,7 +47,7 @@ export function DriveItemContextMenu({
     const [moveToFolderModal, showMoveToFolderModal] = useMoveToFolderModal();
     const [renameModal, showRenameModal] = useRenameModal();
     const [linkSharingModal, showLinkSharingModal] = useLinkSharingModal();
-
+    const { feature } = useFeature(FeatureCode.DriveRevisions);
     const [revisionsModal, showRevisionsModal] = useRevisionsModal();
 
     return (
@@ -88,7 +88,7 @@ export function DriveItemContextMenu({
                     close={close}
                 />
                 <ContextSeparator />
-                {isOnlyOneFileItem && (
+                {isOnlyOneFileItem && feature?.Value && (
                     <>
                         <RevisionsButton
                             selectedLink={selectedLink}
