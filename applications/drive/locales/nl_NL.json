@@ -2334,10 +2334,10 @@
         "Oeps, er is iets misgegaan"
       ],
       "Please ${ refresh } or check your internet connection.": [
-        "${ refresh } alstublieft of controleer uw internetverbinding."
+        "${ refresh } of controleer uw internetverbinding."
       ],
       "Please ${ refresh } or try again later.": [
-        "${ refresh } alstublieft of probeer het later opnieuw."
+        "${ refresh } of probeer het later opnieuw."
       ],
       "Something went wrong": [
         "Er is iets fout gegaan"
@@ -4497,7 +4497,7 @@
     },
     "Notification": {
       "\"${ name }\" created successfully": [
-        "\"${ name }\" succesvol aangemaakt"
+        "\"${ name }\" aangemaakt"
       ],
       "\"${ name }\" deleted permanently from trash": [
         "\"${ name }\" permanent verwijderd uit de prullenbak"
@@ -4527,16 +4527,16 @@
         "\"${ name }\" uit de prullenbak hersteld"
       ],
       "\"${ name }\" saved successfully": [
-        "\"${ name }\" succesvol opgeslagen"
+        "\"${ name }\" aangemaakt"
       ],
       "\"${ name }\" successfully moved": [
-        "\"${ name }\" succesvol verplaatst"
+        "\"${ name }\" verplaatst"
       ],
       "\"${ newName }\" failed to be renamed": [
         "\"${ newName }\" kon niet worden hernoemd"
       ],
       "\"${ newName }\" renamed successfully": [
-        "\"${ newName }\" succesvol hernoemd"
+        "\"${ newName }\" hernoemd"
       ],
       "${ count } item failed to be decrypted": [
         "${ count } item kon niet worden ontsleuteld",
@@ -4686,7 +4686,7 @@
         "Uw instellingen konden niet worden bewaard"
       ],
       "Your settings have been changed successfully": [
-        "Uw instellingen zijn succesvol gewijzigd"
+        "Uw instellingen zijn gewijzigd."
       ]
     },
     "Oauth instructions": {
@@ -4969,26 +4969,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } uur",
-        "${ hours } uur"
-      ],
-      "${ hours } hour": [
         "${ days } dag",
         "${ days } dagen"
       ],
+      "${ hours } hour": [
+        "${ hours } uur",
+        "${ hours } uren"
+      ],
       "${ minutes } minute": [
-        "${ n } maand GRATIS",
-        "${ n } maanden GRATIS"
+        "${ minutes } minuut",
+        "${ minutes } minuten"
       ],
       "${ seconds } second": [
-        "voor ${ n } maand",
-        "voor ${ n } maanden"
+        "${ seconds } seconde",
+        "${ seconds } seconden"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } seconde",
-        "${ seconds } seconden"
+        "${ n } maand GRATIS",
+        "${ n } maanden GRATIS"
       ]
     },
     "specialoffer: Deal details": {
@@ -5091,8 +5091,8 @@
         "U betaalt ${ amount } voor 30 maanden"
       ],
       "for ${ n } month": [
-        "${ minutes } minuut",
-        "${ minutes } minuten"
+        "voor ${ n } maand",
+        "voor ${ n } maanden"
       ],
       "Get the deal": [
         "Kies deze deal"
@@ -5252,7 +5252,7 @@
         "Herstel is gestart"
       ],
       "The link to your file was successfully copied": [
-        "De link naar uw bestand is succesvol gekopieerd"
+        "De link naar uw bestand is gekopieerd."
       ],
       "Undo in progress": [
         "Bezig met ongedaan maken"

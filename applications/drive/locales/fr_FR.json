@@ -3664,7 +3664,7 @@
         "Pour signer une nouvelle fois vos contacts, nous devons vérifier chaque contact à l’aide de la liste des clés de chiffrement disponible dans votre compte. Si aucune correspondance n’est trouvée, votre contact sera de nouveau signé avec la clé de chiffrement principale."
       ],
       "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
-        "Pour récupérer vos données, vous devez réactiver la clé du contact utilisée au moment de la création des données. Pour cela, vous devez vous souvenir du mot de passe utilisé lors de la création de la clé."
+        "Pour récupérer vos données, vous devez réactiver la clé de compte qui a été utilisée au moment où les données ont été créées. Pour cela, vous devez vous souvenir du mot de passe que vous avez utilisé lors de la création de la clé."
       ],
       "To use Address Verification, you must trust one or more available public keys, including the one you want to use for sending. This prevents the encryption keys from being faked.": [
         "Pour utiliser la vérification d’adresse, vous devez approuver une ou plusieurs clés publiques disponibles, y compris celle que vous voulez utiliser pour l’envoi. Cela empêche la falsification des clés de chiffrement."
@@ -4243,7 +4243,7 @@
         "Définissez une méthode de récupération"
       ],
       "Show indexing progress of Encrypted Search": [
-        "Afficher l'état de l'indexation de la recherche chiffrée"
+        "Afficher l'état d'avancement de l'indexation de la recherche chiffrée"
       ],
       "Sign emails": [
         "Signer les e-mails"
@@ -4978,26 +4978,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } heure",
-        "${ hours } heures"
-      ],
-      "${ hours } hour": [
         "${ days } jour",
         "${ days } jours"
       ],
+      "${ hours } hour": [
+        "${ hours } heure",
+        "${ hours } heures"
+      ],
       "${ minutes } minute": [
-        "${ n } mois GRATUIT",
-        "${ n } mois GRATUITS"
+        "${ minutes } minute",
+        "${ minutes } minutes"
       ],
       "${ seconds } second": [
-        "pour ${ n } mois",
-        "pour ${ n } mois"
+        "${ seconds } seconde",
+        "${ seconds } secondes"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } seconde",
-        "${ seconds } secondes"
+        "${ n } mois GRATUIT",
+        "${ n } mois GRATUITS"
       ]
     },
     "specialoffer: Deal details": {
@@ -5005,7 +5005,7 @@
         "${ storageSize } d'espace de stockage total"
       ],
       "3 TB": [
-        "3 To"
+        "3 To"
       ],
       "6 users": [
         "6 utilisateurs"
@@ -5077,7 +5077,7 @@
         "Voir les abonnements"
       ],
       "Upgrade": [
-        "Changer d'offre"
+        "Changer d'abonnement"
       ]
     },
     "specialoffer: Offers": {
@@ -5106,8 +5106,8 @@
         "Facturé ${ amount } pour 30 mois"
       ],
       "for ${ n } month": [
-        "${ minutes } minute",
-        "${ minutes } minutes"
+        "pour ${ n } mois",
+        "pour ${ n } mois"
       ],
       "Get the deal": [
         "J'en profite"
@@ -5165,22 +5165,22 @@
     },
     "specialoffer: Tooltip": {
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
-        "Accédez aux contenus bloqués et naviguez de manière privée. Comprend 1 700 serveurs dans plus de 60 pays, la vitesse VPN la plus élevée, 10 connexions VPN par utilisateur, l'accès aux services de streaming du monde entier, le blocage des logiciels malveillants et des publicités..."
+        "Accédez aux contenus bloqués et naviguez de manière privée. Comprend 1 700 serveurs dans plus de 60 pays, la vitesse VPN la plus élevée, 10 connexions VPN par utilisateur, l'accès aux services de streaming du monde entier, le blocage des logiciels malveillants et des publicités…"
       ],
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
         "Accédez aux contenus bloqués et naviguez de manière privée. Comprend 1 700 serveurs dans plus de 60 pays, la vitesse VPN la plus élevée, 10 connexions VPN, l'accès aux services de streaming du monde entier, le blocage des logiciels malveillants et des publicités..."
       ],
       "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
-        "Accédez au contenu des services de streaming, dont Netflix, Disney+ et Prime Video, où que vous soyez."
+        "Accédez au contenu des services de streaming, dont Netflix, Amazon Prime Video, Canal+, Disney+, France.tv, TF1… où que vous soyez."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited Hide My Email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Tous nos services premium au plus haut niveau : 100 adresses e-mail, la prise en charge de 10 domaines personnalisés, un nombre illimité d'alias Hide My Email, le partage de calendriers, le stockage cloud et le partage de fichiers chiffrés..."
+        "Tous nos services premium au plus haut niveau : 100 adresses e-mail, la prise en charge de 10 domaines personnalisés, un nombre illimité d'alias « Hide My Email », le partage de calendriers, le stockage cloud et le partage de fichiers chiffrés…"
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 Hide My Email aliases, calendar sharing, and more.": [
-        "Comprend la prise en charge d'un domaine de messagerie personnalisé, de 10 adresses e-mail, de 10 alias Hide My Email, du partage de calendrier..."
+        "Comprend la prise en charge d'un domaine de messagerie personnalisé, de 10 adresses e-mail, de 10 alias « Hide My Email », du partage de calendrier..."
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited Hide My Email aliases, calendar sharing, and more.": [
-        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 15 adresses e-mail, d'un nombre illimité d'alias Hide My Email, du partage de calendrier..."
+        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 15 adresses e-mail, d'un nombre illimité d'alias « Hide My Email », du partage de calendrier..."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
         "Idéal pour les familles ou les petites équipes, chacun pouvant disposer de sa propre boîte de réception et de ses propres alias. Nécessite un domaine personnalisé."

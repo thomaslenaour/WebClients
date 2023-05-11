@@ -3222,7 +3222,7 @@
         "Sonsuza kadar ücretsiz"
       ],
       "Free up some space or add more storage space.": [
-        "Biraz boş yer açın veya daha fazla depolama alanı ekleyin."
+        "Biraz boş yer açın ya da daha fazla depolama alanı ekleyin."
       ],
       "Free up some space or contact your administrator.": [
         "Biraz boş yer açın veya yöneticinizle görüşün."
@@ -3582,7 +3582,7 @@
         "destek ekibi"
       ],
       "Swiss encrypted file storage": [
-        "İsviçre'li şifrelenmiş dosya depolaması"
+        "İsviçre'li şifrelenmiş dosya depolama alanı"
       ],
       "Temporarily unavailable. Please check back later.": [
         "Geçici olarak kullanılamıyor. Lütfen bir süre sonra yeniden bakın."
@@ -3787,10 +3787,10 @@
         "${ expiresInDays } gün içinde 500 MB hoş geldiniz hediyenizi alın ve "
       ],
       "You reached ${ spaceDisplayed }% of your storage capacity. ${ freeUpMessage } ${ upgradeLink }": [
-        "Depolama kapasitenizi %${ spaceDisplayed } oranında kullanıyorsunuz. ${ freeUpMessage } ${ upgradeLink }"
+        "Depolama alanınızı %${ spaceDisplayed } oranında kullanıyorsunuz. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You reached 100% of your storage capacity. You cannot send or receive new emails. ${ freeUpMessage } ${ upgradeLink }": [
-        "Depolama kapasitenizi %100 oranında kullanıyorsunuz. Yeni e-postalar gönderemez veya alamazsınız. ${ freeUpMessage } ${ upgradeLink }"
+        "Depolama alanınızı 100% oranında kullanıyorsunuz. Yeni e-postalar gönderemez veya alamazsınız. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You will lose all unsaved changes.": [
         "Kaydedilmemiş tüm değişiklikleri kaybedeceksiniz."
@@ -5777,7 +5777,7 @@
         "Bu özellik ücretli bir ${ BRAND_NAME } hesabında kullanılabilir"
       ],
       "This import may exceed the storage capacity currently available in your ${ BRAND_NAME } account. Please consider customizing your import.": [
-        "Bu içe aktarma işlemi, ${ BRAND_NAME } hesabınızın geçerli depolama kapasitesini aşabilir. Lütfen içe aktarmanızı özelleştirmeyi değerlendirin."
+        "Bu içe aktarma işlemi, ${ BRAND_NAME } hesabınızla kullanılabilecek depolama alanını aşabilir. Lütfen içe aktarmanızı özelleştirmeyi değerlendirin."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
         "Ne yazık ki, şu anca çevrimiçi değiliz. Lütfen sorununuzu aktarmak için aşağıdaki formu doldurun. Yeniden çevrimiçi olduğumuzda inceleyip size geri döneceğiz."

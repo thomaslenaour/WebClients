@@ -785,7 +785,7 @@
         "Другая"
       ],
       "Pass problem": [
-        "Проблема с Pass"
+        "Проблема с Proton Pass"
       ],
       "Payments problem": [
         "Проблема с платежами"
@@ -933,7 +933,7 @@
         "Имя"
       ],
       "Note": [
-        "Заметки"
+        "Примечания"
       ],
       "Organization": [
         "Организация"
@@ -1888,7 +1888,7 @@
         "Группа с таким именем уже существует"
       ],
       "A problem occurred, please try again.": [
-        "Возникла проблема. Попробуйте ещё раз."
+        "Что-то пошло не так. Попробуйте ещё раз."
       ],
       "Address primary private key not found": [
         "Основной закрытый ключ для адреса не найден"
@@ -2213,7 +2213,7 @@
         "Ошибка шифрования"
       ],
       "vCard versions < 3.0 not supported": [
-        "Версии vCard < 3.0 не поддерживаются"
+        "vCard версий < 3.0 не поддерживается"
       ]
     },
     "Error importing contacts": {
@@ -2597,7 +2597,7 @@
         "${ CALENDAR_APP_NAME } в настоящее время не поддерживает определенные типы, детали и форматы событий."
       ],
       "vCard versions < 3.0": [
-        "Версии vCard < 3.0"
+        "vCard версии < 3.0"
       ]
     },
     "Import calendar; import invitation": {
@@ -2900,7 +2900,7 @@
         "${ contactEmailsLength } адресатов"
       ],
       "${ contactName } contains multiple email addresses.": [
-        "Контакт ${ contactName } содержит несколько адресов электронной почты."
+        "Контакт ${ contactName } содержит несколько email-адресов."
       ],
       "${ contactsCount } contact found": [
         "Найден ${ contactsCount } контакт",
@@ -3563,7 +3563,7 @@
         "Окончательно удалить все файлы в вашем заблокированном хранилище"
       ],
       "PGP/Inline is only compatible with Plain Text format.": [
-        "PGP/Inline совместимы только с форматом «простой текст»."
+        "PGP/Inline совместим только с форматом «простой текст»."
       ],
       "PGP/MIME automatically sends the message using the current composer mode.": [
         "PGP/MIME автоматически отправляет сообщение, используя текущий режим редактора писем."
@@ -3647,7 +3647,7 @@
         "Выберите загруженный файл или папку и создайте ссылку на них."
       ],
       "Select the email format you want to be used by default when sending an email to this email address.": [
-        "Выберите формат писем, который вы хотите использовать по умолчанию для отправки сообщений на этом адрес эл. почты."
+        "Выберите формат писем, который вы хотите использовать по умолчанию для отправки сообщений на этот адрес."
       ],
       "Select what you want to import.": [
         "Выберите то, что вы хотите импортировать."
@@ -3662,7 +3662,7 @@
         "Время сеанса истекло"
       ],
       "Setting up PGP allows you to send end-to-end encrypted emails with a non-${ BRAND_NAME } user that uses a PGP compatible service.": [
-        "Настройка PGP позволяет отправлять электронную почту, зашифрованную сквозным методом, не пользователю ${ BRAND_NAME }, который использует службу, совместимую с PGP."
+        "Настройка PGP позволяет отправлять электронную почту со сквозным шифрованием пользователю не-${ BRAND_NAME } сервиса, который использует службу, совместимую с PGP."
       ],
       "Share files with links": [
         "Делитесь файлами с помощью ссылок"
@@ -3725,7 +3725,7 @@
         "Этот аккаунт был отключен из-за возможного нарушения политики."
       ],
       "This address is disabled. To be able to send to this address, the owner must first enable the address.": [
-        "Этот адрес отключён. Чтобы была возможность отправки на этот адрес, его владелец должен включить его."
+        "Этот адрес отключён. Чтобы была возможность отправки на него, владелец адреса должен его включить."
       ],
       "This browser does not support previewing PDF documents. Please download the file.": [
         "Браузер не поддерживает предварительный просмотр документов PDF. Пожалуйста, скачайте файл."
@@ -3926,7 +3926,7 @@
         "В вашем аккаунте есть как минимум один просроченный счёт. Ваш аккаунт ограничен, и все услуги теперь заблокированы до оплаты. ${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted. Continued non-payment will block your emails and sharing links. ${ payInvoiceLink }": [
-        "В вашем аккаунте есть по крайней мере один просроченный счёт. Ваш аккаунт ограничен. Отсутствие оплаты заблокирует ваши электронные письма и ссылки для обмена. ${ payInvoiceLink }"
+        "У Вас есть по крайней мере один просроченный счёт. Ваш аккаунт ограничен. Отсутствие оплаты заблокирует ваши электронные письма и ссылки для обмена. ${ payInvoiceLink }"
       ],
       "Your current browser does not support the downloading of large files due to the unavailability of service workers. Downloading large files may freeze or leave the browser unresponsive. Please use the latest versions of a ${ recommendedBrowser } and try again.": [
         "Ваш текущий браузер не поддерживает загрузку больших файлов из-за недоступности работников службы. Загрузка больших файлов может привести к зависанию или отсутствию реакции браузера. Используйте последние версии ${ recommendedBrowser } и повторите попытку."
@@ -4558,10 +4558,10 @@
         "Импортировать все сообщения из ${ itemsToImportCount } ярлыков и пометить их ярлыком как"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } folder and label them as": [
-        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папки и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как"
+        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } label and label them as": [
         "Импортировать все сообщения с ${ selectedItemsToImportCount } из ${ itemsToImportCount } ярлыка, и пометить их как",
@@ -4924,7 +4924,7 @@
         "Настройка организации"
       ],
       "Use the app selector in the top left to access all ${ BRAND_NAME } services: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } and ${ DRIVE_SHORT_APP_NAME }.": [
-        "Используйте селектор приложений в левом верхнем углу, чтобы получить доступ ко всем сервисам ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } и ${ DRIVE_SHORT_APP_NAME }."
+        "Используйте переключатель приложений в левом верхнем углу, чтобы получить доступ ко всем сервисам ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } и ${ DRIVE_SHORT_APP_NAME }."
       ],
       "You can change this anytime in your settings.": [
         "Вы можете изменить это в любой момент в настройках."
@@ -5152,36 +5152,36 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } час",
-        "${ hours } часа",
-        "${ hours } часов",
-        "${ hours } часа"
+        "${ days } день",
+        "${ days } дня",
+        "${ days } дней",
+        "${ days } дня"
       ],
       "${ hours } hour": [
-        "${ days } день",
-        "${ days } дня",
-        "${ days } дней",
-        "${ days } дня"
+        "${ hours } час",
+        "${ hours } часа",
+        "${ hours } часов",
+        "${ hours } часа"
       ],
       "${ minutes } minute": [
-        "${ n } месяц БЕСПЛАТНО",
-        "${ n } месяца БЕСПЛАТНО",
-        "${ n } месяцев БЕСПЛАТНО",
-        "${ n } месяца БЕСПЛАТНО"
+        "${ minutes } минута",
+        "${ minutes } минуты",
+        "${ minutes } минут",
+        "${ minutes } минуты"
       ],
       "${ seconds } second": [
-        "за ${ n } месяц ",
-        "за ${ n } месяца",
-        "за ${ n } месяцев",
-        "за ${ n } месяца"
+        "${ seconds } секунда",
+        "${ seconds } секунды",
+        "${ seconds } секунд",
+        "${ seconds } секунды"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } секунда",
-        "${ seconds } секунды",
-        "${ seconds } секунд",
-        "${ seconds } секунды"
+        "${ n } месяц БЕСПЛАТНО",
+        "${ n } месяца БЕСПЛАТНО",
+        "${ n } месяцев БЕСПЛАТНО",
+        "${ n } БЕСПЛАТНЫХ месяца"
       ]
     },
     "specialoffer: Deal details": {
@@ -5290,10 +5290,10 @@
         "Оплата ${ amount } за 30 месяцев."
       ],
       "for ${ n } month": [
-        "${ minutes } минута",
-        "${ minutes } минуты",
-        "${ minutes } минут",
-        "${ minutes } минуты"
+        "за ${ n } месяц",
+        "за ${ n } месяца",
+        "за ${ n } месяцев",
+        "за ${ n } месяца"
       ],
       "Get the deal": [
         "Получить скидку"
@@ -5605,7 +5605,7 @@
         "${ numberOfFailedTransfer.total } неудавшаяся загрузок"
       ],
       "Account suspended": [
-        "Аккаунт заблокирован"
+        "Аккаунт временно заблокирован"
       ],
       "Active": [
         "Активно"
@@ -6061,7 +6061,7 @@
         "Ваши бонусные 500 МБ"
       ],
       "Your changes are not synced yet": [
-        "Изменения ещё не синхронизированы"
+        "Изменения ещё не сохранены"
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша бесплатная пробная версия Mail Plus заканчивается ${ textDate }"
@@ -6244,7 +6244,7 @@
         "Эта функция требует платного аккаунта ${ BRAND_NAME }"
       ],
       "This import may exceed the storage capacity currently available in your ${ BRAND_NAME } account. Please consider customizing your import.": [
-        "Этот импорт может превысить объём хранилища, доступный в настоящее время в вашем аккаунте ${ BRAND_NAME }. Рассмотрите возможность настройки импорта."
+        "Объём импортируемого материала может вызвать переполнение хранилища, доступного в настоящее время для Вашего аккаунта ${ BRAND_NAME }. Рассмотрите возможность настройки импорта."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
         "К сожалению, в данный момент мы не работаем в режиме онлайн. Пожалуйста, заполните форму ниже, чтобы описать вашу проблему, и мы рассмотрим ее и свяжемся с вами, когда будем онлайн."

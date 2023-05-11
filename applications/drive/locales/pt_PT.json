@@ -18,13 +18,13 @@
         "Adicionar"
       ],
       "Add address": [
-        "Adicionar endereço"
+        "Adicionar morada"
       ],
       "Add contact": [
         "Adicionar contacto"
       ],
       "Add email": [
-        "Adicionar um correio electrónico"
+        "Adicionar um endereço de email"
       ],
       "Add group": [
         "Adicionar grupo"
@@ -191,7 +191,7 @@
         "Editar"
       ],
       "Edit email address": [
-        "Editar o endereço de correio electrónico"
+        "Editar o endereço de email"
       ],
       "Edit label": [
         "Editar etiqueta"
@@ -2273,8 +2273,8 @@
     },
     "Info": {
       "${ addressCount } email address": [
-        "${ addressCount } endereço de correio electrónico",
-        "${ addressCount } endereços de correio electrónico"
+        "${ addressCount } endereço de correio eletrónico",
+        "${ addressCount } endereços de correio eletrónico"
       ],
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
         "O ${ appName } precisa da sua permissão para ${ enableDesktopNotifications }."
@@ -2292,7 +2292,7 @@
         "${ canceledCount } cancelados"
       ],
       "${ contactCount } contact contains multiple email addresses.": [
-        "${ contactCount } contacto contém vários endereços de correio electrónico.",
+        "${ contactCount } contacto contém vários endereços de correio eletrónico.",
         "${ contactCount } contactos contêm vários endereços de correio electrónico."
       ],
       "${ contactEmailsLength } Member": [
@@ -2331,7 +2331,7 @@
         "${ numContact } contactos"
       ],
       "${ numGroups } contact group": [
-        "${ numGroups } grupo de contatos",
+        "${ numGroups } grupo de contactos",
         "${ numGroups } grupos de contatos"
       ],
       "${ pausedCount } paused": [
@@ -3822,7 +3822,7 @@
         "Verificação humana"
       ],
       "Import as simple event?": [
-        "Importar com um evento simples?",
+        "Importar como um evento simples?",
         "Importar com eventos simples?"
       ],
       "Import contacts": [
@@ -4063,7 +4063,7 @@
     },
     "Validation": {
       "Password must contain at least ${ length } character": [
-        "A palavra-passe deve conter pelo menos ${ length } carácter.",
+        "A palavra-passe deve conter pelo menos ${ length } caracteres",
         "A palavra-passe deve conter pelo menos ${ length } caracteres."
       ]
     },

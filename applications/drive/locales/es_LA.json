@@ -4978,26 +4978,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } hora",
-        "${ hours } horas"
-      ],
-      "${ hours } hour": [
         "${ days } día",
         "${ days } días"
       ],
+      "${ hours } hour": [
+        "${ hours } hora",
+        "${ hours } horas"
+      ],
       "${ minutes } minute": [
-        "${ n } mes GRATIS",
-        "${ n } meses GRATIS"
+        "${ minutes } minuto",
+        "${ minutes } minutos"
       ],
       "${ seconds } second": [
-        "for ${ n } mes",
-        "for ${ n } meses"
+        "${ seconds } segundo",
+        "${ seconds } segundos"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } segundo",
-        "${ seconds } segundos"
+        "${ n } mes gratis",
+        "${ n } meses gratis"
       ]
     },
     "specialoffer: Deal details": {
@@ -5109,8 +5109,8 @@
         "Al precio de ${ amount } durante 30 meses"
       ],
       "for ${ n } month": [
-        "${ minutes } minuto",
-        "${ minutes } minutos"
+        "por ${ n } mes",
+        "por ${ n } meses"
       ],
       "Get the deal": [
         "Obtener la oferta"
