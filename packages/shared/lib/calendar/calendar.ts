@@ -71,6 +71,12 @@ export const getWritableCalendars = (calendars: VisualCalendar[]) => {
     return calendars.filter(unary(getIsCalendarWritable));
 };
 
+export const getIsUnknownCalendar = (calendar: VisualCalendar) => {
+    const knownTypes = [CALENDAR_TYPE.PERSONAL, CALENDAR_TYPE.SUBSCRIPTION];
+
+    return !knownTypes.includes(calendar.Type);
+};
+
 export const groupCalendarsByTaxonomy = (calendars: VisualCalendar[] = []) => {
     return calendars.reduce<{
         ownedPersonalCalendars: VisualCalendar[];
