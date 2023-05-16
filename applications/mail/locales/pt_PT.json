@@ -1112,6 +1112,36 @@
       ],
       "Zoom out": [
         "Reduzir"
+      ],
+      "Add Bcc recipients": [
+        "Adicione destinatários Bcc"
+      ],
+      "Add Cc recipients": [
+        "Adicione destinatários Cc"
+      ],
+      "As Scheduled": [
+        "Como Agendado"
+      ],
+      "Blind Carbon Copy": [
+        "Cópia oculta"
+      ],
+      "Dismiss get started checklist": [
+        "Ignorar a lista de verificação inicial"
+      ],
+      "Open get started checklist modal": [
+        "Abrir o modal da lista de verificação inicial"
+      ],
+      "Refine it": [
+        "Refine"
+      ],
+      "Restore": [
+        "Restaurar"
+      ],
+      "Toggle Calendar app": [
+        "Alternar aplicação de calendário"
+      ],
+      "Toggle Contact app": [
+        "Alternar aplicação de contactos"
       ]
     },
     "action": {
@@ -1206,6 +1236,9 @@
       ],
       "Unsupported event": [
         "Evento não suportado"
+      ],
+      "Empty ICS file": [
+        "Arquivo ICS vazio"
       ]
     },
     "Attachment signature verification": {
@@ -1435,6 +1468,9 @@
       ],
       "Your email address is not in the participants list": [
         "O seu endereço de email não está na lista de participantes"
+      ],
+      "This response doesn't match your invitation details. Please verify the invitation details in your calendar.": [
+        "Esta resposta não coincide com os detalhes do convite. Verifique os detalhes do convite no seu calendário."
       ]
     },
     "Calendar widget banner": {
@@ -1557,6 +1593,69 @@
       ],
       "white": [
         "branco"
+      ],
+      "azureish white": [
+        "branco azul-celeste"
+      ],
+      "blanched almond": [
+        "amêndoa branqueada"
+      ],
+      "cyan-blue azure": [
+        "azul ciano"
+      ],
+      "dark cerulean": [
+        "cerúleo escuro"
+      ],
+      "dark midnight blue": [
+        "azul escuro da meia-noite"
+      ],
+      "japanese laurel": [
+        "louro japonês"
+      ],
+      "lemon yellow": [
+        "amarelo limão"
+      ],
+      "light carmine pink": [
+        "rosa carmim claro"
+      ],
+      "light moss green": [
+        "verde musgo claro"
+      ],
+      "mughal green": [
+        "verde mogol"
+      ],
+      "outer space": [
+        "espaço sideral"
+      ],
+      "palatinate blue": [
+        "azul palatinado"
+      ],
+      "pale cerulean": [
+        "cerúleo pálido"
+      ],
+      "pastel gray": [
+        "cinza pastel"
+      ],
+      "persian plum": [
+        "ameixa persa"
+      ],
+      "persian red": [
+        "vermelho persa"
+      ],
+      "philippine gray": [
+        "cinza filipino"
+      ],
+      "philippine silver": [
+        "prata filipina"
+      ],
+      "raisin black": [
+        "passas pretas"
+      ],
+      "satin sheen gold": [
+        "ouro de cetim"
+      ],
+      "vivid auburn": [
+        "ruivo vívido"
       ]
     },
     "Composer email icon": {
@@ -2595,6 +2694,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Pode marcar para eliminação os contactos que não deseja unir nem manter. A eliminação só ocorrerá depois de clicar no botão de união"
+      ],
+      "Unlock custom message scheduling and other benefits when you upgrade your plan.": [
+        "Desbloqueie o agendamento de mensagens personalizadas e outros benefícios quando efetuar upgrade ao seu plano."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2956,6 +3058,48 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "A sua procura obteve demasiadas correspondências. Limite a procura e tente de novo."
+      ],
+      "A problem occurred, please try again.": [
+        "Ocorreu um erro. Tente de novo."
+      ],
+      "Calendar limit reached": [
+        "Chegou ao número limite de calendários"
+      ],
+      "Email address is required": [
+        "O endereço de correio electrónico é obrigatório."
+      ],
+      "Folder name cannot be empty.": [
+        "O nome da pasta não pode estar vazio."
+      ],
+      "Maximum number of attachments (${ attachmentsCountLimit }) exceeded": [
+        "Número máximo de anexos (${ attachmentsCountLimit }) excedido"
+      ],
+      "Please activate your search again": [
+        "Active a procura novamente."
+      ],
+      "Primary key is not valid for sending": [
+        "A chave primária não é válida para o envio"
+      ],
+      "Primary key retrieved for ${ BRAND_NAME } user is not valid for sending": [
+        "A chave primária recuperada para o utilizador ${ BRAND_NAME } não é válida para o envio"
+      ],
+      "Request timed out": [
+        "O pedido expirou"
+      ],
+      "Some of your folder names exceed ${ MAIL_APP_NAME }'s maximum character limit. Please customize the import to edit these names.": [
+        "Alguns dos nomes das suas pastas excedem o limite máximo de caracteres do ${ MAIL_APP_NAME }. Personalize a importação para editar esses nomes."
+      ],
+      "The folder name is too long. Please choose a different name.": [
+        "O nome da pasta é demasiado longo. Por favor escolha um nome diferente."
+      ],
+      "There are too many folders in your external account. Please customize the import to delete some folders.": [
+        "Há pastas demais na sua conta externa. Personalize a importação para excluir algumas pastas."
+      ],
+      "This folder name is not available. Please choose a different name.": [
+        "Este nome de pasta não está disponível. Escolha um nome diferente."
+      ],
+      "Try using only letters, numerals, and _.-": [
+        "Tente utilizar apenas letras, números e _.-"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3114,6 +3258,12 @@
       ],
       "Unsupported event": [
         "Evento não suportado"
+      ],
+      "Calendar time zone not supported": [
+        "Fuso horário do calendário não suportado"
+      ],
+      "No UID, title or start time": [
+        "Sem UID, título ou hora de início"
       ]
     },
     "Error message": {
@@ -3131,6 +3281,9 @@
       ],
       "You do not have any contact yet. Start by creating a new contact": [
         "Ainda não tem contactos. Comece por criar um contacto"
+      ],
+      "Something went wrong": [
+        "Ocorreu um erro"
       ]
     },
     "Error notification": {
@@ -3251,6 +3404,9 @@
       ],
       "Trash": [
         "Lixo"
+      ],
+      "Do not move": [
+        "Não mover"
       ]
     },
     "Filter modal operators": {
@@ -3282,6 +3438,12 @@
       ],
       "The subject": [
         "O assunto"
+      ],
+      "If the attachments": [
+        "Se os anexos"
+      ],
+      "If the recipient": [
+        "Se o destinatário"
       ]
     },
     "Filter notification": {
@@ -3338,6 +3500,9 @@
       ],
       "To: ${ toString }": [
         "Para: ${ toString }"
+      ],
+      "Subject: ${ subject }": [
+        "Assunto: ${ subject }"
       ]
     },
     "Get started checklist incentive": {
@@ -3346,6 +3511,13 @@
       ],
       "Expires today": [
         "Expira hoje"
+      ],
+      "Complete all steps and get a total of ${ rewardInGb } GB on your account": [
+        "Complete todos os passos para obter um total de ${ rewardInGb } GB na sua conta."
+      ],
+      "Only ${ days } day left": [
+        "Restam apenas ${ days } dia",
+        "Restam apenas ${ days } dias"
       ]
     },
     "Get started checklist instructions": {
@@ -3357,11 +3529,23 @@
       ],
       "Import your contacts or messages": [
         "Importar contactos ou mensagens"
+      ],
+      "Get the ${ MAIL_APP_NAME } mobile app": [
+        "Obter a aplicação móvel do ${ MAIL_APP_NAME }"
       ]
     },
     "Get started checklist item": {
       "Send a message": [
         "Enviar uma mensagem"
+      ],
+      "Get mobile app": [
+        "Obter a aplicação móvel"
+      ],
+      "Import contacts or emails": [
+        "Importar contactos ou correios electronicos"
+      ],
+      "Set up a recovery method": [
+        "Configurar um método de recuperação"
       ]
     },
     "Get started checklist title": {
@@ -3475,6 +3659,9 @@
       "This file contains an invitation response:": [
         "Este ficheiro contém uma resposta de convite:",
         "Este arquivo contém respostas a convites:"
+      ],
+      "This file contains some data that we cannot import:": [
+        "Este ficheiro contém alguns dados que não podemos importar:"
       ]
     },
     "Import contact": {
@@ -3549,6 +3736,9 @@
       ],
       "Export to CSV file": [
         "Exportar para ficheiro CSV"
+      ],
+      "app password": [
+        "palavra-passe da aplicação"
       ]
     },
     "Import instructions link": {
@@ -4638,6 +4828,311 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "A sua frase de recuperação é uma série de 12 palavras numa ordem específica."
+      ],
+      "${ fileName }: full-size image": [
+        "${ fileName }: imagem em tamanho máximo"
+      ],
+      "${ fileName }: low-resolution preview": [
+        "${ fileName }: pré-visualização de baixa resolução"
+      ],
+      "${ NumMessages } message in conversation": [
+        "${ NumMessages } mensagem na conversa",
+        "${ NumMessages } mensagens na conversa"
+      ],
+      "All messages stored in this folder will be permanently deleted.": [
+        "Todas as mensagens armazenadas nesta pasta serão permanentemente apagadas."
+      ],
+      "All messages stored with this label will be permanently deleted.": [
+        "Todas as mensagens armazenadas com este marcador serão permanentemente apagadas."
+      ],
+      "Are you sure you want to delete all messages in this folder?": [
+        "Tem a certeza que deseja apagar todas as mensagens nesta pasta?"
+      ],
+      "Are you sure you want to delete all messages with this label?": [
+        "Tem a certeza que deseja apagar todas as mensagens com este marcador?"
+      ],
+      "Are you sure you want to move all messages in this location to Trash?": [
+        "Tem a certeza que deseja mover todas as mensagens deste local para o Lixo?"
+      ],
+      "Attention required": [
+        "Atenção Requerida"
+      ],
+      "Clearing browser data also deactivates message content search on this device. All messages will need to be downloaded again to search within them.": [
+        "A limpeza dos dados do navegador também desativa a pesquisa de conteúdo de mensagens neste dispositivo. Todas as mensagens deverão ser novamente baixadas para ser possível pesquisar dentro delas."
+      ],
+      "Clears browser data related to message content search including downloaded messages": [
+        "Limpa os dados do navegador relacionados com pesquisa de conteúdo de mensagens, incluindo as mensagens descarregadas"
+      ],
+      "Close this screen to exit.": [
+        "Feche este ecrã para sair."
+      ],
+      "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
+        "São suportados os arquivos CSV do Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora e algumas outras aplicações, bem como os formatos vCard 3.1 e 4.0 (codificação UTF-8)."
+      ],
+      "Default email application": [
+        "Aplicação de e-mail por defeito"
+      ],
+      "Downloading message ${ currentProgress } out of ${ totalProgress }": [
+        "A descarregar a mensagem ${ currentProgress } de ${ totalProgress }"
+      ],
+      "Email is forwarded to your mailbox; your email address stays hidden.": [
+        "O e-mail é encaminhado para a sua caixa de correio; o seu endereço de e-mail permanece oculto."
+      ],
+      "Email tracker protection is disabled": [
+        "A proteção do rastreador de e-mail está desativada"
+      ],
+      "Email trackers can violate your privacy. ${ BRAND_NAME } did not find any trackers in this message.": [
+        "Rastreadores de e-mail podem violar tua privacidade. ${ BRAND_NAME } nenhum rastreador foi encontrado nesta mensagem."
+      ],
+      "Email trackers can violate your privacy. Turn on tracker protection to prevent senders from knowing whether and when you have opened a message.": [
+        "Rastreadores de e-mail pode violar tua privacidade. Ative a proteção do rastreador para prevenir que os remetentes saibam quando e que você abriu uma mensagem."
+      ],
+      "Emails are automatically signed": [
+        "Os e-mails são assinados automaticamente"
+      ],
+      "Has ${ numAttachments } attachment (${ numAttachmentsSize })": [
+        "Tem ${ numAttachments } anexo (${ numAttachmentsSize })",
+        "Tem ${ numAttachments } anexos (${ numAttachmentsSize })"
+      ],
+      "How Hide My Email works": [
+        "Como funciona o Hide My Email"
+      ],
+      "I'm sending this message to a non-${ MAIL_APP_NAME } user.": [
+        "Estou a enviar esta mensagem para um utilizador que não é ${ MAIL_APP_NAME }."
+      ],
+      "Images have been removed because they are not allowed in auto-reply": [
+        "As imagens foram removidas porque não são permitidas na resposta automática"
+      ],
+      "Import ${ contactsFragment } and ${ contactsGroupsFragment }": [
+        "Importar ${ contactsFragment } e ${ contactsGroupsFragment }"
+      ],
+      "Importing your data from ${ fromEmail } to ${ toEmail }.": [
+        "Importando os seus dados de ${ fromEmail } para ${ toEmail }."
+      ],
+      "Just confirm your selection and we'll do the rest.": [
+        "Confirme apenas a sua seleção e faremos o resto."
+      ],
+      "Maximum number of attachments (${ EO_REPLY_NUM_ATTACHMENTS_LIMIT }) exceeded.": [
+        "Número máximo de anexos (${ EO_REPLY_NUM_ATTACHMENTS_LIMIT }) excedido."
+      ],
+      "Message expiration works out-of-the-box when sending emails to other ${ MAIL_APP_NAME } users. To send expiring emails to non-${ BRAND_NAME } users, please cancel and add password protection to your email.": [
+        "A expiração da mensagem funciona por defeito em e-mails enviados para outros utilizadores ${ MAIL_APP_NAME }. Para enviar e-mails com validade para utilizadores não-${ BRAND_NAME }, por favor cancele e defina uma senha de proteção para o seu email."
+      ],
+      "Message will be sent on ${ dateString } at ${ formattedTime }": [
+        "A mensagem será enviada a ${ dateString } às${ formattedTime }"
+      ],
+      "Message will be sent tomorrow at ${ formattedTime }": [
+        "A mensagem será enviada amanhã às${ formattedTime }"
+      ],
+      "Moving messages. This may take a while.": [
+        "A mover mensagens. A operação pode demorar um pouco."
+      ],
+      "No trackers found, but some images could not be loaded with tracking protection": [
+        "Não foram encontrados rastreadores, mas algumas imagens não puderam ser carregadas com proteção de rastreamento"
+      ],
+      "non-${ MAIL_APP_NAME }": [
+        "não-${ MAIL_APP_NAME }"
+      ],
+      "None of the uploaded keys are valid for encryption. To be able to send messages to this address, please upload a valid key or disable \"Encrypt emails\".": [
+        "Nenhuma das chaves carregadas é válida para criptografia. Para poder enviar mensagens para este endereço, faça o upload de uma chave válida ou desative \"Criptografar e-mails\"."
+      ],
+      "One or more of your trusted keys were marked \"compromised\" by their owner. We recommend that you \"untrust\" these keys.": [
+        "Uma ou mais chaves confiáveis foram marcadas como \"comprometidas\" pelo proprietário. Recomendamos que \"desconfie\" dessas chaves."
+      ],
+      "PGP/Inline is only compatible with Plain Text format.": [
+        "PGP/Inline é apenas compatível com o formato Texto Simples."
+      ],
+      "PGP/MIME automatically sends the message using the current composer mode.": [
+        "PGP/MIME envia automaticamente a mensagem usando o modo de composição atual."
+      ],
+      "Preview failed to be loaded": [
+        "Falha no carregamento da pré-visualização"
+      ],
+      "Preview for this file type is not supported": [
+        "A pré-visualização deste tipo de arquivo não é suportada"
+      ],
+      "Protect your email from being leaked to mailing lists or spammers with ${ maskMyEmailButton }.": [
+        "Evite que o seu e-mail seja incluído em listas de e-mail ou apropriado por spammers com ${ maskMyEmailButton }."
+      ],
+      "Restore": [
+        "Restaurar"
+      ],
+      "Saved yesterday": [
+        "Guardado ontem"
+      ],
+      "Scheduled send of this message will be canceled.": [
+        "O envio agendado desta mensagem será cancelado."
+      ],
+      "Search taking too long? ${ dropdownButton } or ${ toggleOffButton } from this search session.": [
+        "A pesquisa está a demorar muito? ${ dropdownButton } ou ${ toggleOffButton } desta sessão de pesquisa."
+      ],
+      "Secure your files with encrypted cloud storage for free, today.": [
+        "Proteja já os seus arquivos de forma gratuita através do armazenamento em nuvem criptografado."
+      ],
+      "Servers are unreachable. Please try again in a few minutes": [
+        "Os servidores estão inacessíveis. Por favor, tente novamente dentro de alguns minutos"
+      ],
+      "Set ${ MAIL_APP_NAME } as your default email application for this browser. ${ MAIL_APP_NAME } will open automatically when you click an email link.": [
+        "Defina ${ MAIL_APP_NAME } como aplicação de e-mail padrão para este navegador. ${ MAIL_APP_NAME } abrirá automaticamente quando você clicar num link de e-mail."
+      ],
+      "SimpleLogin provides a simple way to create logins at untrusted third-party sites where you don't want to expose your actual email address.": [
+        "SimpleLogin fornece um meio simples de criar logins em sites de terceiros não confiáveis, de forma a que o seu endereço de e-mail real não seja exposto."
+      ],
+      "Temporarily unavailable. Please check back later.": [
+        "Temporariamente indisponível. Tente mais tarde."
+      ],
+      "The local database is being prepared": [
+        "A base de dados local está em preparação"
+      ],
+      "Themes can give your inbox a new look.": [
+        "Os temas podem dar uma nova aparência à sua caixa de entrada."
+      ],
+      "This action will download the most recent messages so they can be searched locally. Clearing your browser data will disable this option.": [
+        "Esta ação fará o download das mensagens mais recentes para que possam ser pesquisadas localmente. Limpar os dados do navegador desativará esta opção."
+      ],
+      "This conversation contains a scheduled message. Sending of this message will be canceled.": [
+        "Esta conversa contém uma mensagem agendada. O envio desta mensagem será cancelado."
+      ],
+      "This email has failed its domain's authentication requirements. It may be spoofed or improperly forwarded.": [
+        "Este e-mail falhou nos requisitos de autenticação do seu domínio. Pode ser falsificado ou ter sido encaminhado incorretamente."
+      ],
+      "This link leads to a website that might be trying to steal your information, such as passwords and credit card details.": [
+        "Este link leva a um website que pode tentar roubar a sua informação, como palavras-passe e números de cartão de crédito."
+      ],
+      "This link may be a homograph attack and cannot be opened by the Edge browser. If you are certain the link is legitimate, please use a different browser to open it.": [
+        "Este link poderá ser um ataque homógrafo e não pode ser aberto pelo navegador Edge. Se tiver certeza de que o link é legítimo, abra-o com um navegador diferente."
+      ],
+      "This message has been adjusted to comply with a dark background.": [
+        "Esta mensagem foi ajustada para ser apresentada num fundo escuro."
+      ],
+      "This message will be automatically deleted on ${ longDateMEssage }": [
+        "Esta mensagem será apagada automaticamente em ${ longDateMEssage }"
+      ],
+      "This message will be automatically deleted on ${ shortDateMessage }": [
+        "Esta mensagem será apagada automaticamente em ${ shortDateMessage }"
+      ],
+      "This message will be moved to Drafts so you can edit it. You'll need to reschedule when it will be sent.": [
+        "Esta mensagem será movida para os Rascunhos para que possa ser editada. Será necessário proceder ao reagendamento do seu envio."
+      ],
+      "This message will be sent in the morning at ${ formattedTime }": [
+        "Esta mensagem será enviada pela manhã às ${ formattedTime }"
+      ],
+      "This message will be sent on ${ dateString } at ${ formattedTime }": [
+        "Esta mensagem será enviada em ${ dateString } às ${ formattedTime }"
+      ],
+      "This message will be sent tomorrow at ${ formattedTime }": [
+        "Esta mensagem será enviada amanhã às ${ formattedTime }"
+      ],
+      "This message will expire on ${ longDateMEssage }": [
+        "Esta mensagem expirará em ${ longDateMEssage }"
+      ],
+      "This message will expire today at ${ shortDateMessage }": [
+        "Esta mensagem expira hoje às ${ shortDateMessage }"
+      ],
+      "This message will expire tomorrow at ${ shortDateMessage }": [
+        "Esta mensagem vai expirar amanhã às ${ shortDateMessage }"
+      ],
+      "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
+        "Para recuperar os seus dados, é necessário reativar a chave de conta usada no momento em que os dados foram criados. Isso exigirá que se lembre da senha usada aquando da geração da chave."
+      ],
+      "Too many messages waiting to be sent. Please wait until another message has been sent to schedule this one.": [
+        "Há muitas mensagens em espera para serem enviadas. Aguarde que seja enviada outra mensagem para agendar uma nova."
+      ],
+      "Turn on to search the content of your messages": [
+        "Ative para pesquisar o conteúdo das suas mensagens"
+      ],
+      "Updating your local messages, message content won't be searched during this update": [
+        "A atualizar as suas mensagens locais. O conteúdo dad mensagens não será pesquisado durante esta atualização"
+      ],
+      "Upgrade now to get premium features, products and storage at a special price": [
+        "Atualize agora para ter acesso a recursos, produtos e armazenamento premium por um preço especial"
+      ],
+      "Upgrade to add more addresses to your account.": [
+        "Faça o upgrade para poder adicionar mais endereços à sua conta."
+      ],
+      "Upgrade to create more folders, filters, and addresses.": [
+        "Faça o upgrade para poder criar mais pastas, filtros e endereços."
+      ],
+      "Upgrade to level up your privacy.": [
+        "Faça o upgrade para aumentar o nível da sua privacidade."
+      ],
+      "Upgrade to send email from @pm.me addresses.": [
+        "Faça o upgrade para poder enviar e-mail de endereços @pm.me."
+      ],
+      "Upgrade to send emails from your custom email domain.": [
+        "Faça o upgrade para poder enviar e-mails do seu domínio de e-mail personalizado."
+      ],
+      "Upgrade to send emails to contact groups easily.": [
+        "Faça o upgrade para poder enviar e-mails para grupos de contactos facilmente."
+      ],
+      "Upgrade to support a privacy-first internet.": [
+        "Faça o upgrade para apoiar uma Internet que coloca a privacidade em primeiro lugar."
+      ],
+      "Upgrade to support our mission of privacy for all.": [
+        "Faça o upgrade para apoiar a nossa missão de disponibilizar privacidade para todos."
+      ],
+      "Upgrade to support privacy and get more features.": [
+        "Faça o upgrade para apoiar a privacidade e obter mais recursos."
+      ],
+      "Upgrade to unlock premium features.": [
+        "Faça o upgrade para desbloquear recursos premium."
+      ],
+      "Upgrade to use ${ MAIL_APP_NAME } with Apple Mail, Outlook or Thunderbird.": [
+        "Faça o upgrade para poder usar ${ MAIL_APP_NAME } com Apple Mail, Outlook ou Thunderbird."
+      ],
+      "Upgrade to use auto-reply when you're away.": [
+        "Faça o upgrade para usar a resposta automática quando estiver ausente."
+      ],
+      "Use keyboard shortcuts to manage your email faster.": [
+        "Use atalhos de teclado para gerir o seu e-mail mais rapidamente."
+      ],
+      "Using SimpleLogin is easy": [
+        "Usar o SimpleLogin é fácil"
+      ],
+      "When do you want your message to be automatically deleted from the recipient's inbox and your sent folder?": [
+        "Quando deseja que a sua mensagem seja excluída automaticamente da caixa de entrada do destinatário e da pasta de envio?"
+      ],
+      "When do you want your message to self-destruct?": [
+        "Quando pretende que a sua mensagem se autodestrua?"
+      ],
+      "When giving out your email, use a unique, disposable Hide My Email alias instead of your real email address.": [
+        "Ao fornecer o seu e-mail, use um alias Hide My Email exclusivo e descartável, em vez do seu endereço de e-mail real."
+      ],
+      "When you set up two-factor authentication, we provide recovery codes which you can use to sign in if you lose access to your authenticator app.": [
+        "Após a configuração da autenticação de dois fatores, serão fornecidos códigos de recuperação que poderá usar para se autenticar, no caso de perder o acesso à aplicação de autenticação."
+      ],
+      "You can add it as an attachment or display it inline in your mail body.": [
+        "Pode adicioná-lo como um anexo ou exibi-lo em linha no corpo do e-mail."
+      ],
+      "You can also merge imported calendars with existing ${ BRAND_NAME } calendars.": [
+        "Também pode combinar calendários importados com calendários existentes de ${ BRAND_NAME }."
+      ],
+      "You can check the progress ${ importProgressLink }.": [
+        "Pode verificar o progresso ${ importProgressLink }."
+      ],
+      "You can use ${ VPN_APP_NAME } for free, today.": [
+        "Pode usar já hoje, gratuitamente, ${ VPN_APP_NAME }."
+      ],
+      "Your ${ BRAND_NAME } Account includes SimpleLogin. Install the browser extension with one click to get started.": [
+        "A sua conta ${ BRAND_NAME } inclui SimpleLogin. Instale a extensão do navegador com um clique para começar."
+      ],
+      "Your ${ BRAND_NAME } account is currently suspended. Emails are no longer being delivered to your inbox. Your Drive sharing links are no longer active, and you cannot upload new files. To continue using your account, please pay any overdue invoices.": [
+        "A sua conta ${ BRAND_NAME } está suspensa de momento. Não receberá e-mails na sua caixa de entrada. Os seus links de partilha do Drive estão inativos e não pode fazer upload de novos arquivos. Para continuar a usar sua conta, efetue o pagamento das faturas vencidas."
+      ],
+      "Your account has at least one overdue invoice. Your account is restricted, and all services are now blocked until payment. ${ payInvoiceLink }": [
+        "A sua conta tem pelo menos uma fatura vencida. A sua conta está restrita e todos os serviços estão bloqueados até o pagamento. ${ payInvoiceLink }"
+      ],
+      "Your account has at least one overdue invoice. Your account is restricted. Continued non-payment will block your emails and sharing links. ${ payInvoiceLink }": [
+        "A sua conta tem pelo menos uma fatura vencida. A sua conta é restrita. O não pagamento regular bloqueará os seus e-mails e links de partilha. ${ payInvoiceLink }"
+      ],
+      "Your data is ready to import from ${ importedEmailAddressStrong } to your ${ BRAND_NAME } account.": [
+        "Os seus dados estão prontos para serem importados de ${ importedEmailAddressStrong } para a sua conta ${ BRAND_NAME }."
+      ],
+      "Your message will expire today.": [
+        "A sua mensagem vai expirar hoje."
+      ],
+      "Your message will expire tomorrow.": [
+        "A sua mensagem vai expirar amanhã."
       ]
     },
     "info": {
@@ -5299,6 +5794,36 @@
       ],
       "Your password (admin)": [
         "A sua palavra-passe (admin)"
+      ],
+      "${ BRAND_NAME } username": [
+        "Nome de usuário do ${ BRAND_NAME }"
+      ],
+      "(Temporarily unavailable. Please check back later.)": [
+        "(Temporariamente indisponível. Tente mais tarde.)"
+      ],
+      "Don't ask again": [
+        "Não perguntar novamente"
+      ],
+      "Don't show this again": [
+        "Não mostrar novamente"
+      ],
+      "How would you describe your experience with the new ${ BRAND_NAME }?": [
+        "Como você descreveria a sua experiência com o novo ${ BRAND_NAME }?"
+      ],
+      "Keyboard shortcut: ${ shortcut }": [
+        "Atalhos de teclado: ${ shortcut }"
+      ],
+      "Last 12 months only": [
+        "Últimos 12 meses"
+      ],
+      "Last 3 months only": [
+        "Últimos 3 meses"
+      ],
+      "Last month only": [
+        "Último mês"
+      ],
+      "Remember my choice": [
+        "Lembrar a minha escolha"
       ]
     },
     "Label attach to date input to select a date": {
@@ -5525,6 +6050,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Tem de reativar as suas chaves para ver o convite atualizado."
+      ],
+      "Open in ${ CALENDAR_APP_NAME }": [
+        "Abrir no ${ CALENDAR_APP_NAME }"
       ]
     },
     "Link to settings": {
@@ -5556,6 +6084,10 @@
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } label and label them as": [
         "Importar todas as mensagens de ${ selectedItemsToImportCount } de ${ itemsToImportCount } etiqueta e etiquetá-la como",
         "Importar todas as mensagens de ${ selectedItemsToImportCount } de ${ itemsToImportCount } etiquetas e etiquetá-las como"
+      ],
+      "Import all messages from ${ itemsToImportCount } label and label them as": [
+        "Importar todas as mensagens de ${ itemsToImportCount } etiqueta e etiquetá-las como",
+        "Importar todas as mensagens de ${ itemsToImportCount } etiquetas e etiquetá-las como"
       ]
     },
     "Mailbox": {
@@ -5815,6 +6347,9 @@
       ],
       "Senders blocked": [
         "Remetentes bloqueados"
+      ],
+      "Password has been set successfully": [
+        "Palavra-passe definida com sucesso"
       ]
     },
     "Onboarding": {
@@ -5891,6 +6426,15 @@
     "Paid user checklist item": {
       "Import contacts or emails": [
         "Importar contactos ou emails"
+      ],
+      "Get mobile app": [
+        "Obter a aplicação móvel"
+      ],
+      "Send a message": [
+        "Enviar uma mensagem"
+      ],
+      "Set up a recovery method": [
+        "Configurar um método de recuperação"
       ]
     },
     "Participant name": {
@@ -6195,6 +6739,9 @@
       ],
       "Stored with zero-access encryption": [
         "Armazenado com encriptação zero acesso"
+      ],
+      "Encrypted by ${ MAIL_APP_NAME }": [
+        "Criptografado por ${ MAIL_APP_NAME }"
       ]
     },
     "Side panel spotlight": {
@@ -6486,6 +7033,13 @@
       ],
       "Verification successful": [
         "A verificação é terminada."
+      ],
+      "${ elementsCount } message moved to spam and sender added to your spam list.": [
+        "${ elementsCount } mensagem foi movida para a pasta de spam e o remetente foi adicionado à lista de spam.",
+        "${ elementsCount } mensagens foram movidas para a pasta de spam e os remetentes foram adicionados à lista de spam."
+      ],
+      "Conversation moved to ${ folderName } and sender added to your not spam list.": [
+        "A conversação foi movida para ${ folderName } e remetente foi adicionado à sua lista de não spam."
       ]
     },
     "Success notification": {
@@ -6563,12 +7117,20 @@
       "${ minutes } min": [
         "${ minutes } min",
         "${ minutes } min"
+      ],
+      "${ hoursInt }.5 h": [
+        "${ hoursInt }.5 h",
+        "${ hoursInt }.5 h"
       ]
     },
     "Time unit for duration; vocalized in the time picker": {
       "${ minutes } minute": [
         "${ minutes } minuto",
         "${ minutes } minutos"
+      ],
+      "${ hours } hour": [
+        "${ hours } hora",
+        "${ hours } horas"
       ]
     },
     "Title": {
@@ -7034,6 +7596,93 @@
       ],
       "What's new": [
         "O que há de novo"
+      ],
+      "${ MAIL_APP_NAME } Keyboard Shortcuts": [
+        "${ MAIL_APP_NAME } Atalhos de teclado"
+      ],
+      "Are you sure you want to close the preview?": [
+        "Tem a certeza de que deseja fechar a pré-visualização?"
+      ],
+      "Clear out the junk": [
+        "Limpe o lixo"
+      ],
+      "Create folder \"${ search }\"": [
+        "Criar pasta \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Criar etiqueta \"${ search }\""
+      ],
+      "Customize and confirm": [
+        "Personalize e confirme"
+      ],
+      "Customize calendar import": [
+        "Personalize a importação de calendário"
+      ],
+      "Customize your mail import": [
+        "Personalize a sua importação de e-mail"
+      ],
+      "Delete ${ label.Name } label": [
+        "Eliminar a etiqueta ${ label.Name }"
+      ],
+      "Don't give spam a chance": [
+        "Não dê oportunidade ao spam"
+      ],
+      "Email composer": [
+        "Compositor de e-mail"
+      ],
+      "Enable message content search": [
+        "Ativar pesquisa de conteúdo de mensagem"
+      ],
+      "Folder options": [
+        "Opções de pasta"
+      ],
+      "Hide your email with SimpleLogin by ${ BRAND_NAME }": [
+        "Oculte o seu e-mail com o SimpleLogin por ${ BRAND_NAME }"
+      ],
+      "Keep your inbox organized": [
+        "Mantenha a sua caixa de entrada organizada"
+      ],
+      "Label options": [
+        "Opções de etiqueta"
+      ],
+      "Message will expire": [
+        "A mensagem vai expirar"
+      ],
+      "Moving a scheduled message": [
+        "A mover uma mensagem agendada"
+      ],
+      "No attachment found": [
+        "Nenhum anexo encontrado"
+      ],
+      "Preview": [
+        "Pré-visualização"
+      ],
+      "Save time with email filters": [
+        "Economize tempo com filtros de e-mail"
+      ],
+      "Self-destruct message": [
+        "Mensagem autodestruível"
+      ],
+      "Sender changed": [
+        "Remetente alterado"
+      ],
+      "Set your own schedule": [
+        "Defina a sua própria programação"
+      ],
+      "Sign in and grant access": [
+        "Faça login e conceda acesso"
+      ],
+      "Sign in with 2FA": [
+        "Autenticação com 2FA"
+      ],
+      "Subject missing": [
+        "O assunto está em falta"
+      ],
+      "Your changes are not synced yet": [
+        "As suas alterações ainda não foram sincronizadas"
+      ],
+      "Your Mail Plus free trial ends on ${ textDate }": [
+        "O seu teste gratuito do Mail Plus finaliza em ${ textDate }"
       ]
     },
     "Title header": {
@@ -7403,6 +8052,141 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualmente, ${ untilString }"
+      ]
+    },
+    "Animation": {
+      "Encrypted": [
+        "Criptografado"
+      ],
+      "New email": [
+        "Novo correio electrónico"
+      ]
+    },
+    "empty messages: success": {
+      "Label cleared": [
+        "Etiqueta limpa"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB de armazenamento total"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Obter o ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "Não mostrar esta oferta novamente"
+      ],
+      "Got it": [
+        "Entendido"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Drive premium"
+      ],
+      "Premium VPN": [
+        "VPN premium"
+      ],
+      "Up to 6 users": [
+        "Até 6 utilizadores"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Grupos do ${ BRAND_NAME }"
+      ],
+      "customer support": [
+        "apoio ao cliente"
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Obter o ${ planName }"
+      ]
+    },
+    "Import instructions": {
+      "Select ${ boldExportCSV }.": [
+        "Selecionar ${ boldExportCSV }."
+      ]
+    },
+    "Link to calendar event": {
+      "Open in ${ CALENDAR_APP_NAME }": [
+        "Abrir no ${ CALENDAR_APP_NAME }"
+      ]
+    },
+    "new_plans: label": {
+      "Tell us about your experience. (Optional)": [
+        "Conte-nos a sua experiência. (Opcional)"
+      ]
+    },
+    "Signing preference for emails": {
+      "Don't sign": [
+        "Não assinar"
+      ],
+      "Sign": [
+        "Assinar"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Fechar"
+      ],
+      "Special offer": [
+        "Oferta especial"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 utilizadores"
+      ],
+      "64 countries": [
+        "64 países"
+      ],
+      "High speed VPN": [
+        "VPN de alta velocidade"
+      ],
+      "Premium Drive": [
+        "Drive premium"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Mail, Calendar e Drive premium"
+      ],
+      "Premium VPN": [
+        "VPN premium"
+      ]
+    },
+    "specialoffer: Label": {
+      "Most popular": [
+        "Mais popular"
+      ]
+    },
+    "specialoffer: Link": {
+      "Upgrade": [
+        "Actualizar"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ mês"
+      ],
+      "1 year": [
+        "1 ano"
+      ],
+      "2 years": [
+        "2 anos"
+      ]
+    },
+    "Video control": {
+      "Replay video": [
+        "Reproduzir o vídeo novamente"
       ]
     }
   }

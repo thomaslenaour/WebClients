@@ -1155,6 +1155,9 @@
       ],
       "Zoom out": [
         "Зменшити"
+      ],
+      "Restore": [
+        "Відновити"
       ]
     },
     "action": {
@@ -3473,6 +3476,9 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "За вашим пошуковим запитом знайдено надто багато результатів. Обмежте пошуковий запит і спробуйте знову."
+      ],
+      "The email addresses do not match": [
+        "Електронні адреси відрізняються"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3691,6 +3697,9 @@
       ],
       "You do not have any contact yet. Start by creating a new contact": [
         "У вас поки що немає жодного контакту. Почніть зі створення нового"
+      ],
+      "Please refresh the page or try again later.": [
+        "Оновіть сторінку або повторіть спробу пізніше."
       ]
     },
     "Error notification": {
@@ -5906,6 +5915,18 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Фраза відновлення — це послідовність з 12 слів у певному порядку."
+      ],
+      "Automatically delete messages that have been in trash and spam for more than 30 days.": [
+        "Автоматично видаляти повідомлення, які перебувають у смітнику та спамі понад 30 днів."
+      ],
+      "Messages that have been in trash and spam more than 30 days will be automatically deleted.": [
+        "Повідомлення, що перебувають у смітнику та спамі понад 30 днів, автоматично видалятимуться."
+      ],
+      "Restore": [
+        "Відновити"
+      ],
+      "Upgrade to automatically delete messages that have been in trash and spam for more than 30 days.": [
+        "Придбайте передплату, щоб повідомлення, які перебувають у смітнику та спамі понад 30 днів, видалялися автоматично."
       ]
     },
     "info": {
@@ -7300,6 +7321,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Ви можете змінити це будь-коли в налаштуваннях."
+      ],
+      "Set up your organization testing": [
+        "Налаштуйте тестування своєї організації"
       ]
     },
     "Option": {
@@ -8806,6 +8830,12 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша безплатна пробна версія Mail Plus завершується ${ textDate }"
+      ],
+      "Preview": [
+        "Попередній перегляд"
+      ],
+      "Save time with email filters": [
+        "Заощаджуйте час за допомогою фільтрів електронної пошти"
       ]
     },
     "Title header": {
@@ -9311,6 +9341,217 @@
       ],
       "Yearly, ${ untilString }": [
         "Щороку, ${ untilString }"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "Усього 3 ТБ сховища"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Отримати ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Простір сховища спільний для учасників родини ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } і ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "Більше не показувати цю пропозицію"
+      ],
+      "Got it": [
+        "Зрозуміло"
+      ],
+      "Keep current plan": [
+        "Лишити поточний тарифний план"
+      ],
+      "Switch plans": [
+        "Змінити тарифний план"
+      ],
+      "View the invitation": [
+        "Переглянути запрошення"
+      ],
+      "View the invitations": [
+        "Переглянути запрошення"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail і Calendar"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Up to 6 users": [
+        "До 6 користувачів"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Групи ${ BRAND_NAME }"
+      ],
+      "customer support": [
+        "клієнтська підтримка"
+      ],
+      "Manage addresses.": [
+        "Керувати адресами."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Вас запрошено приєднатися до ${ invite.OrganizationName }"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "Знижки відносно стандартної місячної ціни."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Отримати ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Set up your family account": [
+        "Налаштувати родинний обліковий запис"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Закрити"
+      ],
+      "Don't show this offer again": [
+        "Більше не показувати цю пропозицію"
+      ],
+      "Special offer": [
+        "Спеціальна пропозиція"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "Усього ${ storageSize } сховища"
+      ],
+      "3 TB": [
+        "3 ТБ"
+      ],
+      "6 users": [
+        "6 користувачів"
+      ],
+      "64 countries": [
+        "64 країни"
+      ],
+      "All paid Mail and Calendar features": [
+        "Усі платні функції пошти й календарів"
+      ],
+      "High speed VPN": [
+        "Високошвидкісна VPN"
+      ],
+      "Highest VPN speed": [
+        "Найвища швидкість VPN"
+      ],
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium early access": [
+        "Ранній преміумдоступ"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail і Calendar"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Premium Mail, Calendar і Drive"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Secure cloud storage": [
+        "Безпечне хмарне сховище"
+      ],
+      "Secure streaming": [
+        "Захищена трансляція"
+      ],
+      "Support online privacy": [
+        "Підтримка онлайн-приватності"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "Знижки відносно стандартної місячної ціни."
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Ця передплата автоматично продовжуватиметься раз на 2 роки за такою ж ціною, поки її не буде скасовано."
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "Довічна угода"
+      ],
+      "Limited time only": [
+        "Упродовж обмеженого часу"
+      ],
+      "Most popular": [
+        "Найпопулярніший"
+      ],
+      "Offer ends soon": [
+        "Пропозиція скоро завершиться"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "Знижка діятиме після поновлення передплати, доки її не буде скасовано або змінено"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Перейти до тарифних планів"
+      ],
+      "Upgrade": [
+        "Покращити"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ місяць"
+      ],
+      "1 year": [
+        "1 рік"
+      ],
+      "2 years": [
+        "2 роки"
+      ],
+      "Get the deal": [
+        "Скористатися пропозицією"
+      ],
+      "Save ${ discount }%": [
+        "Знижка ${ discount }%"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "Розпродаж у Чорну П'ятницю"
+      ],
+      "Cyber Week Sale": [
+        "Розпродаж Кібертижня"
+      ],
+      "End of year offer": [
+        "Передноворічна пропозиція"
+      ],
+      "End of Year Sale": [
+        "Передноворічний розпродаж"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Доступ звідусіль до матеріалів сервісів трансляції, включно з Netflix, Disney+ і Prime Video."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Безпечно зберігайте свої файли у зашифрованому хмарному сховищі з автоматичною синхронізацією, зашифрованим спільним доступом та іншими можливостями."
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Простір сховища спільний для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } та ${ DRIVE_APP_NAME }."
       ]
     }
   }

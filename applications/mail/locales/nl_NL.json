@@ -1144,6 +1144,9 @@
       ],
       "Zoom out": [
         "Zoom uit"
+      ],
+      "Restore": [
+        "Herstel"
       ]
     },
     "action": {
@@ -1249,6 +1252,9 @@
       ],
       "Encrypted": [
         "Versleuteld"
+      ],
+      "New email": [
+        "Nieuwe e-mailadres"
       ]
     },
     "Apps dropdown": {
@@ -1361,6 +1367,9 @@
       ],
       "Website access problem": [
         "Probleem met toegang tot website"
+      ],
+      "Pass problem": [
+        "Probleem met Pass"
       ]
     },
     "Button": {
@@ -2879,6 +2888,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "U kunt contactpersonen markeren die u niet wilt samenvoegen of behouden. Ze worden pas verwijderd na het klikken op 'samenvoegen'"
+      ],
+      "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
+        "Krijg onbeperkt filters die uw postvak voor u sorteren en andere premiumfuncties als u upgrade."
+      ],
+      "Unlock unlimited folders, labels and more premium features when you upgrade.": [
+        "Krijg onbeperkt mappen, labels en meer premium functies als u upgrade."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3418,6 +3433,9 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Uw zoekopdracht leverde te veel resultaten op. Verfijn uw zoekopdracht en probeer het opnieuw."
+      ],
+      "The email addresses do not match": [
+        "De e-mailadressen komen niet overeen"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3632,6 +3650,12 @@
       ],
       "You do not have any contact yet. Start by creating a new contact": [
         "U hebt nog geen contactpersonen. Start met het aanmaken van een contactpersoon"
+      ],
+      "Please refresh the page or try again later.": [
+        "Ververs de pagina of probeer het later opnieuw."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "We konden deze pagina niet laden. Ververs de pagina of controleer uw internetverbinding."
       ]
     },
     "Error notification": {
@@ -5684,6 +5708,21 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Uw herstelzin is een reeks van 12 woorden in een specifieke volgorde."
+      ],
+      "Automatically delete messages that have been in trash and spam for more than 30 days.": [
+        "Automatisch berichten verwijderen die meer dan 30 dagen in de prullenbak of spam zitten."
+      ],
+      "Messages that have been in trash and spam more than 30 days will be automatically deleted.": [
+        "Berichten die meer dan 30 dagen in de prullenbak of spam zitten worden automatisch verwijderd."
+      ],
+      "Restore": [
+        "Herstel"
+      ],
+      "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
+        "Om uw data te herstellen moet u de accountsleutels die u heeft gebruikt toen u de data aanmaakte heractiveren."
+      ],
+      "Upgrade to automatically delete messages that have been in trash and spam for more than 30 days.": [
+        "Upgrade om automatisch berichten te verwijderen die meer dan 30 dagen in de prullenbak of spam zitten."
       ]
     },
     "info": {
@@ -7058,6 +7097,9 @@
       ],
       "You can change this anytime in your settings.": [
         "U kunt dit op elk gewenst moment wijzigen in uw instellingen."
+      ],
+      "Set up your organization testing": [
+        "Stel uw organisatie in"
       ]
     },
     "Option": {
@@ -7592,6 +7634,12 @@
       ],
       "Support online privacy": [
         "Ondersteun online privacy"
+      ],
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
       ]
     },
     "specialoffer: Footer": {
@@ -7702,6 +7750,12 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "Upgrade en bespaar meer met 2 jaar ${ planName }"
+      ],
+      "Black Friday Sale": [
+        "Black Friday-aanbieding"
+      ],
+      "Cyber Week Sale": [
+        "Cyber Week-aanbieding"
       ]
     },
     "specialoffer: Tooltip": {
@@ -8041,6 +8095,9 @@
       ],
       "Verification successful": [
         "Verificatie gelukt"
+      ],
+      "Message expiration cancelled": [
+        "Verloopdatum bericht geannuleerd"
       ]
     },
     "Success notification": {
@@ -8684,6 +8741,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Uw Mail Plus proefversie eindigt op ${ textDate }"
+      ],
+      "Keep your inbox organized": [
+        "Houd uw postvak georganiseerd"
+      ],
+      "Preview": [
+        "Voorbeeld"
+      ],
+      "Save time with email filters": [
+        "Bespaar tijd met e-mailfilters"
       ]
     },
     "Title header": {
@@ -9119,6 +9185,162 @@
       ],
       "Yearly, ${ untilString }": [
         "Jaarlijks ${ untilString }"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB opslagruimte"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Kies ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Opslagruimte wordt gedeeld tussen familieleden op ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "Deze aanbieding niet opnieuw weergeven"
+      ],
+      "Got it": [
+        "Begrepen"
+      ],
+      "Keep current plan": [
+        "Huidig abonnement behouden"
+      ],
+      "Switch plans": [
+        "Van abonnement wisselen"
+      ],
+      "View the invitation": [
+        "Bekijk de uitnodiging"
+      ],
+      "View the invitations": [
+        "Bekijk de uitnodigingen"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail en Calendar"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Up to 6 users": [
+        "Tot 6 gebruikers"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME }-groepen"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Accounts met een eigen domein kunnen zich niet aansluiten bij een Visionary- of gezinsabonnement."
+      ],
+      "customer support": [
+        "klantondersteuning"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Als u de uitnodiging accepteert, zetten we uw huidige abonnement om en wordt een eventueel resterend saldo teruggestort."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Uitgenodigd door: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Beheer adressen."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Eigenaren van een abonnement met leden kunnen zich niet aansluiten bij een ander groepsabonnement."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "U kunt op dit moment niet van abonnement wisselen."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Aan u toegewezen opslagruimte: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "De abonnementskosten worden in rekening gebracht bij de primaire beheerder van het Visionary- of gezinsabonnement."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary- en gezinsabonnmenten bieden op dit moment geen ondersteuning voor externe accounts. Maak een adres voor ${ BRAND_NAME } voordat u zich hierbij aansluit. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary- en gezinsabonnementen bieden op dit moment geen ondersteuning voor levenslange accounts."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "U bent uitgenodigd u aan te sluiten bij ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "U kunt slechts 3 uitnodigingen accepteren in een periode van 6 maanden. Neem contact op met ${ supportLink } als hierop een uitzondering moet worden gemaakt."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "U bent uitgenodigd u aan te sluiten bij ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "U hebt zich aangesloten bij het Family-abonnement"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "U bent uitgenodigd om uw ${ BRAND_NAME }-account te koppelen aan dit groepsabonnement en samen gebruik te maken van alle premium functies van ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Uw account heeft meer e-mailadressen dan is toegestaan in dit abonnement. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Uw account gebruikt ${ usedSpace } aan opslagruimte. Dat is meer dan de ${ inviteSpace } die aan u is toegewezen. Verwijder gegevens of vraag de abonnementsbeheerder uw opslagruimte uit te breiden."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Met uw huidige abonnement kunt u zich niet aansluiten bij een Visionary- of gezinsabonnement."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Uw abonnement wordt aan het einde van uw factureringscyclus automatisch verlengd tegen hetzelfde tarief."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Kortingen zijn gebaseerd op de standaardprijs per maand."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Kies ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Online privacy voor het hele gezin"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Configureer uw gezinsaccount en nodig gebruikers uit "
+      ],
+      "Set up your family": [
+        "Uw gezin configureren"
+      ],
+      "Set up your family account": [
+        "Uw gezinsaccount configureren"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Ontdek ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Met 2700 servers in meer dan 65 landen, verbinding met maximaal 10 apparaten, wereldwijd toegang tot streamingdiensten, malware- en advertentieblokkering, en meer."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited Hide My Email aliases, calendar sharing and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 90 e-mailadressen, onbeperkt Hide My Email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Beveilig uw bestanden met versleutelde cloudopslag. Inclusief automatische synchronisatie, versleuteld bestanden delen en meer."
       ]
     }
   }

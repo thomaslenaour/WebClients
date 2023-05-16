@@ -1144,6 +1144,9 @@
       ],
       "Zoom out": [
         "Zoom ud"
+      ],
+      "Restore": [
+        "Gendan"
       ]
     },
     "action": {
@@ -1246,6 +1249,9 @@
       ],
       "New email": [
         "Ny e-mail"
+      ],
+      "Auto forwarded": [
+        "Automatisk videresendt"
       ]
     },
     "Apps dropdown": {
@@ -3406,6 +3412,9 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Din søgning gav for mange resultater. Begræns din søgning, og forsøg igen."
+      ],
+      "The email addresses do not match": [
+        "E-Mailadresserne stemmer ikke overens"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3464,6 +3473,9 @@
     "Error importing contact": {
       "Encryption failed": [
         "Kryptering mislykkedes"
+      ],
+      "vCard versions < 3.0 not supported": [
+        "vCard-versioner < 3.0 understøttes ikke"
       ]
     },
     "Error importing contacts": {
@@ -5615,6 +5627,24 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Din gendannelsessætning er en serie af 12 ord i en bestemt rækkefølge."
+      ],
+      "${ fileName }: full-size image": [
+        "${ fileName }: billede i fuld størrelse"
+      ],
+      "${ fileName }: low-resolution preview": [
+        "${ fileName }: forhåndsvisning i lav opløsning"
+      ],
+      "Preview for this file type is not supported": [
+        "Forhåndsvisning af denne filtype er ikke understøttet"
+      ],
+      "Restore": [
+        "Gendan"
+      ],
+      "Upgrade to use ${ MAIL_APP_NAME } with Apple Mail, Outlook or Thunderbird.": [
+        "Opgrader for at bruge ${ MAIL_APP_NAME } med Apple Mail, Outlook eller Thunderbird."
+      ],
+      "Upgrade to use auto-reply when you're away.": [
+        "Opgrader for at bruge auto-svar, når du er væk."
       ]
     },
     "info": {
@@ -6981,6 +7011,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Du kan altid ændre dette i dine indstillinger."
+      ],
+      "Set up your organization testing": [
+        "Konfigurer din organisation"
       ]
     },
     "Option": {
@@ -8384,6 +8417,12 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Din Mail Plus prøveperiode slutter ${ textDate }"
+      ],
+      "Keep your inbox organized": [
+        "Hold din indbakke organiseret"
+      ],
+      "Preview": [
+        "Forhåndsvisning"
       ]
     },
     "Title header": {
@@ -8819,6 +8858,200 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligt, ${ untilString }"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB samlet lagerplads"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Lagerplads er delt mellem familiemedlemmer på tværs af ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } og ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "Vis ikke dette tilbud igen"
+      ],
+      "Got it": [
+        "Forstået"
+      ],
+      "Keep current plan": [
+        "Behold nuværende abonnement"
+      ],
+      "Switch plans": [
+        "Skift abonnement"
+      ],
+      "View the invitation": [
+        "Se invitationen"
+      ],
+      "View the invitations": [
+        "Se invitationerne"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail og Kalender"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Up to 6 users": [
+        "Op til 6 brugere"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "customer support": [
+        "kundeservice"
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Inviteret af: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Administrer adresser."
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Luk"
+      ],
+      "Don't show this offer again": [
+        "Vis ikke dette tilbud igen"
+      ],
+      "Special offer": [
+        "Specialtilbud"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } day": [
+        "${ days } dag",
+        "${ days } dage"
+      ],
+      "${ hours } hour": [
+        "${ hours } time",
+        "${ hours } timer"
+      ],
+      "${ minutes } minute": [
+        "${ minutes } minut",
+        "${ minutes } minutter"
+      ],
+      "${ seconds } second": [
+        "${ seconds } sekund",
+        "${ seconds } sekunder"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } måned GRATIS",
+        "${ n } måneder GRATIS"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } lagerplads i alt"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 brugere"
+      ],
+      "64 countries": [
+        "64 lande"
+      ],
+      "All paid Mail and Calendar features": [
+        "Alle betalte Mail og Kalender funktioner"
+      ],
+      "High speed VPN": [
+        "Højhastigheds-VPN"
+      ],
+      "Highest VPN speed": [
+        "Højeste VPN-hastighed"
+      ],
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium early access": [
+        "Premium tidlig adgang"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail og Kalender"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Premium Mail, Kalender og Drev"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Secure cloud storage": [
+        "Sikker Cloud-lagerplads"
+      ],
+      "Secure streaming": [
+        "Sikker streaming"
+      ],
+      "Support online privacy": [
+        "Støt privatliv online"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Gå til abonnementer"
+      ],
+      "Upgrade": [
+        "Opgrader"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ måned"
+      ],
+      "1 year": [
+        "1 år"
+      ],
+      "2 years": [
+        "2 år"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "Faktureret med ${ amount } for 1 måned"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "Faktureret med ${ amount } for 12 måneder"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "Faktureret med ${ amount } for 15 måneder"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "Faktureret med ${ amount } for 24 måneder"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "Faktureret med ${ amount } for 30 måneder"
+      ],
+      "for ${ n } month": [
+        "i ${ n } måned",
+        "i ${ n } måneder"
+      ],
+      "Get the deal": [
+        "Få tilbuddet"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "Black Friday-tilbud"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Includes support for 1 custom email domain, 10 email addresses, 10 Hide My Email aliases, calendar sharing, and more.": [
+        "Inkluderer support til 1 tilpasset e-maildomæne, 10 e-mailadresser, 10 Hide My Email-aliasser, kalenderdeling med mere."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited Hide My Email aliases, calendar sharing, and more.": [
+        "Inkluderer support til 3 tilpassede e-maildomæner, 15 e-mailadresser, ubegrænsede Hide My Email-aliasser, kalenderdeling med mere."
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }."
       ]
     }
   }

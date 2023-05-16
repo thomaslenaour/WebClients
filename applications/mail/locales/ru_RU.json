@@ -1155,6 +1155,9 @@
       ],
       "Zoom out": [
         "Уменьшить масштаб"
+      ],
+      "Restore": [
+        "Восстановить"
       ]
     },
     "action": {
@@ -2910,6 +2913,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Вы можете отметить для удаления те контакты, которые не хотите ни объединять, ни оставлять. Удаление будет происходить только после нажатия кнопки «Объединить»."
+      ],
+      "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
+        "Разблокируют неограниченные фильтры, которые сортируют Вашу почту за Вас и другие премиум функции при обновлении."
+      ],
+      "Unlock unlimited folders, labels and more premium features when you upgrade.": [
+        "Разблокируют неограниченные папки, ярлыки и другие премиум функции при обновлении."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3473,6 +3482,9 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Ваш поиск дал слишком много результатов. Пожалуйста, ограничьте поиск и повторите попытку."
+      ],
+      "The email addresses do not match": [
+        "Адреса электронной почты не совпадают"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3691,6 +3703,12 @@
       ],
       "You do not have any contact yet. Start by creating a new contact": [
         "У вас пока нет контактов. Начните с создания нового контакта"
+      ],
+      "Please refresh the page or try again later.": [
+        "Пожалуйста, обновите страницу или повторите попытку позже."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Мы не смогли загрузить эту страницу. Пожалуйста, обновите страницу или проверьте подключение к Интернету."
       ]
     },
     "Error notification": {
@@ -5906,6 +5924,18 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Ваша фраза для восстановления – это набор из 12 слов в определенном порядке."
+      ],
+      "Automatically delete messages that have been in trash and spam for more than 30 days.": [
+        "Автоматически удалять сообщения, находящиеся в корзине и спаме более 30 дней."
+      ],
+      "Messages that have been in trash and spam more than 30 days will be automatically deleted.": [
+        "Сообщения, находящиеся в корзине и спаме более 30 дней, будут автоматически удалены."
+      ],
+      "Restore": [
+        "Восстановить"
+      ],
+      "Upgrade to automatically delete messages that have been in trash and spam for more than 30 days.": [
+        "Сменить тариф для автоматического удаления сообщений, находящихся в корзине и спаме более 30 дней."
       ]
     },
     "info": {
@@ -7300,6 +7330,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Вы можете изменить это в любой момент в настройках."
+      ],
+      "Set up your organization testing": [
+        "Настройте тестирование вашей организации"
       ]
     },
     "Option": {
@@ -9056,6 +9089,12 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша бесплатная пробная версия Mail Plus заканчивается ${ textDate }"
+      ],
+      "Keep your inbox organized": [
+        "Поддерживайте порядок в папке \"Входящие\""
+      ],
+      "Save time with email filters": [
+        "Экономьте время с почтовыми фильтрами"
       ]
     },
     "Title header": {
@@ -9561,6 +9600,162 @@
       ],
       "Yearly, ${ untilString }": [
         "Ежегодно ${ untilString }"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "Хранилище на 3 ТБ"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Перейти на тариф ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Общее хранилище для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } и ${ DRIVE_APP_NAME } доступно всем членам семьи."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "Больше не показывать"
+      ],
+      "Got it": [
+        "ОК"
+      ],
+      "Keep current plan": [
+        "Остаться на текущем тарифе"
+      ],
+      "Switch plans": [
+        "Сменить тариф"
+      ],
+      "View the invitation": [
+        "Посмотреть приглашение"
+      ],
+      "View the invitations": [
+        "Посмотреть приглашения"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Платная версия Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Платная версия Mail и Calendar"
+      ],
+      "Premium VPN": [
+        "Платная версия VPN"
+      ],
+      "Up to 6 users": [
+        "До 6 пользователей"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Группы ${ BRAND_NAME }"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Аккаунты с пользовательскими доменами не могут подключиться к семейному плану или перейти на тариф Visionary."
+      ],
+      "customer support": [
+        "служба поддержки"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Если вы примете приглашение, тарифный план будет изменен. Неиспользованный баланс возвратится на счет аккаунта."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Вас приглашает: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Управляйте адресами."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Владельцы групповых тарифов не могут присоединиться к другим групповым тарифам."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Смена тарифа на данный момент недоступна."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Доступный объем хранилища: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Подписка оплачивается основным администратором семейного плана или тарифа Visionary."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "На данный момент семейный план и тариф Visionary не поддерживают внешние аккаунты. Перед подключением создайте адрес ${ BRAND_NAME }. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "На данный момент тариф Visionary и семейный план не доступны для пожизненных аккаунтов."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Вас пригласили присоединиться к организации «${ invite.OrganizationName }»‎"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Вы можете принять не более 3 приглашений за полгода. Если вам необходимо увеличить это число, обратитесь по ссылке: ${ supportLink }."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Вас пригласили присоединиться к группе «${ bannerOrganization }». ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Вы успешно присоединились к тарифу Family"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Вам предложили присоединить аккаунт ${ BRAND_NAME } к групповому тарифу для совместного использования всех платных функций ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "К аккаунту подключено больше адресов электронной почты, чем позволяет текущий тарифный план. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Ваш аккаунт занимает ${ usedSpace }, что превышает лимит хранилища в ${ inviteSpace }. Удалите некоторые данные или попросите администратора тарифного плана увеличить доступный вам объем."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Ваш текущий план не позволяет присоединиться к семейной подписке или тарифу Visionary."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Ваша подписка автоматически продлевается по той же цене в конце платежного цикла."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Скидки рассчитываются исходя из стандартной платы за месяц."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Перейти на тариф ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Конфиденциальность онлайн для всей семьи"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Создайте семейный аккаунт и приглашайте пользователей "
+      ],
+      "Set up your family": [
+        "Создайте семейную группу"
+      ],
+      "Set up your family account": [
+        "Настройте семейный аккаунт"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Представляем план ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Включает 2700 серверов в более чем 65 странах с возможностью подключения до 10 устройств, доступ к стриминговым платформам со всего мира, блокировщик рекламы и вредоносного ПО и другие преимущества."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited Hide My Email aliases, calendar sharing and more.": [
+        "Включает поддержку 3 пользовательских доменов, 90 электронных адресов, неограниченное количество псевдонимов Hide My Email, возможность делиться календарями и многое другое."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Защитите свои материалы при помощи зашифрованного облачного хранилища. Используйте автоматическую синхронизацию, зашифрованный обмен файлами и многое другое."
       ]
     }
   }
