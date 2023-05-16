@@ -3860,7 +3860,7 @@
     },
     "Filter option to only show message with attachments": {
       "Has file": [
-        "Tem arquivos"
+        "Possui anexo"
       ]
     },
     "Filter preview": {
@@ -7549,26 +7549,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } hora",
-        "${ hours } horas"
-      ],
-      "${ hours } hour": [
         "${ days } dia",
         "${ days } dias"
       ],
+      "${ hours } hour": [
+        "${ hours } hora",
+        "${ hours } horas"
+      ],
       "${ minutes } minute": [
-        "${ n } mês GRÁTIS",
-        "${ n } meses GRÁTIS"
+        "${ minutes } minutos",
+        "${ minutes } minutos"
       ],
       "${ seconds } second": [
-        "por ${ n } mês",
-        "por ${ n } meses"
+        "${ seconds } segundo",
+        "${ seconds } segundos"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } segundo",
-        "${ seconds } segundos"
+        "${ n } mês GRÁTIS",
+        "${ n } meses GRÁTIS"
       ]
     },
     "specialoffer: Deal details": {
@@ -7609,7 +7609,7 @@
         "Mail, Calendar e Drive premium"
       ],
       "Premium VPN": [
-        "VPN Premium"
+        "VPN premium"
       ],
       "Secure cloud storage": [
         "Armazenamento na nuvem seguro"

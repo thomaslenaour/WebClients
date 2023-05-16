@@ -119,7 +119,7 @@
         "Bèta toegang"
       ],
       "Blind Carbon Copy": [
-        "Blind Carbon Copy"
+        "BCC"
       ],
       "Block": [
         "Blokkeer"
@@ -140,7 +140,7 @@
         "Annuleren"
       ],
       "Carbon Copy": [
-        "Carbon Copy"
+        "CC"
       ],
       "Change page": [
         "Pagina veranderen"
@@ -2859,7 +2859,7 @@
         "Geen labels"
       ],
       "ProtonMail logo and a plus sign": [
-        "Proton Mail logo en een plus teken"
+        "Proton Mail-logo en een plus-teken"
       ],
       "The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have ${ MAX_IMPORT_CONTACTS_STRING } contact. If your file is bigger, please split it into smaller files.": [
         "Het bestand mag een maximale grootte hebben van ${ MAX_IMPORT_FILE_SIZE_STRING } en ${ MAX_IMPORT_CONTACTS_STRING } contact hebben. Als uw bestand groter is, splits het dan op in kleinere bestanden.",
@@ -5452,7 +5452,7 @@
         "Upgrade om meer mappen, filters en adressen te maken."
       ],
       "Upgrade to level up your privacy.": [
-        "Upgrade om up privacy naar een hoger niveau te tillen."
+        "Upgrade om uw privacy naar een hoger niveau te tillen."
       ],
       "Upgrade to send email from @pm.me addresses.": [
         "Upgrade om e-mails te versturen van @pm.me adressen."
@@ -5518,7 +5518,7 @@
         "Week"
       ],
       "When do you want your message to be automatically deleted from the recipient's inbox and your sent folder?": [
-        "Wanneer wilt u dat uw bericht automatische wordt verwijderd van de ontvangers inbox en uw Verzonden map?"
+        "Wanneer wilt u dat uw bericht automatisch wordt verwijderd uit de inbox van de ontvanger en uit uw map met Verzonden berichten?"
       ],
       "When do you want your message to be sent?": [
         "Wanneer wilt u dat uw bericht wordt verzonden?"
@@ -7531,26 +7531,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } uur",
-        "${ hours } uur"
-      ],
-      "${ hours } hour": [
         "${ days } dag",
         "${ days } dagen"
       ],
+      "${ hours } hour": [
+        "${ hours } uur",
+        "${ hours } uren"
+      ],
       "${ minutes } minute": [
-        "${ n } maand GRATIS",
-        "${ n } maanden GRATIS"
+        "${ minutes } minuut",
+        "${ minutes } minuten"
       ],
       "${ seconds } second": [
-        "voor ${ n } maand",
-        "voor ${ n } maanden"
+        "${ seconds } seconde",
+        "${ seconds } seconden"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } seconde",
-        "${ seconds } seconden"
+        "${ n } maand GRATIS",
+        "${ n } maanden GRATIS"
       ]
     },
     "specialoffer: Deal details": {

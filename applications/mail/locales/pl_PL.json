@@ -7186,7 +7186,7 @@
     },
     "new_plans: feature": {
       "Auto-delete spam and trashed messages": [
-        "Automatyczne usuwanie spamu i kosza"
+        "Automatyczne usuwanie Spamu i Kosza"
       ],
       "Custom email domains": [
         "Niestandardowe domeny"
@@ -7293,7 +7293,7 @@
         "Wybierz motyw"
       ],
       "Set up your organization": [
-        "Skonfiguruj swoją organizację"
+        "Skonfiguruj organizację"
       ],
       "Use the app selector in the top left to access all ${ BRAND_NAME } services: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } and ${ DRIVE_SHORT_APP_NAME }.": [
         "Otwórz menu aplikacji w lewym górnym rogu, aby uzyskać dostęp do wszystkich usług ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } i ${ DRIVE_SHORT_APP_NAME }."
@@ -7793,41 +7793,41 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } godzina",
-        "${ hours } godziny",
-        "${ hours } godzin",
-        "${ hours } godziny"
-      ],
-      "${ hours } hour": [
         "${ days } dzień",
         "${ days } dni",
         "${ days } dni",
         "${ days } dnia"
       ],
+      "${ hours } hour": [
+        "${ hours } godzina",
+        "${ hours } godziny",
+        "${ hours } godzin",
+        "${ hours } godziny"
+      ],
       "${ minutes } minute": [
-        "${ n } miesiąc BEZPŁATNIE",
-        "${ n } miesiące BEZPŁATNIE",
-        "${ n } miesięcy BEZPŁATNIE",
-        "${ n } miesiąca BEZPŁATNIE"
+        "${ minutes } minuta",
+        "${ minutes } minuty",
+        "${ minutes } minut",
+        "${ minutes } minuty"
       ],
       "${ seconds } second": [
-        "za ${ n } miesiąc",
-        "za ${ n } miesiące",
-        "za ${ n } miesięcy",
-        "za ${ n } miesiąca"
-      ]
-    },
-    "specialoffer: Deal": {
-      "${ n } month FREE": [
         "${ seconds } sekunda",
         "${ seconds } sekundy",
         "${ seconds } sekund",
         "${ seconds } sekundy"
       ]
     },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } miesiąc BEZPŁATNIE",
+        "${ n } miesiące BEZPŁATNIE",
+        "${ n } miesięcy BEZPŁATNIE",
+        "${ n } miesięcy BEZPŁATNIE"
+      ]
+    },
     "specialoffer: Deal details": {
       "${ storageSize } total storage": [
-        "${ storageSize } całkowitej przestrzeni dyskowej"
+        "${ storageSize } przestrzeni dyskowej"
       ],
       "3 TB": [
         "3 TB"
@@ -7877,7 +7877,7 @@
     },
     "specialoffer: Footer": {
       "Discounts are based on the standard monthly pricing.": [
-        "Rabaty są liczone na podstawie standardowych cen miesięcznych."
+        "Rabaty są obliczane na podstawie standardowych cen miesięcznych."
       ],
       "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
         "Subskrypcja będzie odnawiana automatycznie co 2 lata za tę samą cenę aż do momentu anulowania jej."

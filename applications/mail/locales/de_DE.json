@@ -3298,7 +3298,7 @@
         "Einige Gruppen konnten nicht gelöscht werden"
       ],
       "Some of your folder names are unavailable. Please customize the import to edit these names.": [
-        "Einige Ihrer Ordnernamen sind nicht verfügbar. Bitte passen Sie den Import an, um diese Namen zu bearbeiten."
+        "Einige deiner Ordnernamen sind nicht verfügbar. Bitte passe den Import an, um diese Namen zu bearbeiten."
       ],
       "Some of your folder names exceed ${ MAIL_APP_NAME }'s maximum character limit. Please customize the import to edit these names.": [
         "Einige deiner Ordnernamen überschreiten die maximale Zeichenanzahl von ${ MAIL_APP_NAME }. Bitte passe den Import an, um diese Namen zu bearbeiten."
@@ -6676,7 +6676,7 @@
         "Anzahl erstellte Kalender: ${ createdCalendarCount } von ${ calendarsToBeCreated }"
       ],
       "Connecting to your email provider": [
-        "Verbindung zu Ihrem E-Mail-Anbieter wird aufgebaut"
+        "Verbindung zu deinem E-Mail-Anbieter wird aufgebaut"
       ],
       "Creating new calendars": [
         "Neue Kalender werden angelegt"
@@ -7549,26 +7549,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } Stunde",
-        "${ hours } Stunden"
-      ],
-      "${ hours } hour": [
         "${ days } Tag",
         "${ days } Tage"
       ],
+      "${ hours } hour": [
+        "${ hours } Stunde",
+        "${ hours } Stunden"
+      ],
       "${ minutes } minute": [
-        "${ n } Monat KOSTENLOS",
-        "${ n } Monate KOSTENLOS"
+        "${ minutes } Minute",
+        "${ minutes } Minuten"
       ],
       "${ seconds } second": [
-        "für ${ n } Monat",
-        "für ${ n } Monate"
+        "${ seconds } Sekunde",
+        "${ seconds } Sekunden"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } Sekunde",
-        "${ seconds } Sekunden"
+        "${ n } Monat KOSTENLOS",
+        "${ n } Monate KOSTENLOS"
       ]
     },
     "specialoffer: Deal details": {
@@ -8574,7 +8574,7 @@
         "Empfänger"
       ],
       "Reconnect your account": [
-        "Erneut mit Ihrem Konto verbinden"
+        "Erneut mit deinem Konto verbinden"
       ],
       "Recover data": [
         "Daten wiederherstellen"

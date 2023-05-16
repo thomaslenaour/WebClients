@@ -7549,26 +7549,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } ora",
-        "${ hours } ore"
-      ],
-      "${ hours } hour": [
         "${ days } giorno",
         "${ days } giorni"
       ],
+      "${ hours } hour": [
+        "${ hours } ora",
+        "${ hours } ore"
+      ],
       "${ minutes } minute": [
-        "${ n } mese GRATIS",
-        "${ n } mesi GRATIS"
+        "${ minutes } minuto",
+        "${ minutes } minuti"
       ],
       "${ seconds } second": [
-        "per ${ n } mese",
-        "per ${ n } mesi"
+        "${ seconds } secondo",
+        "${ seconds } secondi"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } secondo",
-        "${ seconds } secondi"
+        "${ n } mese GRATIS",
+        "${ n } mesi GRATIS"
       ]
     },
     "specialoffer: Deal details": {
