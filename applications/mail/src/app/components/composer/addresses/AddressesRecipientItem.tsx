@@ -189,7 +189,7 @@ const AddressesRecipientItem = ({
             >
                 <span className="relative interactive-pseudo-inset flex flex-row flex-nowrap">
                     {(icon || loading) && (
-                        <span className="flex pl0-5 flex-item-noshrink">
+                        <span className="flex pl0-5 my-auto flex-item-noshrink">
                             <EncryptionStatusIcon loading={loading} {...icon} />
                         </span>
                     )}
