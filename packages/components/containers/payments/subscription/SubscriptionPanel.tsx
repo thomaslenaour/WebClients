@@ -367,9 +367,14 @@ const SubscriptionPanel = ({
                 return getDefault();
             })()}
             {isAdmin && (hasOrganizationSetup(organization) || hasOrganizationSetupWithKeys(organization)) && (
-                <ButtonLike as={SettingsLink} className="mb-2" color="norm" path="/users-addresses" fullWidth>{c(
-                    'familyOffer_2023:Family plan'
-                ).t`Manage user accounts`}</ButtonLike>
+                <ButtonLike
+                    as={SettingsLink}
+                    className="mb-2"
+                    color="norm"
+                    path="/users-addresses"
+                    size="large"
+                    fullWidth
+                >{c('familyOffer_2023:Family plan').t`Manage user accounts`}</ButtonLike>
             )}
             {
                 // translator: Edit billing details is a button when you want to edit the billing details of your current plan, in the dashboard.
