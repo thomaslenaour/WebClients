@@ -569,6 +569,9 @@
       ],
       "Yes, I'll attend": [
         "是，我會出席"
+      ],
+      "Add public holidays": [
+        "新增公眾假期"
       ]
     },
     "Action subline": {
@@ -2419,6 +2422,12 @@
       ],
       "Your import will not be processed.": [
         "將不會處理您的匯入。"
+      ],
+      "The email addresses do not match": [
+        "電子郵件地址不相符"
+      ],
+      "You already added this holidays calendar": [
+        "您已新增此假期行事曆"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2611,6 +2620,12 @@
       ],
       "You need an active personal calendar to import events": [
         "您需要一個使用中的個人行事曆以便匯入事件"
+      ],
+      "Please refresh the page or try again later.": [
+        "請重新整理頁面或稍後再試。"
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "我們無法載入此頁面。請重新整理頁面或檢查您的網際網路連線。"
       ]
     },
     "Error notification": {
@@ -3139,7 +3154,7 @@
         "已成功更新 ${ updated } 位聯絡人。"
       ],
       "(${ memberCount } members)": [
-        "(${ memberCount } 個成員)"
+        "(${ memberCount } 位成員)"
       ],
       "A cancellation email will be sent to removed participants.": [
         "取消函將傳送給已移除的參與者。"
@@ -3373,7 +3388,7 @@
         "連結已複製到剪貼簿"
       ],
       "Link created": [
-        "連結已創建"
+        "連結已建立"
       ],
       "Loading": [
         "正在載入"
@@ -4134,6 +4149,9 @@
       ],
       "Your password (admin)": [
         "您的密碼（管理員）"
+      ],
+      "Language": [
+        "語言"
       ]
     },
     "Label for contact group color": {
@@ -4332,6 +4350,15 @@
       ],
       "Time zone changed": [
         "時區已變更"
+      ],
+      "Add public holidays": [
+        "新增公眾假期"
+      ],
+      "Edit calendar": [
+        "編輯行事曆"
+      ],
+      "Get a country's official public holidays calendar.": [
+        "取得某個國家的官方公眾假期行事曆。"
       ]
     },
     "Modal title and action": {
@@ -4662,6 +4689,9 @@
       ],
       "You can change this anytime in your settings.": [
         "您隨時都可以在設定中變更。"
+      ],
+      "Set up your organization testing": [
+        "設定您的組織"
       ]
     },
     "Option": {
@@ -4818,6 +4848,9 @@
       ],
       "Start typing an email address": [
         "在此輸入一個電郵位址"
+      ],
+      "Please select a country": [
+        "請選擇一個國家"
       ]
     },
     "Placeholder for contact group name": {
@@ -4900,6 +4933,9 @@
     "Select search results": {
       "No results found": [
         "查無結果"
+      ],
+      "Check your spelling or select a country from the list.": [
+        "請檢查拼字，或從清單中選擇一個國家。"
       ]
     },
     "Settings update growler warning": {
@@ -4972,6 +5008,12 @@
       ],
       "Invite friends to ${ BRAND_NAME }": [
         "揪親朋好友一起用 ${ BRAND_NAME }"
+      ],
+      "Add your country's public holidays to your calendar.": [
+        "新增您所在國家的公眾假期至您的行事曆中。"
+      ],
+      "Public holidays are here!": [
+        "公眾假期登場！"
       ]
     },
     "Storage": {
@@ -4991,6 +5033,9 @@
       ],
       "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Subscribed calendars.\n${ kbLink }": [
         "請輸入 URL 以訂購授權外部或公開的行事曆及其後的更新。該行事曆的唯讀版本將會加入到您「已訂購授權的行事曆」中。${ kbLink }"
+      ],
+      "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Other calendars.\n${ kbLink }": [
+        "要訂閱外部或公開行事曆與其更新，請輸入 URL。該行事曆的唯讀版本將會新增至您的「其他行事曆」中。\n${ kbLink }"
       ]
     },
     "Subscribe to calendar modal description": {
@@ -5320,7 +5365,7 @@
         "建立新群組"
       ],
       "Create public link": [
-        "創建公共連結"
+        "建立公用連結"
       ],
       "Currency": [
         "貨幣"
@@ -6002,6 +6047,412 @@
       ],
       "Yearly, ${ untilString }": [
         "每年，${ untilString }"
+      ]
+    },
+    "Country select label": {
+      "Based on your time zone": [
+        "依據您的時區"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB 的總儲存空間"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "取得 ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "儲存空間由 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME } 的家庭成員共享。"
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "不再顯示此優惠"
+      ],
+      "Got it": [
+        "我知道了"
+      ],
+      "Keep current plan": [
+        "維持目前方案"
+      ],
+      "Switch plans": [
+        "切換方案"
+      ],
+      "View the invitation": [
+        "檢視邀請"
+      ],
+      "View the invitations": [
+        "檢視邀請"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Password manager": [
+        "密碼管理員"
+      ],
+      "Premium Drive": [
+        "進階版雲端硬碟"
+      ],
+      "Premium Mail and Calendar": [
+        "進階版郵件與行事曆"
+      ],
+      "Premium VPN": [
+        "進階版 VPN"
+      ],
+      "Up to 6 users": [
+        "多達 6 位使用者"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME } 群組"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "有自訂網域的帳號無法加入 Visionary 或家庭方案。"
+      ],
+      "customer support": [
+        "客服"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "若您接受邀請，我們會將您從目前的方案轉出，並將所有剩餘金額存入的您的帳號。"
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "邀請人：${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "管理電子郵件地址。"
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "有成員的方案的擁有者無法加入其他群組方案。"
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "抱歉，目前無法切換方案。"
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "指派給您的儲存空間：${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "訂閱費用由 Visionary 或家庭方案的主要管理員支付。"
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary 與家庭方案目前不支援外部帳號。請在加入前建立 ${ BRAND_NAME } 地址。${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary 與家庭方案目前不支援 lifetime 帳號。"
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "謹邀請閣下加入 ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "您在六個月內只能接受三次邀請。若您需要例外，請聯絡 ${ supportLink }。"
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "您已被邀請加入 ${ bannerOrganization }。${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "您已成功加入家庭方案"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "我們邀請您將您的 ${ BRAND_NAME } 帳號連結至此群組方案，並一起享受所有 ${ BRAND_NAME_TWO } 進階功能。"
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "您帳號中的電子郵件地址多於此方案中可用的電子郵件地址。${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "您的帳號已使用 ${ usedSpace } 的儲存空間，這超過了為您分配的 ${ inviteSpace }。刪除一些資料或要求方案管理員增加您的儲存空間。"
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "您目前的方案無法加入 Visionary 或家庭方案。"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*您的訂閱將在您的結算週期結束時以相同的費率自動續訂。"
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "折扣是以每月標準價格為基礎。"
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "取得 ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "您整個家庭的線上隱私"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "設定您的家庭帳號並邀請使用者 "
+      ],
+      "Set up your family": [
+        "設定您的家庭"
+      ],
+      "Set up your family account": [
+        "設定您的家庭帳號"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "介紹 ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Create secure login details for your online accounts, on all your devices.": [
+        "在您的所有裝置上為您的線上帳號建立安全的詳細登入資訊。"
+      ],
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "包含在 65 個以上的國家的 2700 臺伺服器，可連結多達 10 個裝置，存取世界各地的串流服務，惡意程式防護與廣告攔截器，還有更多功能。"
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited Hide My Email aliases, calendar sharing and more.": [
+        "包含對 3 個自訂電子郵件網域、90 個電子郵件地址、無限個 Hide My Email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
+      ]
+    },
+    "holiday calendar": {
+      "Based on your time zone": [
+        "依據您的時區"
+      ]
+    },
+    "Notification in holidays calendar modal": {
+      "Calendar added": [
+        "行事曆已新增"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "關閉"
+      ],
+      "Don't show this offer again": [
+        "不再顯示此優惠"
+      ],
+      "Special offer": [
+        "特別優惠"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "使用無限制"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } days": [
+        "${ days } 天"
+      ],
+      "${ hours } hours": [
+        "${ hours } 小時"
+      ],
+      "${ minutes } minutes": [
+        "${ minutes } 分鐘"
+      ],
+      "${ seconds } seconds": [
+        "${ seconds } 秒"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } months FREE": [
+        "免費使用 ${ n } 個月"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } 總儲存空間"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 個使用者"
+      ],
+      "64 countries": [
+        "64 個國家"
+      ],
+      "All paid Mail and Calendar features": [
+        "所有付費郵件與行事曆功能"
+      ],
+      "High speed VPN": [
+        "高速 VPN"
+      ],
+      "Highest VPN speed": [
+        "業界最高 VPN 速率"
+      ],
+      "Premium Drive": [
+        "進階版雲端硬碟"
+      ],
+      "Premium early access": [
+        "進階版搶先體驗"
+      ],
+      "Premium Mail and Calendar": [
+        "進階版郵件與行事曆"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "進階版郵件、行事曆與雲端硬碟"
+      ],
+      "Premium VPN": [
+        "進階版 VPN"
+      ],
+      "Secure cloud storage": [
+        "安全的雲端儲存空間"
+      ],
+      "Secure streaming": [
+        "安全的串流"
+      ],
+      "Support online privacy": [
+        "支援線上隱私"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "折扣基於每月基本價格。"
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "此訂閱將每 2 年自動以相同的費用續訂，直到被取消為止。"
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "終身優惠"
+      ],
+      "Limited time only": [
+        "期間限定"
+      ],
+      "Most popular": [
+        "最熱門"
+      ],
+      "Offer ends soon": [
+        "優惠即將結束"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "折扣將在續訂後繼續適用，直到取消訂閱或修改"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "查看訂閱方案"
+      ],
+      "Upgrade": [
+        "升級"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ 月"
+      ],
+      "1 year": [
+        "1 年"
+      ],
+      "2 years": [
+        "2年"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "為期 1 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "為期 12 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "為期 15 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "為期 24 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "為期 30 個月收費 ${ amount } "
+      ],
+      "for ${ n } months": [
+        "為期 ${ n } 個月"
+      ],
+      "Get the deal": [
+        "取得優惠"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "一年後以折扣價 ${ discountedAmount } 而非 ${ regularAmount }（${ discount }% 折扣）續訂"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "兩年後以折扣價 ${ discountedAmount } 而非 ${ regularAmount }（${ discount }% 折扣）續訂"
+      ],
+      "Save ${ discount }%": [
+        "省下  ${ discount }%"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "長達 1 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "長達 12 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "長達 15 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "長達 24 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "長達 30 個月的標準價 ${ amount } "
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "黑色星期五特賣"
+      ],
+      "Cyber Week Sale": [
+        "Cyber​​ Week 熱賣"
+      ],
+      "End of year offer": [
+        "年終大優惠"
+      ],
+      "End of Year Sale": [
+        "年終優惠"
+      ],
+      "Get our premium bundle and save more": [
+        "取得我們的進階版組合並節省更多"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "我們已停止的永續未來計畫限時回歸"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "使用兩年的 ${ planName } 節省更多"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "使用兩年的 ${ planName } 升級並節省更多"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "存取被封鎖的內容並進行私密瀏覽。包含 60 多個國家的 1700 台伺服器、最高的 VPN 速度、每個使用者 10 個 VPN 連線、全球串流服務、惡意軟體與廣告封鎖器等。"
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "存取被封鎖的內容並進行私密瀏覽。包含 60 多個國家的 1700 台伺服器、最高的 VPN 速度、10 個 VPN 連線、全球串流服務、惡意軟體與廣告封鎖器等。"
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "在世界各地輕鬆存取影音串流內容，包括 Netflix、Disney+、Prime Video 等."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited Hide My Email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "我們所有具有最高限制的進階版服務：100 個電子郵件地址、支援 10 個自訂網域、無限制的隱藏 Hide My Email 別名、行事曆分享、加密雲端儲存與檔案分享等。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 Hide My Email aliases, calendar sharing, and more.": [
+        "包含對 1 個自訂電子郵件網域、10 個電子郵件地址、10 個 Hide My Email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited Hide My Email aliases, calendar sharing, and more.": [
+        "包含對 3 個自訂電子郵件網域、15 個電子郵件地址、無限個 Hide My Email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "非常適合家庭或小型團隊，每個人都可以擁有自己的收件匣與別名。需要自訂網域。"
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "免費取得我們未來釋出的所有新隱私服務的付費版本，以及對所有未來功能和產品的搶先體驗。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }."
       ]
     }
   }

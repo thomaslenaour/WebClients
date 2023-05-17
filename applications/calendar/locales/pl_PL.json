@@ -575,6 +575,9 @@
       ],
       "Yes, I'll attend": [
         "Tak, będę uczestniczyć"
+      ],
+      "Add public holidays": [
+        "Dodaj święta"
       ]
     },
     "Action subline": {
@@ -2485,6 +2488,12 @@
       ],
       "Your import will not be processed.": [
         "Twój import nie zostanie przetworzony."
+      ],
+      "The email addresses do not match": [
+        "Adresy e-mail nie pasują do siebie"
+      ],
+      "You already added this holidays calendar": [
+        "Posiadasz już kalendarz świąt"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2680,6 +2689,12 @@
       ],
       "You need an active personal calendar to import events": [
         "Musisz posiadać aktywny osobisty kalendarz, aby zaimportować wydarzenia"
+      ],
+      "Please refresh the page or try again later.": [
+        "Odśwież stronę lub spróbuj ponownie później."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Nie możemy załadować strony. Odśwież stronę lub sprawdź swoje połączenie."
       ]
     },
     "Error notification": {
@@ -4320,6 +4335,9 @@
       ],
       "Your password (admin)": [
         "Twoje hasło (administratora)"
+      ],
+      "Language": [
+        "Język"
       ]
     },
     "Label for contact group color": {
@@ -4533,6 +4551,15 @@
       ],
       "Time zone changed": [
         "Strefa czasowa została zmieniona"
+      ],
+      "Add public holidays": [
+        "Dodaj święta"
+      ],
+      "Edit calendar": [
+        "Edytuj kalendarz"
+      ],
+      "Get a country's official public holidays calendar.": [
+        "Uzyskaj kalendarz świąt krajowych."
       ]
     },
     "Modal title and action": {
@@ -4928,13 +4955,16 @@
         "Wybierz motyw"
       ],
       "Set up your organization": [
-        "Skonfiguruj swoją organizację"
+        "Skonfiguruj organizację"
       ],
       "Use the app selector in the top left to access all ${ BRAND_NAME } services: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } and ${ DRIVE_SHORT_APP_NAME }.": [
         "Otwórz menu aplikacji w lewym górnym rogu, aby uzyskać dostęp do wszystkich usług ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } i ${ DRIVE_SHORT_APP_NAME }."
       ],
       "You can change this anytime in your settings.": [
         "Motyw możesz zmienić w ustawieniach."
+      ],
+      "Set up your organization testing": [
+        "Skonfiguruj organizację"
       ]
     },
     "Option": {
@@ -5103,6 +5133,9 @@
       ],
       "Start typing an email address": [
         "Wpisz adres e-mail"
+      ],
+      "Please select a country": [
+        "Wybierz kraj"
       ]
     },
     "Placeholder for contact group name": {
@@ -5194,6 +5227,9 @@
     "Select search results": {
       "No results found": [
         "Nie znaleziono żadnych wyników"
+      ],
+      "Check your spelling or select a country from the list.": [
+        "Sprawdź pisownię lub wybierz kraj z listy."
       ]
     },
     "Settings update growler warning": {
@@ -5281,41 +5317,41 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } godzina",
-        "${ hours } godziny",
-        "${ hours } godzin",
-        "${ hours } godziny"
-      ],
-      "${ hours } hour": [
         "${ days } dzień",
         "${ days } dni",
         "${ days } dni",
         "${ days } dnia"
       ],
+      "${ hours } hour": [
+        "${ hours } godzina",
+        "${ hours } godziny",
+        "${ hours } godzin",
+        "${ hours } godziny"
+      ],
       "${ minutes } minute": [
-        "${ n } miesiąc BEZPŁATNIE",
-        "${ n } miesiące BEZPŁATNIE",
-        "${ n } miesięcy BEZPŁATNIE",
-        "${ n } miesiąca BEZPŁATNIE"
+        "${ minutes } minuta",
+        "${ minutes } minuty",
+        "${ minutes } minut",
+        "${ minutes } minuty"
       ],
       "${ seconds } second": [
-        "za ${ n } miesiąc",
-        "za ${ n } miesiące",
-        "za ${ n } miesięcy",
-        "za ${ n } miesiąca"
-      ]
-    },
-    "specialoffer: Deal": {
-      "${ n } month FREE": [
         "${ seconds } sekunda",
         "${ seconds } sekundy",
         "${ seconds } sekund",
         "${ seconds } sekundy"
       ]
     },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } miesiąc BEZPŁATNIE",
+        "${ n } miesiące BEZPŁATNIE",
+        "${ n } miesiący BEZPŁATNIE",
+        "${ n } miesiąca BEZPŁATNIE"
+      ]
+    },
     "specialoffer: Deal details": {
       "${ storageSize } total storage": [
-        "${ storageSize } całkowitej przestrzeni dyskowej"
+        "${ storageSize } przestrzeni dyskowej"
       ],
       "3 TB": [
         "3 TB"
@@ -5365,7 +5401,7 @@
     },
     "specialoffer: Footer": {
       "Discounts are based on the standard monthly pricing.": [
-        "Rabaty są liczone na podstawie standardowych cen miesięcznych."
+        "Rabaty są obliczane na podstawie standardowych cen miesięcznych."
       ],
       "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
         "Subskrypcja będzie odnawiana automatycznie co 2 lata za tę samą cenę aż do momentu anulowania jej."
@@ -5519,6 +5555,12 @@
       ],
       "Invite friends to ${ BRAND_NAME }": [
         "Zaproś znajomych do usługi ${ BRAND_NAME }"
+      ],
+      "Add your country's public holidays to your calendar.": [
+        "Dodaj święta do kalendarza."
+      ],
+      "Public holidays are here!": [
+        "Święta są tutaj"
       ]
     },
     "Storage": {
@@ -5538,6 +5580,9 @@
       ],
       "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Subscribed calendars.\n${ kbLink }": [
         "Wpisz adres URL zewnętrznego lub publicznego kalendarza, aby go zasubskrybować. Kalendarz w wersji tylko do odczytu zostanie dodany do subskrybowanych kalendarzy.\n${ kbLink }"
+      ],
+      "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Other calendars.\n${ kbLink }": [
+        "Wpisz adres URL zewnętrznego lub publicznego kalendarza, aby go zasubskrybować. Kalendarz w wersji tylko do odczytu zostanie dodany do innych kalendarzy.\n${ kbLink }"
       ]
     },
     "Subscribe to calendar modal description": {
@@ -6696,6 +6741,183 @@
       ],
       "Yearly, ${ untilString }": [
         "Co rok, ${ untilString }"
+      ]
+    },
+    "Country select label": {
+      "Based on your time zone": [
+        "Na podstawie strefy czasowej"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB przestrzeni dyskowej"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Wybierz plan ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Przestrzeń dyskowa jest dzielona pośród użytkowników rodzinnych pomiędzy usługami ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } oraz ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "Nie pokazuj tej oferty ponownie"
+      ],
+      "Got it": [
+        "Ok"
+      ],
+      "Keep current plan": [
+        "Zachowaj obecny plan"
+      ],
+      "Switch plans": [
+        "Zmień plany"
+      ],
+      "View the invitation": [
+        "Wyświetl zaproszenie"
+      ],
+      "View the invitations": [
+        "Wyświetl zaproszenia"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Password manager": [
+        "Menadżer haseł"
+      ],
+      "Premium Drive": [
+        "Usługa Drive w wersji premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Usługi Mail i Calendar w wersji premium"
+      ],
+      "Premium VPN": [
+        "Usługa VPN w wersji premium"
+      ],
+      "Up to 6 users": [
+        "Do 6 użytkowników"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Grupy ${ BRAND_NAME }"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Konta z niestandardowymi domenami nie mogą dołączyć do planu Visionary lub rodzinnego."
+      ],
+      "customer support": [
+        "wsparcie klienta"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Jeśli zaakceptujesz zaproszenie, zmienimy obecny plan i obciążymy Twoje konto kwotą pozostałego salda."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Zaproszenie wysłane przez: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Zarządzaj adresami."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Właściciele planu z użytkownikami nie mogą dołączyć do innego planu."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "W tej chwili nie możesz zmienić planów."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Przypisana przestrzeń dyskowa: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Subskrypcja rozliczana jako plan Visionary lub rodzinny głównego administratora."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Plan Visionary i rodzinny nie obsługuje obecnie kont zewnętrznych. Utwórz adres ${ BRAND_NAME } przed dołączeniem. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Plany Visionary i rodzinny obecnie nie obsługują opcji kont dożywotnich."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Dołącz do organizacji ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Możesz zaakceptować 3 zaproszenia w ciągu 6-miesięcznego okresu. Skontaktuj się z ${ supportLink }, jeśli musisz zrobić wyjątek."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Dołącz do organizacji ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Dołączono do planu rodzinnego"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Zaproszono Cię do połączenia konta ${ BRAND_NAME } z tym planem grupy, aby razem korzystać z wszystkich funkcji premium ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Twoje konto ma większą liczbę adresów, niż jest to dostępne w planie. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Twoje konto wykorzystuje ${ usedSpace } przestrzeni dyskowej, co przekracza przypisany limit (${ inviteSpace }). Usuń dane lub skontaktuj się z administratorem planu, żeby zwiększyć przestrzeń dyskową."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "W obecnym planie nie możesz dołączyć do planu Visionary lub rodzinnego."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "* Twoja subskrypcja zostanie automatycznie odnowiona w tej samej cenie na koniec cyklu rozliczeniowego."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Rabaty są obliczane na podstawie standardowych cen miesięcznych."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Wybierz plan ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Ochrona prywatności online dla całej Twojej rodziny"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Skonfiguruj konto rodzinne i zaproś użytkowników "
+      ],
+      "Set up your family": [
+        "Skonfiguruj konto rodzinne"
+      ],
+      "Set up your family account": [
+        "Skonfiguruj konto rodzinne"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Przedstawiamy plan ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Create secure login details for your online accounts, on all your devices.": [
+        "Twórz bezpieczne dane logowania dla kont online, na wszystkich urządzeniach."
+      ],
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Zawiera 2700 serwerów w ponad 65 krajach z możliwością połączenia do 10 urządzeń, dostępem do globalnych usług streamingu oraz funkcję blokowania reklam, złośliwego oprogramowania i wiele więcej."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited Hide My Email aliases, calendar sharing and more.": [
+        "Obejmuje obsługę 3 niestandardowych domen e-mail, 90 adresów e-mail, nieograniczone aliasy Hide My Email, udostępnianie kalendarza i wiele więcej."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Zabezpiecz pliki dzięki zaszyfrowanej przestrzeni dyskowej w chmurze. Obejmuje automatyczną synchronizację, szyfrowane udostępnianie plików i nie tylko."
+      ]
+    },
+    "holiday calendar": {
+      "Based on your time zone": [
+        "Na podstawie strefy czasowej"
+      ]
+    },
+    "Notification in holidays calendar modal": {
+      "Calendar added": [
+        "Kalendarz został dodany"
       ]
     }
   }

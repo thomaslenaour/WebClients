@@ -571,6 +571,9 @@
       ],
       "Yes, I'll attend": [
         "Sí, asistiré"
+      ],
+      "Add public holidays": [
+        "Añadir días festivos"
       ]
     },
     "Action subline": {
@@ -2441,6 +2444,12 @@
       ],
       "Your import will not be processed.": [
         "Su importación no será procesada."
+      ],
+      "The email addresses do not match": [
+        "Las direcciónes de correo electrónico no son las mismas"
+      ],
+      "You already added this holidays calendar": [
+        "Ya añadió este calendario de días festivos"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2634,6 +2643,12 @@
       ],
       "You need an active personal calendar to import events": [
         "Necesita un calendario personal activo para importar eventos"
+      ],
+      "Please refresh the page or try again later.": [
+        "Actualice la página o intente nuevamente."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "No pudimos cargar esta página. Actualice la página o revise su conexión a internet."
       ]
     },
     "Error notification": {
@@ -4196,6 +4211,9 @@
       ],
       "Your password (admin)": [
         "Su contraseña (admin)"
+      ],
+      "Language": [
+        "Idioma"
       ]
     },
     "Label for contact group color": {
@@ -4399,6 +4417,15 @@
       ],
       "Time zone changed": [
         "Zona horaria cambiada"
+      ],
+      "Add public holidays": [
+        "Añadir días festivos"
+      ],
+      "Edit calendar": [
+        "Editar calendario"
+      ],
+      "Get a country's official public holidays calendar.": [
+        "Obtenga un calendario oficial de días festivos de su país."
       ]
     },
     "Modal title and action": {
@@ -4753,6 +4780,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Puede cambiar esto en cualquier momento en los ajustes."
+      ],
+      "Set up your organization testing": [
+        "Configure su organización"
       ]
     },
     "Option": {
@@ -4913,6 +4943,9 @@
       ],
       "Start typing an email address": [
         "Comience a escribir una dirección de correo"
+      ],
+      "Please select a country": [
+        "Seleccione un país"
       ]
     },
     "Placeholder for contact group name": {
@@ -4998,6 +5031,9 @@
     "Select search results": {
       "No results found": [
         "No se encontraron resultados"
+      ],
+      "Check your spelling or select a country from the list.": [
+        "Revise su ortografía o seleccione un país de la lista."
       ]
     },
     "Settings update growler warning": {
@@ -5309,6 +5345,12 @@
       ],
       "Invite friends to ${ BRAND_NAME }": [
         "Invite amistades a ${ BRAND_NAME }"
+      ],
+      "Add your country's public holidays to your calendar.": [
+        "Añada los días festivos de su país a su calendario."
+      ],
+      "Public holidays are here!": [
+        "¡Los días festivos están aquí!"
       ]
     },
     "Storage": {
@@ -5328,6 +5370,9 @@
       ],
       "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Subscribed calendars.\n${ kbLink }": [
         "Para suscribirse a un calendario externo o público y sus actualizaciones, ingrese la URL. Se añadirá una versión de solo lectura del calendario a sus calendarios suscritos.\n${ kbLink }"
+      ],
+      "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Other calendars.\n${ kbLink }": [
+        "Para suscribirse a un calendario externo o público y sus actualizaciones, ingrese la URL. Se añadirá una versión de solo lectura del calendario a sus otros calendarios.\n${ kbLink }"
       ]
     },
     "Subscribe to calendar modal description": {
@@ -6390,6 +6435,183 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Country select label": {
+      "Based on your time zone": [
+        "Basado en su zona horaria"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB de almacenamiento total"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Obtener ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "El espacio de almacenamiento se comparte entre los miembros de la familia en ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "No volver a mostrar esta oferta"
+      ],
+      "Got it": [
+        "Entiendo"
+      ],
+      "Keep current plan": [
+        "Mantener el plan actual"
+      ],
+      "Switch plans": [
+        "Cambiar planes"
+      ],
+      "View the invitation": [
+        "Ver la invitación"
+      ],
+      "View the invitations": [
+        "Ver las invitaciones"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Password manager": [
+        "Gestor de contraseñas"
+      ],
+      "Premium Drive": [
+        "Drive premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Correo y calendario premium"
+      ],
+      "Premium VPN": [
+        "VPN premium"
+      ],
+      "Up to 6 users": [
+        "Hasta 6 usuarios"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Grupos de ${ BRAND_NAME }"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Las cuentas con dominios personalizados no pueden unirse a un plan Visionary o un plan familiar."
+      ],
+      "customer support": [
+        "soporte al cliente"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Si acepta la invitación, lo cambiaremos de su plan actual y acreditaremos su cuenta con cualquier saldo restante."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Invitado por: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Gestionar direcciones."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Los propietarios de un plan con miembros no pueden unirse a otro plan grupal."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Lamentablemente, no puede cambiar de plan en este momento."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Almacenamiento asignado a usted: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "La suscripción se factura al administrador principal del plan Visionary o Family."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Los planes Visionary y familiar actualmente no admiten cuentas externas. Cree una dirección de ${ BRAND_NAME } antes de unirse. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Los planes Visionary y familiar actualmente no admiten cuentas de por vida."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Recibió una invitación para unirse a ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Solo puede aceptar 3 invitaciones en un período de 6 meses. Contacte con ${ supportLink } para solicitar una excepción."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Recibió una invitación para unirse a ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Se ha unido con éxito al plan familiar"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Está invitado a vincular su cuenta de ${ BRAND_NAME } a este plan de grupo y disfrutar juntos de todas las funciones premium de ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Su cuenta tiene más direcciones de correo electrónico de las que tiene disponibles en este plan. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Su cuenta está usando ${ usedSpace } de almacenamiento, que supera los ${ inviteSpace } que tiene asignados. Elimine algunos datos o solicite al administrador del plan que aumente su almacenamiento."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Su plan actual no puede unirse a un plan Visionary o un plan familiar."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Su suscripción se renovará automáticamente a la misma tarifa al final de su ciclo de facturación."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Los descuentos se basan en los precios estándares mensuales."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Obtener ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Privacidad en línea para toda su familia"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Configure su cuenta familiar e invite usuarios "
+      ],
+      "Set up your family": [
+        "Configure su familia"
+      ],
+      "Set up your family account": [
+        "Configure su cuenta familiar"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Presentamos ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Create secure login details for your online accounts, on all your devices.": [
+        "Cree detalles de inicio de sesión seguros para sus cuentas en línea en todos sus dispositivos."
+      ],
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Incluye 2700 servidores en más de 65 países, conecta hasta 10 dispositivos, acceda a servicios de transmisión en todo el mundo, malware y bloqueador de anuncios, y más."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited Hide My Email aliases, calendar sharing and more.": [
+        "Incluye soporte para 3 dominios de correo electrónico personalizados, 90 direcciones de correo electrónico, alias ilimitados de Hide My Email, uso compartido de calendario y más."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Proteja sus archivos con almacenamiento en la nube cifrado. Incluye sincronización automática, uso compartido de archivos cifrados y más."
+      ]
+    },
+    "holiday calendar": {
+      "Based on your time zone": [
+        "Basado en su zona horaria"
+      ]
+    },
+    "Notification in holidays calendar modal": {
+      "Calendar added": [
+        "Calendario añadido"
       ]
     }
   }

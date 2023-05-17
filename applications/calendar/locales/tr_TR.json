@@ -571,6 +571,9 @@
       ],
       "Yes, I'll attend": [
         "Evet, katılacağım"
+      ],
+      "Add public holidays": [
+        "Genel tatil günlerini ekle"
       ]
     },
     "Action subline": {
@@ -2441,6 +2444,12 @@
       ],
       "Your import will not be processed.": [
         "İçe aktarma işleminiz yapılmayacak."
+      ],
+      "The email addresses do not match": [
+        "E-posta adresleri eşleşmiyor"
+      ],
+      "You already added this holidays calendar": [
+        "Bu tatil takvimini zaten eklemişsiniz"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2634,6 +2643,12 @@
       ],
       "You need an active personal calendar to import events": [
         "Etkinlikleri içe aktarabilmek için etkin bir takviminiz olmalı"
+      ],
+      "Please refresh the page or try again later.": [
+        "Lütfen sayfayı yenileyin ya da bir süre sonra yeniden deneyin."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Bu sayfayı yükleyemedik. Lütfen sayfayı yenileyin veya internet bağlantınızı denetleyin."
       ]
     },
     "Error notification": {
@@ -3229,7 +3244,7 @@
         "Tümü (${ totalFoldersCount } etiket)"
       ],
       "An invitation will be sent to added participants.": [
-        "Eklenen katılımcılara bir davetiye gönderilecek."
+        "Eklenen katılımcılara bir davet gönderilecek."
       ],
       "An invitation will be sent to the event participants.": [
         "Etkinlik katılımcılarına bir davet gönderilecek."
@@ -3347,10 +3362,10 @@
         "Var olan, eklenen ve çıkarılan katılımcılara bildirilecek."
       ],
       "Forward incoming mail from another account to your secure ${ MAIL_APP_NAME } inbox.": [
-        "Gelen postaları başka bir hesaptan güvenli ${ MAIL_APP_NAME } gelen kutunuza iletin."
+        "Başka bir hesaptaki e-postalarınızı güvenli ${ MAIL_APP_NAME } gelen kutunuza iletin."
       ],
       "Free up some space or add more storage space.": [
-        "Biraz boş yer açın veya daha fazla depolama alanı ekleyin."
+        "Biraz boş yer açın ya da daha fazla depolama alanı ekleyin."
       ],
       "Free up some space or contact your administrator.": [
         "Biraz boş yer açın veya yöneticinizle görüşün."
@@ -3368,7 +3383,7 @@
         "Hesap açmakta sorun yaşıyorsanız, lütfen bir davet isteyin. Bir iş günü içinde size yanıt vereceğiz."
       ],
       "If you believe this is in error, please contact us ${ contactLink }.": [
-        "Bir hata olduğunu düşünüyorsanız, lütfen ${ contactLink } üzerinden bizimle görüşün."
+        "Bir yanlışlık olduğunu düşünüyorsanız, lütfen ${ contactLink } üzerinden bizimle görüşün."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
         "E-postayı Gelen kutunuzda göremezseniz, İstenmeyen kutusuna bakmayı unutmayın."
@@ -3595,7 +3610,7 @@
         "Davet edilen adresten e-posta gönderemeyeceğiniz için bu etkinlik dizisinin düzenleyicisine daveti reddettiğiniz bildirilemeyecek. Yine de dizideki tüm etkinlikleri silmek ister misiniz?"
       ],
       "This account has been suspended due to a potential policy violation.": [
-        "Bu hesap, bir ilke ihlali olasılığı nedeniyle askıya alındı."
+        "Bu hesap, ilkeye aykırı kullanım olasılığı nedeniyle askıya alınmış."
       ],
       "This address is disabled. To be able to send to this address, the owner must first enable the address.": [
         "Bu adres devre dışı. Bu adrese e-posta gönderebilmek için önce sahibi adresi etkinleştirmelidir."
@@ -3718,10 +3733,10 @@
         "Daha önce bu çağrıyı reddetmişsiniz. Yeniden çağırması için sahibi ile görüşün"
       ],
       "You reached ${ spaceDisplayed }% of your storage capacity. ${ freeUpMessage } ${ upgradeLink }": [
-        "Depolama kapasitenizi %${ spaceDisplayed } oranında kullanıyorsunuz. ${ freeUpMessage } ${ upgradeLink }"
+        "Depolama alanınızı %${ spaceDisplayed } oranında kullanıyorsunuz. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You reached 100% of your storage capacity. You cannot send or receive new emails. ${ freeUpMessage } ${ upgradeLink }": [
-        "Depolama kapasitenizi %100 oranında kullanıyorsunuz. Yeni e-postalar gönderemez veya alamazsınız. ${ freeUpMessage } ${ upgradeLink }"
+        "Depolama alanınızı 100% oranında kullanıyorsunuz. Yeni e-postalar gönderemez veya alamazsınız. ${ freeUpMessage } ${ upgradeLink }"
       ],
       "You will lose all unsaved changes.": [
         "Kaydedilmemiş tüm değişiklikleri kaybedeceksiniz."
@@ -4196,6 +4211,9 @@
       ],
       "Your password (admin)": [
         "Parolanız (yönetici)"
+      ],
+      "Language": [
+        "Dil"
       ]
     },
     "Label for contact group color": {
@@ -4399,6 +4417,15 @@
       ],
       "Time zone changed": [
         "Saat dilimi değişti"
+      ],
+      "Add public holidays": [
+        "Tatil günlerini ekle"
+      ],
+      "Edit calendar": [
+        "Takvimi düzenle"
+      ],
+      "Get a country's official public holidays calendar.": [
+        "Bir ülkenin resmi tatil takvimini alın."
       ]
     },
     "Modal title and action": {
@@ -4753,6 +4780,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Bunu istediğiniz zaman ayarlarınızdan değiştirebilirsiniz."
+      ],
+      "Set up your organization testing": [
+        "Kuruluşunuzu ayarlayın"
       ]
     },
     "Option": {
@@ -4913,6 +4943,9 @@
       ],
       "Start typing an email address": [
         "Bir e-posta adresi yazmaya başlayın"
+      ],
+      "Please select a country": [
+        "Lütfen bir ülke seçin"
       ]
     },
     "Placeholder for contact group name": {
@@ -4998,6 +5031,9 @@
     "Select search results": {
       "No results found": [
         "Herhangi bir sonuç bulunamadı"
+      ],
+      "Check your spelling or select a country from the list.": [
+        "Yazımınızı denetleyin ya da listeden bir ülke seçin."
       ]
     },
     "Settings update growler warning": {
@@ -5054,7 +5090,7 @@
         "İmza doğrulanırken sorun çıktı"
       ],
       "You have enabled address verification for ${ boldSenderEmail }. We couldn't verify the authenticity of this calendar invite. This may be due to changes in the encryption keys of this contact. Please review its advanced PGP settings, or your can ask ${ boldSenderEmail } for a new invite.": [
-        "${ boldSenderEmail } için adres doğrulamasını etkinleştirdiniz. Bu takvim davetinin gerçek olduğunbu doğrulayamadık. Bu durum, bu kişinin şifreleme anahtarlarındaki değişikliklerden kaynaklanıyor olabilir. Lütfen gelişmiş PGP ayarlarını gözden geçirin ya da ${ boldSenderEmail } adresinden yeni bir davetiye isteyin."
+        "${ boldSenderEmail } için adres doğrulamasını etkinleştirdiniz. Bu takvim davetinin gerçek olduğunbu doğrulayamadık. Bu durum, bu kişinin şifreleme anahtarlarındaki değişikliklerden kaynaklanıyor olabilir. Lütfen gelişmiş PGP ayarlarını gözden geçirin ya da ${ boldSenderEmail } adresinden yeni bir davet isteyin."
       ]
     },
     "Signing preference for emails": {
@@ -5071,6 +5107,12 @@
       ],
       "Invite friends to ${ BRAND_NAME }": [
         "Arkadaşlarınızı ${ BRAND_NAME } üzerine çağırın"
+      ],
+      "Add your country's public holidays to your calendar.": [
+        "Ülkenizin tatil günlerini takviminize ekleyin."
+      ],
+      "Public holidays are here!": [
+        "Tatil günleri burada!"
       ]
     },
     "Storage": {
@@ -5090,6 +5132,9 @@
       ],
       "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Subscribed calendars.\n${ kbLink }": [
         "Takvime ve güncellemelerine abone olmak istediğiniz dış ya da herkese açık takvimin adresini yazın. Bu takvim salt okunur şekilde abone olduğunuz takvimler arasına eklenir.\n${ kbLink }"
+      ],
+      "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Other calendars.\n${ kbLink }": [
+        "Takvime ve güncellemelerine abone olmak istediğiniz dış ya da herkese açık takvimin adresini yazın. Bu takvim salt okunur şekilde Diğer takvimler arasına eklenir.\n${ kbLink }"
       ]
     },
     "Subscribe to calendar modal description": {
@@ -5128,7 +5173,7 @@
         "Tüm etkinlikler güncellendi"
       ],
       "An invitation will be sent to added participants for all the events in this series.": [
-        "Eklenen katılımcılara bu dizideki tüm etkinlikler için bir davetiye gönderilecek."
+        "Eklenen katılımcılara bu dizideki tüm etkinlikler için bir davet gönderilecek."
       ],
       "Answer sent and all events deleted": [
         "Yanıt gönderildi ve tüm etkinlikler silindi"
@@ -5894,7 +5939,7 @@
         "Bu özellik ücretli bir ${ BRAND_NAME } hesabında kullanılabilir"
       ],
       "This import may exceed the storage capacity currently available in your ${ BRAND_NAME } account. Please consider customizing your import.": [
-        "Bu içe aktarma işlemi, ${ BRAND_NAME } hesabınızın geçerli depolama kapasitesini aşabilir. Lütfen içe aktarmanızı özelleştirmeyi değerlendirin."
+        "Bu içe aktarma işlemi, ${ BRAND_NAME } hesabınızla kullanılabilecek depolama alanını aşabilir. Lütfen içe aktarmanızı özelleştirmeyi değerlendirin."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
         "Ne yazık ki, şu anca çevrimiçi değiliz. Lütfen sorununuzu aktarmak için aşağıdaki formu doldurun. Yeniden çevrimiçi olduğumuzda inceleyip size geri döneceğiz."
@@ -6152,6 +6197,418 @@
       ],
       "Yearly, ${ untilString }": [
         "Yılda bir, ${ untilString }"
+      ]
+    },
+    "Country select label": {
+      "Based on your time zone": [
+        "Saat diliminize göre"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3TB toplam depolama alanı"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "${ planName } alın"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Depolama alanı aile üyeleri arasında ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } ve ${ DRIVE_APP_NAME } tarafından paylaşılır."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Don't show this offer again": [
+        "Bu teklifi bir daha gösterme"
+      ],
+      "Got it": [
+        "Anladım"
+      ],
+      "Keep current plan": [
+        "Geçerli tarifede kal"
+      ],
+      "Switch plans": [
+        "Tarifeleri değiştir"
+      ],
+      "View the invitation": [
+        "Daveti görüntüle"
+      ],
+      "View the invitations": [
+        "Davetleri görüntüle"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Password manager": [
+        "Parola yöneticisi"
+      ],
+      "Premium Drive": [
+        "Ücretli Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Ücretli Mail ve Calendar"
+      ],
+      "Premium VPN": [
+        "Ücretli VPN"
+      ],
+      "Up to 6 users": [
+        "6 kullanıcıya kadar"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME } grupları"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Özel etki alanları olan hesaplar, Visionary ya da Family tarifesine katılamaz."
+      ],
+      "customer support": [
+        "müşteri desteği"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Daveti kabul ederseniz, sizi geçerli tarifenizde çıkarırız ve kalan tutarı hesabınıza yatırırız."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Davet eden: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Adres yönetimi."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Üyeleri olan bir tarifenin sahipleri başka bir grup tarifesine katılamaz."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Ne yazık ki şu anda tarifeleri değiştiremezsiniz."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Size ayrılmış depolama alanı: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Abonelik faturası, Visionary ya da Family planının birincil yöneticisine kesilir."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary ve Family tarifeleri şu anda dış hesapları desteklemiyor. Katılmadan önce bir ${ BRAND_NAME } adresi oluşturun. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary ve Family tarifeleri şu anda ömür boyu hesapları desteklemiyor."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "${ invite.OrganizationName } kuruluşuna davet edildiniz"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "6 aylık dönemde yalnızca 3 davet kabul edebilirsiniz. Bu sınırı aşmaya gerek duyuyorsanız lütfen ${ supportLink } ile görüşün."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "${ bannerOrganization } ailesine davet edildiniz. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Aile tarifesine katıldınız"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "${ BRAND_NAME } hesabınızı bu grup tarifesine bağlamaya ve birlikte ücretli tüm ${ BRAND_NAME_TWO } özelliklerinin tadını çıkarmaya davet edildiniz."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Hesabınızda, bu tarifede kullanabileceğinizden daha fazla e-posta adresi var. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Hesabınız, size ayrılmış ${ inviteSpace } boyutunu aşan ${ usedSpace } depolama alanı kullanıyor. Bazı verileri silin ya da tarife yöneticisinden depolama alanınızı artırmasını isteyin."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Geçerli tarifeniz bir Visionary ya da Family tarifesine katılamaz."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Aboneliğiniz, faturalama döneminizin sonunda otomatik olarak aynı tutarla yenilenir."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "İndirimler standart aylık fiyatlandırmaya göre yapılır."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "${ planName } alın"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Tüm aileniz için çevrimiçi gizlilik"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Aile hesabınızı yapılandırın ve kullanıcıları davet edin "
+      ],
+      "Set up your family": [
+        "Ailenizi oluşturun"
+      ],
+      "Set up your family account": [
+        "Aile hesabınızı oluşturun"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "${ planName } ile tanışın"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Create secure login details for your online accounts, on all your devices.": [
+        "Tüm aygıtlarınızda çevrimiçi hesaplarınız için güvenli oturum açma bilgileri oluşturun."
+      ],
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "65 üzerindeki ülkede 2.700 sunucu, 10 taneye kadar aygıt bağlayabilme, dünya çapında yayın akışı hizmetlerine erişim, kötü amaçlı yazılım ve reklam engelleyici ile diğer özellikleri içerir."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited Hide My Email aliases, calendar sharing and more.": [
+        "3 özel e-posta etki alanı, 90 e-posta adresi, sınırsız sayıda e-postamı gizle takma adı, takvim paylaşımı ve diğer özellikler."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Dosyalarınızı şifrelenmiş bulut depolama alanı ile koruyun. Otomatik eşitleme, şifrelenmiş dosya paylaşımı ve diğer özellikler."
+      ]
+    },
+    "holiday calendar": {
+      "Based on your time zone": [
+        "Saat diliminize göre"
+      ]
+    },
+    "Notification in holidays calendar modal": {
+      "Calendar added": [
+        "Takvim eklendi"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Kapat"
+      ],
+      "Don't show this offer again": [
+        "Bu teklifi bir daha gösterme"
+      ],
+      "Special offer": [
+        "Özel teklif"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "Sınırları kaldırın"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } day": [
+        "${ days } gün",
+        "${ days } gün"
+      ],
+      "${ hours } hour": [
+        "${ hours } saat",
+        "${ hours } saat"
+      ],
+      "${ minutes } minute": [
+        "${ minutes } dakika",
+        "${ minutes } dakika"
+      ],
+      "${ seconds } second": [
+        "${ seconds } saniye",
+        "${ seconds } saniye"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } ay ücretsiz",
+        "${ n } ay ücretsiz"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } toplam depolama alanı"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 kullanıcı"
+      ],
+      "64 countries": [
+        "64 ülkede"
+      ],
+      "All paid Mail and Calendar features": [
+        "Tüm ücretli Mail ve Calendar özellikleri"
+      ],
+      "High speed VPN": [
+        "Yüksek hızlı VPN"
+      ],
+      "Highest VPN speed": [
+        "En yüksek VPN hızı"
+      ],
+      "Premium Drive": [
+        "Ücretli Drive"
+      ],
+      "Premium early access": [
+        "Öncelikli erken erişim"
+      ],
+      "Premium Mail and Calendar": [
+        "Ücretli Mail ve Calendar"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Ücretli Mail, Calendar ve Drive"
+      ],
+      "Premium VPN": [
+        "Ücretli VPN"
+      ],
+      "Secure cloud storage": [
+        "Güvenli bulut depolama alanı"
+      ],
+      "Secure streaming": [
+        "Güvenli yayın akışı"
+      ],
+      "Support online privacy": [
+        "Çevrimiçi gizliliği destekleyin"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "İndirimler standart aylık fiyatlandırmaya göre yapılır."
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Bu abonelik, iptal edilene kadar 2 yılda bir aynı tutarla otomatik olarak yenilenir."
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "Ömür boyu teklif"
+      ],
+      "Limited time only": [
+        "Yalnızca sınırlı bir süre için"
+      ],
+      "Most popular": [
+        "En beğenilen"
+      ],
+      "Offer ends soon": [
+        "Teklifin süresi yakında dolacak"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "İndirim, abonelik iptal edilene ya da değiştirilene kadar her yenileme döneminde uygulanır"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Abonelik tarifelerini görüntüle"
+      ],
+      "Upgrade": [
+        "Yükselt"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ ay"
+      ],
+      "1 year": [
+        "1 yıl"
+      ],
+      "2 years": [
+        "2 yıl"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "1 aylık ${ amount } olarak faturalanır"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "12 aylık ${ amount } olarak faturalanır"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "15 aylık ${ amount } olarak faturalanır"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "24 aylık ${ amount } olarak faturalanır"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "30 aylık ${ amount } olarak faturalanır"
+      ],
+      "for ${ n } month": [
+        "${ n } ay için",
+        "${ n } ay için"
+      ],
+      "Get the deal": [
+        "Tekliften yararlanın"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "1 yıl sonra ${ regularAmount } yerine ${ discountedAmount } olarak yenilenir (${ discount }% indirim ile)"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "2 yıl sonra ${ regularAmount } yerine ${ discountedAmount } olarak yenilenir (${ discount }% indirim ile)"
+      ],
+      "Save ${ discount }%": [
+        "${ discount }% indirim"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "1 aylık standart fiyat ${ amount }"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "12 aylık standart fiyat ${ amount }"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "15 aylık standart fiyat ${ amount }"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "24 aylık standart fiyat ${ amount }"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "30 aylık standart fiyat ${ amount }"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "Muhteşem Cuma kampanyası"
+      ],
+      "Cyber Week Sale": [
+        "Cyber Week kampanyası"
+      ],
+      "End of year offer": [
+        "Yıl sonu teklifi"
+      ],
+      "End of Year Sale": [
+        "Yıl sonu kampanyası"
+      ],
+      "Get our premium bundle and save more": [
+        "Premium paketimizi alarak daha fazla indirim kazanın"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Eski Visionary tarifemiz yalnızca sınırlı bir süre için geri döndü"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "2 yıllık ${ planName } tarifesi ile daha fazla indirim kazanın"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "2 yıllık ${ planName } tarifesine yükselterek daha fazla indirim kazanın"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Engellenen içeriğe erişin ve gizliliğinizi koruyarak gezinin. 60 üzerinde ülkede 1.700 sunucu, en yüksek VPN hızı, her kullanıcı için 10 VPN bağlantısı, tüm dünyadaki yayın akış hizmetlerine erişim, kötü amaçlı yazılımları ve reklamları engelleme ve diğer özellikler."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Engellenen içeriğe erişin ve gizliliğinizi koruyarak gezinin. 60 üzerinde ülkede 1.700 sunucu, en yüksek VPN hızı, 10 VPN bağlantısı, tüm dünyadaki yayın akış hizmetlerine erişim, kötü amaçlı yazılımları ve reklamları engelleme ve diğer özellikler."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Netflix, Disney+ ve Prime Video gibi yayın akışı hizmetlerindeki içeriğe her yerden erişin."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited Hide My Email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "En yüksek sınırları olan tüm ücretli hizmetler: 100 e-posta adresi, 10 özel etki alanı, sınırsız e-postamı gizle takma adı, takvim gönderisi, şifrelenmiş bulut depolama alanı, dosya paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 Hide My Email aliases, calendar sharing, and more.": [
+        "1 özel e-posta etki alanı, 10 e-posta adresi, 10 e-postamı gizle takma adı, takvim paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited Hide My Email aliases, calendar sharing, and more.": [
+        "3 özel e-posta etki alanı, 15 e-posta adresi, sınırsız sayıda e-postamı gizle takma adı, takvim paylaşımı ve diğer özellikler."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Aileler veya küçük ekipler için mükemmel. Her birinin kendi gelen kutusu ve takma adı olabilir. Özel bir etki alanı kullanılması gerekir."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Gelecekte yayınlayacağımız tüm yeni gizlilik hizmetlerinin ücretli sürümlerine ve tüm özelliklere erkenden erişerek ek ücret ödemeden kullanın."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Dosyalarınızı şifrelenmiş bulut depolama alanı ile koruyun. Otomatik eşitleme, şifrelenmiş dosya paylaşımı ve diğer özellikler."
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Depolama alanı ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } ve ${ DRIVE_APP_NAME } arasında paylaşılır."
       ]
     }
   }
