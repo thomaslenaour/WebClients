@@ -3140,13 +3140,13 @@
         "Il y a une erreur dans l'une des conditions."
       ],
       "Error while saving draft. Please try again.": [
-        "Une erreur s'est produite lors de l'enregistrement du brouillon. Nous vous invitons à réessayer."
+        "Une erreur s'est produite pendant l'enregistrement du brouillon. Nous vous invitons à réessayer."
       ],
       "Error while sending the message. Message is not sent.": [
-        "Une erreur s'est produite lors de l'envoi du message. Le message n'a pas été envoyé."
+        "Une erreur s'est produite pendant l'envoi du message. Le message n'a pas été envoyé."
       ],
       "Error while uploading attachments. Message is not sent.": [
-        "Une erreur s'est produite lors du téléchargement des pièces jointes. Le message n'a pas été envoyé."
+        "Une erreur s'est produite pendant le téléchargement des pièces jointes. Le message n'a pas été envoyé."
       ],
       "Failed to encrypt attachment. Please try again.": [
         "La pièce jointe n'a pas pu être chiffrée. Nous vous invitons à réessayer."
@@ -3362,7 +3362,7 @@
         "Il y a eu un problème de mise à jour de vos messages locaux, ils seront téléchargés à nouveau pour réactiver la recherche dans le contenu des messages."
       ],
       "There was an error when exporting the contacts vCards": [
-        "Une erreur s’est produite lors de l’exportation des vCards des contacts."
+        "Une erreur s’est produite pendant l’exportation des vCards des contacts."
       ],
       "This field exceeds the maximum of ${ maximumLength } characters.": [
         "Ce champ dépasse le maximum de ${ maximumLength } caractères."
@@ -3413,7 +3413,7 @@
         "Vous ne pouvez pas envoyer de vCards de plus de 10 contacts."
       ],
       "You cannot open more than ${ maxActiveComposer } composer window at a time": [
-        "Vous ne pouvez pas ouvrir plus d'${ maxActiveComposer } fenêtre d'éditeur à la fois.",
+        "Vous ne pouvez pas ouvrir plus de ${ maxActiveComposer } fenêtre d'éditeur à la fois.",
         "Vous ne pouvez pas ouvrir plus de ${ maxActiveComposer } fenêtres d'éditeur à la fois."
       ],
       "You did not provide a file.": [
@@ -3678,7 +3678,7 @@
     },
     "Error sending calendar invitation": {
       "Cannot send invitation to ${ email }. ${ errorMessage }": [
-        "Impossible d'envoyer l'invitation à ${ email }. ${ errorMessage }"
+        "L'invitation ne peut pas être envoyée à ${ email }. ${ errorMessage }"
       ]
     },
     "Event invitation error": {
@@ -4069,8 +4069,8 @@
         "${ totalImported }/${ totalToImport } événements ont été chiffrés et ajoutés à votre calendrier."
       ],
       "An error occurred while encrypting and adding your event. ${ totalImported } out of ${ totalToImport } event successfully imported.": [
-        "Une erreur s'est produite lors du chiffrement et de l'ajout de votre événement. ${ totalImported } événement sur ${ totalToImport } a été importé.",
-        "Une erreur s'est produite lors du chiffrement et de l'ajout de vos événements. ${ totalImported } événements sur ${ totalToImport } ont été importés."
+        "Une erreur s'est produite pendant le chiffrement et l'ajout de votre événement. ${ totalImported } événement sur ${ totalToImport } a été importé.",
+        "Une erreur s'est produite pendant le chiffrement et l'ajout de vos événements. ${ totalImported } événements sur ${ totalToImport } ont été importés."
       ],
       "An error occurred while encrypting and adding your event. No event could be imported.": [
         "Une erreur s'est produite lors du chiffrement et de l'ajout de votre événement. Aucun événement n'a pu être importé."
@@ -5206,7 +5206,7 @@
         "Vous êtes tout à fait à jour pour le moment."
       ],
       "Select the email format you want to be used by default when sending an email to this email address.": [
-        "Sélectionnez le format de message que vous voulez utiliser par défaut lors de l'envoi d'un message à cette adresse e-mail."
+        "Sélectionnez le format de message que vous voulez utiliser par défaut pour l'envoi d'un message à cette adresse e-mail."
       ],
       "Select what you want to import.": [
         "Sélectionnez ce que vous voulez importer."
@@ -5566,10 +5566,10 @@
         "Lorsque vous communiquez votre adresse e-mail, utilisez un alias unique Hide My Email au lieu de votre véritable adresse e-mail."
       ],
       "When you enabled trusted keys for ${ senderName }, the public keys were added to the contact details.": [
-        "Lorsque vous avez activé les clés de confiance pour ${ senderName }, les clés publiques ont été ajoutées aux informations de contact."
+        "Quand vous avez activé les clés de confiance pour ${ senderName }, les clés publiques ont été ajoutées aux informations de contact."
       ],
       "When you set up two-factor authentication, we provide recovery codes which you can use to sign in if you lose access to your authenticator app.": [
-        "Lorsque vous configurez l'authentification à deux facteurs, nous fournissons des codes de récupération que vous pouvez utiliser pour vous connecter si vous perdez l'accès à votre application d'authentification."
+        "Quand vous configurez l'authentification à deux facteurs, nous fournissons des codes de récupération que vous pouvez utiliser pour vous connecter si vous perdez l'accès à votre application d'authentification."
       ],
       "Would you like to receive a new verification code or use an alternative verification method?": [
         "Voulez-vous recevoir un nouveau code de vérification ou utiliser une autre méthode de vérification ?"
@@ -5732,6 +5732,9 @@
       ],
       "Upgrade to automatically delete messages that have been in trash and spam for more than 30 days.": [
         "Changez d'abonnement pour supprimer automatiquement les messages qui sont dans les dossiers Corbeille et Indésirables/spam depuis plus de 30 jours."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes Hide My Email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin est un service proposé par ${ BRAND_NAME } et votre compte ${ BRAND_NAME_TWO } comprend des alias « Hide My Email ». Pour masquer votre adresse e-mail, rendez-vous sur SimpleLogin et créez votre premier alias."
       ]
     },
     "info": {
@@ -7409,7 +7412,7 @@
         "L'événement a été mis à jour dans le calendrier."
       ],
       "Cannot send to organizer address: ${ errorMessage }": [
-        "Impossible d'envoyer à l'adresse de l'organisateur : ${ errorMessage }"
+        "Il n'est pas possible d'envoyer à l'adresse de l'organisateur : ${ errorMessage }"
       ],
       "Re-encrypting invitation failed. Please try again.": [
         "L'invitation de re-chiffrement n'a pas abouti. Veuillez réessayer."
@@ -9243,6 +9246,9 @@
       ],
       "Up to 6 users": [
         "Jusqu'à 6 utilisateurs"
+      ],
+      "Password manager": [
+        "Gestionnaire de mots de passe"
       ]
     },
     "familyOffer_2023:Family plan": {
@@ -9350,6 +9356,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Sécurisez vos fichiers grâce au stockage cloud chiffré. Cela comprend la synchronisation automatique, le partage de fichiers chiffrés et d'autres fonctionnalités."
+      ],
+      "Create secure login details for your online accounts, on all your devices.": [
+        "Créez des identifiants de connexion sécurisés pour vos comptes en ligne, sur tous vos appareils."
       ]
     }
   }
