@@ -40,6 +40,7 @@ interface Props {
     noMaxWidth?: boolean;
     paymentMethodStatus?: PaymentMethodStatus;
     creditCardTopRef?: Ref<HTMLDivElement>;
+    disabled?: boolean;
 }
 
 const Payment = ({
@@ -58,6 +59,7 @@ const Payment = ({
     cardErrors,
     noMaxWidth = false,
     creditCardTopRef,
+    disabled,
 }: Props) => {
     const { paymentMethods, options, loading } = useMethods({ amount, paymentMethodStatus, coupon, flow: type });
     const lastUsedMethod = options.usedMethods[options.usedMethods.length - 1];
@@ -151,6 +153,7 @@ const Payment = ({
                             amount={amount}
                             currency={currency}
                             type={type}
+                            disabled={disabled}
                         />
                     )}
                     {customPaymentMethod && (
