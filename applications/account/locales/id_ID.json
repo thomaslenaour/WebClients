@@ -4260,6 +4260,9 @@
       ],
       "Search list": [
         "Daftar pencarian"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "Email yang berasal dari alamat yang Anda atau ${ BRAND_NAME } tandai sebagai spam akan masuk ke folder spam milik anggota organisasi Anda. Apabila Anda ingin menerima email dari alamat yang telah ditandai spam, tandai alamat tersebut sebagai \"bukan spam\"."
       ]
     },
     "Font Face Default": {
@@ -4390,6 +4393,12 @@
       ],
       "User": [
         "Pengguna"
+      ],
+      "Device": [
+        "Perangkat"
+      ],
+      "Protection": [
+        "Perlindungan"
       ]
     },
     "Header for addresses table": {
@@ -6686,6 +6695,33 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Langganan Anda dikelola oleh Mozilla. Harap hubungi layanan dukungan Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } merupakan program perlidungan akun yang dikembangkan pada ${ BRAND_NAME } bagi pengguna yang membutuhkan keamanan maksimum."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } didukung oleh teknologi AI mutakhir dan tim spesialis yang bekerja sepanjang waktu untuk mencegah tindak kejahatan dan ancaman keamanan."
+      ],
+      "Email address already used": [
+        "Alamat email telah digunakan"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "Setelah Anda mengaktifkan ${ PROTON_SENTINEL_NAME }:"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Kejadian yang mencurigakan akan dihadapkan pada sistem pertahanan yang berlapis untuk membantu mencegah para penyerang mengambil alih akun Anda."
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Tingkatkan ke akun berbayar untuk mengaktifkan ${ PROTON_SENTINEL_NAME }."
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "${ PROTON_SENTINEL_NAME } sangat disarankan bagi pengguna yang memiliki data dan komunikasi yang bersifat sensitif, seperti jurnalis atau eksekutif bisnis."
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Anda akan menerima dukungan prioritas dari tim spesialis yang terlatih dalam hal perlindungan akun. Untuk segala pertanyaan seputar keamanan akun, silakan hubungi kami ${ hereLink },"
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "Anda akan dapat melihat rincian lebih lanjut seputar berbagai kejadian penting, seperti upaya masuk ke akun Anda, pada log keamanan di bawah."
       ]
     },
     "info": {
@@ -8169,6 +8205,9 @@
       ],
       "Why set recovery methods?": [
         "Mengapa saya harus mengatur metode pemulihan?"
+      ],
+      "here": [
+        "di sini"
       ]
     },
     "Loading info": {
@@ -8200,6 +8239,9 @@
       ],
       "Enable authentication logs": [
         "Aktifkan catatan autentikasi"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Aktifkan ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -11745,6 +11787,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Anda telah diundang untuk mencoba ${ MAIL_APP_NAME }"
+      ],
+      "Organization filters": [
+        "Filter organisasi"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

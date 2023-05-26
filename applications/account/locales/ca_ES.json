@@ -38,6 +38,9 @@
       ],
       "Remove forward": [
         "Suprimeix el reenviament"
+      ],
+      "You will stop the mail forwarding.": [
+        "Aturareu el reenviament del correu."
       ]
     },
     "Action": {
@@ -2594,6 +2597,9 @@
       ],
       "It looks like your file is missing the '${ options.fieldName }' header.": [
         "Sembla que el teu fitxer no conté la capçalera '${ options.fieldName }'."
+      ],
+      "We detected errors in multiple rows during import, please review your CSV file.": [
+        "Hem detectat errors en múltiples files durant la importació. Reviseu el vostre fitxer CSV."
       ]
     },
     "Cycle": {
@@ -3561,6 +3567,9 @@
       ],
       "Your file \"${ formattedFilename }\" is empty.": [
         "El vostre fitxer \"${ formattedFilename }\" està buit."
+      ],
+      "Upload a CSV file with ${ MAX_NUMBER_OF_USER_ROWS } user accounts or less.": [
+        "Carregeu un fitxer CSV amb ${ MAX_NUMBER_OF_USER_ROWS } comptes d'usuari o menys."
       ]
     },
     "Error message": {
@@ -4073,6 +4082,9 @@
       ],
       "Something went wrong registering your security key. Please try again.": [
         "S'ha produït un error registrant la vostra clau de seguretat. Proveu-ho de nou."
+      ],
+      "Please disable 2FA via security key before disabling TOTP": [
+        "Desactiveu el 2FA amb la clau de seguretat abans de desactivar TOTP."
       ]
     },
     "fido2: Info": {
@@ -4093,6 +4105,24 @@
       ],
       "Verify your identity with a physical U2F or FIDO2 security key": [
         "Confirmeu la vostra identitat amb una clau de seguretat física U2F o FIDO2."
+      ],
+      "2FA via security key disabled": [
+        "Autenticació de dos factors amb clau de seguretat desactivada"
+      ],
+      "Add a name to identify your security key with.": [
+        "Afegiu un nom per identificar la vostra clau de seguretat."
+      ],
+      "Insert your security key into your device's USB port.": [
+        "Inseriu la vostra clau de seguretat al port USB del vostre dispositiu."
+      ],
+      "This will delete all security keys linked to your account.": [
+        "Això eliminarà totes les claus de seguretat vinculades al vostre compte."
+      ],
+      "To turn on 2FA via security key, you'll need to activate 2FA via authenticator app": [
+        "Per activar el 2FA amb una clau de seguretat, haureu d'activar primer el 2FA mitjançant l'aplicació d'autenticació."
+      ],
+      "Your two-factor authentication key is ready to use.": [
+        "La vostra clau d'autenticació de dos factors està llesta."
       ]
     },
     "fido2: Label": {
@@ -6724,6 +6754,9 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "La vostra subscripció és gestionada per Mozilla. Contacteu amb el suport de Mozilla."
+      ],
+      "Email address already used": [
+        "L'adreça de correu electrònic ja està en ús."
       ]
     },
     "info": {
@@ -8243,6 +8276,9 @@
       ],
       "Enable authentication logs": [
         "Activa els registres d'autenticació"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Habilita ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -8535,6 +8571,9 @@
       ],
       "Medium VPN speed": [
         "Velocitat VPN mitjana"
+      ],
+      "Keep your inbox organized with folders": [
+        "Mantingueu la vostra safata d'entrada organitzada amb carpetes."
       ]
     },
     "new_plans: Action": {
@@ -9002,6 +9041,39 @@
       ],
       "The no-cost starter account designed to empower everyone with privacy by default.": [
         "El compte d'inici sense cost dissenyat per atorgar privadesa a tothom per defecte."
+      ],
+      "${ brand } ending in ${ last4 }": [
+        "${ brand } acabant en ${ last4 }."
+      ],
+      "${ BRAND_NAME } lets you create email addresses and manage accounts for sub-users. Ideal for families and organizations.": [
+        "${ BRAND_NAME } us permet crear adreces de correu electrònic i gestionar comptes per als subusuaris. Ideal per a les vostres famílies i organitzacions."
+      ],
+      "Applicable credits, proration, and coupons are applied in the next step": [
+        "Crèdits aplicables, proració i cupons s'apliquen en el següent pas."
+      ],
+      "If you delete your account, you lose all ${ visionary } plan benefits and it won’t be available if you create a new account.": [
+        "Si elimineu el vostre compte, perdeu tots els avantatges del pla ${ visionary } i no estarà disponible si creeu un compte nou."
+      ],
+      "If you downgrade your account, you lose all ${ visionary } plan benefits and it won’t be available if you try to subscribe again.": [
+        "Si baixeu de categoria el vostre compte, perdeu tots els avantatges del pla ${ visionary } i no estarà disponible si intenteu subscriure-us de nou."
+      ],
+      "If you switch to a different plan, you lose all ${ visionary } plan benefits and won’t be able to switch back to ${ visionary }.": [
+        "Si canvieu a un pla diferent, perdreu tots els avantatges del pla ${ visionary } i no podreu tornar al pla ${ visionary }."
+      ],
+      "Privacy and security suite for businesses, including all premium ${ BRAND_NAME } services.": [
+        "Suite de privacitat i seguretat per a empreses, amb tots els serveis prèmium de ${ BRAND_NAME }."
+      ],
+      "Secure email and calendar for professionals and businesses.": [
+        "Correu electrònic i calendari segurs per a professionals i empreses."
+      ],
+      "The dedicated VPN solution that provides secure, unrestricted, high-speed access to the internet.": [
+        "La solució VPN dedicada que proporciona accés segur, il·limitat i d'alta velocitat a internet."
+      ],
+      "You’re enjoying a promotional price on your current plan. If you delete your account, you will lose your promotional price and it won’t be available if you create a new account.": [
+        "Esteu gaudint d'un preu promocional al vostre pla actual. Si elimineu el vostre compte, perdreu el preu promocional i no estarà disponible si creeu un compte nou."
+      ],
+      "You’re enjoying a promotional price on your current plan. If you downgrade your account, you will lose your promotional price and it won’t be available if you try to subscribe again.": [
+        "Esteu gaudint d'un preu promocional al vostre pla actual. Si feu una baixada de categoria al vostre compte, perdreu el preu promocional i no estarà disponible si intenteu subscriure-us novament."
       ]
     },
     "new_plans: Label": {
@@ -9117,6 +9189,18 @@
       ],
       "Support for file-sharing protocols like BitTorrent": [
         "Suport per a protocols de compartició fitxers com BitTorrent"
+      ],
+      "Easily share your calendars with your family, friends, or colleagues": [
+        "Compartiu fàcilment els vostres calendaris amb la vostra família, amics o col·legues."
+      ],
+      "Quickly transfer your emails, calendars or contacts from any provider": [
+        "Transferiu ràpidament els vostres correus electrònics, calendari o contactes des de qualsevol proveïdor."
+      ],
+      "Reset user passwords and reset two-factor authentication on users": [
+        "Restableix les contrasenyes dels usuaris i l'autenticació de dos factors dels usuaris."
+      ],
+      "Share your files or folders with anyone by using secure, shareable links": [
+        "Compartiu fitxers o carpetes amb qualsevol persona utilitzant enllaços segurs i compartibles."
       ]
     },
     "new_plans: upgrade": {
@@ -9511,6 +9595,18 @@
       "Your plan includes a maximum of ${ availableVPNAccess } more VPN account.": [
         "El vostre pla inclou un màxim de ${ availableVPNAccess } adreça més.",
         "El vostre pla inclou un màxim de ${ availableVPNAccess } adreces més."
+      ],
+      "${ upgradeLink } to add more users, or remove some user accounts to free up space.": [
+        "${ upgradeLink } el vostre pla per afegir més usuaris o suprimiu alguns comptes d'usuari per alliberar espai."
+      ],
+      "${ upgradeLink } to get more addresses, or remove some addresses to free up space.": [
+        "${ upgradeLink } el vostre pla per obtenir més adreces o suprimiu-ne algunes per alliberar espai."
+      ],
+      "${ upgradeLink } to get more storage, or remove some storage to free up space.": [
+        "${ upgradeLink } el vostre pla per obtenir més emmagatzematge o suprimiu una part de l'emmagatzematge per alliberar espai."
+      ],
+      "Your plan includes a maximum of ${ humanReadableAvailableSpace } more storage.": [
+        "El vostre pla inclou un màxim de ${ humanReadableAvailableSpace } més d'espai d'emmagatzematge disponible."
       ]
     },
     "OS compatibility": {
@@ -9663,6 +9759,9 @@
       "Should you need more than ${ maxUsers } user account, please ${ contact } our Sales team.": [
         "Si necessiteu més de ${ maxUsers } compte d'usuari, si us plau, ${ contact } amb el nostre equip de vendes.",
         "Si necessiteu més de ${ maxUsers } comptes d'usuari, si us plau, ${ contact } amb el nostre equip de vendes."
+      ],
+      "Select the number of users to include in your plan. Each additional user costs ${ price }.": [
+        "Seleccioneu el nombre d'usuaris per incloure en el vostre pla. Cada usuari addicional té un cost de ${ price }."
       ]
     },
     "Price": {
@@ -9878,6 +9977,12 @@
     "Settings description": {
       "Keep your inbox organized with folders and labels. ${ learnMoreLink }": [
         "Organitza la teva safata d'entrada amb carpetes i etiquetes. ${ learnMoreLink }"
+      ],
+      "Complete the transition to privacy with our secure importing and forwarding tools.": [
+        "Completeu la transició a la privacitat amb les nostres eines segures d'importació i reenviament."
+      ],
+      "Complete the transition to privacy with our secure importing tools.": [
+        "Completeu la transició a la privacitat amb les nostres eines segures d'importació."
       ]
     },
     "Settings section title": {
@@ -10427,6 +10532,9 @@
       ],
       "Keep auto-pay": [
         "Mantenir el pagament automàtic"
+      ],
+      "Our system will no longer auto-charge you using this payment method, but your subscription will still renew at the end of the billing cycle. If you want to downgrade or change your subscription, you still need to do that yourself before the end of the billing period. Furthermore, if you forget to make a manual payment and auto-pay is disabled for all payment methods, we may auto-downgrade your account which will lead to the loss of many features.": [
+        "El nostre sistema ja no us cobrarà automàticament amb aquest mètode de pagament, però la vostra subscripció es renovarà al final del cicle de facturació. Si voleu baixar de categoria o canviar la vostra subscripció, encara heu de fer-ho abans del final del període de facturació. A més, si oblideu fer un pagament manual i la facturació automàtica està desactivada per a tots els mètodes de pagament, es pot baixar la categoria del vostre compte automàticament, cosa que portarà a la pèrdua de moltes característiques."
       ]
     },
     "Subscription saving": {
@@ -11911,6 +12019,9 @@
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Actualitzeu a ${ planName } per a connectar fins a ${ n } dispositiu a la vegada a la VPN",
         "Actualitzeu a ${ planName } per a connectar fins a ${ n } dispositius a la vegada a la VPN"
+      ],
+      "Upgrade to ${ passPlusPlanName } to get unlimited Hide My Email aliases": [
+        "Millora a ${ passPlusPlanName } per obtenir àlies il·limitats del Hide My Email."
       ]
     },
     "Upgrade notice": {
@@ -12322,6 +12433,29 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualment, ${ untilString }"
+      ]
+    },
+    "familyOffer_2023: Title": {
+      "Your account's benefits": [
+        "Els avantatges del vostre compte"
+      ]
+    },
+    "familyOffer_2023:Info for members section": {
+      "Add, remove, and make changes to user accounts in your family group.": [
+        "Afegiu, elimineu i realitzeu canvis als comptes d'usuari del grup familiar."
+      ],
+      "Add, remove, and make changes to user accounts in your organization.": [
+        "Afegiu, elimineu i realitzeu canvis als comptes d'usuari de la vostra organització."
+      ]
+    },
+    "Heading in trial plan": {
+      "Try the best of ${ MAIL_APP_NAME } for free": [
+        "Proveu el millor de ${ MAIL_APP_NAME } de manera gratuïta."
+      ]
+    },
+    "TableRow": {
+      "No SMTP tokens found": [
+        "No s'han trobat tokens SMTP."
       ]
     }
   }

@@ -4283,6 +4283,9 @@
       ],
       "Search list": [
         "Procurar lista"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "E-mails de endereços marcados como spam por você ou ${ BRAND_NAME } irão para a pasta de spam dos membros de sua organização. Se você deseja permitir e-mails de um desses endereços, marque-o como \"não é spam\"."
       ]
     },
     "Font Face Default": {
@@ -4413,6 +4416,12 @@
       ],
       "User": [
         "Usuário"
+      ],
+      "Device": [
+        "Dispositivo"
+      ],
+      "Protection": [
+        "Proteção"
       ]
     },
     "Header for addresses table": {
@@ -6755,6 +6764,33 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Sua assinatura é gerenciada pela Mozilla. Por favor, entre em contato com o suporte da Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } é um programa de proteção de contas desenvolvido na ${ BRAND_NAME } para usuários que precisam de segurança máxima."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } é alimentado por sofisticados sistemas de IA e equipes de especialistas, que trabalham 24 horas por dia, 7 dias por semana para conter pessoas mal-intencionadas e ameaças à segurança."
+      ],
+      "Email address already used": [
+        "Endereço de e-mail já utilizado"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "Após você habilitar ${ PROTON_SENTINEL_NAME }:"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Ações suspeitas serão inspecionadas por múltiplas camadas de defesa, que ajudam a impedir que invasores sequestrem sua conta."
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Atualize para uma conta paga para habilitar ${ PROTON_SENTINEL_NAME }."
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Usuários com dados e comunicações sensíveis, como jornalistas ou executivos, são altamente incentivados a ativar. ${ PROTON_SENTINEL_NAME }."
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Você receberá suporte prioritário de especialistas treinados em proteção de contas. Para qualquer questão de segurança da conta, por favor entre em contato conosco ${ hereLink }."
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "Você verá mais detalhes nos Logs de Segurança abaixo para eventos importantes, como tentativas de login."
       ]
     },
     "info": {
@@ -8242,6 +8278,9 @@
       ],
       "Why set recovery methods?": [
         "Por que definir métodos de recuperação?"
+      ],
+      "here": [
+        "aqui"
       ]
     },
     "Loading info": {
@@ -8274,6 +8313,9 @@
       ],
       "Enable authentication logs": [
         "Habilitar registros de autenticação"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Habilitar ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -8684,7 +8726,7 @@
       ],
       "${ n } Hide My Email alias": [
         "${ n } alias de Hide My Email",
-        "${ n } alias de Hide My Email"
+        "${ n } Oculte minhas Aliases de e-mail"
       ],
       "${ n } label": [
         "${ n } marcador",
@@ -11617,7 +11659,7 @@
         "Resumo do plano"
       ],
       "Preview": [
-        "Pré-visualização"
+        "Prévia"
       ],
       "Previous": [
         "Anterior"
@@ -11893,6 +11935,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Você foi convidado a experimentar o ${ MAIL_APP_NAME }."
+      ],
+      "Organization filters": [
+        "Filtros de organização"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

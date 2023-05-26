@@ -889,6 +889,9 @@
       ],
       "Zoom out": [
         "Távolítás"
+      ],
+      "Restore": [
+        "Helyreállítás"
       ]
     },
     "Action for user session": {
@@ -1086,7 +1089,7 @@
         "Probléma saját domain névvel"
       ],
       "Drive problem": [
-        "ProtonDrive probléma"
+        "Drive probléma"
       ],
       "Feature request": [
         "Ötlet, javaslat"
@@ -1135,6 +1138,9 @@
       ],
       "Website access problem": [
         "Probléma a weboldal elérésével"
+      ],
+      "Pass problem": [
+        "Pass probléma"
       ]
     },
     "Button": {
@@ -2570,6 +2576,18 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Eseményeket iCal formátumból (ICS fájl) tud importálni.\nA fájl maximális mérete ${ MAX_IMPORT_FILE_SIZE_STRING } lehet és maximum ${ MAX_IMPORT_EVENTS_STRING } eseményt tartalmazhat. Nagyobb fájl importálásához, kisebb darabokra kell vágnia."
+      ],
+      "Automatically clear out messages older than 30 days from trash and spam. Enjoy this and other benefits when you upgrade.": [
+        "Törölje automatikusan a 30 napnál régebben a lomtárba vagy a levélszemét mappába került leveleket. Ehhez a lehetőséghez és további előnyökhöz, váltson nagyobb csomagra."
+      ],
+      "ProtonMail logo and a plus sign": [
+        "ProtonMail logó és egy plusz jel"
+      ],
+      "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
+        "A csomagváltással korlátlan számú szűrőt használhat az üzenetek rendezésére és további prémium funkciókat érhet el."
+      ],
+      "Unlock unlimited folders, labels and more premium features when you upgrade.": [
+        "A csomagváltással korlátlan számú mappát, címkét és további prémium funkciókat érhet el."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3194,6 +3212,9 @@
       ],
       "Zero keys reactivated": [
         "Nulla kulcs újraaktiválva"
+      ],
+      "The email addresses do not match": [
+        "Az e-mail címek nem egyeznek"
       ]
     },
     "Error importing calendar": {
@@ -3387,6 +3408,12 @@
       ],
       "Too many child sessions, please clear your cookies and sign back in.": [
         "Túl sok al-folyamat van használatban. Kérjük, törölje a sütiket és jelentkezzen be újra."
+      ],
+      "Please refresh the page or try again later.": [
+        "Frissítse az oldalt vagy próbálja újra később."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Nem sikerült az oldal betöltése. Frissítse az oldalt vagy ellenőrizze az internetkapcsolatát."
       ]
     },
     "Error message, recovery": {
@@ -3563,7 +3590,7 @@
         "Címek kezelése."
       ],
       "Owners of a plan with members cannot join another group plan.": [
-        "Meglévő csomaggal rendelkező felhasználók nem csatlakozhatnak csoportos előfizetéshez."
+        "Tagokkal rendelkező csomagok tulajdonosai nem csatlakozhatnak másik csoportos előfizetéshez."
       ],
       "Visionary and family plans do not currently support lifetime accounts.": [
         "A Visionary és a családi csomagok jelenleg nem támogatják az egész életre szóló fiókokat."
@@ -5865,6 +5892,9 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Az előfizetését a Mozilla kezeli. Kérjük, forduljon a Mozilla ügyfélszolgálatához az előfizetés lemondásához."
+      ],
+      "Restore": [
+        "Helyreállítás"
       ]
     },
     "info": {
@@ -10295,6 +10325,18 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Meghívás a ${ MAIL_APP_NAME } alkalmazás kipróbálására"
+      ],
+      "Clear out the junk": [
+        "Szabaduljon meg a szeméttől"
+      ],
+      "Keep your inbox organized": [
+        "Tartsa rendezetten a fiókját"
+      ],
+      "Preview": [
+        "Előnézet"
+      ],
+      "Save time with email filters": [
+        "Takarítson meg időt az e-mail szűrőkkel"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -10932,6 +10974,49 @@
       ],
       "Yearly, ${ untilString }": [
         "Évente, ${ untilString }"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Bezárás"
+      ],
+      "Don't show this offer again": [
+        "Ne jelenjen meg többet ez az ajánlat"
+      ],
+      "Special offer": [
+        "Kivételes ajánlat"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } day": [
+        "${ days } nap",
+        "${ days } nap"
+      ],
+      "${ hours } hour": [
+        "${ hours } óra",
+        "${ hours } óra"
+      ],
+      "${ minutes } minute": [
+        "${ minutes } perc",
+        "${ minutes } perc"
+      ],
+      "${ seconds } second": [
+        "${ seconds } másodperc",
+        "${ seconds } másodperc"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } hónap INGYEN",
+        "${ n } hónap INGYEN"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Előfizetési csomagok megnyitása"
+      ],
+      "Upgrade": [
+        "Váltás nagyobb csomagra"
       ]
     }
   }

@@ -4390,6 +4390,12 @@
       ],
       "User": [
         "使用者"
+      ],
+      "Device": [
+        "裝置"
+      ],
+      "Protection": [
+        "安全"
       ]
     },
     "Header for addresses table": {
@@ -6686,6 +6692,27 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "您的訂閱是由 Mozilla 管理。請聯絡 Mozilla 支援。"
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME }使用了複雜的人工智慧系統及24/7防禦團隊以確保安全"
+      ],
+      "Email address already used": [
+        "電子郵件已被使用"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "當您啟用${ PROTON_SENTINEL_NAME }"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "可疑的活動會被多層的防禦確認以避免帳戶劫持。"
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "升級付費版帳號以使用${ PROTON_SENTINEL_NAME }"
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "持有機密資料及通訊者，如記者及行政人員，建議開啟 ${ PROTON_SENTINEL_NAME }。"
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "您能在下方看到更細節的安全紀錄，如登入紀錄。"
       ]
     },
     "info": {
@@ -8169,6 +8196,9 @@
       ],
       "Why set recovery methods?": [
         "為什麼要設定復原方法?"
+      ],
+      "here": [
+        "這裡"
       ]
     },
     "Loading info": {
@@ -8848,6 +8878,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "保險櫃與項目分享（即將到來）"
+      ],
+      "Unlimited logins and notes": [
+        "登入與附註無上限"
       ]
     },
     "new_plans: feature info": {
@@ -11742,6 +11775,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "您已獲邀試用 ${ MAIL_APP_NAME }"
+      ],
+      "Organization filters": [
+        "機構過濾系統"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Pomniejsz"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Aktywuj adres ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Wysyłaj wiadomości z adresu @pm.me"
       ]
     },
     "action": {
@@ -2749,6 +2755,9 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Możesz importować wydarzenia w formacie iCal (plik ICS). Maksymalny dopuszczalny rozmiar pliku to ${ MAX_IMPORT_FILE_SIZE_STRING } i nie może zawierać więcej niż ${ MAX_IMPORT_EVENTS_STRING } wydarzeń. Podziel swój plik na mniejsze, jeśli jest zbyt duży."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Aby usunąć stopkę ${ MAIL_APP_NAME }, ulepsz konto i odblokuj więcej funkcji premium."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4323,6 +4332,9 @@
       ],
       "Search list": [
         "Przeszukaj"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "Wiadomości z adresów oznaczonych jako spam przez Ciebie lub ${ BRAND_NAME } zostaną przeniesione do folderu Spam Twojej organizacji. Jeśli chcesz zezwolić na wiadomości z jednego z tych adresów, oznacz adres jako \"To nie jest spam\"."
       ]
     },
     "Font Face Default": {
@@ -6893,6 +6905,33 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Twoja subskrypcja jest zarządzana przez Mozillę. Skontaktuj się z pomocą techniczną Mozilli."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } to program ochrony konta opracowany przez ${ BRAND_NAME } dla użytkowników, którzy potrzebują maksymalnego bezpieczeństwa."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } jest wspierany przez zaawansowane systemy sztucznej inteligencji i zespoły specjalistów pracujących 24 godziny na dobę, 7 dni w tygodniu, w celu łagodzenia ataków i zagrożeń bezpieczeństwa."
+      ],
+      "Email address already used": [
+        "Adres e-mail został już wykorzystany"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "Po włączeniu ${ PROTON_SENTINEL_NAME }:"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Podejrzane zdarzenia będą sprawdzane przez wiele warstw ochrony, które pomogą zapobiec przejęciu konta przez atakujących."
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Ulepsz do płatnego konta, aby włączyć ${ PROTON_SENTINEL_NAME }."
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Użytkownicy posiadający poufne dane i komunikację, jak dziennikarze lub kierownictwo, powinni włączyć ${ PROTON_SENTINEL_NAME }."
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Otrzymasz priorytetowe wsparcie od specjalistów przeszkolonych w zakresie ochrony konta. W przypadku jakichkolwiek obaw skontaktuj się z nami ${ hereLink }."
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "Zobaczysz w logach bezpieczeństwa więcej szczegółów zdarzeń, np. próby logowania."
       ]
     },
     "info": {
@@ -8292,7 +8331,7 @@
         "Aby dodać nowy kalendarz, usuń inny lub ulepsz konto ${ BRAND_NAME } do płatnego planu ${ MAIL_SHORT_APP_NAME }."
       ],
       "You've reached the maximum number of calendars available in your plan.": [
-        "Limit maksymalnej liczby kalendarzy dostępnych w Twoim planie został osiągnięty."
+        "Osiągnięto maksymalną liczbę kalendarzy dostępnych w Twoim planie."
       ]
     },
     "Link": {
@@ -8388,6 +8427,9 @@
       ],
       "Why set recovery methods?": [
         "Dlaczego ustawić metodę odzyskiwania?"
+      ],
+      "here": [
+        "tutaj"
       ]
     },
     "Loading info": {
@@ -9160,6 +9202,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Udostępnianie sejfu i elementów (wkrótce)"
+      ],
+      "Up to 3 TB of storage": [
+        "Do 3 TB przestrzeni dyskowej"
       ]
     },
     "new_plans: feature info": {
@@ -9168,6 +9213,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Przestrzeń dyskowa jest dzielona pomiędzy usługami ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } i ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Utwórz wiele adresów e-mail dla swoich tożsamości internetowych, np. JanZakupowy@${ domain } dla kont zakupowych i JanWiadomości@${ domain2 } dla subskrybowania wiadomości"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Korzystaj z adresu w niestandardowej domenie, np. ty@twojanazwa.pl"
       ]
     },
     "new_plans: heading": {
@@ -12189,6 +12240,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Otrzymujesz zaproszenie do wypróbowania poczty ${ MAIL_APP_NAME }"
+      ],
+      "Activate @pm.me": [
+        "Aktywuj adres @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12949,6 +13003,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Co rok, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Święta"
+      ],
+      "Other": [
+        "Inne"
+      ],
+      "Subscribed": [
+        "Subskrybowane"
       ]
     }
   }

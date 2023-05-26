@@ -4283,6 +4283,9 @@
       ],
       "Search list": [
         "Cerca nella lista"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "Le email provenienti da indirizzi segnati come spam da te o da ${ BRAND_NAME } andranno nella cartella spam dei membri della tua organizzazione. Se desideri consentire la ricezione di email da uno di questi indirizzi, segnalo come \"non spam\"."
       ]
     },
     "Font Face Default": {
@@ -4413,6 +4416,12 @@
       ],
       "User": [
         "Utente"
+      ],
+      "Device": [
+        "Dispositivo"
+      ],
+      "Protection": [
+        "Protezione"
       ]
     },
     "Header for addresses table": {
@@ -6755,6 +6764,33 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "La tua sottoscrizione è gestita da Mozilla. Per favore, contatta il supporto di Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } è un programma di protezione account sviluppato da ${ BRAND_NAME } per utenti che hanno bisogno della massima sicurezza."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } è alimentato da sistemi IA sofisticati e team di specialisti che lavorano 24/7 per mitigare attori cattivi e pericoli di sicurezza."
+      ],
+      "Email address already used": [
+        "Indirizzo email già in uso"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "Una volta attivato ${ PROTON_SENTINEL_NAME }:"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Eventi sospetti saranno sottoposti a molteplici strati di difesa che aiutano a impedire agli attaccanti di dirottare il tuo account."
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Effettua un upgrade a un account a pagamento per attivare ${ PROTON_SENTINEL_NAME }."
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Gli utenti con dati e comunicazioni sensibili, come giornalisti o dirigenti, sono fortemente incoraggiati ad attivate ${ PROTON_SENTINEL_NAME }."
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Riceverai supporto prioritario da specialisti addestrati in protezione di account. Per qualsiasi problema di sicurezza dell'account, contattaci a ${ hereLink }."
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "Vedrai più dettagli nei log di sicurezza in basso per eventi importanti come tentativi di accesso."
       ]
     },
     "info": {
@@ -8242,6 +8278,9 @@
       ],
       "Why set recovery methods?": [
         "Perché impostare dei metodi di recupero?"
+      ],
+      "here": [
+        "qui"
       ]
     },
     "Loading info": {
@@ -8274,6 +8313,9 @@
       ],
       "Enable authentication logs": [
         "Abilita log di autenticazione"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Attiva ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -11890,6 +11932,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Sei stato invitato a provare ${ MAIL_APP_NAME }"
+      ],
+      "Organization filters": [
+        "Filtri organizzazione"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

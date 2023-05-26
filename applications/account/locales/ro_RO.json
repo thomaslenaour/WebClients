@@ -6818,6 +6818,12 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Abonamentul vă este gestionat de Mozilla. Contactați Mozilla pentru suport."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } este un program de protejare a conturilor dezvoltat de ${ BRAND_NAME } pentru utilizatorii care au nevoie de securitate maximă."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } este susținut de un sistem sofisticat de inteligență artificială și de o echipă care lucrează 24/7 pentru a diminua amenințările de securitate."
       ]
     },
     "info": {
@@ -12023,6 +12029,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ați fost invitat să încercați ${ MAIL_APP_NAME }"
+      ],
+      "Organization filters": [
+        "Filtre organizație"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

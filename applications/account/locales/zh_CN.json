@@ -893,6 +893,9 @@
       ],
       "Zoom out": [
         "缩小"
+      ],
+      "Get more addresses": [
+        "获取更多邮箱地址"
       ]
     },
     "Action for user session": {
@@ -946,7 +949,7 @@
         "默认"
       ],
       "Disabled": [
-        "已禁用"
+        "未启用"
       ],
       "External": [
         "第三方"
@@ -3721,6 +3724,9 @@
       ],
       "Search list": [
         "搜索名单"
+      ],
+      "Add a custom filter to automatically perform certain actions, like labeling or archiving messages.": [
+        "定制筛选规则能自动帮您完成某些操作，例如给邮件加标签或将邮件存档。"
       ]
     },
     "Font Face Default": {
@@ -5834,6 +5840,9 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "您的账户是由 Mozilla 管理的，请联系 Mozilla 获取帮助。"
+      ],
+      "Use the different types of email addresses and aliases offered by ${ BRAND_NAME }.": [
+        "使用 ${ BRAND_NAME } 提供的各类邮箱地址与别名。"
       ]
     },
     "info": {
@@ -6214,6 +6223,9 @@
       ],
       "Mark obsolete": [
         "作废"
+      ],
+      "Export public key": [
+        "导出公钥"
       ]
     },
     "Knowledge base link label": {
@@ -7049,6 +7061,9 @@
       ],
       "Your referral link": [
         "您的邀请链接"
+      ],
+      "Auto-delete unwanted messages": [
+        "自动删除无用邮件"
       ]
     },
     "label": {
@@ -8895,6 +8910,9 @@
     "Settings description": {
       "Complete the transition to privacy with our secure importing and forwarding tools.": [
         "使用我们的安全导入与转发工具即可迈出捍卫隐私的第一步。"
+      ],
+      "Keep your inbox organized with folders and labels. ${ learnMoreLink }": [
+        "善用文件夹与标签，让您的邮箱井井有条。${ learnMoreLink }"
       ]
     },
     "Settings section title": {
@@ -9374,6 +9392,9 @@
       ],
       "For individuals": [
         "面向个人"
+      ],
+      "For families": [
+        "面向家庭"
       ]
     },
     "Table header; invitations to share calendar": {
@@ -10268,6 +10289,12 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "诚邀您体验 ${ MAIL_APP_NAME }"
+      ],
+      "Account keys": [
+        "账户密钥"
+      ],
+      "Your Plan": [
+        "您的账户等级"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -10473,6 +10500,9 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "您的第三方账户可能已超过 24 小时内的带宽上限，${ BRAND_NAME } 将尽快继续导入过程。"
+      ],
+      "Delete trash and spam messages after 30 days. Turning on auto-delete gives messages already in trash/spam a deletion date based on the date they were moved there.": [
+        "垃圾邮件与废件箱中的邮件 30 天后自动删除。开启此选项时，现有的无用邮件按其存在于对应文件夹中的时长推算删除时间。"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -10873,6 +10903,36 @@
       ],
       "Yearly, ${ untilString }": [
         "每年, ${ untilString }"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "开通 ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "所有家人共用 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } 的存储空间。"
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "开通 ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "与全家人共同守护网络隐私"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "${ planName } 现已推出"
+      ]
+    },
+    "specialoffer: Action": {
+      "Don't show this offer again": [
+        "不再显示此活动"
       ]
     }
   }

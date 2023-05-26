@@ -2737,6 +2737,9 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Vous pouvez importer des événements au format iCal (fichier ICS). Le fichier peut avoir une taille maximale de ${ MAX_IMPORT_FILE_SIZE_STRING } et contenir jusqu'à ${ MAX_IMPORT_EVENTS_STRING } événements. Si votre fichier est plus volumineux, nous vous invitons à le diviser en plusieurs fichiers plus petits."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Pour supprimer le pied de page ${ MAIL_APP_NAME }, changez d'abonnement et débloquez encore plus de fonctionnalité premium."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3777,7 +3780,7 @@
         "Inviter un utilisateur ${ BRAND_NAME } déjà existant"
       ],
       "Invite member to your family": [
-        "Inviter un membre de votre famille"
+        "Invitez des membres à rejoindre votre famille"
       ],
       "Keep current plan": [
         "Garder l'abonnement actuel"
@@ -5838,7 +5841,7 @@
         "ancien mot de passe"
       ],
       "Once you enable ${ PROTON_SENTINEL_NAME }:": [
-        "Une fois que vous avez activé ${ PROTON_SENTINEL_NAME }:"
+        "Une fois que vous avez activé ${ PROTON_SENTINEL_NAME } :"
       ],
       "Once you reset your password:": [
         "Une fois votre mot de passe réinitialisé :"
@@ -6145,7 +6148,7 @@
         "équipe support"
       ],
       "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
-        "Les événements suspects seront mis au défi par plusieurs couches de défense qui aident à prévenir les pirates de détourner votre compte"
+        "Les événements suspects seront soumis à plusieurs niveaux de défense pour empêcher les attaquants de pirater votre compte."
       ],
       "Swiss based": [
         "Basé en Suisse"
@@ -6439,7 +6442,7 @@
         "Utilisez l'adresse e-mail sélectionnée comme nom d'utilisateur SMTP pour le service externe et le jeton généré comme mot de passe SMTP."
       ],
       "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
-        "Les utilisateurs ayant des données et des communications sensibles, comme les journalistes ou les directeurs, sont fortement encouragés à activer ${ PROTON_SENTINEL_NAME }."
+        "Les utilisateurs ayant des données et des communications sensibles, comme les journalistes ou les dirigeants, devraient activer ${ PROTON_SENTINEL_NAME }."
       ],
       "Verification can take a few minutes.": [
         "La vérification peut prendre quelques minutes."
@@ -6684,10 +6687,10 @@
         "Vous ne pourrez PAS déchiffrer les messages, fichiers et autres données chiffrés avec cette clé."
       ],
       "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
-        "Vous recevrez une assistance prioritaire de la part de spécialistes formés à la protection des comptes. Pour toute question relative à la sécurité de votre compte, veuillez nous contacter ${ hereLink }."
+        "Vous bénéficierez d'une assistance prioritaire par des spécialistes formés à la protection des comptes. Pour toute question concernant la sécurité de votre compte, contactez-nous ${ hereLink }."
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
-        "Vous verrez plus de détails dans les journaux de sécurité ci-dessous pour les événements importants comme les tentatives de connexions"
+        "Vous verrez plus de détails dans les journaux de sécurité ci-dessous pour les événements importants comme les tentatives de connexions."
       ],
       "You will soon be redirected to PayPal to verify your payment.": [
         "Vous serez bientôt redirigé vers PayPal pour vérifier votre paiement."
@@ -6782,6 +6785,15 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Votre abonnement est géré par Mozilla. Nous vous invitons à contacter le support Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } est un programme de protection de compte développé par ${ BRAND_NAME } pour les utilisateurs ayant besoin d'une sécurité maximale."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } bénéficie de systèmes d'IA sophistiqués et d'équipes de spécialistes qui travaillent 24 heures sur 24 et 7 jours sur 7 pour neutraliser les acteurs malveillants et les menaces de sécurité."
+      ],
+      "Email address already used": [
+        "L'adresse e-mail est déjà utilisée."
       ]
     },
     "info": {
@@ -8986,6 +8998,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Partage de coffres-forts et d'éléments (prochainement)"
+      ],
+      "Up to 3 TB of storage": [
+        "Jusqu'à 3 To de stockage"
       ]
     },
     "new_plans: feature info": {
@@ -8994,6 +9009,9 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "L'espace de stockage est partagé entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } et ${ DRIVE_APP_NAME }."
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Utilisez votre adresse e-mail personnalisée à partir de votre propre nom de domaine (vous@votrenom.com)."
       ]
     },
     "new_plans: heading": {
@@ -11923,6 +11941,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Vous avez été invité à essayer ${ MAIL_APP_NAME }."
+      ],
+      "Organization filters": [
+        "Filtres de l'organisation"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12609,6 +12630,11 @@
       ],
       "Yearly, ${ untilString }": [
         "Chaque année, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Jours fériés"
       ]
     }
   }

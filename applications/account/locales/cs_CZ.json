@@ -6893,6 +6893,9 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Váš předplatné je spravováno Mozillou. Kontaktujte prosím Mozilla podporu."
+      ],
+      "Email address already used": [
+        "E-mailová adresa byla již použita"
       ]
     },
     "info": {
@@ -8425,6 +8428,9 @@
       ],
       "Enable authentication logs": [
         "Povolit ověřovací protokoly"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Povolit ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -9157,6 +9163,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Sdílení trezoru a položek (již brzy)"
+      ],
+      "Up to 3 TB of storage": [
+        "Až 3 TB úložného prostoru"
       ]
     },
     "new_plans: feature info": {
@@ -12940,6 +12949,11 @@
       ],
       "Yearly, ${ untilString }": [
         "Roční, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Svátky"
       ]
     }
   }

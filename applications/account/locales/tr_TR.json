@@ -654,7 +654,7 @@
         "Bu bildirimi kaldır"
       ],
       "Report a problem": [
-        "Bir sorun bildireceğim"
+        "Sorun bildirin"
       ],
       "Request a feature": [
         "Bir özellik istiyorum"
@@ -4283,6 +4283,9 @@
       ],
       "Search list": [
         "Arama listesi"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "Siz ya da ${ BRAND_NAME } tarafından istenmeyen olarak işaretlenmiş adreslerden gelen e-postalar, kuruluş üyelerinizin istenmeyen kutusuna taşınır. Bu adreslerden birinden gelen e-postalara izin vermek istiyorsanız, \"İstenmeyen değil\" olarak işaretleyebilirsiniz."
       ]
     },
     "Font Face Default": {
@@ -4413,6 +4416,12 @@
       ],
       "User": [
         "Kullanıcı"
+      ],
+      "Device": [
+        "Aygıt"
+      ],
+      "Protection": [
+        "Koruma"
       ]
     },
     "Header for addresses table": {
@@ -6755,6 +6764,33 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Aboneliğiniz Mozilla tarafından yönetiliyor. Lütfen Mozilla destek ekibi ile görüşün."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME }, ${ BRAND_NAME } tarafından en yüksek düzeyde güvenlik isteyen kullanıcılar için geliştirilmiş bir hesap koruma yazılımıdır."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME }, kötü niyetli kişi ve kuruluşlarla ve güvenlik tehditleriyle başa çıkmak için 7/24 çalışan gelişmiş yapay zeka sistemleri ve uzman ekipler tarafından desteklenmektedir."
+      ],
+      "Email address already used": [
+        "E-posta adresi zaten kullanılmış"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "${ PROTON_SENTINEL_NAME } özelliğini etkinleştirdiğinizde:"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Şüpheli olaylara, saldırganların hesabınızı ele geçirmesini önleyecek çok sayıda savunma katmanı ile karşı koyabileceksiniz."
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "${ PROTON_SENTINEL_NAME } özelliğini etkinleştirmek için ücretli bir tarifeye yükseltin."
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Gazeteciler veya yöneticiler gibi verileri ve iletişimleri üst düzeyde önemli olan kullanıcıların ${ PROTON_SENTINEL_NAME } özelliğini etkinleştirmeleri önemle önerilir."
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Hesap koruma konusunda eğitim almış uzmanlardan öncelikli destek alabileceksiniz. Herhangi bir hesap güvenliği sorunu için lütfen bizimle ${ hereLink } görüşün."
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "Aşağıdaki güvenlik günlüğü kayıtlarında oturum açma girişimleri gibi önemli olaylar için daha fazla ayrıntı görebileceksiniz."
       ]
     },
     "info": {
@@ -8242,6 +8278,9 @@
       ],
       "Why set recovery methods?": [
         "Neden kurtarma yöntemleri ayarlanmalı?"
+      ],
+      "here": [
+        "buradan"
       ]
     },
     "Loading info": {
@@ -8274,6 +8313,9 @@
       ],
       "Enable authentication logs": [
         "Kimlik doğrulama günlükleri tutulsun"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "${ PROTON_SENTINEL_NAME } özelliğini etkinleştir"
       ]
     },
     "Mail import summary": {
@@ -11650,7 +11692,7 @@
         "Kullanıcı kaldırılsın mı?"
       ],
       "Report a problem": [
-        "Bir sorun bildirin"
+        "Sorun bildirin"
       ],
       "Request new code": [
         "Yeni kod iste"
@@ -11890,6 +11932,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "${ MAIL_APP_NAME } uygulamasını denemeye çağrıldınız"
+      ],
+      "Organization filters": [
+        "Kuruluş süzgeçleri"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
