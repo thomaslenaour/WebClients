@@ -29,9 +29,7 @@ if ('chrome' in window) {
 }
 
 const App = () => {
-    const [hasInitialAuth] = useState(() => {
-        return !window.location.pathname.startsWith(G_OAUTH_REDIRECT_PATH);
-    });
+    const [hasInitialAuth] = useState(() => !window.location.pathname.startsWith(G_OAUTH_REDIRECT_PATH));
 
     return (
         <ProtonApp authentication={authentication} config={config} hasInitialAuth={hasInitialAuth}>
