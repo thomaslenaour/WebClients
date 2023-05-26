@@ -1725,6 +1725,18 @@
       ],
       "You are invited to join ${ invite.OrganizationName }": [
         "Вас запрошено приєднатися до ${ invite.OrganizationName }"
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Запрошення від: ${ inviteEmail }"
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Перепрошую, наразі неможливо змінити план."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Виділене вам сховище: ${ assignedStorage }"
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Вас запросили приєднатися до Організації \"${ bannerOrganization }\". ${ viewInviteButton }."
       ]
     },
     "familyOffer_2023:Footer": {
@@ -1759,6 +1771,9 @@
       ],
       "Delete organization?": [
         "Видалити організацію?"
+      ],
+      "Introducing ${ planName }": [
+        "Представляємо ${ planName }"
       ]
     },
     "Feature": {
@@ -4434,6 +4449,9 @@
       ],
       "End of Year Sale": [
         "Передноворічний розпродаж"
+      ],
+      "Get our premium bundle and save more": [
+        "Заощаджуй більше, придбавши наш Premium Bundle"
       ]
     },
     "specialoffer: Tooltip": {
@@ -5262,6 +5280,14 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Час безплатної пробної версії завершиться ${ textDate }. ${ action }"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ seconds } second": [
+        "${ seconds } секунда",
+        "${ seconds } секунд",
+        "${ seconds } секунд",
+        "${ seconds } секунд"
       ]
     }
   }
