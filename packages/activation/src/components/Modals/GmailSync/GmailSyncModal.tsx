@@ -68,9 +68,9 @@ const GmailSyncModal = ({ onSyncCallback, onSyncSkipCallback, noSkip, ...rest }:
     return (
         <ModalTwo size="xlarge" fullscreenOnMobile {...rest} onClose={handleClose}>
             <ModalHeader />
-            <ModalContent className="m-8 mt-0 flex flex-row flex-align-items-center flex-nowrap flex-gap-2">
-                <div className="flex flex-column flex-item-fluid flex-gap-2">
-                    <h1>
+            <ModalContent className="m-8 mt-0 flex flex-row flex-align-items-center flex-nowrap gap-7">
+                <div className="flex flex-column flex-item-fluid gap-7">
+                    <h1 className="text-break text-4xl">
                         <strong>{c('Gmail forwarding').t`Automatically forward`}</strong>
                         &nbsp;
                         <br className="no-desktop" />
