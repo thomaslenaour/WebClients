@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Уменьшить масштаб"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Активируйте ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Отправляйте сообщения на @pm.me"
       ]
     },
     "action": {
@@ -2755,6 +2761,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Вы можете импортировать события в формате iCal (ICS файл). Размер файла не должен быть более ${ MAX_IMPORT_FILE_SIZE_STRING } и иметь не более ${ MAX_IMPORT_EVENTS_STRING } событий. Если ваш файл больше, разделите его на меньшие файлы."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Для удаления нижнего колонтитула ${ MAIL_APP_NAME } обновите тариф и разблокируйте ещё больше премиум-функций."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Обновите тариф, чтобы разблокировать более короткие адреса электронной почты и другие премиум-функции."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3424,6 +3436,12 @@
       ],
       "Zero keys reactivated": [
         "Ноль ключей активировано повторно"
+      ],
+      "Username must begin with a letter or digit": [
+        "Имя пользователя должно начинаться с буквы или цифры"
+      ],
+      "Username must end with a letter or digit": [
+        "Имя пользователя должно заканчиваться буквой или цифрой"
       ]
     },
     "Error importing calendar": {
@@ -3954,6 +3972,12 @@
       ],
       "Your current plan cannot join a Visionary or family plan.": [
         "Ваш текущий план не позволяет присоединиться к семейной подписке или тарифу Visionary."
+      ],
+      "You have reached the limit of 10 accepted invitations in 6 months.": [
+        "Вы достигли предела в 10 принятых приглашений за 6 месяцев."
+      ],
+      "You need to configure a custom domain before adding multiple users.": [
+        "Перед добавлением нескольких пользователей необходимо настроить пользовательский домен."
       ]
     },
     "familyOffer_2023:Footer": {
@@ -6920,6 +6944,18 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "В журналах безопасности ниже вы увидите более подробную информацию о важных событиях, таких как попытки входа в систему."
+      ],
+      "Based on your time zone": [
+        "На основе вашего часового пояса"
+      ],
+      "Email address already used": [
+        "Адрес электронной почты уже используется"
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Обновите тариф, чтобы добавить к своей учетной записи более короткий адрес @pm.me, которым проще поделиться. Он означает «Напишите мне в ${ MAIL_APP_NAME }» или «Отправьте мне личное сообщение»."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "В рамках текущего тарифного плана Вы можете только получать сообщения со своим адресом @pm.me. Перейдите на новый тарифный план, чтобы отправлять сообщения и создавать дополнительные адреса с помощью @pm.me."
       ]
     },
     "info": {
@@ -9184,6 +9220,12 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Совместный доступ к хранилищам и элементам (скоро появится)"
+      ],
+      "Unlimited logins and notes": [
+        "Неограниченное количество имен пользователей и заметок"
+      ],
+      "Up to 3 TB of storage": [
+        "До 3 ТБ хранилища"
       ]
     },
     "new_plans: feature info": {
@@ -9192,6 +9234,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Объём хранилища распределяется между ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } и ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Создайте несколько адресов электронной почты для своих сетевых идентификаторов, например, VanyaShopper@${ domain } для учетных записей покупок, VanyaNews@${ domain2 } для подписки на новости"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Используйте собственный адрес домена электронной почты, например, you@yourname.com."
       ]
     },
     "new_plans: heading": {
@@ -9637,6 +9685,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Календарь добавлен"
+      ],
+      "Adding holidays calendar failed": [
+        "Не удалось добавить календарь праздничных дней"
       ]
     },
     "Notification in share calendar modal": {
@@ -12210,6 +12261,9 @@
       ],
       "Organization filters": [
         "Название организации"
+      ],
+      "Activate @pm.me": [
+        "Активируйте @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12970,6 +13024,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Ежегодно ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Праздники"
+      ],
+      "Other": [
+        "Другой"
+      ],
+      "Subscribed": [
+        "Подписаны"
       ]
     }
   }

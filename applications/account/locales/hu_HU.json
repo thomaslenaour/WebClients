@@ -5895,6 +5895,9 @@
       ],
       "Restore": [
         "Helyreállítás"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "A csomagja maximum 10 változatot tesz lehetővé, maximum 7 napig"
       ]
     },
     "info": {
@@ -7091,6 +7094,14 @@
       ],
       "Your referral link": [
         "Ajánló hivatkozása"
+      ],
+      "${ nbDay } day": [
+        "${ nbDay } nap",
+        "${ nbDay } nap"
+      ],
+      "${ nbYear } year": [
+        "${ nbYear } év",
+        "${ nbYear } év"
       ]
     },
     "label": {
@@ -10337,6 +10348,9 @@
       ],
       "Save time with email filters": [
         "Takarítson meg időt az e-mail szűrőkkel"
+      ],
+      "Version history": [
+        "Változatelőzmények"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Зменшити"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Активувати ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Надсилайте повідомлення з адреси @pm.me"
       ]
     },
     "action": {
@@ -1035,6 +1041,18 @@
       ],
       "Set as default": [
         "Зробити типовою"
+      ],
+      "Disable encryption": [
+        "Вимкнути шифрування"
+      ],
+      "Disable expect signed": [
+        "Вимкнути очікування підписання"
+      ],
+      "Enable encryption": [
+        "Увімкнути шифрування"
+      ],
+      "Enable expect signed": [
+        "Увімкнути очікування підписання"
       ]
     },
     "Address status": {
@@ -1058,6 +1076,9 @@
       ],
       "Orphan": [
         "Не прив'язано"
+      ],
+      "No signing": [
+        "Без підпису"
       ]
     },
     "Alert": {
@@ -2728,6 +2749,21 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Ви можете імпортувати події в форматі iCal (файл ICS). Максимальний розмір файлу повинен бути ${ MAX_IMPORT_FILE_SIZE_STRING } та містити до ${ MAX_IMPORT_EVENTS_STRING } подій. Якщо ваш файл більший, розділіть його на менші файли."
+      ],
+      "Separate different aspects of your life with multiple email addresses and unlock more premium features when you upgrade.": [
+        "Передплатіть тарифний план, щоб відокремити різні аспекти свого життя за допомогою декількох адрес електронної пошти та отримати доступ до інших преміумфункцій."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Передплатіть тарифний план, щоб вилучити нижній колонтитул ${ MAIL_APP_NAME } та отримати доступ до інших преміумфункцій."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Передплатіть тарифний план і розблокуйте короткі адреси електронної пошти та інші преміумфункції."
+      ],
+      "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
+        "Отримайте доступ до безмежної кількості фільтрів для впорядкування поштової скриньки, передплативши тарифний план."
+      ],
+      "Unlock unlimited folders, labels and more premium features when you upgrade.": [
+        "Отримайте доступ до безмежної кількості тек, міток та інших преміумфункцій, передплативши тарифний план."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3397,6 +3433,12 @@
       ],
       "Zero keys reactivated": [
         "Нуль ключів повторно активовано"
+      ],
+      "Username must begin with a letter or digit": [
+        "Ім'я користувача повинно починатися з літери або цифри"
+      ],
+      "Username must end with a letter or digit": [
+        "Ім'я користувача повинно закінчуватися літерою або цифрою"
       ]
     },
     "Error importing calendar": {
@@ -3598,6 +3640,9 @@
       ],
       "Too many child sessions, please clear your cookies and sign back in.": [
         "Занадто багато дочірніх сеансів. Будь ласка, очистьте куки й увійдіть знову."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Не вдалося завантажити цю сторінку. Перезавантажте сторінку або перевірте з'єднання з інтернетом."
       ]
     },
     "Error message, recovery": {
@@ -3790,6 +3835,9 @@
       ],
       "View the invitations": [
         "Переглянути запрошення"
+      ],
+      "Set up family group": [
+        "Налаштувати сімейну групу"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3849,18 +3897,87 @@
         "Запрошення від: ${ inviteEmail }"
       ],
       "Sorry, you can't switch plans at this time.": [
-        "Перепрошую, наразі неможливо змінити план."
+        "На жаль, зараз вам не дозволено змінити план."
       ],
       "Storage assigned to you: ${ assignedStorage }": [
-        "Виділене вам сховище: ${ assignedStorage }"
+        "Призначений вам обсяг сховища: ${ assignedStorage }"
       ],
       "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
-        "Вас запросили приєднатися до Організації \"${ bannerOrganization }\". ${ viewInviteButton }."
+        "Вас запросили приєднатися до ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "*Only one free trial per customer.": [
+        "*Тільки одна безплатна пробна версія на одного клієнта."
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Облікові записи з власними доменами не можна приєднати до Visionary або сімейного плану."
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Якщо ви приймете запрошення, ми змінимо ваш поточний тарифний план і зарахуємо невикористану частину коштів на ваш обліковий запис."
+      ],
+      "Leave family plan": [
+        "Відмовитися від сімейного плану"
+      ],
+      "Leave visionary plan": [
+        "Відмовитися від плану Visionary"
+      ],
+      "Only 10 accepted invitations are allowed in a 6-month period.": [
+        "Протягом 6-місячного періоду дозволяється прийняти лише 10 запрошень."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Власники тарифних планів з учасниками не можуть приєднуватися до інших групових тарифних планів."
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Рахунок за передплату виставляється основному адміністратору Visionary або сімейного плану."
+      ],
+      "To ease the transition, we're giving you a 30-day courtesy trial of ${ BRAND_NAME } Unlimited*.": [
+        "Щоб полегшити перехід, ми надаємо вам 30-денну пробну версію ${ BRAND_NAME } Unlimited*."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary і сімейні плани наразі не підтримують зовнішні облікові записи. Перш ніж приєднатися, створіть адресу ${ BRAND_NAME }. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary і сімейні плани наразі не підтримують довічні облікові записи."
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Ви можете прийняти лише 3 запрошення протягом 6 місяців. Якщо вам потрібно більше, зверніться до ${ supportLink }."
+      ],
+      "You have reached the limit of 10 accepted invitations in 6 months.": [
+        "Ви досягли обмеження в 10 прийнятих запрошень за 6 місяців."
+      ],
+      "You have reached the limit of 10 accepted invitations in 6 months. The button will become clickable when you can invite additional users.": [
+        "Ви досягли обмеження в 10 прийнятих запрошень за 6 місяців. Кнопка стане доступною для натискання, коли ви зможете запросити додаткових користувачів."
+      ],
+      "You have successfully joined the Family plan": [
+        "Ви успішно приєдналися до Сімейного плану"
+      ],
+      "You need to configure a custom domain before adding multiple users.": [
+        "Перш ніж додати кількох користувачів, потрібно налаштувати власний домен."
+      ],
+      "You need to configure a custom domain before creating a new user.": [
+        "Перш ніж створити нового користувача, потрібно налаштувати власний домен."
+      ],
+      "You will lose access to all premium features and storage space included with ${ BRAND_NAME } Family.": [
+        "Ви втратите доступ до всіх преміумфункцій і простору сховища, включених до ${ BRAND_NAME } Family."
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Вас запрошено пов'язати обліковий запис ${ BRAND_NAME } із цим груповим планом і разом користуватися всіма преміумфункціями ${ BRAND_NAME_TWO }"
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Ваш обліковий запис має більше адрес електронної пошти, ніж доступно в цьому плані. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Ваш обліковий запис використовує ${ usedSpace } обсягу сховища, що перевищує призначений вам обсяг ${ inviteSpace }. Видаліть деякі дані або попросіть адміністратора плану збільшити обсяг вашого сховища."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Ваш поточний план не може приєднатися до Visionary або сімейного плану."
       ]
     },
     "familyOffer_2023:Footer": {
       "Discounts are based on the standard monthly pricing.": [
         "Знижки відносно стандартної місячної ціни."
+      ],
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Ваша передплата автоматично поновиться за тією ж ціною в кінці платіжного періоду."
       ]
     },
     "familyOffer_2023:Get Proton Family": {
@@ -4171,6 +4288,9 @@
       ],
       "Search list": [
         "Шукати у списку"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "Листи з адрес, позначених вами або ${ BRAND_NAME } як спам, потраплятимуть до теки \"Спам\" учасників вашої організації. Якщо ви хочете дозволити отримувати листи з однієї з цих адрес, позначте її як \"не спам\"."
       ]
     },
     "Font Face Default": {
@@ -4298,6 +4418,15 @@
       ],
       "User": [
         "Користувач"
+      ],
+      "Device": [
+        "Пристрій"
+      ],
+      "Protection": [
+        "Захист"
+      ],
+      "Select your preferred method of payment": [
+        "Оберіть бажаний спосіб оплати."
       ]
     },
     "Header for addresses table": {
@@ -6663,6 +6792,108 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Ваша передплата керується Mozilla. Зв'яжіться зі службою підтримки Mozilla."
+      ],
+      "${ DRIVE_APP_NAME } will no longer keep previous versions of your files.": [
+        "${ DRIVE_APP_NAME } більше не зберігатиме попередні версії ваших файлів."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } – це програма захисту облікових записів, розроблена в ${ BRAND_NAME } для користувачів, які потребують максимальної безпеки."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } спирається на складні системи штучного інтелекту та команди фахівців, які працюють 24/7, щоб протистояти зловмисникам та загрозам безпеці."
+      ],
+      "Access your passwords and protect your online identities seamlessly across your devices. Download and install the relevant ${ PASS_APP_NAME } apps and extensions.": [
+        "Отримайте доступ до своїх паролів і захистіть свої облікові дані в Інтернеті на всіх пристроях. Завантажте та встановіть відповідні застосунки та розширення ${ PASS_APP_NAME }."
+      ],
+      "Any ${ twoFa } method on your account will be disabled.": [
+        "Будь-який метод ${ twoFa } вашого облікового запису буде вимкнено."
+      ],
+      "Are you sure you want to delete this calendar? You can add the holidays calendar back later.": [
+        "Ви впевнені, що хочете видалити цей календар? Ви можете додати календар свят пізніше."
+      ],
+      "Based on your time zone": [
+        "На основі вашого часового поясу"
+      ],
+      "Be sure to copy your password and store it somewhere safe.": [
+        "Обов'язково скопіюйте свій пароль і збережіть його в безпечному місці."
+      ],
+      "Copy the suggested password to clipboard": [
+        "Скопіюйте запропонований пароль до буфера обміну"
+      ],
+      "Email address already used": [
+        "Адреса електронної пошти вже використовується"
+      ],
+      "Get a ${ BRAND_NAME } address to use all ${ BRAND_NAME_TWO } services including ${ MAIL_SHORT_APP_NAME } and ${ CALENDAR_SHORT_APP_NAME }.": [
+        "Отримайте адресу ${ BRAND_NAME }, щоб користуватися всіма службами ${ BRAND_NAME_TWO }, включно з ${ MAIL_SHORT_APP_NAME } та ${ CALENDAR_SHORT_APP_NAME }."
+      ],
+      "If it’s not right for you, we’ll refund you.": [
+        "Якщо вам не сподобається, ми повернемо гроші."
+      ],
+      "Logs include authentication attempts for all ${ BRAND_NAME } services that use your ${ BRAND_NAME_TWO } credentials.": [
+        "Журнали містять записи про спроби автентифікації для всіх служб ${ BRAND_NAME }, які використовують ваші облікові дані ${ BRAND_NAME_TWO }."
+      ],
+      "No account keys exist": [
+        "Немає ключів облікового запису"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "Щойно ви ввімкнете ${ PROTON_SENTINEL_NAME }:"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Декілька рівнів захисту від підозрілих подій допоможуть протистояти захопленню вашого облікового запису зловмисниками."
+      ],
+      "This will delete all previous versions of your files older than ${ rententionLabel }.": [
+        "Це призведе до видалення всіх попередніх версій ваших файлів, що зберігаються понад ${ rententionLabel }"
+      ],
+      "This will delete all previous versions of your files.": [
+        "Це призведе до видалення всіх попередніх версій ваших файлів."
+      ],
+      "This wizard will enable Two-Factor Authentication (2FA) on your ${ BRAND_NAME } account. Two-factor authentication will make your ${ BRAND_NAME_TWO } account more secure so we recommend enabling it.": [
+        "Цей помічник увімкне двоетапну перевірку (2FA) для вашого облікового запису ${ BRAND_NAME }. Двоетапна перевірка забезпечує додатковий рівень захисту вашого облікового запису ${ BRAND_NAME_TWO }, тому рекомендуємо ввімкнути її."
+      ],
+      "To ${ planName }": [
+        "Для ${ planName }"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "Щоб не втратити важливі дані, ${ DRIVE_APP_NAME } зберігає старіші версії ваших файлів, коли ви та ваші колеги вносите зміни. Виберіть, як довго ${ BRAND_NAME } має зберігати попередні версії."
+      ],
+      "Try ${ upsellPlanName } risk free": [
+        "Спробуйте ${ upsellPlanName } без ризику"
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Передплатіть тарифний план, щоб увімкнути ${ PROTON_SENTINEL_NAME }."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Передплатіть тарифний план, щоб додати до облікового запису коротку адресу @pm.me, якою легше ділитися. Вона розшифровується як \"${ MAIL_APP_NAME } me\" або \"Private Message me\"."
+      ],
+      "Upgrade to unlock": [
+        "Передплатіть для отримання доступу"
+      ],
+      "Use the different types of email addresses and aliases offered by ${ BRAND_NAME }.": [
+        "Використовуйте різні типи адрес електронної пошти та псевдонімів, які пропонує ${ BRAND_NAME }"
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Користувачам з конфіденційними даними та повідомленнями, таким як журналісти або керівники, рекомендується ввімкнути ${ PROTON_SENTINEL_NAME }."
+      ],
+      "With an encrypted ${ BRAND_NAME } address, you can use all ${ BRAND_NAME_TWO } services": [
+        "Із зашифрованою адресою ${ BRAND_NAME } ви можете користуватися всіма службами ${ BRAND_NAME_TWO }"
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "З вашим поточним тарифним планом ви можете лише отримувати повідомлення на адресу @pm.me. Оновіть тариф, щоб надсилати повідомлення та створювати додаткові адреси за допомогою @pm.me."
+      ],
+      "You will be redirected to the VPN download page": [
+        "Вас буде перенаправлено на сторінку завантаження VPN"
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Ви отримаєте пріоритетну підтримку від фахівців з питань захисту облікових записів. Якщо вас непокоять будь-які питання щодо безпеки облікового запису, зверніться до нас ${ hereLink }."
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "У наведених нижче журналах ви побачите більше подробиць про важливі події, як-от спроби входу до системи."
+      ],
+      "Your existing messages, calendars, or contacts will be locked. To recover this data, you’ll need your ${ oldPassword }.": [
+        "Ваші наявні повідомлення, календарі або контакти будуть заблоковані. Щоб відновити ці дані, вам знадобиться ваш ${ oldPassword }."
+      ],
+      "Your existing messages, calendars, or contacts will be locked. To recover this data, you’ll need your recovery phrase or your ${ oldPassword }.": [
+        "Ваші наявні повідомлення, календарі або контакти будуть заблоковані. Щоб відновити ці дані, вам знадобиться ваша фраза для відновлення або ${ oldPassword }."
       ]
     },
     "info": {
@@ -8158,6 +8389,9 @@
       ],
       "Why set recovery methods?": [
         "Навіщо додавати спосіб відновлення?"
+      ],
+      "here": [
+        "тут"
       ]
     },
     "Loading info": {
@@ -8192,6 +8426,9 @@
       ],
       "Enable authentication logs": [
         "Увімкнути журнал авторизації"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Увімкнути ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -8566,6 +8803,9 @@
       ],
       "Upgrade to ${ upsellPlanHumanSize }": [
         "Покращити до ${ upsellPlanHumanSize }"
+      ],
+      "Get ${ mostPopularShortPlan.title }": [
+        "Отримати ${ mostPopularShortPlan.title }"
       ]
     },
     "new_plans: attribute": {
@@ -8770,7 +9010,7 @@
         "Псевдоніми Hide My Email"
       ],
       "High-speed streaming": [
-        "Високошвидкісний стримінг"
+        "Високошвидкісна трансляція"
       ],
       "High-speed Swiss VPN that protects your privacy": [
         "Високошвидкісна швейцарська VPN, що захищає вашу приватність"
@@ -8894,6 +9134,33 @@
       ],
       "User session management": [
         "Керування сеансами користувачів"
+      ],
+      "Custom fields": [
+        "Власні поля"
+      ],
+      "Double hop": [
+        "Double hop"
+      ],
+      "Priority support & live chat": [
+        "Пріоритетна підтримка і чат"
+      ],
+      "Protect ${ n } device at a time": [
+        "Захист ${ n } пристрою",
+        "Захист ${ n } пристроїв",
+        "Захист ${ n } пристроїв",
+        "Захист ${ n } пристроїв"
+      ],
+      "Unlimited logins and notes": [
+        "Необмежена кількість паролів і нотаток"
+      ],
+      "Up to 3 TB of storage": [
+        "До 3 ТБ сховища"
+      ],
+      "Vault and Item sharing": [
+        "Спільний доступ до сховища та елементів"
+      ],
+      "Vault and Item sharing (coming soon)": [
+        "Спільний доступ до сховища та елементів (незабаром)"
       ]
     },
     "new_plans: feature info": {
@@ -8902,6 +9169,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Простір сховища спільний для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } і ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Створіть різні адреси електронної пошти для ваших онлайн-профілів, наприклад, ArtemShopper@${ domain } для інтернет-магазинів, ArtemNews@${ domain2 } для підписки на новини"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Використовуйте власні доменні адреси електронної пошти, наприклад, you@yourname.com"
       ]
     },
     "new_plans: heading": {
@@ -9007,6 +9280,9 @@
       ],
       "You’re enjoying a promotional price on your current plan. If you downgrade your account, you will lose your promotional price and it won’t be available if you try to subscribe again.": [
         "Ви користуєтеся спеціальною ціною чинного тарифного плану. Якщо ви понизите свій обліковий запис, то втратите спеціальну ціну передплати й більше не зможете скористатися нею, коли вирішите знову його передплатити."
+      ],
+      "Most popular": [
+        "Найпопулярніші"
       ]
     },
     "new_plans: Label": {
@@ -9255,6 +9531,18 @@
       ],
       "You can have more than one admin. All admins can add and manage users but only the primary admin has control over billing.": [
         "Ви можете мати більше одного адміністратора. Усі адміністратори можуть додавати користувачів та керувати ними, однак лише основний адміністратор може контролювати платежі."
+      ],
+      "Defends against the threat to VPN privacy by passing your internet traffic through multiple servers.": [
+        "Захищає від загроз приватності VPN, спрямовуючи ваш інтернет-трафік через різні сервери."
+      ],
+      "Like a folder, a vault is a convenient way to organize your items. Sharing vaults with friends and family is in the works.": [
+        "Як і теки, сховище – це зручний спосіб впорядковувати ваші дані. Ми працюємо над тим, щоб невдовзі ви могли ділитися сховищами з друзями та родиною."
+      ],
+      "One VPN connection allows one device to connect to ${ BRAND_NAME } VPN at any given time. For instance, to connect a phone and a laptop to ${ BRAND_NAME_TWO } VPN at the same time, you need two VPN connections.": [
+        "Одне VPN-з'єднання дає можливість одному пристрою під'єднуватися до ${ BRAND_NAME } VPN коли завгодно. Наприклад, щоб одночасно під'єднати телефон і ноутбук до ${ BRAND_NAME_TWO } VPN, потрібно два VPN-з'єднання."
+      ],
+      "Unique, on-the-fly email addresses that protect your online identity and let you control what lands in your inbox. From SimpleLogin by ${ BRAND_NAME }.": [
+        "Унікальні, миттєві адреси електронної пошти, які захищають ваші особисті дані та дозволяють контролювати, що потрапляє до вашої поштової скриньки. Завдяки SimpleLogin від ${ BRAND_NAME }."
       ]
     },
     "new_plans: upgrade": {
@@ -9332,6 +9620,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Календар доданий"
+      ],
+      "Adding holidays calendar failed": [
+        "Не вдалося додати календар свят"
       ]
     },
     "Notification in share calendar modal": {
@@ -10057,6 +10348,9 @@
       ],
       "Complete the transition to privacy with our secure importing tools.": [
         "Перейдіть на новий рівень приватності завдяки нашим інструментам безпечного імпортування."
+      ],
+      "Keep your inbox organized with folders and labels. ${ learnMoreLink }": [
+        "Впорядковуйте свою поштову скриньку за допомогою тек і міток. ${ learnMoreLink }"
       ]
     },
     "Settings section title": {
@@ -10289,6 +10583,48 @@
       ],
       "Save ${ discount }%": [
         "Знижка ${ discount }%"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "До сплати ${ amount } за 1 місяць"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "До сплати ${ amount } за 12 місяців"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "До сплати ${ amount } за 15 місяців"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "До сплати ${ amount } за 24 місяці"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "До сплати ${ amount } за 30 місяців"
+      ],
+      "for ${ n } month": [
+        "на ${ n } місяць",
+        "на ${ n } місяці",
+        "на ${ n } місяців",
+        "на ${ n } місяців"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "Продовження через 1 рік за зниженою ціною ${ discountedAmount } замість ${ regularAmount } (знижка ${ discount }%)"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "Продовження через 2 роки за зниженою ціною ${ discountedAmount } замість ${ regularAmount } (знижка ${ discount }%)"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "Стандартна ціна ${ amount } за 1 місяць"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "Стандартна ціна ${ amount } за 12 місяців"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "Стандартна ціна ${ amount } за 15 місяців"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "Стандартна ціна ${ amount } за 24 місяці"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "Стандартна ціна ${ amount } за 30 місяців"
       ]
     },
     "specialoffer: Title": {
@@ -10305,7 +10641,16 @@
         "Передноворічний розпродаж"
       ],
       "Get our premium bundle and save more": [
-        "Заощаджуй більше, придбавши наш Premium Bundle"
+        "Заощадьте ще більше, отримавши наш набір преміум"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Наш припинений тарифний план Visionary знову доступний протягом обмеженого часу"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Заощадьте ще більше, передплативши ${ planName } на 2 роки"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Заощадьте ще більше, передплативши тарифний план ${ planName } на 2 роки"
       ]
     },
     "specialoffer: Tooltip": {
@@ -10317,6 +10662,18 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Простір сховища спільний для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } та ${ DRIVE_APP_NAME }."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Доступ до заблокованого вмісту та приватний перегляд. Включає 1700 серверів у понад 60 країнах, найвищу швидкість VPN, 10 VPN-з'єднань на користувача, всесвітні сервіси трансляції, захист від зловмисних програм і реклами, а також інші можливості."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Доступ до заблокованого вмісту та приватний перегляд. Включає 1700 серверів у понад 60 країнах, найвищу швидкість VPN, 10 VPN-з'єднань, всесвітні сервіси трансляції, захист від зловмисних програм і реклами, а також інші можливості."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Ідеально підходить для сім'ї або невеликої команди. Кожен учасник може мати власну поштову скриньку та псевдоніми. Потрібен власний домен."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Отримуйте без додаткових витрат платні версії всіх нових служб приватності, які ми випускатимемо в майбутньому, а також ранній доступ до всіх майбутніх функцій і продуктів."
       ]
     },
     "Spotlight": {
@@ -10777,6 +11134,9 @@
       ],
       "Status updated": [
         "Стан оновлено"
+      ],
+      "Preference updated": [
+        "Налаштування оновлено"
       ]
     },
     "Suffix": {
@@ -11776,6 +12136,21 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ви запрошені спробувати ${ MAIL_APP_NAME }"
+      ],
+      "Activate @pm.me": [
+        "Активувати @pm.me"
+      ],
+      "Increase your privacy with more addresses": [
+        "Вдоскональте свою приватність за допомогою більшої кількості адрес"
+      ],
+      "Keep your inbox organized": [
+        "Упорядкуйте свою поштову скриньку"
+      ],
+      "Organization filters": [
+        "Фільтри організації"
+      ],
+      "Personalise your e-mail footer": [
+        "Налаштуйте нижній колонтитул листа"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11981,6 +12356,9 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Схоже, ваш зовнішній обліковий запис досягнув 24-годинного обмеження пропускної здатності. ${ BRAND_NAME } спробує відновити імпортування одразу, як це стане можливим."
+      ],
+      "Delete trash and spam messages after 30 days. Turning on auto-delete gives messages already in trash/spam a deletion date based on the date they were moved there.": [
+        "Видаляти повідомлення зі спаму через 30 днів. Якщо ввімкнути автоматичне видалення, повідомлення, які вже знаходяться в смітнику/спамі, будуть видалені за датою їх переміщення туди."
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12535,9 +12913,104 @@
     "specialoffer: Countdown unit": {
       "${ seconds } second": [
         "${ seconds } секунда",
-        "${ seconds } секунд",
+        "${ seconds } секунди",
         "${ seconds } секунд",
         "${ seconds } секунд"
+      ],
+      "${ days } day": [
+        "${ days } день",
+        "${ days } дні",
+        "${ days } днів",
+        "${ days } днів"
+      ],
+      "${ hours } hour": [
+        "${ hours } година",
+        "${ hours } години",
+        "${ hours } годин",
+        "${ hours } годин"
+      ],
+      "${ minutes } minute": [
+        "${ minutes } хвилина",
+        "${ minutes } хвилини",
+        "${ minutes } хвилин",
+        "${ minutes } хвилин"
+      ]
+    },
+    "familyOffer_2023: Title": {
+      "Your account's benefits": [
+        "Переваги вашого облікового запису"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "*Only one free trial per user.": [
+        "*Тільки одна безплатна пробна версія на одного користувача."
+      ],
+      "By default we assign ${ formattedStorage } of storage to the administrator account. You can manage the assigned storage to be distributed among additional users later on.": [
+        "Типово ми призначаємо ${ formattedStorage } сховища для облікового запису адміністратора. Ви можете керувати призначеним сховищем, щоб пізніше розподілити його між іншими користувачами."
+      ],
+      "Create and manage family members and assign them storage space shared between ${ DRIVE_APP_NAME } and ${ MAIL_APP_NAME }.": [
+        "Створюйте учасників сімейної групи, керуйте ними та призначайте їм місце у сховищі, спільне для ${ DRIVE_APP_NAME } та ${ MAIL_APP_NAME }."
+      ],
+      "If the user already has a ${ MAIL_APP_NAME } address, enter it here. Otherwise they need to create an account first.": [
+        "Якщо користувач вже має адресу ${ MAIL_APP_NAME }, введіть її тут. В іншому випадку потрібно спочатку створити обліковий запис."
+      ],
+      "Online privacy, for your whole family": [
+        "Приватність в інтернеті для всієї родини"
+      ],
+      "The invitation will be cancelled and the user won't be able to join ${ organization.Name }.": [
+        "Запрошення буде скасовано, і користувач не зможе приєднатися до ${ organization.Name }."
+      ],
+      "The user's account will be moved to a ${ BRAND_NAME } Unlimited plan for a 30-day free trial*.": [
+        "Обліковий запис користувача буде переведено на тарифний план ${ BRAND_NAME } Unlimited на 30-денну безплатну пробну версію*."
+      ],
+      "To create a new user, a configured custom domain is required.": [
+        "Для створення нового користувача потрібен налаштований власний домен."
+      ],
+      "You can increase or reduce the storage for this user.": [
+        "Ви можете збільшити або зменшити обсяг сховища для цього користувача."
+      ],
+      "You left this plan": [
+        "Ви відмовились від цього тарифу."
+      ]
+    },
+    "familyOffer_2023:Info for members section": {
+      "Add, remove, and make changes to user accounts in your family group.": [
+        "Додавайте, видаляйте та вносьте зміни до облікових записів користувачів у вашій сімейній групі."
+      ],
+      "Add, remove, and make changes to user accounts in your organization.": [
+        "Додавайте, видаляйте та вносьте зміни до облікових записів користувачів у вашій організації."
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Включає 2700 серверів у понад 65 країнах, підключення до 10 пристроїв, доступ до світових сервісів трансляції, захист від зловмисних програм і реклами, а також інші можливості."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Безпечно зберігайте свої файли у зашифрованому хмарному сховищі з автоматичною синхронізацією, зашифрованим спільним доступом та іншими можливостями."
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Свята"
+      ],
+      "Other": [
+        "Інші"
+      ],
+      "Subscribed": [
+        "Підписні"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "Перейти на Unlimited"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } місяць БЕЗПЛАТНО",
+        "${ n } місяці БЕЗПЛАТНО",
+        "${ n } місяців БЕЗПЛАТНО",
+        "${ n } місяців БЕЗПЛАТНО"
       ]
     }
   }

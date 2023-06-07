@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Alejar"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Activar ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Enviar mensajes con @pm.me"
       ]
     },
     "action": {
@@ -1546,7 +1552,7 @@
         "gris tenue"
       ],
       "enzian": [
-        "enziano"
+        "genciana"
       ],
       "fern": [
         "helecho"
@@ -2739,7 +2745,10 @@
         "Puede importar eventos en formato iCal (archivos ICS). El archivo debe tener un tamaño máximo de ${ MAX_IMPORT_FILE_SIZE_STRING } y tener hasta ${ MAX_IMPORT_EVENTS_STRING } eventos.\nSi su archivo es más grande, debe dividirlo en archivos más pequeños."
       ],
       "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
-        "Para eliminar el pie de página ${ MAIL_APP_NAME }, actualice y desbloquee aún más funciones premium."
+        "Para eliminar el pie de página de ${ MAIL_APP_NAME }, actualice y desbloquee aún más funciones premium."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Desbloquee direcciones de correo cortas y otras funciones premium al actualizar."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3399,6 +3408,12 @@
       ],
       "Zero keys reactivated": [
         "Ninguna clave reactivada"
+      ],
+      "Username must begin with a letter or digit": [
+        "El nombre de usuario debe comenzar con una letra o dígito"
+      ],
+      "Username must end with a letter or digit": [
+        "El nombre de usuario debe terminar con una letra o dígito"
       ]
     },
     "Error importing calendar": {
@@ -4065,6 +4080,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Proteja sus archivos con almacenamiento en la nube cifrado. Incluye sincronización automática, uso compartido de archivos cifrados y más."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 90 direcciones de correo electrónico, alias ilimitados de \"Hide My Email\", posibilidad de compartir calendario, etc."
       ]
     },
     "Feature": {
@@ -4772,7 +4790,7 @@
     },
     "Import rollback status": {
       "Undo finished": [
-        "Deshacer finalizado"
+        "Cancelación finalizada"
       ],
       "Undo in progress": [
         "Deshacer en curso"
@@ -6794,6 +6812,18 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "Verá más detalles en el registro de seguridad de abajo de eventos importantes como intentos de inicio de sesión."
+      ],
+      "Based on your time zone": [
+        "Basado en su zona horaria"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "Para asegurarse de no perder datos importantes, ${ DRIVE_APP_NAME } guarda versiones anteriores de sus archivos a medida que usted\ny sus colaboradores realizan cambios. Seleccione cuánto tiempo ${ BRAND_NAME } debería de conservar las versiones."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Actualice para añadir una dirección corta @pm.me a su cuenta que sea fácil de compartir. Significa “${ MAIL_APP_NAME }” o “Private Message me”."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "Con su plan actual, solo puede recibir mensajes con su dirección @pm.me. Actualice para enviar mensajes y crear direcciones adicionales usando @pm.me."
       ]
     },
     "info": {
@@ -8998,6 +9028,22 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Uso compartido de bóvedas y elementos (próximamente)"
+      ],
+      "${ n } Hide-my-email alias": [
+        "${ n } alias de \"Hide My Email\"",
+        "${ n } alias de \"Hide My Email\""
+      ],
+      "Custom fields": [
+        "Campos personalizados"
+      ],
+      "Hide-my-email aliases": [
+        "Alias de \"Hide My Email\""
+      ],
+      "Unlimited hide-my-email aliases": [
+        "Un número ilimitado de alias \"Hide My Email\""
+      ],
+      "Up to 3 TB of storage": [
+        "Hasta 3 TB de almacenamiento"
       ]
     },
     "new_plans: feature info": {
@@ -9008,7 +9054,10 @@
         "El espacio de almacenamiento es compartido entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }"
       ],
       "Use your own custom email domain address, e.g., you@yourname.com": [
-        "Utilice su propia dirección de correo electrónico personalizada, por ejemplo, tu@tunombre.com."
+        "Use su propia dirección de correo personalizada, por ejemplo, usted@sunombre.com"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Cree múltiples direcciones de correo para sus identidades en línea, p. ej., JuanCompras@${ domain } para cuentas de compras, JuanNoticias@${ domain2 } para suscripciones de noticias"
       ]
     },
     "new_plans: heading": {
@@ -9448,6 +9497,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Calendario añadido"
+      ],
+      "Adding holidays calendar failed": [
+        "Error al añadir el calendario de días festivos"
       ]
     },
     "Notification in share calendar modal": {
@@ -10518,6 +10570,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Espacio de almacenamiento compartido en ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Todos nuestros servicios premium al máximo: 100 direcciones de correo electrónico, compatibilidad con 10 dominios personalizados, alias ilimitados de \"Hide My Email\", posibilidad de compartir calendarios y archivos cifrados, almacenamiento cifrado en la nube, etc."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 1 dominio de correo electrónico personalizado, 10 direcciones de correo electrónico, 10 alias de \"Hide My Email\", posibilidad de compartir calendario, etc."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 15 direcciones de correo electrónico, alias ilimitados de \"Hide My Email\", posibilidad de compartir calendario, etc."
       ]
     },
     "Spotlight": {
@@ -11944,6 +12005,9 @@
       ],
       "Organization filters": [
         "Filtros de la organización"
+      ],
+      "Activate @pm.me": [
+        "Activar @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12208,6 +12272,9 @@
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Actualice a ${ planName } para conectar hasta ${ n } dispositivo al mismo tiempo",
         "Actualice a ${ planName } para conectar hasta ${ n } dispositivos al mismo tiempo"
+      ],
+      "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
+        "Actualice a ${ passPlusPlanName } para obtener alias ilimitados de \"Hide My Email\"."
       ]
     },
     "Upgrade notice": {
@@ -12630,6 +12697,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Días festivos"
+      ],
+      "Other": [
+        "Otro"
+      ],
+      "Subscribed": [
+        "Suscrito"
       ]
     }
   }

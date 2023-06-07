@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Micșorare"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Activare ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Trimitere mesaje cu @pm.me"
       ]
     },
     "action": {
@@ -2746,6 +2752,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Puteți importa evenimente în format iCal (fișier ICS). Fișierul ar trebui să aibă dimensiunea maximă de ${ MAX_IMPORT_FILE_SIZE_STRING } și să aibă până la ${ MAX_IMPORT_EVENTS_STRING } evenimente. Dacă fișierul este mai mare, împărțiți-l în fișiere mai mici."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Pentru a elimina subsolul mesajelor din ${ MAIL_APP_NAME }, modernizați contul și deblocați și mai multe funcții premium."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Deblocați adrese de e-mail mai scurte și alte funcții premium prin modernizarea contului."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3410,6 +3422,12 @@
       ],
       "Zero keys reactivated": [
         "Zero taste reactivate."
+      ],
+      "Username must begin with a letter or digit": [
+        "Numele de utilizator trebuie să înceapă cu o literă sau cifră."
+      ],
+      "Username must end with a letter or digit": [
+        "Numele de utilizator trebuie să se termine cu o literă sau cifră."
       ]
     },
     "Error importing calendar": {
@@ -3938,6 +3956,12 @@
       ],
       "Your current plan cannot join a Visionary or family plan.": [
         "Planul actual nu se poate alătura unui plan Visionary sau de familie."
+      ],
+      "You have reached the limit of 10 accepted invitations in 6 months.": [
+        "Ați atins limita de 10 invitații acceptate în 6 luni."
+      ],
+      "You need to configure a custom domain before adding multiple users.": [
+        "Trebuie să configurați un domeniu personal înainte de a adăuga utilizatori multipli."
       ]
     },
     "familyOffer_2023:Footer": {
@@ -4300,6 +4324,9 @@
       ],
       "Search list": [
         "Căutare în listă"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "Mesajele de la adresele marcate ca nedorite de către dvs. sau de către ${ BRAND_NAME } vor ajunge în folderul «Nedorite» al membrilor organizației. Dacă doriți să permiteți mesajele de la una dintre aceste adrese, marcați-o ca „acceptată”."
       ]
     },
     "Font Face Default": {
@@ -4430,6 +4457,12 @@
       ],
       "User": [
         "Utilizator"
+      ],
+      "Device": [
+        "Dispozitiv"
+      ],
+      "Protection": [
+        "Protecție"
       ]
     },
     "Header for addresses table": {
@@ -6824,6 +6857,39 @@
       ],
       "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
         "${ PROTON_SENTINEL_NAME } este susținut de un sistem sofisticat de inteligență artificială și de o echipă care lucrează 24/7 pentru a diminua amenințările de securitate."
+      ],
+      "Based on your time zone": [
+        "Pe baza fusului orar"
+      ],
+      "Email address already used": [
+        "Adresă de e-mail deja utilizată."
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "După ce veți activa ${ PROTON_SENTINEL_NAME }:"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Evenimentele suspecte vor fi verificate de mai multe straturi de apărare care ajută la prevenirea atacatorilor să vă deturneze contul."
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "Pentru a vă asigura că nu pierdeți date importante, ${ DRIVE_APP_NAME } salvează versiuni mai vechi ale fișierelor pe măsură ce acestea sunt modificate. Selectați cât timp ${ BRAND_NAME } ar trebui să păstreze versiunile anterioare."
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Treceți la un cont cu plată pentru a activa ${ PROTON_SENTINEL_NAME }."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Modernizați contul pentru a adăuga o adresă @pm.me mai scurtă în cont, care este mai ușor de partajat. Înseamnă „${ MAIL_APP_NAME } al meu” sau „Mesaj privat mie”."
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Utilizatorii cu date și comunicații confidențiale, cum ar fi jurnaliștii sau directorii, sunt încurajați să-și activeze ${ PROTON_SENTINEL_NAME }."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "Cu planul actual, puteți primi doar mesaje cu adresa @pm.me. Modernizați contul pentru a putea și trimite mesaje și a crea adrese suplimentare folosind @pm.me."
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Veți primi sprijin prioritar de la specialiști instruiți în protecția conturilor. Pentru orice probleme legate de securitatea contului, vă rugăm să ne contactați ${ hereLink }."
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "Veți vedea mai multe detalii în jurnalele de securitate de mai jos pentru evenimente importante, cum ar fi încercările de conectare."
       ]
     },
     "info": {
@@ -8315,6 +8381,9 @@
       ],
       "Why set recovery methods?": [
         "De ce să setați metode de recuperare?"
+      ],
+      "here": [
+        "aici"
       ]
     },
     "Loading info": {
@@ -8348,6 +8417,9 @@
       ],
       "Enable authentication logs": [
         "Activare jurnale autentificare"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Activare ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -9049,6 +9121,15 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Partajarea seifurilor și a datelor (în curând)"
+      ],
+      "Custom fields": [
+        "Câmpuri personalizate"
+      ],
+      "Unlimited logins and notes": [
+        "Autentificări și note nelimitate"
+      ],
+      "Up to 3 TB of storage": [
+        "Până la 3 TB spațiu de stocare"
       ]
     },
     "new_plans: feature info": {
@@ -9057,6 +9138,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Spațiul de stocare este distribuit între ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } și ${ DRIVE_APP_NAME }."
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Creați adrese de e-mail multiple pentru identitățile personale online, de ex. ionvanzari@${ domain } pentru conturile de cumpărături, ionstiri@${ domain2 } pentru abonamentul la știri."
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Utilizați propriile adresa personală de domeniu pentru e-mail, de ex., nume@adresapersonala.com."
       ]
     },
     "new_plans: heading": {
@@ -9499,6 +9586,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Calendar adăugat"
+      ],
+      "Adding holidays calendar failed": [
+        "Adăugarea calendarului de sărbători a eșuat."
       ]
     },
     "Notification in share calendar modal": {
@@ -12032,6 +12122,9 @@
       ],
       "Organization filters": [
         "Filtre organizație"
+      ],
+      "Activate @pm.me": [
+        "Activare @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12755,6 +12848,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Sărbători"
+      ],
+      "Other": [
+        "Alta"
+      ],
+      "Subscribed": [
+        "Abonat"
       ]
     }
   }

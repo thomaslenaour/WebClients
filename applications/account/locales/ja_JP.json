@@ -913,7 +913,7 @@
         "すべての回復用ファイルを無効にしますか？"
       ],
       "What do I get?": [
-        "どうやって入手しますか?"
+        "何が入手できますか？"
       ],
       "Wipe": [
         "すべて削除"
@@ -929,6 +929,21 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Choose my own password": [
+        "自分でパスワードを設定"
+      ],
+      "Continue with this password": [
+        "このパスワードで続行する"
+      ],
+      "Delete and confirm": [
+        "削除と確認"
+      ],
+      "Get the deal": [
+        "割引をゲット"
+      ],
+      "Sign up for free": [
+        "無料でサインアップ"
       ]
     },
     "Action for user session": {
@@ -977,6 +992,12 @@
       ],
       "Set as default": [
         "デフォルトとして設定"
+      ],
+      "Disable encryption": [
+        "暗号化を無効にする"
+      ],
+      "Enable encryption": [
+        "暗号化を有効にする"
       ]
     },
     "Address status": {
@@ -997,6 +1018,12 @@
       ],
       "Orphan": [
         "元ドメインなし"
+      ],
+      "No E2EE": [
+        "エンドツーエンド暗号化されていません"
+      ],
+      "No signing": [
+        "署名されていません"
       ]
     },
     "Alert": {
@@ -1401,10 +1428,10 @@
     },
     "Collapsible tooltip": {
       "Collapse": [
-        "作成"
+        "閉じる"
       ],
       "Expand": [
-        "展開"
+        "開く"
       ]
     },
     "color": {
@@ -3240,6 +3267,15 @@
       ],
       "Zero keys reactivated": [
         "0 個の鍵が再有効化されました"
+      ],
+      "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or sign in via a computer.": [
+        "お使いのブラウザでは、支払いを確定できません。別のブラウザを使用するか、コンピューターからサインインしてください。"
+      ],
+      "Username must begin with a letter or digit": [
+        "ユーザー名は英字か数字で始めなければいけません"
+      ],
+      "Username must end with a letter or digit": [
+        "ユーザー名の最後は英字か数字でなければいけません"
       ]
     },
     "Error importing calendar": {
@@ -3597,6 +3633,12 @@
       ],
       "View the invitations": [
         "招待を見る"
+      ],
+      "Set up family group": [
+        "家族グループを設定"
+      ],
+      "View invitation": [
+        "招待状を確認する"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3951,6 +3993,9 @@
       ],
       "Search list": [
         "リストを検索"
+      ],
+      "Add a custom filter to automatically perform certain actions, like labeling or archiving messages.": [
+        "仕分けフィルターを追加すると、メッセージのラベル付けやアーカイブなどの操作を自動で実行できます。"
       ]
     },
     "Font Face Default": {
@@ -4060,6 +4105,9 @@
       ],
       "User": [
         "ユーザー"
+      ],
+      "Device": [
+        "デバイス"
       ]
     },
     "Header for addresses table": {
@@ -4467,7 +4515,7 @@
         "${ BRAND_NAME } は他のメールプロバイダーとの接続が失われたためインポートを一時停止しました。再接続してください。"
       ],
       "${ BRAND_NAME } paused an import because your account is running low on space. You can:": [
-        "$アカウントの空き容量が少なくなっているため、${ BRAND_NAME } はインポートを一時停止しました。以下のことが可能です:"
+        "アカウントの空き容量が少なくなっているため、${ BRAND_NAME } はインポートを一時停止しました。以下のことが可能です:"
       ],
       "${ BRAND_NAME }'s encryption technology means that nobody can access your password - not even us.": [
         "${ BRAND_NAME } の暗号化技術は私たちでさえもパスワードにアクセスできないことを意味しています。"
@@ -4797,7 +4845,7 @@
         "支払いサイクル: ${ text }"
       ],
       "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits.": [
-        "ビットコイン取引は確認に最大で24時間かかります。確認完了後、お客様のアカウントにクレジットを追加しますので、そのクレジットでお支払いください。"
+        "ビットコイン取引は確認に時間がかかります (最大で24時間)。確認完了後、お客様のアカウントにクレジットを追加しますので、そのクレジットでお支払いください。"
       ],
       "Blocks senders from seeing if and when you opened a message.": [
         "あなたがメッセージを閲覧したかどうか、いつ閲覧したかを送信者が確認できないようにします。"
@@ -5520,7 +5568,7 @@
         "インポートするカレンダーを選択します。プランで利用可能なカレンダーの数に応じて、インポートしたカレンダーごとに新しいカレンダーが作成されます。"
       ],
       "Sent with <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> secure email.": [
-        "<a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> セキュアなメールで送信されます。"
+        "安全なメール <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> で送信されました。"
       ],
       "Server is currently down": [
         "このサーバーは現在オフラインです"
@@ -5913,7 +5961,7 @@
         "毎年"
       ],
       "You already have a free account": [
-        "すでに FREE アカウントをお持ちですか？"
+        "すでに無料アカウントをお持ちですか？"
       ],
       "You are about to open another browser tab and visit:": [
         "別のタブで下記リンクを開こうとしています:"
@@ -6154,6 +6202,48 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "サインイン試行などの重要なイベントについては、以下のセキュリティログで詳細を確認することができます。"
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } は、最大限のセキュリティが必要なユーザー向けに ${ BRAND_NAME } で開発されたアカウント保護プログラムです。"
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } は、悪意あるアクターおよびセキュリティ上の脅威の軽減に取り組む、24 時間体制の洗練された AI システムと専門家チームに支えられています。"
+      ],
+      "30-day money-back guarantee": [
+        "30 日間返金保証"
+      ],
+      "Continue with ${ freeName }": [
+        "${ freeName } で続行"
+      ],
+      "Get ${ upsellPlanName }": [
+        "${ upsellPlanName } を入手"
+      ],
+      "Logs include authentication attempts for all ${ BRAND_NAME } services that use your ${ BRAND_NAME_TWO } credentials.": [
+        "すべての ${ BRAND_NAME } サービスに対して、あなたの ${ BRAND_NAME_TWO } 認証情報を使用した認証の試行が、ログに含まれます。"
+      ],
+      "old password": [
+        "古いパスワード"
+      ],
+      "Once you enable ${ PROTON_SENTINEL_NAME }:": [
+        "${ PROTON_SENTINEL_NAME } を有効にすると:"
+      ],
+      "Thank you": [
+        "ありがとうございます"
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "有料アカウントにアップグレードして ${ PROTON_SENTINEL_NAME } を有効にします。"
+      ],
+      "Use the different types of email addresses and aliases offered by ${ BRAND_NAME }.": [
+        "${ BRAND_NAME } が提供する、様々な種類のメールアドレスとエイリアスを使用します。"
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "ジャーナリストや重要な役職にある人など、センシティブなデータやコミュニケーションを持つユーザーは、${ PROTON_SENTINEL_NAME } を有効にすることが強く望まれます。"
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "あなたは、アカウント保護に精通した専門家からの優先的なサポートを受けます。アカウントセキュリティに関して不安がある場合は、${ hereLink }から私たちにご連絡ください。"
+      ],
+      "Your ${ BRAND_NAME } password": [
+        "あなたの ${ BRAND_NAME } パスワード"
       ]
     },
     "info": {
@@ -7375,6 +7465,12 @@
       ],
       "Your referral link": [
         "あなたの招待リンク"
+      ],
+      "Auto-delete unwanted messages": [
+        "不要なメッセージを自動削除"
+      ],
+      "Don't keep versions": [
+        "バージョンを保持しない"
       ]
     },
     "label": {
@@ -7619,6 +7715,12 @@
       ],
       "Why set recovery methods?": [
         "回復手段を設定しませんか？"
+      ],
+      "Apps and extensions": [
+        "アプリと拡張機能"
+      ],
+      "here": [
+        "こちら"
       ]
     },
     "Loading info": {
@@ -7650,6 +7752,9 @@
       ],
       "Enable authentication logs": [
         "認証ログを有効にする"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "${ PROTON_SENTINEL_NAME } を有効にする"
       ]
     },
     "Mail import summary": {
@@ -8232,6 +8337,15 @@
       ],
       "Protect ${ n } devices at a time": [
         "${ n }台のデバイスを同時に保護"
+      ],
+      "99.95% SLA": [
+        "SLA 99.95%"
+      ],
+      "No-logs policy": [
+        "ノーログポリシー"
+      ],
+      "Up to 3 TB of storage": [
+        "3 TB のストレージ"
       ]
     },
     "new_plans: feature info": {
@@ -8539,6 +8653,9 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "OpenVPN / IKEv2 認証情報を更新しました"
+      ],
+      "An external address cannot be default": [
+        "外部のアドレスは既定にすることができません"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -9209,6 +9326,9 @@
     "Settings description": {
       "Complete the transition to privacy with our secure importing and forwarding tools.": [
         "安全なインポート・転送ツールで、プライバシーに移行しましょう。"
+      ],
+      "Keep your inbox organized with folders and labels. ${ learnMoreLink }": [
+        "フォルダーとラベルで受信トレイを整理できます。${ learnMoreLink }"
       ]
     },
     "Settings section title": {
@@ -9700,6 +9820,9 @@
       ],
       "Enable auto-pay support": [
         "自動支払い対応を有効にする"
+      ],
+      "Are you sure?": [
+        "よろしいですか?"
       ]
     },
     "Subscription saving": {
@@ -9927,6 +10050,9 @@
       ],
       "Status updated": [
         "状態が更新されました。"
+      ],
+      "Preference updated": [
+        "設定が更新されました"
       ]
     },
     "Suffix": {
@@ -10881,6 +11007,24 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "${ MAIL_APP_NAME } の試用に招待されました"
+      ],
+      "Account keys": [
+        "アカウントキー"
+      ],
+      "Activate @pm.me": [
+        "@pm.me を有効にする"
+      ],
+      "Cancel ${ MAIL_SHORT_APP_NAME } subscription": [
+        "${ MAIL_SHORT_APP_NAME } サブスクリプションをキャンセル"
+      ],
+      "Leave ${ organisationName }?": [
+        "${ organisationName } から脱退しますか？"
+      ],
+      "Personalise your e-mail footer": [
+        "メールのフッターをカスタマイズ"
+      ],
+      "Set your password": [
+        "パスワードを設定"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11071,6 +11215,9 @@
       ],
       "Your DKIM signing is working.": [
         "DKIM 署名が機能しています。"
+      ],
+      "Delete trash and spam messages after 30 days. Turning on auto-delete gives messages already in trash/spam a deletion date based on the date they were moved there.": [
+        "ごみ箱と迷惑メールのメッセージを 30 日後に削除します。自動削除をオンにすると、既にごみ箱や迷惑メールにあるメッセージに、そこに移動された日に基づいた削除日が設定されます。"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -11477,6 +11624,11 @@
     "holiday calendar": {
       "Based on your time zone": [
         "あなたのタイムゾーンに基づく"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Subscribed": [
+        "購読"
       ]
     }
   }

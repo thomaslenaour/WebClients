@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "啟用 ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "透過@pm.me寄送訊息"
       ]
     },
     "action": {
@@ -2728,6 +2734,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "您可以使用 iCal 格式 (ICS 檔案) 匯入事件。檔案大小上限為 ${ MAX_IMPORT_FILE_SIZE_STRING }，上限為 ${ MAX_IMPORT_EVENTS_STRING } 個事件。若您的檔案超出此限，請將其分割為較小的檔案。"
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "移除${ MAIL_APP_NAME }頁尾，升級以解鎖付費版功能"
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "透過升級付費版解鎖短電子郵件地址功能和其他服務"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3382,6 +3394,12 @@
       ],
       "Zero keys reactivated": [
         "重新啟動 0 把金鑰"
+      ],
+      "Username must begin with a letter or digit": [
+        "使用者名稱的開頭必須為字母或數字"
+      ],
+      "Username must end with a letter or digit": [
+        "使用者名稱的結尾必須為字母或數字"
       ]
     },
     "Error importing calendar": {
@@ -4260,6 +4278,9 @@
       ],
       "Search list": [
         "搜索列表"
+      ],
+      "Emails from addresses marked as spam by you or ${ BRAND_NAME } will go to the spam folder of your organization members. If you want to allow emails from one of these addresses, mark it as \"not spam\".": [
+        "傳送自您已標記或 ${ BRAND_NAME } 判定為垃圾郵件位址的郵件，這些電郵會進入垃圾郵件匣。倘若您想要允許部分郵件從中排除，則可在郵件上標記為「非垃圾郵件」。"
       ]
     },
     "Font Face Default": {
@@ -6713,6 +6734,24 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "您能在下方看到更細節的安全紀錄，如登入紀錄。"
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME }是由${ BRAND_NAME }開發，提供給需要最高安全性的使用者"
+      ],
+      "Based on your time zone": [
+        "根據您的時區"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "為確保您不會遺失重要資料，${ DRIVE_APP_NAME } 會在您與協作者作出變更時，為您的檔案儲存較舊的版本。請選擇 ${ BRAND_NAME } 該保留先前的版本多久。"
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "升級以新增較短且易於分享的 @pm.me 地址到您的帳號。其代表「${ MAIL_APP_NAME } 我」或是「寄私人訊息給我」。"
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "使用目前的方案，你只能透過@pm.me郵件地地址接收訊息，升級以透過@pm.me傳送訊息，及創建更多的@pm.me地址"
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "您將獲得受過帳號保護訓練的專家的優先支援。若任何帳號安全問題，請聯絡我們 ${ hereLink }。"
       ]
     },
     "info": {
@@ -8230,6 +8269,9 @@
       ],
       "Enable authentication logs": [
         "啟用認證記錄"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "啟用${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -8881,6 +8923,12 @@
       ],
       "Unlimited logins and notes": [
         "登入與附註無上限"
+      ],
+      "Custom fields": [
+        "自訂欄位"
+      ],
+      "Up to 3 TB of storage": [
+        "多達 3 TB的儲存空間"
       ]
     },
     "new_plans: feature info": {
@@ -8889,6 +8937,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "創建多重電子郵件地址身分，如JohnShopper@${ domain }給購物用途， JohnNews@${ domain2 }給訂閱新聞使用"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "使用您擁有的自訂電子郵件網域地址，例如 you@yourname.com"
       ]
     },
     "new_plans: heading": {
@@ -9325,6 +9379,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "行事曆已新增"
+      ],
+      "Adding holidays calendar failed": [
+        "新增節日行事曆失敗"
       ]
     },
     "Notification in share calendar modal": {
@@ -11778,6 +11835,9 @@
       ],
       "Organization filters": [
         "機構過濾系統"
+      ],
+      "Activate @pm.me": [
+        "啟用 @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12427,6 +12487,17 @@
       ],
       "Yearly, ${ untilString }": [
         "每年，${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "假日"
+      ],
+      "Other": [
+        "其它"
+      ],
+      "Subscribed": [
+        "已訂閱"
       ]
     }
   }

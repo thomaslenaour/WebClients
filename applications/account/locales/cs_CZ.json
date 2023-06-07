@@ -420,7 +420,7 @@
         "Vygenerovat token"
       ],
       "Get ${ discountPercentage } off with 24 months": [
-        "Získejte ${ discountPercentage } slevu v případě 24 měsíců"
+        "Získejte ${ discountPercentage } slevu s 24 měsíci"
       ],
       "Get ${ vpnPlus }": [
         "Získejte ${ vpnPlus }"
@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Oddálit"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Aktivovat ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Odesílat zprávy s @pm.me"
       ]
     },
     "action": {
@@ -1025,7 +1031,7 @@
         "Vypnout"
       ],
       "Disable encryption": [
-        "Vypnout šifrování"
+        "Zakázat šifrování"
       ],
       "Enable": [
         "Zapnout"
@@ -1064,6 +1070,9 @@
       ],
       "Orphan": [
         "Sirotek"
+      ],
+      "No signing": [
+        "Žádné podepisování"
       ]
     },
     "Alert": {
@@ -2746,6 +2755,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Můžete importovat události ve formátu iCal (ICS soubor). Tento soubor by měl mít maximální velikost ${ MAX_IMPORT_FILE_SIZE_STRING } a maximálně ${ MAX_IMPORT_EVENTS_STRING } událostí. Pokud je váš soubor větší, prosím rozdělte ho na menší soubory."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "K odstranění zápatí ${ MAIL_APP_NAME } navyšte tarif a odemkněte ještě více prémiových funkcí."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Navýšením tarifu odemknete kratší e-mailové adresy a další prémiové funkce."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3415,6 +3430,12 @@
       ],
       "Zero keys reactivated": [
         "Žádné klíče nebyly znovu aktivovány"
+      ],
+      "Username must begin with a letter or digit": [
+        "Uživatelské jméno musí začínat písmenem nebo číslicí"
+      ],
+      "Username must end with a letter or digit": [
+        "Uživatelské jméno musí končit písmenem nebo číslicí"
       ]
     },
     "Error importing calendar": {
@@ -3803,7 +3824,7 @@
         "Pozvat člena do vaší rodiny"
       ],
       "Keep current plan": [
-        "Zůstat na aktuálním tarifu"
+        "Zachovat aktuální tarif"
       ],
       "Set up family group": [
         "Nastavit rodinnou skupinu"
@@ -3857,7 +3878,7 @@
         "zákaznická podpora"
       ],
       "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
-        "Pokud pozvánku přijmete, převedeme vás z aktuálního tarifu a na váš účet připíšeme nevyužitou částku."
+        "Pokud pozvánku přijmete, převedeme Vás ze stávajícího tarifu a na váš účet připíšeme zbývající částku."
       ],
       "Invitation from ${ invitation.OrganizationName }": [
         "Pozvánka od ${ invitation.OrganizationName }"
@@ -3866,7 +3887,7 @@
         "Pozvánka od: ${ inviteEmail }"
       ],
       "Leave family plan": [
-        "Odejít z rodinného tarifu"
+        "Opustit rodinný tarif"
       ],
       "Leave visionary plan": [
         "Opustit tarif Visionary"
@@ -3929,7 +3950,7 @@
         "Dosáhli jste limitu 10 přijatých pozvánek za 6 měsíců. Na tlačítko bude možné kliknout, až budete moci pozvat další uživatele."
       ],
       "You have successfully joined the Family plan": [
-        "Úspěšně jste se připojili k Rodinnému tarifu"
+        "Úspěšně jste se připojili k rodinnému tarifu"
       ],
       "You need to configure a custom domain before adding multiple users.": [
         "Před přidáním více uživatelů je třeba nakonfigurovat vlastní doménu."
@@ -4019,7 +4040,7 @@
     },
     "familyOffer_2023:Member downgrade modal": {
       "This will permanently delete all sub-users, accounts, and data associated with your organization.": [
-        "Toto trvale smaže všechny podřízené uživatele, účty a data spojená s vaší organizací."
+        "Toto trvale smaže všechny svěřené uživatele, účty a data spojená s vaší organizací."
       ],
       "This will remove all ${ BRAND_NAME } premium features for every family member.": [
         "Toto odebere všechny prémiové funkce ${ BRAND_NAME } všem členům rodiny."
@@ -4046,7 +4067,7 @@
         "Přidat uživatele do vašeho účtu ${ PLAN_NAMES.visionary2022 }"
       ],
       "Change family name": [
-        "Změna rodinného jména"
+        "Změna jména rodiny"
       ],
       "Delete family group?": [
         "Smazat rodinnou skupinu?"
@@ -4085,6 +4106,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Zabezpečte své soubory pomocí šifrovaného cloudového úložiště. Zahrnuje automatickou synchronizaci, šifrované sdílení souborů a další funkce."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Zahrnuje podporu 3 vlastních e-mailových domén, 90 e-mailových adres, neomezený počet aliasů Hide My Email, sdílení kalendáře a další."
       ]
     },
     "Feature": {
@@ -4446,7 +4470,7 @@
         "Vyberte preferovaný způsob platby"
       ],
       "Select your pricing plan": [
-        "Vyberte si cenový tarif"
+        "Vyberte si tarif"
       ],
       "Status": [
         "Stav"
@@ -6256,7 +6280,7 @@
         "tým podpory"
       ],
       "Swiss based": [
-        "se sídlem ve Švýcarsku"
+        "Vytvořeno ve Švýcarsku"
       ],
       "Temporarily unavailable. Please check back later.": [
         "Dočasně nedostupné. Zkontrolujte to prosím později."
@@ -6896,6 +6920,42 @@
       ],
       "Email address already used": [
         "E-mailová adresa byla již použita"
+      ],
+      "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
+        "${ PROTON_SENTINEL_NAME } je program na ochranu účtu vyvinutý v ${ BRAND_NAME } pro uživatele, kteří vyžadují maximální zabezpečení."
+      ],
+      "${ PROTON_SENTINEL_NAME } is powered by sophisticated AI systems and teams of specialists working 24/7 to mitigate bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } je podporován pokročilými systémy umělé inteligence a týmy specialistů, které nepřetržitě pracují na zmírnění útoků a bezpečnostních hrozeb."
+      ],
+      "Based on your time zone": [
+        "Na základě vašeho časového pásma"
+      ],
+      "Suspicious events will be challenged by multiple layers of defense that help prevent attackers from hijacking your account.": [
+        "Podezřelým událostem bude čelit několik vrstev ochrany, které pomohou zabránit útočníkům ve zneužití vašeho účtu."
+      ],
+      "To ${ planName }": [
+        "Na ${ planName }"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "Abyste nepřišli o důležitá data, ${ DRIVE_APP_NAME } ukládá starší verze vašich souborů v době, kdy je vy a vaši spolupracovníci měníte.Vyberte, jak dlouho má ${ BRAND_NAME } uchovávat předchozí verze."
+      ],
+      "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Přejděte na placený účet pro povolení ${ PROTON_SENTINEL_NAME }."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Navyšte tarif pro získání kratší adresy @pm.me, kterou lze snáze sdílet. To znamená \"${ MAIL_APP_NAME } me\" nebo \"Private Message me\"."
+      ],
+      "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Uživatelům s citlivými daty a komunikací, jako jsou novináři nebo vedoucí pracovníci, doporučujeme povolit ${ PROTON_SENTINEL_NAME }."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "V rámci stávajícího tarifu můžete přijímat pouze zprávy s adresou @pm.me. Navyšte tarif pro odesílání zpráv a vytváření dalších adres s @pm.me."
+      ],
+      "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
+        "Přednostní podporu vám poskytnou specialisté vyškolení v oblasti ochrany účtů. V případě jakýchkoli obav o zabezpečení účtu nás prosím kontaktujte zde ${ hereLink }."
+      ],
+      "You will see more details in the Security logs below for important events such as sign in attempts.": [
+        "Podrobnější informace o důležitých událostech, např. o pokusech o přihlášení, najdete v níže uvedených bezpečnostních protokolech."
       ]
     },
     "info": {
@@ -9166,6 +9226,9 @@
       ],
       "Up to 3 TB of storage": [
         "Až 3 TB úložného prostoru"
+      ],
+      "Custom fields": [
+        "Vlastní pole"
       ]
     },
     "new_plans: feature info": {
@@ -9174,6 +9237,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Úložný prostor je sdílen mezi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } a ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Vytvořte více e-mailových adres pro své online identity, např. HonzaNakupy@${ domain } pro nákupní účty a HonzaZpravy@${ domain2 } pro odběry zpráv"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Používejte vlastní e-mailovou doménu, např. vy@vasejmeno.cz"
       ]
     },
     "new_plans: heading": {
@@ -9619,6 +9688,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Kalendář přidán"
+      ],
+      "Adding holidays calendar failed": [
+        "Přidání kalendáře svátků selhalo"
       ]
     },
     "Notification in share calendar modal": {
@@ -10332,7 +10404,7 @@
     },
     "Select search results": {
       "Check your spelling or select a country from the list.": [
-        "Zkontrolujte chyby v textu nebo vyberte zemi ze seznamu."
+        "Zkontrolujte překlepy nebo vyberte zemi ze seznamu."
       ],
       "No results found": [
         "Nebyly nalezeny žádné výsledky"
@@ -10711,13 +10783,16 @@
         "Ideální pro rodiny nebo malé týmy, každý může mít vlastní schránku a aliasy. Vyžaduje vlastní doménu."
       ],
       "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
-        "Získejte zdarma placené verze všech nových služeb ochrany soukromí, které v budoucnu spustíme, a také včasný přístup k novým produktům a funkcím."
+        "Získejte zdarma placené verze všech nových služeb ochrany soukromí, které v budoucnu vydáme, včetně předběžného přístupu ke všem budoucím funkcím a produktům."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Zabezpečte své soubory pomocí šifrovaného cloudového úložiště. Zahrnuje automatickou synchronizaci, šifrované sdílení souborů a další funkce."
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Úložný prostor je sdílen mezi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, a ${ DRIVE_APP_NAME }."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Obsahuje podporu 1 vlastní e-mailové domény, 10 e-mailových adres, 10 aliasů Hide My Email, sdílení kalendáře a další funkce."
       ]
     },
     "Spotlight": {
@@ -12189,6 +12264,12 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Byli jste pozváni k vyzkoušení ${ MAIL_APP_NAME }"
+      ],
+      "Activate @pm.me": [
+        "Aktivovat @pm.me"
+      ],
+      "Organization filters": [
+        "Filtry organizace"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12954,6 +13035,12 @@
     "Header; Table with list of calendars arranged by type": {
       "Holidays": [
         "Svátky"
+      ],
+      "Other": [
+        "Ostatní"
+      ],
+      "Subscribed": [
+        "Odebíráno"
       ]
     }
   }

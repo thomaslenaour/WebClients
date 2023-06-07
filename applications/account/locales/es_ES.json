@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Alejar"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Activar ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Enviar mensajes con @pm.me"
       ]
     },
     "action": {
@@ -1633,7 +1639,7 @@
         "ciruela"
       ],
       "purple": [
-        "morado"
+        "púrpura"
       ],
       "raisin black": [
         "negro uva pasa"
@@ -2724,10 +2730,10 @@
         "Sigue el estado y la actividad de tus referidos."
       ],
       "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
-        "Disfruta de un número ilimitado de filtros que ordenan la bandeja de entrada para ti y más funciones premium cuando actualizas tu plan."
+        "Desbloquea un número ilimitado de filtros que ordenan la bandeja de entrada para ti y más funciones premium al actualizar tu plan."
       ],
       "Unlock unlimited folders, labels and more premium features when you upgrade.": [
-        "Disfruta de un número ilimitado de carpetas y etiquetas y más funciones premium cuando actualizas tu plan."
+        "Desbloquea un número ilimitado de carpetas y etiquetas y más funciones premium al actualizar tu plan."
       ],
       "Upsell icon containing ${ BRAND_NAME } logo followed by a plus sign": [
         "Ícono de venta adicional que contiene el logotipo de ${ BRAND_NAME } seguido de un signo más"
@@ -2737,6 +2743,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Puedes importar eventos en formato iCal (archivos ICS). El archivo puede tener un tamaño máximo de ${ MAX_IMPORT_FILE_SIZE_STRING } y tener hasta ${ MAX_IMPORT_EVENTS_STRING } eventos. Si tu archivo es más grande, debes dividirlo en archivos más pequeños."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Para eliminar el pie de página de ${ MAIL_APP_NAME }, actualiza y desbloquea aún más funciones premium."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Desbloquea direcciones de correo cortas y otras funciones premium al actualizar."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2997,8 +3009,8 @@
         "Firma del contacto no verificada"
       ],
       "Deselect at least ${ calendarsToFixCount } calendar": [
-        "Anula la selección de al menos ${ calendarsToFixCount } calendario.",
-        "Anula la selección de al menos ${ calendarsToFixCount } calendarios."
+        "Anula la selección de al menos ${ calendarsToFixCount } calendario",
+        "Anula la selección de al menos ${ calendarsToFixCount } calendarios"
       ],
       "Deselect at least ${ calendarsToFixCount } calendar or": [
         "Anula la selección de al menos ${ calendarsToFixCount } calendario o",
@@ -3260,7 +3272,7 @@
         "El navegador que estás utilizando no permite autorizar el pago. Utiliza un navegador diferente o inicia sesión desde un ordenador."
       ],
       "The email addresses do not match": [
-        "Las direcciones de correo electrónico no coinciden."
+        "Las direcciones de correo electrónico no coinciden"
       ],
       "The folder name is invalid. Please choose a different name.": [
         "El nombre de la carpeta es inválido. Elige un nombre diferente."
@@ -3396,6 +3408,12 @@
       ],
       "Zero keys reactivated": [
         "Ninguna clave reactivada"
+      ],
+      "Username must begin with a letter or digit": [
+        "El nombre de usuario debe comenzar con una letra o un número"
+      ],
+      "Username must end with a letter or digit": [
+        "El nombre de usuario debe terminar con una letra o un número"
       ]
     },
     "Error importing calendar": {
@@ -3436,7 +3454,7 @@
         "Error con el cifrado"
       ],
       "vCard versions < 3.0 not supported": [
-        "Versiones vCard menores a 3.0 no soportadas"
+        "Versiones de vCard anteriores a 3.0 no soportadas"
       ]
     },
     "Error importing contacts": {
@@ -3450,7 +3468,7 @@
         "Se ha producido un error al cargar el archivo ${ formattedFilename }. No se ha seleccionado un archivo .csv o .vcf."
       ],
       "An error occurred uploading your file. No file has been selected.": [
-        "Se ha producido un error al cargar el archivo. No se ha seleccionado ningún archivo."
+        "Se ha producido un error al subir el archivo. No se ha seleccionado ningún archivo."
       ],
       "Your file ${ formattedFilename } contains more than ${ MAX_IMPORT_CONTACTS_STRING } contacts.": [
         "El archivo ${ formattedFilename } contiene más de ${ MAX_IMPORT_CONTACTS_STRING } contactos."
@@ -3588,16 +3606,16 @@
         "Se ha producido un error."
       ],
       "Please refresh the page or try again later.": [
-        "Actualiza la página o inténtalo de nuevo más tarde."
+        "Vuelve a cargar la página o inténtalo de nuevo más tarde."
       ],
       "Something went wrong": [
-        "Se ha producido un error."
+        "Algo salió mal"
       ],
       "Too many child sessions, please clear your cookies and sign back in.": [
         "Hay demasiadas sesiones secundarias. Borra tus cookies y vuelve a iniciar sesión."
       ],
       "We couldn't load this page. Please refresh the page or check your internet connection.": [
-        "No hemos podido cargar esta página. Actualiza la página o verifica tu conexión a internet."
+        "No hemos podido cargar esta página. Vuelve a cargar la página o verifica tu conexión a internet."
       ]
     },
     "Error message, recovery": {
@@ -4062,6 +4080,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Protege tus archivos con el almacenamiento cifrado en la nube. Incluye sincronización automática, posibilidad de compartir archivos cifrados, etc."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 90 direcciones de correo electrónico, seudónimos ilimitados de \"Hide My Email\", posibilidad de compartir calendario, etc."
       ]
     },
     "Feature": {
@@ -4541,7 +4562,7 @@
         "${ CALENDAR_APP_NAME } no admite actualmente algunos tipos de eventos, detalles y formatos."
       ],
       "vCard versions < 3.0": [
-        "Versiones vCard menores a 3.0"
+        "Versiones vCard anteriores a 3.0"
       ]
     },
     "Import calendar; import invitation": {
@@ -4769,7 +4790,7 @@
     },
     "Import rollback status": {
       "Undo finished": [
-        "Deshacer finalizado"
+        "Finalización de cancelación"
       ],
       "Undo in progress": [
         "Deshacer en progreso"
@@ -5003,7 +5024,7 @@
         "Un nombre que te ayude a identificar dónde lo utilizas para poder revocarlo o ampliarlo fácilmente más adelante."
       ],
       "A phone number can only be used to verify one ${ BRAND_NAME } account": [
-        "Un número telefónico solo puede usarse para verificar una cuenta de ${ BRAND_NAME }"
+        "Un número telefónico solo puede usarse para verificar una cuenta de ${ BRAND_NAME }."
       ],
       "A recovery file lets you unlock and view your data after an account reset": [
         "Un archivo de recuperación te permite desbloquear y ver tus datos después de un restablecimiento de la cuenta."
@@ -5630,7 +5651,7 @@
         "Importar buzón"
       ],
       "Import your emails, calendars, and contacts from another service to ${ BRAND_NAME }.": [
-        "Importa tus correos, calendarios y contactos desde otro servicio a ${ BRAND_NAME }."
+        "Importa tus correos, calendarios y contactos desde otro proveedor a ${ BRAND_NAME }."
       ],
       "Important: Please make sure you save the recovery codes. Otherwise you can permanently lose access to your account if you lose your two-factor authentication device.": [
         "Importante: asegúrate de que has guardado los códigos de recuperación. En caso contrario, puedes perder permanentemente el acceso a tu cuenta si pierdes tu dispositivo de autenticación de dos factores."
@@ -6791,6 +6812,18 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "Verás más detalles en el registro de seguridad de abajo de eventos importantes como intentos de inicio de sesión."
+      ],
+      "Based on your time zone": [
+        "Basado en tu zona horaria"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "Para asegurarte de no perder datos importantes, ${ DRIVE_APP_NAME } guarda versiones anteriores de tus archivos a medida que tù y tus colaboradores realizan cambios. Selecciona cuánto tiempo ${ BRAND_NAME } debería de conservar las versiones."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Actualiza tu cuenta para añadir una dirección corta @pm.me que sea fácil de compartir. Significa “${ MAIL_APP_NAME }” o “Private Message me”."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "Con tu plan actual, solo puedes recibir mensajes con tu dirección @pm.me. Actualiza tu cuneta para enviar mensajes y crear direcciones adicionales con @pm.me."
       ]
     },
     "info": {
@@ -8179,7 +8212,7 @@
         "Para añadir un calendario, elimina uno existente."
       ],
       "To add a new calendar, remove another calendar or upgrade your ${ BRAND_NAME } plan to a ${ MAIL_SHORT_APP_NAME } paid plan.": [
-        "Para añadir un calenario, elimina otro calendario o actualiza tu plan ${ BRAND_NAME } a un plan de pago ${ MAIL_SHORT_APP_NAME }."
+        "Para añadir un calendario, elimina otro calendario o actualiza tu plan ${ BRAND_NAME } a un plan de pago ${ MAIL_SHORT_APP_NAME }."
       ],
       "You've reached the maximum number of calendars available in your plan.": [
         "Has alcanzado el número máximo de calendarios disponibles en tu plan."
@@ -8995,6 +9028,22 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Uso compartido de bóvedas y elementos (próximamente)"
+      ],
+      "${ n } Hide-my-email alias": [
+        "${ n } alias de \"Hide My Email\"",
+        "${ n } alias de \"Hide My Email\""
+      ],
+      "Custom fields": [
+        "Campos personalizados"
+      ],
+      "Hide-my-email aliases": [
+        "Aliases de \"Hide My Email\""
+      ],
+      "Unlimited hide-my-email aliases": [
+        "Un número ilimitado de alias \"Hide My Email\""
+      ],
+      "Up to 3 TB of storage": [
+        "Hasta 3 TB de almacenamiento"
       ]
     },
     "new_plans: feature info": {
@@ -9003,6 +9052,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "El espacio de almacenamiento es compartido entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }."
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Crea diferentes direcciones de correo para tus identidades en línea, p. ej. JuanCompras@${ domain } para cuentas de compras, JuanNoticias@${ domain2 } para suscripciones de noticias"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Utiliza tu propia dirección de correo personalizada, p. ej. tú@tunombre.com"
       ]
     },
     "new_plans: heading": {
@@ -9442,6 +9497,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "El calendario ha sido añadido."
+      ],
+      "Adding holidays calendar failed": [
+        "Error al añadir el calendario de días festivos"
       ]
     },
     "Notification in share calendar modal": {
@@ -10509,6 +10567,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "El espacio de almacenamiento se reparte entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Todos nuestros servicios premium al máximo: 100 direcciones de correo electrónico, compatibilidad con 10 dominios personalizados, seudónimos ilimitados de \"Hide My Email\", posibilidad de compartir calendarios y archivos cifrados, almacenamiento cifrado en la nube, etc."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 1 dominio de correo electrónico personalizado, 10 direcciones de correo electrónico, 10 seudónimos de \"Hide My Email\", posibilidad de compartir calendario, etc."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 15 direcciones de correo electrónico, seudónimos ilimitados de \"Hide My Email\", posibilidad de compartir calendario, etc."
       ]
     },
     "Spotlight": {
@@ -11248,7 +11315,7 @@
         "Borrar"
       ],
       "Clear out the junk": [
-        "¡Deshazte de los mensajes innecesarios!"
+        "Deshazte de los mensajes no deseados"
       ],
       "Composing": [
         "Redacción"
@@ -11935,6 +12002,9 @@
       ],
       "Organization filters": [
         "Filtros de la organización"
+      ],
+      "Activate @pm.me": [
+        "Activar @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12199,6 +12269,9 @@
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Actualiza a ${ planName } para conectar hasta ${ n } dispositivo a la VPN a la vez.",
         "Actualiza a ${ planName } para conectar hasta ${ n } dispositivos a la VPN a la vez."
+      ],
+      "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
+        "Actualiza a ${ passPlusPlanName } para obtener alias ilimitados de \"Hide My Email\"."
       ]
     },
     "Upgrade notice": {
@@ -12621,6 +12694,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualmente, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Días festivos"
+      ],
+      "Other": [
+        "Otro"
+      ],
+      "Subscribed": [
+        "Suscrito"
       ]
     }
   }

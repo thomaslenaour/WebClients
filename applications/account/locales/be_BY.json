@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Паменшыць"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Актываваць ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Адправіць паведамленне з @pm.me"
       ]
     },
     "action": {
@@ -1041,6 +1047,12 @@
       ],
       "Set as default": [
         "Зрабіць прадвызначаным"
+      ],
+      "Disable expect signed": [
+        "Адключыць чаканне подпісу"
+      ],
+      "Enable expect signed": [
+        "Уключыць чаканне подпісу"
       ]
     },
     "Address status": {
@@ -2749,6 +2761,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Вы можаце імпартаваць падзеі ў фармаце iCal (файл ICS). Максімальна памер файла павінен быць ${ MAX_IMPORT_FILE_SIZE_STRING } і мець не больш за ${ MAX_IMPORT_EVENTS_STRING } падзей. Падзяліце свой файл на меншыя часткі, калі ён занадта вялікі."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Палепшыце бягучы тарыфны план і разблакіруйце магчымасць выдалення ніжняга калонтытула ${ MAIL_APP_NAME }, а таксама іншыя прэміяльныя функцыі."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Палепшыце бягучы тарыфны план і атрымайце кароткі адрас электроннай пошты разам з іншымі прэміяльнымі функцыямі."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3418,6 +3436,12 @@
       ],
       "Zero keys reactivated": [
         "Нуль ключоў паўторна актывавана"
+      ],
+      "Username must begin with a letter or digit": [
+        "Імя карыстальніка павінна пачынацца з літары або лічбы"
+      ],
+      "Username must end with a letter or digit": [
+        "Імя карыстальніка павінна заканчвацца літарай або лічбай"
       ]
     },
     "Error importing calendar": {
@@ -6913,16 +6937,28 @@
         "у тарыфным плане ${ planName }"
       ],
       "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
-        "Палепшыць платны ўліковы запіс, каб уключыць ${ PROTON_SENTINEL_NAME }"
+        "Перайдзіце на платны ўліковы запіс, каб уключыць ${ PROTON_SENTINEL_NAME }."
       ],
       "Users with sensitive data and communications, such as journalists or executives, are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
         "Карыстальнікі з канфідэнцыяльнымі данымі і камунікацыямі такія як, журналісты або кіраўнікі, вельмі вітаюць уключэнне ${ PROTON_SENTINEL_NAME }"
       ],
       "You will receive priority support from specialists trained in account protection. For any account security concerns, please contact us ${ hereLink }.": [
-        "Вы атрымаеце прыярытэтную падтрымку ад спецыялістаў, якія маюць досвед у абароне ўліковага запіс. У выпадку пытанняў звязаных з парушэннямі бяспекі ўліковага запісу, вы можаце з вязацца з намі ${ hereLink }"
+        "Вы атрымаеце прыярытэтную падтрымку ад спецыялістаў, якія маюць досвед у абароне ўліковых запісаў. У выпадку пытанняў звязаных з іх парушэннямі бяспекі, вы можаце звязацца з намі ${ hereLink }"
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
-        "Вы ўбачыце ніжэй больш падрабязнасцяў у журнале бяспекі пра такія важныя падзеі, як спробы ўваходу."
+        "Вы ўбачыце ніжэй больш падрабязнасцей у журнале бяспекі пра такія важныя падзеі, як спробы ўваходу."
+      ],
+      "Based on your time zone": [
+        "На падставе вашага часавага пояса"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "${ DRIVE_APP_NAME } захоўвае старыя версіі вашых файлаў, калі вы і іншыя ўдзельнікі сумеснай працы ўносіце змены. Гэта гарантуе, што вы не страціце важныя даныя. Выберыце, як доўга ${ BRAND_NAME } павінен захоўваць папярэднюю версію."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Палепшыце свой тарыфны план, каб дадаць кароткі адрас @pm да свайго ўліковага запісу, якім лёгка дзяліцца з астатнімі. Ён абазначае “${ MAIL_APP_NAME } me” або “Private Message me”."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "На вашым бягучым тарыфным плане даступна толькі атрыманне лістоў з адраса @pm.me. Палепшыце яго, каб адпраўляць лісты і ствараць дадатковыя адрасы з выкарыстаннем @pm.me."
       ]
     },
     "info": {
@@ -8455,6 +8491,9 @@
       ],
       "Enable authentication logs": [
         "Уключыць журнал аўтэнтыфікацыі"
+      ],
+      "Enable ${ PROTON_SENTINEL_NAME }": [
+        "Уключыць ${ PROTON_SENTINEL_NAME }"
       ]
     },
     "Mail import summary": {
@@ -9190,6 +9229,12 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Сховішча і абагульванне элементаў (неўзабаве з'явіцца)"
+      ],
+      "Custom fields": [
+        "Карыстальніцкія палі"
+      ],
+      "Up to 3 TB of storage": [
+        "Да 3 ТБ сховішча"
       ]
     },
     "new_plans: feature info": {
@@ -9198,6 +9243,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Прастора сховішча размеркавана паміж ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } і ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Стварайце некалькі розных адрасоў электроннай пошты для сваіх пасведчанняў у інтэрнэце. Напрыклад, JankaPakupnik@${ domain } для куплі тавараў у інтэрнэце, а JankaNaviny@${ domain2 } для падпіскі на навіны"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Выкарыстоўвайце свой уласны карыстальніцкі дамен адраса электроннай пошты. Напрыклад, you@yourname.com"
       ]
     },
     "new_plans: heading": {
@@ -9643,6 +9694,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Каляндар дададзены"
+      ],
+      "Adding holidays calendar failed": [
+        "Не ўдалося дадаць каляндар свят"
       ]
     },
     "Notification in share calendar modal": {
@@ -12216,6 +12270,9 @@
       ],
       "Organization filters": [
         "Фільтры арганізацыі"
+      ],
+      "Activate @pm.me": [
+        "Актываваць @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12976,6 +13033,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Штогод, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Святы"
+      ],
+      "Other": [
+        "Іншае"
+      ],
+      "Subscribed": [
+        "Ёсць падпіска"
       ]
     }
   }

@@ -2758,6 +2758,9 @@
       ],
       "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
         "Aby usunąć stopkę ${ MAIL_APP_NAME }, ulepsz konto i odblokuj więcej funkcji premium."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Ulepsza konto, aby odblokować krótsze adresy e-mail i inne funkcje premium."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3427,6 +3430,12 @@
       ],
       "Zero keys reactivated": [
         "Brak reaktywowanych kluczy"
+      ],
+      "Username must begin with a letter or digit": [
+        "Nazwa użytkownika musi zaczynać się literą lub cyfrą"
+      ],
+      "Username must end with a letter or digit": [
+        "Nazwa użytkownika musi kończyć się literą lub cyfrą"
       ]
     },
     "Error importing calendar": {
@@ -6932,6 +6941,18 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "Zobaczysz w logach bezpieczeństwa więcej szczegółów zdarzeń, np. próby logowania."
+      ],
+      "Based on your time zone": [
+        "Na podstawie strefy czasowej"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "Aby chronić ważne dane, ${ DRIVE_APP_NAME } zapisuje starsze wersje plików. Wybierz, jak długo ${ BRAND_NAME } ma przechowywać poprzednie wersje."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Ulepsz konto, aby dodać krótszy adres @pm.me, który jest łatwiejszy do udostępniania. To jest skrót od “${ MAIL_APP_NAME } me” lub “Private Message me”."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "W obecnym planie możesz tylko odbierać wiadomości z adresu @pm.me. Ulepsz konto, aby wysyłać wiadomości i tworzyć dodatkowe adresy @pm.me."
       ]
     },
     "info": {
@@ -9664,6 +9685,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Kalendarz został dodany"
+      ],
+      "Adding holidays calendar failed": [
+        "Dodawanie kalendarza świąt nie powiodło się"
       ]
     },
     "Notification in share calendar modal": {

@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Perkecil"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "Aktifkan ${ Name }@pm.me"
+      ],
+      "Send messages with @pm.me": [
+        "Kirim pesan dengan @pm.me"
       ]
     },
     "action": {
@@ -2728,6 +2734,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Anda dapat mengimpor acara dalam format iCal (berkas ICS). Berkas Anda harus berukuran maksimal ${ MAX_IMPORT_FILE_SIZE_STRING } dan mengandung paling banyak ${ MAX_IMPORT_EVENTS_STRING } acara. Apabila berkas Anda melebihi persyaratan ini, mohon terlebih dahulu pisahkan menjadi berkas yang lebih kecil."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "Untuk mengirim pesan tanpa footer ${ MAIL_APP_NAME }, tingkatkan akun Anda dan nikmati berbagai fitur premium lainnya."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Gunakan alamat email yang lebih pendek dan nikmati berbagai fitur premium lainnya dengan meningkatkan akun."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3382,6 +3394,12 @@
       ],
       "Zero keys reactivated": [
         "Tidak ada kunci yang diaktifkan ulang"
+      ],
+      "Username must begin with a letter or digit": [
+        "Nama pengguna harus dimulai dengan huruf atau angka"
+      ],
+      "Username must end with a letter or digit": [
+        "Nama pengguna harus diakhiri dengan huruf atau angka"
       ]
     },
     "Error importing calendar": {
@@ -6722,6 +6740,15 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "Anda akan dapat melihat rincian lebih lanjut seputar berbagai kejadian penting, seperti upaya masuk ke akun Anda, pada log keamanan di bawah."
+      ],
+      "Based on your time zone": [
+        "Berdasarkan zona waktu Anda"
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Tingkatkan akun Anda untuk menggunakan alamat @pm.me yang lebih pendek dan lebih mudah untuk dibagikan. Alamat ini merupakan kependekan dari “${ MAIL_APP_NAME } me” atau \"Private Message me\"."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "Dengan paket Anda saat ini, Anda hanya dapat menggunakan alamat @pm.me milkik Anda untuk menerima pesan. Tingkatkan paket Anda untuk dapat mengirim pesan dan membuat alamat tambahan dengan @pm.me."
       ]
     },
     "info": {
@@ -8893,6 +8920,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Pembagian brankas dan item (segera hadir)"
+      ],
+      "Up to 3 TB of storage": [
+        "Kuota penyimpanan hingga 3 TB"
       ]
     },
     "new_plans: feature info": {
@@ -8901,6 +8931,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Kuota penyimpanan diperuntukkan bagi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, dan ${ DRIVE_APP_NAME } secara bersamaan"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Berikan masing-masing identitas online Anda alamat emailnya tersendiri, mis. JohnShopper@${ domain } untuk berbelanja dan JohnNews@${ domain2 } untuk berlangganan berita"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Gunakan domain email khusus milik Anda sendiri, mis. anda@namaanda.com"
       ]
     },
     "new_plans: heading": {
@@ -9337,6 +9373,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Kalender ditambahkan"
+      ],
+      "Adding holidays calendar failed": [
+        "Menambahkan kalender liburan gagal"
       ]
     },
     "Notification in share calendar modal": {
@@ -11790,6 +11829,9 @@
       ],
       "Organization filters": [
         "Filter organisasi"
+      ],
+      "Activate @pm.me": [
+        "Aktifkan @pm.me"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12439,6 +12481,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Tahunan, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Hari libur"
+      ],
+      "Other": [
+        "Lainnya"
+      ],
+      "Subscribed": [
+        "Dilanggan"
       ]
     }
   }

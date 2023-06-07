@@ -973,6 +973,12 @@
       ],
       "Zoom out": [
         "Uzaklaştır"
+      ],
+      "Activate ${ Name }@pm.me": [
+        "${ Name }@pm.me adresini etkinleştir"
+      ],
+      "Send messages with @pm.me": [
+        "@pm.me adresinden ileti gönderin"
       ]
     },
     "action": {
@@ -2737,6 +2743,12 @@
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Etkinlikleri iCal biçiminde içe aktarabilirsiniz (ICS dosyası).\nDosya en fazla ${ MAX_IMPORT_FILE_SIZE_STRING } boyutunda olmalı ve en fazla ${ MAX_IMPORT_EVENTS_STRING } etkinlik kaydı içermelidir.\nDosyanız daha büyükse, daha küçük dosyalara bölün."
+      ],
+      "To remove the ${ MAIL_APP_NAME } footer, upgrade and unlock even more premium features.": [
+        "${ MAIL_APP_NAME } alt bilgisini kaldırmak için tarifenizi yükseltin ve diğer ücretli özelliklere de erişin."
+      ],
+      "Unlock shorter email addresses and other premium features by upgrading.": [
+        "Tarifenizi yükselterek daha kısa e-posta adreslerine ve diğer ücretli özelliklere erişin."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3396,6 +3408,12 @@
       ],
       "Zero keys reactivated": [
         "Hiç bir anahtar yeniden etkinleştirilmedi"
+      ],
+      "Username must begin with a letter or digit": [
+        "Kullanıcı adı bir harf ya da rakam ile başlamalı"
+      ],
+      "Username must end with a letter or digit": [
+        "Kullanıcı adı bir harf ya da rakam ile bitmeli"
       ]
     },
     "Error importing calendar": {
@@ -6791,6 +6809,18 @@
       ],
       "You will see more details in the Security logs below for important events such as sign in attempts.": [
         "Aşağıdaki güvenlik günlüğü kayıtlarında oturum açma girişimleri gibi önemli olaylar için daha fazla ayrıntı görebileceksiniz."
+      ],
+      "Based on your time zone": [
+        "Saat diliminize göre"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "${ DRIVE_APP_NAME }, önemli verilerinizi korumak için, siz ve iş birliği yaptığınız kişiler dosyalarınızı\ndeğiştirdikçe öncekli sürümlerini kaydeder. ${ BRAND_NAME } tarafından önceki sürümlerin ne kadar süreyle tutulacağını seçin."
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "Hesabınızı paylaşması daha kolay ve daha kısa @pm.me adresi ile kullanmak için tarifenizi yükseltin. İngilizce olarak \"${ MAIL_APP_NAME } ben\" ya da \"Bana özel ileti\" anlamına gelir."
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "Geçerli tarifeniz ile @pm.me adresiniz iletileri yalnızca alabilir. @pm.me kullanarak ileti göndermek ve başka adresler oluşturmak için tarifenizi yükseltin."
       ]
     },
     "info": {
@@ -8995,6 +9025,12 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Kasa ve öge paylaşımı (yakında)"
+      ],
+      "Custom fields": [
+        "Özel alanlar"
+      ],
+      "Up to 3 TB of storage": [
+        "3 TB depolama alanına kadar"
       ]
     },
     "new_plans: feature info": {
@@ -9003,6 +9039,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Depolama alanı ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } ve ${ DRIVE_APP_NAME } arasında paylaşılır"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Çevrimiçi kimlikleriniz için e-posta adresleri oluşturun. Örneğin alışveriş işlemleri için AliAlisveris@${ domain }, haber aboneliği için AliHaber@${ domain2 } gibi takma adlar oluşturabilirsiniz"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Dilerseniz siz@sirketiniz.com gibi kendi özel etki alanınızla e-posta adresleri oluşturun"
       ]
     },
     "new_plans: heading": {
@@ -9442,6 +9484,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Takvim eklendi"
+      ],
+      "Adding holidays calendar failed": [
+        "Tatil takvimi eklenemedi"
       ]
     },
     "Notification in share calendar modal": {
@@ -11935,6 +11980,9 @@
       ],
       "Organization filters": [
         "Kuruluş süzgeçleri"
+      ],
+      "Activate @pm.me": [
+        "@pm.me adresini etkinleştir"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12621,6 +12669,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Yılda bir, ${ untilString }"
+      ]
+    },
+    "Header; Table with list of calendars arranged by type": {
+      "Holidays": [
+        "Tatiller"
+      ],
+      "Other": [
+        "Diğer"
+      ],
+      "Subscribed": [
+        "Abone olunmuş"
       ]
     }
   }

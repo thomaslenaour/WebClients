@@ -72,7 +72,7 @@
         "Adresse hinzufügen"
       ],
       "Add calendar from URL": [
-        "Kalender von URL hinzufügen"
+        "Kalender mittels URL hinzufügen"
       ],
       "Add condition": [
         "Bedingung hinzufügen"
@@ -3359,7 +3359,7 @@
         "Die Überprüfung konnte nicht abgeschlossen werden. Bitte versuche es in einer Stunde erneut."
       ],
       "We stopped DKIM signing due to problems with your DNS configuration. Please follow the instructions below to resume signing.": [
-        "Wir haben die DKIM-Signierung aufgrund von Problemen mit deiner DNS-Konfiguration gestoppt. Bitte folge den untenstehenden Anweisungen, um die Signierung erneut vorzunehmen."
+        "Wir haben die DKIM-Signatur aufgrund von Problemen mit deiner DNS-Konfiguration gestoppt. Bitte folge den untenstehenden Anweisungen, um die Signierung erneut vorzunehmen."
       ],
       "Wrong recovery phrase. Try again or use another recovery method.": [
         "Wiederherstellungsphrase ungültig. Versuche es erneut oder verwende eine andere Wiederherstellungsmethode."
@@ -3408,6 +3408,12 @@
       ],
       "Zero keys reactivated": [
         "Kein Schüssel wiederhergestellt"
+      ],
+      "Username must begin with a letter or digit": [
+        "Der Benutzername muss mit einem Buchstaben oder einer Ziffer beginnen"
+      ],
+      "Username must end with a letter or digit": [
+        "Der Benutzername muss mit einem Buchstaben oder einer Ziffer enden"
       ]
     },
     "Error importing calendar": {
@@ -4421,7 +4427,7 @@
         "Bevorzugte Zahlungsmethode auswählen"
       ],
       "Select your pricing plan": [
-        "Abonnement auswählen"
+        "Wähle dein Abonnement"
       ],
       "Status": [
         "Status"
@@ -6427,7 +6433,7 @@
         "Jetzt upgraden um Premium-Funktionen, Produkte und Speicherplatz zu einem Sonderpreis zu erhalten."
       ],
       "Upgrade to a paid account to enable ${ PROTON_SENTINEL_NAME }.": [
-        "Erwirb ein kostenpflichtiges Konto ${ PROTON_SENTINEL_NAME }."
+        "Upgrade auf ein kostenpflichtiges Konto, um ${ PROTON_SENTINEL_NAME } zu aktivieren."
       ],
       "Upgrade to unlock": [
         "Upgraden zum Freischalten"
@@ -6799,7 +6805,7 @@
         "Dein Abonnement wird von Mozilla verwaltet. Bitte kontaktiere den Mozilla-Support."
       ],
       "${ PROTON_SENTINEL_NAME } is an account protection program developed at ${ BRAND_NAME } for users who need maximum security.": [
-        "${ PROTON_SENTINEL_NAME } ist ein Kontoschutzprogramm, entwickelt von ${ BRAND_NAME } für Benutzer, die maximale Sicherheit benötigen."
+        "${ PROTON_SENTINEL_NAME } ist ein von ${ BRAND_NAME } entwickeltes Kontoschutzprogramm für Benutzer, die maximale Sicherheit benötigen."
       ],
       "Email address already used": [
         "E-Mail-Adresse wird bereits verwendet"
@@ -6809,6 +6815,12 @@
       ],
       "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
         "Mit deinem aktuellen Abonnement kannst du mit deiner @pm.me-Adresse nur Nachrichten empfangen. Führe ein Upgrade durch, um Nachrichten senden und weitere @pm.me-Adressen hinzufügen zu können."
+      ],
+      "Based on your time zone": [
+        "Basierend auf deiner Zeitzone"
+      ],
+      "To ensure you don’t lose important data, ${ DRIVE_APP_NAME } saves older versions of your files as you and your collaborators make changes. Select how long ${ BRAND_NAME } should keep previous versions.": [
+        "Um sicherzustellen, dass du keine wichtigen Daten verlierst, speichert ${ DRIVE_APP_NAME } ältere Versionen deiner Dateien, wenn du \nund deine Mitbearbeiter Änderungen vornehmen. Wähle, wie lange ${ BRAND_NAME } frühere Versionen speichern soll."
       ]
     },
     "info": {
@@ -8327,7 +8339,7 @@
     },
     "Log preference": {
       "Enable ${ PROTON_SENTINEL_NAME }": [
-        "Aktiviere ${ PROTON_SENTINEL_NAME }"
+        "${ PROTON_SENTINEL_NAME } aktivieren"
       ],
       "Enable advanced logs": [
         "Erweiterte Protokolle aktivieren"
@@ -9016,6 +9028,9 @@
       ],
       "Up to 3 TB of storage": [
         "Bis zu 3 TB Speicherplatz"
+      ],
+      "Custom fields": [
+        "Benutzerdefinierte Felder"
       ]
     },
     "new_plans: feature info": {
@@ -9469,6 +9484,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Kalender hinzugefügt"
+      ],
+      "Adding holidays calendar failed": [
+        "Hinzufügen des Feiertagskalenders fehlgeschlagen"
       ]
     },
     "Notification in share calendar modal": {
@@ -12659,6 +12677,9 @@
       ],
       "Subscribed": [
         "Abonniert"
+      ],
+      "Other": [
+        "Weitere"
       ]
     }
   }
