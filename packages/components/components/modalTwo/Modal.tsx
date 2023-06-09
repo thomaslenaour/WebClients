@@ -154,6 +154,9 @@ const Modal = <E extends ElementType = typeof defaultElement>({
      * - `mousedown` will trigger before the `click` event and we
      * may lose focus on any child field currently focused */
     useEffect(() => {
+        if (!active) {
+            return;
+        }
         const handleBackdropMouseDown = (mouseDownEvt: MouseEvent) => {
             /* prevents focus loss when mouse down on backdrop */
             if (mouseDownEvt.target === backdropRef.current) {
