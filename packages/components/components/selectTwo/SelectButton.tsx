@@ -52,7 +52,7 @@ const SelectButton = forwardRef<HTMLButtonElement, SelectButtonProps>(
                 {loading ? (
                     <CircleLoader className="flex-item-noshrink ml-2" />
                 ) : (
-                    <DropdownCaret className="flex-item-noshrink ml0-5" isOpen={isOpen} iconName={caretIconName} />
+                    <DropdownCaret className="flex-item-noshrink ml-2" isOpen={isOpen} />
                 )}
             </button>
         );
