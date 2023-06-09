@@ -67,7 +67,7 @@ const AttachScreenshot = ({ id, screenshots, setScreenshots, uploading, setUploa
     };
 
     return (
-        <div>
+        <>
             <label className="text-semibold block" htmlFor={id}>
                 <span className="mr-2 align-middle">{c('Label').t`Attach screenshot(s)`}</span>
                 <Info url={getKnowledgeBaseUrl('/screenshot-reporting-bugs')} />
@@ -113,7 +113,7 @@ const AttachScreenshot = ({ id, screenshots, setScreenshots, uploading, setUploa
                     </TableBody>
                 </Table>
             )}
-        </div>
+        </>
     );
 };
 
