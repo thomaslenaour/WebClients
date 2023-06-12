@@ -1,4 +1,9 @@
-## Release 5.0.24.0 — TODO
+## Release 5.0.24.0 — June 28, 2023
+
+### Improvements
+
+-   Increase the click surface on email list items' checkboxes
+-   Improvements of the drop zone in all apps
 
 ## Release 5.0.23.0 — June 14, 2023
 
