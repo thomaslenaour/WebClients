@@ -8,12 +8,11 @@ import {
     NotificationsChildren,
     NotificationsProvider,
     ThemeProvider,
-    useTheme,
 } from '@proton/components';
 import ApiProvider from '@proton/components/containers/api/ApiProvider';
 import ConfigProvider from '@proton/components/containers/config/Provider';
 import createCache from '@proton/shared/lib/helpers/cache';
-import { PROTON_DEFAULT_THEME, PROTON_THEMES, PROTON_THEMES_MAP } from '@proton/shared/lib/themes/themes';
+import { PROTON_DEFAULT_THEME, PROTON_THEMES_MAP, getThemes } from '@proton/shared/lib/themes/themes';
 
 import * as config from '../src/app/config';
 import './prismjs.js';
@@ -28,6 +27,8 @@ const tempConfig = {
     APP_NAME: 'proton-mail',
 };
 
+const themes = getThemes(true);
+
 export const globalTypes = {
     theme: {
         name: 'Theme',
@@ -35,7 +36,7 @@ export const globalTypes = {
         defaultValue: PROTON_THEMES_MAP[PROTON_DEFAULT_THEME].label,
         toolbar: {
             icon: 'paintbrush',
-            items: PROTON_THEMES.map(({ label }) => label),
+            items: themes.map(({ label }) => label),
             showName: true,
             dynamicTitle: true,
         },
@@ -46,7 +47,7 @@ export const decorators = [
     (Story, context) => {
         const { theme: themeGlobal } = context.globals;
 
-        const identifier = PROTON_THEMES.find((theme) => theme.label === themeGlobal)?.identifier;
+        const identifier = themes.find((theme) => theme.label === themeGlobal)?.identifier;
 
         const initialTheme = identifier || PROTON_DEFAULT_THEME;
 
