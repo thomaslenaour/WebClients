@@ -486,7 +486,7 @@
         "Importar correos"
       ],
       "Import from ICS": [
-        "Importar desde ICS"
+        "Importar desde un archivo ICS"
       ],
       "Import key": [
         "Importar clave"
@@ -973,6 +973,9 @@
       ],
       "Zoom out": [
         "Alejar"
+      ],
+      "Continue anyway": [
+        "Continuar de todas formas"
       ]
     },
     "action": {
@@ -4067,7 +4070,7 @@
         "Incluye 2700 servidores en más de 65 países, conecta hasta 10 dispositivos, acceda a servicios de transmisión en todo el mundo, malware y bloqueador de anuncios, y más."
       ],
       "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
-        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 90 direcciones de correo electrónico, alias ilimitados de \"Hide My Email\", posibilidad de compartir calendario, etc."
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 90 direcciones de correo electrónico, alias ilimitados de Hide-my-email, posibilidad de compartir calendario, etc."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Proteja sus archivos con almacenamiento en la nube cifrado. Incluye sincronización automática, uso compartido de archivos cifrados y más."
@@ -6771,7 +6774,7 @@
         "Sus mensajes, calendarios o contactos existentes serán bloqueados. Para recuperar estos datos, necesitará su frase de recuperación o su ${ oldPassword }."
       ],
       "Your files will be encrypted and then saved": [
-        "Sus archivos serán cifrados y de ahí guardados"
+        "Sus archivos serán cifrados y luego guardados"
       ],
       "Your import from ${ accounts } is temporarily delayed.": [
         "Su importación desde ${ accounts } está retrasada temporalmente.",
@@ -6806,6 +6809,9 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Su suscripción es gestionada por Mozilla. Contacte con el soporte de Mozilla."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalice el aspecto y sensación de las aplicaciones de ${ BRAND_NAME }"
       ]
     },
     "info": {
@@ -8049,6 +8055,15 @@
       ],
       "Your referral link": [
         "Su enlace de referencia"
+      ],
+      "Card information": [
+        "Información sobre la tarjeta"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Expiración (${ patternExpiration })"
+      ],
+      "Synchronize with system": [
+        "Sincronizar con el sistema"
       ]
     },
     "label": {
@@ -8739,7 +8754,7 @@
         "${ n } carpetas y etiquetas"
       ],
       "${ n } Hide-my-email alias": [
-        "${ n } alias de \"Hide My Email\"",
+        "${ n } alias de Hide My Email",
         "${ n } alias de \"Hide My Email\""
       ],
       "${ n } label": [
@@ -8868,7 +8883,7 @@
         "Acuerdo para el procesamiento de datos conforme al RGPD"
       ],
       "Hide-my-email aliases": [
-        "Alias de \"Hide My Email\""
+        "Alias de Hide-my-email"
       ],
       "High-speed streaming": [
         "Transmisión de gran velocidad"
@@ -10516,13 +10531,13 @@
         "Acceda desde cualquier lugar al contenido de servicios de streaming, como Netflix, Disney+ y Prime Video."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Todos nuestros servicios premium al máximo: 100 direcciones de correo electrónico, compatibilidad con 10 dominios personalizados, alias ilimitados de \"Hide My Email\", posibilidad de compartir calendarios y archivos cifrados, almacenamiento cifrado en la nube, etc."
+        "Todos nuestros servicios premium al máximo: 100 direcciones de correo electrónico, compatibilidad con 10 dominios personalizados, alias ilimitados de Hide-my-email, posibilidad de compartir calendarios y archivos cifrados, almacenamiento cifrado en la nube, etc."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Incluye compatibilidad con 1 dominio de correo electrónico personalizado, 10 direcciones de correo electrónico, 10 alias de \"Hide My Email\", posibilidad de compartir calendario, etc."
+        "Incluye compatibilidad con 1 dominio de correo electrónico personalizado, 10 direcciones de correo electrónico, 10 alias de Hide-my-email, posibilidad de compartir calendario, etc."
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
-        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 15 direcciones de correo electrónico, alias ilimitados de \"Hide My Email\", posibilidad de compartir calendario, etc."
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 15 direcciones de correo electrónico, alias ilimitados de Hide-my-email, posibilidad de compartir calendario, etc."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
         "Es perfecto para familias o equipos pequeños, ya que cada uno puede tener su propia bandeja de entrada y alias. Requiere un dominio personalizado."
@@ -11967,6 +11982,18 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ha recibido una invitación para probar ${ MAIL_APP_NAME }"
+      ],
+      "(active)": [
+        "(activo)"
+      ],
+      "Accessibility": [
+        "Accesibilidad"
+      ],
+      "Day theme": [
+        "Tema de día"
+      ],
+      "Night theme": [
+        "Tema de noche"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12175,6 +12202,15 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Es posible que su cuenta externa haya alcanzado el límite de ancho de banda de 24 horas. ${ BRAND_NAME } intentará reanudar la importación tan pronto como sea posible."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Cambie automáticamente entre sus temas preferidos para el día y la noche en sincronía con los modos de día y noche de su sistema"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "El tema seleccionado estará activo cuando su sistema esté en modo de noche"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "El tema seleccionado estará activo cuando su sistema esté en \"modo claro\""
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12226,7 +12262,7 @@
     },
     "Upgrade": {
       "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
-        "Actualice a ${ passPlusPlanName } para obtener alias ilimitados de \"Hide My Email\"."
+        "Actualice a ${ passPlusPlanName } para obtener alias ilimitados de Hide My Email."
       ],
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Actualice a ${ planName } para conectar hasta ${ n } dispositivo al mismo tiempo",
@@ -12653,6 +12689,31 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Del sistema"
+      ],
+      "Theme default": [
+        "Tema por defecto"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Grande"
+      ],
+      "Medium (recommended)": [
+        "Mediana (recomendado)"
+      ],
+      "Small": [
+        "Pequeña"
+      ],
+      "Very large": [
+        "Muy grande"
+      ],
+      "Very small": [
+        "Muy pequeña"
       ]
     }
   }

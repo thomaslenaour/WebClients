@@ -2760,6 +2760,9 @@
       ],
       "${ name } successfully deleted": [
         "${ name } 刪除成功"
+      ],
+      "${ name } moved to allow list": [
+        "${ name } 已移動至允許清單"
       ]
     },
     "Downgrade account reason": {
@@ -4022,6 +4025,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "包含對 3 個自訂電子郵件網域、90 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Feature": {
@@ -6692,6 +6698,12 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "您的訂閱是由 Mozilla 管理。請聯絡 Mozilla 支援。"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "自訂 ${ BRAND_NAME } 應用程式的外觀與感覺。"
+      ],
+      "Drop to import": [
+        "拖放以匯入"
       ]
     },
     "info": {
@@ -7014,6 +7026,9 @@
       ],
       "Star": [
         "星號"
+      ],
+      "Open command panel": [
+        "開啟命令面板"
       ]
     },
     "Keyboard shortcut section name": {
@@ -7922,6 +7937,12 @@
       ],
       "Your referral link": [
         "您的推薦連結"
+      ],
+      "Block": [
+        "攔截"
+      ],
+      "Synchronize with system": [
+        "與系統同步"
       ]
     },
     "label": {
@@ -8464,6 +8485,9 @@
       ],
       "Spam": [
         "垃圾郵件"
+      ],
+      "Block": [
+        "攔截"
       ]
     },
     "New Label form": {
@@ -10343,6 +10367,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "我們所有具有最高限制的進階版服務：100 個電子郵件地址、支援 10 個自訂網域、無限制的隱藏 Hide-my-email 別名、行事曆分享、加密雲端儲存與檔案分享等。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 1 個自訂電子郵件網域、10 個電子郵件地址、10 個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 3 個自訂電子郵件網域、15 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Spotlight": {
@@ -11736,6 +11769,18 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "您已獲邀試用 ${ MAIL_APP_NAME }"
+      ],
+      "(active)": [
+        "（啟用）"
+      ],
+      "Add to block list": [
+        "加入至攔截清單"
+      ],
+      "Day theme": [
+        "白天佈景主題"
+      ],
+      "Night theme": [
+        "夜間佈景主題"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11944,6 +11989,9 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "您的外部帳號可能已達其24小時頻寬限制。${ BRAND_NAME } 將會盡快重試匯入。"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "當您的系統設定為「淺色模式」時，將會啟用選定的佈景主題"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12385,6 +12433,31 @@
       ],
       "Yearly, ${ untilString }": [
         "每年，${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "系統預設值"
+      ],
+      "Theme default": [
+        "佈景主題預設值"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中（建議）"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "非常大"
+      ],
+      "Very small": [
+        "非常小"
       ]
     }
   }

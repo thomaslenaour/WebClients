@@ -78,7 +78,7 @@
         "Adresse oder Domain hinzufügen"
       ],
       "Add calendar from URL": [
-        "Kalender mittels URL hinzufügen"
+        "Kalender über URL hinzufügen"
       ],
       "Add condition": [
         "Bedingung hinzufügen"
@@ -970,6 +970,12 @@
       ],
       "Zoom out": [
         "Verkleinern"
+      ],
+      "Allow": [
+        "Erlauben"
+      ],
+      "Continue anyway": [
+        "Trotzdem fortfahren"
       ]
     },
     "action": {
@@ -2772,6 +2778,12 @@
       ],
       "${ name } successfully deleted": [
         "${ name } erfolgreich gelöscht"
+      ],
+      "${ name } failed to move to block list": [
+        "${ name } konnte nicht in deine Sperrliste verschoben werden."
+      ],
+      "${ name } moved to block list": [
+        "${ name } in Sperrliste verschoben"
       ]
     },
     "Downgrade account reason": {
@@ -3317,10 +3329,10 @@
         "Die hochgeladenen Dateien sind keine gültige privaten Schlüssel. Bitte überprüfe die Dateien und versuche es erneut."
       ],
       "Username must begin with a letter or digit": [
-        "Der Benutzername muss mit einem Buchstaben oder einer Ziffer beginnen"
+        "Der Benutzername muss mit einem Buchstaben oder einer Ziffer beginnen."
       ],
       "Username must end with a letter or digit": [
-        "Der Benutzername muss mit einem Buchstaben oder einer Ziffer enden"
+        "Der Benutzername muss mit einem Buchstaben oder einer Ziffer enden."
       ],
       "Validation error": [
         "Überprüfungsfehler"
@@ -4040,7 +4052,7 @@
         "Greife auf blockierte Inhalte zu und surfe privat. Umfasst 2700 Server in über 65 Ländern, die Verbindung von bis zu 10 Geräten, weltweite Streaming-Dienste, Malware- und Werbeblocker und mehr."
       ],
       "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
-        "Beinhaltet Unterstützung für 3 eigene E-Mail-Domains, 90 E-Mail-Adressen, unbegrenzte Hide My Email-Aliasse, Kalenderfreigabe und mehr."
+        "Beinhaltet Unterstützung für 3 eigene E-Mail-Domains, 90 E-Mail-Adressen, unbegrenzte Hide-my-email-Aliasse, Kalenderfreigabe und mehr."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Sichere deine Dateien mit verschlüsseltem Cloud-Speicher. Beinhaltet automatische Synchronisierung, verschlüsselte Dateifreigabe und mehr."
@@ -4262,6 +4274,36 @@
       ],
       "Spam:": [
         "Spam:"
+      ],
+      "Allow:": [
+        "Erlauben:"
+      ],
+      "Block:": [
+        "Sperren:"
+      ],
+      "Take control over what lands in your inbox by creating the following lists:": [
+        "Behalte die Kontrolle darüber, was in deinem Posteingang landet, indem du die folgenden Listen erstellst:"
+      ],
+      "Take control over what lands in your organization members' inboxes by creating the following lists:": [
+        "Übernimm die Kontrolle darüber, was in den Posteingängen der Mitglieder deiner Organisation landet, indem du die folgenden Listen erstellst:"
+      ],
+      "These lists apply to all accounts in your organization. Members can create their own individual filters, but won't be able to override addresses or domains you blocked.": [
+        "Diese Listen gelten für alle Konten in deiner Organisation. Mitglieder können ihre eigenen individuellen Filter erstellen, aber sie können die von dir blockierten Adressen oder Domänen nicht außer Kraft setzen."
+      ],
+      "To ensure critical messages don't end up in spam and getting missed": [
+        "Um sicherzustellen, dass wichtige Nachrichten nicht im Spam landen und übersehen werden:"
+      ],
+      "To prevent junk mail from clogging up inboxes": [
+        "Um zu verhindern, dass unerwünschte E-Mails deinen Posteingang überfüllen"
+      ],
+      "To prevent junk mail from clogging up your inbox": [
+        "Um zu verhindern, dass unerwünschte E-Mails deinen Posteingang überfüllen"
+      ],
+      "To stop phishing or suspicious emails from entering your email system": [
+        "Um Phishing- oder verdächtige E-Mails daran zu hindern, in dein E-Mail-System zu gelangen:"
+      ],
+      "To stop phishing or suspicious emails from entering your organization's email system": [
+        "Um Phishing- oder verdächtige E-Mails daran zu hindern, in das E-Mail-System deiner Organisation zu gelangen:"
       ]
     },
     "Font Face Default": {
@@ -5386,7 +5428,7 @@
         "Ziehe Dateien hierher, um sie hochzuladen"
       ],
       "Drop to import": [
-        "Loslassen zum Importieren"
+        "Ablegen zum Importieren"
       ],
       "Each code can only be used once": [
         "Jeder Code kann nur einmal verwendet werden"
@@ -6773,6 +6815,9 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Dein Abonnement wird von Mozilla verwaltet. Bitte kontaktiere den Mozilla-Support."
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "Verbessere dein ${ BRAND_NAME }-Erlebnis, indem du die Anwendung an deine Bedürfnisse anpasst."
       ]
     },
     "info": {
@@ -7095,6 +7140,9 @@
       ],
       "Star": [
         "Markieren"
+      ],
+      "Open command panel": [
+        "Befehlspanel öffnen"
       ]
     },
     "Keyboard shortcut section name": {
@@ -8007,6 +8055,36 @@
       ],
       "Your referral link": [
         "Dein Empfehlungslink"
+      ],
+      "Allow": [
+        "Erlauben"
+      ],
+      "Block": [
+        "Sperren"
+      ],
+      "Card information": [
+        "Karteninformationen"
+      ],
+      "Default scrollbars": [
+        "Standard-Bildlaufleisten"
+      ],
+      "Disable animations": [
+        "Animationen deaktivieren"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Ablaufdatum (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Schriftart"
+      ],
+      "Font size": [
+        "Schriftgröße"
+      ],
+      "Security code (${ codeName })": [
+        "Sicherheitscode (${ codeName })"
+      ],
+      "Synchronize with system": [
+        "Mit System synchronisieren"
       ]
     },
     "label": {
@@ -8559,6 +8637,12 @@
       ],
       "Spam": [
         "Spam"
+      ],
+      "Allow": [
+        "Erlauben"
+      ],
+      "Block": [
+        "Sperren"
       ]
     },
     "New Label form": {
@@ -8691,8 +8775,8 @@
         "${ n } Ordner und Kategorien"
       ],
       "${ n } Hide-my-email alias": [
-        "${ n } Hide My Email-Alias",
-        "${ n } Hide My Email-Aliasse"
+        "${ n } Hide-my-email-Alias",
+        "${ n } Hide-my-email-Aliasse"
       ],
       "${ n } label": [
         "${ n } Kategorie",
@@ -8820,7 +8904,7 @@
         "Vereinbarung zur Datenverarbeitung im Rahmen der DSGVO"
       ],
       "Hide-my-email aliases": [
-        "Hide My Email-Aliasse"
+        "Hide-my-email-Aliasse"
       ],
       "High-speed streaming": [
         "Hochgeschwindigkeits-Steaming"
@@ -8921,7 +9005,7 @@
         "Unbegrenzte Anzahl an Ordnern, Kategorien und Filtern."
       ],
       "Unlimited hide-my-email aliases": [
-        "Unbegrenzte Hide My Email-Aliasse"
+        "Unbegrenzte Hide-my-email-Aliasse"
       ],
       "Unlimited labels": [
         "Unbegrenzte Anzahl von Kategorien"
@@ -10465,13 +10549,13 @@
         "Greife von überall aus auf Inhalte von Streaming-Diensten zu, darunter Netflix, Disney+ und Prime Video."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Alle unsere Premium-Services mit ihren höchsten Limits: 100 E-Mail-Adressen, Unterstützung für 10 eigene Domains, unbegrenzte Hide My Email-Aliasse, Kalenderfreigabe, verschlüsselter Cloud-Speicher und Dateifreigabe, und vieles mehr."
+        "Alle unsere Premium-Services mit ihren höchsten Limits: 100 E-Mail-Adressen, Unterstützung für 10 eigene Domains, unbegrenzte Hide-my-email-Aliasse, Kalenderfreigabe, verschlüsselter Cloud-Speicher und Dateifreigabe, und vieles mehr."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Beinhaltet Unterstützung für eine eigene E-Mail-Domain, 10 E-Mail-Adressen, 10 Hide My Email-Aliasse, Kalenderfreigabe und mehr."
+        "Beinhaltet Unterstützung für eine eigene E-Mail-Domain, 10 E-Mail-Adressen, 10 Hide-my-email-Aliasse, Kalenderfreigabe und mehr."
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
-        "Beinhaltet Unterstützung für 3 eigene E-Mail-Domains, 15 E-Mail-Adressen, unbegrenzte Hide My Email-Aliasse, Kalenderfreigabe und mehr."
+        "Beinhaltet Unterstützung für 3 eigene E-Mail-Domains, 15 E-Mail-Adressen, unbegrenzte Hide-my-email-Aliasse, Kalenderfreigabe und mehr."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
         "Perfekt geeignet für Familien oder kleine Teams; jeder kann über seinen eigenen Posteingang und Aliase verfügen. Erfordert eine eigene Domain."
@@ -11907,6 +11991,21 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Du wurdest eingeladen, ${ MAIL_APP_NAME } zu testen."
+      ],
+      "(active)": [
+        "(aktiv)"
+      ],
+      "Accessibility": [
+        "Barrierefreiheit"
+      ],
+      "Add to allow list": [
+        "Zur Freigabeliste hinzufügen"
+      ],
+      "Add to block list": [
+        "Zur Sperrliste hinzufügen"
+      ],
+      "Spam, block, and allow lists": [
+        "Spam-, Sperr- und Freigabelisten"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12115,6 +12214,12 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Dein externes Konto könnte sein 24-Stunden-Bandbreitenlimit erreicht haben. ${ BRAND_NAME } wird versuchen, den Import so bald wie möglich fortzusetzen."
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "Verwende die standardmäßigen Bildlaufleisten deines Browsers. Diese sind normalerweise größer und leichter zu bedienen."
+      ],
+      "When enabled, animations and transitions will not show": [
+        "Wenn aktiviert, werden Animationen und Übergänge nicht angezeigt."
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12166,7 +12271,7 @@
     },
     "Upgrade": {
       "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
-        "Upgrade auf ${ passPlusPlanName } für unbegrenzte Hide My Email-Aliasse"
+        "Upgrade auf ${ passPlusPlanName } für unbegrenzte Hide-my-email-Aliasse"
       ],
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Auf ${ planName } umsteigen, um bis zu ${ n } Gerät auf einmal mit dem VPN verbinden zu können",
@@ -12593,6 +12698,28 @@
       ],
       "Yearly, ${ untilString }": [
         "Jährlich, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systemvorgabe"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Groß"
+      ],
+      "Medium (recommended)": [
+        "Mittel (empfohlen)"
+      ],
+      "Small": [
+        "Klein"
+      ],
+      "Very large": [
+        "Sehr groß"
+      ],
+      "Very small": [
+        "Sehr klein"
       ]
     }
   }

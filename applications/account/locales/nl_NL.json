@@ -2769,6 +2769,9 @@
       ],
       "${ name } successfully deleted": [
         "${ name } succesvol verwijderd"
+      ],
+      "${ name } moved to allow list": [
+        "${ name } verplaatst naar toegestane lijst"
       ]
     },
     "Downgrade account reason": {
@@ -4038,6 +4041,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Beveilig uw bestanden met versleutelde cloudopslag. Inclusief automatische synchronisatie, versleuteld bestanden delen en meer."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 90 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
       ]
     },
     "Feature": {
@@ -6755,6 +6761,15 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Uw abonnement wordt beheerd door Mozilla. Neem contact op met Mozilla support."
+      ],
+      "Drop file here to upload": [
+        "Sleep bestand hier om te uploaden"
+      ],
+      "Drop to import": [
+        "Neerzetten om te importeren"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Uw bestanden worden versleuteld en vervolgens opgeslagen"
       ]
     },
     "info": {
@@ -7077,6 +7092,9 @@
       ],
       "Star": [
         "Ster"
+      ],
+      "Open command panel": [
+        "Bedieningspaneel openen"
       ]
     },
     "Keyboard shortcut section name": {
@@ -8673,8 +8691,8 @@
         "${ n } mappen en labels"
       ],
       "${ n } Hide-my-email alias": [
-        "${ n } Hide-My-Email alias",
-        "${ n } Hide-My-Email aliassen"
+        "${ n } Hide-my-email-alias",
+        "${ n } Hide-my-email-aliassen"
       ],
       "${ n } label": [
         "${ n } label",
@@ -8900,7 +8918,7 @@
         "Ongelimiteerde mappen, labels en filters"
       ],
       "Unlimited hide-my-email aliases": [
-        "Onbeperkt aantal Hide-My-Email alliassen"
+        "Onbeperkt aantal Hide-My-Email-alliassen"
       ],
       "Unlimited labels": [
         "Onbeperkt aantal labels"
@@ -8940,6 +8958,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Kluis en delen van items (binnenkort beschikbaar)"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email-aliassen"
       ]
     },
     "new_plans: feature info": {
@@ -10454,6 +10475,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Opslagruimte wordt gedeeld tussen ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Al onze premium diensten met hun hoogste limieten: 100 e-mailadressen, ondersteuning voor 10 aangepaste domeinen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's, versleutelde cloudopslag, versleuteld bestanden delen en meer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 1 aangepast e-maildomein, 10 e-mailadressen, 10 Hide-my-email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 15 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
       ]
     },
     "Spotlight": {
@@ -12130,7 +12160,7 @@
     },
     "Upgrade": {
       "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
-        "Upgrade naar ${ passPlusPlanName } om onbeperkt Hide-My-Email aliassen te krijgen"
+        "Upgrade naar ${ passPlusPlanName } om onbeperkt Hide-My-Email-aliassen te krijgen"
       ],
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Upgrade naar ${ planName } om tot ${ n } apparaat tegelijkertijd met VPN te verbinden",

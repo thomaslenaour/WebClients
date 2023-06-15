@@ -2760,6 +2760,9 @@
       ],
       "${ name } successfully deleted": [
         "${ name } berhasil dihapus"
+      ],
+      "${ name } moved to allow list": [
+        "${ name } dipindahkan ke daftar izin"
       ]
     },
     "Downgrade account reason": {
@@ -4021,7 +4024,7 @@
         "Beserta 2700 server di 65+ negara, hubungan sampai 10 perangkat, akses layanan streaming seluruh dunia, pemblokiran malware dan iklan, dan lebih banyak lagi."
       ],
       "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
-        "Beserta dukungan untuk 3 domain surel kustom, 90 alamat surel, alias Hide My Email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
+        "Beserta dukungan untuk 3 domain surel kustom, 90 alamat surel, alias Hide-my-email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Amankan berkas Anda dengan penyimpanan awan terenkripsi. Beserta sinkronisasi otomatis, pembagian berkas terenkripsi, dan lebih banyak lagi."
@@ -7020,6 +7023,9 @@
       ],
       "Star": [
         "Bintang"
+      ],
+      "Open command panel": [
+        "Buka panel perintah"
       ]
     },
     "Keyboard shortcut section name": {
@@ -8592,7 +8598,7 @@
         "${ n } folder and label"
       ],
       "${ n } Hide-my-email aliases": [
-        "${ n } alias Hide My Email"
+        "${ n } alias Hide-my-email"
       ],
       "${ n } labels": [
         "${ n } label"
@@ -8715,7 +8721,7 @@
         "Persetujuan pemrosesan data GDPR"
       ],
       "Hide-my-email aliases": [
-        "Alias Hide My Email"
+        "Alias Hide-my-email"
       ],
       "High-speed streaming": [
         "Streaming berkecepatan tinggi"
@@ -8851,6 +8857,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Pembagian brankas dan item (segera hadir)"
+      ],
+      "Unlimited hide-my-email aliases": [
+        "Alias Hide-my-email tidak terbatas"
       ]
     },
     "new_plans: feature info": {
@@ -10336,13 +10345,13 @@
         "Akses konten di layanan streaming, termasuk Netflix, Disney+, dan Prime Video, dari mana pun."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Semua layanan premium kami dengan batas tertinggi: 100 alamat surel, dukungan 10 domain kustom, alias Hide My Email tidak terbatas, pembagian kalender, penyimpanan awan dan pembagian berkas terenkripsi, dan lebih banyak lagi."
+        "Semua layanan premium kami dengan batas tertinggi: 100 alamat surel, dukungan 10 domain kustom, alias Hide-my-email tidak terbatas, pembagian kalender, penyimpanan awan dan pembagian berkas terenkripsi, dan lebih banyak lagi."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Termasuk dukungan untuk 1 domain surel kustom, 10 alamat surel, 10 alias Hide My Email, berbagi kalender, dan lainnya."
+        "Termasuk dukungan untuk 1 domain surel kustom, 10 alamat surel, 10 alias Hide-my-email, berbagi kalender, dan lainnya."
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
-        "Beserta dukungan untuk 3 domain surel kustom, 15 alamat surel, alias Hide My Email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
+        "Beserta dukungan untuk 3 domain surel kustom, 15 alamat surel, alias Hide-my-email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
         "Cocok untuk keluarga atau tim kecil, setiap orang dapat memiliki kotak masuk dan alias mereka sendiri. Membutuhkan domain kustom."
@@ -12008,6 +12017,9 @@
     "Upgrade": {
       "Upgrade to ${ planName } to connect up to ${ n } devices to the VPN at once": [
         "Tingkatkan akun Anda ke ${ planName } untuk dapat menghubungkan ${ n } perangkat ke jaringan VPN secara bersamaan"
+      ],
+      "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
+        "Tingkatkan ke ${ passPlusPlanName } untuk mendapatkan alias Hide-my-email tidak terbatas"
       ]
     },
     "Upgrade notice": {

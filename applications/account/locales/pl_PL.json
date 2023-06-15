@@ -967,6 +967,9 @@
       ],
       "Zoom out": [
         "Pomniejsz"
+      ],
+      "Add address or domain": [
+        "Dodaj adres lub domenę"
       ]
     },
     "action": {
@@ -2781,6 +2784,18 @@
       ],
       "${ name } successfully deleted": [
         "Domena ${ name } została usunięta"
+      ],
+      "${ name } failed to move to allow list": [
+        "Przenoszenie domeny ${ name } do listy dozwolonych nie powiodło się"
+      ],
+      "${ name } failed to move to block list": [
+        "Przenoszenie domeny ${ name } do listy odrzuconych nie powiodło się"
+      ],
+      "${ name } moved to allow list": [
+        "Domena ${ name } została przeniesiona do listy dozwolonych"
+      ],
+      "${ name } moved to block list": [
+        "Domena ${ name } została przeniesiona do listy odrzuconych"
       ]
     },
     "Downgrade account reason": {
@@ -2886,6 +2901,18 @@
       ],
       "${ name } successfully deleted": [
         "Adres ${ name } został usunięty"
+      ],
+      "${ name } failed to move to allow list": [
+        "Przenoszenie adresu ${ name } do listy dozwolonych nie powiodło się"
+      ],
+      "${ name } failed to move to block list": [
+        "Przenoszenie adresu ${ name } do listy odrzuconych nie powiodło się"
+      ],
+      "${ name } moved to allow list": [
+        "Adres ${ name } został przeniesiony do listy dozwolonych"
+      ],
+      "${ name } moved to block list": [
+        "Adres ${ name } został przeniesiony do listy odrzuconych"
       ]
     },
     "Email subject": {
@@ -4293,6 +4320,9 @@
       ],
       "Search list": [
         "Przeszukaj"
+      ],
+      "Spam:": [
+        "Spam:"
       ]
     },
     "Font Face Default": {
@@ -6887,6 +6917,15 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Twoja subskrypcja jest zarządzana przez Mozillę. Skontaktuj się z pomocą techniczną Mozilli."
+      ],
+      "Drop file here to upload": [
+        "Upuść, aby przesłać"
+      ],
+      "Drop to import": [
+        "Upuść, aby zaimportować"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Twoje pliki przed zapisaniem zostaną zaszyfrowane"
       ]
     },
     "info": {
@@ -7209,6 +7248,9 @@
       ],
       "Star": [
         "Oznacz gwiazdką"
+      ],
+      "Open command panel": [
+        "Otwórz panel poleceń"
       ]
     },
     "Keyboard shortcut section name": {
@@ -8129,6 +8171,9 @@
       ],
       "Your referral link": [
         "Twój link polecający"
+      ],
+      "Card information": [
+        "Informacje o karcie"
       ]
     },
     "label": {
@@ -8853,10 +8898,10 @@
         "${ n } folderów i etykiet"
       ],
       "${ n } Hide-my-email alias": [
-        "${ n } alias Hide My Email",
-        "${ n } aliasy Hide My Email",
-        "${ n } aliasów Hide My Email",
-        "${ n } aliasów Hide My Email"
+        "${ n } alias Hide-my-email",
+        "${ n } aliasy Hide-my-email",
+        "${ n } aliasów Hide-my-email",
+        "${ n } aliasów Hide-my-email"
       ],
       "${ n } label": [
         "${ n } etykieta",
@@ -8994,7 +9039,7 @@
         "Umowa przetwarzania danych zgodnie z RODO"
       ],
       "Hide-my-email aliases": [
-        "Aliasy Hide My Email"
+        "Aliasy Hide-my-email"
       ],
       "High-speed streaming": [
         "Szybki streaming"
@@ -9099,7 +9144,7 @@
         "Nieograniczona liczba folderów, etykiet i filtrów"
       ],
       "Unlimited hide-my-email aliases": [
-        "Nieograniczona liczba aliasów Hide My Email"
+        "Nieograniczona liczba aliasów Hide-my-email"
       ],
       "Unlimited labels": [
         "Nieograniczona liczba etykiet"
@@ -11240,6 +11285,12 @@
       ],
       "vCard field": [
         "Pole vCard"
+      ],
+      "Email address or domain": [
+        "Adres e-mail lub domena"
+      ],
+      "List": [
+        "Lista"
       ]
     },
     "TableRow": {
@@ -12159,6 +12210,15 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Otrzymujesz zaproszenie do wypróbowania poczty ${ MAIL_APP_NAME }"
+      ],
+      "Add to allow list": [
+        "Dodaj do listy dozwolonych"
+      ],
+      "Add to block list": [
+        "Dodaj do listy odrzuconych"
+      ],
+      "Spam, block, and allow lists": [
+        "Spam, listy odrzuconych i dozwolonych"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12418,7 +12478,7 @@
     },
     "Upgrade": {
       "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
-        "Ulepsz do planu ${ passPlusPlanName }, aby uzyskać nieograniczoną liczbę aliasów Hide My Email"
+        "Ulepsz do planu ${ passPlusPlanName }, aby uzyskać nieograniczoną liczbę aliasów Hide-my-email"
       ],
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Ulepsz do planu ${ planName }, aby połączyć do ${ n } urządzenia VPN jednocześnie",

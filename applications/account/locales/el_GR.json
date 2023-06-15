@@ -869,6 +869,12 @@
       ],
       "Zoom out": [
         "Σμίκρυνση"
+      ],
+      "Add public holidays": [
+        "Προσθήκη αργιών"
+      ],
+      "Select time zone": [
+        "Επιλογή ζώνης ώρας"
       ]
     },
     "Action for user session": {
@@ -1228,6 +1234,9 @@
       ],
       "Unsupported calendar format": [
         "Μη υποστηριζόμενη μορφή ημερολογίου"
+      ],
+      "Calendar is syncing: it may take several minutes for all of its events to show up.": [
+        "Το ημερολόγιο συγχρονίζεται: μπορεί να χρειαστούν αρκετά λεπτά για να εμφανιστούν όλα τα συμβάντα του."
       ]
     },
     "Calendar table settings button tooltip": {
@@ -3022,6 +3031,9 @@
       ],
       "Zero keys reactivated": [
         "Τα Μηδενικά κλειδιά ενεργοποιήθηκαν ξανά"
+      ],
+      "You already added this holidays calendar": [
+        "Έχετε ήδη προσθέσει αυτό το εορτολόγιο"
       ]
     },
     "Error importing calendar": {
@@ -5523,6 +5535,12 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Η συνδρομή σας διαχειρίζεται απο το Mozilla. Επικοινωνήστε με την υποστήριξη του Mozilla."
+      ],
+      "Based on your time zone": [
+        "Βασισμένο στη ζώνη ώρας σας"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "Το πρόγραμμά σας περιορίζεται σε 10 εκδόσεις για έως και 7 ημέρες"
       ]
     },
     "info": {
@@ -6678,6 +6696,20 @@
       ],
       "Your referral link": [
         "Ο σύνδεσμος παραπομπής σας"
+      ],
+      "${ nbDay } day": [
+        "${ nbDay } ημέρα",
+        "${ nbDay } ημέρες"
+      ],
+      "${ nbYear } year": [
+        "${ nbYear } έτος",
+        "${ nbYear } έτη"
+      ],
+      "Language": [
+        "Γλώσσα"
+      ],
+      "URL": [
+        "Διεύθυνση URL"
       ]
     },
     "label": {
@@ -7008,6 +7040,15 @@
       ],
       "How to import emails from Yahoo": [
         "Πώς να εισάγετε email από το Yahoo"
+      ],
+      "Add public holidays": [
+        "Προσθήκη αργιών"
+      ],
+      "Edit calendar": [
+        "Επεξεργασία ημερολογίου"
+      ],
+      "Get a country's official public holidays calendar.": [
+        "Αποκτήστε το επίσημο ημερολόγιο αργιών μιας χώρας."
       ]
     },
     "Modal title and action": {
@@ -8043,6 +8084,9 @@
       ],
       "Type text or keyword": [
         "Πληκτρολόγηση κειμένου ή λέξης-κλειδιού"
+      ],
+      "Please select a country": [
+        "Παρακαλούμε επιλέξτε μια χώρα"
       ]
     },
     "Placeholder for custom invoice text": {
@@ -8218,6 +8262,9 @@
     "Select search results": {
       "No results found": [
         "Δεν βρέθηκαν αποτελέσματα"
+      ],
+      "Check your spelling or select a country from the list.": [
+        "Ελέγξτε την ορθογραφία σας ή επιλέξτε μια χώρα από τη λίστα."
       ]
     },
     "Settings section title": {
@@ -8507,6 +8554,9 @@
     "Subscribe to calendar modal": {
       "Calendar URL": [
         "URL Ημερολογίου"
+      ],
+      "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Other calendars.\n${ kbLink }": [
+        "Για να εγγραφείτε σε ένα εξωτερικό ή δημόσιο ημερολόγιο και τις ενημερώσεις του, εισαγάγετε τη διεύθυνση URL. Μια έκδοση μόνο για ανάγνωση του ημερολογίου θα προστεθεί στα ´Άλλα ημερολόγιά σας.\n${ kbLink }"
       ]
     },
     "Subscribe to calendar modal description": {
@@ -9694,6 +9744,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Έχετε προσκληθεί να δοκιμάσετε το ${ MAIL_APP_NAME }"
+      ],
+      "Version history": [
+        "Ιστορικό εκδόσεων"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -10305,6 +10358,71 @@
       ],
       "Yearly, ${ untilString }": [
         "Ετησίως, ${ untilString }"
+      ]
+    },
+    "Calendar sharing error": {
+      "Failed to retrieve contact information for ${ address }": [
+        "Αποτυχία ανάκτησης πληροφοριών επικοινωνίας για ${ address }"
+      ]
+    },
+    "Calendar subscription not synced error; long version": {
+      "Calendar link is not accessible from outside the calendar provider's ecosystem.": [
+        "Η σύνδεση ημερολογίου δεν είναι προσβάσιμη εκτός του οικοσυστήματος της υπηρεσίας παροχής ημερολογίου."
+      ],
+      "Calendar link is temporarily inaccessible. Please verify that the link from the calendar provider is still valid.": [
+        "Η σύνδεση ημερολογίου δεν είναι προσωρινά προσβάσιμη. Βεβαιωθείτε ότι ο σύνδεσμος από τον πάροχο ημερολογίου εξακολουθεί να ισχύει."
+      ],
+      "More than 12 hours passed since last update — ${ CALENDAR_APP_NAME } will try to update the calendar in a few hours.": [
+        "Έχουν περάσει περισσότερες από 12 ώρες από την τελευταία ενημέρωση — ${ CALENDAR_APP_NAME } θα προσπαθήσει να ενημερώσει το ημερολόγιο σε λίγες ώρες."
+      ]
+    },
+    "Country select label": {
+      "Based on your time zone": [
+        "Βασισμένο στη ζώνη ώρας σας"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "Οι εκπτώσεις βασίζονται στην τυπική μηνιαία τιμολόγηση."
+      ]
+    },
+    "Info; access rights for shared calendar": {
+      "View only": [
+        "Ανάγνωση μόνο"
+      ]
+    },
+    "Notification in holidays calendar modal": {
+      "Adding holidays calendar failed": [
+        "Η προσθήκη ημερολογίου αργιών απέτυχε"
+      ],
+      "Calendar added": [
+        "Το ημερολόγιο προστέθηκε"
+      ]
+    },
+    "Share calendar assistive text": {
+      "To invite non-${ BRAND_NAME } users, share your calendar with a link.": [
+        "Για να προσκαλέσετε μη ${ BRAND_NAME } χρήστες, κοινοποιήστε το ημερολόγιό σας με έναν σύνδεσμο."
+      ]
+    },
+    "Signature verification error when joining calendar": {
+      "Signature verification error": [
+        "Σφάλμα επαλήθευσης υπογραφής"
+      ],
+      "You have enabled address verification for ${ boldSenderEmail }. We couldn't verify the authenticity of this calendar invite. This may be due to changes in the encryption keys of this contact. Please review its advanced PGP settings, or your can ask ${ boldSenderEmail } for a new invite.": [
+        "Έχετε ενεργοποιήσει την επαλήθευση διεύθυνσης για ${ boldSenderEmail }. Δεν μπορέσαμε να επαληθεύσουμε την αυθεντικότητα αυτής της πρόσκλησης ημερολογίου. Αυτό μπορεί να οφείλεται σε αλλαγές στα κλειδιά κρυπτογράφησης αυτής της επαφής. Ελέγξτε τις προηγμένες ρυθμίσεις PGP ή μπορείτε να ζητήσετε από ${ boldSenderEmail } μια νέα πρόσκληση."
+      ]
+    },
+    "Timezone search placeholder": {
+      "Search time zones": [
+        "Αναζήτηση ζώνης ώρας"
+      ]
+    },
+    "Tooltip; share calendar modal ": {
+      "Shared end-to-end encrypted": [
+        "Κοινόχρηστη κρυπτογράφηση από άκρο σε άκρο"
+      ],
+      "Shared end-to-end encrypted with verified contact": [
+        "Κοινόχρηστη κρυπτογράφηση από άκρο σε άκρο με επαληθευμένη επαφή"
       ]
     }
   }

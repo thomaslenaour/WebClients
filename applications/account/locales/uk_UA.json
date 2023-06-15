@@ -1195,7 +1195,7 @@
     },
     "Bug category": {
       "Application problem": [
-        "Проблема з додатком"
+        "Проблема з програмою"
       ],
       "Bridge problem": [
         "Проблема з Bridge"
@@ -2787,6 +2787,9 @@
       ],
       "${ name } successfully deleted": [
         "${ name } успішно видалено"
+      ],
+      "${ name } moved to allow list": [
+        "${ name } переміщено до списку дозволених"
       ]
     },
     "Downgrade account reason": {
@@ -4070,6 +4073,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Безпечно зберігайте свої файли у зашифрованому хмарному сховищі з автоматичною синхронізацією, зашифрованим спільним доступом та іншими можливостями."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Включає підтримку 3 власних доменів, 90 адрес пошти, необмежену кількість псевдонімів Hide-my-email, спільний доступ до календаря та інші можливості."
       ]
     },
     "Feature": {
@@ -6893,6 +6899,18 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Ваша передплата керується Mozilla. Зв'яжіться зі службою підтримки Mozilla."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Налаштуйте зовнішній вигляд застосунків ${ BRAND_NAME }."
+      ],
+      "Drop file here to upload": [
+        "Перетягніть файл сюди, щоб вивантажити"
+      ],
+      "Drop to import": [
+        "Перетягніть, щоб імпортувати"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Ваші файли буде зашифровано, а потім збережено"
       ]
     },
     "info": {
@@ -7215,6 +7233,9 @@
       ],
       "Star": [
         "Зірочка"
+      ],
+      "Open command panel": [
+        "Відкрити командну панель"
       ]
     },
     "Keyboard shortcut section name": {
@@ -8135,6 +8156,9 @@
       ],
       "Your referral link": [
         "Ваше реферальне посилання"
+      ],
+      "Synchronize with system": [
+        "Синхронізувати з системою"
       ]
     },
     "label": {
@@ -8859,10 +8883,10 @@
         "${ n } тек і міток"
       ],
       "${ n } Hide-my-email alias": [
-        "${ n } псевдонім Hide My Email",
-        "${ n } псевдоніми Hide My Email",
-        "${ n } псевдонімів Hide My Email",
-        "${ n } псевдонімів Hide My Email"
+        "${ n } псевдонім Hide-my-email",
+        "${ n } псевдоніми Hide-my-email",
+        "${ n } псевдонімів Hide-my-email",
+        "${ n } псевдонімів Hide-my-email"
       ],
       "${ n } label": [
         "${ n } мітка",
@@ -9102,7 +9126,7 @@
         "Необмежена кількість тек, міток і фільтрів"
       ],
       "Unlimited hide-my-email aliases": [
-        "Необмежена кількість псевдонімів Hide My Email"
+        "Необмежена кількість псевдонімів Hide-my-email"
       ],
       "Unlimited labels": [
         "Необмежена кількість міток"
@@ -9142,6 +9166,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Спільний доступ до сховища та елементів (незабаром)"
+      ],
+      "Hide-my-email aliases": [
+        "Псевдоніми Hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -10694,6 +10721,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Простір сховища спільний для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } та ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Всі найкращі можливості наших преміум функцій: 100 адрес пошти, підтримка 10 власних доменів, необмежена кількість псевдонімів Hide-my-email, спільний доступ до календаря, зашифроване хмарне сховище, спільний доступ до файлів і багато іншого."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Включає підтримку 1 власного домену, 10 адрес пошти, 10 псевдонімів Hide-my-email, спільний доступ до календаря та інші можливості."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Включає підтримку 3 власних доменів, 15 адрес пошти, необмежену кількість псевдонімів Hide-my-email, спільний доступ до календаря та інші можливості."
       ]
     },
     "Spotlight": {
@@ -12159,6 +12195,15 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ви запрошені спробувати ${ MAIL_APP_NAME }"
+      ],
+      "(active)": [
+        "(активно)"
+      ],
+      "Day theme": [
+        "Світла тема"
+      ],
+      "Night theme": [
+        "Темна тема"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12367,6 +12412,9 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Схоже, ваш зовнішній обліковий запис досягнув 24-годинного обмеження пропускної здатності. ${ BRAND_NAME } спробує відновити імпортування одразу, як це стане можливим."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Вибрана тема буде активною, коли у вашій системі встановлено \"світлий режим\""
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12418,7 +12466,7 @@
     },
     "Upgrade": {
       "Upgrade to ${ passPlusPlanName } to get unlimited hide-my-email aliases": [
-        "Передплатіть ${ passPlusPlanName }, щоб отримати необмежену кількість псевдонімів Hide My Email"
+        "Передплатіть ${ passPlusPlanName }, щоб отримати необмежену кількість псевдонімів Hide-my-email"
       ],
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
         "Передплатіть ${ planName }, щоб під'єднати ${ n } пристрій до VPN за раз",
@@ -12919,6 +12967,31 @@
       ],
       "Yearly, ${ untilString }": [
         "Щороку, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Системна за замовчуванням"
+      ],
+      "Theme default": [
+        "Тема за замовчуванням"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Великий"
+      ],
+      "Medium (recommended)": [
+        "Середній (рекомендовано)"
+      ],
+      "Small": [
+        "Маленький"
+      ],
+      "Very large": [
+        "Дуже великий"
+      ],
+      "Very small": [
+        "Дуже маленький"
       ]
     }
   }
