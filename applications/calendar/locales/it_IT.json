@@ -574,6 +574,21 @@
       ],
       "Yes, I'll attend": [
         "Sì, parteciperò"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Sono ammessi al massimo 100 contatti per ogni gruppo di contatti."
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Non è possibile caricare l'immagine con la protezione da tracciamento attiva."
+      ],
+      "Image will be loaded without a proxy": [
+        "L'immagine verrà caricata senza proxy."
+      ],
+      "Load": [
+        "Carica"
+      ],
+      "New message": [
+        "Nuovo messaggio"
       ]
     },
     "Action subline": {
@@ -1991,6 +2006,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puoi selezionare i contatti che non vuoi unire né mantenere per l'eliminazione.\nLa cancellazione avverrà solo dopo aver fatto clic sul pulsante Unisci"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Logo Proton Mail e un segno più"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Risparmia tempo inviando email o inviti a tutti contemporaneamente, una funzione premium tra molte altre. Passa al piano superiore oggi."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2455,6 +2476,15 @@
       ],
       "Your import will not be processed.": [
         "La tua importazione non verrà elaborata."
+      ],
+      "Cannot export this contact": [
+        "Impossibile esportare questo contatto"
+      ],
+      "Username must begin with a letter or digit": [
+        "Il nome utente deve iniziare con una lettera o un numero."
+      ],
+      "Username must end with a letter or digit": [
+        "Il nome utente deve terminare con una lettera o un numero/"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2776,6 +2806,9 @@
       ],
       "View the invitations": [
         "Guarda gli inviti"
+      ],
+      "Decline invitation": [
+        "Rifiuta l'invito"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2897,6 +2930,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Proteggi i tuoi file con l'archiviazione su cloud cifrata. Include la sincronizzazione automatica, la condivisione cifrata dei file e altro ancora."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Include il supporto per 3 domini email personalizzati, 90 indirizzi email, alias Hide-my-email illimitati, condivisione del calendario e altro ancora."
       ]
     },
     "Feedback Modal Title": {
@@ -3954,6 +3990,30 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Il fuso orario di sistema sembra essere cambiato a ${ timezone }. Vuoi aggiornare la tua preferenza di fuso orario?"
+      ],
+      "Based on your time zone": [
+        "In base al fuso orario"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Il contatto è assegnato al gruppo ${ contactGroupName }."
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Il contatto non è assegnato al gruppo ${ contactGroupName }."
+      ],
+      "Drop file here to upload": [
+        "Trascina qui i file da caricare."
+      ],
+      "Drop to import": [
+        "Trascina per importare"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Hai raggiunto il numero massimo d'indirizzi nel gruppo o gruppi di contatti:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Hai raggiunto il numero massimo d'indirizzi nel gruppo di contatti."
+      ],
+      "Your files will be encrypted and then saved": [
+        "I tuoi file verranno crittografati e poi salvati."
       ]
     },
     "Info on errors": {
@@ -4368,6 +4428,9 @@
       ],
       "Your password (admin)": [
         "La tua password (admin)"
+      ],
+      "Synchronize with system": [
+        "Sincronizza con il sistema"
       ]
     },
     "Label for contact group color": {
@@ -4757,6 +4820,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Calendario aggiunto"
+      ],
+      "Adding holidays calendar failed": [
+        "Aggiunta del calendario dei giorni festivi non riuscita"
       ]
     },
     "Notification in share calendar modal": {
@@ -5493,6 +5559,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Lo spazio d'archiviazione è condiviso tra ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } e ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Tutti i nostri servizi premium con il massimo dei limiti: 100 indirizzi email, supporto per 10 domini personalizzati, alias Hide-my-email illimitati, condivisione del calendario, archiviazione su cloud e file sharing cifrati e altro ancora."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Include il supporto per 1 dominio email personalizzato, 10 indirizzi email, 10 alias Hide-my-email, condivisione del calendario e altro ancora."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Include il supporto per 3 domini email personalizzati, 15 indirizzi email, alias Hide-my-email illimitati, condivisione del calendario e altro ancora."
       ]
     },
     "Spotlight": {
@@ -6155,6 +6230,25 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "La tua prova gratuita di Mail Plus termina il giorno ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } indirizzo email",
+        "${ emailsCount } indirizzi email"
+      ],
+      "(active)": [
+        "(attivo)"
+      ],
+      "Cannot add more addresses": [
+        "Impossibile aggiungere più indirizzi"
+      ],
+      "Day theme": [
+        "Tema giorno"
+      ],
+      "Night theme": [
+        "Tema notte"
+      ],
+      "Unlock contacts groups": [
+        "Sblocca gruppi di contatti"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6236,6 +6330,12 @@
       ],
       "You do not have any contacts to export": [
         "Non hai alcun contatto da esportare"
+      ],
+      "The image could not be loaded": [
+        "Impossibile caricare l’immagine."
+      ],
+      "The image could not be loaded using proxy": [
+        "Impossibile caricare l’immagine usando il proxy."
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6588,6 +6688,84 @@
       ],
       "Yearly, ${ untilString }": [
         "Annualmente, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Predefinito di sistema"
+      ],
+      "Theme default": [
+        "Tema predefinito"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Grande"
+      ],
+      "Medium (recommended)": [
+        "Medio (consigliato)"
+      ],
+      "Small": [
+        "Piccolo"
+      ],
+      "Very large": [
+        "Molto grande"
+      ],
+      "Very small": [
+        "Molto piccolo"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Effettua l'upgrade ora"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Cancella automaticamente messaggi indesiderati e cestinati"
+      ],
+      "Custom email domains": [
+        "Domini email personalizzati"
+      ],
+      "Hide-my-email aliases": [
+        "Alias Hide-my-email"
+      ],
+      "Schedule messages at any time": [
+        "Programma i messaggi per qualsiasi momento"
+      ],
+      "Search message content": [
+        "Cerca il contenuto del messaggio"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Cartelle, etichette e filtri illimitati"
+      ],
+      "Up to 15 email addresses": [
+        "Fino a 15 indirizzi email"
+      ],
+      "Up to 3 TB of storage": [
+        "Fino a 3 TB di spazio di archiviazione"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Crea più indirizzi email per le tue identità online, ad esempio GiovanniShopping@${ domain } per i profili di shopping, GiovanniNotizie@${ domain2 } per gli abbonamenti alle notizie."
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Ottieni un numero illimitato di alias con SimpleLogin di ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Lo spazio di archiviazione è condiviso tra ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, e ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Usa l'indirizzo del tuo dominio email personalizzato, per esempio tu@tuonome.com"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Ufficiale"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Email ufficiale da ${ BRAND_NAME }"
       ]
     }
   }

@@ -574,6 +574,15 @@
       ],
       "Yes, I'll attend": [
         "Ja, jeg deltager"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Billede kunne ikke indlæses med tracker beskyttelse."
+      ],
+      "Load": [
+        "Indlæs"
+      ],
+      "New message": [
+        "Ny besked"
       ]
     },
     "Action subline": {
@@ -1991,6 +2000,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Du kan markere de kontakter til sletning, som du hverken ønsker at flette eller beholde.\nSletning vil kun ske, når der er klikket på fletningsknappen"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "ProtonMail-logo og et plustegn"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Spar tid ved at sende e-mail eller invitationer til alle på en gang, en premium-funktion blandt mange andre. Opgrader i dag."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2455,6 +2470,15 @@
       ],
       "Your import will not be processed.": [
         "Din import vil ikke blive behandlet."
+      ],
+      "Cannot export this contact": [
+        "Kan ikke eksportere denne kontakt"
+      ],
+      "Username must begin with a letter or digit": [
+        "Brugernavn skal begynde med et bogstav eller ciffer"
+      ],
+      "Username must end with a letter or digit": [
+        "Brugernavn skal ende på et bogstav eller ciffer"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3899,6 +3923,15 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Din systemtidszone ser ud til at være ændret til ${ timezone }. Vil du opdatere din tidszone præferencer?"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kontakt tilføjet til gruppen ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kontakt fjernet fra gruppen ${ contactGroupName }"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Du har nået det maksimale antal adresser i kontaktgruppen."
       ]
     },
     "Info on errors": {
@@ -6031,6 +6064,13 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Din Mail Plus prøveperiode slutter ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mailadresse",
+        "${ emailsCount } e-mailadresser"
+      ],
+      "Cannot add more addresses": [
+        "Kan ikke tilføje flere adresser"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6112,6 +6152,9 @@
       ],
       "You do not have any contacts to export": [
         "Du har ingen kontakter at eksportere"
+      ],
+      "The image could not be loaded": [
+        "Billedet kunne ikke indlæses"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6464,6 +6507,56 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligt, ${ untilString }"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Opgradér nu"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Fjern automatisk spam og slettede beskeder"
+      ],
+      "Custom email domains": [
+        "Brugerdefinerede e-maildomæner"
+      ],
+      "Schedule messages at any time": [
+        "Planlæg beskeder til ethvert tidspunkt"
+      ],
+      "Search message content": [
+        "Søg i beskedindhold"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Ubegrænsede mapper, etiketter og filtre"
+      ],
+      "Up to 15 email addresses": [
+        "Op til 15 e-mailadresser"
+      ],
+      "Up to 3 TB of storage": [
+        "Op til 3 TB lagerplads"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Opret flere e-mailadresser for dine online identiteter, f.eks. JensShopper@${ domain } for shoppingkonto, JensNyheder@${ domain2 } til nyhedsabonnementer."
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Få ubegrænsede aliaser med SimpleLogin fra ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Brug din egen brugerdefinerede e-mail-domæneadresse, f.eks. dig@ditnavn.com"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Officiel"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Officiel e-mail fra ${ BRAND_NAME }"
       ]
     }
   }

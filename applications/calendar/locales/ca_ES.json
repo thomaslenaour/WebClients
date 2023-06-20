@@ -574,6 +574,21 @@
       ],
       "Yes, I'll attend": [
         "Sí, hi assistiré"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "El nombre màxim de contactes per grup de contactes és de 100."
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "La imatge no s'ha pogut carregar amb la protecció contra el rastreig."
+      ],
+      "Image will be loaded without a proxy": [
+        "La imatge es carregarà sense proxy."
+      ],
+      "Load": [
+        "Carrega"
+      ],
+      "New message": [
+        "Nou missatge"
       ]
     },
     "Action subline": {
@@ -1991,6 +2006,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Podeu marcar per suprimir els contactes que no voleu ni fusionar ni conservar.\nLa supressió només es farà un cop es faci clic al botó de combinació"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Logo de Proton Mail i un signe de més"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Estalvieu temps enviant correus electrònics o invitacions a tothom alhora, una característica prèmium entre moltes altres. Milloreu avui."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2455,6 +2476,15 @@
       ],
       "Your import will not be processed.": [
         "La vostra importació no es processarà."
+      ],
+      "Cannot export this contact": [
+        "No es pot exportar aquest contacte."
+      ],
+      "Username must begin with a letter or digit": [
+        "El nom d'usuari ha de començar amb una lletra o un dígit"
+      ],
+      "Username must end with a letter or digit": [
+        "El nom d'usuari ha d'acabar amb una lletra o un dígit"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2776,6 +2806,9 @@
       ],
       "View the invitations": [
         "Mostra les invitacions"
+      ],
+      "Decline invitation": [
+        "Declina la invitació"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2897,6 +2930,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Protegiu els vostres fitxers amb emmagatzematge al núvol xifrat. Inclou sincronització automàtica, compartició de fitxers xifrats i més."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Inclou suport per a 3 dominis de correu electrònic personalitzats, 90 adreces de correu electrònic, àlies il·limitats de Hide-my-email, compartició de calendari i més."
       ]
     },
     "Feedback Modal Title": {
@@ -3954,6 +3990,33 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Sembla que el fus horari del sistema ha canviat a ${ timezone }. Voleu actualitzar la vostra preferència de fus horari?"
+      ],
+      "Based on your time zone": [
+        "En funció de la vostra zona horària"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Contacte assignat al grup ${ contactGroupName }."
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Contacte sense assignar al grup ${ contactGroupName }."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalitzeu l'aspecte de les aplicacions ${ BRAND_NAME }."
+      ],
+      "Drop file here to upload": [
+        "Arrossegueu el fitxer aquí per carregar-lo."
+      ],
+      "Drop to import": [
+        "Arrossega aquí per importar"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Heu assolit el nombre màxim d'adreces en els grups de contactes:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Heu assolit el nombre màxim d'adreces en els grups de contactes."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Es xifraran els fitxers i després es desaran."
       ]
     },
     "Info on errors": {
@@ -4368,6 +4431,9 @@
       ],
       "Your password (admin)": [
         "La seva contrasenya (admin)"
+      ],
+      "Synchronize with system": [
+        "Sincronitza amb el sistema"
       ]
     },
     "Label for contact group color": {
@@ -4757,6 +4823,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "S'ha afegit el calendari"
+      ],
+      "Adding holidays calendar failed": [
+        "Ha fallat l'addició del calendari de festius"
       ]
     },
     "Notification in share calendar modal": {
@@ -4942,6 +5011,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Podeu canviar-ho en qualsevol moment a les preferències."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Hi ha disponibles més opcions de temes a Configuració del compte > Aparença."
       ]
     },
     "Option": {
@@ -5233,10 +5305,10 @@
     },
     "Side panel spotlight": {
       "Manage your contacts and view your calendar without leaving your app.": [
-        "Gestioni els seus contactes i vegi el seu calendari sense sortir de la seva aplicació."
+        "Gestioneu els vostres contactes i vegeu el vostre calendari sense sortir de la vostra aplicació."
       ],
       "Try the new side panel": [
-        "Provar la nova subfinestra lateral"
+        "Proveu el nou panell lateral."
       ]
     },
     "Sidebar calendar edit tooltip": {
@@ -5493,6 +5565,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "L'espai d'emmagatzematge es comparteix entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, i ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Tots els nostres serveis prèmium al seu límit màxim: 100 adreces de correu electrònic, suport per 10 dominis personalitzats, àlies Hide-my-email il·limitats, compartició de calendaris, emmagatzematge al núvol encriptat, compartició de fitxers, i més."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Inclou suport per a 1 domini de correu electrònic personalitzat, 10 adreces de correu electrònic, 10 àlies Hide-my-email, compartició de calendari i més."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Inclou suport per a 3 dominis de correu electrònic personalitzats, 15 adreces de correu electrònic, àlies il·limitats de Hide-my-email, compartició de calendari i més."
       ]
     },
     "Spotlight": {
@@ -6155,6 +6236,25 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "La prova gratuïta de Mail Plus finalitza el ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } adreça de correu electrònic",
+        "${ emailsCount } adreces de correu electrònic"
+      ],
+      "(active)": [
+        "(actiu)"
+      ],
+      "Cannot add more addresses": [
+        "No es poden afegir més adreces."
+      ],
+      "Day theme": [
+        "Tema de dia"
+      ],
+      "Night theme": [
+        "Tema de nit"
+      ],
+      "Unlock contacts groups": [
+        "Desbloqueja grups de contactes"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6236,6 +6336,21 @@
       ],
       "You do not have any contacts to export": [
         "No teniu cap contacte per exportar"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Canvia automàticament entre els temes preferits per a dia i nit en sincronització amb els modes de dia i nit del sistema"
+      ],
+      "The image could not be loaded": [
+        "La imatge no s'ha pogut carregar."
+      ],
+      "The image could not be loaded using proxy": [
+        "No s'ha pogut carregar la imatge a través del proxy."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "El tema seleccionat s'activarà quan el sistema estigui en «mode fosc»"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "El tema seleccionat s'activarà quan el sistema estigui en «mode clar»"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6588,6 +6703,84 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualment, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Predeterminat del sistema"
+      ],
+      "Theme default": [
+        "Tema per defecte"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Gran"
+      ],
+      "Medium (recommended)": [
+        "Mitjà (recomanat)"
+      ],
+      "Small": [
+        "Petit"
+      ],
+      "Very large": [
+        "Molt gran"
+      ],
+      "Very small": [
+        "Molt petit"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Millora ara"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Suprimeix automàticament el correu brossa i els missatges enviats a la paperera"
+      ],
+      "Custom email domains": [
+        "Dominis de correu personalitzats"
+      ],
+      "Hide-my-email aliases": [
+        "Àlies Hide-my-email"
+      ],
+      "Schedule messages at any time": [
+        "Programeu missatges en qualsevol moment."
+      ],
+      "Search message content": [
+        "Cerca al contingut del missatge"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Carpetes, etiquetes i filtres sense límit"
+      ],
+      "Up to 15 email addresses": [
+        "Fins a 15 adreces de correu electrònic"
+      ],
+      "Up to 3 TB of storage": [
+        "Fins a 3 TB d'emmagatzematge"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Creeu múltiples adreces de correu electrònic per a les vostres identitats en línia, p. ex. JohnShopper@${ domain } per a comptes de compres, JohnNews@${ domain2 } per a la subscripció a notícies"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Gaudiu d'àlies il·limitats amb SimpleLogin de ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "L'emmagatzematge és compartit amb ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } i ${ DRIVE_APP_NAME }."
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Utilitzeu la vostra pròpia adreça de domini de correu electrònic personalitzat, per exemple, you@yourname.com"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Oficial"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Missatge oficial de ${ BRAND_NAME }"
       ]
     }
   }

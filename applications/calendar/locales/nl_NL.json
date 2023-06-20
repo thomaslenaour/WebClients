@@ -574,6 +574,21 @@
       ],
       "Yes, I'll attend": [
         "Ja, ik zal aanwezig zijn"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Ten hoogste 100 contacten zijn toegelaten per contactgroep"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Afbeelding kan niet worden geladen met trackerbeveiliging."
+      ],
+      "Image will be loaded without a proxy": [
+        "Afbeelding wordt geladen zonder een proxy"
+      ],
+      "Load": [
+        "Laden"
+      ],
+      "New message": [
+        "Nieuw bericht"
       ]
     },
     "Action subline": {
@@ -1991,6 +2006,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "U kunt contactpersonen markeren die u niet wilt samenvoegen of behouden. Ze worden pas verwijderd na het klikken op 'samenvoegen'"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Proton Mail-logo en een plus-teken"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Bespaar tijd door e-mails of uitnodigingen naar iedereen tegelijkertijd te sturen, een premium functie zoals vele anderen. Upgrade vandaag."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2439,7 +2460,7 @@
         "Validatiefout"
       ],
       "You already added this holidays calendar": [
-        "Je hebt deze feestdagenkalender al toegevoegd"
+        "U hebt deze feestdagenkalender al toegevoegd"
       ],
       "You can't send a mail to more than 100 recipients": [
         "U kunt geen e-mail verzenden naar meer dan 100 ontvangers"
@@ -2455,6 +2476,15 @@
       ],
       "Your import will not be processed.": [
         "Uw import zal niet worden verwerkt."
+      ],
+      "Cannot export this contact": [
+        "Kan dit contact niet exporteren"
+      ],
+      "Username must begin with a letter or digit": [
+        "Gebruikersnaam moet met een letter of cijfer beginnen"
+      ],
+      "Username must end with a letter or digit": [
+        "Gebruikersnaam moet met een letter of cijfer eindigen"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2897,6 +2927,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Beveilig uw bestanden met versleutelde cloudopslag. Inclusief automatische synchronisatie, versleuteld bestanden delen en meer."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 90 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
       ]
     },
     "Feedback Modal Title": {
@@ -3954,6 +3987,33 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Uw systeemtijdzone lijkt te zijn veranderd naar ${ timezone }. Wilt u uw voorkeur voor uw tijdzone bijwerken?"
+      ],
+      "Based on your time zone": [
+        "Gebaseerd op uw tijdzone"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Contact toegekend aan groep ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Contact verwijderd uit groep ${ contactGroupName }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Pas het uiterlijk van ${ BRAND_NAME } applicaties aan."
+      ],
+      "Drop file here to upload": [
+        "Sleep bestand hier om te uploaden"
+      ],
+      "Drop to import": [
+        "Neerzetten om te importeren"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "U heeft het maximaal aantal adressen bereikt in de contactgroep(en):"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "U heeft het maximaal aantal adressen bereikt in de contactgroep."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Uw bestanden worden versleuteld en vervolgens opgeslagen"
       ]
     },
     "Info on errors": {
@@ -4368,6 +4428,9 @@
       ],
       "Your password (admin)": [
         "Uw wachtwoord (admin)"
+      ],
+      "Synchronize with system": [
+        "Synchroniseren met systeem"
       ]
     },
     "Label for contact group color": {
@@ -4757,6 +4820,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Agenda toegevoegd"
+      ],
+      "Adding holidays calendar failed": [
+        "Wettelijke feestdagenkalender toevoegen mislukt"
       ]
     },
     "Notification in share calendar modal": {
@@ -4942,6 +5008,9 @@
       ],
       "You can change this anytime in your settings.": [
         "U kunt dit op elk gewenst moment wijzigen in uw instellingen."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Meer thema-opties zijn beschikbaar in uw account Instellingen > Uiterlijk."
       ]
     },
     "Option": {
@@ -5493,11 +5562,20 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Opslagruimte wordt gedeeld tussen ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Al onze premium diensten met hun hoogste limieten: 100 e-mailadressen, ondersteuning voor 10 aangepaste domeinen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's, versleutelde cloudopslag, versleuteld bestanden delen en meer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 1 aangepast e-maildomein, 10 e-mailadressen, 10 Hide-my-email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 15 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
       ]
     },
     "Spotlight": {
       "Add your country's public holidays to your calendar.": [
-        "Voeg de wettelijke feestdagen van uw land toe aan uw kalender."
+        "Voeg de wettelijke feestdagen van uw land toe aan uw agenda."
       ],
       "Get up to ${ credits } in credits.": [
         "Krijg tot wel ${ credits } als krediet."
@@ -6155,6 +6233,25 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Uw Mail Plus proefversie eindigt op ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mailadres",
+        "${ emailsCount } e-mailadressen"
+      ],
+      "(active)": [
+        "(actief)"
+      ],
+      "Cannot add more addresses": [
+        "Kan geen extra adressen toevoegen"
+      ],
+      "Day theme": [
+        "Dag thema"
+      ],
+      "Night theme": [
+        "Nacht thema"
+      ],
+      "Unlock contacts groups": [
+        "Ontgrendel contactgroepen"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6236,6 +6333,15 @@
       ],
       "You do not have any contacts to export": [
         "U heeft geen contactpersonen om te exporteren"
+      ],
+      "The image could not be loaded": [
+        "De afbeelding kan niet worden geladen"
+      ],
+      "The image could not be loaded using proxy": [
+        "De afbeelding kan niet worden geladen via een proxy"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Het geselecteerde thema is actief wanneer uw systeem is ingesteld op \"lichte modus\""
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6588,6 +6694,84 @@
       ],
       "Yearly, ${ untilString }": [
         "Jaarlijks ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systeem standaard"
+      ],
+      "Theme default": [
+        "Thema standaard"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Groot"
+      ],
+      "Medium (recommended)": [
+        "Gemiddeld (aanbevolen)"
+      ],
+      "Small": [
+        "Klein"
+      ],
+      "Very large": [
+        "Zeer groot"
+      ],
+      "Very small": [
+        "Zeer klein"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Upgrade nu"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Automatisch spam en verwijderde berichten verwijderen"
+      ],
+      "Custom email domains": [
+        "Aangepaste e-maildomeinen"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email-aliassen"
+      ],
+      "Schedule messages at any time": [
+        "Plan berichten in op ieder moment"
+      ],
+      "Search message content": [
+        "Doorzoek berichtinhoud"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Ongelimiteerde mappen, labels en filters"
+      ],
+      "Up to 15 email addresses": [
+        "Tot wel 15 e-mailadressen"
+      ],
+      "Up to 3 TB of storage": [
+        "Tot wel 3 TB opslag"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Maak meerdere e-mailadressen aan voor uw online-identiteiten, zoals JohnShopper@${ domain } voor shoppingaccounts, JohnNieuws@${ domain2 } voor nieuwsabonnementen"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Gebruik onbeperkt aliassen met SimpleLogin van ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Opslagruimte wordt gedeeld door ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Gebruik uw eigen e-mailadressen met een aangepast domein, zoals u@uwnaam.com"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Officieel"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Officiële e-mail van ${ BRAND_NAME }"
       ]
     }
   }

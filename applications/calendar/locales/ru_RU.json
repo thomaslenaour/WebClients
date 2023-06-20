@@ -578,6 +578,21 @@
       ],
       "Yes, I'll attend": [
         "Да, я участвую"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Допускается до 100 контактов на группу"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Некоторые изображения не могут быть загружены при включённой защите от отслеживания."
+      ],
+      "Image will be loaded without a proxy": [
+        "Изображения будут загружаться без использования прокси"
+      ],
+      "Load": [
+        "Загрузить"
+      ],
+      "New message": [
+        "Новое сообщение"
       ]
     },
     "Action subline": {
@@ -2013,6 +2028,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Вы можете отметить для удаления те контакты, которые не хотите ни объединять, ни оставлять. Удаление будет происходить только после нажатия кнопки «Объединить»."
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Логотип ProtonMail и знак «плюс»"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Экономьте время, отправляя электронные письма или приглашения всем сразу, это одна из многих функций премиум-подписки. Купите её уже сегодня."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2499,6 +2520,15 @@
       ],
       "Your import will not be processed.": [
         "Импорт не будет обработан."
+      ],
+      "Cannot export this contact": [
+        "Не удается экспортировать этот контакт"
+      ],
+      "Username must begin with a letter or digit": [
+        "Имя пользователя должно начинаться с буквы или цифры"
+      ],
+      "Username must end with a letter or digit": [
+        "Имя пользователя должно заканчиваться буквой или цифрой"
       ]
     },
     "Error accepting calendar invitation": {
@@ -4074,6 +4104,33 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Похоже, что ваш часовой пояс изменился на ${ timezone }. Вы хотите обновить настройки часового пояса?"
+      ],
+      "Based on your time zone": [
+        "На основе вашего часового пояса"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Контакт назначен группе ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Контакт откреплен от группы ${ contactGroupName }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Настройте внешний вид ${ BRAND_NAME } приложений."
+      ],
+      "Drop file here to upload": [
+        "Переместите файл сюда, чтобы скачать"
+      ],
+      "Drop to import": [
+        "Импортировать"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Вы достигли лимита количества адресов в группе(-ах) контактов:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Вы достигли лимита количества адресов в группе контактов."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Ваши файлы будут зашифрованы и затем сохранены"
       ]
     },
     "Info on errors": {
@@ -4897,6 +4954,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Календарь добавлен"
+      ],
+      "Adding holidays calendar failed": [
+        "Не удалось добавить календарь праздничных дней"
       ]
     },
     "Notification in share calendar modal": {
@@ -6393,6 +6453,18 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша бесплатная пробная версия Mail Plus заканчивается ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } адрес электронной почты",
+        "${ emailsCount } адреса электронной почты",
+        "${ emailsCount } адресов электронной почты",
+        "${ emailsCount } адреса электронной почты"
+      ],
+      "Cannot add more addresses": [
+        "Невозможно добавить больше адресов"
+      ],
+      "Unlock contacts groups": [
+        "Разблокировать группы контактов"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6474,6 +6546,12 @@
       ],
       "You do not have any contacts to export": [
         "У вас нет контактов для экспорта"
+      ],
+      "The image could not be loaded": [
+        "Не удалось загрузить изображение"
+      ],
+      "The image could not be loaded using proxy": [
+        "Изображение не может быть загружено при использовании прокси"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6894,6 +6972,56 @@
       ],
       "Yearly, ${ untilString }": [
         "Ежегодно ${ untilString }"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Улучшить сейчас"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Автоудаление спама и удаленных сообщений"
+      ],
+      "Custom email domains": [
+        "Пользовательские домены электронной почты"
+      ],
+      "Schedule messages at any time": [
+        "Планируйте сообщения в любое время"
+      ],
+      "Search message content": [
+        "Поиск содержимого сообщения"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Неограниченное количество папок, ярлыков и фильтров"
+      ],
+      "Up to 15 email addresses": [
+        "До 15 адресов электронной почты"
+      ],
+      "Up to 3 TB of storage": [
+        "До 3 ТБ хранилища"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Создайте несколько адресов электронной почты для своих сетевых идентификаторов, например, VanyaShopper@${ domain } для учетных записей покупок, VanyaNews@${ domain2 } для подписки на новости"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Получите неограниченное количество псевдонимов с SimpleLogin от ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Объём хранилища распределяется между ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } и ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Используйте собственный адрес домена электронной почты, например, you@yourname.com."
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Официальный"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Официальное письмо от ${ BRAND_NAME }"
       ]
     }
   }

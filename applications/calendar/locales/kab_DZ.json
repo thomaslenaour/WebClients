@@ -504,6 +504,12 @@
       ],
       "Yes, I'll attend": [
         "Ih, ad ttikkiɣ"
+      ],
+      "Load": [
+        "Sali"
+      ],
+      "New message": [
+        "Izen amaynut"
       ]
     },
     "Actions message": {
@@ -4999,6 +5005,24 @@
       ],
       "Yearly, ${ untilString }": [
         "S useggas, ${ untilString }"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Sali aswir tura"
+      ]
+    },
+    "new_plans: feature": {
+      "Custom email domains": [
+        "Tiɣula n yimayl tudmawanin"
+      ],
+      "Search message content": [
+        "Agbur n yizen n unadi"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Unṣib"
       ]
     }
   }

@@ -488,6 +488,12 @@
       ],
       "Yes, I'll attend": [
         "Da, prisustvovati ću"
+      ],
+      "Load": [
+        "Učitaj"
+      ],
+      "New message": [
+        "Nova poruka"
       ]
     },
     "Actions message": {
@@ -4354,6 +4360,11 @@
       ],
       "Yearly, ${ untilString }": [
         "Godišnje, ${ untilString }"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Nadogradi sada"
       ]
     }
   }

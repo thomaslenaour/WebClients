@@ -572,6 +572,21 @@
       ],
       "Yes, I'll attend": [
         "是，我會出席"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "每個聯絡人群組至多允許 100 個聯絡人"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "無法在啟用追蹤保護中載入影像。"
+      ],
+      "Image will be loaded without a proxy": [
+        "圖像不會透過代理伺服器載入"
+      ],
+      "Load": [
+        "載入"
+      ],
+      "New message": [
+        "撰寫"
       ]
     },
     "Action subline": {
@@ -1980,6 +1995,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "您可以把既不合併也不保留的聯絡人標記為刪除。唯有在點擊「合併」按鈕時，才會執行刪除"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Proton Mail 標誌與加號"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "透過一次寄送電子郵件或邀請函給所有人，付費功能版的其中之一。立即升級。"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2433,6 +2454,15 @@
       ],
       "Your import will not be processed.": [
         "將不會處理您的匯入。"
+      ],
+      "Cannot export this contact": [
+        "無法匯出通訊內容"
+      ],
+      "Username must begin with a letter or digit": [
+        "使用者名稱的開頭必須為字母或數字"
+      ],
+      "Username must end with a letter or digit": [
+        "使用者名稱的結尾必須為字母或數字"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2752,6 +2782,9 @@
       ],
       "View the invitations": [
         "檢視邀請"
+      ],
+      "Decline invitation": [
+        "拒絕邀請"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2873,6 +2906,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "包含對 3 個自訂電子郵件網域、90 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Feedback Modal Title": {
@@ -3278,7 +3314,7 @@
         "找到 ${ groupCounts } 個群組"
       ],
       "${ numContact } contacts": [
-        "${ numContact } 個聯絡人"
+        "${ numContact } 位聯絡人"
       ],
       "${ numGroups } contact groups": [
         "${ numGroups } 個聯絡人群組"
@@ -3287,7 +3323,7 @@
         "找到 ${ providerFoldersNumLocalized } 個資料夾"
       ],
       "${ providerFoldersNumLocalized } labels found in Gmail": [
-        "在 Gmail 中找到 ${ providerFoldersNumLocalized } 個標籤"
+        "在 Gmail 中找到 ${ providerFoldersNumLocalized } 種標籤"
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendars": [
         "${ selectedCalendarsTotal } 個，共 ${ providerCalendars.length } 個行事曆"
@@ -3302,7 +3338,7 @@
         "已選取 ${ selectedFoldersCountLocalized } 個資料夾"
       ],
       "${ selectedFoldersCountLocalized } labels selected": [
-        "已選取 ${ selectedFoldersCountLocalized } 個標籤"
+        "已選取 ${ selectedFoldersCountLocalized } 種標籤"
       ],
       "${ updated } contacts updated successfully.": [
         "已成功更新 ${ updated } 位聯絡人。"
@@ -3620,7 +3656,7 @@
         "請選擇您想匯入的資料夾："
       ],
       "Please select which email address or addresses to add to ${ groupCount } groups.": [
-        "請選取一或多組電郵位址以加入至 ${ groupCount }。"
+        "請選取一或多組電郵位址以加入至 ${ groupCount } 個群組。"
       ],
       "Please select which email address or addresses to add to ${ groupName }.": [
         "請選取一或多組電郵位址以加入至 ${ groupName }。"
@@ -3894,6 +3930,33 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "您的系統時區似乎已更改為 ${ timezone }。您要更新您的時區喜好設定嗎？"
+      ],
+      "Based on your time zone": [
+        "根據您的時區"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "聯絡人已指派給群組 ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "聯絡人已取消指派給群組 ${ contactGroupName }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "自訂 ${ BRAND_NAME } 應用程式的外觀與感覺。"
+      ],
+      "Drop file here to upload": [
+        "拖曳檔案到此處來上傳"
+      ],
+      "Drop to import": [
+        "拖放以匯入"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "您已達到聯絡人群組郵件地址最高上限："
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "您以達到通訊群組郵件地址最高上限"
+      ],
+      "Your files will be encrypted and then saved": [
+        "你的檔案將加密後再儲存"
       ]
     },
     "Info on errors": {
@@ -4306,6 +4369,9 @@
       ],
       "Your password (admin)": [
         "您的密碼（管理員）"
+      ],
+      "Synchronize with system": [
+        "與系統同步"
       ]
     },
     "Label for contact group color": {
@@ -4687,6 +4753,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "行事曆已新增"
+      ],
+      "Adding holidays calendar failed": [
+        "新增節日行事曆失敗"
       ]
     },
     "Notification in share calendar modal": {
@@ -4851,6 +4920,9 @@
       ],
       "You can change this anytime in your settings.": [
         "您隨時都可以在設定中變更。"
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "更多佈景主題選項在您的帳號設定→「外觀」中提供。"
       ]
     },
     "Option": {
@@ -5388,6 +5460,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "我們所有具有最高限制的進階版服務：100 個電子郵件地址、支援 10 個自訂網域、無限制的隱藏 Hide-my-email 別名、行事曆分享、加密雲端儲存與檔案分享等。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 1 個自訂電子郵件網域、10 個電子郵件地址、10 個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 3 個自訂電子郵件網域、15 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Spotlight": {
@@ -6033,6 +6114,24 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "您的 Mail Plus 免費方案將於 ${ textDate } 結束"
+      ],
+      "${ emailsCount } email addresses": [
+        "${ emailsCount }電子郵件位址"
+      ],
+      "(active)": [
+        "（啟用）"
+      ],
+      "Cannot add more addresses": [
+        "無法添加更多地址"
+      ],
+      "Day theme": [
+        "白天佈景主題"
+      ],
+      "Night theme": [
+        "夜間佈景主題"
+      ],
+      "Unlock contacts groups": [
+        "解鎖通訊群組"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6114,6 +6213,21 @@
       ],
       "You do not have any contacts to export": [
         "您沒有任何可匯出的聯絡人"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "與系統的日夜模式同步，在白天和晚上的偏好佈景主題之間自動切換"
+      ],
+      "The image could not be loaded": [
+        "無法載入圖片"
+      ],
+      "The image could not be loaded using proxy": [
+        "無法透過代理伺服器載入圖片"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "當您的系統設定為「深色模式」時，將會啟用選定的佈景主題"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "當您的系統設定為「淺色模式」時，將會啟用選定的佈景主題"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6432,6 +6546,84 @@
       ],
       "Yearly, ${ untilString }": [
         "每年，${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "系統預設值"
+      ],
+      "Theme default": [
+        "佈景主題預設值"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中（建議）"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "非常大"
+      ],
+      "Very small": [
+        "非常小"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "立即升級"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "自動刪除垃圾郵件與垃圾桶中的訊息"
+      ],
+      "Custom email domains": [
+        "自訂電郵網域"
+      ],
+      "Hide-my-email aliases": [
+        "隱藏我的郵件別名"
+      ],
+      "Schedule messages at any time": [
+        "在任意時間排程訊息"
+      ],
+      "Search message content": [
+        "搜尋郵件內容"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "資料夾、標籤和篩選器無上限"
+      ],
+      "Up to 15 email addresses": [
+        "多達 15 個電子郵件地址"
+      ],
+      "Up to 3 TB of storage": [
+        "多達 3 TB的儲存空間"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "創建多重電子郵件地址身分，如JohnShopper@${ domain }給購物用途， JohnNews@${ domain2 }給訂閱新聞使用"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "使用 ${ BRAND_NAME } 的 SimpleLogin 取得無限的別名"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "使用您擁有的自訂電子郵件網域地址，例如 you@yourname.com"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "官方"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "來自 ${ BRAND_NAME } 的官方電子郵件"
       ]
     }
   }

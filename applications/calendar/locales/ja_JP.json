@@ -572,6 +572,21 @@
       ],
       "Yes, I'll attend": [
         "はい、参加します"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "一つの連絡先グループに追加できる連絡先は最大 100 件です"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "トラッキング防止が画像の読み込みをブロックしました。"
+      ],
+      "Image will be loaded without a proxy": [
+        "画像はプロキシーを経由せずに読み込まれます"
+      ],
+      "Load": [
+        "読み込む"
+      ],
+      "New message": [
+        "新規メッセージ"
       ]
     },
     "Action subline": {
@@ -956,10 +971,10 @@
     },
     "Collapsible tooltip": {
       "Collapse": [
-        "作成"
+        "閉じる"
       ],
       "Expand": [
-        "展開"
+        "開く"
       ]
     },
     "colon": {
@@ -1975,6 +1990,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "結合または保持する必要のない連絡先を削除するためにマークができます。 削除はマージボタンがクリックされた後にのみ行われます"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Proton Mail ロゴとプラスマーク"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2428,6 +2446,15 @@
       ],
       "Your import will not be processed.": [
         "インポートできませんでした。"
+      ],
+      "Cannot export this contact": [
+        "この連絡先はエクスポートできません"
+      ],
+      "Username must begin with a letter or digit": [
+        "ユーザー名は英字か数字で始めなければいけません"
+      ],
+      "Username must end with a letter or digit": [
+        "ユーザー名の最後は英字か数字でなければいけません"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3884,6 +3911,18 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "システムのタイムゾーンが${ timezone }に変更されたようです。タイムゾーンの設定を更新しますか？"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "グループ ${ contactGroupName } に連絡先を追加しました"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "グループ ${ contactGroupName } から連絡先を削除しました"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "連絡先グループのアドレス数の上限に達しました。"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "連絡先グループのアドレス数の上限に達しました。"
       ]
     },
     "Info on errors": {
@@ -5009,7 +5048,7 @@
     },
     "Placeholder for contact with no name": {
       "(No name)": [
-        "（名前なし）"
+        "(名前なし)"
       ]
     },
     "Progress bar description": {
@@ -6023,6 +6062,18 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mial Plusのトライアル期間が ${ textDate } に終了します。"
+      ],
+      "${ emailsCount } email addresses": [
+        "${ emailsCount } 件のメールアドレス"
+      ],
+      "(active)": [
+        "(アクティブ)"
+      ],
+      "Day theme": [
+        "昼間のテーマ"
+      ],
+      "Night theme": [
+        "夜間のテーマ"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6422,6 +6473,80 @@
       ],
       "Yearly, ${ untilString }": [
         "毎年、${ untilString }"
+      ]
+    },
+    "Country select label": {
+      "Based on your time zone": [
+        "あなたのタイムゾーンに基づく"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "システムのデフォルト"
+      ],
+      "Theme default": [
+        "テーマのデフォルト"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中 (推奨)"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "極大"
+      ],
+      "Very small": [
+        "極小"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "今すぐアップグレード"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "迷惑メールとごみ箱のメッセージを自動削除"
+      ],
+      "Custom email domains": [
+        "独自メールドメイン"
+      ],
+      "Schedule messages at any time": [
+        "いつでもメッセージを送信予約できます"
+      ],
+      "Search message content": [
+        "メッセージ内容の検索"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "制限なしのフォルダー、ラベル、フィルター"
+      ],
+      "Up to 15 email addresses": [
+        "15 件のメールアドレス"
+      ],
+      "Up to 3 TB of storage": [
+        "3 TB のストレージ"
+      ]
+    },
+    "new_plans: feature info": {
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "SimpleLogin by ${ BRAND_NAME } で無制限にエイリアスを作成"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "ストレージ容量は ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } で共有されます。"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "公式"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "${ BRAND_NAME } からの公式メール"
       ]
     }
   }

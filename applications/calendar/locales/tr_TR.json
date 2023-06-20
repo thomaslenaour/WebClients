@@ -411,7 +411,7 @@
         "Bu katılımcıyı kaldır"
       ],
       "Report a problem": [
-        "Bir sorun bildireceğim"
+        "Sorun bildirin"
       ],
       "Request a feature": [
         "Bir özellik istiyorum"
@@ -574,6 +574,21 @@
       ],
       "Yes, I'll attend": [
         "Evet, katılacağım"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Bir kişi grubunda en fazla 100 kişi bulunabilir"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Görsel izleyici koruması nedeniyle yüklenemedi."
+      ],
+      "Image will be loaded without a proxy": [
+        "Görsel bir vekil sunucu kullanılmadan yüklenecek"
+      ],
+      "Load": [
+        "Yükle"
+      ],
+      "New message": [
+        "Yeni ileti"
       ]
     },
     "Action subline": {
@@ -1991,6 +2006,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Birleştirmek veya tutmak istemediğiniz kişileri silinmek üzere işaretleyebilirsiniz. Silme işlemi yalnızca birleştirme düğmesine tıkladıktan sonra yapılır"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Proton Mail logosu ve bir artı işareti"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Herkese aynı anda e-posta veya davetiye göndererek zaman kazanın. Bu ücretli tarifelerdeki birçok özellikten biridir. Tarifenizi şimdi yükseltin."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2455,6 +2476,15 @@
       ],
       "Your import will not be processed.": [
         "İçe aktarma işleminiz yapılmayacak."
+      ],
+      "Cannot export this contact": [
+        "Bu kişi dışa aktarılamadı"
+      ],
+      "Username must begin with a letter or digit": [
+        "Kullanıcı adı bir harf ya da rakam ile başlamalı"
+      ],
+      "Username must end with a letter or digit": [
+        "Kullanıcı adı bir harf ya da rakam ile bitmeli"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2776,6 +2806,9 @@
       ],
       "View the invitations": [
         "Davetleri görüntüle"
+      ],
+      "Decline invitation": [
+        "Daveti reddet"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2869,7 +2902,7 @@
     },
     "familyOffer_2023:Info": {
       "Online privacy, for your whole family": [
-        "Tüm aileniz için çevrimiçi gizlilik"
+        "Tüm aileniz için çevrim içi gizlilik"
       ]
     },
     "familyOffer_2023:Onboarding Proton": {
@@ -2897,6 +2930,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Dosyalarınızı şifrelenmiş bulut depolama alanı ile koruyun. Otomatik eşitleme, şifrelenmiş dosya paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "3 özel e-posta etki alanı, 90 e-posta adresi, sınırsız sayıda e-postamı gizle takma adı, takvim paylaşımı ve diğer özellikler."
       ]
     },
     "Feedback Modal Title": {
@@ -3954,6 +3990,33 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Sistem saat diliminiz ${ timezone } olarak değişmiş gibi görünüyor. Saat dilimi ayarınızı güncellemek ister misiniz?"
+      ],
+      "Based on your time zone": [
+        "Saat diliminize göre"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kişi ${ contactGroupName } grubuna eklendi"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kişi ${ contactGroupName } grubundan çıkarıldı"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME } uygulamalarının görünümünü ve kullanımını özelleştirin."
+      ],
+      "Drop file here to upload": [
+        "Yüklemek için dosyayı buraya bırakın"
+      ],
+      "Drop to import": [
+        "İçe aktarmak için bırakın"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Kişi gruplarında bulunabilecek en fazla adres sayısına ulaştınız:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Kişi grubunda bulunabilecek en fazla adres sayısına ulaştınız:"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Dosyalarınız şifrelendikten sonra kaydedilir"
       ]
     },
     "Info on errors": {
@@ -4368,6 +4431,9 @@
       ],
       "Your password (admin)": [
         "Parolanız (yönetici)"
+      ],
+      "Synchronize with system": [
+        "Sistem ile aynı"
       ]
     },
     "Label for contact group color": {
@@ -4757,6 +4823,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Takvim eklendi"
+      ],
+      "Adding holidays calendar failed": [
+        "Tatil takvimi eklenemedi"
       ]
     },
     "Notification in share calendar modal": {
@@ -4942,6 +5011,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Bunu istediğiniz zaman ayarlarınızdan değiştirebilirsiniz."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Diğer tema ayarlarını Ayarlar > Görünüm bölümünde bulabilirsiniz."
       ]
     },
     "Option": {
@@ -5344,7 +5416,7 @@
         "Güvenli yayın akışı"
       ],
       "Support online privacy": [
-        "Çevrimiçi gizliliği destekleyin"
+        "Çevrim içi gizliliği destekleyin"
       ]
     },
     "specialoffer: Footer": {
@@ -5493,6 +5565,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Depolama alanı ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } ve ${ DRIVE_APP_NAME } arasında paylaşılır."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "En yüksek sınırları olan tüm ücretli hizmetler: 100 e-posta adresi, 10 özel etki alanı, sınırsız e-postamı gizle takma adı, takvim gönderisi, şifrelenmiş bulut depolama alanı, dosya paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "1 özel e-posta etki alanı, 10 e-posta adresi, 10 e-postamı gizle takma adı, takvim paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "3 özel e-posta etki alanı, 15 e-posta adresi, sınırsız sayıda e-postamı gizle takma adı, takvim paylaşımı ve diğer özellikler."
       ]
     },
     "Spotlight": {
@@ -6025,7 +6106,7 @@
         "Katılımcıları kaldır"
       ],
       "Report a problem": [
-        "Bir sorun bildirin"
+        "Sorun bildirin"
       ],
       "Request new code": [
         "Yeni kod iste"
@@ -6155,6 +6236,25 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mail Plus ücretsiz deneme süreniz ${ textDate } tarihinde sonra erecek"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-posta adresi",
+        "${ emailsCount } e-posta adresi"
+      ],
+      "(active)": [
+        "(etkin)"
+      ],
+      "Cannot add more addresses": [
+        "Daha fazla adres eklenemez"
+      ],
+      "Day theme": [
+        "Gündüz teması"
+      ],
+      "Night theme": [
+        "Gece teması"
+      ],
+      "Unlock contacts groups": [
+        "Kişi gruplarının kilidini açın"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6236,6 +6336,21 @@
       ],
       "You do not have any contacts to export": [
         "Dışa aktarılacak bir kişi kaydınız yok"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Sisteminizin gündüz ve gece kipine uyarak gündüz ve gece için seçtiğiniz temalar arasında otomatik olarak geçiş yapın"
+      ],
+      "The image could not be loaded": [
+        "Görsel yüklenemedi"
+      ],
+      "The image could not be loaded using proxy": [
+        "Görsel vekil sunucu kullanılarak yüklenemedi"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Seçilmiş tema sisteminiz \"koyu kipe\" geçtiğinde etkinleştirilecek"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Seçilmiş tema sisteminiz \"açık kipe\" geçtiğinde etkinleştirilecek"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6333,7 +6448,7 @@
         "Bu içe aktarma işlemi, ${ BRAND_NAME } hesabınızla kullanılabilecek depolama alanını aşabilir. Lütfen içe aktarmanızı özelleştirmeyi değerlendirin."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
-        "Ne yazık ki, şu anca çevrimiçi değiliz. Lütfen sorununuzu aktarmak için aşağıdaki formu doldurun. Yeniden çevrimiçi olduğumuzda inceleyip size geri döneceğiz."
+        "Ne yazık ki, şu anca çevrim içi değiliz. Lütfen sorununuzu aktarmak için aşağıdaki formu doldurun. Yeniden çevrim içi olduğumuzda inceleyip size geri döneceğiz."
       ],
       "We couldn't verify the mail server. If you trust it, you can skip this verification.": [
         "E-posta sunucusunu doğrulayamadık. Sunucuya güveniyorsanız, bu doğrulamayı atlayabilirsiniz."
@@ -6588,6 +6703,84 @@
       ],
       "Yearly, ${ untilString }": [
         "Yılda bir, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Sistem varsayılanı"
+      ],
+      "Theme default": [
+        "Tema varsayılanı"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Büyük"
+      ],
+      "Medium (recommended)": [
+        "Orta (önerilen)"
+      ],
+      "Small": [
+        "Küçük"
+      ],
+      "Very large": [
+        "Çok büyük"
+      ],
+      "Very small": [
+        "Çok küçük"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Şimdi yükselt"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "İstenmeyen ve çöp kutularındaki iletileri otomatik olarak silin"
+      ],
+      "Custom email domains": [
+        "Özel e-posta etki alanları"
+      ],
+      "Hide-my-email aliases": [
+        "E-postamı gizle takma adları"
+      ],
+      "Schedule messages at any time": [
+        "İletileri istediğiniz zamanda gönderin"
+      ],
+      "Search message content": [
+        "İleti içeriğinde arama"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Sınırsız klasör, etiket ve süzgeç"
+      ],
+      "Up to 15 email addresses": [
+        "15 e-posta adresine kadar"
+      ],
+      "Up to 3 TB of storage": [
+        "3 TB depolama alanına kadar"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Çevrim içi kimlikleriniz için e-posta adresleri oluşturun. Örneğin alışveriş işlemleri için AliAlisveris@${ domain }, haber aboneliği için AliHaber@${ domain2 } gibi takma adlar oluşturabilirsiniz"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "${ BRAND_NAME } SimpleLogin ile sınırsız takma ad edinin"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Depolama alanı ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } ve ${ DRIVE_APP_NAME } arasında paylaşılır"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Dilerseniz siz@sirketiniz.com gibi kendi özel etki alanınızla e-posta adresleri oluşturun"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Resmi"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "${ BRAND_NAME } tarafından gelen resmi e-posta"
       ]
     }
   }

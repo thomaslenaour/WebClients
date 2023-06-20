@@ -578,6 +578,21 @@
       ],
       "Yes, I'll attend": [
         "Ano, zúčastním se"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Na jednu skupinu kontaktů je povoleno maximálně 100 kontaktů"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Obrázek nemohl být načten kvůli ochraně před sledovacími prvky."
+      ],
+      "Image will be loaded without a proxy": [
+        "Obrázek se načte bez proxy serveru"
+      ],
+      "Load": [
+        "Načíst"
+      ],
+      "New message": [
+        "Nová zpráva"
       ]
     },
     "Action subline": {
@@ -2013,6 +2028,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Kontakty, které nechcete sloučit ani zachovat, označte pro smazání. Ke smazání dojde po kliknutí na tlačítko pro sloučení"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Logo ProtonMail a znaménko plus"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Šetřete čas odesláním e-mailů nebo pozvánek všem najednou, což je mimo jiné prémiová funkce. Navyšte tarif ještě dnes."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2499,6 +2520,15 @@
       ],
       "Your import will not be processed.": [
         "Váš import nebude zpracován."
+      ],
+      "Cannot export this contact": [
+        "Nelze exportovat tento kontakt"
+      ],
+      "Username must begin with a letter or digit": [
+        "Uživatelské jméno musí začínat písmenem nebo číslicí"
+      ],
+      "Username must end with a letter or digit": [
+        "Uživatelské jméno musí končit písmenem nebo číslicí"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2824,6 +2854,9 @@
       ],
       "View the invitations": [
         "Zobrazit pozvánky"
+      ],
+      "Decline invitation": [
+        "Odmítnout pozvánku"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2851,7 +2884,7 @@
         "zákaznická podpora"
       ],
       "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
-        "Pokud pozvánku přijmete, převedeme vás z aktuálního tarifu a na váš účet připíšeme nevyužitou částku."
+        "Pokud pozvánku přijmete, převedeme Vás ze stávajícího tarifu a na váš účet připíšeme zbývající částku."
       ],
       "Invited by: ${ inviteEmail }": [
         "Pozvánka od: ${ inviteEmail }"
@@ -2887,7 +2920,7 @@
         "Byli jste pozváni do ${ bannerOrganization }. ${ viewInviteButton }"
       ],
       "You have successfully joined the Family plan": [
-        "Úspěšně jste se připojili k Rodinnému tarifu"
+        "Úspěšně jste se připojili k rodinnému tarifu"
       ],
       "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
         "Můžete propojit svůj účet ${ BRAND_NAME } s tímto skupinovým tarifem a společně využívat všechny prémiové funkce ${ BRAND_NAME_TWO }."
@@ -2945,6 +2978,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Zabezpečte své soubory pomocí šifrovaného cloudového úložiště. Zahrnuje automatickou synchronizaci, šifrované sdílení souborů a další funkce."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Zahrnuje podporu 3 vlastních e-mailových domén, 90 e-mailových adres, neomezený počet aliasů Hide-my-email, sdílení kalendáře a další."
       ]
     },
     "Feedback Modal Title": {
@@ -4074,6 +4110,30 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Zdá se, že se vaše systémové časové pásmo změnilo na ${ timezone }. Chcete aktualizovat nastavení časového pásma?"
+      ],
+      "Based on your time zone": [
+        "Na základě vašeho časového pásma"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kontakt byl přiřazen do skupiny ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kontakt byl odebrán ze skupiny ${ contactGroupName }"
+      ],
+      "Drop file here to upload": [
+        "Sem přetáhněte soubor pro nahrání"
+      ],
+      "Drop to import": [
+        "Přetažením provedete import"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Dosáhli jste maximálního počtu adres ve skupině (skupinách) kontaktů:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Dosáhli jste maximálního počtu adres ve skupině kontaktů."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Vaše soubory budou zašifrovány a uloženy"
       ]
     },
     "Info on errors": {
@@ -4492,6 +4552,9 @@
       ],
       "Your password (admin)": [
         "Vaše heslo (admin)"
+      ],
+      "Synchronize with system": [
+        "Synchronizovat se systémem"
       ]
     },
     "Label for contact group color": {
@@ -4897,6 +4960,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Kalendář přidán"
+      ],
+      "Adding holidays calendar failed": [
+        "Přidání kalendáře svátků selhalo"
       ]
     },
     "Notification in share calendar modal": {
@@ -5385,7 +5451,7 @@
     },
     "Select search results": {
       "Check your spelling or select a country from the list.": [
-        "Zkontrolujte chyby v textu nebo vyberte zemi ze seznamu."
+        "Zkontrolujte překlepy nebo vyberte zemi ze seznamu."
       ],
       "No results found": [
         "Nebyly nalezeny žádné výsledky"
@@ -5696,13 +5762,22 @@
         "Ideální pro rodiny nebo malé týmy, každý může mít vlastní schránku a aliasy. Vyžaduje vlastní doménu."
       ],
       "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
-        "Získejte zdarma placené verze všech nových služeb ochrany soukromí, které v budoucnu spustíme, a také včasný přístup k novým produktům a funkcím."
+        "Získejte zdarma placené verze všech nových služeb ochrany soukromí, které v budoucnu vydáme, včetně předběžného přístupu ke všem budoucím funkcím a produktům."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Zabezpečte své soubory pomocí šifrovaného cloudového úložiště. Zahrnuje automatickou synchronizaci, šifrované sdílení souborů a další funkce."
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Úložný prostor je sdílen mezi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, a ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Všechny naše prémiové služby s nejvyššími limity: 100 e-mailových adres, podpora 10 vlastních domén, neomezený počet aliasů hide-my-email, sdílení kalendáře, šifrované cloudové úložiště a sdílení souborů a další."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Obsahuje podporu 1 vlastní e-mailové domény, 10 e-mailových adres, 10 aliasů Hide-my-email, sdílení kalendáře a další funkce."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Zahrnuje podporu 3 vlastních e-mailových domén, 15 e-mailových adres, neomezený počet aliasů Hide-my-email, sdílení kalendáře a další."
       ]
     },
     "Spotlight": {
@@ -6393,6 +6468,27 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Vaše bezplatná zkušební verze služby Mail Plus končí ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mailová adresa",
+        "${ emailsCount } e-mailové adresy",
+        "${ emailsCount } e-mailových adres",
+        "${ emailsCount } e-mailových adres"
+      ],
+      "(active)": [
+        "(aktivní)"
+      ],
+      "Cannot add more addresses": [
+        "Nelze přidávat další adresy"
+      ],
+      "Day theme": [
+        "Denní motiv"
+      ],
+      "Night theme": [
+        "Noční motiv"
+      ],
+      "Unlock contacts groups": [
+        "Odemknout skupiny kontaktů"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6474,6 +6570,12 @@
       ],
       "You do not have any contacts to export": [
         "Nemáte žádné kontakty k exportu"
+      ],
+      "The image could not be loaded": [
+        "Obrázek se nepodařilo načíst"
+      ],
+      "The image could not be loaded using proxy": [
+        "Obrázek nelze načíst pomocí proxy serveru"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6894,6 +6996,84 @@
       ],
       "Yearly, ${ untilString }": [
         "Roční, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systémové výchozí"
+      ],
+      "Theme default": [
+        "Výchozí téma"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Velký"
+      ],
+      "Medium (recommended)": [
+        "Střední (doporučeno)"
+      ],
+      "Small": [
+        "Malý"
+      ],
+      "Very large": [
+        "Velmi velké"
+      ],
+      "Very small": [
+        "Velmi malé"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Navýšit nyní"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Automaticky mazat zprávy ve spamu a koši"
+      ],
+      "Custom email domains": [
+        "Vlastní e-mailové domény"
+      ],
+      "Hide-my-email aliases": [
+        "Aliasy Hide-my-email"
+      ],
+      "Schedule messages at any time": [
+        "Plánování zpráv v libovolném čase"
+      ],
+      "Search message content": [
+        "Hledat v obsahu zpráv"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Neomezený počet složek, štítků a filtrů"
+      ],
+      "Up to 15 email addresses": [
+        "Až 15 e-mailových adres"
+      ],
+      "Up to 3 TB of storage": [
+        "Až 3 TB úložného prostoru"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Vytvořte více e-mailových adres pro své online identity, např. HonzaNakupy@${ domain } pro nákupní účty a HonzaZpravy@${ domain2 } pro odběry zpráv"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Získejte neomezený počet aliasů skrze SimpleLogin od ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Úložný prostor je sdílen mezi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } a ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Používejte vlastní e-mailovou doménu, např. vy@vasejmeno.cz"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Oficiální"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Oficiální e-mail od ${ BRAND_NAME }"
       ]
     }
   }

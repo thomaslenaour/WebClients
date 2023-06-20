@@ -571,6 +571,21 @@
       ],
       "Yes, I'll attend": [
         "Igen, ott leszek"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Maximum 100 névjegy lehet egy névjegy csoportban"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "A képet nem lehetett betölteni a nyomkövető védelemmel."
+      ],
+      "Image will be loaded without a proxy": [
+        "A kép proxy nélkül kerül betöltésre"
+      ],
+      "Load": [
+        "Betöltés"
+      ],
+      "New message": [
+        "Új üzenet"
       ]
     },
     "Action subline": {
@@ -725,7 +740,7 @@
         "Probléma saját domain névvel"
       ],
       "Drive problem": [
-        "ProtonDrive probléma"
+        "Drive probléma"
       ],
       "Feature request": [
         "Ötlet, javaslat"
@@ -774,6 +789,9 @@
       ],
       "Website access problem": [
         "Probléma a weboldal elérésével"
+      ],
+      "Pass problem": [
+        "Pass probléma"
       ]
     },
     "Button": {
@@ -1980,6 +1998,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Amelyekből egyiket sem szeretné megtartani, azokat törlésre jelölheti. A törlés az egyesítés gomb megnyomása után fog megtörténni"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "ProtonMail logó és egy plusz jel"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Takarítson meg időt azzal, hogy mindenkinek egyszerre elküldi az e-mailt vagy meghívókat. Ez egy prémium lehetőség, sok másikkal együtt. Váltson nagyobb csomagra."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2438,6 +2462,18 @@
       ],
       "Your import will not be processed.": [
         "Az importálás nem lesz feldolgozva."
+      ],
+      "Cannot export this contact": [
+        "Ez a névjegy nem exportálható"
+      ],
+      "The email addresses do not match": [
+        "Az e-mail címek nem egyeznek"
+      ],
+      "Username must begin with a letter or digit": [
+        "Felhasználónévnek betűvel vagy számmal kell kezdődnie"
+      ],
+      "Username must end with a letter or digit": [
+        "Felhasználónévnek betűvel vagy számmal kell végződnie"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2622,6 +2658,12 @@
       ],
       "You need an active personal calendar to import events": [
         "Az importáláshoz szükséges, hogy legyen egy aktív személyes naptára"
+      ],
+      "Please refresh the page or try again later.": [
+        "Frissítse az oldalt vagy próbálja újra később."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Nem sikerült az oldal betöltése. Frissítse az oldalt vagy ellenőrizze az internetkapcsolatát."
       ]
     },
     "Error notification": {
@@ -2754,13 +2796,52 @@
         "Címek kezelése."
       ],
       "Owners of a plan with members cannot join another group plan.": [
-        "Meglévő csomaggal rendelkező felhasználók nem csatlakozhatnak csoportos előfizetéshez."
+        "Tagokkal rendelkező csomagok tulajdonosai nem csatlakozhatnak másik csoportos előfizetéshez."
       ],
       "Visionary and family plans do not currently support lifetime accounts.": [
         "A Visionary és a családi csomagok jelenleg nem támogatják az egész életre szóló fiókokat."
       ],
       "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
         "Meghívást kapott a következőhöz: ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Ha elfogadja a meghívást, a csomagja átállításra kerül és kreditként jóváírjuk a fennmaradó egyenleget."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Meghívó küldője: ${ inviteEmail }"
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Sajnos jelenleg nincs lehetőség csomagváltásra."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Az ön számára lefoglalt tárhely: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Az előfizetést a Visionary vagy a Family csomag elsődleges adminisztrátora fizeti."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "A Visionary és a Family csomagok jelenleg nem támogatnak külső fiókokat. Hozzon létre egy ${ BRAND_NAME } címet mielőtt csatlakozna. ${ addressSettingsLink }"
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Meghívást kapott a csatlakozáshoz: ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Hat hónap alatt csak maximum 3 meghívót fogadhat el. Lépjen kapcsolatba velünk, ha többet szeretne: ${ supportLink }."
+      ],
+      "You have successfully joined the Family plan": [
+        "Sikeresen csatlakozott a Family csomaghoz"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Meghívót kapott, hogy a ${ BRAND_NAME } fiókjával csatlakozzon ehhez a csoporthoz és együtt használhassák a ${ BRAND_NAME_TWO } prémium lehetőségeit."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "A fiókjában több e-mail cím van, mint amennyit a csomagja lehetővé tesz. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "A fiókja ${ usedSpace } tárhelyet foglal el, ami túllépi az önnek biztosított ${ inviteSpace } helyet. Töröljön adatokat vagy kérje meg a csomag adminisztrátorát, hogy növelje a tárhelyét."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "A jelenlegi csomagja nem csatlakozhat egy Visionary vagy Family csomaghoz."
       ]
     },
     "Feedback Modal Title": {
@@ -3810,6 +3891,21 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Úgy tűnik, hogy a rendszer időzónája ${ timezone } -re változott. Szeretne erre az időzónára frissíteni?"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Névjegy a csoporthoz rendelve: ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Névjegy a csoportból eltávolítva: ${ contactGroupName }"
+      ],
+      "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
+        "Az adatok helyreállításához újra aktiválnia kell az adatok létrehozásakor használt fiók titkosítási kulcsot. Ehhez az szükséges, hogy emlékezzen az adott titkosítás kulcs létrehozásakor használt jelszavára."
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Elérte a névjegy csoport(ok)ban lehetséges címek maximális számát:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Elérte a névjegy csoportban lehetséges címek maximális számát."
       ]
     },
     "Info on errors": {
@@ -4778,6 +4874,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Ezt a beállításoknál bármikor megváltoztathatja."
+      ],
+      "Set up your organization testing": [
+        "A szervezetének beállítása"
       ]
     },
     "Option": {
@@ -5741,6 +5840,16 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "A Mail Plus csomagjának próbaidőszaka lejár: ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mail cím",
+        "${ emailsCount } e-mail cím"
+      ],
+      "Cannot add more addresses": [
+        "Nem adható hozzá több cím"
+      ],
+      "Unlock contacts groups": [
+        "Névjegy csoportok feloldása"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -5822,6 +5931,12 @@
       ],
       "You do not have any contacts to export": [
         "Önnek nincs exportálható névjegye"
+      ],
+      "The image could not be loaded": [
+        "A kép nem tölthető be"
+      ],
+      "The image could not be loaded using proxy": [
+        "A kép nem tölthető be proxy segítségével"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6174,6 +6289,353 @@
       ],
       "Yearly, ${ untilString }": [
         "Évente, ${ untilString }"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB teljes tárhely"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "${ planName } beszerzése"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "A tárhely közösen osztoznak a családtagok, és megoszlik a ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, és a ${ DRIVE_APP_NAME } közt."
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Prémium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Prémium Mail és Calendar"
+      ],
+      "Premium VPN": [
+        "Prémium VPN"
+      ],
+      "Up to 6 users": [
+        "Maximum 6 felhasználóig"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "* Az előfizetése, ugyanazon az áron, automatikusan megújul a számlázási ciklus végén."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "A kedvezmények a standard havi árazás alapján kerülnek kiszámításra."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "${ planName } beszerzése"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Online adatvédelem az egész családnak"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Állítsa be a Family csomagot és hívja meg a tagokat "
+      ],
+      "Set up your family": [
+        "Family csomag beállítása"
+      ],
+      "Set up your family account": [
+        "Family csomag beállítása"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "${ planName } csomag bemutatása"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "2700 szerver, több mint 65 országban, csatlakoztasson akár 10 eszközt, érje el a videós szolgáltatásokat bárhonnan a világban, vírus és reklámblokkolót valamit további lehetőségeket is tartalmaz."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Tartsa biztonságban fájljait, titkosított felhőtárhelyen. Automatikus szinkronizálást, titkosított megosztás és további lehetőségeket tartalmaz."
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Váltás nagyobb csomagra"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "A Levélszemét és a Lomtár mappában lévő üzenetek automatikus törlése"
+      ],
+      "Custom email domains": [
+        "Saját domain nevek"
+      ],
+      "Schedule messages at any time": [
+        "Üzenetek ütemezése bármikor"
+      ],
+      "Search message content": [
+        "Keresés az üzenetek tartalmában"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Korlátlan számú mappa, címke és szűrő"
+      ],
+      "Up to 15 email addresses": [
+        "Akár 15 e-mail cím"
+      ],
+      "Up to 3 TB of storage": [
+        "Akár 3 TB tárhely"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Hozzon létre több email címet a különböző online személyiségei számára, mint például PistiVasarlas@${ domain } a vásárlási fiókjaihoz, vagy PistiHirek@${ domain2 } a hírleveleinek"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Korlátlan számú e-mail álnév, a ${ BRAND_NAME } SimpleLogin segítségével"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "A tárhely megoszlik a ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, és a ${ DRIVE_APP_NAME } közt."
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Használja a saját egyedi e-mail domain címét, pl. on@azonneve.com"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Hivatalos"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Hivatalos e-mail tőle: ${ BRAND_NAME }"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Bezárás"
+      ],
+      "Don't show this offer again": [
+        "Ne jelenjen meg többet ez az ajánlat"
+      ],
+      "Special offer": [
+        "Kivételes ajánlat"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "Unlimited beszerzése"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } day": [
+        "${ days } nap",
+        "${ days } nap"
+      ],
+      "${ hours } hour": [
+        "${ hours } óra",
+        "${ hours } óra"
+      ],
+      "${ minutes } minute": [
+        "${ minutes } perc",
+        "${ minutes } perc"
+      ],
+      "${ seconds } second": [
+        "${ seconds } másodperc",
+        "${ seconds } másodperc"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } hónap INGYEN",
+        "${ n } hónap INGYEN"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } teljes tárhely"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 felhasználó"
+      ],
+      "64 countries": [
+        "64 ország"
+      ],
+      "All paid Mail and Calendar features": [
+        "Minden fizetős Mail és Calendar funkció"
+      ],
+      "High speed VPN": [
+        "Nagysebességű VPN"
+      ],
+      "Highest VPN speed": [
+        "Legnagyobb VPN sebesség"
+      ],
+      "Premium Drive": [
+        "Prémium Drive"
+      ],
+      "Premium early access": [
+        "Prémium korai-hozzáférés"
+      ],
+      "Premium Mail and Calendar": [
+        "Prémium Mail és Calendar"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Prémium Mail, Calendar és Drive"
+      ],
+      "Premium VPN": [
+        "Prémium VPN"
+      ],
+      "Secure cloud storage": [
+        "Biztonságos felhőtárhely"
+      ],
+      "Secure streaming": [
+        "Biztonságos videónézés"
+      ],
+      "Support online privacy": [
+        "Támogatja az online adatvédelmet"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "A kedvezmények a standard havi árazás alapján kerülnek kiszámításra"
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Ez az előfizetés minden 2 évben automatikusan megújul, ugyanazon az áron, amíg felmondásra nem kerül"
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "Örök ajánlat"
+      ],
+      "Limited time only": [
+        "Korlátozott ideig elérhető"
+      ],
+      "Most popular": [
+        "Legnépszerűbb"
+      ],
+      "Offer ends soon": [
+        "Az ajánlat hamarosan véget ér"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "A kedvezmény megmarad a megújításkor is, egészen az előfizetés felmondásáig vagy módosításáig"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Előfizetési csomagok megnyitása"
+      ],
+      "Upgrade": [
+        "Váltás nagyobb csomagra"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ hó"
+      ],
+      "1 year": [
+        "1 év"
+      ],
+      "2 years": [
+        "2 év"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "1 hónapra ${ amount } számlázva"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "12 hónapra ${ amount } számlázva"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "15 hónapra ${ amount } számlázva"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "24 hónapra ${ amount } számlázva"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "30 hónapra ${ amount } számlázva"
+      ],
+      "for ${ n } month": [
+        "${ n } hónapra",
+        "${ n } hónapra"
+      ],
+      "Get the deal": [
+        "Érdekel az ajánlat"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "1 év után megújul, kedvezményes ${ discountedAmount } áron, a ${ regularAmount } helyett (${ discount }% kedvezmény)"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "2 év után megújul, kedvezményes ${ discountedAmount } áron, a ${ regularAmount } helyett (${ discount }% kedvezmény)"
+      ],
+      "Save ${ discount }%": [
+        "${ discount }% kedvezmény"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "1 hónapra a standard ár ${ amount }"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "12 hónapra a standard ár ${ amount }"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "15 hónapra a standard ár ${ amount }"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "24 hónapra a standard ár ${ amount }"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "30 hónapra a standard ár ${ amount }"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "Black Friday Akció"
+      ],
+      "Cyber Week Sale": [
+        "Cyber Heti Akció"
+      ],
+      "End of year offer": [
+        "Évvégi ajánlat"
+      ],
+      "End of Year Sale": [
+        "Évvégi Akció"
+      ],
+      "Get our premium bundle and save more": [
+        "Válassza a kombinált prémium csomagot további kedvezményekért"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "A kedvezményes Visionary csomag, korlátozott ideig, ismét elérhető"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Takarítson meg mégtöbbet a 2 éves ${ planName } csomaggal"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Váltson csomagot és takarítson meg mégtöbbet a 2 éves ${ planName } csomaggal"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Férjen hozzá blokkolt tartalmakhoz és böngésszen biztonságban. 1700 szerver, több mint 64 országban, a legnagyobb VPN sebesség, 10 VPN kapcsolat felhasználónként, videónézés bárhol a világon, vírus- és reklámvédelem, és még továbbiak."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Férjen hozzá blokkolt tartalmakhoz és böngésszen biztonságban. 1700 szerver, több mint 64 országban, a legnagyobb VPN sebesség, 10 VPN kapcsolat, videónézés bárhol a világon, vírus- és reklámvédelem, és még továbbiak."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Akárhonnan elérhet videós szolgáltatásokat, mint például Netflix, Disney+ vagy Prime Video."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Ideális családoknak és kisebb csoportoknak, mindenkinek saját e-mail fiókja és e-mail álnevei lehetnek. Saját domain név szükséges."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "További extra költség nélkül megkapja a későbbiekben elkészülő új adatvédelmi szolgáltatásaink fizetős változatát, korai hozzáféréssel az összes jövőbeni lehetőséghez és termékhez."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Tartsa biztonságban fájljait, titkosított felhőtárhelyen. Automatikus szinkronizálást, titkosított megosztás és további lehetőségeket tartalmaz."
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "A tárhely megoszlik a ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, és a ${ DRIVE_APP_NAME } közt."
       ]
     }
   }
