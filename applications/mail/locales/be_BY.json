@@ -41,7 +41,7 @@
         "Дадаць кантакт"
       ],
       "Add email": [
-        "Дадаць адрас электроннай пошты"
+        "Дадаць электронную пошту"
       ],
       "Add group": [
         "Дадаць групу"
@@ -827,7 +827,7 @@
         "Бяспечны адказ"
       ],
       "Report a problem": [
-        "Паведаміць пра праблему"
+        "Паведаміць аб праблеме"
       ],
       "Report phishing": [
         "Паведаміць пра фішынг"
@@ -980,7 +980,7 @@
         "Увайсці"
       ],
       "Sign out": [
-        "Выйсці"
+        "Выхад з уліковага запісу"
       ],
       "Signing out": [
         "Адбываецца выхад"
@@ -1170,6 +1170,9 @@
       ],
       "Zoom out": [
         "Паменшыць"
+      ],
+      "hide-my-email aliases": [
+        "псеўданімаў Hide-my-email"
       ]
     },
     "action": {
@@ -3822,6 +3825,9 @@
       ],
       "View the invitations": [
         "Паглядзець запрашэнні"
+      ],
+      "Decline invitation": [
+        "Адхіліць запрашэнне"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3940,6 +3946,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Абараніце свае файлы з дапамогай зашыфраванага воблачнага сховішча. Уключае аўтаматычную сінхранізацыю, шыфраванае абагульванне файлаў і іншыя функцыі."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Уключае падтрымку для 3 карыстальніцкіх даменаў электроннай пошты, 90 адрасоў электроннай пошты, неабмежаваную колькасць псеўданімаў Hide-my-email, абагульванне календара і іншыя функцыі."
       ]
     },
     "Feedback Modal Title": {
@@ -6077,11 +6086,47 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Ваша фраза аднаўлення - гэта паслядоўнасць з 12 слоў у вызначаным парадку."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Наладзьце знешні выгляд праграм ${ BRAND_NAME }"
+      ],
+      "Drop file here to upload": [
+        "Перацягніце файл сюды, каб запампаваць"
+      ],
+      "Drop to import": [
+        "Перацягніце для імпартавання"
+      ],
+      "How hide-my-email aliases works": [
+        "Як працуюць псеўданімы Hide-my-email"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Наша сістэма пазначыла гэта паведамленне як падазроны ліст. Праверце яго надзейнасць перад тым, як пераходзіць па нейкіх спасылках у лісце або адкрываць прымацаваныя да яго далучэнні."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin - гэта сэрвіс ${ BRAND_NAME } і ваш уліковы запіс ${ BRAND_NAME_TWO } уключае псеўданімы для функцыі Hide-my-email. Для таго, каб пачаць маскіраваць ваш адрас электроннай пошты, перайдзіце ў SimpleLogin і стварыце свой першы псеўданім."
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "Яны больш не змогуць адпраўляць вам лісты са спамам, калі не будуць ведаць ваш адрас электроннай пошты. Абараніце сваю паштовую скрыню з функцыяй Hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Гэта размова змяшчае адно або некалькі паведамленняў з тэрмінам дзеяння"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Пры перадачы сваёй электроннай пошты, выкарыстоўвайце ўнікальны, аднаразовы псеўданім функцыі Hide-my-email, замест вашага рэальнага адраса электроннай пошты."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Вашы файлы будуць зашыфраваны, а пасля гэтага захаваны"
       ]
     },
     "info": {
       "Optional": [
         "Неабавязкова"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } каманда знойдзена.",
+        "${ filteredList.length } каманды знойдзены.",
+        "${ filteredList.length } каманд знойдзены.",
+        "${ filteredList.length } каманды знойдзены."
       ]
     },
     "Info on errors": {
@@ -6287,6 +6332,9 @@
       ],
       "Star": [
         "Зорачка"
+      ],
+      "Open command panel": [
+        "Адкрыць камандную панэль"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6790,6 +6838,12 @@
       ],
       "Your password (admin)": [
         "Ваш пароль (admin)"
+      ],
+      "Synchronize with system": [
+        "Сінхранізаваць з сістэмай"
+      ],
+      "Type a command...": [
+        "Увядзіце каманду..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7376,6 +7430,9 @@
       ],
       "Up to 3 TB of storage": [
         "Да 3 ТБ сховішча"
+      ],
+      "Hide-my-email aliases": [
+        "Псеўданімаў Hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -7477,6 +7534,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Вы можаце змяніць свой выбар у любы час у наладах."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Дадатковыя параметры тэмы даступны ў меню ўліковага запісу Налады > Знешні выгляд."
       ]
     },
     "Option": {
@@ -7647,6 +7707,9 @@
       ],
       "Write your message": [
         "Напішыце ваша паведамленне"
+      ],
+      "Type a command…": [
+        "Увядзіце каманду…"
       ]
     },
     "Placeholder for contact group name": {
@@ -8191,6 +8254,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Прастора сховішча размеркавана паміж ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } і ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Усе нашы прэміяльныя сэрвісы з іх найвышэйшымі квотамі: 100 адрасоў электроннай пошты, падтрымка для 10 карыстальніцкіх даменаў, неабмежаваная колькасць псеўданімаў Hide-my-email, абагульванне календара, зашыфраванае воблачнае сховішча і абагульванне файлаў, а таксама іншыя функцыі."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Уключае падтрымку для 1 карыстальніцкага дамена электроннай пошты, 10 адрасоў электроннай пошты, 10 псеўданімаў Hide-my-email, абагульванне календара і іншыя функцыі."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Уключае падтрымку для 3 карыстальніцкіх даменаў электроннай пошты, 15 адрасоў электроннай пошты, неабмежаваную колькасць псеўданімаў Hide-my-email, абагульванне календара і іншыя функцыі."
       ]
     },
     "Spotlight": {
@@ -9094,7 +9166,7 @@
         "Адказаць усім"
       ],
       "Report a problem": [
-        "Паведаміць пра праблему"
+        "Паведаміць аб праблеме"
       ],
       "Request new code": [
         "Запытаць новы код"
@@ -9233,6 +9305,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваш бясплатны выпрабавальны перыяд Mail Plus завершыцца ${ textDate }"
+      ],
+      "(active)": [
+        "(актыўная)"
+      ],
+      "Day theme": [
+        "Дзённая тэма"
+      ],
+      "Night theme": [
+        "Начная тэма"
       ]
     },
     "Title header": {
@@ -9320,6 +9401,15 @@
       ],
       "You do not have any contacts to export": [
         "У вас няма кантактаў для экспартавання"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Аўтаматычна пераключацца паміж вашымі пажаданымі тэмамі для дня і ночы згодна з начным і дзённым рэжымам вашай сістэмы."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Выбраная тэма будзе актыўна, калі ў вашай сістэме зададзены \"цёмны рэжым\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Выбраная тэма будзе актыўна, калі ў вашай сістэме зададзены \"светлы рэжым\""
       ]
     },
     "Tor out of date": {
@@ -9741,6 +9831,66 @@
       ],
       "Yearly, ${ untilString }": [
         "Штогод, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Стварыць новую папку"
+      ],
+      "Create a new label": [
+        "Стварыць новую метку"
+      ],
+      "Go to Archive": [
+        "Перайсці ў Архіў"
+      ],
+      "Go to Drafts": [
+        "Перайсці ў Чарнавікі"
+      ],
+      "Go to Inbox": [
+        "Перайсці ва Ўваходныя"
+      ],
+      "Go to Sent": [
+        "Перайсці ў Адпраўленыя"
+      ],
+      "Go to Spam": [
+        "Перайсці ў Спам"
+      ],
+      "Go to Starred": [
+        "Перайсці ў Пазначаныя зорачкай"
+      ],
+      "Go to Trash": [
+        "Перайсці ў Сметніцу"
+      ],
+      "New message": [
+        "Новае паведамленне"
+      ],
+      "Search": [
+        "Пошук"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Адпаведна сістэме"
+      ],
+      "Theme default": [
+        "Прадвызначаная тэма"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Вялікі"
+      ],
+      "Medium (recommended)": [
+        "Сярэдні (рэкамендуецца)"
+      ],
+      "Small": [
+        "Маленькі"
+      ],
+      "Very large": [
+        "Вельмі вялікі"
+      ],
+      "Very small": [
+        "Вельмі маленькі"
       ]
     }
   }

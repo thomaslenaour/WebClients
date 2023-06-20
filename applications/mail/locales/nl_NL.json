@@ -1162,6 +1162,9 @@
       ],
       "Zoom out": [
         "Zoom uit"
+      ],
+      "hide-my-email aliases": [
+        "Hide-my-email-aliassen"
       ]
     },
     "action": {
@@ -3890,6 +3893,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Beveilig uw bestanden met versleutelde cloudopslag. Inclusief automatische synchronisatie, versleuteld bestanden delen en meer."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 90 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
       ]
     },
     "Feedback Modal Title": {
@@ -5871,11 +5877,45 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Uw herstelzin is een reeks van 12 woorden in een specifieke volgorde."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Pas het uiterlijk van ${ BRAND_NAME } applicaties aan."
+      ],
+      "Drop file here to upload": [
+        "Sleep bestand hier om te uploaden"
+      ],
+      "Drop to import": [
+        "Neerzetten om te importeren"
+      ],
+      "How hide-my-email aliases works": [
+        "Hoe Hide-my-email-aliassen werken"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Ons systeem heeft dit bericht gemarkeerd als een verdachte e-mail. Controleer of het legitiem is voordat u op links of bijlagen klikt."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin is een ${ BRAND_NAME }-dienst, en uw ${ BRAND_NAME_TWO }-account bevat Hide-my-email-aliassen. Om te beginnen met het verbergen van uw e-mailadres, ga naar SimpleLogin en maak uw eerste alias aan."
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "Ze kunnen u geen spam versturen, als ze uw echte e-mailadres niet kennen. Bescherm uw inbox met Hide-my-email-aliassen."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Dit gesprek bevat een of meer verlopen berichten"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Gebruik bij het geven van uw e-mailadres een unieke, wegwerpbare alias met Hide-my-email, in plaats van uw echte e-mailadres."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Uw bestanden worden versleuteld en vervolgens opgeslagen"
       ]
     },
     "info": {
       "Optional": [
         "Optioneel"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } opdracht gevonden.",
+        "${ filteredList.length } opdrachten gevonden."
       ]
     },
     "Info on errors": {
@@ -6077,6 +6117,9 @@
       ],
       "Star": [
         "Ster"
+      ],
+      "Open command panel": [
+        "Bedieningspaneel openen"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6580,6 +6623,12 @@
       ],
       "Your password (admin)": [
         "Uw wachtwoord (admin)"
+      ],
+      "Synchronize with system": [
+        "Synchroniseren met systeem"
+      ],
+      "Type a command...": [
+        "Typ een opdracht..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7150,6 +7199,9 @@
       ],
       "Up to 3 TB of storage": [
         "Tot wel 3 TB opslag"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email-aliassen"
       ]
     },
     "new_plans: feature info": {
@@ -7251,6 +7303,9 @@
       ],
       "You can change this anytime in your settings.": [
         "U kunt dit op elk gewenst moment wijzigen in uw instellingen."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Meer thema-opties zijn beschikbaar in uw account Instellingen > Uiterlijk."
       ]
     },
     "Option": {
@@ -7421,6 +7476,9 @@
       ],
       "Write your message": [
         "Schrijf uw bericht"
+      ],
+      "Type a command…": [
+        "Typ een opdracht..."
       ]
     },
     "Placeholder for contact group name": {
@@ -7933,6 +7991,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Opslagruimte wordt gedeeld tussen ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Al onze premium diensten met hun hoogste limieten: 100 e-mailadressen, ondersteuning voor 10 aangepaste domeinen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's, versleutelde cloudopslag, versleuteld bestanden delen en meer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 1 aangepast e-maildomein, 10 e-mailadressen, 10 Hide-my-email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 15 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
       ]
     },
     "Spotlight": {
@@ -8895,6 +8962,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Uw Mail Plus proefversie eindigt op ${ textDate }"
+      ],
+      "(active)": [
+        "(actief)"
+      ],
+      "Day theme": [
+        "Dag thema"
+      ],
+      "Night theme": [
+        "Nacht thema"
       ]
     },
     "Title header": {
@@ -8982,6 +9058,9 @@
       ],
       "You do not have any contacts to export": [
         "U heeft geen contactpersonen om te exporteren"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Het geselecteerde thema is actief wanneer uw systeem is ingesteld op \"lichte modus\""
       ]
     },
     "Tor out of date": {
@@ -9333,6 +9412,66 @@
       ],
       "Yearly, ${ untilString }": [
         "Jaarlijks ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Nieuwe map aanmaken"
+      ],
+      "Create a new label": [
+        "Nieuwe label maken"
+      ],
+      "Go to Archive": [
+        "Ga naar Archief"
+      ],
+      "Go to Drafts": [
+        "Ga naar Concepten"
+      ],
+      "Go to Inbox": [
+        "Ga naar inbox"
+      ],
+      "Go to Sent": [
+        "Ga naar Verzonden"
+      ],
+      "Go to Spam": [
+        "Ga naar Spam"
+      ],
+      "Go to Starred": [
+        "Ga naar Berichten met ster"
+      ],
+      "Go to Trash": [
+        "Ga naar Prullenbak"
+      ],
+      "New message": [
+        "Nieuw bericht"
+      ],
+      "Search": [
+        "Zoeken"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systeem standaard"
+      ],
+      "Theme default": [
+        "Thema standaard"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Groot"
+      ],
+      "Medium (recommended)": [
+        "Gemiddeld (aanbevolen)"
+      ],
+      "Small": [
+        "Klein"
+      ],
+      "Very large": [
+        "Zeer groot"
+      ],
+      "Very small": [
+        "Zeer klein"
       ]
     }
   }

@@ -98,7 +98,7 @@
         "按原定时间"
       ],
       "At most 100 contacts are allowed per contact group": [
-        "每个联系人组最多允许有100个联系人"
+        "每个群组最多只能有 100 位联系人"
       ],
       "Attach screenshot(s)": [
         "添加截图"
@@ -476,7 +476,7 @@
         "我有疑问"
       ],
       "Image could not be loaded with tracker protection.": [
-        "图片无法在跟踪防护模式下加载"
+        "跟踪防护模式下无法加载此图像。"
       ],
       "Image will be loaded without a proxy": [
         "图像载入时不会借助代理服务器"
@@ -512,7 +512,7 @@
         "插入"
       ],
       "Insert ${ totalChecked } contacts": [
-        "插入 ${ totalChecked } 联系人"
+        "添加 ${ totalChecked } 位联系人"
       ],
       "Insert contact": [
         "插入联系人"
@@ -1152,6 +1152,15 @@
       ],
       "Zoom out": [
         "缩小"
+      ],
+      "Downloading": [
+        "正在下载"
+      ],
+      "hide-my-email aliases": [
+        "Hide My Email 邮箱别名"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "为了安全地搜索您的邮件内容，我们需要在浏览器后台下载您的所有往来邮件。首次下载可能需要耗费一些时间。"
       ]
     },
     "action": {
@@ -1646,7 +1655,7 @@
         "取消"
       ],
       "Cancel expiration": [
-        "取消过期"
+        "取消有效期"
       ]
     },
     "Collapsible tooltip": {
@@ -2867,16 +2876,16 @@
         "无标签"
       ],
       "ProtonMail logo and a plus sign": [
-        "ProtonMail 的 logo 和 a plus sign"
+        "ProtonMail 图标与一个加号"
       ],
       "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
-        "一次性向所有人发送电子邮件或邀请函来节省时间，这是许多其他功能中的一个高级功能。现在就升级吧。"
+        "群发日程邀请与邮件，省时又省力，还有更多高级功能，升级账户即可体验。"
       ],
       "The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_CONTACTS_STRING } contacts. If your file is bigger, please split it into smaller files.": [
         "文件大小上限为 ${ MAX_IMPORT_FILE_SIZE_STRING }，且联系人总数上限为 ${ MAX_IMPORT_CONTACTS_STRING }。若您的文件超出限制，请先拆分成较小的文件。"
       ],
       "Unlock custom message scheduling and other benefits when you upgrade your plan.": [
-        "升级计划时解锁自定义消息调度和其他好处。"
+        "升级账户即可自由选择发送时间，还有各种高级功能。"
       ],
       "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
         "升级账户即可使用无限量的筛选规则为您自动整理邮箱，还有更多功能等您体验。"
@@ -3043,7 +3052,7 @@
     },
     "Error": {
       "${ error.message } for <${ email }>. You can add another key or disable encryption for this contact to resolve the issue.": [
-        "${ error.message } 对于<${ email }>. 您可以为此联系人添加另一个密钥或禁用加密来解决此问题。"
+        "${ email } 的${ error.message }。您可以为此联系人添加其他密钥或关闭邮件加密以解决此问题。"
       ],
       "A group with this name already exists": [
         "已存在同名群组"
@@ -3187,7 +3196,7 @@
         "最多只能有 ${ attachmentsCountLimit } 个附件"
       ],
       "Merge at least ${ calendarsToFixCount } calendars with existing ${ BRAND_NAME } calendars": [
-        "将至少 ${ calendarsToFixCount } 个日历与现有的 ${ BRAND_NAME } 个日历合并"
+        "将至少 ${ calendarsToFixCount } 个日历与现有的 ${ BRAND_NAME } 日历合并"
       ],
       "Message needs to be sent first": [
         "需要先发送邮件"
@@ -3232,7 +3241,7 @@
         "密码不匹配"
       ],
       "Please activate your search again": [
-        "请再次激活您的搜索"
+        "请重新开启全文搜索"
       ],
       "Please fix the highlighted conflicts to proceed.": [
         "请修复高亮的冲突以继续。"
@@ -3322,7 +3331,7 @@
         "对不起，${ BRAND_NAME } 无法解密您的邮件。请确认您的密钥是否已全部启用。"
       ],
       "The email addresses do not match": [
-        "电子邮件地址不匹配"
+        "邮箱地址不一致"
       ],
       "The folder name is invalid. Please choose a different name.": [
         "文件夹名称无效，请更改。"
@@ -3352,7 +3361,7 @@
         "全文搜索出现问题，已改为使用普通搜索。"
       ],
       "There was a problem updating your local messages, they will be downloaded again to re-enable content search": [
-        "更新您的本地消息时出现问题，将再次下载它们以重新启用内容搜索"
+        "邮件内容同步失败，即将重新下载以开启邮件全文搜索"
       ],
       "There was an error when exporting the contacts vCards": [
         "导出联系人 vCards 时出错"
@@ -3415,7 +3424,7 @@
         "您尚未选择文件。"
       ],
       "You have reached the maximum number of calendars. Some calendars couldn't be imported.": [
-        "您已达到日历的最大数量。 某些日历无法导入。"
+        "您的日历数量已达上限，因此部分日历无法导入。"
       ],
       "You must set a name": [
         "请输入名称（必填）"
@@ -3492,7 +3501,7 @@
         "加密失败"
       ],
       "vCard versions < 3.0 not supported": [
-        "不支持vCard 3.0以下的版本"
+        "不支持 vCard 3.0 以下版本"
       ]
     },
     "Error importing contacts": {
@@ -3636,7 +3645,7 @@
         "出错了"
       ],
       "We couldn't load this page. Please refresh the page or check your internet connection.": [
-        "我们无法加载此页面。 请刷新页面或检查您的互联网连接。"
+        "页面加载失败，请刷新或检查网络连接。"
       ],
       "You do not have any contact yet. Start by creating a new contact": [
         "您还没有任何联系人。首先创建一个新的联系人。"
@@ -3723,81 +3732,84 @@
     },
     "familyOffer_2023:Action": {
       "Got it": [
-        "了解了"
+        "知道了"
       ],
       "Keep current plan": [
         "保持当前计划"
       ],
       "Switch plans": [
-        "切换计划"
+        "变更账户等级"
       ],
       "View the invitation": [
-        "查看TA的邀请"
+        "查看邀请"
       ],
       "View the invitations": [
-        "查看TA的所有邀请"
+        "查看所有邀请"
+      ],
+      "Decline invitation": [
+        "拒绝邀请"
       ]
     },
     "familyOffer_2023:Family plan": {
       "${ BRAND_NAME } groups": [
-        "${ BRAND_NAME } 个组"
+        "${ BRAND_NAME } 团体账户"
       ],
       "Accounts with custom domains cannot join a Visionary or family plan.": [
-        "具有自定义域的账户无法加入 Visionary 计划或家庭计划。"
+        "使用自有域名的邮箱不能加入 Visionary 或家庭账户。"
       ],
       "customer support": [
         "客户支持"
       ],
       "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
-        "如果您接受邀请，我们会将您从当前计划中转出，并将所有剩余余额存入您的账户。"
+        "如果您接受邀请，我们将为您退订当前账户等级，并将剩余时长折算为余额存入您的账户。"
       ],
       "Invited by: ${ inviteEmail }": [
-        "邀请人： ${ inviteEmail }"
+        "邀请人：${ inviteEmail }"
       ],
       "Manage addresses.": [
-        "管理地址"
+        "管理邮箱地址。"
       ],
       "Owners of a plan with members cannot join another group plan.": [
-        "拥有成员的计划的所有者不能加入另一个团体计划。"
+        "包含子用户的邮箱不能加入其他团体账户。"
       ],
       "Sorry, you can't switch plans at this time.": [
-        "抱歉，您目前无法切换计划。"
+        "抱歉，您目前无法变更账户等级。"
       ],
       "Storage assigned to you: ${ assignedStorage }": [
-        "分配给您的存储空间： ${ assignedStorage }"
+        "分配给您的存储空间：${ assignedStorage }"
       ],
       "The subscription is billed to the Visionary or family plan's primary admin.": [
         "订阅费用由 Visionary 计划或家庭计划的主要管理员支付。"
       ],
       "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
-        "Visionary 计划和家庭计划目前不支持外部账户。请在加入之前创建一个 ${ BRAND_NAME } 地址。 ${ addressSettingsLink }"
+        "Visionary 账户与家庭账户目前不支持第三方平台，请创建 ${ BRAND_NAME } 邮箱地址后再加入。${ addressSettingsLink }"
       ],
       "Visionary and family plans do not currently support lifetime accounts.": [
-        "Visionary 计划和家庭计划目前不支持终身账户。"
+        "Visionary 与家庭账户暂不支持终身制。"
       ],
       "You are invited to join ${ invite.OrganizationName }": [
-        "您已受邀加入 ${ invite.OrganizationName }"
+        "有人邀请您加入 ${ invite.OrganizationName }"
       ],
       "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
-        "您在 6 个月内只能接受 3 次邀请。 如果您需要例外，请联系 ${ supportLink } 。"
+        "6 个月内您只能接受 3 次邀请。如果另有需要，请联系${ supportLink }。"
       ],
       "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
-        "您已受邀加入  ${ bannerOrganization }. ${ viewInviteButton }"
+        "有人邀请您加入 ${ bannerOrganization }。${ viewInviteButton }"
       ],
       "You have successfully joined the Family plan": [
-        "您已成功加入家庭计划"
+        "您已成功加入家庭账户"
       ],
       "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
-        "我们邀请您将您的 ${ BRAND_NAME } 账户链接到此团体计划，并一起享受所有 ${ BRAND_NAME_TWO } 高级功能。"
+        "有人邀请您将 ${ BRAND_NAME } 账户接入此团体账户中，共同享受所有 ${ BRAND_NAME_TWO } 高级功能。"
       ],
       "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
-        "您账户中的电子邮件地址多于此计划中可用的电子邮件地址。 ${ addressSettingsLink }"
+        "您已有的邮箱地址数量超过了此账户分配给您的邮箱地址数。${ addressSettingsLink }"
       ],
       "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
-        "您的账户正在使用 ${ usedSpace } 的存储空间，这超出了为您分配的 ${ inviteSpace } 。删除一些数据或要求该计划的管理员增加您的存储空间。"
+        "您已使用 ${ usedSpace } 存储空间，超过了账户分配的 ${ inviteSpace } 上限。请清理部分数据或要求账户管理员为您的邮箱扩容。"
       ],
       "Your current plan cannot join a Visionary or family plan.": [
-        "您当前的计划无法加入 Visionary 计划或家庭计划。"
+        "您的当前账户无法加入 Visionary 或家庭账户。"
       ]
     },
     "familyOffer_2023:Get Proton Family": {
@@ -4475,7 +4487,7 @@
         "已屏蔽 ${ numberOfTrackers } 个电子邮件跟踪器"
       ],
       "${ numContact } contacts": [
-        "${ numContact } 个联系人"
+        "${ numContact } 位联系人"
       ],
       "${ numGroups } contact groups": [
         "${ numGroups } 个联系人群组"
@@ -4643,7 +4655,7 @@
         "需要关注"
       ],
       "Automatically delete messages that have been in trash and spam for more than 30 days.": [
-        "自动删除已在垃圾箱和垃圾邮件中超过 30 天的邮件。"
+        "自动删除归入垃圾邮件或废件箱超过 30 天的邮件。"
       ],
       "Background color": [
         "背景颜色"
@@ -4691,16 +4703,16 @@
         "确认钓鱼报告"
       ],
       "Contact assigned to group ${ contactGroupName }": [
-        "已分配给群组 ${ contactGroupName } 的联系人"
+        "联系人已加入 ${ contactGroupName } 群组"
       ],
       "Contact unassigned to group ${ contactGroupName }": [
-        "未分配给群组 ${ contactGroupName } 的联系人"
+        "联系人已从 ${ contactGroupName } 群组中移除"
       ],
       "Copied to clipboard": [
         "已复制到剪贴板"
       ],
       "Create ${ calendarsToBeCreatedCount } new calendars": [
-        "创建 ${ calendarsToBeCreatedCount } 个新日历"
+        "创建 ${ calendarsToBeCreatedCount } 份新日历"
       ],
       "Create a label for the imported messages, a time range for this import, and the folders you would like to import.": [
         "给导入的邮件加标签，指定导入的时间范围，并选择要导入的文件夹。"
@@ -4847,10 +4859,10 @@
         "在 ${ formattedDate } 后过期"
       ],
       "Expires in ${ minutesDiff } minutes": [
-        "在 ${ minutesDiff } 分钟后过期"
+        "${ minutesDiff } 分钟后过期"
       ],
       "Expires in less than ${ hoursDiff } hours": [
-        "不到 ${ hoursDiff } 小时后过期"
+        "${ hoursDiff } 小时内过期"
       ],
       "files attached": [
         "个附件"
@@ -4877,7 +4889,7 @@
         "发件人"
       ],
       "Has ${ numAttachments } attachments (${ numAttachmentsSize })": [
-        "有 ${ numAttachments } 个附件，大小为 (${ numAttachmentsSize })"
+        "共 ${ numAttachments } 项附件（${ numAttachmentsSize }）"
       ],
       "here": [
         "此处"
@@ -4910,7 +4922,7 @@
         "自动回复内容不能包含图片，故图片已移除"
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendars": [
-        "导入 ${ calendarCount } / ${ totalCalendarsCount } 个日历"
+        "导入 ${ calendarCount } / ${ totalCalendarsCount } 份日历"
       ],
       "Import ${ contactsFragment } and ${ contactsGroupsFragment }": [
         "导入 ${ contactsFragment }和 ${ contactsGroupsFragment }"
@@ -5030,7 +5042,7 @@
         "邮件将于明天 ${ formattedTime } 发送"
       ],
       "Messages that have been in trash and spam more than 30 days will be automatically deleted.": [
-        "在垃圾箱和垃圾邮件中超过 30 天的邮件将被自动删除。"
+        "已归入垃圾邮件或废件箱超过 30 天的邮件将被直接删除。"
       ],
       "Monthly ${ onDayString }": [
         "每月 ${ onDayString }"
@@ -5219,7 +5231,7 @@
         "搜索耗时太长？试试${ dropdownButton }或${ toggleOffButton }。"
       ],
       "Secure your files with encrypted cloud storage for free, today.": [
-        "立即使用免费的加密云存储来保护您的文件。"
+        "您可以即刻使用免费的加密云盘保护您的文件。"
       ],
       "Seems like you are all caught up for now": [
         "看来没有要处理的事务了"
@@ -5471,7 +5483,7 @@
         "正在更新邮件内容..."
       ],
       "Updating your local messages, message content won't be searched during this update": [
-        "正在更新您的本地消息，本次更新将不再搜索消息内容"
+        "正在同步邮件信息，暂时无法搜索邮件全文"
       ],
       "Upgrade now to get premium features, products and storage at a special price": [
         "现在升级账户可获得更大存储空间、更多功能，还能享受优惠"
@@ -5480,19 +5492,19 @@
         "升级后可向您的账户添加更多地址。"
       ],
       "Upgrade to automatically delete messages that have been in trash and spam for more than 30 days.": [
-        "升级以自动删除已在垃圾箱和垃圾邮件中超过 30 天的邮件。"
+        "升级账户即可自动删除归入垃圾邮件或废件箱超过 30 天的邮件。"
       ],
       "Upgrade to create more folders, filters, and addresses.": [
         "升级账户即可创建更多文件夹、筛选规则和邮箱地址。"
       ],
       "Upgrade to level up your privacy.": [
-        "升级以提升您的隐私。"
+        "升级账户即可进一步保护隐私。"
       ],
       "Upgrade to send email from @pm.me addresses.": [
         "开通付费账户即可通过 @pm.me 地址发送电子邮件。"
       ],
       "Upgrade to send emails from your custom email domain.": [
-        "升级以从您的自定义电子邮件域发送电子邮件。"
+        "升级账户即可使用您自己的域名发送邮件。"
       ],
       "Upgrade to send emails to contact groups easily.": [
         "升级后可轻松向联系人群组发送电子邮件。"
@@ -5507,7 +5519,7 @@
         "升级账户不仅可以支持我们的隐私保护事业，还能解锁更多功能。"
       ],
       "Upgrade to unlock premium features.": [
-        "升级以解锁高级功能。"
+        "升级账户即可解锁高级功能。"
       ],
       "Upgrade to use ${ MAIL_APP_NAME } with Apple Mail, Outlook or Thunderbird.": [
         "升级账户即可通过 Apple Mail、Outlook 或 Thunderbird 使用 ${ MAIL_APP_NAME }。"
@@ -5603,7 +5615,7 @@
         "您可以开启通知功能，以便在新邮件到达此文件夹时获得提醒。"
       ],
       "You can use ${ VPN_APP_NAME } for free, today.": [
-        "无需等待，您即可免费使用 ${ VPN_APP_NAME } 。"
+        "您可以即刻免费体验 ${ VPN_APP_NAME }。"
       ],
       "You cannot reply from the invited address.": [
         "您无法通过受邀地址进行回复。"
@@ -5660,10 +5672,10 @@
         "您提到了“${ attachmentsFoundKeyword }”，但没有添加附件。是否仍要发送邮件？"
       ],
       "You've reached the maximum number of addresses in the contact group(s):": [
-        "您已达到联系人组中地址的最大数量："
+        "以下群组中的邮箱地址数量已达上限："
       ],
       "You've reached the maximum number of addresses in the contact group.": [
-        "您已经达到了联系人组中地址的最大数量。"
+        "此群组中的邮箱地址数量已达上限。"
       ],
       "Your ${ BRAND_NAME } Account includes SimpleLogin. Install the browser extension with one click to get started.": [
         "您的 ${ BRAND_NAME } 账户自带 SimpleLogin 服务，一键安装浏览器扩展程序即可开始使用。"
@@ -5712,11 +5724,56 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "恢复密语是按特定顺序排列的 12 个英文单词。"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "自由定制 ${ BRAND_NAME } 应用的外观。"
+      ],
+      "Downloading paused": [
+        "下载已暂停"
+      ],
+      "Drop file here to upload": [
+        "拖至此处即可上传"
+      ],
+      "Drop to import": [
+        "拖至此处即可导入"
+      ],
+      "How hide-my-email aliases works": [
+        "何为 Hide My Email 邮箱别名"
+      ],
+      "Messages downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "已下载 ${ currentProgress }/${ totalProgress } 封邮件"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "系统检测到此邮件来源可疑，请确认邮件真实性后再打开其中的链接或附件。"
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "开启此选项即可安全地搜索邮件全文。"
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "您可以使用 ${ BRAND_NAME } 提供的 SimpleLogin 服务隐藏您的 ${ BRAND_NAME_TWO } 邮箱地址，只需前往 SimpleLogin 创建邮箱别名即可。"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "只要不知道您的邮箱地址就无法发送垃圾邮件。使用 Hide My Email 功能将垃圾邮件拒之门外。"
+      ],
+      "This conversation contains one or more expiring messages": [
+        "此会话中部分邮件已设置有效期"
+      ],
+      "Turn off to only search by date, name, or email address. To disable search message content and delete downloaded messages, go to settings.": [
+        "关闭则仅搜索日期、姓名和邮箱地址。前往设置可关闭邮件全文搜索并删除已下载的邮件。"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "在网上填写邮箱时，不必使用真实的邮箱地址，只需填写一个可销毁的 Hide My Email 临时邮箱。"
+      ],
+      "Your files will be encrypted and then saved": [
+        "您的文件将被加密保存。"
       ]
     },
     "info": {
       "Optional": [
         "可选"
+      ],
+      "${ filteredList.length } commands found.": [
+        "找到 ${ filteredList.length } 条命令。"
       ]
     },
     "Info on errors": {
@@ -5750,6 +5807,12 @@
       ],
       "You have enabled Address Verification with Trusted Keys for these email addresses,\nbut no active encryption keys have been trusted.\nYou must trust keys valid for sending in order to send a message to these email addresses.": [
         "您已为所选邮箱地址开启可信密钥验证，\n但尚未信任其任何可用于发送邮件的有效密钥。\n请先信任其密钥后再向该邮箱地址发送邮件。"
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "点击“信任密钥”将该发件人与此公钥关联，以后可自动验证其发来的邮件。"
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "点击“信任密钥”将创建联系人并与此公钥关联，以后可自动验证其发来的邮件。"
       ]
     },
     "Key validation warning": {
@@ -5910,6 +5973,9 @@
       ],
       "Star": [
         "星标"
+      ],
+      "Open command panel": [
+        "打开命令面板"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6413,6 +6479,12 @@
       ],
       "Your password (admin)": [
         "您的密码(管理员)"
+      ],
+      "Synchronize with system": [
+        "跟随系统"
+      ],
+      "Type a command...": [
+        "输入命令..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -6501,13 +6573,13 @@
     },
     "Limit of calendars reached": {
       "To add a new calendar, remove an existing one.": [
-        "要添加新日历，请删除现有日历。"
+        "需要先删除一份现有日历才能添加新日历。"
       ],
       "To add a new calendar, remove another calendar or upgrade your ${ BRAND_NAME } plan to a ${ MAIL_SHORT_APP_NAME } paid plan.": [
-        "若要添加新日历，请删除另一个日历或将您的 ${ BRAND_NAME } 计划升级到 ${ MAIL_SHORT_APP_NAME } 付费计划。"
+        "如需继续添加日历，请先删除一份现有日历，或开通付费 ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME } 账户。"
       ],
       "You've reached the maximum number of calendars available in your plan.": [
-        "您已达到计划中可用日历的最大数量。"
+        "您的日历数量已达到当前账户等级的上限。"
       ]
     },
     "Link": {
@@ -6694,16 +6766,16 @@
     },
     "Mail import summary": {
       "Import all messages from ${ itemsToImportCount } folders and label them as": [
-        "从 ${ itemsToImportCount } 文件夹中导入所有邮件并将它们标记为"
+        "导入 ${ itemsToImportCount } 个文件夹中的所有邮件并加标签"
       ],
       "Import all messages from ${ itemsToImportCount } labels and label them as": [
-        "从 ${ itemsToImportCount } 标签中导入所有消息并将它们标记为"
+        "导入带有 ${ itemsToImportCount } 类标签的邮件并加标签"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } folders and label them as": [
-        "从 ${ selectedItemsToImportCount } 文件夹导入所有来自 ${ itemsToImportCount } 的所有邮件并将它们标记为"
+        "导入 ${ selectedItemsToImportCount }/${ itemsToImportCount } 个文件夹中的所有邮件并加标签"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } labels and label them as": [
-        "从 ${ selectedItemsToImportCount } 标签中导入所有来自 ${ itemsToImportCount } 标签的消息并将它们标记为"
+        "导入带有 ${ selectedItemsToImportCount }/${ itemsToImportCount } 类标签的邮件并加标签"
       ]
     },
     "Mailbox": {
@@ -6766,7 +6838,7 @@
         "定时发送已撤销"
       ],
       "Scheduling canceled. Message has been moved to Drafts.": [
-        "计划已取消。 邮件已移至草稿。"
+        "定时发送已取消，邮件已存为草稿。"
       ],
       "Sending undone": [
         "邮件发送已撤销"
@@ -6956,13 +7028,13 @@
     },
     "new_plans: feature": {
       "Auto-delete spam and trashed messages": [
-        "自动删除垃圾邮件和垃圾信息"
+        "自动删除垃圾邮件和废件箱中邮件"
       ],
       "Custom email domains": [
         "自有域名"
       ],
       "Schedule messages at any time": [
-        "随时安排邮件"
+        "自由选择发送时间"
       ],
       "Search message content": [
         "搜索邮件全文"
@@ -6975,20 +7047,23 @@
       ],
       "Up to 3 TB of storage": [
         "高达 3 TB 的存储空间"
+      ],
+      "Hide-my-email aliases": [
+        "Hide My Email 邮箱别名"
       ]
     },
     "new_plans: feature info": {
       "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
-        "为您的在线身份创建多个电子邮件地址，例如JohnShopper@${ domain } 账户用于购物，JohnNews@${ domain2 } 账户用于订阅新闻"
+        "为您的各类网络需求创建不同的邮箱地址；例如 ChenGouwu@${ domain } 用于注册购物网站，ChenXinwen@${ domain2 } 用于收取时事新闻"
       ],
       "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
-        "通过 ${ BRAND_NAME } 使用 SimpleLogin 获得无限别名"
+        "通过 ${ BRAND_NAME } 提供的 SimpleLogin 服务使用无限量的邮箱别名"
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
-        "储存空间由 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 和 ${ DRIVE_APP_NAME } 共享"
+        "${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } 均共用同一存储空间"
       ],
       "Use your own custom email domain address, e.g., you@yourname.com": [
-        "使用您自己的自定义电子邮件域地址，例如 you@yourname.com"
+        "在邮箱地址中使用您自己的域名（如 you@yourname.com）"
       ]
     },
     "new_plans: label": {
@@ -7073,6 +7148,9 @@
       ],
       "You can change this anytime in your settings.": [
         "您可以随时在设置中更改。"
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "在设置 > 外观中还有更多配色可供选择。"
       ]
     },
     "Option": {
@@ -7240,6 +7318,12 @@
       ],
       "Write your message": [
         "在此撰写邮件内容"
+      ],
+      "Search date, name, email address, or subject line": [
+        "搜索日期、姓名、邮箱地址或邮件主题"
+      ],
+      "Type a command…": [
+        "输入命令…"
       ]
     },
     "Placeholder for contact group name": {
@@ -7531,7 +7615,7 @@
     },
     "specialoffer: Action, Unlimited is a plan name": {
       "Go Unlimited": [
-        "去到 无限制"
+        "开通 Unlimited"
       ]
     },
     "specialoffer: Countdown unit": {
@@ -7561,43 +7645,43 @@
         "3 TB"
       ],
       "6 users": [
-        "6 名使用者"
+        "6 名用户"
       ],
       "64 countries": [
         "64 个国家"
       ],
       "All paid Mail and Calendar features": [
-        "所有付费邮件和日历功能"
+        "享受 Mail 与 Calendar 的所有付费功能"
       ],
       "High speed VPN": [
-        "高速VPN"
+        "高速 VPN"
       ],
       "Highest VPN speed": [
-        "拥有最快的速度的VPN"
+        "VPN 速度最快"
       ],
       "Premium Drive": [
-        "高级云盘"
+        "高级云盘账户"
       ],
       "Premium early access": [
-        "高级抢先体验"
+        "抢先体验高级功能"
       ],
       "Premium Mail and Calendar": [
-        "高级邮件和日历"
+        "高级邮箱与日历账户"
       ],
       "Premium Mail, Calendar and Drive": [
-        "高级邮件、日历和云盘"
+        "享受 Mail、Calendar、Drive 全部高级功能"
       ],
       "Premium VPN": [
-        "高级VPN"
+        "高级 VPN 账户"
       ],
       "Secure cloud storage": [
         "安全的云存储"
       ],
       "Secure streaming": [
-        "安全流媒体"
+        "安全看视频"
       ],
       "Support online privacy": [
-        "支持在线隐私"
+        "支持网络隐私保护"
       ]
     },
     "specialoffer: Label": {
@@ -7605,7 +7689,7 @@
         "终身优惠"
       ],
       "Limited time only": [
-        "时间不多了"
+        "限时优惠"
       ],
       "Most popular": [
         "最受欢迎"
@@ -7614,25 +7698,103 @@
         "优惠即将结束"
       ],
       "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
-        "折扣将在续订后继续适用，直到订阅被取消或修改"
+        "每次续订均可享受此优惠，直到退订或变更账户等级"
       ]
     },
     "specialoffer: Link": {
       "Go to subscription plans": [
-        "转至订阅计划"
+        "查看账户等级"
       ],
       "Upgrade": [
-        "升级"
+        "升级账户"
       ]
     },
     "specialoffer: Offers": {
       "for ${ n } months": [
         "${ n } 个月"
+      ],
+      "/ month": [
+        "/ 月"
+      ],
+      "1 year": [
+        "一年"
+      ],
+      "2 years": [
+        "两年"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "一个月的费用为${ amount }"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "一年的费用为${ amount }"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "15个月的费用为${ amount }"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "两年的费用为${ amount }"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "30个月的费用为${ amount }"
+      ],
+      "Get the deal": [
+        "立即享受优惠"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "一年后续费时仍可享受折扣价 ${ discountedAmount }（优惠 ${ discount }%），无需支付原价 ${ regularAmount }"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "两年后续费时仍可享受折扣价 ${ discountedAmount }（优惠 ${ discount }%），无需支付原价 ${ regularAmount }"
+      ],
+      "Save ${ discount }%": [
+        "立省 ${ discount }%"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "一个月的标准价格为${ amount }"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "一年的标准价格为${ amount }"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "15个月的标准价格为${ amount }"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "两年的的标准价格为${ amount }"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "30个月的标准价格为${ amount }"
       ]
     },
     "specialoffer: Tooltip": {
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
-        "存储空间由 ${ MAIL_APP_NAME } 、${ CALENDAR_APP_NAME } 和 ${ DRIVE_APP_NAME } 共享。"
+        "${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } 均共用同一存储空间。"
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "突破网络封锁，保护线上隐私。可连接全球逾 60 个国家的 1700 台服务器，每位用户 10 台设备可同时在线，畅享全球流媒体服务，拦截恶意软件和广告，还有更多功能等您体验。"
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "突破网络封锁，保护线上隐私。可连接全球逾 60 个国家的 1700 台服务器，10 台设备可同时在线，畅享全球流媒体服务，拦截恶意软件和广告，还有更多功能等您体验。"
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "随时随地畅享 Netflix、Disney+、Prime Video 等精彩内容。"
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "顶格享受我们的所有高级服务：100 个邮箱地址、10 个自有域名、无限量 Hide My Email 邮箱别名、日程共享、支持文件共享的加密云盘等。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "支持 1 个自有域名、10 个邮箱地址、10 个 Hide My Email 邮箱别名、日程共享等功能。"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "支持 3 个自有域名、15 个邮箱地址、无限量 Hide My Email 邮箱别名、日程共享等功能。"
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "适合家庭与小型团队，每个人都能拥有各自的邮箱和地址。需要使用自有域名。"
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "无需额外付费即可享受我们未来推出的所有隐私保护服务，还能抢先体验各类新产品和新功能。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "使用加密的云存储保护您的文件。 包括自动同步、加密文件共享等。"
       ]
     },
     "Spotlight": {
@@ -7653,6 +7815,12 @@
       ],
       "You can now schedule your messages to be sent later": [
         "现已支持定时发送邮件"
+      ],
+      "Search just got smarter and faster": [
+        "搜索变得更智能、更快速"
+      ],
+      "Try it today.": [
+        "期待您的体验。"
       ]
     },
     "Status": {
@@ -7907,6 +8075,9 @@
       ],
       "Verification successful": [
         "验证成功"
+      ],
+      "Message content search enabled": [
+        "邮件全文搜索已开启"
       ]
     },
     "Success notification": {
@@ -8458,7 +8629,7 @@
         "正在发送原始邮件"
       ],
       "Set your own schedule": [
-        "设定您自己的时间表"
+        "自由设置定时发送"
       ],
       "Settings": [
         "设置"
@@ -8467,7 +8638,7 @@
         "登录并授予权限"
       ],
       "Sign in with 2FA": [
-        "使用 2FA 登录"
+        "通过双重验证登录"
       ],
       "Sign out": [
         "退出"
@@ -8506,7 +8677,7 @@
         "信任公钥?"
       ],
       "Unlock contacts groups": [
-        "解锁联系人组"
+        "解锁群组功能"
       ],
       "Unsubscribe": [
         "退订"
@@ -8543,6 +8714,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "您的 Mail Plus 免费体验期将于 ${ textDate } 结束"
+      ],
+      "(active)": [
+        "（当前）"
+      ],
+      "Day theme": [
+        "日间模式"
+      ],
+      "Night theme": [
+        "夜间模式"
       ]
     },
     "Title header": {
@@ -8617,7 +8797,7 @@
         "无法加载图像"
       ],
       "The image could not be loaded using proxy": [
-        "无法使用代理加载图像"
+        "通过代理服务器无法加载图像"
       ],
       "The import will start with the most recent messages.": [
         "导入将从最近的信息开始。"
@@ -8630,6 +8810,15 @@
       ],
       "You do not have any contacts to export": [
         "您没有任何联系人可导出"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "根据系统设置自动调整日间或夜间模式。"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "所选模式将在系统设置为“暗色模式”时生效。"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "所选模式将在系统设置为“亮色模式”时生效。"
       ]
     },
     "Tor out of date": {
@@ -8946,6 +9135,138 @@
       ],
       "Yearly, ${ untilString }": [
         "每年, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "创建文件夹"
+      ],
+      "Create a new label": [
+        "创建标签"
+      ],
+      "Go to Archive": [
+        "转至存档"
+      ],
+      "Go to Drafts": [
+        "转至草稿"
+      ],
+      "Go to Inbox": [
+        "转至收件箱"
+      ],
+      "Go to Sent": [
+        "转至已发送"
+      ],
+      "Go to Spam": [
+        "转至垃圾邮件"
+      ],
+      "Go to Starred": [
+        "转至星标邮件"
+      ],
+      "Go to Trash": [
+        "转至废件箱"
+      ],
+      "New message": [
+        "撰写邮件"
+      ],
+      "Search": [
+        "搜索"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB 总存储空间"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "高级云盘"
+      ],
+      "Premium Mail and Calendar": [
+        "高级邮件和日历"
+      ],
+      "Premium VPN": [
+        "高级VPN"
+      ],
+      "Up to 6 users": [
+        "多达 6 位用户"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "* 计费周期结束时账户将以相同费率自动续费。"
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "折扣基于标准月费计算。"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "连接全球逾 65 个国家的 2700 台服务器，多达 10 台设备同时在线，畅享全球流媒体服务，拦截恶意软件和广告，还有更多功能等您体验。"
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "支持 3 个自有域名、90 个邮箱地址、无限量 Hide My Email 邮箱别名、日程共享等功能。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "使用加密的云存储保护您的文件。 包括自动同步、加密文件共享等。"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "跟随系统"
+      ],
+      "Theme default": [
+        "跟随配色方案"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中等（推荐）"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "极大"
+      ],
+      "Very small": [
+        "极小"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "折扣基于标准月费计算。"
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "每两年账户将以相同费率自动续费，直至手动退订。"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "黑色星期五特惠"
+      ],
+      "Cyber Week Sale": [
+        "Cyber Week 特惠"
+      ],
+      "End of year offer": [
+        "年终特惠"
+      ],
+      "End of Year Sale": [
+        "年终特惠"
+      ],
+      "Get our premium bundle and save more": [
+        "选择高级套装更加优惠"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "绝版 Visionary 账户限时回归"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "一次性开通两年 ${ planName } 更加优惠"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "一次性开通两年 ${ planName } 更加优惠"
       ]
     }
   }

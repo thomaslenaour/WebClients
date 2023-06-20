@@ -6071,11 +6071,41 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Ваша фраза для восстановления – это набор из 12 слов в определенном порядке."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Настройте внешний вид ${ BRAND_NAME } приложений."
+      ],
+      "Drop file here to upload": [
+        "Переместите файл сюда, чтобы скачать"
+      ],
+      "Drop to import": [
+        "Импортировать"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Сообщение загружено: ${ currentProgress } из ${ totalProgress }",
+        "Сообщения загружены: ${ currentProgress } из ${ totalProgress }",
+        "Сообщения загружены: ${ currentProgress } из ${ totalProgress }",
+        "Сообщения загружены: ${ currentProgress } из ${ totalProgress }"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Наша система отметила это сообщение, как подозрительное. Пожалуйста, проверьте корректность адреса, прежде чем переходить по ссылкам или открывать вложения."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Эта беседа содержит одно или несколько исчезающих сообщений"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Ваши файлы будут зашифрованы и затем сохранены"
       ]
     },
     "info": {
       "Optional": [
         "Необязательно"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } команда найдена",
+        "${ filteredList.length } найдены команды.",
+        "${ filteredList.length } команд найдено",
+        "${ filteredList.length } найденные команды."
       ]
     },
     "Info on errors": {
@@ -6115,6 +6145,12 @@
         "Вы включили проверку адреса доверенными ключами, но ни один из активных ключей для шифрования не является доверенным для этого адреса электронной почты.\nВы должны доверять ключу для отправки, чтобы отправлять сообщения на этот адрес.",
         "Вы включили проверку адреса доверенными ключами, но ни один из активных ключей для шифрования не является доверенным для этого адреса электронной почты.\nВы должны доверять ключу для отправки, чтобы отправлять сообщения на этот адрес.",
         "Вы включили проверку адреса доверенными ключами, но ни один из активных ключей для шифрования не является доверенным для этого адреса электронной почты.\nВы должны доверять ключу для отправки, чтобы отправлять сообщения на этот адрес."
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "Нажатие на\" Доверительный ключ\" свяжет этот открытый ключ с данным отправителем, и электронные письма с этого адреса будут автоматически криптографически проверяться."
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "Нажатие на \"Доверенный ключ\", создаст новый контакт и свяжет этот открытый ключ с данным отправителем. Письма с этого адреса будут автоматически криптографически проверяться."
       ]
     },
     "Key validation warning": {
@@ -7632,6 +7668,9 @@
       ],
       "Write your message": [
         "Напишите сообщение"
+      ],
+      "Search date, name, email address, or subject line": [
+        "Поиск по дате, имени, адресу электронной почты или теме письма"
       ]
     },
     "Placeholder for contact group name": {
@@ -8196,6 +8235,12 @@
       ],
       "You can now schedule your messages to be sent later": [
         "Теперь вы можете запланировать отправку сообщений на более позднее время"
+      ],
+      "Search just got smarter and faster": [
+        "Поиск стал умнее и быстрее"
+      ],
+      "Try it today.": [
+        "Попробуйте это сегодня."
       ]
     },
     "Status": {
@@ -8525,6 +8570,9 @@
       ],
       "Verification successful": [
         "Проверка прошла успешно"
+      ],
+      "Message content search enabled": [
+        "Поиск по содержимому сообщений включен"
       ]
     },
     "Success notification": {

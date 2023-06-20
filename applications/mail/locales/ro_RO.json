@@ -1166,6 +1166,9 @@
       ],
       "Zoom out": [
         "Micșorare"
+      ],
+      "hide-my-email aliases": [
+        "aliasuri hide-my-email"
       ]
     },
     "action": {
@@ -3797,6 +3800,9 @@
       ],
       "View the invitations": [
         "Afișare invitații"
+      ],
+      "Decline invitation": [
+        "Refuzare invitație"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3915,6 +3921,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Protejați-vă fișierele cu stocarea criptată în cloud. Include sincronizare automată, partajare criptată a fișierelor și multe altele."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Include suport pentru 3 domenii de e-mail personale, 90 adrese de e-mail, aliasuri nelimitate hide-my-email, partajare calendar și altele."
       ]
     },
     "Feedback Modal Title": {
@@ -5974,11 +5983,46 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Fraza de recuperare este o serie de 12 cuvinte într-o anumită ordine."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalizați aspectul aplicației ${ BRAND_NAME }."
+      ],
+      "Drop file here to upload": [
+        "Plasați fișiere aici pentru încărcare"
+      ],
+      "Drop to import": [
+        "Plasare pentru importare"
+      ],
+      "How hide-my-email aliases works": [
+        "Cum funcționează aliasurile hide-my-email"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Sistemul nostru a etichetat acest mesaj ca fiind suspect. Verificați legitimitatea acestuia înainte de a accesa orice legătură sau fișier atașat."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin este un serviciu ${ BRAND_NAME }, iar acest cont ${ BRAND_NAME_TWO } include aliasuri hide-my-email de ascundere a adresei de e-mail. Pentru a începe să vă ascundeți adresa, accesați SimpleLogin și creați-vă primul alias."
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "Ceilalți nu vă pot trimite mesaje nedorite dacă nu vă cunosc adresa de e-mail. Protejați-vă adresa folosind aliasuri hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Această conversație conține unul sau mai multe mesaje care expiră."
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Când vă furnizați adresa de e-mail, folosiți un alias hide-my-email unic, temporar, în locul adresei de e-mail reale."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Fișierele vor fi criptate și apoi salvate."
       ]
     },
     "info": {
       "Optional": [
         "Opțional"
+      ],
+      "${ filteredList.length } command found.": [
+        "S-a ${ filteredList.length } comandă.",
+        "S-au găsit ${ filteredList.length } comenzi.",
+        "S-au găsit ${ filteredList.length } de comenzi."
       ]
     },
     "Info on errors": {
@@ -6182,6 +6226,9 @@
       ],
       "Star": [
         "Marcare cu stea"
+      ],
+      "Open command panel": [
+        "Deschidere panou de comandă"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6685,6 +6732,12 @@
       ],
       "Your password (admin)": [
         "Parola dvs. (administrator)"
+      ],
+      "Synchronize with system": [
+        "Sincronizare cu sistemul"
+      ],
+      "Type a command...": [
+        "Scrieți o comandă..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7263,6 +7316,9 @@
       ],
       "Up to 3 TB of storage": [
         "Până la 3 TB spațiu de stocare"
+      ],
+      "Hide-my-email aliases": [
+        "Aliasuri hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -7364,6 +7420,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Puteți modifica oricând aceasta în setări."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Mai multe opțiuni pentru teme sunt disponibile în Setări > Aspect."
       ]
     },
     "Option": {
@@ -7534,6 +7593,9 @@
       ],
       "Write your message": [
         "Scrieți mesajul"
+      ],
+      "Type a command…": [
+        "Scrieți o comandă..."
       ]
     },
     "Placeholder for contact group name": {
@@ -8062,6 +8124,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Spațiul de stocare este distribuit între ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } și ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Toate serviciile noastre premium cu limitele la maxim: 100 de adrese de e-mail, suport pentru 10 domenii personale, aliasuri nelimitate hide-my-email, partajare calendar, stocare criptată în cloud și fișiere partajate și multe altele."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Include suport pentru un domeniu de e-mail personal, 10 adrese de e-mail, 10 aliasuri hide-my-email, partajare calendar și altele."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Include suport pentru 3 domenii de e-mail personale, 15 adrese de e-mail, aliasuri nelimitate hide-my-email, partajare calendar și altele."
       ]
     },
     "Spotlight": {
@@ -9064,6 +9135,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Perioada de încercare pentru Mail Plus se încheie la ${ textDate } "
+      ],
+      "(active)": [
+        "(activă)"
+      ],
+      "Day theme": [
+        "Temă zi"
+      ],
+      "Night theme": [
+        "Temă noapte"
       ]
     },
     "Title header": {
@@ -9151,6 +9231,15 @@
       ],
       "You do not have any contacts to export": [
         "Nu aveți persoane de contact pentru exportare"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Comutare automată a temei preferate sincron cu modul luminos sau întunecat setat al sistemului."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Tema selectată va fi activă când sistemul va fi setat în „modul întunecat”."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Tema selectată va fi activă când sistemul va fi setat în „modul luminos”."
       ]
     },
     "Tor out of date": {
@@ -9537,6 +9626,66 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Creare folder"
+      ],
+      "Create a new label": [
+        "Creare etichetă"
+      ],
+      "Go to Archive": [
+        "Accesare «Arhivă»"
+      ],
+      "Go to Drafts": [
+        "Accesare «Ciorne»"
+      ],
+      "Go to Inbox": [
+        "Accesare «Primite»"
+      ],
+      "Go to Sent": [
+        "Accesare «Trimise»"
+      ],
+      "Go to Spam": [
+        "Accesare «Nedorite»"
+      ],
+      "Go to Starred": [
+        "Accesare «Cu stea»"
+      ],
+      "Go to Trash": [
+        "Accesare «Gunoi»"
+      ],
+      "New message": [
+        "Mesaj nou"
+      ],
+      "Search": [
+        "Căutare"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Implicit din sistem"
+      ],
+      "Theme default": [
+        "Temă implicită"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Mare"
+      ],
+      "Medium (recommended)": [
+        "Mediu (recomandat)"
+      ],
+      "Small": [
+        "Mic"
+      ],
+      "Very large": [
+        "Foarte mare"
+      ],
+      "Very small": [
+        "Foarte mic"
       ]
     }
   }

@@ -1162,6 +1162,9 @@
       ],
       "Zoom out": [
         "Allunyar"
+      ],
+      "hide-my-email aliases": [
+        "àlies Hide-my-email"
       ]
     },
     "action": {
@@ -3772,6 +3775,9 @@
       ],
       "View the invitations": [
         "Mostra les invitacions"
+      ],
+      "Decline invitation": [
+        "Declina la invitació"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3890,6 +3896,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Protegiu els vostres fitxers amb emmagatzematge al núvol xifrat. Inclou sincronització automàtica, compartició de fitxers xifrats i més."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Inclou suport per a 3 dominis de correu electrònic personalitzats, 90 adreces de correu electrònic, àlies il·limitats de Hide-my-email, compartició de calendari i més."
       ]
     },
     "Feedback Modal Title": {
@@ -5033,7 +5042,7 @@
         "Si no trobeu el correu electrònic a la safata d'entrada, comproveu la vostra carpeta de correu brossa."
       ],
       "If your alias is sold, leaked, or abused, simply disable it to stop receiving spam.": [
-        "Si el vostre àlies és venut, filtrat, o abusat, simplement desactiveu-lo i deixeu de rebre correu brossa."
+        "Si el vostre àlies és venut, filtrat o abusat, desactiveu-lo i deixeu de rebre correu brossa."
       ],
       "Image description": [
         "Descripció de la imatge"
@@ -5871,11 +5880,45 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "La vostra frase de recuperació és una sèrie de 12 paraules en un ordre específic."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalitzeu l'aspecte de les aplicacions ${ BRAND_NAME }."
+      ],
+      "Drop file here to upload": [
+        "Arrossegueu el fitxer aquí per carregar-lo."
+      ],
+      "Drop to import": [
+        "Arrossega aquí per importar"
+      ],
+      "How hide-my-email aliases works": [
+        "Funcionament dels àlies Hide-my-email"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "El nostre sistema ha marcat aquest missatge com a correu electrònic sospitós. Comproveu que és legítim abans de clicar qualsevol enllaç o arxiu adjunt."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin és un servei de ${ BRAND_NAME } i el vostre compte de ${ BRAND_NAME_TWO } inclou àlies Hide-my-email. Per començar a emmascarar la vostra adreça de correu electrònic aneu a SimpleLogin i creeu el vostre primer àlies."
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "No us poden enviar correu brossa si no saben la vostra adreça de correu electrònic. Protegiu la vostra safata d'entrada amb Hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Aquesta conversa conté un o més missatges caducats."
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Quan doneu el vostre correu electrònic, utilitzeu un àlies Hide-my-email únic, d'un sol ús en compte de la vostra adreça de correu electrònic real."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Es xifraran els fitxers i després es desaran."
       ]
     },
     "info": {
       "Optional": [
         "Opcional"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } comanda trobada.",
+        "${ filteredList.length } comandas trobadas."
       ]
     },
     "Info on errors": {
@@ -6077,6 +6120,9 @@
       ],
       "Star": [
         "Destacat"
+      ],
+      "Open command panel": [
+        "Obre el panell de comandes"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6580,6 +6626,12 @@
       ],
       "Your password (admin)": [
         "La seva contrasenya (admin)"
+      ],
+      "Synchronize with system": [
+        "Sincronitza amb el sistema"
+      ],
+      "Type a command...": [
+        "Escriu una comanda..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7150,6 +7202,9 @@
       ],
       "Up to 3 TB of storage": [
         "Fins a 3 TB d'emmagatzematge"
+      ],
+      "Hide-my-email aliases": [
+        "Àlies Hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -7251,6 +7306,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Podeu canviar-ho en qualsevol moment a les preferències."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Hi ha disponibles més opcions de temes a Configuració del compte > Aparença."
       ]
     },
     "Option": {
@@ -7421,6 +7479,9 @@
       ],
       "Write your message": [
         "Escriviu el vostre missatge"
+      ],
+      "Type a command…": [
+        "Escriu una comanda…"
       ]
     },
     "Placeholder for contact group name": {
@@ -7933,6 +7994,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "L'espai d'emmagatzematge es comparteix entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, i ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Tots els nostres serveis prèmium al seu límit màxim: 100 adreces de correu electrònic, suport per 10 dominis personalitzats, àlies Hide-my-email il·limitats, compartició de calendaris, emmagatzematge al núvol encriptat, compartició de fitxers, i més."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Inclou suport per a 1 domini de correu electrònic personalitzat, 10 adreces de correu electrònic, 10 àlies Hide-my-email, compartició de calendari i més."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Inclou suport per a 3 dominis de correu electrònic personalitzats, 15 adreces de correu electrònic, àlies il·limitats de Hide-my-email, compartició de calendari i més."
       ]
     },
     "Spotlight": {
@@ -8895,6 +8965,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "La prova gratuïta de Mail Plus finalitza el ${ textDate }"
+      ],
+      "(active)": [
+        "(actiu)"
+      ],
+      "Day theme": [
+        "Tema de dia"
+      ],
+      "Night theme": [
+        "Tema de nit"
       ]
     },
     "Title header": {
@@ -8982,6 +9061,15 @@
       ],
       "You do not have any contacts to export": [
         "No teniu cap contacte per exportar"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Canvia automàticament entre els temes preferits per a dia i nit en sincronització amb els modes de dia i nit del sistema"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "El tema seleccionat s'activarà quan el sistema estigui en «mode fosc»"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "El tema seleccionat s'activarà quan el sistema estigui en «mode clar»"
       ]
     },
     "Tor out of date": {
@@ -9333,6 +9421,66 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualment, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Crea una carpeta"
+      ],
+      "Create a new label": [
+        "Crea una etiqueta"
+      ],
+      "Go to Archive": [
+        "Aneu a Arxiu"
+      ],
+      "Go to Drafts": [
+        "Aneu a Esborranys"
+      ],
+      "Go to Inbox": [
+        "Aneu a la Safata d'entrada"
+      ],
+      "Go to Sent": [
+        "Aneu a Enviats"
+      ],
+      "Go to Spam": [
+        "Aneu a Correu brossa"
+      ],
+      "Go to Starred": [
+        "Aneu a Destacats"
+      ],
+      "Go to Trash": [
+        "Aneu a la Paperera"
+      ],
+      "New message": [
+        "Nou missatge"
+      ],
+      "Search": [
+        "Cerca"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Predeterminat del sistema"
+      ],
+      "Theme default": [
+        "Tema per defecte"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Gran"
+      ],
+      "Medium (recommended)": [
+        "Mitjà (recomanat)"
+      ],
+      "Small": [
+        "Petit"
+      ],
+      "Very large": [
+        "Molt gran"
+      ],
+      "Very small": [
+        "Molt petit"
       ]
     }
   }

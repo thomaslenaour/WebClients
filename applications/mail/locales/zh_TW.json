@@ -1158,6 +1158,9 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "hide-my-email aliases": [
+        "隱藏我的郵件別名"
       ]
     },
     "action": {
@@ -3747,6 +3750,9 @@
       ],
       "View the invitations": [
         "檢視邀請"
+      ],
+      "Decline invitation": [
+        "拒絕邀請"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3865,6 +3871,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "包含對 3 個自訂電子郵件網域、90 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Feedback Modal Title": {
@@ -4483,7 +4492,7 @@
         "${ contactEmailsLength } 位成員"
       ],
       "${ contactGroupName } (${ numberOfSelectedContacts }/${ numberOfContactsInGroup } members)": [
-        "${ contactGroupName } (${ numberOfSelectedContacts }/${ numberOfContactsInGroup } 成員)"
+        "${ contactGroupName } (${ numberOfSelectedContacts }/${ numberOfContactsInGroup } 位成員)"
       ],
       "${ contactName } contains multiple email addresses.": [
         "${ contactName } 聯絡人包含數組電郵位址。"
@@ -4510,13 +4519,13 @@
         "${ MAIL_APP_NAME } 亦可防護您的企業商號。"
       ],
       "${ messagesNotAuthorizedToMove } messages could not be moved.": [
-        "${ messagesNotAuthorizedToMove } 封郵件無法移動。"
+        "${ messagesNotAuthorizedToMove } 封郵件無法進行移動。"
       ],
       "${ numberOfTrackers } email trackers blocked": [
-        "已封鎖 ${ numberOfTrackers } 個電郵追蹤程式"
+        "已攔截 ${ numberOfTrackers } 個電郵追蹤程式"
       ],
       "${ numContact } contacts": [
-        "${ numContact } 個聯絡人"
+        "${ numContact } 位聯絡人"
       ],
       "${ numGroups } contact groups": [
         "${ numGroups } 個聯絡人群組"
@@ -4534,7 +4543,7 @@
         "找到 ${ providerFoldersNumLocalized } 個資料夾"
       ],
       "${ providerFoldersNumLocalized } labels found in Gmail": [
-        "在 Gmail 中找到 ${ providerFoldersNumLocalized } 個標籤"
+        "在 Gmail 中找到 ${ providerFoldersNumLocalized } 種標籤"
       ],
       "${ pureAttachmentsCount } files attached": [
         "${ pureAttachmentsCount } 個附件"
@@ -4552,7 +4561,7 @@
         "已選取 ${ selectedFoldersCountLocalized } 個資料夾"
       ],
       "${ selectedFoldersCountLocalized } labels selected": [
-        "已選取 ${ selectedFoldersCountLocalized } 個標籤"
+        "已選取 ${ selectedFoldersCountLocalized } 種標籤"
       ],
       "${ total } conversations": [
         "${ total } 個交談"
@@ -4843,7 +4852,7 @@
         "電郵追蹤程式會侵犯您的隱私。 ${ BRAND_NAME } 在此訊息中並未發現任何電郵追蹤程式。"
       ],
       "Email trackers can violate your privacy. ${ BRAND_NAME } found and blocked ${ numberOfTrackers } trackers.": [
-        "電郵追蹤程式會侵犯您的私隱。 ${ BRAND_NAME } 找到並阻止了 ${ numberOfTrackers } 個追踪器。"
+        "電郵追蹤程式會侵犯您的私隱。 已發現 ${ BRAND_NAME } 並且攔截 ${ numberOfTrackers } 個追踪程式。"
       ],
       "Email trackers can violate your privacy. Turn on tracker protection to prevent senders from knowing whether and when you have opened a message.": [
         "電郵追蹤器會侵犯您的隱私。開啟電郵追蹤保護防止寄件者得知您是否開啟過此訊息。"
@@ -5188,7 +5197,7 @@
         "請選擇您想插入的連結類型，並填寫所有欄位。"
       ],
       "Please select which email address or addresses to add to ${ groupCount } groups.": [
-        "請選取一或多組電郵位址以加入至 ${ groupCount }。"
+        "請選取一或多組電郵位址以加入至 ${ groupCount } 個群組。"
       ],
       "Please select which email address or addresses to add to ${ groupName }.": [
         "請選取一或多組電郵位址以加入至 ${ groupName }。"
@@ -5380,7 +5389,7 @@
         "驗證 ${ contactName } 失敗：聯絡人簽章不正確。\n可能是重設密碼所導致。\n您必須重新簽署聯絡人才能發送郵件給 ${ contactAddress }，又或者編輯聯絡人。"
       ],
       "The verification of ${ contactNames } has failed: the contacts are not signed correctly.\nThis may be the result of a password reset.\nYou must re-sign the contacts in order to send a message to ${ contactAddresses } or edit the contacts.": [
-        "驗證 ${ contactNames } 失敗：聯絡人簽章不正確。\n可能是重設密碼所導致。\n您必須重新簽署聯絡人才能發送郵件給 ${ contactAddresses }，又或者編輯聯絡人。"
+        "無法驗證 ${ contactNames } ：聯絡人名片並未正確地簽署。\n這很可能是因為重設密碼所導致。\n您必須重新簽署聯絡人名片後，才能發送郵件給 ${ contactAddresses }，或是編輯聯絡人名片。"
       ],
       "Themes can give your inbox a new look.": [
         "主題視覺讓您的收件匣煥然一新。"
@@ -5768,11 +5777,44 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "您的復原短語是按特定順序排列的一系列 12 個單字。"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "自訂 ${ BRAND_NAME } 應用程式的外觀與感覺。"
+      ],
+      "Drop file here to upload": [
+        "拖曳檔案到此處來上傳"
+      ],
+      "Drop to import": [
+        "拖放以匯入"
+      ],
+      "How hide-my-email aliases works": [
+        "Hide-my-email 別名是如何運作的"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "我們的系統將此訊息標記為惡意電子郵件。在點擊任何連結或附件前，請先檢查其是否合法。"
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin 是 ${ BRAND_NAME } 的服務，您的 ${ BRAND_NAME_TWO } 帳號包含了 Hide-my-email 別名。要開始隱藏您的電子郵件地址，請到 SimpleLogin 並建立您的第一個別名。"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "如果他們不知道您的電子郵件地址，他們就無法向您傳送垃圾郵件。使用 Hide-my-email 別名保護您的收件匣。"
+      ],
+      "This conversation contains one or more expiring messages": [
+        "此交談包含了一個或更多過期的訊息"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "當發送電子郵件時，請使用唯一、拋棄式 Hide-my-email 別名，來代替您的真實電子郵件地址。"
+      ],
+      "Your files will be encrypted and then saved": [
+        "你的檔案將加密後再儲存"
       ]
     },
     "info": {
       "Optional": [
         "可選"
+      ],
+      "${ filteredList.length } commands found.": [
+        "找到 ${ filteredList.length } 個指令。"
       ]
     },
     "Info on errors": {
@@ -5972,6 +6014,9 @@
       ],
       "Star": [
         "星號"
+      ],
+      "Open command panel": [
+        "開啟命令面板"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6475,6 +6520,12 @@
       ],
       "Your password (admin)": [
         "您的密碼（管理員）"
+      ],
+      "Synchronize with system": [
+        "與系統同步"
+      ],
+      "Type a command...": [
+        "輸入命令……"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7037,6 +7088,9 @@
       ],
       "Up to 3 TB of storage": [
         "多達 3 TB的儲存空間"
+      ],
+      "Hide-my-email aliases": [
+        "隱藏我的郵件別名"
       ]
     },
     "new_plans: feature info": {
@@ -7138,6 +7192,9 @@
       ],
       "You can change this anytime in your settings.": [
         "您隨時都可以在設定中變更。"
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "更多佈景主題選項在您的帳號設定→「外觀」中提供。"
       ]
     },
     "Option": {
@@ -7308,6 +7365,9 @@
       ],
       "Write your message": [
         "撰寫您的訊息"
+      ],
+      "Type a command…": [
+        "輸入命令……"
       ]
     },
     "Placeholder for contact group name": {
@@ -7804,6 +7864,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "我們所有具有最高限制的進階版服務：100 個電子郵件地址、支援 10 個自訂網域、無限制的隱藏 Hide-my-email 別名、行事曆分享、加密雲端儲存與檔案分享等。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 1 個自訂電子郵件網域、10 個電子郵件地址、10 個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 3 個自訂電子郵件網域、15 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Spotlight": {
@@ -8723,6 +8792,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "您的 Mail Plus 免費方案將於 ${ textDate } 結束"
+      ],
+      "(active)": [
+        "（啟用）"
+      ],
+      "Day theme": [
+        "白天佈景主題"
+      ],
+      "Night theme": [
+        "夜間佈景主題"
       ]
     },
     "Title header": {
@@ -8810,6 +8888,15 @@
       ],
       "You do not have any contacts to export": [
         "您沒有任何可匯出的聯絡人"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "與系統的日夜模式同步，在白天和晚上的偏好佈景主題之間自動切換"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "當您的系統設定為「深色模式」時，將會啟用選定的佈景主題"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "當您的系統設定為「淺色模式」時，將會啟用選定的佈景主題"
       ]
     },
     "Tor out of date": {
@@ -9126,6 +9213,66 @@
       ],
       "Yearly, ${ untilString }": [
         "每年，${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "建立新資料夾"
+      ],
+      "Create a new label": [
+        "建立新標籤"
+      ],
+      "Go to Archive": [
+        "前往封存資料夾"
+      ],
+      "Go to Drafts": [
+        "前往草稿資料夾"
+      ],
+      "Go to Inbox": [
+        "前往收件匣"
+      ],
+      "Go to Sent": [
+        "前往寄件備份資料夾"
+      ],
+      "Go to Spam": [
+        "前往垃圾郵件資料夾"
+      ],
+      "Go to Starred": [
+        "前往已加星號資料夾"
+      ],
+      "Go to Trash": [
+        "前往垃圾桶"
+      ],
+      "New message": [
+        "新訊息"
+      ],
+      "Search": [
+        "搜尋"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "系統預設值"
+      ],
+      "Theme default": [
+        "佈景主題預設值"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中（建議）"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "非常大"
+      ],
+      "Very small": [
+        "非常小"
       ]
     }
   }

@@ -98,7 +98,7 @@
         "Як заплановано"
       ],
       "At most 100 contacts are allowed per contact group": [
-        "До групи контактів можна додати не більш ніж 100 контактів"
+        "До групи контактів можна додати не більше ніж 100 контактів"
       ],
       "Attach screenshot(s)": [
         "Додати знімки екрана"
@@ -1022,7 +1022,7 @@
         "Це повідомлення містить зовнішній вміст."
       ],
       "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
-        "Для безпечного пошуку ваших листів нам потрібно завантажити копію ваших повідомлень у ваш браузер. Первинне завантаження може зайняти деякий час."
+        "Для безпечного пошуку листів потрібно завантажити копію повідомлень у ваш браузер. Початкове завантаження може тривати певний час."
       ],
       "Toggle Calendar app": [
         "Відкрити календар"
@@ -1170,6 +1170,9 @@
       ],
       "Zoom out": [
         "Зменшити"
+      ],
+      "hide-my-email aliases": [
+        "псевдонімів Hide-my-email"
       ]
     },
     "action": {
@@ -1325,7 +1328,7 @@
     },
     "Bug category": {
       "Application problem": [
-        "Проблема з додатком"
+        "Проблема з програмою"
       ],
       "Bridge problem": [
         "Проблема з Bridge"
@@ -3822,6 +3825,9 @@
       ],
       "View the invitations": [
         "Переглянути запрошення"
+      ],
+      "Decline invitation": [
+        "Відхилити запрошення"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3867,7 +3873,7 @@
         "Призначений вам обсяг сховища: ${ assignedStorage }"
       ],
       "The subscription is billed to the Visionary or family plan's primary admin.": [
-        "Рахунок за передплату виставляється основному адміністратору Visionary або сімейного плану."
+        "Рахунок за передплату виставляється головному адміністратору Visionary або сімейного плану."
       ],
       "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
         "Visionary і сімейні плани наразі не підтримують зовнішні облікові записи. Перш ніж приєднатися, створіть адресу ${ BRAND_NAME }. ${ addressSettingsLink }"
@@ -3940,6 +3946,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Безпечно зберігайте свої файли у зашифрованому хмарному сховищі з автоматичною синхронізацією, зашифрованим спільним доступом та іншими можливостями."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Включає підтримку 3 власних доменів, 90 адрес пошти, необмежену кількість псевдонімів Hide-my-email, спільний доступ до календаря та інші можливості."
       ]
     },
     "Feedback Modal Title": {
@@ -5533,7 +5542,7 @@
         "Планування повідомлення..."
       ],
       "Search option that lets you securely search for keywords in the body of email messages.": [
-        "Опція пошуку, яка дозволяє безпечно шукати ключові слова в тексті повідомлень електронної пошти."
+        "Опція пошуку, що дає змогу користуватися безпечним пошуком у вмісті повідомлень електронної пошти."
       ],
       "Search taking too long? ${ dropdownButton } or ${ toggleOffButton } from this search session.": [
         "Пошук триває надто довго? ${ dropdownButton } або ${ toggleOffButton } з цього пошукового сеансу."
@@ -5785,7 +5794,7 @@
         "Забагато повідомлень очікують надсилання. Зачекайте, доки буде відправлено інше повідомлення, щоб запланувати це."
       ],
       "Turn off to only search by date, name, or email address. To disable search message content and delete downloaded messages, go to settings.": [
-        "Вимкніть, щоб шукати лише за датою, іменем або адресою електронної пошти. Щоб вимкнути пошук вмісту повідомлень і видалення завантажених повідомлень, перейдіть до налаштувань."
+        "Вимкніть, щоб шукати лише за датою, іменем або адресою електронної пошти. Щоб вимкнути пошук вмісту повідомлень і видалити завантажені повідомлення, перейдіть до налаштувань."
       ],
       "Turn on to search the content of your messages": [
         "Увімкніть, щоб шукати вміст своїх повідомлень"
@@ -6071,11 +6080,53 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Фраза відновлення — це послідовність з 12 слів у певному порядку."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Налаштуйте зовнішній вигляд застосунків ${ BRAND_NAME }."
+      ],
+      "Drop file here to upload": [
+        "Перетягніть файл сюди, щоб вивантажити"
+      ],
+      "Drop to import": [
+        "Перетягніть, щоб імпортувати"
+      ],
+      "How hide-my-email aliases works": [
+        "Як працюють псевдоніми Hide-my-email"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Завантажено повідомлення: ${ currentProgress } з ${ totalProgress }",
+        "Завантажено повідомлень: ${ currentProgress } з ${ totalProgress }",
+        "Завантажено повідомлень: ${ currentProgress } з ${ totalProgress }",
+        "Завантажено повідомлень: ${ currentProgress } з ${ totalProgress }"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Наша система позначила це повідомлення підозрілим. Перш ніж натискати будь-які посилання чи відкривати вкладення, переконайтеся, що відправнику можна довіряти."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin – це сервіс ${ BRAND_NAME }, і ваш обліковий запис ${ BRAND_NAME_TWO } містить псевдоніми Hide-my-email. Щоб почати маскувати адресу електронної пошти, перейдіть до SimpleLogin і створіть свій перший псевдонім."
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "Вони не зможуть надсилати небажані повідомлення не знаючи вашої адреси електронної пошти. Захистіть свою поштову скриньку за допомогою псевдонімів Hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Ця розмова містить одне або кілька повідомлень, термін дії яких закінчився"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Видаючи свою електронну пошту, використовуйте унікальний одноразовий псевдонім Hide-my-email замість вашої реальної адреси електронної пошти."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Ваші файли буде зашифровано, а потім збережено"
       ]
     },
     "info": {
       "Optional": [
         "Необов'язково"
+      ],
+      "${ filteredList.length } command found.": [
+        "Знайдено ${ filteredList.length } команду.",
+        "Знайдено ${ filteredList.length } команди.",
+        "Знайдено ${ filteredList.length } команд.",
+        "Знайдено ${ filteredList.length } команд."
       ]
     },
     "Info on errors": {
@@ -6105,10 +6156,10 @@
     },
     "Key pinning": {
       "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
-        "Натиснувши \"Довіряти ключу\", ви зв'яжете цей відкритий ключ з цим відправником, і листи з цієї адреси будуть автоматично криптографічно перевірені."
+        "Якщо натиснути \"Довіряти ключу\", цей відкритий ключ буде пов'язано з цим відправником, і листи з цієї адреси будуть автоматично криптографічно перевіреними."
       ],
       "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
-        "Натиснувши \"Довіряти ключу\", ви створите новий контакт і пов'яжете цей відкритий ключ з цим відправником. Листи з цієї адреси будуть автоматично криптографічно перевірені."
+        "Якщо натиснути \"Довіряти ключу\", створиться новий контакт і цей відкритий ключ буде пов'язано з цим відправником. Листи з цієї адреси будуть автоматично криптографічно перевіреними."
       ],
       "Do you want to trust the primary public key with the following fingerprint?": [
         "Ви хочете довіряти основному відкритому ключу з таким цифровим відбитком?",
@@ -6281,6 +6332,9 @@
       ],
       "Star": [
         "Зірочка"
+      ],
+      "Open command panel": [
+        "Відкрити командну панель"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6784,6 +6838,12 @@
       ],
       "Your password (admin)": [
         "Новий пароль (адмін)"
+      ],
+      "Synchronize with system": [
+        "Синхронізувати з системою"
+      ],
+      "Type a command...": [
+        "Введіть команду..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7370,6 +7430,9 @@
       ],
       "Up to 3 TB of storage": [
         "До 3 ТБ сховища"
+      ],
+      "Hide-my-email aliases": [
+        "Псевдоніми Hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -7471,6 +7534,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Ви можете змінити це будь-коли в налаштуваннях."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Додаткові параметри теми доступні в меню Налаштування > Зовнішній вигляд."
       ]
     },
     "Option": {
@@ -7641,6 +7707,9 @@
       ],
       "Write your message": [
         "Напишіть повідомлення"
+      ],
+      "Type a command…": [
+        "Введіть команду…"
       ]
     },
     "Placeholder for contact group name": {
@@ -8185,6 +8254,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Простір сховища спільний для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } та ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Всі найкращі можливості наших преміум функцій: 100 адрес пошти, підтримка 10 власних доменів, необмежена кількість псевдонімів Hide-my-email, спільний доступ до календаря, зашифроване хмарне сховище, спільний доступ до файлів і багато іншого."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Включає підтримку 1 власного домену, 10 адрес пошти, 10 псевдонімів Hide-my-email, спільний доступ до календаря та інші можливості."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Включає підтримку 3 власних доменів, 15 адрес пошти, необмежену кількість псевдонімів Hide-my-email, спільний доступ до календаря та інші можливості."
       ]
     },
     "Spotlight": {
@@ -8461,7 +8539,7 @@
         "Повідомлення додано до ${ labelName }."
       ],
       "Message content search enabled": [
-        "Ввімкнено пошук вмісту повідомлення"
+        "Пошук вмісту повідомлень увімкнено"
       ],
       "Message deleted": [
         "Повідомлення видалено"
@@ -9227,6 +9305,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша безплатна пробна версія Mail Plus завершується ${ textDate }"
+      ],
+      "(active)": [
+        "(активно)"
+      ],
+      "Day theme": [
+        "Світла тема"
+      ],
+      "Night theme": [
+        "Темна тема"
       ]
     },
     "Title header": {
@@ -9314,6 +9401,15 @@
       ],
       "You do not have any contacts to export": [
         "У вас немає контактів для експорту"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Автоматичне перемикання між вашими улюбленими темами дня і ночі синхронізовано з денним і нічним режимами вашої системи"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Вибрана тема буде активною, коли ваша система буде переведена в \"темний режим\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Вибрана тема буде активною, коли у вашій системі встановлено \"світлий режим\""
       ]
     },
     "Tor out of date": {
@@ -9735,6 +9831,66 @@
       ],
       "Yearly, ${ untilString }": [
         "Щороку, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Створити нову теку"
+      ],
+      "Create a new label": [
+        "Створити нову мітку"
+      ],
+      "Go to Archive": [
+        "Перейти до Архіву"
+      ],
+      "Go to Drafts": [
+        "Перейти до Чернеток"
+      ],
+      "Go to Inbox": [
+        "Перейти до Вхідних"
+      ],
+      "Go to Sent": [
+        "Перейти до Надісланих"
+      ],
+      "Go to Spam": [
+        "Перейти до Спаму"
+      ],
+      "Go to Starred": [
+        "Перейти до Позначених зірочкою"
+      ],
+      "Go to Trash": [
+        "Перейти до Смітника"
+      ],
+      "New message": [
+        "Нове повідомлення"
+      ],
+      "Search": [
+        "Пошук"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Системна"
+      ],
+      "Theme default": [
+        "Стандартна тема"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Великий"
+      ],
+      "Medium (recommended)": [
+        "Середній (рекомендовано)"
+      ],
+      "Small": [
+        "Маленький"
+      ],
+      "Very large": [
+        "Дуже великий"
+      ],
+      "Very small": [
+        "Дуже маленький"
       ]
     }
   }

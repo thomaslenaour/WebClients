@@ -1167,6 +1167,12 @@
       ],
       "Zoom out": [
         "Pomniejsz"
+      ],
+      "hide-my-email aliases": [
+        "aliasów Hide-my-email"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "Aby bezpiecznie wyszukiwać wiadomości, musimy pobrać ich kopię do przeglądarki. Pierwsze pobieranie może potrwać chwilę."
       ]
     },
     "action": {
@@ -3819,6 +3825,9 @@
       ],
       "View the invitations": [
         "Wyświetl zaproszenia"
+      ],
+      "Decline invitation": [
+        "Odrzuć zaproszenie"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4154,7 +4163,7 @@
         "Pozostał ${ days } dzień",
         "Pozostały ${ days } dni",
         "Pozostało ${ days } dni",
-        "Pozostało ${ days } dni"
+        "Pozostało ${ days } dnia"
       ]
     },
     "Get started checklist instructions": {
@@ -5479,7 +5488,7 @@
         "Drukuj wiadomość"
       ],
       "Protect your email from being leaked to mailing lists or spammers with ${ maskMyEmailButton }.": [
-        "Chroń swój adres e-mail przed ujawnieniem go w listach mailingowych lub przez spammerów za pomocą funkcji ${ maskMyEmailButton }."
+        "Chroń swój adres e-mail przed ujawnieniem go w listach mailingowych lub przez spammerów za pomocą ${ maskMyEmailButton }."
       ],
       "Recipient: ": [
         "Odbiorca: "
@@ -6062,11 +6071,47 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Hasłem odzyskiwania jest seria 12 słów w określonej kolejności."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Dostosuj wygląd aplikacji ${ BRAND_NAME }."
+      ],
+      "Drop file here to upload": [
+        "Upuść, aby przesłać"
+      ],
+      "Drop to import": [
+        "Upuść, aby zaimportować"
+      ],
+      "How hide-my-email aliases works": [
+        "Jak działają aliasy Hide-my-email"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Pobieranie wiadomości: ${ currentProgress } / ${ totalProgress }",
+        "Pobieranie wiadomości: ${ currentProgress } / ${ totalProgress }",
+        "Pobieranie wiadomości: ${ currentProgress } / ${ totalProgress }",
+        "Pobieranie wiadomości: ${ currentProgress } / ${ totalProgress }"
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "Ta opcja wyszukiwania pozwala bezpiecznie wyszukiwać słowa kluczowe w treści wiadomości."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Wątek zawiera wygasające wiadomości"
+      ],
+      "Turn off to only search by date, name, or email address. To disable search message content and delete downloaded messages, go to settings.": [
+        "Wyłącz, aby wyszukiwać tylko według daty, nazwy lub adresu e-mail. Aby wyłączyć wyszukiwanie zawartości wiadomości i usunąć pobrane wiadomości, przejdź do ustawień."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Twoje pliki przed zapisaniem zostaną zaszyfrowane"
       ]
     },
     "info": {
       "Optional": [
         "Opcjonalnie"
+      ],
+      "${ filteredList.length } command found.": [
+        "Znaleziono ${ filteredList.length } polecenie.",
+        "Znaleziono ${ filteredList.length } polecenia.",
+        "Znaleziono ${ filteredList.length } poleceń.",
+        "Znaleziono ${ filteredList.length } poleceń."
       ]
     },
     "Info on errors": {
@@ -6272,6 +6317,9 @@
       ],
       "Star": [
         "Oznacz gwiazdką"
+      ],
+      "Open command panel": [
+        "Otwórz panel poleceń"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6775,6 +6823,12 @@
       ],
       "Your password (admin)": [
         "Twoje hasło (administratora)"
+      ],
+      "Synchronize with system": [
+        "Domyślny systemu"
+      ],
+      "Type a command...": [
+        "Wpisz polecenie…"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7361,6 +7415,9 @@
       ],
       "Up to 3 TB of storage": [
         "Do 3 TB przestrzeni dyskowej"
+      ],
+      "Hide-my-email aliases": [
+        "Aliasy Hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -7632,6 +7689,9 @@
       ],
       "Write your message": [
         "Napisz wiadomość"
+      ],
+      "Type a command…": [
+        "Wpisz polecenie…"
       ]
     },
     "Placeholder for contact group name": {
@@ -8199,6 +8259,12 @@
       ],
       "You can now schedule your messages to be sent later": [
         "Możesz zaplanować wysyłanie wiadomości w późniejszym czasie"
+      ],
+      "Search just got smarter and faster": [
+        "Wyszukiwanie stało się inteligentniejsze i szybsze"
+      ],
+      "Try it today.": [
+        "Wypróbuj to."
       ]
     },
     "Status": {
@@ -9215,6 +9281,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Darmowa wersja próbna planu Mail Plus zakończy się ${ textDate }"
+      ],
+      "(active)": [
+        "(aktywny)"
+      ],
+      "Day theme": [
+        "Jasny motyw"
+      ],
+      "Night theme": [
+        "Ciemny motyw"
       ]
     },
     "Title header": {
@@ -9723,6 +9798,66 @@
       ],
       "Yearly, ${ untilString }": [
         "Co rok, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Utwórz nowy folder"
+      ],
+      "Create a new label": [
+        "Utwórz nową etykietę"
+      ],
+      "Go to Archive": [
+        "Przejdź do Archiwum"
+      ],
+      "Go to Drafts": [
+        "Przejdź do Szkiców"
+      ],
+      "Go to Inbox": [
+        "Przejdź do Odebranych"
+      ],
+      "Go to Sent": [
+        "Przejdź do Wysłanych"
+      ],
+      "Go to Spam": [
+        "Przejdź do Spamu"
+      ],
+      "Go to Starred": [
+        "Przejdź do Wyróżnionych"
+      ],
+      "Go to Trash": [
+        "Przejdź do Kosza"
+      ],
+      "New message": [
+        "Nowa wiadomość"
+      ],
+      "Search": [
+        "Szukaj"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Domyślny systemu"
+      ],
+      "Theme default": [
+        "Domyślny motyw"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Duża"
+      ],
+      "Medium (recommended)": [
+        "Średnia (zalecana)"
+      ],
+      "Small": [
+        "Mała"
+      ],
+      "Very large": [
+        "Bardzo duża"
+      ],
+      "Very small": [
+        "Bardzo mała"
       ]
     }
   }

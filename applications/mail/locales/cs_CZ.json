@@ -482,7 +482,7 @@
         "Skrýt zprávy"
       ],
       "hide-my-email aliases": [
-        "aliasy Hide My Email"
+        "aliasy Hide-my-email"
       ],
       "I have a question": [
         "Mám dotaz"
@@ -3825,6 +3825,9 @@
       ],
       "View the invitations": [
         "Zobrazit pozvánky"
+      ],
+      "Decline invitation": [
+        "Odmítnout pozvánku"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3942,7 +3945,7 @@
         "Zahrnuje 2700 serverů v 65+ zemích, přípojení až 10 zařízení, přístup ke světovým streamovacím službám, blokovač malwaru a reklam a více."
       ],
       "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
-        "Zahrnuje podporu 3 vlastních e-mailových domén, 90 e-mailových adres, neomezený počet aliasů Hide My Email, sdílení kalendáře a další."
+        "Zahrnuje podporu 3 vlastních e-mailových domén, 90 e-mailových adres, neomezený počet aliasů Hide-my-email, sdílení kalendáře a další."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Zabezpečte své soubory pomocí šifrovaného cloudového úložiště. Zahrnuje automatickou synchronizaci, šifrované sdílení souborů a další funkce."
@@ -5203,7 +5206,7 @@
         "Skrýt původní zprávu"
       ],
       "How hide-my-email aliases works": [
-        "Jak fungují aliasy hide-my-email"
+        "Jak fungují aliasy Hide-my-email"
       ],
       "I'm sending this message to a non-${ MAIL_APP_NAME } user.": [
         "Tuto zprávu posílám uživateli, který není uživatelem služby ${ MAIL_APP_NAME }."
@@ -5605,7 +5608,7 @@
         "Zobrazit původní zprávu"
       ],
       "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
-        "SimpleLogin je služba ${ BRAND_NAME } a váš účet ${ BRAND_NAME_TWO } zahrnuje aliasy Hide My Email. Chcete-li začít maskovat svou e-mailovou adresu, přejděte do služby SimpleLogin a vytvořte si první alias."
+        "SimpleLogin je služba ${ BRAND_NAME } a váš účet ${ BRAND_NAME_TWO } zahrnuje aliasy Hide-my-email. Chcete-li začít maskovat svou e-mailovou adresu, přejděte do služby SimpleLogin a vytvořte si první alias."
       ],
       "SimpleLogin provides a simple way to create logins at untrusted third-party sites where you don't want to expose your actual email address.": [
         "SimpleLogin poskytuje jednoduchý způsob vytváření přihlašovacích údajů na nedůvěryhodných webech třetích stran, kde nechcete zveřejnit svou skutečnou e-mailovou adresu."
@@ -5677,7 +5680,7 @@
         "Byla zjištěna chyba podpisu, použitém k ověření detailů kontaktu, což může být důsledkem resetu hesla."
       ],
       "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
-        "Nemohou vám zasílat spam, pokud neznají vaši e-mailovou adresu. Chraňte svou e-mailovou schránku pomocí funkce Skrýt můj e-mail."
+        "Nemohou vám zasílat spam, pokud neznají vaši e-mailovou adresu. Chraňte svou e-mailovou schránku pomocí funkce Hide-my-email."
       ],
       "This account has been suspended due to a potential policy violation.": [
         "Tento účet byl zablokován kvůli možnému porušení pravidel."
@@ -5914,7 +5917,7 @@
         "Kdy chcete, aby se vaše zpráva sama zničila?"
       ],
       "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
-        "Při poskytování svého e-mailu používejte místo své skutečné e-mailové adresy jedinečný jednorázový alias Skrýt můj e-mail."
+        "Při poskytování svého e-mailu používejte místo své skutečné e-mailové adresy jedinečný jednorázový alias Hide-my-email."
       ],
       "When you enabled trusted keys for ${ senderName }, the public keys were added to the contact details.": [
         "Jakmile povolíte důvěrné klíče pro ${ senderName }, veřejné klíče budou doplněné k detailu kontaktu."
@@ -6095,6 +6098,21 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Obnovovací fráze je série 12 slov v určitém pořadí."
+      ],
+      "Drop file here to upload": [
+        "Sem přetáhněte soubor pro nahrání"
+      ],
+      "Drop to import": [
+        "Přetažením provedete import"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Náš systém označil tuto zprávu jako podezřelý e-mail. Než kliknete na jakýkoli odkaz nebo přílohu, zkontrolujte prosím, zda je zpráva legitimní."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Tato konverzace obsahuje jednu nebo více zpráv s omezenou dobou platnosti"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Vaše soubory budou zašifrovány a uloženy"
       ]
     },
     "info": {
@@ -6305,6 +6323,9 @@
       ],
       "Star": [
         "Hvězdička"
+      ],
+      "Open command panel": [
+        "Otevřít příkazový panel"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6808,6 +6829,12 @@
       ],
       "Your password (admin)": [
         "Vaše heslo (admin)"
+      ],
+      "Synchronize with system": [
+        "Synchronizovat se systémem"
+      ],
+      "Type a command...": [
+        "Zadejte příkaz…"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7381,7 +7408,7 @@
         "Vlastní e-mailové domény"
       ],
       "Hide-my-email aliases": [
-        "Aliasy Hide My Email"
+        "Aliasy Hide-my-email"
       ],
       "Schedule messages at any time": [
         "Plánování zpráv v libovolném čase"
@@ -7668,6 +7695,9 @@
       ],
       "Write your message": [
         "Napište zprávu"
+      ],
+      "Type a command…": [
+        "Zadejte příkaz…"
       ]
     },
     "Placeholder for contact group name": {
@@ -8202,13 +8232,13 @@
         "Přístup k obsahu streamovacích služeb, včetně Netflix, Disney+ a Prime Video, odkudkoli."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Všechny naše prémiové služby s nejvyššími limity: 100 e-mailových adres, podpora 10 vlastních domén, neomezený počet aliasů Skryj můj e-mail, sdílení kalendáře, šifrované cloudové úložiště a sdílení souborů a další."
+        "Všechny naše prémiové služby s nejvyššími limity: 100 e-mailových adres, podpora 10 vlastních domén, neomezený počet aliasů hide-my-email, sdílení kalendáře, šifrované cloudové úložiště a sdílení souborů a další."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Obsahuje podporu 1 vlastní e-mailové domény, 10 e-mailových adres, 10 aliasů Hide My Email, sdílení kalendáře a další funkce."
+        "Obsahuje podporu 1 vlastní e-mailové domény, 10 e-mailových adres, 10 aliasů Hide-my-email, sdílení kalendáře a další funkce."
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
-        "Zahrnuje podporu 3 vlastních e-mailových domén, 15 e-mailových adres, neomezený počet aliasů Hide My Email, sdílení kalendáře a další."
+        "Zahrnuje podporu 3 vlastních e-mailových domén, 15 e-mailových adres, neomezený počet aliasů Hide-my-email, sdílení kalendáře a další."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
         "Ideální pro rodiny nebo malé týmy, každý může mít vlastní schránku a aliasy. Vyžaduje vlastní doménu."
@@ -9263,6 +9293,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Vaše bezplatná zkušební verze služby Mail Plus končí ${ textDate }"
+      ],
+      "(active)": [
+        "(aktivní)"
+      ],
+      "Day theme": [
+        "Denní motiv"
+      ],
+      "Night theme": [
+        "Noční motiv"
       ]
     },
     "Title header": {
@@ -9771,6 +9810,66 @@
       ],
       "Yearly, ${ untilString }": [
         "Roční, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Vytvořit novou složku"
+      ],
+      "Create a new label": [
+        "Vytvořit nový štítek"
+      ],
+      "Go to Archive": [
+        "Přejít do Archivu"
+      ],
+      "Go to Drafts": [
+        "Přejít do Konceptů"
+      ],
+      "Go to Inbox": [
+        "Přejít do Doručené pošty"
+      ],
+      "Go to Sent": [
+        "Přejít do Odeslaných"
+      ],
+      "Go to Spam": [
+        "Přejít do Spamu"
+      ],
+      "Go to Starred": [
+        "Přejít do S hvězdičkou"
+      ],
+      "Go to Trash": [
+        "Přejít do Koše"
+      ],
+      "New message": [
+        "Nová zpráva"
+      ],
+      "Search": [
+        "Hledat"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systémové výchozí"
+      ],
+      "Theme default": [
+        "Výchozí téma"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Velký"
+      ],
+      "Medium (recommended)": [
+        "Střední (doporučeno)"
+      ],
+      "Small": [
+        "Malý"
+      ],
+      "Very large": [
+        "Velmi velké"
+      ],
+      "Very small": [
+        "Velmi malé"
       ]
     }
   }

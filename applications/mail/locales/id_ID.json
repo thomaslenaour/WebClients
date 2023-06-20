@@ -1152,6 +1152,15 @@
       ],
       "Zoom out": [
         "Perkecil"
+      ],
+      "Downloading": [
+        "Mengunduh"
+      ],
+      "hide-my-email aliases": [
+        "alias Hide-my-email"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "Untuk mencari surel Anda dengan aman, kami perlu mengunduh salinan pesan Anda ke peramban Anda. Unduhan awal mungkin membutuhkan beberapa waktu."
       ]
     },
     "action": {
@@ -3859,6 +3868,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Amankan berkas Anda dengan penyimpanan awan terenkripsi. Beserta sinkronisasi otomatis, pembagian berkas terenkripsi, dan lebih banyak lagi."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Beserta dukungan untuk 3 domain surel kustom, 90 alamat surel, alias Hide-my-email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
       ]
     },
     "Feedback Modal Title": {
@@ -5750,11 +5762,53 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Frasa pemulihan Anda tersusun atas 12 kata yang terangkai dalam urutan yang spesifik."
+      ],
+      "Downloading paused": [
+        "Pengunduhan dijeda"
+      ],
+      "Drop file here to upload": [
+        "Lepaskan berkas di sini untuk mengunggah"
+      ],
+      "Drop to import": [
+        "Lepaskan untuk mengimpor"
+      ],
+      "How hide-my-email aliases works": [
+        "Bagaimana cara alias Hide-my-email bekerja"
+      ],
+      "Messages downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Pesan diunduh: ${ currentProgress } dari ${ totalProgress }"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Sistem kami telah menandai pesan ini sebagai surel mencurigakan. Silakan diperiksa jika surelnya asli sebelum mengeklik tautan atau lampiran apa pun."
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "Opsi pencarian yang memungkinkan Anda untuk mencari berdasarkan kata kunci pada badan email secara aman."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin adalah layanan ${ BRAND_NAME }, dan akun ${ BRAND_NAME_TWO } Anda beserta alias Hide-my-email. Untuk mulai menyamarkan alamat surel Anda, buka SimpleLogin dan buat alias pertama Anda."
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "Mereka tidak dapat mengirim Anda spam jika mereka tidak tahu alamat surel Anda. Lindungi kotak masuk Anda dengan alias Hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Percakapan ini berisi satu pesan kedaluwarsa atau lebih"
+      ],
+      "Turn off to only search by date, name, or email address. To disable search message content and delete downloaded messages, go to settings.": [
+        "Matikan untuk hanya mencari berdasarkan tanggal, nama, atau alamat surel. Untuk menonaktifkan pencarian konten pesan dan penghapusan pesan terunduh, pergi ke pengaturan."
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Saat memberikan surel Anda, gunakan alias Hide-my-email sekali pakai yang unik daripada alamat surel Anda yang asli."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Berkas Anda akan dienkripsi lalu disimpan"
       ]
     },
     "info": {
       "Optional": [
         "Opsional"
+      ],
+      "${ filteredList.length } commands found.": [
+        "${ filteredList.length } perintah ditemukan."
       ]
     },
     "Info on errors": {
@@ -5788,6 +5842,12 @@
       ],
       "You have enabled Address Verification with Trusted Keys for these email addresses,\nbut no active encryption keys have been trusted.\nYou must trust keys valid for sending in order to send a message to these email addresses.": [
         "Anda telah mengaktifkan Verifikasi Alamat dengan Kunci Terpercaya untuk alamat email ini,\nnamun Anda belum memercayai kunci enkripsi aktif manapun.\nAnda harus memercayai kunci yang valid untuk dapat mengirim pesan ke alamat email ini."
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "Dengan mengeklik \"Percayai Kunci\", kunci publik ini akan dihubungkan dengan pengirim dan surel dari alamat ini akan diverifikasi kriptografi secara otomatis."
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "Dengan mengeklik \"Percayai Kunci\", ini akan membuat kontak baru dan menghubungkannya kunci publik ini dengan pengirim. Surel dari alamat ini akan diverifikasi kriptografi secara otomatis."
       ]
     },
     "Key validation warning": {
@@ -5948,6 +6008,9 @@
       ],
       "Star": [
         "Bintang"
+      ],
+      "Open command panel": [
+        "Buka panel perintah"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6451,6 +6514,9 @@
       ],
       "Your password (admin)": [
         "Kata sandi Anda (admin)"
+      ],
+      "Type a command...": [
+        "Masukkan perintah..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7013,6 +7079,9 @@
       ],
       "Up to 3 TB of storage": [
         "Kuota penyimpanan hingga 3 TB"
+      ],
+      "Hide-my-email aliases": [
+        "Alias Hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -7281,6 +7350,12 @@
       ],
       "Write your message": [
         "Tulis pesan Anda"
+      ],
+      "Search date, name, email address, or subject line": [
+        "Cari tanggal, nama, alamat email, atau baris subjek"
+      ],
+      "Type a command…": [
+        "Masukkan perintah…"
       ]
     },
     "Placeholder for contact group name": {
@@ -7777,6 +7852,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Ruang penyimpanan terbagi antara ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, dan ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Semua layanan premium kami dengan batas tertinggi: 100 alamat surel, dukungan 10 domain kustom, alias Hide-my-email tidak terbatas, pembagian kalender, penyimpanan awan dan pembagian berkas terenkripsi, dan lebih banyak lagi."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Termasuk dukungan untuk 1 domain surel kustom, 10 alamat surel, 10 alias Hide-my-email, berbagi kalender, dan lainnya."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Beserta dukungan untuk 3 domain surel kustom, 15 alamat surel, alias Hide-my-email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
       ]
     },
     "Spotlight": {
@@ -7797,6 +7881,12 @@
       ],
       "You can now schedule your messages to be sent later": [
         "Kini Anda dapat menjadwalkan pengiriman pesan"
+      ],
+      "Search just got smarter and faster": [
+        "Pencarian kini hadir lebih cerdas dan lebih cepat"
+      ],
+      "Try it today.": [
+        "Coba hari ini."
       ]
     },
     "Status": {
@@ -8051,6 +8141,9 @@
       ],
       "Verification successful": [
         "Verifikasi berhasil"
+      ],
+      "Message content search enabled": [
+        "Pencarian konten pesan diaktifkan"
       ]
     },
     "Success notification": {
@@ -8687,6 +8780,12 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Uji coba Mail Plus Anda akan berakhir pada ${ textDate }"
+      ],
+      "(active)": [
+        "(aktif)"
+      ],
+      "Night theme": [
+        "Tema malam"
       ]
     },
     "Title header": {
@@ -9090,6 +9189,49 @@
       ],
       "Yearly, ${ untilString }": [
         "Tahunan, ${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Buat folder baru"
+      ],
+      "Create a new label": [
+        "Buat label baru"
+      ],
+      "Go to Archive": [
+        "Ke Arsip"
+      ],
+      "Go to Drafts": [
+        "Ke Draf"
+      ],
+      "Go to Inbox": [
+        "Ke Kotak masuk"
+      ],
+      "Go to Sent": [
+        "Ke Terkirim"
+      ],
+      "Go to Spam": [
+        "Ke Spam"
+      ],
+      "Go to Starred": [
+        "Ke Dibintangi"
+      ],
+      "Go to Trash": [
+        "Ke Sampah"
+      ],
+      "New message": [
+        "Pesan baru"
+      ],
+      "Search": [
+        "Cari"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Besar"
+      ],
+      "Small": [
+        "Kecil"
       ]
     }
   }

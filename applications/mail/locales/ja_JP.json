@@ -1152,6 +1152,12 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Downloading": [
+        "ダウンロード中"
+      ],
+      "hide-my-email aliases": [
+        "hide-my-email エイリアス"
       ]
     },
     "action": {
@@ -1256,6 +1262,9 @@
       ],
       "New email": [
         "新しいメール"
+      ],
+      "${ nameToDisplay }'s inbox": [
+        "${ nameToDisplay } の受信トレイ"
       ]
     },
     "Apps dropdown": {
@@ -5936,6 +5945,9 @@
       ],
       "Star": [
         "星印を付ける"
+      ],
+      "Open command panel": [
+        "コマンドパネルを開く"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6439,6 +6451,9 @@
       ],
       "Your password (admin)": [
         "あなたのパスワード (管理者)"
+      ],
+      "Type a command...": [
+        "コマンドを入力..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7263,6 +7278,12 @@
       ],
       "Write your message": [
         "メッセージを入力してください"
+      ],
+      "Search date, name, email address, or subject line": [
+        "日付、名前、メールアドレス、件名で検索"
+      ],
+      "Type a command…": [
+        "コマンドを入力…"
       ]
     },
     "Placeholder for contact group name": {
@@ -8033,6 +8054,9 @@
       ],
       "Verification successful": [
         "検証に成功しました"
+      ],
+      "Message content search enabled": [
+        "メッセージ内容の検索が有効になりました"
       ]
     },
     "Success notification": {
@@ -8663,6 +8687,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mial Plusのトライアル期間が ${ textDate } に終了します。"
+      ],
+      "(active)": [
+        "(アクティブ)"
+      ],
+      "Day theme": [
+        "昼間のテーマ"
+      ],
+      "Night theme": [
+        "夜間のテーマ"
       ]
     },
     "Title header": {
@@ -9060,6 +9093,66 @@
       ],
       "Yearly, ${ untilString }": [
         "毎年、${ untilString }"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "新しいフォルダーを作成"
+      ],
+      "Create a new label": [
+        "新しいラベルを作成"
+      ],
+      "Go to Archive": [
+        "アーカイブを開く"
+      ],
+      "Go to Drafts": [
+        "下書きを開く"
+      ],
+      "Go to Inbox": [
+        "受信トレイを開く"
+      ],
+      "Go to Sent": [
+        "送信済みを開く"
+      ],
+      "Go to Spam": [
+        "迷惑メールを開く"
+      ],
+      "Go to Starred": [
+        "星印付きを開く"
+      ],
+      "Go to Trash": [
+        "ごみ箱を開く"
+      ],
+      "New message": [
+        "新しいメッセージ"
+      ],
+      "Search": [
+        "検索"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "システムのデフォルト"
+      ],
+      "Theme default": [
+        "テーマのデフォルト"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中 (推奨)"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "極大"
+      ],
+      "Very small": [
+        "極小"
       ]
     }
   }
