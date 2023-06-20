@@ -967,6 +967,9 @@
       ],
       "Zoom out": [
         "Perkecil"
+      ],
+      "Allow": [
+        "Izinkan"
       ]
     },
     "action": {
@@ -4236,6 +4239,9 @@
       ],
       "Search list": [
         "Daftar pencarian"
+      ],
+      "Spam:": [
+        "Spam:"
       ]
     },
     "Font Face Default": {
@@ -7934,6 +7940,15 @@
       ],
       "Your referral link": [
         "Tautan rujukan Anda"
+      ],
+      "Allow": [
+        "Alamat yang diizinkan"
+      ],
+      "Block": [
+        "Diblokir"
+      ],
+      "Font family": [
+        "Jenis fon"
       ]
     },
     "label": {
@@ -8476,6 +8491,12 @@
       ],
       "Spam": [
         "Spam"
+      ],
+      "Allow": [
+        "Alamat yang diotorisasikan"
+      ],
+      "Block": [
+        "Alamat yang diblokir"
       ]
     },
     "New Label form": {
@@ -10871,6 +10892,9 @@
       ],
       "vCard field": [
         "Kolom vCard"
+      ],
+      "List": [
+        "Daftar"
       ]
     },
     "TableRow": {
@@ -11757,6 +11781,12 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Anda telah diundang untuk mencoba ${ MAIL_APP_NAME }"
+      ],
+      "(active)": [
+        "(aktif)"
+      ],
+      "Night theme": [
+        "Tema malam"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12406,6 +12436,19 @@
       ],
       "Yearly, ${ untilString }": [
         "Tahunan, ${ untilString }"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "admin"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Besar"
+      ],
+      "Small": [
+        "Kecil"
       ]
     }
   }

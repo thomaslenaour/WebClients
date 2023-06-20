@@ -726,7 +726,7 @@
         "Guardar archivo ICS"
       ],
       "Save selected": [
-        "Guarda tu elección"
+        "Guardar los elementos seleccionados"
       ],
       "Search": [
         "Buscar"
@@ -976,6 +976,12 @@
       ],
       "Continue anyway": [
         "Continuar de todas formas"
+      ],
+      "Send email reminder": [
+        "Enviar un recordatorio por correo electrónico"
+      ],
+      "Send reminder": [
+        "Enviar un recordatorio"
       ]
     },
     "action": {
@@ -2771,19 +2777,19 @@
         "Error al eliminar ${ name }"
       ],
       "${ name } failed to move to allow list": [
-        "Error al mover ${ name } a la lista \"No es spam\""
+        "Error al mover ${ name } a tu lista de direcciones permitidas."
       ],
       "${ name } failed to move to block list": [
-        "Error al mover ${ name } a la lista \"Bloqueado\""
+        "Error al mover ${ name } a tu lista de direcciones bloqueadas"
       ],
       "${ name } failed to move to spam list": [
         "Error al mover ${ name } a la lista Spam"
       ],
       "${ name } moved to allow list": [
-        "${ name } se ha movido a la lista \"No es spam\"."
+        "${ name } ha sido movido a tu lista de direcciones permitidas."
       ],
       "${ name } moved to block list": [
-        "${ name } se ha movido a la lista \"Bloqueado\"."
+        "${ name } ha sido movido a tu lista de direcciones bloqueadas."
       ],
       "${ name } moved to spam list": [
         "${ name } movido a la lista Spam"
@@ -2888,19 +2894,19 @@
         "Error al eliminar ${ name }"
       ],
       "${ name } failed to move to allow list": [
-        "Error al mover ${ name } a la lista \"No es spam\""
+        "Error al mover ${ name } a tu lista de direcciones permitidas."
       ],
       "${ name } failed to move to block list": [
-        "Error al mover ${ name } a la lista \"Bloqueado\""
+        "Error al mover ${ name } a tu lista de direcciones bloqueadas"
       ],
       "${ name } failed to move to spam list": [
         "Error al mover ${ name } a la lista Spam"
       ],
       "${ name } moved to allow list": [
-        "${ name } se ha movido a la lista \"No es spam\"."
+        "${ name } ha sido movido a tu lista de direcciones permitidas."
       ],
       "${ name } moved to block list": [
-        "${ name } se ha movido a la lista \"Bloqueado\"."
+        "${ name } ha sido movido a tu lista de direcciones bloqueadas."
       ],
       "${ name } moved to spam list": [
         "${ name } movido a la lista Spam"
@@ -3808,6 +3814,9 @@
       ],
       "View the invitations": [
         "Ver las invitaciones"
+      ],
+      "Decline invitation": [
+        "Rechazar la invitación"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4288,16 +4297,40 @@
         "Añade un filtro personalizado para realizar automáticamente ciertas acciones, como etiquetar o archivar mensajes."
       ],
       "Allow:": [
-        "Permitir:"
+        "Direcciones permitidas:"
       ],
       "Block:": [
-        "Bloquear:"
+        "Direcciones bloqueadas:"
       ],
       "Search list": [
         "Buscar en lista"
       ],
       "Spam:": [
         "Spam:"
+      ],
+      "Take control over what lands in your inbox by creating the following lists:": [
+        "Controla lo que llega a tu bandeja de entrada creando estas listas:"
+      ],
+      "Take control over what lands in your organization members' inboxes by creating the following lists:": [
+        "Controla lo que llega a las bandejas de entrada de los miembros de tu organización creando estas listas:"
+      ],
+      "These lists apply to all accounts in your organization. Members can create their own individual filters, but won't be able to override addresses or domains you blocked.": [
+        "Estas listas se aplican a todas las cuentas de tu organización. Los miembros de tu organización pueden crear sus propios filtros, pero no podrán sustituir las direcciones o dominios que hayas bloqueado."
+      ],
+      "To ensure critical messages don't end up in spam and getting missed": [
+        "Para mantener los mensajes importantes fuera de la carpeta de spam."
+      ],
+      "To prevent junk mail from clogging up inboxes": [
+        "Para mantener los mensajes no deseados o spam fuera de las bandejas de entrada."
+      ],
+      "To prevent junk mail from clogging up your inbox": [
+        "Para mantener los mensajes no deseados o spam fuera de tu bandeja de entrada."
+      ],
+      "To stop phishing or suspicious emails from entering your email system": [
+        "Para evitar que lleguen a tu bandeja de entrada mensajes de phishing o sospechosos."
+      ],
+      "To stop phishing or suspicious emails from entering your organization's email system": [
+        "Para evitar que lleguen a la bandeja de entrada de tu organización mensajes de phishing o sospechosos."
       ]
     },
     "Font Face Default": {
@@ -6809,6 +6842,21 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Tu suscripción está gestionada por Mozilla. Contacta con el soporte de Mozilla."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalza el aspecto y la sensación de las aplicaciones de ${ BRAND_NAME }"
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "Mejora tu experiencia en ${ BRAND_NAME } adaptando la aplicación a tus necesidades."
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "Enviar correos electrónicos para animar tus miembros a proteger sus cuentas con 2FA"
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "Los siguientes miembros recibirán un correo electrónico pidiéndoles que habiliten autenticación de dos factores tan pronto como sea posible."
+      ],
+      "We recommend notifying the organization members and asking them to set up 2FA for their accounts before enforcing the use of 2FA.": [
+        "Recomendamos notificar a los miembros de la organización y pedirles que configuren 2FA para sus cuentas antes de requerir la utilización de 2FA."
       ]
     },
     "info": {
@@ -7271,7 +7319,7 @@
         "Notificaciones de eventos que ocupan todo el día"
       ],
       "Allow": [
-        "Permitir"
+        "Direcciones permitidas"
       ],
       "Allow notifications by email": [
         "Permitir notificaciones por correo electrónico"
@@ -7346,7 +7394,7 @@
         "Ciclo de facturación"
       ],
       "Block": [
-        "Bloquear"
+        "Direcciones bloqueadas"
       ],
       "Block email tracking": [
         "Bloquear el rastreo de correo electrónico"
@@ -8055,6 +8103,33 @@
       ],
       "Card information": [
         "Información sobre la tarjeta"
+      ],
+      "Default scrollbars": [
+        "Barras de desplazamiento por defecto"
+      ],
+      "Disable animations": [
+        "Desactivar las animaciones"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Expiración (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Familia de fuente"
+      ],
+      "Font size": [
+        "Tamaño de fuente"
+      ],
+      "Require 2FA for administrators": [
+        "Requerir 2FA para los administradores"
+      ],
+      "Require 2FA for everyone": [
+        "Requerir 2FA para todos"
+      ],
+      "Security code (${ codeName })": [
+        "Código de seguridad (${ codeName })"
+      ],
+      "Synchronize with system": [
+        "Sincronizar con el sistema"
       ]
     },
     "label": {
@@ -8329,6 +8404,10 @@
       ],
       "Your import is starting": [
         "Tu importación está empezando."
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length }/${ members.length } para el miembro de tu organización que utiliza la autenticación de dos factores.",
+        "${ twoFAMembers.length }/${ members.length } para los miembros de tu organización que utilizan la autenticación de dos factores."
       ]
     },
     "Log preference": {
@@ -8588,7 +8667,7 @@
         "Todos"
       ],
       "Allow": [
-        "Permitir"
+        "Direcciones permitidas"
       ],
       "Back": [
         "Atrás"
@@ -8603,7 +8682,7 @@
         "Volver a la bandeja de entrada"
       ],
       "Block": [
-        "Bloquear"
+        "Direcciones bloqueadas"
       ],
       "Calendar": [
         "Calendario"
@@ -9463,6 +9542,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Credenciales OpenVPN / IKEv2 regeneradas"
+      ],
+      "Reminder has been sent": [
+        "Se ha enviado un recordatorio."
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "La autenticación de dos factores ha sido requerida para los administradores."
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "La autenticación de dos factores ha sido requerida para todos los miembros."
+      ],
+      "Two-factor authentication is not required anymore": [
+        "La autenticación de dos factores ya no es requerida."
       ]
     },
     "Notification in holidays calendar modal": {
@@ -11184,10 +11275,10 @@
         "Añadir filtro Sieve"
       ],
       "Add to allow list": [
-        "Añadir a la lista \"No es spam\""
+        "Añadir a la lista de direcciones permitidas"
       ],
       "Add to block list": [
-        "Añadir a la lista \"Bloqueado\""
+        "Añadir a la lista de direcciones bloqueadas"
       ],
       "Add to spam list": [
         "Añadir a la lista de spam"
@@ -11844,7 +11935,7 @@
         "Ordenar etiquetas alfabéticamente"
       ],
       "Spam, block, and allow lists": [
-        "Listas de \"No es spam\", \"Bloqueo\" y \"Spam\""
+        "Listas de direcciones permitidas, bloqueadas y spam"
       ],
       "Start a new import": [
         "Iniciar una nueva importación"
@@ -11970,6 +12061,30 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Estás invitado a probar ${ MAIL_APP_NAME }."
+      ],
+      "(active)": [
+        "(activo)"
+      ],
+      "Accessibility": [
+        "Accesibilidad"
+      ],
+      "Authentication security": [
+        "Autenticación de seguridad"
+      ],
+      "Day theme": [
+        "Tema de día"
+      ],
+      "Night theme": [
+        "Tema de noche"
+      ],
+      "Send email reminders?": [
+        "Enviar un recordatorio por correo electrónico?"
+      ],
+      "Two-factor authentication enforcement": [
+        "Autenticación de dos factores requerida"
+      ],
+      "Two-factor authentication reminders": [
+        "Recordatorios de autenticación de dos factores"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12178,6 +12293,27 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Es posible que tu cuenta externa haya alcanzado el límite de ancho de banda de 24 horas. ${ BRAND_NAME } intentará reanudar la importación tan pronto como sea posible."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Cambia automáticamente entre tus temas preferidos para el día y la noche en sincronía con los modos de día y noche de tu sistema."
+      ],
+      "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
+        "Los miembros que no utilizan 2FA recibirán un correo electrónico pidiéndoles que la habiliten tan pronto como sea posible."
+      ],
+      "The reduce motion setting is already enabled on this device": [
+        "El ajuste de reducción de movimiento ya está activado en este dispositivo."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "El tema seleccionado estará activo cuando tu sistema esté en \"modo oscuro\"."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "El tema seleccionado estará activo cuando tu sistema esté en \"modo claro\"."
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "Utiliza las barras de desplazamiento del navegador por defecto. Son más grandes y fáciles de utilizar en general."
+      ],
+      "When enabled, animations and transitions will not show": [
+        "Las animaciones y transiciones no se mostrarán."
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12656,6 +12792,36 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualmente, ${ untilString }"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "administrador"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Igual que el sistema"
+      ],
+      "Theme default": [
+        "Tema por defecto"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Grande"
+      ],
+      "Medium (recommended)": [
+        "Mediano (recomendado)"
+      ],
+      "Small": [
+        "Pequeño"
+      ],
+      "Very large": [
+        "Muy grande"
+      ],
+      "Very small": [
+        "Muy pequeño"
       ]
     }
   }

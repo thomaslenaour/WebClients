@@ -967,6 +967,21 @@
       ],
       "Zoom out": [
         "Micșorare"
+      ],
+      "Add address or domain": [
+        "Adăugare adresă sau domeniu"
+      ],
+      "Allow": [
+        "Permitere"
+      ],
+      "Continue anyway": [
+        "Continuare așa"
+      ],
+      "Send email reminder": [
+        "Trimitere notificare pe e-mail"
+      ],
+      "Send reminder": [
+        "Trimitere notificare"
       ]
     },
     "action": {
@@ -2774,13 +2789,22 @@
         "${ name } nu s-a putut muta în lista de nedorite."
       ],
       "${ name } moved to spam list": [
-        "${ name } s-a mutat în lista de nedorite."
+        "${ name } s-a mutat în lista de adrese blocate."
       ],
       "${ name } successfully deleted": [
         "S-a reușit ștergerea ${ name }."
       ],
       "${ name } moved to allow list": [
-        "${ name } a fost mutată în lista celor permise."
+        "${ name } s-a mutat în lista de adrese permise."
+      ],
+      "${ name } failed to move to allow list": [
+        "${ name } nu s-a putut muta în lista de adrese permise."
+      ],
+      "${ name } failed to move to block list": [
+        "${ name } nu s-a putut muta în lista de adrese blocate."
+      ],
+      "${ name } moved to block list": [
+        "${ name } s-a mutat în lista de adrese blocate."
       ]
     },
     "Downgrade account reason": {
@@ -2882,10 +2906,22 @@
         "${ name } nu s-a putut muta în lista de nedorite."
       ],
       "${ name } moved to spam list": [
-        "${ name } s-a mutat în lista de nedorite."
+        "${ name } s-a mutat în lista de adrese blocate."
       ],
       "${ name } successfully deleted": [
         "S-a reușit ștergerea ${ name }."
+      ],
+      "${ name } failed to move to allow list": [
+        "${ name } nu s-a putut muta în lista de adrese permise."
+      ],
+      "${ name } failed to move to block list": [
+        "${ name } nu s-a putut muta în lista de adrese blocate."
+      ],
+      "${ name } moved to allow list": [
+        "${ name } s-a mutat în lista de adrese permise."
+      ],
+      "${ name } moved to block list": [
+        "${ name } s-a mutat în lista de adrese blocate."
       ]
     },
     "Email subject": {
@@ -3794,6 +3830,9 @@
       ],
       "View the invitations": [
         "Afișare invitații"
+      ],
+      "Decline invitation": [
+        "Refuzare invitație"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4282,6 +4321,39 @@
       ],
       "Search list": [
         "Căutare în listă"
+      ],
+      "Allow:": [
+        "Permise:"
+      ],
+      "Block:": [
+        "Blocate:"
+      ],
+      "Spam:": [
+        "Nedorite:"
+      ],
+      "Take control over what lands in your inbox by creating the following lists:": [
+        "Preluați controlul mesajelor primite prin crearea următoarelor liste:"
+      ],
+      "Take control over what lands in your organization members' inboxes by creating the following lists:": [
+        "Preluați controlul mesajelor primite de către membrii organizației prin crearea următoarelor liste:"
+      ],
+      "These lists apply to all accounts in your organization. Members can create their own individual filters, but won't be able to override addresses or domains you blocked.": [
+        "Aceste liste se aplică tuturor conturilor din organizație. Membrii își pot crea propriile filtre individuale, dar nu vor putea înlocui adresele sau domeniile pe care le-ați blocat."
+      ],
+      "To ensure critical messages don't end up in spam and getting missed": [
+        "Pentru a vă asigura că nu ratați mesajele importante."
+      ],
+      "To prevent junk mail from clogging up inboxes": [
+        "Pentru a preveni ca mesajele nedorite să aglomereze lista de mesaje primite."
+      ],
+      "To prevent junk mail from clogging up your inbox": [
+        "Pentru a preveni ca mesajele nedorite să vă aglomereze lista de mesaje primite."
+      ],
+      "To stop phishing or suspicious emails from entering your email system": [
+        "Pentru oprirea sosirii mesajelor înșelătoare sau suspecte."
+      ],
+      "To stop phishing or suspicious emails from entering your organization's email system": [
+        "Pentru oprirea sosirii mesajelor înșelătoare sau suspecte în sistemul organizației."
       ]
     },
     "Font Face Default": {
@@ -6839,6 +6911,21 @@
       ],
       "Your files will be encrypted and then saved": [
         "Fișierele vor fi criptate și apoi salvate."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalizați aspectul aplicației ${ BRAND_NAME }."
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "Îmbunătățiți-vă experiența ${ BRAND_NAME } adaptând aplicație după nevoile personale."
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "Trimiteți mesaje membrilor pentru a-i încuraja să-ți protejeze contul prin autentificarea cu doi factori."
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "Următorii membri vor primi un mesaj pe e-mail solicitându-le să-și activeze autentificarea cu doi factori cât mai curând."
+      ],
+      "We recommend notifying the organization members and asking them to set up 2FA for their accounts before enforcing the use of 2FA.": [
+        "Se recomandă notificarea membrilor organizației și solicitarea ca aceștia să-ți activeze autentificarea cu doi factori înainte de forțarea utilizării acesteia."
       ]
     },
     "info": {
@@ -8080,6 +8167,42 @@
       ],
       "Your referral link": [
         "Legătură de recomandare"
+      ],
+      "Allow": [
+        "Adrese permise"
+      ],
+      "Block": [
+        "Adrese blocate"
+      ],
+      "Card information": [
+        "Informații card"
+      ],
+      "Default scrollbars": [
+        "Bare de derulare implicite"
+      ],
+      "Disable animations": [
+        "Dezactivare animații"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Expirare (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Familie font"
+      ],
+      "Font size": [
+        "Mărime font"
+      ],
+      "Require 2FA for administrators": [
+        "Solicitare A2F pentru administratori"
+      ],
+      "Require 2FA for everyone": [
+        "Solicitare A2F pentru toți"
+      ],
+      "Security code (${ codeName })": [
+        "Cod de securitate (${ codeName })"
+      ],
+      "Synchronize with system": [
+        "Sincronizare cu sistemul"
       ]
     },
     "label": {
@@ -8355,6 +8478,11 @@
       ],
       "Your import is starting": [
         "Începe importarea"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length }/${ members.length } membri ai organizației folosesc autentificarea cu doi factori.",
+        "${ twoFAMembers.length }/${ members.length } membri ai organizației folosesc autentificarea cu doi factori.",
+        "${ twoFAMembers.length }/${ members.length } membri ai organizației folosesc autentificarea cu doi factori."
       ]
     },
     "Log preference": {
@@ -8642,6 +8770,12 @@
       ],
       "Spam": [
         "Nedorite"
+      ],
+      "Allow": [
+        "Adrese permise"
+      ],
+      "Block": [
+        "Adrese blocate"
       ]
     },
     "New Label form": {
@@ -9513,6 +9647,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Credențiale OpenVPN/IKE2 regenerate"
+      ],
+      "Reminder has been sent": [
+        "Notificările au fost trimise"
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "Autentificarea cu doi factori este obligatorie pentru administratori."
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "Autentificarea cu doi factori este obligatorie pentru toți membrii."
+      ],
+      "Two-factor authentication is not required anymore": [
+        "Autentificarea cu doi factori nu mai este obligatorie."
       ]
     },
     "Notification in holidays calendar modal": {
@@ -11137,6 +11283,12 @@
       ],
       "vCard field": [
         "Câmp vCard"
+      ],
+      "Email address or domain": [
+        "Adresa de e-mail sau nume domeniu"
+      ],
+      "List": [
+        "Lista"
       ]
     },
     "TableRow": {
@@ -12045,6 +12197,39 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ați fost invitat să încercați ${ MAIL_APP_NAME }"
+      ],
+      "(active)": [
+        "(activă)"
+      ],
+      "Accessibility": [
+        "Accesibilitate"
+      ],
+      "Add to allow list": [
+        "Adăugare la lista de adrese permise"
+      ],
+      "Add to block list": [
+        "Adăugare la lista de adrese blocate"
+      ],
+      "Authentication security": [
+        "Securitate autentificare"
+      ],
+      "Day theme": [
+        "Temă zi"
+      ],
+      "Night theme": [
+        "Temă noapte"
+      ],
+      "Send email reminders?": [
+        "Trimiteți notificări pe e-mail?"
+      ],
+      "Spam, block, and allow lists": [
+        "Listă adrese blocate și permise"
+      ],
+      "Two-factor authentication enforcement": [
+        "Obligare autentificare cu doi factori"
+      ],
+      "Two-factor authentication reminders": [
+        "Notificări autentificare cu doi factori"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12253,6 +12438,27 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Contul extern ar putea să fi atins limita lățimii de bandă pentru 24 de ore. ${ BRAND_NAME } va încerca să reia importarea cât mai curând posibil."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Comutare automată a temei preferate sincron cu modul luminos sau întunecat setat al sistemului."
+      ],
+      "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
+        "Membrii care nu folosesc A2F vor primi un mesaj pe e-mail solicitându-le să o activeze cât mai curând."
+      ],
+      "The reduce motion setting is already enabled on this device": [
+        "Setarea de reducere a animațiilor este deja activată pe dispozitiv."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Tema selectată va fi activă când sistemul va fi setat în „modul întunecat”."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Tema selectată va fi activă când sistemul va fi setat în „modul luminos”."
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "Folosire bare de derulare implicite din navigator. De obicei sunt mai mari și mai ușor de folosit."
+      ],
+      "When enabled, animations and transitions will not show": [
+        "Dacă e activată, animațiile și tranzițiile nu mai apar."
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12768,6 +12974,36 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "administrator"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Implicit din sistem"
+      ],
+      "Theme default": [
+        "Temă implicită"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Mare"
+      ],
+      "Medium (recommended)": [
+        "Mediu (recomandat)"
+      ],
+      "Small": [
+        "Mic"
+      ],
+      "Very large": [
+        "Foarte mare"
+      ],
+      "Very small": [
+        "Foarte mic"
       ]
     }
   }

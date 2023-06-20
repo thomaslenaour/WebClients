@@ -970,6 +970,18 @@
       ],
       "Add address or domain": [
         "Dodaj adres lub domenę"
+      ],
+      "Allow": [
+        "Zezwól"
+      ],
+      "Continue anyway": [
+        "Kontynuuj mimo to"
+      ],
+      "Send email reminder": [
+        "Wyślij przypomnienie"
+      ],
+      "Send reminder": [
+        "Wyślij przypomnienie"
       ]
     },
     "action": {
@@ -2786,16 +2798,16 @@
         "Domena ${ name } została usunięta"
       ],
       "${ name } failed to move to allow list": [
-        "Przenoszenie domeny ${ name } do listy dozwolonych nie powiodło się"
+        "Przenoszenie domeny ${ name } do listy dozwolonych adresów nie powiodło się"
       ],
       "${ name } failed to move to block list": [
-        "Przenoszenie domeny ${ name } do listy odrzuconych nie powiodło się"
+        "Przenoszenie domeny ${ name } do listy zablokowanych nadawców nie powiodło się"
       ],
       "${ name } moved to allow list": [
-        "Domena ${ name } została przeniesiona do listy dozwolonych"
+        "Domena ${ name } została przeniesiona do listy dozwolonych adresów"
       ],
       "${ name } moved to block list": [
-        "Domena ${ name } została przeniesiona do listy odrzuconych"
+        "Domena ${ name } została przeniesiona do listy zablokowanych"
       ]
     },
     "Downgrade account reason": {
@@ -2903,16 +2915,16 @@
         "Adres ${ name } został usunięty"
       ],
       "${ name } failed to move to allow list": [
-        "Przenoszenie adresu ${ name } do listy dozwolonych nie powiodło się"
+        "Przenoszenie adresu ${ name } do listy dozwolonych adresów nie powiodło się"
       ],
       "${ name } failed to move to block list": [
-        "Przenoszenie adresu ${ name } do listy odrzuconych nie powiodło się"
+        "Przenoszenie adresu ${ name } do listy zablokowanych nadawców nie powiodło się"
       ],
       "${ name } moved to allow list": [
-        "Adres ${ name } został przeniesiony do listy dozwolonych"
+        "Adres ${ name } został przeniesiony do listy dozwolonych adresów"
       ],
       "${ name } moved to block list": [
-        "Adres ${ name } został przeniesiony do listy odrzuconych"
+        "Adres ${ name } został przeniesiony do listy zablokowanych"
       ]
     },
     "Email subject": {
@@ -3828,6 +3840,9 @@
       ],
       "View the invitations": [
         "Wyświetl zaproszenia"
+      ],
+      "Decline invitation": [
+        "Odrzuć zaproszenie"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4323,6 +4338,18 @@
       ],
       "Spam:": [
         "Spam:"
+      ],
+      "Allow:": [
+        "Dozwolone:"
+      ],
+      "Block:": [
+        "Zablokowane:"
+      ],
+      "To prevent junk mail from clogging up inboxes": [
+        "Aby zapobiegać zapychaniu skrzynek odbiorczych przez wiadomości-śmieci"
+      ],
+      "To prevent junk mail from clogging up your inbox": [
+        "Aby zapobiegać zapychaniu skrzynki odbiorczej przez wiadomości-śmieci"
       ]
     },
     "Font Face Default": {
@@ -6926,6 +6953,9 @@
       ],
       "Your files will be encrypted and then saved": [
         "Twoje pliki przed zapisaniem zostaną zaszyfrowane"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Dostosuj wygląd aplikacji ${ BRAND_NAME }."
       ]
     },
     "info": {
@@ -8174,6 +8204,39 @@
       ],
       "Card information": [
         "Informacje o karcie"
+      ],
+      "Allow": [
+        "Dozwolone"
+      ],
+      "Block": [
+        "Zablokowane"
+      ],
+      "Default scrollbars": [
+        "Domyślne paski przewijania"
+      ],
+      "Disable animations": [
+        "Wyłącz animacje"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Data wygaśnięcia (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Czcionka"
+      ],
+      "Font size": [
+        "Rozmiar czcionki"
+      ],
+      "Require 2FA for administrators": [
+        "Wymagaj uwierzytelniania dwustopniowego od administratorów"
+      ],
+      "Require 2FA for everyone": [
+        "Wymagaj uwierzytelniania dwustopniowego od wszystkich użytkowników"
+      ],
+      "Security code (${ codeName })": [
+        "Kod zabezpieczający (${ codeName })"
+      ],
+      "Synchronize with system": [
+        "Domyślny systemu"
       ]
     },
     "label": {
@@ -8746,6 +8809,12 @@
       ],
       "Spam": [
         "Spam"
+      ],
+      "Allow": [
+        "Dozwolone"
+      ],
+      "Block": [
+        "Zablokowane"
       ]
     },
     "New Label form": {
@@ -9638,6 +9707,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Dane logowania OpenVPN / IKEv2 zostały ponownie wygenerowane"
+      ],
+      "Reminder has been sent": [
+        "Przypomnienie zostało wysłane"
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "Uwierzytelnianie dwustopniowe jest wymagane dla administratorów"
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "Uwierzytelnianie dwustopniowe jest wymagane dla wszystkich użytkowników"
+      ],
+      "Two-factor authentication is not required anymore": [
+        "Uwierzytelnianie dwustopniowe nie jest wymagane"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -12215,10 +12296,34 @@
         "Dodaj do listy dozwolonych"
       ],
       "Add to block list": [
-        "Dodaj do listy odrzuconych"
+        "Dodaj do listy zablokowanych"
       ],
       "Spam, block, and allow lists": [
-        "Spam, listy odrzuconych i dozwolonych"
+        "Lista spamu, zablokowanych i dozwolonych"
+      ],
+      "(active)": [
+        "(aktywny)"
+      ],
+      "Accessibility": [
+        "Dostępność"
+      ],
+      "Authentication security": [
+        "Bezpieczeństwo uwierzytelniania"
+      ],
+      "Day theme": [
+        "Jasny motyw"
+      ],
+      "Night theme": [
+        "Ciemny motyw"
+      ],
+      "Send email reminders?": [
+        "Wysłać przypomnienia?"
+      ],
+      "Two-factor authentication enforcement": [
+        "Wymuszanie uwierzytelniania dwustopniowego"
+      ],
+      "Two-factor authentication reminders": [
+        "Przypomnienia o uwierzytelnianiu dwustopniowym"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12427,6 +12532,12 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Limit dobowy przepustowości konta zewnętrznego mógł zostać osiągnięty. ${ BRAND_NAME } spróbuje wznowić proces importowania najszybciej, jak będzie to możliwe."
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "Używaj domyślnych pasków przewijania przeglądarki. Są one zazwyczaj większe i łatwiejsze w użyciu"
+      ],
+      "When enabled, animations and transitions will not show": [
+        "Po włączeniu tej opcji, animacje i przejścia nie będą wyświetlane"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12979,6 +13090,36 @@
       ],
       "Yearly, ${ untilString }": [
         "Co rok, ${ untilString }"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "administrator"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Domyślny systemu"
+      ],
+      "Theme default": [
+        "Domyślny motyw"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Duża"
+      ],
+      "Medium (recommended)": [
+        "Średnia (zalecana)"
+      ],
+      "Small": [
+        "Mała"
+      ],
+      "Very large": [
+        "Bardzo duża"
+      ],
+      "Very small": [
+        "Bardzo mała"
       ]
     }
   }

@@ -976,6 +976,12 @@
       ],
       "Zoom out": [
         "Zoom arrière"
+      ],
+      "Send email reminder": [
+        "Envoyer un rappel par e-mail"
+      ],
+      "Send reminder": [
+        "Envoyer un rappel"
       ]
     },
     "action": {
@@ -3808,6 +3814,9 @@
       ],
       "View the invitations": [
         "Voir les invitations"
+      ],
+      "Decline invitation": [
+        "Refuser l'invitation"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4309,7 +4318,7 @@
         "Ces listes s'appliquent à tous les comptes de votre organisation. Les membres de votre organisation peuvent créer leurs propres filtres, mais ne pourront pas remplacer les adresses ou les domaines que vous avez bloqués."
       ],
       "To ensure critical messages don't end up in spam and getting missed": [
-        "pour que les messages importants ne se retrouvent pas dans les indésirables/spam et ne soient pas manqués."
+        "pour que les messages importants ne se retrouvent pas dans les indésirables/spam."
       ],
       "To prevent junk mail from clogging up inboxes": [
         "pour que les messages indésirables/spam n'encombrent pas les boites de réception."
@@ -6839,6 +6848,15 @@
       ],
       "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
         "Améliorez votre expérience ${ BRAND_NAME } en adaptant l'application à vos besoins."
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "Envoyez un message à vos membres pour les encourager à protéger leurs comptes en utilisant l'authentification à deux facteurs (A2F)."
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "Ces membres recevront un e-mail les invitant à activer l'authentification à deux facteurs (A2F) dès que possible."
+      ],
+      "We recommend notifying the organization members and asking them to set up 2FA for their accounts before enforcing the use of 2FA.": [
+        "Nous vous recommandons de prévenir les membres de l'organisation et de leur demander de configurer l'authentification à deux facteurs (A2F) sur leurs comptes avant de leur imposer son utilisation."
       ]
     },
     "info": {
@@ -8084,7 +8102,7 @@
         "Votre lien de parrainage"
       ],
       "Card information": [
-        "Données de la carte"
+        "Informations sur la carte"
       ],
       "Default scrollbars": [
         "Barres de défilement par défaut"
@@ -8106,6 +8124,12 @@
       ],
       "Synchronize with system": [
         "Synchroniser avec les paramètres du système"
+      ],
+      "Require 2FA for administrators": [
+        "Exiger l'authentification à deux facteurs (A2F) pour les administrateurs"
+      ],
+      "Require 2FA for everyone": [
+        "Exiger l'authentification à deux facteurs (A2F) pour tout le monde"
       ]
     },
     "label": {
@@ -8380,6 +8404,10 @@
       ],
       "Your import is starting": [
         "Votre importation commence."
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length } membre de votre organisation sur ${ members.length } utilise l'authentification à deux facteurs (A2F).",
+        "${ twoFAMembers.length } membres de votre organisation sur ${ members.length } utilisent l'authentification à deux facteurs (A2F)."
       ]
     },
     "Log preference": {
@@ -9514,6 +9542,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Les identifiants OpenVPN/IKEv2 ont été regénérés."
+      ],
+      "Reminder has been sent": [
+        "Le rappel a été envoyé."
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "L'authentification à deux facteurs (A2F) a été activée pour les administrateurs."
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "L'authentification à deux facteurs (A2F) a été activée pour tous les membres."
+      ],
+      "Two-factor authentication is not required anymore": [
+        "L'authentification à deux facteurs (A2F) n'est plus obligatoire."
       ]
     },
     "Notification in holidays calendar modal": {
@@ -12033,6 +12073,18 @@
       ],
       "Spam, block, and allow lists": [
         "Indésirables/spam, adresses bloquées et autorisées"
+      ],
+      "Authentication security": [
+        "Sécurité de l'authentification"
+      ],
+      "Send email reminders?": [
+        "Envoyer un rappel par e-mail ?"
+      ],
+      "Two-factor authentication enforcement": [
+        "Mise en place de l'authentification à deux facteurs (A2F)"
+      ],
+      "Two-factor authentication reminders": [
+        "Rappels d'authentification à deux facteurs (A2F)"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12258,7 +12310,10 @@
         "Utilisez les barres de défilement par défaut de votre navigateur. Elles sont généralement plus grandes et plus faciles à utiliser."
       ],
       "When enabled, animations and transitions will not show": [
-        "Les animations et les transitions ne s'affichent pas."
+        "Les animations et les transitions ne s'afficheront pas."
+      ],
+      "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
+        "Les membres qui n'utilisent pas l'authentification à deux facteurs (A2F) recevront un message leur demandant de l'activer dès que possible."
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12762,6 +12817,11 @@
       ],
       "Very small": [
         "Très petit"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "Administrateur"
       ]
     }
   }

@@ -726,7 +726,7 @@
         "Salva file ICS"
       ],
       "Save selected": [
-        "Salva selezionato"
+        "Salva la scelta"
       ],
       "Search": [
         "Cerca"
@@ -973,6 +973,15 @@
       ],
       "Zoom out": [
         "Zoom indietro"
+      ],
+      "Continue anyway": [
+        "Continua comunque"
+      ],
+      "Send email reminder": [
+        "Invia promemoria email"
+      ],
+      "Send reminder": [
+        "Invia promemoria"
       ]
     },
     "action": {
@@ -2768,19 +2777,19 @@
         "eliminazione di ${ name } non riuscita"
       ],
       "${ name } failed to move to allow list": [
-        "${ name } non è stato spostato nella lista \"Non spam\"."
+        "Spostamento di ${ name } nella lista consentiti fallito"
       ],
       "${ name } failed to move to block list": [
-        "${ name } non è stato spostato nella lista \"Bloccato\"."
+        "Spostamento di ${ name } nella lista bloccati fallito"
       ],
       "${ name } failed to move to spam list": [
         "Spostamento di ${ name } nella lista di mittenti spam fallito"
       ],
       "${ name } moved to allow list": [
-        "${ name } è stato spostato nella lista \"Non spam\"."
+        "${ name } spostato nella lista consentiti"
       ],
       "${ name } moved to block list": [
-        "${ name } è stato spostato nella lista \"Bloccato\"."
+        "${ name } spostato nella lista bloccati"
       ],
       "${ name } moved to spam list": [
         "Spostamento di ${ name } nella lista spam effettuato"
@@ -2885,19 +2894,19 @@
         "eliminazione di ${ name } non riuscita"
       ],
       "${ name } failed to move to allow list": [
-        "${ name } non è stato spostato nella lista “Non spam“."
+        "Spostamento di ${ name } nella lista consentiti fallito"
       ],
       "${ name } failed to move to block list": [
-        "${ name } non è stato spostato nella lista \"Bloccato\"."
+        "Spostamento di ${ name } nella lista bloccati fallito"
       ],
       "${ name } failed to move to spam list": [
         "Spostamento di ${ name } nella lista di mittenti spam fallito"
       ],
       "${ name } moved to allow list": [
-        "${ name } è stato spostato nella lista “Non spam“."
+        "${ name } spostato nella lista consentiti"
       ],
       "${ name } moved to block list": [
-        "${ name } è stato spostato nella lista \"Bloccato\"."
+        "${ name } spostato nella lista bloccati"
       ],
       "${ name } moved to spam list": [
         "Spostamento di ${ name } nella lista spam effettuato"
@@ -3805,6 +3814,9 @@
       ],
       "View the invitations": [
         "Guarda gli inviti"
+      ],
+      "Decline invitation": [
+        "Rifiuta l'invito"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -8049,6 +8061,27 @@
       ],
       "Your referral link": [
         "Il tuo link di riferimento"
+      ],
+      "Card information": [
+        "Informazioni carta"
+      ],
+      "Disable animations": [
+        "Disabilita animazioni"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Scadenza (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Famiglia di caratteri"
+      ],
+      "Font size": [
+        "Dimensioni carattere"
+      ],
+      "Security code (${ codeName })": [
+        "Codice di sicurezza (${ codeName })"
+      ],
+      "Synchronize with system": [
+        "Sincronizza con il sistema"
       ]
     },
     "label": {
@@ -9457,6 +9490,9 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Credenziali OpenVPN / IKEv2 rigenerate"
+      ],
+      "Reminder has been sent": [
+        "Il promemoria è stato inviato"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -11178,10 +11214,10 @@
         "Aggiungi filtro Sieve"
       ],
       "Add to allow list": [
-        "Aggiungi alla lista “Non spam“"
+        "Aggiungi alla lista consentiti"
       ],
       "Add to block list": [
-        "Aggiungi alla lista “Bloccato“"
+        "Aggiungi alla lista bloccati"
       ],
       "Add to spam list": [
         "Aggiungi alla lista degli spam"
@@ -11964,6 +12000,24 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Sei stato invitato a provare ${ MAIL_APP_NAME }"
+      ],
+      "(active)": [
+        "(attivo)"
+      ],
+      "Accessibility": [
+        "Accessibilità"
+      ],
+      "Authentication security": [
+        "Sicurezza autenticazione"
+      ],
+      "Day theme": [
+        "Tema giorno"
+      ],
+      "Night theme": [
+        "Tema notte"
+      ],
+      "Send email reminders?": [
+        "Inviare promemoria email?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12650,6 +12704,36 @@
       ],
       "Yearly, ${ untilString }": [
         "Annualmente, ${ untilString }"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "amministratore"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Predefinito di sistema"
+      ],
+      "Theme default": [
+        "Tema predefinito"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Grande"
+      ],
+      "Medium (recommended)": [
+        "Medio (consigliato)"
+      ],
+      "Small": [
+        "Piccolo"
+      ],
+      "Very large": [
+        "Molto grande"
+      ],
+      "Very small": [
+        "Molto piccolo"
       ]
     }
   }

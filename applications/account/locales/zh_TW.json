@@ -967,6 +967,21 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Add address or domain": [
+        "添加位址網域域"
+      ],
+      "Allow": [
+        "允許"
+      ],
+      "Continue anyway": [
+        "仍要繼續"
+      ],
+      "Send email reminder": [
+        "傳送電子郵件提醒"
+      ],
+      "Send reminder": [
+        "發送提醒"
       ]
     },
     "action": {
@@ -2868,6 +2883,12 @@
       ],
       "${ name } successfully deleted": [
         "${ name } 刪除成功"
+      ],
+      "${ name } failed to move to allow list": [
+        "${ name } 無法移至允許清單"
+      ],
+      "${ name } moved to allow list": [
+        "${ name } 已移至允許清單"
       ]
     },
     "Email subject": {
@@ -3762,6 +3783,9 @@
       ],
       "View the invitations": [
         "檢視邀請"
+      ],
+      "Decline invitation": [
+        "拒絕邀請"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4236,6 +4260,15 @@
       ],
       "Search list": [
         "搜索列表"
+      ],
+      "Allow:": [
+        "允許:"
+      ],
+      "Block:": [
+        "封鎖:"
+      ],
+      "Spam:": [
+        "垃圾郵件:"
       ]
     },
     "Font Face Default": {
@@ -6704,6 +6737,15 @@
       ],
       "Drop to import": [
         "拖放以匯入"
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "增加您${ BRAND_NAME }的使用體驗，使用應用程式以滿足需求"
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "傳送電子郵件鼓勵成員使用雙重驗證以保護帳號"
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "以下成員將收到電子郵件提示盡速使用雙重身份驗證"
       ]
     },
     "info": {
@@ -7939,10 +7981,40 @@
         "您的推薦連結"
       ],
       "Block": [
-        "攔截"
+        "封鎖"
       ],
       "Synchronize with system": [
         "與系統同步"
+      ],
+      "Allow": [
+        "允許"
+      ],
+      "Card information": [
+        "卡片資料"
+      ],
+      "Default scrollbars": [
+        "預設滑桿"
+      ],
+      "Disable animations": [
+        "停用動畫"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "到期日(${ patternExpiration })"
+      ],
+      "Font family": [
+        "字型系列"
+      ],
+      "Font size": [
+        "字體大小"
+      ],
+      "Require 2FA for administrators": [
+        "要求管理員使用雙重驗證"
+      ],
+      "Require 2FA for everyone": [
+        "要求所有人使用雙重驗證"
+      ],
+      "Security code (${ codeName })": [
+        "安全驗證代碼(${ codeName })"
       ]
     },
     "label": {
@@ -8216,6 +8288,9 @@
       ],
       "Your import is starting": [
         "您的匯入程序已開始"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization members use two-factor authentication.": [
+        "您組織的${ twoFAMembers.length }/${ members.length }成員使用了雙重身分驗證"
       ]
     },
     "Log preference": {
@@ -8487,7 +8562,10 @@
         "垃圾郵件"
       ],
       "Block": [
-        "攔截"
+        "封鎖"
+      ],
+      "Allow": [
+        "允許"
       ]
     },
     "New Label form": {
@@ -9317,6 +9395,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "OpenVPN / IKEv2 認證已重新生成"
+      ],
+      "Reminder has been sent": [
+        "提醒已傳送"
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "以強制管理員使用雙重身分驗證"
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "以強制使用成員雙重身份驗證"
+      ],
+      "Two-factor authentication is not required anymore": [
+        "雙重身份驗證已無需繼續使用"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -10883,6 +10973,12 @@
       ],
       "vCard field": [
         "vCard 欄位"
+      ],
+      "Email address or domain": [
+        "電子郵件地址或網域"
+      ],
+      "List": [
+        "列表"
       ]
     },
     "TableRow": {
@@ -11774,13 +11870,34 @@
         "（啟用）"
       ],
       "Add to block list": [
-        "加入至攔截清單"
+        "新增至封鎖清單"
       ],
       "Day theme": [
         "白天佈景主題"
       ],
       "Night theme": [
         "夜間佈景主題"
+      ],
+      "Accessibility": [
+        "協助工具"
+      ],
+      "Add to allow list": [
+        "新增至允許清單"
+      ],
+      "Authentication security": [
+        "安全驗證"
+      ],
+      "Send email reminders?": [
+        "傳送電子郵件提醒"
+      ],
+      "Spam, block, and allow lists": [
+        "垃圾郵件、封鎖、允許清單"
+      ],
+      "Two-factor authentication enforcement": [
+        "執行雙重身分驗證"
+      ],
+      "Two-factor authentication reminders": [
+        "兩步驟驗證體醒"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11992,6 +12109,12 @@
       ],
       "The selected theme will be active when your system is set to \"light mode\"": [
         "當您的系統設定為「淺色模式」時，將會啟用選定的佈景主題"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "與系統的日夜模式同步，在白天和晚上的偏好佈景主題之間自動切換"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "當您的系統設定為「深色模式」時，將會啟用選定的佈景主題"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12458,6 +12581,11 @@
       ],
       "Very small": [
         "非常小"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "管理員"
       ]
     }
   }

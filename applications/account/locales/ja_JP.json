@@ -938,6 +938,9 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Allow": [
+        "許可"
       ]
     },
     "Action for user session": {
@@ -3696,6 +3699,9 @@
       ],
       "Your current plan cannot join a Visionary or family plan.": [
         "あなたの現在のプランでは Visionary またはファミリープランに参加できません。"
+      ],
+      "Manage user accounts": [
+        "ユーザーアカウントを管理"
       ]
     },
     "familyOffer_2023:Footer": {
@@ -6215,6 +6221,9 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "あなたのサブスクリプションはMozillaによって管理されています。Mozillaのサポートへお問い合わせください。"
+      ],
+      "Welcome": [
+        "ようこそ"
       ]
     },
     "info": {
@@ -6534,6 +6543,9 @@
       ],
       "Star": [
         "星印を付ける"
+      ],
+      "Open command panel": [
+        "コマンドパネルを開く"
       ]
     },
     "Keyboard shortcut section name": {
@@ -7436,6 +7448,24 @@
       ],
       "Your referral link": [
         "あなたの招待リンク"
+      ],
+      "Allow": [
+        "許可"
+      ],
+      "Block": [
+        "ブロック"
+      ],
+      "Default scrollbars": [
+        "デフォルトのスクロールバー"
+      ],
+      "Disable animations": [
+        "アニメーションを無効にする"
+      ],
+      "Font family": [
+        "フォントファミリー"
+      ],
+      "Font size": [
+        "フォントサイズ"
       ]
     },
     "label": {
@@ -7975,6 +8005,12 @@
       ],
       "Spam": [
         "迷惑メール"
+      ],
+      "Allow": [
+        "許可"
+      ],
+      "Block": [
+        "ブロック"
       ]
     },
     "New Label form": {
@@ -10077,6 +10113,9 @@
       ],
       "vCard field": [
         "vCard フィールド"
+      ],
+      "Email address or domain": [
+        "メールアドレスかドメイン"
       ]
     },
     "TableRow": {
@@ -10957,6 +10996,21 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "${ MAIL_APP_NAME } の試用に招待されました"
+      ],
+      "(active)": [
+        "(アクティブ)"
+      ],
+      "Add to allow list": [
+        "許可リストに追加"
+      ],
+      "Add to block list": [
+        "ブロックリストに追加"
+      ],
+      "Day theme": [
+        "昼間のテーマ"
+      ],
+      "Night theme": [
+        "夜間のテーマ"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11150,6 +11204,12 @@
       ],
       "Your DKIM signing is working.": [
         "DKIM 署名が機能しています。"
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "ブラウザのデフォルトのスクロールバーを使用します。これは通常、大きくて使いやすいです。"
+      ],
+      "When enabled, animations and transitions will not show": [
+        "有効にすると、アニメーションと遷移は表示されなくなります。"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -11546,6 +11606,36 @@
       ],
       "Yearly, ${ untilString }": [
         "毎年、${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "システムのデフォルト"
+      ],
+      "Theme default": [
+        "テーマのデフォルト"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中 (推奨)"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "極大"
+      ],
+      "Very small": [
+        "極小"
+      ]
+    },
+    "VPN signup": {
+      "Swiss flag": [
+        "スイスの国旗"
       ]
     }
   }

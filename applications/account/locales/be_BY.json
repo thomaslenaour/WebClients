@@ -645,7 +645,7 @@
         "Выдаліць гэта апавяшчэнне"
       ],
       "Report a problem": [
-        "Паведаміць пра праблему"
+        "Паведаміць аб праблеме"
       ],
       "Request a feature": [
         "Запытаць функцыю"
@@ -967,6 +967,21 @@
       ],
       "Zoom out": [
         "Паменшыць"
+      ],
+      "Add address or domain": [
+        "Дадаць адрас або дамен"
+      ],
+      "Allow": [
+        "Дазволіць"
+      ],
+      "Continue anyway": [
+        "Усё роўна працягнуць"
+      ],
+      "Send email reminder": [
+        "Адправіць напамін поштай"
+      ],
+      "Send reminder": [
+        "Адправіць напамін"
       ]
     },
     "action": {
@@ -2789,7 +2804,7 @@
         "${ name } паспяхова выдалены"
       ],
       "${ name } moved to allow list": [
-        "${ name } перамешчаны ў спіс дазволеных"
+        "${ name } перамешчаны ў спіс дазволеных адрасоў"
       ]
     },
     "Downgrade account reason": {
@@ -3810,6 +3825,9 @@
       ],
       "View the invitations": [
         "Паглядзець запрашэнні"
+      ],
+      "Decline invitation": [
+        "Адхіліць запрашэнне"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4305,6 +4323,39 @@
       ],
       "Search list": [
         "Спіс пошуку"
+      ],
+      "Allow:": [
+        "Дазволеныя:"
+      ],
+      "Block:": [
+        "Заблакіраваныя:"
+      ],
+      "Spam:": [
+        "Спам:"
+      ],
+      "Take control over what lands in your inbox by creating the following lists:": [
+        "Вазьміце пад кантроль тое, што знаходзіцца ў вашай паштовай скрыні, стварыўшы наступныя спісы:"
+      ],
+      "Take control over what lands in your organization members' inboxes by creating the following lists:": [
+        "Вазьміце пад кантроль тое, што знаходзіцца ў скрынях удзельнікаў вашай арганізацыі, стварыўшы наступныя спісы:"
+      ],
+      "These lists apply to all accounts in your organization. Members can create their own individual filters, but won't be able to override addresses or domains you blocked.": [
+        "Гэтыя спісы ўжываюцца для ўсіх уліковых запісаў у вашай арганізацыі. Удзельнікі змогуць ствараць свае ўласныя фільтры, але не змогуць змяніць заблакіраваныя адрасы або дамены."
+      ],
+      "To ensure critical messages don't end up in spam and getting missed": [
+        "Каб крытычныя паведамленні не трапілі ў спам і не былі прапушчаны"
+      ],
+      "To prevent junk mail from clogging up inboxes": [
+        "Каб прадухіліць захламленне паштовых скрынь"
+      ],
+      "To prevent junk mail from clogging up your inbox": [
+        "Каб прадухіліць захламленне вашай паштовай скрыні"
+      ],
+      "To stop phishing or suspicious emails from entering your email system": [
+        "Каб прадухіліць траплянне фішынгавых або падазроных лістоў у вашу электронную пошту"
+      ],
+      "To stop phishing or suspicious emails from entering your organization's email system": [
+        "Каб прадухіліць траплянне фішынгавых або падазроных лістоў у электронную пошту вашай арганізацыі"
       ]
     },
     "Font Face Default": {
@@ -6911,6 +6962,18 @@
       ],
       "Your files will be encrypted and then saved": [
         "Вашы файлы будуць зашыфраваны, а пасля гэтага захаваны"
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "Паляпшайце свой досвед выкарыстання ${ BRAND_NAME }, адаптаваўшы праграму пад свае патрэбы."
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "Адпраўляйце лісты, каб заахвоціць сваіх удзельнікаў абараняць свае ўліковыя запісы з дапамогай 2ФА."
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "Наступныя ўдзельнікі атрымаюць ліст з просьбай як мага хутчэй уключыць двухфактарную аўтэнтыфікацыю."
+      ],
+      "We recommend notifying the organization members and asking them to set up 2FA for their accounts before enforcing the use of 2FA.": [
+        "Мы рэкамендуем апавяшчаць удзельнікаў арганізацыі і прасіць іх наладзіць 2ФА для сваіх уліковых запісаў перад прымусовым ужываннем гэтай тэхналогіі."
       ]
     },
     "info": {
@@ -8159,6 +8222,39 @@
       ],
       "Synchronize with system": [
         "Сінхранізаваць з сістэмай"
+      ],
+      "Allow": [
+        "Аўтарызаваныя адрасы"
+      ],
+      "Block": [
+        "Заблакіраваць"
+      ],
+      "Card information": [
+        "Звесткі карткі"
+      ],
+      "Default scrollbars": [
+        "Прадвызначаныя палосы прагорткі"
+      ],
+      "Disable animations": [
+        "Адключыць анімацыю"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Тэрмін дзеяння (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Сямейства шрыфтоў"
+      ],
+      "Font size": [
+        "Памер шрыфту"
+      ],
+      "Require 2FA for administrators": [
+        "Патрабаваць 2ФА для адміністратараў"
+      ],
+      "Require 2FA for everyone": [
+        "Патрабаваць 2ФА для ўсіх удзельнікаў"
+      ],
+      "Security code (${ codeName })": [
+        "Код бяспекі (${ codeName })"
       ]
     },
     "label": {
@@ -8435,6 +8531,12 @@
       ],
       "Your import is starting": [
         "Пачалося імпартаванне"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length }/${ members.length } удзельніка вашай арганізацыі выкарыстоўвае двухфактарную аўтэнтыфікацыю.",
+        "${ twoFAMembers.length }/${ members.length } удзельнікаў вашай арганізацыі выкарыстоўваюць двухфактарную аўтэнтыфікацыю.",
+        "${ twoFAMembers.length }/${ members.length } удзельнікаў вашай арганізацыі выкарыстоўваюць двухфактарную аўтэнтыфікацыю.",
+        "${ twoFAMembers.length }/${ members.length } удзельнікаў вашай арганізацыі выкарыстоўваюць двухфактарную аўтэнтыфікацыю."
       ]
     },
     "Log preference": {
@@ -8731,6 +8833,12 @@
       ],
       "Spam": [
         "Спам"
+      ],
+      "Allow": [
+        "Аўтарызаваныя адрасы"
+      ],
+      "Block": [
+        "Заблакіраваныя адрасы"
       ]
     },
     "New Label form": {
@@ -9623,6 +9731,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Уліковыя даныя OpenVPN / IKEv2 паўторна згенерыраваныя"
+      ],
+      "Reminder has been sent": [
+        "Напамін адпраўлены"
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "Двухфактарная аўтэнтыфікацыя прымусова ўжываецца для адміністратараў"
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "Двухфактарная аўтэнтыфікацыя прымусова ўжываецца для ўсіх удзельнікаў"
+      ],
+      "Two-factor authentication is not required anymore": [
+        "Двухфактарная аўтэнтыфікацыя больш не патрабуецца"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -11276,6 +11396,12 @@
       ],
       "vCard field": [
         "Поле vCard"
+      ],
+      "Email address or domain": [
+        "Адрас электроннай пошты або дамен"
+      ],
+      "List": [
+        "Спіс"
       ]
     },
     "TableRow": {
@@ -11954,7 +12080,7 @@
         "Выдаліць карыстальніка?"
       ],
       "Report a problem": [
-        "Паведаміць пра праблему"
+        "Паведаміць аб праблеме"
       ],
       "Request new code": [
         "Запытаць новы код"
@@ -12197,13 +12323,37 @@
         "Вы былі запрошаны паспрабаваць ${ MAIL_APP_NAME }"
       ],
       "(active)": [
-        "(актыўна)"
+        "(актыўная)"
       ],
       "Day theme": [
         "Дзённая тэма"
       ],
       "Night theme": [
         "Начная тэма"
+      ],
+      "Accessibility": [
+        "Спецыяльныя магчымасці"
+      ],
+      "Add to allow list": [
+        "Дадаць у спіс дазволеных адрасоў"
+      ],
+      "Add to block list": [
+        "Дадаць у спіс заблакіраваных адрасоў"
+      ],
+      "Authentication security": [
+        "Бяспека аўтэнтыфікацыі"
+      ],
+      "Send email reminders?": [
+        "Адправіць напаміны поштай?"
+      ],
+      "Spam, block, and allow lists": [
+        "Спам і спісы заблакіраваных і дазволеных адрасоў"
+      ],
+      "Two-factor authentication enforcement": [
+        "Прымусовае ўжыванне двухфактарнай аўтэнтыфікацыі"
+      ],
+      "Two-factor authentication reminders": [
+        "Напаміны аб двухфактарнай аўтэнтыфікацыі"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12415,6 +12565,24 @@
       ],
       "The selected theme will be active when your system is set to \"light mode\"": [
         "Выбраная тэма будзе актыўна, калі ў вашай сістэме зададзены \"светлы рэжым\""
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Аўтаматычна пераключацца паміж вашымі пажаданымі тэмамі для дня і ночы згодна з начным і дзённым рэжымам вашай сістэмы."
+      ],
+      "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
+        "Удзельнікі, якія не выкарыстоўваць 2ФА, атрымаюць ліст з просьбай як мага хутчэй уключыць двухфактарную аўтэнтыфікацыю."
+      ],
+      "The reduce motion setting is already enabled on this device": [
+        "Налады памяншэння руху ўжо ўключаны на гэтай прыладзе"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Выбраная тэма будзе актыўна, калі ў вашай сістэме зададзены \"цёмны рэжым\""
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "Выкарыстоўвайце стандартную паласу прагорткі свайго браўзера. Звычайна яна больш і ёй прасцей карыстацца."
+      ],
+      "When enabled, animations and transitions will not show": [
+        "Калі ўключана, то анімацыя і пераходы паказвацца не будуць"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12992,6 +13160,11 @@
       ],
       "Very small": [
         "Вельмі маленькі"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "адміністратар"
       ]
     }
   }

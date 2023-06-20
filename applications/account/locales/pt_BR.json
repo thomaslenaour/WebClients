@@ -976,6 +976,12 @@
       ],
       "Continue anyway": [
         "Continuar mesmo assim"
+      ],
+      "Send email reminder": [
+        "Enviar lembrete por e-mail"
+      ],
+      "Send reminder": [
+        "Enviar lembrete"
       ]
     },
     "action": {
@@ -2771,19 +2777,19 @@
         "Falha na exclusão de ${ name }"
       ],
       "${ name } failed to move to allow list": [
-        "${ name } falhou ao mover para a lista de permitidos"
+        "${ name } falhou ao mover para a lista de endereços permitidos"
       ],
       "${ name } failed to move to block list": [
-        "${ name } falhou ao mover para a lista de bloqueio"
+        "${ name } falhou ao mover para a lista de endereços bloqueados"
       ],
       "${ name } failed to move to spam list": [
         "${ name } falhou ao mover para a lista de spam"
       ],
       "${ name } moved to allow list": [
-        "${ name } movido para a lista de permitidos"
+        "${ name } movido para a lista de endereços permitidos"
       ],
       "${ name } moved to block list": [
-        "${ name } movido para a lista de bloqueio"
+        "${ name } movido para a lista de endereços bloqueados"
       ],
       "${ name } moved to spam list": [
         "${ name } movido para a lista de Spam"
@@ -2888,19 +2894,19 @@
         "Falha na exclusão de ${ name }"
       ],
       "${ name } failed to move to allow list": [
-        "${ name } falhou ao mover para a lista de permitidos"
+        "${ name } falhou ao mover para a lista de endereços permitidos"
       ],
       "${ name } failed to move to block list": [
-        "${ name } falhou ao mover para a lista de bloqueio"
+        "${ name } falhou ao mover para a lista de endereços bloqueados"
       ],
       "${ name } failed to move to spam list": [
         "${ name } falhou ao mover para a lista de spam"
       ],
       "${ name } moved to allow list": [
-        "${ name } movido para a lista de permitidos"
+        "${ name } movido para a lista de endereços permitidos"
       ],
       "${ name } moved to block list": [
-        "${ name } movido para a lista de bloqueio"
+        "${ name } movido para a lista de endereços bloqueados"
       ],
       "${ name } moved to spam list": [
         "${ name } movido para a lista de Spam"
@@ -3808,6 +3814,9 @@
       ],
       "View the invitations": [
         "Visualizar os convites"
+      ],
+      "Decline invitation": [
+        "Recusar convite"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3858,7 +3867,7 @@
         "Sair do plano familiar"
       ],
       "Leave visionary plan": [
-        "Cancelar o plano Visionary"
+        "Sair do plano visionário"
       ],
       "Manage addresses.": [
         "Gerenciar endereços."
@@ -4288,16 +4297,40 @@
         "Adicione um filtro personalizado para executar automaticamente determinadas ações, como marcar ou arquivar mensagens."
       ],
       "Allow:": [
-        "Permitir:"
+        "Endereços permitidos:"
       ],
       "Block:": [
-        "Bloquear:"
+        "Endereços bloqueados:"
       ],
       "Search list": [
         "Procurar lista"
       ],
       "Spam:": [
         "Spam:"
+      ],
+      "Take control over what lands in your inbox by creating the following lists:": [
+        "Assuma o controle sobre o que chega na sua caixa de entrada criando as seguintes listas:"
+      ],
+      "Take control over what lands in your organization members' inboxes by creating the following lists:": [
+        "Assuma o controle sobre o que chega nas caixas de entrada dos membros da sua organização criando as seguintes listas:"
+      ],
+      "These lists apply to all accounts in your organization. Members can create their own individual filters, but won't be able to override addresses or domains you blocked.": [
+        "Essas listas se aplicam a todas as contas da sua organização. Os membros podem criar seus próprios filtros individuais, mas não poderão substituir endereços ou domínios que você bloqueou."
+      ],
+      "To ensure critical messages don't end up in spam and getting missed": [
+        "Para garantir que mensagens críticas não acabem no spam e sejam perdidas"
+      ],
+      "To prevent junk mail from clogging up inboxes": [
+        "Para evitar que e-mails indesejados lotem as caixas de entrada"
+      ],
+      "To prevent junk mail from clogging up your inbox": [
+        "Para evitar que emails indesejados lotem sua caixa de entrada"
+      ],
+      "To stop phishing or suspicious emails from entering your email system": [
+        "Para impedir que emails de phishing ou suspeitos entrem no seu sistema de email"
+      ],
+      "To stop phishing or suspicious emails from entering your organization's email system": [
+        "Para impedir que e-mails de phishing ou suspeitos entrem no sistema de e-mail da sua organização"
       ]
     },
     "Font Face Default": {
@@ -5422,7 +5455,7 @@
         "Baixe suas chaves PGP para usar com outros serviços compatíveis com PGP."
       ],
       "Drop file here to upload": [
-        "Solte o arquivo aqui para enviar"
+        "Solte o arquivo aqui para fazer o upload"
       ],
       "Drop to import": [
         "Solte para importar"
@@ -6319,7 +6352,7 @@
         "Isto irá encerrar qualquer sessão ativa e desabilitar a autenticação de 2 fatores."
       ],
       "This wizard will enable Two-Factor Authentication (2FA) on your ${ BRAND_NAME } account. Two-factor authentication will make your ${ BRAND_NAME_TWO } account more secure so we recommend enabling it.": [
-        "Este assistente ativará a autenticação de dois fatores (2FA) em sua conta da ${ BRAND_NAME }. A autenticação de dois fatores tornará sua conta da ${ BRAND_NAME_TWO } mais segura, portanto, recomendamos ativá-la."
+        "Este assistente ativará a autenticação de dois fatores (A2F) em sua conta da ${ BRAND_NAME }. A autenticação de dois fatores tornará sua conta da ${ BRAND_NAME_TWO } mais segura, portanto, recomendamos ativá-la."
       ],
       "To ${ planName }": [
         "Para ${ planName }"
@@ -6388,7 +6421,7 @@
         "Tente ${ upsellPlanName } sem risco algum"
       ],
       "two-factor authentication (2FA)": [
-        "Autenticação de dois fatores (2FA)"
+        "Autenticação de dois fatores (A2F)"
       ],
       "Two-factor authentication disabled": [
         "Autenticação de dois fatores desativada"
@@ -6517,7 +6550,7 @@
         "Precisamos autenticar seu pagamento com seu banco."
       ],
       "We recommend using your recovery phrase instead.": [
-        "Nós recomendamos usar sua frase de recuperação."
+        "Em vez disso, recomendamos o uso de sua frase de recuperação."
       ],
       "We securely store recovery information on your trusted device to prevent you from losing your data": [
         "Armazenamos com segurança as informações de recuperação em seu dispositivo confiável para evitar que você perca seus dados"
@@ -6638,7 +6671,7 @@
         "Você agora pode acessar e gerenciar a conta como um administrador."
       ],
       "You can now close this window.": [
-        "Já pode fechar esta janela."
+        "Agora você pode fechar essa janela."
       ],
       "You can turn on notifications to get alerts when new email messages arrive in this folder.": [
         "Você pode ativar as notificações para receber alertas quando novas mensagens de e-mail chegarem nesta pasta."
@@ -6818,6 +6851,21 @@
       ],
       "Tor": [
         "Tor"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalize a aparência e o estilo das aplicações da ${ BRAND_NAME }."
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "Melhore sua experiência com o ${ BRAND_NAME } adaptando o aplicativo às suas necessidades."
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "Envie emails para incentivar seus membros a proteger suas contas com 2FA."
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "Os seguintes membros receberão um email solicitando que eles ativem a autenticação de dois fatores o mais rápido possível."
+      ],
+      "We recommend notifying the organization members and asking them to set up 2FA for their accounts before enforcing the use of 2FA.": [
+        "Recomendamos notificar os membros da organização e pedir que eles configurem 2FA para suas contas antes de impor o uso de 2FA."
       ]
     },
     "info": {
@@ -7280,7 +7328,7 @@
         "Notificações para eventos de dia inteiro"
       ],
       "Allow": [
-        "Permitir"
+        "Endereços permitidos"
       ],
       "Allow notifications by email": [
         "Permitir notificações por e-mail"
@@ -7355,7 +7403,7 @@
         "Ciclo de faturamento"
       ],
       "Block": [
-        "Bloquear"
+        "Endereços bloqueados"
       ],
       "Block email tracking": [
         "Bloquear rastreamento de e-mail"
@@ -8076,6 +8124,21 @@
       ],
       "Synchronize with system": [
         "Sincronizar com o sistema"
+      ],
+      "Default scrollbars": [
+        "Barras de rolagem padrão"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Expiração (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Família de fontes"
+      ],
+      "Require 2FA for administrators": [
+        "Requer A2F para administradores"
+      ],
+      "Require 2FA for everyone": [
+        "Requer A2F para todos"
       ]
     },
     "label": {
@@ -8350,6 +8413,10 @@
       ],
       "Your import is starting": [
         "Sua importação está começando"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length }/${ members.length } membros da sua organização usam a autenticação de dois fatores.",
+        "${ twoFAMembers.length }/${ members.length } dos membros da sua organização usam a autenticação de dois fatores."
       ]
     },
     "Log preference": {
@@ -8609,7 +8676,7 @@
         "Todos"
       ],
       "Allow": [
-        "Permitir"
+        "Endereços permitidos"
       ],
       "Back": [
         "Voltar"
@@ -8624,7 +8691,7 @@
         "Voltar à caixa de entrada"
       ],
       "Block": [
-        "Bloquear"
+        "Endereços bloqueados"
       ],
       "Calendar": [
         "Calendário"
@@ -8911,7 +8978,7 @@
         "Assinaturas HTML"
       ],
       "Integrated 2FA authenticator": [
-        "Autenticador 2FA integrado"
+        "Autenticador A2F integrado"
       ],
       "Kill switch/always-on VPN": [
         "Kill switch/VPN sempre ativa"
@@ -9002,7 +9069,7 @@
         "Marcadores ilimitados"
       ],
       "Unlimited logins and notes": [
-        "Notas e logins ilimitados"
+        "Notas e inícios de sessão ilimitados"
       ],
       "Unlimited messages per day": [
         "Mensagens ilimitadas por dia"
@@ -9395,7 +9462,7 @@
         "Suporte para protocolos de compartilhamento de arquivos como BitTorrent"
       ],
       "Unique, on-the-fly email addresses that protect your online identity and let you control what lands in your inbox. From SimpleLogin by ${ BRAND_NAME }.": [
-        "Único, endereços de emails temporários para proteger sua identidade online e permitir que você controle o que é enviado para sua caixa de entrada. Do SimpleLogin por ${ BRAND_NAME }."
+        "Único, endereços de e-mails temporários para proteger sua identidade on-line e permitir que você controle o que é enviado para sua caixa de entrada. Do SimpleLogin por ${ BRAND_NAME }."
       ],
       "Use your own custom email domain addresses, e.g., you@yourname.com": [
         "Use seu próprio domínio de e-mail personalizado (por exemplo, voce@seunome.com)"
@@ -9484,6 +9551,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Credenciais OpenVPN / IKEv2 regeneradas"
+      ],
+      "Reminder has been sent": [
+        "O lembrete foi enviado"
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "A autenticação de dois fatores foi imposta para os administradores"
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "A autenticação de dois fatores foi imposta para todos os membros"
+      ],
+      "Two-factor authentication is not required anymore": [
+        "A autenticação de dois fatores não é mais necessária"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -9942,7 +10021,7 @@
         "Insira o link primeiro"
       ],
       "Please select a country": [
-        "Por favor, selecione um país"
+        "Selecione um país"
       ],
       "Printer": [
         "Impressora"
@@ -11217,10 +11296,10 @@
         "Adicionar filtro Sieve"
       ],
       "Add to allow list": [
-        "Adicionar para a lista de permitidos"
+        "Adicionar na lista de endereços permitidos"
       ],
       "Add to block list": [
-        "Adicionar para a lista de bloqueio"
+        "Adicionar na lista de endereços bloqueados"
       ],
       "Add to spam list": [
         "Adicionar à lista de spam"
@@ -12012,6 +12091,21 @@
       ],
       "Night theme": [
         "Tema noturno"
+      ],
+      "Authentication security": [
+        "Segurança de autenticação"
+      ],
+      "Send email reminders?": [
+        "Enviar lembretes por email?"
+      ],
+      "Spam, block, and allow lists": [
+        "Listas de endereços permitidos, bloqueados e spam"
+      ],
+      "Two-factor authentication enforcement": [
+        "Imposição de autenticação de dois fatores"
+      ],
+      "Two-factor authentication reminders": [
+        "Lembretes de autenticação de dois fatores"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12220,6 +12314,27 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Sua conta externa pode ter atingido o seu limite de largura de banda de 24 horas. O ${ BRAND_NAME } tentará retomar a importação o mais rápido possível."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Troque automaticamente entre seus temas preferidos para dia e noite em sincronia com os modos dia e noite do seu sistema"
+      ],
+      "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
+        "Membros que não usam 2FA receberão um email pedindo que eles ativem o mais rápido possível."
+      ],
+      "The reduce motion setting is already enabled on this device": [
+        "A configuração de reduzir movimento já está ativada neste dispositivo"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "O tema selecionado estará ativo quando o seu sistema estiver configurado no modo \"escuro\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "O tema selecionado estará ativo quando o seu sistema estiver configurado no modo \"claro\""
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "Use as barras de rolagem padrão do seu navegador. Normalmente são maiores e mais fáceis de usar"
+      ],
+      "When enabled, animations and transitions will not show": [
+        "Quando ativado, animações e transições não serão mostradas"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12726,6 +12841,11 @@
       ],
       "Very small": [
         "Muito pequeno"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "administrador"
       ]
     }
   }

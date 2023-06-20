@@ -6770,6 +6770,9 @@
       ],
       "Your files will be encrypted and then saved": [
         "Uw bestanden worden versleuteld en vervolgens opgeslagen"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Pas het uiterlijk van ${ BRAND_NAME } applicaties aan."
       ]
     },
     "info": {
@@ -8007,6 +8010,9 @@
       ],
       "Your referral link": [
         "Uw doorverwijslink"
+      ],
+      "Synchronize with system": [
+        "Synchroniseren met systeem"
       ]
     },
     "label": {
@@ -11901,6 +11907,15 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "U bent uitgenodigd om ${ MAIL_APP_NAME } te proberen"
+      ],
+      "(active)": [
+        "(actief)"
+      ],
+      "Day theme": [
+        "Dag thema"
+      ],
+      "Night theme": [
+        "Nacht thema"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12109,6 +12124,9 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Uw externe account heeft mogelijk 24-uurs bandbreedtelimiet bereikt. ${ BRAND_NAME } zal proberen de import zo snel mogelijk te hervatten."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Het geselecteerde thema is actief wanneer uw systeem is ingesteld op \"lichte modus\""
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12576,6 +12594,31 @@
       ],
       "Yearly, ${ untilString }": [
         "Jaarlijks ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systeem standaard"
+      ],
+      "Theme default": [
+        "Thema standaard"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Groot"
+      ],
+      "Medium (recommended)": [
+        "Gemiddeld (aanbevolen)"
+      ],
+      "Small": [
+        "Klein"
+      ],
+      "Very large": [
+        "Zeer groot"
+      ],
+      "Very small": [
+        "Zeer klein"
       ]
     }
   }

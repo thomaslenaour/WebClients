@@ -976,6 +976,12 @@
       ],
       "Continue anyway": [
         "Trotzdem fortfahren"
+      ],
+      "Send email reminder": [
+        "Erinnerungs-E-Mail senden"
+      ],
+      "Send reminder": [
+        "Erinnerung senden"
       ]
     },
     "action": {
@@ -2780,10 +2786,16 @@
         "${ name } erfolgreich gelöscht"
       ],
       "${ name } failed to move to block list": [
-        "${ name } konnte nicht in deine Sperrliste verschoben werden."
+        "${ name } konnte nicht in die Liste gesperrter E-Mail-Adressen verschoben werden."
       ],
       "${ name } moved to block list": [
-        "${ name } in Sperrliste verschoben"
+        "${ name } wurde in die Liste gesperrter E-Mail-Adressen verschoben."
+      ],
+      "${ name } failed to move to allow list": [
+        "${ name } konnte nicht in die Liste zugelassener E-Mail-Adressen verschoben werden."
+      ],
+      "${ name } moved to allow list": [
+        "${ name } wurde in die Liste zugelassener E-Mail-Adressen verschoben."
       ]
     },
     "Downgrade account reason": {
@@ -2889,6 +2901,18 @@
       ],
       "${ name } successfully deleted": [
         "${ name } erfolgreich gelöscht"
+      ],
+      "${ name } failed to move to allow list": [
+        "${ name } konnte nicht in die Liste zugelassener E-Mail-Adressen verschoben werden."
+      ],
+      "${ name } failed to move to block list": [
+        "${ name } konnte nicht in die Liste gesperrter E-Mail-Adressen verschoben werden."
+      ],
+      "${ name } moved to allow list": [
+        "${ name } wurde in die Liste zugelassener E-Mail-Adressen verschoben."
+      ],
+      "${ name } moved to block list": [
+        "${ name } wurde in die Liste gesperrter E-Mail-Adressen verschoben."
       ]
     },
     "Email subject": {
@@ -3790,6 +3814,9 @@
       ],
       "View the invitations": [
         "Sieh dir die Einladungen an"
+      ],
+      "Decline invitation": [
+        "Einladung ablehnen"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4276,10 +4303,10 @@
         "Spam:"
       ],
       "Allow:": [
-        "Erlauben:"
+        "Zugelassen:"
       ],
       "Block:": [
-        "Sperren:"
+        "Gesperrt:"
       ],
       "Take control over what lands in your inbox by creating the following lists:": [
         "Behalte die Kontrolle darüber, was in deinem Posteingang landet, indem du die folgenden Listen erstellst:"
@@ -6818,6 +6845,18 @@
       ],
       "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
         "Verbessere dein ${ BRAND_NAME }-Erlebnis, indem du die Anwendung an deine Bedürfnisse anpasst."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Passe das Aussehen der ${ BRAND_NAME }-Anwendungen an."
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "Versende E-Mails, um deine Mitglieder anzuregen, ihre Konten mit 2FA zu schützen."
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "Die folgenden Mitglieder erhalten eine E-Mail, in der sie aufgefordert werden, die Zwei-Faktor-Authentifizierung so bald wie möglich zu aktivieren."
+      ],
+      "We recommend notifying the organization members and asking them to set up 2FA for their accounts before enforcing the use of 2FA.": [
+        "Wir empfehlen, die Mitglieder der Organisation zu benachrichtigen und sie zu bitten, 2FA für ihre Konten einzurichten, bevor du die Verwendung von 2FA erzwingst."
       ]
     },
     "info": {
@@ -8057,10 +8096,10 @@
         "Dein Empfehlungslink"
       ],
       "Allow": [
-        "Erlauben"
+        "Zugelassen"
       ],
       "Block": [
-        "Sperren"
+        "Gesperrt"
       ],
       "Card information": [
         "Karteninformationen"
@@ -8069,7 +8108,7 @@
         "Standard-Bildlaufleisten"
       ],
       "Disable animations": [
-        "Animationen deaktivieren"
+        "Animationen ausschalten"
       ],
       "Expiration (${ patternExpiration })": [
         "Ablaufdatum (${ patternExpiration })"
@@ -8085,6 +8124,12 @@
       ],
       "Synchronize with system": [
         "Mit System synchronisieren"
+      ],
+      "Require 2FA for administrators": [
+        "2FA für Administratoren verlangen"
+      ],
+      "Require 2FA for everyone": [
+        "2FA für alle verlangen"
       ]
     },
     "label": {
@@ -8359,6 +8404,10 @@
       ],
       "Your import is starting": [
         "Dein Datenimport wird gestartet"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length }/${ members.length } Mitglieder deiner Organisation verwendet die Zwei-Faktor-Authentifizierung.",
+        "${ twoFAMembers.length }/${ members.length } der Mitglieder deiner Organisation verwenden die Zwei-Faktor-Authentifizierung."
       ]
     },
     "Log preference": {
@@ -8639,10 +8688,10 @@
         "Spam"
       ],
       "Allow": [
-        "Erlauben"
+        "Zugelassen"
       ],
       "Block": [
-        "Sperren"
+        "Gesperrt"
       ]
     },
     "New Label form": {
@@ -9493,6 +9542,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "OpenVPN/IKEv2-Zugangsdaten wiederhergestellt"
+      ],
+      "Reminder has been sent": [
+        "Eine Erinnerung wurde versandt"
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "Die Zwei-Faktor-Authentifizierung wurde für Administratoren verlangt."
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "Die Zwei-Faktor-Authentifizierung wurde für alle verlangt."
+      ],
+      "Two-factor authentication is not required anymore": [
+        "Die Zwei-Faktor-Authentifizierung ist nicht mehr erforderlich."
       ]
     },
     "Notification in holidays calendar modal": {
@@ -11999,13 +12060,31 @@
         "Barrierefreiheit"
       ],
       "Add to allow list": [
-        "Zur Freigabeliste hinzufügen"
+        "Zur Liste zugelassener E-Mail-Adressen hinzufügen"
       ],
       "Add to block list": [
-        "Zur Sperrliste hinzufügen"
+        "Zur Liste gesperrter E-Mail-Adressen hinzufügen"
       ],
       "Spam, block, and allow lists": [
         "Spam-, Sperr- und Freigabelisten"
+      ],
+      "Authentication security": [
+        "Sicherheit der Authentifizierung"
+      ],
+      "Day theme": [
+        "Helles Design"
+      ],
+      "Night theme": [
+        "Dunkles Design"
+      ],
+      "Send email reminders?": [
+        "Erinnerungs-E-Mails senden?"
+      ],
+      "Two-factor authentication enforcement": [
+        "Verlangen der Zwei-Faktor-Authentifizierung"
+      ],
+      "Two-factor authentication reminders": [
+        "Erinnerungen an die Zwei-Faktor-Authentifizierung"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12220,6 +12299,21 @@
       ],
       "When enabled, animations and transitions will not show": [
         "Wenn aktiviert, werden Animationen und Übergänge nicht angezeigt."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatisches Umschalten zwischen deinen bevorzugten Farbschemata für Tag und Nacht, synchron mit dem Tag- und Nachtmodus deines Systems."
+      ],
+      "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
+        "Mitglieder, die keine 2FA verwenden, erhalten eine E-Mail mit der Aufforderung, sie so bald wie möglich zu aktivieren."
+      ],
+      "The reduce motion setting is already enabled on this device": [
+        "Die Einstellung \"Bewegung reduzieren\" ist auf diesem Gerät bereits aktiviert."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Das ausgewählte Farbschema ist aktiv, wenn dein System auf \"Dunkler Modus\" eingestellt ist."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Das ausgewählte Farbschema ist aktiv, wenn dein System auf \"Heller Modus\" eingestellt ist."
       ]
     },
     "Tooltip automatically attach public key": {

@@ -973,6 +973,15 @@
       ],
       "Zoom out": [
         "Allunyar"
+      ],
+      "Continue anyway": [
+        "Continua igualment"
+      ],
+      "Send email reminder": [
+        "Envia un recordatori per correu electrònic"
+      ],
+      "Send reminder": [
+        "Envia un recordatori"
       ]
     },
     "action": {
@@ -2768,19 +2777,19 @@
         "No s'ha pogut eliminar ${ name }."
       ],
       "${ name } failed to move to allow list": [
-        "No s'ha pogut moure ${ name } a la llista \"No és correu brossa\"."
+        "No s'ha pogut moure ${ name } a la vostra llista d'adreces permeses"
       ],
       "${ name } failed to move to block list": [
-        "No s'ha pogut moure ${ name } a la llista \"Bloquejat\"."
+        "No s'ha pogut moure ${ name } a la vostra llista d'adreces bloquejades"
       ],
       "${ name } failed to move to spam list": [
         "No s'ha pogut moure ${ name } a la llista de correu brossa"
       ],
       "${ name } moved to allow list": [
-        "S'ha mogut ${ name } a la llista \"No és correu brossa\"."
+        "S'ha mogut ${ name } a la vostra llista d'adreces permeses"
       ],
       "${ name } moved to block list": [
-        "S'ha mogut ${ name } a la llista \"Bloquejat\"."
+        "S'ha mogut ${ name } a la vostra llista d'adreces bloquejades"
       ],
       "${ name } moved to spam list": [
         "S'ha mogut ${ name } a la llista de correu brossa"
@@ -2885,19 +2894,19 @@
         "No s'ha pogut eliminar ${ name }."
       ],
       "${ name } failed to move to allow list": [
-        "No s'ha pogut moure ${ name } a la llista \"No és correu brossa\"."
+        "No s'ha pogut moure ${ name } a la llista d'adreces permeses"
       ],
       "${ name } failed to move to block list": [
-        "No s'ha pogut moure ${ name } a la llista \"Bloquejat\"."
+        "No s'ha pogut moure ${ name } a la llista d'adreces bloquejades"
       ],
       "${ name } failed to move to spam list": [
         "No s'ha pogut moure ${ name } a la llista de correu brossa"
       ],
       "${ name } moved to allow list": [
-        "S'ha mogut ${ name } a la llista \"No és correu brossa\"."
+        "S'ha mogut ${ name } a la llista d'adreces permeses"
       ],
       "${ name } moved to block list": [
-        "S'ha mogut ${ name } a la llista \"Bloquejat\"."
+        "S'ha mogut ${ name } a la llista d'adreces bloquejades"
       ],
       "${ name } moved to spam list": [
         "S'ha mogut ${ name } a la llista de correu brossa"
@@ -3805,6 +3814,9 @@
       ],
       "View the invitations": [
         "Mostra les invitacions"
+      ],
+      "Decline invitation": [
+        "Declina la invitació"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4285,16 +4297,40 @@
         "Afegiu un filtre personalitzat per realitzar automàticament certes accions, com ara etiquetar o arxivar missatges."
       ],
       "Allow:": [
-        "Permet:"
+        "Adreces permeses"
       ],
       "Block:": [
-        "Bloqueja:"
+        "Adreces bloquejades:"
       ],
       "Search list": [
         "Llista de cerca"
       ],
       "Spam:": [
         "Correu brossa:"
+      ],
+      "Take control over what lands in your inbox by creating the following lists:": [
+        "Preneu el control sobre què aterra a la safata d'entrada creant les llistes següents:"
+      ],
+      "Take control over what lands in your organization members' inboxes by creating the following lists:": [
+        "Preneu el control sobre què aterra a les safates d'entrada dels membres de la vostra organització creant les llistes següents:"
+      ],
+      "These lists apply to all accounts in your organization. Members can create their own individual filters, but won't be able to override addresses or domains you blocked.": [
+        "Aquestes llistes s'apliquen a tots els comptes de la vostra organització. Els membres poden crear els seus propis filtres individuals, però no podran substituir les adreces o dominis que heu blocat."
+      ],
+      "To ensure critical messages don't end up in spam and getting missed": [
+        "Per assegurar que els missatges crítics no acabin al correu brossa i es perdin"
+      ],
+      "To prevent junk mail from clogging up inboxes": [
+        "Per evitar que el correu brossa ompli les safates d'entrada"
+      ],
+      "To prevent junk mail from clogging up your inbox": [
+        "Per evitar que el correu brossa ompli la vostra safata d'entrada"
+      ],
+      "To stop phishing or suspicious emails from entering your email system": [
+        "Per a evitar que s'introdueixin missatges de correu electrònic de suplantació d'identitat o sospitosos a la vostra bústia"
+      ],
+      "To stop phishing or suspicious emails from entering your organization's email system": [
+        "Per a evitar que s'introdueixin missatges de correu electrònic de suplantació d'identitat o sospitosos a les bústies de la vostra organització"
       ]
     },
     "Font Face Default": {
@@ -6806,6 +6842,21 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "La vostra subscripció és gestionada per Mozilla. Contacteu amb el suport de Mozilla."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalitzeu l'aspecte de les aplicacions ${ BRAND_NAME }."
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "Milloreu la vostra experiència ${ BRAND_NAME } adaptant l'aplicació a les vostres necessitats."
+      ],
+      "Send emails to encourage your members to protect their accounts with 2FA.": [
+        "Envieu correus electrònics per animar els vostres membres a protegir els seus comptes amb 2FA."
+      ],
+      "The following members will receive an email prompting them to enable two-factor authentication as soon as possible.": [
+        "Els següents membres rebran un correu electrònic que els demanarà habilitar l'autenticació de dos factors tan aviat com sigui possible."
+      ],
+      "We recommend notifying the organization members and asking them to set up 2FA for their accounts before enforcing the use of 2FA.": [
+        "Recomanem notificar als membres de l'organització i demanar-los que estableixin l'autenticació de dos factors (2FA) per als seus comptes abans de fer-ne complir l'ús."
       ]
     },
     "info": {
@@ -7268,7 +7319,7 @@
         "Notificacions d'esdeveniments de tot el dia"
       ],
       "Allow": [
-        "Permet"
+        "Adreces permeses"
       ],
       "Allow notifications by email": [
         "Permet notificacions per correu"
@@ -7343,7 +7394,7 @@
         "Cicle de facturació"
       ],
       "Block": [
-        "Bloqueja"
+        "Adreces bloquejades"
       ],
       "Block email tracking": [
         "Bloquegi el seguiment del correu electrònic"
@@ -8049,6 +8100,36 @@
       ],
       "Your referral link": [
         "Enllaç de la vostra recomanació"
+      ],
+      "Card information": [
+        "Informació de la targeta"
+      ],
+      "Default scrollbars": [
+        "Barres de desplaçament predeterminades"
+      ],
+      "Disable animations": [
+        "Desactiva les animacions"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Caducitat (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Família tipogràfica"
+      ],
+      "Font size": [
+        "Mida de la lletra"
+      ],
+      "Require 2FA for administrators": [
+        "Requereix 2FA per als administradors"
+      ],
+      "Require 2FA for everyone": [
+        "Requereix 2FA per a tothom"
+      ],
+      "Security code (${ codeName })": [
+        "Codi de seguretat (${ codeName })"
+      ],
+      "Synchronize with system": [
+        "Sincronitza amb el sistema"
       ]
     },
     "label": {
@@ -8323,6 +8404,10 @@
       ],
       "Your import is starting": [
         "La importació s'està iniciant"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length }/${ members.length } membre de la vostra organització usa l'autenticació de dos factors.",
+        "${ twoFAMembers.length }/${ members.length } membres de la vostra organització usen l'autenticació de dos factors."
       ]
     },
     "Log preference": {
@@ -8582,7 +8667,7 @@
         "Tot"
       ],
       "Allow": [
-        "Permet"
+        "Adreces permeses"
       ],
       "Back": [
         "Torna"
@@ -8597,7 +8682,7 @@
         "Torna a la safata d'entrada"
       ],
       "Block": [
-        "Bloqueja"
+        "Adreces bloquejades"
       ],
       "Calendar": [
         "Calendari"
@@ -9457,6 +9542,18 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "Credencials OpenVPN / IKEv2 regenerades"
+      ],
+      "Reminder has been sent": [
+        "S'ha enviat un recordatori"
+      ],
+      "Two-factor authentication has been enforced for administrators": [
+        "S'ha imposat l'autenticació de dos factors per als administradors"
+      ],
+      "Two-factor authentication has been enforced for all members": [
+        "S'ha imposat l'autenticació de dos factors per a tots els membres"
+      ],
+      "Two-factor authentication is not required anymore": [
+        "L'autenticació de dos factors ja no és necessària"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -11178,10 +11275,10 @@
         "Afegeix un filtre Sieve"
       ],
       "Add to allow list": [
-        "Afegeix a la llista \"No és correu brossa\""
+        "Afegeix a la llista de permesos"
       ],
       "Add to block list": [
-        "Afegeix a la llista \"Bloquejat\""
+        "Afegeix a la llista de bloquejats"
       ],
       "Add to spam list": [
         "Afegeix a la llista de correu brossa"
@@ -11838,7 +11935,7 @@
         "Ordena les etiquetes alfabèticament"
       ],
       "Spam, block, and allow lists": [
-        "Llistes \"No és correu brossa\", \"Bloquejat\" i \"Correu brossa\""
+        "Llistes de correu brossa, bloquejats i permesos"
       ],
       "Start a new import": [
         "Inicia una nova importació"
@@ -11964,6 +12061,30 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Heu estat convidat a provar ${ MAIL_APP_NAME }."
+      ],
+      "(active)": [
+        "(actiu)"
+      ],
+      "Accessibility": [
+        "Accessibilitat"
+      ],
+      "Authentication security": [
+        "Seguretat de l'autenticació"
+      ],
+      "Day theme": [
+        "Tema de dia"
+      ],
+      "Night theme": [
+        "Tema de nit"
+      ],
+      "Send email reminders?": [
+        "Voleu enviar recordatoris per correu electrònic?"
+      ],
+      "Two-factor authentication enforcement": [
+        "Aplicació de l'autenticació de dos factors"
+      ],
+      "Two-factor authentication reminders": [
+        "Recordatoris de l'autenticació de dos factors"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12172,6 +12293,27 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "És possible que el vostre compte extern hagi assolit el límit d'amplada de banda de 24 hores. ${ BRAND_NAME } intentarà reprendre la importació al més aviat possible."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Canvia automàticament entre els temes preferits per a dia i nit en sincronització amb els modes de dia i nit del sistema"
+      ],
+      "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
+        "Els membres que no utilitzen 2FA rebran un correu electrònic sol·licitant-los que ho habiliten al més aviat possible."
+      ],
+      "The reduce motion setting is already enabled on this device": [
+        "La preferència de reducció de moviment ja està habilitada en aquest dispositiu"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "El tema seleccionat s'activarà quan el sistema estigui en «mode fosc»"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "El tema seleccionat s'activarà quan el sistema estigui en «mode clar»"
+      ],
+      "Use your browser’s default scrollbars. These are typically larger and easier to use": [
+        "Utilitzeu les barres de desplaçament predeterminades del navegador. Normalment són més grans i més fàcils d'utilitzar"
+      ],
+      "When enabled, animations and transitions will not show": [
+        "Quan està habilitat, les animacions i les transicions no es mostren"
       ]
     },
     "Tooltip automatically attach public key": {
@@ -12639,6 +12781,36 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualment, ${ untilString }"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "administardor"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Predeterminat del sistema"
+      ],
+      "Theme default": [
+        "Tema per defecte"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Gran"
+      ],
+      "Medium (recommended)": [
+        "Mitjà (recomanat)"
+      ],
+      "Small": [
+        "Petit"
+      ],
+      "Very large": [
+        "Molt gran"
+      ],
+      "Very small": [
+        "Molt petit"
       ]
     }
   }

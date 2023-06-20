@@ -967,6 +967,21 @@
       ],
       "Zoom out": [
         "Oddálit"
+      ],
+      "Add address or domain": [
+        "Přidat adresu nebo doménu"
+      ],
+      "Allow": [
+        "Povolit"
+      ],
+      "Continue anyway": [
+        "Přesto pokračovat"
+      ],
+      "Send email reminder": [
+        "Poslat připomenutí e-mailem"
+      ],
+      "Send reminder": [
+        "Poslat připomenutí"
       ]
     },
     "action": {
@@ -2781,6 +2796,9 @@
       ],
       "${ name } successfully deleted": [
         "Doména ${ name } úspěšně smazána"
+      ],
+      "${ name } moved to block list": [
+        "${ name } byl přesunut na seznam blokovaných"
       ]
     },
     "Downgrade account reason": {
@@ -3801,6 +3819,9 @@
       ],
       "View the invitations": [
         "Zobrazit pozvánky"
+      ],
+      "Decline invitation": [
+        "Odmítnout pozvánku"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4296,6 +4317,15 @@
       ],
       "Search list": [
         "Vyhledat v seznamu"
+      ],
+      "Allow:": [
+        "Povolit:"
+      ],
+      "Block:": [
+        "Blokovat:"
+      ],
+      "Spam:": [
+        "Spam:"
       ]
     },
     "Font Face Default": {
@@ -5479,10 +5509,10 @@
         "Stáhněte si Vaše PGP klíče pro použití v jiných službách kompatibilních s PGP."
       ],
       "Drop file here to upload": [
-        "Soubor nahrajete přetažením sem"
+        "Sem přetáhněte soubor pro nahrání"
       ],
       "Drop to import": [
-        "Přetažením importovat"
+        "Přetažením provedete import"
       ],
       "Each code can only be used once": [
         "Každý kód lze použít pouze jednou"
@@ -7221,6 +7251,9 @@
       ],
       "Star": [
         "Hvězdička"
+      ],
+      "Open command panel": [
+        "Otevřít příkazový panel"
       ]
     },
     "Keyboard shortcut section name": {
@@ -8141,6 +8174,42 @@
       ],
       "Your referral link": [
         "Váš doporučující odkaz"
+      ],
+      "Allow": [
+        "Povolit"
+      ],
+      "Block": [
+        "Blokovat"
+      ],
+      "Card information": [
+        "Informace o kartě"
+      ],
+      "Default scrollbars": [
+        "Výchozí posuvníky"
+      ],
+      "Disable animations": [
+        "Zakázat animace"
+      ],
+      "Expiration (${ patternExpiration })": [
+        "Vypršení (${ patternExpiration })"
+      ],
+      "Font family": [
+        "Rodina písma"
+      ],
+      "Font size": [
+        "Velikost písma"
+      ],
+      "Require 2FA for administrators": [
+        "Vyžaduje dvoufázové oveření pro administrátory"
+      ],
+      "Require 2FA for everyone": [
+        "Vyžaduje dvoufázové ověření pro všechny"
+      ],
+      "Security code (${ codeName })": [
+        "Kód zabezpečení (${ codeName })"
+      ],
+      "Synchronize with system": [
+        "Synchronizovat se systémem"
       ]
     },
     "label": {
@@ -8713,6 +8782,12 @@
       ],
       "Spam": [
         "Spam"
+      ],
+      "Allow": [
+        "Povolit"
+      ],
+      "Block": [
+        "Blokovat"
       ]
     },
     "New Label form": {
@@ -9605,6 +9680,9 @@
       ],
       "OpenVPN / IKEv2 credentials regenerated": [
         "OpenVPN / IKEv2 údaje byly obnoveny"
+      ],
+      "Reminder has been sent": [
+        "Připomenutí bylo odesláno"
       ]
     },
     "Notification in holidays calendar modal": {
@@ -10693,7 +10771,7 @@
         "Přístup k obsahu streamovacích služeb, včetně Netflix, Disney+ a Prime Video, odkudkoli."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Všechny naše prémiové služby s nejvyššími limity: 100 e-mailových adres, podpora 10 vlastních domén, neomezený počet aliasů Skryj můj e-mail, sdílení kalendáře, šifrované cloudové úložiště a sdílení souborů a další."
+        "Všechny naše prémiové služby s nejvyššími limity: 100 e-mailových adres, podpora 10 vlastních domén, neomezený počet aliasů hide-my-email, sdílení kalendáře, šifrované cloudové úložiště a sdílení souborů a další."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
         "Obsahuje podporu 1 vlastní e-mailové domény, 10 e-mailových adres, 10 aliasů Hide-my-email, sdílení kalendáře a další funkce."
@@ -11258,6 +11336,9 @@
       ],
       "vCard field": [
         "vCard položka"
+      ],
+      "List": [
+        "Seznam"
       ]
     },
     "TableRow": {
@@ -12177,6 +12258,30 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Byli jste pozváni k vyzkoušení ${ MAIL_APP_NAME }"
+      ],
+      "(active)": [
+        "(aktivní)"
+      ],
+      "Accessibility": [
+        "Přístupnost"
+      ],
+      "Add to allow list": [
+        "Přidat na seznam povolených"
+      ],
+      "Add to block list": [
+        "Přidat na seznam blokovaných"
+      ],
+      "Day theme": [
+        "Denní motiv"
+      ],
+      "Night theme": [
+        "Noční motiv"
+      ],
+      "Send email reminders?": [
+        "Poslat připomenutí e-mailem?"
+      ],
+      "Two-factor authentication reminders": [
+        "Připomenutí dvoufázového ověření"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12937,6 +13042,31 @@
       ],
       "Yearly, ${ untilString }": [
         "Roční, ${ untilString }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systémové výchozí"
+      ],
+      "Theme default": [
+        "Výchozí téma"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Velký"
+      ],
+      "Medium (recommended)": [
+        "Střední (doporučeno)"
+      ],
+      "Small": [
+        "Malý"
+      ],
+      "Very large": [
+        "Velmi velké"
+      ],
+      "Very small": [
+        "Velmi malé"
       ]
     }
   }

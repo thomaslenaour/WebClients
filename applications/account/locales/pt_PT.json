@@ -892,7 +892,7 @@
         "Crie o seu próprio"
       ],
       "Get ${ discountPercentage } off with 24 months": [
-        "Obtém ${ discountPercentage } de desconto com 24 meses"
+        "Obtenha ${ discountPercentage } de desconto com 24 meses"
       ],
       "Get a new encrypted email address": [
         "Obtenha um novo endereço de e-mail encriptado"
@@ -907,7 +907,7 @@
         "Revogar este convite"
       ],
       "Save selected": [
-        "Guardar selecionados"
+        "Guardar a escolha"
       ],
       "Send messages with @pm.me": [
         "Enviar mensagens com @pm.me"
@@ -917,6 +917,21 @@
       ],
       "Void all recovery files": [
         "Anular todos os ficheiros de recuperação"
+      ],
+      "Continue to ${ name }": [
+        "Continuar para ${ name }"
+      ],
+      "Continue with ${ nameToDisplay } ${ maybeEmailInBrackets }": [
+        "Continuar com ${ nameToDisplay } ${ maybeEmailInBrackets }"
+      ],
+      "Download CSV sample": [
+        "Transferir a amostra CSV"
+      ],
+      "Get more addresses": [
+        "Obter mais endereços"
+      ],
+      "Pay ${ price } now": [
+        "Pague ${ price } agora"
       ]
     },
     "Action for user session": {
@@ -1264,7 +1279,7 @@
         "O calendário não pôde ser desencriptado."
       ],
       "Calendar is syncing": [
-        "O calendário está a sincronizar"
+        "O calendário está a sincronizar."
       ],
       "Calendar is syncing: it may take several minutes for all of its events to show up.": [
         "O calendário está a sincronizar: a exibição de todos os eventos, poderá demorar vários minutos."
@@ -1282,7 +1297,7 @@
         "Erro ao sincronizar o calendário"
       ],
       "More than 12 hours passed since last update": [
-        "Mais de 12 horas passaram desde a última atualização"
+        "Mais de 12 horas passaram desde a última atualização."
       ],
       "Unsupported calendar format": [
         "Formato de calendário não suportado"
@@ -2401,7 +2416,7 @@
     },
     "Country select label": {
       "Based on your time zone": [
-        "Baseado no teu fuso horário"
+        "Baseado no seu fuso horário"
       ]
     },
     "CountryInfo": {
@@ -2549,6 +2564,18 @@
       ],
       "${ name } deletion failed": [
         "Erro ao eliminar ${ name }"
+      ],
+      "${ name } failed to move to allow list": [
+        "Erro ao mover ${ name } para a lista de endereços permitidos"
+      ],
+      "${ name } failed to move to block list": [
+        "Erro ao mover ${ name } para a lista de endereços bloqueados"
+      ],
+      "${ name } moved to allow list": [
+        "${ name } foi movido para a lista de endereços permitidos."
+      ],
+      "${ name } moved to block list": [
+        "${ name } foi movido para a lista de endereços bloqueados"
       ]
     },
     "Downgrade modal exit survey title": {
@@ -2622,6 +2649,18 @@
       ],
       "${ name } deletion failed": [
         "Erro ao eliminar ${ name }"
+      ],
+      "${ name } failed to move to allow list": [
+        "Erro ao mover ${ name } para a lista de endereços permitidos"
+      ],
+      "${ name } failed to move to block list": [
+        "Erro ao mover ${ name } para a lista de endereços bloqueados"
+      ],
+      "${ name } moved to allow list": [
+        "${ name } foi movido para a lista de endereços permitidos."
+      ],
+      "${ name } moved to block list": [
+        "${ name } foi movido para a lista de endereços bloqueados."
       ]
     },
     "Email subject": {
@@ -3032,7 +3071,7 @@
         "Código de verificação errado. Verifique se copiou o código de verificação correctamente e tente de novo. Pode levar até 24 horas para que as alterações surtam efeito."
       ],
       "You already added this holidays calendar": [
-        "Tu já adicionas-te esse calendário de feriados"
+        "Já adicionou este calendário de férias."
       ],
       "You have lost access to your organization keys. Without restoration you will not be able to create new users, add addresses to existing users, or access non-private user accounts.": [
         "Perdeu o acesso às chaves da sua organização. Sem restauro, não poderá criar novos utilizadores, adicionar endereços a utilizadores existentes ou aceder a contas de utilizador não privadas."
@@ -3069,6 +3108,12 @@
       ],
       "Your forward will not be processed.": [
         "O seu encaminhamento não será processado."
+      ],
+      "${ Local } is your username. To create ${ Local }@${ Domain }, please go to Settings > Messages and composing > Short domain (pm.me)": [
+        "${ Local } é o seu nome de utilizador. Para criar ${ Local }@${ Domain }, vá a Configurações > Mensagens e composição > Domínio curto (pm.me)"
+      ],
+      "You need to have a custom domain address in order to generate an SMTP submission token.": [
+        "Precise de ter um domíno personalizado para gerar um token de envio SMTP"
       ]
     },
     "Error importing calendar": {
@@ -3393,6 +3438,9 @@
       ],
       "Set up family group": [
         "Configurar o grupo familiar"
+      ],
+      "Decline invitation": [
+        "Recusar o convite"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3749,16 +3797,19 @@
         "Adicione um filtro personalizado para executar automaticamente certas ações, como etiquetar ou arquivar mensagens."
       ],
       "Allow:": [
-        "Permitir:"
+        "Endereços permitidos:"
       ],
       "Block:": [
-        "Bloquear:"
+        "Endereços bloqueados:"
       ],
       "Search list": [
         "Pesquisar lista"
       ],
       "Spam:": [
         "Spam:"
+      ],
+      "These lists apply to all accounts in your organization. Members can create their own individual filters, but won't be able to override addresses or domains you blocked.": [
+        "Estas listas aplicam-se a todas as contas da sua organização. Os membros podem criar os seus próprios filtros individuais, mas não poderão substituir os endereços ou domínios que bloqueou."
       ]
     },
     "Font Face Default": {
@@ -4558,7 +4609,7 @@
         "Cor de fundo"
       ],
       "Based on your time zone": [
-        "Baseado no teu fuso horário"
+        "Baseado no seu fuso horário"
       ],
       "Basic navigation and actions remain available regardless of keyboard shortcuts being active or not in the settings.": [
         "Navegação básica e ações permanecem disponíveis, independentemente de os atalhos de teclado estarem ou não ativos nas definições."
@@ -5533,7 +5584,7 @@
         "* Não é necessário cartão de crédito."
       ],
       "1. Invite friends to ${ BRAND_NAME }": [
-        "1. Convida os teus amigos para o ${ BRAND_NAME }"
+        "1. Convide os seus amigos para o ${ BRAND_NAME }"
       ],
       "30-day money-back guarantee": [
         "Reembolso garantido durante 30 dias"
@@ -5563,13 +5614,13 @@
         "Domínios de e-mail personalizados"
       ],
       "Do NOT forget this password. If you forget it, you will not be able to sign in or decrypt your messages.": [
-        "NÃO te esqueças desta senha. Se a esqueceres, não vais conseguir iniciar sessão ou desencriptar as mensagens."
+        "NÃO se esqueçe desta palavra-passe. Se se esquecer dela, não conseguirá iniciar sessão ou desencriptar as suas mensagens."
       ],
       "Enter your ${ BRAND_NAME } Account details.": [
-        "Introduz os detalhes da tua conta ${ BRAND_NAME }."
+        "Introduza os detalhes da sua conta ${ BRAND_NAME }."
       ],
       "Get a ${ BRAND_NAME } address to use all ${ BRAND_NAME_TWO } services including ${ MAIL_SHORT_APP_NAME } and ${ CALENDAR_SHORT_APP_NAME }.": [
-        "Obtém um endereço ${ BRAND_NAME } para usar todos os serviços ${ BRAND_NAME_TWO } incluindo ${ MAIL_SHORT_APP_NAME } e ${ CALENDAR_SHORT_APP_NAME }."
+        "Obtenha um endereço ${ BRAND_NAME } para utilizar todos os serviços ${ BRAND_NAME_TWO } incluindo ${ MAIL_SHORT_APP_NAME } e ${ CALENDAR_SHORT_APP_NAME }."
       ],
       "learn more about Sieve programming language": [
         "aprender mais sobre a linguagem de programação Sieve"
@@ -5595,19 +5646,19 @@
         "Adicione um endereço de e-mail para estes utilizadores na linha."
       ],
       "Settings update failed": [
-        "Atualização das configurações falhou"
+        "Erro de atualização das configurações"
       ],
       "Settings updated": [
-        "Configurações atualizadas"
+        "As configurações foram actualizadas."
       ],
       "The following address is available:": [
         "O seguinte endereço está disponível:"
       ],
       "to use ${ toAppName } and all ${ BRAND_NAME } services": [
-        "para usar ${ toAppName } e todos os serviços ${ BRAND_NAME }"
+        "para utilizar ${ toAppName } e todos os serviços ${ BRAND_NAME }"
       ],
       "To work properly, each filter must contain at least a name and a valid Sieve script. You can ${ link }.": [
-        "Para funcionar corretamente, cada filtro precisa de ter pelo menos um nome e um código Sieve válido. Tu podes ${ link }."
+        "Para funcionar corretamente, cada filtro precisa de ter pelo menos um nome e um código Sieve válido. É possível ${ link }."
       ],
       "Tor": [
         "Tor"
@@ -5619,7 +5670,7 @@
         "Até ${ FAMILY_MAX_USERS } utilizadores"
       ],
       "Verification link expired": [
-        "Link de verificação expirado"
+        "A ligação de verificação expirou."
       ],
       "Verification may take a few minutes.": [
         "A verificação pode demorar alguns minutos."
@@ -5649,11 +5700,98 @@
         "A sua palavra-passe do ${ BRAND_NAME }"
       ],
       "Your ${ VPN_APP_NAME } and ${ MAIL_APP_NAME } accounts are linked. To delete them both, please sign in at ${ loginLink } and delete your account there.": [
-        "A tua ${ VPN_APP_NAME } e ${ MAIL_APP_NAME } estão interligadas. Para eliminar ambas, por favor inicia sessão em ${ loginLink } e elimina aí a tua conta."
+        "A sua ${ VPN_APP_NAME } e ${ MAIL_APP_NAME } estão ligadas. Para eliminar ambas, inicie sessão em ${ loginLink } e elimine aí a sua conta."
       ],
       "Your import from ${ accounts } is temporarily delayed.": [
         "A sua importação de ${ accounts } está temporariamente atrasada.",
         "A suas importações de ${ accounts } estão temporariamente atrasadas."
+      ],
+      "${ boldWarning } You will lose access to all current encrypted data in your account if you continue.": [
+        "${ boldWarning } Se continuar, perderá o acesso a todos os dados encriptados existentes na sua conta."
+      ],
+      "${ DRIVE_APP_NAME } will no longer keep previous versions of your files.": [
+        "${ DRIVE_APP_NAME } deixará de manter as versões anteriores dos seus ficheiros."
+      ],
+      "30-day money-back guarantee.": [
+        "Garantia de devolução do dinheiro durante 30 dias"
+      ],
+      "Any ${ twoFa } method on your account will be disabled.": [
+        "Qualquer método ${ twoFa } na sua conta será desativado."
+      ],
+      "Billed every month": [
+        "Faturação mensal"
+      ],
+      "Blocks senders from seeing if and when you opened a message.": [
+        "Bloquiar os remetentes de verem se e quando abriu a mensagem"
+      ],
+      "Continue with ${ freeName }": [
+        "Continuar com ${ freeName }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalize o aspeto e a sensação das aplicações ${ BRAND_NAME }."
+      ],
+      "Done! We sent a code to ${ destination }.": [
+        "Já está! Enviámos um código para ${ destination }."
+      ],
+      "Enter your ${ BRAND_NAME } Account email address or username.": [
+        "Introduza o seu endereço de e-mail ou nome de utilizador da conta ${ BRAND_NAME }."
+      ],
+      "Once you reset your password:": [
+        "Uma vez a sua palavra-passe redefinida:"
+      ],
+      "Please contact the administrator of the organisation to manage the subscription.": [
+        "Contacte o administrador da organização para gerir a subscrição."
+      ],
+      "Please enter the 12-word recovery phrase associated with your account.": [
+        "Introduza a frase de recuperação de 12 palavras associada à sua conta."
+      ],
+      "Price includes all applicable cycle-based discounts and non-expired coupons saved to your account.": [
+        "O preço inclui todos os descontos aplicáveis com base no ciclo e cupões não expirados guardados na sua conta."
+      ],
+      "Recovery file downloaded": [
+        "O ficheiro de recuperação foi transferido."
+      ],
+      "Recovery files have been voided": [
+        "Os ficheiros de recuperação foram anulados."
+      ],
+      "Setting up your Drive": [
+        "Configurando o seu Drive"
+      ],
+      "The email verification link has expired. Please sign in to resend a verification link.": [
+        "A ligação de verificação de email expirou. Inicie sessão de novo para reenviarmos uma nova ligação."
+      ],
+      "This will delete all previous versions of your files.": [
+        "Isto irá eliminar todas as versões anteriores dos seus ficheiros."
+      ],
+      "This will sign you out of any active sessions and disable 2-factor authentication.": [
+        "Isto retira-o de todas as sessões ativas e desativa a autenticação de dois factores."
+      ],
+      "To proceed, select an account recovery method so we can verify the request.": [
+        "Para continuar, seleccione um método de recuperação de conta para podermos verificar o pedido."
+      ],
+      "To use ${ toAppName }, you need a ${ MAIL_APP_NAME } address.": [
+        "Para utilizar ${ toAppName }, é necessário um endereço ${ MAIL_APP_NAME }."
+      ],
+      "We recommend using your recovery phrase instead.": [
+        "Em vez disso, recomendamos que utilize a sua frase de recuperação."
+      ],
+      "We’ll send a reset code to the phone number you provided for account recovery.": [
+        "Enviaremos um código de reinicialização para o endereço de correio e-mail que forneceu para a recuperação da conta."
+      ],
+      "You can now close this window.": [
+        "Pode agora fechar esta janela."
+      ],
+      "Your ${ BRAND_NAME } Account is associated with ${ externalEmailAddress }.": [
+        "A sua conta da ${ BRAND_NAME } está associada com ${ externalEmailAddress }."
+      ],
+      "Your existing messages, calendars, or contacts will be locked. To recover this data, you’ll need your ${ oldPassword }.": [
+        "As mensagens, calendários ou contactos existentes ficarão bloqueados. Para recuperar estes dados, necessitará do seu ${ oldPassword }."
+      ],
+      "Your existing messages, calendars, or contacts will be locked. To recover this data, you’ll need your recovery phrase or your ${ oldPassword }.": [
+        "As mensagens, calendários ou contactos existentes ficarão bloqueados. Para recuperar estes dados, necessitará da sua frase de recuperação ou do seu ${ oldPassword }."
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "O seu plano é limitado a 10 versões por até 7 dias."
       ]
     },
     "Info - folder colouring feature": {
@@ -6085,7 +6223,7 @@
         "Notificação de eventos de dia inteiro"
       ],
       "Allow": [
-        "Permitir"
+        "Endereços permitidos"
       ],
       "Allow recovery by email": [
         "Permitir recuperação por e-mail"
@@ -6148,7 +6286,7 @@
         "Ciclo de faturação"
       ],
       "Block": [
-        "Bloquear"
+        "Endereços bloqueados"
       ],
       "Block email tracking": [
         "Bloquear o rastreamento de e-mails"
@@ -6202,16 +6340,16 @@
         "Cores"
       ],
       "Composer": [
-        "Compositor"
+        "Editor"
       ],
       "Composer default font/size": [
-        "Predefinição de fonte/tamanho do compositor"
+        "Predefinição das letras e do tamanho do editor"
       ],
       "Composer mode": [
-        "Modo de composição"
+        "Modo de edição"
       ],
       "Composer text direction": [
-        "Direção do texto no compositor"
+        "Direção do texto no editor"
       ],
       "Conditions": [
         "Condições"
@@ -6809,6 +6947,36 @@
       ],
       "Card information": [
         "Informações sobre o cartão"
+      ],
+      "Allow notifications by email": [
+        "Permitir as notificações por e-mail"
+      ],
+      "Allow recovery using a trusted device": [
+        "Permitir a recuperação com um dispositivo fiável"
+      ],
+      "Default scrollbars": [
+        "Barras de deslocação predefinidas"
+      ],
+      "Disable animations": [
+        "Desativar as animações"
+      ],
+      "Font family": [
+        "Família de letras"
+      ],
+      "Font size": [
+        "Tamanho das letras"
+      ],
+      "Phrase consists of 12 unique words in a specific order": [
+        "A frase é composta por 12 palavras únicas numa ordem específica."
+      ],
+      "Synchronize with system": [
+        "Sincronizar com o sistema"
+      ],
+      "Upload 1 or more encryption keys": [
+        "Carrega 1 ou mais chaves de encriptação"
+      ],
+      "Use a recovery email address": [
+        "Utilizar um e-mail de recuperação"
       ]
     },
     "label": {
@@ -7319,7 +7487,7 @@
         "Todos"
       ],
       "Allow": [
-        "Permitir"
+        "Endereços permitidos"
       ],
       "Back": [
         "Recuar"
@@ -7334,7 +7502,7 @@
         "Voltar à caixa de entrada"
       ],
       "Block": [
-        "Bloquear"
+        "Endereços bloqueados"
       ],
       "Calendar": [
         "Calendário"
@@ -7642,8 +7810,8 @@
         "Apoio prioritário por e-mail"
       ],
       "Protect ${ n } device at a time": [
-        "Protege ${ n } dispositivo ao mesmo tempo",
-        "Protege ${ n } dispositivos ao mesmo tempo"
+        "Proteja ${ n } dispositivo ao mesmo tempo",
+        "Proteja ${ n } dispositivos ao mesmo tempo"
       ],
       "Sign in as user": [
         "Iniciar sessão como utilizador"
@@ -8919,7 +9087,7 @@
         "Calendário criado"
       ],
       "Calendar information updated": [
-        "Informação do calendário atualizada"
+        "As informações do calendário foram atualizadas."
       ],
       "Calendar removed": [
         "Calendário removido"
@@ -10018,6 +10186,48 @@
       ],
       "Your SMTP token": [
         "O seu token SMTP"
+      ],
+      "(active)": [
+        "(ativo)"
+      ],
+      "1. Give a name to the config to be generated": [
+        "1. Dê um nome a configuração a ser gerada"
+      ],
+      "3. Select VPN options": [
+        "3. Selecione as opções da VPN"
+      ],
+      "4. Select a server to connect to": [
+        "4. Selecione o servidor para ligar"
+      ],
+      "Add to allow list": [
+        "Adicionar à lista de endereços permitidos"
+      ],
+      "Add to block list": [
+        "Adicionar à lista de endereços bloqueados"
+      ],
+      "Confirm loss of ${ BRAND_NAME } bonuses": [
+        "Confirme a perda dos bônus ${ BRAND_NAME }"
+      ],
+      "Day theme": [
+        "Tema diurno"
+      ],
+      "Increase your privacy with more addresses": [
+        "Reforçe a proteção da sua privacidade com mais endereços"
+      ],
+      "Night theme": [
+        "Tema noturno"
+      ],
+      "Signed in successfully!": [
+        "Sessão iniciada"
+      ],
+      "Spam, block, and allow lists": [
+        "Listas de endereços permitidos, bloqueados e spam"
+      ],
+      "Verification failed": [
+        "Erro de verificação"
+      ],
+      "You’ve been invited to try ${ MAIL_APP_NAME }": [
+        "Foi convidade a testar o ${ MAIL_APP_NAME }."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -10153,7 +10363,7 @@
         "Definia a aparência predefinida da lista de mensagens."
       ],
       "Set the default Composer popup size as small or full screen.": [
-        "Predefina o tamanho da janela do compositor como pequeno ou médio."
+        "Predefina o tamanho da janela do editor como pequeno ou médio."
       ],
       "Set the default layout for your Inbox.": [
         "Predefina a disposição da sua caixa de entrada."
@@ -10208,6 +10418,15 @@
       ],
       "Your DKIM signing is working.": [
         "A sua assinatura DKIM está a funcionar."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Alterne automaticamente entre os seus temas preferidos para o dia e para a noite, em sincronia com os modos diurno e noturno do seu sistema."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "O tema selecionado ficará ativo quando o sistema estiver definido para o \"modo escuro\"."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "O tema selecionado ficará ativo quando o sistema estiver definido para o \"modo claro\"."
       ]
     },
     "Tooltip automatically attach public key": {
@@ -10649,7 +10868,7 @@
     },
     "Calendar self sharing error": {
       "You already have access to this calendar": [
-        "Já tens acesso a este calendário"
+        "Já tem acesso a este calendário."
       ]
     },
     "Calendar sharing access option label": {
@@ -10662,7 +10881,7 @@
     },
     "Calendar sharing error": {
       "Failed to retrieve contact information for ${ address }": [
-        "Não foi possível obter a informação de contacto para o email ${ address }"
+        "Não foi possível obter a informação de contacto para o e-mail ${ address }."
       ]
     },
     "Calendar subscription not synced error; long version": {
@@ -10721,12 +10940,12 @@
     },
     "Share calendar modal input placeholder": {
       "Enter an email address or group name": [
-        "Introduz um endereço de e-mail ou nome de grupo"
+        "Introduza um endereço de e-mail ou nome de grupo."
       ]
     },
     "Share calendar modal title": {
       "Share with ${ BRAND_NAME } users": [
-        "Partilha com utilizadores ${ BRAND_NAME }"
+        "Partilhe com utilizadores ${ BRAND_NAME }"
       ]
     },
     "Signature verification error when joining calendar": {
@@ -10753,6 +10972,36 @@
     "VPNClient": {
       "iOS": [
         "iOS"
+      ]
+    },
+    "Admin": {
+      "admin": [
+        "administrador"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Predefinição do sistema"
+      ],
+      "Theme default": [
+        "Tema predefinido"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Grande"
+      ],
+      "Medium (recommended)": [
+        "Médio (recomendado)"
+      ],
+      "Small": [
+        "Pequeno"
+      ],
+      "Very large": [
+        "Muito grande"
+      ],
+      "Very small": [
+        "Muito pequeno"
       ]
     }
   }
