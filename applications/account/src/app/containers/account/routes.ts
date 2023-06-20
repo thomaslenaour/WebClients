@@ -23,6 +23,8 @@ export const getAccountAppRoutes = ({
     isGmailSyncEnabled,
     organization,
     isProtonSentinelEligible,
+    isProtonSentinelFeatureEnabled,
+    isAccessibilitySettingsEnabled,
 }: {
     user: UserModel;
     isDataRecoveryAvailable: boolean;
@@ -31,6 +33,8 @@ export const getAccountAppRoutes = ({
     recoveryNotification?: ThemeColor;
     organization?: Organization;
     isProtonSentinelEligible: boolean;
+    isProtonSentinelFeatureEnabled: boolean;
+    isAccessibilitySettingsEnabled: boolean;
 }) => {
     const { isFree, canPay, isPaid, isPrivate, isMember, Currency, Type, isAdmin } = user;
 
@@ -184,6 +188,22 @@ export const getAccountAppRoutes = ({
                     },
                 ],
             },
+            appearance: <SectionConfig>{
+                text: c('Title').t`Appearance`,
+                to: '/appearance',
+                icon: 'paint-roller',
+                subsections: [
+                    {
+                        text: c('Title').t`Theme`,
+                        id: 'theme',
+                    },
+                    {
+                        text: c('Title').t`Accessibility`,
+                        id: 'accessibility',
+                        available: isAccessibilitySettingsEnabled,
+                    },
+                ],
+            },
             security: <SectionConfig>{
                 text: c('Title').t`Security and privacy`,
                 to: '/security',
@@ -192,7 +212,7 @@ export const getAccountAppRoutes = ({
                     {
                         text: PROTON_SENTINEL_NAME,
                         id: 'sentinel',
-                        available: isProtonSentinelEligible,
+                        available: isProtonSentinelEligible && isProtonSentinelFeatureEnabled,
                     },
                     {
                         text: c('Title').t`Session management`,

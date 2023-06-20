@@ -22,6 +22,8 @@ interface Arguments {
     recoveryNotification?: ThemeColor;
     isOrgSpamBlockListEnabled: boolean;
     isProtonSentinelEligible: boolean;
+    isProtonSentinelFeatureEnabled: boolean;
+    isAccessibilitySettingsEnabled: boolean;
 }
 
 export const getRoutes = ({
@@ -37,6 +39,8 @@ export const getRoutes = ({
     recoveryNotification,
     isOrgSpamBlockListEnabled,
     isProtonSentinelEligible,
+    isProtonSentinelFeatureEnabled,
+    isAccessibilitySettingsEnabled,
 }: Arguments) => {
     return {
         account: getAccountAppRoutes({
@@ -47,6 +51,8 @@ export const getRoutes = ({
             isGmailSyncEnabled,
             organization,
             isProtonSentinelEligible,
+            isProtonSentinelFeatureEnabled,
+            isAccessibilitySettingsEnabled,
         }),
         mail: getMailAppRoutes({
             user,
