@@ -7,7 +7,7 @@ import favicons from '../../assets/favicons';
 const useFavicon = () => {
     const onChangeMonthDay = () => {
         // Ensure all favicons are removed, otherwise chrome has trouble updating to the dynamic icon
-        const links = document.querySelectorAll('link[rel="icon"]:not([data-dynamic-favicon]');
+        const links = document.querySelectorAll('link[rel="icon"]:not([data-dynamic-favicon])');
         links.forEach((link) => {
             link.remove();
         });
