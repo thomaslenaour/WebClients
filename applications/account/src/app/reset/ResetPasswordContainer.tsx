@@ -18,7 +18,7 @@ import {
     useSearchParamsEffect,
 } from '@proton/components';
 import { startUnAuthFlow } from '@proton/components/containers/api/unAuthenticatedApi';
-import { KT_FF } from '@proton/components/containers/keyTransparency/ktStatus';
+import useKTActivation from '@proton/components/containers/keyTransparency/useKTActivation';
 import {
     ResetActionResponse,
     ResetCacheResult,
@@ -82,7 +82,7 @@ const ResetPasswordContainer = ({ onLogin, setupVPN }: Props) => {
               }
             : originalTrustedDeviceRecoveryFeature;
     const hasTrustedDeviceRecovery = !!trustedDeviceRecoveryFeature.feature?.Value;
-    const ktFeature = useFeature<KT_FF>(FeatureCode.KeyTransparencyWEB);
+    const ktActivation = useKTActivation();
 
     const [defaultCountry] = useMyCountry();
 
@@ -105,7 +105,7 @@ const ResetPasswordContainer = ({ onLogin, setupVPN }: Props) => {
             username: username ?? '',
             Methods: [],
             hasTrustedDeviceRecovery,
-            ktFeature,
+            ktActivation,
         };
         setStep(STEPS.REQUEST_RECOVERY_METHODS);
     };
@@ -185,7 +185,7 @@ const ResetPasswordContainer = ({ onLogin, setupVPN }: Props) => {
                     username: username ?? '',
                     Methods: [],
                     hasTrustedDeviceRecovery,
-                    ktFeature,
+                    ktActivation,
                 };
 
                 const validateFlow = createFlow();
@@ -239,7 +239,7 @@ const ResetPasswordContainer = ({ onLogin, setupVPN }: Props) => {
                                 Methods: [],
                                 persistent,
                                 hasTrustedDeviceRecovery,
-                                ktFeature,
+                                ktActivation,
                             },
                             token,
                         });
@@ -313,7 +313,7 @@ const ResetPasswordContainer = ({ onLogin, setupVPN }: Props) => {
                                         setupVPN,
                                         appName: APP_NAME,
                                         hasTrustedDeviceRecovery,
-                                        ktFeature,
+                                        ktActivation,
                                         username,
                                         persistent,
                                         api: silentApi,
