@@ -5,6 +5,7 @@ export enum TelemetryMeasurementGroups {
     screenSize = 'any.web.screen_size',
     calendarTimeZoneSelector = 'calendar.web.timezone_selector',
     accountSignupBasic = 'account.any.signup_basic',
+    keyTransparency = 'any.web.key_transparency',
 }
 
 export enum TelemetrySimpleLoginEvents {
@@ -28,11 +29,23 @@ export enum TelemetryAccountSignupBasicEvents {
     account_created = 'account_created',
 }
 
+export enum TelemetryKeyTransparencySelfAuditErrorEvents {
+    self_audit_error = 'self_audit_error',
+}
+
 export type TelemetryEvents =
     | TelemetrySimpleLoginEvents
     | TelemetryScreenSizeEvents
     | TelemetryCalendarEvents
-    | TelemetryAccountSignupBasicEvents;
+    | TelemetryAccountSignupBasicEvents
+    | TelemetryKeyTransparencySelfAuditErrorEvents;
+
+export interface TelemetryReport {
+    measurementGroup: TelemetryMeasurementGroups;
+    event: TelemetryEvents;
+    values?: SimpleMap<number>;
+    dimensions?: SimpleMap<string>;
+}
 
 export const sendTelemetryData = (data: {
     MeasurementGroup: TelemetryMeasurementGroups;
@@ -44,7 +57,22 @@ export const sendTelemetryData = (data: {
     url: 'data/v1/stats',
     data: {
         ...data,
-        Event: data.Event || {},
+        Values: data.Values || {},
         Dimensions: data.Dimensions || {},
     },
 });
+
+export const sendMultipleTelemetryData = (data: { reports: TelemetryReport[] }) => {
+    const EventInfo = data.reports.map(({ measurementGroup, event, values, dimensions }) => ({
+        MeasurementGroup: measurementGroup,
+        Event: event,
+        Values: values || {},
+        Dimensions: dimensions || {},
+    }));
+
+    return {
+        method: 'post',
+        url: 'data/v1/stats/multiple',
+        data: { EventInfo },
+    };
+};

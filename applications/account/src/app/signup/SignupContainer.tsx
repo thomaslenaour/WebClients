@@ -6,7 +6,7 @@ import { c } from 'ttag';
 import { Step, Stepper } from '@proton/atoms/Stepper';
 import { ExperimentCode, FeatureCode, HumanVerificationSteps, OnLoginCallback } from '@proton/components/containers';
 import { startUnAuthFlow } from '@proton/components/containers/api/unAuthenticatedApi';
-import { KT_FF } from '@proton/components/containers/keyTransparency/ktStatus';
+import useKTActivation from '@proton/components/containers/keyTransparency/useKTActivation';
 import {
     useActiveBreakpoint,
     useApi,
@@ -136,7 +136,7 @@ const SignupContainer = ({ toApp, toAppName, onBack, onLogin, clientType, produc
     const passPlusPlanFeature = useFeature<boolean>(FeatureCode.PassPlusPlan);
     const isPassPlusEnabled = passPlusPlanFeature.feature?.Value === true;
 
-    const ktFeature = useFeature<KT_FF>(FeatureCode.KeyTransparencyWEB);
+    const ktActivation = useKTActivation();
     // Override the app to always be mail in trial or refer-a-friend signup
     if (isMailTrial || isMailRefer) {
         toApp = APPS.PROTONMAIL;
@@ -627,7 +627,7 @@ const SignupContainer = ({ toApp, toAppName, onBack, onLogin, clientType, produc
                             persistent,
                             trusted: false,
                             clientType,
-                            ktFeature: (await ktFeature.get())?.Value,
+                            ktActivation,
                         };
 
                         const accountType = signupType === SignupType.Email ? 'external_account' : 'proton_account';
