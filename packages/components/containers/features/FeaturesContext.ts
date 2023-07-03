@@ -101,6 +101,8 @@ export enum FeatureCode {
     OrgSpamBlockList = 'OrgSpamBlockList',
     ProtonSentinel = 'ProtonSentinel',
     AccessibilitySettings = 'AccessibilitySettings',
+    OnboardingChecklist = 'OnboardingChecklist',
+    NewOnboardingChecklist = 'NewOnboardingChecklist',
 }
 
 export interface FeaturesContextValue {

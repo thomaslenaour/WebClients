@@ -23,7 +23,6 @@ import List from '../../components/list/List';
 import useScrollToTop from '../../components/list/useScrollToTop';
 import MessageOnlyView from '../../components/message/MessageOnlyView';
 import Toolbar from '../../components/toolbar/Toolbar';
-import PlaceholderView from '../../components/view/PlaceholderView';
 import { MAILTO_PROTOCOL_HANDLER_SEARCH_PARAM } from '../../constants';
 import { isMessage, isSearch as testIsSearch } from '../../helpers/elements';
 import { getFolderName } from '../../helpers/labels';
@@ -56,6 +55,7 @@ import { useAppSelector } from '../../logic/store';
 import { Filter, SearchParameters, Sort } from '../../models/tools';
 import { Breakpoints } from '../../models/utils';
 import { useOnCompose, useOnMailTo } from '../ComposeProvider';
+import MailboxContainerPlaceholder from './MailboxContainerPlaceholder';
 import { MailboxContainerContextProvider } from './MailboxContainerProvider';
 
 interface Props {
@@ -384,11 +384,12 @@ const MailboxContainer = ({
                             ])}
                         >
                             {showPlaceholder && (
-                                <PlaceholderView
+                                <MailboxContainerPlaceholder
+                                    showPlaceholder={showContentPanel}
                                     welcomeFlag={welcomeFlag}
                                     labelID={labelID}
                                     checkedIDs={checkedIDs}
-                                    onCheckAll={handleCheckAll}
+                                    handleCheckAll={handleCheckAll}
                                 />
                             )}
                             {showContentView &&
