@@ -476,7 +476,7 @@
         "隱藏郵件"
       ],
       "hide-my-email aliases": [
-        "隱藏我的郵件別名"
+        "hide-my-email 別名"
       ],
       "I have a question": [
         "我要發問"
@@ -1164,6 +1164,9 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Block email tracking": [
+        "封鎖郵件追蹤"
       ]
     },
     "action": {
@@ -1682,7 +1685,7 @@
     },
     "color": {
       "apple": [
-        "Apple"
+        "apple"
       ],
       "azureish white": [
         "天藍白"
@@ -2953,6 +2956,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "您可以把既不合併也不保留的聯絡人標記為刪除。唯有在點擊「合併」按鈕時，才會執行刪除"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "您可開啟電子郵件追蹤程式防護並在不被追蹤之情況讀訊息及點及連結"
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "您可在讀訊息和按連時不被追縱"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4596,13 +4605,13 @@
         "${ numGroups } 個聯絡人群組"
       ],
       "${ NumMessages } messages in conversation": [
-        "對話中有 ${ NumMessages } 則訊息"
+        "${ NumMessages } 封郵件在交談對話中"
       ],
       "${ numOccurrences } occurrences found": [
-        "${ numOccurrences } 件事故已找到"
+        "${ numOccurrences } 個事件已找到"
       ],
       "${ numOccurrences } occurrences found in the mail content": [
-        "${ numOccurrences } 件事故在郵件內容中找到"
+        "${ numOccurrences } 個事件在郵件內容中找到"
       ],
       "${ providerFoldersNumLocalized } folders found": [
         "找到 ${ providerFoldersNumLocalized } 個資料夾"
@@ -4611,7 +4620,7 @@
         "在 Gmail 中找到 ${ providerFoldersNumLocalized } 種標籤"
       ],
       "${ pureAttachmentsCount } files attached": [
-        "${ pureAttachmentsCount } 個附件"
+        "${ pureAttachmentsCount } 個附加檔案"
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendars": [
         "${ selectedCalendarsTotal } 個，共 ${ providerCalendars.length } 個行事曆"
@@ -4641,10 +4650,10 @@
         "${ unread } 封未讀郵件"
       ],
       "${ unreadCount } scheduled messages": [
-        "${ unreadCount } 排程訊息"
+        "${ unreadCount } 封已排程訊息"
       ],
       "${ unreadCount } unread conversations": [
-        "${ unreadCount } 個未讀交談"
+        "${ unreadCount } 則未讀交談對話"
       ],
       "${ unreadCount } unread messages": [
         "${ unreadCount } 封未讀郵件"
@@ -4737,10 +4746,10 @@
         "您確定您要把所有郵件移動至此位置進行刪除嗎？"
       ],
       "Are you sure you want to permanently delete ${ count } conversations?": [
-        "您確定要永久刪除 ${ count } 個交談嗎？"
+        "您確定要永久刪除 ${ count } 則交談對話？"
       ],
       "Are you sure you want to permanently delete ${ count } drafts?": [
-        "您確定要永久刪除這 ${ count } 個草稿嗎？"
+        "您確定要永久刪除這 ${ count } 封草稿嗎？"
       ],
       "Are you sure you want to permanently delete ${ count } messages?": [
         "您確定要永久刪除 ${ count } 封郵件嗎？"
@@ -5475,10 +5484,10 @@
         "用來驗證連絡人詳細資料的簽章發生錯誤，可能是重設密碼所導致。"
       ],
       "These conversations will be marked as spam. Would you also like to unsubscribe from future emails?": [
-        "交談將會標記為垃圾信件。請問您也想退訂往後相關的電郵信件嗎？"
+        "交談對話會標記為垃圾信件。請問您也想退訂日後相關的電郵嗎？"
       ],
       "These messages will be marked as spam. Would you also like to unsubscribe from future emails?": [
-        "這些信件將會標記為垃圾信件。請問您也想退訂往後相關的電郵信件嗎？"
+        "這些信件會標記為垃圾信件。請問您也想退訂日後相關的電郵嗎？"
       ],
       "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
         "如果他們不知道您的電子郵件位址，他們就無法向您傳送垃圾郵件。使用 hide-my-email 別名保護您的收件匣。"
@@ -5769,7 +5778,7 @@
         "您有 ${ unreadsLabel } 在收件匣中。"
       ],
       "You have **${ count } conversations** stored in this folder": [
-        "您有 **${ count } 個交談** 儲存於此資料夾"
+        "您有 **${ count } 則交談對話** 儲存於此資料夾"
       ],
       "You have **${ count } conversations** tagged with this label": [
         "您選取了有此標籤的 **${ count } 個交談**"
@@ -5802,7 +5811,7 @@
         "您選取了有此標籤的 **${ count } 個交談**"
       ],
       "You selected **${ count } messages** from this folder": [
-        "您從此資料夾選取了 **${ count } 則訊息**"
+        "您已在此資料夾選取 **${ count } 則訊息**"
       ],
       "You selected **${ count } messages** with this label": [
         "您選取了有此標籤的 **${ count } 則訊息**"
@@ -5811,7 +5820,7 @@
         "您編寫了「${ attachmentsFoundKeyword }」，但沒有加入對應的附件。無論如何寄出此封郵件？"
       ],
       "You've reached the maximum number of addresses in the contact group(s):": [
-        "您已達到聯絡人群組郵件地址最高上限："
+        "您已達到通訊群組郵件地址最高上限:"
       ],
       "You've reached the maximum number of addresses in the contact group.": [
         "您以達到通訊群組郵件地址最高上限"
@@ -5866,6 +5875,36 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "您的復原短語是按特定順序排列的一系列 12 個單字。"
+      ],
+      "${ numberOfImageTrackers } email trackers blocked": [
+        "${ numberOfImageTrackers } 電郵追蹤程式已攔截"
+      ],
+      "${ numberOfImageTrackers } trackers blocked": [
+        "${ numberOfImageTrackers } 個追蹤程式已攔截"
+      ],
+      "${ numberOfUTMTrackers } links cleaned": [
+        "${ numberOfUTMTrackers } 個連結已清理"
+      ],
+      "Links cleaned:": [
+        "連結已清理:"
+      ],
+      "No links cleaned": [
+        "無需清理的連結"
+      ],
+      "No trackers found": [
+        "未發現追蹤程式"
+      ],
+      "Trackers blocked:": [
+        "追蹤器已封鎖:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "關閉搜尋日期、名稱、電子郵件位址及主旨。於設定中停用搜尋訊息並刪除下載的訊息。"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "您在不洩漏您電子活動給廣告商之情況按於電子郵件中的連結"
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "您可在不提供您的互動、地點及裝置給廣告商使用"
       ]
     },
     "info": {
@@ -6176,7 +6215,7 @@
         "附加螢幕截圖"
       ],
       "Authenticator app": [
-        "驗證 APP"
+        "驗證 app"
       ],
       "Automatically save contacts": [
         "自動儲存聯絡人"
@@ -6551,7 +6590,7 @@
         "工具列"
       ],
       "Type a command...": [
-        "輸入命令…"
+        "輸入指令…"
       ],
       "Undisclosed Recipients": [
         "非公開收件者"
@@ -6585,6 +6624,15 @@
       ],
       "Your password (admin)": [
         "您的密碼（管理員）"
+      ],
+      "Cleaned": [
+        "已清理"
+      ],
+      "Open in a new tab": [
+        "於新分頁開啟"
+      ],
+      "Original link": [
+        "原始鏈接"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7137,7 +7185,7 @@
         "自訂電郵網域"
       ],
       "Hide-my-email aliases": [
-        "隱藏我的郵件別名"
+        "Hide-my-email 別名"
       ],
       "Schedule messages at any time": [
         "在任意時間排程訊息"
@@ -7420,7 +7468,7 @@
         "文字"
       ],
       "Type a command…": [
-        "輸入命令…"
+        "輸入指令…"
       ],
       "Type text or keyword": [
         "鍵入文字或關鍵詞"
@@ -8319,7 +8367,7 @@
         "${ unreads } 封未讀郵件"
       ],
       "(active)": [
-        "（啟用）"
+        "(啟用)"
       ],
       "Account suspended": [
         "帳號已被停用"
@@ -8484,7 +8532,7 @@
         "正在刪除聯絡人"
       ],
       "Don't give spam a chance": [
-        "垃圾郵件沒有存在的空間"
+        "垃圾郵件別拜託、拜拜就好"
       ],
       "Edit contact": [
         "編輯聯絡人"
@@ -8863,6 +8911,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "您的 Mail Plus 免費方案將於 ${ textDate } 結束"
+      ],
+      "No trackers found": [
+        "未發現追蹤程式"
+      ],
+      "Protect your email": [
+        "保護您的電子郵件"
+      ],
+      "This email is protected": [
+        "此電子郵件受保護。"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9258,6 +9315,22 @@
       ],
       "Yearly, ${ untilString }": [
         "每年，${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "驗證的寄件人"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "寄件人驗證失敗: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "驗證的寄件者:${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "驗證金鑰不在信任金鑰清單裡"
       ]
     }
   }

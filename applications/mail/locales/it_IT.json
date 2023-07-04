@@ -1168,6 +1168,9 @@
       ],
       "Zoom out": [
         "Zoom indietro"
+      ],
+      "Block email tracking": [
+        "Blocca tracciamento email"
       ]
     },
     "action": {
@@ -5966,6 +5969,30 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "La tua frase di recupero è una serie di 12 parole in un ordine specifico."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } tracker email bloccato",
+        "${ numberOfImageTrackers } tracker email bloccati"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } tracker bloccato",
+        "${ numberOfImageTrackers } tracker bloccati"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } link ripulito",
+        "${ numberOfUTMTrackers } link ripuliti"
+      ],
+      "Links cleaned:": [
+        "Link ripuliti:"
+      ],
+      "No links cleaned": [
+        "Nessun link ripulito"
+      ],
+      "No trackers found": [
+        "Nessun tracker trovato"
+      ],
+      "Trackers blocked:": [
+        "Tracker bloccati:"
       ]
     },
     "info": {
@@ -6688,6 +6715,15 @@
       ],
       "Your password (admin)": [
         "La tua password (admin)"
+      ],
+      "Cleaned": [
+        "Ripulito"
+      ],
+      "Open in a new tab": [
+        "Apri in una nuova scheda"
+      ],
+      "Original link": [
+        "Link originale"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9092,6 +9128,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "La tua prova gratuita di Mail Plus termina il giorno ${ textDate }"
+      ],
+      "No trackers found": [
+        "Nessun tracker trovato"
+      ],
+      "Protect your email": [
+        "Proteggi la tua email"
+      ],
+      "This email is protected": [
+        "Questa email è protetta"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9522,6 +9567,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Annualmente, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verifica del mittente"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Verifica del mittente fallita: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Mittente verificato: ${ icon.senderVerificationDetails.description }"
       ]
     }
   }

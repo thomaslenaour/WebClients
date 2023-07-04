@@ -1176,6 +1176,9 @@
       ],
       "Zoom out": [
         "Уменьшить масштаб"
+      ],
+      "Block email tracking": [
+        "Блокировать отслеживание электронной почты"
       ]
     },
     "action": {
@@ -2986,6 +2989,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Вы можете отметить для удаления те контакты, которые не хотите ни объединять, ни оставлять. Удаление будет происходить только после нажатия кнопки «Объединить»."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Вы можете читать сообщение и нажимать на ссылки без отслеживания с помощью защиты от трекеров электронной почты."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Вы можете читать сообщение и переходить по ссылкам без риска быть отслеженным."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6175,6 +6184,30 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Ваша фраза для восстановления – это набор из 12 слов в определенном порядке."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } почтовый трекер заблокирован",
+        "${ numberOfImageTrackers } почтовых трекера заблокированы",
+        "${ numberOfImageTrackers } почтовых трекеров заблокированы",
+        "${ numberOfImageTrackers } почтовых трекеров заблокированы"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } трекер заблокирован",
+        "${ numberOfImageTrackers } трекера заблокированы",
+        "${ numberOfImageTrackers } трекеров заблокированы",
+        "${ numberOfImageTrackers } трекеров заблокированы"
+      ],
+      "No trackers found": [
+        "Трекеров не обнаружено"
+      ],
+      "Trackers blocked:": [
+        "Заблокировано трекеров:"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Вы можете переходить по ссылкам в этом письме, не подвергаясь профилированию и не раскрывая рекламодателям информацию о своей онлайн-активности."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Вы можете прочитать это письмо не сообщая рекламодателям о своих взаимодействиях, местоположении или устройстве."
       ]
     },
     "info": {
@@ -6903,6 +6936,15 @@
       ],
       "Your password (admin)": [
         "Ваш пароль (admin)"
+      ],
+      "Cleaned": [
+        "Очищено"
+      ],
+      "Open in a new tab": [
+        "Открыть в новой вкладке"
+      ],
+      "Original link": [
+        "Оригинальная ссылка"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9440,6 +9482,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша бесплатная пробная версия Mail Plus заканчивается ${ textDate }"
+      ],
+      "No trackers found": [
+        "Трекеров не обнаружено"
+      ],
+      "Protect your email": [
+        "Защитите ваши электронные письма"
+      ],
+      "This email is protected": [
+        "Это письмо защищено"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9940,6 +9991,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Ежегодно ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Проверка отправителя"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Не удалось проверить отправителя: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Отправитель проверен: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Ключ верификации не входит в список доверенных ключей."
       ]
     }
   }

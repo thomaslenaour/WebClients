@@ -1176,6 +1176,9 @@
       ],
       "Zoom out": [
         "Паменшыць"
+      ],
+      "Block email tracking": [
+        "Блакіраваць адсочванне электроннай пошты"
       ]
     },
     "action": {
@@ -2986,6 +2989,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Вы можаце пазначыць тыя кантакты, якія вы не хочаце аб'яднаць і пакідаць. Выдаленне адбываецца толькі пасля націску кнопкі аб'яднання"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Вы можаце прачытаць паведамленне і націснуць на спасылку не хвалюючыся пра адсочванне дзякуючы абароне ад праграм сачэння электроннай пошты."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Вы можаце прачытаць паведамленне і націснуць на спасылку не хвалюючыся пра адсочванне."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6175,6 +6184,45 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Ваша фраза аднаўлення - гэта паслядоўнасць з 12 слоў у вызначаным парадку."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "Заблакіравана ${ numberOfImageTrackers } праграма сачэння электроннай пошты",
+        "Заблакіраваны ${ numberOfImageTrackers } праграмы сачэння электроннай пошты",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння электроннай пошты",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння электроннай пошты"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "Заблакіравана ${ numberOfImageTrackers } праграма сачэння",
+        "Заблакіраваны ${ numberOfImageTrackers } праграмы сачэння",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } спасылка ачышчана",
+        "${ numberOfUTMTrackers } спасылкі ачышчаны",
+        "${ numberOfUTMTrackers } спасылак ачышчаны",
+        "${ numberOfUTMTrackers } спасылак ачышчаны"
+      ],
+      "Links cleaned:": [
+        "Спасылак ачышчана:"
+      ],
+      "No links cleaned": [
+        "Спасылкі не ачышчаны"
+      ],
+      "No trackers found": [
+        "Праграмы сачэння не знойдзены"
+      ],
+      "Trackers blocked:": [
+        "Праграм сачэння заблакіравана:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Выключыце, каб шукаць толькі па даце, імі або адрасе электроннай пошты або радку тэмы. Каб выключыць пошук па змесціве паведамлення, і выдаліць спампаваныя паведамленні, перайдзіце ў налады."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Вы можаце націснуць на спасылку ў гэтым лісце без профілю і без рызыкі раскрыцця рэкламадаўцам сваёй актыўнасці ў інтэрнэце."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Вы можаце прачытаць гэты ліст не раскрываючы рэкламадаўцам сваю ўзаемасувязь, месцазнаходжанне або прыладу."
       ]
     },
     "info": {
@@ -6903,6 +6951,15 @@
       ],
       "Your password (admin)": [
         "Ваш пароль (admin)"
+      ],
+      "Cleaned": [
+        "Ачышчана"
+      ],
+      "Open in a new tab": [
+        "Адкрыць у новай укладцы"
+      ],
+      "Original link": [
+        "Арыгінальная спасылка"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9376,6 +9433,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваш бясплатны выпрабавальны перыяд Mail Plus завершыцца ${ textDate }"
+      ],
+      "No trackers found": [
+        "Праграмы сачэння не знойдзены"
+      ],
+      "Protect your email": [
+        "Абараніць сваю электронную пошту"
+      ],
+      "This email is protected": [
+        "Гэта электронная пошта абаронена"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9876,6 +9942,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Штогод, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Праверка адпраўніка"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Не ўдалося праверыць адпраўніка: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Адпраўнік правераны: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Ключ праверкі не знаходзіцца ў спісе давераных ключоў."
       ]
     }
   }

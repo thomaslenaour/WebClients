@@ -1176,6 +1176,9 @@
       ],
       "Zoom out": [
         "Pomniejsz"
+      ],
+      "Block email tracking": [
+        "Zablokuj śledzenie wiadomości"
       ]
     },
     "action": {
@@ -1273,7 +1276,7 @@
         "Poczta ${ nameToDisplay }"
       ],
       "5 trackers removed": [
-        "Usunięto 5 skryptów śledzących"
+        "Usunięto 5 elementów śledzących"
       ],
       "Auto forwarded": [
         "Automatycznie przekierowane"
@@ -2986,6 +2989,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Możesz oznaczyć do usunięcia te kontakty, których nie chcesz scalić ani zachować. Usunięcie nastąpi dopiero po kliknięciu przycisku Scal"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Dzięki ochronie przed śledzeniem możesz otworzyć wiadomość i jej linki bez utraty prywatności."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Możesz otworzyć wiadomość i jej linki bez śledzenia Cię."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4959,7 +4968,7 @@
         "Czy na pewno chcesz odrzucić wprowadzone zmiany?"
       ],
       "Are you sure you want to move all messages in this location to Trash?": [
-        "Czy na pewno chcesz przenieść wszystkie te wiadomości do Kosza?"
+        "Czy na pewno chcesz przenieść wszystkie wiadomości do Kosza?"
       ],
       "Are you sure you want to permanently delete ${ count } conversation?": [
         "Czy na pewno chcesz trwale usunąć ${ count } wątek?",
@@ -5619,7 +5628,7 @@
         "Wyszukiwanie trwa zbyt długo? ${ dropdownButton } lub ${ toggleOffButton }."
       ],
       "Secure your files with encrypted cloud storage for free, today.": [
-        "Zabezpiecz pliki za darmo, za pomocą zaszyfrowanej przestrzeni dyskowej w chmurze."
+        "Zabezpiecz pliki za darmo, za pomocą szyfrowanej przestrzeni dyskowej w chmurze."
       ],
       "Seems like you are all caught up for now": [
         "Wygląda na to, że jesteś już na bieżąco z wiadomościami"
@@ -6166,6 +6175,51 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Hasłem odzyskiwania jest seria 12 słów w określonej kolejności."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "Zablokowano ${ numberOfImageTrackers } element śledzący",
+        "Zablokowano ${ numberOfImageTrackers } elementy śledzące",
+        "Zablokowano ${ numberOfImageTrackers } elementów śledzących",
+        "Zablokowano ${ numberOfImageTrackers } elementów śledzących"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "Zablokowano ${ numberOfImageTrackers } element śledzący",
+        "Zablokowano ${ numberOfImageTrackers } elementy śledzące",
+        "Zablokowano ${ numberOfImageTrackers } elementów śledzących",
+        "Zablokowano ${ numberOfImageTrackers } elementów śledzących"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "Wyczyszczono ${ numberOfUTMTrackers } link",
+        "Wyczyszczono ${ numberOfUTMTrackers } linki",
+        "Wyczyszczono ${ numberOfUTMTrackers } linków",
+        "Wyczyszczono ${ numberOfUTMTrackers } linków"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Czy na pewno chcesz przenieść wszystkie wiadomości do Archiwum?"
+      ],
+      "Links cleaned:": [
+        "Wyczyszczone linki:"
+      ],
+      "No links cleaned": [
+        "Brak wyczyszczonych linków"
+      ],
+      "No trackers found": [
+        "Nie znaleziono elementów śledzących"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Subskrypcja wkrótce się zakończy. Reaktywuj ją do ${ byDate }, aby zachować bonusy planu ${ planName }. ${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "Zablokowane elementy śledzące:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Wyłącz, aby wyszukiwać tylko według daty, nazwy, adresu e-mail lub tematu. Aby wyłączyć wyszukiwanie zawartości wiadomości i usunąć pobrane wiadomości, przejdź do ustawień."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Możesz otworzyć linki w tej wiadomości bez narażania się na śledzenie ze strony reklamodawców."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Możesz otworzyć tę wiadomość bez narażania się na śledzenie ze strony reklamodawców."
       ]
     },
     "info": {
@@ -6894,6 +6948,15 @@
       ],
       "Your password (admin)": [
         "Twoje hasło (administratora)"
+      ],
+      "Cleaned": [
+        "Wyczyszczony"
+      ],
+      "Open in a new tab": [
+        "Otwórz w nowej karcie"
+      ],
+      "Original link": [
+        "Oryginalny link"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9434,6 +9497,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Darmowa wersja próbna planu Mail Plus zakończy się ${ textDate }"
+      ],
+      "No trackers found": [
+        "Nie znaleziono elementów śledzących"
+      ],
+      "Protect your email": [
+        "Chroń swoje wiadomości"
+      ],
+      "This email is protected": [
+        "Ta wiadomość jest chroniona"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9500,10 +9572,10 @@
         "Proces importowania rozpocznie się od najnowszych wiadomości."
       ],
       "The selected theme will be active when your system is set to \"dark mode\"": [
-        "Wybrany motyw będzie aktywny, gdy w systemie jest ustawiony ciemny motyw"
+        "Wybrany motyw będzie aktywny, kiedy w systemie będzie ustawiony ciemny motyw"
       ],
       "The selected theme will be active when your system is set to \"light mode\"": [
-        "Wybrany motyw będzie aktywny, gdy w systemie jest ustawiony jasny motyw"
+        "Wybrany motyw będzie aktywny, kiedy w systemie będzie ustawiony jasny motyw"
       ],
       "This feature is only available for paid users": [
         "Ta funkcja jest dostępna tylko dla użytkowników płatnego planu"
@@ -9934,6 +10006,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Co rok, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Weryfikacja nadawcy"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Weryfikacja nadawcy nie powiodła się: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Nadawca został zweryfikowany: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Klucz weryfikacyjny nie znajduje się na liście zaufanych kluczy."
       ]
     }
   }

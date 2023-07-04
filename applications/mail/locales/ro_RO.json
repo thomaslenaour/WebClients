@@ -1172,6 +1172,9 @@
       ],
       "Zoom out": [
         "Micșorare"
+      ],
+      "Block email tracking": [
+        "Blocare urmărire mesaje"
       ]
     },
     "action": {
@@ -2773,7 +2776,7 @@
         "Regatul Unit"
       ],
       "United States": [
-        "Statele Unite"
+        "SUA"
       ],
       "United States Minor Outlying Islands": [
         "Insulele Minore Îndepărtate ale Statelor Unite"
@@ -2975,6 +2978,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puteți marca pentru ștergere contactele pe care nu doriți nici să le îmbinați, nici să le păstrați. Ștergerea va fi efectuată doar după apăsarea butonului de îmbinare."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Cu protecția împotriva funcțiilor de urmărire din mesaje, puteți citi mesajul și folosi legăturile din el fără a riscul monitorizării."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Puteți citi mesajul și accesa legăturile din el fără riscul monitorizării."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6072,6 +6081,42 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Fraza de recuperare este o serie de 12 cuvinte într-o anumită ordine."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "A fost blocată ${ numberOfImageTrackers } funcție de urmărire din e-mail.",
+        "S-au blocat ${ numberOfImageTrackers } funcții de urmărire din e-mail.",
+        "S-au blocat ${ numberOfImageTrackers } de funcții de monitorizare din e-mail."
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "S-a blocat ${ numberOfImageTrackers } funcție de urmărire.",
+        "S-au blocat ${ numberOfImageTrackers } funcții de urmărire.",
+        "S-au blocat ${ numberOfImageTrackers } de funcții de urmărire."
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "S-a curățat ${ numberOfUTMTrackers } legătură.",
+        "S-au curățat ${ numberOfUTMTrackers } legături.",
+        "S-au curățat ${ numberOfUTMTrackers } de legături."
+      ],
+      "Links cleaned:": [
+        "Legături curățate:"
+      ],
+      "No links cleaned": [
+        "Nu au fost curățate legături"
+      ],
+      "No trackers found": [
+        "Nu s-au găsit funcții de urmărire"
+      ],
+      "Trackers blocked:": [
+        "Urmăritori blocați:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Dezactivați opțiunea pentru a căuta numai după dată, nume, adresă de e-mail sau subiect. Pentru a dezactiva căutarea în conținutul mesajelor și a șterge mesajele descărcate, accesați setările."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Puteți accesa legăturile din acest mesaj fără a vi se putea face un profil și urmări activitatea online de către agențiile de publicitate."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Puteți citi acest mesaj fără a vă dezvălui agențiilor de publicitate acțiunile, locul sau tipul de dispozitiv folosit."
       ]
     },
     "info": {
@@ -6797,6 +6842,15 @@
       ],
       "Your password (admin)": [
         "Parola dvs. (administrator)"
+      ],
+      "Cleaned": [
+        "Curățat"
+      ],
+      "Open in a new tab": [
+        "Deschidere într-o filă nouă"
+      ],
+      "Original link": [
+        "Legătura originală"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9206,6 +9260,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Perioada de încercare pentru Mail Plus se încheie la ${ textDate } "
+      ],
+      "No trackers found": [
+        "Nu s-au găsit funcții de urmărire"
+      ],
+      "Protect your email": [
+        "Protejați-vă mesajele"
+      ],
+      "This email is protected": [
+        "Acest mesaj este protejat"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9671,6 +9734,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verificare expeditor"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Verificarea expeditorului a eșuat: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Expeditor verificat: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Cheia de verificare nu este în lista de chei de încredere."
       ]
     }
   }

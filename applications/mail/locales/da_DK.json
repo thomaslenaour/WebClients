@@ -484,7 +484,7 @@
         "Jeg har et spørgsmål"
       ],
       "Image could not be loaded with tracker protection.": [
-        "Billede kunne ikke indlæses med tracker beskyttelse."
+        "Billede kunne ikke indlæses med sporingsbeskyttelse."
       ],
       "Image will be loaded without a proxy": [
         "Billede vil blive indlæst uden en proxy"
@@ -1168,6 +1168,9 @@
       ],
       "Zoom out": [
         "Zoom ud"
+      ],
+      "Block email tracking": [
+        "Blokér sporing af e-mail"
       ]
     },
     "action": {
@@ -2964,6 +2967,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Du kan markere de kontakter til sletning, som du hverken ønsker at flette eller beholde.\nSletning vil kun ske, når der er klikket på fletningsknappen"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Med email tracker-beskyttelse kan du læse beskeden og klikke på links uden at blive sporet."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Du kan læse beskeden og klikke på links uden at blive sporet."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4955,7 +4964,7 @@
         "Træk fil hertil for at uploade"
       ],
       "Drop to import": [
-        "Drop for at importere"
+        "Slip for at importere"
       ],
       "Duplicate key updated": [
         "Duplikeret nøgle opdateret"
@@ -5947,6 +5956,36 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Din gendannelsessætning er en serie af 12 ord i en bestemt rækkefølge."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } e-mail-tracker blokeret",
+        "${ numberOfImageTrackers } e-mail-trackere blokeret"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } tracker blokeret",
+        "${ numberOfImageTrackers } trackere blokeret"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } link renset",
+        "${ numberOfUTMTrackers } links renset"
+      ],
+      "Links cleaned:": [
+        "Links renset:"
+      ],
+      "No links cleaned": [
+        "Ingen links renset"
+      ],
+      "No trackers found": [
+        "Ingen e-mail-trackere fundet"
+      ],
+      "Trackers blocked:": [
+        "Trackere blokeret:"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Du kan klikke på links i denne e-mail uden at blive profileret og lække din onlineaktivitet til annoncører."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Du kan læse denne e-mail uden at afsløre dine interaktioner, placering eller enhed for annoncører."
       ]
     },
     "info": {
@@ -6669,6 +6708,15 @@
       ],
       "Your password (admin)": [
         "Din adgangskode (admin)"
+      ],
+      "Cleaned": [
+        "Renset"
+      ],
+      "Open in a new tab": [
+        "Åbn i en ny fane"
+      ],
+      "Original link": [
+        "Oprindeligt link"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7223,7 +7271,7 @@
     },
     "new_plans: feature": {
       "Auto-delete spam and trashed messages": [
-        "Fjern automatisk spam og slettede beskeder"
+        "Slet automatisk spam og beskeder i papirkurven"
       ],
       "Custom email domains": [
         "Brugerdefinerede e-maildomæner"
@@ -7884,6 +7932,9 @@
       ],
       "Offer ends soon": [
         "Tilbuddet slutter snart"
+      ],
+      "Limited time only": [
+        "Kun i begrænset tid"
       ]
     },
     "specialoffer: Link": {
@@ -7954,6 +8005,18 @@
       ],
       "Get our premium bundle and save more": [
         "Få vores premium-pakke og spar mere"
+      ],
+      "End of Year Sale": [
+        "Udsalg ved årets afslutning"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Vores udfasede Visionary-abonnement er kun tilbage i en begrænset periode"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Spar mere med 2 års ${ planName }"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Opgradér og spar mere med 2 års ${ planName }"
       ]
     },
     "specialoffer: Tooltip": {
@@ -7965,6 +8028,18 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold og browse privat. Inkluderer 1700 servere i 60+ lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og mere."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Få adgang til indhold på streamingtjenester, herunder Netflix, Disney+ og Prime Video, hvor som helst."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Perfekt til familier eller små teams, hvor alle kan have deres egen indbakke og aliasser. Kræver et brugerdefineret domæne."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Modtag uden ekstra omkostninger betalingsversionerne af alle nye privatlivstjenester, vi lancerer i fremtiden, sammen med tidlig adgang til alle fremtidige funktioner og produkter."
       ]
     },
     "Spotlight": {
@@ -8939,6 +9014,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Din Mail Plus prøveperiode slutter ${ textDate }"
+      ],
+      "No trackers found": [
+        "Ingen trackere fundet"
+      ],
+      "Protect your email": [
+        "Beskyt din e-mail"
+      ],
+      "This email is protected": [
+        "Denne e-mail er beskyttet"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9369,6 +9453,35 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligt, ${ untilString }"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Dit abonnement vil automatisk blive fornyet til samme pris ved slutningen af din faktureringscyklus."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Rabatter er baseret på den månedlige standardpris."
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Afsenderbekræftelse"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Afsenderverifikation fejlede: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Afsender verificeret: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Verifikationsnøglen er ikke på listen over betroede nøgler."
+      ]
+    },
+    "specialoffer: Footer": {
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Dette abonnement bliver automatisk fornyet hvert 2. år til samme pris, indtil det annulleres."
       ]
     }
   }

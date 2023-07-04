@@ -650,7 +650,7 @@
         "Déplacer tous les messages de ce label"
       ],
       "Move all to archive": [
-        "Tout déplacer vers les archives"
+        "Tout déplacer dans le dossier Archives"
       ],
       "Move all to trash": [
         "Tout déplacer dans le dossier Corbeille"
@@ -1168,6 +1168,9 @@
       ],
       "Zoom out": [
         "Zoom arrière"
+      ],
+      "Block email tracking": [
+        "Bloquer le suivi des messages"
       ]
     },
     "action": {
@@ -2964,6 +2967,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Vous pouvez marquer pour suppression les contacts que vous ne voulez ni fusionner ni conserver. Leur suppression n'aura lieu qu'après avoir cliqué sur le bouton de fusion."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Vous pouvez lire le message et cliquer sur les liens sans être suivi grâce à la protection contre le suivi dans les messages."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Vous pouvez lire le message et cliquer sur les liens sans être suivi."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4807,7 +4816,7 @@
         "Voulez-vous vraiment abandonner vos modifications ?"
       ],
       "Are you sure you want to move all messages in this location to Archive?": [
-        "Voulez-vous vraiment archiver tous les messages de cet emplacement ?"
+        "Voulez-vous vraiment déplacer tous les messages de cet emplacement dans le dossier Archives ?"
       ],
       "Are you sure you want to move all messages in this location to Trash?": [
         "Voulez-vous vraiment déplacer tous les messages de cet emplacement dans le dossier Corbeille ?"
@@ -5969,6 +5978,39 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Votre phrase de récupération est une série de 12 mots dans un ordre spécifique."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } traqueur d'e-mail bloqué",
+        "${ numberOfImageTrackers } traqueurs d'e-mail bloqués"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } traqueur bloqué",
+        "${ numberOfImageTrackers } traqueurs bloqués"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } lien nettoyé",
+        "${ numberOfUTMTrackers } liens nettoyés"
+      ],
+      "Links cleaned:": [
+        "Liens nettoyés :"
+      ],
+      "No links cleaned": [
+        "Aucun lien n'a été nettoyé."
+      ],
+      "No trackers found": [
+        "Aucun traqueur n'a été trouvé."
+      ],
+      "Trackers blocked:": [
+        "Traqueurs bloqués :"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Désactivez cette option pour faire des recherches uniquement par date, nom, adresse e-mail ou objet du message. Pour désactiver la recherche dans le contenu des messages (et supprimer les messages qui ont été téléchargés pour permettre cette fonctionnalité), accédez aux paramètres."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Vous pouvez cliquer sur les liens contenus dans ce message sans que les annonceurs puissent établir votre profil et connaître vos activités en ligne."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Vous pouvez lire ce message sans indiquer aux annonceurs vos interactions, votre localisation ou votre appareil."
       ]
     },
     "info": {
@@ -6696,6 +6738,15 @@
       ],
       "Your password (admin)": [
         "Votre mot de passe (admin)"
+      ],
+      "Cleaned": [
+        "Nettoyé"
+      ],
+      "Open in a new tab": [
+        "Ouvrir dans un nouvel onglet"
+      ],
+      "Original link": [
+        "Lien d'origine"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7743,7 +7794,7 @@
         "Vérification de l'expéditeur"
       ],
       "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
-        "Erreur lors de la vérification de l'expéditeur : ${ icon.senderVerificationDetails.description }"
+        "La vérification de l'expéditeur n'a pas abouti : ${ icon.senderVerificationDetails.description }"
       ],
       "Sender verified: ${ icon.senderVerificationDetails.description }": [
         "L'expéditeur est vérifié : ${ icon.senderVerificationDetails.description }"
@@ -8891,7 +8942,7 @@
         "Plus de sélections"
       ],
       "Move all messages to Archive": [
-        "Déplacer tous les messages vers les archives"
+        "Déplacer tous les messages dans le dossier Archives"
       ],
       "Move all messages to Trash": [
         "Déplacer tous les messages dans le dossier Corbeille"
@@ -9121,6 +9172,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Votre essai gratuit Mail Plus se termine le ${ textDate }."
+      ],
+      "No trackers found": [
+        "Aucun traqueur n'a été trouvé."
+      ],
+      "Protect your email": [
+        "Protégez votre message"
+      ],
+      "This email is protected": [
+        "Ce message est protégé."
       ]
     },
     "Today icon tooltip in mini calendar": {

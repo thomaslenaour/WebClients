@@ -233,10 +233,10 @@
         "Salin alamat"
       ],
       "Copy email to clipboard": [
-        "Salin email ke clipboard"
+        "Salin email ke papan klip"
       ],
       "Copy password to clipboard": [
-        "Salin kata sandi ke clipboard"
+        "Salin kata sandi ke papan klip"
       ],
       "Create a new contact group": [
         "Buat grup kontak baru"
@@ -1161,6 +1161,12 @@
       ],
       "Zoom out": [
         "Perkecil"
+      ],
+      "Block email tracking": [
+        "Blokir pelacakan email"
+      ],
+      "Move all to archive": [
+        "Pindahkan semuanya ke arsip"
       ]
     },
     "action": {
@@ -2950,6 +2956,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Anda dapat menandai kontak-kontak yang tidak ingin digabung atau disimpan. Penghapusan akan dilakukan setelah Anda menekan tombol gabung"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Anda dapat membaca pesan dan mengklik tautan tanpa terlacak dengan perlindungan pelacak email."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Anda dapat membaca pesan dan mengklik tautan tanpa terlacak."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4776,7 +4788,7 @@
         "Panel samping kalender"
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
-        "Tidak mengingat kata sandi Anda? Kami dapat membantu Anda untuk membersihkan data terenkripsi semua kontak yang dienkripsi dengan kunci ini dan dalam prosesnya mengabaikan peringatan."
+        "Tidak dapat mengingat kata sandi Anda? Kami dapat membantu Anda untuk membersihkan data terenkripsi milik seluruh kontak yang dienkripsi dengan kunci ini terlepas dari peringatan yang ada."
       ],
       "Center": [
         "Rata tengah"
@@ -4812,7 +4824,7 @@
         "Kontak tidak lagi ditetapkan ke grup ${ contactGroupName }"
       ],
       "Copied to clipboard": [
-        "Disalin ke clipboard"
+        "Disalin ke papan klip"
       ],
       "Country code": [
         "Kode negara"
@@ -4893,7 +4905,7 @@
         "Lepaskan untuk mengimpor"
       ],
       "Duplicate key updated": [
-        "Kunci ganda diperbarui"
+        "Kunci duplikat diperbarui"
       ],
       "Each code can only be used once": [
         "Masing-masing kode hanya dapat digunakan sekali"
@@ -5253,7 +5265,7 @@
         "Harap diperhatikan, alamat yang ditugaskan di grup ini TIDAK akan dihapus."
       ],
       "Please note that this process may take some time depending on the size of your address book.": [
-        "Mohon dicatat proses ini memerlukan waktu, tergantung pada ukuran buku alamat Anda."
+        "Mohon dicatat bahwa proses ini dapat memakan waktu sejenak tergantung pada ukuran buku alamat Anda."
       ],
       "Please select the folders you would like to import:": [
         "Harap pilih folder-folder yang hendak Anda impor:"
@@ -5298,7 +5310,7 @@
         "Informasi pemulihan akan tetap terdapat pada perangkat ini kecuali Anda memilih untuk menghapusnya."
       ],
       "Recovery phrase copied to clipboard": [
-        "Frasa pemulihan disalin ke clipboard"
+        "Frasa pemulihan disalin ke papan klip"
       ],
       "Recovery phrase downloaded": [
         "Frasa pemulihan diunduh"
@@ -5860,6 +5872,39 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Frasa pemulihan Anda tersusun atas 12 kata yang terangkai dalam urutan yang spesifik."
+      ],
+      "${ numberOfImageTrackers } email trackers blocked": [
+        "${ numberOfImageTrackers } pelacak email diblokir"
+      ],
+      "${ numberOfImageTrackers } trackers blocked": [
+        "${ numberOfImageTrackers } pelacak diblokir"
+      ],
+      "${ numberOfUTMTrackers } links cleaned": [
+        "${ numberOfUTMTrackers } tautan dibersihkan"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Apakah Anda yakin untuk memindahkan seluruh pesan pada lokasi ini ke Arsip?"
+      ],
+      "Links cleaned:": [
+        "Tautan yang dibersihkan:"
+      ],
+      "No links cleaned": [
+        "Tidak ada tautan untuk dibersihkan"
+      ],
+      "No trackers found": [
+        "Tidak ada pelacak yang ditemukan"
+      ],
+      "Trackers blocked:": [
+        "Pelacak yang diblokir:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Nonaktifkan pilihan ini agar pencarian pesan hanya didasarkan pada tanggal, nama, alamat email, atau baris subjek. Untuk menonaktifkan pencarian konten pesan dan menghapus pesan yang telah diunduh, tuju menu pengaturan."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Anda dapat membuka tautan pada email ini tanpa teridentifikasi dan tanpa membocorkan aktivitas online Anda kepada para pengiklan."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Anda dapat membaca email ini tanpa menyingkap interaksi, lokasi, atau perangkat Anda kepada para pengiklan."
       ]
     },
     "info": {
@@ -6579,6 +6624,15 @@
       ],
       "Your password (admin)": [
         "Kata sandi Anda (admin)"
+      ],
+      "Cleaned": [
+        "Dibersihkan"
+      ],
+      "Open in a new tab": [
+        "Buka di tab baru"
+      ],
+      "Original link": [
+        "Tautan asli"
       ]
     },
     "Label attach to date input to select a date": {
@@ -8112,7 +8166,7 @@
         "Alamat email disalin ke clipboard"
       ],
       "Fingerprint copied to clipboard": [
-        "Sidik jari disalin ke clipboard"
+        "Sidik jari disalin ke papan klip"
       ],
       "Import record deleted": [
         "Rekaman impor dihapus"
@@ -8175,7 +8229,7 @@
         "Pindahkan ${ selectionCount } pesan"
       ],
       "Password copied to clipboard": [
-        "Kata sandi disalin ke clipboard"
+        "Kata sandi disalin ke papan klip"
       ],
       "Phishing reported": [
         "Phishing berhasil dilaporkan"
@@ -8854,6 +8908,18 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Uji coba Mail Plus Anda akan berakhir pada ${ textDate }"
+      ],
+      "Move all messages to Archive": [
+        "Pindahkan seluruh pesan ke Arsip"
+      ],
+      "No trackers found": [
+        "Tidak ada pelacak yang ditemukan"
+      ],
+      "Protect your email": [
+        "Lindungi email Anda"
+      ],
+      "This email is protected": [
+        "Email ini terlindungi"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9249,6 +9315,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Tahunan, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verifikasi pengirim"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Verifikasi pengirim gagal: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Pengirim terverifikasi: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Kunci verifikasi tidak terliput dalam daftar kunci yang dipercaya."
       ]
     }
   }

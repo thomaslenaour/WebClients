@@ -1168,6 +1168,9 @@
       ],
       "Zoom out": [
         "Uzaklaştır"
+      ],
+      "Block email tracking": [
+        "E-postanın izlenmesi engellensin"
       ]
     },
     "action": {
@@ -2964,6 +2967,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Birleştirmek veya tutmak istemediğiniz kişileri silinmek üzere işaretleyebilirsiniz. Silme işlemi yalnızca birleştirme düğmesine tıkladıktan sonra yapılır"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "E-posta izleme koruması ile izlenmeden iletiyi okuyabilir ve bağlantılara tıklayabilirsiniz."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "İzlenmeden iletiyi okuyabilir ve bağlantılara tıklayabilirsiniz."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -5969,6 +5978,39 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Kurtarma ifadeniz, belirli bir sırada 12 sözcükten oluşan bir dizidir."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } e-posta izleyici engellendi",
+        "${ numberOfImageTrackers } e-posta izleyici engellendi"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } izleyici engellendi",
+        "${ numberOfImageTrackers } izleyici engellendi"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } bağlantı temizlendi",
+        "${ numberOfUTMTrackers } bağlantı temizlendi"
+      ],
+      "Links cleaned:": [
+        "Temizlenen bağlantılar:"
+      ],
+      "No links cleaned": [
+        "Herhangi bir bağlantı temizlenmedi"
+      ],
+      "No trackers found": [
+        "Herhangi bir izleyici bulunamadı"
+      ],
+      "Trackers blocked:": [
+        "Engellenen izleyiciler:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Yalnızca tarihe, ada, e-posta adresine veya konu satırına göre arama yapmak için bu seçeneği kapatın. İleti içeriği aramayı devre dışı bırakmak ve indirilen iletileri silmek için ayarlara gidin."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Profilinizle ilgili bilgiler vermeden ve çevrim içi etkinliğinizi reklam verenlere sızdırmadan bu e-postadaki bağlantılara tıklayabilirsiniz."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Bu e-postayı, etkileşiminizi, konumunuzu veya aygıtınızı reklam verenlere açıklamadan okuyabilirsiniz."
       ]
     },
     "info": {
@@ -6691,6 +6733,15 @@
       ],
       "Your password (admin)": [
         "Parolanız (yönetici)"
+      ],
+      "Cleaned": [
+        "Temizlendi"
+      ],
+      "Open in a new tab": [
+        "Yeni sekmede aç"
+      ],
+      "Original link": [
+        "Özgün bağlantı"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9100,6 +9151,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mail Plus ücretsiz deneme süreniz ${ textDate } tarihinde sonra erecek"
+      ],
+      "No trackers found": [
+        "Herhangi bir izleyici bulunamadı"
+      ],
+      "Protect your email": [
+        "E-postanızı koruyun"
+      ],
+      "This email is protected": [
+        "Bu e-posta korunuyor"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9530,6 +9590,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Yılda bir, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Gönderici doğrulama"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Gönderici doğrulanamadı: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Gönderici doğrulandı: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Doğrulama anahtarı, güvenilen anahtarlar listesinde bulunmuyor."
       ]
     }
   }

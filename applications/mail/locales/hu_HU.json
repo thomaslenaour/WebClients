@@ -1165,6 +1165,12 @@
       ],
       "Zoom out": [
         "Távolítás"
+      ],
+      "Block email tracking": [
+        "E-mail követés megakadályozása"
+      ],
+      "Move all to archive": [
+        "Összes áthelyezése az archívumba"
       ]
     },
     "action": {
@@ -2961,6 +2967,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Amelyekből egyiket sem szeretné megtartani, azokat törlésre jelölheti. A törlés az egyesítés gomb megnyomása után fog megtörténni"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Email követési védelemmel el tudja olvasni ezt az üzenetet és rákattinthat a hivatkozásokra anélkül, hogy követnék."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "El tudja olvasni ezt az üzenetet és rákattinthat a hivatkozásokra anélkül, hogy követnék."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -5960,6 +5972,42 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "A helyreállító jelmondat egy 12 szóból álló sorozat, megadott sorrendben."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } e-mail követő blokkolva",
+        "${ numberOfImageTrackers } e-mail követő blokkolva"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } követő blokkolva",
+        "${ numberOfImageTrackers } követő blokkolva"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } link kitisztítva",
+        "${ numberOfUTMTrackers } link kitisztítva"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Biztosan áthelyezi az összes üzenetet ebben az Archívumba?"
+      ],
+      "Links cleaned:": [
+        "Hivatkozások kitisztítva:"
+      ],
+      "No links cleaned": [
+        "Nincs hivatkozás kitisztítva"
+      ],
+      "No trackers found": [
+        "Nem található követő"
+      ],
+      "Trackers blocked:": [
+        "Követők blokkolva:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Kikapcsolásával csak dátum alapján, a nevekben, email címekben vagy tárgynevekben történik keresés. Az üzenetek tartalmában való keresés kikapcsolásához és a letöltött üzenetek törléséhez nyissa meg a beállításokat."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Rá tud kattintani a hivatkozásokra ebben az emailben anélkül, hogy profil készülne magáról és kiszivárogna online tevékenysége a hirdetőknek."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "El tudja olvasni ezt az emailt anélkül, hogy tevékenységét, tartózkodási helyét vagy eszközét felfedné hirdetők elől"
       ]
     },
     "info": {
@@ -6170,6 +6218,9 @@
       ],
       "Star": [
         "Csillagozás"
+      ],
+      "Open command panel": [
+        "Parancspanel megnyitása"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6679,6 +6730,15 @@
       ],
       "Your password (admin)": [
         "Jelszó (adminisztrátor)"
+      ],
+      "Cleaned": [
+        "Kitisztítva"
+      ],
+      "Open in a new tab": [
+        "Megnyitás új lapon"
+      ],
+      "Original link": [
+        "Eredeti hivatkozás"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9021,6 +9081,18 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "A Mail Plus csomagjának próbaidőszaka lejár: ${ textDate }"
+      ],
+      "Move all messages to Archive": [
+        "Áthelyezi az összes üzenetet az Archívumba"
+      ],
+      "No trackers found": [
+        "Nem található követő"
+      ],
+      "Protect your email": [
+        "Óvja meg emailjeit"
+      ],
+      "This email is protected": [
+        "Ez az email védett."
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9451,6 +9523,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Évente, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Feladó ellenőrzése"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "A feladó ellenőrzése sikertelen: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "A feladó ellenőrzése sikeres: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "A hitelesítési kulcs nincs rajta a megbízható kulcsok listáján."
       ]
     }
   }

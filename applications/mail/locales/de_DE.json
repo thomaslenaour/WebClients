@@ -1168,6 +1168,9 @@
       ],
       "Zoom out": [
         "Verkleinern"
+      ],
+      "Block email tracking": [
+        "E-Mail-Tracking blockieren"
       ]
     },
     "action": {
@@ -2964,6 +2967,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Du kannst Kontakte, die du weder zusammenführen noch behalten willst, zum Löschen vormerken. Das Löschen erfolgt erst, wenn du auf die Schaltfläche „Zusammenführen“ klickst."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Mit dem E-Mail-Tracker-Schutz kannst du die Nachricht lesen und auf Links klicken, ohne verfolgt zu werden."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Du kannst die Nachricht lesen und auf Links klicken, ohne verfolgt zu werden."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -5969,6 +5978,39 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Deine Wiederherstellungsphrase besteht aus einer Reihe von 12 Wörtern in einer bestimmten Reihenfolge."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt",
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt",
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } Link bereinigt",
+        "${ numberOfUTMTrackers } Links bereinigt"
+      ],
+      "Links cleaned:": [
+        "Links bereinigt:"
+      ],
+      "No links cleaned": [
+        "Keine Links bereinigt"
+      ],
+      "No trackers found": [
+        "Kein E-Mail-Tracker gefunden"
+      ],
+      "Trackers blocked:": [
+        "Tracker blockiert:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Schalte diese Option aus, um nur nach Datum, Name, E-Mail-Adresse oder Betreff zu suchen. Um die Suche nach Nachrichteninhalten zu deaktivieren und heruntergeladene Nachrichten zu löschen, gehe zu den Einstellungen."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Du kannst auf Links in dieser E-Mail klicken, ohne dass ein Profil erstellt wird, und die Online-Aktivitäten an Werbetreibende weitergegeben werden."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "E-Mail kann gelesen werden, ohne dass Interaktionen, der Standort oder die Gerätekennung an Werbetreibende weitergegeben wird."
       ]
     },
     "info": {
@@ -6696,6 +6738,15 @@
       ],
       "Your password (admin)": [
         "Ihr Passwort (Admin)"
+      ],
+      "Cleaned": [
+        "Bereinigt"
+      ],
+      "Open in a new tab": [
+        "In einem neuen Tab öffnen"
+      ],
+      "Original link": [
+        "Original-Link"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9121,6 +9172,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Deine kostenlose Testversion von Mail Plus endet am ${ textDate }."
+      ],
+      "No trackers found": [
+        "Kein E-Mail-Tracker gefunden"
+      ],
+      "Protect your email": [
+        "Schütze deine E-Mail-Adresse"
+      ],
+      "This email is protected": [
+        "Diese Nachricht ist geschützt."
       ]
     },
     "Today icon tooltip in mini calendar": {

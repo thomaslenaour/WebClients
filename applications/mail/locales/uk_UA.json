@@ -1176,6 +1176,9 @@
       ],
       "Zoom out": [
         "Зменшити"
+      ],
+      "Block email tracking": [
+        "Блокування відстеження електронної пошти"
       ]
     },
     "action": {
@@ -2986,6 +2989,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Ви можете позначити ті контакти, які ви не хочете ані об'єднувати, ані зберігати. Видалення відбудеться лише після натискання кнопки об'єднання"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Ви можете прочитати повідомлення та натиснути на посилання без відстеження за допомогою захисту від відстеження електронної пошти."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Ви можете прочитати повідомлення та натиснути на посилання без відстеження."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6175,6 +6184,42 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Фраза відновлення — це послідовність з 12 слів у певному порядку."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } поштовий трекер заблоковано",
+        "${ numberOfImageTrackers } поштові трекери заблоковано",
+        "${ numberOfImageTrackers } поштових трекерів заблоковано",
+        "${ numberOfImageTrackers } поштових трекерів заблоковано"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } трекер заблоковано",
+        "${ numberOfImageTrackers } трекери заблоковано",
+        "${ numberOfImageTrackers } трекерів заблоковано",
+        "${ numberOfImageTrackers } трекерів заблоковано"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } посилання очищено",
+        "${ numberOfUTMTrackers } посилання очищено",
+        "${ numberOfUTMTrackers } посилань очищено",
+        "${ numberOfUTMTrackers } посилань очищено"
+      ],
+      "Links cleaned:": [
+        "Посилань очищено:"
+      ],
+      "No links cleaned": [
+        "Посилання не очищено"
+      ],
+      "No trackers found": [
+        "Трекерів не виявлено"
+      ],
+      "Trackers blocked:": [
+        "Трекерів заблоковано:"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Ви можете натискати посилання в цьому листі, не маючи профілю та не повідомляючи про свою онлайн-активність рекламодавцям."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Ви можете прочитати цей лист, не розкриваючи рекламодавцям свою взаємодію, розташування або пристрій."
       ]
     },
     "info": {
@@ -6903,6 +6948,15 @@
       ],
       "Your password (admin)": [
         "Новий пароль (адмін)"
+      ],
+      "Cleaned": [
+        "Очищено"
+      ],
+      "Open in a new tab": [
+        "Відкрити у новій вкладці"
+      ],
+      "Original link": [
+        "Оригінальне посилання"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9376,6 +9430,15 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша безплатна пробна версія Mail Plus завершується ${ textDate }"
+      ],
+      "No trackers found": [
+        "Трекерів не знайдено"
+      ],
+      "Protect your email": [
+        "Захистіть свою електронну пошту"
+      ],
+      "This email is protected": [
+        "Ця електронна пошта захищена"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9876,6 +9939,22 @@
       ],
       "Yearly, ${ untilString }": [
         "Щороку, ${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Перевірка відправника"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Помилка перевірки відправника: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Відправника перевірено: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Ключа підтвердження немає в списку довірених ключів."
       ]
     }
   }
