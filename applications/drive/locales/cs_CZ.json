@@ -726,6 +726,12 @@
       ],
       "Zoom out": [
         "Oddálit"
+      ],
+      "Download apps": [
+        "Stáhnout aplikace"
+      ],
+      "Download Drive for Windows": [
+        "Stáhnout Drive pro Windows"
       ]
     },
     "Actions message": {
@@ -4257,6 +4263,21 @@
       ],
       "Your previous recovery phrase": [
         "Vaše předchozí fráze pro obnovu"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Přizpůsobte si vzhled aplikací ${ BRAND_NAME }."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Předplatné vyprší: opětovně aktivujte dne ${ byDate } pro zachování vašich výhod tarifu ${ planName }. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Synchronizovat složky z vašeho počítače"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Snadno synchronizujte složky pomocí naší aplikace pro stolní počítače, aby byly vaše soubory vždy aktuální a dostupné odkudkoli."
+      ],
+      "This will upload a new version of the folder": [
+        "Tímto se nahraje nová verze složky"
       ]
     },
     "Info on errors": {
@@ -4837,6 +4858,9 @@
       ],
       "What’s this?": [
         "Co je to?"
+      ],
+      "Reactivate now": [
+        "Opětovně nyní aktivovat"
       ]
     },
     "Loading info": {
@@ -5294,6 +5318,9 @@
       ],
       "Use the app selector in the top left to access all ${ BRAND_NAME } services: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } and ${ DRIVE_SHORT_APP_NAME }.": [
         "Pomocí výběru aplikací v levém horním rohu získáte přístup ke všem službám ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } a ${ DRIVE_SHORT_APP_NAME }."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Další možnosti úprav motivů jsou k dispozici v Nastavení účtu > Vzhled."
       ]
     },
     "Onboarding Title": {
@@ -6530,6 +6557,15 @@
       ],
       "You do not have any contacts to export": [
         "Nemáte žádné kontakty k exportu"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatické přepínání mezi preferovanými denními a nočními motivy v synchronizaci s denním a nočním režimem systému."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"tmavý režim\"."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"světlý režim\"."
       ]
     },
     "Validation": {
@@ -6652,6 +6688,11 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Bezplatná zkušební verze končí ${ textDate }. ${ action }"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
       ]
     }
   }

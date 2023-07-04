@@ -4041,6 +4041,21 @@
       ],
       "Your previous recovery phrase": [
         "以前の回復フレーズ"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME }アプリの外観をカスタマイズ"
+      ],
+      "Drop file here to upload": [
+        "アップロードするファイルをここにドロップ"
+      ],
+      "Drop to import": [
+        "ドロップしてインポート"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "サブスクリプションがもうすぐ終了します: ${ planName }の特典を維持するには${ byDate }までに更新してください。${ reactivateLink }"
+      ],
+      "Your files will be encrypted and then saved": [
+        "ファイルは暗号化して保存されます"
       ]
     },
     "Info on errors": {
@@ -4725,6 +4740,9 @@
       ],
       "Up to 3 TB of storage": [
         "3 TB のストレージ"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email エイリアス"
       ]
     },
     "new_plans: feature info": {
@@ -6052,6 +6070,12 @@
       ],
       "You’ve got 1 GB of storage": [
         "1 GB のストレージを手に入れました"
+      ],
+      "Cannot add more addresses": [
+        "これ以上アドレスを追加できません"
+      ],
+      "Unlock contacts groups": [
+        "連絡先グループをアンロック"
       ]
     },
     "Today icon tooltip in mini calendar": {

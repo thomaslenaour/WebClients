@@ -726,6 +726,12 @@
       ],
       "Zoom out": [
         "Уменьшить масштаб"
+      ],
+      "Download apps": [
+        "Скачать приложения"
+      ],
+      "Download Drive for Windows": [
+        "Скачать приложение хранилища для Windows"
       ]
     },
     "Actions message": {
@@ -4260,6 +4266,18 @@
       ],
       "Your previous recovery phrase": [
         "Ваша предыдущая фраза для восстановления"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Окончание подписки: для сохранения преимуществ плана ${ planName } необходимо её восстановить до ${ byDate }. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Синхронизировать папки с вашего компьютера."
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "С лёгкостью синхронизируйте папки с помощью нашего приложения для компьютера, которое гарантирует, что ваши файлы всегда будут актуальны и доступны из откуда угодно."
+      ],
+      "This will upload a new version of the folder": [
+        "Будет загружена новая версия папки"
       ]
     },
     "Info on errors": {
@@ -4840,6 +4858,9 @@
       ],
       "What’s this?": [
         "Что это такое?"
+      ],
+      "Reactivate now": [
+        "Восстановить подписку"
       ]
     },
     "Loading info": {
@@ -4882,10 +4903,10 @@
         "Импортировать все сообщения из ${ itemsToImportCount } ярлыков и пометить их ярлыком как"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } folder and label them as": [
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как"
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папки и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } label and label them as": [
         "Импортировать все сообщения с ${ selectedItemsToImportCount } из ${ itemsToImportCount } ярлыка, и пометить их как",
@@ -5535,25 +5556,25 @@
         "${ days } день",
         "${ days } дня",
         "${ days } дней",
-        "${ days } дня"
+        "${ days } дней"
       ],
       "${ hours } hour": [
         "${ hours } час",
         "${ hours } часа",
         "${ hours } часов",
-        "${ hours } часа"
+        "${ hours } часов"
       ],
       "${ minutes } minute": [
         "${ minutes } минута",
         "${ minutes } минуты",
         "${ minutes } минут",
-        "${ minutes } минуты"
+        "${ minutes } минут"
       ],
       "${ seconds } second": [
         "${ seconds } секунда",
         "${ seconds } секунды",
         "${ seconds } секунд",
-        "${ seconds } секунды"
+        "${ seconds } секунд"
       ]
     },
     "specialoffer: Deal": {
@@ -5561,7 +5582,7 @@
         "${ n } месяц БЕСПЛАТНО",
         "${ n } месяца БЕСПЛАТНО",
         "${ n } месяцев БЕСПЛАТНО",
-        "${ n } БЕСПЛАТНЫХ месяца"
+        "${ n } месяцев БЕСПЛАТНО"
       ]
     },
     "specialoffer: Deal details": {
@@ -5670,7 +5691,7 @@
         "за ${ n } месяц",
         "за ${ n } месяца",
         "за ${ n } месяцев",
-        "за ${ n } месяца"
+        "за ${ n } месяцев"
       ],
       "Get the deal": [
         "Получить скидку"
@@ -6539,6 +6560,12 @@
       ],
       "You do not have any contacts to export": [
         "У вас нет контактов для экспорта"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Автоматически переключаться между вашими предпочтительными темами для дня и ночи синхронно с системными дневным и ночным режимами."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Выбранная тема станет активной, когда в системе будет выбрана \"тёмная тема\""
       ]
     },
     "Validation": {
@@ -6661,6 +6688,75 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Ваш бесплатный пробный период заканчивается ${ textDate }. ${ action }"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 год"
+      ],
+      "2 years": [
+        "2 года"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Платная версия Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Платная версия Mail и Calendar"
+      ],
+      "Premium Password Manager": [
+        "Платная версия менеджера паролей"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Храните неограниченное количество паролей в безопасности и используйте их автозаполнение, чтобы входить в аккаунты одним нажатием. Мы также предлагаем генератор паролей и другие функции."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Менеджер паролей"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Создавайте надежные данные для входа на всех устройствах. Вам будут доступны неограниченное количество псевдонимов, 20 хранилищ, встроенная двухфакторная аутентификация, автозаполнение данных кредитной карты и многое другое."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Включает 2950 серверов в более чем 65 странах с возможностью подключения до 10 устройств, доступ к стриминговым платформам со всего мира, блокировщик рекламы и вредоносного ПО и другие преимущества."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Включает поддержку 1 пользовательского домена, 10 адресов электронной почты, 10 алиасов hide-my-email, совместный доступ к календарю и другие преимущества."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Защитите свои материалы при помощи зашифрованного облачного хранилища. Вам будут доступны история версий, зашифрованный обмен файлами и многое другое."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "* Ваша подписка автоматически продлится по стандартной цене с учетом скидки в конце платежного цикла."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Скидки рассчитываются исходя из стандартной платы за 1 месяц. Предложение действует только для новых подписчиков."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Получите эксклюзивную скидку от ${ BRAND_NAME }. Предложение ограничено по времени!"
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Мы празднуем девятую годовщину нашего проекта!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Праздничная распродажа ${ BRAND_NAME }"
       ]
     }
   }

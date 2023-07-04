@@ -672,10 +672,10 @@
         "Actualizare frază de recuperare"
       ],
       "Upgrade": [
-        "Modernizare"
+        "Modificare"
       ],
       "Upgrade now": [
-        "Modernizare"
+        "Modificare"
       ],
       "Upload anyway": [
         "Încărcare așa"
@@ -724,6 +724,12 @@
       ],
       "Zoom out": [
         "Micșorare"
+      ],
+      "Download apps": [
+        "Descărcare aplicație"
+      ],
+      "Download Drive for Windows": [
+        "Descărcare Drive pentru Windows"
       ]
     },
     "Actions message": {
@@ -1753,7 +1759,7 @@
         "Regatul Unit"
       ],
       "United States": [
-        "Statele Unite"
+        "SUA"
       ],
       "United States Minor Outlying Islands": [
         "Insulele Minore Îndepărtate ale Statelor Unite"
@@ -3083,7 +3089,7 @@
         "${ addressCount } de adrese de e-mail"
       ],
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
-        "${ appName } are nevoie de permisiunea dvs. pentru ${ enableDesktopNotifications }."
+        "${ appName } necesită permisiunea pentru ${ enableDesktopNotifications }."
       ],
       "${ calendarsToBeCreatedCount } new calendar": [
         "Un calendar nou",
@@ -3467,7 +3473,7 @@
         "Introduceți codul din aplicația Authenticator."
       ],
       "Enter the credentials of the email account you want to import from.": [
-        "Introduceți datele de conectare ale contului de e-mail din care doriți să importați."
+        "Introduceți datele de conectare a contului de e-mail din care doriți să importați."
       ],
       "Enter the verification code that was sent to ${ destinationText }.": [
         "Introduceți codul de verificare care a fost trimis la ${ destinationText }."
@@ -4146,7 +4152,7 @@
         "Veți pierde toate modificările nesalvate."
       ],
       "You've reached the maximum number of addresses in the contact group(s):": [
-        "Ați atins numărul maxim de adrese din grupul de contacte."
+        "Ați atins numărul maxim de adrese din grupul de contacte:"
       ],
       "You've reached the maximum number of addresses in the contact group.": [
         "Ați atins numărul maxim de adrese din grupul de contacte."
@@ -4201,6 +4207,18 @@
       ],
       "Your previous recovery phrase": [
         "Fraza anterioară de recuperare"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Abonamentul se încheie: reactivați-l până la ${ byDate } pentru a vă păstra beneficiile planului ${ planName }. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Sincronizare foldere de pe computer"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Sincronizați ușor folderele folosind aplicația pentru desktop, asigurându-vă că fișierele vă sunt întotdeauna actualizate și accesibile de oriunde."
+      ],
+      "This will upload a new version of the folder": [
+        "Aceasta va încărca o nouă versiune a folderului."
       ]
     },
     "Info on errors": {
@@ -4774,10 +4792,19 @@
         "Gunoi"
       ],
       "Upgrade account": [
-        "Modernizare cont"
+        "Modificare cont"
       ],
       "What’s this?": [
         "Ce este asta?"
+      ],
+      "${ DRIVE_APP_NAME } Windows app": [
+        "Aplicația Windows ${ DRIVE_APP_NAME }"
+      ],
+      "Reactivate now": [
+        "Reactivare"
+      ],
+      "Seamlessly sync files and folders between your computer and ${ DRIVE_APP_NAME }.": [
+        "Sincronizați fără întreruperi fișierele și folderele dintre calculatorul personal și ${ DRIVE_APP_NAME }"
       ]
     },
     "Loading info": {
@@ -4878,7 +4905,7 @@
     },
     "new_plans: Action": {
       "Upgrade now": [
-        "Modernizare"
+        "Modificare"
       ]
     },
     "new_plans: action": {
@@ -4923,7 +4950,7 @@
         "Spațiul de stocare este distribuit între ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } și ${ DRIVE_APP_NAME }."
       ],
       "Use your own custom email domain address, e.g., you@yourname.com": [
-        "Utilizați propriile adresa personală de domeniu pentru e-mail, de ex., nume@adresapersonala.com."
+        "Utilizați propria adresă de domeniu pentru e-mail, de ex., nume@adresapersonala.com."
       ]
     },
     "new_plans: label": {
@@ -5544,7 +5571,7 @@
         "Accesare planuri abonamente"
       ],
       "Upgrade": [
-        "Modernizare"
+        "Modificare"
       ]
     },
     "specialoffer: Offers": {
@@ -6549,6 +6576,11 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Perioada de probare se încheie în curând la ${ textDate }. ${ action }"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
       ]
     }
   }

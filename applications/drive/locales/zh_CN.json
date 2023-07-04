@@ -3927,6 +3927,9 @@
       ],
       "Your previous recovery phrase": [
         "您先前的恢复密语"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "您的账户等级即将失效：${ byDate } 前重新激活即可继续享受 ${ planName } 权益。${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4459,6 +4462,9 @@
       ],
       "What’s this?": [
         "这是什么？"
+      ],
+      "Reactivate now": [
+        "立即重新激活"
       ]
     },
     "Loading info": {

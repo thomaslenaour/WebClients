@@ -722,6 +722,12 @@
       ],
       "Zoom out": [
         "Zoom indietro"
+      ],
+      "Download apps": [
+        "Scarica le app"
+      ],
+      "Download Drive for Windows": [
+        "Scarica Drive per Windows"
       ]
     },
     "Actions message": {
@@ -4142,6 +4148,15 @@
       ],
       "Your previous recovery phrase": [
         "La tua frase di recupero precedente"
+      ],
+      "Sync folders from your computer": [
+        "Sincronizza cartelle dal tuo computer"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Sincronizza le cartelle con facilità utilizzando la nostra applicazione desktop, assicurandoti che i tuoi file siano sempre aggiornati e accessibili da qualsiasi luogo."
+      ],
+      "This will upload a new version of the folder": [
+        "Si importerà una nuova versione della cartella."
       ]
     },
     "Info on errors": {
@@ -4716,6 +4731,12 @@
       ],
       "What’s this?": [
         "Cos'è questo?"
+      ],
+      "${ DRIVE_APP_NAME } Windows app": [
+        "${ DRIVE_APP_NAME } app Windows"
+      ],
+      "Reactivate now": [
+        "Riattiva"
       ]
     },
     "Loading info": {
@@ -6431,6 +6452,70 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "La tua prova gratuita termina il ${ textDate }. ${ action }"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 anno"
+      ],
+      "2 years": [
+        "2 anni"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Drive premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail e Calendar premium"
+      ],
+      "Premium Password Manager": [
+        "Password manager premium"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Memorizza in modo sicuro le tue password e inseriscile automaticamente nei siti web. Sono incluse password illimitate, generatore di password e altro ancora."
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Crea dati di accesso sicuri su tutti i tuoi dispositivi. Sono inclusi alias illimitati, 20 casseforti, autenticazione a due fattori integrata, compilazione automatica con i dati delle carte di credito e altro ancora."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Include 2950 server in più di 65 Paesi, possibilità di connettere fino a 10 dispositivi, accesso a servizi di streaming in tutto il mondo, blocco di malware e adblocker, e altro ancora."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Include il supporto per 1 dominio email personalizzato, 10 indirizzi email, 10 alias hide-my-email, condivisione del calendario e altro ancora."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Proteggi i tuoi file con l'archiviazione in cloud crittografata. Sono incluse la cronologia delle versioni, la sincronizzazione automatica, la condivisione di file crittografati e altre funzioni ancora."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Alla fine del ciclo di fatturazione l'abbonamento si rinnoverà automaticamente con lo sconto standard."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Gli sconti si basano sul prezzo mensile standard. L'offerta è disponibile solo per i nuovi abbonati."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Per un periodo limitato, hai a disposizione tutto il meglio di ${ BRAND_NAME } con uno sconto esclusivo."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Stiamo festeggiando il nono anniversario del nostro crowdfunding!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Promozione per l'anniversario di ${ BRAND_NAME }"
       ]
     }
   }

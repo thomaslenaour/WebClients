@@ -726,6 +726,12 @@
       ],
       "Zoom out": [
         "Паменшыць"
+      ],
+      "Download apps": [
+        "Спампаваць праграмы"
+      ],
+      "Download Drive for Windows": [
+        "Спампаваць Drive для Windows"
       ]
     },
     "Actions message": {
@@ -4247,7 +4253,7 @@
         "Ваша імпартаванне не будзе апрацавана."
       ],
       "Your login information will not be saved after the import is completed.": [
-        "Пасля завяршэння імпартавання вашы ўліковыя даныя не будуць захаваны."
+        "Пасля завяршэння імпартавання вашы даныя ўваходу не будуць захаваны."
       ],
       "Your phone number will only be used for this one-time verification.": [
         "Ваш нумар тэлефона будзе выкарыстаны толькі для бягучай аднаразовай праверкі."
@@ -4260,6 +4266,18 @@
       ],
       "Your previous recovery phrase": [
         "Ваша папярэдняя фраза аднаўлення"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Падпіска заканчваецца: актывуйце яе паўторна да ${ byDate }, каб пакінуць перавагі свайго тарыфнага плана ${ planName }. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Сінхранізацыя папак з вашага камп'ютара"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "З лёгкасцю сінхранізуйце папкі выкарыстоўваючы нашу праграму для камп'ютараў, каб вашы файлы заўсёды былі ў актуальным стане і даступны з любога месца ў свеце."
+      ],
+      "This will upload a new version of the folder": [
+        "Гэта запампуе новую версію папкі"
       ]
     },
     "Info on errors": {
@@ -4840,6 +4858,15 @@
       ],
       "What’s this?": [
         "Што гэта?"
+      ],
+      "${ DRIVE_APP_NAME } Windows app": [
+        "Праграма для Windows ${ DRIVE_APP_NAME }"
+      ],
+      "Reactivate now": [
+        "Актываваць паўторна"
+      ],
+      "Seamlessly sync files and folders between your computer and ${ DRIVE_APP_NAME }.": [
+        "Бясшвовая сінхранізацыя файлаў і папак паміж вашым камп'ютарам і ${ DRIVE_APP_NAME }."
       ]
     },
     "Loading info": {
@@ -6667,6 +6694,11 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Ваш бясплатны выпрабавальны перыяд міне ${ textDate }. ${ action }"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
       ]
     }
   }

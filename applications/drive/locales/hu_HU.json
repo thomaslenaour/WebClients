@@ -719,6 +719,15 @@
       ],
       "Zoom out": [
         "Távolítás"
+      ],
+      "Download apps": [
+        "Alkalmazások letöltése"
+      ],
+      "Download Drive for Windows": [
+        "Drive letöltése Windowsra"
+      ],
+      "Grid layout": [
+        "Rács elrendezés"
       ]
     },
     "Actions message": {
@@ -2505,6 +2514,9 @@
       ],
       "View the invitations": [
         "Meghívások megjelenítése"
+      ],
+      "Decline invitation": [
+        "Meghívó visszautasítása"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2623,6 +2635,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Tartsa biztonságban fájljait, titkosított felhőtárhelyen. Automatikus szinkronizálást, titkosított megosztás és további lehetőségeket tartalmaz."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Tartalmazza 3 egyéni e-mail domain név, 90 e-mail cím, korlátlan hide-my-email álnév, naptármegosztás és még sok más támogatását."
       ]
     },
     "Feedback Modal Title": {
@@ -4087,6 +4102,30 @@
       ],
       "Your previous recovery phrase": [
         "A korábbi helyreállító jelmondata"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Szabja testre a ${ BRAND_NAME } alkalmazások megjelenését."
+      ],
+      "Drop file here to upload": [
+        "Húzza ide a fájlokat a feltöltéshez"
+      ],
+      "Drop to import": [
+        "Húzza ide az importáláshoz"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Az előfizetés megszűnik: Aktiválja újra eddig: ${ byDate } , hogy megtarthassa ezen csomagjának előnyeit: ${ planName } ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Mappák szinkronizálása a számítógépéről"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Szinkronizáljon mappákat könnyedén az asztali alkalmazással, biztosítva ezzel, hogy fájljainak legfrissebb változatát bárhonnan elérhesse."
+      ],
+      "This will upload a new version of the folder": [
+        "Ez a mappa egy új változatát fogja feltölteni"
+      ],
+      "Your files will be encrypted and then saved": [
+        "A fájlok titkosításra majd pedig mentésre kerülnek"
       ]
     },
     "Info on errors": {
@@ -4587,6 +4626,9 @@
       ],
       "Your password (admin)": [
         "Jelszó (adminisztrátor)"
+      ],
+      "Synchronize with system": [
+        "Szinkronizálás a rendszerrel"
       ]
     },
     "Label for contact group color": {
@@ -4658,6 +4700,9 @@
       ],
       "What’s this?": [
         "Mi ez?"
+      ],
+      "Reactivate now": [
+        "Újraaktiválás most"
       ]
     },
     "Loading info": {
@@ -4782,6 +4827,9 @@
       ],
       "Up to 3 TB of storage": [
         "Akár 3 TB tárhely"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email álnevek"
       ]
     },
     "new_plans: feature info": {
@@ -5064,6 +5112,9 @@
       ],
       "Use the app selector in the top left to access all ${ BRAND_NAME } services: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } and ${ DRIVE_SHORT_APP_NAME }.": [
         "Használja az alkalmazás választót a bal felső sarokban, hogy hozzáférjen az összes ${ BRAND_NAME } szolgáltatáshoz: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } és ${ DRIVE_SHORT_APP_NAME }."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "További téma lehetőségek a fiók beállítások > Megjelenés menüpontban érhetők el."
       ]
     },
     "Onboarding Title": {
@@ -5493,6 +5544,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "A tárhely megoszlik a ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, és a ${ DRIVE_APP_NAME } közt."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Minden prémium szolgáltatásunk a legmagasabb korlátokkal: 100 e-mail cím, 10 saját domain név támogatása, korlátlan számú hide-my-email álnév, naptármegosztás, titkosított felhőalapú tárolás és fájlmegosztás stb."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Tartalmazza 1 egyéni e-mail domain név, 10 e-mail cím, 10 hide-my-email álnév, naptármegosztás és még sok más támogatását."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Tartalmazza 3 egyéni e-mail domain név, 15 e-mail cím, korlátlan hide-my-email álnév, naptármegosztás és még sok más támogatását."
       ]
     },
     "Spotlight": {
@@ -6161,6 +6221,15 @@
       ],
       "You’ve got 1 GB of storage": [
         "Kapott 1 GB tárhelyet"
+      ],
+      "(active)": [
+        "(aktív)"
+      ],
+      "Day theme": [
+        "Nappali téma"
+      ],
+      "Night theme": [
+        "Éjszakai téma"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -6228,6 +6297,15 @@
       ],
       "You do not have any contacts to export": [
         "Önnek nincs exportálható névjegye"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatikus váltás az Ön által preferált nappali és éjszakai témák között a rendszer nappali és éjszakai üzemmódjával szinkronban."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "A kiválasztott téma akkor lesz aktív, ha a rendszer \"sötét üzemmódba\" van állítva."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "A kiválasztott téma akkor lesz aktív, ha a rendszer \"világos üzemmódba\" van állítva."
       ]
     },
     "Validation": {
@@ -6340,6 +6418,36 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Az ingyenes próbaideje hamarosan le fog járni ekkor: ${ textDate }. ${ action }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Rendszer alapértelmezett"
+      ],
+      "Theme default": [
+        "Alapértelmezett téma"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Nagy"
+      ],
+      "Medium (recommended)": [
+        "Közepes (ajánlott)"
+      ],
+      "Small": [
+        "Kicsi"
+      ],
+      "Very large": [
+        "Nagyon nagy"
+      ],
+      "Very small": [
+        "Nagyon kicsi"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
       ]
     }
   }
