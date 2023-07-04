@@ -3923,6 +3923,27 @@
       ],
       "You've reached the maximum number of addresses in the contact group.": [
         "連絡先グループのアドレス数の上限に達しました。"
+      ],
+      "Based on your time zone": [
+        "現在のタイムゾーンに基づく"
+      ],
+      "Billing cycle: ${ text }": [
+        "支払いサイクル: ${ text }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME }アプリの外観をカスタマイズ"
+      ],
+      "Drop file here to upload": [
+        "アップロードするファイルをここにドロップ"
+      ],
+      "Drop to import": [
+        "ドロップしてインポート"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "サブスクリプションがもうすぐ終了します: ${ planName }の特典を維持するには${ byDate }までに更新してください。${ reactivateLink }"
+      ],
+      "Your files will be encrypted and then saved": [
+        "ファイルは暗号化して保存されます"
       ]
     },
     "Info on errors": {
@@ -4716,6 +4737,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "カレンダーを追加しました"
+      ],
+      "Adding holidays calendar failed": [
+        "祝日カレンダーの追加に失敗しました"
       ]
     },
     "Notification in share calendar modal": {
@@ -6074,6 +6098,15 @@
       ],
       "Night theme": [
         "夜間のテーマ"
+      ],
+      "Billing cycle": [
+        "支払い間隔"
+      ],
+      "Cannot add more addresses": [
+        "これ以上アドレスを追加できません"
+      ],
+      "Unlock contacts groups": [
+        "連絡先グループをアンロック"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6531,6 +6564,9 @@
       ],
       "Up to 3 TB of storage": [
         "3 TB のストレージ"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email エイリアス"
       ]
     },
     "new_plans: feature info": {
@@ -6547,6 +6583,17 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "${ BRAND_NAME } からの公式メール"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "1年払い"
+      ],
+      "Monthly": [
+        "月額"
+      ],
+      "Two-year": [
+        "2年払い"
       ]
     }
   }

@@ -4134,6 +4134,15 @@
       ],
       "Your files will be encrypted and then saved": [
         "Vaše soubory budou zašifrovány a uloženy"
+      ],
+      "Billing cycle: ${ text }": [
+        "Fakturační cyklus: ${ text }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Přizpůsobte si vzhled aplikací ${ BRAND_NAME }."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Předplatné vyprší: opětovně aktivujte dne ${ byDate } pro zachování vašich výhod tarifu ${ planName }. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4629,6 +4638,9 @@
       ],
       "What’s this?": [
         "Co je to?"
+      ],
+      "Reactivate now": [
+        "Opětovně nyní aktivovat"
       ]
     },
     "Link to calendar app": {
@@ -4963,6 +4975,9 @@
       ],
       "Adding holidays calendar failed": [
         "Přidání kalendáře svátků selhalo"
+      ],
+      "Calendar updated": [
+        "Kalendář aktualizován"
       ]
     },
     "Notification in share calendar modal": {
@@ -5190,6 +5205,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Toto můžete později změnit v nastavení."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Další možnosti úprav motivů jsou k dispozici v Nastavení účtu > Vzhled."
       ]
     },
     "Option": {
@@ -6489,6 +6507,9 @@
       ],
       "Unlock contacts groups": [
         "Odemknout skupiny kontaktů"
+      ],
+      "Billing cycle": [
+        "Fakturační cyklus"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6576,6 +6597,15 @@
       ],
       "The image could not be loaded using proxy": [
         "Obrázek nelze načíst pomocí proxy serveru"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatické přepínání mezi preferovanými denními a nočními motivy v synchronizaci s denním a nočním režimem systému."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"tmavý režim\"."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"světlý režim\"."
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -7074,6 +7104,17 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "Oficiální e-mail od ${ BRAND_NAME }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Ročně"
+      ],
+      "Monthly": [
+        "Měsíčně"
+      ],
+      "Two-year": [
+        "Dva roky"
       ]
     }
   }

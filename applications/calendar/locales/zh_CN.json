@@ -3755,6 +3755,12 @@
       ],
       "Your files will be encrypted and then saved": [
         "您的文件将被加密保存。"
+      ],
+      "Billing cycle: ${ text }": [
+        "计费周期：${ text }"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "您的账户等级即将失效：${ byDate } 前重新激活即可继续享受 ${ planName } 权益。${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4225,6 +4231,9 @@
       ],
       "What’s this?": [
         "这是什么？"
+      ],
+      "Reactivate now": [
+        "立即重新激活"
       ]
     },
     "Link to calendar app": {
@@ -5601,6 +5610,9 @@
       ],
       "Unlock contacts groups": [
         "解锁群组功能"
+      ],
+      "Billing cycle": [
+        "计费周期"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6500,6 +6512,17 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } 均共用同一存储空间。"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "按年付费"
+      ],
+      "Monthly": [
+        "月费"
+      ],
+      "Two-year": [
+        "两年付费"
       ]
     }
   }

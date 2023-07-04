@@ -576,13 +576,19 @@
         "Ja, jeg deltager"
       ],
       "Image could not be loaded with tracker protection.": [
-        "Billede kunne ikke indlæses med tracker beskyttelse."
+        "Billede kunne ikke indlæses med sporingsbeskyttelse."
       ],
       "Load": [
         "Indlæs"
       ],
       "New message": [
         "Ny besked"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Højst 100 kontakter er tilladt pr. kontaktgruppe"
+      ],
+      "Image will be loaded without a proxy": [
+        "Billede vil blive indlæst uden en proxy"
       ]
     },
     "Action subline": {
@@ -2800,6 +2806,9 @@
       ],
       "View the invitations": [
         "Se invitationerne"
+      ],
+      "Decline invitation": [
+        "Afvis invitation"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2843,6 +2852,39 @@
       ],
       "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
         "Du er blevet inviteret til at blive medlem af ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Hvis du accepterer invitationen, overflytter vi dig fra dit nuværende abonnement og krediterer din konto med en eventuel restsaldo."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Lagerplads tildelt dig: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Abonnementet faktureres til Visionary- eller Family-abonnementets primære administrator."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary- og familie-abonnementer understøtter på nuværende tidspunkt ikke eksterne kontoer. Opret en ${ BRAND_NAME }-adresse før du tilmelder dig. ${ addressSettingsLink }"
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Du er inviteret til at blive medlem af ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Du kan kun acceptere 3 invitationer i en 6-måneds periode. Kontakt venligst ${ supportLink } hvis du har brug for en undtagelse."
+      ],
+      "You have successfully joined the Family plan": [
+        "Du er tilmeldt familie-abonnementet."
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Du er inviteret til at forbinde din ${ BRAND_NAME }-konto til dette gruppe-abonnement og sammen nyde alle ${ BRAND_NAME_TWO } premium funktionerne."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Din konto har flere e-mailadresser en det, der er tilgængeligt for dig på dette abonnement. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Din konto bruger ${ usedSpace } lagerplads, hvilket overstiger de ${ inviteSpace } du har fået tildelt. Slet nogle data eller bed abonnementsadministratoren om at øge din lagerplads."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Dit nuværende abonnement kan ikke tilmelde sig et Visionary- eller familie-abonnement."
       ]
     },
     "familyOffer_2023:Get Proton Family": {
@@ -3932,6 +3974,30 @@
       ],
       "You've reached the maximum number of addresses in the contact group.": [
         "Du har nået det maksimale antal adresser i kontaktgruppen."
+      ],
+      "Based on your time zone": [
+        "Baseret på din tidszone"
+      ],
+      "Billing cycle: ${ text }": [
+        "Faktureringsperiode: ${ text }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Tilpas udseendes og fornemmelsen af ${ BRAND_NAME }-applikationer."
+      ],
+      "Drop file here to upload": [
+        "Træk fil hertil for at uploade"
+      ],
+      "Drop to import": [
+        "Slip for at importere"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Abonnement er ved at udløbe: Genaktiver inden ${ byDate } for at beholde dine ${ planName }-fordele. ${ reactivateLink }"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Du har nået det maksimale antal adresser i kontaktgruppen/grupperne:"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Din filer vil blive krypteret og derefter gemt"
       ]
     },
     "Info on errors": {
@@ -4346,6 +4412,9 @@
       ],
       "Your password (admin)": [
         "Din adgangskode (admin)"
+      ],
+      "Synchronize with system": [
+        "Synkroniser med system"
       ]
     },
     "Label for contact group color": {
@@ -4420,6 +4489,9 @@
       ],
       "What’s this?": [
         "Hvad er dette?"
+      ],
+      "Reactivate now": [
+        "Genaktiver nu"
       ]
     },
     "Link to calendar app": {
@@ -4735,6 +4807,9 @@
     "Notification in holidays calendar modal": {
       "Calendar added": [
         "Kalender tilføjet"
+      ],
+      "Adding holidays calendar failed": [
+        "Fejl under tilføjelse af helligdags-kalender"
       ]
     },
     "Notification in share calendar modal": {
@@ -5321,6 +5396,9 @@
       ],
       "Offer ends soon": [
         "Tilbuddet slutter snart"
+      ],
+      "Limited time only": [
+        "Kun i begrænset tid"
       ]
     },
     "specialoffer: Link": {
@@ -5391,6 +5469,18 @@
       ],
       "Get our premium bundle and save more": [
         "Få vores premium-pakke og spar mere"
+      ],
+      "End of Year Sale": [
+        "Udsalg ved årets afslutning"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Vores udfasede Visionary-abonnement er kun tilbage i en begrænset periode"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Spar mere med 2 års ${ planName }"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Opgradér og spar mere med 2 års ${ planName }"
       ]
     },
     "specialoffer: Tooltip": {
@@ -5402,6 +5492,24 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold og browse privat. Inkluderer 1700 servere i 60+ lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og mere."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold, og browse privat. Inkluderer 1700 servere i mere end 60 lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og meget mere."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Få adgang til indhold på streamingtjenester, herunder Netflix, Disney+ og Prime Video, hvor som helst."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Perfekt til familier eller små teams, hvor alle kan have deres egen indbakke og aliasser. Kræver et brugerdefineret domæne."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Modtag uden ekstra omkostninger betalingsversionerne af alle nye privatlivstjenester, vi lancerer i fremtiden, sammen med tidlig adgang til alle fremtidige funktioner og produkter."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Beskyt dine filer med krypteret lagring i skyen. Inkluderer automatisk synkronisering, krypteret fildeling og meget mere."
       ]
     },
     "Spotlight": {
@@ -6071,6 +6179,21 @@
       ],
       "Cannot add more addresses": [
         "Kan ikke tilføje flere adresser"
+      ],
+      "(active)": [
+        "(aktiv)"
+      ],
+      "Billing cycle": [
+        "Faktureringscyklus"
+      ],
+      "Day theme": [
+        "Dagstema"
+      ],
+      "Night theme": [
+        "Nattetema"
+      ],
+      "Unlock contacts groups": [
+        "Få adgang til kontaktgrupper"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6155,6 +6278,18 @@
       ],
       "The image could not be loaded": [
         "Billedet kunne ikke indlæses"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Skift automatisk mellem dine foretrukne temaer for dag og nat synkront med dit systems dag- og nattilstande"
+      ],
+      "The image could not be loaded using proxy": [
+        "Billedet kunne ikke indlæses med en proxy"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Det valgte tema vil blive aktiveret når dit system er sat til \"mørk tilstand\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Det valgte tema vil blive aktiveret når dit system er sat til \"lys tilstand\""
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6516,7 +6651,7 @@
     },
     "new_plans: feature": {
       "Auto-delete spam and trashed messages": [
-        "Fjern automatisk spam og slettede beskeder"
+        "Slet automatisk spam og beskeder i papirkurven"
       ],
       "Custom email domains": [
         "Brugerdefinerede e-maildomæner"
@@ -6535,6 +6670,9 @@
       ],
       "Up to 3 TB of storage": [
         "Op til 3 TB lagerplads"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email-aliasser"
       ]
     },
     "new_plans: feature info": {
@@ -6557,6 +6695,55 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "Officiel e-mail fra ${ BRAND_NAME }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Årlig"
+      ],
+      "Monthly": [
+        "Månedlig"
+      ],
+      "Two-year": [
+        "To-År"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Dit abonnement vil automatisk blive fornyet til samme pris ved slutningen af din faktureringscyklus."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Rabatter er baseret på den månedlige standardpris."
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systemstandard"
+      ],
+      "Theme default": [
+        "Temastandard"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Stor"
+      ],
+      "Medium (recommended)": [
+        "Mellem (anbefalet)"
+      ],
+      "Small": [
+        "Lille"
+      ],
+      "Very large": [
+        "Meget stor"
+      ],
+      "Very small": [
+        "Meget lille"
+      ]
+    },
+    "specialoffer: Footer": {
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Dette abonnement bliver automatisk fornyet hvert 2. år til samme pris, indtil det annulleres."
       ]
     }
   }

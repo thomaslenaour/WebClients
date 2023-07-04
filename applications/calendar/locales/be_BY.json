@@ -4103,7 +4103,7 @@
         "Ваша імпартаванне не будзе апрацавана."
       ],
       "Your login information will not be saved after the import is completed.": [
-        "Пасля завяршэння імпартавання вашы ўліковыя даныя не будуць захаваны."
+        "Пасля завяршэння імпартавання вашы даныя ўваходу не будуць захаваны."
       ],
       "Your phone number will only be used for this one-time verification.": [
         "Ваш нумар тэлефона будзе выкарыстаны толькі для бягучай аднаразовай праверкі."
@@ -4137,6 +4137,12 @@
       ],
       "Your files will be encrypted and then saved": [
         "Вашы файлы будуць зашыфраваны, а пасля гэтага захаваны"
+      ],
+      "Billing cycle: ${ text }": [
+        "Перыяд аплаты: ${ text }"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Падпіска заканчваецца: актывуйце яе паўторна да ${ byDate }, каб пакінуць перавагі свайго тарыфнага плана ${ planName }. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4632,6 +4638,9 @@
       ],
       "What’s this?": [
         "Што гэта?"
+      ],
+      "Reactivate now": [
+        "Актываваць паўторна"
       ]
     },
     "Link to calendar app": {
@@ -4966,6 +4975,9 @@
       ],
       "Adding holidays calendar failed": [
         "Не ўдалося дадаць каляндар свят"
+      ],
+      "Calendar updated": [
+        "Каляндар абноўлены"
       ]
     },
     "Notification in share calendar modal": {
@@ -6495,6 +6507,9 @@
       ],
       "Unlock contacts groups": [
         "Разблакіраваць групы кантактаў"
+      ],
+      "Billing cycle": [
+        "Перыяд аплаты"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -7089,6 +7104,17 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "Афіцыйныя лісты ад ${ BRAND_NAME }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Штогод"
+      ],
+      "Monthly": [
+        "Штомесяц"
+      ],
+      "Two-year": [
+        "Кожныя два гады"
       ]
     }
   }

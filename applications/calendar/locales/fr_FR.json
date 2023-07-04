@@ -2478,7 +2478,7 @@
         "Votre importation ne sera pas traitée."
       ],
       "Cannot export this contact": [
-        "Ce contact ne peut pas être exporté."
+        "Impossible d'exporter ce contact"
       ],
       "Username must begin with a letter or digit": [
         "Le nom d'utilisateur doit commencer par une lettre ou un chiffre."
@@ -2932,7 +2932,7 @@
         "Sécurisez vos fichiers grâce au stockage cloud chiffré. Cela comprend la synchronisation automatique, le partage de fichiers chiffrés et d'autres fonctionnalités."
       ],
       "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
-        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 90 adresses e-mail, d'un nombre illimité d'alias Hide-my-email, du partage de calendrier…"
+        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 90 adresses e-mail, d'un nombre illimité d'alias « hide-my-email », du partage de calendrier…"
       ]
     },
     "Feedback Modal Title": {
@@ -4017,6 +4017,12 @@
       ],
       "Your files will be encrypted and then saved": [
         "Vos fichiers seront chiffrés puis sauvegardés."
+      ],
+      "Billing cycle: ${ text }": [
+        "Cycle de facturation : ${ text }"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "L'abonnement se termine : réactivez-le avant le ${ byDate } pour continuer à bénéficier des avantages de ${ planName }. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4508,6 +4514,9 @@
       ],
       "What’s this?": [
         "Qu'est-ce que c'est ?"
+      ],
+      "Reactivate now": [
+        "Réactiver maintenant"
       ]
     },
     "Link to calendar app": {
@@ -4615,7 +4624,7 @@
         "Ajouter les jours fériés"
       ],
       "Cannot add more calendars": [
-        "Il n'est pas possible d'ajouter d'autres calendriers."
+        "Impossible d'ajouter d'autres calendriers"
       ],
       "Edit calendar": [
         "Modifier le calendrier"
@@ -4826,6 +4835,9 @@
       ],
       "Adding holidays calendar failed": [
         "Le calendrier des jours fériés n'a pas pu être ajouté."
+      ],
+      "Calendar updated": [
+        "Le calendrier a été mis à jour."
       ]
     },
     "Notification in share calendar modal": {
@@ -5164,7 +5176,7 @@
         "Décrivez le problème et incluez les éventuels messages d'erreur."
       ],
       "Please select a country": [
-        "Sélectionnez un pays."
+        "Sélectionnez un pays"
       ],
       "Search for group name": [
         "Rechercher un nom de groupe"
@@ -5567,13 +5579,13 @@
         "L'espace de stockage est partagé entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } et ${ DRIVE_APP_NAME }."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Tous nos services premium au plus haut niveau : 100 adresses e-mail, la prise en charge de 10 domaines personnalisés, un nombre illimité d'alias Hide-my-email, le partage de calendriers, le stockage cloud et le partage de fichiers chiffrés…"
+        "Tous nos services premium au plus haut niveau : 100 adresses e-mail, la prise en charge de 10 domaines personnalisés, un nombre illimité d'alias « hide-my-email », le partage de calendriers, le stockage cloud et le partage de fichiers chiffrés…"
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Comprend la prise en charge d'un domaine de messagerie personnalisé, de 10 adresses e-mail, de 10 alias Hide-my-email, du partage de calendrier…"
+        "Comprend la prise en charge d'un domaine de messagerie personnalisé, de 10 adresses e-mail, de 10 alias « hide-my-email », du partage de calendrier…"
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
-        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 15 adresses e-mail, d'un nombre illimité d'alias Hide-my-email, du partage de calendrier…"
+        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 15 adresses e-mail, d'un nombre illimité d'alias « hide-my-email », du partage de calendrier…"
       ]
     },
     "Spotlight": {
@@ -6245,7 +6257,7 @@
         "(activé)"
       ],
       "Cannot add more addresses": [
-        "Il n'est pas possible d'ajouter d'autres adresses."
+        "Impossible d'ajouter plus d'adresses"
       ],
       "Day theme": [
         "Thème jour"
@@ -6255,6 +6267,9 @@
       ],
       "Unlock contacts groups": [
         "Débloquer les groupes des contacts"
+      ],
+      "Billing cycle": [
+        "Cycle de facturation"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6743,7 +6758,7 @@
         "Domaines de messagerie personnalisés"
       ],
       "Hide-my-email aliases": [
-        "Alias Hide-my-email"
+        "Alias « hide-my-email »"
       ],
       "Schedule messages at any time": [
         "Planifiez l'envoi de messages quand vous le voulez"
@@ -6781,6 +6796,81 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "Message officiel de ${ BRAND_NAME }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Annuel"
+      ],
+      "Monthly": [
+        "Mensuel"
+      ],
+      "Two-year": [
+        "Tous les deux ans"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 an"
+      ],
+      "2 years": [
+        "2 ans"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Drive version premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail et Calendar version premium"
+      ],
+      "Premium Password Manager": [
+        "Gestionnaire de mots de passe premium"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Enregistrez vos mots de passe en toute sécurité et renseignez-les automatiquement sur les sites web. Profitez d'un nombre illimité de mots de passe, du remplissage automatique, d'un générateur de mots de passe et de bien d'autres fonctionnalités."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Gestionnaire de mots de passe"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Créez des identifiants de connexion sécurisés sur tous vos appareils. Profitez d'un nombre illimité d'alias, de 20 coffres-forts, de l'authentification à deux facteurs (2FA) intégrée, du remplissage automatique des cartes bancaires et de bien d'autres fonctionnalités."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Cela comprend 2 950 serveurs répartis dans plus de 65 pays, la possibilité de connecter jusqu'à 10 appareils, l'accès aux services de streaming du monde entier, un bloqueur de logiciels malveillants et de publicités et bien d'autres fonctionnalités."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Cela comprend la prise en charge de 1 domaines de messagerie personnalisés, de 10 adresses e-mail, d'un nombre illimité d'alias « hide-my-email », du partage de calendriers et bien d'autres fonctionnalités."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Sécurisez vos fichiers grâce au stockage cloud chiffré. Profitez de l'historique des versions, du partage chiffré des fichiers et de bien d'autres fonctionnalités."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Votre abonnement sera automatiquement renouvelé au tarif réduit habituel à la fin de votre cycle de facturation."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Les réductions sont calculées sur les prix mensuels habituels. Cette offre est réservée aux nouveaux abonnés."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Profitez du meilleur de ${ BRAND_NAME } à un prix exceptionnel (offre à durée limitée)."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Nous fêtons les neuf ans de notre financement participatif !"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Offre spéciale : anniversaire ${ BRAND_NAME }"
       ]
     }
   }

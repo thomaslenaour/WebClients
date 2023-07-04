@@ -3131,6 +3131,9 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Izḍi usrid n unagraw-inek·inem yettban yettusenfel ɣer ${ timezone }. Tebɣiḍ ad tleqqmeḍ asmenyif-inek·inem n yizḍi usrid?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Asellek yal:${ text }"
       ]
     },
     "Info on errors": {
@@ -4636,6 +4639,9 @@
       ],
       "Your calendar link": [
         "Aseɣwen n uwitayen-ik"
+      ],
+      "Billing cycle": [
+        "Twala n ufter"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -5023,6 +5029,17 @@
     "protonbadge": {
       "Official": [
         "Unṣib"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "S useggas"
+      ],
+      "Monthly": [
+        "S wayyur"
+      ],
+      "Two-year": [
+        "Snat n tikkal i useggas"
       ]
     }
   }

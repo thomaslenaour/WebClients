@@ -2806,6 +2806,9 @@
       ],
       "View the invitations": [
         "Bekijk de uitnodigingen"
+      ],
+      "Decline invitation": [
+        "Uitnodiging afwijzen"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -4014,6 +4017,12 @@
       ],
       "Your files will be encrypted and then saved": [
         "Uw bestanden worden versleuteld en vervolgens opgeslagen"
+      ],
+      "Billing cycle: ${ text }": [
+        "Facturatiefrequentie: ${ text }"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Het abonnement loopt af: Heractiveer het voor ${ byDate } om de voordelen van uw ${ planName } te behouden. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4505,6 +4514,9 @@
       ],
       "What’s this?": [
         "Wat is dit?"
+      ],
+      "Reactivate now": [
+        "Nu heractiveren"
       ]
     },
     "Link to calendar app": {
@@ -6252,6 +6264,9 @@
       ],
       "Unlock contacts groups": [
         "Ontgrendel contactgroepen"
+      ],
+      "Billing cycle": [
+        "Factuurperiode"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6342,6 +6357,12 @@
       ],
       "The selected theme will be active when your system is set to \"light mode\"": [
         "Het geselecteerde thema is actief wanneer uw systeem is ingesteld op \"lichte modus\""
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatisch wisselen tussen uw favoriete thema's voor dag en nacht met de dag- en nachtmodus van uw systeem"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Het gekozen thema zal actief zijn zodra uw systeem op \"donkere modus\" is ingesteld."
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6772,6 +6793,78 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "Officiële e-mail van ${ BRAND_NAME }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Jaarlijks"
+      ],
+      "Monthly": [
+        "Maandelijks"
+      ],
+      "Two-year": [
+        "Tweejaarlijks"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 jaar"
+      ],
+      "2 years": [
+        "2 jaar"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Mail and Calendar": [
+        "Premium Mail en Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium wachtwoordmanager"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Sla uw wachtwoorden veilig op en vul ze automatisch in op websites. Met een onbeperkt aantal wachtwoorden, automatisch invullen, wachtwoordgenerator en meer."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Wachtwoordbeheer"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Maak veilige inloggegevens op al uw apparaten. Inclusief onbeperkte aliassen, 20 kluizen, geïntegreerde 2FA, automatisch invullen van creditcardgegevens en meer."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Met 2950 servers in meer dan 65 landen, verbinding met maximaal 10 apparaten, wereldwijd toegang tot streamingdiensten, malware- en advertentieblokkering, en meer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 1 aangepast e-maildomein, 10 e-mailadressen, 10 hide-my-email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Beveilig uw bestanden met versleutelde cloudopslag. Inclusief versiegeschiedenis, versleuteld bestanden delen en meer."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Uw abonnement wordt aan het einde van uw factureringscyclus automatisch verlengd tegen het standaard aanbiedingstarief."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Kortingen gebaseerd op de standaardprijzen per maand. Deze aanbieding is alleen beschikbaar voor nieuwe abonnees."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Het allerbeste van ${ BRAND_NAME } is nu tijdelijk verkrijgbaar met een exclusieve korting."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "We vieren het negenjarige jubileum van onze crowdfunding!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME }-jubileumaanbieding"
       ]
     }
   }

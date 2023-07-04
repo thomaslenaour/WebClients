@@ -2351,7 +2351,7 @@
         "Μη έγκυρο όνομα ετικέτας. Παρακαλούμε δοκιμάστε ένα διαφορετικό."
       ],
       "The label name is too long. Please choose a different name.": [
-        "Υπερβολικό μήκος ονόματος ετικέτας. Παρακαλούμε δοκιμάστε ένα συντομότερο."
+        "Το όνομα της ετικέτας είναι πολύ μεγάλο. Δοκιμάστε ένα διαφορετικό όνομα."
       ],
       "The sending key is not valid": [
         "Το κλειδί αποστολής δεν είναι έγκυρο"
@@ -2360,7 +2360,7 @@
         "Υπερβολικός αριθμός φακέλων στον εξωτερικό λογαριασμό σας. Παρακαλούμε προσαρμόστε την εισαγωγή, προς διαγραφή μερικών φακέλων."
       ],
       "There was an error when exporting the contacts vCards": [
-        "Παρουσιάστηκε σφάλμα κατά την εξαγωγή επαφών vCards"
+        "Παρουσιάστηκε σφάλμα κατά την εξαγωγή επαφών σε vCards"
       ],
       "This field is required": [
         "Αυτό το πεδίο είναι υποχρεωτικό"
@@ -2390,7 +2390,7 @@
         "Δεν μπορείτε να στείλετε μήνυμα σε περισσότερους από 100 παραλήπτες"
       ],
       "You can't send vCard files of more than 10 contacts": [
-        "Δεν μπορείτε να στείλετε φακέλους vCard για περισσότερες από 10 επαφές"
+        "Δεν μπορείτε να στείλετε αρχεία vCard για περισσότερες από 10 επαφές"
       ],
       "You must set a name": [
         "Πρέπει να ορίσετε ένα όνομα"
@@ -2622,7 +2622,7 @@
         "Πρέπει να έχετε ένα ενεργό προσωπικό ημερολόγιο για να εισαγάγετε τα συμβάντα σας"
       ],
       "Please refresh the page or try again later.": [
-        "Παρακαλούμε ανανεώσετε τη σελίδα ή προσπαθήσετε αργότερα."
+        "Παρακαλούμε ανανεώστε τη σελίδα ή δοκιμάστε ξανά αργότερα."
       ],
       "We couldn't load this page. Please refresh the page or check your internet connection.": [
         "Δεν ήταν δυνατή η φόρτωση αυτής της σελίδας. Ανανεώστε τη σελίδα ή ελέγξτε τη σύνδεσή σας στο διαδίκτυο."
@@ -3354,7 +3354,7 @@
         "Πλαϊνό πλαίσιο ημερολογίου"
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
-        "Δεν μπορείτε να θυμηθείτε τον κωδικό σας? Μπορούμε να σας βοηθήσουμε να καθαρίσετε τα κρυπτογραφημένα δεδομένα όλων των επαφών που κρυπτογραφούνται με αυτό το κλειδί και στη διαδικασία να απορρίψετε την ειδοποίηση."
+        "Δεν μπορείτε να θυμηθείτε τον κωδικό σας; Μπορούμε να σας βοηθήσουμε να καθαρίσετε τα κρυπτογραφημένα δεδομένα όλων των επαφών που κρυπτογραφούνται με αυτό το κλειδί και στη διαδικασία να απορρίψετε την ειδοποίηση."
       ],
       "Checking contact ${ progress } of ${ max }...": [
         "Έλεγχος επαφής ${ progress } από ${ max }..."
@@ -3466,7 +3466,7 @@
         "Εάν πιστεύετε ότι αυτό είναι λάθος, παρακαλούμε επικοινωνήστε μαζί μας ${ contactLink }."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
-        "Αν δεν βρείτε το μήνυμα στα Εισερχόμενα, παρακαλούμε ελέγξτε τον φάκελο Ενοχλητικά."
+        "Αν δε βρείτε το μήνυμα στα Εισερχόμενα, παρακαλούμε ελέγξτε τον φάκελο Ενοχλητικά."
       ],
       "Import ${ calendarCount } of ${ totalCalendarsCount } calendar": [
         "Εισαγωγή ${ calendarCount } από ${ totalCalendarsCount } ημερολόγιο",
@@ -3855,7 +3855,7 @@
         "Τα δεδομένα σας είναι έτοιμα για εισαγωγή από ${ importedEmailAddressStrong } στο λογαριασμό σας στο ${ BRAND_NAME }."
       ],
       "Your email will only be used for this one-time verification.": [
-        "Το email σας θα χρησιμοποιηθεί μόνο για αυτή τη εφάπαξ επαλήθευση."
+        "Το email σας θα χρησιμοποιηθεί μόνο για αυτή την εφάπαξ επαλήθευση."
       ],
       "Your events will be encrypted and then saved.": [
         "Τα συμβάντα σας θα κρυπτογραφηθούν και στη συνέχεια θα αποθηκευτούν."
@@ -3867,7 +3867,7 @@
         "Τα στοιχεία σύνδεσής σας δεν θα αποθηκευτούν μετά την ολοκλήρωση της εισαγωγής."
       ],
       "Your phone number will only be used for this one-time verification.": [
-        "Ο αριθμός τηλεφώνου σας θα χρησιμοποιηθεί μόνο για αυτή τη εφάπαξ επαλήθευση."
+        "Ο αριθμός τηλεφώνου σας θα χρησιμοποιηθεί μόνο για αυτή την εφάπαξ επαλήθευση."
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Η ζώνη ώρας του συστήματός σας φαίνεται να έχει αλλάξει σε ${ timezone }. Θέλετε να ενημερώσετε τις προτιμήσεις ζώνης ώρας;"
@@ -3913,6 +3913,12 @@
       ],
       "Your files will be encrypted and then saved": [
         "Τα αρχεία σας θα κρυπτογραφηθούν και στη συνέχεια θα αποθηκευτούν"
+      ],
+      "Billing cycle: ${ text }": [
+        "Κύκλος χρέωσης: ${ text }"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Λήξη συνδρομής: Ενεργοποιήστε ξανά κατά ${ byDate } για να διατηρήσετε τα οφέλη σας ${ planName }. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4374,6 +4380,9 @@
       ],
       "Other calendars": [
         "Άλλα ημερολόγια"
+      ],
+      "Reactivate now": [
+        "Επανενεργοποίηση τώρα"
       ]
     },
     "Link to calendar app": {
@@ -5947,7 +5956,7 @@
         "Προειδοποίηση"
       ],
       "Warning: suspected fake website": [
-        "Προειδοποίηση: υποψία κίβδηλης ιστοσελίδας"
+        "Προειδοποίηση: υποψία ψεύτικης ιστοσελίδας"
       ],
       "We've locked some calendars to protect your data": [
         "Έχουμε κλειδώσει κάποια από τα ημερολόγιά σας για να προστατεύσουμε τα δεδομένα σας"
@@ -5994,6 +6003,9 @@
       ],
       "Unlock contacts groups": [
         "Ξεκλείδωμα ομάδων επαφών"
+      ],
+      "Billing cycle": [
+        "Κύκλος χρέωσης"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6472,7 +6484,7 @@
     },
     "Country select label": {
       "Based on your time zone": [
-        "Βασισμένο στη ζώνη ώρας σας"
+        "Βάσει της ζώνης ώρας σας"
       ]
     },
     "Don't ask to update timezone checkbox label": {
@@ -6636,6 +6648,9 @@
       ],
       "Calendar added": [
         "Το ημερολόγιο προστέθηκε"
+      ],
+      "Calendar updated": [
+        "Το ημερολόγιο ενημερώθηκε"
       ]
     },
     "Oauth instructions": {
@@ -6767,6 +6782,17 @@
       ],
       "Shared end-to-end encrypted with verified contact": [
         "Κοινόχρηστη κρυπτογράφηση από άκρο σε άκρο με επαληθευμένη επαφή"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Ετησίως"
+      ],
+      "Monthly": [
+        "Μηνιαία"
+      ],
+      "Two-year": [
+        "Δύο έτη"
       ]
     }
   }

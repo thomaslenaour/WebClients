@@ -2854,6 +2854,9 @@
       ],
       "View the invitations": [
         "Посмотреть приглашения"
+      ],
+      "Decline invitation": [
+        "Отклонить приглашение"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -2975,6 +2978,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Защитите свои материалы при помощи зашифрованного облачного хранилища. Используйте автоматическую синхронизацию, зашифрованный обмен файлами и многое другое."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Включает поддержку 3 своих доменов, 90 адресов электронной почты, неограниченного количества псевдонимов hide-my-email, совместный доступ к календарю и другое."
       ]
     },
     "Feedback Modal Title": {
@@ -4131,6 +4137,12 @@
       ],
       "Your files will be encrypted and then saved": [
         "Ваши файлы будут зашифрованы и затем сохранены"
+      ],
+      "Billing cycle: ${ text }": [
+        "Платежный цикл: ${ text }"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Окончание подписки: для сохранения преимуществ плана ${ planName } необходимо её восстановить до ${ byDate }. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4549,6 +4561,9 @@
       ],
       "Your password (admin)": [
         "Ваш пароль (admin)"
+      ],
+      "Synchronize with system": [
+        "Синхронизировать с системой"
       ]
     },
     "Label for contact group color": {
@@ -4623,6 +4638,9 @@
       ],
       "What’s this?": [
         "Что это такое?"
+      ],
+      "Reactivate now": [
+        "Восстановить подписку"
       ]
     },
     "Link to calendar app": {
@@ -4675,10 +4693,10 @@
         "Импортировать все сообщения из ${ itemsToImportCount } ярлыков и пометить их ярлыком как"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } folder and label them as": [
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как",
-        "Импортировать все сообщения из ${ selectedItemsToImportCount }/${ itemsToImportCount } папок и пометить их как"
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папки и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как",
+        "Импортировать все сообщения из ${ selectedItemsToImportCount } из ${ itemsToImportCount } папок и пометить их как"
       ],
       "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } label and label them as": [
         "Импортировать все сообщения с ${ selectedItemsToImportCount } из ${ itemsToImportCount } ярлыка, и пометить их как",
@@ -5184,6 +5202,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Вы можете изменить это в любой момент в настройках."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Больше вариантов оформления доступно в Настройках аккаунта > Внешний вид."
       ]
     },
     "Option": {
@@ -5763,6 +5784,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Общее хранилище для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } и ${ DRIVE_APP_NAME }"
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Все наших платные сервисы с максимальными лимитами: 100 адресов электронной почты, поддержка 10 своих доменов и неограниченного числа псевдонимов hide-my-email, совместный доступ к календарю, зашифрованное облачное хранилище и обмен файлами, и другое."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Включает поддержку 1 своего домена, 10 адресов электронной почты, 10 псевдонимов hide-my-email, совместный доступ к календарю и другие преимущества."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Включает поддержку 3 своих доменов, 15 адресов электронной почты, неограниченного количества псевдонимов hide-my-email, совместный доступ к календарю и другие преимущества."
       ]
     },
     "Spotlight": {
@@ -6465,6 +6495,18 @@
       ],
       "Unlock contacts groups": [
         "Разблокировать группы контактов"
+      ],
+      "(active)": [
+        "(активна)"
+      ],
+      "Billing cycle": [
+        "Период оплаты"
+      ],
+      "Day theme": [
+        "Дневная тема"
+      ],
+      "Night theme": [
+        "Ночная тема"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6552,6 +6594,15 @@
       ],
       "The image could not be loaded using proxy": [
         "Изображение не может быть загружено при использовании прокси"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Автоматически переключаться между вашими предпочтительными темами для дня и ночи синхронно с системными дневным и ночным режимами."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Выбранная тема станет активной, когда в системе будет выбрана \"тёмная тема\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Выбранная тема станет доступной, когда на системе выбрано \"светлое оформление\""
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -7000,6 +7051,9 @@
       ],
       "Up to 3 TB of storage": [
         "До 3 ТБ хранилища"
+      ],
+      "Hide-my-email aliases": [
+        "Псевдонимы hide-my-email"
       ]
     },
     "new_plans: feature info": {
@@ -7022,6 +7076,106 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "Официальное письмо от ${ BRAND_NAME }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Ежегодно"
+      ],
+      "Monthly": [
+        "Ежемесячно"
+      ],
+      "Two-year": [
+        "Каждые 2 года"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Системный по умолчанию"
+      ],
+      "Theme default": [
+        "Из темы по умолчанию"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Большой"
+      ],
+      "Medium (recommended)": [
+        "Средний (Рекомендуется)"
+      ],
+      "Small": [
+        "Маленький"
+      ],
+      "Very large": [
+        "Очень большой"
+      ],
+      "Very small": [
+        "Очень маленький"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 год"
+      ],
+      "2 years": [
+        "2 года"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Платная версия Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Платная версия Mail и Calendar"
+      ],
+      "Premium Password Manager": [
+        "Платная версия менеджера паролей"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Храните неограниченное количество паролей в безопасности и используйте их автозаполнение, чтобы входить в аккаунты одним нажатием. Мы также предлагаем генератор паролей и другие функции."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Менеджер паролей"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Создавайте надежные данные для входа на всех устройствах. Вам будут доступны неограниченное количество псевдонимов, 20 хранилищ, встроенная двухфакторная аутентификация, автозаполнение данных кредитной карты и многое другое."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Включает 2950 серверов в более чем 65 странах с возможностью подключения до 10 устройств, доступ к стриминговым платформам со всего мира, блокировщик рекламы и вредоносного ПО и другие преимущества."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Включает поддержку 1 пользовательского домена, 10 адресов электронной почты, 10 алиасов hide-my-email, совместный доступ к календарю и другие преимущества."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Защитите свои материалы при помощи зашифрованного облачного хранилища. Вам будут доступны история версий, зашифрованный обмен файлами и многое другое."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "* Ваша подписка автоматически продлится по стандартной цене с учетом скидки в конце платежного цикла."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Скидки рассчитываются исходя из стандартной платы за 1 месяц. Предложение действует только для новых подписчиков."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Получите эксклюзивную скидку от ${ BRAND_NAME }. Предложение ограничено по времени!"
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Мы празднуем девятую годовщину нашего проекта!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Праздничная распродажа ${ BRAND_NAME }"
       ]
     }
   }

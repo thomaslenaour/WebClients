@@ -139,7 +139,7 @@
         "Lanjutkan dengan Google"
       ],
       "Copy email to clipboard": [
-        "Salin email ke clipboard"
+        "Salin email ke papan klip"
       ],
       "Copy link": [
         "Salin tautan"
@@ -2782,6 +2782,9 @@
       ],
       "View the invitations": [
         "Tampilkan undangan"
+      ],
+      "Decline invitation": [
+        "Tolak undangan"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3401,7 +3404,7 @@
         "Panel samping kalender"
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
-        "Tidak mengingat kata sandi Anda? Kami dapat membantu Anda untuk membersihkan data terenkripsi semua kontak yang dienkripsi dengan kunci ini dan dalam prosesnya mengabaikan peringatan."
+        "Tidak dapat mengingat kata sandi Anda? Kami dapat membantu Anda untuk membersihkan data terenkripsi milik seluruh kontak yang dienkripsi dengan kunci ini terlepas dari peringatan yang ada."
       ],
       "Checking contact ${ progress } of ${ max }...": [
         "Memeriksa kontak ${ progress } dari ${ max }..."
@@ -3458,7 +3461,7 @@
         "Letakkan berkas yang hendak Anda unggah di sini"
       ],
       "Duplicate key updated": [
-        "Kunci ganda diperbarui"
+        "Kunci duplikat diperbarui"
       ],
       "Each code can only be used once": [
         "Masing-masing kode hanya dapat digunakan sekali"
@@ -3572,7 +3575,7 @@
         "Pelajari lebih lanjut"
       ],
       "Link copied to clipboard": [
-        "Tautan disalin ke clipboard"
+        "Tautan disalin ke papan klip"
       ],
       "Link created": [
         "Tautan dibuat"
@@ -3644,7 +3647,7 @@
         "Harap diperhatikan, alamat yang ditugaskan di grup ini TIDAK akan dihapus."
       ],
       "Please note that this process may take some time depending on the size of your address book.": [
-        "Mohon dicatat proses ini memerlukan waktu, tergantung pada ukuran buku alamat Anda."
+        "Mohon dicatat bahwa proses ini dapat memakan waktu sejenak tergantung pada ukuran buku alamat Anda."
       ],
       "Please remove the duplicates and try again.": [
         "Silakan hapus yang ganda dan coba lagi."
@@ -3951,6 +3954,15 @@
       ],
       "Your files will be encrypted and then saved": [
         "Berkas Anda akan dienkripsi lalu disimpan"
+      ],
+      "Billing cycle: ${ text }": [
+        "Siklus tagihan: ${ text }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Sesuaikan tampilan dan nuansa aplikasi ${ BRAND_NAME } Anda."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Langganan akan segera berakhir: Aktifkan kembali paket Anda sebelum tanggal ${ byDate } untuk tetap memperoleh manfaat ${ planName } Anda. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -4363,6 +4375,9 @@
       ],
       "Your password (admin)": [
         "Kata sandi Anda (admin)"
+      ],
+      "Synchronize with system": [
+        "Sinkronkan dengan sistem"
       ]
     },
     "Label for contact group color": {
@@ -4437,6 +4452,9 @@
       ],
       "What’s this?": [
         "Apa ini?"
+      ],
+      "Reactivate now": [
+        "Aktifkan kembali"
       ]
     },
     "Link to calendar app": {
@@ -4747,6 +4765,9 @@
       ],
       "Adding holidays calendar failed": [
         "Menambahkan kalender liburan gagal"
+      ],
+      "Calendar updated": [
+        "Kalender diperbarui"
       ]
     },
     "Notification in share calendar modal": {
@@ -4911,6 +4932,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Anda dapat mengubah tema yang aktif kapan pun melalui beranda pengaturan Anda."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Opsi penataan tema tersedia pada menu Pengaturan > Tampilan."
       ]
     },
     "Option": {
@@ -5593,7 +5617,7 @@
         "Acara berhasil dibuat"
       ],
       "Fingerprint copied to clipboard": [
-        "Sidik jari disalin ke clipboard"
+        "Sidik jari disalin ke papan klip"
       ],
       "Future events deleted": [
         "Acara mendatang berhasil dihapus"
@@ -6117,6 +6141,12 @@
       ],
       "Unlock contacts groups": [
         "Buka kunci grup kontak"
+      ],
+      "Billing cycle": [
+        "Siklus tagihan"
+      ],
+      "Day theme": [
+        "Tema siang"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6204,6 +6234,15 @@
       ],
       "The image could not be loaded using proxy": [
         "Gambar tidak dapat dimuat menggunakan proxy"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Sesuaikan tema aplikasi dengan mode terang dan gelap pada sistem Anda secara otomatis"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Tema yang dipilih akan aktif pada saat sistem Anda diatur ke \"mode gelap\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Tema yang dipilih akan aktif pada saat sistem Anda diatur ke \"mode terang\""
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6530,6 +6569,15 @@
       ],
       "Small": [
         "Kecil"
+      ],
+      "Medium (recommended)": [
+        "Sedang (direkomendasikan)"
+      ],
+      "Very large": [
+        "Sangat besar"
+      ],
+      "Very small": [
+        "Mungil"
       ]
     },
     "new_plans: Action": {
@@ -6545,7 +6593,7 @@
         "Domain email khusus"
       ],
       "Hide-my-email aliases": [
-        "Alias Hide-my-email"
+        "Alias hide-my-email"
       ],
       "Schedule messages at any time": [
         "Jadwalkan pesan sesuai keinginan Anda"
@@ -6583,6 +6631,25 @@
       ],
       "Official email from ${ BRAND_NAME }": [
         "Email resmi dari ${ BRAND_NAME }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Tahunan"
+      ],
+      "Monthly": [
+        "Bulanan"
+      ],
+      "Two-year": [
+        "Dua tahun"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Bawaan sistem"
+      ],
+      "Theme default": [
+        "Tema bawaan"
       ]
     }
   }
