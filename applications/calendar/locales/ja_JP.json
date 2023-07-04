@@ -3958,6 +3958,21 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "システムのタイムゾーンが${ timezone }に変更されたようです。タイムゾーンの設定を更新しますか？"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME }アプリの外観をカスタマイズ"
+      ],
+      "Drop file here to upload": [
+        "アップロードするファイルをここにドロップ"
+      ],
+      "Drop to import": [
+        "ドロップしてインポート"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "サブスクリプションがもうすぐ終了します: ${ planName }の特典を維持するには${ byDate }までに更新してください。${ reactivateLink }"
+      ],
+      "Your files will be encrypted and then saved": [
+        "ファイルは暗号化して保存されます"
       ]
     },
     "Info on errors": {
@@ -4756,6 +4771,9 @@
       ],
       "Up to 3 TB of storage": [
         "3 TB のストレージ"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email エイリアス"
       ]
     },
     "new_plans: feature info": {
@@ -6135,6 +6153,12 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mial Plusのトライアル期間が ${ textDate } に終了します。"
+      ],
+      "Cannot add more addresses": [
+        "これ以上アドレスを追加できません"
+      ],
+      "Unlock contacts groups": [
+        "連絡先グループをアンロック"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

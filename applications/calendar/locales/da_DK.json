@@ -267,7 +267,7 @@
         "Jeg har et spørgsmål"
       ],
       "Image could not be loaded with tracker protection.": [
-        "Billede kunne ikke indlæses med tracker beskyttelse."
+        "Billede kunne ikke indlæses med sporingsbeskyttelse."
       ],
       "Image will be loaded without a proxy": [
         "Billede vil blive indlæst uden en proxy"
@@ -3537,7 +3537,7 @@
         "Træk fil hertil for at uploade"
       ],
       "Drop to import": [
-        "Drop for at importere"
+        "Slip for at importere"
       ],
       "Duplicate key updated": [
         "Duplikeret nøgle opdateret"
@@ -4815,7 +4815,7 @@
     },
     "new_plans: feature": {
       "Auto-delete spam and trashed messages": [
-        "Fjern automatisk spam og slettede beskeder"
+        "Slet automatisk spam og beskeder i papirkurven"
       ],
       "Custom email domains": [
         "Brugerdefinerede e-maildomæner"
@@ -5465,6 +5465,9 @@
       ],
       "Offer ends soon": [
         "Tilbuddet slutter snart"
+      ],
+      "Limited time only": [
+        "Kun i begrænset tid"
       ]
     },
     "specialoffer: Link": {
@@ -5535,6 +5538,18 @@
       ],
       "Get our premium bundle and save more": [
         "Få vores premium-pakke og spar mere"
+      ],
+      "End of Year Sale": [
+        "Udsalg ved årets afslutning"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Vores udfasede Visionary-abonnement er kun tilbage i en begrænset periode"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Spar mere med 2 års ${ planName }"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Opgradér og spar mere med 2 års ${ planName }"
       ]
     },
     "specialoffer: Tooltip": {
@@ -5546,6 +5561,18 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold og browse privat. Inkluderer 1700 servere i 60+ lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og mere."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Få adgang til indhold på streamingtjenester, herunder Netflix, Disney+ og Prime Video, hvor som helst."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Perfekt til familier eller små teams, hvor alle kan have deres egen indbakke og aliasser. Kræver et brugerdefineret domæne."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Modtag uden ekstra omkostninger betalingsversionerne af alle nye privatlivstjenester, vi lancerer i fremtiden, sammen med tidlig adgang til alle fremtidige funktioner og produkter."
       ]
     },
     "Spotlight": {
@@ -6665,6 +6692,19 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligt, ${ untilString }"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Dit abonnement vil automatisk blive fornyet til samme pris ved slutningen af din faktureringscyklus."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Rabatter er baseret på den månedlige standardpris."
+      ]
+    },
+    "specialoffer: Footer": {
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Dette abonnement bliver automatisk fornyet hvert 2. år til samme pris, indtil det annulleres."
       ]
     }
   }
