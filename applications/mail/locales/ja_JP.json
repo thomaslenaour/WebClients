@@ -1146,6 +1146,30 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "一つの連絡先グループに追加できる連絡先は最大 100 件です"
+      ],
+      "Block email tracking": [
+        "メールのトラッキングをブロック"
+      ],
+      "Downloading": [
+        "ダウンロード中"
+      ],
+      "hide-my-email aliases": [
+        "hide-my-email エイリアス"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "トラッキング防止が画像の読み込みをブロックしました。"
+      ],
+      "Image will be loaded without a proxy": [
+        "画像はプロキシーを経由せずに読み込まれます"
+      ],
+      "Move all to archive": [
+        "すべてアーカイブに移動"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "メールを安全に検索するには、メッセージのコピーをブラウザにダウンロードする必要があります。初回のダウンロードには時間がかかることがあります。"
       ]
     },
     "action": {
@@ -1645,10 +1669,10 @@
     },
     "Collapsible tooltip": {
       "Collapse": [
-        "作成"
+        "閉じる"
       ],
       "Expand": [
-        "展開"
+        "開く"
       ]
     },
     "color": {
@@ -3413,6 +3437,15 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "一致する項目が多すぎるため、検索対象をより絞り込んでもう一度お試しください。"
+      ],
+      "Cannot export this contact": [
+        "この連絡先はエクスポートできません"
+      ],
+      "Username must begin with a letter or digit": [
+        "ユーザー名は英字か数字で始めなければいけません"
+      ],
+      "Username must end with a letter or digit": [
+        "ユーザー名の最後は英字か数字でなければいけません"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -5278,7 +5311,7 @@
         "@pm.me から送信されたメッセージは有料プランの機能です。メッセージは ${ email } から送信されます。"
       ],
       "Sent with <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> secure email.": [
-        "<a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> セキュアなメールで送信されます。"
+        "安全なメール <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> で送信されました。"
       ],
       "Servers are unreachable. Please try again in a few minutes": [
         "サーバーに接続できません。数分後にもう一度お試しください"
@@ -5753,11 +5786,53 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "回復用フレーズは 12 語の単語を順番に並べて構成されたものです。"
+      ],
+      "${ numberOfImageTrackers } trackers blocked": [
+        "${ numberOfImageTrackers }個のトラッカーをブロックしました"
+      ],
+      "Billing cycle: ${ text }": [
+        "支払いサイクル: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "グループ ${ contactGroupName } に連絡先を追加しました"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "グループ ${ contactGroupName } から連絡先を削除しました"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME }アプリの外観をカスタマイズ"
+      ],
+      "Drop file here to upload": [
+        "アップロードするファイルをここにドロップ"
+      ],
+      "Drop to import": [
+        "ドロップしてインポート"
+      ],
+      "Messages downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "ダウンロード済みメッセージ: ${ currentProgress } / ${ totalProgress }"
+      ],
+      "No trackers found": [
+        "トラッカーは見つかりませんでした"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "サブスクリプションがもうすぐ終了します: ${ planName }の特典を維持するには${ byDate }までに更新してください。${ reactivateLink }"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "連絡先グループのアドレス数の上限に達しました。"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "連絡先グループのアドレス数の上限に達しました。"
+      ],
+      "Your files will be encrypted and then saved": [
+        "ファイルは暗号化して保存されます"
       ]
     },
     "info": {
       "Optional": [
         "任意"
+      ],
+      "${ filteredList.length } commands found.": [
+        "${ filteredList.length }個のコマンドが見つかりました。"
       ]
     },
     "Info on errors": {
@@ -5957,6 +6032,9 @@
       ],
       "Star": [
         "星印を付ける"
+      ],
+      "Open command panel": [
+        "コマンドパネルを開く"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6460,6 +6538,9 @@
       ],
       "Your password (admin)": [
         "あなたのパスワード (管理者)"
+      ],
+      "Type a command...": [
+        "コマンドを入力..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -7025,6 +7106,12 @@
       ],
       "Up to 500 GB of storage": [
         "500 GB のストレージ"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email エイリアス"
+      ],
+      "Up to 3 TB of storage": [
+        "3 TB のストレージ"
       ]
     },
     "new_plans: feature info": {
@@ -7287,6 +7374,12 @@
       ],
       "Write your message": [
         "メッセージを入力してください"
+      ],
+      "Search date, name, email address, or subject line": [
+        "日付、名前、メールアドレス、件名で検索"
+      ],
+      "Type a command…": [
+        "コマンドを入力…"
       ]
     },
     "Placeholder for contact group name": {
@@ -8075,6 +8168,9 @@
       ],
       "Verification successful": [
         "検証に成功しました"
+      ],
+      "Message content search enabled": [
+        "メッセージ内容の検索が有効になりました"
       ]
     },
     "Success notification": {
@@ -8711,6 +8807,39 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mial Plusのトライアル期間が ${ textDate } に終了します。"
+      ],
+      "${ emailsCount } email addresses": [
+        "${ emailsCount } 件のメールアドレス"
+      ],
+      "(active)": [
+        "(アクティブ)"
+      ],
+      "Billing cycle": [
+        "支払い間隔"
+      ],
+      "Cannot add more addresses": [
+        "これ以上アドレスを追加できません"
+      ],
+      "Day theme": [
+        "昼間のテーマ"
+      ],
+      "Move all messages to Archive": [
+        "すべてのメッセージをアーカイブへ移動"
+      ],
+      "Night theme": [
+        "夜間のテーマ"
+      ],
+      "No trackers found": [
+        "トラッカーは見つかりませんでした"
+      ],
+      "Protect your email": [
+        "メールを保護する"
+      ],
+      "This email is protected": [
+        "このメールは保護されています"
+      ],
+      "Unlock contacts groups": [
+        "連絡先グループをアンロック"
       ]
     },
     "Title header": {
@@ -9111,6 +9240,77 @@
       ],
       "Yearly, ${ untilString }": [
         "毎年、${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "1年払い"
+      ],
+      "Monthly": [
+        "月額"
+      ],
+      "Two-year": [
+        "2年払い"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "新しいフォルダーを作成"
+      ],
+      "Create a new label": [
+        "新しいラベルを作成"
+      ],
+      "Go to Archive": [
+        "アーカイブを開く"
+      ],
+      "Go to Drafts": [
+        "下書きを開く"
+      ],
+      "Go to Inbox": [
+        "受信トレイを開く"
+      ],
+      "Go to Sent": [
+        "送信済みを開く"
+      ],
+      "Go to Spam": [
+        "迷惑メールを開く"
+      ],
+      "Go to Starred": [
+        "星印付きを開く"
+      ],
+      "Go to Trash": [
+        "ごみ箱を開く"
+      ],
+      "New message": [
+        "新しいメッセージ"
+      ],
+      "Search": [
+        "検索"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "システムのデフォルト"
+      ],
+      "Theme default": [
+        "テーマのデフォルト"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中 (推奨)"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "極大"
+      ],
+      "Very small": [
+        "極小"
       ]
     }
   }

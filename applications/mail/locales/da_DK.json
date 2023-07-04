@@ -1019,7 +1019,7 @@
         "Hav tillid til"
       ],
       "Trust key": [
-        "Betroet nøgle",
+        "Stol på nøgle",
         "Stol på nøgler"
       ],
       "Trust public key": [
@@ -1150,6 +1150,30 @@
       ],
       "Zoom out": [
         "Zoom ud"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Højst 100 kontakter er tilladt pr. kontaktgruppe"
+      ],
+      "Block email tracking": [
+        "Blokér sporing af e-mail"
+      ],
+      "Downloading": [
+        "Downloader"
+      ],
+      "hide-my-email aliases": [
+        "Hide-my-email-aliasser"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Billede kunne ikke indlæses med sporingsbeskyttelse."
+      ],
+      "Image will be loaded without a proxy": [
+        "Billede vil blive indlæst uden en proxy"
+      ],
+      "Move all to archive": [
+        "Flyt alle til arkiv"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "For at søge sikkert i dine e-mails, har vi brug for at downloade en kopi af dine beskeder til din browser. Den første download kan tage et stykke tid."
       ]
     },
     "action": {
@@ -1255,6 +1279,9 @@
       ],
       "New email": [
         "Ny e-mail"
+      ],
+      "${ nameToDisplay }'s inbox": [
+        "${ nameToDisplay }'s indbakke"
       ]
     },
     "Apps dropdown": {
@@ -2894,6 +2921,15 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Du kan markere de kontakter til sletning, som du hverken ønsker at flette eller beholde.\nSletning vil kun ske, når der er klikket på fletningsknappen"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Spar tid ved at sende e-mail eller invitationer til alle på en gang, en premium-funktion blandt mange andre. Opgrader i dag."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Med email tracker-beskyttelse kan du læse beskeden og klikke på links uden at blive sporet."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Du kan læse beskeden og klikke på links uden at blive sporet."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3433,6 +3469,15 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Din søgning gav for mange resultater. Begræns din søgning, og forsøg igen."
+      ],
+      "Cannot export this contact": [
+        "Kan ikke eksportere denne kontakt"
+      ],
+      "Username must begin with a letter or digit": [
+        "Brugernavn skal begynde med et bogstav eller ciffer"
+      ],
+      "Username must end with a letter or digit": [
+        "Brugernavn skal ende på et bogstav eller ciffer"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3745,6 +3790,9 @@
       ],
       "View the invitations": [
         "Se invitationerne"
+      ],
+      "Decline invitation": [
+        "Afvis invitation"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3788,6 +3836,39 @@
       ],
       "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
         "Du er blevet inviteret til at blive medlem af ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Hvis du accepterer invitationen, overflytter vi dig fra dit nuværende abonnement og krediterer din konto med en eventuel restsaldo."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Lagerplads tildelt dig: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Abonnementet faktureres til Visionary- eller Family-abonnementets primære administrator."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary- og familie-abonnementer understøtter på nuværende tidspunkt ikke eksterne kontoer. Opret en ${ BRAND_NAME }-adresse før du tilmelder dig. ${ addressSettingsLink }"
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Du er inviteret til at blive medlem af ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Du kan kun acceptere 3 invitationer i en 6-måneds periode. Kontakt venligst ${ supportLink } hvis du har brug for en undtagelse."
+      ],
+      "You have successfully joined the Family plan": [
+        "Du er tilmeldt familie-abonnementet."
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Du er inviteret til at forbinde din ${ BRAND_NAME }-konto til dette gruppe-abonnement og sammen nyde alle ${ BRAND_NAME_TWO } premium funktionerne."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Din konto har flere e-mailadresser en det, der er tilgængeligt for dig på dette abonnement. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Din konto bruger ${ usedSpace } lagerplads, hvilket overstiger de ${ inviteSpace } du har fået tildelt. Slet nogle data eller bed abonnementsadministratoren om at øge din lagerplads."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Dit nuværende abonnement kan ikke tilmelde sig et Visionary- eller familie-abonnement."
       ]
     },
     "familyOffer_2023:Get Proton Family": {
@@ -5794,11 +5875,106 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Din gendannelsessætning er en serie af 12 ord i en bestemt rækkefølge."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } e-mail-tracker blokeret",
+        "${ numberOfImageTrackers } e-mail-trackere blokeret"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } tracker blokeret",
+        "${ numberOfImageTrackers } trackere blokeret"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } link renset",
+        "${ numberOfUTMTrackers } links renset"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Er du sikker på, at du vil flytte alle beskeder på denne placering til papirkurven?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Faktureringsperiode: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kontakt tilføjet til gruppen ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kontakt fjernet fra gruppen ${ contactGroupName }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Tilpas udseendes og fornemmelsen af ${ BRAND_NAME }-applikationer."
+      ],
+      "Downloading paused": [
+        "Download sat på pause"
+      ],
+      "Drop file here to upload": [
+        "Træk fil hertil for at uploade"
+      ],
+      "Drop to import": [
+        "Slip for at importere"
+      ],
+      "How hide-my-email aliases works": [
+        "Sådan virker Hide-my-email"
+      ],
+      "Links cleaned:": [
+        "Links renset:"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Besked downloadet: ${ currentProgress } ud af ${ totalProgress }",
+        "Beskeder downloadet: ${ currentProgress } ud af ${ totalProgress }"
+      ],
+      "No links cleaned": [
+        "Ingen links renset"
+      ],
+      "No trackers found": [
+        "Ingen e-mail-trackere fundet"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Vores system har markeret denne besked som en mistænkelig e-mail. Tjek venligst, at den er legitim før du klikker på linke eller vedhæftede filer."
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "Søgemulighed der lader sig søge sikkert for nøgleord i indholdet af e-mailbeskeder."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin er en ${ BRAND_NAME }-tjeneste, og din ${ BRAND_NAME_TWO }-konto inkluderer Hide-my-email-aliasser. For at begynde at skjule din e-mailadresse, skal du gå til SimpleLogin og oprette dit første alias."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Abonnement er ved at udløbe: Genaktiver inden ${ byDate } for at beholde dine ${ planName }-fordele. ${ reactivateLink }"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "De kan ikke spamme dig, hvis de ikke kender din e-mailadresse. Beskyt din indbakke med Hide-my-email-aliasser."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Denne samtale indeholder en eller flere beskeder med udløb"
+      ],
+      "Trackers blocked:": [
+        "Trackere blokeret:"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Når du udleverer din e-mail, kan du bruge et unikt Hide-my-email-alias i stedet for din rigtige e-mailadresse."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Du kan klikke på links i denne e-mail uden at blive profileret og lække din onlineaktivitet til annoncører."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Du kan læse denne e-mail uden at afsløre dine interaktioner, placering eller enhed for annoncører."
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Du har nået det maksimale antal adresser i kontaktgruppen/grupperne:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Du har nået det maksimale antal adresser i kontaktgruppen."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Din filer vil blive krypteret og derefter gemt"
       ]
     },
     "info": {
       "Optional": [
         "Valgfrit"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } kommando fundet.",
+        "${ filteredList.length } kommandoer funder."
       ]
     },
     "Info on errors": {
@@ -5840,6 +6016,12 @@
       "You have enabled Address Verification with Trusted Keys for this email address,\nbut no active encryption key has been trusted.\nYou must trust a key valid for sending in order to send a message to this email address.": [
         "Du har aktiveret adresseverifikation med betroede nøgler for denne e-mailadresse, men ingen aktive krypteringsnøgler er betroet.\nDu skal vælge en nøgle som betroet for at kunne sende en besked til denne e-mailadresse.",
         "Du har aktiveret adresseverifikation med betroede nøgler for disse e-mailadresser, men ingen aktive krypteringsnøgler er betroet.\nDu skal vælge nøgler som betroet for at kunne sende en besked til disse e-mailadresser."
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "Ved at trykke på \"Stol på nøgle\" associeres denne offentlige nøgle med denne afsender, og e-mails herfra vil automatisk blive bekræftet kryptografisk."
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "Ved at trykke på \"Stol på nøgle\" knyttes denne offentlige nøgle til denne afsender, og e-mails fra denne adresse vil automatisk blive kryptografisk bekræftet."
       ]
     },
     "Key validation warning": {
@@ -5888,7 +6070,7 @@
         "Gå til Kladder"
       ],
       "Go to Inbox": [
-        "Gå til Indbakke"
+        "Gå til indbakke"
       ],
       "Go to Sent": [
         "Gå til Sendt"
@@ -5942,7 +6124,7 @@
         "Flyt til Arkiv"
       ],
       "Move to Inbox": [
-        "Flyt til Indbakke"
+        "Flyt til indbakke"
       ],
       "Move to Spam": [
         "Flyt til Spam"
@@ -6000,6 +6182,9 @@
       ],
       "Star": [
         "Stjerne"
+      ],
+      "Open command panel": [
+        "Åbn kommandopanel"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6503,6 +6688,21 @@
       ],
       "Your password (admin)": [
         "Din adgangskode (admin)"
+      ],
+      "Cleaned": [
+        "Renset"
+      ],
+      "Open in a new tab": [
+        "Åbn i en ny fane"
+      ],
+      "Original link": [
+        "Oprindeligt link"
+      ],
+      "Synchronize with system": [
+        "Synkroniser med system"
+      ],
+      "Type a command...": [
+        "Skriv en kommando..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -6747,6 +6947,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Du skal genaktivere dine nøgler for at se den opdateret invitation"
+      ],
+      "Reactivate now": [
+        "Genaktiver nu"
       ]
     },
     "Link to calendar event": {
@@ -7054,7 +7257,7 @@
     },
     "new_plans: feature": {
       "Auto-delete spam and trashed messages": [
-        "Fjern automatisk spam og slettede beskeder"
+        "Slet automatisk spam og beskeder i papirkurven"
       ],
       "Custom email domains": [
         "Brugerdefinerede e-maildomæner"
@@ -7076,6 +7279,12 @@
       ],
       "Up to 500 GB of storage": [
         "Op til 500 GB lagerplads"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email-aliasser"
+      ],
+      "Up to 3 TB of storage": [
+        "Op til 3 TB lagerplads"
       ]
     },
     "new_plans: feature info": {
@@ -7084,6 +7293,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Opret flere e-mailadresser for dine online identiteter, f.eks. JensShopper@${ domain } for shoppingkonto, JensNyheder@${ domain2 } til nyhedsabonnementer."
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Brug din egen brugerdefinerede e-mail-domæneadresse, f.eks. dig@ditnavn.com"
       ]
     },
     "new_plans: label": {
@@ -7333,6 +7548,12 @@
       ],
       "Write your message": [
         "Skriv din besked"
+      ],
+      "Search date, name, email address, or subject line": [
+        "Søg dato, navn, e-mailadresse eller emnelinje"
+      ],
+      "Type a command…": [
+        "Skriv en kommando…"
       ]
     },
     "Placeholder for contact group name": {
@@ -7709,6 +7930,9 @@
       ],
       "Offer ends soon": [
         "Tilbuddet slutter snart"
+      ],
+      "Limited time only": [
+        "Kun i begrænset tid"
       ]
     },
     "specialoffer: Link": {
@@ -7779,6 +8003,18 @@
       ],
       "Get our premium bundle and save more": [
         "Få vores premium-pakke og spar mere"
+      ],
+      "End of Year Sale": [
+        "Udsalg ved årets afslutning"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Vores udfasede Visionary-abonnement er kun tilbage i en begrænset periode"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Spar mere med 2 års ${ planName }"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Opgradér og spar mere med 2 års ${ planName }"
       ]
     },
     "specialoffer: Tooltip": {
@@ -7790,6 +8026,24 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold og browse privat. Inkluderer 1700 servere i 60+ lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og mere."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold, og browse privat. Inkluderer 1700 servere i mere end 60 lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og meget mere."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Få adgang til indhold på streamingtjenester, herunder Netflix, Disney+ og Prime Video, hvor som helst."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Perfekt til familier eller små teams, hvor alle kan have deres egen indbakke og aliasser. Kræver et brugerdefineret domæne."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Modtag uden ekstra omkostninger betalingsversionerne af alle nye privatlivstjenester, vi lancerer i fremtiden, sammen med tidlig adgang til alle fremtidige funktioner og produkter."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Beskyt dine filer med krypteret lagring i skyen. Inkluderer automatisk synkronisering, krypteret fildeling og meget mere."
       ]
     },
     "Spotlight": {
@@ -7816,6 +8070,9 @@
       ],
       "You can now search the content of your encrypted emails.": [
         "Du kan nu søge i indholdet af dine krypterede e-mails."
+      ],
+      "Try it today.": [
+        "Prøv det i dag."
       ]
     },
     "Status": {
@@ -8100,6 +8357,9 @@
       ],
       "Verification successful": [
         "Bekræftelse gennemført"
+      ],
+      "Message content search enabled": [
+        "Beskedindholdssøgning aktiveret"
       ]
     },
     "Success notification": {
@@ -8752,6 +9012,40 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Din Mail Plus prøveperiode slutter ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mailadresse",
+        "${ emailsCount } e-mailadresser"
+      ],
+      "(active)": [
+        "(aktiv)"
+      ],
+      "Billing cycle": [
+        "Faktureringscyklus"
+      ],
+      "Cannot add more addresses": [
+        "Kan ikke tilføje flere adresser"
+      ],
+      "Day theme": [
+        "Dagstema"
+      ],
+      "Move all messages to Archive": [
+        "Flyt alle beskeder til arkiv"
+      ],
+      "Night theme": [
+        "Nattetema"
+      ],
+      "No trackers found": [
+        "Ingen trackere fundet"
+      ],
+      "Protect your email": [
+        "Beskyt din e-mail"
+      ],
+      "This email is protected": [
+        "Denne e-mail er beskyttet"
+      ],
+      "Unlock contacts groups": [
+        "Få adgang til kontaktgrupper"
       ]
     },
     "Title header": {
@@ -8833,6 +9127,21 @@
       ],
       "You do not have any contacts to export": [
         "Du har ingen kontakter at eksportere"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Skift automatisk mellem dine foretrukne temaer for dag og nat synkront med dit systems dag- og nattilstande"
+      ],
+      "The image could not be loaded": [
+        "Billedet kunne ikke indlæses"
+      ],
+      "The image could not be loaded using proxy": [
+        "Billedet kunne ikke indlæses med en proxy"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Det valgte tema vil blive aktiveret når dit system er sat til \"mørk tilstand\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Det valgte tema vil blive aktiveret når dit system er sat til \"lys tilstand\""
       ]
     },
     "Tor out of date": {
@@ -9187,6 +9496,106 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligt, ${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Årlig"
+      ],
+      "Monthly": [
+        "Månedlig"
+      ],
+      "Two-year": [
+        "To-År"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Opret en ny mappe"
+      ],
+      "Create a new label": [
+        "Opret en ny etiket"
+      ],
+      "Go to Archive": [
+        "Gå til arkiv"
+      ],
+      "Go to Drafts": [
+        "Gå til kladder"
+      ],
+      "Go to Inbox": [
+        "Gå til indbakke"
+      ],
+      "Go to Sent": [
+        "Gå til sendt"
+      ],
+      "Go to Spam": [
+        "Gå til spam"
+      ],
+      "Go to Starred": [
+        "Gå til stjernemarkeret"
+      ],
+      "Go to Trash": [
+        "Gå til papirkurv"
+      ],
+      "New message": [
+        "Ny besked"
+      ],
+      "Search": [
+        "Søg"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Dit abonnement vil automatisk blive fornyet til samme pris ved slutningen af din faktureringscyklus."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Rabatter er baseret på den månedlige standardpris."
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systemstandard"
+      ],
+      "Theme default": [
+        "Temastandard"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Stor"
+      ],
+      "Medium (recommended)": [
+        "Mellem (anbefalet)"
+      ],
+      "Small": [
+        "Lille"
+      ],
+      "Very large": [
+        "Meget stor"
+      ],
+      "Very small": [
+        "Meget lille"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Afsenderbekræftelse"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Afsenderverifikation fejlede: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Afsender verificeret: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Verifikationsnøglen er ikke på listen over betroede nøgler."
+      ]
+    },
+    "specialoffer: Footer": {
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Dette abonnement bliver automatisk fornyet hvert 2. år til samme pris, indtil det annulleres."
       ]
     }
   }

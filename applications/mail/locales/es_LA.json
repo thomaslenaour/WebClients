@@ -1150,6 +1150,30 @@
       ],
       "Zoom out": [
         "Alejar"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Se permiten como máximo 100 contactos por grupo de contactos"
+      ],
+      "Block email tracking": [
+        "Bloquear el rastreo de correo electrónico"
+      ],
+      "Downloading": [
+        "Descargando"
+      ],
+      "hide-my-email aliases": [
+        "alias de Hide-my-email"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "No se pudo cargar la imagen con la protección de rastreo."
+      ],
+      "Image will be loaded without a proxy": [
+        "La imagen se cargará sin proxy"
+      ],
+      "Move all to archive": [
+        "Mover todo al archivo"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "Para buscar sus correos electrónicos de manera segura, necesitamos descargar una copia de sus mensajes en su navegador. La descarga inicial puede tardar un momento."
       ]
     },
     "action": {
@@ -1703,7 +1727,7 @@
         "gris tenue"
       ],
       "enzian": [
-        "enziano"
+        "genciana"
       ],
       "fern": [
         "helecho"
@@ -2897,6 +2921,15 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puede marcar para eliminar los contactos que no desea ni combinar ni mantener. La eliminación sólo tendrá lugar después de que el botón de combinar sea pulsado."
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Ahorre tiempo enviando correos electrónicos o invitaciones a todos a la vez, una función premium entre muchas otras. Actualice hoy mismo."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Puede leer el mensaje y hacer clic en los enlaces sin ser rastreado gracias a la protección de rastreador de correo electrónico."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Puede leer el mensaje y hacer clic en los enlaces sin ser rastreado."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3436,6 +3469,15 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Su búsqueda coincidió con muchos resultados. Limite su búsqueda e inténtelo de nuevo."
+      ],
+      "Cannot export this contact": [
+        "No se puede exportar este contacto"
+      ],
+      "Username must begin with a letter or digit": [
+        "El nombre de usuario debe comenzar con una letra o dígito"
+      ],
+      "Username must end with a letter or digit": [
+        "El nombre de usuario debe terminar con una letra o dígito"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3748,6 +3790,9 @@
       ],
       "View the invitations": [
         "Ver las invitaciones"
+      ],
+      "Decline invitation": [
+        "Rechazar invitación"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3869,6 +3914,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Proteja sus archivos con almacenamiento en la nube cifrado. Incluye sincronización automática, uso compartido de archivos cifrados y más."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 90 direcciones de correo electrónico, alias ilimitados de Hide-my-email, posibilidad de compartir calendario, etc."
       ]
     },
     "Feedback Modal Title": {
@@ -4129,7 +4177,7 @@
         "Reenvíe automáticamente"
       ],
       "Gmail messages to your inbox": [
-        "mensajes de Gmail a su buzón"
+        "los mensajes de Gmail a su buzón"
       ],
       "Sign in with Google": [
         "Iniciar sesión con Google"
@@ -5238,7 +5286,7 @@
         "Añada al menos un destinatario."
       ],
       "Please fill out this field.": [
-        "Llene este campo."
+        "Complete este campo."
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
         "Manténgala segura. La necesitará para acceder a su cuenta y descifrar sus datos en caso de un restablecimiento de contraseña."
@@ -5253,7 +5301,7 @@
         "Seleccione las carpetas que desea importar:"
       ],
       "Please select the type of link you want to insert and fill in all the fields.": [
-        "Seleccione el tipo de enlace que desea insertar y rellenar en todos los campos."
+        "Seleccione el tipo de enlace que desea insertar y complete todos los campos."
       ],
       "Please select which email address or addresses to add to ${ groupCount } group.": [
         "Seleccione qué dirección o direcciones de correo añadir al grupo ${ groupCount }.",
@@ -5855,11 +5903,109 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Su frase de recuperación es una serie de 12 palabras en un orden específico."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } rastreador de correo electrónico bloqueado",
+        "${ numberOfImageTrackers } rastreadores de correo electrónicos bloqueados"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } rastreador bloqueado",
+        "${ numberOfImageTrackers } rastreadores bloqueados"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } enlace limpiado",
+        "${ numberOfUTMTrackers } enlaces limpiados"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "¿En verdad desea mover todos los mensajes de esta ubicación al Archivo?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Ciclo de facturación: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Contacto asignado al grupo ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Contacto no asignado al grupo ${ contactGroupName }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalice el aspecto y sensación de las aplicaciones de ${ BRAND_NAME }"
+      ],
+      "Downloading paused": [
+        "Descarga en pausa"
+      ],
+      "Drop file here to upload": [
+        "Suelte sus archivos aquí para cargarlos"
+      ],
+      "Drop to import": [
+        "Suelte aquí para importar"
+      ],
+      "How hide-my-email aliases works": [
+        "Funcionamiento de los alias de Hide-my-email"
+      ],
+      "Links cleaned:": [
+        "Enlaces limpiados:"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Mensaje descargado: ${ currentProgress } de ${ totalProgress }",
+        "Mensajes descargados: ${ currentProgress } de ${ totalProgress }"
+      ],
+      "No links cleaned": [
+        "Ningún enlace limpiado"
+      ],
+      "No trackers found": [
+        "No se encontraron rastreadores."
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Nuestro sistema identificó este mensaje como correo electrónico sospechoso. Revise que es legítimo antes de abrir cualquier enlace o archivo adjunto."
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "La opción de búsqueda que le permite buscar de forma segura palabras clave en el cuerpo de los mensajes de correo electrónico."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin es un servicio de ${ BRAND_NAME } y su cuenta ${ BRAND_NAME_TWO } incluye alias de Hide-my-email. Para comenzar a enmascarar sus direcciones de correo, acceda a SimpleLogin y cree su primer alias."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Su suscripción terminará pronto: reactívela antes de ${ byDate } para mantener los beneficios de ${ planName }. ${ reactivateLink }"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "No pueden enviarle spam si no conocen su dirección de correo. Proteja su buzón con alias de Hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Esta conversación contiene uno o más mensajes que van a expirar"
+      ],
+      "Trackers blocked:": [
+        "Rastreadores bloqueados:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Desactive la opción para buscar solo por fecha, nombre, dirección de correo o asunto. Para deshabilitar la búsqueda en el contenido del mensaje y eliminar los mensajes descargados, vaya a los ajustes."
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Cuando proporcione su correo, use un único alias desechable de Hide-my-email en lugar de su dirección de correo electrónico real."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Puede hacer clic en los enlaces de este correo electrónico sin que se elabore un perfil y se filtre su actividad en línea a los anunciantes."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Puede leer este correo electrónico sin revelar sus interacciones, ubicación o dispositivo a los anunciantes."
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Ha alcanzado el número máximo de direcciones en el grupo o grupos de contactos:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Ha alcanzado el número máximo de direcciones en el grupo de contactos."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Sus archivos serán cifrados y luego guardados"
       ]
     },
     "info": {
       "Optional": [
         "Opcional"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } comando encontrado.",
+        "${ filteredList.length } comandos encontrados."
       ]
     },
     "Info on errors": {
@@ -5901,6 +6047,12 @@
       "You have enabled Address Verification with Trusted Keys for this email address,\nbut no active encryption key has been trusted.\nYou must trust a key valid for sending in order to send a message to this email address.": [
         "Ha habilitado la verificación de direcciones con claves de confianza para esta dirección de correo,\npero no se han confiado claves de cifrado activas.\nDebe confiar en una clave válida para poder enviar mensajes a esta dirección.",
         "Ha habilitado la verificación de direcciones con claves de confianza para estas direcciones de correo,\npero no se han confiado claves de cifrado activas.\nDebe confiar en las claves válidas para poder enviar mensajes a estas direcciones."
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "Al hacer clic en \"Confiar clave\" asocia esta clave pública con este remitente y los correos de esta dirección se verificarán cifradamente de forma automática."
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "Al hacer clic en \"Confiar clave\" crea un contacto nuevo y asocia esta clave pública con este remitente. Los correos de esta dirección se verificarán cifradamente de forma automática."
       ]
     },
     "Key validation warning": {
@@ -6061,6 +6213,9 @@
       ],
       "Star": [
         "Destacar"
+      ],
+      "Open command panel": [
+        "Abrir el panel de comandos"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6564,6 +6719,21 @@
       ],
       "Your password (admin)": [
         "Su contraseña (admin)"
+      ],
+      "Cleaned": [
+        "Limpiado"
+      ],
+      "Open in a new tab": [
+        "Abrir en una pestaña nueva"
+      ],
+      "Original link": [
+        "Enlace original"
+      ],
+      "Synchronize with system": [
+        "Sincronizar con el sistema"
+      ],
+      "Type a command...": [
+        "Escriba un comando..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -6808,6 +6978,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Necesita reactivar sus claves para ver la invitación actualizada"
+      ],
+      "Reactivate now": [
+        "Reactivar ahora"
       ]
     },
     "Link to calendar event": {
@@ -7115,7 +7288,7 @@
     },
     "new_plans: feature": {
       "Auto-delete spam and trashed messages": [
-        "Auto eliminar spam y mensajes de la papelera"
+        "Eliminar automáticamente spam y mensajes de la papelera"
       ],
       "Custom email domains": [
         "Dominios de correo electrónico personalizados"
@@ -7137,6 +7310,12 @@
       ],
       "Up to 500 GB of storage": [
         "Hasta 500 GB de almacenamiento"
+      ],
+      "Hide-my-email aliases": [
+        "Alias de Hide-my-email"
+      ],
+      "Up to 3 TB of storage": [
+        "Hasta 3 TB de almacenamiento"
       ]
     },
     "new_plans: feature info": {
@@ -7145,6 +7324,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "El espacio de almacenamiento es compartido entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Cree múltiples direcciones de correo para sus identidades en línea, p. ej., JuanCompras@${ domain } para cuentas de compras, JuanNoticias@${ domain2 } para suscripciones de noticias"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Use su propia dirección de correo personalizada, por ejemplo, usted@sunombre.com"
       ]
     },
     "new_plans: label": {
@@ -7232,6 +7417,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Puede cambiar esto en cualquier momento en los ajustes."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Más opciones de temas están disponibles en su ajustes de cuenta > apariencia"
       ]
     },
     "Option": {
@@ -7399,6 +7587,12 @@
       ],
       "Write your message": [
         "Escriba su mensaje"
+      ],
+      "Search date, name, email address, or subject line": [
+        "Búsqueda por fecha, nombre, dirección de correo electrónico o asunto"
+      ],
+      "Type a command…": [
+        "Escriba un comando…"
       ]
     },
     "Placeholder for contact group name": {
@@ -7923,6 +8117,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Espacio de almacenamiento compartido en ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Todos nuestros servicios premium al máximo: 100 direcciones de correo electrónico, compatibilidad con 10 dominios personalizados, alias ilimitados de Hide-my-email, posibilidad de compartir calendarios y archivos cifrados, almacenamiento cifrado en la nube, etc."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 1 dominio de correo electrónico personalizado, 10 direcciones de correo electrónico, 10 alias de Hide-my-email, posibilidad de compartir calendario, etc."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 3 dominios de correo electrónico personalizado, 15 direcciones de correo electrónico, alias ilimitados de Hide-my-email, posibilidad de compartir calendario, etc."
       ]
     },
     "Spotlight": {
@@ -7949,6 +8152,12 @@
       ],
       "You can now search the content of your encrypted emails.": [
         "Ahora puede buscar el contenido de sus correos electrónicos cifrados."
+      ],
+      "Search just got smarter and faster": [
+        "La búsqueda ahora es más inteligente y rápida."
+      ],
+      "Try it today.": [
+        "Pruebe hoy mismo."
       ]
     },
     "Status": {
@@ -8233,6 +8442,9 @@
       ],
       "Verification successful": [
         "Verificación completada"
+      ],
+      "Message content search enabled": [
+        "Búsqueda de contenido de mensajes habilitada"
       ]
     },
     "Success notification": {
@@ -8885,6 +9097,40 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Su prueba gratuita de Mail Plus termina en ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } dirección de correo",
+        "${ emailsCount } direcciones de correo"
+      ],
+      "(active)": [
+        "(activo)"
+      ],
+      "Billing cycle": [
+        "Ciclo de facturación"
+      ],
+      "Cannot add more addresses": [
+        "No se pueden añadir más direcciones"
+      ],
+      "Day theme": [
+        "Tema de día"
+      ],
+      "Move all messages to Archive": [
+        "Mover todos los mensajes al Archivo"
+      ],
+      "Night theme": [
+        "Tema de noche"
+      ],
+      "No trackers found": [
+        "No se encontraron rastreadores."
+      ],
+      "Protect your email": [
+        "Proteja su correo electrónico"
+      ],
+      "This email is protected": [
+        "Este correo electrónico está protegido."
+      ],
+      "Unlock contacts groups": [
+        "Desbloquear grupos de contactos"
       ]
     },
     "Title header": {
@@ -8966,6 +9212,21 @@
       ],
       "You do not have any contacts to export": [
         "No tiene ningún contacto para exportar"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Cambie automáticamente entre sus temas preferidos para el día y la noche en sincronía con los modos de día y noche de su sistema"
+      ],
+      "The image could not be loaded": [
+        "No se ha podido cargar la imagen"
+      ],
+      "The image could not be loaded using proxy": [
+        "No se ha podido cargar la imagen utilizando el proxy"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "El tema seleccionado estará activo cuando su sistema esté en \"modo oscuro\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "El tema seleccionado estará activo cuando su sistema esté en \"modo claro\""
       ]
     },
     "Tor out of date": {
@@ -9320,6 +9581,157 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Anual"
+      ],
+      "Monthly": [
+        "Mensual"
+      ],
+      "Two-year": [
+        "Dos años"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Crear una carpeta"
+      ],
+      "Create a new label": [
+        "Crear una etiqueta"
+      ],
+      "Go to Archive": [
+        "Ir a Archivo"
+      ],
+      "Go to Drafts": [
+        "Ir a Borradores"
+      ],
+      "Go to Inbox": [
+        "Ir al Buzón"
+      ],
+      "Go to Sent": [
+        "Ir a Enviados"
+      ],
+      "Go to Spam": [
+        "Ir a Spam"
+      ],
+      "Go to Starred": [
+        "Ir a Destacados"
+      ],
+      "Go to Trash": [
+        "Ir a la Papelera"
+      ],
+      "New message": [
+        "Mensaje nuevo"
+      ],
+      "Search": [
+        "Buscar"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Del sistema"
+      ],
+      "Theme default": [
+        "Tema por defecto"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Grande"
+      ],
+      "Medium (recommended)": [
+        "Mediana (recomendada)"
+      ],
+      "Small": [
+        "Pequeña"
+      ],
+      "Very large": [
+        "Muy grande"
+      ],
+      "Very small": [
+        "Muy pequeña"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verificación del remitente"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Error al verificar el remitente: ${ icon.senderVerificationDetails.description }."
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Remitente verificado: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "La clave de verificación no está en la lista de las claves de confianza."
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 año"
+      ],
+      "2 years": [
+        "2 años"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Drive premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Correo y calendario premium"
+      ],
+      "Premium Password Manager": [
+        "Administrador de contraseñas premium"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Guarde sus contraseñas con seguridad y complételas de forma automática en los sitios web. Se incluyen contraseñas ilimitadas, función de completado automático, generador de contraseñas y más."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Gestor de contraseñas"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Cree datos de inicio de sesión seguros para todos sus dispositivos. Se incluyen alias ilimitados, 20 bóvedas, 2FA integrada, función de completado automático de tarjetas de crédito y más."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Incluye 2950 servidores en más de 65 países, conecta hasta 10 dispositivos, acceda a servicios de transmisión en todo el mundo, malware y bloqueador de anuncios, y más."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 1 dominio de correo electrónico personalizado, 10 direcciones de correo electrónico, 10 seudónimos de hide-my-email, posibilidad de compartir calendario, etc."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Asegure sus archivos con almacenamiento en la nube cifrado. Se incluyen el historial de versiones, el intercambio de archivos cifrado y más."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "* Su suscripción se renovará automáticamente con la tarifa estándar con descuento al final de su ciclo de facturación."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Los descuentos se aplican sobre la tarifa mensual estándar. La oferta solo se encuentra disponibles para quienes se suscriban por primera vez."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Por tiempo limitado, obtenga lo mejor de ${ BRAND_NAME } con un descuento exclusivo."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "¡Celebramos el 9.° aniversario de nuestra financiación colectiva!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Ofertas de aniversario de ${ BRAND_NAME }"
       ]
     }
   }

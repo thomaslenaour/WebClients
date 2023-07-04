@@ -1081,10 +1081,10 @@
         "Actualizare frază de recuperare"
       ],
       "Upgrade": [
-        "Modernizare"
+        "Modificare"
       ],
       "Upgrade now": [
-        "Modernizare"
+        "Modificare"
       ],
       "Upload picture": [
         "Încărcare imagine"
@@ -1154,6 +1154,30 @@
       ],
       "Zoom out": [
         "Micșorare"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Sunt permise maxim 100 de contacte întru-un grup."
+      ],
+      "Block email tracking": [
+        "Blocare urmărire mesaje"
+      ],
+      "Downloading": [
+        "Se descarcă"
+      ],
+      "hide-my-email aliases": [
+        "aliasuri hide-my-email"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Imaginea nu au putut fi încărcată cu protecția împotriva urmăririi activată."
+      ],
+      "Image will be loaded without a proxy": [
+        "Imaginea va fi încărcată fără proxy."
+      ],
+      "Move all to archive": [
+        "Mutare toate în arhivă"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "Pentru a căuta în siguranță în mesaje, trebuie să se descarce o copie a acestora în navigator. Descărcarea inițială poate dura un ceva timp."
       ]
     },
     "action": {
@@ -1247,7 +1271,7 @@
     },
     "Animation": {
       "${ nameToDisplay }'s inbox": [
-        "Contul lui ${ nameToDisplay }"
+        "Mesajele lui ${ nameToDisplay }"
       ],
       "5 trackers removed": [
         "5 urmăritori eliminați"
@@ -2709,7 +2733,7 @@
         "Regatul Unit"
       ],
       "United States": [
-        "Statele Unite"
+        "SUA"
       ],
       "United States Minor Outlying Islands": [
         "Insulele Minore Îndepărtate ale Statelor Unite"
@@ -2908,6 +2932,15 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puteți marca pentru ștergere contactele pe care nu doriți nici să le îmbinați, nici să le păstrați. Ștergerea va fi efectuată doar după apăsarea butonului de îmbinare."
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Economisiți timp trimițând mesaje sau invitații simultan tuturor, o funcție premium printre multe altele. Modernizați contul acum."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Cu protecția împotriva funcțiilor de urmărire din mesaje, puteți citi mesajul și folosi legăturile din el fără a riscul monitorizării."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Puteți citi mesajul și accesa legăturile din el fără riscul monitorizării."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3459,6 +3492,15 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Căutarea a găsit prea multe rezultate. Limitați căutarea și reîncercați."
+      ],
+      "Cannot export this contact": [
+        "Acest contact nu se poate exporta."
+      ],
+      "Username must begin with a letter or digit": [
+        "Numele de utilizator trebuie să înceapă cu o literă sau cifră."
+      ],
+      "Username must end with a letter or digit": [
+        "Numele de utilizator trebuie să se termine cu o literă sau cifră."
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3773,6 +3815,9 @@
       ],
       "View the invitations": [
         "Afișare invitații"
+      ],
+      "Decline invitation": [
+        "Refuzare invitație"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3894,6 +3939,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Protejați-vă fișierele cu stocarea criptată în cloud. Include sincronizare automată, partajare criptată a fișierelor și multe altele."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Include suport pentru 3 domenii de e-mail personale, 90 adrese de e-mail, aliasuri nelimitate hide-my-email, partajare calendar și altele."
       ]
     },
     "Feedback Modal Title": {
@@ -4157,10 +4205,10 @@
     },
     "Gmail forwarding": {
       "Automatically forward": [
-        "Redirecționare automată"
+        "Redirecționați automat"
       ],
       "Gmail messages to your inbox": [
-        "Mesaje Gmail în mesaje primite"
+        "mesajele Gmail către adresa de primire"
       ],
       "Sign in with Google": [
         "Conectare cu Google"
@@ -4529,7 +4577,7 @@
         "${ addressCount } de adrese de e-mail"
       ],
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
-        "${ appName } are nevoie de permisiunea dvs. pentru ${ enableDesktopNotifications }."
+        "${ appName } necesită permisiunea pentru ${ enableDesktopNotifications }."
       ],
       "${ calendarsToBeCreatedCount } new calendar": [
         "Un calendar nou",
@@ -5006,7 +5054,7 @@
         "Introduceți codul din aplicația Authenticator."
       ],
       "Enter the credentials of the email account you want to import from.": [
-        "Introduceți datele de conectare ale contului de e-mail din care doriți să importați."
+        "Introduceți datele de conectare a contului de e-mail din care doriți să importați."
       ],
       "Enter the verification code that was sent to ${ destinationText }.": [
         "Introduceți codul de verificare care a fost trimis la ${ destinationText }."
@@ -5458,7 +5506,7 @@
         "Trimiterea mesajelor de la o adresă @pm.me este o funcție cu plată. Mesajul va fi trimis de la adresa implicită ${ email }."
       ],
       "Sent with <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> secure email.": [
-        "Trimis cu <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> e-mail securizat."
+        "E-mail securizat trimis cu <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a>."
       ],
       "Servers are unreachable. Please try again in a few minutes": [
         "Serverele nu sunt accesibile. Mai reîncercați peste câteva minute."
@@ -5632,7 +5680,7 @@
         "Acest mesaj va fi trimis ${ dateString } la ora ${ formattedTime }"
       ],
       "This message will be sent shortly": [
-        "Acest mesaj va fi trimis în scurt timp"
+        "Acest mesaj va fi trimis în scurt timp."
       ],
       "This message will be sent today at ${ formattedTime }": [
         "Acest mesaj va fi trimis astăzi la ora ${ formattedTime }"
@@ -5957,11 +6005,114 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Fraza de recuperare este o serie de 12 cuvinte într-o anumită ordine."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "A fost blocată ${ numberOfImageTrackers } funcție de urmărire din e-mail.",
+        "S-au blocat ${ numberOfImageTrackers } funcții de urmărire din e-mail.",
+        "S-au blocat ${ numberOfImageTrackers } de funcții de monitorizare din e-mail."
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "S-a blocat ${ numberOfImageTrackers } funcție de urmărire.",
+        "S-au blocat ${ numberOfImageTrackers } funcții de urmărire.",
+        "S-au blocat ${ numberOfImageTrackers } de funcții de urmărire."
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "S-a curățat ${ numberOfUTMTrackers } legătură.",
+        "S-au curățat ${ numberOfUTMTrackers } legături.",
+        "S-au curățat ${ numberOfUTMTrackers } de legături."
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Sunteți sigur că doriți să mutați toate mesajele de aici în «Arhivă»?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Ciclu facturare: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Contactul a fost adăugat la grupul ${ contactGroupName }."
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Contactul a fost eliminat din grupul ${ contactGroupName }."
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalizați aspectul aplicației ${ BRAND_NAME }."
+      ],
+      "Downloading paused": [
+        "Descărcare suspendată"
+      ],
+      "Drop file here to upload": [
+        "Plasați fișiere aici pentru încărcare"
+      ],
+      "Drop to import": [
+        "Plasare pentru importare"
+      ],
+      "How hide-my-email aliases works": [
+        "Cum funcționează aliasurile hide-my-email"
+      ],
+      "Links cleaned:": [
+        "Legături curățate:"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Mesaje descărcate: ${ currentProgress } din ${ totalProgress }",
+        "Mesaje descărcate: ${ currentProgress } din ${ totalProgress }",
+        "Mesaje descărcate: ${ currentProgress } din ${ totalProgress }"
+      ],
+      "No links cleaned": [
+        "Nu au fost curățate legături"
+      ],
+      "No trackers found": [
+        "Nu s-au găsit funcții de urmărire"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Sistemul nostru a etichetat acest mesaj ca fiind suspect. Verificați legitimitatea acestuia înainte de a accesa orice legătură sau fișier atașat."
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "Opțiune de căutare care vă permite căutarea în siguranță pentru cuvinte cheie în conținutul mesajelor."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin este un serviciu ${ BRAND_NAME }, iar acest cont ${ BRAND_NAME_TWO } include aliasuri hide-my-email de ascundere a adresei de e-mail. Pentru a începe să vă ascundeți adresa, accesați SimpleLogin și creați-vă primul alias."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Abonamentul se încheie: reactivați-l până la ${ byDate } pentru a vă păstra beneficiile planului ${ planName }. ${ reactivateLink }"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "Ceilalți nu vă pot trimite mesaje nedorite dacă nu vă cunosc adresa de e-mail. Protejați-vă adresa folosind aliasuri hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Această conversație conține unul sau mai multe mesaje care expiră."
+      ],
+      "Trackers blocked:": [
+        "Urmăritori blocați:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Dezactivați opțiunea pentru a căuta numai după dată, nume, adresă de e-mail sau subiect. Pentru a dezactiva căutarea în conținutul mesajelor și a șterge mesajele descărcate, accesați setările."
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Când vă furnizați adresa de e-mail, folosiți un alias hide-my-email unic, temporar, în locul adresei de e-mail reale."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Puteți accesa legăturile din acest mesaj fără a vi se putea face un profil și urmări activitatea online de către agențiile de publicitate."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Puteți citi acest mesaj fără a vă dezvălui agențiilor de publicitate acțiunile, locul sau tipul de dispozitiv folosit."
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Ați atins numărul maxim de adrese din grupul de contacte:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Ați atins numărul maxim de adrese din grupul de contacte."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Fișierele vor fi criptate și apoi salvate."
       ]
     },
     "info": {
       "Optional": [
         "Opțional"
+      ],
+      "${ filteredList.length } command found.": [
+        "S-a ${ filteredList.length } comandă.",
+        "S-au găsit ${ filteredList.length } comenzi.",
+        "S-au găsit ${ filteredList.length } de comenzi."
       ]
     },
     "Info on errors": {
@@ -6005,6 +6156,12 @@
         "Ați activat verificarea adresei cu chei de încredere pentru această adresă de e-mail,\ndar nu a fost aprobată nicio cheie de criptare activă.\nTrebuie să aprobați o cheie validă pentru trimiteri pentru a putea trimite un mesaj la această adresă de e-mail.",
         "Ați activat verificarea adresei cu chei de încredere pentru aceste adrese de e-mail,\ndar nu a fost aprobată nicio cheie de criptare activă.\nTrebuie să aprobați chei valide pentru trimiteri pentru a putea trimite mesaje acestor adrese de e-mail.",
         "Ați activat verificarea adresei cu chei de încredere pentru aceste adrese de e-mail,\ndar nu a fost aprobată nicio cheie de criptare activă.\nTrebuie să aprobați chei valide pentru trimiteri pentru a putea trimite mesaje acestor adrese de e-mail."
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "Apăsând pe «Cheie de încredere» această cheie publică va fi asociată acestui expeditor, iar mesajele de la această adresă vor fi verificate criptografic automat."
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "Apăsând pe «Cheie de încredere» se va crea un contact nou și se va asocia această cheie publică acestui expeditor. Mesajele de la această adresă vor fi verificate criptografic automat."
       ]
     },
     "Key validation warning": {
@@ -6165,6 +6322,9 @@
       ],
       "Star": [
         "Marcare cu stea"
+      ],
+      "Open command panel": [
+        "Deschidere panou de comandă"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6277,7 +6437,7 @@
         "Rea"
       ],
       "BCC": [
-        "CA"
+        "Ca"
       ],
       "Blind Carbon Copy": [
         "Copie ascunsă"
@@ -6668,6 +6828,21 @@
       ],
       "Your password (admin)": [
         "Parola dvs. (administrator)"
+      ],
+      "Cleaned": [
+        "Curățat"
+      ],
+      "Open in a new tab": [
+        "Deschidere într-o filă nouă"
+      ],
+      "Original link": [
+        "Legătura originală"
+      ],
+      "Synchronize with system": [
+        "Sincronizare cu sistemul"
+      ],
+      "Type a command...": [
+        "Scrieți o comandă..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -6884,7 +7059,7 @@
         "Gunoi"
       ],
       "Upgrade account": [
-        "Modernizare cont"
+        "Modificare cont"
       ],
       "What’s this?": [
         "Ce este asta?"
@@ -6912,6 +7087,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Trebuie să activați cheile pentru a vedea invitația actualizată"
+      ],
+      "Reactivate now": [
+        "Reactivare"
       ]
     },
     "Link to calendar event": {
@@ -7217,7 +7395,7 @@
     },
     "new_plans: Action": {
       "Upgrade now": [
-        "Modernizare"
+        "Modificare"
       ]
     },
     "new_plans: action": {
@@ -7249,6 +7427,12 @@
       ],
       "Up to 500 GB of storage": [
         "Până la 500 GB spațiu de stocare"
+      ],
+      "Hide-my-email aliases": [
+        "Aliasuri hide-my-email"
+      ],
+      "Up to 3 TB of storage": [
+        "Până la 3 TB spațiu de stocare"
       ]
     },
     "new_plans: feature info": {
@@ -7257,6 +7441,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Spațiul de stocare este distribuit între ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } și ${ DRIVE_APP_NAME }."
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Creați adrese de e-mail multiple pentru identitățile personale online, de ex. ionvanzari@${ domain } pentru conturile de cumpărături, ionstiri@${ domain2 } pentru abonamentul la știri."
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Utilizați propria adresă de domeniu pentru e-mail, de ex., nume@adresapersonala.com."
       ]
     },
     "new_plans: label": {
@@ -7344,6 +7534,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Puteți modifica oricând aceasta în setări."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Mai multe opțiuni pentru teme sunt disponibile în Setări > Aspect."
       ]
     },
     "Option": {
@@ -7511,6 +7704,12 @@
       ],
       "Write your message": [
         "Scrieți mesajul"
+      ],
+      "Search date, name, email address, or subject line": [
+        "Căutare dată, nume, adresă de e-mail sau subiect"
+      ],
+      "Type a command…": [
+        "Scrieți o comandă..."
       ]
     },
     "Placeholder for contact group name": {
@@ -7613,7 +7812,7 @@
         "Mesaj semnat cu PGP. Verificarea expeditorului a eșuat."
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption": [
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero."
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero."
       ],
       "Stored with zero-access encryption": [
         "Stocat criptat cu acces exclusiv personal"
@@ -7740,15 +7939,15 @@
         "Semnat PGP"
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption": [
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero."
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero."
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption to verified recipient": [
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero către un destinatar verificat.",
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați.",
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați."
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero către un destinatar verificat.",
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați.",
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați."
       ],
       "Sent by you with end-to-end encryption": [
-        "Trimis de dvs. cu criptare în ambele părți"
+        "Trimis de către dvs. cu criptare în ambele părți"
       ],
       "Sent by you with end-to-end encryption to verified recipient": [
         "Trimis de către dvs. cu criptare în ambele părți către destinatar verificat.",
@@ -7931,7 +8130,7 @@
         "Accesare planuri abonamente"
       ],
       "Upgrade": [
-        "Modernizare"
+        "Modificare"
       ]
     },
     "specialoffer: Offers": {
@@ -8048,6 +8247,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Spațiul de stocare este distribuit între ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } și ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Toate serviciile noastre premium cu limitele la maxim: 100 de adrese de e-mail, suport pentru 10 domenii personale, aliasuri nelimitate hide-my-email, partajare calendar, stocare criptată în cloud și fișiere partajate și multe altele."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Include suport pentru un domeniu de e-mail personal, 10 adrese de e-mail, 10 aliasuri hide-my-email, partajare calendar și altele."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Include suport pentru 3 domenii de e-mail personale, 15 adrese de e-mail, aliasuri nelimitate hide-my-email, partajare calendar și altele."
       ]
     },
     "Spotlight": {
@@ -8074,6 +8282,12 @@
       ],
       "You can now search the content of your encrypted emails.": [
         "Acum puteți căuta în conținutul e-mailurilor criptate."
+      ],
+      "Search just got smarter and faster": [
+        "Căutarea a devenit mai rapidă și mai inteligentă"
+      ],
+      "Try it today.": [
+        "Încercați acum."
       ]
     },
     "Status": {
@@ -8382,6 +8596,9 @@
       ],
       "Verification successful": [
         "Verificare reușită"
+      ],
+      "Message content search enabled": [
+        "Căutare conținut mesaje activat"
       ]
     },
     "Success notification": {
@@ -8540,7 +8757,7 @@
         "Înapoi"
       ],
       "BCC": [
-        "CA"
+        "Ca"
       ],
       "Beta Access": [
         "Acces la Beta"
@@ -9050,6 +9267,41 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Perioada de încercare pentru Mail Plus se încheie la ${ textDate } "
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } adresă de e-mail",
+        "${ emailsCount } adrese de e-mail",
+        "${ emailsCount } de adrese de e-mail"
+      ],
+      "(active)": [
+        "(activă)"
+      ],
+      "Billing cycle": [
+        "Ciclu de facturare"
+      ],
+      "Cannot add more addresses": [
+        "Nu se mai pot adăuga adrese"
+      ],
+      "Day theme": [
+        "Temă zi"
+      ],
+      "Move all messages to Archive": [
+        "Mutare toate mesajele în arhivă"
+      ],
+      "Night theme": [
+        "Temă noapte"
+      ],
+      "No trackers found": [
+        "Nu s-au găsit funcții de urmărire"
+      ],
+      "Protect your email": [
+        "Protejați-vă mesajele"
+      ],
+      "This email is protected": [
+        "Acest mesaj este protejat"
+      ],
+      "Unlock contacts groups": [
+        "Deblocare grupuri de contacte"
       ]
     },
     "Title header": {
@@ -9131,6 +9383,21 @@
       ],
       "You do not have any contacts to export": [
         "Nu aveți persoane de contact pentru exportare"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Comutare automată a temei preferate sincron cu modul luminos sau întunecat setat al sistemului."
+      ],
+      "The image could not be loaded": [
+        "Imaginea nu s-a putut încărca."
+      ],
+      "The image could not be loaded using proxy": [
+        "Imaginea nu s-a putut încărca folosind proxy."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Tema selectată va fi activă când sistemul va fi setat în „modul întunecat”."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Tema selectată va fi activă când sistemul va fi setat în „modul luminos”."
       ]
     },
     "Tor out of date": {
@@ -9520,6 +9787,93 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Anual"
+      ],
+      "Monthly": [
+        "Lunar"
+      ],
+      "Two-year": [
+        "Bianual"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Creare folder"
+      ],
+      "Create a new label": [
+        "Creare etichetă"
+      ],
+      "Go to Archive": [
+        "Accesare «Arhivă»"
+      ],
+      "Go to Drafts": [
+        "Accesare «Ciorne»"
+      ],
+      "Go to Inbox": [
+        "Accesare «Primite»"
+      ],
+      "Go to Sent": [
+        "Accesare «Trimise»"
+      ],
+      "Go to Spam": [
+        "Accesare «Nedorite»"
+      ],
+      "Go to Starred": [
+        "Accesare «Cu stea»"
+      ],
+      "Go to Trash": [
+        "Accesare «Gunoi»"
+      ],
+      "New message": [
+        "Mesaj nou"
+      ],
+      "Search": [
+        "Căutare"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Implicit din sistem"
+      ],
+      "Theme default": [
+        "Temă implicită"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Mare"
+      ],
+      "Medium (recommended)": [
+        "Mediu (recomandat)"
+      ],
+      "Small": [
+        "Mic"
+      ],
+      "Very large": [
+        "Foarte mare"
+      ],
+      "Very small": [
+        "Foarte mic"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verificare expeditor"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Verificarea expeditorului a eșuat: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Expeditor verificat: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Cheia de verificare nu este în lista de chei de încredere."
       ]
     }
   }

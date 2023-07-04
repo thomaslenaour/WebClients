@@ -647,7 +647,7 @@
         "Şuraya taşınsın"
       ],
       "Move to archive": [
-        "Arşive taşı"
+        "Arşivle"
       ],
       "Move to inbox": [
         "Gelen kutusuna taşı"
@@ -812,7 +812,7 @@
         "Güvenli yanıtla"
       ],
       "Report a problem": [
-        "Bir sorun bildireceğim"
+        "Sorun bildirin"
       ],
       "Report phishing": [
         "Kimlik avı girişimi bildir"
@@ -1150,6 +1150,30 @@
       ],
       "Zoom out": [
         "Uzaklaştır"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Bir kişi grubunda en fazla 100 kişi bulunabilir"
+      ],
+      "Block email tracking": [
+        "E-postanın izlenmesi engellensin"
+      ],
+      "Downloading": [
+        "İndiriliyor"
+      ],
+      "hide-my-email aliases": [
+        "Hide-my-email takma adları"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Görsel izleyici koruması nedeniyle yüklenemedi."
+      ],
+      "Image will be loaded without a proxy": [
+        "Görsel bir vekil sunucu kullanılmadan yüklenecek"
+      ],
+      "Move all to archive": [
+        "Tümünü arşivle"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "E-postalarınızı güvenli olarak aramak için, iletilerinizin bir kopyasının tarayıcınıza indirilmesi gerekir. İlk indirme biraz zaman alabilir."
       ]
     },
     "action": {
@@ -1242,7 +1266,7 @@
     },
     "Animation": {
       "${ nameToDisplay }'s inbox": [
-        "${ nameToDisplay } kullanıcısının gelen kutusu"
+        "${ nameToDisplay } gelen kutusu"
       ],
       "5 trackers removed": [
         "5 izleyici kaldırıldı"
@@ -2897,6 +2921,15 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Birleştirmek veya tutmak istemediğiniz kişileri silinmek üzere işaretleyebilirsiniz. Silme işlemi yalnızca birleştirme düğmesine tıkladıktan sonra yapılır"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Herkese aynı anda e-posta veya davetiye göndererek zaman kazanın. Bu ücretli tarifelerdeki birçok özellikten biridir. Tarifenizi şimdi yükseltin."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "E-posta izleme koruması ile izlenmeden iletiyi okuyabilir ve bağlantılara tıklayabilirsiniz."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "İzlenmeden iletiyi okuyabilir ve bağlantılara tıklayabilirsiniz."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3008,7 +3041,7 @@
         "Etkinlik iptal edildi"
       ],
       "Event was updated. This reminder is out-of-date.": [
-        "Etkinlik güncellendi. Bu anımsatıcı güncel değil."
+        "Etkinlik güncellendi. Bu hatırlatıcı güncel değil."
       ]
     },
     "Email subject": {
@@ -3436,6 +3469,15 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Aramanız çok fazla sonuç döndürdü. Lütfen aramanızı sınırlandırıp yeniden deneyin."
+      ],
+      "Cannot export this contact": [
+        "Bu kişi dışa aktarılamadı"
+      ],
+      "Username must begin with a letter or digit": [
+        "Kullanıcı adı bir harf ya da rakam ile başlamalı"
+      ],
+      "Username must end with a letter or digit": [
+        "Kullanıcı adı bir harf ya da rakam ile bitmeli"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3748,6 +3790,9 @@
       ],
       "View the invitations": [
         "Davetleri görüntüle"
+      ],
+      "Decline invitation": [
+        "Daveti reddet"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3841,7 +3886,7 @@
     },
     "familyOffer_2023:Info": {
       "Online privacy, for your whole family": [
-        "Tüm aileniz için çevrimiçi gizlilik"
+        "Tüm aileniz için çevrim içi gizlilik"
       ]
     },
     "familyOffer_2023:Onboarding Proton": {
@@ -3869,6 +3914,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Dosyalarınızı şifrelenmiş bulut depolama alanı ile koruyun. Otomatik eşitleme, şifrelenmiş dosya paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "3 özel e-posta etki alanı, 90 e-posta adresi, sınırsız sayıda hide-my-email takma adı, takvim paylaşımı ve diğer özellikler."
       ]
     },
     "Feedback Modal Title": {
@@ -4126,10 +4174,10 @@
     },
     "Gmail forwarding": {
       "Automatically forward": [
-        "Otomatik olarak ilet"
+        "Otomatik olarak"
       ],
       "Gmail messages to your inbox": [
-        "Gmail iletilerini gelen kutunuzda görün"
+        "Gmail iletilerini gelen kutunuza iletin"
       ],
       "Sign in with Google": [
         "Google ile oturum aç"
@@ -4742,7 +4790,7 @@
         "İlgilenmeniz gerekiyor"
       ],
       "Automatically delete messages that have been in trash and spam for more than 30 days.": [
-        "Çöp ve istenmeyen kutularında 30 günden uzun süredir duran iletileri otomatik olarak silin."
+        "Çöp ve istenmeyen kutularında 30 günden uzun süredir duran iletileri otomatik olarak silebilirsiniz."
       ],
       "Background color": [
         "Arka plan rengi"
@@ -5855,11 +5903,109 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Kurtarma ifadeniz, belirli bir sırada 12 sözcükten oluşan bir dizidir."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } e-posta izleyici engellendi",
+        "${ numberOfImageTrackers } e-posta izleyici engellendi"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } izleyici engellendi",
+        "${ numberOfImageTrackers } izleyici engellendi"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } bağlantı temizlendi",
+        "${ numberOfUTMTrackers } bağlantı temizlendi"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Bu klasördeki tüm iletileri arşivlemek istediğinize emin misiniz?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Faturalama dönemi: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kişi ${ contactGroupName } grubuna eklendi"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kişi ${ contactGroupName } grubundan çıkarıldı"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME } uygulamalarının görünümünü ve kullanımını özelleştirin."
+      ],
+      "Downloading paused": [
+        "İndirme duraklatıldı"
+      ],
+      "Drop file here to upload": [
+        "Yüklemek için dosyayı buraya bırakın"
+      ],
+      "Drop to import": [
+        "İçe aktarmak için bırakın"
+      ],
+      "How hide-my-email aliases works": [
+        "Hide-my-email adları nasıl çalışır"
+      ],
+      "Links cleaned:": [
+        "Temizlenen bağlantılar:"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "${ currentProgress } / ${ totalProgress } ileti indirildi",
+        "${ currentProgress } / ${ totalProgress } ileti indirildi"
+      ],
+      "No links cleaned": [
+        "Herhangi bir bağlantı temizlenmedi"
+      ],
+      "No trackers found": [
+        "Herhangi bir izleyici bulunamadı"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Sistemimiz bu iletiyi şüpheli olarak işaretledi. Lütfen herhangi bir bağlantı ya da ek dosya üzerine tıklamadan önce e-postanın sahte olup olmadığına bakın."
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "E-posta iletilerinin içeriğinde anahtar sözcükleri güvenli olarak aramanızı sağlayan seçenek."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin bir ${ BRAND_NAME } hizmetidir ve ${ BRAND_NAME_TWO } hesabınızda hide-my-email takma adları kullanılmasını sağlar. E-posta adresinizi gizlemeye başlamak için SimpleLogin sitesine gidin ve ilk takma adınızı oluşturun."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Abonelik sona eriyor: ${ planName } tarifesinin ek özelliklerini korumak için ${ byDate } tarihine kadar yeniden etkinleştirin. ${ reactivateLink }"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "E-posta adresinizi bilmiyorlarsa size istenmeyen e-posta gönderemezler. hide-my-email takma adları ile e-posta kutunuzu koruyun."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Bu yazışmada bir ya da birkaç süreli ileti var"
+      ],
+      "Trackers blocked:": [
+        "Engellenen izleyiciler:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Yalnızca tarihe, ada, e-posta adresine veya konu satırına göre arama yapmak için bu seçeneği kapatın. İleti içeriği aramayı devre dışı bırakmak ve indirilen iletileri silmek için ayarlara gidin."
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "E-posta adresinizi başkalarına verirken, gerçek e-posta adresiniz yerine benzersiz, tek kullanımlık bir hide-my-email takma adı kullanın."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Profilinizle ilgili bilgiler vermeden ve çevrim içi etkinliğinizi reklam verenlere sızdırmadan bu e-postadaki bağlantılara tıklayabilirsiniz."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Bu e-postayı, etkileşiminizi, konumunuzu veya aygıtınızı reklam verenlere açıklamadan okuyabilirsiniz."
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Kişi gruplarında bulunabilecek en fazla adres sayısına ulaştınız:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Kişi grubunda bulunabilecek en fazla adres sayısına ulaştınız:"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Dosyalarınız şifrelendikten sonra kaydedilir"
       ]
     },
     "info": {
       "Optional": [
         "İsteğe bağlı"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } komut bulundu.",
+        "${ filteredList.length } komut bulundu."
       ]
     },
     "Info on errors": {
@@ -5901,6 +6047,12 @@
       "You have enabled Address Verification with Trusted Keys for this email address,\nbut no active encryption key has been trusted.\nYou must trust a key valid for sending in order to send a message to this email address.": [
         "Bu e-posta adresi için Güvenilen anahtarlarla adres doğrulamasını etkinleştirmişsiniz,\nancak herhangi bir etkin şifreleme anahtarına güvenilmemiş.\nBu e-posta adresine ileti gönderebilmek için gönderimde geçerli olacak bir anahtara güvenmeniz gerekir.",
         "Bu e-posta adresleri için Güvenilen anahtarlarla adres doğrulamasını etkinleştirmişsiniz,\nancak herhangi bir etkin şifreleme anahtarına güvenilmemiş.\nBu e-posta adreslerine ileti gönderebilmek için gönderimde geçerli olacak anahtarlara güvenmeniz gerekir."
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "\"Anahtara güven\" üzerine tıklamak bu herkese açık anahtarı bu göndericiyle ilişkilendirir ve bu adresten gelen e-postalar otomatik olarak şifreylemeyle doğrulanır."
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "\"Anahtara güven\" üzerine tıklamak yeni bir kişi ekler ve bu herkese açık anahtarı bu göndericiyle ilişkilendirir. Bu adresten gelen e-postalar otomatik olarak şifrelemeyle doğrulanır."
       ]
     },
     "Key validation warning": {
@@ -6000,7 +6152,7 @@
         "Sağa git / genişlet"
       ],
       "Move to Archive": [
-        "Arşive taşı"
+        "Arşivle"
       ],
       "Move to Inbox": [
         "Gelen kutusuna taşı"
@@ -6061,6 +6213,9 @@
       ],
       "Star": [
         "Yıldız koy/kaldır"
+      ],
+      "Open command panel": [
+        "Komut panosunu aç"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6131,7 +6286,7 @@
         "Tüm kişiler"
       ],
       "Also archive": [
-        "Arşive taşı"
+        "Ayrıca arşivlensin"
       ],
       "Always label sender's emails": [
         "Göndericinin e-postaları şu şekilde etiketlensin"
@@ -6383,7 +6538,7 @@
         "Şuraya taşınsın"
       ],
       "Move to Archive": [
-        "Arşive taşı"
+        "Arşivle"
       ],
       "Move to Inbox": [
         "Gelen kutusuna taşı"
@@ -6564,6 +6719,21 @@
       ],
       "Your password (admin)": [
         "Parolanız (yönetici)"
+      ],
+      "Cleaned": [
+        "Temizlendi"
+      ],
+      "Open in a new tab": [
+        "Yeni sekmede aç"
+      ],
+      "Original link": [
+        "Özgün bağlantı"
+      ],
+      "Synchronize with system": [
+        "Sistem ile aynı"
+      ],
+      "Type a command...": [
+        "Bir komut yazın..."
       ]
     },
     "Label attach to date input to select a date": {
@@ -6808,6 +6978,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Güncellenen daveti görmek için anahtarlarınızı yeniden etkinleştirmelisiniz"
+      ],
+      "Reactivate now": [
+        "Şimdi yeniden etkinleştir"
       ]
     },
     "Link to calendar event": {
@@ -7137,6 +7310,12 @@
       ],
       "Up to 500 GB of storage": [
         "500 GB depolama alanına kadar"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email takma adları"
+      ],
+      "Up to 3 TB of storage": [
+        "3 TB depolama alanına kadar"
       ]
     },
     "new_plans: feature info": {
@@ -7145,6 +7324,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Depolama alanı ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } ve ${ DRIVE_APP_NAME } arasında paylaşılır"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Çevrim içi kimlikleriniz için e-posta adresleri oluşturun. Örneğin alışveriş işlemleri için AliAlisveris@${ domain }, haber aboneliği için AliHaber@${ domain2 } gibi takma adlar oluşturabilirsiniz"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Dilerseniz siz@sirketiniz.com gibi kendi özel etki alanınızla e-posta adresleri oluşturun"
       ]
     },
     "new_plans: label": {
@@ -7232,6 +7417,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Bunu istediğiniz zaman ayarlarınızdan değiştirebilirsiniz."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Diğer tema ayarlarını Ayarlar > Görünüm bölümünde bulabilirsiniz."
       ]
     },
     "Option": {
@@ -7399,6 +7587,12 @@
       ],
       "Write your message": [
         "İletinizi yazın"
+      ],
+      "Search date, name, email address, or subject line": [
+        "Tarihe, ada, e-posta adresine veya konu satırına göre arama yapın"
+      ],
+      "Type a command…": [
+        "Bir komut yazın…"
       ]
     },
     "Placeholder for contact group name": {
@@ -7771,7 +7965,7 @@
         "Güvenli yayın akışı"
       ],
       "Support online privacy": [
-        "Çevrimiçi gizliliği destekleyin"
+        "Çevrim içi gizliliği destekleyin"
       ]
     },
     "specialoffer: Footer": {
@@ -7920,6 +8114,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Depolama alanı ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } ve ${ DRIVE_APP_NAME } arasında paylaşılır."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "En yüksek sınırları olan tüm ücretli hizmetler: 100 e-posta adresi, 10 özel etki alanı, sınırsız hide-my-email takma adı, takvim gönderisi, şifrelenmiş bulut depolama alanı, dosya paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "1 özel e-posta etki alanı, 10 e-posta adresi, 10 hide-my-email takma adı, takvim paylaşımı ve diğer özellikler."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "3 özel e-posta etki alanı, 15 e-posta adresi, sınırsız sayıda hide-my-email takma adı, takvim paylaşımı ve diğer özellikler."
       ]
     },
     "Spotlight": {
@@ -7946,6 +8149,12 @@
       ],
       "You can now search the content of your encrypted emails.": [
         "Artık şifrelenmiş e-postalarınızın içeriğinde arama yapabilirsiniz."
+      ],
+      "Search just got smarter and faster": [
+        "Arama artık daha akıllı ve daha hızlı"
+      ],
+      "Try it today.": [
+        "Bugün deneyin."
       ]
     },
     "Status": {
@@ -8230,6 +8439,9 @@
       ],
       "Verification successful": [
         "Doğrulandı"
+      ],
+      "Message content search enabled": [
+        "İleti içeriği arama etkinleştirildi"
       ]
     },
     "Success notification": {
@@ -8745,7 +8957,7 @@
         "Tümünü yanıtla"
       ],
       "Report a problem": [
-        "Bir sorun bildirin"
+        "Sorun bildirin"
       ],
       "Request new code": [
         "Yeni kod iste"
@@ -8882,6 +9094,40 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mail Plus ücretsiz deneme süreniz ${ textDate } tarihinde sonra erecek"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-posta adresi",
+        "${ emailsCount } e-posta adresi"
+      ],
+      "(active)": [
+        "(etkin)"
+      ],
+      "Billing cycle": [
+        "Fatura dönemi"
+      ],
+      "Cannot add more addresses": [
+        "Daha fazla adres eklenemez"
+      ],
+      "Day theme": [
+        "Gündüz teması"
+      ],
+      "Move all messages to Archive": [
+        "Tüm iletileri arşivle"
+      ],
+      "Night theme": [
+        "Gece teması"
+      ],
+      "No trackers found": [
+        "Herhangi bir izleyici bulunamadı"
+      ],
+      "Protect your email": [
+        "E-postanızı koruyun"
+      ],
+      "This email is protected": [
+        "Bu e-posta korunuyor"
+      ],
+      "Unlock contacts groups": [
+        "Kişi gruplarının kilidini açın"
       ]
     },
     "Title header": {
@@ -8963,6 +9209,21 @@
       ],
       "You do not have any contacts to export": [
         "Dışa aktarılacak bir kişi kaydınız yok"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Sisteminizin gündüz ve gece kipine uyarak gündüz ve gece için seçtiğiniz temalar arasında otomatik olarak geçiş yapın"
+      ],
+      "The image could not be loaded": [
+        "Görsel yüklenemedi"
+      ],
+      "The image could not be loaded using proxy": [
+        "Görsel vekil sunucu kullanılarak yüklenemedi"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Seçilmiş tema sisteminiz \"koyu kipe\" geçtiğinde etkinleştirilecek"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Seçilmiş tema sisteminiz \"açık kipe\" geçtiğinde etkinleştirilecek"
       ]
     },
     "Tor out of date": {
@@ -9070,7 +9331,7 @@
         "Bu içe aktarma işlemi, ${ BRAND_NAME } hesabınızla kullanılabilecek depolama alanını aşabilir. Lütfen içe aktarmanızı özelleştirmeyi değerlendirin."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
-        "Ne yazık ki, şu anca çevrimiçi değiliz. Lütfen sorununuzu aktarmak için aşağıdaki formu doldurun. Yeniden çevrimiçi olduğumuzda inceleyip size geri döneceğiz."
+        "Ne yazık ki, şu anca çevrim içi değiliz. Lütfen sorununuzu aktarmak için aşağıdaki formu doldurun. Yeniden çevrim içi olduğumuzda inceleyip size geri döneceğiz."
       ],
       "We couldn't verify the mail server. If you trust it, you can skip this verification.": [
         "E-posta sunucusunu doğrulayamadık. Sunucuya güveniyorsanız, bu doğrulamayı atlayabilirsiniz."
@@ -9317,6 +9578,157 @@
       ],
       "Yearly, ${ untilString }": [
         "Yılda bir, ${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Yıllık"
+      ],
+      "Monthly": [
+        "Aylık"
+      ],
+      "Two-year": [
+        "Iki yıllık"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Yeni bir klasör ekle"
+      ],
+      "Create a new label": [
+        "Yeni bir etiket ekle"
+      ],
+      "Go to Archive": [
+        "Arşive git"
+      ],
+      "Go to Drafts": [
+        "Taslaklar kutusuna git"
+      ],
+      "Go to Inbox": [
+        "Gelen kutusuna git"
+      ],
+      "Go to Sent": [
+        "Gönderilmiş kutusuna git"
+      ],
+      "Go to Spam": [
+        "İstenmeyen kutusuna git"
+      ],
+      "Go to Starred": [
+        "Yıldızlı kutusuna git"
+      ],
+      "Go to Trash": [
+        "Çöp kutusuna git"
+      ],
+      "New message": [
+        "Yeni ileti"
+      ],
+      "Search": [
+        "Ara"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Sistem varsayılanı"
+      ],
+      "Theme default": [
+        "Tema varsayılanı"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Büyük"
+      ],
+      "Medium (recommended)": [
+        "Orta (önerilen)"
+      ],
+      "Small": [
+        "Küçük"
+      ],
+      "Very large": [
+        "Çok büyük"
+      ],
+      "Very small": [
+        "Çok küçük"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Gönderici doğrulama"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Gönderici doğrulanamadı: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Gönderici doğrulandı: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Doğrulama anahtarı, güvenilen anahtarlar listesinde bulunmuyor."
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 yıl"
+      ],
+      "2 years": [
+        "2 yıl"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Ücretli Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Ücretli Mail ve Calendar"
+      ],
+      "Premium Password Manager": [
+        "Ücretli Parola Yöneticisi"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Parolalarınızı güvenle saklayın ve sitelerde otomatik olarak kullanın. Sınırsız parola, otomatik doldurma, parola oluşturucu ve daha fazlasını içerir."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Parola yöneticisi"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Tüm aygıtlarınızda güvenli hesap bilgileri oluşturun. Sınırsız takma ad (e-posta adresi), 20 kasa, entegre 2 adımlı doğrulama, kredi kartı otomatik doldurma ve daha fazlasını içerir."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "65 üzerindeki ülkede 2950'nin üzerinde sunucu, 10 taneye kadar aygıt bağlayabilme, dünya çapında yayın akışı hizmetlerine erişim, kötü amaçlı yazılım ve reklam engelleyici ile diğer özellikleri içerir."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "1 özel e-posta etki alanı, 10 e-posta adresi, 10 hide-my-email takma adı, takvim paylaşma ve daha fazlası için destek içerir."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Dosyalarınızı şifrelenmiş bulut depolama alanı ile koruyun. Sürüm geçmişi, şifrelenmiş dosya paylaşımı ve diğer özellikler."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Aboneliğiniz, faturalama döneminizin sonunda otomatik olarak standart tarife üzerinden yenilenir."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "İnidirmler standart aylık ücretlendirme temellidir. Bu teklif sadece ilk defa abone olacaklar için geçerlidir."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Sınırlı bir süre için ${ BRAND_NAME }'un en iyi ürünlerini özel bir indirim ile edinin."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Topluluk desteğimizin dokuzuncu yıl dönümünü kutluyoruz!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME } Yıl Dönümü Fırsatları"
       ]
     }
   }

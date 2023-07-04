@@ -155,7 +155,7 @@
         "Vyberte soubor nebo jej sem přetáhněte"
       ],
       "Clear": [
-        "Vyčistit"
+        "Smazat"
       ],
       "Clear all formatting": [
         "Vymazat veškeré formátování"
@@ -1158,6 +1158,30 @@
       ],
       "Zoom out": [
         "Oddálit"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Na jednu skupinu kontaktů je povoleno maximálně 100 kontaktů"
+      ],
+      "Block email tracking": [
+        "Blokovat sledovací prvky v e-mailech"
+      ],
+      "Downloading": [
+        "Stahování"
+      ],
+      "hide-my-email aliases": [
+        "aliasy Hide-my-email"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Obrázek nemohl být načten kvůli ochraně před sledovacími prvky."
+      ],
+      "Image will be loaded without a proxy": [
+        "Obrázek se načte bez proxy serveru"
+      ],
+      "Move all to archive": [
+        "Přesunout vše do archivu"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "Abychom mohli bezpečně prohledávat vaše e-maily, musíme do prohlížeče stáhnout kopie vašich zpráv. Počáteční stahování může chvíli trvat."
       ]
     },
     "action": {
@@ -1252,7 +1276,7 @@
     },
     "Animation": {
       "${ nameToDisplay }'s inbox": [
-        "Doručená pošta ${ nameToDisplay }"
+        "${ nameToDisplay } doručená pošta"
       ],
       "5 trackers removed": [
         "5 sledovacích prvků odstraněno"
@@ -2919,6 +2943,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Kontakty, které nechcete sloučit ani zachovat, označte pro smazání. Ke smazání dojde po kliknutí na tlačítko pro sloučení"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Šetřete čas odesláním e-mailů nebo pozvánek všem najednou, což je mimo jiné prémiová funkce. Navyšte tarif ještě dnes."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3482,6 +3509,15 @@
       ],
       "Your search matched too many results. Please limit your search and try again.": [
         "Vyhledávání našlo příliš mnoho výsledků. Upřesněte hledání a zkuste to prosím znovu."
+      ],
+      "Cannot export this contact": [
+        "Nelze exportovat tento kontakt"
+      ],
+      "Username must begin with a letter or digit": [
+        "Uživatelské jméno musí začínat písmenem nebo číslicí"
+      ],
+      "Username must end with a letter or digit": [
+        "Uživatelské jméno musí končit písmenem nebo číslicí"
       ]
     },
     "Error adding participants to a calendar event": {
@@ -3798,6 +3834,9 @@
       ],
       "View the invitations": [
         "Zobrazit pozvánky"
+      ],
+      "Decline invitation": [
+        "Odmítnout pozvánku"
       ]
     },
     "familyOffer_2023:Deal details": {
@@ -3825,7 +3864,7 @@
         "zákaznická podpora"
       ],
       "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
-        "Pokud pozvánku přijmete, převedeme vás z aktuálního tarifu a na váš účet připíšeme nevyužitou částku."
+        "Pokud pozvánku přijmete, převedeme Vás ze stávajícího tarifu a na váš účet připíšeme zbývající částku."
       ],
       "Invited by: ${ inviteEmail }": [
         "Pozvánka od: ${ inviteEmail }"
@@ -3861,7 +3900,7 @@
         "Byli jste pozváni do ${ bannerOrganization }. ${ viewInviteButton }"
       ],
       "You have successfully joined the Family plan": [
-        "Úspěšně jste se připojili k Rodinnému tarifu"
+        "Úspěšně jste se připojili k rodinnému tarifu"
       ],
       "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
         "Můžete propojit svůj účet ${ BRAND_NAME } s tímto skupinovým tarifem a společně využívat všechny prémiové funkce ${ BRAND_NAME_TWO }."
@@ -3919,6 +3958,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Zabezpečte své soubory pomocí šifrovaného cloudového úložiště. Zahrnuje automatickou synchronizaci, šifrované sdílení souborů a další funkce."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Zahrnuje podporu 3 vlastních e-mailových domén, 90 e-mailových adres, neomezený počet aliasů Hide-my-email, sdílení kalendáře a další."
       ]
     },
     "Feedback Modal Title": {
@@ -4191,7 +4233,7 @@
         "Automaticky přeposlat"
       ],
       "Gmail messages to your inbox": [
-        "Zprávy Gmail do složky Doručená pošta"
+        "Gmail zprávy do složky Doručená pošta"
       ],
       "Sign in with Google": [
         "Přihlásit se pomocí Googlu"
@@ -5827,7 +5869,7 @@
         "Navyšte svůj účet pro podporu našeho poslání, zajistit soukromí všem."
       ],
       "Upgrade to support privacy and get more features.": [
-        "Vylepšete pro podporu soukromí a získání více funkcí."
+        "Navyšte svůj tarif pro podporu soukromí a získání více funkcí."
       ],
       "Upgrade to unlock premium features.": [
         "Přejděte na vyšší tarif abyste odemkli prémiové funkce."
@@ -6059,11 +6101,95 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Obnovovací fráze je série 12 slov v určitém pořadí."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } e-mailový sledovací prvek zablokován",
+        "${ numberOfImageTrackers } e-mailové sledovací prvky zablokovány",
+        "${ numberOfImageTrackers } e-mailových sledovacích prvků zablokováno",
+        "${ numberOfImageTrackers } e-mailových sledovacích prvků zablokováno"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } sledovací prvek zablokován",
+        "${ numberOfImageTrackers } sledovací prvky zablokovány",
+        "${ numberOfImageTrackers } sledovacích prvků zablokováno",
+        "${ numberOfImageTrackers } sledovacích prvků zablokováno"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Jste si jisti, že chcete přesunout všechny zprávy odtud do Archivu?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Fakturační cyklus: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kontakt byl přiřazen do skupiny ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kontakt byl odebrán ze skupiny ${ contactGroupName }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Přizpůsobte si vzhled aplikací ${ BRAND_NAME }."
+      ],
+      "Downloading paused": [
+        "Stahování pozastaveno"
+      ],
+      "Drop file here to upload": [
+        "Sem přetáhněte soubor pro nahrání"
+      ],
+      "Drop to import": [
+        "Přetažením provedete import"
+      ],
+      "How hide-my-email aliases works": [
+        "Jak fungují aliasy Hide-my-email"
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Stahování zprávy: ${ currentProgress } z ${ totalProgress }",
+        "Stahování zpráv: ${ currentProgress } ze ${ totalProgress }",
+        "Stahování zpráv: ${ currentProgress } z ${ totalProgress }",
+        "Stahování zpráv: ${ currentProgress } z ${ totalProgress }"
+      ],
+      "No trackers found": [
+        "Bez sledovacích prvků"
+      ],
+      "Our system flagged this message as a suspicious email. Please check that it is legitimate before clicking any links or attachments.": [
+        "Náš systém označil tuto zprávu jako podezřelý e-mail. Než kliknete na jakýkoli odkaz nebo přílohu, zkontrolujte prosím, zda je zpráva legitimní."
+      ],
+      "Search option that lets you securely search for keywords in the body of email messages.": [
+        "Možnost vyhledávání, která vám umožní bezpečně vyhledávat klíčová slova v těle e-mailových zpráv."
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin je služba ${ BRAND_NAME } a váš účet ${ BRAND_NAME_TWO } zahrnuje aliasy Hide-my-email. Chcete-li začít maskovat svou e-mailovou adresu, přejděte do služby SimpleLogin a vytvořte si první alias."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Předplatné vyprší: opětovně aktivujte dne ${ byDate } pro zachování vašich výhod tarifu ${ planName }. ${ reactivateLink }"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "Nemohou vám zasílat spam, pokud neznají vaši e-mailovou adresu. Chraňte svou e-mailovou schránku pomocí funkce Hide-my-email."
+      ],
+      "This conversation contains one or more expiring messages": [
+        "Tato konverzace obsahuje jednu nebo více zpráv s omezenou dobou platnosti"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "Při poskytování svého e-mailu používejte místo své skutečné e-mailové adresy jedinečný jednorázový alias Hide-my-email."
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Dosáhli jste maximálního počtu adres ve skupině (skupinách) kontaktů:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Dosáhli jste maximálního počtu adres ve skupině kontaktů."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Vaše soubory budou zašifrovány a uloženy"
       ]
     },
     "info": {
       "Optional": [
         "Volitelné"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } příkaz nalezen.",
+        "${ filteredList.length } příkazy nalezeny.",
+        "${ filteredList.length } příkazů nalezeno.",
+        "${ filteredList.length } příkazů nalezeno."
       ]
     },
     "Info on errors": {
@@ -6109,6 +6235,12 @@
         "Povolili jste Ověření Adresy pomocí Důvěryhodných klíčů pro tyto e-mailové adresy, ale žádné aktivní šifrovací klíče nebyly označeny jako důvěryhodné.\nMusíte nejprve důvěřovat klíčům platným pro odesílání, abyste odeslali zprávu na tyto e-mailové adresy.",
         "Povolili jste Ověření Adresy pomocí Důvěryhodných klíčů pro tyto e-mailové adresy, ale žádné aktivní šifrovací klíče nebyly označeny jako důvěryhodné.\nMusíte nejprve důvěřovat klíčům platným pro odesílání, abyste odeslali zprávu na tyto e-mailové adresy.",
         "Povolili jste Ověření Adresy pomocí Důvěryhodných klíčů pro tyto e-mailové adresy, ale žádné aktivní šifrovací klíče nebyly označeny jako důvěryhodné.\nMusíte nejprve důvěřovat klíčům platným pro odesílání, abyste odeslali zprávu na tyto e-mailové adresy."
+      ],
+      "Clicking \"Trust Key\" will associate this public key with this sender and emails from this address will be automatically cryptographically verified.": [
+        "Kliknutím na \"Důvěřovat klíči\" přiřadíte tento veřejný klíč k tomuto odesílateli a e-maily z této adresy budou automaticky kryptograficky ověřovány."
+      ],
+      "Clicking \"Trust Key\" will create a new contact and associate this public key with this sender. Emails from this address will be automatically cryptographically verified.": [
+        "Kliknutím na \"Důvěřovat klíči\" vytvoříte nový kontakt a přiřadí tento veřejný klíč k tomuto odesílateli. E-maily z této adresy budou automaticky kryptograficky ověřovány."
       ]
     },
     "Key validation warning": {
@@ -6269,6 +6401,9 @@
       ],
       "Star": [
         "Hvězdička"
+      ],
+      "Open command panel": [
+        "Otevřít příkazový panel"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6772,6 +6907,15 @@
       ],
       "Your password (admin)": [
         "Vaše heslo (admin)"
+      ],
+      "Open in a new tab": [
+        "Otevřít na nové kartě"
+      ],
+      "Synchronize with system": [
+        "Synchronizovat se systémem"
+      ],
+      "Type a command...": [
+        "Zadejte příkaz…"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7016,6 +7160,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Pro zobrazení upravené pozvánky musíte znovu aktivovat své klíče"
+      ],
+      "Reactivate now": [
+        "Opětovně nyní aktivovat"
       ]
     },
     "Link to calendar event": {
@@ -7361,6 +7508,12 @@
       ],
       "Up to 500 GB of storage": [
         "Až 500 GB úložiště"
+      ],
+      "Hide-my-email aliases": [
+        "Aliasy Hide-my-email"
+      ],
+      "Up to 3 TB of storage": [
+        "Až 3 TB úložného prostoru"
       ]
     },
     "new_plans: feature info": {
@@ -7369,6 +7522,12 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
         "Úložný prostor je sdílen mezi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } a ${ DRIVE_APP_NAME }"
+      ],
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Vytvořte více e-mailových adres pro své online identity, např. HonzaNakupy@${ domain } pro nákupní účty a HonzaZpravy@${ domain2 } pro odběry zpráv"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Používejte vlastní e-mailovou doménu, např. vy@vasejmeno.cz"
       ]
     },
     "new_plans: label": {
@@ -7456,6 +7615,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Toto můžete později změnit v nastavení."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Další možnosti úprav motivů jsou k dispozici v Nastavení účtu > Vzhled."
       ]
     },
     "Option": {
@@ -7623,6 +7785,12 @@
       ],
       "Write your message": [
         "Napište zprávu"
+      ],
+      "Search date, name, email address, or subject line": [
+        "Vyhledávání podle data, jména, e-mailové adresy nebo předmětu zprávy"
+      ],
+      "Type a command…": [
+        "Zadejte příkaz…"
       ]
     },
     "Placeholder for contact group name": {
@@ -8169,13 +8337,22 @@
         "Ideální pro rodiny nebo malé týmy, každý může mít vlastní schránku a aliasy. Vyžaduje vlastní doménu."
       ],
       "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
-        "Získejte zdarma placené verze všech nových služeb ochrany soukromí, které v budoucnu spustíme, a také včasný přístup k novým produktům a funkcím."
+        "Získejte zdarma placené verze všech nových služeb ochrany soukromí, které v budoucnu vydáme, včetně předběžného přístupu ke všem budoucím funkcím a produktům."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Zabezpečte své soubory pomocí šifrovaného cloudového úložiště. Zahrnuje automatickou synchronizaci, šifrované sdílení souborů a další funkce."
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Úložný prostor je sdílen mezi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, a ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Všechny naše prémiové služby s nejvyššími limity: 100 e-mailových adres, podpora 10 vlastních domén, neomezený počet aliasů hide-my-email, sdílení kalendáře, šifrované cloudové úložiště a sdílení souborů a další."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Obsahuje podporu 1 vlastní e-mailové domény, 10 e-mailových adres, 10 aliasů Hide-my-email, sdílení kalendáře a další funkce."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Zahrnuje podporu 3 vlastních e-mailových domén, 15 e-mailových adres, neomezený počet aliasů Hide-my-email, sdílení kalendáře a další."
       ]
     },
     "Spotlight": {
@@ -8202,6 +8379,12 @@
       ],
       "You can now search the content of your encrypted emails.": [
         "Nyní můžete prohledávat obsah svých šifrovaných e-mailů."
+      ],
+      "Search just got smarter and faster": [
+        "Vyhledávání se právě stalo chytřejším a rychlejším"
+      ],
+      "Try it today.": [
+        "Vyzkoušejte to ještě dnes."
       ]
     },
     "Status": {
@@ -8534,6 +8717,9 @@
       ],
       "Verification successful": [
         "Ověření proběhlo úspěšně"
+      ],
+      "Message content search enabled": [
+        "Vyhledávání v obsahu zpráv povoleno"
       ]
     },
     "Success notification": {
@@ -9218,6 +9404,42 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Vaše bezplatná zkušební verze služby Mail Plus končí ${ textDate }"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mailová adresa",
+        "${ emailsCount } e-mailové adresy",
+        "${ emailsCount } e-mailových adres",
+        "${ emailsCount } e-mailových adres"
+      ],
+      "(active)": [
+        "(aktivní)"
+      ],
+      "Billing cycle": [
+        "Fakturační cyklus"
+      ],
+      "Cannot add more addresses": [
+        "Nelze přidávat další adresy"
+      ],
+      "Day theme": [
+        "Denní motiv"
+      ],
+      "Move all messages to Archive": [
+        "Přesunout všechny zprávy do Archivu"
+      ],
+      "Night theme": [
+        "Noční motiv"
+      ],
+      "No trackers found": [
+        "Bez sledovacích prvků"
+      ],
+      "Protect your email": [
+        "Chraňte váš e-mail"
+      ],
+      "This email is protected": [
+        "Tento e-mail je chráněný"
+      ],
+      "Unlock contacts groups": [
+        "Odemknout skupiny kontaktů"
       ]
     },
     "Title header": {
@@ -9299,6 +9521,21 @@
       ],
       "You do not have any contacts to export": [
         "Nemáte žádné kontakty k exportu"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatické přepínání mezi preferovanými denními a nočními motivy v synchronizaci s denním a nočním režimem systému."
+      ],
+      "The image could not be loaded": [
+        "Obrázek se nepodařilo načíst"
+      ],
+      "The image could not be loaded using proxy": [
+        "Obrázek nelze načíst pomocí proxy serveru"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"tmavý režim\"."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"světlý režim\"."
       ]
     },
     "Tor out of date": {
@@ -9723,6 +9960,82 @@
       ],
       "Yearly, ${ untilString }": [
         "Roční, ${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Ročně"
+      ],
+      "Monthly": [
+        "Měsíčně"
+      ],
+      "Two-year": [
+        "Dva roky"
+      ]
+    },
+    "Commander action": {
+      "Create a new folder": [
+        "Vytvořit novou složku"
+      ],
+      "Create a new label": [
+        "Vytvořit nový štítek"
+      ],
+      "Go to Archive": [
+        "Přejít do Archivu"
+      ],
+      "Go to Drafts": [
+        "Přejít do Konceptů"
+      ],
+      "Go to Inbox": [
+        "Přejít do Doručené pošty"
+      ],
+      "Go to Sent": [
+        "Přejít do Odeslaných"
+      ],
+      "Go to Spam": [
+        "Přejít do Spamu"
+      ],
+      "Go to Starred": [
+        "Přejít do S hvězdičkou"
+      ],
+      "Go to Trash": [
+        "Přejít do Koše"
+      ],
+      "New message": [
+        "Nová zpráva"
+      ],
+      "Search": [
+        "Hledat"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systémové výchozí"
+      ],
+      "Theme default": [
+        "Výchozí téma"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Velký"
+      ],
+      "Medium (recommended)": [
+        "Střední (doporučeno)"
+      ],
+      "Small": [
+        "Malý"
+      ],
+      "Very large": [
+        "Velmi velké"
+      ],
+      "Very small": [
+        "Velmi malé"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Ověření odesílatele selhalo: ${ icon.senderVerificationDetails.description }"
       ]
     }
   }
