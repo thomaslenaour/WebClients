@@ -678,6 +678,45 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "一つの連絡先グループに追加できる連絡先は最大 100 件です"
+      ],
+      "Change": [
+        "変更"
+      ],
+      "Delete this version": [
+        "このバージョンを削除"
+      ],
+      "Delete version": [
+        "バージョンを削除"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "トラッキング防止が画像の読み込みをブロックしました。"
+      ],
+      "Image will be loaded without a proxy": [
+        "画像はプロキシーを経由せずに読み込まれます"
+      ],
+      "Load": [
+        "読み込む"
+      ],
+      "New message": [
+        "新規メッセージ"
+      ],
+      "Restore": [
+        "復元"
+      ],
+      "Restore this version": [
+        "このバージョンを復元"
+      ],
+      "Restore version": [
+        "バージョンの復元"
+      ],
+      "Save version as copy": [
+        "バージョンをコピーとして保存"
+      ],
+      "See version history": [
+        "バージョン履歴を表示"
       ]
     },
     "Actions message": {
@@ -807,6 +846,9 @@
       ],
       "Website access problem": [
         "ウェブサイトへのアクセスに関する問題"
+      ],
+      "Pass problem": [
+        "Pass に関する問題"
       ]
     },
     "Button": {
@@ -816,10 +858,10 @@
     },
     "Collapsible tooltip": {
       "Collapse": [
-        "作成"
+        "閉じる"
       ],
       "Expand": [
-        "展開"
+        "開く"
       ]
     },
     "color": {
@@ -1785,6 +1827,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "結合または保持する必要のない連絡先を削除するためにマークができます。 削除はマージボタンがクリックされた後にのみ行われます"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Proton Mail ロゴとプラスマーク"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2138,6 +2183,21 @@
       ],
       "Your import will not be processed.": [
         "インポートできませんでした。"
+      ],
+      "Cannot export this contact": [
+        "この連絡先はエクスポートできません"
+      ],
+      "The email addresses do not match": [
+        "メールアドレスが一致しません"
+      ],
+      "Username must begin with a letter or digit": [
+        "ユーザー名は英字か数字で始めなければいけません"
+      ],
+      "Username must end with a letter or digit": [
+        "ユーザー名の最後は英字か数字でなければいけません"
+      ],
+      "You have reached the maximum number of calendars. Some calendars couldn't be imported.": [
+        "カレンダーの個数が上限に達しました。いくつかのカレンダーはインポートできませんでした。"
       ]
     },
     "Error importing calendar": {
@@ -2167,11 +2227,17 @@
       ],
       "Your file ${ formattedFilename } is not a calendar.": [
         "ファイル　${ formattedFilename }はカレンダーではありません。"
+      ],
+      "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
+        "ファイル ${ formattedFilename } の読み取り中にエラーが発生しました。不正なファイル形式です。"
       ]
     },
     "Error importing contact": {
       "Encryption failed": [
         "暗号化に失敗しました"
+      ],
+      "vCard versions < 3.0 not supported": [
+        "vCard バージョン 3.0 未満はサポートされていません"
       ]
     },
     "Error importing contacts": {
@@ -2192,6 +2258,9 @@
       ],
       "Your file ${ formattedFilename } is empty.": [
         "ファイル${ formattedFilename } は空です。"
+      ],
+      "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
+        "ファイル ${ formattedFilename } の読み取り中にエラーが発生しました。不正なファイル形式です。"
       ]
     },
     "Error importing event": {
@@ -2316,6 +2385,12 @@
       ],
       "You may also refresh the page or try again later.": [
         "ページを更新するか、後ほどもう一度お試しください。"
+      ],
+      "Please refresh the page or try again later.": [
+        "ページを再読み込みするか、後でもう一度お試しください。"
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "このページをロードできません。ページを再読み込みするかインターネットの接続状況を確認してください。"
       ]
     },
     "Error notification": {
@@ -2509,6 +2584,9 @@
       ],
       "Please don't close the tab before the importing process is finished.": [
         "インポートが完了するまでタブを閉じないでください。"
+      ],
+      "An error occurred while encrypting and adding your event. No event could be imported.": [
+        "予定の暗号化と追加中にエラーが発生しました。予定をインポートできませんでした。"
       ]
     },
     "Import calendar warning": {
@@ -2525,6 +2603,12 @@
       ],
       "This file contains invitation responses:": [
         "以下のファイルには参加の是非の回答があります。"
+      ],
+      "Imported invitations appear in ${ CALENDAR_APP_NAME } as simple events without organizer and participant details. To get event updates and see participants, ask organizers to invite you using your ${ BRAND_NAME } email address.": [
+        "インポートされた招待は、${ CALENDAR_APP_NAME }にシンプルなイベントとして主催者と参加者の詳細なしで表示されます。イベントの最新情報を入手して参加者を確認するには、${ BRAND_NAME }メールアドレスを使用して主催者に招待するよう依頼してください。"
+      ],
+      "This file contains some data that we cannot import:": [
+        "このファイルにはインポートできないデータが含まれています:"
       ]
     },
     "Import contact": {
@@ -3702,6 +3786,132 @@
       ],
       "Your previous recovery phrase": [
         "以前の回復フレーズ"
+      ],
+      "A phone number can only be used to verify one ${ BRAND_NAME } account": [
+        "電話番号は、1つの ${ BRAND_NAME } アカウントの認証にのみ使用できます。"
+      ],
+      "Are you sure you want to permanently delete": [
+        "バージョン履歴から"
+      ],
+      "Billing cycle: ${ text }": [
+        "支払いサイクル: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "グループ ${ contactGroupName } に連絡先を追加しました"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "グループ ${ contactGroupName } から連絡先を削除しました"
+      ],
+      "Current version": [
+        "現在のバージョン"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME }アプリの外観をカスタマイズ"
+      ],
+      "Drop file here to upload": [
+        "アップロードするファイルをここにドロップ"
+      ],
+      "Drop to import": [
+        "ドロップしてインポート"
+      ],
+      "File will not be updated": [
+        "ファイルは更新されません"
+      ],
+      "For best results, avoid streaming and memory-intensive activities or split your upload into smaller batches.": [
+        "最適な結果を得るには、ストリーミングやメモリ消費の大きな処理を避けるか、より小さな処理単位にアップロードを分割してください。"
+      ],
+      "Free forever": [
+        "永久に無料"
+      ],
+      "from the version history?": [
+        "を完全に削除してよろしいですか？"
+      ],
+      "Last week": [
+        "先週"
+      ],
+      "Need to share a file? Then get ${ DRIVE_APP_NAME },\nthe safest way to share, store, and sync your files.": [
+        "ファイルを共有する必要がありますか？\nそれなら、ファイルを共有/保管/同期する最も安全な ${ DRIVE_APP_NAME } を使いましょう。"
+      ],
+      "Nothing here yet": [
+        "まだ何もありません"
+      ],
+      "Preview for this file type is not supported": [
+        "申し訳ございません、このファイル形式はサポートされておりません"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "以前のバージョンは ${ retentionLabel } 保存されます"
+      ],
+      "Previous versions are not saved": [
+        "以前のバージョンは保存されません"
+      ],
+      "Restore": [
+        "復元"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "復元が進行中です。これは数秒かかることがあります。"
+      ],
+      "Restored files ${ formattedDate }": [
+        "復元されたファイル ${ formattedDate }"
+      ],
+      "Select which calendars to import. A new calendar will be created for each imported calendar according to the number of calendars available in your plan.": [
+        "インポートするカレンダーを選択します。プランで利用可能なカレンダーの数に応じて、インポートしたカレンダーごとに新しいカレンダーが作成されます。"
+      ],
+      "Signature cannot be validated due to network error, please try again later.": [
+        "ネットワークエラーのため、署名の検証ができません。後ほど再度お試しください。"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "サブスクリプションがもうすぐ終了します: ${ planName }の特典を維持するには${ byDate }までに更新してください。${ reactivateLink }"
+      ],
+      "The encrypted data is slightly larger due to the overhead of the encryption and signatures, which ensure the security of your data.": [
+        "データのセキュリティを保証する暗号化と署名のオーバーヘッドの分、暗号化済みデータはサイズが大きくなります。"
+      ],
+      "This file may have been deleted, moved or made unavailable. Try reaching out to the file owner.": [
+        "このファイルは削除/移動/アクセス不可にされた可能性があります。ファイルのオーナーに確認してください。"
+      ],
+      "This will replace the existing file with the folder": [
+        "既存のファイルをフォルダーで置き換えます"
+      ],
+      "This will replace the existing folder with the file": [
+        "既存のフォルダーをファイルで置き換えます"
+      ],
+      "This will upload a new version of the file": [
+        "ファイルの新しいバージョンをアップロードします"
+      ],
+      "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
+        "データを復元するには、データが作成されたときに使用された連絡先の暗号鍵を再度有効にする必要があります。したがって、鍵が生成されたときに使用されたパスワードを覚えている必要があります。"
+      ],
+      "Today": [
+        "今日"
+      ],
+      "Upgrade now to get premium features, products and storage at a special price": [
+        "今すぐアップグレードして、プレミアム機能、製品、ストレージを特別価格で手に入れよう"
+      ],
+      "Version is deleted": [
+        "バージョンが削除されました"
+      ],
+      "Version is restored": [
+        "バージョンが復元されました"
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "は${ formattedRevisionDate }のバージョンに復元されます。他のバージョンもすべて保存されたままになります。"
+      ],
+      "With ${ DRIVE_APP_NAME }, your data is protected with end-to-end encryption. Only you can decrypt it.": [
+        "${ DRIVE_APP_NAME } ではデータはエンドツーエンド暗号化で保護されます。これを復号できるのはあなただけです。"
+      ],
+      "Yesterday": [
+        "昨日"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "連絡先グループのアドレス数の上限に達しました。"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "連絡先グループのアドレス数の上限に達しました。"
+      ],
+      "Your files will be encrypted and then saved": [
+        "ファイルは暗号化して保存されます"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "あなたのプランでは、最大 7 日間 10 バージョンに制限されています"
       ]
     },
     "Info on errors": {
@@ -3763,7 +3973,7 @@
         "${ BRAND_NAME } ユーザー名"
       ],
       "(Expired)": [
-        "（有効期限切れ）"
+        "(有効期限切れ)"
       ],
       "(Temporarily unavailable. Please check back later.)": [
         "(一時的に利用できません。あとでお試しください。)"
@@ -4181,6 +4391,36 @@
       ],
       "Your password (admin)": [
         "あなたのパスワード (管理者)"
+      ],
+      "${ nbDay } days": [
+        "${ nbDay } 日"
+      ],
+      "${ nbYear } years": [
+        "${ nbYear } 年"
+      ],
+      "Downloading ${ percentageValue }%": [
+        "ダウンロード中 ${ percentageValue }%"
+      ],
+      "Duplicate found": [
+        "重複が見つかりました"
+      ],
+      "Keep both": [
+        "両方を保持"
+      ],
+      "Keep both files": [
+        "両方のファイルを保持"
+      ],
+      "Keep both folders": [
+        "両方のフォルダーを保持"
+      ],
+      "Replace existing file": [
+        "既存のファイルを置き換え"
+      ],
+      "Replace existing folder": [
+        "既存のフォルダーを置き換え"
+      ],
+      "Show indexing progress of Encrypted Search": [
+        "暗号化済みデータ検索のインデックス作成状況を表示"
       ]
     },
     "Label for contact group color": {
@@ -4272,6 +4512,9 @@
       ],
       "Your import is starting": [
         "インポートが開始しました"
+      ],
+      "Amount of calendars created: ${ createdCalendarCount } out of ${ calendarsToBeCreated }": [
+        "カレンダーの作成数：${ createdCalendarCount } のうち、${ calendarsToBeCreated }"
       ]
     },
     "Message": {
@@ -4570,6 +4813,9 @@
       ],
       "You can change this anytime in your settings.": [
         "この設定はいつでも変更できます。"
+      ],
+      "Set up your organization testing": [
+        "組織の設定"
       ]
     },
     "Onboarding Title": {
@@ -5397,6 +5643,39 @@
       ],
       "You’ve got 1 GB of storage": [
         "1 GB のストレージを手に入れました"
+      ],
+      "${ emailsCount } email addresses": [
+        "${ emailsCount } 件のメールアドレス"
+      ],
+      "(active)": [
+        "(アクティブ)"
+      ],
+      "Billing cycle": [
+        "支払い間隔"
+      ],
+      "Cannot add more addresses": [
+        "これ以上アドレスを追加できません"
+      ],
+      "Day theme": [
+        "昼間のテーマ"
+      ],
+      "Hm, we couldn't find that one": [
+        "その要素が見つかりませんでした"
+      ],
+      "Night theme": [
+        "夜間のテーマ"
+      ],
+      "Preview": [
+        "プレビュー"
+      ],
+      "Unlock contacts groups": [
+        "連絡先グループをアンロック"
+      ],
+      "Version details": [
+        "バージョンの詳細"
+      ],
+      "Version history": [
+        "バージョン履歴"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -5568,6 +5847,472 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "無料トライアルは ${ textDate } に終了します。${ action }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "1年払い"
+      ],
+      "Monthly": [
+        "月額"
+      ],
+      "Two-year": [
+        "2年払い"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "合計 3 TB のストレージ"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "${ planName } を入手"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "ストレージ容量は家族メンバー間で ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } で共有されます。"
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Got it": [
+        "了解"
+      ],
+      "Switch plans": [
+        "プランを変更"
+      ],
+      "View the invitation": [
+        "招待を見る"
+      ],
+      "View the invitations": [
+        "招待を見る"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "プレミアム Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "プレミアム Mail と Calendar"
+      ],
+      "Premium VPN": [
+        "プレミアム VPN"
+      ],
+      "Up to 6 users": [
+        "最大6人のユーザー"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME } グループ"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "カスタムドメインを持つアカウントはVisionaryやファミリープランに参加できません。"
+      ],
+      "customer support": [
+        "カスタマーサポート"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "招待を受けると、あなたの現在のプランは変更され、残高があればあなたのアカウントクレジットに追加されます。"
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "招待者: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "アドレスの管理"
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "メンバーがいるプランのオーナーは他のグループプランに加入できません。"
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "申し訳ありませんが、現在あなたのプランは変更できません。"
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "割り当てられたストレージ: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "サブスクリプション料金は Visionary またはファミリープランのプライマリー管理者に請求されます。"
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary とファミリープランは外部のアカウントをサポートしていません。参加するには ${ BRAND_NAME } アドレスを作成してください。 ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary とファミリープランは現時点では永久アカウントをサポートしていません。"
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "${ invite.OrganizationName } に招待されました"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "六ヶ月の間に受けられる招待は最大で３つまでです。例外措置が必要な場合は ${ supportLink } にお問い合わせください。"
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "${ bannerOrganization } から招待されています。 ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "ファミリープランに参加しました"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "${ BRAND_NAME_TWO } のプレミアム機能が利用できるように、あなたの ${ BRAND_NAME } アカウントをこのグループプランにリンクする招待が届いています。"
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "あなたのアカウントはこのプランで利用可能なメールアドレスの上限を超えています。${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "あなたのアカウントは割り当てられた ${ inviteSpace } を超える ${ usedSpace } のストレージを使用中です。一部のデータを削除するか、プラン管理者にストレージを増やしてもらう必要があります。"
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "あなたの現在のプランでは Visionary またはファミリープランに参加できません。"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*サブスクリプションは支払い間隔終了時に同じ料金で自動更新されます。"
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "割引は標準の月額料金に基づいて計算されます。"
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "${ planName } を入手"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "家族全員のオンラインプライバシー"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "家族アカウントを設定し、ユーザーを招待します "
+      ],
+      "Set up your family": [
+        "家族を設定"
+      ],
+      "Set up your family account": [
+        "家族アカウントの設定"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "${ planName } のご紹介"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "65 か国以上の 2700 台のサーバー、最大 10 台のデバイスの接続、世界中のストリーミングサービスへのアクセス、マルウェアと広告ブロッカーなどが含まれます。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "暗号化クラウドストレージでファイルの安全を保ちます。自動同期、暗号化ファイル共有などが含まれます。"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "システムのデフォルト"
+      ],
+      "Theme default": [
+        "テーマのデフォルト"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中 (推奨)"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "極大"
+      ],
+      "Very small": [
+        "極小"
+      ]
+    },
+    "Mail import summary": {
+      "Import all messages from ${ itemsToImportCount } folders and label them as": [
+        "${ itemsToImportCount } フォルダーからすべてのメッセージをインポートし、それらを次のようにラベル付けします"
+      ],
+      "Import all messages from ${ itemsToImportCount } labels and label them as": [
+        "${ itemsToImportCount } ラベルからすべてのメッセージをインポートし、それらを次のようにラベル付けします"
+      ],
+      "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } folders and label them as": [
+        "${ itemsToImportCount } フォルダから ${ selectedItemsToImportCount } の全メッセージをインポートし、ラベル付けします"
+      ],
+      "Import all messages from ${ selectedItemsToImportCount } out of ${ itemsToImportCount } labels and label them as": [
+        "${ selectedItemsToImportCount } からすべてのメッセージを${ itemsToImportCount } ラベルからインポートし、それらをラベル付けします"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "今すぐアップグレード"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "迷惑メールとごみ箱のメッセージを自動削除"
+      ],
+      "Custom email domains": [
+        "独自メールドメイン"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email エイリアス"
+      ],
+      "Schedule messages at any time": [
+        "いつでもメッセージを送信予約できます"
+      ],
+      "Search message content": [
+        "メッセージ内容の検索"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "制限なしのフォルダー、ラベル、フィルター"
+      ],
+      "Up to 15 email addresses": [
+        "15 件のメールアドレス"
+      ],
+      "Up to 3 TB of storage": [
+        "3 TB のストレージ"
+      ]
+    },
+    "new_plans: feature info": {
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "SimpleLogin by ${ BRAND_NAME } で無制限にエイリアスを作成"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "ストレージ容量は ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } で共有されます。"
+      ]
+    },
+    "Oauth instructions video alternative": {
+      "Select what ${ BRAND_NAME } can access: view your email messages and settings, view and download your contacts, view and download all agendas you access from Google Agenda.": [
+        "${ BRAND_NAME } のアクセス権を選択してください: メールメッセージと設定の閲覧 / 連絡先の閲覧とダウンロード / Google Agendaの全アジェンダの閲覧とダウンロード。"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "公式"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "${ BRAND_NAME } からの公式メール"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "閉じる"
+      ],
+      "Don't show this offer again": [
+        "今後このオファーを表示しない"
+      ],
+      "Special offer": [
+        "特別オファー"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "Unlimited にする"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } days": [
+        "${ days } 日"
+      ],
+      "${ hours } hours": [
+        "${ hours } 時間"
+      ],
+      "${ minutes } minutes": [
+        "${ minutes } 分"
+      ],
+      "${ seconds } seconds": [
+        "${ seconds } 秒"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } months FREE": [
+        "${ n } か月無料"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "合計 ${ storageSize } のストレージ"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 ユーザー"
+      ],
+      "64 countries": [
+        "64 か国"
+      ],
+      "All paid Mail and Calendar features": [
+        "有料の Mail と Calendar の全機能"
+      ],
+      "High speed VPN": [
+        "高速 VPN"
+      ],
+      "Highest VPN speed": [
+        "最高速 VPN"
+      ],
+      "Premium early access": [
+        "プレミアム早期アクセス"
+      ],
+      "Premium Mail and Calendar": [
+        "プレミアム Mail と Calendar"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "プレミアム Mail、Calendar、Drive"
+      ],
+      "Premium VPN": [
+        "プレミアム VPN"
+      ],
+      "Secure cloud storage": [
+        "安全なクラウドストレージ"
+      ],
+      "Secure streaming": [
+        "安全なストリーミング"
+      ],
+      "Support online privacy": [
+        "オンラインプライバシーをサポート"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "割引は標準の月額料金に基づいて計算されます。"
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "サブスクリプションはキャンセルされるまで2年ごとに同じ割引率で自動更新されます。"
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "ライフタイム割引"
+      ],
+      "Limited time only": [
+        "期間限定"
+      ],
+      "Most popular": [
+        "最も人気"
+      ],
+      "Offer ends soon": [
+        "もうすぐセール終了"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "サブスクリプションがキャンセルまたは変更されるまで割引は更新時に適用されます"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "サブスクリプションプランへ移動"
+      ],
+      "Upgrade": [
+        "アップグレード"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ 月"
+      ],
+      "1 year": [
+        "1 年"
+      ],
+      "2 years": [
+        "2 年"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "1 か月毎に ${ amount } の支払い"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "12 か月毎に ${ amount } の支払い"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "15 か月毎に ${ amount } の支払い"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "24 か月毎に ${ amount } の支払い"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "30 か月毎に ${ amount } の支払い"
+      ],
+      "for ${ n } months": [
+        "${ n } か月間"
+      ],
+      "Get the deal": [
+        "割引を入手"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "1年後に割引価格 ${ discountedAmount } (標準価格 ${ regularAmount } から ${ discount }%割引) で契約更新"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "2年後に割引価格 ${ discountedAmount } (標準価格 ${ regularAmount } から ${ discount }%割引) で契約更新"
+      ],
+      "Save ${ discount }%": [
+        "${ discount }% 割引"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "標準価格では 1 か月毎に ${ amount }"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "標準価格では 12 か月毎に ${ amount }"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "標準価格では 15 か月毎に ${ amount }"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "標準価格では 24 か月毎に ${ amount }"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "標準価格では 30 か月毎に ${ amount }"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "ブラックフライデーセール"
+      ],
+      "Cyber Week Sale": [
+        "サイバーウィークセール"
+      ],
+      "End of year offer": [
+        "年末セール"
+      ],
+      "End of Year Sale": [
+        "年末セール"
+      ],
+      "Get our premium bundle and save more": [
+        "プレミアムバンドルでもっとお得に"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "廃止されたVisionaryプランが期間限定で復活しています"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "${ planName }の2年契約でもっとお得に"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "アップグレードして${ planName }の2年契約でもっとお得に"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "ブロックされたコンテンツへのアクセスや、プライベートなブラウジングが可能です。60 か国以上の 1700 台のサーバー、最高速の VPN、ユーザー毎に 10 件の VPN 接続、世界的なストリーミングサービス、マルウェアおよび広告ブロッカーなどが含まれます。"
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "ブロックされたコンテンツへのアクセスや、プライベートなブラウジングが可能です。60 か国以上の 1700 台のサーバー、最高速の VPN、10 件の VPN 接続、世界的なストリーミングサービス、マルウェアおよび広告ブロッカーなどが含まれます。"
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Netflix、Disney+、Prime Video などのストリーミングサービス上のコンテンツにどこからでもアクセスします。"
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "ファミリーや小規模なチームに最適で、各自が受信トレイとエイリアスを持ちます。カスタムドメインが必要です。"
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "私たちが今後リリースする全ての有償プライバシーサービスの機能/製品および早期アクセスを追加コストなしで利用できます。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "暗号化クラウドストレージでファイルの安全を保ちます。自動同期、暗号化ファイル共有などが含まれます。"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "ストレージ容量は ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } で共有されます。"
       ]
     }
   }

@@ -606,6 +606,15 @@
       ],
       "Zoom out": [
         "Semẓi"
+      ],
+      "Change": [
+        "Beddel"
+      ],
+      "Load": [
+        "Sali"
+      ],
+      "New message": [
+        "Izen amaynut"
       ]
     },
     "Actions message": {
@@ -3078,6 +3087,21 @@
       ],
       "Your previous recovery phrase": [
         "Tafyirt-ik•im n tririt yezrin"
+      ],
+      "Billing cycle: ${ text }": [
+        "Asellek yal:${ text }"
+      ],
+      "Current version": [
+        "Lqem amiran"
+      ],
+      "Restore": [
+        "Err-d"
+      ],
+      "Today": [
+        "Ass-a"
+      ],
+      "Yesterday": [
+        "Iḍelli"
       ]
     },
     "Info on errors": {
@@ -4469,6 +4493,9 @@
       ],
       "You have no folders yet": [
         "Ur tesεiḍ ara εad ikaramen"
+      ],
+      "Billing cycle": [
+        "Twala n ufter"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -4613,6 +4640,35 @@
       ],
       "You will lose any customization you made so far.": [
         "Ad tesruḥeḍ kra n waggan i tgiḍ ar tura."
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "S useggas"
+      ],
+      "Monthly": [
+        "S wayyur"
+      ],
+      "Two-year": [
+        "Snat n tikkal i useggas"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Sali aswir tura"
+      ]
+    },
+    "new_plans: feature": {
+      "Custom email domains": [
+        "Tiɣula n yimayl tudmawanin"
+      ],
+      "Search message content": [
+        "Agbur n yizen n unadi"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Unṣib"
       ]
     }
   }

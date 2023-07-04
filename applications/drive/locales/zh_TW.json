@@ -678,6 +678,54 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "每個聯絡人群組至多允許 100 個聯絡人"
+      ],
+      "Change": [
+        "變更"
+      ],
+      "Delete this version": [
+        "刪除此版本"
+      ],
+      "Delete version": [
+        "刪除版本"
+      ],
+      "Download apps": [
+        "下載應用程式"
+      ],
+      "Download Drive for Windows": [
+        "於Windows下載雲端磁碟"
+      ],
+      "Grid layout": [
+        "網格版面配置"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "無法在啟用追蹤保護中載入影像。"
+      ],
+      "Image will be loaded without a proxy": [
+        "圖像不會透過代理伺服器載入"
+      ],
+      "Load": [
+        "載入"
+      ],
+      "New message": [
+        "撰寫"
+      ],
+      "Restore": [
+        "還原"
+      ],
+      "Restore this version": [
+        "還原此版本"
+      ],
+      "Restore version": [
+        "還原版本"
+      ],
+      "Save version as copy": [
+        "將版本另存為複本"
+      ],
+      "See version history": [
+        "查看版本紀錄"
       ]
     },
     "Actions message": {
@@ -1788,6 +1836,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "您可以把既不合併也不保留的聯絡人標記為刪除。唯有在點擊「合併」按鈕時，才會執行刪除"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Proton Mail 標誌與加號"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "透過一次寄送電子郵件或邀請函給所有人，付費功能版的其中之一。立即升級。"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -1882,7 +1936,7 @@
         "發生問題，請再試一次。"
       ],
       "Address primary private key not found": [
-        "找不到電子郵件地址主要私密金鑰"
+        "找不到電子郵件位址主要私密金鑰"
       ],
       "Authentication canceled.": [
         "驗證已取消。"
@@ -2144,6 +2198,18 @@
       ],
       "Your import will not be processed.": [
         "將不會處理您的匯入。"
+      ],
+      "Cannot export this contact": [
+        "無法匯出通訊內容"
+      ],
+      "The email addresses do not match": [
+        "電子郵件位址不相符"
+      ],
+      "Username must begin with a letter or digit": [
+        "使用者名稱的開頭必須為字母或數字"
+      ],
+      "Username must end with a letter or digit": [
+        "使用者名稱的結尾必須為字母或數字"
       ]
     },
     "Error importing calendar": {
@@ -2340,6 +2406,12 @@
       ],
       "You may also refresh the page or try again later.": [
         "您亦可重新整理此頁面，或稍後再試一次。"
+      ],
+      "Please refresh the page or try again later.": [
+        "請重新整理頁面或稍後再試。"
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "我們無法載入此頁面。請重新整理頁面或檢查您的網際網路連線。"
       ]
     },
     "Error notification": {
@@ -2371,7 +2443,7 @@
         "無效的回應"
       ],
       "The event could not be added to your calendar. No answer was sent": [
-        "無法在您的行事曆中添加活動。未發送任何答复"
+        "無法在您的行事曆中加入活動。未發送任何回覆"
       ],
       "The event could not be updated in your calendar. No answer was sent": [
         "無法在您的行事曆中更新活動。未發送任何答复"
@@ -2548,7 +2620,7 @@
     },
     "Import calendar; import invitation": {
       "Imported invitations appear in ${ CALENDAR_APP_NAME } as simple events without organizer and participant details. To get event updates and see participants, ask organizers to invite you using your ${ BRAND_NAME } email address.": [
-        "已匯入的邀請在 ${ CALENDAR_APP_NAME } 中顯示為簡單事件，沒有舉辦人與參與者的詳細資料。若要取得事件更新並顯示參與者，請要求舉辦人以您的 ${ BRAND_NAME } 電子郵件地址向您發出邀請。"
+        "已匯入的邀請在 ${ CALENDAR_APP_NAME } 中顯示為簡單事件，沒有舉辦人與參與者的詳細資料。若要取得事件更新並顯示參與者，請要求舉辦人以您的 ${ BRAND_NAME } 電子郵件位址向您發出邀請。"
       ],
       "This file contains event invitations:": [
         "此檔案包含事件邀請："
@@ -2650,7 +2722,7 @@
         "您的電子郵件帳號要求一個方式來匯出您的資料。"
       ],
       "Your email address and app password are correct. Do ${ boldNot } use your regular password.": [
-        "您的電子郵件地址和應用程式密碼均為正確。${ boldNot } 使用您的一般密碼。"
+        "您的電子郵件位址和應用程式密碼均為正確。${ boldNot } 使用您的一般密碼。"
       ],
       "Your email address and password are correct.": [
         "您的電郵位址和密碼均為正確."
@@ -2834,7 +2906,7 @@
         "找到 ${ groupCounts } 個群組"
       ],
       "${ numContact } contacts": [
-        "${ numContact } 個聯絡人"
+        "${ numContact } 位聯絡人"
       ],
       "${ numGroups } contact groups": [
         "${ numGroups } 個聯絡人群組"
@@ -2846,7 +2918,7 @@
         "找到 ${ providerFoldersNumLocalized } 個資料夾"
       ],
       "${ providerFoldersNumLocalized } labels found in Gmail": [
-        "在 Gmail 中找到 ${ providerFoldersNumLocalized } 個標籤"
+        "在 Gmail 中找到 ${ providerFoldersNumLocalized } 種標籤"
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendars": [
         "${ selectedCalendarsTotal } 個，共 ${ providerCalendars.length } 個行事曆"
@@ -2864,7 +2936,7 @@
         "已選取 ${ selectedFoldersCountLocalized } 個資料夾"
       ],
       "${ selectedFoldersCountLocalized } labels selected": [
-        "已選取 ${ selectedFoldersCountLocalized } 個標籤"
+        "已選取 ${ selectedFoldersCountLocalized } 種標籤"
       ],
       "${ speed }/s": [
         "${ speed }/秒"
@@ -2876,7 +2948,7 @@
         "${ uploadName } 已經存在此位置。"
       ],
       "(${ memberCount } members)": [
-        "(${ memberCount } 個成員)"
+        "(${ memberCount } 位成員)"
       ],
       "A number will be added to the filename": [
         "將在檔案名稱中加入數字"
@@ -3029,7 +3101,7 @@
         "正在解密檔案"
       ],
       "Delete locked drives": [
-        "刪除已鎖定的硬碟"
+        "刪除鎖定的硬碟"
       ],
       "Digital signature verified. This file was securely uploaded by ${ emailAddress }.": [
         "數碼簽署已通過驗證。此檔案由 ${ emailAddress } 安全上載。"
@@ -3410,7 +3482,7 @@
         "請選擇您想匯入的資料夾："
       ],
       "Please select which email address or addresses to add to ${ groupCount } groups.": [
-        "請選取一或多組電郵位址以加入至 ${ groupCount }。"
+        "請選取一或多組電郵位址以加入至 ${ groupCount } 個群組。"
       ],
       "Please select which email address or addresses to add to ${ groupName }.": [
         "請選取一或多組電郵位址以加入至 ${ groupName }。"
@@ -3737,19 +3809,19 @@
         "您所有未儲存的變更將會消失。"
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
-        "已凍結您的 ${ BRAND_NAME } 帳號 。 28 日後，收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲恢復正常服務，請支付所有逾期帳單。"
+        "已凍結您的 ${ BRAND_NAME } 帳號 。 28 日後，收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲恢復正常服務，請支付所有逾期繳款單。"
       ],
       "Your ${ BRAND_NAME } account is currently suspended. Emails are no longer being delivered to your inbox. Your Drive sharing links are no longer active, and you cannot upload new files. To continue using your account, please pay any overdue invoices.": [
-        "已凍結您的 ${ BRAND_NAME } 帳號 。 收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲正常使用服務，請支付所有逾期帳單。"
+        "已凍結您的 ${ BRAND_NAME } 帳號 。 收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲正常使用服務，請支付所有逾期繳款單。"
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
         "您的帳號至少有一張逾期帳單。您的存取將受限制。${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted, and all services are now blocked until payment. ${ payInvoiceLink }": [
-        "由於有多於一張逾期帳單，目前已凍結您的帳號並終止所有服務直至收到付款。 ${ payInvoiceLink }"
+        "您的帳號已有超過一期以上的逾期繳款單，因此造成帳號限制使用，等待您繳清帳款後，所有服務即恢復正常。 ${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted. Continued non-payment will block your emails and sharing links. ${ payInvoiceLink }": [
-        "由於出現多於一張逾期帳單，您的帳號將受限制。持續欠款將封鎖您的電郵和共享連結。 ${ payInvoiceLink }"
+        "您的帳號已有超過一期以上的逾期繳款單，因此帳號功能將受限。若持續未繳清款項，則將封鎖您的電郵和共享連結。 ${ payInvoiceLink }"
       ],
       "Your current browser does not support the downloading of large files due to the unavailability of service workers. Downloading large files may freeze or leave the browser unresponsive. Please use the latest versions of a ${ recommendedBrowser } and try again.": [
         "您目前的瀏覽器不支援下載大型檔案，因為服務工作者功能無法使用。下載大型檔案可能會使瀏覽器凍結或沒有回應。請改用其中一個${ recommendedBrowser }的最新版本，然後再試一次。"
@@ -3780,6 +3852,114 @@
       ],
       "Your previous recovery phrase": [
         "您先前的恢复短語"
+      ],
+      "Are you sure you want to permanently delete": [
+        "您確定您想要永久刪除"
+      ],
+      "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:": [
+        "因為${ DRIVE_APP_NAME }是端對端加密，我們無法替您存取或解密檔案。若要在密碼重設後解鎖您的雲端磁碟，您必須持有以下其中之一。"
+      ],
+      "Billing cycle: ${ text }": [
+        "繳款單週期：${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "聯絡人已指派給群組 ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "聯絡人已取消指派給群組 ${ contactGroupName }"
+      ],
+      "Current version": [
+        "目前版本"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "自訂 ${ BRAND_NAME } 應用程式的視覺與設計。"
+      ],
+      "Drop file here to upload": [
+        "拖曳檔案到此處來上傳"
+      ],
+      "Drop to import": [
+        "拖放以匯入"
+      ],
+      "Failed to generate a secure link. The reason is: ${ error }": [
+        "產生安全連結失敗。原因：${ error }"
+      ],
+      "Failed to generate a secure link. Try again later": [
+        "無法產生安全連結，請稍後再試。"
+      ],
+      "File will not be updated": [
+        "將不會上傳檔案"
+      ],
+      "from the version history?": [
+        "來自版本歷史紀錄？"
+      ],
+      "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process.": [
+        "如下列方案中有一個可用，請前往 ${ BRAND_NAME } 帳號設定開始您的解鎖程序。"
+      ],
+      "Last week": [
+        "上週"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "先前版本會保留 ${ retentionLabel }"
+      ],
+      "Previous versions are not saved": [
+        "前一個版本並未儲存成功"
+      ],
+      "Restore": [
+        "還原"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "還原進行中。這可能需要幾秒鐘。"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "訂閱即將結束:於${ byDate }重新啟用以維持${ planName }的福利。${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "從電腦同步資料夾"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "透過電腦同步的應用程式同步資料夾，以確保檔案為最新狀態且隨時隨地皆可使用"
+      ],
+      "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected.": [
+        "這將從 ${ DRIVE_APP_NAME } 中刪除同步的裝置 ${ deviceName }。裝置上的本機檔案不會受影響。"
+      ],
+      "This will replace the existing file with the folder": [
+        "這將會使用資料夾取代既有檔案"
+      ],
+      "This will replace the existing folder with the file": [
+        "這將會使用檔案取代既有資料夾"
+      ],
+      "This will upload a new version of the file": [
+        "這將會上傳新版本的檔案"
+      ],
+      "This will upload a new version of the folder": [
+        "這將會上傳新版本的資料夾"
+      ],
+      "Today": [
+        "今天"
+      ],
+      "Version is deleted": [
+        "已刪除版本"
+      ],
+      "Version is restored": [
+        "版本已還原"
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "將還原到 ${ formattedRevisionDate } 的版本。其他所有版本仍會被儲存。"
+      ],
+      "Yesterday": [
+        "昨天"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "您已達到通訊群組郵件地址最高上限:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "您以達到通訊群組郵件地址最高上限"
+      ],
+      "Your files will be encrypted and then saved": [
+        "你的檔案將加密後再儲存"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "您的方案限制為多達 7 天的 10 個版本"
       ]
     },
     "Info on errors": {
@@ -3874,7 +4054,7 @@
         "音訊檔"
       ],
       "Authenticator app": [
-        "驗證 APP"
+        "驗證 app"
       ],
       "Automatically save contacts": [
         "自動儲存聯絡人"
@@ -4265,6 +4445,36 @@
       ],
       "Your password (admin)": [
         "您的密碼（管理員）"
+      ],
+      "${ nbDay } days": [
+        "${ nbDay } 天"
+      ],
+      "${ nbYear } years": [
+        "${ nbYear } 年"
+      ],
+      "Duplicate found": [
+        "發現重複項目"
+      ],
+      "Keep both": [
+        "兩者皆保留"
+      ],
+      "Keep both files": [
+        "保留這兩個檔案"
+      ],
+      "Keep both folders": [
+        "保留這兩個資料夾"
+      ],
+      "Replace existing file": [
+        "取代已存在的檔案"
+      ],
+      "Replace existing folder": [
+        "取代已存在的資料夾"
+      ],
+      "Synchronize with system": [
+        "與系統同步"
+      ],
+      "Yes, I want to permanently delete my old files": [
+        "是的，我想要永久刪除我的舊檔案"
       ]
     },
     "Label for contact group color": {
@@ -4303,7 +4513,7 @@
     },
     "Limit of calendars reached": {
       "To add a new calendar, remove an existing one.": [
-        "要新增行事曆，請移除劑有的。"
+        "若要新增行事曆，請先移除現有的其一。"
       ],
       "To add a new calendar, remove another calendar or upgrade your ${ BRAND_NAME } plan to a ${ MAIL_SHORT_APP_NAME } paid plan.": [
         "要新增行事曆，請移除其他行事曆或升級您的 ${ BRAND_NAME } 方案到 ${ MAIL_SHORT_APP_NAME } 付費方案。"
@@ -4336,6 +4546,15 @@
       ],
       "What’s this?": [
         "這是什麼？"
+      ],
+      "${ DRIVE_APP_NAME } Windows app": [
+        "${ DRIVE_APP_NAME } Windows 應用程式"
+      ],
+      "Reactivate now": [
+        "現在重新啟用"
+      ],
+      "Seamlessly sync files and folders between your computer and ${ DRIVE_APP_NAME }.": [
+        "完美無縫地同步檔案和資料夾，可真正實現在您的電腦與 ${ DRIVE_APP_NAME }。"
       ]
     },
     "Loading info": {
@@ -4676,6 +4895,12 @@
       ],
       "You can change this anytime in your settings.": [
         "您隨時都可以在設定中變更。"
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "更多布景主題選項在您的帳號設定→「介面視覺」中提供。"
+      ],
+      "Set up your organization testing": [
+        "設定您的組織"
       ]
     },
     "Onboarding Title": {
@@ -4731,7 +4956,7 @@
     },
     "PGP key warning": {
       "Email address not found among user ids defined in sending key (${ keyUserIds })": [
-        "寄送金鑰所定義的使用者識別碼 (${ keyUserIds }) 中找不到電子郵件地址"
+        "寄送金鑰所定義的使用者識別碼 (${ keyUserIds }) 中找不到電子郵件位址"
       ]
     },
     "Placeholder": {
@@ -5506,6 +5731,36 @@
       ],
       "You’ve got 1 GB of storage": [
         "您已獲得 1 GB 的儲存空間"
+      ],
+      "${ emailsCount } email addresses": [
+        "${ emailsCount }電子郵件位址"
+      ],
+      "(active)": [
+        "(啟用)"
+      ],
+      "Billing cycle": [
+        "繳款單週期"
+      ],
+      "Cannot add more addresses": [
+        "無法加入更多位址"
+      ],
+      "Day theme": [
+        "白天佈景主題"
+      ],
+      "Night theme": [
+        "夜間佈景主題"
+      ],
+      "Preview": [
+        "預覽"
+      ],
+      "Unlock contacts groups": [
+        "解鎖通訊群組"
+      ],
+      "Version details": [
+        "版本詳細資訊"
+      ],
+      "Version history": [
+        "版本歷史紀錄"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -5567,6 +5822,21 @@
       ],
       "You do not have any contacts to export": [
         "您沒有任何可匯出的聯絡人"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "與系統的日夜模式同步，在白天和晚上的偏好佈景主題之間自動切換"
+      ],
+      "The image could not be loaded": [
+        "無法載入圖片"
+      ],
+      "The image could not be loaded using proxy": [
+        "無法透過代理伺服器載入圖片"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "當您的系統設定為「深色模式」時，將會啟用選定的佈景主題"
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "當您的系統設定為「淺色模式」時，將會啟用選定的佈景主題"
       ]
     },
     "Validation": {
@@ -5677,6 +5947,479 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "您的免費試用將於 ${ textDate } 結束。${ action }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "每年"
+      ],
+      "Monthly": [
+        "每月"
+      ],
+      "Two-year": [
+        "兩年"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB 的總儲存空間"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "取得 ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "儲存空間由 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME } 的家庭成員共享。"
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Decline invitation": [
+        "拒絕邀請"
+      ],
+      "Got it": [
+        "我知道了"
+      ],
+      "Switch plans": [
+        "切換方案"
+      ],
+      "View the invitation": [
+        "檢視邀請"
+      ],
+      "View the invitations": [
+        "檢視邀請"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "進階版雲端硬碟"
+      ],
+      "Premium Mail and Calendar": [
+        "進階版郵件與行事曆"
+      ],
+      "Premium VPN": [
+        "進階版 VPN"
+      ],
+      "Up to 6 users": [
+        "多達 6 位使用者"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME } 群組"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "有自訂網域的帳號無法加入 Visionary 或家庭方案。"
+      ],
+      "customer support": [
+        "客服"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "若您接受邀請，我們會將您從目前的方案轉出，並將所有剩餘金額存入的您的帳號。"
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "邀請人：${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "管理電子郵件位址。"
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "有成員的方案的擁有者無法加入其他群組方案。"
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "抱歉，目前無法切換方案。"
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "指派給您的儲存空間：${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "訂閱費用由 Visionary 或家庭方案的主要管理員支付。"
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary 與家庭方案目前不支援外部帳號。請在加入前建立 ${ BRAND_NAME } 地址。${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary 與家庭方案目前不支援 lifetime 帳號。"
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "謹邀請閣下加入 ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "您在六個月內只能接受三次邀請。若您需要例外，請聯絡 ${ supportLink }。"
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "您已被邀請加入 ${ bannerOrganization }。${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "您已成功加入家庭方案"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "我們邀請您將您的 ${ BRAND_NAME } 帳號連結至此群組方案，並一起享受所有 ${ BRAND_NAME_TWO } 進階功能。"
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "您帳號中的電子郵件位址多於此方案中可用的電子郵件位址。${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "您的帳號已使用 ${ usedSpace } 的儲存空間，這超過了為您分配的 ${ inviteSpace }。刪除一些資料或要求方案管理員增加您的儲存空間。"
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "您目前的方案無法加入 Visionary 或家庭方案。"
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*您的訂閱將在您的結算週期結束時以相同的費率自動續訂。"
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "折扣是以每月標準價格為基礎。"
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "取得 ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "您整個家庭的線上隱私"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "設定您的家庭帳號並邀請使用者 "
+      ],
+      "Set up your family": [
+        "設定您的家庭"
+      ],
+      "Set up your family account": [
+        "設定您的家庭帳號"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "介紹 ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "包含在 65 個以上的國家的 2700 臺伺服器，可連結多達 10 個裝置，存取世界各地的串流服務，惡意程式防護與廣告攔截器，還有更多功能。"
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "包含對 3 組自訂電子郵件網域、90 組電子郵件位址、無限組 hide-my-email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "系統預設值"
+      ],
+      "Theme default": [
+        "佈景主題預設值"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "大"
+      ],
+      "Medium (recommended)": [
+        "中（建議）"
+      ],
+      "Small": [
+        "小"
+      ],
+      "Very large": [
+        "非常大"
+      ],
+      "Very small": [
+        "非常小"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "立即升級"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "自動刪除垃圾郵件與垃圾桶中的訊息"
+      ],
+      "Custom email domains": [
+        "自訂電郵網域"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email 別名"
+      ],
+      "Schedule messages at any time": [
+        "在任意時間排程訊息"
+      ],
+      "Search message content": [
+        "搜尋郵件內容"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "資料夾、標籤和篩選器無上限"
+      ],
+      "Up to 15 email addresses": [
+        "多達 15 組電子郵件位址"
+      ],
+      "Up to 3 TB of storage": [
+        "多達 3 TB的儲存空間"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "創建多重電子郵件位址身分，如JohnShopper@${ domain }給購物用途， JohnNews@${ domain2 }給訂閱新聞使用"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "使用 ${ BRAND_NAME } 的 SimpleLogin 取得無限的別名"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "使用您擁有的自訂電子郵件網域地址，例如 you@yourname.com"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "官方"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "來自 ${ BRAND_NAME } 的官方電子郵件"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "關閉"
+      ],
+      "Don't show this offer again": [
+        "不再顯示此優惠"
+      ],
+      "Special offer": [
+        "特別優惠"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "使用無限制"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } days": [
+        "${ days }天"
+      ],
+      "${ hours } hours": [
+        "${ hours }小時"
+      ],
+      "${ minutes } minutes": [
+        "${ minutes }分鐘"
+      ],
+      "${ seconds } seconds": [
+        "${ seconds }秒"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } months FREE": [
+        "${ n }個月免費"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } 總儲存空間"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 個使用者"
+      ],
+      "64 countries": [
+        "64 個國家"
+      ],
+      "All paid Mail and Calendar features": [
+        "所有付費郵件與行事曆功能"
+      ],
+      "High speed VPN": [
+        "高速 VPN"
+      ],
+      "Highest VPN speed": [
+        "業界最高 VPN 速率"
+      ],
+      "Premium early access": [
+        "進階版搶先體驗"
+      ],
+      "Premium Mail and Calendar": [
+        "進階版郵件與行事曆"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "進階版郵件、行事曆與雲端硬碟"
+      ],
+      "Premium VPN": [
+        "進階版 VPN"
+      ],
+      "Secure cloud storage": [
+        "安全的雲端儲存空間"
+      ],
+      "Secure streaming": [
+        "安全的串流"
+      ],
+      "Support online privacy": [
+        "支援線上隱私"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "折扣基於每月基本價格。"
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "此訂閱將每 2 年自動以相同的費用續訂，直到被取消為止。"
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "終身優惠"
+      ],
+      "Limited time only": [
+        "期間限定"
+      ],
+      "Most popular": [
+        "最熱門"
+      ],
+      "Offer ends soon": [
+        "優惠即將結束"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "折扣將在續訂後繼續適用，直到取消訂閱或修改"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "查看訂閱方案"
+      ],
+      "Upgrade": [
+        "升級"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ 月"
+      ],
+      "1 year": [
+        "1 年"
+      ],
+      "2 years": [
+        "2年"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "為期 1 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "為期 12 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "為期 15 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "為期 24 個月收費 ${ amount } "
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "為期 30 個月收費 ${ amount } "
+      ],
+      "for ${ n } months": [
+        "為期${ n }個月"
+      ],
+      "Get the deal": [
+        "取得優惠"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "一年後以折扣價 ${ discountedAmount } 而非 ${ regularAmount }（${ discount }% 折扣）續訂"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "兩年後以折扣價 ${ discountedAmount } 而非 ${ regularAmount }（${ discount }% 折扣）續訂"
+      ],
+      "Save ${ discount }%": [
+        "省下  ${ discount }%"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "長達 1 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "長達 12 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "長達 15 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "長達 24 個月的標準價 ${ amount } "
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "長達 30 個月的標準價 ${ amount } "
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "黑色星期五特賣"
+      ],
+      "Cyber Week Sale": [
+        "Cyber​​ Week 熱賣"
+      ],
+      "End of year offer": [
+        "年終大優惠"
+      ],
+      "End of Year Sale": [
+        "年終優惠"
+      ],
+      "Get our premium bundle and save more": [
+        "取得我們的進階版組合並節省更多"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "我們已停止的永續未來計畫限時回歸"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "使用兩年的 ${ planName } 節省更多"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "使用兩年的 ${ planName } 升級並節省更多"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "存取被攔截的內容並進行私密瀏覽。包含 60 多個國家的 1700 台伺服器、最高的 VPN 速度、每個使用者 10 個 VPN 連線、全球影音串流服務、惡意軟體與廣告攔截器等。"
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "存取攔截的內容並進行私密瀏覽。包含 60 多個國家的 1700 臺伺服器、最高的 VPN 速度、10 個 VPN 連線、全球串流影音服務以及惡意軟體與廣告攔截器等。"
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "在世界各地輕鬆存取影音串流內容，包括 Netflix、Disney+、Prime Video 等."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "我們所有具有最高限制的進階版服務：100 組電子郵件位址、支援 10 組自訂網域、無限制的隱藏 hide-my-email 別名、行事曆分享、加密雲端儲存與檔案分享等。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 1 個自訂電子郵件網域、10 組電子郵件位址、10 組 hide-my-email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "包含對 3 個自訂電子郵件網域、15 組電子郵件位址、無限組 hide-my-email 別名、行事曆分享與更多功能的支援。"
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "非常適合家庭或小型團隊，每個人都可以擁有自己的收件匣與別名。需要自訂網域。"
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "免費取得我們未來釋出的所有新隱私服務的付費版本，以及對所有未來功能和產品的搶先體驗。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }."
       ]
     }
   }

@@ -684,6 +684,54 @@
       ],
       "Zoom out": [
         "Уменьшить масштаб"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Допускается до 100 контактов на группу"
+      ],
+      "Change": [
+        "Изменить"
+      ],
+      "Delete this version": [
+        "Удалить эту версию"
+      ],
+      "Delete version": [
+        "Удалить версию"
+      ],
+      "Download apps": [
+        "Скачать приложения"
+      ],
+      "Download Drive for Windows": [
+        "Скачать приложение хранилища для Windows"
+      ],
+      "Grid layout": [
+        "Сеточный макет"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Некоторые изображения не могут быть загружены при включённой защите от отслеживания."
+      ],
+      "Image will be loaded without a proxy": [
+        "Изображения будут загружаться без использования прокси"
+      ],
+      "Load": [
+        "Загрузить"
+      ],
+      "New message": [
+        "Новое сообщение"
+      ],
+      "Restore": [
+        "Восстановить"
+      ],
+      "Restore this version": [
+        "Восстановить эту версию"
+      ],
+      "Restore version": [
+        "Восстановить версию"
+      ],
+      "Save version as copy": [
+        "Сохранить версию как копию"
+      ],
+      "See version history": [
+        "Просмотреть историю версий"
       ]
     },
     "Actions message": {
@@ -785,7 +833,7 @@
         "Другая"
       ],
       "Pass problem": [
-        "Проблема с Pass"
+        "Проблема с Proton Pass"
       ],
       "Payments problem": [
         "Проблема с платежами"
@@ -933,7 +981,7 @@
         "Имя"
       ],
       "Note": [
-        "Заметки"
+        "Примечания"
       ],
       "Organization": [
         "Организация"
@@ -1797,6 +1845,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Вы можете отметить для удаления те контакты, которые не хотите ни объединять, ни оставлять. Удаление будет происходить только после нажатия кнопки «Объединить»."
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Логотип ProtonMail и знак «плюс»"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Экономьте время, отправляя электронные письма или приглашения всем сразу, это одна из многих функций премиум-подписки. Купите её уже сегодня."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -1888,7 +1942,7 @@
         "Группа с таким именем уже существует"
       ],
       "A problem occurred, please try again.": [
-        "Возникла проблема. Попробуйте ещё раз."
+        "Что-то пошло не так. Попробуйте ещё раз."
       ],
       "Address primary private key not found": [
         "Основной закрытый ключ для адреса не найден"
@@ -2171,6 +2225,18 @@
       ],
       "Your import will not be processed.": [
         "Импорт не будет обработан."
+      ],
+      "Cannot export this contact": [
+        "Не удается экспортировать этот контакт"
+      ],
+      "The email addresses do not match": [
+        "Адреса электронной почты не совпадают"
+      ],
+      "Username must begin with a letter or digit": [
+        "Имя пользователя должно начинаться с буквы или цифры"
+      ],
+      "Username must end with a letter or digit": [
+        "Имя пользователя должно заканчиваться буквой или цифрой"
       ]
     },
     "Error importing calendar": {
@@ -2213,7 +2279,7 @@
         "Ошибка шифрования"
       ],
       "vCard versions < 3.0 not supported": [
-        "Версии vCard < 3.0 не поддерживаются"
+        "vCard версий < 3.0 не поддерживается"
       ]
     },
     "Error importing contacts": {
@@ -2370,6 +2436,12 @@
       ],
       "You may also refresh the page or try again later.": [
         "Также вы можете обновить страницу или повторить попытку позже."
+      ],
+      "Please refresh the page or try again later.": [
+        "Пожалуйста, обновите страницу или повторите попытку позже."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Мы не смогли загрузить эту страницу. Пожалуйста, обновите страницу или проверьте подключение к Интернету."
       ]
     },
     "Error notification": {
@@ -2597,7 +2669,7 @@
         "${ CALENDAR_APP_NAME } в настоящее время не поддерживает определенные типы, детали и форматы событий."
       ],
       "vCard versions < 3.0": [
-        "Версии vCard < 3.0"
+        "vCard версии < 3.0"
       ]
     },
     "Import calendar; import invitation": {
@@ -2900,7 +2972,7 @@
         "${ contactEmailsLength } адресатов"
       ],
       "${ contactName } contains multiple email addresses.": [
-        "Контакт ${ contactName } содержит несколько адресов электронной почты."
+        "Контакт ${ contactName } содержит несколько email-адресов."
       ],
       "${ contactsCount } contact found": [
         "Найден ${ contactsCount } контакт",
@@ -3563,7 +3635,7 @@
         "Окончательно удалить все файлы в вашем заблокированном хранилище"
       ],
       "PGP/Inline is only compatible with Plain Text format.": [
-        "PGP/Inline совместимы только с форматом «простой текст»."
+        "PGP/Inline совместим только с форматом «простой текст»."
       ],
       "PGP/MIME automatically sends the message using the current composer mode.": [
         "PGP/MIME автоматически отправляет сообщение, используя текущий режим редактора писем."
@@ -3647,7 +3719,7 @@
         "Выберите загруженный файл или папку и создайте ссылку на них."
       ],
       "Select the email format you want to be used by default when sending an email to this email address.": [
-        "Выберите формат писем, который вы хотите использовать по умолчанию для отправки сообщений на этом адрес эл. почты."
+        "Выберите формат писем, который вы хотите использовать по умолчанию для отправки сообщений на этот адрес."
       ],
       "Select what you want to import.": [
         "Выберите то, что вы хотите импортировать."
@@ -3662,7 +3734,7 @@
         "Время сеанса истекло"
       ],
       "Setting up PGP allows you to send end-to-end encrypted emails with a non-${ BRAND_NAME } user that uses a PGP compatible service.": [
-        "Настройка PGP позволяет отправлять электронную почту, зашифрованную сквозным методом, не пользователю ${ BRAND_NAME }, который использует службу, совместимую с PGP."
+        "Настройка PGP позволяет отправлять электронную почту со сквозным шифрованием пользователю не-${ BRAND_NAME } сервиса, который использует службу, совместимую с PGP."
       ],
       "Share files with links": [
         "Делитесь файлами с помощью ссылок"
@@ -3725,7 +3797,7 @@
         "Этот аккаунт был отключен из-за возможного нарушения политики."
       ],
       "This address is disabled. To be able to send to this address, the owner must first enable the address.": [
-        "Этот адрес отключён. Чтобы была возможность отправки на этот адрес, его владелец должен включить его."
+        "Этот адрес отключён. Чтобы была возможность отправки на него, владелец адреса должен его включить."
       ],
       "This browser does not support previewing PDF documents. Please download the file.": [
         "Браузер не поддерживает предварительный просмотр документов PDF. Пожалуйста, скачайте файл."
@@ -3926,7 +3998,7 @@
         "В вашем аккаунте есть как минимум один просроченный счёт. Ваш аккаунт ограничен, и все услуги теперь заблокированы до оплаты. ${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted. Continued non-payment will block your emails and sharing links. ${ payInvoiceLink }": [
-        "В вашем аккаунте есть по крайней мере один просроченный счёт. Ваш аккаунт ограничен. Отсутствие оплаты заблокирует ваши электронные письма и ссылки для обмена. ${ payInvoiceLink }"
+        "У Вас есть по крайней мере один просроченный счёт. Ваш аккаунт ограничен. Отсутствие оплаты заблокирует ваши электронные письма и ссылки для обмена. ${ payInvoiceLink }"
       ],
       "Your current browser does not support the downloading of large files due to the unavailability of service workers. Downloading large files may freeze or leave the browser unresponsive. Please use the latest versions of a ${ recommendedBrowser } and try again.": [
         "Ваш текущий браузер не поддерживает загрузку больших файлов из-за недоступности работников службы. Загрузка больших файлов может привести к зависанию или отсутствию реакции браузера. Используйте последние версии ${ recommendedBrowser } и повторите попытку."
@@ -3957,6 +4029,114 @@
       ],
       "Your previous recovery phrase": [
         "Ваша предыдущая фраза для восстановления"
+      ],
+      "Are you sure you want to permanently delete": [
+        "Вы уверены, что хотите удалить его безвозвратно"
+      ],
+      "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:": [
+        "Поскольку ${ DRIVE_APP_NAME } зашифрован сквозным методом, мы не можем получить доступ к вашим файлам или расшифровать их для вас. Чтобы разблокировать диск после сброса пароля, вы должны иметь одно из следующего:"
+      ],
+      "Billing cycle: ${ text }": [
+        "Платежный цикл: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Контакт назначен группе ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Контакт откреплен от группы ${ contactGroupName }"
+      ],
+      "Current version": [
+        "Текущая версия"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Настройте внешний вид ${ BRAND_NAME } приложений."
+      ],
+      "Drop file here to upload": [
+        "Переместите файл сюда, чтобы скачать"
+      ],
+      "Drop to import": [
+        "Импортировать"
+      ],
+      "Failed to generate a secure link. The reason is: ${ error }": [
+        "Не удалось сгенерировать защищенную ссылку. Причина: ${ error }"
+      ],
+      "Failed to generate a secure link. Try again later": [
+        "Не удалось сгенерировать защищенную ссылку. Повторите попытку позже"
+      ],
+      "File will not be updated": [
+        "Файл не будет обновлен"
+      ],
+      "from the version history?": [
+        "из истории версий?"
+      ],
+      "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process.": [
+        "Если у вас есть одно из этого, перейдите к настройкам аккаунта ${ BRAND_NAME }, чтобы начать процесс разблокировки."
+      ],
+      "Last week": [
+        "На прошлой неделе"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "Предыдущие версии сохраняются для ${ retentionLabel }"
+      ],
+      "Previous versions are not saved": [
+        "Предыдущие версии не сохраняются"
+      ],
+      "Restore": [
+        "Восстановить"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "Восстановление идёт. Это может занять несколько секунд."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Окончание подписки: для сохранения преимуществ плана ${ planName } необходимо её восстановить до ${ byDate }. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Синхронизировать папки с вашего компьютера."
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "С лёгкостью синхронизируйте папки с помощью нашего приложения для компьютера, которое гарантирует, что ваши файлы всегда будут актуальны и доступны из откуда угодно."
+      ],
+      "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected.": [
+        "Это приведет к удалению из ${ DRIVE_APP_NAME } синхронизированного устройства ${ deviceName }. Локальные файлы на устройстве не будут затронуты."
+      ],
+      "This will replace the existing file with the folder": [
+        "Это заменит существующий файл на папку"
+      ],
+      "This will replace the existing folder with the file": [
+        "Это заменит существующую папку файлом"
+      ],
+      "This will upload a new version of the file": [
+        "При этом будет загружена новая версия файла"
+      ],
+      "This will upload a new version of the folder": [
+        "Будет загружена новая версия папки"
+      ],
+      "Today": [
+        "Сегодня"
+      ],
+      "Version is deleted": [
+        "Версия удалена"
+      ],
+      "Version is restored": [
+        "Версия восстановлена"
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "будет восстановлена версия от ${ formattedRevisionDate }. Все другие версии также будут сохранены."
+      ],
+      "Yesterday": [
+        "Вчера"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Вы достигли лимита количества адресов в группе(-ах) контактов:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Вы достигли лимита количества адресов в группе контактов."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Ваши файлы будут зашифрованы и затем сохранены"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "Ваш план ограничен 10 версиями на срок до 7 дней"
       ]
     },
     "Info on errors": {
@@ -4445,6 +4625,42 @@
       ],
       "Your password (admin)": [
         "Ваш пароль (admin)"
+      ],
+      "${ nbDay } day": [
+        "${ nbDay } день",
+        "${ nbDay } дня",
+        "${ nbDay } дней",
+        "${ nbDay } дней"
+      ],
+      "${ nbYear } year": [
+        "${ nbYear } год",
+        "${ nbYear } года",
+        "${ nbYear } лет",
+        "${ nbYear } лет"
+      ],
+      "Duplicate found": [
+        "Найден дубликат"
+      ],
+      "Keep both": [
+        "Оставить оба"
+      ],
+      "Keep both files": [
+        "Оставить оба файла"
+      ],
+      "Keep both folders": [
+        "Оставить обе папки"
+      ],
+      "Replace existing file": [
+        "Заменить существующий файл"
+      ],
+      "Replace existing folder": [
+        "Заменить существующую папку"
+      ],
+      "Synchronize with system": [
+        "Синхронизировать с системой"
+      ],
+      "Yes, I want to permanently delete my old files": [
+        "Да, я хочу навсегда удалить свои старые файлы"
       ]
     },
     "Label for contact group color": {
@@ -4516,6 +4732,9 @@
       ],
       "What’s this?": [
         "Что это такое?"
+      ],
+      "Reactivate now": [
+        "Восстановить подписку"
       ]
     },
     "Loading info": {
@@ -4924,10 +5143,16 @@
         "Настройка организации"
       ],
       "Use the app selector in the top left to access all ${ BRAND_NAME } services: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } and ${ DRIVE_SHORT_APP_NAME }.": [
-        "Используйте селектор приложений в левом верхнем углу, чтобы получить доступ ко всем сервисам ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } и ${ DRIVE_SHORT_APP_NAME }."
+        "Используйте переключатель приложений в левом верхнем углу, чтобы получить доступ ко всем сервисам ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } и ${ DRIVE_SHORT_APP_NAME }."
       ],
       "You can change this anytime in your settings.": [
         "Вы можете изменить это в любой момент в настройках."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Больше вариантов оформления доступно в Настройках аккаунта > Внешний вид."
+      ],
+      "Set up your organization testing": [
+        "Настройка организации"
       ]
     },
     "Onboarding Title": {
@@ -5152,36 +5377,36 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } час",
-        "${ hours } часа",
-        "${ hours } часов",
-        "${ hours } часа"
+        "${ days } день",
+        "${ days } дня",
+        "${ days } дней",
+        "${ days } дней"
       ],
       "${ hours } hour": [
-        "${ days } день",
-        "${ days } дня",
-        "${ days } дней",
-        "${ days } дня"
+        "${ hours } час",
+        "${ hours } часа",
+        "${ hours } часов",
+        "${ hours } часов"
       ],
       "${ minutes } minute": [
-        "${ n } месяц БЕСПЛАТНО",
-        "${ n } месяца БЕСПЛАТНО",
-        "${ n } месяцев БЕСПЛАТНО",
-        "${ n } месяца БЕСПЛАТНО"
+        "${ minutes } минута",
+        "${ minutes } минуты",
+        "${ minutes } минут",
+        "${ minutes } минут"
       ],
       "${ seconds } second": [
-        "за ${ n } месяц ",
-        "за ${ n } месяца",
-        "за ${ n } месяцев",
-        "за ${ n } месяца"
+        "${ seconds } секунда",
+        "${ seconds } секунды",
+        "${ seconds } секунд",
+        "${ seconds } секунд"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } секунда",
-        "${ seconds } секунды",
-        "${ seconds } секунд",
-        "${ seconds } секунды"
+        "${ n } месяц БЕСПЛАТНО",
+        "${ n } месяца БЕСПЛАТНО",
+        "${ n } месяцев БЕСПЛАТНО",
+        "${ n } месяцев БЕСПЛАТНО"
       ]
     },
     "specialoffer: Deal details": {
@@ -5290,10 +5515,10 @@
         "Оплата ${ amount } за 30 месяцев."
       ],
       "for ${ n } month": [
-        "${ minutes } минута",
-        "${ minutes } минуты",
-        "${ minutes } минут",
-        "${ minutes } минуты"
+        "за ${ n } месяц",
+        "за ${ n } месяца",
+        "за ${ n } месяцев",
+        "за ${ n } месяцев"
       ],
       "Get the deal": [
         "Получить скидку"
@@ -5379,6 +5604,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Общее хранилище для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } и ${ DRIVE_APP_NAME }"
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Все наших платные сервисы с максимальными лимитами: 100 адресов электронной почты, поддержка 10 своих доменов и неограниченного числа псевдонимов hide-my-email, совместный доступ к календарю, зашифрованное облачное хранилище и обмен файлами, и другое."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Включает поддержку 1 своего домена, 10 адресов электронной почты, 10 псевдонимов hide-my-email, совместный доступ к календарю и другие преимущества."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Включает поддержку 3 своих доменов, 15 адресов электронной почты, неограниченного количества псевдонимов hide-my-email, совместный доступ к календарю и другие преимущества."
       ]
     },
     "Spotlight": {
@@ -5605,7 +5839,7 @@
         "${ numberOfFailedTransfer.total } неудавшаяся загрузок"
       ],
       "Account suspended": [
-        "Аккаунт заблокирован"
+        "Аккаунт временно заблокирован"
       ],
       "Active": [
         "Активно"
@@ -6061,7 +6295,7 @@
         "Ваши бонусные 500 МБ"
       ],
       "Your changes are not synced yet": [
-        "Изменения ещё не синхронизированы"
+        "Изменения ещё не сохранены"
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша бесплатная пробная версия Mail Plus заканчивается ${ textDate }"
@@ -6071,6 +6305,39 @@
       ],
       "You’ve got 1 GB of storage": [
         "У вас 1 ГБ хралинища"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } адрес электронной почты",
+        "${ emailsCount } адреса электронной почты",
+        "${ emailsCount } адресов электронной почты",
+        "${ emailsCount } адреса электронной почты"
+      ],
+      "(active)": [
+        "(активна)"
+      ],
+      "Billing cycle": [
+        "Период оплаты"
+      ],
+      "Cannot add more addresses": [
+        "Невозможно добавить больше адресов"
+      ],
+      "Day theme": [
+        "Дневная тема"
+      ],
+      "Night theme": [
+        "Ночная тема"
+      ],
+      "Preview": [
+        "Предварительный просмотр"
+      ],
+      "Unlock contacts groups": [
+        "Разблокировать группы контактов"
+      ],
+      "Version details": [
+        "Описание версии"
+      ],
+      "Version history": [
+        "История версий"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -6132,6 +6399,21 @@
       ],
       "You do not have any contacts to export": [
         "У вас нет контактов для экспорта"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Автоматически переключаться между вашими предпочтительными темами для дня и ночи синхронно с системными дневным и ночным режимами."
+      ],
+      "The image could not be loaded": [
+        "Не удалось загрузить изображение"
+      ],
+      "The image could not be loaded using proxy": [
+        "Изображение не может быть загружено при использовании прокси"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Выбранная тема станет активной, когда в системе будет выбрана \"тёмная тема\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Выбранная тема станет доступной, когда на системе выбрано \"светлое оформление\""
       ]
     },
     "Validation": {
@@ -6244,7 +6526,7 @@
         "Эта функция требует платного аккаунта ${ BRAND_NAME }"
       ],
       "This import may exceed the storage capacity currently available in your ${ BRAND_NAME } account. Please consider customizing your import.": [
-        "Этот импорт может превысить объём хранилища, доступный в настоящее время в вашем аккаунте ${ BRAND_NAME }. Рассмотрите возможность настройки импорта."
+        "Объём импортируемого материала может вызвать переполнение хранилища, доступного в настоящее время для Вашего аккаунта ${ BRAND_NAME }. Рассмотрите возможность настройки импорта."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
         "К сожалению, в данный момент мы не работаем в режиме онлайн. Пожалуйста, заполните форму ниже, чтобы описать вашу проблему, и мы рассмотрим ее и свяжемся с вами, когда будем онлайн."
@@ -6257,6 +6539,317 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Ваш бесплатный пробный период заканчивается ${ textDate }. ${ action }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Ежегодно"
+      ],
+      "Monthly": [
+        "Ежемесячно"
+      ],
+      "Two-year": [
+        "Каждые 2 года"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "Хранилище на 3 ТБ"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Перейти на тариф ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Общее хранилище для ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } и ${ DRIVE_APP_NAME } доступно всем членам семьи."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Decline invitation": [
+        "Отклонить приглашение"
+      ],
+      "Got it": [
+        "ОК"
+      ],
+      "Switch plans": [
+        "Сменить тариф"
+      ],
+      "View the invitation": [
+        "Посмотреть приглашение"
+      ],
+      "View the invitations": [
+        "Посмотреть приглашения"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Платная версия Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Платная версия Mail и Calendar"
+      ],
+      "Premium VPN": [
+        "Платная версия VPN"
+      ],
+      "Up to 6 users": [
+        "До 6 пользователей"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Группы ${ BRAND_NAME }"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Аккаунты с пользовательскими доменами не могут подключиться к семейному плану или перейти на тариф Visionary."
+      ],
+      "customer support": [
+        "служба поддержки"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Если вы примете приглашение, тарифный план будет изменен. Неиспользованный баланс возвратится на счет аккаунта."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Вас приглашает: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Управляйте адресами."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Владельцы групповых тарифов не могут присоединиться к другим групповым тарифам."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Смена тарифа на данный момент недоступна."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Доступный объем хранилища: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Подписка оплачивается основным администратором семейного плана или тарифа Visionary."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "На данный момент семейный план и тариф Visionary не поддерживают внешние аккаунты. Перед подключением создайте адрес ${ BRAND_NAME }. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "На данный момент тариф Visionary и семейный план не доступны для пожизненных аккаунтов."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Вас пригласили присоединиться к организации «${ invite.OrganizationName }»‎"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Вы можете принять не более 3 приглашений за полгода. Если вам необходимо увеличить это число, обратитесь по ссылке: ${ supportLink }."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Вас пригласили присоединиться к группе «${ bannerOrganization }». ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Вы успешно присоединились к тарифу Family"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Вам предложили присоединить аккаунт ${ BRAND_NAME } к групповому тарифу для совместного использования всех платных функций ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "К аккаунту подключено больше адресов электронной почты, чем позволяет текущий тарифный план. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Ваш аккаунт занимает ${ usedSpace }, что превышает лимит хранилища в ${ inviteSpace }. Удалите некоторые данные или попросите администратора тарифного плана увеличить доступный вам объем."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Ваш текущий план не позволяет присоединиться к семейной подписке или тарифу Visionary."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Ваша подписка автоматически продлевается по той же цене в конце платежного цикла."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Скидки рассчитываются исходя из стандартной платы за месяц."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Перейти на тариф ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Конфиденциальность онлайн для всей семьи"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Создайте семейный аккаунт и приглашайте пользователей "
+      ],
+      "Set up your family": [
+        "Создайте семейную группу"
+      ],
+      "Set up your family account": [
+        "Настройте семейный аккаунт"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Представляем план ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Включает 2700 серверов в более чем 65 странах с возможностью подключения до 10 устройств, доступ к стриминговым платформам со всего мира, блокировщик рекламы и вредоносного ПО и другие преимущества."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Включает поддержку 3 своих доменов, 90 адресов электронной почты, неограниченного количества псевдонимов hide-my-email, совместный доступ к календарю и другое."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Защитите свои материалы при помощи зашифрованного облачного хранилища. Используйте автоматическую синхронизацию, зашифрованный обмен файлами и многое другое."
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Системный по умолчанию"
+      ],
+      "Theme default": [
+        "Из темы по умолчанию"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Большой"
+      ],
+      "Medium (recommended)": [
+        "Средний (Рекомендуется)"
+      ],
+      "Small": [
+        "Маленький"
+      ],
+      "Very large": [
+        "Очень большой"
+      ],
+      "Very small": [
+        "Очень маленький"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Улучшить сейчас"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Автоудаление спама и удаленных сообщений"
+      ],
+      "Custom email domains": [
+        "Пользовательские домены электронной почты"
+      ],
+      "Hide-my-email aliases": [
+        "Псевдонимы hide-my-email"
+      ],
+      "Schedule messages at any time": [
+        "Планируйте сообщения в любое время"
+      ],
+      "Search message content": [
+        "Поиск содержимого сообщения"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Неограниченное количество папок, ярлыков и фильтров"
+      ],
+      "Up to 15 email addresses": [
+        "До 15 адресов электронной почты"
+      ],
+      "Up to 3 TB of storage": [
+        "До 3 ТБ хранилища"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Создайте несколько адресов электронной почты для своих сетевых идентификаторов, например, VanyaShopper@${ domain } для учетных записей покупок, VanyaNews@${ domain2 } для подписки на новости"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Получите неограниченное количество псевдонимов с SimpleLogin от ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Объём хранилища распределяется между ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } и ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Используйте собственный адрес домена электронной почты, например, you@yourname.com."
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Официальный"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Официальное письмо от ${ BRAND_NAME }"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 год"
+      ],
+      "2 years": [
+        "2 года"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Платная версия Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Платная версия Mail и Calendar"
+      ],
+      "Premium Password Manager": [
+        "Платная версия менеджера паролей"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Храните неограниченное количество паролей в безопасности и используйте их автозаполнение, чтобы входить в аккаунты одним нажатием. Мы также предлагаем генератор паролей и другие функции."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Менеджер паролей"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Создавайте надежные данные для входа на всех устройствах. Вам будут доступны неограниченное количество псевдонимов, 20 хранилищ, встроенная двухфакторная аутентификация, автозаполнение данных кредитной карты и многое другое."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Включает 2950 серверов в более чем 65 странах с возможностью подключения до 10 устройств, доступ к стриминговым платформам со всего мира, блокировщик рекламы и вредоносного ПО и другие преимущества."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Включает поддержку 1 пользовательского домена, 10 адресов электронной почты, 10 алиасов hide-my-email, совместный доступ к календарю и другие преимущества."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Защитите свои материалы при помощи зашифрованного облачного хранилища. Вам будут доступны история версий, зашифрованный обмен файлами и многое другое."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "* Ваша подписка автоматически продлится по стандартной цене с учетом скидки в конце платежного цикла."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Скидки рассчитываются исходя из стандартной платы за 1 месяц. Предложение действует только для новых подписчиков."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Получите эксклюзивную скидку от ${ BRAND_NAME }. Предложение ограничено по времени!"
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Мы празднуем девятую годовщину нашего проекта!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Праздничная распродажа ${ BRAND_NAME }"
       ]
     }
   }

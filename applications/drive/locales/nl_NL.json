@@ -680,6 +680,54 @@
       ],
       "Zoom out": [
         "Zoom uit"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Ten hoogste 100 contacten zijn toegelaten per contactgroep"
+      ],
+      "Change": [
+        "Wijzigen"
+      ],
+      "Delete this version": [
+        "Deze versie verwijderen"
+      ],
+      "Delete version": [
+        "Versie verwijderen"
+      ],
+      "Download apps": [
+        "Apps downloaden"
+      ],
+      "Download Drive for Windows": [
+        "Drive voor Windows downloaden"
+      ],
+      "Grid layout": [
+        "Roosterweergave"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Afbeelding kan niet worden geladen met trackerbeveiliging."
+      ],
+      "Image will be loaded without a proxy": [
+        "Afbeelding wordt geladen zonder een proxy"
+      ],
+      "Load": [
+        "Laden"
+      ],
+      "New message": [
+        "Nieuw bericht"
+      ],
+      "Restore": [
+        "Herstel"
+      ],
+      "Restore this version": [
+        "Deze versie herstellen"
+      ],
+      "Restore version": [
+        "Versie herstellen"
+      ],
+      "Save version as copy": [
+        "Versie als kopie opslaan"
+      ],
+      "See version history": [
+        "Versiegeschiedenis bekijken"
       ]
     },
     "Actions message": {
@@ -809,6 +857,9 @@
       ],
       "Website access problem": [
         "Probleem met toegang tot website"
+      ],
+      "Pass problem": [
+        "Probleem met Pass"
       ]
     },
     "Button": {
@@ -1788,6 +1839,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "U kunt contactpersonen markeren die u niet wilt samenvoegen of behouden. Ze worden pas verwijderd na het klikken op 'samenvoegen'"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Proton Mail-logo en een plus-teken"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Bespaar tijd door e-mails of uitnodigingen naar iedereen tegelijkertijd te sturen, een premium functie zoals vele anderen. Upgrade vandaag."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2150,6 +2207,18 @@
       ],
       "Your import will not be processed.": [
         "Uw import zal niet worden verwerkt."
+      ],
+      "Cannot export this contact": [
+        "Kan dit contact niet exporteren"
+      ],
+      "The email addresses do not match": [
+        "De e-mailadressen komen niet overeen"
+      ],
+      "Username must begin with a letter or digit": [
+        "Gebruikersnaam moet met een letter of cijfer beginnen"
+      ],
+      "Username must end with a letter or digit": [
+        "Gebruikersnaam moet met een letter of cijfer eindigen"
       ]
     },
     "Error importing calendar": {
@@ -2347,6 +2416,12 @@
       ],
       "You may also refresh the page or try again later.": [
         "Vernieuw de pagina of probeer het later opnieuw."
+      ],
+      "Please refresh the page or try again later.": [
+        "Ververs de pagina of probeer het later opnieuw."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "We konden deze pagina niet laden. Ververs de pagina of controleer uw internetverbinding."
       ]
     },
     "Error notification": {
@@ -3833,6 +3908,117 @@
       ],
       "Your previous recovery phrase": [
         "Uw vorige herstelzin"
+      ],
+      "Are you sure you want to permanently delete": [
+        "Weet u zeker dat u definitief wilt verwijderen"
+      ],
+      "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:": [
+        "Omdat ${ DRIVE_APP_NAME } end-to-end versleuteld is, kunnen we geen toegang krijgen of uw bestanden voor u decoderen. Om uw schijf te ontgrendelen na een wachtwoord reset, moet u een van de volgende dingen hebben:"
+      ],
+      "Billing cycle: ${ text }": [
+        "Facturatiefrequentie: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Contact toegekend aan groep ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Contact verwijderd uit groep ${ contactGroupName }"
+      ],
+      "Current version": [
+        "Huidige versie"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Pas het uiterlijk van ${ BRAND_NAME } applicaties aan."
+      ],
+      "Drop file here to upload": [
+        "Sleep bestand hier om te uploaden"
+      ],
+      "Drop to import": [
+        "Neerzetten om te importeren"
+      ],
+      "Failed to generate a secure link. The reason is: ${ error }": [
+        "Genereren van beveiligde koppeling mislukt. De reden is: ${ error }"
+      ],
+      "Failed to generate a secure link. Try again later": [
+        "Genereren van beveiligde koppeling mislukt. Probeer het later opnieuw"
+      ],
+      "File will not be updated": [
+        "Het bestand zal niet worden bijgewerkt"
+      ],
+      "from the version history?": [
+        "van de versie geschiedenis?"
+      ],
+      "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process.": [
+        "Als u een van deze heeft, ga dan verder naar ${ BRAND_NAME }-account instelling om het deblokkeer proces voort te zetten."
+      ],
+      "Last week": [
+        "Laatste week"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "Vorige versies worden bewaard voor ${ retentionLabel }"
+      ],
+      "Previous versions are not saved": [
+        "Vorige versies worden niet opgeslagen"
+      ],
+      "Restore": [
+        "Herstel"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "Bezig met herstellen. Dit kan enkele seconden duren."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Het abonnement loopt af: Heractiveer het voor ${ byDate } om de voordelen van uw ${ planName } te behouden. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Mappen synchroniseren met uw computer"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Synchroniseer eenvoudig mappen met onze desktop-app, zodat uw bestanden altijd up-to-date en overal toegankelijk zijn."
+      ],
+      "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected.": [
+        "Dit verwijdert het gesynchroniseerde apparaat ${ deviceName } van ${ DRIVE_APP_NAME }. Lokale bestanden op het apparaat blijven onaangeroerd."
+      ],
+      "This will replace the existing file with the folder": [
+        "Dit zal het bestaande bestand vervangen door de map"
+      ],
+      "This will replace the existing folder with the file": [
+        "Dit zal de bestaande map vervangen door het bestand"
+      ],
+      "This will upload a new version of the file": [
+        "Dit zal een nieuwe versie van het bestand uploaden."
+      ],
+      "This will upload a new version of the folder": [
+        "Dit zal een nieuwe versie van de map uploaden"
+      ],
+      "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
+        "Om uw data te herstellen moet u de accountsleutels die u heeft gebruikt toen u de data aanmaakte heractiveren."
+      ],
+      "Today": [
+        "Vandaag"
+      ],
+      "Version is deleted": [
+        "Versie verwijderd"
+      ],
+      "Version is restored": [
+        "Versie hersteld"
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "wordt hersteld naar de versie van ${ formattedRevisionDate }. Alle andere versies blijven bewaard."
+      ],
+      "Yesterday": [
+        "Gisteren"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "U heeft het maximaal aantal adressen bereikt in de contactgroep(en):"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "U heeft het maximaal aantal adressen bereikt in de contactgroep."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Uw bestanden worden versleuteld en vervolgens opgeslagen"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "Uw abonnement is beperkt tot 10 versies tot 7 dagen."
       ]
     },
     "Info on errors": {
@@ -4316,6 +4502,41 @@
       ],
       "Your password (admin)": [
         "Uw wachtwoord (admin)"
+      ],
+      "${ nbDay } day": [
+        "${ nbDay } dag",
+        "${ nbDay } dagen"
+      ],
+      "${ nbYear } year": [
+        "${ nbYear } jaar",
+        "${ nbYear } jaren"
+      ],
+      "Duplicate found": [
+        "Duplicaat gevonden"
+      ],
+      "Keep both": [
+        "Beide behouden"
+      ],
+      "Keep both files": [
+        "Beide bestanden behouden"
+      ],
+      "Keep both folders": [
+        "Beide folders behouden"
+      ],
+      "Replace existing file": [
+        "Bestaand bestand vervangen"
+      ],
+      "Replace existing folder": [
+        "Bestaande map vervangen"
+      ],
+      "Show indexing progress of Encrypted Search": [
+        "Toon indexeringsvoortgang van Versleuteld Zoeken"
+      ],
+      "Synchronize with system": [
+        "Synchroniseren met systeem"
+      ],
+      "Yes, I want to permanently delete my old files": [
+        "Ja, ik wil mijn oude bestanden permanent verwijderen"
       ]
     },
     "Label for contact group color": {
@@ -4387,6 +4608,9 @@
       ],
       "What’s this?": [
         "Wat is dit?"
+      ],
+      "Reactivate now": [
+        "Nu heractiveren"
       ]
     },
     "Loading info": {
@@ -4527,7 +4751,7 @@
         "\"${ name }\" uit de prullenbak hersteld"
       ],
       "\"${ name }\" saved successfully": [
-        "\"${ name }\" succesvol opgeslagen"
+        "\"${ name }\" succesvol aangemaakt"
       ],
       "\"${ name }\" successfully moved": [
         "\"${ name }\" succesvol verplaatst"
@@ -4686,7 +4910,7 @@
         "Uw instellingen konden niet worden bewaard"
       ],
       "Your settings have been changed successfully": [
-        "Uw instellingen zijn succesvol gewijzigd"
+        "Uw instellingen zijn succesvol gewijzigd."
       ]
     },
     "Oauth instructions": {
@@ -4751,6 +4975,12 @@
       ],
       "You can change this anytime in your settings.": [
         "U kunt dit op elk gewenst moment wijzigen in uw instellingen."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Meer thema-opties zijn beschikbaar in uw account Instellingen > Uiterlijk."
+      ],
+      "Set up your organization testing": [
+        "Stel uw organisatie in"
       ]
     },
     "Onboarding Title": {
@@ -4969,26 +5199,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } uur",
-        "${ hours } uur"
-      ],
-      "${ hours } hour": [
         "${ days } dag",
         "${ days } dagen"
       ],
+      "${ hours } hour": [
+        "${ hours } uur",
+        "${ hours } uren"
+      ],
       "${ minutes } minute": [
-        "${ n } maand GRATIS",
-        "${ n } maanden GRATIS"
+        "${ minutes } minuut",
+        "${ minutes } minuten"
       ],
       "${ seconds } second": [
-        "voor ${ n } maand",
-        "voor ${ n } maanden"
+        "${ seconds } seconde",
+        "${ seconds } seconden"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } seconde",
-        "${ seconds } seconden"
+        "${ n } maand GRATIS",
+        "${ n } maanden GRATIS"
       ]
     },
     "specialoffer: Deal details": {
@@ -5030,6 +5260,9 @@
       ],
       "Support online privacy": [
         "Ondersteun online privacy"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
       ]
     },
     "specialoffer: Footer": {
@@ -5091,8 +5324,8 @@
         "U betaalt ${ amount } voor 30 maanden"
       ],
       "for ${ n } month": [
-        "${ minutes } minuut",
-        "${ minutes } minuten"
+        "voor ${ n } maand",
+        "voor ${ n } maanden"
       ],
       "Get the deal": [
         "Kies deze deal"
@@ -5140,6 +5373,12 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "Upgrade en bespaar meer met 2 jaar ${ planName }"
+      ],
+      "Black Friday Sale": [
+        "Black Friday-aanbieding"
+      ],
+      "Cyber Week Sale": [
+        "Cyber Week-aanbieding"
       ]
     },
     "specialoffer: Tooltip": {
@@ -5172,6 +5411,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Opslagruimte wordt gedeeld tussen ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Al onze premium diensten met hun hoogste limieten: 100 e-mailadressen, ondersteuning voor 10 aangepaste domeinen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's, versleutelde cloudopslag, versleuteld bestanden delen en meer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 1 aangepast e-maildomein, 10 e-mailadressen, 10 Hide-my-email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 15 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
       ]
     },
     "Spotlight": {
@@ -5252,7 +5500,7 @@
         "Herstel is gestart"
       ],
       "The link to your file was successfully copied": [
-        "De link naar uw bestand is succesvol gekopieerd"
+        "De link naar uw bestand is gekopieerd."
       ],
       "Undo in progress": [
         "Bezig met ongedaan maken"
@@ -5828,6 +6076,37 @@
       ],
       "You’ve got 1 GB of storage": [
         "U heeft 1 GB aan opslag"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mailadres",
+        "${ emailsCount } e-mailadressen"
+      ],
+      "(active)": [
+        "(actief)"
+      ],
+      "Billing cycle": [
+        "Factuurperiode"
+      ],
+      "Cannot add more addresses": [
+        "Kan geen extra adressen toevoegen"
+      ],
+      "Day theme": [
+        "Dag thema"
+      ],
+      "Night theme": [
+        "Nacht thema"
+      ],
+      "Preview": [
+        "Voorbeeld"
+      ],
+      "Unlock contacts groups": [
+        "Ontgrendel contactgroepen"
+      ],
+      "Version details": [
+        "Versiegegevens"
+      ],
+      "Version history": [
+        "Versiegeschiedenis"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -5889,6 +6168,21 @@
       ],
       "You do not have any contacts to export": [
         "U heeft geen contactpersonen om te exporteren"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatisch wisselen tussen uw favoriete thema's voor dag en nacht met de dag- en nachtmodus van uw systeem"
+      ],
+      "The image could not be loaded": [
+        "De afbeelding kan niet worden geladen"
+      ],
+      "The image could not be loaded using proxy": [
+        "De afbeelding kan niet worden geladen via een proxy"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Het gekozen thema zal actief zijn zodra uw systeem op \"donkere modus\" is ingesteld."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Het geselecteerde thema is actief wanneer uw systeem is ingesteld op \"lichte modus\""
       ]
     },
     "Validation": {
@@ -6004,6 +6298,314 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Uw gratis proefversie eindigt op ${ textDate }. ${ action }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Jaarlijks"
+      ],
+      "Monthly": [
+        "Maandelijks"
+      ],
+      "Two-year": [
+        "Tweejaarlijks"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB opslagruimte"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Kies ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Opslagruimte wordt gedeeld tussen familieleden op ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Decline invitation": [
+        "Uitnodiging afwijzen"
+      ],
+      "Got it": [
+        "Begrepen"
+      ],
+      "Switch plans": [
+        "Van abonnement wisselen"
+      ],
+      "View the invitation": [
+        "Bekijk de uitnodiging"
+      ],
+      "View the invitations": [
+        "Bekijk de uitnodigingen"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail en Calendar"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Up to 6 users": [
+        "Tot 6 gebruikers"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME }-groepen"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Accounts met een eigen domein kunnen zich niet aansluiten bij een Visionary- of gezinsabonnement."
+      ],
+      "customer support": [
+        "klantondersteuning"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Als u de uitnodiging accepteert, zetten we uw huidige abonnement om en wordt een eventueel resterend saldo teruggestort."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Uitgenodigd door: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Beheer adressen."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Eigenaren van een abonnement met leden kunnen zich niet aansluiten bij een ander groepsabonnement."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "U kunt op dit moment niet van abonnement wisselen."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Aan u toegewezen opslagruimte: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "De abonnementskosten worden in rekening gebracht bij de primaire beheerder van het Visionary- of gezinsabonnement."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary- en gezinsabonnmenten bieden op dit moment geen ondersteuning voor externe accounts. Maak een adres voor ${ BRAND_NAME } voordat u zich hierbij aansluit. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary- en gezinsabonnementen bieden op dit moment geen ondersteuning voor levenslange accounts."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "U bent uitgenodigd u aan te sluiten bij ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "U kunt slechts 3 uitnodigingen accepteren in een periode van 6 maanden. Neem contact op met ${ supportLink } als hierop een uitzondering moet worden gemaakt."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "U bent uitgenodigd u aan te sluiten bij ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "U hebt zich aangesloten bij het Family-abonnement"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "U bent uitgenodigd om uw ${ BRAND_NAME }-account te koppelen aan dit groepsabonnement en samen gebruik te maken van alle premium functies van ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Uw account heeft meer e-mailadressen dan is toegestaan in dit abonnement. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Uw account gebruikt ${ usedSpace } aan opslagruimte. Dat is meer dan de ${ inviteSpace } die aan u is toegewezen. Verwijder gegevens of vraag de abonnementsbeheerder uw opslagruimte uit te breiden."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Met uw huidige abonnement kunt u zich niet aansluiten bij een Visionary- of gezinsabonnement."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Uw abonnement wordt aan het einde van uw factureringscyclus automatisch verlengd tegen hetzelfde tarief."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Kortingen zijn gebaseerd op de standaardprijs per maand."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Kies ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Online privacy voor het hele gezin"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Configureer uw gezinsaccount en nodig gebruikers uit "
+      ],
+      "Set up your family": [
+        "Uw gezin configureren"
+      ],
+      "Set up your family account": [
+        "Uw gezinsaccount configureren"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Ontdek ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Met 2700 servers in meer dan 65 landen, verbinding met maximaal 10 apparaten, wereldwijd toegang tot streamingdiensten, malware- en advertentieblokkering, en meer."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Ondersteuning voor 3 aangepaste e-maildomeinen, 90 e-mailadressen, onbeperkt Hide-my-email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Beveilig uw bestanden met versleutelde cloudopslag. Inclusief automatische synchronisatie, versleuteld bestanden delen en meer."
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systeem standaard"
+      ],
+      "Theme default": [
+        "Thema standaard"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Groot"
+      ],
+      "Medium (recommended)": [
+        "Gemiddeld (aanbevolen)"
+      ],
+      "Small": [
+        "Klein"
+      ],
+      "Very large": [
+        "Zeer groot"
+      ],
+      "Very small": [
+        "Zeer klein"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Upgrade nu"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Automatisch spam en verwijderde berichten verwijderen"
+      ],
+      "Custom email domains": [
+        "Aangepaste e-maildomeinen"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email-aliassen"
+      ],
+      "Schedule messages at any time": [
+        "Plan berichten in op ieder moment"
+      ],
+      "Search message content": [
+        "Doorzoek berichtinhoud"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Ongelimiteerde mappen, labels en filters"
+      ],
+      "Up to 15 email addresses": [
+        "Tot wel 15 e-mailadressen"
+      ],
+      "Up to 3 TB of storage": [
+        "Tot wel 3 TB opslag"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Maak meerdere e-mailadressen aan voor uw online-identiteiten, zoals JohnShopper@${ domain } voor shoppingaccounts, JohnNieuws@${ domain2 } voor nieuwsabonnementen"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Gebruik onbeperkt aliassen met SimpleLogin van ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Opslagruimte wordt gedeeld door ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } en ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Gebruik uw eigen e-mailadressen met een aangepast domein, zoals u@uwnaam.com"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Officieel"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Officiële e-mail van ${ BRAND_NAME }"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 jaar"
+      ],
+      "2 years": [
+        "2 jaar"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Mail and Calendar": [
+        "Premium Mail en Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium wachtwoordmanager"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Sla uw wachtwoorden veilig op en vul ze automatisch in op websites. Met een onbeperkt aantal wachtwoorden, automatisch invullen, wachtwoordgenerator en meer."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Wachtwoordbeheer"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Maak veilige inloggegevens op al uw apparaten. Inclusief onbeperkte aliassen, 20 kluizen, geïntegreerde 2FA, automatisch invullen van creditcardgegevens en meer."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Met 2950 servers in meer dan 65 landen, verbinding met maximaal 10 apparaten, wereldwijd toegang tot streamingdiensten, malware- en advertentieblokkering, en meer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Ondersteuning voor 1 aangepast e-maildomein, 10 e-mailadressen, 10 hide-my-email-aliassen, gedeelde agenda's en meer."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Beveilig uw bestanden met versleutelde cloudopslag. Inclusief versiegeschiedenis, versleuteld bestanden delen en meer."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Uw abonnement wordt aan het einde van uw factureringscyclus automatisch verlengd tegen het standaard aanbiedingstarief."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Kortingen gebaseerd op de standaardprijzen per maand. Deze aanbieding is alleen beschikbaar voor nieuwe abonnees."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Het allerbeste van ${ BRAND_NAME } is nu tijdelijk verkrijgbaar met een exclusieve korting."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "We vieren het negenjarige jubileum van onze crowdfunding!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME }-jubileumaanbieding"
       ]
     }
   }

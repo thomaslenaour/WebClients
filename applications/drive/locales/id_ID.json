@@ -155,7 +155,7 @@
         "Lanjutkan dengan Google"
       ],
       "Copy email to clipboard": [
-        "Salin email ke clipboard"
+        "Salin email ke papan klip"
       ],
       "Copy link": [
         "Salin tautan"
@@ -473,7 +473,7 @@
         "Atur ulang ke awal"
       ],
       "Restart all": [
-        "Ulang semua dari awal"
+        "Ulangi semua dari awal"
       ],
       "Restart download": [
         "Mulai ulang unduhan"
@@ -678,6 +678,54 @@
       ],
       "Zoom out": [
         "Perkecil"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Masing-masing grup kontak hanya dapat menampung hingga 100 kontak"
+      ],
+      "Change": [
+        "Ubah"
+      ],
+      "Delete this version": [
+        "Hapus versi ini"
+      ],
+      "Delete version": [
+        "Hapus versi"
+      ],
+      "Download apps": [
+        "Unduh aplikasi"
+      ],
+      "Download Drive for Windows": [
+        "Unduh Drive untuk Windows"
+      ],
+      "Grid layout": [
+        "Tampilan kisi"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Gambar tidak dapat dimuat dengan perlindungan pelacak yang aktif."
+      ],
+      "Image will be loaded without a proxy": [
+        "Gambar akan dimuat tanpa proxy"
+      ],
+      "Load": [
+        "Muat"
+      ],
+      "New message": [
+        "Pesan baru"
+      ],
+      "Restore": [
+        "Pulihkan"
+      ],
+      "Restore this version": [
+        "Pulihkan versi ini"
+      ],
+      "Restore version": [
+        "Pulihkan versi"
+      ],
+      "Save version as copy": [
+        "Simpan versi sebagai salinan"
+      ],
+      "See version history": [
+        "Lihat riwayat versi"
       ]
     },
     "Actions message": {
@@ -1788,6 +1836,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Anda dapat menandai kontak-kontak yang tidak ingin digabung atau disimpan. Penghapusan akan dilakukan setelah Anda menekan tombol gabung"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Logo Proton Mail dan tanda plus"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Hemat waktu Anda dengan fitur pengiriman email atau undangan massal, yang merupakan satu dari sekian banyak fitur premium yang tersedia. Tingkatkan paket Anda sekarang juga."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2144,6 +2198,18 @@
       ],
       "Your import will not be processed.": [
         "Impor Anda tidak akan diproses."
+      ],
+      "Cannot export this contact": [
+        "Kontak tidak dapat diekspor"
+      ],
+      "The email addresses do not match": [
+        "Alamat surel tidak cocok"
+      ],
+      "Username must begin with a letter or digit": [
+        "Nama pengguna harus dimulai dengan huruf atau angka"
+      ],
+      "Username must end with a letter or digit": [
+        "Nama pengguna harus diakhiri dengan huruf atau angka"
       ]
     },
     "Error importing calendar": {
@@ -2340,6 +2406,12 @@
       ],
       "You may also refresh the page or try again later.": [
         "Muat ulang halaman ini atau coba lagi nanti."
+      ],
+      "Please refresh the page or try again later.": [
+        "Silakan muat ulang laman atau coba lagi nanti."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Kami tidak dapat memuat laman ini. Silakan muat ulang laman atau periksa koneksi internet Anda."
       ]
     },
     "Error notification": {
@@ -2888,7 +2960,7 @@
         "Masing-masing nomor telepon hanya dapat digunakan untuk memverifikasi satu akun ${ BRAND_NAME }"
       ],
       "Account access restricted due to unpaid invoices. Please contact your administrator.": [
-        "Akses akun dibatasi karena tagihan tidak dibayar. Silakan hubungi administrator Anda."
+        "Akses akun dibatasi karena tagihan yang tertunggak. Silakan hubungi administrator Anda."
       ],
       "Address Verification with Trusted Keys is enabled for this address. To be able to send to this address, first trust public keys that can be used for sending.": [
         "Verifikasi Alamat dengan Kunci Terpercaya sudah diaktifkan untuk alamat ini. Agar dapat mengirim ke alamat ini, percayai terlebih dahulu kunci publik yang akan dipakai untuk mengirim pesan."
@@ -2957,7 +3029,7 @@
         "Tautan yang dibagikan tidak dapat dimuat"
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
-        "Tidak mengingat kata sandi Anda? Kami dapat membantu Anda untuk membersihkan data terenkripsi semua kontak yang dienkripsi dengan kunci ini dan dalam prosesnya mengabaikan peringatan."
+        "Tidak dapat mengingat kata sandi Anda? Kami dapat membantu Anda untuk membersihkan data terenkripsi milik seluruh kontak yang dienkripsi dengan kunci ini terlepas dari peringatan yang ada."
       ],
       "Checking contact ${ progress } of ${ max }...": [
         "Memeriksa kontak ${ progress } dari ${ max }..."
@@ -3068,7 +3140,7 @@
         "Letakkan berkas yang hendak Anda unggah di sini"
       ],
       "Duplicate key updated": [
-        "Kunci ganda diperbarui"
+        "Kunci duplikat diperbarui"
       ],
       "Each code can only be used once": [
         "Masing-masing kode hanya dapat digunakan sekali"
@@ -3278,7 +3350,7 @@
         "Pelajari lebih lanjut"
       ],
       "Link copied to clipboard": [
-        "Tautan disalin ke clipboard"
+        "Tautan disalin ke papan klip"
       ],
       "Link owner has the password": [
         "Kata sandi dipegang oleh pemilik tautan"
@@ -3404,7 +3476,7 @@
         "Harap diperhatikan, alamat yang ditugaskan di grup ini TIDAK akan dihapus."
       ],
       "Please note that this process may take some time depending on the size of your address book.": [
-        "Mohon dicatat proses ini memerlukan waktu, tergantung pada ukuran buku alamat Anda."
+        "Mohon dicatat bahwa proses ini dapat memakan waktu sejenak tergantung pada ukuran buku alamat Anda."
       ],
       "Please select the folders you would like to import:": [
         "Harap pilih folder-folder yang hendak Anda impor:"
@@ -3743,13 +3815,13 @@
         "Akun ${ BRAND_NAME } Anda sedang ditangguhkan. Email tidak akan lagi diantarkan ke kotak masuk Anda. Tautan berbagi Drive Anda telah dinonaktifkan, dan Anda tidak akan dapat mengunggah berkas baru. Untuk dapat kembali menggunakan layanan seperti biasa, silakan lunasi seluruh tagihan yang tertunggak."
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
-        "Akun Anda memiliki setidaknya satu tagihan yang belum dibayar. Akses akun Anda akan dibatasi. ${ payInvoiceLink }"
+        "Akun Anda memiliki setidaknya satu tagihan yang tertunggak. Akses ke akun Anda akan segera dibatasi. ${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted, and all services are now blocked until payment. ${ payInvoiceLink }": [
-        "Akun Anda memiliki setidaknya satu tagihan yang tertunggak. Oleh karenanya, akun Anda telah ditangguhkan dan seluruh layanan telah diblokir hingga Anda melunasi tagihan. ${ payInvoiceLink }"
+        "Akun Anda memiliki setidaknya satu tagihan yang tertunggak. Oleh karenanya, akun Anda telah dibatasi dan seluruh layanan telah diblokir hingga Anda melunasi tagihan. ${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted. Continued non-payment will block your emails and sharing links. ${ payInvoiceLink }": [
-        "Akun Anda memiliki setidaknya satu tagihan yang tertunggak. Oleh karenanya, akun Anda telah ditangguhkan. Apabila Anda terus-menerus lalai membayar, seluruh email dan tautan berbagi Anda akan diblokir. ${ payInvoiceLink }"
+        "Akun Anda memiliki setidaknya satu tagihan yang tertunggak. Oleh karenanya, akun Anda telah dibatasi. Apabila Anda terus-menerus lalai membayar, email dan tautan berbagi Anda akan diblokir. ${ payInvoiceLink }"
       ],
       "Your current browser does not support the downloading of large files due to the unavailability of service workers. Downloading large files may freeze or leave the browser unresponsive. Please use the latest versions of a ${ recommendedBrowser } and try again.": [
         "Browser Anda saat ini tidak dapat digunakan untuk mengunduh berkas yang berukuran besar karena tidak tersedianya dukungan service worker yang memadai. Mengunduh berkas yang berukuran besar dapat membekukan layar atau menonaktifkan browser Anda sepenuhnya. Mohon gunakan versi terbaru dari ${ recommendedBrowser } dan coba lagi."
@@ -3780,6 +3852,114 @@
       ],
       "Your previous recovery phrase": [
         "Frasa pemulihan Anda sebelumnya"
+      ],
+      "Are you sure you want to permanently delete": [
+        "Apakah Anda yakin untuk menghapus"
+      ],
+      "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:": [
+        "Karena ${ DRIVE_APP_NAME } terenkripsi secara ujung ke ujung, kami tidak dapat mengakses atau mendekripsi berkas Anda untuk Anda sendiri. Untuk membuka kunci drive setelah pengaturan ulang kata sandi, Anda harus memiliki salah satu dari hal berikut:"
+      ],
+      "Billing cycle: ${ text }": [
+        "Siklus tagihan: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kontak ditetapkan ke grup ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kontak tidak lagi ditetapkan ke grup ${ contactGroupName }"
+      ],
+      "Current version": [
+        "Versi saat ini"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Sesuaikan tampilan dan nuansa aplikasi ${ BRAND_NAME } Anda."
+      ],
+      "Drop file here to upload": [
+        "Lepaskan berkas di sini untuk mengunggah"
+      ],
+      "Drop to import": [
+        "Lepaskan untuk mengimpor"
+      ],
+      "Failed to generate a secure link. The reason is: ${ error }": [
+        "Tautan aman gagal dihasilkan. Alasan: ${ error }"
+      ],
+      "Failed to generate a secure link. Try again later": [
+        "Tautan aman gagal dihasilkan. Silakan coba lagi nanti"
+      ],
+      "File will not be updated": [
+        "Berkas tidak akan diperbarui"
+      ],
+      "from the version history?": [
+        "dari riwayat versi secara permanen?"
+      ],
+      "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process.": [
+        "Apabila Anda memiliki salah satunya, tuju menu pengaturan Akun ${ BRAND_NAME } untuk\nmemulai proses pencabutan blokir."
+      ],
+      "Last week": [
+        "Minggu lalu"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "Versi sebelumnya disimpan selama ${ retentionLabel }"
+      ],
+      "Previous versions are not saved": [
+        "Versi sebelumnya tidak disimpan"
+      ],
+      "Restore": [
+        "Pulihkan"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "Pemulihan sedang dilakukan. Ini dapat membutuhkan beberapa detik."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Langganan akan segera berakhir: Aktifkan kembali paket Anda sebelum tanggal ${ byDate } untuk tetap memperoleh manfaat ${ planName } Anda. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Sinkronkan folder dari komputer Anda"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Sinkronkan folder dengan mudah melalui aplikasi desktop kami, memastikan berkas Anda selalu terkini dan dapat diakses dari mana saja."
+      ],
+      "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected.": [
+        "Tindakan ini akan menghapus perangkat ${ deviceName } yang telah disinkronkan sebelumnya dari ${ DRIVE_APP_NAME }. Berkas lokal yang terdapat pada perangkat yang bersangkutan tidak akan terpengaruh."
+      ],
+      "This will replace the existing file with the folder": [
+        "Dengan ini, berkas yang telah ada akan diganti dengan folder"
+      ],
+      "This will replace the existing folder with the file": [
+        "Dengan ini, folder yang telah ada akan diganti dengan berkas"
+      ],
+      "This will upload a new version of the file": [
+        "Dengan ini, versi baru berkas akan diunggah"
+      ],
+      "This will upload a new version of the folder": [
+        "Dengan ini, versi baru folder akan diunggah"
+      ],
+      "Today": [
+        "Hari ini"
+      ],
+      "Version is deleted": [
+        "Versi dihapus"
+      ],
+      "Version is restored": [
+        "Versi dipulihkan"
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "akan dipulihkan ke versi dari ${ formattedRevisionDate }. Semua versi lainnya masih akan disimpan."
+      ],
+      "Yesterday": [
+        "Kemarin"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Anda telah mencapai batas jumlah alamat yang dapat ditetapkan ke grup kontak"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Anda telah mencapai batas jumlah alamat yang dapat ditetapkan ke grup kontak"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Berkas Anda akan dienkripsi lalu disimpan"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "Paket Anda terbatas pada 10 versi hingga 7 hari"
       ]
     },
     "Info on errors": {
@@ -4265,6 +4445,36 @@
       ],
       "Your password (admin)": [
         "Kata sandi Anda (admin)"
+      ],
+      "${ nbDay } days": [
+        "${ nbDay } hari"
+      ],
+      "${ nbYear } years": [
+        "${ nbYear } tahun"
+      ],
+      "Duplicate found": [
+        "Duplikat ditemukan"
+      ],
+      "Keep both": [
+        "Simpan keduanya"
+      ],
+      "Keep both files": [
+        "Simpan kedua berkas"
+      ],
+      "Keep both folders": [
+        "Simpan kedua folder"
+      ],
+      "Replace existing file": [
+        "Gantikan berkas yang telah ada"
+      ],
+      "Replace existing folder": [
+        "Gantikan folder yang telah ada"
+      ],
+      "Synchronize with system": [
+        "Sinkronkan dengan sistem"
+      ],
+      "Yes, I want to permanently delete my old files": [
+        "Ya, saya ingin menghapus berkas lama saya secara permanen"
       ]
     },
     "Label for contact group color": {
@@ -4336,6 +4546,15 @@
       ],
       "What’s this?": [
         "Apa ini?"
+      ],
+      "${ DRIVE_APP_NAME } Windows app": [
+        "Aplikasi Windows ${ DRIVE_APP_NAME }"
+      ],
+      "Reactivate now": [
+        "Aktifkan kembali"
+      ],
+      "Seamlessly sync files and folders between your computer and ${ DRIVE_APP_NAME }.": [
+        "Sinkronkan file dan folder secara mulus antara komputer Anda dan ${ DRIVE_APP_NAME }."
       ]
     },
     "Loading info": {
@@ -4676,6 +4895,12 @@
       ],
       "You can change this anytime in your settings.": [
         "Anda dapat mengubah tema yang aktif kapan pun melalui beranda pengaturan Anda."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Opsi penataan tema tersedia pada menu Pengaturan > Tampilan."
+      ],
+      "Set up your organization testing": [
+        "Siapkan pengujian organisasi Anda"
       ]
     },
     "Onboarding Title": {
@@ -4927,7 +5152,7 @@
         "Alamat email disalin ke clipboard"
       ],
       "Fingerprint copied to clipboard": [
-        "Sidik jari disalin ke clipboard"
+        "Sidik jari disalin ke papan klip"
       ],
       "Import record deleted": [
         "Rekaman impor dihapus"
@@ -5506,6 +5731,36 @@
       ],
       "You’ve got 1 GB of storage": [
         "Anda mendapatkan kuota penyimpanan 1 GB"
+      ],
+      "${ emailsCount } email addresses": [
+        "${ emailsCount } alamat email"
+      ],
+      "(active)": [
+        "(aktif)"
+      ],
+      "Billing cycle": [
+        "Siklus tagihan"
+      ],
+      "Cannot add more addresses": [
+        "Tidak dapat menambahkan lebih banyak alamat"
+      ],
+      "Day theme": [
+        "Tema siang"
+      ],
+      "Night theme": [
+        "Tema malam"
+      ],
+      "Preview": [
+        "Pratinjau"
+      ],
+      "Unlock contacts groups": [
+        "Buka kunci grup kontak"
+      ],
+      "Version details": [
+        "Rincian versi"
+      ],
+      "Version history": [
+        "Riwayat versi"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -5567,6 +5822,21 @@
       ],
       "You do not have any contacts to export": [
         "Anda tidak memiliki kontak untuk diekspor"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Sesuaikan tema aplikasi dengan mode terang dan gelap pada sistem Anda secara otomatis"
+      ],
+      "The image could not be loaded": [
+        "Gambar tidak dapat dimuat"
+      ],
+      "The image could not be loaded using proxy": [
+        "Gambar tidak dapat dimuat menggunakan proxy"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Tema yang dipilih akan aktif pada saat sistem Anda diatur ke \"mode gelap\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Tema yang dipilih akan aktif pada saat sistem Anda diatur ke \"mode terang\""
       ]
     },
     "Validation": {
@@ -5677,6 +5947,479 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Masa uji coba gratis Anda akan berakhir pada ${ textDate }. ${ action }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Tahunan"
+      ],
+      "Monthly": [
+        "Bulanan"
+      ],
+      "Two-year": [
+        "Dua tahun"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "Jumlah penyimpanan 3 TB"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Dapatkan ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Ruang penyimpanan terbagi dengan anggota keluarga antara ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, dan ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Decline invitation": [
+        "Tolak undangan"
+      ],
+      "Got it": [
+        "Mengerti"
+      ],
+      "Switch plans": [
+        "Ganti paket"
+      ],
+      "View the invitation": [
+        "Lihat undangan"
+      ],
+      "View the invitations": [
+        "Tampilkan undangan"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Drive Premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail dan Calendar Premium"
+      ],
+      "Premium VPN": [
+        "VPN Premium"
+      ],
+      "Up to 6 users": [
+        "Sampai 6 pengguna"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Grup ${ BRAND_NAME }"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Akun dengan domain kustom tidak dapat bergabung ke sebuah paket Visionary atau paket keluarga."
+      ],
+      "customer support": [
+        "layanan dukungan"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Jika Anda menerima undangan, kami akan mengalihkan Anda dari paket saat ini dan mengkredit akun Anda dengan sisa saldo."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Diundang oleh: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Kelola alamat."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Pemilik paket dengan anggota tidak dapat bergabung ke paket grup lain."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Maaf, Anda tidak dapat mengganti paket saat ini."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Penyimpanan yang diberikan kepada Anda: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Langganan ditagih kepada admin utama paket Visionary atau paket keluarga."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Paket Visionary dan paket keluarga saat ini tidak mendukung akun eksternal. Buat sebuah alamat ${ BRAND_NAME } sebelum bergabung. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Paket Visionary dan keluarga saat ini tidak mendukung akun seumur hidup."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Anda diundang untuk bergabung ke ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Anda hanya dapat menerima 3 undangan dalam periode 6 bulan. Silakan hubungi ${ supportLink } jika Anda membutuhkan pengecualian."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Anda telah diundang untuk bergabung ke ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Anda berhasil bergabung ke paket Keluarga"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Anda diundang untuk mengaitkan Akun ${ BRAND_NAME } Anda ke paket grup ini dan menikmati semua fitur premium ${ BRAND_NAME_TWO } bersama."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Akun Anda memiliki alamat surel lebih banyak dari yang tersedia kepada Anda dalam paket ini. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Akun Anda menggunakan penyimpanan ${ usedSpace }, yang melebihi batas ${ inviteSpace } yang dialokasikan. Hapus beberapa data atau tanyakan kepada admin paket untuk menambahkan penyimpanan Anda."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Paket Anda saat ini tidak dapat bergabung ke paket Visionary atau paket keluarga."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Langganan Anda akan diperpanjang secara otomatis dengan tarif yang sama di akhir siklus penagihan Anda."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Diskon berdasarkan harga standar per bulan."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Dapatkan ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Privasi daring untuk seluruh keluarga Anda"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Atur akun keluarga Anda dan undang pengguna "
+      ],
+      "Set up your family": [
+        "Siapkan keluarga Anda"
+      ],
+      "Set up your family account": [
+        "Siapkan akun keluarga Anda"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Memperkenalkan ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Beserta 2700 server di 65+ negara, hubungan sampai 10 perangkat, akses layanan streaming seluruh dunia, pemblokiran malware dan iklan, dan lebih banyak lagi."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Beserta dukungan untuk 3 domain surel kustom, 90 alamat surel, alias Hide-my-email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Amankan berkas Anda dengan penyimpanan awan terenkripsi. Beserta sinkronisasi otomatis, pembagian berkas terenkripsi, dan lebih banyak lagi."
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Bawaan sistem"
+      ],
+      "Theme default": [
+        "Tema bawaan"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Besar"
+      ],
+      "Medium (recommended)": [
+        "Sedang (direkomendasikan)"
+      ],
+      "Small": [
+        "Kecil"
+      ],
+      "Very large": [
+        "Sangat besar"
+      ],
+      "Very small": [
+        "Mungil"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Tingkatkan sekarang"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Hapus pesan spam dan sampah secara otomatis"
+      ],
+      "Custom email domains": [
+        "Domain email khusus"
+      ],
+      "Hide-my-email aliases": [
+        "Alias hide-my-email"
+      ],
+      "Schedule messages at any time": [
+        "Jadwalkan pesan sesuai keinginan Anda"
+      ],
+      "Search message content": [
+        "Cari konten pesan"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Tanpa batasan jumlah folder, label, dan filter"
+      ],
+      "Up to 15 email addresses": [
+        "Hingga 15 alamat email"
+      ],
+      "Up to 3 TB of storage": [
+        "Kuota penyimpanan hingga 3 TB"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Berikan masing-masing identitas online Anda alamat emailnya tersendiri, mis. JohnShopper@${ domain } untuk berbelanja dan JohnNews@${ domain2 } untuk berlangganan berita"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Dapatkan alamat email samaran tanpa batasan jumlah dengan SimpleLogin oleh ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Kuota penyimpanan diperuntukkan bagi ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, dan ${ DRIVE_APP_NAME } secara bersamaan"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Gunakan domain email khusus milik Anda sendiri, mis. anda@namaanda.com"
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Resmi"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Email resmi dari ${ BRAND_NAME }"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Tutup"
+      ],
+      "Don't show this offer again": [
+        "Jangan tampilkan penawaran ini lagi"
+      ],
+      "Special offer": [
+        "Penawaran spesial"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "Dapatkan yang Tidak Terbatas"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } days": [
+        "${ days } hari"
+      ],
+      "${ hours } hours": [
+        "${ hours } jam"
+      ],
+      "${ minutes } minutes": [
+        "${ minutes } menit"
+      ],
+      "${ seconds } seconds": [
+        "${ seconds } detik"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } months FREE": [
+        "${ n } bulan GRATIS"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } jumlah penyimpanan"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 pengguna"
+      ],
+      "64 countries": [
+        "64 negara"
+      ],
+      "All paid Mail and Calendar features": [
+        "Semua fitur Mail dan Calendar yang berbayar"
+      ],
+      "High speed VPN": [
+        "VPN berkecepatan tinggi"
+      ],
+      "Highest VPN speed": [
+        "Kecepatan VPN tertinggi"
+      ],
+      "Premium early access": [
+        "Akses dini Premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail dan Calendar Premium"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Mail, Calendar, dan Drive Premium"
+      ],
+      "Premium VPN": [
+        "VPN Premium"
+      ],
+      "Secure cloud storage": [
+        "Penyimpanan awan aman"
+      ],
+      "Secure streaming": [
+        "Streaming aman"
+      ],
+      "Support online privacy": [
+        "Dukung privasi daring"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "Diskon berdasarkan harga standar per bulan."
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Langganan ini akan otomatis diperbarui setiap 2 tahun dengan tarif yang sama hingga dibatalkan."
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "Penawaran seumur hidup"
+      ],
+      "Limited time only": [
+        "Hanya dalam waktu terbatas"
+      ],
+      "Most popular": [
+        "Paling populer"
+      ],
+      "Offer ends soon": [
+        "Penawaran segera berakhir"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "Diskon akan terus diterapkan pada saat perpanjangan sampai langganan dibatalkan atau diubah"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Pergi ke paket langganan"
+      ],
+      "Upgrade": [
+        "Tingkatkan"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ bulan"
+      ],
+      "1 year": [
+        "1 tahun"
+      ],
+      "2 years": [
+        "2 tahun"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "Tertagih dengan harga ${ amount } selama 1 bulan"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "Tertagih dengan harga ${ amount } selama 12 bulan"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "Tertagih dengan harga ${ amount } selama 15 bulan"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "Tertagih dengan harga ${ amount } selama 24 bulan"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "Tertagih dengan harga ${ amount } selama 30 bulan"
+      ],
+      "for ${ n } months": [
+        "untuk ${ n } bulan"
+      ],
+      "Get the deal": [
+        "Dapatkan penawaran"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "Diperbarui setelah 1 tahun dengan harga diskon ${ discountedAmount } daripada ${ regularAmount } (diskon ${ discount }%)"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "Diperbarui setelah 2 tahun dengan harga diskon ${ discountedAmount } daripada ${ regularAmount } (diskon ${ discount }%)"
+      ],
+      "Save ${ discount }%": [
+        "Hemat ${ discount }%"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "Dengan harga standar ${ amount } selama 1 bulan"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "Dengan harga standar ${ amount } selama 12 bulan"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "Dengan harga standar ${ amount } selama 15 bulan"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "Dengan harga standar ${ amount } selama 24 bulan"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "Dengan harga standar ${ amount } selama 30 bulan"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "Penawaran Jumat Hitam"
+      ],
+      "Cyber Week Sale": [
+        "Penawaran Minggu Siber"
+      ],
+      "End of year offer": [
+        "Penawaran akhir tahun"
+      ],
+      "End of Year Sale": [
+        "Penawaran Akhir Tahun"
+      ],
+      "Get our premium bundle and save more": [
+        "Dapatkan paket premium kami dan hemat lebih banyak"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Paket Visionary berakhir kami telah kembali untuk waktu terbatas"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Hemat lebih banyak dengan ${ planName } selama 2 tahun"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Tingkatkan dan hemat lebih banyak dengan ${ planName } selama 2 tahun"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Akses konten terblokir dan jelajahi secara pribadi. Beserta 1700 server di 60+ negara, kecepatan VPN tertinggi, 10 koneksi VPN per pengguna, layanan streaming seluruh dunia, pemblokir malware dan iklan, dan lebih banyak lagi."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Akses konten terblokir dan jelajahi secara pribadi. Beserta 1700 server di 60+ negara, kecepatan VPN tertinggi, 10 koneksi VPN, layanan streaming seluruh dunia, pemblokir malware dan iklan, dan lebih banyak lagi."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Akses konten di layanan streaming, termasuk Netflix, Disney+, dan Prime Video, dari mana pun."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Semua layanan premium kami dengan batas tertinggi: 100 alamat surel, dukungan 10 domain kustom, alias Hide-my-email tidak terbatas, pembagian kalender, penyimpanan awan dan pembagian berkas terenkripsi, dan lebih banyak lagi."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Termasuk dukungan untuk 1 domain surel kustom, 10 alamat surel, 10 alias Hide-my-email, berbagi kalender, dan lainnya."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Beserta dukungan untuk 3 domain surel kustom, 15 alamat surel, alias Hide-my-email tidak terbatas, pembagian kalender, dan lebih banyak lagi."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Cocok untuk keluarga atau tim kecil, setiap orang dapat memiliki kotak masuk dan alias mereka sendiri. Membutuhkan domain kustom."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Dapatkan semua layanan privasi baru versi berbayar tanpa harga tambahan, beserta akses dini ke semua fitur dan produk."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Amankan berkas Anda dengan penyimpanan awan terenkripsi. Beserta sinkronisasi otomatis, pembagian berkas terenkripsi, dan lebih banyak lagi."
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Ruang penyimpanan terbagi antara ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, dan ${ DRIVE_APP_NAME }."
       ]
     }
   }

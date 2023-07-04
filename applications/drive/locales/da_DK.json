@@ -680,6 +680,48 @@
       ],
       "Zoom out": [
         "Zoom ud"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Højst 100 kontakter er tilladt pr. kontaktgruppe"
+      ],
+      "Change": [
+        "Skift"
+      ],
+      "Delete this version": [
+        "Slet denne version"
+      ],
+      "Delete version": [
+        "Slet version"
+      ],
+      "Download apps": [
+        "Download apps"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Billede kunne ikke indlæses med sporingsbeskyttelse."
+      ],
+      "Image will be loaded without a proxy": [
+        "Billede vil blive indlæst uden en proxy"
+      ],
+      "Load": [
+        "Indlæs"
+      ],
+      "New message": [
+        "Ny besked"
+      ],
+      "Restore": [
+        "Gendan"
+      ],
+      "Restore this version": [
+        "Gendan denne version"
+      ],
+      "Restore version": [
+        "Genskab version"
+      ],
+      "Save version as copy": [
+        "Gem version som kopi"
+      ],
+      "See version history": [
+        "Se versionshistorik"
       ]
     },
     "Actions message": {
@@ -809,6 +851,9 @@
       ],
       "Website access problem": [
         "Adgangsproblem på websted"
+      ],
+      "Pass problem": [
+        "Pass-problem"
       ]
     },
     "Button": {
@@ -1788,6 +1833,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Du kan markere de kontakter til sletning, som du hverken ønsker at flette eller beholde.\nSletning vil kun ske, når der er klikket på fletningsknappen"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "ProtonMail-logo og et plustegn"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Spar tid ved at sende e-mail eller invitationer til alle på en gang, en premium-funktion blandt mange andre. Opgrader i dag."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2150,6 +2201,18 @@
       ],
       "Your import will not be processed.": [
         "Din import vil ikke blive behandlet."
+      ],
+      "Cannot export this contact": [
+        "Kan ikke eksportere denne kontakt"
+      ],
+      "The email addresses do not match": [
+        "E-Mailadresserne stemmer ikke overens"
+      ],
+      "Username must begin with a letter or digit": [
+        "Brugernavn skal begynde med et bogstav eller ciffer"
+      ],
+      "Username must end with a letter or digit": [
+        "Brugernavn skal ende på et bogstav eller ciffer"
       ]
     },
     "Error importing calendar": {
@@ -2180,11 +2243,17 @@
       ],
       "Your file ${ formattedFilename } is not a calendar.": [
         "Din fil ${ formattedFilename } er ikke en kalender."
+      ],
+      "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
+        "Der opstod en fejl ved læsning af din fil ${ formattedFilename }. Forkert filformat."
       ]
     },
     "Error importing contact": {
       "Encryption failed": [
         "Kryptering mislykkedes"
+      ],
+      "vCard versions < 3.0 not supported": [
+        "vCard-versioner < 3.0 understøttes ikke"
       ]
     },
     "Error importing contacts": {
@@ -2205,6 +2274,9 @@
       ],
       "Your file ${ formattedFilename } is empty.": [
         "Din fil ${ formattedFilename } er tom."
+      ],
+      "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
+        "Der opstod en fejl ved læsning af din fil ${ formattedFilename }. Forkert filformat."
       ]
     },
     "Error importing event": {
@@ -2338,6 +2410,12 @@
       ],
       "You may also refresh the page or try again later.": [
         "Du kan også opfriske siden, eller forsøge igen senere."
+      ],
+      "Please refresh the page or try again later.": [
+        "Opdater venligst siden eller prøv igen senere."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Vi kunne ikke indlæse denne side. Opdater siden eller tjek din internetforbindelse."
       ]
     },
     "Error notification": {
@@ -2547,6 +2625,9 @@
     "Import calendar warning": {
       "${ CALENDAR_APP_NAME } currently does not support certain event types, details and formats.": [
         "${ CALENDAR_APP_NAME } understøtter i øjeblikket ikke visse begivenhedstyper, detaljer og formater."
+      ],
+      "vCard versions < 3.0": [
+        "vCard versioner < 3.0"
       ]
     },
     "Import calendar; import invitation": {
@@ -3812,6 +3893,111 @@
       ],
       "Your previous recovery phrase": [
         "Din tidligere gendannelsessætning"
+      ],
+      "${ fileName }: full-size image": [
+        "${ fileName }: billede i fuld størrelse"
+      ],
+      "${ fileName }: low-resolution preview": [
+        "${ fileName }: forhåndsvisning i lav opløsning"
+      ],
+      "Are you sure you want to permanently delete": [
+        "Er du sikker på at du permanent vil slette"
+      ],
+      "Billing cycle: ${ text }": [
+        "Faktureringsperiode: ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Kontakt tilføjet til gruppen ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Kontakt fjernet fra gruppen ${ contactGroupName }"
+      ],
+      "Current version": [
+        "Aktuel version"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Tilpas udseendes og fornemmelsen af ${ BRAND_NAME }-applikationer."
+      ],
+      "Drop file here to upload": [
+        "Træk fil hertil for at uploade"
+      ],
+      "Drop to import": [
+        "Slip for at importere"
+      ],
+      "File will not be updated": [
+        "Filen vil ikke blive opdateret"
+      ],
+      "from the version history?": [
+        "fra versionshistorikken"
+      ],
+      "Last week": [
+        "Sidste uge"
+      ],
+      "Preview for this file type is not supported": [
+        "Forhåndsvisning af denne filtype er ikke understøttet"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "Tidligere versioner er gemt i ${ retentionLabel }"
+      ],
+      "Previous versions are not saved": [
+        "Tidligere versioner er ikke gemt"
+      ],
+      "Restore": [
+        "Gendan"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "Gendannelsen er i gang. Dette kan tage nogle sekunder."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Abonnement er ved at udløbe: Genaktiver inden ${ byDate } for at beholde dine ${ planName }-fordele. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Synkroniser mapper fra din computer"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Synkroniser nemt mapper med vores desktop-app, så dine filer altid er opdaterede og tilgængelige overalt."
+      ],
+      "This will replace the existing file with the folder": [
+        "Dette vil erstatte eksisterende fil med mappen"
+      ],
+      "This will replace the existing folder with the file": [
+        "Dette vil erstatte eksisterende mappe med filen"
+      ],
+      "This will upload a new version of the file": [
+        "Dette vil uploade en ny version af filen"
+      ],
+      "This will upload a new version of the folder": [
+        "Dette vil uploade en ny version af mappen"
+      ],
+      "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
+        "For at gendanne dine data skal du genaktivere den konto-nøgle, der blev brugt på det tidspunkt, hvor dataene blev oprettet. Dette vil kræve, at du husker den adgangskode, der blev brugt, da nøglen blev genereret."
+      ],
+      "Today": [
+        "I dag"
+      ],
+      "Version is deleted": [
+        "Versionen er slettet"
+      ],
+      "Version is restored": [
+        "Versionen er gendannet"
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "vil blive gendannet til versionen fra ${ formattedRevisionDate }. Alle andre versioner vil blive gemt."
+      ],
+      "Yesterday": [
+        "I går"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Du har nået det maksimale antal adresser i kontaktgruppen/grupperne:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Du har nået det maksimale antal adresser i kontaktgruppen."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Din filer vil blive krypteret og derefter gemt"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "Dit abonnement er begrænset til 10 version i op til 7 dage"
       ]
     },
     "Info on errors": {
@@ -4295,6 +4481,38 @@
       ],
       "Your password (admin)": [
         "Din adgangskode (admin)"
+      ],
+      "${ nbDay } day": [
+        "${ nbDay } dag",
+        "${ nbDay } dage"
+      ],
+      "${ nbYear } year": [
+        "${ nbYear } år",
+        "${ nbYear } år"
+      ],
+      "Duplicate found": [
+        "Dublet fundet"
+      ],
+      "Keep both": [
+        "Behold begge"
+      ],
+      "Keep both files": [
+        "Behold begge filer"
+      ],
+      "Keep both folders": [
+        "Behold begge mapper"
+      ],
+      "Replace existing file": [
+        "Erstat eksisterende fil"
+      ],
+      "Replace existing folder": [
+        "Erstat eksisterende mappe"
+      ],
+      "Synchronize with system": [
+        "Synkroniser med system"
+      ],
+      "Yes, I want to permanently delete my old files": [
+        "Ja, jeg vil slette mine gamle filer permanent"
       ]
     },
     "Label for contact group color": {
@@ -4366,6 +4584,9 @@
       ],
       "What’s this?": [
         "Hvad er dette?"
+      ],
+      "Reactivate now": [
+        "Genaktiver nu"
       ]
     },
     "Loading info": {
@@ -4725,6 +4946,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Du kan altid ændre dette i dine indstillinger."
+      ],
+      "Set up your organization testing": [
+        "Konfigurer din organisation"
       ]
     },
     "Onboarding Title": {
@@ -5579,6 +5803,37 @@
       ],
       "You’ve got 1 GB of storage": [
         "Du har 1 GB lagerplads"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } e-mailadresse",
+        "${ emailsCount } e-mailadresser"
+      ],
+      "(active)": [
+        "(aktiv)"
+      ],
+      "Billing cycle": [
+        "Faktureringscyklus"
+      ],
+      "Cannot add more addresses": [
+        "Kan ikke tilføje flere adresser"
+      ],
+      "Day theme": [
+        "Dagstema"
+      ],
+      "Night theme": [
+        "Nattetema"
+      ],
+      "Preview": [
+        "Forhåndsvisning"
+      ],
+      "Unlock contacts groups": [
+        "Få adgang til kontaktgrupper"
+      ],
+      "Version details": [
+        "Versionsdetaljer"
+      ],
+      "Version history": [
+        "Versionshistorik"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -5640,6 +5895,21 @@
       ],
       "You do not have any contacts to export": [
         "Du har ingen kontakter at eksportere"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Skift automatisk mellem dine foretrukne temaer for dag og nat synkront med dit systems dag- og nattilstande"
+      ],
+      "The image could not be loaded": [
+        "Billedet kunne ikke indlæses"
+      ],
+      "The image could not be loaded using proxy": [
+        "Billedet kunne ikke indlæses med en proxy"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Det valgte tema vil blive aktiveret når dit system er sat til \"mørk tilstand\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Det valgte tema vil blive aktiveret når dit system er sat til \"lys tilstand\""
       ]
     },
     "Validation": {
@@ -5755,6 +6025,434 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Din gratis prøveperiode udløber den ${ textDate }. ${ action }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Årlig"
+      ],
+      "Monthly": [
+        "Månedlig"
+      ],
+      "Two-year": [
+        "To-År"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 TB samlet lagerplads"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Få ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Lagerplads er delt mellem familiemedlemmer på tværs af ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } og ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Decline invitation": [
+        "Afvis invitation"
+      ],
+      "Got it": [
+        "Forstået"
+      ],
+      "Switch plans": [
+        "Skift abonnement"
+      ],
+      "View the invitation": [
+        "Se invitationen"
+      ],
+      "View the invitations": [
+        "Se invitationerne"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail og Kalender"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Up to 6 users": [
+        "Op til 6 brugere"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME } grupper"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Konti med brugerdefinerede domæner kan ikke blive medlem af et Visionary eller familie-abonnement."
+      ],
+      "customer support": [
+        "kundeservice"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Hvis du accepterer invitationen, overflytter vi dig fra dit nuværende abonnement og krediterer din konto med en eventuel restsaldo."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Inviteret af: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Administrer adresser."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Ejere af et abonnement med medlemmer kan ikke blive medlem af et andet gruppe-abonnement."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Beklager, du kan i øjeblikket ikke ændre abonnement."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Lagerplads tildelt dig: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Abonnementet faktureres til Visionary- eller Family-abonnementets primære administrator."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Visionary- og familie-abonnementer understøtter på nuværende tidspunkt ikke eksterne kontoer. Opret en ${ BRAND_NAME }-adresse før du tilmelder dig. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Visionary og familie-abonnementer understøtter på nuværende tidspunkt ikke livstidskonti."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Du er inviteret til at blive medlem af ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Du kan kun acceptere 3 invitationer i en 6-måneds periode. Kontakt venligst ${ supportLink } hvis du har brug for en undtagelse."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Du er blevet inviteret til at blive medlem af ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Du er tilmeldt familie-abonnementet."
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Du er inviteret til at forbinde din ${ BRAND_NAME }-konto til dette gruppe-abonnement og sammen nyde alle ${ BRAND_NAME_TWO } premium funktionerne."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Din konto har flere e-mailadresser en det, der er tilgængeligt for dig på dette abonnement. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Din konto bruger ${ usedSpace } lagerplads, hvilket overstiger de ${ inviteSpace } du har fået tildelt. Slet nogle data eller bed abonnementsadministratoren om at øge din lagerplads."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Dit nuværende abonnement kan ikke tilmelde sig et Visionary- eller familie-abonnement."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Dit abonnement vil automatisk blive fornyet til samme pris ved slutningen af din faktureringscyklus."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Rabatter er baseret på den månedlige standardpris."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Få ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Online privatliv, for hele din familie"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Konfigurer din familie-konto og inviter brugere "
+      ],
+      "Set up your family account": [
+        "Konfigurer din familie-konto"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Introducerer ${ planName }"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Systemstandard"
+      ],
+      "Theme default": [
+        "Temastandard"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Stor"
+      ],
+      "Medium (recommended)": [
+        "Mellem (anbefalet)"
+      ],
+      "Small": [
+        "Lille"
+      ],
+      "Very large": [
+        "Meget stor"
+      ],
+      "Very small": [
+        "Meget lille"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Opgradér nu"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Slet automatisk spam og beskeder i papirkurven"
+      ],
+      "Custom email domains": [
+        "Brugerdefinerede e-maildomæner"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email-aliasser"
+      ],
+      "Schedule messages at any time": [
+        "Planlæg beskeder til ethvert tidspunkt"
+      ],
+      "Search message content": [
+        "Søg i beskedindhold"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Ubegrænsede mapper, etiketter og filtre"
+      ],
+      "Up to 15 email addresses": [
+        "Op til 15 e-mailadresser"
+      ],
+      "Up to 3 TB of storage": [
+        "Op til 3 TB lagerplads"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Opret flere e-mailadresser for dine online identiteter, f.eks. JensShopper@${ domain } for shoppingkonto, JensNyheder@${ domain2 } til nyhedsabonnementer."
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Få ubegrænsede aliaser med SimpleLogin fra ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Brug din egen brugerdefinerede e-mail-domæneadresse, f.eks. dig@ditnavn.com"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Officiel"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Officiel e-mail fra ${ BRAND_NAME }"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Luk"
+      ],
+      "Don't show this offer again": [
+        "Vis ikke dette tilbud igen"
+      ],
+      "Special offer": [
+        "Specialtilbud"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } day": [
+        "${ days } dag",
+        "${ days } dage"
+      ],
+      "${ hours } hour": [
+        "${ hours } time",
+        "${ hours } timer"
+      ],
+      "${ minutes } minute": [
+        "${ minutes } minut",
+        "${ minutes } minutter"
+      ],
+      "${ seconds } second": [
+        "${ seconds } sekund",
+        "${ seconds } sekunder"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } måned GRATIS",
+        "${ n } måneder GRATIS"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } lagerplads i alt"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 brugere"
+      ],
+      "64 countries": [
+        "64 lande"
+      ],
+      "All paid Mail and Calendar features": [
+        "Alle betalte Mail og Kalender funktioner"
+      ],
+      "High speed VPN": [
+        "Højhastigheds-VPN"
+      ],
+      "Highest VPN speed": [
+        "Højeste VPN-hastighed"
+      ],
+      "Premium early access": [
+        "Premium tidlig adgang"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail og Kalender"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Premium Mail, Kalender og Drev"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Secure cloud storage": [
+        "Sikker Cloud-lagerplads"
+      ],
+      "Secure streaming": [
+        "Sikker streaming"
+      ],
+      "Support online privacy": [
+        "Støt privatliv online"
+      ]
+    },
+    "specialoffer: Footer": {
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Dette abonnement bliver automatisk fornyet hvert 2. år til samme pris, indtil det annulleres."
+      ]
+    },
+    "specialoffer: Label": {
+      "Limited time only": [
+        "Kun i begrænset tid"
+      ],
+      "Most popular": [
+        "Mest populære"
+      ],
+      "Offer ends soon": [
+        "Tilbuddet slutter snart"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Gå til abonnementer"
+      ],
+      "Upgrade": [
+        "Opgrader"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ måned"
+      ],
+      "1 year": [
+        "1 år"
+      ],
+      "2 years": [
+        "2 år"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "Faktureret med ${ amount } for 1 måned"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "Faktureret med ${ amount } for 12 måneder"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "Faktureret med ${ amount } for 15 måneder"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "Faktureret med ${ amount } for 24 måneder"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "Faktureret med ${ amount } for 30 måneder"
+      ],
+      "for ${ n } month": [
+        "i ${ n } måned",
+        "i ${ n } måneder"
+      ],
+      "Get the deal": [
+        "Få tilbuddet"
+      ],
+      "Save ${ discount }%": [
+        "Spar ${ discount }%"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "Standard pris ${ amount } for 1 måned"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "Standard pris ${ amount } for 12 måneder"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "Standard pris ${ amount } for 15 måneder"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "Standard pris ${ amount } for 24 måneder"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "Standard pris ${ amount } for 30 måneder"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "Black Friday-tilbud"
+      ],
+      "Cyber Week Sale": [
+        "Cyber Week-udsalg"
+      ],
+      "End of Year Sale": [
+        "Udsalg ved årets afslutning"
+      ],
+      "Get our premium bundle and save more": [
+        "Få vores premium-pakke og spar mere"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Vores udfasede Visionary-abonnement er kun tilbage i en begrænset periode"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Spar mere med 2 års ${ planName }"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Opgradér og spar mere med 2 års ${ planName }"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold og browse privat. Inkluderer 1700 servere i 60+ lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og mere."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Få adgang til blokeret indhold, og browse privat. Inkluderer 1700 servere i mere end 60 lande, højeste VPN-hastighed, 10 VPN-forbindelser, verdensomspændende streamingtjenester, malware- og ad-blocker og meget mere."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Få adgang til indhold på streamingtjenester, herunder Netflix, Disney+ og Prime Video, hvor som helst."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Perfekt til familier eller små teams, hvor alle kan have deres egen indbakke og aliasser. Kræver et brugerdefineret domæne."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Modtag uden ekstra omkostninger betalingsversionerne af alle nye privatlivstjenester, vi lancerer i fremtiden, sammen med tidlig adgang til alle fremtidige funktioner og produkter."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Beskyt dine filer med krypteret lagring i skyen. Inkluderer automatisk synkronisering, krypteret fildeling og meget mere."
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Lagerplads er delt mellem ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, og ${ DRIVE_APP_NAME }."
       ]
     }
   }

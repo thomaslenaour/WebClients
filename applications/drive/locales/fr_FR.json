@@ -6,7 +6,7 @@
   "contexts": {
     "account": {
       "Forwarding will start soon. New emails will appear in your inbox.": [
-        "Le transfert commencera bientôt. De nouveaux messages apparaîtront dans votre boîte de réception."
+        "Le transfert commencera bientôt. De nouveaux messages apparaîtront dans votre boite de réception."
       ],
       "Mail forward stopped": [
         "Le transfert automatique de messages a été arrêté."
@@ -32,7 +32,7 @@
         "Ajouter un contact"
       ],
       "Add email": [
-        "Ajouter un e-mail"
+        "Ajouter une adresse e-mail"
       ],
       "Add group": [
         "Ajouter un groupe"
@@ -80,7 +80,7 @@
         "Annuler tous les téléchargements"
       ],
       "Cancel all uploads": [
-        "Annuler tous les chargements"
+        "Annuler toutes les importations"
       ],
       "Cancel download": [
         "Annuler le téléchargement"
@@ -247,7 +247,7 @@
         "Modifier les informations de connexion"
       ],
       "Email settings": [
-        "Paramètres d'e-mail"
+        "Paramètres du message"
       ],
       "Empty trash": [
         "Vider le dossier Corbeille"
@@ -334,7 +334,7 @@
         "Importer des contacts"
       ],
       "Import emails": [
-        "Importer des e-mails"
+        "Importer des messages"
       ],
       "Import from .csv or vCard": [
         "Importer depuis un .csv ou une vCard"
@@ -634,7 +634,7 @@
         "Changer d'abonnement"
       ],
       "Upload anyway": [
-        "Charger quand même"
+        "Importer quand même"
       ],
       "Upload file": [
         "Importer un fichier"
@@ -680,6 +680,54 @@
       ],
       "Zoom out": [
         "Zoom arrière"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "100 contacts maximum sont autorisés par groupe de contacts."
+      ],
+      "Change": [
+        "Modifier"
+      ],
+      "Delete this version": [
+        "Supprimer cette version"
+      ],
+      "Delete version": [
+        "Supprimer la version"
+      ],
+      "Download apps": [
+        "Télécharger les applications"
+      ],
+      "Download Drive for Windows": [
+        "Téléchargez Drive pour Windows"
+      ],
+      "Grid layout": [
+        "Disposition en grille"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "L'image n'a pas pu être chargée en raison de la protection contre les traqueurs."
+      ],
+      "Image will be loaded without a proxy": [
+        "L'image sera chargée sans proxy."
+      ],
+      "Load": [
+        "Charger"
+      ],
+      "New message": [
+        "Nouveau message"
+      ],
+      "Restore": [
+        "Restaurer"
+      ],
+      "Restore this version": [
+        "Restaurer cette version"
+      ],
+      "Restore version": [
+        "Restaurer la version"
+      ],
+      "Save version as copy": [
+        "Enregistrer la version en tant que copie"
+      ],
+      "See version history": [
+        "Afficher l'historique des versions"
       ]
     },
     "Actions message": {
@@ -1791,6 +1839,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Vous pouvez marquer pour suppression les contacts que vous ne voulez ni fusionner ni conserver. Leur suppression n'aura lieu qu'après avoir cliqué sur le bouton de fusion."
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Logo Proton Mail et un signe plus"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Gagnez du temps en envoyant des messages ou des invitations à tout le monde en même temps (une fonctionnalité premium parmi bien d'autres). Changez d'abonnement dès maintenant."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -1894,7 +1948,7 @@
         "Erreur d'authentification"
       ],
       "Calendar limit reached": [
-        "La limite du nombre de calendriers est atteinte."
+        "Le nombre maximum de calendriers a été atteint."
       ],
       "Contact could not be saved": [
         "Le contact n’a pas pu être enregistré."
@@ -1926,7 +1980,7 @@
         "L'adresse e-mail est nécessaire."
       ],
       "Email is not valid": [
-        "L'e-mail n'est pas valide."
+        "L'adresse e-mail n'est pas valide."
       ],
       "Enter 6 digits": [
         "Saisissez 6 chiffres."
@@ -1996,7 +2050,7 @@
         "Aucun contact n'a été trouvé pour l'importation."
       ],
       "No emails found to import - the account does not have an inbox": [
-        "Aucun message n'a été trouvé pour l'importation, le compte n'a pas de boîte de réception."
+        "Aucun message n'a été trouvé pour l'importation, le compte n'a pas de boite de réception."
       ],
       "No valid address found": [
         "Aucune adresse valide n'a été trouvée."
@@ -2110,7 +2164,7 @@
         "Il y a trop de dossiers dans votre compte externe. Nous vous invitons à personnaliser l'importation pour supprimer certains dossiers."
       ],
       "There was an error when exporting the contacts vCards": [
-        "Une erreur s’est produite lors de l’exportation des vCards des contacts."
+        "Une erreur s’est produite pendant l’exportation des vCards des contacts."
       ],
       "This field exceeds the maximum of ${ maximumLength } characters.": [
         "Ce champ dépasse le maximum de ${ maximumLength } caractères."
@@ -2153,6 +2207,18 @@
       ],
       "Your import will not be processed.": [
         "Votre importation ne sera pas traitée."
+      ],
+      "Cannot export this contact": [
+        "Impossible d'exporter ce contact"
+      ],
+      "The email addresses do not match": [
+        "Les adresses e-mail ne correspondent pas."
+      ],
+      "Username must begin with a letter or digit": [
+        "Le nom d'utilisateur doit commencer par une lettre ou un chiffre."
+      ],
+      "Username must end with a letter or digit": [
+        "Le nom d'utilisateur doit se terminer par une lettre ou un chiffre."
       ]
     },
     "Error importing calendar": {
@@ -2334,7 +2400,7 @@
         "Non trouvé"
       ],
       "Oops, something went wrong": [
-        "Désolé, quelque chose s'est mal passé."
+        "Une erreur s'est produite."
       ],
       "Please ${ refresh } or check your internet connection.": [
         "Nous vous invitons à ${ refresh } ou à vérifier votre connexion internet."
@@ -2350,6 +2416,12 @@
       ],
       "You may also refresh the page or try again later.": [
         "Vous pouvez aussi rafraîchir la page ou réessayer plus tard."
+      ],
+      "Please refresh the page or try again later.": [
+        "Nous vous invitons à actualiser la page ou à réessayer plus tard."
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Nous n'avons pas pu charger cette page. Actualisez la page ou vérifiez votre connexion internet."
       ]
     },
     "Error notification": {
@@ -2511,7 +2583,7 @@
         "${ items.length } suggestions trouvées, utilisez le clavier pour naviguer."
       ],
       "Use Up and Down keys to access and browse suggestions after input. Press Enter to confirm your choice, or Escape to close the suggestions box.": [
-        "Utilisez les touches Haut et Bas pour afficher et parcourir les suggestions après la saisie. Appuyez sur Entrée pour confirmer votre choix ou sur Esc (ou Échap) pour fermer la boîte de suggestions."
+        "Utilisez les touches Haut et Bas pour afficher et parcourir les suggestions après la saisie. Appuyez sur Entrée pour confirmer votre choix ou sur Esc (ou Échap) pour fermer la boite de suggestions."
       ]
     },
     "Human verification method": {
@@ -2531,8 +2603,8 @@
         "${ totalImported }/${ totalToImport } événements ont été chiffrés et ajoutés à votre calendrier."
       ],
       "An error occurred while encrypting and adding your event. ${ totalImported } out of ${ totalToImport } event successfully imported.": [
-        "Une erreur s'est produite lors du chiffrement et de l'ajout de votre événement. ${ totalImported } événement sur ${ totalToImport } a été importé.",
-        "Une erreur s'est produite lors du chiffrement et de l'ajout de vos événements. ${ totalImported } événements sur ${ totalToImport } ont été importés."
+        "Une erreur s'est produite pendant le chiffrement et l'ajout de votre événement. ${ totalImported } événement sur ${ totalToImport } a été importé.",
+        "Une erreur s'est produite pendant le chiffrement et l'ajout de vos événements. ${ totalImported } événements sur ${ totalToImport } ont été importés."
       ],
       "An error occurred while encrypting and adding your event. No event could be imported.": [
         "Une erreur s'est produite lors du chiffrement et de l'ajout de votre événement. Aucun événement n'a pu être importé."
@@ -2813,7 +2885,7 @@
         "${ addressCount } adresses e-mail"
       ],
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
-        "${ appName } a besoin de votre permission pour ${ enableDesktopNotifications }."
+        "${ appName } a besoin de votre autorisation pour ${ enableDesktopNotifications }."
       ],
       "${ calendarsToBeCreatedCount } new calendar": [
         "${ calendarsToBeCreatedCount } nouveau calendrier",
@@ -2922,7 +2994,7 @@
         "${ updated } contacts ont été mis à jour."
       ],
       "${ uploadName } already exists in this location.": [
-        "${ uploadName } existe déjà dans cet emplacement."
+        "${ uploadName } est déjà présent à cet emplacement."
       ],
       "(${ memberCount } member)": [
         "(${ memberCount } membre)",
@@ -3000,19 +3072,19 @@
         "Annulé"
       ],
       "Cannot load link": [
-        "Le lien n'a pas pu être chargé."
+        "Impossible de charger le lien"
       ],
       "Cannot load links": [
-        "Les liens n'ont pas pu être chargés."
+        "Impossible de charger les liens"
       ],
       "Cannot load shared link": [
-        "Le lien partagé n'a pas pu être chargé."
+        "Impossible de charger le lien partagé"
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
         "Vous ne vous souvenez pas de votre mot de passe ? Nous pouvons vous aider à effacer les données chiffrées de tous les contacts chiffrés avec cette clé et, par la même occasion, à supprimer l'alerte."
       ],
       "Checking contact ${ progress } of ${ max }...": [
-        "Vérification des contacts : ${ progress } de ${ max }..."
+        "Vérification des contacts en cours : ${ progress } de ${ max }"
       ],
       "Checking signatures": [
         "Vérification des signatures"
@@ -3168,7 +3240,7 @@
         "Temps restant estimé : moins d'une minute"
       ],
       "Estimating time remaining...": [
-        "Estimation du temps restant..."
+        "Estimation du temps restant en cours"
       ],
       "Failed": [
         "Échec"
@@ -3177,7 +3249,7 @@
         "Le lien sécurisé n'a pas pu être généré. Nous vous invitons à réessayer plus tard."
       ],
       "Failed to open a secure link. The reason is: ${ error }": [
-        "Le lien sécurisé n'a pas pu être ouvert pour cette raison : ${ error }"
+        "Le lien sécurisé n'a pas pu être ouvert : ${ error }."
       ],
       "File \"${ name }\" was deleted during download": [
         "Le fichier « ${ name } » a été supprimé pendant le téléchargement."
@@ -3207,7 +3279,7 @@
         "Il manque la signature du dossier. Nous n'avons pas pu vérifier qui a chargé le fichier ${ fileName }."
       ],
       "Folder will not be uploaded": [
-        "Le dossier ne sera pas chargé."
+        "Le dossier ne sera pas importé."
       ],
       "Folders you sync from your computer will appear here.": [
         "Les dossiers que vous synchronisez depuis votre ordinateur apparaissent ici."
@@ -3252,7 +3324,7 @@
         "Si vous pensez qu'il s'agit d'une erreur, nous vous invitons à nous contacter ${ contactLink }."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
-        "Si vous ne trouvez pas le message dans votre boîte de réception, vérifiez votre dossier Indésirables/spam."
+        "Si vous ne trouvez pas le message dans votre boite de réception, vérifiez votre dossier Indésirables/spam."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
         "Si vous avez un de ces éléments, passez à la configuration du compte ${ BRAND_NAME } pour commencer le processus de déblocage."
@@ -3355,7 +3427,7 @@
         "Chargement de l'aperçu"
       ],
       "Loading...": [
-        "Chargement en cours..."
+        "Chargement en cours"
       ],
       "Makes your account safer": [
         "Sécurise votre compte"
@@ -3531,7 +3603,7 @@
         "Sélectionnez un fichier ou un dossier chargé et créez un lien vers celui-ci."
       ],
       "Select the email format you want to be used by default when sending an email to this email address.": [
-        "Sélectionnez le format de message que vous voulez utiliser par défaut lors de l'envoi d'un message à cette adresse e-mail."
+        "Sélectionnez le format de message que vous voulez utiliser par défaut pour l'envoi d'un message à cette adresse e-mail."
       ],
       "Select what you want to import.": [
         "Sélectionnez ce que vous voulez importer."
@@ -3636,8 +3708,8 @@
         "Ce lien sera définitivement désactivé. Aucune personne ayant ce lien ne pourra accéder à votre dossier. Pour partager à nouveau le dossier, vous aurez besoin d'un nouveau lien."
       ],
       "This will delete the link and remove access to your file or folder for anyone with the link.": [
-        "Ceci supprimera le lien et l'accès à votre fichier ou dossier pour toute personne ayant le lien.",
-        "Ceci supprimera les liens et l'accès à vos fichiers ou dossiers pour toute personne ayant les liens."
+        "Cela supprimera le lien et l'accès à votre fichier ou dossier pour toute personne ayant le lien.",
+        "Cela supprimera les liens et l'accès à vos fichiers ou dossiers pour toute personne ayant les liens."
       ],
       "This will overwrite the existing file": [
         "Ceci écrasera et remplacera le fichier existant."
@@ -3652,7 +3724,7 @@
         "Pour que la recherche soit réellement privée, ${ DRIVE_APP_NAME } doit indexer vos fichiers localement."
       ],
       "To enable truly private search, we need to index your files locally. You can still use ${ DRIVE_APP_NAME } normally - we’ll let you know when indexing is done.": [
-        "Pour permettre une recherche vraiment privée, nous devons indexer vos fichiers localement. Vous pouvez utiliser ${ DRIVE_APP_NAME } normalement, nous vous informerons quand l'indexation sera terminée."
+        "Pour permettre une recherche vraiment privée, nous devons indexer vos fichiers localement. Vous pouvez utiliser ${ DRIVE_APP_NAME } normalement. Nous vous informerons quand l'indexation sera terminée."
       ],
       "To fight spam and abuse, please verify you are human.": [
         "Pour lutter contre les messages indésirables/spam et les abus, nous vous invitons à prouver que vous n'êtes pas un robot."
@@ -3664,7 +3736,7 @@
         "Pour signer une nouvelle fois vos contacts, nous devons vérifier chaque contact à l’aide de la liste des clés de chiffrement disponible dans votre compte. Si aucune correspondance n’est trouvée, votre contact sera de nouveau signé avec la clé de chiffrement principale."
       ],
       "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
-        "Pour récupérer vos données, vous devez réactiver la clé du contact utilisée au moment de la création des données. Pour cela, vous devez vous souvenir du mot de passe utilisé lors de la création de la clé."
+        "Pour récupérer vos données, vous devez réactiver la clé de compte qui a été utilisée au moment où les données ont été créées. Pour cela, vous devez vous souvenir du mot de passe que vous avez utilisé lors de la création de la clé."
       ],
       "To use Address Verification, you must trust one or more available public keys, including the one you want to use for sending. This prevents the encryption keys from being faked.": [
         "Pour utiliser la vérification d’adresse, vous devez approuver une ou plusieurs clés publiques disponibles, y compris celle que vous voulez utiliser pour l’envoi. Cela empêche la falsification des clés de chiffrement."
@@ -3700,7 +3772,7 @@
         "Le fichier n'est pas pris en charge."
       ],
       "Updating drive search...": [
-        "Actualisation de la recherche dans Drive..."
+        "Actualisation de la recherche dans Drive en cours"
       ],
       "Upgrade now to get premium features, products and storage at a special price": [
         "Passez à la version supérieure pour profiter de fonctionnalités, de produits et d'espace de stockage premium à un tarif avantageux."
@@ -3745,7 +3817,7 @@
         "Que voulez-vous faire ?"
       ],
       "When you set up two-factor authentication, we provide recovery codes which you can use to sign in if you lose access to your authenticator app.": [
-        "Lorsque vous configurez l'authentification à deux facteurs, nous fournissons des codes de récupération que vous pouvez utiliser pour vous connecter si vous perdez l'accès à votre application d'authentification."
+        "Quand vous configurez l'authentification à deux facteurs, nous fournissons des codes de récupération que vous pouvez utiliser pour vous connecter si vous perdez l'accès à votre application d'authentification."
       ],
       "With ${ DRIVE_APP_NAME }, your data is protected with end-to-end encryption. Only you can decrypt it.": [
         "Avec ${ DRIVE_APP_NAME }, vos données sont protégées par un chiffrement de bout en bout. Personne d'autre que vous ne peut les déchiffrer."
@@ -3796,10 +3868,10 @@
         "Vous perdrez toutes les modifications non enregistrées."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
-        "Votre compte ${ BRAND_NAME } est suspendu. Au bout de 28 jours, les messages ne seront plus envoyés dans votre boîte de réception, vos liens de partage Drive seront bloqués et vous ne pourrez plus télécharger de nouveaux fichiers. Pour retrouver un service normal, nous vous invitons à régler toutes les factures en retard."
+        "Votre compte ${ BRAND_NAME } est suspendu. Au bout de 28 jours, les messages ne seront plus envoyés dans votre boite de réception, vos liens de partage Drive seront bloqués et vous ne pourrez plus télécharger de nouveaux fichiers. Pour retrouver un service normal, nous vous invitons à régler toutes les factures en retard."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. Emails are no longer being delivered to your inbox. Your Drive sharing links are no longer active, and you cannot upload new files. To continue using your account, please pay any overdue invoices.": [
-        "Votre compte ${ BRAND_NAME } est suspendu. Les messages ne sont plus envoyés dans votre boîte de réception. Vos liens de partage Drive ne sont plus actifs et vous ne pouvez pas télécharger de nouveaux fichiers. Pour continuer à utiliser votre compte, nous vous invitons à payer toutes les factures en retard."
+        "Votre compte ${ BRAND_NAME } est suspendu. Les messages ne sont plus envoyés dans votre boite de réception. Vos liens de partage Drive ne sont plus actifs et vous ne pouvez pas télécharger de nouveaux fichiers. Pour continuer à utiliser votre compte, nous vous invitons à payer toutes les factures en retard."
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
         "Votre compte a au moins une facture en retard. Votre accès sera bientôt restreint. ${ payInvoiceLink }"
@@ -3839,6 +3911,114 @@
       ],
       "Your previous recovery phrase": [
         "Votre phrase de récupération précédente"
+      ],
+      "Are you sure you want to permanently delete": [
+        "Voulez-vous vraiment supprimer définitivement "
+      ],
+      "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:": [
+        "${ DRIVE_APP_NAME } étant chiffré de bout en bout, nous ne pouvons pas accéder à vos fichiers, ni les déchiffrer pour vous. Pour déverrouiller votre drive après une réinitialisation de mot de passe, vous devez avoir l'un des éléments suivants :"
+      ],
+      "Billing cycle: ${ text }": [
+        "Cycle de facturation : ${ text }"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Le contact a été ajouté au groupe ${ contactGroupName }."
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Le contact a été retiré du groupe ${ contactGroupName }."
+      ],
+      "Current version": [
+        "Version actuelle"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personnalisez le style des applications ${ BRAND_NAME }."
+      ],
+      "Drop file here to upload": [
+        "Déposez les fichiers ici pour les importer."
+      ],
+      "Drop to import": [
+        "Déposez ici pour importer"
+      ],
+      "Failed to generate a secure link. The reason is: ${ error }": [
+        "Le lien sécurisé n'a pas pu être généré : ${ error }."
+      ],
+      "Failed to generate a secure link. Try again later": [
+        "Le lien sécurisé n'a pas pu être généré. Nous vous invitons à réessayer plus tard."
+      ],
+      "File will not be updated": [
+        "Le fichier ne sera pas mis à jour."
+      ],
+      "from the version history?": [
+        "de l'historique des versions ?"
+      ],
+      "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process.": [
+        "Si vous avez un de ces éléments, passez à la configuration du compte ${ BRAND_NAME } pour commencer le déverrouillage."
+      ],
+      "Last week": [
+        "La semaine dernière"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "Les versions précédentes sont conservées pendant ${ retentionLabel }."
+      ],
+      "Previous versions are not saved": [
+        "Les versions précédentes ne sont pas enregistrées."
+      ],
+      "Restore": [
+        "Restauration"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "La restauration est en cours. Cela peut prendre quelques secondes."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "L'abonnement se termine : réactivez-le avant le ${ byDate } pour continuer à bénéficier des avantages de ${ planName }. ${ reactivateLink }"
+      ],
+      "Sync folders from your computer": [
+        "Synchronisez des dossiers depuis votre ordinateur"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Synchronisez facilement vos dossiers avec notre application de bureau, pour que vos fichiers soient toujours à jour et accessibles, où que vous soyez."
+      ],
+      "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected.": [
+        "Cela supprimera l'appareil synchronisé ${ deviceName } de ${ DRIVE_APP_NAME }. Les fichiers locaux sur l'appareil ne seront pas affectés."
+      ],
+      "This will replace the existing file with the folder": [
+        "Cela remplacera le fichier existant par le dossier."
+      ],
+      "This will replace the existing folder with the file": [
+        "Cela remplacera le dossier existant par le fichier."
+      ],
+      "This will upload a new version of the file": [
+        "Cela importera une nouvelle version du fichier."
+      ],
+      "This will upload a new version of the folder": [
+        "Cela importera une nouvelle version du dossier."
+      ],
+      "Today": [
+        "Aujourd'hui"
+      ],
+      "Version is deleted": [
+        "La version est supprimée."
+      ],
+      "Version is restored": [
+        "La version est restaurée."
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "sera restauré dans sa version datée du ${ formattedRevisionDate }. Toutes les autres versions seront conservées."
+      ],
+      "Yesterday": [
+        "Hier"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Vous avez atteint le nombre maximum d'adresses dans le ou les groupes de contacts :"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Vous avez atteint le nombre maximum d'adresses dans le groupe de contacts."
+      ],
+      "Your files will be encrypted and then saved": [
+        "Vos fichiers seront chiffrés puis sauvegardés."
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "Votre abonnement est limité à 10 versions pour une durée maximum de 7 jours."
       ]
     },
     "Info on errors": {
@@ -3921,7 +4101,7 @@
         "Appliquer à tous les fichiers dupliqués"
       ],
       "Apply to all duplicated folders": [
-        "Appliquer à tous les dossiers dupliqués"
+        "Appliquer à tous les dossiers trouvés en double"
       ],
       "Apply to all unverified items": [
         "Appliquer à tous les éléments non vérifiés"
@@ -4039,10 +4219,10 @@
         "E-mail ou nom d'utilisateur"
       ],
       "Emails": [
-        "E-mails"
+        "Messages"
       ],
       "Emails (all messages)": [
-        "E-mails (tous les messages)"
+        "Messages (tous les messages)"
       ],
       "Emails (last 12 months)": [
         "Messages (12 derniers mois)"
@@ -4165,7 +4345,7 @@
         "Déplacer dans le dossier Archives"
       ],
       "Move to Inbox": [
-        "Déplacer dans le dossier Boîte de réception"
+        "Déplacer dans le dossier Boite de réception"
       ],
       "Name": [
         "Nom"
@@ -4207,7 +4387,7 @@
         "Port"
       ],
       "Post office box": [
-        "Boîte postale"
+        "Boite postale"
       ],
       "Postal code": [
         "Code postal"
@@ -4243,7 +4423,7 @@
         "Définissez une méthode de récupération"
       ],
       "Show indexing progress of Encrypted Search": [
-        "Afficher l'état de l'indexation de la recherche chiffrée"
+        "Afficher l'état d'avancement de l'indexation de la recherche chiffrée"
       ],
       "Sign emails": [
         "Signer les e-mails"
@@ -4273,7 +4453,7 @@
         "Texte"
       ],
       "This will permanently delete all files in your locked drive.": [
-        "Supprimez définitivement tous les fichiers dans votre disque verrouillé."
+        "Cela supprimera définitivement tous les fichiers dans votre disque verrouillé."
       ],
       "To: ${ to }": [
         "À : ${ to }"
@@ -4325,6 +4505,38 @@
       ],
       "Your password (admin)": [
         "Votre mot de passe (admin)"
+      ],
+      "${ nbDay } day": [
+        "${ nbDay } jour",
+        "${ nbDay } jours"
+      ],
+      "${ nbYear } year": [
+        "${ nbYear } an",
+        "${ nbYear } ans"
+      ],
+      "Duplicate found": [
+        "Un doublon a été trouvé."
+      ],
+      "Keep both": [
+        "Garder les deux"
+      ],
+      "Keep both files": [
+        "Garder les deux fichiers"
+      ],
+      "Keep both folders": [
+        "Garder les deux dossiers"
+      ],
+      "Replace existing file": [
+        "Remplacer le fichier existant"
+      ],
+      "Replace existing folder": [
+        "Remplacer le dossier existant"
+      ],
+      "Synchronize with system": [
+        "Synchroniser avec les paramètres du système"
+      ],
+      "Yes, I want to permanently delete my old files": [
+        "Oui, je veux supprimer définitivement mes anciens fichiers."
       ]
     },
     "Label for contact group color": {
@@ -4396,6 +4608,15 @@
       ],
       "What’s this?": [
         "Qu'est-ce que c'est ?"
+      ],
+      "${ DRIVE_APP_NAME } Windows app": [
+        "Application ${ DRIVE_APP_NAME } pour Windows"
+      ],
+      "Reactivate now": [
+        "Réactiver maintenant"
+      ],
+      "Seamlessly sync files and folders between your computer and ${ DRIVE_APP_NAME }.": [
+        "Synchronisez facilement des fichiers et des dossiers entre votre ordinateur et ${ DRIVE_APP_NAME }."
       ]
     },
     "Loading info": {
@@ -4595,10 +4816,10 @@
         "Tous les éléments seront bientôt supprimés définitivement du dossier Corbeille."
       ],
       "Cannot load link": [
-        "Le lien n'a pas pu être chargé."
+        "Impossible de charger le lien"
       ],
       "Cannot load next page": [
-        "La page suivante n'a pas pu être chargée."
+        "Impossible de charger la page suivante"
       ],
       "Contact group created": [
         "Le groupe de contacts a été créé."
@@ -4760,6 +4981,12 @@
       ],
       "You can change this anytime in your settings.": [
         "Vous pouvez modifier cela à tout moment dans vos paramètres."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "D'autres thèmes sont disponibles dans vos paramètres de compte, dans la section Apparence."
+      ],
+      "Set up your organization testing": [
+        "Configurez votre organisation"
       ]
     },
     "Onboarding Title": {
@@ -4865,7 +5092,7 @@
         "Rechercher un nom de groupe"
       ],
       "Search for name or email": [
-        "Rechercher par nom ou par e-mail"
+        "Rechercher par nom ou adresse e-mail"
       ],
       "Select": [
         "Sélectionner"
@@ -4907,7 +5134,7 @@
         "Adresse"
       ],
       "Email": [
-        "E-mail"
+        "Adresse e-mail"
       ],
       "Fax": [
         "Fax"
@@ -4978,26 +5205,26 @@
     },
     "specialoffer: Countdown unit": {
       "${ days } day": [
-        "${ hours } heure",
-        "${ hours } heures"
-      ],
-      "${ hours } hour": [
         "${ days } jour",
         "${ days } jours"
       ],
+      "${ hours } hour": [
+        "${ hours } heure",
+        "${ hours } heures"
+      ],
       "${ minutes } minute": [
-        "${ n } mois GRATUIT",
-        "${ n } mois GRATUITS"
+        "${ minutes } minute",
+        "${ minutes } minutes"
       ],
       "${ seconds } second": [
-        "pour ${ n } mois",
-        "pour ${ n } mois"
+        "${ seconds } seconde",
+        "${ seconds } secondes"
       ]
     },
     "specialoffer: Deal": {
       "${ n } month FREE": [
-        "${ seconds } seconde",
-        "${ seconds } secondes"
+        "${ n } mois GRATUIT",
+        "${ n } mois GRATUITS"
       ]
     },
     "specialoffer: Deal details": {
@@ -5005,7 +5232,7 @@
         "${ storageSize } d'espace de stockage total"
       ],
       "3 TB": [
-        "3 To"
+        "3 To"
       ],
       "6 users": [
         "6 utilisateurs"
@@ -5077,7 +5304,7 @@
         "Voir les abonnements"
       ],
       "Upgrade": [
-        "Changer d'offre"
+        "Changer d'abonnement"
       ]
     },
     "specialoffer: Offers": {
@@ -5106,8 +5333,8 @@
         "Facturé ${ amount } pour 30 mois"
       ],
       "for ${ n } month": [
-        "${ minutes } minute",
-        "${ minutes } minutes"
+        "pour ${ n } mois",
+        "pour ${ n } mois"
       ],
       "Get the deal": [
         "J'en profite"
@@ -5160,18 +5387,18 @@
         "Économisez plus avec 2 ans de ${ planName }"
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
-        "Passez au niveau supérieur et économisez plus avec 2 ans de ${ planName }"
+        "Changez d'abonnement et économisez plus avec 2 ans de ${ planName }"
       ]
     },
     "specialoffer: Tooltip": {
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
-        "Accédez aux contenus bloqués et naviguez de manière privée. Comprend 1 700 serveurs dans plus de 60 pays, la vitesse VPN la plus élevée, 10 connexions VPN par utilisateur, l'accès aux services de streaming du monde entier, le blocage des logiciels malveillants et des publicités..."
+        "Accédez aux contenus bloqués et naviguez de manière privée. Comprend 1 700 serveurs dans plus de 60 pays, la vitesse VPN la plus élevée, 10 connexions VPN par utilisateur, l'accès aux services de streaming du monde entier, le blocage des logiciels malveillants et des publicités…"
       ],
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
-        "Accédez aux contenus bloqués et naviguez de manière privée. Comprend 1 700 serveurs dans plus de 60 pays, la vitesse VPN la plus élevée, 10 connexions VPN, l'accès aux services de streaming du monde entier, le blocage des logiciels malveillants et des publicités..."
+        "Accédez aux contenus bloqués et naviguez de manière privée. Comprend 1 700 serveurs dans plus de 60 pays, la vitesse VPN la plus élevée, 10 connexions VPN, l'accès aux services de streaming du monde entier, le blocage des logiciels malveillants et des publicités…"
       ],
       "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
-        "Accédez au contenu des services de streaming, dont Netflix, Disney+ et Prime Video, où que vous soyez."
+        "Accédez au contenu des services de streaming, dont Netflix, Amazon Prime Video, Canal+, Disney+, France.tv, TF1… où que vous soyez."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited Hide My Email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
         "Tous nos services premium au plus haut niveau : 100 adresses e-mail, la prise en charge de 10 domaines personnalisés, un nombre illimité d'alias Hide My Email, le partage de calendriers, le stockage cloud et le partage de fichiers chiffrés..."
@@ -5183,7 +5410,7 @@
         "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 15 adresses e-mail, d'un nombre illimité d'alias Hide My Email, du partage de calendrier..."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
-        "Idéal pour les familles ou les petites équipes, chacun pouvant disposer de sa propre boîte de réception et de ses propres alias. Nécessite un domaine personnalisé."
+        "Idéal pour les familles ou les petites équipes, chacun pouvant disposer de sa propre boite de réception et de ses propres alias. Nécessite un domaine personnalisé."
       ],
       "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
         "Profitez sans frais supplémentaires des versions payantes de tous nos futurs services respectueux de la vie privée, ainsi que d'un accès en avant-première à nos nouvelles fonctionnalités et à nos nouveaux produits."
@@ -5193,6 +5420,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "L'espace de stockage est partagé entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } et ${ DRIVE_APP_NAME }."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Tous nos services premium au plus haut niveau : 100 adresses e-mail, la prise en charge de 10 domaines personnalisés, un nombre illimité d'alias « hide-my-email », le partage de calendriers, le stockage cloud et le partage de fichiers chiffrés…"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Comprend la prise en charge d'un domaine de messagerie personnalisé, de 10 adresses e-mail, de 10 alias « hide-my-email », du partage de calendrier…"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 15 adresses e-mail, d'un nombre illimité d'alias « hide-my-email », du partage de calendrier…"
       ]
     },
     "Spotlight": {
@@ -5427,7 +5663,7 @@
         "Le navigateur est peut-être à court de mémoire."
       ],
       "Cannot load link": [
-        "Le lien n'a pas pu être chargé."
+        "Impossible de charger le lien"
       ],
       "Change layout": [
         "Modifier la mise en page"
@@ -5519,7 +5755,7 @@
         "Un fichier en double a été trouvé."
       ],
       "Duplicate folder found": [
-        "Un dossier en double a été trouvé."
+        "Un dossier portant le même nom a été trouvé."
       ],
       "Edit contact": [
         "Modifier le contact"
@@ -5528,7 +5764,7 @@
         "Modifier le groupe de contacts"
       ],
       "Edit email settings": [
-        "Modifier les paramètres d'e-mail"
+        "Modifier les paramètres du message"
       ],
       "Edit image": [
         "Modifier l'image"
@@ -5537,7 +5773,7 @@
         "Adresses e-mail"
       ],
       "Email settings": [
-        "Paramètres d'e-mail"
+        "Paramètres du message"
       ],
       "Empty trash": [
         "Vider le dossier Corbeille"
@@ -5849,6 +6085,37 @@
       ],
       "You’ve got 1 GB of storage": [
         "Vous avez 1 Go d'espace de stockage."
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } adresse e-mail",
+        "${ emailsCount } adresses e-mail"
+      ],
+      "(active)": [
+        "(activé)"
+      ],
+      "Billing cycle": [
+        "Cycle de facturation"
+      ],
+      "Cannot add more addresses": [
+        "Impossible d'ajouter plus d'adresses"
+      ],
+      "Day theme": [
+        "Thème jour"
+      ],
+      "Night theme": [
+        "Thème nuit"
+      ],
+      "Preview": [
+        "Aperçu"
+      ],
+      "Unlock contacts groups": [
+        "Débloquer les groupes des contacts"
+      ],
+      "Version details": [
+        "Détails de la version"
+      ],
+      "Version history": [
+        "Historique des versions"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -5906,10 +6173,25 @@
         "L'importation commencera par les messages les plus récents."
       ],
       "Upload a public key to enable sending end-to-end encrypted emails to this email": [
-        "Chargez une clé publique pour activer l'envoi d'e-mails chiffrés de bout en bout à destination de cet e-mail."
+        "Chargez une clé publique pour activer l'envoi de messages chiffrés de bout en bout à destination de cette adresse e-mail."
       ],
       "You do not have any contacts to export": [
         "Vous n'avez aucun contact à exporter."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Basculez automatiquement entre vos thèmes préférés pour le jour et la nuit, en synchronisation avec les modes jour et nuit de votre système."
+      ],
+      "The image could not be loaded": [
+        "L'image n'a pas pu être chargée."
+      ],
+      "The image could not be loaded using proxy": [
+        "L'image n'a pas pu être chargée en utilisant le proxy."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Le thème sélectionné sera activé quand votre système sera en « thème sombre »."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Le thème sélectionné sera activé quand votre système sera en « thème clair »."
       ]
     },
     "Validation": {
@@ -6025,6 +6307,317 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Votre essai gratuit se termine le ${ textDate }. ${ action }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Annuel"
+      ],
+      "Monthly": [
+        "Mensuel"
+      ],
+      "Two-year": [
+        "Tous les deux ans"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "3 To d'espace de stockage total"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Obtenir ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "L'espace de stockage est partagé entre les membres de la famille et entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } et ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Decline invitation": [
+        "Refuser l'invitation"
+      ],
+      "Got it": [
+        "J'ai compris"
+      ],
+      "Switch plans": [
+        "Changer d'abonnement"
+      ],
+      "View the invitation": [
+        "Voir l'invitation"
+      ],
+      "View the invitations": [
+        "Voir les invitations"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Drive version premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail et Calendar version premium"
+      ],
+      "Premium VPN": [
+        "VPN version premium"
+      ],
+      "Up to 6 users": [
+        "Jusqu'à 6 utilisateurs"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "Groupes ${ BRAND_NAME }"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Les comptes avec des domaines personnalisés ne peuvent pas rejoindre un abonnement Visionary ou un abonnement familial."
+      ],
+      "customer support": [
+        "service client"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Si vous acceptez l'invitation, nous changerons votre abonnement actuel et nous créditerons votre compte de l'éventuel solde restant."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Invitation de : ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Gérer les adresses"
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Les utilisateurs qui ont un abonnement avec des membres ne peuvent pas rejoindre un autre abonnement de groupe."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Vous ne pouvez malheureusement pas changer d'abonnement pour l'instant."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Espace de stockage qui vous est attribué : ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "L'abonnement est facturé à l'administrateur principal de l'abonnement Visionary ou de l'abonnement familial."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Actuellement, l'abonnement Visionary et les abonnements familiaux ne prennent pas en charge les comptes externes. Créez une adresse ${ BRAND_NAME } avant de rejoindre l'un de ces abonnements. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Actuellement, l'abonnement Visionary et les abonnements familiaux ne prennent pas en charge les comptes à vie."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Vous avez une invitation à rejoindre ${ invite.OrganizationName }."
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Vous ne pouvez accepter que 3 invitations par période de 6 mois. Contactez le ${ supportLink } si vous avez besoin d'une exception."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Vous avez une invitation à rejoindre ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Vous avez rejoint l'abonnement Family."
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Vous avez une invitation à lier votre compte ${ BRAND_NAME } à cet abonnement de groupe pour profiter tous ensemble des fonctionnalités premium de ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Le nombre d'adresses e-mail de votre compte dépasse celui prévu avec cet abonnement. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Votre compte utilise ${ usedSpace } d'espace de stockage, ce qui dépasse les ${ inviteSpace } dont vous disposez. Supprimez certaines données ou demandez à l'administrateur de l'abonnement d'augmenter votre espace de stockage."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Votre abonnement actuel ne peut pas être associé à un abonnement Visionary ou à un abonnement familial."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Votre abonnement sera automatiquement renouvelé au même tarif à la fin de votre cycle de facturation."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Les réductions sont calculées sur les prix mensuels habituels."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Obtenir ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Pour que toute la famille protège sa vie privée en ligne"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Configurez votre compte familial et invitez des utilisateurs. "
+      ],
+      "Set up your family": [
+        "Configurez votre famille"
+      ],
+      "Set up your family account": [
+        "Créez votre compte familial"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Voici ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Cela comprend 2 700 serveurs répartis dans plus de 65 pays, la possibilité de connecter jusqu'à 10 appareils, l'accès aux services de streaming du monde entier, un bloqueur de logiciels malveillants et de publicités et bien d'autres fonctionnalités."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Comprend la prise en charge de 3 domaines de messagerie personnalisés, de 90 adresses e-mail, d'un nombre illimité d'alias « hide-my-email », du partage de calendrier…"
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Sécurisez vos fichiers grâce au stockage cloud chiffré. Cela comprend la synchronisation automatique, le partage de fichiers chiffrés et d'autres fonctionnalités."
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Identique au système"
+      ],
+      "Theme default": [
+        "Thème par défaut"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Grand"
+      ],
+      "Medium (recommended)": [
+        "Moyen (recommandé)"
+      ],
+      "Small": [
+        "Petit"
+      ],
+      "Very large": [
+        "Très grand"
+      ],
+      "Very small": [
+        "Très petit"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Changer d'abonnement"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Suppression automatique des messages dans les dossiers Indésirables/spam et Corbeille"
+      ],
+      "Custom email domains": [
+        "Domaines de messagerie personnalisés"
+      ],
+      "Hide-my-email aliases": [
+        "Alias « hide-my-email »"
+      ],
+      "Schedule messages at any time": [
+        "Planifiez l'envoi de messages quand vous le voulez"
+      ],
+      "Search message content": [
+        "Rechercher dans le contenu des messages"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Dossiers, labels et filtres illimités"
+      ],
+      "Up to 15 email addresses": [
+        "Jusqu'à 15 adresses e-mail"
+      ],
+      "Up to 3 TB of storage": [
+        "Jusqu'à 3 To d'espace de stockage"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Créez différentes adresses selon vos activités, comme « SebShopping@${ domain } » pour les achats et « SebNews@${ domain2 } » pour les abonnements à des sites d'informations par exemple."
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Profitez d'un nombre illimité d'alias avec SimpleLogin de ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "L'espace de stockage est partagé entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } et ${ DRIVE_APP_NAME }."
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Utilisez votre adresse e-mail personnalisée à partir de votre propre nom de domaine (vous@votrenom.com)."
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Officiel"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Message officiel de ${ BRAND_NAME }"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 an"
+      ],
+      "2 years": [
+        "2 ans"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Drive version premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail et Calendar version premium"
+      ],
+      "Premium Password Manager": [
+        "Gestionnaire de mots de passe premium"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Enregistrez vos mots de passe en toute sécurité et renseignez-les automatiquement sur les sites web. Profitez d'un nombre illimité de mots de passe, du remplissage automatique, d'un générateur de mots de passe et de bien d'autres fonctionnalités."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Gestionnaire de mots de passe"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Créez des identifiants de connexion sécurisés sur tous vos appareils. Profitez d'un nombre illimité d'alias, de 20 coffres-forts, de l'authentification à deux facteurs (2FA) intégrée, du remplissage automatique des cartes bancaires et de bien d'autres fonctionnalités."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Cela comprend 2 950 serveurs répartis dans plus de 65 pays, la possibilité de connecter jusqu'à 10 appareils, l'accès aux services de streaming du monde entier, un bloqueur de logiciels malveillants et de publicités et bien d'autres fonctionnalités."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Cela comprend la prise en charge de 1 domaines de messagerie personnalisés, de 10 adresses e-mail, d'un nombre illimité d'alias « hide-my-email », du partage de calendriers et bien d'autres fonctionnalités."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Sécurisez vos fichiers grâce au stockage cloud chiffré. Profitez de l'historique des versions, du partage chiffré des fichiers et de bien d'autres fonctionnalités."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Votre abonnement sera automatiquement renouvelé au tarif réduit habituel à la fin de votre cycle de facturation."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Les réductions sont calculées sur les prix mensuels habituels. Cette offre est réservée aux nouveaux abonnés."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Profitez du meilleur de ${ BRAND_NAME } à un prix exceptionnel (offre à durée limitée)."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Nous fêtons les neuf ans de notre financement participatif !"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Offre spéciale : anniversaire ${ BRAND_NAME }"
       ]
     }
   }

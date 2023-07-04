@@ -275,7 +275,7 @@
         "Λάβετε σύνδεσμο"
       ],
       "Get started": [
-        "Εκκίνηση"
+        "Ας ξεκινήσουμε"
       ],
       "Get verification code": [
         "Απόκτηση κωδικού επαλήθευσης"
@@ -497,7 +497,7 @@
         "Τοπική αναζήτηση"
       ],
       "See plan features": [
-        "Προβολή χαρακτηριστικών προγράμματος"
+        "Προβολή δυνατοτήτων προγράμματος"
       ],
       "Select all": [
         "Επιλογή όλων"
@@ -554,7 +554,7 @@
         "Έναρξη ανάκτησης"
       ],
       "Start setup": [
-        "Ρύθμιση εκκίνησης"
+        "Εκκίνησης ρύθμισης"
       ],
       "Stay": [
         "Παραμονή"
@@ -654,6 +654,72 @@
       ],
       "Zoom out": [
         "Σμίκρυνση"
+      ],
+      "At most 100 contacts are allowed per contact group": [
+        "Επιτρέπονται το πολύ 100 επαφές ανά ομάδα επαφών"
+      ],
+      "Back to Homepage": [
+        "Επιστροφή στην αρχική σελίδα"
+      ],
+      "Change": [
+        "Αλλαγή"
+      ],
+      "Delete this version": [
+        "Διαγραφή αυτής της έκδοσης"
+      ],
+      "Delete version": [
+        "Διαγραφή έκδοσης"
+      ],
+      "Download apps": [
+        "Λήψη εφαρμογών"
+      ],
+      "Download Drive for Windows": [
+        "Λήψη του Drive για Windows"
+      ],
+      "Go to Drive": [
+        "Μετάβαση στο Drive"
+      ],
+      "Grid layout": [
+        "Διάταξη Πλέγματος"
+      ],
+      "Image could not be loaded with tracker protection.": [
+        "Η εικόνα απέτυχε να φορτωθεί με προστασία παρακολούθησης."
+      ],
+      "Image will be loaded without a proxy": [
+        "Η εικόνα θα φορτωθεί χωρίς διαμεσολαβητή"
+      ],
+      "Load": [
+        "Φόρτωση"
+      ],
+      "New message": [
+        "Νέο μήνυμα"
+      ],
+      "Restore": [
+        "Επαναφορά"
+      ],
+      "Restore this version": [
+        "Επαναφέρετε αυτήν την έκδοση"
+      ],
+      "Restore version": [
+        "Επαναφορά Έκδοσης"
+      ],
+      "Save version as copy": [
+        "Αποθήκευση έκδοσης ως αντιγράφου"
+      ],
+      "See version history": [
+        "Δείτε το ιστορικό εκδόσεων"
+      ],
+      "Show side panel": [
+        "Εμφάνιση πλαϊνού πλαισίου"
+      ],
+      "Toggle Calendar app": [
+        "Εναλλαγή εφαρμογής Ημερολόγιο"
+      ],
+      "Toggle Contact app": [
+        "Εναλλαγή στο πρόγραμμα Επαφών"
+      ],
+      "Try for free": [
+        "Δοκιμάστε δωρεάν"
       ]
     },
     "Actions message": {
@@ -778,6 +844,9 @@
       ],
       "Website access problem": [
         "Πρόβλημα πρόσβασης ιστοσελίδας"
+      ],
+      "Pass problem": [
+        "Πρόβλημα Pass"
       ]
     },
     "Collapsible tooltip": {
@@ -845,6 +914,9 @@
       ],
       "strawberry": [
         "φράουλα"
+      ],
+      "enzian": [
+        "ενζιάν"
       ]
     },
     "Confirm modal title": {
@@ -900,6 +972,15 @@
       ],
       "Title": [
         "Τίτλος"
+      ],
+      "Email": [
+        "Email"
+      ],
+      "Time zone": [
+        "Ζώνη ώρας"
+      ],
+      "URL": [
+        "Διεύθυνση URL"
       ]
     },
     "Contact type label": {
@@ -1735,6 +1816,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Μπορείτε να επισημάνετε για διαγραφή τις επαφές που δεν θέλετε να συγχωνεύσετε ούτε να διατηρήσετε. Η διαγραφή θα πραγματοποιηθεί μόνο αφού πατηθεί το κουμπί συγχώνευσης"
+      ],
+      "ProtonMail logo and a plus sign": [
+        "Λογότυπο ProtonMail και σύμβολο συν"
+      ],
+      "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
+        "Εξοικονομήστε χρόνο στέλνοντας μηνύματα ηλεκτρονικού ταχυδρομείου ή προσκλήσεις σε όλους ταυτόχρονα, ένα premium χαρακτηριστικό μεταξύ πολλών άλλων. Αναβαθμίστε σήμερα."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2003,7 +2090,7 @@
         "Μη έγκυρο όνομα ετικέτας. Παρακαλούμε δοκιμάστε ένα διαφορετικό."
       ],
       "The label name is too long. Please choose a different name.": [
-        "Υπερβολικό μήκος ονόματος ετικέτας. Παρακαλούμε δοκιμάστε ένα συντομότερο."
+        "Το όνομα της ετικέτας είναι πολύ μεγάλο. Δοκιμάστε ένα διαφορετικό όνομα."
       ],
       "The new revision of original file is not uploaded yet, please try again later": [
         "Η νέα αναθεώρηση του πρωτότυπου αρχείου δεν έχει μεταφορτωθεί ακόμα, παρακαλούμε δοκιμάστε αργότερα"
@@ -2030,7 +2117,7 @@
         "Υπερβολικός αριθμός φακέλων στον εξωτερικό λογαριασμό σας. Παρακαλούμε προσαρμόστε την εισαγωγή, προς διαγραφή μερικών φακέλων."
       ],
       "There was an error when exporting the contacts vCards": [
-        "Παρουσιάστηκε σφάλμα κατά την εξαγωγή επαφών vCards"
+        "Παρουσιάστηκε σφάλμα κατά την εξαγωγή επαφών σε vCards"
       ],
       "This field is required": [
         "Αυτό το πεδίο είναι υποχρεωτικό"
@@ -2054,7 +2141,7 @@
         "Δεν μπορείτε να στείλετε μήνυμα σε περισσότερους από 100 παραλήπτες"
       ],
       "You can't send vCard files of more than 10 contacts": [
-        "Δεν μπορείτε να στείλετε φακέλους vCard για περισσότερες από 10 επαφές"
+        "Δεν μπορείτε να στείλετε αρχεία vCard για περισσότερες από 10 επαφές"
       ],
       "You must set a name": [
         "Πρέπει να ορίσετε ένα όνομα"
@@ -2064,6 +2151,51 @@
       ],
       "Your import will not be processed.": [
         "Η εισαγωγή σας δεν θα υποβληθεί σε επεξεργασία."
+      ],
+      "A problem occurred, please try again.": [
+        "Προέκυψε πρόβλημα. Παρακαλούμε δοκιμάστε ξανά."
+      ],
+      "Cannot export this contact": [
+        "Δεν είναι δυνατή η εξαγωγή αυτής της επαφής"
+      ],
+      "Contact name is too long": [
+        "Το όνομα της επαφής είναι πολύ μεγάλο"
+      ],
+      "Missing key packet": [
+        "Λείπει πακέτο κλειδιού"
+      ],
+      "No calendars found to import": [
+        "Δε βρέθηκαν ημερολόγια για εισαγωγή."
+      ],
+      "No contacts found to import": [
+        "Δε βρέθηκαν επαφές για εισαγωγή"
+      ],
+      "No emails found to import - the account does not have an inbox": [
+        "Δεν βρέθηκαν μηνύματα ηλεκτρονικού ταχυδρομείου για εισαγωγή - ο λογαριασμός δεν διαθέτει εισερχόμενα"
+      ],
+      "Please activate your search again": [
+        "Ενεργοποιήστε ξανά την αναζήτησή σας"
+      ],
+      "Some of your label names are reserved. Please customize the import to edit these names.": [
+        "Ορισμένα από τα ονόματα των ετικετών σας είναι δεσμευμένα. Προσαρμόστε την εισαγωγή για να επεξεργαστείτε αυτά τα ονόματα."
+      ],
+      "The email addresses do not match": [
+        "Οι διευθύνσεις email δεν ταιριάζουν."
+      ],
+      "This field exceeds the maximum of ${ maximumLength } characters.": [
+        "Αυτό το πεδίο υπερβαίνει το μέγιστο των χαρακτήρων ${ maximumLength }."
+      ],
+      "Try using only letters, numerals, and _.-": [
+        "Δοκιμάστε να χρησιμοποιήσετε μόνο γράμματα, αριθμούς και _.-"
+      ],
+      "Username must begin with a letter or digit": [
+        "Το όνομα χρήστη πρέπει να ξεκινά με ένα γράμμα ή ένα ψηφίο"
+      ],
+      "Username must end with a letter or digit": [
+        "Το όνομα χρήστη πρέπει να τελειώνει με γράμμα ή ψηφίο"
+      ],
+      "You have reached the maximum number of calendars. Some calendars couldn't be imported.": [
+        "Έχετε συμπληρώσει τον μέγιστο αριθμό ημερολογίων. Δεν ήταν δυνατή η εισαγωγή ορισμένων ημερολογίων."
       ]
     },
     "Error importing calendar": {
@@ -2094,11 +2226,17 @@
       ],
       "Your file ${ formattedFilename } is not a calendar.": [
         "Το αρχείο σας ${ formattedFilename } δεν είναι ημερολόγιο."
+      ],
+      "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
+        "Παρουσιάστηκε σφάλμα κατά την ανάγνωση του αρχείου σας ${ formattedFilename }. Εσφαλμένη μορφή αρχείου."
       ]
     },
     "Error importing contact": {
       "Encryption failed": [
         "Η κρυπτογράφηση απέτυχε"
+      ],
+      "vCard versions < 3.0 not supported": [
+        "οι εκδόσεις vCard < 3.0 δεν υποστηρίζονται"
       ]
     },
     "Error importing contacts": {
@@ -2119,6 +2257,9 @@
       ],
       "Your file ${ formattedFilename } is empty.": [
         "Το αρχείο σας ${ formattedFilename } είναι άδειο."
+      ],
+      "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
+        "Παρουσιάστηκε σφάλμα κατά την ανάγνωση του αρχείου σας ${ formattedFilename }. Εσφαλμένη μορφή αρχείου."
       ]
     },
     "Error importing event": {
@@ -2211,6 +2352,12 @@
       ],
       "Unsupported event": [
         "Μη υποστηριζόμενη εκδήλωση"
+      ],
+      "Custom time zone": [
+        "Προσαρμοσμένη ζώνη ώρας"
+      ],
+      "Time zone": [
+        "Ζώνη ώρας"
       ]
     },
     "Error message": {
@@ -2234,6 +2381,15 @@
       ],
       "You may also refresh the page or try again later.": [
         "Μπορείτε επίσης να ανανεώσετε την σελίδα ή να προσπαθήσετε αργότερα."
+      ],
+      "Please refresh the page or try again later.": [
+        "Παρακαλούμε ανανεώστε τη σελίδα ή δοκιμάστε ξανά αργότερα."
+      ],
+      "Something went wrong": [
+        "Κάτι πήγε στραβά"
+      ],
+      "We couldn't load this page. Please refresh the page or check your internet connection.": [
+        "Δεν ήταν δυνατή η φόρτωση αυτής της σελίδας. Ανανεώστε τη σελίδα ή ελέγξτε τη σύνδεσή σας στο διαδίκτυο."
       ]
     },
     "Error notification": {
@@ -2287,6 +2443,12 @@
       ],
       "Your answer was sent, but the event could not be updated in your calendar": [
         "Η απάντησή σας στάλθηκε, αλλά το γεγονός δεν μπόρεσε να ενημερωθεί στο ημερολόγιό σας."
+      ],
+      "The event could not be added to your calendar. No answer was sent": [
+        "Δεν ήταν δυνατή η προσθήκη του συμβάντος στο ημερολόγιό σας. Δεν εστάλη απάντηση"
+      ],
+      "The event could not be updated in your calendar. No answer was sent": [
+        "Δεν ήταν δυνατή η ενημέρωση του συμβάντος στο ημερολόγιό σας. Δεν εστάλη απάντηση"
       ]
     },
     "Event title": {
@@ -2303,6 +2465,15 @@
       "byte": [
         "byte",
         "bytes"
+      ],
+      "GB": [
+        "GB"
+      ],
+      "KB": [
+        "KB"
+      ],
+      "MB": [
+        "MB"
       ]
     },
     "file size format, long": {
@@ -2371,12 +2542,15 @@
       ],
       "No verification method available": [
         "Δεν υπάρχει διαθέσιμη μέθοδος επαλήθευσης"
+      ],
+      "Email": [
+        "Email"
       ]
     },
     "Import calendar": {
       "${ totalImported }/${ totalToImport } event encrypted and added to your calendar": [
         "${ totalImported }/${ totalToImport } γεγονός κρυπτογραφήθηκε και προστέθηκε στο ημερολόγιό σας",
-        "${ totalImported }/${ totalToImport } εκδηλώσεις κρυπτογραφήθηκαν και προστέθηκαν στο ημερολόγιό σας"
+        "${ totalImported }/${ totalToImport } γεγονότα κρυπτογραφήθηκαν και προστέθηκαν στο ημερολόγιό σας"
       ],
       "An error occurred while encrypting and adding your event. ${ totalImported } out of ${ totalToImport } event successfully imported.": [
         "Ένα σφάλμα παρουσιάστηκε κατά την κρυπτογράφηση και την προσθήκη του γεγονότος. ${ totalImported } από ${ totalToImport } γεγονός εισήχθηκε επιτυχώς.",
@@ -2399,11 +2573,17 @@
       ],
       "Please don't close the tab before the importing process is finished.": [
         "Παρακαλώ μην κλείσετε την καρτέλα πριν ολοκληρωθεί η διαδικασία εισαγωγής."
+      ],
+      "An error occurred while encrypting and adding your event. No event could be imported.": [
+        "Παρουσιάστηκε σφάλμα κατά την κρυπτογράφηση και την προσθήκη της εκδήλωσής σας. Δεν ήταν δυνατή η εισαγωγή συμβάντος."
       ]
     },
     "Import calendar warning": {
       "${ CALENDAR_APP_NAME } currently does not support certain event types, details and formats.": [
         "Η ${ CALENDAR_APP_NAME } δεν υποστηρίζει προς το παρόν συγκεκριμένους τύπους συμβάντων, λεπτομέρειες και μορφές."
+      ],
+      "vCard versions < 3.0": [
+        "εκδόσεις vCard < 3.0"
       ]
     },
     "Import calendar; import invitation": {
@@ -2411,8 +2591,8 @@
         "Οι εισαγόμενες προσκλήσεις εμφανίζονται στο ${ CALENDAR_APP_NAME } ως απλά συμβάντα χωρίς στοιχεία διοργανωτή και συμμετέχοντα. Για να λαμβάνετε ενημερώσεις για το συμβάν και για να δείτε τους συμμετέχοντες, ζητήστε από τους διοργανωτές να σας προσκαλέσουν χρησιμοποιώντας τη δική σας ${ BRAND_NAME } διεύθυνση ηλ. ταχυδρομείου."
       ],
       "This file contains an event invitation:": [
-        "Αυτό το αρχείο περιέχει μια πρόσκληση σε εκδήλωση:",
-        "Αυτό το αρχείο περιέχει προσκλήσεις σε εκδηλώσεις:"
+        "Αυτό το αρχείο περιέχει μια πρόσκληση σε γεγονός:",
+        "Αυτό το αρχείο περιέχει προσκλήσεις σε γεγονότα:"
       ],
       "This file contains an invitation response:": [
         "Αυτό το αρχείο περιέχει μια απάντηση πρόσκλησης:",
@@ -2503,6 +2683,24 @@
       ],
       "Your password is correct.": [
         "Ο κωδικός πρόσβασής σας είναι σωστός."
+      ],
+      "${ BRAND_NAME } can't connect to your account. Please make sure that:": [
+        "Αδυναμία σύνδεσης του ${ BRAND_NAME } στον λογαριασμό σας. Παρακαλούμε βεβαιωθείτε ότι:"
+      ],
+      "${ BRAND_NAME } can't connect to your external account. Please make sure that the mail server address and port number are correct.": [
+        "Αδυναμία σύνδεσης του ${ BRAND_NAME } στον εξωτερικό λογαριασμό σας. Παρακαλούμε ελέγξτε για σωστή διεύθυνση και αριθμό θύρας του διακομιστή αλληλογραφίας."
+      ],
+      "${ BRAND_NAME } can't connect to your external account. Please make sure that:": [
+        "Αδυναμία σύνδεσης του ${ BRAND_NAME } στον εξωτερικό λογαριασμό σας. Παρακαλούμε βεβαιωθείτε ότι:"
+      ],
+      "2-step verification is enabled in your external email account.": [
+        "Η επαλήθευση σε 2 βήματα είναι ενεργοποιημένη στον εξωτερικό λογαριασμό email σας."
+      ],
+      "Your email account requires an app password to export your data.": [
+        "Ο λογαριασμός email σας απαιτεί κωδικό πρόσβασης για την εξαγωγή των δεδομένων σας."
+      ],
+      "Your email account requires one to export your data.": [
+        "Ο λογαριασμός email σας απαιτεί έναν για εξαγωγή των δεδομένων σας"
       ]
     },
     "Import error emphasis": {
@@ -2525,6 +2723,27 @@
       ],
       "Select ${ boldExportCSV }.": [
         "Επιλέξτε ${ boldExportCSV }."
+      ],
+      "Depending on your email service provider, you may need to generate an ${ knowledgeBaseLink } first before you can import to ${ BRAND_NAME }.": [
+        "Ανάλογα με τον πάροχο υπηρεσιών ηλεκτρονικού ταχυδρομείου σας, ίσως χρειαστεί να δημιουργήσετε πρώτα ένα ${ knowledgeBaseLink } για να μπορέσετε να κάνετε εισαγωγή στο ${ BRAND_NAME }."
+      ],
+      "Generate the ${ boldAppPassword } and use it in place of your regular password when prompted by ${ BRAND_NAME }.": [
+        "Δημιουργήστε το ${ boldAppPassword } και χρησιμοποιήστε το στη θέση του κανονικού κωδικού πρόσβασής σας όταν σας ζητηθεί από ${ BRAND_NAME }."
+      ],
+      "To import a calendar to ${ BRAND_NAME }, you need the ${ knowledgeBaseLink }. Download it from Yahoo in 3 easy steps:": [
+        "Για να εισαγάγετε ένα ημερολόγιο στο ${ BRAND_NAME }, χρειάζεστε το ${ knowledgeBaseLink }. Κατεβάστε το από το Yahoo σε 3 εύκολα βήματα:"
+      ],
+      "To import a calendar to ${ BRAND_NAME }, you need the ${ knowledgeBaseLink }. Download this before you start the import process.": [
+        "Για να εισαγάγετε ένα ημερολόγιο στο ${ BRAND_NAME }, χρειάζεστε το ${ knowledgeBaseLink }. Κάντε λήψη αυτού πριν ξεκινήσετε τη διαδικασία εισαγωγής."
+      ],
+      "To import contacts to ${ BRAND_NAME }, you need a ${ knowledgeBaseLink }. Download it from Yahoo in 3 easy steps:": [
+        "Για να εισαγάγετε επαφές στο ${ BRAND_NAME }, χρειάζεστε ένα ${ knowledgeBaseLink }. Κατεβάστε το από το Yahoo σε 3 εύκολα βήματα:"
+      ],
+      "To import contacts to ${ BRAND_NAME }, you need a ${ knowledgeBaseLink }. Download this before you start the import process.": [
+        "Για να εισαγάγετε επαφές στο ${ BRAND_NAME }, χρειάζεστε ένα ${ knowledgeBaseLink }. Κάντε λήψη αυτού πριν ξεκινήσετε τη διαδικασία εισαγωγής."
+      ],
+      "To import emails to ${ BRAND_NAME }, you need an ${ appPasswordLink } from Yahoo. Get it by following these steps:": [
+        "Για να εισαγάγετε μηνύματα ηλεκτρονικού ταχυδρομείου στο ${ BRAND_NAME }, χρειάζεστε ένα ${ appPasswordLink } από το Yahoo. Αποκτήστε το ακολουθώντας αυτά τα βήματα:"
       ]
     },
     "Import instructions emphasis": {
@@ -2556,6 +2775,9 @@
       ],
       "ICS file": [
         "αρχείο ICS"
+      ],
+      "CSV or a VCF (vCard) file": [
+        "CSV ή ένα αρχείο VCF (vCard)"
       ]
     },
     "Import instructions step": {
@@ -2572,6 +2794,9 @@
     "Import provider": {
       "Other": [
         "Άλλο"
+      ],
+      "Import from ${ provider }": [
+        "Εισαγωγή από ${ provider }"
       ]
     },
     "Import warning": {
@@ -2579,8 +2804,8 @@
         "${ totalContactsDiscarded } από ${ totalContacts } επαφές δεν θα εισαχθούν. Κάντε κλικ για λεπτομέρειες"
       ],
       "${ totalEventsDiscarded } out of ${ totalEvents } event will not be imported. Expand for details.": [
-        "${ totalEventsDiscarded } από ${ totalEvents } διοργάνωση δεν θα εισαχθεί. Αναπτύξτε για λεπτομέρειες.",
-        "${ totalEventsDiscarded } από ${ totalEvents } διοργανώσεις δεν θα εισαχθούν. Αναπτύξτε για λεπτομέρειες."
+        "${ totalEventsDiscarded } από ${ totalEvents } γεγονός δεν θα εισαχθεί. Αναπτύξτε για λεπτομέρειες.",
+        "${ totalEventsDiscarded } από ${ totalEvents } γεγονότα δεν θα εισαχθούν. Αναπτύξτε για λεπτομέρειες."
       ],
       "No contact can be imported. Click for details": [
         "Δεν είναι δυνατή η εισαγωγή καμίας επαφής. Κάντε κλικ για λεπτομέρειες"
@@ -2785,7 +3010,7 @@
         "Ακυρωμένες"
       ],
       "Cannot remember your password? We can help you clear the encrypted data of all contacts encrypted with this key and in the process dismiss the alert.": [
-        "Δεν μπορείτε να θυμηθείτε τον κωδικό σας? Μπορούμε να σας βοηθήσουμε να καθαρίσετε τα κρυπτογραφημένα δεδομένα όλων των επαφών που κρυπτογραφούνται με αυτό το κλειδί και στη διαδικασία να απορρίψετε την ειδοποίηση."
+        "Δεν μπορείτε να θυμηθείτε τον κωδικό σας; Μπορούμε να σας βοηθήσουμε να καθαρίσετε τα κρυπτογραφημένα δεδομένα όλων των επαφών που κρυπτογραφούνται με αυτό το κλειδί και στη διαδικασία να απορρίψετε την ειδοποίηση."
       ],
       "Checking contact ${ progress } of ${ max }...": [
         "Έλεγχος επαφής ${ progress } από ${ max }..."
@@ -3010,7 +3235,7 @@
         "Εάν πιστεύετε ότι αυτό είναι λάθος, παρακαλούμε επικοινωνήστε μαζί μας ${ contactLink }."
       ],
       "If you don't find the email in your inbox, please check your spam folder.": [
-        "Αν δεν βρείτε το μήνυμα στα Εισερχόμενα, παρακαλούμε ελέγξτε τον φάκελο Ενοχλητικά."
+        "Αν δε βρείτε το μήνυμα στα Εισερχόμενα, παρακαλούμε ελέγξτε τον φάκελο Ενοχλητικά."
       ],
       "If you have one of these, continue to ${ BRAND_NAME } Account setting to\nstart the unblock process.": [
         "Εάν έχετε ένα από αυτά, συνεχίστε στη ρύθμιση λογαριασμού ${ BRAND_NAME }\nγια να αρχίσετε τη διαδικασία ξεμπλοκαρίσματος."
@@ -3536,7 +3761,7 @@
         "Τα δεδομένα σας είναι έτοιμα για εισαγωγή από ${ importedEmailAddressStrong } στο λογαριασμό σας στο ${ BRAND_NAME }."
       ],
       "Your email will only be used for this one-time verification.": [
-        "Το email σας θα χρησιμοποιηθεί μόνο για αυτή τη εφάπαξ επαλήθευση."
+        "Το email σας θα χρησιμοποιηθεί μόνο για αυτή την εφάπαξ επαλήθευση."
       ],
       "Your files are no longer accessible due to a password reset. Re-upload the old encryption key to regain the access. ${ KeyReactivationButton }": [
         "Τα αρχεία σας δεν είναι πλέον προσβάσιμα, λόγω επαναφοράς κωδικού πρόσβασης. Για επαναπόκτηση πρόσβασης, ανεβάστε ξανά το παλιό κλειδί κρυπτογράφησης. ${ KeyReactivationButton }"
@@ -3551,13 +3776,190 @@
         "Τα στοιχεία σύνδεσής σας δεν θα αποθηκευτούν μετά την ολοκλήρωση της εισαγωγής."
       ],
       "Your phone number will only be used for this one-time verification.": [
-        "Ο αριθμός τηλεφώνου σας θα χρησιμοποιηθεί μόνο για αυτή τη εφάπαξ επαλήθευση."
+        "Ο αριθμός τηλεφώνου σας θα χρησιμοποιηθεί μόνο για αυτή την εφάπαξ επαλήθευση."
       ],
       "Your previous password": [
         "Ο προηγούμενος κωδικός πρόσβασής σας"
       ],
       "Your previous recovery phrase": [
         "Η προηγούμενη φράση ανάκτησής σας"
+      ],
+      "${ fileName }: full-size image": [
+        "${ fileName }: εικόνα πλήρους μεγέθους"
+      ],
+      "${ fileName }: low-resolution preview": [
+        "${ fileName }: προεπισκόπηση χαμηλής ανάλυσης"
+      ],
+      "A phone number can only be used to verify one ${ BRAND_NAME } account": [
+        "Ένας αριθμός τηλεφώνου μπορεί να χρησιμοποιηθεί μόνο για την επαλήθευση ενός λογαριασμού ${ BRAND_NAME }"
+      ],
+      "Are you sure you want to permanently delete": [
+        "Θέλετε σίγουρα να διαγράψετε μόνιμα το"
+      ],
+      "Because ${ DRIVE_APP_NAME } is end-to-end encrypted, we cannot access or decrypt your files for you. To unlock your drive after a password reset, you must have one of the following:": [
+        "Επειδή το ${ DRIVE_APP_NAME } είναι κρυπτογραφημένο από άκρο σε άκρο, δεν μπορούμε να έχουμε πρόσβαση ή να αποκρυπτογραφήσουμε τα αρχεία σας για εσάς. Για να ξεκλειδώσετε τη μονάδα δίσκου μετά την επαναφορά κωδικού πρόσβασης, πρέπει να έχετε ένα από τα εξής:"
+      ],
+      "Billing cycle: ${ text }": [
+        "Κύκλος χρέωσης: ${ text }"
+      ],
+      "Cannot load link": [
+        "Αποτυχία φόρτωσης συνδέσμου"
+      ],
+      "Cannot load links": [
+        "Αποτυχία φόρτωσης συνδέσμων"
+      ],
+      "Cannot load shared link": [
+        "Αποτυχία φόρτωσης κοινόχρηστου σύνδεσμου"
+      ],
+      "Contact assigned to group ${ contactGroupName }": [
+        "Επαφή προστέθηκε στην ομάδα ${ contactGroupName }"
+      ],
+      "Contact unassigned to group ${ contactGroupName }": [
+        "Επαφή αφαιρέθηκε από την ομάδα ${ contactGroupName }"
+      ],
+      "Current version": [
+        "Τρέχουσα έκδοση"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Προσαρμόστε την εμφάνιση και την αίσθηση των ${ BRAND_NAME } εφαρμογών."
+      ],
+      "Decrypting files": [
+        "Αποκρυπτογράφηση αρχείων"
+      ],
+      "Drop file here to upload": [
+        "Σύρετε ένα αρχείο εδώ για μεταφόρτωση"
+      ],
+      "Drop to import": [
+        "Απόθεση για εισαγωγή"
+      ],
+      "End-to-end encrypted": [
+        "Διατερματικά κρυπτογραφημένο"
+      ],
+      "Enter password": [
+        "Εισάγετε κωδικό πρόσβασης"
+      ],
+      "Failed to generate a secure link. The reason is: ${ error }": [
+        "Αποτυχία δημιουργίας ασφαλούς συνδέσμου. Η αιτία είναι: ${ error }"
+      ],
+      "Failed to generate a secure link. Try again later": [
+        "Αποτυχία παραγωγής ασφαλούς συνδέσμου. Παρακαλούμε δοκιμάστε ξανά αργότερα"
+      ],
+      "File will not be updated": [
+        "Το αρχείο δεν θα ενημερωθεί"
+      ],
+      "Free forever": [
+        "Δωρεάν για πάντα"
+      ],
+      "from the version history?": [
+        "από το ιστορικό εκδόσεων;"
+      ],
+      "Go ahead, upload a file": [
+        "Προχωρήστε, ανεβάστε ένα αρχείο"
+      ],
+      "If you have one of these, continue to ${ BRAND_NAME } Account setting to start the unblock process.": [
+        "Εάν έχετε ένα από αυτά, συνεχίστε στη ρύθμιση λογαριασμού ${ BRAND_NAME }\nγια να αρχίσετε τη διαδικασία ξεμπλοκαρίσματος."
+      ],
+      "Last week": [
+        "Προηγούμενη εβδομάδα"
+      ],
+      "Link owner has the password": [
+        "Ο κάτοχος του συνδέσμου έχει τον κωδικό πρόσβασης"
+      ],
+      "Need to share a file? Then get ${ DRIVE_APP_NAME },\nthe safest way to share, store, and sync your files.": [
+        "Θέλετε να μοιραστείτε ένα αρχείο; Τότε, πάρτε ${ DRIVE_APP_NAME },\nο ασφαλέστερος τρόπος κοινής χρήσης, αποθήκευσης και συγχρονισμού των αρχείων σας."
+      ],
+      "Nothing here yet": [
+        "Δεν υπάρχει τίποτα εδώ"
+      ],
+      "Preview for this file type is not supported": [
+        "Η προεπισκόπηση για αυτόν τον τύπο αρχείου δεν υποστηρίζεται\n*.*, add translation *.*"
+      ],
+      "Previous versions are kept for ${ retentionLabel }": [
+        "Οι προηγούμενες εκδόσεις διατηρούνται για ${ retentionLabel }"
+      ],
+      "Previous versions are not saved": [
+        "Οι προηγούμενες εκδόσεις δεν αποθηκεύονται"
+      ],
+      "Restore": [
+        "Επαναφορά\n*.*, add translation *.*"
+      ],
+      "Restore is in progress. This can take a few seconds.": [
+        "Η επαναφορά είναι σε εξέλιξη. Αυτό μπορεί να διαρκέσει μερικά δευτερόλεπτα."
+      ],
+      "Restored files ${ formattedDate }": [
+        "Επαναφορά αρχείων ${ formattedDate }"
+      ],
+      "Select which calendars to import. A new calendar will be created for each imported calendar according to the number of calendars available in your plan.": [
+        "Επιλέξτε ποια ημερολόγια θέλετε να εισαγάγετε. Θα δημιουργηθεί ένα νέο ημερολόγιο για κάθε εισαγόμενο ημερολόγιο σύμφωνα με τον αριθμό των ημερολογίων που είναι διαθέσιμα στο σχέδιό σας."
+      ],
+      "Shared link not found": [
+        "Ο κοινόχρηστος σύνδεσμος δεν βρέθηκε"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Λήξη συνδρομής: Ενεργοποιήστε ξανά κατά ${ byDate } για να διατηρήσετε τα οφέλη σας ${ planName }. ${ reactivateLink }"
+      ],
+      "Swiss encrypted file storage": [
+        "Ελβετική κρυπτογραφημένη αποθήκευση αρχείων"
+      ],
+      "Sync folders from your computer": [
+        "Συγχρονισμός φακέλων από τον υπολογιστή σας"
+      ],
+      "Sync folders with ease using our desktop app, ensuring your files are always up to date and accessible from anywhere.": [
+        "Συγχρονίστε φακέλους με ευκολία χρησιμοποιώντας την εφαρμογή μας για υπολογιστές, διασφαλίζοντας ότι τα αρχεία σας είναι πάντα ενημερωμένα και προσβάσιμα από οπουδήποτε."
+      ],
+      "The encrypted data is slightly larger due to the overhead of the encryption and signatures, which ensure the security of your data.": [
+        "Τα κρυπτογραφημένα δεδομένα είναι ελαφρώς μεγαλύτερα λόγω της επιβάρυνσης της κρυπτογράφησης και των υπογραφών, που διασφαλίζουν την ασφάλεια των δεδομένων σας."
+      ],
+      "This file may have been deleted, moved or made unavailable. Try reaching out to the file owner.": [
+        "Αυτό το αρχείο ενδέχεται να έχει διαγραφεί, μετακινηθεί ή να μην είναι διαθέσιμο. Δοκιμάστε να επικοινωνήσετε με τον κάτοχο του αρχείου."
+      ],
+      "This will remove from ${ DRIVE_APP_NAME } the synced device ${ deviceName }. Local files on the device won’t be affected.": [
+        "Αυτό θα διαγράψει από ${ DRIVE_APP_NAME } τη συγχρονισμένη συσκευή ${ deviceName }. Τοπικά αρχεία στη συσκευή δε θα επηρεαστούν."
+      ],
+      "This will replace the existing file with the folder": [
+        "Αυτό θα αντικαταστήσει το υπάρχον αρχείο με το φάκελο"
+      ],
+      "This will replace the existing folder with the file": [
+        "Αυτό θα αντικαταστήσει τον υπάρχοντα φάκελο με το αρχείο"
+      ],
+      "This will upload a new version of the file": [
+        "Αυτό θα ανεβάσει μια νέα έκδοση του αρχείου"
+      ],
+      "This will upload a new version of the folder": [
+        "Αυτό θα ανεβάσει μια νέα έκδοση του φακέλου"
+      ],
+      "To recover your data, you need to re-activate the account key used at the time when the data was created. This will require you to remember the password used when the key was generated.": [
+        "Για να ανακτήσετε τα δεδομένα σας, πρέπει να ενεργοποιήσετε ξανά το κλειδί λογαριασμού που χρησιμοποιήθηκε τη στιγμή της δημιουργίας των δεδομένων. Αυτό θα απαιτήσει από εσάς να θυμηθείτε τον κωδικό πρόσβασης που χρησιμοποιείται όταν δημιουργήθηκε το κλειδί."
+      ],
+      "Today": [
+        "Σήμερα"
+      ],
+      "Version is deleted": [
+        "Έγινε διαγραφή της έκδοσης"
+      ],
+      "Version is restored": [
+        "Έγινε επαναφορά της έκδοσης"
+      ],
+      "will be restored to the version from ${ formattedRevisionDate }. All other versions will still be saved.": [
+        "Θα γίνει επαναφορά στην έκδοση από ${ formattedRevisionDate }. Όλες οι άλλες εκδόσεις Θα εξακολουθούν να αποθηκεύονται."
+      ],
+      "With ${ DRIVE_APP_NAME }, your data is protected with end-to-end encryption. Only you can decrypt it.": [
+        "Με το ${ DRIVE_APP_NAME }, τα δεδομένα σας προστατεύονται με κρυπτογράφηση από άκρο σε άκρο. Μόνο εσείς μπορείτε να το αποκρυπτογραφήσετε."
+      ],
+      "Yesterday": [
+        "Χθες"
+      ],
+      "You've reached the maximum number of addresses in the contact group(s):": [
+        "Έχετε συμπληρώσει τον μέγιστο αριθμό διευθύνσεων στην/στις ομάδα(ες) επαφών:"
+      ],
+      "You've reached the maximum number of addresses in the contact group.": [
+        "Έχετε συμπληρώσει τον μέγιστο αριθμό διευθύνσεων στην ομάδα επαφών:"
+      ],
+      "Your files will be encrypted and then saved": [
+        "Τα αρχεία σας θα κρυπτογραφηθούν και στη συνέχεια θα αποθηκευτούν"
+      ],
+      "Your plan is limited to 10 versions for up to 7 days": [
+        "Το πρόγραμμά σας περιορίζεται σε 10 εκδόσεις για έως και 7 ημέρες"
       ]
     },
     "Info on errors": {
@@ -3586,6 +3988,9 @@
       ],
       "thumbnail": [
         "μικρογραφία"
+      ],
+      "hash key": [
+        "κλειδί hash"
       ]
     },
     "Key badge": {
@@ -3603,6 +4008,9 @@
       ],
       "Trusted": [
         "Αξιόπιστο"
+      ],
+      "Obsolete": [
+        "Ξεπερασμένο"
       ]
     },
     "Label": {
@@ -4020,6 +4428,56 @@
       ],
       "Your password (admin)": [
         "Ο κωδικός σας (διαχειριστής)"
+      ],
+      "${ nbDay } day": [
+        "${ nbDay } ημέρα",
+        "${ nbDay } ημέρες"
+      ],
+      "${ nbYear } year": [
+        "${ nbYear } έτος",
+        "${ nbYear } έτη"
+      ],
+      "Authenticator app": [
+        "Εφαρμογή επαλήθευσης"
+      ],
+      "Delete recovery-related information.": [
+        "Διαγράψτε πληροφορίες που σχετίζονται με την ανάκτηση."
+      ],
+      "Don't ask again": [
+        "Να μην ερωτηθώ ξανά"
+      ],
+      "Downloading ${ percentageValue }%": [
+        "Λήψη ${ percentageValue }%"
+      ],
+      "Duplicate found": [
+        "Βρέθηκε διπλότυπο"
+      ],
+      "Keep both": [
+        "Κρατήστε και τα δύο"
+      ],
+      "Keep both files": [
+        "Κρατήστε και τα δύο αρχεία"
+      ],
+      "Keep both folders": [
+        "Κρατήστε τους δύο φακέλους"
+      ],
+      "Replace existing file": [
+        "Αντικατάσταση υπάρχοντος αρχείου"
+      ],
+      "Replace existing folder": [
+        "Αντικατάσταση υπάρχοντος φακέλου"
+      ],
+      "Report": [
+        "Αναφορά"
+      ],
+      "Show indexing progress of Encrypted Search": [
+        "Εμφάνιση προόδου ευρετηρίου της Κρυπτογραφημένης Αναζήτησης"
+      ],
+      "Synchronize with system": [
+        "Συγχρονισμός με το σύστημα"
+      ],
+      "Yes, I want to permanently delete my old files": [
+        "Ναι, επιθυμώ την οριστική διαγραφή των παλιών αρχείων μου"
       ]
     },
     "Label for contact group color": {
@@ -4080,6 +4538,15 @@
       ],
       "What’s this?": [
         "Τι είναι αυτό?"
+      ],
+      "${ DRIVE_APP_NAME } Windows app": [
+        "${ DRIVE_APP_NAME } εφαρμογή Windows"
+      ],
+      "Reactivate now": [
+        "Επανενεργοποίηση τώρα"
+      ],
+      "Seamlessly sync files and folders between your computer and ${ DRIVE_APP_NAME }.": [
+        "Συγχρονίστε απρόσκοπτα αρχεία και φακέλους μεταξύ του υπολογιστή σας και του ${ DRIVE_APP_NAME }."
       ]
     },
     "Loading info": {
@@ -4369,6 +4836,12 @@
       ],
       "Your settings have been changed successfully": [
         "Οι ρυθμίσεις σας άλλαξαν επιτυχώς"
+      ],
+      "Cannot load link": [
+        "Αποτυχία φόρτωσης συνδέσμου"
+      ],
+      "Cannot load next page": [
+        "Η επόμενη σελίδα απέτυχε να φορτώσει"
       ]
     },
     "Oauth instructions video": {
@@ -4417,6 +4890,18 @@
       ],
       "You can change this anytime in your settings.": [
         "Μπορείτε να το αλλάξετε αυτό οποιαδήποτε στιγμή στις ρυθμίσεις σας."
+      ],
+      "Discover all ${ BRAND_NAME } services": [
+        "Ανακαλύψτε όλες τις υπηρεσίες του ${ BRAND_NAME }"
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Περισσότερες επιλογές θέματος είναι διαθέσιμες στις Ρυθμίσεις > Εμφάνιση του λογαριασμού σας."
+      ],
+      "Set up your organization testing": [
+        "Ρύθμιση των δοκιμών του οργανισμού σας"
+      ],
+      "Use the app selector in the top left to access all ${ BRAND_NAME } services: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } and ${ DRIVE_SHORT_APP_NAME }.": [
+        "Χρησιμοποιήστε τον επιλογέα εφαρμογών επάνω αριστερά για να αποκτήσετε πρόσβαση σε όλες τις υπηρεσίες του ${ BRAND_NAME }: ${ MAIL_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } και ${ DRIVE_SHORT_APP_NAME }."
       ]
     },
     "Onboarding Title": {
@@ -4575,6 +5060,9 @@
       ],
       "Work": [
         "Εργασία"
+      ],
+      "Email": [
+        "Email"
       ]
     },
     "Refresh on apply warning": {
@@ -4590,6 +5078,9 @@
     "Signing preference for emails": {
       "Sign": [
         "Υπογράψτε"
+      ],
+      "Don't sign": [
+        "Μην υπογράψετε"
       ]
     },
     "Spotlight": {
@@ -4601,6 +5092,9 @@
       ],
       "Now you can easily search Drive files while keeping your data secure.": [
         "Τώρα είναι δυνατή η αναζήτηση στην Αρχειοθήκη, εύκολα και διατηρώντας τη διασφάλιση των δεδομένων σας."
+      ],
+      "Invite friends to ${ BRAND_NAME }": [
+        "Προσκαλέστε φίλους στο ${ BRAND_NAME }"
       ]
     },
     "Storage": {
@@ -4671,6 +5165,9 @@
       ],
       "Verification successful": [
         "Επιτυχία επαλήθευσης"
+      ],
+      "Canceling import": [
+        "Ακύρωση εισαγωγής"
       ]
     },
     "Success notification when user send feedback": {
@@ -5193,7 +5690,7 @@
         "Προειδοποίηση"
       ],
       "Warning: suspected fake website": [
-        "Προειδοποίηση: υποψία κίβδηλης ιστοσελίδας"
+        "Προειδοποίηση: υποψία ψεύτικης ιστοσελίδας"
       ],
       "What would you like to import?": [
         "Τι θα θέλατε να εισάγετε;"
@@ -5221,6 +5718,56 @@
       ],
       "You’ve got 1 GB of storage": [
         "Έχετε 1 GB αποθηκευτικού χώρου"
+      ],
+      "${ emailsCount } email address": [
+        "${ emailsCount } διεύθυνση email",
+        "${ emailsCount } διευθύνσεις email"
+      ],
+      "${ numberOfFailedTransfer.total } failed upload": [
+        "${ numberOfFailedTransfer.total } αποτυχημένη μεταφόρτωση",
+        "${ numberOfFailedTransfer.total } αποτυχημένες μεταφορτώσεις"
+      ],
+      "(active)": [
+        "(ενεργό)"
+      ],
+      "Billing cycle": [
+        "Κύκλος χρέωσης"
+      ],
+      "Cannot add more addresses": [
+        "Δεν είναι δυνατή η προσθήκη περισσότερων διευθύνσεων"
+      ],
+      "Cannot load link": [
+        "Αποτυχία φόρτωσης συνδέσμου"
+      ],
+      "Day theme": [
+        "Ανοιχτό θέμα"
+      ],
+      "Hm, we couldn't find that one": [
+        "Χμ, δεν μπορέσαμε να το βρούμε αυτό"
+      ],
+      "Minicalendar": [
+        "Μίνι ημερολόγιο"
+      ],
+      "Night theme": [
+        "Σκούρο θέμα"
+      ],
+      "Preview": [
+        "Προεπισκόπηση"
+      ],
+      "Sign in with 2FA": [
+        "Συνδεθείτε με 2FA"
+      ],
+      "Unlock contacts groups": [
+        "Ξεκλείδωμα ομάδων επαφών"
+      ],
+      "Version details": [
+        "Λεπτομέρειες έκδοσης"
+      ],
+      "Version history": [
+        "Ιστορικό εκδόσεων"
+      ],
+      "Your changes are not synced yet": [
+        "Οι αλλαγές σας δεν έχουν συγχρονιστεί ακόμα"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -5273,6 +5820,30 @@
       ],
       "You do not have any contacts to export": [
         "Δεν έχετε επαφές προς εξαγωγή"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Αυτόματη εναλλαγή μεταξύ των προτιμώμενων θεμάτων ημέρας και νύχτας σε συγχρονισμό με τις λειτουργίες ημέρας και νύχτας του συστήματός σας"
+      ],
+      "Gmail automatically categorizes some emails like Social or Promotions. You can select where to import these emails to.": [
+        "Το Gmail κατηγοριοποιεί αυτόματα ορισμένα μηνύματα ηλεκτρονικού ταχυδρομείου, όπως Κοινωνικά δίκτυα ή Προσφορές. Μπορείτε να επιλέξετε πού θα εισαγάγετε αυτά τα μηνύματα ηλεκτρονικού ταχυδρομείου."
+      ],
+      "Hide side panel": [
+        "Απόκρυψη πλαϊνού πλαισίου"
+      ],
+      "Show side panel": [
+        "Εμφάνιση πλαϊνού πλαισίου"
+      ],
+      "The image could not be loaded": [
+        "Δεν ήταν δυνατή η φόρτωση της εικόνας"
+      ],
+      "The image could not be loaded using proxy": [
+        "Δεν ήταν δυνατή η φόρτωση της εικόνας με χρήση διακομιστή μεσολάβησης"
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Το επιλεγμένο θέμα θα είναι ενεργό όταν το σύστημά σας έχει ρυθμιστεί σε \"σκοτεινή λειτουργία\""
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Το επιλεγμένο θέμα θα είναι ενεργό όταν το σύστημά σας έχει ρυθμιστεί σε \"λειτουργία φωτισμού\""
       ]
     },
     "Validation": {
@@ -5379,6 +5950,580 @@
       ],
       "You will lose any customization you made so far.": [
         "Θα χάσετε οποιαδήποτε προσαρμογές που κάνατε μέχρι στιγμής."
+      ],
+      "Skip verification?": [
+        "Παράλειψη επαλήθευσης;"
+      ],
+      "We couldn't verify the mail server. If you trust it, you can skip this verification.": [
+        "Δεν ήταν δυνατή η επαλήθευση του διακομιστή αλληλογραφίας. Εάν το εμπιστεύεστε, μπορείτε να παραλείψετε αυτήν την επαλήθευση."
+      ],
+      "Your free trial ends on ${ textDate }. ${ action }": [
+        "Η δωρεάν δοκιμή σας λήγει στις ${ textDate }. ${ action }"
+      ]
+    },
+    "account": {
+      "Forwarding will start soon. New emails will appear in your inbox.": [
+        "Η προώθηση θα ξεκινήσει σύντομα. Νέα μηνύματα ηλεκτρονικού ταχυδρομείου θα εμφανιστούν στα εισερχόμενά σας."
+      ],
+      "Mail forward stopped": [
+        "Η προώθηση αλληλογραφίας σταμάτησε"
+      ]
+    },
+    "Apps dropdown": {
+      "${ BRAND_NAME } applications": [
+        "${ BRAND_NAME } εφαρμογές"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Ετησίως"
+      ],
+      "Monthly": [
+        "Μηνιαία"
+      ],
+      "Two-year": [
+        "Δύο έτη"
+      ]
+    },
+    "Button": {
+      "Continue using ${ MAIL_APP_NAME }.": [
+        "Συνεχίστε να χρησιμοποιείτε ${ MAIL_APP_NAME }."
+      ]
+    },
+    "Default signing preference": {
+      "Use global default (${ globalDefaultText })": [
+        "Χρήση γενικής προεπιλογής (${ globalDefaultText })"
+      ]
+    },
+    "familyOffer_2023: Deal details": {
+      "3 TB total storage": [
+        "Συνολικός αποθηκευτικός χώρος 3 TB"
+      ]
+    },
+    "familyOffer_2023: Get Proton Family": {
+      "Get ${ planName }": [
+        "Απόκτηση ${ planName }"
+      ]
+    },
+    "familyOffer_2023: Tooltip": {
+      "Storage space is shared between family members across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Ο αποθηκευτικός χώρος μοιράζεται μεταξύ των μελών της οικογένειας στα ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } και ${ DRIVE_APP_NAME }."
+      ]
+    },
+    "familyOffer_2023:Action": {
+      "Decline invitation": [
+        "Αρνηση πρόσκλησης."
+      ],
+      "Got it": [
+        "Το κατάλαβα"
+      ],
+      "Switch plans": [
+        "Αλλαγή προγράμματος;"
+      ],
+      "View the invitation": [
+        "Δείτε την πρόσκληση"
+      ],
+      "View the invitations": [
+        "Δείτε τις προσκλήσεις"
+      ]
+    },
+    "familyOffer_2023:Deal details": {
+      "Premium Drive": [
+        "Premium μονάδα αποθήκευσης"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium αλληλογραφία και ημερολόγιο"
+      ],
+      "Premium VPN": [
+        "Premium εικονικό ιδιωτικό δίκτυο"
+      ],
+      "Up to 6 users": [
+        "Έως 6 χρήστες"
+      ]
+    },
+    "familyOffer_2023:Family plan": {
+      "${ BRAND_NAME } groups": [
+        "${ BRAND_NAME } groups"
+      ],
+      "Accounts with custom domains cannot join a Visionary or family plan.": [
+        "Οι λογαριασμοί με προσαρμοσμένους τομείς δεν μπορούν να συμμετάσχουν σε οραματικό ή οικογενειακό πρόγραμμα."
+      ],
+      "customer support": [
+        "υποστήριξη πελατών"
+      ],
+      "If you accept the invitation, we'll switch you from your current plan and credit your account with any remaining balance.": [
+        "Εάν αποδεχτείτε την πρόσκληση, θα σας αλλάξουμε από το τρέχον πρόγραμμά σας και θα πιστώσουμε στον λογαριασμό σας τυχόν υπόλοιπο."
+      ],
+      "Invited by: ${ inviteEmail }": [
+        "Προσκλήθηκε από: ${ inviteEmail }"
+      ],
+      "Manage addresses.": [
+        "Διαχείριση διευθύνσεων."
+      ],
+      "Owners of a plan with members cannot join another group plan.": [
+        "Οι κάτοχοι ενός προγράμματος με μέλη δεν μπορούν να συμμετάσχουν σε άλλο ομαδικό σχέδιο."
+      ],
+      "Sorry, you can't switch plans at this time.": [
+        "Λυπούμαστε, δεν μπορείτε να αλλάξετε σχέδια αυτήν τη στιγμή."
+      ],
+      "Storage assigned to you: ${ assignedStorage }": [
+        "Αποθηκευτικός χώρος που σας έχει εκχωρηθεί: ${ assignedStorage }"
+      ],
+      "The subscription is billed to the Visionary or family plan's primary admin.": [
+        "Η συνδρομή χρεώνεται στον κύριο διαχειριστή του Visionary ή του οικογενειακού προγράμματος."
+      ],
+      "Visionary and family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ addressSettingsLink }": [
+        "Τα οραματικά και οικογενειακά σχέδια δεν υποστηρίζουν προς το παρόν εξωτερικούς λογαριασμούς. Δημιουργήστε μια διεύθυνση ${ BRAND_NAME } πριν εγγραφείτε. ${ addressSettingsLink }"
+      ],
+      "Visionary and family plans do not currently support lifetime accounts.": [
+        "Τα οραματικά και οικογενειακά σχέδια δεν υποστηρίζουν επί του παρόντος λογαριασμούς διάρκειας ζωής."
+      ],
+      "You are invited to join ${ invite.OrganizationName }": [
+        "Έχετε προσκληθεί να συμμετάσχετε στο ${ invite.OrganizationName }"
+      ],
+      "You can only accept 3 invitations in a 6-month period. Please contact ${ supportLink } if you require an exception.": [
+        "Μπορείτε να δεχτείτε μόνο 3 προσκλήσεις σε μια περίοδο 6 μηνών. Επικοινωνήστε με το ${ supportLink } εάν χρειάζεστε εξαίρεση."
+      ],
+      "You have been invited to join ${ bannerOrganization }. ${ viewInviteButton }": [
+        "Έχετε προσκληθεί να εγγραφείτε στο ${ bannerOrganization }. ${ viewInviteButton }"
+      ],
+      "You have successfully joined the Family plan": [
+        "Έχετε εγγραφεί επιτυχώς στο Οικογενειακό πρόγραμμα"
+      ],
+      "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
+        "Έχετε προσκληθεί να συνδέσετε τον λογαριασμό σας ${ BRAND_NAME } σε αυτό το ομαδικό πρόγραμμα και να απολαύσετε μαζί όλες τις premium λειτουργίες ${ BRAND_NAME_TWO }."
+      ],
+      "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
+        "Ο λογαριασμός σας έχει περισσότερες διευθύνσεις ηλεκτρονικού ταχυδρομείου από αυτές που είναι διαθέσιμες σε αυτό το σχέδιο. ${ addressSettingsLink }"
+      ],
+      "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
+        "Ο λογαριασμός σας χρησιμοποιεί αποθηκευτικό χώρο ${ usedSpace }, ο οποίος υπερβαίνει τα ${ inviteSpace } που σας έχουν εκχωρηθεί. Διαγράψτε ορισμένα δεδομένα ή ζητήστε από τον διαχειριστή του προγράμματος να αυξήσει τον αποθηκευτικό σας χώρο."
+      ],
+      "Your current plan cannot join a Visionary or family plan.": [
+        "Το τρέχον σχέδιό σας δεν μπορεί να συμμετάσχει σε ένα Οραματικό ή οικογενειακό σχέδιο."
+      ]
+    },
+    "familyOffer_2023:Footer": {
+      "*Your subscription will automatically renew at the same rate at the end of your billing cycle.": [
+        "*Η συνδρομή σας θα ανανεωθεί αυτόματα με την ίδια τιμή στο τέλος του κύκλου χρέωσής σας."
+      ],
+      "Discounts are based on the standard monthly pricing.": [
+        "Οι εκπτώσεις βασίζονται στην τυπική μηνιαία τιμολόγηση."
+      ]
+    },
+    "familyOffer_2023:Get Proton Family": {
+      "Get ${ planName }": [
+        "Απόκτηση ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Info": {
+      "Online privacy, for your whole family": [
+        "Online ιδιωτικότητα, για όλη την οικογένειά σας"
+      ]
+    },
+    "familyOffer_2023:Onboarding Proton": {
+      "Configure your family account and invite users ": [
+        "Ρυθμίστε τις παραμέτρους του οικογενειακού λογαριασμού σας και προσκαλέστε χρήστες "
+      ],
+      "Set up your family": [
+        "Ρύθμιση της οικογένειάς σας"
+      ],
+      "Set up your family account": [
+        "Ρυθμίστε τον οικογενειακό λογαριασμό σας"
+      ]
+    },
+    "familyOffer_2023:Title": {
+      "Introducing ${ planName }": [
+        "Παρουσιάζουμε το ${ planName }"
+      ]
+    },
+    "familyOffer_2023:Tooltip": {
+      "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Περιλαμβάνει 2700 διακομιστές σε 65+ χώρες, συνδέει έως και 10 συσκευές, έχει πρόσβαση σε παγκόσμιες υπηρεσίες ροής, προστασια κακόβουλο λογισμικό και αποκλεισμό διαφημίσεων και πολλά άλλα."
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "Περιλαμβάνει υποστήριξη για 3 προσαρμοσμένους τομείς ηλεκτρονικού ταχυδρομείου, 90 διευθύνσεις ηλεκτρονικού ταχυδρομείου, απεριόριστα hide-my-email ψευδώνυμα, κοινή χρήση ημερολογίου και πολλά άλλα."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Ασφαλίστε τα αρχεία σας με κρυπτογραφημένο χώρο αποθήκευσης cloud. Περιλαμβάνει αυτόματο συγχρονισμό, κρυπτογραφημένη κοινή χρήση αρχείων και πολλά άλλα."
+      ]
+    },
+    "fido2: Error": {
+      "Something went wrong authenticating with your security key. Please try again.": [
+        "Παρουσιάστηκε κάποιο πρόβλημα κατά τον έλεγχο ταυτότητας με το κλειδί ασφαλείας σας. Παρακαλώ προσπαθήστε ξανά."
+      ]
+    },
+    "fido2: Info": {
+      "Insert a security key linked to your ${ BRAND_NAME } Account.": [
+        "Εισαγάγετε ένα κλειδί ασφαλείας συνδεδεμένο με τον ${ BRAND_NAME } λογαριασμό σας ."
+      ],
+      "Security key": [
+        "Κλειδί ασφαλείας"
+      ]
+    },
+    "fido2: Label": {
+      "Security key": [
+        "Κλειδί ασφαλείας"
+      ]
+    },
+    "Font face option": {
+      "System default": [
+        "Προεπιλογή συστήματος"
+      ],
+      "Theme default": [
+        "Προεπιλεγμένο θέμα"
+      ]
+    },
+    "Font size option": {
+      "Large": [
+        "Μεγάλο"
+      ],
+      "Medium (recommended)": [
+        "Μεσαίο (συνιστάται)"
+      ],
+      "Small": [
+        "Μικρό"
+      ],
+      "Very large": [
+        "Πολύ μεγάλο"
+      ],
+      "Very small": [
+        "Πολύ μικρό"
+      ]
+    },
+    "Limit of calendars reached": {
+      "To add a new calendar, remove an existing one.": [
+        "Για να προσθέσετε ένα νέο ημερολόγιο, καταργήστε ένα υπάρχον."
+      ],
+      "To add a new calendar, remove another calendar or upgrade your ${ BRAND_NAME } plan to a ${ MAIL_SHORT_APP_NAME } paid plan.": [
+        "Για να προσθέσετε ένα νέο ημερολόγιο, καταργήστε ένα άλλο ημερολόγιο ή αναβαθμίστε το πρόγραμμα ${ BRAND_NAME } σε πρόγραμμα επί πληρωμή ${ MAIL_SHORT_APP_NAME }."
+      ],
+      "You've reached the maximum number of calendars available in your plan.": [
+        "Έχετε συμπληρώσει τον μέγιστο αριθμό ημερολογίων που είναι διαθέσιμα στο σχέδιό σας."
+      ]
+    },
+    "Message": {
+      "Your free trial has ended. Access to your account will soon be disabled. ${ action }": [
+        "Η δωρεάν δοκιμή σας έληξε. Η πρόσβαση στον λογαριασμό σας θα απενεργοποιηθεί σύντομα. ${ action }"
+      ]
+    },
+    "new_plans: Action": {
+      "Upgrade now": [
+        "Αναβάθμιση τώρα"
+      ]
+    },
+    "new_plans: feature": {
+      "Auto-delete spam and trashed messages": [
+        "Αυτόματη διαγραφή ανεπιθύμητων και απορριφθέντων μηνυμάτων"
+      ],
+      "Custom email domains": [
+        "Προσαρμοσμένοι τομείς"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email ψευδώνυμα"
+      ],
+      "Schedule messages at any time": [
+        "Προγραμματισμός μηνυμάτων ανά πάσα στιγμή"
+      ],
+      "Search message content": [
+        "Αναζήτηση εντός περιεχομένου μηνυμάτων"
+      ],
+      "Unlimited folders, labels, and filters": [
+        "Απεριόριστοι φάκελοι, ετικέτες και φίλτρα"
+      ],
+      "Up to 15 email addresses": [
+        "Έως 15 ηλ. διευθύνσεις"
+      ],
+      "Up to 3 TB of storage": [
+        "Έως 3 TB αποθηκευτικού χώρου"
+      ]
+    },
+    "new_plans: feature info": {
+      "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
+        "Δημιουργήστε πολλαπλές διευθύνσεις ηλεκτρονικού ταχυδρομείου για τις διαδικτυακές ταυτότητες σας, π.χ. JohnShopper@${ domain } για λογαριασμούς αγορών, JohnNews@${ domain2 } για συνδρομή ειδήσεων"
+      ],
+      "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
+        "Αποκτήστε απεριόριστα ψευδώνυμα με το SimpleLogin από ${ BRAND_NAME }"
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } and ${ DRIVE_APP_NAME }": [
+        "Ο αποθηκευτικός χώρος μοιράζεται μεταξύ των ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } και ${ DRIVE_APP_NAME }"
+      ],
+      "Use your own custom email domain address, e.g., you@yourname.com": [
+        "Χρησιμοποιήστε τη δική σας προσαρμοσμένη διεύθυνση τομέα ηλεκτρονικού ταχυδρομείου, π.χ. you@yourname.com"
+      ]
+    },
+    "Oauth instructions": {
+      "Next you'll need to sign in to your Google account and grant ${ BRAND_NAME } access to your data.": [
+        "Στη συνέχεια, θα πρέπει να συνδεθείτε στον λογαριασμό σας Google και να παραχωρήσετε στο ${ BRAND_NAME } πρόσβαση στα δεδομένα σας."
+      ]
+    },
+    "Oauth instructions video alternative": {
+      "Select what ${ BRAND_NAME } can access: view your email messages and settings, view and download your contacts, view and download all agendas you access from Google Agenda.": [
+        "Επιλέξτε σε τι μπορεί να έχει πρόσβαση το ${ BRAND_NAME }: δείτε τα μηνύματα ηλεκτρονικού ταχυδρομείου και τις ρυθμίσεις σας, προβάλετε και κατεβάστε τις επαφές σας, προβάλετε και κατεβάστε όλες τις ατζέντες στις οποίες έχετε πρόσβαση από την Ατζέντα Google."
+      ]
+    },
+    "PGP Key info": {
+      "${ emailAddress } has marked this key as compromised. This key cannot be used neither for encryption nor for signature verification.": [
+        "${ emailAddress } έχει επισημάνει αυτό το κλειδί ως παραβιασμένο. Αυτό το κλειδί δεν μπορεί να χρησιμοποιηθεί ούτε για κρυπτογράφηση ούτε για επαλήθευση υπογραφής."
+      ],
+      "${ emailAddress } has marked this key as obsolete. This key can only be used for signature verification.": [
+        "${ emailAddress } έχει επισημάνει αυτό το κλειδί ως παρωχημένο. Αυτό το κλειδί μπορεί να χρησιμοποιηθεί μόνο για επαλήθευση υπογραφής."
+      ],
+      "We recommend that you \"untrust\" this key.": [
+        "Συνιστάται να \"μην εμπιστεύεστε\" αυτό το κλειδί."
+      ]
+    },
+    "Platform": {
+      "Windows": [
+        "Windows"
+      ]
+    },
+    "protonbadge": {
+      "Official": [
+        "Επίσημο"
+      ],
+      "Official email from ${ BRAND_NAME }": [
+        "Επίσημο email από ${ BRAND_NAME }"
+      ]
+    },
+    "Side panel spotlight": {
+      "Manage your contacts and view your calendar without leaving your app.": [
+        "Διαχειριστείτε τις επαφές σας και προβάλετε το ημερολόγιό σας χωρίς να βγείτε από την εφαρμογή σας."
+      ],
+      "Try the new side panel": [
+        "Δοκιμάστε το νέο πλαϊνό πλαίσιο"
+      ]
+    },
+    "specialoffer: Action": {
+      "Close": [
+        "Κλείσιμο"
+      ],
+      "Don't show this offer again": [
+        "Να μην εμφανιστεί ξανά αυτή η προσφορά"
+      ],
+      "Special offer": [
+        "Ειδική προσφορά"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "Αναβαθμήστε σε Απεριόριστο"
+      ]
+    },
+    "specialoffer: Countdown unit": {
+      "${ days } day": [
+        "${ days } ημέρα",
+        "${ days } ημέρες"
+      ],
+      "${ hours } hour": [
+        "${ hours } ώρα",
+        "${ hours } ώρες"
+      ],
+      "${ minutes } minute": [
+        "${ minutes } λεπτό",
+        "${ minutes } λεπτά"
+      ],
+      "${ seconds } second": [
+        "${ seconds } δευτερόλεπτο",
+        "${ seconds } δευτερόλεπτα"
+      ]
+    },
+    "specialoffer: Deal": {
+      "${ n } month FREE": [
+        "${ n } μήνα ΔΩΡΕΑΝ",
+        "${ n } μήνες ΔΩΡΕΑΝ"
+      ]
+    },
+    "specialoffer: Deal details": {
+      "${ storageSize } total storage": [
+        "${ storageSize } συνολικός αποθηκευτικός χώρος"
+      ],
+      "3 TB": [
+        "3 TB"
+      ],
+      "6 users": [
+        "6 χρήστες"
+      ],
+      "64 countries": [
+        "64 χώρες"
+      ],
+      "All paid Mail and Calendar features": [
+        "Όλες οι δυνατότητες Αλληλογραφίας και Ημερολογίου επί πληρωμή"
+      ],
+      "High speed VPN": [
+        "VPN υψηλής ταχύτητας"
+      ],
+      "Highest VPN speed": [
+        "Ύψιστη ταχύτητα VPN"
+      ],
+      "Premium early access": [
+        "Premium πρώιμη πρόσβαση"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Αλληλογραφία και Ημερολόγιο"
+      ],
+      "Premium Mail, Calendar and Drive": [
+        "Premium Αλληλογραφία, Ημερολόγιο και Μονάδα Αποθήκευσης"
+      ],
+      "Premium VPN": [
+        "Premium VPN"
+      ],
+      "Secure cloud storage": [
+        "Ασφαλής αποθήκευση στο cloud"
+      ],
+      "Secure streaming": [
+        "Ασφαλής μετάδοση"
+      ],
+      "Support online privacy": [
+        "Υποστήριξη ηλεκτρονικού απορρήτου"
+      ]
+    },
+    "specialoffer: Footer": {
+      "Discounts are based on the standard monthly pricing.": [
+        "Οι εκπτώσεις βασίζονται στην τυπική μηνιαία τιμολόγηση."
+      ],
+      "This subscription will automatically renew every 2 years at the same rate until it is cancelled.": [
+        "Αυτή η συνδρομή θα ανανεώνεται αυτόματα κάθε 2 χρόνια με την ίδια τιμή μέχρι να ακυρωθεί."
+      ]
+    },
+    "specialoffer: Label": {
+      "Lifetime deal": [
+        "Συμφωνία εφ' όρου ζωής"
+      ],
+      "Limited time only": [
+        "Για περιορισμένο διάστημα"
+      ],
+      "Most popular": [
+        "Τα πιο δημοφιλή"
+      ],
+      "Offer ends soon": [
+        "Η προσφορά λήγει σύντομα"
+      ],
+      "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
+        "Η έκπτωση θα συνεχίσει να ισχύει μετά την ανανέωση έως ότου ακυρωθεί ή τροποποιηθεί η συνδρομή"
+      ]
+    },
+    "specialoffer: Link": {
+      "Go to subscription plans": [
+        "Μεταβείτε στα προγράμματα συνδρομής"
+      ],
+      "Upgrade": [
+        "Αναβάθμιση"
+      ]
+    },
+    "specialoffer: Offers": {
+      "/ month": [
+        "/ μήνας"
+      ],
+      "1 year": [
+        "1 έτος"
+      ],
+      "2 years": [
+        "2 χρόνια"
+      ],
+      "Billed at ${ amount } for 1 month": [
+        "Χρεωμένο στα ${ amount } για 1 μήνα"
+      ],
+      "Billed at ${ amount } for 12 months": [
+        "Χρεωμένο στα ${ amount } για 12 μήνες"
+      ],
+      "Billed at ${ amount } for 15 months": [
+        "Χρεωμένο στα ${ amount } για 15 μήνες"
+      ],
+      "Billed at ${ amount } for 24 months": [
+        "Χρεωμένο στα ${ amount } για 24 μήνες"
+      ],
+      "Billed at ${ amount } for 30 months": [
+        "Χρεωμένο στα ${ amount } για 30 μήνες"
+      ],
+      "for ${ n } month": [
+        "για ${ n } μήνα",
+        "για ${ n } μήνες"
+      ],
+      "Get the deal": [
+        "Αποκτήστε την προσφορά"
+      ],
+      "Renews after 1 year at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "Ανανεώνεται μετά από 1 έτος σε μειωμένη τιμή ${ discountedAmount } αντί για ${ regularAmount } (${ discount }% έκπτωση)"
+      ],
+      "Renews after 2 years at a discounted price of ${ discountedAmount } instead of ${ regularAmount } (${ discount }% discount)": [
+        "Ανανεώνεται μετά από 2 έτη σε μειωμένη τιμή ${ discountedAmount } αντί για ${ regularAmount } (${ discount }% έκπτωση)"
+      ],
+      "Save ${ discount }%": [
+        "Εξοικονομήστε ${ discount }%"
+      ],
+      "Standard price ${ amount } for 1 month": [
+        "Τυπική τιμή ${ amount } για 1 μήνα"
+      ],
+      "Standard price ${ amount } for 12 months": [
+        "Τυπική τιμή ${ amount } για 12 μήνες"
+      ],
+      "Standard price ${ amount } for 15 months": [
+        "Τυπική τιμή ${ amount } για 15 μήνες"
+      ],
+      "Standard price ${ amount } for 24 months": [
+        "Τυπική τιμή ${ amount } για 24 μήνες"
+      ],
+      "Standard price ${ amount } for 30 months": [
+        "Τυπική τιμή ${ amount } για 30 μήνες"
+      ]
+    },
+    "specialoffer: Title": {
+      "Black Friday Sale": [
+        "Προσφορά Black Friday"
+      ],
+      "Cyber Week Sale": [
+        "Πώληση Cyber Week"
+      ],
+      "End of year offer": [
+        "Προσφορά τέλους έτους"
+      ],
+      "End of Year Sale": [
+        "Προσφορά Τέλους Έτους"
+      ],
+      "Get our premium bundle and save more": [
+        "Αποκτήστε το premium πακέτο μας και εξοικονομήστε περισσότερα"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Το διακοπέν πρόγραμμα Visionary επιστρέφει μόνο για περιορισμένο χρονικό διάστημα"
+      ],
+      "Save more with 2 years of ${ planName }": [
+        "Εξοικονομήστε περισσότερα με 2 χρόνια ${ planName }"
+      ],
+      "Upgrade and save more with 2 years of ${ planName }": [
+        "Αναβαθμίστε και εξοικονομήστε περισσότερα με 2 χρόνια ${ planName }"
+      ]
+    },
+    "specialoffer: Tooltip": {
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Αποκτήστε πρόσβαση σε αποκλεισμένο περιεχόμενο και περιηγηθείτε ιδιωτικά. Περιλαμβάνει 1700 διακομιστές σε 60+ χώρες, υψηλότερη ταχύτητα VPN, 10 συνδέσεις VPN ανά χρήστη, παγκόσμιες υπηρεσίες ροής, αποκλεισμό κακόβουλου λογισμικού και διαφημίσεων και πολλά άλλα."
+      ],
+      "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
+        "Αποκτήστε πρόσβαση σε αποκλεισμένο περιεχόμενο και περιηγηθείτε ιδιωτικά. Περιλαμβάνει 1700 διακομιστές σε 60+ χώρες, υψηλότερη ταχύτητα VPN, 10 συνδέσεις VPN, παγκόσμιες υπηρεσίες ροής, αποκλεισμό κακόβουλου λογισμικού και διαφημίσεων και πολλά άλλα."
+      ],
+      "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
+        "Αποκτήστε πρόσβαση σε περιεχόμενο σε υπηρεσίες ροής, συμπεριλαμβανομένων των Netflix, Disney+ και Prime Video, από οπουδήποτε."
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "Όλες οι premium υπηρεσίες μας με τα υψηλότερα όριά τους: 100 διευθύνσεις email, υποστήριξη για 10 προσαρμοσμένους τομείς, απεριόριστα hide-my-email ψευδώνυμα, κοινή χρήση ημερολογίου, κρυπτογραφημένη αποθήκευση cloud και κοινή χρήση αρχείων και πολλά άλλα."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Περιλαμβάνει υποστήριξη για 1 προσαρμοσμένο τομέα ηλεκτρονικού ταχυδρομείου, 10 διευθύνσεις ηλεκτρονικού ταχυδρομείου, 10 hide-my-email ψευδώνυμα, κοινή χρήση ημερολογίου και πολλά άλλα."
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "Περιλαμβάνει υποστήριξη για 3 προσαρμοσμένους τομείς ηλεκτρονικού ταχυδρομείου, 15 διευθύνσεις ηλεκτρονικού ταχυδρομείου, απεριόριστα hide-my-email ψευδώνυμα, κοινή χρήση ημερολογίου και πολλά άλλα."
+      ],
+      "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
+        "Ιδανικό για οικογένειες ή μικρές ομάδες, το καθένα μπορεί να έχει τα δικά του εισερχόμενα και ψευδώνυμα. Απαιτεί προσαρμοσμένος τομέας."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Λάβετε χωρίς επιπλέον κόστος τις πληρωμένες εκδόσεις όλων των νέων υπηρεσιών απορρήτου που θα κυκλοφορήσουμε στο μέλλον, μαζί με έγκαιρη πρόσβαση σε όλες τις μελλοντικές λειτουργίες και προϊόντα."
+      ],
+      "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
+        "Ασφαλίστε τα αρχεία σας με κρυπτογραφημένο χώρο αποθήκευσης cloud. Περιλαμβάνει αυτόματο συγχρονισμό, κρυπτογραφημένη κοινή χρήση αρχείων και πολλά άλλα."
+      ],
+      "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
+        "Ο αποθηκευτικός χώρος μοιράζεται μεταξύ των ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } και ${ DRIVE_APP_NAME }."
       ]
     }
   }
