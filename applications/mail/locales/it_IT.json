@@ -1165,6 +1165,12 @@
       ],
       "Zoom out": [
         "Zoom indietro"
+      ],
+      "Block email tracking": [
+        "Blocca tracciamento email"
+      ],
+      "Move all to archive": [
+        "Sposta tutto nell'archivio"
       ]
     },
     "action": {
@@ -5907,6 +5913,39 @@
       ],
       "Your files will be encrypted and then saved": [
         "I tuoi file verranno crittografati e poi salvati."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } tracker email bloccato",
+        "${ numberOfImageTrackers } tracker email bloccati"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } tracker bloccato",
+        "${ numberOfImageTrackers } tracker bloccati"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } link ripulito",
+        "${ numberOfUTMTrackers } link ripuliti"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Sei sicuro di voler spostare tutti i messaggi in questa posizione nell'Archivio?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Ciclo di fatturazione: ${ text }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Personalizza l'aspetto delle applicazioni ${ BRAND_NAME }"
+      ],
+      "Links cleaned:": [
+        "Link ripuliti:"
+      ],
+      "No links cleaned": [
+        "Nessun link ripulito"
+      ],
+      "No trackers found": [
+        "Nessun tracker trovato"
+      ],
+      "Trackers blocked:": [
+        "Tracker bloccati:"
       ]
     },
     "info": {
@@ -6629,6 +6668,15 @@
       ],
       "Type a command...": [
         "Inserisci un comando..."
+      ],
+      "Cleaned": [
+        "Ripulito"
+      ],
+      "Open in a new tab": [
+        "Apri in una nuova scheda"
+      ],
+      "Original link": [
+        "Link originale"
       ]
     },
     "Label attach to date input to select a date": {
@@ -6873,6 +6921,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Devi riattivare le tue chiavi per visualizzare l'invito aggiornato"
+      ],
+      "Reactivate now": [
+        "Riattiva"
       ]
     },
     "Link to calendar event": {
@@ -7303,6 +7354,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Puoi cambiarlo in qualunque momento nelle impostazioni."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Sono disponibili ulteriori opzioni di personalizzazione del tema nelle Impostazioni del tuo account, nella sezione Aspetto."
       ]
     },
     "Option": {
@@ -8968,6 +9022,21 @@
       ],
       "Night theme": [
         "Tema notte"
+      ],
+      "Billing cycle": [
+        "Ciclo di fatturazione"
+      ],
+      "Move all messages to Archive": [
+        "Sposta tutti i messaggi nell'Archivio"
+      ],
+      "No trackers found": [
+        "Nessun tracker trovato"
+      ],
+      "Protect your email": [
+        "Proteggi la tua email"
+      ],
+      "This email is protected": [
+        "Questa email è protetta"
       ]
     },
     "Title header": {
@@ -9055,6 +9124,15 @@
       ],
       "You do not have any contacts to export": [
         "Non hai alcun contatto da esportare"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Passi automaticamente tra i tuoi temi preferiti per il giorno e per la notte in sincronia con le modalità di giorno e di notte del tuo sistema."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Il tema selezionato sarà attivo quando il tuo sistema è impostato su \"modalità scura\"."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Il tema selezionato sarà attivo quando il tuo sistema è impostato su \"modalità chiara\"."
       ]
     },
     "Tor out of date": {
@@ -9466,6 +9544,87 @@
       ],
       "Very small": [
         "Molto piccolo"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Annuale"
+      ],
+      "Monthly": [
+        "Mensile"
+      ],
+      "Two-year": [
+        "Due anni"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verifica del mittente"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Verifica del mittente fallita: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Mittente verificato: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 anno"
+      ],
+      "2 years": [
+        "2 anni"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Drive premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail e Calendar premium"
+      ],
+      "Premium Password Manager": [
+        "Password manager premium"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Memorizza in modo sicuro le tue password e inseriscile automaticamente nei siti web. Sono incluse password illimitate, generatore di password e altro ancora."
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Crea dati di accesso sicuri su tutti i tuoi dispositivi. Sono inclusi alias illimitati, 20 casseforti, autenticazione a due fattori integrata, compilazione automatica con i dati delle carte di credito e altro ancora."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Include 2950 server in più di 65 Paesi, possibilità di connettere fino a 10 dispositivi, accesso a servizi di streaming in tutto il mondo, blocco di malware e adblocker, e altro ancora."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Include il supporto per 1 dominio email personalizzato, 10 indirizzi email, 10 alias hide-my-email, condivisione del calendario e altro ancora."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Proteggi i tuoi file con l'archiviazione in cloud crittografata. Sono incluse la cronologia delle versioni, la sincronizzazione automatica, la condivisione di file crittografati e altre funzioni ancora."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Alla fine del ciclo di fatturazione l'abbonamento si rinnoverà automaticamente con lo sconto standard."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Gli sconti si basano sul prezzo mensile standard. L'offerta è disponibile solo per i nuovi abbonati."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Per un periodo limitato, hai a disposizione tutto il meglio di ${ BRAND_NAME } con uno sconto esclusivo."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Stiamo festeggiando il nono anniversario del nostro crowdfunding!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Promozione per l'anniversario di ${ BRAND_NAME }"
       ]
     }
   }

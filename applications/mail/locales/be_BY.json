@@ -1173,6 +1173,12 @@
       ],
       "hide-my-email aliases": [
         "псеўданімаў Hide-my-email"
+      ],
+      "Block email tracking": [
+        "Блакіраваць адсочванне электроннай пошты"
+      ],
+      "Move all to archive": [
+        "Перамясціць усё ў архіў"
       ]
     },
     "action": {
@@ -2937,6 +2943,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Вы можаце пазначыць тыя кантакты, якія вы не хочаце аб'яднаць і пакідаць. Выдаленне адбываецца толькі пасля націску кнопкі аб'яднання"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Вы можаце прачытаць паведамленне і націснуць на спасылку не хвалюючыся пра адсочванне дзякуючы абароне ад праграм сачэння электроннай пошты."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Вы можаце прачытаць паведамленне і націснуць на спасылку не хвалюючыся пра адсочванне."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4189,7 +4201,7 @@
         "Увайдзіце ў мабільную праграму, каб завяршыць гэта дзеянне"
       ],
       "Using your mobile device, scan this QR code or visit": [
-        "Выкарыстоўваючы сваю мабільную прыладу, адскануйце гэты QR-код або наведайце"
+        "Выкарыстоўваючы сваю мабільную прыладу, адсканіруйце гэты QR-код або наведайце"
       ]
     },
     "Get started checklist item": {
@@ -5086,7 +5098,7 @@
         "Адрас электроннай пошты"
       ],
       "Email is forwarded to your mailbox; your email address stays hidden.": [
-        "Электронная пошта перасылаецца ў вашу паштовую скрыню; ваш адрас электроннай пошты застаецца схаваным."
+        "Ліст перасылаецца ў вашу паштовую скрыню; ваш адрас электроннай пошты застаецца схаваным."
       ],
       "Email tracker protection is disabled": [
         "Абарона электроннай пошты ад праграм сачэння адключана"
@@ -5605,7 +5617,7 @@
         "Паказаць арыгінальнае паведамленне"
       ],
       "SimpleLogin provides a simple way to create logins at untrusted third-party sites where you don't want to expose your actual email address.": [
-        "SimpleLogin забяспечвае просты спосаб для стварэння лагінаў на старонніх сайтах, якім вы не надта давяраеце і не хочаце раскрываць свой сапраўдны адрас электроннай пошты."
+        "SimpleLogin забяспечвае просты спосаб для стварэння адрасоў электроннай пошты на старонніх сайтах, якім вы не надта давяраеце і не хочаце раскрываць свой сапраўдны адрас электроннай пошты."
       ],
       "Sorry, this message does not exist or has already expired.": [
         "Прабачце, але гэтага паведамлення не існуе або яно пратэрмінаванае."
@@ -6037,7 +6049,7 @@
         "Вы дасягнулі максімальнай колькасці адрасоў у групе кантактаў:"
       ],
       "Your ${ BRAND_NAME } Account includes SimpleLogin. Install the browser extension with one click to get started.": [
-        "Ваш уліковы запіс уключае ${ BRAND_NAME }. Каб пачаць працу, усталюйце пашырэнне для браўзера адным націсканнем."
+        "Ваш уліковы запіс ${ BRAND_NAME } уключае SimpleLogin. Каб пачаць працу, усталюйце пашырэнне для браўзера адным націскам."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
         "Ваш уліковы запіс ${ BRAND_NAME } у цяперашні час прыпынены. На 29 дзень, лісты больш не будуць трапляць у паштовую скрыню, а абагуленыя спасылкі на воблачным дыску будуць заблакіраваны, і вы не зможаце запампоўваць новыя файлы. Для ўзнаўлення звычайнага абслугоўвання, аплаціце ўсе неаплачаныя рахункі."
@@ -6064,7 +6076,7 @@
         "Ваша імпартаванне не будзе апрацавана."
       ],
       "Your login information will not be saved after the import is completed.": [
-        "Пасля завяршэння імпартавання вашы ўліковыя даныя не будуць захаваны."
+        "Пасля завяршэння імпартавання вашы даныя ўваходу не будуць захаваны."
       ],
       "Your message will expire in ${ numberOfDays } day.": [
         "Тэрмін дзеяння вашага паведамлення міне праз ${ numberOfDays } дзень.",
@@ -6116,6 +6128,54 @@
       ],
       "Your files will be encrypted and then saved": [
         "Вашы файлы будуць зашыфраваны, а пасля гэтага захаваны"
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "Заблакіравана ${ numberOfImageTrackers } праграма сачэння электроннай пошты",
+        "Заблакіраваны ${ numberOfImageTrackers } праграмы сачэння электроннай пошты",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння электроннай пошты",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння электроннай пошты"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "Заблакіравана ${ numberOfImageTrackers } праграма сачэння",
+        "Заблакіраваны ${ numberOfImageTrackers } праграмы сачэння",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння",
+        "Заблакіраваны ${ numberOfImageTrackers } праграм сачэння"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } спасылка ачышчана",
+        "${ numberOfUTMTrackers } спасылкі ачышчаны",
+        "${ numberOfUTMTrackers } спасылак ачышчаны",
+        "${ numberOfUTMTrackers } спасылак ачышчаны"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Вы сапраўды хочаце перамясціць усе паведамленні з гэтага месца ў Архіў?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Перыяд аплаты: ${ text }"
+      ],
+      "Links cleaned:": [
+        "Спасылак ачышчана:"
+      ],
+      "No links cleaned": [
+        "Спасылкі не ачышчаны"
+      ],
+      "No trackers found": [
+        "Праграмы сачэння не знойдзены"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Падпіска заканчваецца: актывуйце яе паўторна да ${ byDate }, каб пакінуць перавагі свайго тарыфнага плана ${ planName }. ${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "Праграм сачэння заблакіравана:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Выключыце, каб шукаць толькі па даце, імі або адрасе электроннай пошты або радку тэмы. Каб выключыць пошук па змесціве паведамлення, і выдаліць спампаваныя паведамленні, перайдзіце ў налады."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Вы можаце націснуць на спасылку ў гэтым лісце без профілю і без рызыкі раскрыцця рэкламадаўцам сваёй актыўнасці ў інтэрнэце."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Вы можаце прачытаць гэты ліст не раскрываючы рэкламадаўцам сваю ўзаемасувязь, месцазнаходжанне або прыладу."
       ]
     },
     "info": {
@@ -6844,6 +6904,15 @@
       ],
       "Type a command...": [
         "Увядзіце каманду..."
+      ],
+      "Cleaned": [
+        "Ачышчана"
+      ],
+      "Open in a new tab": [
+        "Адкрыць у новай укладцы"
+      ],
+      "Original link": [
+        "Арыгінальная спасылка"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7088,6 +7157,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Вам неабходна паўторна актываваць ключы, каб паглядзець абноўленае запрашэнне"
+      ],
+      "Reactivate now": [
+        "Актываваць паўторна"
       ]
     },
     "Link to calendar event": {
@@ -9314,6 +9386,21 @@
       ],
       "Night theme": [
         "Начная тэма"
+      ],
+      "Billing cycle": [
+        "Перыяд аплаты"
+      ],
+      "Move all messages to Archive": [
+        "Перамясціць усе паведамленні ў Архіў"
+      ],
+      "No trackers found": [
+        "Праграмы сачэння не знойдзены"
+      ],
+      "Protect your email": [
+        "Абараніць сваю электронную пошту"
+      ],
+      "This email is protected": [
+        "Гэта электронная пошта абаронена"
       ]
     },
     "Title header": {
@@ -9847,7 +9934,7 @@
         "Перайсці ў Чарнавікі"
       ],
       "Go to Inbox": [
-        "Перайсці ва Ўваходныя"
+        "Перайсці ва Уваходныя"
       ],
       "Go to Sent": [
         "Перайсці ў Адпраўленыя"
@@ -9891,6 +9978,33 @@
       ],
       "Very small": [
         "Вельмі маленькі"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Штогод"
+      ],
+      "Monthly": [
+        "Штомесяц"
+      ],
+      "Two-year": [
+        "Кожныя два гады"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Праверка адпраўніка"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Не ўдалося праверыць адпраўніка: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Адпраўнік правераны: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Ключ праверкі не знаходзіцца ў спісе давераных ключоў."
       ]
     }
   }

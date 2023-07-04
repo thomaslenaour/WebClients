@@ -1093,10 +1093,10 @@
         "Actualizare frază de recuperare"
       ],
       "Upgrade": [
-        "Modernizare"
+        "Modificare"
       ],
       "Upgrade now": [
-        "Modernizare"
+        "Modificare"
       ],
       "Upload picture": [
         "Încărcare imagine"
@@ -1169,6 +1169,12 @@
       ],
       "hide-my-email aliases": [
         "aliasuri hide-my-email"
+      ],
+      "Block email tracking": [
+        "Blocare urmărire mesaje"
+      ],
+      "Move all to archive": [
+        "Mutare toate în arhivă"
       ]
     },
     "action": {
@@ -2724,7 +2730,7 @@
         "Regatul Unit"
       ],
       "United States": [
-        "Statele Unite"
+        "SUA"
       ],
       "United States Minor Outlying Islands": [
         "Insulele Minore Îndepărtate ale Statelor Unite"
@@ -2926,6 +2932,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puteți marca pentru ștergere contactele pe care nu doriți nici să le îmbinați, nici să le păstrați. Ștergerea va fi efectuată doar după apăsarea butonului de îmbinare."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Cu protecția împotriva funcțiilor de urmărire din mesaje, puteți citi mesajul și folosi legăturile din el fără a riscul monitorizării."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Puteți citi mesajul și accesa legăturile din el fără riscul monitorizării."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4559,7 +4571,7 @@
         "${ addressCount } de adrese de e-mail"
       ],
       "${ appName } needs your permission to ${ enableDesktopNotifications }.": [
-        "${ appName } are nevoie de permisiunea dvs. pentru ${ enableDesktopNotifications }."
+        "${ appName } necesită permisiunea pentru ${ enableDesktopNotifications }."
       ],
       "${ calendarsToBeCreatedCount } new calendar": [
         "Un calendar nou",
@@ -5042,7 +5054,7 @@
         "Introduceți codul din aplicația Authenticator."
       ],
       "Enter the credentials of the email account you want to import from.": [
-        "Introduceți datele de conectare ale contului de e-mail din care doriți să importați."
+        "Introduceți datele de conectare a contului de e-mail din care doriți să importați."
       ],
       "Enter the verification code that was sent to ${ destinationText }.": [
         "Introduceți codul de verificare care a fost trimis la ${ destinationText }."
@@ -5493,7 +5505,7 @@
         "Trimiterea mesajelor de la o adresă @pm.me este o funcție cu plată. Mesajul va fi trimis de la adresa implicită ${ email }."
       ],
       "Sent with <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> secure email.": [
-        "Trimis cu <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a> e-mail securizat."
+        "E-mail securizat trimis cu <a href=\"${ link }\" target=\"_blank\">${ APPS_CONFIGURATION[APPS.PROTONMAIL].name }</a>."
       ],
       "Servers are unreachable. Please try again in a few minutes": [
         "Serverele nu sunt accesibile. Mai reîncercați peste câteva minute."
@@ -5655,7 +5667,7 @@
         "Acest mesaj va fi trimis ${ dateString } la ora ${ formattedTime }"
       ],
       "This message will be sent shortly": [
-        "Acest mesaj va fi trimis în scurt timp"
+        "Acest mesaj va fi trimis în scurt timp."
       ],
       "This message will be sent today at ${ formattedTime }": [
         "Acest mesaj va fi trimis astăzi la ora ${ formattedTime }"
@@ -5929,7 +5941,7 @@
         "Ați scris „${ attachmentsFoundKeyword }”, dar nu a fost adăugat niciun atașament. Doriți să trimiteți totuși mesajul?"
       ],
       "You've reached the maximum number of addresses in the contact group(s):": [
-        "Ați atins numărul maxim de adrese din grupul de contacte."
+        "Ați atins numărul maxim de adrese din grupul de contacte:"
       ],
       "You've reached the maximum number of addresses in the contact group.": [
         "Ați atins numărul maxim de adrese din grupul de contacte."
@@ -6013,6 +6025,51 @@
       ],
       "Your files will be encrypted and then saved": [
         "Fișierele vor fi criptate și apoi salvate."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "A fost blocată ${ numberOfImageTrackers } funcție de urmărire din e-mail.",
+        "S-au blocat ${ numberOfImageTrackers } funcții de urmărire din e-mail.",
+        "S-au blocat ${ numberOfImageTrackers } de funcții de monitorizare din e-mail."
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "S-a blocat ${ numberOfImageTrackers } funcție de urmărire.",
+        "S-au blocat ${ numberOfImageTrackers } funcții de urmărire.",
+        "S-au blocat ${ numberOfImageTrackers } de funcții de urmărire."
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "S-a curățat ${ numberOfUTMTrackers } legătură.",
+        "S-au curățat ${ numberOfUTMTrackers } legături.",
+        "S-au curățat ${ numberOfUTMTrackers } de legături."
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Sunteți sigur că doriți să mutați toate mesajele de aici în «Arhivă»?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Ciclu facturare: ${ text }"
+      ],
+      "Links cleaned:": [
+        "Legături curățate:"
+      ],
+      "No links cleaned": [
+        "Nu au fost curățate legături"
+      ],
+      "No trackers found": [
+        "Nu s-au găsit funcții de urmărire"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Abonamentul se încheie: reactivați-l până la ${ byDate } pentru a vă păstra beneficiile planului ${ planName }. ${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "Urmăritori blocați:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Dezactivați opțiunea pentru a căuta numai după dată, nume, adresă de e-mail sau subiect. Pentru a dezactiva căutarea în conținutul mesajelor și a șterge mesajele descărcate, accesați setările."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Puteți accesa legăturile din acest mesaj fără a vi se putea face un profil și urmări activitatea online de către agențiile de publicitate."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Puteți citi acest mesaj fără a vă dezvălui agențiilor de publicitate acțiunile, locul sau tipul de dispozitiv folosit."
       ]
     },
     "info": {
@@ -6341,7 +6398,7 @@
         "Rea"
       ],
       "BCC": [
-        "CA"
+        "Ca"
       ],
       "Blind Carbon Copy": [
         "Copie ascunsă"
@@ -6738,6 +6795,15 @@
       ],
       "Type a command...": [
         "Scrieți o comandă..."
+      ],
+      "Cleaned": [
+        "Curățat"
+      ],
+      "Open in a new tab": [
+        "Deschidere într-o filă nouă"
+      ],
+      "Original link": [
+        "Legătura originală"
       ]
     },
     "Label attach to date input to select a date": {
@@ -6954,7 +7020,7 @@
         "Gunoi"
       ],
       "Upgrade account": [
-        "Modernizare cont"
+        "Modificare cont"
       ],
       "What’s this?": [
         "Ce este asta?"
@@ -6982,6 +7048,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Trebuie să activați cheile pentru a vedea invitația actualizată"
+      ],
+      "Reactivate now": [
+        "Reactivare"
       ]
     },
     "Link to calendar event": {
@@ -7287,7 +7356,7 @@
     },
     "new_plans: Action": {
       "Upgrade now": [
-        "Modernizare"
+        "Modificare"
       ]
     },
     "new_plans: action": {
@@ -7332,7 +7401,7 @@
         "Spațiul de stocare este distribuit între ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } și ${ DRIVE_APP_NAME }."
       ],
       "Use your own custom email domain address, e.g., you@yourname.com": [
-        "Utilizați propriile adresa personală de domeniu pentru e-mail, de ex., nume@adresapersonala.com."
+        "Utilizați propria adresă de domeniu pentru e-mail, de ex., nume@adresapersonala.com."
       ]
     },
     "new_plans: label": {
@@ -7698,7 +7767,7 @@
         "Mesaj semnat cu PGP. Verificarea expeditorului a eșuat."
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption": [
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero."
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero."
       ],
       "Stored with zero-access encryption": [
         "Stocat criptat cu acces exclusiv personal"
@@ -7825,15 +7894,15 @@
         "Semnat PGP"
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption": [
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero."
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero."
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption to verified recipient": [
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero către un destinatar verificat.",
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați.",
-        "Trimis de ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați."
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero către un destinatar verificat.",
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați.",
+        "Trimis cu ${ MAIL_APP_NAME } cu criptare cu acces zero către destinatari verificați."
       ],
       "Sent by you with end-to-end encryption": [
-        "Trimis de dvs. cu criptare în ambele părți"
+        "Trimis de către dvs. cu criptare în ambele părți"
       ],
       "Sent by you with end-to-end encryption to verified recipient": [
         "Trimis de către dvs. cu criptare în ambele părți către destinatar verificat.",
@@ -8016,7 +8085,7 @@
         "Accesare planuri abonamente"
       ],
       "Upgrade": [
-        "Modernizare"
+        "Modificare"
       ]
     },
     "specialoffer: Offers": {
@@ -8625,7 +8694,7 @@
         "Înapoi"
       ],
       "BCC": [
-        "CA"
+        "Ca"
       ],
       "Beta Access": [
         "Acces la Beta"
@@ -9144,6 +9213,21 @@
       ],
       "Night theme": [
         "Temă noapte"
+      ],
+      "Billing cycle": [
+        "Ciclu de facturare"
+      ],
+      "Move all messages to Archive": [
+        "Mutare toate mesajele în arhivă"
+      ],
+      "No trackers found": [
+        "Nu s-au găsit funcții de urmărire"
+      ],
+      "Protect your email": [
+        "Protejați-vă mesajele"
+      ],
+      "This email is protected": [
+        "Acest mesaj este protejat"
       ]
     },
     "Title header": {
@@ -9686,6 +9770,33 @@
       ],
       "Very small": [
         "Foarte mic"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Anual"
+      ],
+      "Monthly": [
+        "Lunar"
+      ],
+      "Two-year": [
+        "Bianual"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verificare expeditor"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Verificarea expeditorului a eșuat: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Expeditor verificat: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Cheia de verificare nu este în lista de chei de încredere."
       ]
     }
   }

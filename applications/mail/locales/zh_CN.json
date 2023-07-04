@@ -1161,6 +1161,12 @@
       ],
       "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
         "为了安全地搜索您的邮件内容，我们需要在浏览器后台下载您的所有往来邮件。首次下载可能需要耗费一些时间。"
+      ],
+      "Block email tracking": [
+        "屏蔽邮件跟踪"
+      ],
+      "Move all to archive": [
+        "全部存档"
       ]
     },
     "action": {
@@ -2904,6 +2910,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "您可以选择稍后删除既不想合并也不想保留的联系人，点击合并按钮后他们就会被删除"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "开启邮件跟踪防护后再点击邮件中的链接可避免广告跟踪。"
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "您可以安全地点击邮件中的链接，免受广告跟踪。"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -5766,6 +5778,45 @@
       ],
       "Your files will be encrypted and then saved": [
         "您的文件将被加密保存。"
+      ],
+      "${ numberOfImageTrackers } email trackers blocked": [
+        "已屏蔽 ${ numberOfImageTrackers } 款邮件跟踪器"
+      ],
+      "${ numberOfImageTrackers } trackers blocked": [
+        "已屏蔽 ${ numberOfImageTrackers } 款跟踪器"
+      ],
+      "${ numberOfUTMTrackers } links cleaned": [
+        "已净化 ${ numberOfUTMTrackers } 个链接"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "确定要将此处所有邮件存档吗？"
+      ],
+      "Billing cycle: ${ text }": [
+        "计费周期：${ text }"
+      ],
+      "Links cleaned:": [
+        "已净化的链接："
+      ],
+      "No links cleaned": [
+        "无需净化链接"
+      ],
+      "No trackers found": [
+        "未发现跟踪器"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "您的账户等级即将失效：${ byDate } 前重新激活即可继续享受 ${ planName } 权益。${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "已屏蔽的跟踪器："
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "关闭则仅搜索邮件主题、日期、姓名和邮箱地址。前往设置可关闭邮件全文搜索并删除已下载的邮件。"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "点击此邮件中的链接操作不会透露给广告投放者。"
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "您可以安全地阅读此邮件，浏览操作、地理位置、设备类型等信息不会透露给广告投放者。"
       ]
     },
     "info": {
@@ -6485,6 +6536,15 @@
       ],
       "Type a command...": [
         "输入命令..."
+      ],
+      "Cleaned": [
+        "净化后"
+      ],
+      "Open in a new tab": [
+        "在新标签页中打开"
+      ],
+      "Original link": [
+        "原始链接"
       ]
     },
     "Label attach to date input to select a date": {
@@ -6729,6 +6789,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "您需要重新激活您的密钥才能看到更新的邀请"
+      ],
+      "Reactivate now": [
+        "立即重新激活"
       ]
     },
     "Link to calendar event": {
@@ -8723,6 +8786,21 @@
       ],
       "Night theme": [
         "夜间模式"
+      ],
+      "Billing cycle": [
+        "计费周期"
+      ],
+      "Move all messages to Archive": [
+        "全部存档"
+      ],
+      "No trackers found": [
+        "未发现跟踪器"
+      ],
+      "Protect your email": [
+        "开启邮件防护"
+      ],
+      "This email is protected": [
+        "已对此邮件开启防护"
       ]
     },
     "Title header": {
@@ -9267,6 +9345,33 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "一次性开通两年 ${ planName } 更加优惠"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "按年付费"
+      ],
+      "Monthly": [
+        "月费"
+      ],
+      "Two-year": [
+        "两年付费"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "发件人验证"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "发件人验证失败：${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "发件人已验证：${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "验证密钥不在可信密钥列表中。"
       ]
     }
   }

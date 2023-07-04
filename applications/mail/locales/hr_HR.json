@@ -5830,6 +5830,9 @@
       ],
       "What's new": [
         "Što je novo"
+      ],
+      "Billing cycle": [
+        "Ciklus naplate"
       ]
     },
     "Title header": {
@@ -6226,6 +6229,17 @@
       ],
       "Yearly, ${ untilString }": [
         "Godišnje, ${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Godišnje"
+      ],
+      "Monthly": [
+        "Mjesečno"
+      ],
+      "Two-year": [
+        "2 godine"
       ]
     }
   }

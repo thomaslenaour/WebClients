@@ -1173,6 +1173,12 @@
       ],
       "hide-my-email aliases": [
         "псевдонімів Hide-my-email"
+      ],
+      "Block email tracking": [
+        "Блокування відстеження електронної пошти"
+      ],
+      "Move all to archive": [
+        "Перемістити все в архів"
       ]
     },
     "action": {
@@ -1388,7 +1394,7 @@
         "Проблема зі швидкістю"
       ],
       "Streaming problem": [
-        "Проблема трансляції"
+        "Проблема стримінгу"
       ],
       "Update problem": [
         "Проблема з оновленням"
@@ -2891,13 +2897,13 @@
         "Об'єднання контактів... Це може тривати кілька хвилин. Коли процес завершиться, ви можете закрити це вікно."
       ],
       "New emails from ${ senderEmailAddress } and ${ otherSendersCount } other won't be delivered and will be permanently deleted.": [
-        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } іншого не можуть бути доставлені та будуть безповоротно видалені.",
-        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } інших не можуть бути доставлені та будуть безповоротно видалені.",
-        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } інших не можуть бути доставлені та будуть безповоротно видалені.",
-        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } інших не можуть бути доставлені та будуть безповоротно видалені."
+        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } іншого неможливо доставити, тому їх буде остаточно видалено.",
+        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } інших неможливо доставити, тому їх буде остаточно видалено.",
+        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } інших неможливо доставити, тому їх буде остаточно видалено.",
+        "Нові листи від ${ senderEmailAddress } та ще від ${ otherSendersCount } інших неможливо доставити, тому їх буде остаточно видалено."
       ],
       "New emails from ${ senderEmailAddress } won't be delivered and will be permanently deleted.": [
-        "Нові листи від ${ senderEmailAddress } не можуть бути доставлені та будуть безповоротно видалені."
+        "Нові листи від ${ senderEmailAddress } неможливо доставити, тому їх буде остаточно видалено."
       ],
       "No folders": [
         "Немає тек"
@@ -2937,6 +2943,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Ви можете позначити ті контакти, які ви не хочете ані об'єднувати, ані зберігати. Видалення відбудеться лише після натискання кнопки об'єднання"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Ви можете прочитати повідомлення та натиснути на посилання без відстеження за допомогою захисту від відстеження електронної пошти."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Ви можете прочитати повідомлення та натиснути на посилання без відстеження."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3942,7 +3954,7 @@
     },
     "familyOffer_2023:Tooltip": {
       "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
-        "Включає 2700 серверів у понад 65 країнах, підключення до 10 пристроїв, доступ до світових сервісів трансляції, захист від зловмисних програм і реклами, а також інші можливості."
+        "Включає 2700 серверів у понад 65 країнах, підключення до 10 пристроїв, доступ до світових стримінгових сервісів, захист від зловмисних програм і реклами, а також інші можливості."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Безпечно зберігайте свої файли у зашифрованому хмарному сховищі з автоматичною синхронізацією, зашифрованим спільним доступом та іншими можливостями."
@@ -6082,7 +6094,7 @@
         "Фраза відновлення — це послідовність з 12 слів у певному порядку."
       ],
       "Customize the look and feel of ${ BRAND_NAME } applications.": [
-        "Налаштуйте зовнішній вигляд застосунків ${ BRAND_NAME }."
+        "Налаштуйте зовнішній вигляд програм ${ BRAND_NAME }."
       ],
       "Drop file here to upload": [
         "Перетягніть файл сюди, щоб вивантажити"
@@ -6116,6 +6128,51 @@
       ],
       "Your files will be encrypted and then saved": [
         "Ваші файли буде зашифровано, а потім збережено"
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } поштовий трекер заблоковано",
+        "${ numberOfImageTrackers } поштові трекери заблоковано",
+        "${ numberOfImageTrackers } поштових трекерів заблоковано",
+        "${ numberOfImageTrackers } поштових трекерів заблоковано"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } трекер заблоковано",
+        "${ numberOfImageTrackers } трекери заблоковано",
+        "${ numberOfImageTrackers } трекерів заблоковано",
+        "${ numberOfImageTrackers } трекерів заблоковано"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } посилання очищено",
+        "${ numberOfUTMTrackers } посилання очищено",
+        "${ numberOfUTMTrackers } посилань очищено",
+        "${ numberOfUTMTrackers } посилань очищено"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Ви впевнені, що хочете перемістити всі повідомлення в цьому місці в Архів?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Платіжний цикл: ${ text }"
+      ],
+      "Links cleaned:": [
+        "Посилань очищено:"
+      ],
+      "No links cleaned": [
+        "Посилання не очищено"
+      ],
+      "No trackers found": [
+        "Трекерів не виявлено"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Передплата закінчується: повторно активуйте її до ${ byDate }, щоб зберегти переваги ${ planName }. ${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "Трекерів заблоковано:"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Ви можете натискати посилання в цьому листі, не маючи профілю та не повідомляючи про свою онлайн-активність рекламодавцям."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Ви можете прочитати цей лист, не розкриваючи рекламодавцям свою взаємодію, розташування або пристрій."
       ]
     },
     "info": {
@@ -6844,6 +6901,15 @@
       ],
       "Type a command...": [
         "Введіть команду..."
+      ],
+      "Cleaned": [
+        "Очищено"
+      ],
+      "Open in a new tab": [
+        "Відкрити у новій вкладці"
+      ],
+      "Original link": [
+        "Оригінальне посилання"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7088,6 +7154,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Щоб переглянути оновлене запрошення, вам необхідно повторно активувати свої ключі"
+      ],
+      "Reactivate now": [
+        "Повторно активувати"
       ]
     },
     "Link to calendar event": {
@@ -8109,7 +8178,7 @@
         "Безпечне хмарне сховище"
       ],
       "Secure streaming": [
-        "Захищена трансляція"
+        "Захищений стримінг"
       ],
       "Support online privacy": [
         "Підтримка онлайн-приватності"
@@ -8235,13 +8304,13 @@
     },
     "specialoffer: Tooltip": {
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
-        "Доступ до заблокованого вмісту та приватний перегляд. Включає 1700 серверів у понад 60 країнах, найвищу швидкість VPN, 10 VPN-з'єднань на користувача, всесвітні сервіси трансляції, захист від зловмисних програм і реклами, а також інші можливості."
+        "Доступ до заблокованого вмісту та приватний перегляд. Включає 1700 серверів у понад 60 країнах, найвищу швидкість VPN, 10 VPN-з'єднань на користувача, всесвітні стримінгові сервіси, захист від зловмисних програм і реклами, а також інші можливості."
       ],
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
-        "Доступ до заблокованого вмісту та приватний перегляд. Включає 1700 серверів у понад 60 країнах, найвищу швидкість VPN, 10 VPN-з'єднань, всесвітні сервіси трансляції, захист від зловмисних програм і реклами, а також інші можливості."
+        "Доступ до заблокованого вмісту та приватний перегляд. Включає 1700 серверів у понад 60 країнах, найвищу швидкість VPN, 10 VPN-з'єднань, всесвітні стримінгові сервіси, захист від зловмисних програм і реклами, а також інші можливості."
       ],
       "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
-        "Доступ звідусіль до матеріалів сервісів трансляції, включно з Netflix, Disney+ і Prime Video."
+        "Доступ звідусіль до стримінгових сервісів, включно з Netflix, Disney+ та Prime Video."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
         "Ідеально підходить для сім'ї або невеликої команди. Кожен учасник може мати власну поштову скриньку та псевдоніми. Потрібен власний домен."
@@ -9314,6 +9383,21 @@
       ],
       "Night theme": [
         "Темна тема"
+      ],
+      "Billing cycle": [
+        "Платіжний цикл"
+      ],
+      "Move all messages to Archive": [
+        "Перемістити всі повідомлення до Архіву"
+      ],
+      "No trackers found": [
+        "Трекерів не знайдено"
+      ],
+      "Protect your email": [
+        "Захистіть свою електронну пошту"
+      ],
+      "This email is protected": [
+        "Ця електронна пошта захищена"
       ]
     },
     "Title header": {
@@ -9891,6 +9975,33 @@
       ],
       "Very small": [
         "Дуже маленький"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Щороку"
+      ],
+      "Monthly": [
+        "Щомісяця"
+      ],
+      "Two-year": [
+        "Два роки"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Перевірка відправника"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Помилка перевірки відправника: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Відправника перевірено: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Ключа підтвердження немає в списку довірених ключів."
       ]
     }
   }

@@ -1165,6 +1165,12 @@
       ],
       "Zoom out": [
         "Verkleinern"
+      ],
+      "Block email tracking": [
+        "E-Mail-Tracking blockieren"
+      ],
+      "Move all to archive": [
+        "Alle ins Archiv verschieben"
       ]
     },
     "action": {
@@ -2915,6 +2921,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Du kannst Kontakte, die du weder zusammenführen noch behalten willst, zum Löschen vormerken. Das Löschen erfolgt erst, wenn du auf die Schaltfläche „Zusammenführen“ klickst."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Mit dem E-Mail-Tracker-Schutz kannst du die Nachricht lesen und auf Links klicken, ohne verfolgt zu werden."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Du kannst die Nachricht lesen und auf Links klicken, ohne verfolgt zu werden."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3871,7 +3883,7 @@
     },
     "familyOffer_2023:Info": {
       "Online privacy, for your whole family": [
-        "Online-Privatsphäre für deine ganze Family"
+        "Online-Privatsphäre für deine ganze Familie"
       ]
     },
     "familyOffer_2023:Onboarding Proton": {
@@ -5729,7 +5741,7 @@
         "Wann soll sich die Nachricht selbst zerstören?"
       ],
       "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
-        "Wenn du deine E-Mail-Adresse weitergibst, verwende anstelle deiner echten E-Mail-Adresse einen eindeutigen und einmaligen Hide My Email-Alias."
+        "Wenn du deine E-Mail-Adresse weitergibst, verwende anstelle deiner echten E-Mail-Adresse einen eindeutigen und einmaligen Hide-my-email-Alias."
       ],
       "When you enabled trusted keys for ${ senderName }, the public keys were added to the contact details.": [
         "Wenn du für ${ senderName } vertrauenswürdige Schlüssel aktiviert hast, wurden die öffentlichen Schlüssel zu den Kontaktdaten hinzugefügt."
@@ -5910,6 +5922,48 @@
       ],
       "Your files will be encrypted and then saved": [
         "Deine Dateien werden verschlüsselt und anschließend gespeichert"
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt",
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt",
+        "${ numberOfImageTrackers } E-Mail-Tracker gesperrt"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } Link bereinigt",
+        "${ numberOfUTMTrackers } Links bereinigt"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Möchtest du wirklich alle hier vorliegenden Nachrichten ins Archiv verschieben?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Abrechnungszeitraum: ${ text }"
+      ],
+      "Links cleaned:": [
+        "Links bereinigt:"
+      ],
+      "No links cleaned": [
+        "Keine Links bereinigt"
+      ],
+      "No trackers found": [
+        "Kein E-Mail-Tracker gefunden"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Dein Abonnement endet bald: Reaktiviere es bis zum ${ byDate }, um deine ${ planName }-Vorteile zu behalten. ${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "Tracker blockiert:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Schalte diese Option aus, um nur nach Datum, Name, E-Mail-Adresse oder Betreff zu suchen. Um die Suche nach Nachrichteninhalten zu deaktivieren und heruntergeladene Nachrichten zu löschen, gehe zu den Einstellungen."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Du kannst auf Links in dieser E-Mail klicken, ohne dass ein Profil erstellt wird, und die Online-Aktivitäten an Werbetreibende weitergegeben werden."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "E-Mail kann gelesen werden, ohne dass Interaktionen, der Standort oder die Gerätekennung an Werbetreibende weitergegeben wird."
       ]
     },
     "info": {
@@ -6632,6 +6686,15 @@
       ],
       "Type a command...": [
         "Befehl eingeben..."
+      ],
+      "Cleaned": [
+        "Bereinigt"
+      ],
+      "Open in a new tab": [
+        "In einem neuen Tab öffnen"
+      ],
+      "Original link": [
+        "Original-Link"
       ]
     },
     "Label attach to date input to select a date": {
@@ -6876,6 +6939,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Du musst deine Schlüssel erneut aktivieren, um die aktualisierte Einladung anzeigen zu können."
+      ],
+      "Reactivate now": [
+        "Jetzt reaktivieren"
       ]
     },
     "Link to calendar event": {
@@ -8974,6 +9040,21 @@
       ],
       "Night theme": [
         "Dunkles Design"
+      ],
+      "Billing cycle": [
+        "Abrechnungszeitraum"
+      ],
+      "Move all messages to Archive": [
+        "Alle Nachrichten ins Archiv verschieben"
+      ],
+      "No trackers found": [
+        "Kein E-Mail-Tracker gefunden"
+      ],
+      "Protect your email": [
+        "Schütze deine E-Mail-Adresse"
+      ],
+      "This email is protected": [
+        "Diese Nachricht ist geschützt."
       ]
     },
     "Title header": {
@@ -9460,7 +9541,10 @@
     },
     "Font face option": {
       "System default": [
-        "Systemvorgabe"
+        "Systemstandard"
+      ],
+      "Theme default": [
+        "Standard-Farbschema"
       ]
     },
     "Font size option": {
@@ -9478,6 +9562,97 @@
       ],
       "Very small": [
         "Sehr klein"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Jährlich"
+      ],
+      "Monthly": [
+        "Monatlich"
+      ],
+      "Two-year": [
+        "Zwei Jahre"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Absenderverifizierung"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Absenderverifizierung fehlgeschlagen: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Absender verifiziert: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Der Verifizierungsschlüssel ist nicht in der Liste der vertrauenswürdigen Schlüssel enthalten."
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "Ein Jahr"
+      ],
+      "2 years": [
+        "2 Jahre"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Premium-Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail und Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium-Passwortmanager"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Speichere deine Passwörter sicher und lasse sie automatisch auf Websites einfügen. Beinhaltet unbegrenzte Passwörter, automatisches Einfügen, Passwortgenerator und mehr."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Passwort-Manager"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Erstelle sichere Anmeldedaten auf allen deinen Geräten. Beinhaltet unbegrenzte Aliase, 20 Tresore, integrierte 2FA, automatisches Einfügen von Kreditkartendaten und mehr."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Greife auf blockierte Inhalte zu und surfe privat. Umfasst 2950 Server in über 65 Ländern, die Verbindung von bis zu 10 Geräten, weltweite Streaming-Dienste, Malware- und Werbeblocker und mehr."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Beinhaltet Unterstützung für eine eigene E-Mail-Domain, 10 E-Mail-Adressen, 10 Hide-my-email-Aliasse, Kalenderfreigabe und mehr."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Sichere deine Dateien mit verschlüsseltem Cloud-Speicher. Beinhaltet Versionsverlauf, verschlüsselte Dateifreigabe und mehr."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Dein Abonnement verlängert sich am Ende deines Abrechnungszeitraums automatisch zum Standard-Rabattpreis."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Rabatte basieren auf den monatlichen Standardpreisen. Dieses Angebot gilt nur für Erstabonnenten."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Erhalte für begrenzte Zeit das Beste, was ${ BRAND_NAME } zu bieten hat, mit einem exklusiven Rabatt."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Wir feiern das neunjährige Jubiläum unseres Crowdfundings!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Jubiläumsangebot von ${ BRAND_NAME }"
       ]
     }
   }

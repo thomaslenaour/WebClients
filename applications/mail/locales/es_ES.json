@@ -1165,6 +1165,12 @@
       ],
       "Zoom out": [
         "Alejar"
+      ],
+      "Block email tracking": [
+        "Bloquear el rastreo de correo electrónico"
+      ],
+      "Move all to archive": [
+        "Mover todo al archivo"
       ]
     },
     "action": {
@@ -2915,6 +2921,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puedes marcar los contactos que no quieres ni combinar ni mantener para eliminarlos. Se eliminarán solo después de que pulses el botón."
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Puedes leer el mensaje y hacer clic en los enlaces sin ser rastreado gracias a la protección del rastreador de correo electrónico."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Puedes leer el mensaje y hacer clic en los enlaces sin ser rastreado."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -5910,6 +5922,48 @@
       ],
       "Your files will be encrypted and then saved": [
         "Tus archivos serán cifrados y después guardados."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } rastreador de correo electrónico bloqueado",
+        "${ numberOfImageTrackers } rastreadores de correo electrónicos bloqueados"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } rastreador bloqueado",
+        "${ numberOfImageTrackers } rastreadores bloqueados"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } enlace limpio",
+        "${ numberOfUTMTrackers } enlaces limpios"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "¿Estás seguro de que quieres mover todos los mensajes de esta carpeta al Archivo?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Ciclo de facturación: ${ text }"
+      ],
+      "Links cleaned:": [
+        "Enlaces limpios:"
+      ],
+      "No links cleaned": [
+        "Ningún enlace limpiado"
+      ],
+      "No trackers found": [
+        "No se han encontrado rastreadores."
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Tu suscripción terminará pronto: reactívala antes de ${ byDate } para mantener los beneficios de ${ planName }. ${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "Rastreadores bloqueados:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Desactiva la opción para buscar solo por fecha, nombre, dirección de correo o asunto. Para deshabilitar la búsqueda en el contenido del mensaje y eliminar los mensajes descargados, ve a los ajustes."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "Puedes hacer clic en los enlaces de este correo electrónico sin que se elabore un perfil y se filtre tu actividad en línea a los anunciantes."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Puedes leer este correo electrónico sin revelar tus interacciones, ubicación o dispositivo a los anunciantes."
       ]
     },
     "info": {
@@ -6632,6 +6686,15 @@
       ],
       "Type a command...": [
         "Escribe un comando..."
+      ],
+      "Cleaned": [
+        "Limpiado"
+      ],
+      "Open in a new tab": [
+        "Abrir en una pestaña nueva"
+      ],
+      "Original link": [
+        "Enlace original"
       ]
     },
     "Label attach to date input to select a date": {
@@ -6876,6 +6939,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Necesitas reactivar tus claves para ver la invitación actualizada."
+      ],
+      "Reactivate now": [
+        "Reactivar"
       ]
     },
     "Link to calendar event": {
@@ -8974,6 +9040,21 @@
       ],
       "Night theme": [
         "Tema de noche"
+      ],
+      "Billing cycle": [
+        "Ciclo de facturación"
+      ],
+      "Move all messages to Archive": [
+        "Mover todos los mensajes al Archivo"
+      ],
+      "No trackers found": [
+        "No se han encontrado rastreadores."
+      ],
+      "Protect your email": [
+        "Protege tu correo electrónico"
+      ],
+      "This email is protected": [
+        "Este correo electrónico está protegido."
       ]
     },
     "Title header": {
@@ -9481,6 +9562,97 @@
       ],
       "Very small": [
         "Muy pequeño"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Anual"
+      ],
+      "Monthly": [
+        "Mensualmente"
+      ],
+      "Two-year": [
+        "Bienal"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "Verificación del remitente"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Error al verificar el remitente: ${ icon.senderVerificationDetails.description }."
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Se ha verificado el remitente: ${ icon.senderVerificationDetails.description }."
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "La clave de verificación no está en la lista de las claves de confianza."
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 año"
+      ],
+      "2 years": [
+        "2 años"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Drive premium"
+      ],
+      "Premium Mail and Calendar": [
+        "Mail y Calendar premium"
+      ],
+      "Premium Password Manager": [
+        "Administrador de contraseñas premium"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Almacena tus contraseñas e introdúcelas automáticamente en los sitios web con toda seguridad. Incluye contraseñas ilimitadas, introducción automática, generador de contraseñas, etc."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Gestor de contraseñas"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Crea credenciales seguras de inicio de sesión en todos tus dispositivos. Incluye alias ilimitados, 20 cámaras acorazadas, 2FA integrado, introducción automática de datos de tarjeta de pago, etc."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Incluye 2950 servidores en más de 65 países. Conecta hasta 10 dispositivos, accede a servicios de streaming de todo el mundo, dispón de la protección de bloqueadores de malware y anuncios, etc."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Incluye compatibilidad con 1 dominio de correo electrónico personalizado, 10 direcciones de correo electrónico, 10 alias de hide-my-email, posibilidad de compartir calendario, etc."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Protege tus archivos con el almacenamiento cifrado en la nube. Incluye historial de versiones, posibilidad de compartir archivos cifrados, etc."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "* Tu suscripción se renovará automáticamente con el mismo precio reducido al término del ciclo de facturación."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Los descuentos se calculan a partir de las tarifas mensuales estándar. Esta promoción solo está disponible para nuevos suscriptores."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Aprovecha los mejores productos de ${ BRAND_NAME } a precios irresistibles por tiempo limitado."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "¡Estamos celebrando el noveno aniversario de nuestra campaña de micromecenazgo!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "Rebajas de aniversario de ${ BRAND_NAME }"
       ]
     }
   }

@@ -4636,6 +4636,9 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Tafyirt-ik·im n tririt d azrar n 12 wawalen deg umizwer ameẓlu."
+      ],
+      "Billing cycle: ${ text }": [
+        "Asellek yal:${ text }"
       ]
     },
     "info": {
@@ -7003,6 +7006,9 @@
       ],
       "What's new": [
         "Acu d amaynut"
+      ],
+      "Billing cycle": [
+        "Twala n ufter"
       ]
     },
     "Title header": {
@@ -7407,6 +7413,17 @@
       ],
       "Yearly, ${ untilString }": [
         "S useggas, ${ untilString }"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "S useggas"
+      ],
+      "Monthly": [
+        "S wayyur"
+      ],
+      "Two-year": [
+        "Snat n tikkal i useggas"
       ]
     }
   }

@@ -1158,6 +1158,15 @@
       ],
       "hide-my-email aliases": [
         "hide-my-email エイリアス"
+      ],
+      "Block email tracking": [
+        "メールのトラッキングをブロック"
+      ],
+      "Move all to archive": [
+        "すべてアーカイブに移動"
+      ],
+      "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
+        "メールを安全に検索するには、メッセージのコピーをブラウザにダウンロードする必要があります。初回のダウンロードには時間がかかることがあります。"
       ]
     },
     "action": {
@@ -5747,11 +5756,41 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "回復用フレーズは 12 語の単語を順番に並べて構成されたものです。"
+      ],
+      "${ numberOfImageTrackers } trackers blocked": [
+        "${ numberOfImageTrackers }個のトラッカーをブロックしました"
+      ],
+      "Billing cycle: ${ text }": [
+        "支払いサイクル: ${ text }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "${ BRAND_NAME }アプリの外観をカスタマイズ"
+      ],
+      "Drop file here to upload": [
+        "アップロードするファイルをここにドロップ"
+      ],
+      "Drop to import": [
+        "ドロップしてインポート"
+      ],
+      "Messages downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "ダウンロード済みメッセージ: ${ currentProgress } / ${ totalProgress }"
+      ],
+      "No trackers found": [
+        "トラッカーは見つかりませんでした"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "サブスクリプションがもうすぐ終了します: ${ planName }の特典を維持するには${ byDate }までに更新してください。${ reactivateLink }"
+      ],
+      "Your files will be encrypted and then saved": [
+        "ファイルは暗号化して保存されます"
       ]
     },
     "info": {
       "Optional": [
         "任意"
+      ],
+      "${ filteredList.length } commands found.": [
+        "${ filteredList.length }個のコマンドが見つかりました。"
       ]
     },
     "Info on errors": {
@@ -7016,6 +7055,9 @@
       ],
       "Up to 3 TB of storage": [
         "3 TB のストレージ"
+      ],
+      "Hide-my-email aliases": [
+        "Hide-my-email エイリアス"
       ]
     },
     "new_plans: feature info": {
@@ -8696,6 +8738,27 @@
       ],
       "Night theme": [
         "夜間のテーマ"
+      ],
+      "Billing cycle": [
+        "支払い間隔"
+      ],
+      "Cannot add more addresses": [
+        "これ以上アドレスを追加できません"
+      ],
+      "Move all messages to Archive": [
+        "すべてのメッセージをアーカイブへ移動"
+      ],
+      "No trackers found": [
+        "トラッカーは見つかりませんでした"
+      ],
+      "Protect your email": [
+        "メールを保護する"
+      ],
+      "This email is protected": [
+        "このメールは保護されています"
+      ],
+      "Unlock contacts groups": [
+        "連絡先グループをアンロック"
       ]
     },
     "Title header": {
@@ -9153,6 +9216,17 @@
       ],
       "Very small": [
         "極小"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "1年払い"
+      ],
+      "Monthly": [
+        "月額"
+      ],
+      "Two-year": [
+        "2年払い"
       ]
     }
   }

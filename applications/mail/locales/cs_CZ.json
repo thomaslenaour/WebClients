@@ -1173,6 +1173,12 @@
       ],
       "Zoom out": [
         "Oddálit"
+      ],
+      "Block email tracking": [
+        "Blokovat sledovací prvky v e-mailech"
+      ],
+      "Move all to archive": [
+        "Přesunout vše do archivu"
       ]
     },
     "action": {
@@ -6113,11 +6119,44 @@
       ],
       "Your files will be encrypted and then saved": [
         "Vaše soubory budou zašifrovány a uloženy"
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } e-mailový sledovací prvek zablokován",
+        "${ numberOfImageTrackers } e-mailové sledovací prvky zablokovány",
+        "${ numberOfImageTrackers } e-mailových sledovacích prvků zablokováno",
+        "${ numberOfImageTrackers } e-mailových sledovacích prvků zablokováno"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } sledovací prvek zablokován",
+        "${ numberOfImageTrackers } sledovací prvky zablokovány",
+        "${ numberOfImageTrackers } sledovacích prvků zablokováno",
+        "${ numberOfImageTrackers } sledovacích prvků zablokováno"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "Jste si jisti, že chcete přesunout všechny zprávy odtud do Archivu?"
+      ],
+      "Billing cycle: ${ text }": [
+        "Fakturační cyklus: ${ text }"
+      ],
+      "Customize the look and feel of ${ BRAND_NAME } applications.": [
+        "Přizpůsobte si vzhled aplikací ${ BRAND_NAME }."
+      ],
+      "No trackers found": [
+        "Bez sledovacích prvků"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Předplatné vyprší: opětovně aktivujte dne ${ byDate } pro zachování vašich výhod tarifu ${ planName }. ${ reactivateLink }"
       ]
     },
     "info": {
       "Optional": [
         "Volitelné"
+      ],
+      "${ filteredList.length } command found.": [
+        "${ filteredList.length } příkaz nalezen.",
+        "${ filteredList.length } příkazy nalezeny.",
+        "${ filteredList.length } příkazů nalezeno.",
+        "${ filteredList.length } příkazů nalezeno."
       ]
     },
     "Info on errors": {
@@ -6835,6 +6874,9 @@
       ],
       "Type a command...": [
         "Zadejte příkaz…"
+      ],
+      "Open in a new tab": [
+        "Otevřít na nové kartě"
       ]
     },
     "Label attach to date input to select a date": {
@@ -7079,6 +7121,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Pro zobrazení upravené pozvánky musíte znovu aktivovat své klíče"
+      ],
+      "Reactivate now": [
+        "Opětovně nyní aktivovat"
       ]
     },
     "Link to calendar event": {
@@ -7525,6 +7570,9 @@
       ],
       "You can change this anytime in your settings.": [
         "Toto můžete později změnit v nastavení."
+      ],
+      "More theming options are available in your account Settings > Appearance.": [
+        "Další možnosti úprav motivů jsou k dispozici v Nastavení účtu > Vzhled."
       ]
     },
     "Option": {
@@ -9302,6 +9350,21 @@
       ],
       "Night theme": [
         "Noční motiv"
+      ],
+      "Billing cycle": [
+        "Fakturační cyklus"
+      ],
+      "Move all messages to Archive": [
+        "Přesunout všechny zprávy do Archivu"
+      ],
+      "No trackers found": [
+        "Bez sledovacích prvků"
+      ],
+      "Protect your email": [
+        "Chraňte váš e-mail"
+      ],
+      "This email is protected": [
+        "Tento e-mail je chráněný"
       ]
     },
     "Title header": {
@@ -9389,6 +9452,15 @@
       ],
       "You do not have any contacts to export": [
         "Nemáte žádné kontakty k exportu"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Automatické přepínání mezi preferovanými denními a nočními motivy v synchronizaci s denním a nočním režimem systému."
+      ],
+      "The selected theme will be active when your system is set to \"dark mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"tmavý režim\"."
+      ],
+      "The selected theme will be active when your system is set to \"light mode\"": [
+        "Vybraný motiv bude použit, když je systém nastaven na \"světlý režim\"."
       ]
     },
     "Tor out of date": {
@@ -9870,6 +9942,22 @@
       ],
       "Very small": [
         "Velmi malé"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "Ročně"
+      ],
+      "Monthly": [
+        "Měsíčně"
+      ],
+      "Two-year": [
+        "Dva roky"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "Ověření odesílatele selhalo: ${ icon.senderVerificationDetails.description }"
       ]
     }
   }

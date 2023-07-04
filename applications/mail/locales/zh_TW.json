@@ -125,13 +125,13 @@
         "封鎖"
       ],
       "Block messages from this sender": [
-        "封鎖此寄件者的所有來信"
+        "攔截此寄件者的所有來信"
       ],
       "Block sender": [
-        "封鎖寄件者"
+        "攔截寄件者"
       ],
       "Block senders": [
-        "封鎖寄件者"
+        "攔截寄件者"
       ],
       "Bold": [
         "粗體"
@@ -767,7 +767,7 @@
         "重新簽署"
       ],
       "Read message": [
-        "已讀訊息"
+        "閱讀郵件"
       ],
       "Read receipt sent": [
         "讀取回條已傳送"
@@ -1046,7 +1046,7 @@
         "開啟追蹤保護"
       ],
       "Unblock": [
-        "解除封鎖"
+        "解除攔截"
       ],
       "Underline": [
         "底線"
@@ -1160,7 +1160,13 @@
         "縮小"
       ],
       "hide-my-email aliases": [
-        "隱藏我的郵件別名"
+        "hide-my-email 別名"
+      ],
+      "Block email tracking": [
+        "封鎖郵件追蹤"
+      ],
+      "Move all to archive": [
+        "全部移動至封存"
       ]
     },
     "action": {
@@ -1668,7 +1674,7 @@
     },
     "color": {
       "apple": [
-        "Apple"
+        "apple"
       ],
       "azureish white": [
         "天藍白"
@@ -2904,6 +2910,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "您可以把既不合併也不保留的聯絡人標記為刪除。唯有在點擊「合併」按鈕時，才會執行刪除"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "您可開啟電子郵件追蹤程式防護並在不被追蹤之情況讀訊息及點及連結"
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "您可在讀訊息和按連時不被追縱"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3061,7 +3073,7 @@
         "發生問題，請再試一次。"
       ],
       "Address primary private key not found": [
-        "找不到電子郵件地址主要私密金鑰"
+        "找不到電子郵件位址主要私密金鑰"
       ],
       "Attachments are limited to 25 MB": [
         "附件大小上限為 25 MB"
@@ -3331,7 +3343,7 @@
         "抱歉，${ BRAND_NAME } 無法解密您的郵件。請檢查您所有的金鑰是否在使用中。"
       ],
       "The email addresses do not match": [
-        "電子郵件地址不相符"
+        "電子郵件位址不相符"
       ],
       "The folder name is invalid. Please choose a different name.": [
         "此資料夾名稱無法使用。請換另一個名稱。"
@@ -3685,7 +3697,7 @@
         "無效的回應"
       ],
       "The event could not be added to your calendar. No answer was sent": [
-        "無法在您的行事曆中添加活動。未發送任何答复"
+        "無法在您的行事曆中加入活動。未發送任何回覆"
       ],
       "The event could not be updated in your calendar. No answer was sent": [
         "無法在您的行事曆中更新活動。未發送任何答复"
@@ -3786,7 +3798,7 @@
         "邀請人：${ inviteEmail }"
       ],
       "Manage addresses.": [
-        "管理電子郵件地址。"
+        "管理電子郵件位址。"
       ],
       "Owners of a plan with members cannot join another group plan.": [
         "有成員的方案的擁有者無法加入其他群組方案。"
@@ -3822,7 +3834,7 @@
         "我們邀請您將您的 ${ BRAND_NAME } 帳號連結至此群組方案，並一起享受所有 ${ BRAND_NAME_TWO } 進階功能。"
       ],
       "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
-        "您帳號中的電子郵件地址多於此方案中可用的電子郵件地址。${ addressSettingsLink }"
+        "您帳號中的電子郵件位址多於此方案中可用的電子郵件位址。${ addressSettingsLink }"
       ],
       "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
         "您的帳號已使用 ${ usedSpace } 的儲存空間，這超過了為您分配的 ${ inviteSpace }。刪除一些資料或要求方案管理員增加您的儲存空間。"
@@ -3873,7 +3885,7 @@
         "使用加密的雲端存儲保護您的檔案。包含自動同步、加密檔案分享等。"
       ],
       "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
-        "包含對 3 個自訂電子郵件網域、90 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
+        "包含對 3 組自訂電子郵件網域、90 組電子郵件位址、無限組 hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Feedback Modal Title": {
@@ -4240,7 +4252,7 @@
     },
     "Import calendar; import invitation": {
       "Imported invitations appear in ${ CALENDAR_APP_NAME } as simple events without organizer and participant details. To get event updates and see participants, ask organizers to invite you using your ${ BRAND_NAME } email address.": [
-        "已匯入的邀請在 ${ CALENDAR_APP_NAME } 中顯示為簡單事件，沒有舉辦人與參與者的詳細資料。若要取得事件更新並顯示參與者，請要求舉辦人以您的 ${ BRAND_NAME } 電子郵件地址向您發出邀請。"
+        "已匯入的邀請在 ${ CALENDAR_APP_NAME } 中顯示為簡單事件，沒有舉辦人與參與者的詳細資料。若要取得事件更新並顯示參與者，請要求舉辦人以您的 ${ BRAND_NAME } 電子郵件位址向您發出邀請。"
       ],
       "This file contains event invitations:": [
         "此檔案包含事件邀請："
@@ -4342,7 +4354,7 @@
         "您的電子郵件帳號要求一個方式來匯出您的資料。"
       ],
       "Your email address and app password are correct. Do ${ boldNot } use your regular password.": [
-        "您的電子郵件地址和應用程式密碼均為正確。${ boldNot } 使用您的一般密碼。"
+        "您的電子郵件位址和應用程式密碼均為正確。${ boldNot } 使用您的一般密碼。"
       ],
       "Your email address and password are correct.": [
         "您的電郵位址和密碼均為正確."
@@ -4531,13 +4543,13 @@
         "${ numGroups } 個聯絡人群組"
       ],
       "${ NumMessages } messages in conversation": [
-        "對話中有 ${ NumMessages } 則訊息"
+        "${ NumMessages } 封郵件在交談對話中"
       ],
       "${ numOccurrences } occurrences found": [
-        "${ numOccurrences } 件事故已找到"
+        "${ numOccurrences } 個事件已找到"
       ],
       "${ numOccurrences } occurrences found in the mail content": [
-        "${ numOccurrences } 件事故在郵件內容中找到"
+        "${ numOccurrences } 個事件在郵件內容中找到"
       ],
       "${ providerFoldersNumLocalized } folders found": [
         "找到 ${ providerFoldersNumLocalized } 個資料夾"
@@ -4546,7 +4558,7 @@
         "在 Gmail 中找到 ${ providerFoldersNumLocalized } 種標籤"
       ],
       "${ pureAttachmentsCount } files attached": [
-        "${ pureAttachmentsCount } 個附件"
+        "${ pureAttachmentsCount } 個附加檔案"
       ],
       "${ selectedCalendarsTotal } of ${ providerCalendars.length } calendars": [
         "${ selectedCalendarsTotal } 個，共 ${ providerCalendars.length } 個行事曆"
@@ -4576,10 +4588,10 @@
         "${ unread } 封未讀郵件"
       ],
       "${ unreadCount } scheduled messages": [
-        "${ unreadCount } 排程訊息"
+        "${ unreadCount } 封已排程訊息"
       ],
       "${ unreadCount } unread conversations": [
-        "${ unreadCount } 個未讀交談"
+        "${ unreadCount } 則未讀交談對話"
       ],
       "${ unreadCount } unread messages": [
         "${ unreadCount } 封未讀郵件"
@@ -4669,10 +4681,10 @@
         "您確定您要把所有郵件移動至此位置進行刪除嗎？"
       ],
       "Are you sure you want to permanently delete ${ count } conversations?": [
-        "您確定要永久刪除 ${ count } 個交談嗎？"
+        "您確定要永久刪除 ${ count } 則交談對話？"
       ],
       "Are you sure you want to permanently delete ${ count } drafts?": [
-        "您確定要永久刪除這 ${ count } 個草稿嗎？"
+        "您確定要永久刪除這 ${ count } 封草稿嗎？"
       ],
       "Are you sure you want to permanently delete ${ count } messages?": [
         "您確定要永久刪除 ${ count } 封郵件嗎？"
@@ -5335,7 +5347,7 @@
         "簡單登入提供了一個簡單的方法，讓您可以建立使用者但不需要將您的真實電子郵件透露給不可信的第三方網站。"
       ],
       "Sorry, this message does not exist or has already expired.": [
-        "抱歉，此訊息不存在或已過期。"
+        "抱歉，此郵件不存在或已過期。"
       ],
       "Subject": [
         "主題"
@@ -5398,10 +5410,10 @@
         "用來驗證連絡人詳細資料的簽章發生錯誤，可能是重設密碼所導致。"
       ],
       "These conversations will be marked as spam. Would you also like to unsubscribe from future emails?": [
-        "交談將會標記為垃圾信件。請問您也想退訂往後相關的電郵信件嗎？"
+        "交談對話會標記為垃圾信件。請問您也想退訂日後相關的電郵嗎？"
       ],
       "These messages will be marked as spam. Would you also like to unsubscribe from future emails?": [
-        "這些信件將會標記為垃圾信件。請問您也想退訂往後相關的電郵信件嗎？"
+        "這些信件會標記為垃圾信件。請問您也想退訂日後相關的電郵嗎？"
       ],
       "This account has been suspended due to a potential policy violation.": [
         "此帳號可能因違反政策而遭停用。"
@@ -5524,7 +5536,7 @@
         "啟用以搜尋您的郵件內容"
       ],
       "Unlock message": [
-        "解密鎖定訊息"
+        "解鎖郵件"
       ],
       "Unsaved changes": [
         "未儲存的變更"
@@ -5647,7 +5659,7 @@
         "您目前已登入為 ${ user.Name } (${ user.Email })。"
       ],
       "You can add it as an attachment or display it inline in your mail body.": [
-        "您可以將其添加為附件或是在內文中顯示。"
+        "您可以將其加入為附件或是在內文中顯示。"
       ],
       "You can also merge imported calendars with existing ${ BRAND_NAME } calendars.": [
         "你也可以將匯入的行事曆與現有的 ${ BRAND_NAME } 行事曆合併。"
@@ -5683,7 +5695,7 @@
         "您有 ${ unreadsLabel } 在收件匣中。"
       ],
       "You have **${ count } conversations** stored in this folder": [
-        "您有 **${ count } 個交談** 儲存於此資料夾"
+        "您有 **${ count } 則交談對話** 儲存於此資料夾"
       ],
       "You have **${ count } conversations** tagged with this label": [
         "您選取了有此標籤的 **${ count } 個交談**"
@@ -5716,7 +5728,7 @@
         "您選取了有此標籤的 **${ count } 個交談**"
       ],
       "You selected **${ count } messages** from this folder": [
-        "您從此資料夾選取了 **${ count } 則訊息**"
+        "您已在此資料夾選取 **${ count } 則訊息**"
       ],
       "You selected **${ count } messages** with this label": [
         "您選取了有此標籤的 **${ count } 則訊息**"
@@ -5725,7 +5737,7 @@
         "您編寫了「${ attachmentsFoundKeyword }」，但沒有加入對應的附件。無論如何寄出此封郵件？"
       ],
       "You've reached the maximum number of addresses in the contact group(s):": [
-        "您已達到聯絡人群組郵件地址最高上限："
+        "您已達到通訊群組郵件地址最高上限:"
       ],
       "You've reached the maximum number of addresses in the contact group.": [
         "您以達到通訊群組郵件地址最高上限"
@@ -5734,19 +5746,19 @@
         "您的 ${ BRAND_NAME } 帳號包含 SimpleLogin。安裝瀏覽器擴充套件就可以快速開始。"
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
-        "已凍結您的 ${ BRAND_NAME } 帳號 。 28 日後，收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲恢復正常服務，請支付所有逾期帳單。"
+        "已凍結您的 ${ BRAND_NAME } 帳號 。 28 日後，收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲恢復正常服務，請支付所有逾期繳款單。"
       ],
       "Your ${ BRAND_NAME } account is currently suspended. Emails are no longer being delivered to your inbox. Your Drive sharing links are no longer active, and you cannot upload new files. To continue using your account, please pay any overdue invoices.": [
-        "已凍結您的 ${ BRAND_NAME } 帳號 。 收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲正常使用服務，請支付所有逾期帳單。"
+        "已凍結您的 ${ BRAND_NAME } 帳號 。 收件匣停收電郵，磁碟機共享連結失效，您無法再上載新檔案。 如欲正常使用服務，請支付所有逾期繳款單。"
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
         "您的帳號至少有一張逾期帳單。您的存取將受限制。${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted, and all services are now blocked until payment. ${ payInvoiceLink }": [
-        "由於有多於一張逾期帳單，目前已凍結您的帳號並終止所有服務直至收到付款。 ${ payInvoiceLink }"
+        "您的帳號已有超過一期以上的逾期繳款單，因此造成帳號限制使用，等待您繳清帳款後，所有服務即恢復正常。 ${ payInvoiceLink }"
       ],
       "Your account has at least one overdue invoice. Your account is restricted. Continued non-payment will block your emails and sharing links. ${ payInvoiceLink }": [
-        "由於出現多於一張逾期帳單，您的帳號將受限制。持續欠款將封鎖您的電郵和共享連結。 ${ payInvoiceLink }"
+        "您的帳號已有超過一期以上的逾期繳款單，因此帳號功能將受限。若持續未繳清款項，則將封鎖您的電郵和共享連結。 ${ payInvoiceLink }"
       ],
       "Your data is ready to import from ${ importedEmailAddressStrong } to your ${ BRAND_NAME } account.": [
         "您的資料已經準備好從 ${ importedEmailAddressStrong } 匯入您的 ${ BRAND_NAME } 帳號。"
@@ -5779,7 +5791,7 @@
         "您的復原短語是按特定順序排列的一系列 12 個單字。"
       ],
       "Customize the look and feel of ${ BRAND_NAME } applications.": [
-        "自訂 ${ BRAND_NAME } 應用程式的外觀與感覺。"
+        "自訂 ${ BRAND_NAME } 應用程式的視覺與設計。"
       ],
       "Drop file here to upload": [
         "拖曳檔案到此處來上傳"
@@ -5794,19 +5806,58 @@
         "我們的系統將此訊息標記為惡意電子郵件。在點擊任何連結或附件前，請先檢查其是否合法。"
       ],
       "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
-        "SimpleLogin 是 ${ BRAND_NAME } 的服務，您的 ${ BRAND_NAME_TWO } 帳號包含了 Hide-my-email 別名。要開始隱藏您的電子郵件地址，請到 SimpleLogin 並建立您的第一個別名。"
+        "SimpleLogin 是 ${ BRAND_NAME } 的服務，您的 ${ BRAND_NAME_TWO } 帳號包含了 Hide-my-email 別名。要開始隱藏您的電子郵件位址，請到 SimpleLogin 並建立您的第一個別名。"
       ],
       "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
-        "如果他們不知道您的電子郵件地址，他們就無法向您傳送垃圾郵件。使用 Hide-my-email 別名保護您的收件匣。"
+        "如果他們不知道您的電子郵件位址，他們就無法向您傳送垃圾郵件。使用 hide-my-email 別名保護您的收件匣。"
       ],
       "This conversation contains one or more expiring messages": [
         "此交談包含了一個或更多過期的訊息"
       ],
       "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
-        "當發送電子郵件時，請使用唯一、拋棄式 Hide-my-email 別名，來代替您的真實電子郵件地址。"
+        "當發送電子郵件時，請使用唯一、拋棄式 Hide-my-email 別名，來代替您的真實電子郵件位址。"
       ],
       "Your files will be encrypted and then saved": [
         "你的檔案將加密後再儲存"
+      ],
+      "${ numberOfImageTrackers } email trackers blocked": [
+        "${ numberOfImageTrackers } 電郵追蹤程式已攔截"
+      ],
+      "${ numberOfImageTrackers } trackers blocked": [
+        "${ numberOfImageTrackers } 個追蹤程式已攔截"
+      ],
+      "${ numberOfUTMTrackers } links cleaned": [
+        "${ numberOfUTMTrackers } 個連結已清理"
+      ],
+      "Are you sure you want to move all messages in this location to Archive?": [
+        "您確定您要把所有郵件移動至此位置進行封存嗎？"
+      ],
+      "Billing cycle: ${ text }": [
+        "繳款單週期：${ text }"
+      ],
+      "Links cleaned:": [
+        "連結已清理:"
+      ],
+      "No links cleaned": [
+        "無需清理的連結"
+      ],
+      "No trackers found": [
+        "未發現追蹤程式"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "訂閱即將結束:於${ byDate }重新啟用以維持${ planName }的福利。${ reactivateLink }"
+      ],
+      "Trackers blocked:": [
+        "追蹤器已封鎖:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "關閉搜尋日期、名稱、電子郵件位址及主旨。於設定中停用搜尋訊息並刪除下載的訊息。"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "您在不洩漏您電子活動給廣告商之情況按於電子郵件中的連結"
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "您可在不提供您的互動、地點及裝置給廣告商使用"
       ]
     },
     "info": {
@@ -6117,7 +6168,7 @@
         "附加螢幕截圖"
       ],
       "Authenticator app": [
-        "驗證 APP"
+        "驗證 app"
       ],
       "Automatically save contacts": [
         "自動儲存聯絡人"
@@ -6525,7 +6576,16 @@
         "與系統同步"
       ],
       "Type a command...": [
-        "輸入命令……"
+        "輸入指令…"
+      ],
+      "Cleaned": [
+        "已清理"
+      ],
+      "Open in a new tab": [
+        "於新分頁開啟"
+      ],
+      "Original link": [
+        "原始鏈接"
       ]
     },
     "Label attach to date input to select a date": {
@@ -6679,7 +6739,7 @@
         "較少"
       ],
       "Manage blocked email addresses": [
-        "管理被封鎖的電子郵件位址"
+        "管理攔截的電子郵件位址"
       ],
       "Manage your folders": [
         "管理您的資料夾"
@@ -6770,6 +6830,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "您需要先重新啟用您的金鑰，才可查看已更新的邀請"
+      ],
+      "Reactivate now": [
+        "現在重新啟用"
       ]
     },
     "Link to calendar event": {
@@ -7084,18 +7147,18 @@
         "資料夾、標籤和篩選器無上限"
       ],
       "Up to 15 email addresses": [
-        "多達 15 個電子郵件地址"
+        "多達 15 組電子郵件位址"
       ],
       "Up to 3 TB of storage": [
         "多達 3 TB的儲存空間"
       ],
       "Hide-my-email aliases": [
-        "隱藏我的郵件別名"
+        "Hide-my-email 別名"
       ]
     },
     "new_plans: feature info": {
       "Create multiple email addresses for your online identities e.g. JohnShopper@${ domain } for shopping accounts, JohnNews@${ domain2 } for news subscription": [
-        "創建多重電子郵件地址身分，如JohnShopper@${ domain }給購物用途， JohnNews@${ domain2 }給訂閱新聞使用"
+        "創建多重電子郵件位址身分，如JohnShopper@${ domain }給購物用途， JohnNews@${ domain2 }給訂閱新聞使用"
       ],
       "Get unlimited aliases with SimpleLogin by ${ BRAND_NAME }": [
         "使用 ${ BRAND_NAME } 的 SimpleLogin 取得無限的別名"
@@ -7122,7 +7185,7 @@
         "${ Filter.Name } 已建立"
       ],
       "Block removed": [
-        "封鎖已移除"
+        "攔截已移除"
       ],
       "Contact group created": [
         "聯絡人群組已建立"
@@ -7134,10 +7197,10 @@
         "密碼已設定成功"
       ],
       "Sender ${ firstSenderAddress } blocked": [
-        "寄件者 ${ firstSenderAddress } 已封鎖"
+        "寄件者 ${ firstSenderAddress } 已攔截"
       ],
       "Senders blocked": [
-        "寄件者已封鎖"
+        "寄件者已攔截"
       ]
     },
     "Oauth instructions": {
@@ -7194,7 +7257,7 @@
         "您隨時都可以在設定中變更。"
       ],
       "More theming options are available in your account Settings > Appearance.": [
-        "更多佈景主題選項在您的帳號設定→「外觀」中提供。"
+        "更多布景主題選項在您的帳號設定→「介面視覺」中提供。"
       ]
     },
     "Option": {
@@ -7275,7 +7338,7 @@
     },
     "PGP key warning": {
       "Email address not found among user ids defined in sending key (${ keyUserIds })": [
-        "寄送金鑰所定義的使用者識別碼 (${ keyUserIds }) 中找不到電子郵件地址"
+        "寄送金鑰所定義的使用者識別碼 (${ keyUserIds }) 中找不到電子郵件位址"
       ]
     },
     "Placeholder": {
@@ -7331,7 +7394,7 @@
         "請先插入連結"
       ],
       "Search date, name, email address, or subject line": [
-        "搜尋日期、名稱、電子郵件地址或主旨"
+        "搜尋日期、名稱、電子郵件位址或主旨"
       ],
       "Search for group name": [
         "搜尋群組名稱"
@@ -7367,7 +7430,7 @@
         "撰寫您的訊息"
       ],
       "Type a command…": [
-        "輸入命令……"
+        "輸入指令…"
       ]
     },
     "Placeholder for contact group name": {
@@ -7845,10 +7908,10 @@
     },
     "specialoffer: Tooltip": {
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
-        "存取被封鎖的內容並進行私密瀏覽。包含 60 多個國家的 1700 台伺服器、最高的 VPN 速度、每個使用者 10 個 VPN 連線、全球串流服務、惡意軟體與廣告封鎖器等。"
+        "存取被攔截的內容並進行私密瀏覽。包含 60 多個國家的 1700 台伺服器、最高的 VPN 速度、每個使用者 10 個 VPN 連線、全球影音串流服務、惡意軟體與廣告攔截器等。"
       ],
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
-        "存取被封鎖的內容並進行私密瀏覽。包含 60 多個國家的 1700 台伺服器、最高的 VPN 速度、10 個 VPN 連線、全球串流服務、惡意軟體與廣告封鎖器等。"
+        "存取攔截的內容並進行私密瀏覽。包含 60 多個國家的 1700 臺伺服器、最高的 VPN 速度、10 個 VPN 連線、全球串流影音服務以及惡意軟體與廣告攔截器等。"
       ],
       "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
         "在世界各地輕鬆存取影音串流內容，包括 Netflix、Disney+、Prime Video 等."
@@ -7866,13 +7929,13 @@
         "儲存空間乃一併用於 ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME } 與 ${ DRIVE_APP_NAME }."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "我們所有具有最高限制的進階版服務：100 個電子郵件地址、支援 10 個自訂網域、無限制的隱藏 Hide-my-email 別名、行事曆分享、加密雲端儲存與檔案分享等。"
+        "我們所有具有最高限制的進階版服務：100 組電子郵件位址、支援 10 組自訂網域、無限制的隱藏 hide-my-email 別名、行事曆分享、加密雲端儲存與檔案分享等。"
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "包含對 1 個自訂電子郵件網域、10 個電子郵件地址、10 個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
+        "包含對 1 個自訂電子郵件網域、10 組電子郵件位址、10 組 hide-my-email 別名、行事曆分享與更多功能的支援。"
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
-        "包含對 3 個自訂電子郵件網域、15 個電子郵件地址、無限個 Hide-my-email 別名、行事曆分享與更多功能的支援。"
+        "包含對 3 個自訂電子郵件網域、15 組電子郵件位址、無限組 hide-my-email 別名、行事曆分享與更多功能的支援。"
       ]
     },
     "Spotlight": {
@@ -8305,10 +8368,10 @@
         "密件副本"
       ],
       "Block sender": [
-        "封鎖寄件者"
+        "攔截寄件者"
       ],
       "Cannot add more addresses": [
-        "無法添加更多地址"
+        "無法加入更多位址"
       ],
       "Carbon Copy": [
         "副本"
@@ -8419,7 +8482,7 @@
         "正在刪除聯絡人"
       ],
       "Don't give spam a chance": [
-        "垃圾郵件沒有存在的空間"
+        "垃圾郵件別拜託、拜拜就好"
       ],
       "Edit contact": [
         "編輯聯絡人"
@@ -8794,13 +8857,28 @@
         "您的 Mail Plus 免費方案將於 ${ textDate } 結束"
       ],
       "(active)": [
-        "（啟用）"
+        "(啟用)"
       ],
       "Day theme": [
         "白天佈景主題"
       ],
       "Night theme": [
         "夜間佈景主題"
+      ],
+      "Billing cycle": [
+        "繳款單週期"
+      ],
+      "Move all messages to Archive": [
+        "將所有郵件移動至封存"
+      ],
+      "No trackers found": [
+        "未發現追蹤程式"
+      ],
+      "Protect your email": [
+        "保護您的電子郵件"
+      ],
+      "This email is protected": [
+        "此電子郵件受保護。"
       ]
     },
     "Title header": {
@@ -9273,6 +9351,33 @@
       ],
       "Very small": [
         "非常小"
+      ]
+    },
+    "Billing cycle option": {
+      "Annually": [
+        "每年"
+      ],
+      "Monthly": [
+        "每月"
+      ],
+      "Two-year": [
+        "兩年"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "驗證的寄件人"
+      ],
+      "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
+        "寄件人驗證失敗: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "驗證的寄件者:${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "驗證金鑰不在信任金鑰清單裡"
       ]
     }
   }
