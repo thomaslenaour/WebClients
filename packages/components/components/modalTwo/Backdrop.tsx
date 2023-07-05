@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { isDialogOpen, isModalOpen } from '@proton/shared/lib/busy';
+import { isDialogOpen, isModalOpen, modalTwoBackdropRootClassName } from '@proton/shared/lib/busy';
 
 import { classnames } from '../../helpers';
 
@@ -38,7 +38,7 @@ const Backdrop = ({ entering, exiting }: Props) => {
     }, []);
 
     const backdropClassName = classnames([
-        'modal-two-backdrop',
+        modalTwoBackdropRootClassName,
         entering && 'modal-two-backdrop--in',
         exiting && 'modal-two-backdrop--out',
         !entering && hidden && 'hidden',
