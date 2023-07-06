@@ -4185,6 +4185,12 @@
     "Gmail forwarding": {
       "Sign in with Google": [
         "Google でサインイン"
+      ],
+      "Automatically forward": [
+        "自動転送"
+      ],
+      "Gmail messages to your inbox": [
+        "で Gmail のメッセージを受信トレイに移動"
       ]
     },
     "Group": {
@@ -5830,6 +5836,12 @@
       ],
       "Your files will be encrypted and then saved": [
         "ファイルは暗号化して保存されます"
+      ],
+      "Links cleaned:": [
+        "清掃したリンク:"
+      ],
+      "Trackers blocked:": [
+        "ブロックしたトラッカー:"
       ]
     },
     "info": {
@@ -9180,6 +9192,11 @@
       ],
       "Yearly, ${ untilString }": [
         "毎年、${ untilString }"
+      ]
+    },
+    "Sender verification details": {
+      "Sender verification": [
+        "送信者検証"
       ]
     }
   }

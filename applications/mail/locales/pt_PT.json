@@ -1171,6 +1171,9 @@
       ],
       "Block email tracking": [
         "Bloquear o rastreamento de e-mails"
+      ],
+      "Change email": [
+        "Alterar o e-mail"
       ]
     },
     "action": {
@@ -4202,6 +4205,24 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Leia o código QR com o seu dispositivo móvel ou visite"
+      ],
+      "Close": [
+        "Fechar"
+      ],
+      "Get mobile app": [
+        "Obtenha a aplicação móvel"
+      ],
+      "Import data": [
+        "Importar os dados"
+      ],
+      "Learn more": [
+        "Saiba mais"
+      ],
+      "Maybe later": [
+        "Talvez mais tarde"
+      ],
+      "Send a message": [
+        "Enviar uma mensagem"
       ]
     },
     "Get started checklist item": {
@@ -9547,6 +9568,32 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualmente, ${ untilString }"
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Transações bancárias"
+      ],
+      "Crypto": [
+        "Cripto"
+      ],
+      "Entertainment": [
+        "Entretenimento"
+      ],
+      "Food and beverage": [
+        "Alimentação e bebidas"
+      ],
+      "Gaming": [
+        "Jogos"
+      ],
+      "Most popular": [
+        "Mais popular"
+      ],
+      "Travel": [
+        "Viagens"
+      ],
+      "Utilities": [
+        "Utilitários"
       ]
     }
   }

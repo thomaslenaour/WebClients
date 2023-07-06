@@ -1171,6 +1171,9 @@
       ],
       "Block email tracking": [
         "Bloquer le suivi des messages"
+      ],
+      "Change email": [
+        "Modifier l'e-mail"
       ]
     },
     "action": {
@@ -4202,6 +4205,45 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Avec votre appareil mobile, scannez ce QR code ou visitez"
+      ],
+      "${ MAIL_APP_NAME } app": [
+        "Application ${ MAIL_APP_NAME }"
+      ],
+      "Auto-forward Gmail": [
+        "Transfert automatique depuis Gmail"
+      ],
+      "Close": [
+        "Fermer"
+      ],
+      "Get free storage": [
+        "Obtenir du stockage gratuit"
+      ],
+      "Get mobile app": [
+        "Télécharger l'application mobile"
+      ],
+      "Get the App": [
+        "Téléchargez l'application"
+      ],
+      "Import data": [
+        "Importer les données"
+      ],
+      "Learn more": [
+        "En savoir plus"
+      ],
+      "Maybe later": [
+        "Peut-être plus tard"
+      ],
+      "Open checklist": [
+        "Ouvrir la checklist"
+      ],
+      "Protection from trackers": [
+        "Protection contre les traqueurs"
+      ],
+      "Send a message": [
+        "Envoyer un message"
+      ],
+      "Set recovery method": [
+        "Définir une méthode de récupération"
       ]
     },
     "Get started checklist item": {
@@ -9611,6 +9653,34 @@
       ],
       "Yearly, ${ untilString }": [
         "Chaque année, ${ untilString }"
+      ]
+    },
+    "Online accounts": {
+      "Have an account with one of these services? Just click to change the email address to your ${ MAIL_APP_NAME } address.": [
+        "Vous avez un compte avec un de ces services ? Cliquez pour remplacer votre adresse e-mail par votre adresse ${ MAIL_APP_NAME }."
+      ]
+    },
+    "Online Accounts Name": {
+      "Crypto": [
+        "Crypto"
+      ],
+      "Entertainment": [
+        "Divertissement"
+      ],
+      "Food and beverage": [
+        "Nourriture et boissons"
+      ],
+      "Gaming": [
+        "Jeux"
+      ],
+      "Most popular": [
+        "Le plus populaire"
+      ],
+      "Travel": [
+        "Voyages"
+      ],
+      "Utilities": [
+        "Utilitaires"
       ]
     }
   }
