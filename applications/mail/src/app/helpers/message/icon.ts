@@ -592,7 +592,7 @@ export const getReceivedStatusIcon = (
                 };
             }
             if (verificationStatus === SIGNED_AND_VALID) {
-                if (!pinnedKeysVerified) {
+                if (hasPinnedKeys && !pinnedKeysVerified) {
                     return {
                         ...result,
                         fill: WARNING,
@@ -653,7 +653,7 @@ export const getReceivedStatusIcon = (
                 };
             }
             if (verificationStatus === SIGNED_AND_VALID) {
-                if (!pinnedKeysVerified) {
+                if (hasPinnedKeys && !pinnedKeysVerified) {
                     return {
                         ...result,
                         fill: WARNING,
@@ -699,7 +699,7 @@ export const getReceivedStatusIcon = (
                 };
             }
             if (verificationStatus === SIGNED_AND_VALID) {
-                if (!pinnedKeysVerified) {
+                if (hasPinnedKeys && !pinnedKeysVerified) {
                     return {
                         ...result,
                         fill: WARNING,
