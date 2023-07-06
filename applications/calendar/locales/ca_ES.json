@@ -163,7 +163,7 @@
         "Personalitzar importació"
       ],
       "Decline invite": [
-        "Declina invitació"
+        "Rebutja la invitació"
       ],
       "Delete": [
         "Elimina"
@@ -285,10 +285,10 @@
         "Importar des de .csv o vCard"
       ],
       "Join calendar": [
-        "Uniu-vos al calendari"
+        "Uneix-me al calendari"
       ],
       "Keep current time zone": [
-        "Mantenir el fus horari actual"
+        "Manté la zona horària actual"
       ],
       "Load image": [
         "Carrega la imatge"
@@ -438,7 +438,7 @@
         "Seleccionar-ho tot"
       ],
       "Select time zone": [
-        "Selecciona el fus horari"
+        "Selecciona la zona horària"
       ],
       "Send": [
         "Enviar"
@@ -858,7 +858,7 @@
     },
     "Calendar self sharing error": {
       "You already have access to this calendar": [
-        "Ja teniu accés a aquest calendari."
+        "Ja teniu accés a aquest calendari"
       ]
     },
     "Calendar share limit modal": {
@@ -875,25 +875,25 @@
         "No és possible compartir aquest calendari amb més usuaris de ${ BRAND_NAME }."
       ],
       "You have reached the maximum of ${ MAX_CALENDAR_MEMBERS } member for this calendar.\nTo share this calendar with more ${ BRAND_NAME } accounts, remove some members.": [
-        "Heu assolit el màxim de ${ MAX_CALENDAR_MEMBERS } membre per aquest calendari.\nPer compartir aquest calendari amb altres comptes de ${ BRAND_NAME }, esborreu-ne algun membre.",
-        "Heu assolit el màxim de ${ MAX_CALENDAR_MEMBERS } membres per aquest calendari.\nPer compartir aquest calendari amb altres comptes de ${ BRAND_NAME }, esborreu-ne algun membre."
+        "Heu assolit el màxim d'${ MAX_CALENDAR_MEMBERS } membre per a aquest calendari.\nPer a compartir aquest calendari amb més comptes de ${ BRAND_NAME }, esborreu-ne alguns membres.",
+        "Heu assolit el màxim de ${ MAX_CALENDAR_MEMBERS } membres per a aquest calendari.\nPer a compartir aquest calendari amb més comptes de ${ BRAND_NAME }, esborreu-ne alguns membres."
       ],
       "You have reached the maximum of ${ MAX_LINKS_PER_CALENDAR } link for this calendar.\nTo create a new link to this calendar, delete an existing one.": [
-        "Heu assolit el màxim de ${ MAX_LINKS_PER_CALENDAR } enllaç per aquest calendari.\nPer crear un enllaç a aquest calendari, esborreu el que hi ha.",
-        "Heu assolit el màxim de ${ MAX_LINKS_PER_CALENDAR } enllaços per aquest calendari.\nPer crear un enllaç a aquest calendari, esborreu-ne un dels que hi ha."
+        "Heu assolit el màxim d'${ MAX_LINKS_PER_CALENDAR } enllaç per a aquest calendari.\nPer a crear un enllaç a aquest calendari, esborreu-ne un d'existent.",
+        "Heu assolit el màxim de ${ MAX_LINKS_PER_CALENDAR } enllaços per a aquest calendari.\nPer a crear un enllaç a aquest calendari, esborreu-ne un d'existent."
       ]
     },
     "Calendar sharing access option label": {
       "Edit (view, create and edit event details)": [
-        "Edita (veu, crea i edita els detalls de l'esdeveniment)"
+        "Edita (mostra, crea i edita els detalls de l'esdeveniment)"
       ],
       "View (see all event details)": [
-        "Mostra (veu tots els detalls de l'esdeveniment)"
+        "Mostra (tots els detalls de l'esdeveniment)"
       ]
     },
     "Calendar sharing error": {
       "Failed to retrieve contact information for ${ address }": [
-        "No s'ha pogut recuperar la informació de contacte per ${ address }."
+        "No s'ha pogut recuperar la informació de contacte per a ${ address }."
       ]
     },
     "Calendar sidebar dropdown item": {
@@ -2150,31 +2150,31 @@
         "Alguns contactes no tenen una adreça de correu electrònic vàlida: ${ list }"
       ],
       "${ list } doesn't have an email address": [
-        "${ list } no té una adreça de correu electrònic.",
-        "Alguns contactes no tenen una adreça de correu electrònic: ${ list }."
+        "${ list } no té una adreça de correu electrònic",
+        "Alguns contactes no tenen una adreça de correu electrònic: ${ list }"
       ],
       "${ list } has invalid emails": [
         "${ list } té correus electrònics incorrectes.",
         "Alguns grups tenen correus electrònics incorrectes: ${ list }"
       ],
       "${ list } has no contacts": [
-        "${ list } no té contactes.",
+        "${ list } no té contactes",
         "Alguns grups no tenen contactes: ${ list }"
       ],
       "A group with this name already exists": [
         "Ja existeix un grup amb aquest nom"
       ],
       "Account does not exist": [
-        "El compte no existeix."
+        "El compte no existeix"
       ],
       "Address primary private key not found": [
         "No s'ha trobat la clau privada primària de l'adreça"
       ],
       "Already a member of this calendar": [
-        "Ja és membre del calendari."
+        "Ja sou membre d'aquest calendari"
       ],
       "Answer failed to be sent": [
-        "No s'ha pogut enviar la resposta."
+        "No s'ha pogut enviar la resposta"
       ],
       "Authentication canceled.": [
         "S'ha cancel·lat l'autenticació."
@@ -2186,7 +2186,7 @@
         "Límit de calendari assolit"
       ],
       "Cancellation failed to be sent": [
-        "No s'ha pogut enviar la cancel·lació."
+        "No s'ha pogut enviar la cancel·lació"
       ],
       "Contact could not be saved": [
         "El contacte no pot ser desat"
@@ -2201,7 +2201,7 @@
         "Signatura del contacte no verificada"
       ],
       "Decryption error: Decryption of this event's content failed.": [
-        "Error de desxifratge: no s'ha pogut desxifrar el contingut d'aquest esdeveniment."
+        "S'ha produït un error de desxifratge: no s'ha pogut desxifrar el contingut d'aquest esdeveniment."
       ],
       "Deselect at least ${ calendarsToFixCount } calendar": [
         "Desseleccioneu almenys ${ calendarsToFixCount } calendari",
@@ -2224,10 +2224,10 @@
         "El correu electrònic no és vàlid"
       ],
       "Ends on date cannot be empty": [
-        "La data final no pot estar buida."
+        "La data final no pot estar buida"
       ],
       "Ends on date must be after start time": [
-        "La data final ha de ser posterior a la data d'inici."
+        "La data final ha de ser posterior a la data d'inici"
       ],
       "Enter 6 digits": [
         "Introduïu 6 dígits"
@@ -2239,7 +2239,7 @@
         "Error: ${ errorMessage }"
       ],
       "Failed to get original occurrence in series": [
-        "No s'ha pogut obtenir l'ocurrència d'origen de la sèrie."
+        "No s'ha pogut obtenir l'ocurrència d'origen de la sèrie"
       ],
       "Folder name cannot be empty.": [
         "El nom de la carpeta no pot estar buit."
@@ -2257,13 +2257,13 @@
         "Contrasenya de bústia incorrecta. Torneu a provar-ho."
       ],
       "Interval cannot be empty": [
-        "L'interval no pot estar buit."
+        "L'interval no pot estar buit"
       ],
       "Invalid email address": [
-        "Adreça de correu electrònic no vàlida"
+        "L'adreça de correu electrònic no és vàlida"
       ],
       "Invalid link to the event": [
-        "Enllaç a esdeveniment no vàlid"
+        "L'enllaç a l'esdeveniment no és vàlid"
       ],
       "Invalid name": [
         "Nom no vàlid"
@@ -2275,13 +2275,13 @@
         "Codi de verificació no vàlid"
       ],
       "Invitation failed to be sent": [
-        "No s'ha pogut enviar la invitació."
+        "No s'ha pogut enviar la invitació"
       ],
       "It is only possible to create events between ${ minDateString } - ${ maxDateString }": [
-        "Només és possible crear esdeveniments entre ${ minDateString } i ${ maxDateString }."
+        "Només és possible crear esdeveniments entre ${ minDateString } i ${ maxDateString }"
       ],
       "It is only possible to move events between ${ minDateString } - ${ maxDateString }": [
-        "Només és possible moure esdeveniments entre ${ minDateString } i ${ maxDateString }."
+        "Només és possible moure esdeveniments entre ${ minDateString } i ${ maxDateString }"
       ],
       "Label name cannot be empty.": [
         "El nom de l'etiqueta no pot estar buit."
@@ -2315,13 +2315,13 @@
         "No hi ha cap clau WKD per a l'usuari vàlida per a l'enviament"
       ],
       "Not a ${ BRAND_NAME } account": [
-        "No és un compte ${ BRAND_NAME }."
+        "No és un compte de ${ BRAND_NAME }"
       ],
       "Not a valid number": [
         "Número no vàlid"
       ],
       "Number of occurrences cannot be empty": [
-        "El nombre d’ocurrències no pot estar buit."
+        "El nombre d’ocurrències no pot estar buit"
       ],
       "One of the contacts has no email address: ${ noEmailsContactNamesList }": [
         "Un dels contactes no té adreça de correu electrònic: ${ noEmailsContactNamesList }",
@@ -2338,7 +2338,7 @@
         "Les contrasenyes no coincideixen"
       ],
       "Please create an address first.": [
-        "Creeu la vostra adreça primer."
+        "Creeu una adreça primer."
       ],
       "Please fix the highlighted conflict to proceed.": [
         "Arregleu el conflicte ressaltat per continuar.",
@@ -2400,10 +2400,10 @@
         "S'ha produït un error, ${ refresh } per continuar. Si continueu veient aquest missatge d'error, poseu-vos en contacte amb el nostre ${ supportTeam }."
       ],
       "Start time must be before end time": [
-        "L’hora d’inici ha de ser abans de l’hora de finalització."
+        "L’hora d’inici ha de ser abans de l’hora de finalització"
       ],
       "The address might be misspelled": [
-        "És possible que l'adreça estigui mal escrita."
+        "És possible que l'adreça estigui mal escrita"
       ],
       "The email addresses do not match": [
         "Les adreces de correu electrònic no coincideixen"
@@ -2457,7 +2457,7 @@
         "Error desconegut"
       ],
       "Validation error": [
-        "Error de validació"
+        "S'ha produït un error de validació"
       ],
       "You already added this holidays calendar": [
         "Ja heu afegit aquest calendari de festius"
@@ -3163,7 +3163,7 @@
         "${ BRAND_NAME } no es pot connectar al vostre compte extern. Assegureu-vos que:"
       ],
       "${ BRAND_NAME } can't connect to your Yahoo account. Please make sure that the mail server address and port number are correct.": [
-        "${ BRAND_NAME } no es pot connectar al vostre compte Yahoo. Assegureu-vos que l'adreça del servidor de correu i el número del port són correctes."
+        "${ BRAND_NAME } no es pot connectar al vostre compte de Yahoo. Assegureu-vos que l'adreça del servidor de correu i el número del port són correctes."
       ],
       "${ BRAND_NAME } can't connect to your Yahoo account. Please make sure that:": [
         "${ BRAND_NAME } no es pot connectar al vostre compte de Yahoo. Assegureu-vos que:"
@@ -3218,37 +3218,37 @@
         "Segons el vostre proveïdor de correu electrònic, és possible que hàgiu de generar un ${ knowledgeBaseLink } abans de poder importar a ${ BRAND_NAME }."
       ],
       "Expand the dropdown menu by clicking on the 3 dots (...).": [
-        "Amplieu el menú desplegable fent clic als 3 punts (...)."
+        "Desplegueu el menú fent clic als 3 punts (...)."
       ],
       "Generate the ${ boldAppPassword } and use it in place of your regular password when prompted by ${ BRAND_NAME }.": [
         "Genereu la ${ boldAppPassword } i utilitzeu-la en lloc de la vostra contrasenya habitual quan us ho demani ${ BRAND_NAME }."
       ],
       "Go to ${ boldAccountInfo } under your profile in ${ yahooMailLink }.": [
-        "Aneu a ${ boldAccountInfo } sota el vostre perfil a ${ yahooMailLink }."
+        "Aneu a ${ boldAccountInfo } al vostre perfil de ${ yahooMailLink }."
       ],
       "Go to ${ boldAccountSecurity }.": [
-        "Anar a ${ boldAccountSecurity }."
+        "Ves a ${ boldAccountSecurity }."
       ],
       "Open your ${ yahooMailLink } contacts.": [
-        "Obríeu els vostres contactes de ${ yahooMailLink }."
+        "Obriu els vostres contactes de ${ yahooMailLink }."
       ],
       "Select ${ boldExportCSV }.": [
         "Selecciona ${ boldExportCSV }."
       ],
       "To import a calendar to ${ BRAND_NAME }, you need the ${ knowledgeBaseLink }. Download it from Yahoo in 3 easy steps:": [
-        "Per importar un calendari a ${ BRAND_NAME }, necessiteu ${ knowledgeBaseLink }. Descarregueu-lo de Yahoo en 3 senzills passos:"
+        "Per a importar un calendari a ${ BRAND_NAME }, necessiteu el ${ knowledgeBaseLink }. Descarregueu-lo de Yahoo en 3 senzills passos:"
       ],
       "To import a calendar to ${ BRAND_NAME }, you need the ${ knowledgeBaseLink }. Download this before you start the import process.": [
-        "Per importar un calendari a ${ BRAND_NAME }, necessiteu ${ knowledgeBaseLink }. Descarregueu-lo abans de començar la importació."
+        "Per a importar un calendari a ${ BRAND_NAME }, necessiteu el ${ knowledgeBaseLink }. Descarregueu-lo abans de començar el procés d'importació."
       ],
       "To import contacts to ${ BRAND_NAME }, you need a ${ knowledgeBaseLink }. Download it from Yahoo in 3 easy steps:": [
-        "Per importar contactes a ${ BRAND_NAME }, necessiteu un ${ knowledgeBaseLink }. Descarregueu-lo de Yahoo en 3 senzills passos:"
+        "Per a importar contactes a ${ BRAND_NAME }, necessiteu un ${ knowledgeBaseLink }. Descarregueu-lo de Yahoo en 3 senzills passos:"
       ],
       "To import contacts to ${ BRAND_NAME }, you need a ${ knowledgeBaseLink }. Download this before you start the import process.": [
-        "Per importar contactes a ${ BRAND_NAME }, necessiteu un ${ knowledgeBaseLink }. Descarregueu-lo abans de començar la importació."
+        "Per a importar contactes a ${ BRAND_NAME }, necessiteu un ${ knowledgeBaseLink }. Descarregueu-lo abans de començar el procés d'importació."
       ],
       "To import emails to ${ BRAND_NAME }, you need an ${ appPasswordLink } from Yahoo. Get it by following these steps:": [
-        "Per importar correus electrònics a ${ BRAND_NAME }, necessiteu un ${ appPasswordLink } de Yahoo. Aconsegueix-ho seguint aquests passos:"
+        "Per a importar correus electrònics a ${ BRAND_NAME }, necessiteu un ${ appPasswordLink } de Yahoo. Aconseguiu-lo seguint aquests passos:"
       ]
     },
     "Import instructions emphasis": {
@@ -3276,7 +3276,7 @@
         "contrasenya d'aplicació o activa IMAP"
       ],
       "CSV or a VCF (vCard) file": [
-        "CSV o un fitxer VCF (vCard)"
+        "Fitxer CSV o VCF (vCard)"
       ],
       "full calendar view": [
         "vista de calendari completa"
@@ -3287,18 +3287,18 @@
     },
     "Import instructions step": {
       "Go to ${ calendarViewLink } in Yahoo.": [
-        "Vés a ${ calendarViewLink } a Yahoo."
+        "Ves a ${ calendarViewLink } en Yahoo."
       ],
       "Mouse over the calendar you want to import and open the dropdown menu.": [
         "Passeu el cursor per sobre del calendari que voleu importar i obriu el menú desplegable."
       ],
       "Select ${ boldExport } to export the calendar as an ICS file.": [
-        "Seleccioneu ${ boldExport } per exportar el calendari com a fitxer ICS."
+        "Seleccioneu ${ boldExport } per a exportar el calendari com a fitxer ICS."
       ]
     },
     "Import provider": {
       "Import from ${ provider }": [
-        "Importar des de ${ provider }"
+        "Importa des de ${ provider }"
       ],
       "Other": [
         "Altres"
@@ -3420,7 +3420,7 @@
         "Els participants afegits o eliminats seran notificats de tots els esdeveniments d'aquesta sèrie."
       ],
       "Added and removed participants will be notified.": [
-        "Els participants afegits i eliminats seran notificats."
+        "Els participants afegits i els suprimits seran notificats."
       ],
       "Address Verification with Trusted Keys is enabled for this address. To be able to send to this address, first trust public keys that can be used for sending.": [
         "La verificació d'adreça amb claus de confiança està habilitada per a aquesta adreça. Per tal de poder enviar a aquesta adreça, verifiqueu la confiança en les claus públiques que es poden utilitzar per enviar."
@@ -3543,13 +3543,13 @@
         "Introduïu la vostra contrasenya (com a administrador d'organització)."
       ],
       "Existent and added participants will be notified.": [
-        "Els participants existents i afegits seran notificats."
+        "Els participants existents i els afegits seran notificats."
       ],
       "Existent and removed participants will be notified.": [
         "Els participants existents i eliminats seran notificats."
       ],
       "Existent, added and removed participants will be notified.": [
-        "Els participants existents, afegits i eliminats seran notificats."
+        "Els participants existents, els afegits i els suprimits seran notificats."
       ],
       "Forward incoming mail from another account to your secure ${ MAIL_APP_NAME } inbox.": [
         "Transferiu els missatges entrants d'un altre compte vers la vostra safata d'entrada segura de ${ MAIL_APP_NAME }."
@@ -3740,7 +3740,7 @@
         "Refrescar la pàgina o ${ link } resoldrà automàticament la majoria dels problemes."
       ],
       "Removed participants will be notified.": [
-        "Els participants eliminats seran notificats."
+        "Els participants suprimits seran notificats."
       ],
       "Select the email format you want to be used by default when sending an email to this email address.": [
         "Seleccioni el format de correu electronic que vols fer us per defecte quan enviis un correu electronic a aquesta direcció."
@@ -3782,7 +3782,7 @@
         "L'organitzador no pot ser notificat que voleu canviar la vostra resposta:"
       ],
       "The organizer could not be notified that you changed your answer:": [
-        "L'organitzador podria no ser notificat del fet que heu canviat la vostra resposta:"
+        "No s'ha pogut notificar a l'organitzador que heu canviat la resposta:"
       ],
       "The organizer has updated some of the events in this series. Changing the calendar is not supported yet for this type of recurring events.": [
         "L'organitzador ha actualitzat alguns dels esdeveniments d'aquesta sèrie.\nEl canvi de calendari encara no és compatible amb aquest tipus d'esdeveniments recurrents."
@@ -3896,7 +3896,7 @@
         "Anual"
       ],
       "You already joined this calendar": [
-        "Ja us heu unit a aquest calendari."
+        "Ja us heu unit a aquest calendari"
       ],
       "You are about to open another browser tab and visit:": [
         "Esteu a punt d'obrir una altra pestanya del navegador i visitar:"
@@ -3947,7 +3947,7 @@
         "Actualitzareu tots els esdeveniments d'aquesta sèrie. Els participants actuals, afegits i eliminats seran notificats."
       ],
       "You will update all the events in this series. Removed participants will be notified.": [
-        "Actualitzareu tots els esdeveniments d'aquesta sèrie. Els participants eliminats seran notificats."
+        "Actualitzareu tots els esdeveniments d'aquesta sèrie. Els participants suprimits seran notificats."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
         "El vostre compte de ${ BRAND_NAME } actualment està suspès. Passats 28 dies, els correus electrònics deixaran de lliurar-se a la vostra safata d'entrada, els enllaços compartits de Drive es bloquejaran i no podreu carregar-hi fitxers nous. Per a restablir el servei normal, pagueu les factures vençudes."
@@ -4070,8 +4070,8 @@
     },
     "Information about why calendar event cannot be saved": {
       "At most ${ MAX_ATTENDEES } participant is allowed per invitation": [
-        "Es permet un màxim d'${ MAX_ATTENDEES } participant per invitació.",
-        "Es permet un màxim de ${ MAX_ATTENDEES } participants per invitació."
+        "Es permet un màxim d'${ MAX_ATTENDEES } participant per invitació",
+        "Es permet un màxim de ${ MAX_ATTENDEES } participants per invitació"
       ],
       "Creating invites in a shared calendar is not allowed": [
         "No es permet crear invitacions en un calendari compartit."
@@ -4246,7 +4246,7 @@
         "Duració de l'esdeveniment"
       ],
       "Event notifications": [
-        "Notificacions d'esdeveniment"
+        "Notificacions de l'esdeveniment"
       ],
       "Event title": [
         "Títol de l'esdeveniment"
@@ -4624,7 +4624,7 @@
         "Afegeix dies festius"
       ],
       "Cannot add more calendars": [
-        "No es poden afegir més calendaris."
+        "No es poden afegir més calendaris"
       ],
       "Edit calendar": [
         "Edita el calendari"
@@ -4834,10 +4834,10 @@
         "S'ha afegit el calendari"
       ],
       "Adding holidays calendar failed": [
-        "Ha fallat l'addició del calendari de festius"
+        "No s'ha pogut afegir el calendari de festius"
       ],
       "Calendar updated": [
-        "Calendari actualitzat"
+        "S'ha actualitzat el calendari"
       ]
     },
     "Notification in share calendar modal": {
@@ -5134,7 +5134,7 @@
         "Una manera de contactar amb tu"
       ],
       "Add a calendar description": [
-        "Afegeix una descripció de calendari"
+        "Afegeix una descripció al calendari"
       ],
       "Add a calendar name": [
         "Afegeix un nom al calendari"
@@ -5149,7 +5149,7 @@
         "Afegeix participants"
       ],
       "Add title": [
-        "Afegeix títol"
+        "Afegeix un títol"
       ],
       "E.g., ": [
         "Ex., "
@@ -5281,18 +5281,18 @@
     },
     "Settings update growler warning": {
       "Failed to update settings": [
-        "No s'han pogut actualitzar les preferències."
+        "No s'han pogut actualitzar les preferències"
       ]
     },
     "Share calendar assistive text": {
       "To invite non-${ BRAND_NAME } users, share your calendar with a link.": [
-        "Per convidar usuaris fora de ${ BRAND_NAME }, compartiu el vostre calendari amb un enllaç."
+        "Per convidar usuaris de fora de ${ BRAND_NAME }, compartiu el vostre calendari amb un enllaç."
       ]
     },
     "Share calendar max shares reached error": {
       "You have exceeded the maximum of ${ MAX_CALENDAR_MEMBERS } member per calendar": [
-        "Heu sobrepassat el nombre màxim de ${ MAX_CALENDAR_MEMBERS } membre per calendari.",
-        "Heu sobrepassat el nombre màxim de ${ MAX_CALENDAR_MEMBERS } membres per calendari."
+        "Heu sobrepassat el màxim d'${ MAX_CALENDAR_MEMBERS } membre per calendari",
+        "Heu sobrepassat el màxim de ${ MAX_CALENDAR_MEMBERS } membres per calendari"
       ]
     },
     "Share calendar modal description": {
@@ -5302,7 +5302,7 @@
     },
     "Share calendar modal input placeholder": {
       "Enter an email address or group name": [
-        "Introduïu una adreça de correu o un nom de grup."
+        "Introduïu una adreça de correu electrònic o un nom de grup"
       ]
     },
     "Share calendar modal title": {
@@ -5618,7 +5618,7 @@
         "URL del calendari"
       ],
       "To subscribe to an external or public calendar and its updates, enter the URL. A read-only version of the calendar will be added to your Other calendars.\n${ kbLink }": [
-        "Per subscriure-us a un calendari extern o públic i a les seves actualitzacions, introduïu-ne la URL. Una versió de només lectura del calendari s'afegirà als vostres Altres calendaris.\n${ kbLink }"
+        "Per subscriure-us a un calendari extern o públic i a les seves actualitzacions, introduïu-ne l'URL. Una versió de només lectura del calendari s'afegirà als vostres Altres calendaris.\n${ kbLink }"
       ]
     },
     "Subscribe to calendar modal description": {
@@ -5932,10 +5932,10 @@
         "Canviar la meva resposta"
       ],
       "Choose how many times this event will repeat": [
-        "Trieu quantes vegades es repetirà aquest esdeveniment."
+        "Trieu quantes vegades es repetirà aquest esdeveniment"
       ],
       "Choose how often this event repeats": [
-        "Trieu la freqüència amb què es repeteix aquest esdeveniment."
+        "Trieu la freqüència amb què es repeteix aquest esdeveniment"
       ],
       "Clearing data": [
         "Netejant dades"
@@ -5997,7 +5997,7 @@
         "Eliminant contactes"
       ],
       "Drop to upload": [
-        "Arrossega per carregar"
+        "Arrossegueu aquí per carregar"
       ],
       "Edit contact": [
         "Editar contacte"
@@ -6085,7 +6085,7 @@
         "Obrir el menú de preferències"
       ],
       "Organizer cannot be notified": [
-        "No es pot notificar a l'organitzador."
+        "No es pot notificar a l'organitzador"
       ],
       "Other information": [
         "Altres dades"
@@ -6094,7 +6094,7 @@
         "Altres noms"
       ],
       "Participants cannot be notified": [
-        "No es pot notificar als participants."
+        "No es pot notificar als participants"
       ],
       "Phone numbers": [
         "Números de telèfon"
@@ -6124,13 +6124,13 @@
         "Demanar un codi nou"
       ],
       "Reshare your calendars": [
-        "Compartiu de nou els vostres calendaris."
+        "Torneu a compartir els vostres calendaris"
       ],
       "Save changes": [
         "Desa els canvis"
       ],
       "Select a day in the month": [
-        "Seleccioneu un dia del mes."
+        "Seleccioneu un dia del mes"
       ],
       "Select a theme": [
         "Seleccioneu un tema"
@@ -6142,40 +6142,40 @@
         "Seleccionar grup de contactes"
       ],
       "Select event end date": [
-        "Seleccioneu la data final de l'esdeveniment."
+        "Seleccioneu la data final de l'esdeveniment"
       ],
       "Select event end time": [
-        "Seleccioneu l'hora de finalització de l'esdeveniment."
+        "Seleccioneu l'hora de finalització de l'esdeveniment"
       ],
       "Select event frequency": [
         "Seleccioneu la freqüència de l'esdeveniment."
       ],
       "Select event frequency interval": [
-        "Seleccioneu l'interval de freqüència dels esdeveniments."
+        "Seleccioneu l'interval de freqüència de l'esdeveniment"
       ],
       "Select event start date": [
-        "Seleccioneu la data d'inici de l'esdeveniment."
+        "Seleccioneu la data d'inici de l'esdeveniment"
       ],
       "Select event start time": [
-        "Seleccioneu la data d'inici de l'esdeveniment."
+        "Seleccioneu l'hora d'inici de l'esdeveniment"
       ],
       "Select event's last date": [
-        "Seleccioneu l'última data de l'esdeveniment."
+        "Seleccioneu la data final de l'esdeveniment"
       ],
       "Select the time to send this notification": [
-        "Seleccioneu l'hora per enviar aquesta notificació."
+        "Seleccioneu l'hora per enviar aquesta notificació"
       ],
       "Select the time zone for the event end time": [
-        "Seleccioneu el fus horari per a l'hora de finalització de l'esdeveniment."
+        "Seleccioneu la zona horària per a l'hora de finalització de l'esdeveniment"
       ],
       "Select the time zone for the event start time": [
-        "Seleccioneu el fus horari per a l'hora d'inici de l'esdeveniment."
+        "Seleccioneu la zona horària per a l'hora d'inici de l'esdeveniment"
       ],
       "Select the way to send this notification": [
         "Seleccioneu la manera d’enviar aquesta notificació"
       ],
       "Select when this event will stop happening": [
-        "Seleccioneu quan deixarà de succeir aquest esdeveniment."
+        "Seleccioneu quan deixarà de succeir aquest esdeveniment"
       ],
       "Select when you want this notification to be sent": [
         "Selecciona quan vols que s'enviï aquesta notificació"
@@ -6187,7 +6187,7 @@
         "Enviar comentaris"
       ],
       "Send invitation": [
-        "Envia invitació"
+        "Envia una invitació"
       ],
       "Settings": [
         "Preferències"
@@ -6229,10 +6229,10 @@
         "Avís: presumpte lloc web fals"
       ],
       "We've locked some calendars to protect your data": [
-        "Alguns calendaris s'han bloquejat per protegir les vostres dades."
+        "Hem bloquejat alguns calendaris per a protegir les vostres dades"
       ],
       "We've locked your calendars to protect your data": [
-        "Els vostres calendaris s'han bloquejat per protegir les vostres dades."
+        "Hem bloquejat els vostres calendaris per a protegir les dades"
       ],
       "What would you like to import?": [
         "Què li agradaria importar?"
@@ -6241,7 +6241,7 @@
         "Novetats"
       ],
       "You have invited participants with equivalent emails": [
-        "Heu convidat a participants amb correus electrònics equivalents."
+        "Heu convidat participants amb correus electrònics idèntics"
       ],
       "Your calendar link": [
         "Enllaç del vostre calendari"
@@ -6373,7 +6373,7 @@
         "Compartit amb xifratge d'extrem a extrem"
       ],
       "Shared end-to-end encrypted with verified contact": [
-        "Compartit amb xifratge d'extrem a extrem amb contacte verificat"
+        "Compartit amb xifratge d'extrem a extrem amb un contacte verificat"
       ]
     },
     "Validation": {
