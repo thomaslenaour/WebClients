@@ -6500,6 +6500,11 @@
       "Yearly, ${ untilString }": [
         "每年, ${ untilString }"
       ]
+    },
+    "Share calendar assistive text": {
+      "To invite non-${ BRAND_NAME } users, share your calendar with a link.": [
+        "分享日历链接即可邀请非 ${ BRAND_NAME } 用户."
+      ]
     }
   }
 }
