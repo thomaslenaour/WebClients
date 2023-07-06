@@ -2943,6 +2943,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Kontakty, které nechcete sloučit ani zachovat, označte pro smazání. Ke smazání dojde po kliknutí na tlačítko pro sloučení"
+      ],
+      "You can read the message and click on links without being tracked with email tracker protection.": [
+        "Zprávu si můžete přečíst a kliknout na odkazy, aniž byste byli sledováni pomocí ochrany proti sledování e-mailů."
+      ],
+      "You can read the message and click on links without being tracked.": [
+        "Zprávu si můžete přečíst a klikat na odkazy, aniž byste byli sledováni."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6146,6 +6152,30 @@
       ],
       "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
         "Předplatné vyprší: opětovně aktivujte dne ${ byDate } pro zachování vašich výhod tarifu ${ planName }. ${ reactivateLink }"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } vyčištěný odkaz",
+        "${ numberOfUTMTrackers } vyčištěné odkazy",
+        "${ numberOfUTMTrackers } vyčištěných odkazů",
+        "${ numberOfUTMTrackers } vyčištěných odkazů"
+      ],
+      "Links cleaned:": [
+        "Vyčištěno odkazů:"
+      ],
+      "No links cleaned": [
+        "Nebyl vyčištěn žádný odkaz"
+      ],
+      "Trackers blocked:": [
+        "Zablokováno sledování:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Vypněte vyhledávání pouze podle data, jména nebo e-mailové adresy. Chcete-li zakázat vyhledávání obsahu zpráv a odstranit stažené zprávy, přejděte do Nastavení."
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "V tomto e-mailu můžete klikat na odkazy, aniž by došlo k profilování a úniku informací o vaší online aktivitě k inzerentům."
+      ],
+      "You can read this email without revealing your interactions, location, or device to advertisers.": [
+        "Tento e-mail si můžete přečíst, aniž byste inzerentům prozradili své interakce, polohu nebo zařízení."
       ]
     },
     "info": {
@@ -6877,6 +6907,12 @@
       ],
       "Open in a new tab": [
         "Otevřít na nové kartě"
+      ],
+      "Cleaned": [
+        "Vyčištěno"
+      ],
+      "Original link": [
+        "Původní odkaz"
       ]
     },
     "Label attach to date input to select a date": {
@@ -9958,6 +9994,17 @@
     "Sender verification details": {
       "Sender verification failed: ${ icon.senderVerificationDetails.description }": [
         "Ověření odesílatele selhalo: ${ icon.senderVerificationDetails.description }"
+      ],
+      "Sender verification": [
+        "Ověření odesílatele"
+      ],
+      "Sender verified: ${ icon.senderVerificationDetails.description }": [
+        "Odesílatel ověřen: ${ icon.senderVerificationDetails.description }"
+      ]
+    },
+    "Sender verification error": {
+      "Verification key is not in the list of trusted keys.": [
+        "Ověřovací klíč není v seznamu důvěryhodných klíčů."
       ]
     }
   }

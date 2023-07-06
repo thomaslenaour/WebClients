@@ -1163,6 +1163,9 @@
       ],
       "Move all to archive": [
         "Mover tudo para o arquivo"
+      ],
+      "Change email": [
+        "Alterar o e-mail"
       ]
     },
     "action": {
@@ -4023,6 +4026,24 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Leia o código QR com o seu dispositivo móvel ou visite"
+      ],
+      "Close": [
+        "Fechar"
+      ],
+      "Get mobile app": [
+        "Obtenha a aplicação móvel"
+      ],
+      "Import data": [
+        "Importar os dados"
+      ],
+      "Learn more": [
+        "Saiba mais"
+      ],
+      "Maybe later": [
+        "Talvez mais tarde"
+      ],
+      "Send a message": [
+        "Enviar uma mensagem"
       ]
     },
     "Get started checklist item": {
@@ -9586,6 +9607,32 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "A chave de verificação não está na lista de chaves de confiança."
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Transações bancárias"
+      ],
+      "Crypto": [
+        "Cripto"
+      ],
+      "Entertainment": [
+        "Entretenimento"
+      ],
+      "Food and beverage": [
+        "Alimentação e bebidas"
+      ],
+      "Gaming": [
+        "Jogos"
+      ],
+      "Most popular": [
+        "Mais popular"
+      ],
+      "Travel": [
+        "Viagens"
+      ],
+      "Utilities": [
+        "Utilitários"
       ]
     }
   }

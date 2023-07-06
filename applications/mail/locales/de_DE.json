@@ -1171,6 +1171,9 @@
       ],
       "Move all to archive": [
         "Alle ins Archiv verschieben"
+      ],
+      "Change email": [
+        "E-Mail-Adresse ändern"
       ]
     },
     "action": {
@@ -4140,6 +4143,63 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Scanne mit deinem mobilen Gerät diesen QR-Code oder besuche"
+      ],
+      "${ MAIL_APP_NAME } on App Store": [
+        "${ MAIL_APP_NAME } im App Store"
+      ],
+      "${ MAIL_APP_NAME } on Play Store": [
+        "${ MAIL_APP_NAME } im Play Store"
+      ],
+      "Close": [
+        "Schließen"
+      ],
+      "Congratulation, you completed all the steps!": [
+        "Herzlichen Glückwunsch, du hast alle Schritte abgeschlossen!"
+      ],
+      "Continue setting up your email": [
+        "Fahre mit dem Einrichten deiner E-Mail-Adresse fort"
+      ],
+      "Get mobile app": [
+        "Mobile App holen"
+      ],
+      "Import data": [
+        "Daten importieren"
+      ],
+      "Learn more": [
+        "Mehr erfahren"
+      ],
+      "Maybe later": [
+        "Vielleicht später"
+      ],
+      "Nice! You've updated all services in this category.": [
+        "Sehr schön! Du hast alle Dienste in dieser Kategorie aktualisiert."
+      ],
+      "Popular online services": [
+        "Beliebte Online-Dienste"
+      ],
+      "Protect and simplify your email": [
+        "Schütze und vereinfache deine E-Mail-Adresse"
+      ],
+      "Protection from trackers": [
+        "Schutz vor Trackern"
+      ],
+      "Send a message": [
+        "Nachricht senden"
+      ],
+      "Set recovery method": [
+        "Wiederherstellungsmethode festlegen"
+      ],
+      "Sign in to the mobile app to complete this step": [
+        "Melde dich bei der mobilen App an, um diesen Schritt abzuschließen."
+      ],
+      "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
+        "Scanne mit deinem Mobilgerät diesen QR-Code oder besuche den iOS- oder Android-Store."
+      ],
+      "We stop advertisers and data collectors from profiling you.": [
+        "Wir hindern Werbetreibende und Datensammler daran, ein Profil von dir zu erstellen."
+      ],
+      "You've unlocked 1 GB": [
+        "Du hast 1 GB freigeschaltet."
       ]
     },
     "Get started checklist item": {
@@ -9653,6 +9713,37 @@
     "summer2023:Offer title": {
       "${ BRAND_NAME } Anniversary Sale": [
         "Jubiläumsangebot von ${ BRAND_NAME }"
+      ]
+    },
+    "Online accounts": {
+      "Have an account with one of these services? Just click to change the email address to your ${ MAIL_APP_NAME } address.": [
+        "Du hast ein Konto bei einem dieser Dienste? Klicke einfach, um die E-Mail-Adresse zu deiner ${ MAIL_APP_NAME }-Adresse zu ändern."
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Banking"
+      ],
+      "Crypto": [
+        "Krypto"
+      ],
+      "E-commerce and Retail": [
+        "E-Commerce und Einzelhandel"
+      ],
+      "Entertainment": [
+        "Unterhaltung"
+      ],
+      "Food and beverage": [
+        "Nahrungsmittel und Getränke"
+      ],
+      "Gaming": [
+        "Gaming"
+      ],
+      "Most popular": [
+        "Am beliebtesten"
+      ],
+      "Travel": [
+        "Reisen"
       ]
     }
   }
