@@ -15,7 +15,8 @@ const Remove = ({ selectedDevices }: Props) => {
 
     const isDisabled = isMultiSelect(selectedDevices);
 
-    if (isDisabled) {
+    if (isDisabled || true) {
+        // XXX: Hotfix for Windows GA
         return null;
     }
 
