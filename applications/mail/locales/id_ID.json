@@ -1167,6 +1167,9 @@
       ],
       "Move all to archive": [
         "Pindahkan semuanya ke arsip"
+      ],
+      "Change email": [
+        "Ubah email"
       ]
     },
     "action": {
@@ -2029,7 +2032,7 @@
         "Utama"
       ],
       "Mobile": [
-        "Seluler"
+        "Mobile"
       ],
       "Other": [
         "Lainnya"
@@ -4171,6 +4174,36 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Dengan menggunakan perangkat mobile Anda, pindai QR code di atas atau kunjungi"
+      ],
+      "${ MAIL_APP_NAME } on App Store": [
+        "${ MAIL_APP_NAME } di App Store"
+      ],
+      "${ MAIL_APP_NAME } on Play Store": [
+        "${ MAIL_APP_NAME } di Play Store"
+      ],
+      "Close": [
+        "Tutup"
+      ],
+      "Get mobile app": [
+        "Dapatkan aplikasi mobile"
+      ],
+      "Import data": [
+        "Impor data"
+      ],
+      "Protection from trackers": [
+        "Perlindungan pelacak"
+      ],
+      "Send a message": [
+        "Kirim pesan"
+      ],
+      "Set recovery method": [
+        "Atur metode pemulihan"
+      ],
+      "Sign in to the mobile app to complete this step": [
+        "Masuk ke aplikasi mobile untuk menuntaskan langkah ini"
+      ],
+      "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
+        "Dengan perangkat mobile Anda, pindai kode QR berikut atau kunjungi toko aplikasi iOS atau Android."
       ]
     },
     "Get started checklist item": {
@@ -7519,7 +7552,7 @@
         "Utama"
       ],
       "Mobile": [
-        "Seluler"
+        "Mobile"
       ],
       "Other": [
         "Lainnya"
@@ -9331,6 +9364,28 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Kunci verifikasi tidak terliput dalam daftar kunci yang dipercaya."
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Perbankan"
+      ],
+      "Crypto": [
+        "Kripto"
+      ],
+      "Gaming": [
+        "Bermain Game"
+      ],
+      "Travel": [
+        "Wisata"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 tahun"
+      ],
+      "2 years": [
+        "2 tahun"
       ]
     }
   }

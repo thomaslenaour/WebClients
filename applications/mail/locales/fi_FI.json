@@ -197,7 +197,7 @@
         "Sulje tämä ilmoituspalkki"
       ],
       "Collapse URL": [
-        "Supista URL-osoite"
+        "Pienennä URL-osoite"
       ],
       "Color": [
         "Väri"
@@ -896,7 +896,7 @@
         "Valitse kaikki viestit"
       ],
       "Self-destruct in 7 days": [
-        "Eräänny 7 päivän kuluttua"
+        "Eräänny seitsemän päivän kuluttua"
       ],
       "Self-destruct message": [
         "Aseta"
@@ -998,7 +998,7 @@
         "Joitakin kuvia ei voitu ladata seurantasuojauksen vuoksi."
       ],
       "Star": [
-        "Lisää/poista tähti"
+        "Lisää tähti"
       ],
       "Start import": [
         "Aloita tuonti"
@@ -1613,7 +1613,7 @@
         "Esiintymän lisäystä tapahtumaan ei vielä tueta"
       ],
       "Event refreshing is not supported for the moment": [
-        "Tapahtuman päivitystä ei vielä tueta"
+        "Tapahtumapäivityksiä ei toistaiseksi tueta"
       ],
       "Event rescheduling is not supported for the moment": [
         "Tapahtuman uudelleenajoitusta ei vielä tueta"
@@ -1682,7 +1682,7 @@
     },
     "Collapsible tooltip": {
       "Collapse": [
-        "Supista"
+        "Piennennä"
       ],
       "Expand": [
         "Laajenna"
@@ -2863,7 +2863,7 @@
         "${ interval } päivän välein, ${ untilString }"
       ],
       "until ${ dateString }": [
-        "${ dateString } asti"
+        "päättyen ${ dateString }"
       ]
     },
     "Date label": {
@@ -2980,7 +2980,7 @@
         "Lisäksi CSV- ja vCard-kentät on automaattisesti kohdistettu. Voit tarkistaa ja muuttaa näitä parituksia manuaalisesti."
       ],
       "We have detected the following fields in the CSV file you uploaded. Check the ones you want to import.": [
-        "Ladattavassa CSV-tiedostossa havaittiin seuraavat kentät. Valitse ne, jotka haluat tuoda."
+        "Lataamassasi CSV-tiedostossa havaittiin seuraavat kentät. Valitse ne, jotka haluat tuoda."
       ]
     },
     "Desktop notification body": {
@@ -3068,7 +3068,7 @@
     },
     "Email reminder decryption error": {
       "Event details are encrypted. Sign in again to restore Calendar and decrypt your data. ${ learnMoreLink }": [
-        "Tapahtuman tiedot on salattu. Kirjaudu sisään uudelleen palauttaaksesi kalenterin ja purkaaksesi tietojesi salauksen. ${ learnMoreLink }"
+        "Tapahtuman tiedot on salattu. Kirjaudu uudelleen palauttaaksesi kalenterin ja purkaaksesi tietojesi salauksen. ${ learnMoreLink }"
       ],
       "Event details cannot be decrypted. ${ whyNotLink }": [
         "Tapahtuman tietojen salausta ei voida purkaa. ${ whyNotLink }"
@@ -3225,7 +3225,7 @@
         "Virhe lähetettäessä viestiä. Viestiä ei lähetetty."
       ],
       "Error while uploading attachments. Message is not sent.": [
-        "Virhe tallennettaessa liitteitä. Viestiä ei lähetetty."
+        "Virhe siirrettäessä liitteitä. Viestiä ei lähetetty."
       ],
       "Failed to encrypt attachment. Please try again.": [
         "Liitteen salaus epäonnistui. Yritä uudelleen."
@@ -3237,7 +3237,7 @@
         "Kansion nimi ei voi olla tyhjä."
       ],
       "Image upload failed": [
-        "Kuvan tallennus epäonnistui"
+        "Kuvan lataus epäonnistui"
       ],
       "IMAP server is required": [
         "IMAP-palvelin vaaditaan"
@@ -3496,7 +3496,7 @@
         "Voit samanaikaisesti kirjoittaa enintään ${ maxActiveComposer } viestiä"
       ],
       "You did not provide a file.": [
-        "Et määrittänyt tiedostoa."
+        "Et toimittanut tiedostoa."
       ],
       "You have reached the maximum number of calendars. Some calendars couldn't be imported.": [
         "Olet saavuttanut kalentereiden enimmäismäärän. Joitakin kalentereita ei voitu tuoda."
@@ -3505,10 +3505,10 @@
         "Nimi on asetettava"
       ],
       "Your emails cannot be decrypted due to a recent password reset. If you remember your previous password, you can ${ reActivateKeyLink } in order to access your messages. ${ learnMoreLink }": [
-        "Sähköpostiesi salausta ei voida purkaa taannoisen salasanan palautuksen vuoksi. Jos muistat edellisen salasanasi, voit ${ reActivateKeyLink } avataksesi viestisi. ${ learnMoreLink }"
+        "Viestiesi salausta ei voida purkaa taannoisen salasanan nollauksen vuoksi. Jos muistat edellisen salasanasi, voit ${ reActivateKeyLink } avataksesi viestisi. ${ learnMoreLink }"
       ],
       "Your emails cannot be decrypted. This may be due to a password reset. ${ learnMoreLink }": [
-        "Sähköpostiesi salausta ei voida purkaa. Tämä saattaa johtua salasanan palautuksesta. ${ learnMoreLink }"
+        "Viestiesi salausta ei voida purkaa. Tämä saattaa johtua salasanan nollauksesta. ${ learnMoreLink }"
       ],
       "Your import will not be processed.": [
         "Tuontiasi ei käsitellä."
@@ -3545,13 +3545,13 @@
         "Tiedostoa \"${ formattedFilename }\" luettaessa tapahtui virhe. Väärä tiedostomuoto."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Maximum file size is ${ MAX_IMPORT_FILE_SIZE_STRING }.": [
-        "Ladattaessa tiedostoa ${ formattedFilename } tapahtui virhe. Tiedoston enimmäiskoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Tiedoston enimmäiskoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Only ICS file formats are allowed.": [
-        "Tiedostoa ${ formattedFilename } tallennettaessa tapahtui virhe. Vain ICS-muotoiset tiedostot sallitaan."
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Vain ICS-muotoiset tiedostot sallitaan."
       ],
       "An error occurred uploading your file. No file has been selected.": [
-        "Virhe tallennettaessa tiedostoa. Tiedostoa ei ole valittu."
+        "Virhe siirrettäessä tiedostoa. Tiedostoa ei ole valittu."
       ],
       "An unexpected error occurred. Import must be restarted.": [
         "Tapahtui odottamaton virhe. Tuonti on aloitettava uudelleen."
@@ -3586,13 +3586,13 @@
         "Tiedostoa \"${ formattedFilename }\" luettaessa tapahtui virhe. Väärä tiedostomuoto."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Maximum file size is ${ MAX_IMPORT_FILE_SIZE_STRING }.": [
-        "Tiedostoa ${ formattedFilename } tallennettaessa tapahtui virhe. Suurin sallittu tiedostokoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Suurin sallittu tiedostokoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
       ],
       "An error occurred uploading your file ${ formattedFilename }. No .csv or .vcf file selected": [
-        "Tiedostoa ${ formattedFilename } tallennettaessa tapahtui virhe. Ei valittua .csv- tai .vcf-tiedostoa"
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Ei valittua .csv- tai .vcf-tiedostoa"
       ],
       "An error occurred uploading your file. No file has been selected.": [
-        "Virhe tallennettaessa tiedostoa. Tiedostoa ei ole valittu."
+        "Virhe siirrettäessä tiedostoa. Tiedostoa ei ole valittu."
       ],
       "Your file ${ formattedFilename } contains more than ${ MAX_IMPORT_CONTACTS_STRING } contacts.": [
         "Tiedosto ${ formattedFilename } sisältää yli ${ MAX_IMPORT_CONTACTS_STRING } yhteystietoa."
@@ -4120,6 +4120,9 @@
       ],
       "Theme default": [
         "Teeman oletus"
+      ],
+      "Theme font": [
+        "Teeman fontti"
       ]
     },
     "Font Size Default": {
@@ -4318,7 +4321,7 @@
         "Suorita tämä vaihe kirjautumalla mobiilisovellukseen"
       ],
       "Update your logins": [
-        "Päivitä kirjautumistunnuksesi"
+        "Päivitä kirjautumistietosi"
       ],
       "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
         "Skannaa tämä QR-koodi mobiililaitteellasi tai käy iOS- tai Android-kaupassa."
@@ -4385,7 +4388,7 @@
         "Verkko"
       ],
       "Other category": [
-        "Muu kategoria"
+        "Muut aiheet"
       ],
       "Services": [
         "Palvelut"
@@ -5062,10 +5065,10 @@
         "Luo kalenteriin"
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
-        "CSV-tiedostoja Outlookista, Outlook Expressistä, Yahoo! Mailista, Hotmailista, Eudorasta ja joistakin muista sovelluksista sekä vCard 3.1 ja 4.0 -muotoja (UTF-8-koodaus) tuetaan."
+        "Outlookin, Outlook Expressin, Yahoo! Mailin, Hotmailin, Eudoran ja joidenkin muiden sovellusten CSV-tiedostoja, sekä vCard-tiedostojen 3.1- ja 4.0-versioita (UTF-8-koodauksella) tuetaan."
       ],
       "Custom": [
-        "Oma"
+        "Mukautettu"
       ],
       "Custom daily": [
         "Oma päivittäinen"
@@ -5074,7 +5077,7 @@
         "Oma kuukausittainen"
       ],
       "Custom weekly": [
-        "Oma viikottainen"
+        "Mukautettu viikottainen"
       ],
       "Custom yearly": [
         "Oma vuosittainen"
@@ -5117,7 +5120,7 @@
         "Luonnos tallennettiin."
       ],
       "Drop file here to upload": [
-        "Pudota tallennettava tiedosto tähän"
+        "Pudota ladattava tiedosto tähän"
       ],
       "Drop to import": [
         "Tuo pudottamalla"
@@ -5163,7 +5166,7 @@
         "Salaa viesti"
       ],
       "Enter the code from your authenticator app": [
-        "Syötä todennussovelluksesi näyttämä koodi"
+        "Syötä todennussovelluksen näyttämä koodi"
       ],
       "Enter the credentials of the email account you want to import from.": [
         "Syötä tuotavan tilin kirjautumistiedot."
@@ -5392,7 +5395,7 @@
         "Kuukausittain ${ onDayString }"
       ],
       "Moving messages. This may take a while.": [
-        "Siirretään viestejä. Tämä voi kestää jonkin aikaa."
+        "Viestejä siirretään. Tämä voi kestää jonkin aikaa."
       ],
       "Name your new folder and select the parent folder you want to put it in. If you do not select a parent folder, this new folder will be created as a top level folder.": [
         "Nimeä uusi kansio ja valitse mihin kansioon haluat sijoittaa sen. Jos et valitse yläkansiota, luodaan uusi kansio juuritason kansiona."
@@ -5440,7 +5443,7 @@
         "${ MAIL_APP_NAME }in ulkopuoliseen"
       ],
       "None of the uploaded keys are valid for encryption. To be able to send messages to this address, please upload a valid key or disable \"Encrypt emails\".": [
-        "Mikään tallennetuista avaimista ei kelpaa salaukseen. Viestien lähettämiseksi tähän osoitteeseen, tallenna kelvollinen avain tai poista \"Salaa viestit\" käytöstä."
+        "Mikään tallennetuista avaimista ei kelpaa salaukseen. Viestien lähettämiseksi tähän osoitteeseen, lataa kelvollinen avain tai poista \"Salaa viestit\" käytöstä."
       ],
       "Normal": [
         "Normaali"
@@ -5479,7 +5482,7 @@
         "Täytä tämä kenttä."
       ],
       "Please keep it safe. You'll need it to access your account and decrypt your data in case of a password reset.": [
-        "Pidä se turvassa. Tarvitset sitä päästäksesi tilillesi ja purkaaksesi tietojesi salauksen salasanan palautuksen varalta."
+        "Pidä se turvassa, koska tarvitset sitä päästäksesi tilillesi ja purkaaksesi tietojesi salauksen, jos joudut joskus nollaamaan salasanasi."
       ],
       "Please note that addresses assigned to this group will NOT be deleted.": [
         "Huomioi, että ryhmään lisättyjä osoitteita EI poisteta."
@@ -5618,7 +5621,7 @@
         "Istunto aikakatkaistiin"
       ],
       "Set ${ MAIL_APP_NAME } as your default email application for this browser. ${ MAIL_APP_NAME } will open automatically when you click an email link.": [
-        "Määritä ${ MAIL_APP_NAME } sähköpostin oletussovellukseksi tässä selaimessa, niin ${ MAIL_APP_NAME } avautuu automaattisesti sähköpostilinkeistä."
+        "Aseta ${ MAIL_APP_NAME } sähköpostin oletussovellukseksi tässä selaimessa, niin ${ MAIL_APP_NAME } avautuu sähköpostilinkeistä automaattisesti."
       ],
       "Set a recovery phrase": [
         "Aseta palautuslauseke"
@@ -5690,17 +5693,17 @@
         "Lähettäjä on pyytänyt lukukuittausta."
       ],
       "The verification of ${ contactName } has failed: the contact is not signed correctly.\nThis may be the result of a password reset.\nYou must re-sign the contact in order to send a message to ${ contactAddress } or edit the contact.": [
-        "Yhteystiedon ${ contactName } vahvistus epäonnistui, koska sitä ei ole allekirjoitettu oikein. Tämä voi johtua salasanan vaihdosta. Lähettääksesi viestin osoitteeseen ${ contactAddress } sinun on on allekirjoitettava yhteystieto uudelleen tai muokattava sitä."
+        "Yhteystiedon ${ contactName } vahvistus epäonnistui, koska sitä ei ole allekirjoitettu oikein. Tämä voi johtua salasanan nollauksesta. Lähettääksesi viestin osoitteeseen ${ contactAddress } sinun on on allekirjoitettava yhteystieto uudelleen tai muokattava sitä."
       ],
       "The verification of ${ contactNames } has failed: the contact is not signed correctly.\nThis may be the result of a password reset.\nYou must re-sign the contact in order to send a message to ${ contactAddresses } or edit the contact.": [
-        "Yhteystiedon ${ contactNames } vahvistus epäonnistui, koska sitä ei ole allekirjoitettu oikein. Tämä voi johtua salasanan vaihdosta. Lähettääksesi viestin osoitteeseen ${ contactAddresses } sinun on on allekirjoitettava yhteystieto uudelleen tai muokattava sitä.",
-        "Yhteystietojen ${ contactNames } vahvistus epäonnistui, koska niitä ei ole allekirjoitettu oikein. Tämä voi johtua salasanan vaihdosta. Lähettääksesi viestin osoitteeseen ${ contactAddresses } sinun on on allekirjoitettava yhteystiedot uudelleen tai muokattava niitä."
+        "Yhteystiedon ${ contactNames } vahvistus epäonnistui, koska sitä ei ole allekirjoitettu oikein. Tämä voi johtua salasanan nollauksesta. Lähettääksesi viestin osoitteeseen ${ contactAddresses } sinun on on allekirjoitettava yhteystieto uudelleen tai muokattava sitä.",
+        "Yhteystietojen ${ contactNames } vahvistus epäonnistui, koska niitä ei ole allekirjoitettu oikein. Tämä voi johtua salasanan nollauksesta. Lähettääksesi viestin osoitteeseen ${ contactAddresses } sinun on on allekirjoitettava yhteystiedot uudelleen tai muokattava niitä."
       ],
       "Themes can give your inbox a new look.": [
-        "Teemoilla voit muuttaa postilaatikkosi uuden näköiseksi."
+        "Teemoilla voit muuttaa postilaatikkosi ulkoasua."
       ],
       "There has been an error with the signature used to verify the contact details, which may be the result of a password reset.": [
-        "Yhteystiedon vahvistukseen käytetyssä allekirjoituksessa havaittiin virhe, joka saattaa johtua salasanan vaihdosta."
+        "Yhteystiedon vahvistukseen käytetyssä allekirjoituksessa havaittiin virhe, joka saattaa johtua salasanan nollauksesta."
       ],
       "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
         "He eivät voi lähettää sinulle roskapostia, jos he eivät tiedä sähköpostiosoitettasi. Suojaa postilaatikkoasi Hide-my-email-aliaksilla."
@@ -5755,7 +5758,7 @@
         "Viesti on postituslistan lähettämä."
       ],
       "This message is signed by a key that has not been trusted yet.": [
-        "Tämä viesti on allekirjoitettu avaimella, johon ei ole vielä luotettu."
+        "Viesti on allekirjoitettu avaimella, johon ei ole vielä luotettu."
       ],
       "This message is signed by the key attached, that has not been trusted yet.": [
         "Tämä viesti on allekirjoitettu liitetyllä avaimella, johon ei ole vielä luotettu."
@@ -5852,7 +5855,7 @@
         "Päivitetään viestien sisältöhakua..."
       ],
       "Updating your local messages, message content won't be searched during this update": [
-        "Paikallisia viestejäsi päivitetään, viestien sisältöä ei voi etsiä tämän aikana"
+        "Paikallisia viestejäsi päivitetään, eikä viestien sisällöstä voida etsiä tämän aikana"
       ],
       "Upgrade now to get premium features, products and storage at a special price": [
         "Päivitä nyt hankkiaksesi premium-ominaisuudet, -tuotteet ja -tallennustila erikoishintaan"
@@ -5948,7 +5951,7 @@
         "Kun otit luotetut avaimet käyttöön lähettäjälle ${ senderName }, lisättiin julkiset avaimet yhteystiedon tietoihin."
       ],
       "When you set up two-factor authentication, we provide recovery codes which you can use to sign in if you lose access to your authenticator app.": [
-        "Määrittäessäsi kaksivaiheisen todennuksen saat myös palautuskoodit, joiden avulla voit kirjautua sisään vaikka menettäisit pääsyn todennussovellukseesi."
+        "Määrittäessäsi kaksivaiheisen todennuksen saat myös palautuskoodit, joiden avulla voit kirjautua vaikka menettäisit pääsyn todennussovellukseesi."
       ],
       "Would you like to receive a new verification code or use an alternative verification method?": [
         "Haluatko uuden vahvistuskoodin vai käyttää vaihtoehtoista todennustapaa?"
@@ -5960,7 +5963,7 @@
         "Vuosittain"
       ],
       "You are about to open another browser tab and visit:": [
-        "Olet avaamassa selaimeen uutta välilehteä sivustolle:"
+        "Olet avaamassa uutta selaimen välilehteä sivustolle:"
       ],
       "You are currently signed in as ${ user.Name } (${ user.Email }).": [
         "Olet kirjautuneena ${ user.Name } (${ user.Email })."
@@ -5987,7 +5990,7 @@
         "Voit tuoda vain yhden tietotyypin kerrallaan."
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
-        "Voit lukea tämän viestin paljastamatta mainostajille toimiasi, sijaintiasi tai laitteesi tietoja."
+        "Voit lukea viestin paljastamatta mainostajille tietoja toiminnastasi, sijainnistasi tai laitteestasi."
       ],
       "You can turn on notifications to get alerts when new email messages arrive in this folder.": [
         "Käytä ilmoituksia saadaksesi hälytyksen kansioon saapuvista uusista viesteistä."
@@ -6051,7 +6054,7 @@
         "Valitsit kansiosta **${ count } viestiä**"
       ],
       "You selected **${ count } message** with this label": [
-        "Valitsit **${ count } veistin** tällä tunnisteella",
+        "Valitsit **${ count } viestin** tällä tunnisteella",
         "Valitsit **${ count } viestiä** tällä tunnisteella"
       ],
       "You wrote “${ attachmentsFoundKeyword }”, but no attachment has been added. Do you want to send your message anyway?": [
@@ -6067,10 +6070,10 @@
         "SimpleLogin sisältyy ${ BRAND_NAME }-tiliisi. Aloita asentamalla selainlaajennus yhdellä painalluksella."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
-        "${ BRAND_NAME }-tilisi on tällä hetkellä jäädytetty. 28 päivän kuluttua postilaatikkoosi ei enää toimiteta sähköpostiviestejä ja Drive-jakolinkkisi estetään etkä voi tallentaa uusia tiedostoja. Palauttaaksesi normaalin toiminnan, maksa maksamattomat laskut."
+        "${ BRAND_NAME }-tilisi on jäädytetty, ja 28 päivän kuluttua postilaatikkosi ei enää vastaanota viestejä ja Drive-jakolinkit sekä uusien tiedostojen tallennus estetään. Palauttaaksesi tilisi normaalin toiminnan, maksa maksamattomat laskut."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. Emails are no longer being delivered to your inbox. Your Drive sharing links are no longer active, and you cannot upload new files. To continue using your account, please pay any overdue invoices.": [
-        "${ BRAND_NAME }-tilisi on tällä hetkellä jäädytetty. Postilaatikkoosi ei enää toimiteta sähköpostiviestejä ja Drive-jakolinkkisi estetään etkä voi tallentaa uusia tiedostoja. Palauttaaksesi normaalin toiminnan, maksa maksamattomat laskut."
+        "${ BRAND_NAME }-tilisi on jäädytetty, eikä postilaatikkosi enää vastaanota viestejä ja Drive-jakolinkit sekä uusien tiedostojen tallennus estetään. Palauttaaksesi tilisi normaalin toiminnan, maksa maksamattomat laskut."
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
         "Tililläsi on ainakin yksi erääntynyt lasku. Pääsyäsi rajoitetaan pian. ${ payInvoiceLink }"
@@ -6197,7 +6200,7 @@
         "Hylkää luonnos"
       ],
       "Expand / contract composer": [
-        "Laajenna/supista viestin kirjoitus"
+        "Laajenna/tiivistä viestin kirjoitus"
       ],
       "Forward": [
         "Välitä"
@@ -6257,7 +6260,7 @@
         "Siirry alaspäin"
       ],
       "Move left / collapse": [
-        "Siirry vasemmalle/supista"
+        "Siirry vasemmalle/pienennä"
       ],
       "Move right / expand": [
         "Siirry oikealle/laajenna"
@@ -6397,7 +6400,7 @@
         "Kaikki yhteystiedot"
       ],
       "Also archive": [
-        "Arkistoi samalla"
+        "Siirrä samalla arkistoon"
       ],
       "Always label sender's emails": [
         "Merkitse lähettäjän viestit aina"
@@ -6460,7 +6463,7 @@
         "Kopio"
       ],
       "Category": [
-        "Kategoria"
+        "Aihe"
       ],
       "CC": [
         "Kopio"
@@ -6592,7 +6595,7 @@
         "Tuo yhteystietoja"
       ],
       "Import interval": [
-        "Tuontiaika"
+        "Tuontiväli"
       ],
       "Import to email address": [
         "Tuo sähköpostiosoitteelle"
@@ -6748,7 +6751,7 @@
         "Valitse, miltä viestilistauksesi oletusarvoisesti näyttää."
       ],
       "Select how your mailbox looks like by default.": [
-        "Valitse postilaatikkosi oletusarvoinen ulkoasu."
+        "Valitse postilaatikkosi oletusarvoinen näkymä."
       ],
       "Send auto-reply": [
         "Lähetä automaattivastaus"
@@ -7244,12 +7247,12 @@
         "${ interval } kuukauden välein ${ onDayString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ timesString }": [
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ timesString }",
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ timesString }"
+        "${ interval } kuukauden välein ${ onDayString }, ${ timesString }",
+        "${ interval } kuukauden välein ${ onDayString }, ${ timesString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ untilString }": [
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ untilString }",
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ untilString }"
+        "${ interval } kuukauden välein ${ onDayString }, ${ untilString }",
+        "${ interval } kuukauden välein ${ onDayString }, ${ untilString }"
       ],
       "Monthly ${ onDayString }": [
         "Kuukausittain ${ onDayString }"
@@ -7602,7 +7605,7 @@
     },
     "Placeholder": {
       "A way to contact you": [
-        "Miten tavoitamme sinut"
+        "Tapa, jolla tavoitamme sinut"
       ],
       "E.g., ": [
         "Esim. "
@@ -7647,7 +7650,7 @@
         "Puhelinnumero"
       ],
       "Please describe the problem and include any error messages": [
-        "Kuvaile ongelmaa ja sisällytä mahdolliset virheviestit"
+        "Kuvaile ongelmaa ja sisällytä mahdolliset virheilmoitukset"
       ],
       "Please insert link first": [
         "Lisää linkin osoite ensin"
@@ -7671,7 +7674,7 @@
         "Valitse"
       ],
       "Start date": [
-        "Alkupäivä"
+        "Aloituspäivä"
       ],
       "Start typing an email address": [
         "Aloita sähköpostiosoitteen kirjoitus"
@@ -7789,15 +7792,15 @@
         "PGP-allekirjoitettu viesti. Lähettäjän vahvistus epäonnistui"
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption": [
-        "Lähettänyt ${ MAIL_APP_NAME } nollakäyttö-salauksella"
+        "Lähettänyt ${ MAIL_APP_NAME } Zero Access -salauksella"
       ],
       "Stored with zero-access encryption": [
-        "Tallennettu nollakäyttö-salauksella"
+        "Tallennettu Zero Access -salauksella"
       ]
     },
     "Refresh on apply warning": {
       "Note: the service will reload after you click the Apply button.": [
-        "Huomioi: palvelu latautuu uudelleen kun painat Käytä-painiketta."
+        "Huomioi: palvelu latautuu uudelleen kun painat Käytä."
       ]
     },
     "Remaining days before the message expire": {
@@ -7845,7 +7848,7 @@
     },
     "Select files": {
       "Upload": [
-        "Tallenna"
+        "Lataa"
       ]
     },
     "Send email with changed preferences": {
@@ -7927,11 +7930,11 @@
         "PGP-allekirjoitettu"
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption": [
-        "Lähettänyt ${ MAIL_APP_NAME } nollakäyttö-salauksella"
+        "Lähettänyt ${ MAIL_APP_NAME } Zero Access -salauksella"
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption to verified recipient": [
-        "Lähettänyt ${ MAIL_APP_NAME } nollakäyttö-salauksella vahvistetulle vastaanottajalle",
-        "Lähettänyt ${ MAIL_APP_NAME } nollakäyttö-salauksella vahvistetuille vastaanottajille"
+        "Lähettänyt ${ MAIL_APP_NAME } Zero Access -salauksella vahvistetulle vastaanottajalle",
+        "Lähettänyt ${ MAIL_APP_NAME } Zero Access -salauksella vahvistetuille vastaanottajille"
       ],
       "Sent by you with end-to-end encryption": [
         "Sinä olet lähettänyt päästä päähän -salauksella"
@@ -7941,7 +7944,7 @@
         "Sinä olet lähettänyt päästä päähän -salauksella vahvistetuille vastaanottajille"
       ],
       "Stored with zero-access encryption": [
-        "Tallennettu nollakäyttö-salauksella"
+        "Tallennettu Zero Access -salauksella"
       ]
     },
     "Side panel spotlight": {
@@ -8246,7 +8249,7 @@
         "Kokeile sitä tänään."
       ],
       "We now load images by default and block senders from tracking you. This can be changed in the ${ settingsLink }.": [
-        "Nyt kuvat ladataan ja lähettäjiä estetään seuraamasta sinua oletusarvoisesti. Tätä voidaan muuttaa ${ settingsLink }."
+        "Nyt kuvat ladataan oletusarvoisesti ja lähettäjiä estetään seuraamasta sinua. Tätä voidaan muuttaa ${ settingsLink }."
       ],
       "You can now schedule your messages to be sent later": [
         "Voit nyt ajoittaa viestiesi lähetyksen myöhempään ajankohtaan"
@@ -9210,6 +9213,10 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ilmainen Mail Plus -kokeilusi päättyy ${ textDate }"
+      ],
+      "We protected you from ${ trackersCount } tracker": [
+        "Suojasimme sinua ${ trackersCount } seurannalta",
+        "Suojasimme sinua ${ trackersCount } seurannalta"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9222,7 +9229,7 @@
         "Automaattiasetuksella viestit lähetetään tälle käyttäjälle käyttäen kirjoituksessa käytettyä muotoilua. Käytettäessä pelkkä teksti -asetusta poistetaan viestistä lähetettäessä mahdolliset muotoilut."
       ],
       "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
-        "Vaihda valitsemiasi päivä- ja yöteemoja järjestelmäsi päivä- ja yötilojen mukana automaattisesti"
+        "Vaihda määrittämiesi päivä-/yöteemojen välillä automaattisesti järjestelmäsi päivä-/yötilan vaihtuessa"
       ],
       "Customize import to reduce the number of folders": [
         "Vähennä kansioiden määrää mukauttamalla tuontia"
@@ -9285,7 +9292,7 @@
         "Ominaisuus on vain maksavien käyttäjien käytettävissä"
       ],
       "Upload a public key to enable sending end-to-end encrypted emails to this email": [
-        "Lisää julkinen avain mahdollistaaksesi päästä päähän -salattujen viestien lähetyksen tähän osoitteeseen"
+        "Lataa julkinen avain mahdollistaaksesi päästä päähän -salattujen viestien lähetyksen tähän osoitteeseen"
       ],
       "You do not have any contacts to export": [
         "Sinulla ei ole vietäviä yhteystietoja"
@@ -9301,7 +9308,7 @@
     },
     "Update font modal": {
       "Today is a good day to write an email": [
-        "Tänään on hyvä päivä kirjoittaa sähköpostiviesti"
+        "Tänään on hyvä päivä naputella sähköposteja"
       ],
       "Update default font and size": [
         "Muuta tekstin oletusfonttia ja kokoa"
@@ -9393,7 +9400,7 @@
         "Tämä tuonti saattaa ylittää ${ BRAND_NAME }-tilisi tämänhetkisen vapaan tallennuskapasiteetin. Harkitse tuontisi mukautusta."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
-        "Valitettavasti emme ole juuri nyt tavoitettavissa. Täytä alla oleva lomake ja kuvaile ongelmaasi, niin perehdymme siihen ja otamme yhteyttä kun olemme taas paikalla."
+        "Valitettavasti emme ole juuri nyt tavoitettavissa. Kuvaile ongelmasi täyttämällä alla oleva lomake, niin tutustumme siihen ja otamme yhteyttä kun olemme taas paikalla."
       ],
       "We couldn't verify the mail server. If you trust it, you can skip this verification.": [
         "Sähköpostipalvelinta ei voitu vahvistaa. Jos luotat siihen, voit ohittaa tämän vahvistuksen."
@@ -9407,8 +9414,8 @@
     },
     "Weekly recurring event, frequency": {
       "Every ${ interval } week on ${ multipleDaysString }": [
-        "Joka ${ interval } viikko ${ multipleDaysString }",
-        "Joka ${ interval } viikko ${ multipleDaysString }"
+        "${ interval } viikon välein ${ multipleDaysString }",
+        "${ interval } viikon välein ${ multipleDaysString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ timesString }": [
         "${ interval } viikon välein ${ multipleDaysString }, ${ timesString }",
@@ -9419,100 +9426,100 @@
         "${ interval } viikon välein ${ multipleDaysString }, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
-        "${ interval } viikon välein joka päivä",
-        "${ interval } viikon välein joka päivä"
+        "${ interval } viikon välein kaikkina päivinä",
+        "${ interval } viikon välein kaikkina päivinä"
       ],
       "Every ${ interval } week on all days, ${ timesString }": [
-        "Joka ${ interval } viikko kaikkina päivinä, ${ timesString }",
-        "Joka ${ interval } viikko kaikkina päivinä, ${ timesString }"
+        "${ interval } viikon välein kaikkina päivinä, ${ timesString }",
+        "${ interval } viikon välein kaikkina päivinä, ${ timesString }"
       ],
       "Every ${ interval } week on all days, ${ untilString }": [
-        "Joka ${ interval } viikko kaikkina päivinä, ${ untilString }",
-        "Joka ${ interval } viikko kaikkina päivinä, ${ untilString }"
+        "${ interval } viikon välein kaikkina päivinä, ${ untilString }",
+        "${ interval } viikon välein kaikkina päivinä, ${ untilString }"
       ],
       "Every ${ interval } week on Friday": [
-        "Joka ${ interval }. viikko perjantaisin",
-        "Joka ${ interval }. viikko perjantaisin"
+        "${ interval } viikon välein perjantaisin",
+        "${ interval } viikon välein perjantaisin"
       ],
       "Every ${ interval } week on Friday, ${ timesString }": [
-        "Joka ${ interval }. viikko perjantaisin, ${ timesString }",
-        "Joka ${ interval }. viikko perjantaisin, ${ timesString }"
+        "${ interval } viikon välein perjantaisin, ${ timesString }",
+        "${ interval } viikon välein perjantaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Friday, ${ untilString }": [
-        "Joka ${ interval }. viikko perjantaisin, ${ untilString }",
-        "Joka ${ interval }. viikko perjantaisin, ${ untilString }"
+        "${ interval } viikon välein perjantaisin, ${ untilString }",
+        "${ interval } viikon välein perjantaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Monday": [
-        "Joka ${ interval }. viikko maanantaisin",
-        "Joka ${ interval }. viikko maanantaisin"
+        "${ interval } viikon välein maanantaisin",
+        "${ interval } viikon välein maanantaisin"
       ],
       "Every ${ interval } week on Monday, ${ timesString }": [
-        "Joka ${ interval }. viikko maanantaisin, ${ timesString }",
-        "Joka ${ interval }. viikko maanantaisin, ${ timesString }"
+        "${ interval } viikon välein maanantaisin, ${ timesString }",
+        "${ interval } viikon välein maanantaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Monday, ${ untilString }": [
-        "Joka ${ interval }. viikko maanantaisin, ${ untilString }",
-        "Joka ${ interval }. viikko maanantaisin, ${ untilString }"
+        "${ interval } viikon välein maanantaisin, ${ untilString }",
+        "${ interval } viikon välein maanantaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Saturday": [
-        "Joka ${ interval }. viikko lauantaisin",
-        "Joka ${ interval }. viikko lauantaisin"
+        "${ interval } viikon välein lauantaisin",
+        "${ interval } viikon välein lauantaisin"
       ],
       "Every ${ interval } week on Saturday, ${ timesString }": [
-        "Joka ${ interval }. viikko lauantaisin, ${ timesString }",
-        "Joka ${ interval }. viikko lauantaisin, ${ timesString }"
+        "${ interval } viikon välein lauantaisin, ${ timesString }",
+        "${ interval } viikon välein lauantaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
-        "Joka ${ interval }. viikko lauantaisin, ${ untilString }",
-        "Joka ${ interval }. viikko lauantaisin, ${ untilString }"
+        "${ interval } viikon välein lauantaisin, ${ untilString }",
+        "${ interval } viikon välein lauantaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Sunday": [
-        "Joka ${ interval }. viikko sunnuntaisin",
-        "Joka ${ interval }. viikko sunnuntaisin"
+        "${ interval } viikon välein sunnuntaisin",
+        "${ interval } viikon välein sunnuntaisin"
       ],
       "Every ${ interval } week on Sunday, ${ timesString }": [
-        "Joka ${ interval }. viikko sunnuntaisin, ${ timesString }",
-        "Joka ${ interval }. viikko sunnuntaisin, ${ timesString }"
+        "${ interval } viikon välein sunnuntaisin, ${ timesString }",
+        "${ interval } viikon välein sunnuntaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Sunday, ${ untilString }": [
-        "Joka ${ interval }. viikko sunnuntaisin, ${ untilString }",
-        "Joka ${ interval }. viikko sunnuntaisin, ${ untilString }"
+        "${ interval } viikon välein sunnuntaisin, ${ untilString }",
+        "${ interval } viikon välein sunnuntaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Thursday": [
-        "Joka ${ interval }. viikko torstaisin",
-        "Joka ${ interval }. viikko torstaisin"
+        "${ interval } viikon välein torstaisin",
+        "${ interval } viikon välein torstaisin"
       ],
       "Every ${ interval } week on Thursday, ${ timesString }": [
-        "Joka ${ interval }. viikko torstaisin, ${ timesString }",
-        "Joka ${ interval }. viikko torstaisin, ${ timesString }"
+        "${ interval } viikon välein torstaisin, ${ timesString }",
+        "${ interval } viikon välein torstaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Thursday, ${ untilString }": [
-        "Joka ${ interval }. viikko torstaisin, ${ untilString }",
-        "Joka ${ interval }. viikko torstaisin, ${ untilString }"
+        "${ interval } viikon välein torstaisin, ${ untilString }",
+        "${ interval } viikon välein torstaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Tuesday": [
-        "Joka ${ interval }. viikko tiistaisin",
-        "Joka ${ interval }. viikko tiistaisin"
+        "${ interval } viikon välein tiistaisin",
+        "${ interval } viikon välein tiistaisin"
       ],
       "Every ${ interval } week on Tuesday, ${ timesString }": [
-        "Joka ${ interval }. viikko tiistaisin, ${ timesString }",
-        "Joka ${ interval }. viikko tiistaisin, ${ timesString }"
+        "${ interval } viikon välein tiistaisin, ${ timesString }",
+        "${ interval } viikon välein tiistaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Tuesday, ${ untilString }": [
-        "Joka ${ interval }. viikko tiistaisin, ${ untilString }",
-        "Joka ${ interval }. viikko tiistaisin, ${ untilString }"
+        "${ interval } viikon välein tiistaisin, ${ untilString }",
+        "${ interval } viikon välein tiistaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Wednesday": [
-        "Joka ${ interval }. viikko keskiviikkoisin",
-        "Joka ${ interval }. viikko keskiviikkoisin"
+        "${ interval } viikon välein keskiviikkoisin",
+        "${ interval } viikon välein keskiviikkoisin"
       ],
       "Every ${ interval } week on Wednesday, ${ timesString }": [
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ timesString }",
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ timesString }"
+        "${ interval } viikon välein keskiviikkoisin, ${ timesString }",
+        "${ interval } viikon välein keskiviikkoisin, ${ timesString }"
       ],
       "Every ${ interval } week on Wednesday, ${ untilString }": [
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ untilString }",
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ untilString }"
+        "${ interval } viikon välein keskiviikkoisin, ${ untilString }",
+        "${ interval } viikon välein keskiviikkoisin, ${ untilString }"
       ],
       "Weekly on ${ multipleDaysString }": [
         "Viikottain ${ multipleDaysString }"
@@ -9524,13 +9531,13 @@
         "Viikottain ${ multipleDaysString }, ${ untilString }"
       ],
       "Weekly on all days": [
-        "Viikottain joka päivä"
+        "Viikottain kaikkina päivinä"
       ],
       "Weekly on all days, ${ timesString }": [
-        "Viikottain joka päivä, ${ timesString }"
+        "Viikottain kaikkina päivinä, ${ timesString }"
       ],
       "Weekly on all days, ${ untilString }": [
-        "Viikottain joka päivä, ${ untilString }"
+        "Viikottain kaikkina päivinä, ${ untilString }"
       ],
       "Weekly on Friday": [
         "Viikottain perjantaisin"
@@ -9629,8 +9636,8 @@
         "${ interval } vuoden välein, ${ timesString }"
       ],
       "Every ${ interval } year, ${ untilString }": [
-        "Joka ${ interval } vuosi, ${ untilString }",
-        "Joka ${ interval } vuosi, ${ untilString }"
+        "${ interval } vuoden välein, ${ untilString }",
+        "${ interval } vuoden välein, ${ untilString }"
       ],
       "Yearly": [
         "Vuosittain"
@@ -9667,13 +9674,77 @@
         "Pelaaminen"
       ],
       "Most popular": [
-        "Suosituin"
+        "Suosituimmat"
       ],
       "Travel": [
         "Matkustaminen"
       ],
       "Utilities": [
         "Apuohjelmat"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 vuosi"
+      ],
+      "2 years": [
+        "2 vuotta"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail ja Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium salasanahallinta"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Tallenna salasanasi turvallisesti ja täytä ne automaattisesti verkkosivustoilla. Sisältää rajattomasti salasanoja, automaattisen täytön, salasanageneraattorin ja paljon muuta."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Salasanahallinta"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Luo turvallisia kirjautumistietoja kaikilla laitteillasi. Sisältää rajattomasti aliaksia, 20 holvia, sisäänrakennetun 2FA:n, luottokorttitietojen automaattisen täytön ja paljon muuta."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Sisältää 2950+ palvelinta yli 65+ maassa, 10 samanaikaista laitetta, tuen suoratoistopalveluille eri puolilta maailmaa, haittaohjelma- ja mainoseston sekä paljon muuta."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Sisältää tuen yhdelle omalle sähköpostin verkkotunnukselle, 10 sähköpostiosoitteelle, 10 hide-my-email-aliakselle, kalenterijaolle sekä paljon muuta."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Suojaa tiedostosi salatulla pilvitallennustilalla. Sisältää versiohistorian, salatun tiedostojen jakamisen ja paljon muuta."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Tilauksesi uudistetaan automaattisesti samalla alennetulla hinnalla laskutuskautesi lopussa."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Alennukset perustuvat tavalliseen kuukausihinnoitteluun. Tämä tarjous on saatavilla vain ensitilaajille."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Vain rajoitetun ajan saat parasta, mitä ${ BRAND_NAME } tarjoaa, erinomaiseen hintaan."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Juhlimme joukkorahoituksemme yhdeksänvuotisjuhlaa!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME } Vuosipäivän alennusmyynti"
       ]
     }
   }
