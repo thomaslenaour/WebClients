@@ -1159,6 +1159,12 @@
       ],
       "Emoji": [
         "Emoji"
+      ],
+      "Add Cc recipients": [
+        "Lägg till mottagare"
+      ],
+      "Change email": [
+        "Ändra e-post"
       ]
     },
     "action": {
@@ -4102,6 +4108,9 @@
       ],
       "Theme default": [
         "Temastandard"
+      ],
+      "Theme font": [
+        "Temats typsnitt"
       ]
     },
     "Font Size Default": {
@@ -4184,6 +4193,126 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Använd din mobila enhet, skanna denna QR-kod eller besök"
+      ],
+      "${ MAIL_APP_NAME } app": [
+        "${ MAIL_APP_NAME }-app"
+      ],
+      "${ MAIL_APP_NAME } on App Store": [
+        "${ MAIL_APP_NAME } på App Store"
+      ],
+      "${ MAIL_APP_NAME } on Play Store": [
+        "${ MAIL_APP_NAME } på Play Store"
+      ],
+      "account logins": [
+        "kontoinloggningar"
+      ],
+      "Auto-forward Gmail": [
+        "Automatisk vidarebefordran av Gmail"
+      ],
+      "auto-forwarding": [
+        "automatisk vidarebefordran"
+      ],
+      "Block email communications from scammers permanently.": [
+        "Blockera e-postkommunikation från bedragare permanent."
+      ],
+      "Block unsavory senders": [
+        "Blockera otrevliga avsändare"
+      ],
+      "Change ${ strongText } to your ${ BRAND_NAME } address": [
+        "Ändra ${ strongText } till din ${ BRAND_NAME }-adress"
+      ],
+      "Checklist complete": [
+        "Checklista klar"
+      ],
+      "Close": [
+        "Stäng"
+      ],
+      "Congratulation, you completed all the steps!": [
+        "Grattis, du har slutfört alla steg!"
+      ],
+      "Continue setting up your email": [
+        "Fortsätt ställa in din e-post"
+      ],
+      "Discover how our ${ strongText } protect you": [
+        "Upptäck hur vår ${ strongText } skyddar dig"
+      ],
+      "Discover privacy features": [
+        "Upptäck integritetsfunktioner"
+      ],
+      "Double your free storage to 1 GB when you complete the following:": [
+        "Fördubbla ditt gratis lagringsutrymme till 1 GB när du slutför följande:"
+      ],
+      "Encryption so strong, only you and intended recipients can view your emails.": [
+        "Kryptering så stark att bara du och avsedda mottagare kan se dina e-postmeddelanden."
+      ],
+      "For your eyes only": [
+        "Bara för dina ögon"
+      ],
+      "Get free storage": [
+        "Skaffa gratis lagringsutrymme"
+      ],
+      "Get mobile app": [
+        "Skaffa mobilapp"
+      ],
+      "Get the ${ strongText } on Android or iOS": [
+        "Skaffa ${ strongText } på Android eller iOS"
+      ],
+      "Get the App": [
+        "Skaffa appen"
+      ],
+      "Import data": [
+        "Importera data"
+      ],
+      "Learn more": [
+        "Lär dig mer"
+      ],
+      "Make ${ BRAND_NAME } your go-to inbox": [
+        "Gör ${ BRAND_NAME } till din inkorg"
+      ],
+      "Maybe later": [
+        "Kanske senare"
+      ],
+      "Nice! You've updated all services in this category.": [
+        "Härligt! Du har uppdaterat alla tjänster i denna kategori."
+      ],
+      "Open checklist": [
+        "Öppna checklista"
+      ],
+      "Popular online services": [
+        "Populära onlinetjänster"
+      ],
+      "privacy features": [
+        "integritetsfunktioner"
+      ],
+      "Protect and simplify your email": [
+        "Skydda och förenkla din e-post"
+      ],
+      "Protection from trackers": [
+        "Skydd från spårare"
+      ],
+      "Send a message": [
+        "Skicka ett meddelande"
+      ],
+      "Set recovery method": [
+        "Ställ in återställningsmetod"
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Ställ in ${ strongText } från Gmail"
+      ],
+      "Sign in to the mobile app to complete this step": [
+        "Logga in på mobilappen för att slutföra detta steg"
+      ],
+      "Update your logins": [
+        "Uppdatera dina inloggningar"
+      ],
+      "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
+        "Använd din mobila enhet, skanna denna QR-kod eller besök iOS- eller Android-butiken."
+      ],
+      "We stop advertisers and data collectors from profiling you.": [
+        "Vi stoppar annonsörer och datainsamlare från att profilera dig."
+      ],
+      "You've unlocked 1 GB": [
+        "Du har låst upp 1 GB"
       ]
     },
     "Get started checklist item": {
@@ -5957,6 +6086,9 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Din återställningsfras är en serie på 12 ord i en specifik ordning."
+      ],
+      "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
+        "Meddelanden nedladdade: ${ currentProgress } av ${ totalProgress }"
       ]
     },
     "info": {
@@ -9038,6 +9170,10 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Din gratis provperiod för Mail Plus slutar den ${ textDate }"
+      ],
+      "We protected you from ${ trackersCount } tracker": [
+        "Vi skyddade dig från ${ trackersCount } spårare",
+        "Vi skyddade dig från ${ trackersCount } spårare"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9114,6 +9250,9 @@
       ],
       "You do not have any contacts to export": [
         "Du har inga kontakter att exportera"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Växla automatiskt mellan dina föredragna teman för dag och natt i synk med ditt systems dag- och nattlägen"
       ]
     },
     "Tor out of date": {
@@ -9465,6 +9604,93 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligen, ${ untilString }"
+      ]
+    },
+    "Online accounts": {
+      "Have an account with one of these services? Just click to change the email address to your ${ MAIL_APP_NAME } address.": [
+        "Har du ett konto hos någon av dessa tjänster? Klicka bara för att ändra e-postadressen till din ${ MAIL_APP_NAME }-adress."
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Banktjänster"
+      ],
+      "Crypto": [
+        "Krypto"
+      ],
+      "E-commerce and Retail": [
+        "E-handel och detaljhandel"
+      ],
+      "Entertainment": [
+        "Underhållning"
+      ],
+      "Food and beverage": [
+        "Mat och dryck"
+      ],
+      "Gaming": [
+        "Spel"
+      ],
+      "Most popular": [
+        "Mest populär"
+      ],
+      "Travel": [
+        "Resa"
+      ],
+      "Utilities": [
+        "Verktyg"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 år"
+      ],
+      "2 years": [
+        "2 år"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail och Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium lösenordshanterare"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Lagra dina lösenord på ett säkert sätt och autofyll dem på webbplatser. Inkluderar obegränsade lösenord, autofyll, lösenordsgenerator och mer."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Lösenordshanterare"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Inkluderar 2950+ servrar i 65+ länder, anslut upp till 10 enheter, få åtkomst till världsomspännande streamingtjänster, blockerare mot skadlig programvara och annonser och mer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Inkluderar stöd för 1 anpassad e-postdomän, 10 e-postadresser, 10 hide-my-email-alias, kalenderdelning och mer."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Säkra dina filer med krypterad molnlagring. Inkluderar versionshistorik, krypterad fildelning och mer."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Under en begränsad tid får du det bästa ${ BRAND_NAME } har att erbjuda till en exklusiv rabatt."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Vi firar nioårsjubileet av vår crowdfunding!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME } Jubileumsrea"
       ]
     }
   }

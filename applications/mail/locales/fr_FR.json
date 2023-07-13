@@ -4133,7 +4133,7 @@
         "Importer des contacts ou des messages"
       ],
       "Import your contacts or messages": [
-        "Importez vos contacts ou messages."
+        "Importer vos contacts ou messages."
       ],
       "Quickly transfer your contacts or emails from any provider using our Easy Switch import assistant.": [
         "Transférez rapidement vos contacts ou messages depuis n'importe quel fournisseur à l'aide de notre assistant d'importation Easy Switch."
@@ -4145,7 +4145,7 @@
         "Avec votre appareil mobile, scannez ce QR code ou visitez"
       ],
       "${ MAIL_APP_NAME } app": [
-        "Application ${ MAIL_APP_NAME }"
+        "application ${ MAIL_APP_NAME }"
       ],
       "Auto-forward Gmail": [
         "Transfert automatique depuis Gmail"
@@ -4154,7 +4154,7 @@
         "Fermer"
       ],
       "Get free storage": [
-        "Obtenir du stockage gratuit"
+        "Obtenir de l'espace de stockage gratuit"
       ],
       "Get mobile app": [
         "Télécharger l'application mobile"
@@ -4182,6 +4182,93 @@
       ],
       "Set recovery method": [
         "Définir une méthode de récupération"
+      ],
+      "${ MAIL_APP_NAME } on App Store": [
+        "${ MAIL_APP_NAME } sur App Store"
+      ],
+      "${ MAIL_APP_NAME } on Play Store": [
+        "${ MAIL_APP_NAME } sur Play Store"
+      ],
+      "account logins": [
+        "identifiants du compte"
+      ],
+      "auto-forwarding": [
+        "le transfert automatique"
+      ],
+      "Block email communications from scammers permanently.": [
+        "Bloquez définitivement les messages envoyés par les escrocs."
+      ],
+      "Block unsavory senders": [
+        "Bloquer les expéditeurs indésirables"
+      ],
+      "Bravo for making your email even more secure, convenient, and relevant! We've upped your free storage to a total of 1 GB.": [
+        "Félicitations, votre messagerie est maintenant plus sécurisée, pratique et efficace. Nous avons augmenté votre espace de stockage gratuit pour atteindre un total de 1 Go."
+      ],
+      "Change ${ strongText } to your ${ BRAND_NAME } address": [
+        "Changez les ${ strongText } pour votre adresse ${ BRAND_NAME }"
+      ],
+      "Checklist complete": [
+        "Checklist terminée"
+      ],
+      "Congratulation, you completed all the steps!": [
+        "Félicitations, vous avez effectué toutes les actions !"
+      ],
+      "Continue setting up your email": [
+        "Continuez la configuration de votre messagerie"
+      ],
+      "Discover how our ${ strongText } protect you": [
+        "Découvrez comment nos ${ strongText } vous protègent."
+      ],
+      "Discover privacy features": [
+        "Découvrez les fonctionnalités de protection de la vie privée"
+      ],
+      "Double your free storage to 1 GB when you complete the following:": [
+        "Doublez votre espace de stockage gratuit jusqu'à 1 Go en effectuant ces actions :"
+      ],
+      "Encryption so strong, only you and intended recipients can view your emails.": [
+        "Un chiffrement si puissant que personne d'autre que vous et vos destinataires ne peut consulter vos messages."
+      ],
+      "For your eyes only": [
+        "Seulement pour vous"
+      ],
+      "Get the ${ strongText } on Android or iOS": [
+        "Téléchargez l'${ strongText } sur Android ou iOS."
+      ],
+      "Keep using ${ MAIL_APP_NAME } to discover more ways ${ BRAND_NAME } protects your privacy and simplifies emailing.": [
+        "Continuez à utiliser ${ MAIL_APP_NAME } et découvrez les autres façons dont ${ BRAND_NAME } protège votre vie privée et simplifie la messagerie."
+      ],
+      "Make ${ BRAND_NAME } your go-to inbox": [
+        "Faites de ${ BRAND_NAME } votre boite de réception principale."
+      ],
+      "Nice! You've updated all services in this category.": [
+        "Super ! Vous avez mis à jour tous les services de cette catégorie."
+      ],
+      "Popular online services": [
+        "Services en ligne les plus courants"
+      ],
+      "privacy features": [
+        "fonctionnalités de protection de la vie privée"
+      ],
+      "Protect and simplify your email": [
+        "Protégez et simplifiez votre messagerie"
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Configurer ${ strongText } depuis Gmail"
+      ],
+      "Sign in to the mobile app to complete this step": [
+        "Connectez-vous avec l'application mobile pour compléter cette étape."
+      ],
+      "Update your logins": [
+        "Mettez à jour vos identifiants"
+      ],
+      "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
+        "Scannez ce code QR avec votre appareil mobile ou rendez-vous dans la boutique iOS ou Android."
+      ],
+      "We stop advertisers and data collectors from profiling you.": [
+        "Nous empêchons les professionnels de la publicité et les collecteurs de données d'établir votre profil."
+      ],
+      "You've unlocked 1 GB": [
+        "Vous avez débloqué 1 Go."
       ]
     },
     "Get started checklist item": {
@@ -5999,7 +6086,7 @@
         "Traqueurs bloqués :"
       ],
       "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
-        "Désactivez cette option pour faire des recherches uniquement par date, nom, adresse e-mail ou objet du message. Pour désactiver la recherche dans le contenu des messages (et supprimer les messages qui ont été téléchargés pour permettre cette fonctionnalité), accédez aux paramètres."
+        "Désactivez cette option pour rechercher uniquement par date, nom, adresse e-mail ou objet du message. Pour désactiver la recherche dans le contenu des messages (et supprimer les messages qui ont été téléchargés pour permettre cette fonctionnalité), accédez aux paramètres."
       ],
       "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
         "Vous pouvez cliquer sur les liens contenus dans ce message sans que les annonceurs puissent établir votre profil et connaître vos activités en ligne."
@@ -8420,7 +8507,7 @@
         "Annulation en cours"
       ],
       "Verification successful": [
-        "La vérification est réussie."
+        "La vérification a abouti."
       ]
     },
     "Success notification": {
@@ -9075,7 +9162,7 @@
         "Votre essai gratuit Mail Plus se termine le ${ textDate }."
       ],
       "(active)": [
-        "(activé)"
+        "(actif)"
       ],
       "Day theme": [
         "Thème jour"
@@ -9097,6 +9184,10 @@
       ],
       "This email is protected": [
         "Ce message est protégé."
+      ],
+      "We protected you from ${ trackersCount } tracker": [
+        "Nous vous avons protégé contre ${ trackersCount } traqueur.",
+        "Nous vous avons protégé contre ${ trackersCount } traqueurs."
       ]
     },
     "Title header": {
@@ -9587,6 +9678,9 @@
       ],
       "Theme default": [
         "Thème par défaut"
+      ],
+      "Theme font": [
+        "Police du thème"
       ]
     },
     "Font size option": {
@@ -9667,10 +9761,10 @@
         "Créez des identifiants de connexion sécurisés sur tous vos appareils. Profitez d'un nombre illimité d'alias, de 20 coffres-forts, de l'authentification à deux facteurs (2FA) intégrée, du remplissage automatique des cartes bancaires et de bien d'autres fonctionnalités."
       ],
       "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
-        "Cela comprend 2 950 serveurs répartis dans plus de 65 pays, la possibilité de connecter jusqu'à 10 appareils, l'accès aux services de streaming du monde entier, un bloqueur de logiciels malveillants et de publicités et bien d'autres fonctionnalités."
+        "Comprend 2 950 serveurs répartis dans plus de 65 pays, la possibilité de connecter jusqu'à 10 appareils, l'accès aux services de streaming du monde entier, un bloqueur de logiciels malveillants et de publicités et bien d'autres fonctionnalités."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Cela comprend la prise en charge de 1 domaines de messagerie personnalisés, de 10 adresses e-mail, d'un nombre illimité d'alias « hide-my-email », du partage de calendriers et bien d'autres fonctionnalités."
+        "Comprend la prise en charge d'un domaine de messagerie personnalisé, de 10 adresses e-mail, de 10 alias « hide-my-email », du partage de calendrier…"
       ],
       "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
         "Sécurisez vos fichiers grâce au stockage cloud chiffré. Profitez de l'historique des versions, du partage chiffré des fichiers et de bien d'autres fonctionnalités."
@@ -9699,7 +9793,7 @@
     },
     "Online accounts": {
       "Have an account with one of these services? Just click to change the email address to your ${ MAIL_APP_NAME } address.": [
-        "Vous avez un compte avec un de ces services ? Cliquez pour remplacer votre adresse e-mail par votre adresse ${ MAIL_APP_NAME }."
+        "Vous utilisez un de ces services ? Il vous suffit de cliquer pour remplacer l'adresse e-mail de votre compte par votre adresse ${ MAIL_APP_NAME }."
       ]
     },
     "Online Accounts Name": {
@@ -9710,19 +9804,25 @@
         "Divertissement"
       ],
       "Food and beverage": [
-        "Nourriture et boissons"
+        "Alimentation et boissons"
       ],
       "Gaming": [
         "Jeux"
       ],
       "Most popular": [
-        "Le plus populaire"
+        "Les plus courants"
       ],
       "Travel": [
         "Voyages"
       ],
       "Utilities": [
         "Utilitaires"
+      ],
+      "Banking": [
+        "Services bancaires"
+      ],
+      "E-commerce and Retail": [
+        "Commerce en ligne et en magasin"
       ]
     }
   }

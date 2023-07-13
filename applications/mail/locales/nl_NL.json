@@ -1168,6 +1168,9 @@
       ],
       "Move all to archive": [
         "Alles naar het Archief verplaatsen"
+      ],
+      "Change email": [
+        "E-mailadres wijzigen"
       ]
     },
     "action": {
@@ -4131,6 +4134,21 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Met uw mobiele apparaat, scan deze QR-code of bezoek"
+      ],
+      "Close": [
+        "Sluiten"
+      ],
+      "Get mobile app": [
+        "Download de mobiele app"
+      ],
+      "Learn more": [
+        "Meer informatie"
+      ],
+      "Maybe later": [
+        "Misschien later"
+      ],
+      "Send a message": [
+        "Verstuur een bericht"
       ]
     },
     "Get started checklist item": {
@@ -5922,6 +5940,22 @@
       ],
       "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
         "Het abonnement loopt af: Heractiveer het voor ${ byDate } om de voordelen van uw ${ planName } te behouden. ${ reactivateLink }"
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } link opgeruimd",
+        "${ numberOfUTMTrackers } links opgeruimd"
+      ],
+      "Links cleaned:": [
+        "Links opgeruimd:"
+      ],
+      "No links cleaned": [
+        "Geen links opgeruimd"
+      ],
+      "No trackers found": [
+        "Geen trackers gevonden"
+      ],
+      "You can click links in this email without being profiled and leaking your online activity with advertisers.": [
+        "U kan links volgen in deze e-mail zonder te worden geprofileerd en uw online activiteit bloot te stellen aan adverteerders"
       ]
     },
     "info": {
@@ -6644,6 +6678,15 @@
       ],
       "Type a command...": [
         "Typ een opdracht..."
+      ],
+      "Cleaned": [
+        "Opgeruimd"
+      ],
+      "Open in a new tab": [
+        "Openen in een nieuw tabblad"
+      ],
+      "Original link": [
+        "Originele link"
       ]
     },
     "Label attach to date input to select a date": {
@@ -8995,6 +9038,12 @@
       ],
       "Move all messages to Archive": [
         "Alle berichten naar het Archief verplaatsen"
+      ],
+      "No trackers found": [
+        "Geen trackers gevonden"
+      ],
+      "Protect your email": [
+        "Bescherm uw e-mailadres"
       ]
     },
     "Title header": {
@@ -9529,6 +9578,9 @@
       ],
       "Premium Password Manager": [
         "Premium wachtwoordmanager"
+      ],
+      "Premium Drive": [
+        "Premium Drive"
       ]
     },
     "summer2023: Describe Proton Pass": {
@@ -9574,6 +9626,20 @@
     "summer2023:Offer title": {
       "${ BRAND_NAME } Anniversary Sale": [
         "${ BRAND_NAME }-jubileumaanbieding"
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Bankdiensten"
+      ],
+      "Crypto": [
+        "Crypto"
+      ],
+      "Gaming": [
+        "Spellen"
+      ],
+      "Travel": [
+        "Reizen"
       ]
     }
   }

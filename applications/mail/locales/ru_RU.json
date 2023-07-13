@@ -1179,6 +1179,9 @@
       ],
       "Move all to archive": [
         "Переместить всё в Архив"
+      ],
+      "Change email": [
+        "Изменить e-mail"
       ]
     },
     "action": {
@@ -4202,6 +4205,30 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Используя мобильное устройство, отсканируйте этот QR-код или посетите"
+      ],
+      "Checklist complete": [
+        "Контрольный список завершен"
+      ],
+      "Close": [
+        "Закрыть"
+      ],
+      "Get mobile app": [
+        "Получить мобильное приложение"
+      ],
+      "Import data": [
+        "Импортировать данные"
+      ],
+      "Maybe later": [
+        "Может быть позже"
+      ],
+      "Send a message": [
+        "Отправить сообщение"
+      ],
+      "Set recovery method": [
+        "Установить метод восстановления"
+      ],
+      "You've unlocked 1 GB": [
+        "Вы разблокировали 1 ГБ"
       ]
     },
     "Get started checklist item": {
@@ -6161,6 +6188,21 @@
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
         "Вы можете прочитать это письмо не сообщая рекламодателям о своих взаимодействиях, местоположении или устройстве."
+      ],
+      "${ numberOfUTMTrackers } link cleaned": [
+        "${ numberOfUTMTrackers } ссылка очищена",
+        "${ numberOfUTMTrackers } ссылки очищены",
+        "${ numberOfUTMTrackers } ссылок очищены",
+        "${ numberOfUTMTrackers } ссылки очищены"
+      ],
+      "Links cleaned:": [
+        "Ссылки очищены:"
+      ],
+      "No links cleaned": [
+        "Ни одной ссылки не очищено"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Выключите, чтобы искать только по дате, имени, адресу электронной почты или теме. Чтобы выключить поиск по содержимому сообщений и удалить загруженную копию сообщений перейдите в настройки."
       ]
     },
     "info": {
@@ -10054,6 +10096,20 @@
     "summer2023:Offer title": {
       "${ BRAND_NAME } Anniversary Sale": [
         "Праздничная распродажа ${ BRAND_NAME }"
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Банковское дело"
+      ],
+      "E-commerce and Retail": [
+        "Электронная коммерция и розничная торговля"
+      ],
+      "Entertainment": [
+        "Развлечения"
+      ],
+      "Food and beverage": [
+        "Продукты питания и напитки"
       ]
     }
   }

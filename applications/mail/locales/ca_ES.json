@@ -29,10 +29,10 @@
         "Afegeix una adreça"
       ],
       "Add Bcc recipients": [
-        "Afegeix destinatari Cco"
+        "Afegeix destinatari CCO"
       ],
       "Add Cc recipients": [
-        "Afegeix destinataris Cc"
+        "Afegeix destinatari CC"
       ],
       "Add condition": [
         "Afegeix una condició"
@@ -95,7 +95,7 @@
         "Arxiva"
       ],
       "As Scheduled": [
-        "Com programat"
+        "Tal com s'ha programat"
       ],
       "At most 100 contacts are allowed per contact group": [
         "El nombre màxim de contactes per grup de contactes és de 100"
@@ -119,7 +119,7 @@
         "Accés beta"
       ],
       "Blind Carbon Copy": [
-        "Copia carbó oculta"
+        "Còpia carbó oculta"
       ],
       "Block": [
         "Bloqueja"
@@ -182,7 +182,7 @@
         "Tanca"
       ],
       "Close & discard": [
-        "Tancai descarta"
+        "Tanca i descarta"
       ],
       "Close composer": [
         "Tancar l'editor"
@@ -554,7 +554,7 @@
         "Carrega"
       ],
       "Load embedded images": [
-        "Carrega imatges incrustades"
+        "Carrega les imatges incrustades"
       ],
       "Load image": [
         "Carrega la imatge"
@@ -665,7 +665,7 @@
         "Mou a la safata d'entrada (no és correu brossa)"
       ],
       "Move to spam": [
-        "Mou a correu brossa"
+        "Mou al correu brossa"
       ],
       "Move to spam and unsubscribe": [
         "Mou a correu brossa i cancel·la la subscripció"
@@ -680,7 +680,7 @@
         "Necessiteu ajuda?"
       ],
       "Never show": [
-        "No mostra mai"
+        "No mostris mai"
       ],
       "New message": [
         "Nou missatge"
@@ -716,7 +716,7 @@
         "Obrir ${ CALENDAR_APP_NAME }"
       ],
       "Open composer": [
-        "Obrir el redactor"
+        "Obri l'editor"
       ],
       "Open get started checklist modal": [
         "Obrir la finestra de llista de comprovació per a començar"
@@ -758,7 +758,7 @@
         "Pàgina anterior"
       ],
       "Print": [
-        "imprimeix"
+        "Imprimeix"
       ],
       "Quit": [
         "Surt"
@@ -773,7 +773,7 @@
         "Llegeix el missatge"
       ],
       "Read receipt sent": [
-        "S'ha enviat la confirmació de lectura."
+        "S'ha enviat la confirmació de lectura"
       ],
       "Reconnect": [
         "Reconnectar"
@@ -857,7 +857,7 @@
         "Desa"
       ],
       "Saving${ ellipsis }": [
-        "Desant${ ellipsis }"
+        "S'està desant${ ellipsis }"
       ],
       "Schedule message": [
         "Programar missatge"
@@ -893,7 +893,7 @@
         "Destrueix automàticament en 7 dies"
       ],
       "Self-destruct message": [
-        "Destrucció automàtica de missatges"
+        "Destrueix el missatge automàticament"
       ],
       "Self-destruct on ...": [
         "Destrueix automàticament el..."
@@ -1171,6 +1171,9 @@
       ],
       "Move all to archive": [
         "Mou-ho tot a l'arxiu"
+      ],
+      "Change email": [
+        "Canvia el correu electrònic"
       ]
     },
     "action": {
@@ -2059,7 +2062,7 @@
         "Bahames"
       ],
       "Bahrain": [
-        "Bahrain"
+        "Bahrein"
       ],
       "Bangladesh": [
         "Bangladesh"
@@ -2095,7 +2098,7 @@
         "Bòsnia i Hercegovina"
       ],
       "Botswana": [
-        "Botswana"
+        "Botsuana"
       ],
       "Bouvet Island": [
         "Illa Bouvet"
@@ -2107,7 +2110,7 @@
         "Territori Britànic de l'Oceà Índic"
       ],
       "Brunei Darussalam": [
-        "Brunei Darussalam"
+        "Brunei"
       ],
       "Bulgaria": [
         "Bulgària"
@@ -2158,7 +2161,7 @@
         "Les Comores"
       ],
       "Congo": [
-        "Congo"
+        "República del Congo"
       ],
       "Congo, Democratic Republic of the": [
         "Congo, República Democràtica del"
@@ -2191,7 +2194,7 @@
         "Dinamarca"
       ],
       "Djibouti": [
-        "Djibouti"
+        "Gibuti"
       ],
       "Dominica": [
         "Dominica"
@@ -2206,7 +2209,7 @@
         "Egipte"
       ],
       "El Salvador": [
-        "El Salvador"
+        "el Salvador"
       ],
       "Equatorial Guinea": [
         "Guinea Equatorial"
@@ -2293,10 +2296,10 @@
         "Guinea"
       ],
       "Guinea-Bissau": [
-        "Guinea-Bissau"
+        "Guinea Bissau"
       ],
       "Guyana": [
-        "Guyana"
+        "Guaiana"
       ],
       "Haiti": [
         "Haití"
@@ -2359,7 +2362,7 @@
         "Jordània"
       ],
       "Kazakhstan": [
-        "Kazakhstan"
+        "Casaquistan"
       ],
       "Kenya": [
         "Kènia"
@@ -2371,7 +2374,7 @@
         "Kosovo"
       ],
       "Kuwait": [
-        "Kuwait"
+        "Al-Kuwait"
       ],
       "Kyrgyzstan": [
         "Kirguizstan"
@@ -2464,13 +2467,13 @@
         "Moçambic"
       ],
       "Myanmar": [
-        "Myanmar"
+        "Mianmar"
       ],
       "Namibia": [
         "Namíbia"
       ],
       "Nauru": [
-        "Nauru"
+        "Naüru"
       ],
       "Nepal": [
         "Nepal"
@@ -2515,7 +2518,7 @@
         "Oman"
       ],
       "Pakistan": [
-        "Pakistan"
+        "Paquiistan"
       ],
       "Palau": [
         "Palau"
@@ -2572,10 +2575,10 @@
         "Santa Helena"
       ],
       "Saint Kitts and Nevis": [
-        "Illa de Sant Christopher i Nevis"
+        "Saint Kitts i Nevis"
       ],
       "Saint Lucia": [
-        "Saint Lucia"
+        "Santa Llúcia"
       ],
       "Saint Martin (French Part)": [
         "Saint Martin (Part Francesa)"
@@ -2671,7 +2674,7 @@
         "Taiwan"
       ],
       "Tajikistan": [
-        "Tadjikistan"
+        "Tatgiquistan"
       ],
       "Tanzania": [
         "Tanzània"
@@ -2680,7 +2683,7 @@
         "Tailàndia"
       ],
       "Timor-Leste": [
-        "Timor-Leste"
+        "Timor Oriental"
       ],
       "Togo": [
         "Togo"
@@ -2704,10 +2707,10 @@
         "Turquia"
       ],
       "Turkmenistan": [
-        "Turkmenistan"
+        "Turcmenistan"
       ],
       "Turks and Caicos Islands": [
-        "Illes Turks i Caicos"
+        "Illes de Turks i Caicos"
       ],
       "Tuvalu": [
         "Tuvalu"
@@ -2734,7 +2737,7 @@
         "Uruguai"
       ],
       "Uzbekistan": [
-        "Uzbekistan"
+        "Usbequistan"
       ],
       "Vanuatu": [
         "Vanuatu"
@@ -3063,10 +3066,10 @@
     },
     "empty messages: success": {
       "Folder cleared": [
-        "Carpeta netejada"
+        "S'ha netejat la carpeta"
       ],
       "Label cleared": [
-        "Etiqueta netejada"
+        "S'ha netejat l'etiqueta"
       ]
     },
     "Encrypted Headers": {
@@ -3485,16 +3488,16 @@
     },
     "Error display when performing invalid move on message": {
       "Drafts cannot be moved to Inbox": [
-        "Els esborranys no es poden moure a la safata d'entrada."
+        "Els esborranys no es poden moure a la safata d'entrada"
       ],
       "Drafts cannot be moved to Spam": [
-        "Els esborranys no es poden moure al correu brossa."
+        "Els esborranys no es poden moure al correu brossa"
       ],
       "Sent messages cannot be moved to Inbox": [
-        "Els missatges enviats no es poden moure a la safata d'entrada."
+        "Els missatges enviats no es poden moure a la safata d'entrada"
       ],
       "Sent messages cannot be moved to Spam": [
-        "Els missatges enviats no es poden moure a la safata de correu brossa."
+        "Els missatges enviats no es poden moure al correu brossa"
       ],
       "This action cannot be performed": [
         "No es pot portar a terme aquesta acció"
@@ -3572,7 +3575,7 @@
         "Calendari"
       ],
       "Calendar time zone not supported": [
-        "La zona horària del calendari no és compatible"
+        "El fus horari del calendari no és compatible"
       ],
       "Component with wrong format": [
         "Component amb format erroni"
@@ -3587,7 +3590,7 @@
         "Element"
       ],
       "Encryption failed": [
-        "Error en el xifratge"
+        "No s'ha pogut xifrar"
       ],
       "End time out of bounds": [
         "Hora de finalització fora de límits"
@@ -3647,7 +3650,7 @@
         "Hora d’inici fora de límits"
       ],
       "Time zone": [
-        "Fus horari"
+        "Zona horària"
       ],
       "Time zone not supported": [
         "Zona horària no compatible"
@@ -3700,7 +3703,7 @@
     },
     "Error notification when score is missing in user feedback form modal": {
       "Score is required": [
-        "Es requereix la valoració"
+        "La valoració és obligatòria"
       ]
     },
     "Error sending calendar invitation": {
@@ -3764,7 +3767,7 @@
     },
     "familyOffer_2023: Get Proton Family": {
       "Get ${ planName }": [
-        "Obtenir ${ planName }"
+        "Obteniu ${ planName }"
       ]
     },
     "familyOffer_2023: Tooltip": {
@@ -3856,7 +3859,7 @@
         "Us heu unit al pla familiar"
       ],
       "You're invited to link your ${ BRAND_NAME } Account to this group plan and together enjoy all ${ BRAND_NAME_TWO } premium features.": [
-        "Esteu convidats a enllaçar el vostre Compte de ${ BRAND_NAME } a aquest pla de grup i gaudir junts de totes les característiques prèmium de ${ BRAND_NAME_TWO }."
+        "Esteu convidats a enllaçar el vostre compte de ${ BRAND_NAME } a aquest pla de grup i gaudir junts de totes les característiques prèmium de ${ BRAND_NAME_TWO }."
       ],
       "Your account has more email addresses than what's available to you in this plan. ${ addressSettingsLink }": [
         "El vostre compte té més adreces de correu electrònic de les que teniu disponibles en aquest pla. ${ addressSettingsLink }"
@@ -3878,7 +3881,7 @@
     },
     "familyOffer_2023:Get Proton Family": {
       "Get ${ planName }": [
-        "Obtenir ${ planName }"
+        "Obteniu ${ planName }"
       ]
     },
     "familyOffer_2023:Info": {
@@ -4093,7 +4096,7 @@
         "Assumpte: ${ subject }"
       ],
       "To: ${ toString }": [
-        "Per: ${ toString }"
+        "Per a: ${ toString }"
       ]
     },
     "Get started checklist completion": {
@@ -4140,6 +4143,120 @@
       ],
       "Using your mobile device, scan this QR code or visit": [
         "Utilitzant el vostre dispositiu mòbil, escanegeu aquest codi QR o visiteu"
+      ],
+      "${ MAIL_APP_NAME } app": [
+        "Aplicació ${ MAIL_APP_NAME }"
+      ],
+      "${ MAIL_APP_NAME } on App Store": [
+        "${ MAIL_APP_NAME } a l'App Store"
+      ],
+      "${ MAIL_APP_NAME } on Play Store": [
+        "${ MAIL_APP_NAME } a Play Store"
+      ],
+      "account logins": [
+        "els inicis de sessió del compte"
+      ],
+      "Auto-forward Gmail": [
+        "Reenviament automàtic des de Gmail"
+      ],
+      "auto-forwarding": [
+        "reenviament automàtic"
+      ],
+      "Block email communications from scammers permanently.": [
+        "Bloqueja permanentment comunicacions de correu electrònic d'estafadors."
+      ],
+      "Block unsavory senders": [
+        "Bloqueja els remitents no desitjats"
+      ],
+      "Bravo for making your email even more secure, convenient, and relevant! We've upped your free storage to a total of 1 GB.": [
+        "Enhorabona per fer el vostre correu electrònic encara més segur, convenient i rellevant! Hem apujat el vostre emmagatzematge gratuït fins a un total d'1 GB."
+      ],
+      "Checklist complete": [
+        "Llista de verificació completada"
+      ],
+      "Close": [
+        "Tanca"
+      ],
+      "Congratulation, you completed all the steps!": [
+        "Enhorabona, heu completat tots els passos!"
+      ],
+      "Continue setting up your email": [
+        "Continueu configurant el vostre correu electrònic"
+      ],
+      "Discover privacy features": [
+        "Descobriu les característiques de privacitat"
+      ],
+      "Double your free storage to 1 GB when you complete the following:": [
+        "Dobleu l'emmagatzematge gratuït a 1 GB quan completeu els passos següents:"
+      ],
+      "Encryption so strong, only you and intended recipients can view your emails.": [
+        "Xifratge tan fort que només vós i els destinataris escollits poden veure els vostres correus electrònics."
+      ],
+      "For your eyes only": [
+        "Només pels vostres ulls"
+      ],
+      "Get free storage": [
+        "Obtenir emmagatzematge gratuït"
+      ],
+      "Get mobile app": [
+        "Obtenir l'aplicació mòbil"
+      ],
+      "Get the App": [
+        "Obtén l'aplicació"
+      ],
+      "Import data": [
+        "Importar dades"
+      ],
+      "Keep using ${ MAIL_APP_NAME } to discover more ways ${ BRAND_NAME } protects your privacy and simplifies emailing.": [
+        "Seguiu utilitzant ${ MAIL_APP_NAME } per a descobrir més formes amb què ${ BRAND_NAME } protegeix la vostra privacitat i simplifica l'enviament de correus electrònics."
+      ],
+      "Learn more": [
+        "Saber-ne més"
+      ],
+      "Make ${ BRAND_NAME } your go-to inbox": [
+        "Feu de ${ BRAND_NAME } la vostra safata d'entrada preferida"
+      ],
+      "Maybe later": [
+        "Potser després"
+      ],
+      "Nice! You've updated all services in this category.": [
+        "Perfecte! Heu actualitzat tots els serveis d'aquesta categoria."
+      ],
+      "Open checklist": [
+        "Obrir la llista de comprovacions"
+      ],
+      "Popular online services": [
+        "Serveis populars en línia"
+      ],
+      "privacy features": [
+        "característiques de privacitat"
+      ],
+      "Protect and simplify your email": [
+        "Protegiu i simplifiqueu el vostre correu electrònic"
+      ],
+      "Protection from trackers": [
+        "Protecció contra els rastrejadors"
+      ],
+      "Send a message": [
+        "Enviar un missatge"
+      ],
+      "Set recovery method": [
+        "Establir un mètode de recuperació"
+      ],
+      "Sign in to the mobile app to complete this step": [
+        "Inicieu sessió a l'aplicació mòbil per completar aquest pas."
+      ],
+      "Update your logins": [
+        "Actualitzeu els inicis de sessió"
+      ],
+      "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
+        "Amb el vostre dispositiu mòbil, escanegeu aquest codi QR o visiteu la tenda d'aplicacions iOS o Android."
+      ],
+      "We stop advertisers and data collectors from profiling you.": [
+        "Impedim que els anunciants i els recopiladors de dades us perfilin."
+      ],
+      "You've unlocked 1 GB": [
+        "Heu desbloquejat 1 GB"
       ]
     },
     "Get started checklist item": {
@@ -4287,7 +4404,7 @@
     },
     "Import calendar; import invitation": {
       "Imported invitations appear in ${ CALENDAR_APP_NAME } as simple events without organizer and participant details. To get event updates and see participants, ask organizers to invite you using your ${ BRAND_NAME } email address.": [
-        "Les invitacions importades aparèixen a ${ CALENDAR_APP_NAME } com a esdeveniments simples sense detalls de l'organitzador i dels participants. Per obtenir actualitzacions de l'esdeveniment i veure els participants, demaneu als organitzadors que us convidin utilitzant la vostra adreça de correu electrònic de ${ BRAND_NAME }."
+        "Les invitacions importades apareixen en ${ CALENDAR_APP_NAME } com a esdeveniments simples sense detalls de l'organitzador ni dels participants. Per obtenir actualitzacions de l'esdeveniment i veure els participants, demaneu als organitzadors que us convidin utilitzant la vostra adreça de correu electrònic de ${ BRAND_NAME }."
       ],
       "This file contains an event invitation:": [
         "Aquest fitxer conté una invitació a un esdeveniment:",
@@ -5239,7 +5356,7 @@
         "No s'han trobat més resultats"
       ],
       "No results found": [
-        "No s'han trobat resultats."
+        "No s'ha trobat cap resultat"
       ],
       "No trackers found, but some images could not be loaded with tracking protection": [
         "No s'han trobat rastrejadors, però algunes imatges no s'han pogut carregar amb la protecció de seguiment"
@@ -6026,7 +6143,7 @@
         "Afegeix un xifratge"
       ],
       "Add expiration time": [
-        "Afegeix un temps d'expiració"
+        "Afegeix una caducitat"
       ],
       "Apply / open": [
         "Aplica / obre"
@@ -6038,7 +6155,7 @@
         "Cancel·la / tanca"
       ],
       "Close draft": [
-        "Tanca esborrany"
+        "Tanca l'esborrany"
       ],
       "Delete permanently": [
         "Suprimeix permanentment"
@@ -6047,7 +6164,7 @@
         "Descarta l'esborrany"
       ],
       "Expand / contract composer": [
-        "Amplia / contracta editor"
+        "Amplia / contrau l'editor"
       ],
       "Forward": [
         "Reenvia"
@@ -6077,13 +6194,13 @@
         "Vés a la Paperera"
       ],
       "Insert link": [
-        "Insereix l'enllaç"
+        "Insereix un enllaç"
       ],
       "Jump to first": [
         "Moure a primera posició"
       ],
       "Jump to last": [
-        "Mou a última posició"
+        "Salta a l'últim"
       ],
       "Label as...": [
         "Etiqueta com a..."
@@ -6101,7 +6218,7 @@
         "Marca com a no llegit"
       ],
       "Minimize / maximize composer": [
-        "Minimitza / maximitza el compositor"
+        "Minimitza / maximitza l'editor"
       ],
       "Move down": [
         "Mou cap avall"
@@ -6134,7 +6251,7 @@
         "Nou missatge"
       ],
       "Open next message": [
-        "Obre el següent missatge"
+        "Obre el missatge següent"
       ],
       "Open previous message": [
         "Obre el missatge anterior"
@@ -6176,7 +6293,7 @@
         "Destacat"
       ],
       "Open command panel": [
-        "Obre el panell de comandes"
+        "Obre el panell d'ordres"
       ]
     },
     "Keyboard shortcut section name": {
@@ -6313,7 +6430,7 @@
         "Categoria"
       ],
       "CC": [
-        "Cc"
+        "CC"
       ],
       "City": [
         "Ciutat"
@@ -6860,10 +6977,10 @@
         "Més sobre la recuperació"
       ],
       "Open in ${ CALENDAR_APP_NAME }": [
-        "Obrir en ${ CALENDAR_APP_NAME }"
+        "Obri en ${ CALENDAR_APP_NAME }"
       ],
       "Open updated event in ${ CALENDAR_APP_NAME }": [
-        "Obrir l'esdeveniment actualitzat en ${ CALENDAR_APP_NAME }"
+        "Obri l'esdeveniment actualitzat en ${ CALENDAR_APP_NAME }"
       ],
       "Or you can delete one of your calendars and create a new one linked to an active email address.": [
         "O podeu suprimir un dels vostres calendaris i crear-ne un de nou enllaçat a una adreça de correu electrònic activa."
@@ -7021,7 +7138,7 @@
     },
     "Message": {
       "Fw:": [
-        "Rv:"
+        "RV:"
       ],
       "On ${ date }, ${ senderString } wrote:": [
         "El ${ date }, ${ senderString } va escriure:"
@@ -7647,7 +7764,7 @@
         "Missatge signat PGP. Ha fallat la verificació del remitent"
       ],
       "Sent by ${ MAIL_APP_NAME } with zero-access encryption": [
-        "Enviat per ${ MAIL_APP_NAME } amb xifrat d'accés zero"
+        "Enviat per ${ MAIL_APP_NAME } amb xifratge d'accés zero"
       ],
       "Stored with zero-access encryption": [
         "Emmagatzemat amb xifratge d'accés zero"
@@ -7796,10 +7913,10 @@
     },
     "Signature verification warning": {
       "PGP-encrypted message. Sender verification failed: ${ verificationErrorsMessage }": [
-        "Missatge xifrat amb PGP. La verificació del remitent ha fallat: ${ verificationErrorsMessage }"
+        "El missatge està xifrat amb PGP. No s'ha pogut verificar el remitent: ${ verificationErrorsMessage }"
       ],
       "PGP-signed message. Sender verification failed: ${ verificationErrorsMessage }": [
-        "Missatge signat amb PGP. La verificació del remitent ha fallat: ${ verificationErrorsMessage }"
+        "El missatge està signat amb PGP. No s'ha pogut verificar el remitent: ${ verificationErrorsMessage }"
       ],
       "Sender could not be verified: Message not signed": [
         "El remitent no es pot verificar: Missatge no signat"
@@ -7905,13 +8022,13 @@
         "Accés anticipat prèmium"
       ],
       "Premium Mail and Calendar": [
-        "Correu i Calendari Prèmium"
+        "Correu i Calendari prèmium"
       ],
       "Premium Mail, Calendar and Drive": [
-        "Correu, Calendari i Drive Prèmium"
+        "Correu, Calendari i Drive prèmium"
       ],
       "Premium VPN": [
-        "VPN Prèmium"
+        "VPN prèmium"
       ],
       "Secure cloud storage": [
         "Emmagatzematge al núvol segur"
@@ -8756,7 +8873,7 @@
         "Confirmació d'enllaç"
       ],
       "Load embedded images": [
-        "Carrega imatges incrustades"
+        "Carrega les imatges incrustades"
       ],
       "Load remote content": [
         "Carrega el contingut remot"
@@ -8915,7 +9032,7 @@
         "Seleccionar grup de contactes"
       ],
       "Self-destruct message": [
-        "Destrucció automàtica de missatges"
+        "Destrueix el missatge automàticament"
       ],
       "Send email": [
         "Enviar correu"
@@ -8945,7 +9062,7 @@
         "Enviant missatge original"
       ],
       "Set your own schedule": [
-        "Estableixi el seu propi horari"
+        "Establiu el vostre propi horari"
       ],
       "Settings": [
         "Preferències"
@@ -8954,7 +9071,7 @@
         "Iniciar sessió i concedir accés"
       ],
       "Sign in with 2FA": [
-        "Inicia la sessió amb dos factors"
+        "Inicia la sessió amb 2FA"
       ],
       "Sign out": [
         "Tanca la sessió"
@@ -9045,7 +9162,7 @@
         "Cicle de facturació"
       ],
       "Move all messages to Archive": [
-        "Mou tots els missatges a l'Arxiu"
+        "Mou tots els missatges a l'arxiu"
       ],
       "No trackers found": [
         "No s'han trobat rastrejadors"
@@ -9055,6 +9172,10 @@
       ],
       "This email is protected": [
         "Aquest correu electrònic està protegit"
+      ],
+      "We protected you from ${ trackersCount } tracker": [
+        "Hem protegit el vostre correu electrònic contra ${ trackersCount } rastrejador.",
+        "Hem protegit el vostre correu electrònic contra ${ trackersCount } rastrejadors."
       ]
     },
     "Title header": {
@@ -9541,10 +9662,13 @@
     },
     "Font face option": {
       "System default": [
-        "Predeterminat del sistema"
+        "Valors per defecte del sistema"
       ],
       "Theme default": [
         "Tema per defecte"
+      ],
+      "Theme font": [
+        "Font del tema"
       ]
     },
     "Font size option": {
@@ -9589,6 +9713,104 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "La clau de verificació no és a la llista de claus de confiança."
+      ]
+    },
+    "Online accounts": {
+      "Have an account with one of these services? Just click to change the email address to your ${ MAIL_APP_NAME } address.": [
+        "Teniu un compte amb algun d'aquests serveis? Cliqueu per a canviar l'adreça de correu electrònic a la vostra adreça ${ MAIL_APP_NAME }."
+      ]
+    },
+    "Online Accounts Name": {
+      "Banking": [
+        "Operacions bancàries"
+      ],
+      "Crypto": [
+        "Cripto"
+      ],
+      "E-commerce and Retail": [
+        "Comerç electrònic i Botiga"
+      ],
+      "Entertainment": [
+        "Entreteniment"
+      ],
+      "Food and beverage": [
+        "Alimentació i begudes"
+      ],
+      "Gaming": [
+        "Jocs"
+      ],
+      "Most popular": [
+        "Més populars"
+      ],
+      "Travel": [
+        "Viatges"
+      ],
+      "Utilities": [
+        "Utilitats"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 any"
+      ],
+      "2 years": [
+        "2 anys"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Versió prèmium de Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Versió prèmium de Mail i Calendar"
+      ],
+      "Premium Password Manager": [
+        "Gestor de Contrasenyes Prèmium"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Deseu de forma segura les vostres contrasenyes i inseriu-les automàticament a llocs web. Inclou, entre d'altres, contrasenyes il·limitades, inserció automàtica, generador de contrasenyes."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Gestor de contrasenyes"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Creeu detalls d'inici de sessió segurs en tots els vostres dispositius. Inclou, entre d'altres, àlies il·limitats, 20 caixes fortes, autenticació de dos factors (2FA) i inserció automàtica de targetes de crèdit."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Inclou, entre d'altres, més de 2950 servidors en més de 65 països, connexió fins a 10 dispositius, accés a serveis de reproducció en línia de tot el món i bloqueig de programari maliciós i d'anuncis."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Inclou, entre d'altres, suport per a 1 domini de correu electrònic personalitzat, 10 adreces de correu electrònic, 10 àlies hide-my-email i compartició de calendari."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Protegiu els vostres fitxers amb emmagatzematge xifrat al núvol. Inclou, entre d'altres, historial de versions i compartició de fitxers xifrats."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*La vostra subscripció es renovarà automàticament a la tarifa estàndard amb descompte al final del cicle de facturació."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Els descomptes s'apliquen als preus mensuals estàndard. Aquesta oferta només està disponible per a nous subscriptors."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Per un temps limitat podeu obtenir el millor que ${ BRAND_NAME } pot oferir amb un descompte exclusiu."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Estem celebrant el novè aniversari del nostre finançament col·lectiu!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME } Rebaixa d'Aniversari"
       ]
     }
   }
