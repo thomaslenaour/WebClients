@@ -4429,6 +4429,9 @@
     "Font face option": {
       "System default": [
         "Системна"
+      ],
+      "Theme font": [
+        "Шрифт теми"
       ]
     },
     "Font Size Default": {
@@ -7142,6 +7145,18 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Ваша передплата керується Mozilla. Зв'яжіться зі службою підтримки Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } це вдосконалена програма захисту облікових записів, яка працює завдяки складним системам штучного інтелекту та фахівцям, які цілодобово захищають вас від зловмисників і загроз безпеці."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Громадським діячам, журналістам, керівникам та іншим особам, які можуть стати об'єктом кібератак, наполегливо рекомендується ввімкнути ${ PROTON_SENTINEL_NAME }."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "Надсилання через SMTP дозволяє стороннім сервісам або пристроям надсилати електронну пошту через ${ MAIL_APP_NAME } на ваші власні доменні адреси. Щоб отримати доступ, будь ласка, створіть ${ createTicket }, описавши ваші сценарії використання, які власні домени ви хотіли б використовувати, а також очікувані погодинні та щоденні обсяги електронної пошти."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To use this feature, start by generating a new token.": [
+        "Надсилання SMTP дозволяє стороннім сервісам або пристроям надсилати електронну пошту через ${ MAIL_APP_NAME } на ваші власні доменні адреси. Щоб скористатися цією функцією, згенеруйте новий токен."
       ]
     },
     "info": {
@@ -8690,6 +8705,9 @@
       ],
       "Why set recovery methods?": [
         "Навіщо додавати спосіб відновлення?"
+      ],
+      "create a ticket": [
+        "створити запит"
       ]
     },
     "Loading info": {
@@ -10565,6 +10583,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Ваша організація має доступ до ${ free }. Якщо ви хочете отримати доступ до преміум функцій ${ appName }, попросіть адміністратора вашої організації поліпшити підписку."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Зашифрований менеджер паролів, який також захищає ваші особисті дані"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -12583,7 +12604,7 @@
         "Не вдалося пройти перевірку PayPal"
       ],
       "Personalise your e-mail footer": [
-        "Налаштуйте нижній колонтитул листа"
+        "Персоналізуйте нижній колонтитул листа"
       ],
       "Phone": [
         "Телефон"
@@ -12872,6 +12893,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ви запрошені спробувати ${ MAIL_APP_NAME }"
+      ],
+      "SMTP Submission": [
+        "Надсилання по SMTP"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

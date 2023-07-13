@@ -4356,6 +4356,9 @@
     "Font face option": {
       "System default": [
         "Predefinito di sistema"
+      ],
+      "Theme font": [
+        "Tipo di carattere"
       ]
     },
     "Font Size Default": {
@@ -4406,6 +4409,9 @@
       ],
       "privacy features": [
         "funzionalità per la privacy"
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Configurare ${ strongText } da Gmail"
       ]
     },
     "Gmail forwarding": {
@@ -6905,6 +6911,12 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "La tua sottoscrizione è gestita da Mozilla. Per favore, contatta il supporto di Mozilla."
+      ],
+      "Over 100 million people and businesses have signed up for ${ BRAND_NAME }.": [
+        "Oltre 100 milioni di persone e aziende si sono registrate su ${ BRAND_NAME }."
+      ],
+      "Recovery kit copied to clipboard": [
+        "Il kit di recupero è copiato negli appunti."
       ]
     },
     "info": {
@@ -10116,6 +10128,9 @@
       ],
       "You currently have": [
         "Al momento hai"
+      ],
+      "Save your recovery kit to continue": [
+        "Salva il tuo kit di recupero per continuare"
       ]
     },
     "pass_signup_2023: Onboarding": {

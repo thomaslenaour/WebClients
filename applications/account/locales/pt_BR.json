@@ -2876,7 +2876,7 @@
         "Notamos que essa conta não lhe pertence. Investigaremos e atuaremos de acordo."
       ],
       "You can safely close this tab.": [
-        "Você pode fechar esta aba com segurança."
+        "Você pode fechar esta guia com segurança."
       ]
     },
     "Email body for description (description part)": {
@@ -3006,7 +3006,7 @@
         "A conta não existe"
       ],
       "Address primary private key not found": [
-        "Chave privada primária do endereço não encontrada"
+        "Chave privada principal do endereço não encontrada"
       ],
       "All storage space has been allocated. Please reduce storage allocated to other users.": [
         "Todo o espaço de armazenamento foi alocado. Reduza o armazenamento alocado para outros usuários."
@@ -3250,16 +3250,16 @@
         "Porta é necessária"
       ],
       "Primary address key is not decrypted": [
-        "A chave do endereço primário não está descriptografada"
+        "A chave do endereço principal não está descriptografada"
       ],
       "Primary address key is not decrypted.": [
-        "A chave do endereço primário não está descriptografada."
+        "A chave do endereço principal não está descriptografada."
       ],
       "Primary key is not valid for sending": [
-        "A chave primária não é valida para o envio"
+        "A chave principal não é valida para o envio"
       ],
       "Primary key retrieved for ${ BRAND_NAME } user is not valid for sending": [
-        "A chave primária recuperada para o usuário da ${ BRAND_NAME } não é válida para o envio."
+        "A chave principal recuperada para o usuário da ${ BRAND_NAME } não é válida para o envio."
       ],
       "Process aborted": [
         "Processo abortado"
@@ -3311,7 +3311,7 @@
         "O navegador que você está usando não permite que o pagamento seja completamente autorizado. Use um navegador diferente ou inicie a sessão através de um computador."
       ],
       "The email addresses do not match": [
-        "Os endereços de e-mail não são iguais"
+        "Os endereços de e-mail não correspondem."
       ],
       "The folder name is invalid. Please choose a different name.": [
         "O nome da pasta é inválido. Escolha um nome diferente."
@@ -3460,7 +3460,7 @@
     },
     "Error importing calendar": {
       "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
-        "Ocorreu um erro ao ler o arquivo ${ formattedFilename }. Formato do aquivo incorreto."
+        "Ocorreu um erro ao ler o arquivo ${ formattedFilename }. O formato do aquivo não é correto."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Maximum file size is ${ MAX_IMPORT_FILE_SIZE_STRING }.": [
         "Ocorreu um erro ao carregar o seu arquivo ${ formattedFilename }. O tamanho máximo do arquivo é ${ MAX_IMPORT_FILE_SIZE_STRING }."
@@ -3501,7 +3501,7 @@
     },
     "Error importing contacts": {
       "An error occurred reading your file ${ formattedFilename }. Incorrect file format.": [
-        "Ocorreu um erro ao ler o arquivo ${ formattedFilename }. Formato do aquivo incorreto."
+        "Ocorreu um erro ao ler o arquivo ${ formattedFilename }. O formato do aquivo não é correto."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Maximum file size is ${ MAX_IMPORT_FILE_SIZE_STRING }.": [
         "Ocorreu um erro ao carregar o seu arquivo ${ formattedFilename }. O tamanho máximo do arquivo é ${ MAX_IMPORT_FILE_SIZE_STRING }."
@@ -4366,13 +4366,13 @@
         "Para evitar que e-mails indesejados lotem as caixas de entrada"
       ],
       "To prevent junk mail from clogging up your inbox": [
-        "Para evitar que e-mails indesejados lotem sua caixa de entrada"
+        "Para evitar que e-mails indesejados lotem sua caixa de entrada."
       ],
       "To stop phishing or suspicious emails from entering your email system": [
         "Para impedir que e-mails de phishing ou suspeitos entrem no seu sistema de e-mail"
       ],
       "To stop phishing or suspicious emails from entering your organization's email system": [
-        "Para impedir que e-mails de phishing ou suspeitos entrem no sistema de e-mail da sua organização"
+        "Para impedir que e-mails de phishing ou suspeitos entrem no sistema de e-mail da sua organização."
       ]
     },
     "Font Face Default": {
@@ -4383,6 +4383,9 @@
     "Font face option": {
       "System default": [
         "Padrão do sistema"
+      ],
+      "Theme font": [
+        "Tipo de letra do tema"
       ]
     },
     "Font Size Default": {
@@ -4427,6 +4430,36 @@
       ],
       "Get the App": [
         "Baixe o aplicativo"
+      ],
+      "account logins": [
+        "logins de contas"
+      ],
+      "Auto-forward Gmail": [
+        "Encaminhamento automático do Gmail"
+      ],
+      "auto-forwarding": [
+        "encaminhamento automático"
+      ],
+      "Change ${ strongText } to your ${ BRAND_NAME } address": [
+        "Mude os ${ strongText } para o seu endereço ${ BRAND_NAME }"
+      ],
+      "Discover how our ${ strongText } protect you": [
+        "Descubra como nossos ${ strongText } te protegem"
+      ],
+      "Discover privacy features": [
+        "Descobrir os recursos de privacidade"
+      ],
+      "Get the ${ strongText } on Android or iOS": [
+        "Baixe o ${ strongText } para Android na Google Play ou iOS na App Store"
+      ],
+      "privacy features": [
+        "recursos de privacidade"
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Configurar ${ strongText } do Gmail"
+      ],
+      "Update your logins": [
+        "Atualize seus logins"
       ]
     },
     "Gmail forwarding": {
@@ -5246,7 +5279,7 @@
         "Logotipo do American Express SafeKey"
       ],
       "Amount above maximum (${ amount }).": [
-        "Valor total acima do máximo (${ amount })."
+        "O valor total é acima do máximo (${ amount })."
       ],
       "Amount below minimum (${ amount }).": [
         "Valor total abaixo do mínimo (${ amount })."
@@ -6129,7 +6162,7 @@
         "A pré-visualização falhou ao carregar"
       ],
       "Preview for this file type is not supported": [
-        "A pré-visualização deste arquivo não é suportada"
+        "A pré-visualização deste arquivo não é suportada."
       ],
       "Price includes all applicable cycle-based discounts and non-expired coupons saved to your account.": [
         "O preço inclui todos os descontos baseados em ciclos aplicáveis ​​e cupons não expirados salvos em sua conta."
@@ -6165,7 +6198,7 @@
         "As informações de recuperação permanecerão neste dispositivo, a menos que você opte por excluí-las."
       ],
       "Recovery kit copied to clipboard": [
-        "Chave de recuperação copiada para a área de transferência"
+        "A chave de recuperação foi copiada para a área de transferência."
       ],
       "Recovery phrase copied to clipboard": [
         "Frase de recuperação copiada para a área de transferência"
@@ -6325,7 +6358,7 @@
         "Ações suspeitas serão inspecionadas por múltiplas camadas de defesa, que ajudam a impedir que invasores sequestrem sua conta."
       ],
       "Swiss based": [
-        "Baseado na suíça"
+        "Sediado na Suíça"
       ],
       "Temporarily unavailable. Please check back later.": [
         "Temporariamente indisponível. Tente mais tarde."
@@ -6903,7 +6936,7 @@
         "A sua conta da ${ BRAND_NAME } está associada com ${ externalEmailAddress }."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
-        "Sua conta da ${ BRAND_NAME } está atualmente suspensa. Após 28 dias, os e-mails não serão mais entregues em sua caixa de entrada, seus links de compartilhamento de Drive serão bloqueados e você não poderá enviar novos arquivos. Para retomar o serviço normal, favor pagar qualquer fatura vencida."
+        "Sua conta da ${ BRAND_NAME } está atualmente suspensa. Após 28 dias, os e-mails não serão mais entregues em sua caixa de entrada, seus links de compartilhamento de Drive serão bloqueados e você não poderá enviar novos arquivos. Para retomar o serviço normal, pague quaisquer faturas vencidas."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. Emails are no longer being delivered to your inbox. Your Drive sharing links are no longer active, and you cannot upload new files. To continue using your account, please pay any overdue invoices.": [
         "Sua conta da ${ BRAND_NAME } está suspensa no momento. Os e-mails não estão mais sendo entregues em sua caixa de entrada. Seus links de compartilhamento do Drive não estão mais ativos e você não pode enviar novos arquivos. Para continuar usando sua conta, pague as faturas vencidas."
@@ -6980,6 +7013,18 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Sua assinatura é gerenciada pela Mozilla. Entre em contato com o suporte da Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } é um programa avançado de proteção de conta, alimentado por sofisticados sistemas de IA e especialistas, trabalhando ininterruptamente para te proteger de pessoas mal-intencionadas e ameaças à segurança."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Figuras públicas, jornalistas, executivos e outros que possam ser alvo de ataques cibernéticos são altamente encorajados a habilitar o ${ PROTON_SENTINEL_NAME }."
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "Para acompanhar as novidades sobre desenvolvimento de produtos ${ BRAND_NAME }, de tempos em tempos, você pode se inscrever em um dos nossos vários e-mails e no ${ blogLink }."
+      ],
+      "You will NOT be able to decrypt any messages, files, and other data encrypted with this key. All data signed with this key will no longer be verified by ${ BRAND_NAME } applications.": [
+        "Você NÃO poderá descriptografar quaisquer mensagens, arquivos e outros dados criptografados com esta chave. Todos os dados assinados com esta chave não serão mais verificados pelos aplicativos da ${ BRAND_NAME }."
       ]
     },
     "info": {
@@ -7358,7 +7403,7 @@
         "Exportar chave pública"
       ],
       "Make primary": [
-        "Tornar primária"
+        "Tornar principal"
       ],
       "Mark compromised": [
         "Marcar como comprometida"
@@ -7504,7 +7549,7 @@
         "Excluir mensagens indesejadas automaticamente"
       ],
       "Auto-detect primary time zone": [
-        "Detecção automática do fuso horário primário"
+        "Detecção automática do fuso horário principal"
       ],
       "Auto-reply": [
         "Resposta automática"
@@ -7552,7 +7597,7 @@
         "Titular do cartão"
       ],
       "Card information": [
-        "Informação do cartão"
+        "Informações do cartão"
       ],
       "Card number": [
         "Número do cartão"
@@ -8964,8 +9009,8 @@
         "${ n } pastas e marcadores"
       ],
       "${ n } hide-my-email alias": [
-        "${ n } alias do Hide-my-email",
-        "${ n } aliases do Hide-my-email"
+        "${ n } alias do hide-my-email",
+        "${ n } aliases do hide-my-email"
       ],
       "${ n } label": [
         "${ n } marcador",
@@ -9027,7 +9072,7 @@
         "Disponível em todas plataformas"
       ],
       "Calendar sharing": [
-        "Compartilhar calendário"
+        "Compartilhar o calendário"
       ],
       "Catch-all": [
         "Catch-all"
@@ -9494,7 +9539,7 @@
         "Compartilhe facilmente seus calendários com colegas, familiares e amigos por meio de um link"
       ],
       "Easily share your calendars with your family, friends, or colleagues": [
-        "Compartilhe facilmente seus calendários com familiares, amigos ou colegas"
+        "Compartilhe facilmente seus calendários com familiares, amigos ou colegas."
       ],
       "Ensures you receive all emails sent to your domain, even if the email address doesn't exist, no longer exists, or has a typo": [
         "Garante que você receba todos os e-mails enviados ao seu domínio, mesmo que o endereço de e-mail não exista, tenha deixado de existir ou contenha um erro de digitação"
@@ -9623,7 +9668,10 @@
         "Ao enviar para outros usuários do ${ MAIL_APP_NAME }, a criptografia é automática. O envio para usuários que não usam ${ MAIL_APP_NAME_TWO } requer a definição de uma senha antes do envio."
       ],
       "You can have more than one admin. All admins can add and manage users but only the primary admin has control over billing.": [
-        "Você pode ter mais de um administrador. Todos os administradores podem adicionar e gerenciar usuários, mas apenas o administrador primário tem controle sobre o faturamento."
+        "Você pode ter mais de um administrador. Todos os administradores podem adicionar e gerenciar usuários, mas apenas o administrador principal tem controle sobre o faturamento."
+      ],
+      "Create up to ${ n } email addresses/aliases that you can assign to family members. Use them for online identities, e.g., JohnShopper@${ domain } for shopping accounts.": [
+        "Crie até ${ n } endereços de e-mail ou aliases que você pode atribuir aos membros da sua família. Utilize-os como identidades digitais como, por exemplo, JoaoDasCompras@${ domain } para contas em e-commerce."
       ]
     },
     "new_plans: upgrade": {
@@ -9670,7 +9718,7 @@
         "Suporte prioritário"
       ],
       "Secure your passwords and identity with an open-source and encrypted password manager.": [
-        "Proteja a suas senhas e identidade com um gerenciador de senha criptografada de códio aberto."
+        "Proteja suas senhas e identidade com um gerenciador de senha criptografada de códio aberto."
       ],
       "Support for 1 custom email domain": [
         "Suporte para 1 domínio de e-mail personalizado"
@@ -10142,6 +10190,9 @@
       ],
       "Upgrade your plan": [
         "Faça upgrade do seu plano"
+      ],
+      "Checkout": [
+        "Pagamento"
       ]
     },
     "pass_signup_2023: Info": {
@@ -10167,7 +10218,7 @@
         "Obtenha ${ appName } para ${ browserName } em breve"
       ],
       "Install app": [
-        "Instala o aplicativo"
+        "Instale o aplicativo"
       ],
       "Install app and extension": [
         "Instale o aplicativo e a extensão"
@@ -10213,6 +10264,36 @@
       ],
       "You currently have": [
         "Você tem atualmente"
+      ],
+      "${ PASS_APP_NAME } keeps your passwords and identity secure with rigorous end-to-end encryption.": [
+        "O ${ PASS_APP_NAME } mantém suas senhas e sua identidade seguras com rigorosa criptografia de ponta-a-ponta."
+      ],
+      "${ PASS_APP_NAME } keeps your passwords and identity secure with rigorous end-to-end encryption. To add premium features of ${ PASS_APP_NAME_2 } to your current subscription, we suggest upgrading to the ${ upsellPlanName } plan.": [
+        "${ PASS_APP_NAME } mantém suas senhas e sua identidade seguras com rigorosa criptografia de ponta a ponta. Para adicionar recursos premium do ${ PASS_APP_NAME_2 } à sua assinatura atual, nós sugerimos migrar para o plano ${ upsellPlanName }."
+      ],
+      "${ PASS_APP_NAME } keeps your passwords and identity secure with rigorous end-to-end encryption. Your current plan already gives you access to premium ${ PASS_APP_NAME_2 } features — no need to purchase again.": [
+        "O ${ PASS_APP_NAME } mantém suas senhas e sua identidade seguras com rigorosa criptografia de ponta a ponta. Seu plano atual já dá acesso premium aos recursos do ${ PASS_APP_NAME_2 } — não é necessária uma nova compra."
+      ],
+      "All premium ${ BRAND_NAME } services.": [
+        "Todos os serviços premium da ${ BRAND_NAME }."
+      ],
+      "Discover ${ PASS_APP_NAME },${ br }our new encrypted password manager": [
+        "Descubra o ${ PASS_APP_NAME },${ br }: Nosso novo gerenciador de senhas criptografado"
+      ],
+      "For just **${ relativePrice } per month** more, you get access to all of the premium ${ BRAND_NAME } services!": [
+        "Por apenas **${ relativePrice } adicionais por mês**, você tem acesso a todos os serviços premium da ${ BRAND_NAME }"
+      ],
+      "If you get locked out of your ${ BRAND_NAME } Account, your **recovery kit** will allow you to sign in and recover your data.": [
+        "Se você não conseguir entrar na sua conta da ${ BRAND_NAME }, o seu **kit de recuperação** permitirá que você faça login e recupere seus dados."
+      ],
+      "Includes basic ${ appName } features:": [
+        "Inclui recursos básicos do ${ appName }:"
+      ],
+      "It’s the only way to fully restore your account, so make sure you keep this **recovery kit** somewhere safe.": [
+        "É a única maneira de restaurar totalmente sua conta, então tenha certeza de manter o **kit de recuperação** em um local seguro."
+      ],
+      "Save your recovery kit to continue": [
+        "Salve o seu kit de recuperação para continuar"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -10374,7 +10455,7 @@
     },
     "Primary timezone": {
       "Primary time zone": [
-        "Fuso horário primário"
+        "Fuso horário principal"
       ],
       "Secondary time zone": [
         "Fuso horário secundário"
@@ -10679,7 +10760,7 @@
         "Confirmar endereço de e-mail"
       ],
       "Confirm password": [
-        "Confirmar senha"
+        "Confirmar a senha"
       ],
       "Display name": [
         "Nome de exibição"
@@ -11087,7 +11168,7 @@
         "Gerencie sua assinatura em ${ subscriptionManager }."
       ],
       "Subscription is managed by ${ subscriptionManager }": [
-        "A assinatura é gerenciada por ${ subscriptionManager }"
+        "A assinatura é gerenciada por ${ subscriptionManager }."
       ],
       "Subscription of user ID-${ userId } has been done via an in-app purchase. To manage the subscription user needs to navigate to the Subscription section of their ${ subscriptionManager } account.": [
         "Assinatura de ID de usuário-${ userId } foi feito via uma compra no aplicativo. Para gerenciar a assinatura, o usuário precisa navegar até a seção Assinatura da sua ${ subscriptionManager } conta."
@@ -11313,7 +11394,7 @@
         "Código de verificação copiado para a área de transferência"
       ],
       "Verification successful": [
-        "Verificado com sucesso"
+        "Verificado"
       ],
       "You have successfully cancelled your subscription.": [
         "Você cancelou sua assinatura com sucesso."
@@ -12620,7 +12701,7 @@
         "Se você comprou um código de vale-presente ou recebeu um da nossa equipe de suporte, você pode inserir o código aqui."
       ],
       "Members who do not use 2FA will get an email asking them to enable it as soon as possible.": [
-        "Membros que não usam A2F receberão um e-mail pedindo que eles ativem o mais rápido possível."
+        "Os membros que não usam A2F receberão um e-mail pedindo que eles ativem o mais rápido possível."
       ],
       "Messages in the Sent or Drafts folder will continue to appear in that folder, even if you move them to another folder.": [
         "As mensagens da pasta Enviados ou Rascunhos continuarão a aparecer naquela pasta, mesmo se você movê-las para outra pasta."
@@ -12800,7 +12881,7 @@
         "Membro"
       ],
       "Primary admin": [
-        "Administrador primário"
+        "Administrador principal"
       ]
     },
     "Validation": {

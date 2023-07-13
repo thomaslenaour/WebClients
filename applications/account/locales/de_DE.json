@@ -4383,6 +4383,9 @@
     "Font face option": {
       "System default": [
         "Systemstandard"
+      ],
+      "Theme font": [
+        "Design-Schriftart"
       ]
     },
     "Font Size Default": {
@@ -7004,6 +7007,21 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Dein Abonnement wird von Mozilla verwaltet. Bitte kontaktiere den Mozilla-Support."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } ist ein fortschrittliches Kontoschutzprogramm, das von hochentwickelten KI-Systemen und Spezialisten angetrieben wird, die rund um die Uhr arbeiten, um dich vor bösen Akteuren und Sicherheitsbedrohungen zu schützen."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Persönlichkeiten des öffentlichen Lebens, Journalisten, Führungskräfte und andere, die das Ziel von Cyberangriffen sein könnten, sollten unbedingt ${ PROTON_SENTINEL_NAME } aktivieren."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "Die SMTP Submission ermöglicht es Diensten oder Geräten von Drittanbietern, E-Mails über ${ MAIL_APP_NAME } für deine eigenen Domainadressen zu versenden. Um Zugang zu beantragen, ${ createTicket } und beschreibe bitte deine Anwendungsfälle, die eigenen Domains, die du verwenden möchtest und das erwartete stündliche und tägliche E-Mail-Volumen."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To use this feature, start by generating a new token.": [
+        "Die SMTP Submission ermöglicht es Diensten oder Geräten von Drittanbietern, E-Mails über ${ MAIL_APP_NAME } für deine eigenen Domainadressen zu versenden. Um diese Funktion zu nutzen, erzeuge zunächst ein neues Token."
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "Um über die neuesten Entwicklungen bei ${ BRAND_NAME }-Produkten auf dem Laufenden zu bleiben, kannst du unsere verschiedenen Newsletter abonnieren und von Zeit zu Zeit unseren ${ blogLink } besuchen."
       ]
     },
     "info": {
@@ -8544,6 +8562,9 @@
       ],
       "Why set recovery methods?": [
         "Warum sollten Wiederherstellungsmethoden festgelegt werden?"
+      ],
+      "create a ticket": [
+        "erstelle ein Ticket"
       ]
     },
     "Loading info": {
@@ -10327,6 +10348,21 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Deine Organisation hat Zugang zu ${ free }. Wenn du auf die Premiumfunktionen von ${ appName } zugreifen möchtest, bitte den Administrator deiner Organisation um ein Upgrade."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Verschlüsselter Passwort-Manager, der auch deine Identität schützt."
+      ],
+      "Hide-my-email aliases protect your email from data breaches": [
+        "Hide-my-email-Aliasse schützen deine E-Mails vor Datenpannen"
+      ],
+      "If you get locked out of your ${ BRAND_NAME } Account, your **recovery kit** will allow you to sign in and recover your data.": [
+        "Wenn du aus deinem ${ BRAND_NAME }-Konto ausgesperrt wirst, kannst du dich mit deinem **Wiederherstellungs-Kit** anmelden und deine Daten wiederherstellen."
+      ],
+      "It’s the only way to fully restore your account, so make sure you keep this **recovery kit** somewhere safe.": [
+        "Nur so kannst du dein Konto vollständig wiederherstellen, also bewahre dieses **Wiederherstellungs-Kit** an einem sicheren Ort auf."
+      ],
+      "Save your recovery kit to continue": [
+        "Lade dein Wiederherstellungs-Kit herunter, um fortzufahren"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -12570,6 +12606,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Du wurdest eingeladen, ${ MAIL_APP_NAME } zu testen."
+      ],
+      "SMTP Submission": [
+        "SMTP Submission"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

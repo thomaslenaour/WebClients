@@ -944,6 +944,36 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Add address or domain": [
+        "メールアドレスかドメインを追加"
+      ],
+      "Continue anyway": [
+        "とにかく続行"
+      ],
+      "Get ${ discountPercentage } off with 24 months": [
+        "24 ヶ月で ${ discountPercentage } の割引を獲得"
+      ],
+      "Get more addresses": [
+        "さらにメールアドレスを取得"
+      ],
+      "Get more filters": [
+        "さらにフィルターを取得"
+      ],
+      "Get more folders": [
+        "さらにフォルダを取得"
+      ],
+      "Get more labels": [
+        "もっとラベルを取得"
+      ],
+      "Keep my ${ vpnPlanNameShort } subscription": [
+        "${ vpnPlanNameShort } サブスクリプションを継続"
+      ],
+      "Send email reminder": [
+        "メールでリマインダーを送信"
+      ],
+      "Send reminder": [
+        "リマインダーを送信"
       ]
     },
     "Action for user session": {
@@ -3990,6 +4020,9 @@
     "Font face option": {
       "System default": [
         "システムのデフォルト"
+      ],
+      "Theme font": [
+        "テーマ フォント"
       ]
     },
     "Font Size Default": {
@@ -6272,6 +6305,84 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "あなたのサブスクリプションはMozillaによって管理されています。Mozillaのサポートへお問い合わせください。"
+      ],
+      "${ autoRenewal } your subscription will renew automatically on ${ renewalTime }.": [
+        "${ autoRenewal }: あなたのサブスクリプションは、${ renewalTime } に自動的に更新されます。"
+      ],
+      "${ storage } storage": [
+        "${ storage } ストレージ"
+      ],
+      "All ${ BRAND_NAME } apps and their premium features": [
+        "すべての ${ BRAND_NAME } アプリとそのプレミアム機能"
+      ],
+      "Amount above maximum (${ amount }).": [
+        "最大金額 (${ amount }) を超えています"
+      ],
+      "Create email addresses for other people, manage ${ MAIL_APP_NAME } for a business, school, or group. Get started by adding your organization name and custom domain (e.g. @yourcompany.com). ": [
+        "他の人のためにメールアドレスを作成し、ビジネス、学校、またはグループのために ${ MAIL_APP_NAME } を管理します。組織名とカスタムドメイン (例: @yourcompany.com ) を追加して始めましょう。 "
+      ],
+      "If you cancel, your ${ vpnPlanName } subscription will not be renewed when it expires on ${ expiryDate }.": [
+        "キャンセルすると、${ vpnPlanName } サブスクリプションは ${ expiryDate } に期限が切れると更新されません。"
+      ],
+      "Improve your ${ BRAND_NAME } experience by adapting the application to your needs.": [
+        "${ BRAND_NAME } での体験を向上させるために、ご希望に合わせてアプリをカスタマイズしてください。"
+      ],
+      "In the next step, you’ll be able to submit a deposit using a Bitcoin address.": [
+        "次のステップでは、Bitcoin アドレスを使用してデポジットを送信することができます。"
+      ],
+      "I’ve been using @ProtonMail and thought you might like it. It’s a secure email service that protects your privacy. Sign up with my referral link to get 1 month of premium features for free: ${ referrerLink }": [
+        "@ProtonMail を使っているのですが、あなたにもおすすめです。これはプライバシーを保護する安全なメールサービスです。私の紹介リンクでサインアップすると、1 か月間のプレミアム機能が無料で利用できます: ${ referrerLink }"
+      ],
+      "Learn how to sign in to ${ VPN_APP_NAME } with third-party VPN applications.": [
+        "サードパーティの VPN アプリを使用して、${ VPN_APP_NAME } にサインインする方法を学ぶ"
+      ],
+      "No account keys exist": [
+        "アカウントのキーが存在しません"
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "サイバー攻撃の標的になる可能性がある公人、ジャーナリスト、幹部などは、${ PROTON_SENTINEL_NAME } を有効にしておくことが強く推奨されています。"
+      ],
+      "Submit a deposit using the following address or scan the QR code. Your deposit will be reflected in your account after confirmation.": [
+        "以下のアドレスを使用するか、QRコードをスキャンして入金してください。確認後、デポジットはアカウントに反映されます。"
+      ],
+      "This is a 12-word phrase that you were prompted to set.": [
+        "これは設定するように促された 12 語の語句です。"
+      ],
+      "This will cancel your current paid subscription and you will lose any loyalty benefits you have accumulated.": [
+        "現在の有料サブスクリプションがキャンセルされ、蓄積されたロイヤリティ特典も失われます。"
+      ],
+      "This wizard will enable Two-Factor Authentication (2FA) on your ${ BRAND_NAME } account. Two-factor authentication will make your ${ BRAND_NAME_TWO } account more secure so we recommend enabling it.": [
+        "このウィザードでは、あなたの ${ BRAND_NAME } アカウントの 2 要素認証 (2FA) を有効にします。2 要素認証を使用することで、${ BRAND_NAME_TWO } アカウントのセキュリティがより高まるため、有効にすることをおすすめします。"
+      ],
+      "To complete your payment, please send ${ btcAmountBold } to the address below.": [
+        "お支払い手続きを完了するために、下のアドレスに ${ btcAmountBold } を送信してください。"
+      ],
+      "Up to ${ FAMILY_MAX_USERS } users": [
+        "最大 ${ FAMILY_MAX_USERS } ユーザーまで"
+      ],
+      "Upgrade to add a shorter @pm.me address to your account that is easier to share. It stands for “${ MAIL_APP_NAME } me” or “Private Message me”.": [
+        "アップグレードして、アカウントにより短く共有しやすい @pm.me アドレスを追加します。これは \"私に ${ MAIL_APP_NAME } で\" と \"プライベートメッセージを私に\" という意味です。"
+      ],
+      "With your current plan, you can only receive messages with your @pm.me address. Upgrade to send messages and create additional addresses using @pm.me.": [
+        "現在のプランでは、@pm.me アドレスでメッセージを受信することだけが出来ます。@pm.me を使用してメッセージを送信したり、追加のアドレスを作成したりするには、アップグレードしてください。"
+      ],
+      "You can keep up to ${ MAX_CALENDARS_FREE } calendars. Please remove shared calendar links and any ${ BRAND_NAME } user with whom you shared your calendars before you cancel your ${ MAIL_SHORT_APP_NAME } subscription.": [
+        "カレンダーを最大 ${ MAX_CALENDARS_FREE } 個まで保持することができます。あなたの ${ MAIL_SHORT_APP_NAME } サブスクリプションをキャンセルする前に、共有カレンダーリンクと共有したカレンダーの ${ BRAND_NAME } ユーザーを削除してください。"
+      ],
+      "You can keep up to ${ MAX_CALENDARS_FREE } calendars. Please remove shared calendar links and any ${ BRAND_NAME } user with whom you shared your calendars before you cancel your subscription.": [
+        "最大 ${ MAX_CALENDARS_FREE } 個までカレンダーを保持できます。サブスクリプションをキャンセルする前に、共有カレンダーリンクとあなたのカレンダーを共有した ${ BRAND_NAME } のユーザーを削除してください。"
+      ],
+      "You can keep up to ${ MAX_CALENDARS_FREE } calendars. Please remove shared calendar links before you cancel your ${ MAIL_SHORT_APP_NAME } subscription.": [
+        "カレンダーを最大 ${ MAX_CALENDARS_FREE } 個まで保持できます。あなたの ${ MAIL_SHORT_APP_NAME } サブスクリプションをキャンセルする前に、共有カレンダーリンクを削除してください。"
+      ],
+      "You can keep up to ${ MAX_CALENDARS_FREE } calendars. Please remove shared calendar links before you cancel your subscription.": [
+        "カレンダーを最大 ${ MAX_CALENDARS_FREE } 個まで保持できます。サブスクリプションをキャンセルする前に、共有カレンダーリンクを削除してください。"
+      ],
+      "You will lose access to ${ vpnPlanNameShort } servers and features on this date.": [
+        "この日付になると、${ vpnPlanNameShort } のサーバーと機能へのアクセス権が失われます。"
+      ],
+      "You will NOT be able to decrypt any messages, files, and other data encrypted with this key. All data signed with this key will no longer be verified by ${ BRAND_NAME } applications.": [
+        "このキーで暗号化されたどんなメッセージも、ファイルも、他のデータも、復号化することはできません。このキーで署名されたすべてのデータは、${ BRAND_NAME } アプリによって検証されなくなります。"
       ]
     },
     "info": {
@@ -7793,6 +7904,9 @@
       ],
       "Your import is starting": [
         "インポートが開始しました"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization members use two-factor authentication.": [
+        "組織メンバーうち、${ twoFAMembers.length }/${ members.length } 人が 2 要素認証を使用しています。"
       ]
     },
     "Log preference": {
@@ -8386,6 +8500,9 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "保管庫とアイテム共有 (近日公開)"
+      ],
+      "${ n } hide-my-email aliases": [
+        "${ n } 件の Hide-my-email エイリアス"
       ]
     },
     "new_plans: feature info": {
@@ -10099,6 +10216,9 @@
     "summer2023:Info": {
       "We’re celebrating the nine-year anniversary of our crowdfunding!": [
         "クラウドファンディングを開始してから９周年です！"
+      ],
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "期間限定で、最高の ${ BRAND_NAME } 提供製品を特別な割引価格で入手できます。"
       ]
     },
     "summer2023:Offer title": {
@@ -11642,6 +11762,46 @@
       ],
       "Yearly, ${ untilString }": [
         "毎年、${ untilString }"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "プレミアム Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "プレミアム Mail と Calendar"
+      ],
+      "Premium Password Manager": [
+        "プレミアムパスワードマネージャー"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "安全にパスワードを保存し、ウェブサイト上で自動入力します。無制限のパスワード、自動入力、パスワード生成などが含まれています。"
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "パスワードマネージャー"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "すべてのデバイスで安全なログインの詳細情報を作成します。無制限のエイリアス、20 個の保管庫、統合された 2 要素認証、クレジットカードの自動入力などが含まれます。"
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "65 か国以上の 2950 台以上のサーバー、最大 10 台のデバイスの接続、世界中のストリーミングサービスへのアクセス、マルウェアと広告ブロッカーなどが含まれます。"
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "暗号化されたクラウドストレージでファイルの安全性を保ちましょう。バージョン履歴、暗号化済みファイル共有などが含まれています。"
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "* あなたのサブスクリプションは、支払い間隔の終了時に標準の割引価格で自動的に更新されます。"
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "割引は標準の月額価格を基にしています。このオファーは初回のサブスクリプションでのみ有効です。"
       ]
     }
   }

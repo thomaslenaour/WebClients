@@ -4429,6 +4429,9 @@
     "Font face option": {
       "System default": [
         "Адпаведна сістэме"
+      ],
+      "Theme font": [
+        "Шрыфт тэмы"
       ]
     },
     "Font Size Default": {
@@ -7142,6 +7145,21 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Ваша падпіска кіруецца Mozilla. Звяжыцеся са службай падтрымкі Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } з'яўляецца перадавой праграмай абароны ўліковых запісаў з дапамогаю вытанчаных AI сістэм і спецыялістаў, якія кругласутачна працуюць каб абараніць вас ад зламыснікаў і пагроз бяспекі."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Грамадскім дзеячам, журналістам і ўсім іншым, хто можа стаць мэтаю кібератак мы настойліва раім уключыць ${ PROTON_SENTINEL_NAME }"
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "Адпраўка SMTP дазваляе староннім службам ци прыладам адпраўляць электронную пошту праз ${ MAIL_APP_NAME } для адрасоў вашых карыстальніцкіх даменаў. Каб запытаць доступ, калі ласка, ${ createTicket } з апісаннем вашых варыянтаў выкарыстання, якія карыстальніцкія дамены вы хацелі б ужываць, а таксама ацэнкаю штогадзінных і штодзённых аб'ёмаў электроннай пошты."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To use this feature, start by generating a new token.": [
+        "Адпраўка SMTP дазваляе староннім службам ці прыладам адпраўляць электронную пошту праз ${ MAIL_APP_NAME } для адрасоў вашых карыстальніцкіх даменаў. Каб карыстацца гэтай функцый, стварыце новы токен."
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "Каб быць у курсе апошніх распрацовак прадуктаў ${ BRAND_NAME }, падпішыцеся на нашу рассылку, а таксама час ад часу наведвайце наш блог ${ blogLink }."
       ]
     },
     "info": {
@@ -8690,6 +8708,9 @@
       ],
       "Why set recovery methods?": [
         "Навошта задаваць метад аднаўлення?"
+      ],
+      "create a ticket": [
+        "стварыце тікет"
       ]
     },
     "Loading info": {
@@ -10565,6 +10586,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "У вашай арганізацыі ёсць доступ да ${ free }. Калі вы хочаце атрымаць прэміяльныя функцыі ${ appName }, папрасіце адміністратара сваёй арганізацыі абнавіць тарыфны план."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Менеджар зашыфраваных пароляў, які таксама абараняе вашы асабістыя даныя"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -12583,7 +12607,7 @@
         "Не ўдалося ажыццявіць праверку PayPal"
       ],
       "Personalise your e-mail footer": [
-        "Персаналізуйце ніжні калонтытул ліста"
+        "Персаналізуйце ніжні калонтытул свайго ліста"
       ],
       "Phone": [
         "Тэлефон"
@@ -12872,6 +12896,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Вы былі запрошаны паспрабаваць ${ MAIL_APP_NAME }"
+      ],
+      "SMTP Submission": [
+        "Адпраўка SMTP"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

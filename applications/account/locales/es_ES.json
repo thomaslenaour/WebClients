@@ -2721,7 +2721,7 @@
     },
     "Description": {
       "Automatically clear out messages older than 30 days from trash and spam. Enjoy this and other benefits when you upgrade.": [
-        "Elimina automáticamente los mensajes de más de 30 días de las carpetas Papelera y Spam. Disfruta de este y otros beneficios al actualizar tu plan."
+        "Elimina automáticamente los mensajes de más de 30 días de las carpetas Papelera y Spam. Disfruta de este y otros beneficios al mejorar tu plan."
       ],
       "Congratulations! You've earned the maximum of ${ rewardsLimit } free months of ${ plusPlanName }.": [
         "¡Felicidades! Has ganado el máximo de meses gratis de ${ rewardsLimit } de ${ plusPlanName }."
@@ -2755,10 +2755,10 @@
         "Desbloquea direcciones de correo cortas y otras funciones premium al actualizar."
       ],
       "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
-        "Desbloquea un número ilimitado de filtros que ordenan la bandeja de entrada para ti y más funciones premium al actualizar tu plan."
+        "Desbloquea un número ilimitado de filtros que ordenan la bandeja de entrada para ti y más funciones premium al mejorar tu plan."
       ],
       "Unlock unlimited folders, labels and more premium features when you upgrade.": [
-        "Desbloquea un número ilimitado de carpetas y etiquetas y más funciones premium al actualizar tu plan."
+        "Desbloquea un número ilimitado de carpetas y etiquetas y más funciones premium al mejorar tu plan."
       ],
       "Upsell icon containing ${ BRAND_NAME } logo followed by a plus sign": [
         "Ícono de venta adicional que contiene el logotipo de ${ BRAND_NAME } seguido de un signo más"
@@ -3027,7 +3027,7 @@
         "Error de autenticación."
       ],
       "Automatic replies is a paid feature. Please upgrade to a paid account to use this feature.": [
-        "Las respuestas automáticas son una función de pago. Pasa a un plan de pago para usar esta función."
+        "Las respuestas automáticas son una función de pago. Mejora a un plan de pago para usar esta función."
       ],
       "Calendar cannot be found": [
         "No se ha encontrado el calendario."
@@ -7007,6 +7007,18 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Tu suscripción está gestionada por Mozilla. Contacta con el soporte de Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } es un programa avanzado de protección de cuentas impulsado por sistemas sofisticados de inteligencia artificial y especialistas que trabajan las 24 horas para protegerte de malos actores y amenazas de seguridad."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Figuras públicas, periodistas, ejecutivos y demás que puedan ser objetivos de ciberataques se les recomienda habilitar ${ PROTON_SENTINEL_NAME }."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "El envío por SMTP permite que servicios o dispositivos de terceros envíen correos electrónicos a través de ${ MAIL_APP_NAME } para tus direcciones de dominio personalizadas. Para solicitar acceso, ${ createTicket } describiendo tus casos de uso, cuáles dominios personalizados te gustaría utilizar y los volúmenes de correo electrónico esperados por hora y por día."
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "Para estar informado de las últimas novedades de los productos ${ BRAND_NAME }, puedes suscribirte a nuestros diferentes boletines y ${ blogLink } de vez en cuando."
       ]
     },
     "info": {
@@ -7567,7 +7579,7 @@
         "Dirección BTC"
       ],
       "BTC amount": [
-        "Importe BTC"
+        "Importe en BTC"
       ],
       "Calendar": [
         "Calendario"
@@ -8531,7 +8543,7 @@
         "¿Problemas para iniciar sesión?"
       ],
       "Upgrade account": [
-        "Mejorar cuenta"
+        "Mejorar mi cuenta"
       ],
       "Upgrade your plan": [
         "Mejora tu plan"
@@ -8900,7 +8912,7 @@
         "Continuar con mi cuenta ${ currentPlanName }"
       ],
       "Upgrade now": [
-        "Actualizar"
+        "Mejorar ahora"
       ]
     },
     "new_plans: action": {
@@ -9444,7 +9456,7 @@
         "Prueba de ${ mailPlanName }"
       ],
       "Upgrade to ${ planName }": [
-        "Pasar a ${ planName }"
+        "Mejorar a ${ planName }"
       ],
       "Your account's usage": [
         "Uso de la cuenta"
@@ -10212,7 +10224,7 @@
         "Todos los servicios premium de ${ BRAND_NAME }."
       ],
       "But you can unlock **${ unlockPlanTitle }** and all premium ${ BRAND_NAME } services by upgrading to **${ upsellPlanTitle }** — it’s just ${ relativePrice } extra per month.": [
-        "Pero puedes desbloquear **${ unlockPlanTitle }** y todos los servicios premium de ${ BRAND_NAME } al actualizar tu plan a **${ upsellPlanTitle }** — solo por ${ relativePrice } extra cada mes."
+        "Pero puedes desbloquear **${ unlockPlanTitle }** y todos los servicios premium de ${ BRAND_NAME } al mejorar tu plan a **${ upsellPlanTitle }** — solo por ${ relativePrice } extra cada mes."
       ],
       "By continuing, you agree to our ${ termsAndConditions }": [
         "Al continuar, aceptas nuestros ${ termsAndConditions }"
@@ -10320,7 +10332,7 @@
         "para utilizar ${ PASS_APP_NAME } en tu teléfono"
       ],
       "Unlock ${ PASS_APP_NAME } premium features by upgrading": [
-        "Accede a las características premium de ${ PASS_APP_NAME } al actualizar tu plan"
+        "Accede a las características premium de ${ PASS_APP_NAME } al mejorar tu plan"
       ],
       "Updating your account": [
         "Actualizando tu cuenta"
@@ -10342,6 +10354,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Tu organización tiene acceso a ${ free }. Si deseas acceder a las características premium de ${ appName }, solicita al administrador de tu organización que actualice la versión."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Gestor de contraseñas cifrado que protege también tu identidad"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -10360,7 +10375,7 @@
         "Crea tu cuenta de ${ BRAND_NAME }"
       ],
       "Request your organization administrator to upgrade": [
-        "Solicita al administrador de tu organización que actualice la versión."
+        "Solicita una actualización al administrador de tu organización."
       ],
       "Secure your account": [
         "Protege tu cuenta"
@@ -11112,7 +11127,7 @@
         "Notas de la versión"
       ],
       "Upgrade storage": [
-        "Aumentar almacenamiento"
+        "Aumentar el almacenamiento"
       ],
       "Your current storage:": [
         "Tu almacenamiento actual:"
@@ -11379,7 +11394,7 @@
         "Claves actualizadas"
       ],
       "Locale updated": [
-        "Idioma actualizado"
+        "El idioma ha sido ctualizado."
       ],
       "Organization activated": [
         "Organización activada"
@@ -12518,7 +12533,7 @@
         "Navegador no soportado"
       ],
       "Upgrade plan": [
-        "Actualizar tu plan"
+        "Mejorar tu plan"
       ],
       "Users and addresses": [
         "Usuarios y direcciones"
@@ -12911,7 +12926,7 @@
     },
     "Upgrade notice": {
       "Upgrade to a ${ MAIL_SHORT_APP_NAME } paid plan to share your calendar.": [
-        "Pasa a un plan de pago de ${ MAIL_SHORT_APP_NAME } para compartir tu calendario."
+        "Mejora a un plan de pago de ${ MAIL_SHORT_APP_NAME } para compartir tu calendario."
       ]
     },
     "User referee invited via email": {

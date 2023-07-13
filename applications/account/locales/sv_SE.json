@@ -4390,6 +4390,12 @@
       ],
       "(during your first month)": [
         "(under din första månad)"
+      ],
+      "(2-4 per year)": [
+        "(2-4 per år)"
+      ],
+      "(4-6 emails per year)": [
+        "(4-6 e-postmeddelanden per år)"
       ]
     },
     "Get started checklist instructions": {
@@ -6951,6 +6957,24 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Din prenumeration hanteras av Mozilla. Kontakta Mozillas support."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } är ett avancerat kontoskyddsprogram som drivs av sofistikerade AI-system och specialister som arbetar dygnet runt för att skydda dig från dåliga aktörer och säkerhetshot."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Offentliga personer, journalister, chefer och andra som kan vara måltavla för cyberattacker uppmuntras starkt att aktivera ${ PROTON_SENTINEL_NAME }."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "SMTP-inlämning tillåter tredjepartstjänster eller enheter att skicka e-post via ${ MAIL_APP_NAME } för dina anpassade domänadresser. För att begära åtkomst, ${ createTicket } som beskriver dina användningsfall, vilka anpassade domäner du vill använda och förväntade e-postvolymer per timme och dagligen."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To use this feature, start by generating a new token.": [
+        "SMTP-inlämning tillåter tredjepartstjänster eller enheter att skicka e-post via ${ MAIL_APP_NAME } för dina anpassade domänadresser. För att använda denna funktion, börja med att generera en ny token."
+      ],
+      "This will sign you out of any active sessions and disable 2-factor authentication.": [
+        "Detta kommer att logga ut dig från alla aktiva sessioner och inaktivera 2-faktors autentisering."
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "För att hänga med i den senaste utvecklingen på ${ BRAND_NAME }-produkter kan du prenumerera på våra olika e-postmeddelanden och ${ blogLink } då och då."
       ]
     },
     "info": {
@@ -8479,6 +8503,12 @@
       ],
       "Why set recovery methods?": [
         "Varför ställa in återställningsmetoder?"
+      ],
+      "create a ticket": [
+        "skapa ett supportärende"
+      ],
+      "visit our blog": [
+        "besök vår blogg"
       ]
     },
     "Loading info": {
@@ -8503,6 +8533,10 @@
       ],
       "Your import is starting": [
         "Din import har startat"
+      ],
+      "${ twoFAMembers.length }/${ members.length } of your organization member use two-factor authentication.": [
+        "${ twoFAMembers.length }/${ members.length } av din organisationsmedlem använder tvåfaktorsautentisering.",
+        "${ twoFAMembers.length }/${ members.length } av dina organisationsmedlemmar använder tvåfaktorsautentisering."
       ]
     },
     "Log preference": {
@@ -10103,6 +10137,9 @@
       ],
       "Upgrade your plan": [
         "Uppgradera ditt paket"
+      ],
+      "Checkout": [
+        "Kassa"
       ]
     },
     "pass_signup_2023: Info": {
@@ -10255,6 +10292,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Din organisation har åtkomst till ${ free }. Om du vill komma åt premiumfunktioner för ${ appName }, be din organisations administratör att uppgradera."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Krypterad lösenordshanteraresom också skyddar din identitet"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -11443,6 +11483,9 @@
       ],
       "Premium Mail and Calendar": [
         "Premium Mail och Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium lösenordshanterare"
       ]
     },
     "summer2023: Describe Proton Pass": {
@@ -12457,6 +12500,15 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Du har blivit inbjuden att prova ${ MAIL_APP_NAME }"
+      ],
+      "Messages and composing": [
+        "Meddelanden och skrivning"
+      ],
+      "SMTP Submission": [
+        "SMTP-inlämning"
+      ],
+      "Two-factor authentication reminders": [
+        "Påminnelser om tvåfaktorsautentisering"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12715,6 +12767,9 @@
       ],
       "Your external account may have reached its 24-hour bandwidth limit. ${ BRAND_NAME } will try to resume the import as soon as possible.": [
         "Ditt externa konto kan ha nått sin bandbreddsgräns för det här dygnet. ${ BRAND_NAME } kommer att försöka återuppta importen så snart som möjligt."
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Växla automatiskt mellan dina föredragna teman för dag och natt i synk med ditt systems dag- och nattlägen"
       ]
     },
     "tooltip": {

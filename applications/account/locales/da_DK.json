@@ -8576,6 +8576,21 @@
       ],
       "Vault and Item sharing": [
         "Boks- og elementdeling"
+      ],
+      "Ad-blocker & malware protection": [
+        "Annonceblokering og beskyttelse mod malware"
+      ],
+      "Calendar sharing": [
+        "Kalenderdeling"
+      ],
+      "High-speed streaming": [
+        "Streaming ved høj hastighed"
+      ],
+      "Send & receive invitations": [
+        "Send og modtag invitationer"
+      ],
+      "Vault and Item sharing (coming soon)": [
+        "Boks og element-deling (kommer snart)"
       ]
     },
     "new_plans: feature info": {
@@ -8732,7 +8747,7 @@
         "${ mailPlanName } Prøve"
       ],
       "Upgrade to ${ planName }": [
-        "Opgrader til ${ planName }"
+        "Opgradér til ${ planName }"
       ],
       "Your account's usage": [
         "Din kontos forbrug"
@@ -9826,7 +9841,7 @@
         "Gå til abonnementer"
       ],
       "Upgrade": [
-        "Opgrader"
+        "Opgradér"
       ]
     },
     "specialoffer: Offers": {
@@ -11570,8 +11585,8 @@
     },
     "Upgrade": {
       "Upgrade to ${ planName } to connect up to ${ n } device to the VPN at once": [
-        "Opgrader til ${ planName } for at forbinde op til ${ n } enhed til VPN'en samtidig",
-        "Opgrader til ${ planName } for at forbinde op til ${ n } enheder til VPN'en samtidig"
+        "Opgradér til ${ planName } for at forbinde op til ${ n } enhed til VPN'en samtidig",
+        "Opgradér til ${ planName } for at forbinde op til ${ n } enheder til VPN'en samtidig"
       ]
     },
     "User referee invited via email": {

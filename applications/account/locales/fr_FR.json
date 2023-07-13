@@ -522,7 +522,7 @@
         "Conserver"
       ],
       "Keep my ${ vpnPlanNameShort } subscription": [
-        "Je maintiens mon abonnement à ${ vpnPlanNameShort }."
+        "Garder mon abonnement à ${ vpnPlanNameShort }."
       ],
       "label emails as": [
         "labelliser les messages comme"
@@ -4444,7 +4444,7 @@
         "Découvrez comment nos ${ strongText } vous protègent."
       ],
       "Discover privacy features": [
-        "Découvrrez les fonctionnalités de respect de la vie privée"
+        "Découvrez les fonctionnalités de protection de la vie privée"
       ],
       "Get the ${ strongText } on Android or iOS": [
         "Téléchargez l'${ strongText } sur Android ou iOS."
@@ -4453,7 +4453,7 @@
         "Téléchargez l'application"
       ],
       "privacy features": [
-        "fonctionnalités de respect de la vie privée"
+        "fonctionnalités de protection de la vie privée"
       ],
       "Set up ${ strongText } from Gmail": [
         "Configurer ${ strongText } depuis Gmail"
@@ -6219,7 +6219,7 @@
         "Retirez un de vos calendriers pour rejoindre celui-ci."
       ],
       "Report link expired": [
-        "Lien de signalement expiré"
+        "Le lien a expiré"
       ],
       "Restore": [
         "Restauration"
@@ -6406,7 +6406,7 @@
         "L'application Import-Export permet d'exporter des messages pour des sauvegardes locales et de restaurer des sauvegardes précédentes sur votre compte."
       ],
       "The link to report that that you didn't set up a ${ BRAND_NAME } Account has expired. Please get in touch with our support team to resolve this issue.": [
-        "Le lien pour signaler que vous n'avez pas configuré un compte ${ BRAND_NAME } a expiré. Nous vous invitons à prendre contact avec notre équipe support pour résoudre ce problème."
+        "Le lien permettant de signaler que vous n'avez pas créé de compte ${ BRAND_NAME } a expiré. Nous vous invitons à prendre contact avec notre équipe support pour résoudre ce problème."
       ],
       "The name will be visible to your users while they are signed in.": [
         "Le nom sera visible par vos utilisateurs quand ils seront connectés."
@@ -10342,6 +10342,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Votre organisation a accès à ${ free }. Pour profiter des fonctionnalités premium de ${ appName }, demandez à l'administrateur de votre organisation de changer d'abonnement."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Le gestionnaire de mots de passe chiffré qui protège aussi votre identité"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -11445,7 +11448,7 @@
         "Le code de vérification a été copié dans le presse-papiers."
       ],
       "Verification successful": [
-        "La vérification est réussie."
+        "La vérification a abouti."
       ],
       "You have successfully cancelled your subscription.": [
         "Vous avez résilié votre abonnement."
@@ -11709,7 +11712,7 @@
         "Raccourcis clavier ${ MAIL_APP_NAME }"
       ],
       "(active)": [
-        "(activé)"
+        "(actif)"
       ],
       "1. Give a name to the config to be generated": [
         "1. Donnez un nom à la configuration qui doit être générée"
@@ -12300,7 +12303,7 @@
         "La vérification PayPal n'a pas abouti."
       ],
       "Personalise your e-mail footer": [
-        "Personnalisez le pied de page de vos messages"
+        "Personnalisez le pied de page de vos messages."
       ],
       "Phone": [
         "Téléphone"

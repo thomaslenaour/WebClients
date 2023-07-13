@@ -918,7 +918,7 @@
         "Actualizar ahora"
       ],
       "Upgrade your plan": [
-        "Actualice su plan"
+        "Mejore su plan"
       ],
       "Upload picture": [
         "Cargar imagen"
@@ -2988,6 +2988,9 @@
     "Email Unsubscribe Categories": {
       "${ allCategoriesExceptTheLastOne } and ${ lastCategory }": [
         "${ allCategoriesExceptTheLastOne } y ${ lastCategory }"
+      ],
+      "${ allCategoryTitlesExceptTheLastOne } and ${ lastCategoryTitle }": [
+        "${ allCategoryTitlesExceptTheLastOne } y ${ lastCategoryTitle }"
       ]
     },
     "Enabled 2FA": {
@@ -4422,6 +4425,12 @@
       ],
       "(during your first month)": [
         "(durante su primer mes)"
+      ],
+      "(2-4 per year)": [
+        "(2-4 al año)"
+      ],
+      "(4-6 emails per year)": [
+        "(4-6 correos al año)"
       ]
     },
     "Get started checklist instructions": {
@@ -7007,6 +7016,21 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Su suscripción es gestionada por Mozilla. Contacte con el soporte de Mozilla."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } es un programa avanzado de protección de cuentas impulsado por sistemas sofisticados de inteligencia artificial y especialistas que trabajan las 24 horas para protegerle de malos actores y amenazas de seguridad."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Figuras públicas, periodistas, ejecutivos y demás que puedan ser objetivos de ciberataques se les recomienda habilitar ${ PROTON_SENTINEL_NAME }."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "El envío por SMTP permite que servicios o dispositivos de terceros envíen correos electrónicos a través de ${ MAIL_APP_NAME } para sus direcciones de dominio personalizadas. Para solicitar acceso, ${ createTicket } describiendo sus casos de uso, cuáles dominios personalizados le gustaría usar y los volúmenes de correo electrónico esperados por hora y por día."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To use this feature, start by generating a new token.": [
+        "El envío por SMTP permite a servicios de terceros o dispositivos enviar correos electrónicos a través de ${ MAIL_APP_NAME } para sus direcciones de dominio personalizadas. Para usar esta función, comience generando un token nuevo."
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "Para informarse de las últimas novedades de los productos de ${ BRAND_NAME }, puede suscribirse a nuestros diferentes boletines y ${ blogLink } de vez en cuando."
       ]
     },
     "info": {
@@ -7567,7 +7591,7 @@
         "Dirección BTC"
       ],
       "BTC amount": [
-        "Importe BTC"
+        "Importe en BTC"
       ],
       "Calendar": [
         "Calendario"
@@ -8353,6 +8377,9 @@
       ],
       "${ BRAND_NAME } welcome emails": [
         "Correos de bienvenida de ${ BRAND_NAME }"
+      ],
+      "${ BRAND_NAME } important announcements": [
+        "Comunicados importantes de ${ BRAND_NAME }"
       ]
     },
     "Label in domain modal": {
@@ -8534,7 +8561,7 @@
         "Mejorar cuenta"
       ],
       "Upgrade your plan": [
-        "Actualice su plan"
+        "Mejore su plan"
       ],
       "View guide": [
         "Ver guía"
@@ -8547,6 +8574,12 @@
       ],
       "Why set recovery methods?": [
         "¿Por qué establecer métodos de recuperación?"
+      ],
+      "create a ticket": [
+        "cree un tiquete"
+      ],
+      "visit our blog": [
+        "visitar nuestro blog"
       ]
     },
     "Loading info": {
@@ -8900,7 +8933,7 @@
         "Seguir en ${ currentPlanName }"
       ],
       "Upgrade now": [
-        "Actualizar ahora"
+        "Mejorar ahora"
       ]
     },
     "new_plans: action": {
@@ -9444,7 +9477,7 @@
         "Prueba de ${ mailPlanName }"
       ],
       "Upgrade to ${ planName }": [
-        "Actualizar a ${ planName }"
+        "Mejorar a ${ planName }"
       ],
       "Your account's usage": [
         "Uso de la cuenta"
@@ -10146,7 +10179,7 @@
         "Actualice su plan por solo ${ relativePrice } extra al mes"
       ],
       "Upgrade my plan": [
-        "Actualizar mi plan"
+        "Mejorar mi plan"
       ],
       "Use ${ free } instead": [
         "Use ${ free } en su lugar"
@@ -10183,7 +10216,7 @@
         "Elija su plan"
       ],
       "Upgrade your plan": [
-        "Actualice su plan"
+        "Mejore su plan"
       ]
     },
     "pass_signup_2023: Info": {
@@ -10342,6 +10375,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Su organización tiene acceso a ${ free }. Si desea acceder a las funciones premium de ${ appName }, solicite al administrador de su organización que actualice la versión."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Gestor de contraseñas cifrado que protege también su identidad"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -10360,7 +10396,7 @@
         "Cree su cuenta de ${ BRAND_NAME }"
       ],
       "Request your organization administrator to upgrade": [
-        "Solicite al administrador de su organización que actualice la versión."
+        "Solicite una actualización al administrador de su organización"
       ],
       "Secure your account": [
         "Proteja su cuenta"
@@ -11115,7 +11151,7 @@
         "Notas de la versión"
       ],
       "Upgrade storage": [
-        "Mejorar almacenamiento"
+        "Aumentar el almacenamiento"
       ],
       "Your current storage:": [
         "Su almacenamiento actual:"
@@ -12588,6 +12624,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ha recibido una invitación para probar ${ MAIL_APP_NAME }"
+      ],
+      "SMTP Submission": [
+        "Envío SMTP"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

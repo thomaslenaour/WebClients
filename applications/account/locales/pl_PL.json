@@ -3000,6 +3000,9 @@
     "Email Unsubscribe Categories": {
       "${ allCategoriesExceptTheLastOne } and ${ lastCategory }": [
         "${ allCategoriesExceptTheLastOne } i ${ lastCategory }"
+      ],
+      "${ allCategoryTitlesExceptTheLastOne } and ${ lastCategoryTitle }": [
+        "${ allCategoryTitlesExceptTheLastOne } i ${ lastCategoryTitle }"
       ]
     },
     "Enabled 2FA": {
@@ -4462,6 +4465,12 @@
       ],
       "(during your first month)": [
         "(w pierwszym miesiącu)"
+      ],
+      "(2-4 per year)": [
+        "(2-4 wiadomości rocznie)"
+      ],
+      "(4-6 emails per year)": [
+        "(4-6 wiadomości rocznie)"
       ]
     },
     "Get started checklist instructions": {
@@ -10562,6 +10571,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Twoja organizacja ma dostęp do planu ${ free }. Jeśli chcesz uzyskać dostęp do funkcji premium ${ appName }, poproś administratora o ulepszenie konta."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Szyfrowany menedżer haseł, który chroni Twoją tożsamość"
       ]
     },
     "pass_signup_2023: Onboarding": {

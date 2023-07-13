@@ -4360,6 +4360,9 @@
     "Font face option": {
       "System default": [
         "系統預設值"
+      ],
+      "Theme font": [
+        "選擇布景主題字體"
       ]
     },
     "Font Size Default": {
@@ -6935,6 +6938,21 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "您的訂閱是由 Mozilla 管理。請聯絡 Mozilla 支援。"
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } 是一種高級帳戶保護程序，由最新的 AI 系統和全天候工作的專家提供協助，以保護您免受不良行為者與安全威脅的侵害。"
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "強烈鼓勵公眾人物、記者、管理人員和其他可能成為網絡攻擊目標的人啟用 ${ PROTON_SENTINEL_NAME }。"
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "SMTP Submission 允許第三方服務或設備通過 ${ MAIL_APP_NAME } 使用您自有的網域地址發送電子郵件。\n要請求訪問權限，請 ${ createTicket } 描述您的使用情境、您想要使用的自定義域以及預期的每小時和每日電子郵件量。"
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To use this feature, start by generating a new token.": [
+        "SMTP Submission 允許第三方服務或設備通過 ${ MAIL_APP_NAME } 使用您自有的網域地址發送電子郵件。要使用此功能，請先產生新的 token 令牌。"
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "想知道 ${ BRAND_NAME } 的最新發展嗎？您可以隨時訂閱我們的各種電子郵件通知以及 ${ blogLink }。"
       ]
     },
     "info": {
@@ -8471,6 +8489,9 @@
       ],
       "Why set recovery methods?": [
         "為什麼要設定復原方法?"
+      ],
+      "create a ticket": [
+        "新增申請"
       ]
     },
     "Loading info": {
@@ -10226,6 +10247,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "貴機構已可存取${ free }。若需使用進階版${ appName }功能，請洽詢組織管理員升級。"
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "加密的密碼管理器保護您的身分"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -12154,7 +12178,7 @@
         "PayPal 驗證失敗"
       ],
       "Personalise your e-mail footer": [
-        "個人化您的電子郵件簽名"
+        "自訂您電郵的下款"
       ],
       "Phone": [
         "電話"
@@ -12437,6 +12461,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "您已獲邀試用 ${ MAIL_APP_NAME }"
+      ],
+      "SMTP Submission": [
+        "SMTP Submission"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

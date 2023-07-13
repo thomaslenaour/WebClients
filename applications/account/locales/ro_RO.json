@@ -4406,6 +4406,9 @@
     "Font face option": {
       "System default": [
         "Implicit din sistem"
+      ],
+      "Theme font": [
+        "Font temă"
       ]
     },
     "Font Size Default": {
@@ -7073,6 +7076,21 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Abonamentul vă este gestionat de Mozilla. Contactați Mozilla pentru suport."
+      ],
+      "${ PROTON_SENTINEL_NAME } is an advanced account protection program powered by sophisticated AI systems and specialists working around the clock to protect you from bad actors and security threats.": [
+        "${ PROTON_SENTINEL_NAME } este un program avansat de protecție a conturilor, alimentat de sisteme de IA sofisticate și specialiști care lucrează non-stop pentru a vă proteja de atacatori și amenințările de securitate."
+      ],
+      "Public figures, journalists, executives, and others who may be the target of cyber attacks are highly encouraged to enable ${ PROTON_SENTINEL_NAME }.": [
+        "Persoanele publice, jurnaliștii, directorii și alții care pot fi ținta atacurilor cibernetice sunt foarte încurajați să activeze ${ PROTON_SENTINEL_NAME }."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To request access, please ${ createTicket } describing your use cases, what custom domains you would like to use, and expected hourly and daily email volumes.": [
+        "Trimiterea SMTP permite serviciilor sau dispozitivelor terțe să trimită mesaje prin ${ MAIL_APP_NAME } pentru adresele de domeniu personale. Pentru a solicita acces, trebuie să ${ createTicket } care vă descrie cazul de utilizare, ce domenii personale doriți să utilizați și volumul de mesaje orar și zilnic preconizat."
+      ],
+      "SMTP submission allows 3rd-party services or devices to send email through ${ MAIL_APP_NAME } for your custom domain addresses. To use this feature, start by generating a new token.": [
+        "Trimiterea SMTP permite serviciilor sau dispozitivelor terțe să trimită mesaje prin ${ MAIL_APP_NAME } pentru adresele de domeniu personale. Pentru a utiliza această caracteristică, începeți prin a genera un token nou."
+      ],
+      "To keep up with the latest development at ${ BRAND_NAME } products, you can subscribe to our various emails and ${ blogLink } from time to time.": [
+        "Pentru a fi la curent cu ultimele actualizări ale produselor ${ BRAND_NAME }, puteți să vă abonați la diferitele noastre adrese de e-mail sau să ne vizitați periodic blogul ${ blogLink }."
       ]
     },
     "info": {
@@ -8617,6 +8635,9 @@
       ],
       "Why set recovery methods?": [
         "De ce să setați metode de recuperare?"
+      ],
+      "create a ticket": [
+        "creați un tichet"
       ]
     },
     "Loading info": {
@@ -10452,6 +10473,9 @@
       ],
       "Your organization has access to ${ free }. If you want to access premium ${ appName } features, please ask your organization's administrator to upgrade.": [
         "Organizația are acces la ${ free }. Dacă doriți să accesați funcțiile premium ale ${ appName }, vă rugăm să solicitați administratorului organizației să modifice contul."
+      ],
+      "Encrypted password manager that also protects your identity": [
+        "Manager de parole criptate care vă protejează și identitatea"
       ]
     },
     "pass_signup_2023: Onboarding": {
@@ -12727,6 +12751,9 @@
       ],
       "You’ve been invited to try ${ MAIL_APP_NAME }": [
         "Ați fost invitat să încercați ${ MAIL_APP_NAME }"
+      ],
+      "SMTP Submission": [
+        "Trimitere SMTP"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
