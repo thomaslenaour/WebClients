@@ -2965,6 +2965,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puteți marca pentru ștergere contactele pe care nu doriți nici să le îmbinați, nici să le păstrați. Ștergerea va fi efectuată doar după apăsarea butonului de îmbinare."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Activați protecția împotriva monitorizării prin e-mail pentru a împiedica agenții de publicitate și alții să vă urmărească locul și activitatea online."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Nu am găsit funcții de monitorizare și adrese URL cunoscute în acest e-mail."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6142,6 +6148,12 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Fraza de recuperare este o serie de 12 cuvinte într-o anumită ordine."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Au fost blocați următorii agenți de publicitate și organizații să vadă când deschideți acest e-mail, ce dispozitiv utilizați și unde vă aflați."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "S-au eliminat informațiile de urmărire din următoarele legături pentru a vă proteja de agenții de publicitate și de alții care încearcă să vă urmărească activitatea online."
       ]
     },
     "info": {
@@ -7960,6 +7972,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Cheia de verificare nu este în lista de chei de încredere."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Verificarea expeditorului a eșuat: cheia de verificare nu se află în lista cheilor de încredere."
       ]
     },
     "Sent email icon": {
@@ -9385,6 +9400,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Perioada de încercare pentru Mail Plus se încheie la ${ textDate } "
+      ],
+      "Protect yourself from trackers": [
+        "Protejați-vă de monitorizare"
       ]
     },
     "Today icon tooltip in mini calendar": {

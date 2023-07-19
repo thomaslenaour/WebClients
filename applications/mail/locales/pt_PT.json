@@ -2955,6 +2955,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Pode marcar para eliminação os contactos que não deseja unir nem manter. A eliminação só ocorrerá depois de clicar no botão de união"
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Não encontramos nenhum rasteador conhecido e URLs de rastreamentro nesse e-mail."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4263,6 +4266,21 @@
       ],
       "You've unlocked 1 GB": [
         "Desbloqueou 1 GB"
+      ],
+      "account logins": [
+        "dados da conta"
+      ],
+      "Change ${ strongText } to your ${ BRAND_NAME } address": [
+        "Altere ${ strongText } para o seu endereço ${ BRAND_NAME }"
+      ],
+      "Get the ${ strongText } on Android or iOS": [
+        "Descarrega o ${ strongText } para Android na Google Play ou iOS na App Store."
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Configurar ${ strongText } a partir do Gmail"
+      ],
+      "Update your logins": [
+        "Atualize os seus dados"
       ]
     },
     "Gmail forwarding": {
@@ -7824,6 +7842,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "A chave de verificação não está na lista de chaves de confiança."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Erro na verificação de remetente. A chave de verificação não está na lista de chaves de confiança."
       ]
     },
     "Sent email icon": {
@@ -9200,6 +9221,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "O seu teste gratuito do Mail Plus finaliza em ${ textDate }"
+      ],
+      "Protect yourself from trackers": [
+        "Proteja-se de rastreadores"
       ]
     },
     "Today icon tooltip in mini calendar": {

@@ -2975,6 +2975,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Ви можете позначити ті контакти, які ви не хочете ані об'єднувати, ані зберігати. Видалення відбудеться лише після натискання кнопки об'єднання"
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Увімкніть захист трекера електронної пошти, щоб рекламодавці та інші не відстежували ваше розташування та активність в Інтернеті."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "У цьому електронному листі не знайдено жодних відомих трекерів і URL-адрес для відстеження."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6244,6 +6250,12 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Фраза відновлення — це послідовність з 12 слів у певному порядку."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Ми заблокували наступним рекламодавцям та організаціям можливість бачити, коли ви відкриваєте цей лист, який пристрій ви використовуєте і де ви знаходитесь."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Ми видалили інформацію про відстеження з наступних посилань, щоб захистити вас від рекламодавців та інших осіб, які намагаються відстежувати вашу активність в Інтернеті."
       ]
     },
     "info": {
@@ -8081,6 +8093,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Ключа підтвердження немає в списку довірених ключів."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Помилка перевірки відправника: ключ перевірки відсутній у списку довірених ключів."
       ]
     },
     "Sent email icon": {
@@ -9555,6 +9570,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша безплатна пробна версія Mail Plus завершується ${ textDate }"
+      ],
+      "Protect yourself from trackers": [
+        "Захистіть себе від трекерів"
       ]
     },
     "Today icon tooltip in mini calendar": {

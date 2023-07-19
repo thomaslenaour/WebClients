@@ -521,7 +521,7 @@
         "挿入"
       ],
       "Insert ${ totalChecked } contacts": [
-        "${ totalChecked } 件の連絡先を挿入"
+        "${ totalChecked } 個の連絡先を挿入"
       ],
       "Insert contact": [
         "連絡先を挿入"
@@ -2945,6 +2945,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "結合または保持する必要のない連絡先を削除するためにマークができます。 削除はマージボタンがクリックされた後にのみ行われます"
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "電子メール トラッカー保護をオンにして、広告主などがあなたの位置情報やオンライン アクティビティを追跡しないようにします。"
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "このメールには既知のトラッカーと追跡 URL は見つかりませんでした。"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -3903,6 +3909,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "暗号化クラウドストレージでファイルの安全を保ちます。自動同期、暗号化ファイル共有などが含まれます。"
+      ],
+      "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
+        "3 件の独自メールドメイン対応、90 件のメールアドレス、無制限の hide-my-email エイリアス、カレンダー共有などが含まれます。"
       ]
     },
     "Feedback Modal Title": {
@@ -4204,6 +4213,45 @@
       ],
       "You've unlocked 1 GB": [
         "1GBのロックを解除しました"
+      ],
+      "${ MAIL_APP_NAME } app": [
+        "${ MAIL_APP_NAME } アプリ"
+      ],
+      "account logins": [
+        "アカウントログイン"
+      ],
+      "auto-forwarding": [
+        "自動転送"
+      ],
+      "Change ${ strongText } to your ${ BRAND_NAME } address": [
+        "${ strongText } を ${ BRAND_NAME } のアドレスに変更します"
+      ],
+      "Checklist complete": [
+        "チェックリストが完了しました"
+      ],
+      "Discover how our ${ strongText } protect you": [
+        "${ strongText } がどのように保護されているかをご覧ください"
+      ],
+      "Discover privacy features": [
+        "プライバシー機能の発見"
+      ],
+      "Get the ${ strongText } on Android or iOS": [
+        "Android または iOS で ${ strongText } を取得します"
+      ],
+      "Get the App": [
+        "アプリを入手する"
+      ],
+      "Make ${ BRAND_NAME } your go-to inbox": [
+        "${ BRAND_NAME } を頼りになる受信箱にしましょう"
+      ],
+      "privacy features": [
+        "プライバシー機能"
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Gmail から ${ strongText } を設定する"
+      ],
+      "Update your logins": [
+        "ログイン情報を更新する"
       ]
     },
     "Gmail forwarding": {
@@ -5875,6 +5923,27 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "回復用フレーズは 12 語の単語を順番に並べて構成されたものです。"
+      ],
+      "${ numberOfUTMTrackers } links cleaned": [
+        "${ numberOfUTMTrackers } リンクが削除されました"
+      ],
+      "No links cleaned": [
+        "クリーンアップされたリンクはありません"
+      ],
+      "SimpleLogin is a ${ BRAND_NAME } service, and your ${ BRAND_NAME_TWO } Account includes hide-my-email aliases. To start masking your email address, go to SimpleLogin and create your first alias.": [
+        "SimpleLogin は ${ BRAND_NAME } のサービスで、あなたの ${ BRAND_NAME_TWO } アカウントには hide-my-email エイリアスが含まれています。あなたのメールアドレスをマスキングするには、SimpleLogin で最初のエイリアスを作成してください。"
+      ],
+      "They can't spam you if they don't know your email address. Protect your inbox with hide-my-email aliases.": [
+        "本来のメールアドレスを知られなければ、迷惑メールを送りつけられることもありません。Hide-my-email で受信トレイを守りましょう。"
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "次の広告主および組織が、あなたがこのメールを開いたとき、使用しているデバイス、現在地を確認できないようにブロックしました。"
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "広告主や他のユーザーがあなたのオンライン アクティビティを追跡しようとすることから保護するために、次のリンクから追跡情報を削除しました。"
+      ],
+      "When giving out your email, use a unique, disposable hide-my-email alias instead of your real email address.": [
+        "メールアドレスを伝える際に、本来のメールアドレスではなく専用の使い捨て hide-my-email エイリアスを使用します。"
       ]
     },
     "info": {
@@ -7655,6 +7724,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "検証キーが信頼できるキーのリストにありません。"
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "送信者の検証に失敗しました: 検証キーが信頼できるキーのリストにありません。"
       ]
     },
     "Sent email icon": {
@@ -7966,6 +8038,15 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "ストレージ容量は ${ MAIL_APP_NAME }、${ CALENDAR_APP_NAME }、${ DRIVE_APP_NAME } で共有されます。"
+      ],
+      "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
+        "すべてのプレミアムサービスを高い自由度で利用できます。100 件のメールアドレス、10 件の独自ドメイン対応、無制限の hide-my-email エイリアス、カレンダー共有、暗号化クラウドストレージとファイル共有など。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "1 件の独自メールドメイン対応、10 件のメールアドレス、10 件の hide-my-email エイリアス、カレンダー共有などが含まれます。"
+      ],
+      "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
+        "3 件の独自メールドメイン対応、15 件のメールアドレス、無制限の hide-my-email エイリアス、カレンダー共有などが含まれます。"
       ]
     },
     "Spotlight": {
@@ -8296,6 +8377,9 @@
       ],
       "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
         "暗号化されたクラウドストレージでファイルの安全性を保ちましょう。バージョン履歴、暗号化済みファイル共有などが含まれています。"
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "1 件の独自メールドメイン対応、10 件のメールアドレス、10 件の hide-my-email エイリアス、カレンダー共有などが含まれます。"
       ]
     },
     "summer2023:Footer": {
@@ -8967,6 +9051,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mial Plusのトライアル期間が ${ textDate } に終了します。"
+      ],
+      "Protect yourself from trackers": [
+        "トラッカーから身を守る"
       ]
     },
     "Today icon tooltip in mini calendar": {

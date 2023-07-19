@@ -2975,6 +2975,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Kontakty, které nechcete sloučit ani zachovat, označte pro smazání. Ke smazání dojde po kliknutí na tlačítko pro sloučení"
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Zapnutím ochrany proti sledování e-mailů zabráníte inzerentům a dalším subjektům sledovat vaši polohu a online aktivity."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "V tomto e-mailu jsme nenašli žádné známé sledovací prvky a sledovací adresy URL."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -8060,6 +8066,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Ověřovací klíč není v seznamu důvěryhodných klíčů."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Ověření odesílatele selhalo: Ověřovací klíč není v seznamu důvěryhodných klíčů."
       ]
     },
     "Sent email icon": {
@@ -9534,6 +9543,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Vaše bezplatná zkušební verze služby Mail Plus končí ${ textDate }"
+      ],
+      "Protect yourself from trackers": [
+        "Chraňte se před sledovacími prvky"
       ]
     },
     "Today icon tooltip in mini calendar": {
