@@ -1165,6 +1165,9 @@
       ],
       "Change email": [
         "Ändra e-post"
+      ],
+      "See business plans": [
+        "Se företagspaket"
       ]
     },
     "action": {
@@ -2967,6 +2970,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Du kan läsa meddelandet och klicka på länkar utan att bli spårad."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Slå på skydd för e-postspårning för att förhindra annonsörer och andra från att spåra din plats och onlineaktivitet."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Vi hittade inga kända spårare och spårnings-URL:er i detta e-postmeddelande."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6089,6 +6098,12 @@
       ],
       "Message downloaded: ${ currentProgress } out of ${ totalProgress }": [
         "Meddelanden nedladdade: ${ currentProgress } av ${ totalProgress }"
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Vi blockerade följande annonsörer och organisationer från att se när du öppnar detta e-postmeddelande, vilken enhet du använder och var du befinner dig."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Vi tog bort spårningsinformation från följande länkar för att skydda dig från annonsörer och andra som försöker spåra din onlineaktivitet."
       ]
     },
     "info": {
@@ -7865,6 +7880,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Verifieringsnyckel finns inte i listan över betrodda nycklar."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Avsändarverifiering misslyckades: Verifieringsnyckel är inte i listan över betrodda nycklar."
       ]
     },
     "Sent email icon": {
@@ -8042,6 +8060,9 @@
       ],
       "Support online privacy": [
         "Stöder integritet online"
+      ],
+      "Premium early access": [
+        "Premium förhandstillgång"
       ]
     },
     "specialoffer: Footer": {
@@ -8155,6 +8176,9 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "Uppgradera och spara mer med 2 års ${ planName }"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Vårt avvecklade Visionary-paket är tillbaka endast under en begränsad tid"
       ]
     },
     "specialoffer: Tooltip": {
@@ -8184,6 +8208,9 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Lagringsutrymmet delas mellan ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } och ${ DRIVE_APP_NAME }."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Få utan extra kostnad de betalda versionerna av alla nya integritetstjänster som vi släpper i framtiden, tillsammans med förhandstillgång till alla framtida funktioner och produkter."
       ]
     },
     "Spotlight": {
@@ -9174,6 +9201,9 @@
       "We protected you from ${ trackersCount } tracker": [
         "Vi skyddade dig från ${ trackersCount } spårare",
         "Vi skyddade dig från ${ trackersCount } spårare"
+      ],
+      "Protect yourself from trackers": [
+        "Skydda dig själv från spårare"
       ]
     },
     "Today icon tooltip in mini calendar": {

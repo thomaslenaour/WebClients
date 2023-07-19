@@ -1738,7 +1738,7 @@
         "αχνό γκρι"
       ],
       "enzian": [
-        "ενζιάν"
+        "βαθύ μπλέ"
       ],
       "fern": [
         "φτέρη"
@@ -1804,10 +1804,10 @@
         "περσικό κόκκινο"
       ],
       "philippine gray": [
-        "φιλιππίνων γκρι"
+        "γκρί των φιλιππίνων"
       ],
       "philippine silver": [
-        "φιλιππίνων ασήμι"
+        "ασημί των φιλιππίνων"
       ],
       "pickle": [
         "τουρσί"
@@ -2976,6 +2976,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Μπορείτε να διαβάσετε το μήνυμα και να κάνετε κλικ σε συνδέσμους χωρίς να παρακολουθείτε."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Ενεργοποιήστε την προστασία παρακολούθησης ηλεκτρονικού ταχυδρομείου για να αποτρέψετε διαφημιστές και άλλους χρήστες από την παρακολούθηση της τοποθεσίας και της δραστηριότητάς σας στο διαδίκτυο."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Δε βρήκαμε γνωστούς ιχνηλάτες και διευθύνσεις URL παρακολούθησης σε αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -5448,7 +5454,7 @@
         "Κανένα από τα κλειδιά που ανεβάσατε είναι έγκυρα για κρυπτογράφηση. Για να μπορείτε να στέλνετε μηνύματα σε αυτήν τη διεύθυνση, παρακαλούμε να ανεβάσετε ένα έγκυρο κλειδί ή να απενεργοποιήσετε την \"Κρυπτογράφηση μηνυμάτων\"."
       ],
       "Normal": [
-        "Κανονικό\n*.*, add translation *.*"
+        "Κανονικό"
       ],
       "Not a valid URL": [
         "Μη έγκυρο URL"
@@ -5518,7 +5524,7 @@
         "Η φόρτωση της προεπισκόπησης απέτυχε"
       ],
       "Preview for this file type is not supported": [
-        "Η προεπισκόπηση για αυτόν τον τύπο αρχείου δεν υποστηρίζεται\n*.*, add translation *.*"
+        "Η προεπισκόπηση για αυτόν τον τύπο αρχείου δεν υποστηρίζεται"
       ],
       "Primary": [
         "Κύριο"
@@ -5551,7 +5557,7 @@
         "Αίτημα αποδεικτικού ανάγνωσης"
       ],
       "Restore": [
-        "Επαναφορά\n*.*, add translation *.*"
+        "Επαναφορά"
       ],
       "Right to Left": [
         "Δεξιά προς τα αριστερά"
@@ -5935,7 +5941,7 @@
         "Εβδομάδα"
       ],
       "When do you want your message to be automatically deleted from the recipient's inbox and your sent folder?": [
-        "Πότε θέλετε να διαγραφεί αυτόματα το μήνυμά σας από τα εισερχόμενα του παραλήπτη και τον απεσταλμένο σας φάκελο;\n*.*, add translation *.*\n*?*, please add *;*;"
+        "Πότε θέλετε να διαγραφεί αυτόματα το μήνυμά σας από τα εισερχόμενα του παραλήπτη και από τον φάκελλο των απεσταλμένων σας;"
       ],
       "When do you want your message to be sent?": [
         "Πότε θέλετε να αποσταλεί το μήνυμά σας;"
@@ -6143,6 +6149,12 @@
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
         "Μπορείτε να διαβάσετε αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου χωρίς να αποκαλύψετε τις αλληλεπιδράσεις, την τοποθεσία ή τη συσκευή σας στους διαφημιζόμενους."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Αποκλείσαμε τους ακόλουθους διαφημιζόμενους και οργανισμούς από το να βλέπουν πότε ανοίγετε αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου, ποια συσκευή χρησιμοποιείτε και πού βρίσκεστε."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Καταργήσαμε τις πληροφορίες παρακολούθησης από τους παρακάτω συνδέσμους, για να σας προστατεύσουμε από διαφημιζόμενους και άλλους που προσπαθούν να παρακολουθήσουν τη δραστηριότητά σας στο διαδίκτυο."
       ]
     },
     "info": {
@@ -7935,6 +7947,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Το κλειδί επαλήθευσης δεν περιλαμβάνεται στη λίστα αξιόπιστων κλειδιών."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Η επαλήθευση αποστολέα απέτυχε: Το κλειδί επαλήθευσης δεν περιλαμβάνεται στη λίστα αξιόπιστων κλειδιών."
       ]
     },
     "Sent email icon": {
@@ -9253,6 +9268,9 @@
       "We protected you from ${ trackersCount } tracker": [
         "Σας προστατέψαμε από ${ trackersCount } ιχνηλάτη",
         "Σας προστατέψαμε από ${ trackersCount } ιχνηλάτες"
+      ],
+      "Protect yourself from trackers": [
+        "Προστατέψτε τον εαυτό σας από ιχνηλάτες"
       ]
     },
     "Today icon tooltip in mini calendar": {

@@ -1171,6 +1171,9 @@
       ],
       "Change email": [
         "E-mailadres wijzigen"
+      ],
+      "Block email tracking": [
+        "Blokkeer e-mailtracking"
       ]
     },
     "action": {
@@ -4114,6 +4117,9 @@
       ],
       "Theme default": [
         "Thema standaard"
+      ],
+      "Theme font": [
+        "Thema lettertype"
       ]
     },
     "Font Size Default": {
@@ -4211,6 +4217,21 @@
       ],
       "Send a message": [
         "Verstuur een bericht"
+      ],
+      "${ MAIL_APP_NAME } app": [
+        "${ MAIL_APP_NAME }-app"
+      ],
+      "${ MAIL_APP_NAME } on App Store": [
+        "${ MAIL_APP_NAME } in de App Store"
+      ],
+      "${ MAIL_APP_NAME } on Play Store": [
+        "${ MAIL_APP_NAME } in de Play Store"
+      ],
+      "Get the App": [
+        "Download de app"
+      ],
+      "Set recovery method": [
+        "Herstelmethode instellen"
       ]
     },
     "Get started checklist item": {

@@ -2976,6 +2976,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Você pode ler a mensagem e clicar nos links sem ser rastreado."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Ative proteção de rastreador de e-mail para prevenir que anunciantes e outros de rastrear sua localização e atividade on-line."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Não encontramos nenhum rasteador conhecido e URLs de rastreamentro nesse e-mail."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4219,7 +4225,7 @@
         "${ MAIL_APP_NAME } na Play Store"
       ],
       "account logins": [
-        "logins de contas"
+        "os dados da conta"
       ],
       "Auto-forward Gmail": [
         "Encaminhamento automático do Gmail"
@@ -4318,13 +4324,13 @@
         "Definir um método de recuperação"
       ],
       "Set up ${ strongText } from Gmail": [
-        "Configurar ${ strongText } do Gmail"
+        "Configure ${ strongText } a partir do Gmail"
       ],
       "Sign in to the mobile app to complete this step": [
         "Faça login no aplicativo para completar esta etapa"
       ],
       "Update your logins": [
-        "Atualize seus logins"
+        "Atualize seus dados"
       ],
       "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
         "Utilizando o seu dispositivo móvel, escaneie este código QR ou visite a loja de aplicativos iOS ou Android."
@@ -6143,6 +6149,12 @@
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
         "Você pode ler este e-mail sem revelar suas interações, localização ou dispositivo aos anunciantes."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Impedimos os seguintes anunciantes e organizações de saber quando você abre este e-mail, qual dispositivo você está usando e sua localização."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Removemos as informações de rastreamento dos links a seguir para ajudar na sua proteção contra anunciantes e outras pessoas que tentam rastrear sua atividade on-line."
       ]
     },
     "info": {
@@ -7935,6 +7947,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "A chave de verificação não está na lista de chaves de confiança."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Falha na verificação de remetente. A chave de verificação não está na lista de chaves de confiança."
       ]
     },
     "Sent email icon": {
@@ -9320,6 +9335,9 @@
       "We protected you from ${ trackersCount } tracker": [
         "Temos protegidos você de ${ trackersCount } rastreador",
         "Temos protegidos você de ${ trackersCount } rastreadores"
+      ],
+      "Protect yourself from trackers": [
+        "Proteja-se de rastreadores"
       ]
     },
     "Today icon tooltip in mini calendar": {

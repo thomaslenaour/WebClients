@@ -2976,6 +2976,9 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Pode ler a mensagem e clicar nas ligações sem ser rastreado."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Não encontramos nenhum rasteador conhecido e URLs de rastreamentro nesse e-mail."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4319,6 +4322,21 @@
       ],
       "You've unlocked 1 GB": [
         "Desbloqueou 1 GB"
+      ],
+      "account logins": [
+        "dados da conta"
+      ],
+      "Change ${ strongText } to your ${ BRAND_NAME } address": [
+        "Altere ${ strongText } para o seu endereço ${ BRAND_NAME }"
+      ],
+      "Get the ${ strongText } on Android or iOS": [
+        "Descarrega o ${ strongText } para Android na Google Play ou iOS na App Store."
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Configurar ${ strongText } a partir do Gmail"
+      ],
+      "Update your logins": [
+        "Atualize os seus dados"
       ]
     },
     "Get started checklist item": {
@@ -7920,6 +7938,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "A chave de verificação não está na lista de chaves de confiança."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Erro na verificação de remetente. A chave de verificação não está na lista de chaves de confiança."
       ]
     },
     "Sent email icon": {
@@ -9238,6 +9259,9 @@
       "We protected you from ${ trackersCount } tracker": [
         "Protegemos o seu endereço de e-mail contra ${ trackersCount } rastreador.",
         "Protegemos o seu endereço de e-mail contra ${ trackersCount } rastreadores."
+      ],
+      "Protect yourself from trackers": [
+        "Proteja-se de rastreadores"
       ]
     },
     "Today icon tooltip in mini calendar": {

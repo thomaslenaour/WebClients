@@ -2965,6 +2965,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "您可在讀訊息和按連時不被追縱"
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "開啟電郵追蹤程式保護以避免廣告商或其他人追踪您的地點或網上活動。"
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "我們沒有在此電郵中發現追蹤程式或追踪網址。"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -5952,7 +5958,7 @@
         "您編寫了「${ attachmentsFoundKeyword }」，但沒有加入對應的附件。無論如何寄出此封郵件？"
       ],
       "You've reached the maximum number of addresses in the contact group(s):": [
-        "您已達到通訊群組郵件地址最高上限:"
+        "您已達到聯絡人群組郵件地址最高上限："
       ],
       "You've reached the maximum number of addresses in the contact group.": [
         "您以達到通訊群組郵件地址最高上限"
@@ -6037,6 +6043,12 @@
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
         "您可在不提供您的互動、地點及裝置給廣告商使用"
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "我們已攔截以下廣告商及組織機構獲取您打開此封電子郵件時的各項資料，其中包括您使用的裝置，以及您的地理位址。"
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "我們已移除來自以下連結的追蹤資訊，讓您從此不被廣告商和其它試圖追蹤您在線上的一舉一動。"
       ]
     },
     "info": {
@@ -9055,6 +9067,9 @@
       ],
       "We protected you from ${ trackersCount } trackers": [
         "我們保護您避免 ${ trackersCount } 個追蹤程式的追踪"
+      ],
+      "Protect yourself from trackers": [
+        "保護自己免於追蹤程式"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9466,6 +9481,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "驗證金鑰不在信任金鑰清單裡"
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "寄件者認證失敗： 認證金鑰並非在信任金鑰之中。"
       ]
     },
     "Online accounts": {

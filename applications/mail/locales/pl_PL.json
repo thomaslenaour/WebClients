@@ -2998,6 +2998,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Możesz otworzyć wiadomość i jej linki bez śledzenia Cię."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Włącz ochronę przed śledzeniem wiadomości, aby uniemożliwić reklamodawcom i innym firmom śledzenie Twojej lokalizacji i aktywności online."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Nie znaleźliśmy żadnych znanych elementów lub linków śledzących w tej wiadomości."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6352,6 +6358,12 @@
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
         "Możesz otworzyć tę wiadomość bez narażania się na śledzenie ze strony reklamodawców."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Zablokowaliśmy następującym reklamodawcom i firmom możliwość sprawdzania, kiedy otwierasz tę wiadomość, z jakiego urządzenia i z jakiej lokalizacji."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Usunęliśmy informacje śledzące z poniższych linków, aby chronić Cię przed reklamodawcami i firmami próbującymi śledzić Twoją aktywność online."
       ]
     },
     "info": {
@@ -8489,7 +8501,7 @@
         "Uzyskaj dostęp z dowolnego miejsca do treści w usługach streamingowych, takich jak Netflix, Disney+ i Prime Video."
       ],
       "All our premium services with their highest limits: 100 email addresses, support for 10 custom domains, unlimited hide-my-email aliases, calendar sharing, encrypted cloud storage and file sharing, and more.": [
-        "Wszystkie nasze usługi premium z najwyższymi limitami: 100 adresów e-mail, obsługa 10 niestandardowych domen, nieograniczona liczba aliasów hide-my-email, udostępnianie kalendarza, szyfrowane przechowywanie oraz udostępnianie plików i wiele więcej."
+        "Wszystkie nasze usługi premium z najwyższymi limitami: 100 adresów e-mail, obsługa 10 niestandardowych domen, nieograniczona liczba aliasów hide-my-email, udostępnianie kalendarza, szyfrowane przechowywanie, udostępnianie plików i wiele więcej."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
         "Zawiera obsługę 1 niestandardowej domeny, 10 adresów e-mail, 10 aliasów hide-my-email, udostępnianie kalendarza i wiele więcej."
@@ -8912,10 +8924,10 @@
         "Twórz bezpieczne dane logowania na wszystkich urządzeniach. Obejmuje nielimitowaną liczbę aliasów, 20 zabezpieczonych folderów, zintegrowane uwierzytelnianie dwustopniowe, automatyczne uzupełnianie danych karty kredytowej i nie tylko."
       ],
       "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
-        "Obsługuje 2950 serwerów w ponad 65 krajach z możliwością połączenia do 10 urządzeń, dostępem do globalnych usług streamingowych oraz z funkcją blokowania reklam i złośliwego oprogramowania i więcej."
+        "Zawiera 2950 serwerów w ponad 65 krajach z możliwością połączenia do 10 urządzeń, dostęp do globalnych usług streamingu, blokadę reklam, złośliwego oprogramowania i wiele więcej."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Zawiera obsługę 1 niestandardowej domeny e-mail, 10 adresów e-mail, 10 aliasów hide-my-email, udostępnianie kalendarza i nie tylko."
+        "Zawiera obsługę 1 niestandardowej domeny, 10 adresów e-mail, 10 aliasów hide-my-email, udostępnianie kalendarza i wiele więcej."
       ],
       "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
         "Zabezpiecz pliki dzięki zaszyfrowanej przestrzeni dyskowej w chmurze. Obejmuje historię wersji, szyfrowane udostępnianie plików i nie tylko."
@@ -9644,6 +9656,9 @@
         "Chronimy Cię przed ${ trackersCount } elementami śledzącymi",
         "Chronimy Cię przed ${ trackersCount } elementami śledzącymi",
         "Chronimy Cię przed ${ trackersCount } elementami śledzącymi"
+      ],
+      "Protect yourself from trackers": [
+        "Chroń się przed elementami śledzącymi"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -10160,6 +10175,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Klucz weryfikacyjny nie znajduje się na liście zaufanych kluczy."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Weryfikacja nadawcy nie powiodła się: Klucz weryfikacyjny nie znajduje się na liście zaufanych kluczy."
       ]
     },
     "Online accounts": {

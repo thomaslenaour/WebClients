@@ -2998,6 +2998,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Zprávu si můžete přečíst a klikat na odkazy, aniž byste byli sledováni."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Zapnutím ochrany proti sledování e-mailů zabráníte inzerentům a dalším subjektům sledovat vaši polohu a online aktivity."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "V tomto e-mailu jsme nenašli žádné známé sledovací prvky a sledovací adresy URL."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -9559,6 +9565,9 @@
         "Ochránili jsme vás před ${ trackersCount } sledováními",
         "Ochránili jsme vás před ${ trackersCount } sledování",
         "Ochránili jsme vás před ${ trackersCount } sledování"
+      ],
+      "Protect yourself from trackers": [
+        "Chraňte se před sledovacími prvky"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -10075,6 +10084,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Ověřovací klíč není v seznamu důvěryhodných klíčů."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Ověření odesílatele selhalo: Ověřovací klíč není v seznamu důvěryhodných klíčů."
       ]
     },
     "Online accounts": {

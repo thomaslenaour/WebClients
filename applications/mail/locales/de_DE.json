@@ -2976,6 +2976,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Du kannst die Nachricht lesen und auf Links klicken, ohne verfolgt zu werden."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Aktiviere den E-Mail-Tracker-Schutz, um zu verhindern, dass Werbetreibende und andere Personen deinen Standort und deine Online-Aktivitäten verfolgen."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Wir haben in dieser E-Mail keine bekannten Tracker und Tracking-URLs gefunden."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6143,6 +6149,12 @@
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
         "Du kannst diese E-Mail lesen, ohne deine Interaktionen, deinen Standort oder dein Gerät für Werbetreibende preiszugeben."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Wir haben die folgenden Werbetreibenden und Organisationen daran gehindert zu sehen, wann du diese E-Mail öffnest, welches Gerät du verwendest und wo du dich befindest."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Wir haben Tracking-Informationen von den folgenden Links entfernt, um dich vor Werbetreibenden und anderen zu schützen, die versuchen, deine Online-Aktivitäten zu verfolgen."
       ]
     },
     "info": {
@@ -7935,6 +7947,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "Der Verifizierungsschlüssel ist nicht in der Liste der vertrauenswürdigen Schlüssel enthalten."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "Absenderüberprüfung fehlgeschlagen: Der Verifizierungsschlüssel ist nicht in der Liste der vertrauenswürdigen Schlüssel enthalten."
       ]
     },
     "Sent email icon": {
@@ -8587,7 +8602,7 @@
     },
     "summer2023: Billing cycle option": {
       "1 year": [
-        "Ein Jahr"
+        "1 Jahr"
       ],
       "2 years": [
         "2 Jahre"
@@ -9317,6 +9332,9 @@
       "We protected you from ${ trackersCount } tracker": [
         "Wir haben dich vor ${ trackersCount } Tracker geschützt",
         "Wir haben dich vor ${ trackersCount } Trackern geschützt"
+      ],
+      "Protect yourself from trackers": [
+        "Schütze dich vor Trackern"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9774,13 +9792,13 @@
         "Gaming"
       ],
       "Most popular": [
-        "Beliebt"
+        "Am beliebtesten"
       ],
       "Travel": [
         "Reisen"
       ],
       "Utilities": [
-        "Versorgungsunternehmen"
+        "Versorgung"
       ]
     }
   }

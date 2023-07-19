@@ -2976,6 +2976,12 @@
       ],
       "You can read the message and click on links without being tracked.": [
         "Vous pouvez lire le message et cliquer sur les liens sans être suivi."
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Activez la protection contre les traqueurs d'e-mails pour éviter que les publicitaires ou toute autre personne ne surveillent votre emplacement ou vos activités en ligne."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "Nous n'avons trouvé aucun traqueur ou URL tentant de vous suivre dans cet e-mail."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -6143,6 +6149,12 @@
       ],
       "You can read this email without revealing your interactions, location, or device to advertisers.": [
         "Vous pouvez lire ce message sans indiquer aux annonceurs vos interactions, votre localisation ou votre appareil."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Nous avons empêché les publicitaires et organisations suivantes de savoir si vous avez ouvert ce message, quel appareil vous utilisez et où vous vous situez."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Nous avons supprimé les informations de traçage des liens suivants pour vous aider à vous protéger des publicitaires et autres parties essayant de tracer vos activités en ligne."
       ]
     },
     "info": {
@@ -7935,6 +7947,9 @@
     "Sender verification error": {
       "Verification key is not in the list of trusted keys.": [
         "La clé de vérification ne fait pas partie de la liste des clés de confiance."
+      ],
+      "Sender verification failed: Verification key is not in the list of trusted keys.": [
+        "La vérification de l'expéditeur n'a pas abouti : la clé de vérification ne figure pas dans la liste des clés de confiance."
       ]
     },
     "Sent email icon": {
@@ -9317,6 +9332,9 @@
       "We protected you from ${ trackersCount } tracker": [
         "Nous vous avons protégé contre ${ trackersCount } traqueur.",
         "Nous vous avons protégé contre ${ trackersCount } traqueurs."
+      ],
+      "Protect yourself from trackers": [
+        "Protégez-vous des traqueurs"
       ]
     },
     "Today icon tooltip in mini calendar": {
