@@ -589,6 +589,15 @@
       ],
       "Yes, I'll attend": [
         "Sì, parteciperò"
+      ],
+      "Copy email address": [
+        "Copia indirizzo email"
+      ],
+      "Create new contact": [
+        "Crea un nuovo contatto"
+      ],
+      "View contact details": [
+        "Visualizza i dettagli di contatto"
       ]
     },
     "Action subline": {
@@ -2259,7 +2268,7 @@
         "Il nome della cartella non può essere vuoto."
       ],
       "Image upload failed": [
-        "Caricamento dell'immagine fallito"
+        "Caricamento dell'immagine non riuscito"
       ],
       "IMAP server is required": [
         "È richiesto il server IMAP"
@@ -2387,7 +2396,7 @@
         "Firma non verificata"
       ],
       "Signature verification failed": [
-        "Verifica della firma fallita"
+        "Verifica della firma non riuscita"
       ],
       "Some contacts could not be deleted": [
         "Alcuni contatti non possono essere eliminati"
@@ -2538,7 +2547,7 @@
     },
     "Error importing contact": {
       "Encryption failed": [
-        "Criptaggio fallito"
+        "Crittografia non riuscita"
       ],
       "vCard versions < 3.0 not supported": [
         "versioni di vCard < 3.0 non supportate"
@@ -2590,7 +2599,7 @@
         "Elemento"
       ],
       "Encryption failed": [
-        "Crittografia fallita"
+        "Crittografia non riuscita"
       ],
       "End time out of bounds": [
         "Ora di fine fuori dai limiti"
@@ -2599,7 +2608,7 @@
         "Evento"
       ],
       "Event validation failed": [
-        "Convalida dell'evento fallita"
+        "Convalida dell'evento non riuscita"
       ],
       "Floating times not supported": [
         "Tempi mobili non supportati"
@@ -3007,6 +3016,9 @@
       ],
       "Theme default": [
         "Tema predefinito"
+      ],
+      "Theme font": [
+        "Tipo di carattere"
       ]
     },
     "Font size option": {
@@ -3755,8 +3767,8 @@
         "Si prega di selezionare le cartelle che si desidera importare:"
       ],
       "Please select which email address or addresses to add to ${ groupCount } group.": [
-        "Selezionare l'indirizzo o gli indirizzi e-mail da aggiungere al gruppo ${ groupCount }.",
-        "Selezionare l'indirizzo o gli indirizzi e-mail da aggiungere ai gruppi ${ groupCount }."
+        "Selezionare l'indirizzo o gli indirizzi email da aggiungere al gruppo ${ groupCount }.",
+        "Selezionare l'indirizzo o gli indirizzi email da aggiungere ai gruppi ${ groupCount }."
       ],
       "Please select which email address or addresses to add to ${ groupName }.": [
         "Selezionare l'indirizzo o gli indirizzi e-mail da aggiungere a ${ groupName }."
@@ -4039,6 +4051,9 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Il fuso orario di sistema sembra essere cambiato a ${ timezone }. Vuoi aggiornare la tua preferenza di fuso orario?"
+      ],
+      "Subscription ending: Reactivate by ${ byDate } to keep your ${ planName } benefits. ${ reactivateLink }": [
+        "Termine dell'abbonamento: riattivalo entro ${ byDate } per mantenere i vantaggi del tuo piano ${ planName }. ${ reactivateLink }"
       ]
     },
     "Info on errors": {
@@ -6818,6 +6833,11 @@
       ],
       "Yearly, ${ untilString }": [
         "Annualmente, ${ untilString }"
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Password manager"
       ]
     }
   }

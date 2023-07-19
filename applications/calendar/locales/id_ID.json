@@ -587,6 +587,12 @@
       ],
       "Yes, I'll attend": [
         "Ya, saya akan hadir"
+      ],
+      "Create new contact": [
+        "Buat kontak baru"
+      ],
+      "View contact details": [
+        "Lihat rincian kontak"
       ]
     },
     "Action subline": {
@@ -1127,7 +1133,7 @@
         "Utama"
       ],
       "Mobile": [
-        "Seluler"
+        "Mobile"
       ],
       "Other": [
         "Lainnya"
@@ -5204,7 +5210,7 @@
         "Utama"
       ],
       "Mobile": [
-        "Seluler"
+        "Mobile"
       ],
       "Other": [
         "Lainnya"
@@ -6606,6 +6612,14 @@
       ],
       "Yearly, ${ untilString }": [
         "Tahunan, ${ untilString }"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 tahun"
+      ],
+      "2 years": [
+        "2 tahun"
       ]
     }
   }

@@ -586,6 +586,15 @@
       ],
       "Yes, I'll attend": [
         "Ja, jag ska delta"
+      ],
+      "Copy email address": [
+        "Kopiera e-postadress"
+      ],
+      "Create new contact": [
+        "Skapa ny kontakt"
+      ],
+      "View contact details": [
+        "Visa kontaktdetaljer"
       ]
     },
     "Action subline": {
@@ -2998,6 +3007,9 @@
       ],
       "Theme default": [
         "Temastandard"
+      ],
+      "Theme font": [
+        "Temats typsnitt"
       ]
     },
     "Font size option": {
@@ -5477,6 +5489,9 @@
       ],
       "Support online privacy": [
         "Stöder integritet online"
+      ],
+      "Premium early access": [
+        "Premium förhandstillgång"
       ]
     },
     "specialoffer: Footer": {
@@ -5590,6 +5605,9 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "Uppgradera och spara mer med 2 års ${ planName }"
+      ],
+      "Our discontinued Visionary plan is back for a limited time only": [
+        "Vårt avvecklade Visionary-paket är tillbaka endast under en begränsad tid"
       ]
     },
     "specialoffer: Tooltip": {
@@ -5619,6 +5637,9 @@
       ],
       "Storage space is shared across ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME }, and ${ DRIVE_APP_NAME }.": [
         "Lagringsutrymmet delas mellan ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } och ${ DRIVE_APP_NAME }."
+      ],
+      "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
+        "Få utan extra kostnad de betalda versionerna av alla nya integritetstjänster som vi släpper i framtiden, tillsammans med förhandstillgång till alla framtida funktioner och produkter."
       ]
     },
     "Spotlight": {
@@ -6383,6 +6404,9 @@
       ],
       "You do not have any contacts to export": [
         "Du har inga kontakter att exportera"
+      ],
+      "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
+        "Växla automatiskt mellan dina föredragna teman för dag och natt i synk med ditt systems dag- och nattlägen"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -6732,6 +6756,59 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligen, ${ untilString }"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 år"
+      ],
+      "2 years": [
+        "2 år"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail och Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium lösenordshanterare"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Lagra dina lösenord på ett säkert sätt och autofyll dem på webbplatser. Inkluderar obegränsade lösenord, autofyll, lösenordsgenerator och mer."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Lösenordshanterare"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Inkluderar 2950+ servrar i 65+ länder, anslut upp till 10 enheter, få åtkomst till världsomspännande streamingtjänster, blockerare mot skadlig programvara och annonser och mer."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Inkluderar stöd för 1 anpassad e-postdomän, 10 e-postadresser, 10 hide-my-email-alias, kalenderdelning och mer."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Säkra dina filer med krypterad molnlagring. Inkluderar versionshistorik, krypterad fildelning och mer."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Under en begränsad tid får du det bästa ${ BRAND_NAME } har att erbjuda till en exklusiv rabatt."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Vi firar nioårsjubileet av vår crowdfunding!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME } Jubileumsrea"
       ]
     }
   }

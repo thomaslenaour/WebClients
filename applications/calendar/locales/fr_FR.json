@@ -589,6 +589,12 @@
       ],
       "Yes, I'll attend": [
         "Oui, je participerai"
+      ],
+      "Create new contact": [
+        "Créer un nouveau contact"
+      ],
+      "View contact details": [
+        "Voir les informations du contact"
       ]
     },
     "Action subline": {
@@ -3007,6 +3013,9 @@
       ],
       "Theme default": [
         "Thème par défaut"
+      ],
+      "Theme font": [
+        "Police du thème"
       ]
     },
     "Font size option": {
@@ -5844,7 +5853,7 @@
         "Annulation en cours"
       ],
       "Verification successful": [
-        "La vérification est réussie."
+        "La vérification a abouti."
       ]
     },
     "Success notification when user send feedback": {
@@ -6012,7 +6021,7 @@
         "${ emailsCount } adresses e-mail"
       ],
       "(active)": [
-        "(activé)"
+        "(actif)"
       ],
       "Account suspended": [
         "Compte suspendu"

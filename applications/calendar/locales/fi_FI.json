@@ -58,7 +58,7 @@
         "Lisää puhelinnumero"
       ],
       "Add public holidays": [
-        "Lisää arkipyhät"
+        "Lisää arkivapaat"
       ],
       "Add to group": [
         "Lisää ryhmään"
@@ -67,7 +67,7 @@
         "Toteuta"
       ],
       "At most 100 contacts are allowed per contact group": [
-        "Yhteystietoryhmää kohden sallitaan enintään 100 yhteystietoa"
+        "Yhdessä yhteystietoryhmässä sallitaan enintään 100 yhteystietoa"
       ],
       "Attach screenshot(s)": [
         "Liitä kuvankaappauksia"
@@ -88,7 +88,7 @@
         "Peru"
       ],
       "Chat with us": [
-        "Chattaile kanssamme"
+        "Keskustele kanssamme"
       ],
       "Check import progress": [
         "Tarkasta tuonnin tila"
@@ -142,7 +142,7 @@
         "Jatka Googlella"
       ],
       "Copy email to clipboard": [
-        "Kopioi osoite leikepöydälle"
+        "Kopioi sähköpostiosoite leikepöydälle"
       ],
       "Copy link": [
         "Kopioi linkki"
@@ -252,7 +252,7 @@
         "Piilota PGP-lisäasetukset"
       ],
       "Hide affected calendars": [
-        "Piilota vaikuttuneet kalenterit"
+        "Piilota kalenterit, joita tämä koskee"
       ],
       "Hide folders": [
         "Piilota kansiot"
@@ -471,7 +471,7 @@
         "Näytä PGP-lisäasetukset"
       ],
       "Show affected calendars": [
-        "Näytä vaikuttuneet kalenterit"
+        "Näytä kalenterit, joita tämä koskee"
       ],
       "Show folders": [
         "Näytä kansiot"
@@ -589,6 +589,12 @@
       ],
       "Yes, I'll attend": [
         "Kyllä, osallistun"
+      ],
+      "Create new contact": [
+        "Luo uusi yhteystieto"
+      ],
+      "View contact details": [
+        "Näytä yhteystiedon tiedot"
       ]
     },
     "Action subline": {
@@ -987,7 +993,7 @@
     },
     "Collapsible tooltip": {
       "Collapse": [
-        "Supista"
+        "Piennennä"
       ],
       "Expand": [
         "Laajenna"
@@ -1961,7 +1967,7 @@
         "${ interval } päivän välein, ${ untilString }"
       ],
       "until ${ dateString }": [
-        "${ dateString } asti"
+        "päättyen ${ dateString }"
       ]
     },
     "Default display name vcard": {
@@ -2030,7 +2036,7 @@
         "Lisäksi CSV- ja vCard-kentät on automaattisesti kohdistettu. Voit tarkistaa ja muuttaa näitä parituksia manuaalisesti."
       ],
       "We have detected the following fields in the CSV file you uploaded. Check the ones you want to import.": [
-        "Ladattavassa CSV-tiedostossa havaittiin seuraavat kentät. Valitse ne, jotka haluat tuoda."
+        "Lataamassasi CSV-tiedostossa havaittiin seuraavat kentät. Valitse ne, jotka haluat tuoda."
       ]
     },
     "Disabled calendar": {
@@ -2238,10 +2244,10 @@
         "Virheellinen sähköpostiosoite"
       ],
       "Ends on date cannot be empty": [
-        "Päätöspäivä ei voi olla tyhjä"
+        "Päättymispäivä ei voi olla tyhjä"
       ],
       "Ends on date must be after start time": [
-        "Päätöspäivän on oltava aloitusajan jälkeen"
+        "Päättymispäivän on oltava aloitusajan jälkeen"
       ],
       "Enter 6 digits": [
         "Syötä 6-numeroa"
@@ -2259,7 +2265,7 @@
         "Kansion nimi ei voi olla tyhjä."
       ],
       "Image upload failed": [
-        "Kuvan tallennus epäonnistui"
+        "Kuvan lataus epäonnistui"
       ],
       "IMAP server is required": [
         "IMAP-palvelin vaaditaan"
@@ -2480,7 +2486,7 @@
         "Vahvistusvirhe"
       ],
       "You already added this holidays calendar": [
-        "Olet jo lisännyt tämän arkipyhäkalenterin"
+        "Olet jo lisännyt tämän juhlapäiväkalenterin"
       ],
       "You can't send a mail to more than 100 recipients": [
         "Voit lähettää viestin enintään 100 vastaanottajalle"
@@ -2508,13 +2514,13 @@
         "Tiedostoa \"${ formattedFilename }\" luettaessa tapahtui virhe. Väärä tiedostomuoto."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Maximum file size is ${ MAX_IMPORT_FILE_SIZE_STRING }.": [
-        "Ladattaessa tiedostoa ${ formattedFilename } tapahtui virhe. Tiedoston enimmäiskoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Tiedoston enimmäiskoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Only ICS file formats are allowed.": [
-        "Tiedostoa ${ formattedFilename } tallennettaessa tapahtui virhe. Vain ICS-muotoiset tiedostot sallitaan."
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Vain ICS-muotoiset tiedostot sallitaan."
       ],
       "An error occurred uploading your file. No file has been selected.": [
-        "Virhe tallennettaessa tiedostoa. Tiedostoa ei ole valittu."
+        "Virhe siirrettäessä tiedostoa. Tiedostoa ei ole valittu."
       ],
       "An unexpected error occurred. Import must be restarted.": [
         "Tapahtui odottamaton virhe. Tuonti on aloitettava uudelleen."
@@ -2549,13 +2555,13 @@
         "Tiedostoa \"${ formattedFilename }\" luettaessa tapahtui virhe. Väärä tiedostomuoto."
       ],
       "An error occurred uploading your file ${ formattedFilename }. Maximum file size is ${ MAX_IMPORT_FILE_SIZE_STRING }.": [
-        "Tiedostoa ${ formattedFilename } tallennettaessa tapahtui virhe. Suurin sallittu tiedostokoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Suurin sallittu tiedostokoko on ${ MAX_IMPORT_FILE_SIZE_STRING }."
       ],
       "An error occurred uploading your file ${ formattedFilename }. No .csv or .vcf file selected": [
-        "Tiedostoa ${ formattedFilename } tallennettaessa tapahtui virhe. Ei valittua .csv- tai .vcf-tiedostoa"
+        "Virhe siirrettäessä tiedostoa ${ formattedFilename }. Ei valittua .csv- tai .vcf-tiedostoa"
       ],
       "An error occurred uploading your file. No file has been selected.": [
-        "Virhe tallennettaessa tiedostoa. Tiedostoa ei ole valittu."
+        "Virhe siirrettäessä tiedostoa. Tiedostoa ei ole valittu."
       ],
       "Your file ${ formattedFilename } contains more than ${ MAX_IMPORT_CONTACTS_STRING } contacts.": [
         "Tiedosto ${ formattedFilename } sisältää yli ${ MAX_IMPORT_CONTACTS_STRING } yhteystietoa."
@@ -3007,6 +3013,9 @@
       ],
       "Theme default": [
         "Teeman oletus"
+      ],
+      "Theme font": [
+        "Teeman fontti"
       ]
     },
     "Font size option": {
@@ -3037,7 +3046,7 @@
         "Verkko"
       ],
       "Other category": [
-        "Muu kategoria"
+        "Muut aiheet"
       ],
       "Services": [
         "Palvelut"
@@ -3468,10 +3477,10 @@
         "ja"
       ],
       "Anyone with this link can see all the event details of this calendar such as title, location or participants.": [
-        "Tämän linkin välityksellä kuka tahansa voi nähdä tämän kalenterin tapahtumanimikkeiden, sijaintien ja osallistujien kaltaisia tietoja."
+        "Linkin välityksellä kuka tahansa voi nähdä kalenterin tapahtumien nimien, sijaintien ja osallistujien kaltaisia tietoja."
       ],
       "Anyone with this link can see whether you’re free or busy on your calendar. They can’t see event details, such as title, location, or participants.": [
-        "Tämän linkin välityksellä kuka tahansa voi nähdä oletko kalenterissasi vapaana vai varattuna. He eivät näe tapahtumanimikkeiden, sijaintien tai osallistujien kaltaisia tietoja."
+        "Linkin välityksellä kuka tahansa voi nähdä oletko kalenterissasi vapaana vai varattuna. He eivät näe tapahtumien nimien, sijaintien ja osallistujien kaltaisia tietoja."
       ],
       "Attention required": [
         "Huomiota vaaditaan"
@@ -3529,10 +3538,10 @@
         "Luo kalenteriin"
       ],
       "CSV files from Outlook, Outlook Express, Yahoo! Mail, Hotmail, Eudora and some other apps as well as vCard 3.1 and 4.0 formats (UTF-8 encoding) are supported.": [
-        "CSV-tiedostoja Outlookista, Outlook Expressistä, Yahoo! Mailista, Hotmailista, Eudorasta ja joistakin muista sovelluksista sekä vCard 3.1 ja 4.0 -muotoja (UTF-8-koodaus) tuetaan."
+        "Outlookin, Outlook Expressin, Yahoo! Mailin, Hotmailin, Eudoran ja joidenkin muiden sovellusten CSV-tiedostoja, sekä vCard-tiedostojen 3.1- ja 4.0-versioita (UTF-8-koodauksella) tuetaan."
       ],
       "Custom": [
-        "Oma"
+        "Mukautettu"
       ],
       "Custom daily": [
         "Oma päivittäinen"
@@ -3541,7 +3550,7 @@
         "Oma kuukausittainen"
       ],
       "Custom weekly": [
-        "Oma viikottainen"
+        "Mukautettu viikottainen"
       ],
       "Custom yearly": [
         "Oma vuosittainen"
@@ -3556,7 +3565,7 @@
         "Hylätäänkö muutokset?"
       ],
       "Drop file here to upload": [
-        "Pudota tallennettava tiedosto tähän"
+        "Pudota ladattava tiedosto tähän"
       ],
       "Drop to import": [
         "Tuo pudottamalla"
@@ -3571,7 +3580,7 @@
         "Viestit allekirjoitetaan automaattisesti"
       ],
       "Enter the code from your authenticator app": [
-        "Syötä todennussovelluksesi näyttämä koodi"
+        "Syötä todennussovelluksen näyttämä koodi"
       ],
       "Enter the credentials of the email account you want to import from.": [
         "Syötä tuotavan tilin kirjautumistiedot."
@@ -3722,7 +3731,7 @@
         "Yhdellekään osallistujalle ei voida ilmoittaa muutoksistasi:"
       ],
       "None of the uploaded keys are valid for encryption. To be able to send messages to this address, please upload a valid key or disable \"Encrypt emails\".": [
-        "Mikään tallennetuista avaimista ei kelpaa salaukseen. Viestien lähettämiseksi tähän osoitteeseen, tallenna kelvollinen avain tai poista \"Salaa viestit\" käytöstä."
+        "Mikään tallennetuista avaimista ei kelpaa salaukseen. Viestien lähettämiseksi tähän osoitteeseen, lataa kelvollinen avain tai poista \"Salaa viestit\" käytöstä."
       ],
       "Not a valid URL": [
         "Virheellinen URL"
@@ -3900,7 +3909,7 @@
         "Viikko"
       ],
       "When you set up two-factor authentication, we provide recovery codes which you can use to sign in if you lose access to your authenticator app.": [
-        "Määrittäessäsi kaksivaiheisen todennuksen saat myös palautuskoodit, joiden avulla voit kirjautua sisään vaikka menettäisit pääsyn todennussovellukseesi."
+        "Määrittäessäsi kaksivaiheisen todennuksen saat myös palautuskoodit, joiden avulla voit kirjautua vaikka menettäisit pääsyn todennussovellukseesi."
       ],
       "Which event would you like to delete?": [
         "Mitkä tapahtumakerrat haluat poistaa?"
@@ -3942,7 +3951,7 @@
         "Liityit jo tähän kalenteriin"
       ],
       "You are about to open another browser tab and visit:": [
-        "Olet avaamassa selaimeen uutta välilehteä sivustolle:"
+        "Olet avaamassa uutta selaimen välilehteä sivustolle:"
       ],
       "You are currently signed in as ${ user.Name } (${ user.Email }).": [
         "Olet kirjautuneena ${ user.Name } (${ user.Email })."
@@ -3999,10 +4008,10 @@
         "Olet saavuttanut yhteystietoryhmän osoitteiden enimmäismäärän."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. After 28 days, emails will no longer be delivered to your inbox, your Drive sharing links will be blocked, and you will not be able to upload new files. To resume normal service, please pay any overdue invoices.": [
-        "${ BRAND_NAME }-tilisi on tällä hetkellä jäädytetty. 28 päivän kuluttua postilaatikkoosi ei enää toimiteta sähköpostiviestejä ja Drive-jakolinkkisi estetään etkä voi tallentaa uusia tiedostoja. Palauttaaksesi normaalin toiminnan, maksa maksamattomat laskut."
+        "${ BRAND_NAME }-tilisi on jäädytetty, ja 28 päivän kuluttua postilaatikkosi ei enää vastaanota viestejä ja Drive-jakolinkit sekä uusien tiedostojen tallennus estetään. Palauttaaksesi tilisi normaalin toiminnan, maksa maksamattomat laskut."
       ],
       "Your ${ BRAND_NAME } account is currently suspended. Emails are no longer being delivered to your inbox. Your Drive sharing links are no longer active, and you cannot upload new files. To continue using your account, please pay any overdue invoices.": [
-        "${ BRAND_NAME }-tilisi on tällä hetkellä jäädytetty. Postilaatikkoosi ei enää toimiteta sähköpostiviestejä ja Drive-jakolinkkisi estetään etkä voi tallentaa uusia tiedostoja. Palauttaaksesi normaalin toiminnan, maksa maksamattomat laskut."
+        "${ BRAND_NAME }-tilisi on jäädytetty, eikä postilaatikkosi enää vastaanota viestejä ja Drive-jakolinkit sekä uusien tiedostojen tallennus estetään. Palauttaaksesi tilisi normaalin toiminnan, maksa maksamattomat laskut."
       ],
       "Your account has at least one overdue invoice. Your access will soon get restricted. ${ payInvoiceLink }": [
         "Tililläsi on ainakin yksi erääntynyt lasku. Pääsyäsi rajoitetaan pian. ${ payInvoiceLink }"
@@ -4069,7 +4078,7 @@
     },
     "Info; reset calendar keys modal; part 2": {
       "This is because your password was recently reset without using a recovery method.": [
-        "Tämä johtuu siitä, että salasanasi vaihdettiin taannoin käyttämättä palautustapaa."
+        "Tämä johtuu siitä, että salasanasi nollattiin taannoin käyttämättä palautustapaa."
       ]
     },
     "Info; reset calendar keys modal; part 3": {
@@ -4079,7 +4088,7 @@
     },
     "Info; reshare calendar modal; part 1": {
       "Calendar sharing was disabled following your recent password reset.": [
-        "Kalenterijako poistettiin käytöstä taannoisen salasanan vaihdon seurauksena."
+        "Kalenterijako poistettiin käytöstä taannoisen salasanan nollauksen seurauksena."
       ]
     },
     "Info; reshare calendar modal; part 2": {
@@ -4089,8 +4098,8 @@
     },
     "Information about why calendar event cannot be saved": {
       "At most ${ MAX_ATTENDEES } participant is allowed per invitation": [
-        "Kutsua kohti sallitaan enintään ${ MAX_ATTENDEES } osallistuja",
-        "Kutsua kohti sallitaan enintään ${ MAX_ATTENDEES } osallistujaa"
+        "Kutsua kohden sallitaan enintään ${ MAX_ATTENDEES } osallistuja",
+        "Kutsua kohden sallitaan enintään ${ MAX_ATTENDEES } osallistujaa"
       ],
       "Creating invites in a shared calendar is not allowed": [
         "Kutsujen luontia ei sallita jaetussa kalenterissa"
@@ -4169,7 +4178,7 @@
         "Tallenna yhteystiedot automaattisesti"
       ],
       "Awful": [
-        "Kamala"
+        "Surkea"
       ],
       "Bad": [
         "Huono"
@@ -4187,7 +4196,7 @@
         "Kalenterit"
       ],
       "Category": [
-        "Kategoria"
+        "Aihe"
       ],
       "City": [
         "Kaupunki"
@@ -4268,7 +4277,7 @@
         "Tapahtumailmoitukset"
       ],
       "Event title": [
-        "Tapahtuman nimike"
+        "Tapahtuman nimi"
       ],
       "Export contacts": [
         "Vie yhteystiedot"
@@ -4307,7 +4316,7 @@
         "Tuo yhteystietoja"
       ],
       "Import interval": [
-        "Tuontiaika"
+        "Tuontiväli"
       ],
       "Import to email address": [
         "Tuo sähköpostiosoitteelle"
@@ -4452,7 +4461,7 @@
         "Mitä tapahtui?"
       ],
       "Wonderful": [
-        "Ihana"
+        "Erinomainen"
       ],
       "Your calendar URL": [
         "Kalenterisi URL-osoite"
@@ -4640,7 +4649,7 @@
     },
     "Modal title": {
       "Add public holidays": [
-        "Lisää arkipyhät"
+        "Lisää juhlapäivät"
       ],
       "Cannot add more calendars": [
         "Enempää kalentereita ei voida lisätä"
@@ -4649,7 +4658,7 @@
         "Muokkaa kalenteria"
       ],
       "Get a country's official public holidays calendar.": [
-        "Hanki maan virallinen arkipyhäkalenteri."
+        "Hanki maan virallinen juhlapäiväkalenteri."
       ],
       "How to import calendars from another service": [
         "Miten kalenterit tuodaan muista palveluista"
@@ -4687,12 +4696,12 @@
         "${ interval } kuukauden välein ${ onDayString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ timesString }": [
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ timesString }",
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ timesString }"
+        "${ interval } kuukauden välein ${ onDayString }, ${ timesString }",
+        "${ interval } kuukauden välein ${ onDayString }, ${ timesString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ untilString }": [
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ untilString }",
-        "Joka ${ interval } kuukauden ${ onDayString }, ${ untilString }"
+        "${ interval } kuukauden välein ${ onDayString }, ${ untilString }",
+        "${ interval } kuukauden välein ${ onDayString }, ${ untilString }"
       ],
       "Monthly ${ onDayString }": [
         "Kuukausittain ${ onDayString }"
@@ -4709,109 +4718,109 @@
         "${ dayOfMonth }. päivä"
       ],
       "on the first Friday": [
-        "ensimmäisenä perjantaina"
+        "ensimmäinen perjantai"
       ],
       "on the first Monday": [
-        "ensimmäisenä maanantaina"
+        "ensimmäinen maanantai"
       ],
       "on the first Saturday": [
-        "ensimmäisenä lauantaina"
+        "ensimmäinen lauantai"
       ],
       "on the first Sunday": [
-        "ensimmäisenä sunnuntaina"
+        "ensimmäinen sunnuntai"
       ],
       "on the first Thursday": [
-        "ensimmäisenä torstaina"
+        "ensimmäinen torstai"
       ],
       "on the first Tuesday": [
-        "ensimmäisenä tiistaina"
+        "ensimmäinen tiistai"
       ],
       "on the first Wednesday": [
-        "ensimmäisenä keskiviikkona"
+        "ensimmäinen keskiviikko"
       ],
       "on the fourth Friday": [
-        "neljäntenä perjantaina"
+        "neljäs perjantai"
       ],
       "on the fourth Monday": [
-        "neljäntenä maanantaina"
+        "neljäs maanantai"
       ],
       "on the fourth Saturday": [
-        "neljäntenä lauantaina"
+        "neljäs lauantai"
       ],
       "on the fourth Sunday": [
-        "neljäntenä sunnuntaina"
+        "neljäs sunnuntai"
       ],
       "on the fourth Thursday": [
-        "neljäntenä torstaina"
+        "neljäs torstai"
       ],
       "on the fourth Tuesday": [
-        "neljäntenä tiistaina"
+        "neljäs tiistai"
       ],
       "on the fourth Wednesday": [
-        "neljäntenä keskiviikkona"
+        "neljäs keskiviikko"
       ],
       "on the last Friday": [
-        "viimeisenä perjantaina"
+        "viimeinen perjantai"
       ],
       "on the last Monday": [
-        "viimeisenä maanantaina"
+        "viimeinen maanantai"
       ],
       "on the last Saturday": [
-        "viimeisenä lauantaina"
+        "viimeinen lauantai"
       ],
       "on the last Sunday": [
-        "viimeisenä sunnuntaina"
+        "viimeinen sunnuntai"
       ],
       "on the last Thursday": [
-        "viimeisenä torstaina"
+        "viimeinen torstai"
       ],
       "on the last Tuesday": [
-        "viimeisenä tiistaina"
+        "viimeinen tiistai"
       ],
       "on the last Wednesday": [
-        "viimeisenä keskiviikkona"
+        "viimeinen keskiviikko"
       ],
       "on the second Friday": [
-        "toisena perjantaina"
+        "toinen perjantai"
       ],
       "on the second Monday": [
-        "toisena maanantaina"
+        "toinen maanantai"
       ],
       "on the second Saturday": [
-        "toisena lauantaina"
+        "toinen lauantai"
       ],
       "on the second Sunday": [
-        "toisena sunnuntaina"
+        "toinen sunnuntai"
       ],
       "on the second Thursday": [
-        "toisena torstaina"
+        "toinen torstai"
       ],
       "on the second Tuesday": [
-        "toisena tiistaina"
+        "toinen tiistai"
       ],
       "on the second Wednesday": [
-        "toisena keskiviikkona"
+        "toinen keskiviikko"
       ],
       "on the third Friday": [
-        "kolmantena perjantaina"
+        "kolmas perjantai"
       ],
       "on the third Monday": [
-        "kolmantena maanantaina"
+        "kolmas maanantai"
       ],
       "on the third Saturday": [
-        "kolmantena lauantaina"
+        "kolmas lauantai"
       ],
       "on the third Sunday": [
-        "kolmantena sunnuntaina"
+        "kolmas sunnuntai"
       ],
       "on the third Thursday": [
-        "kolmantena torstaina"
+        "kolmas torstai"
       ],
       "on the third Tuesday": [
-        "kolmantena tiistaina"
+        "kolmas tiistai"
       ],
       "on the third Wednesday": [
-        "kolmantena keskiviikkona"
+        "kolmas keskiviikko"
       ]
     },
     "New Label form": {
@@ -4832,7 +4841,7 @@
     },
     "new_plans: action": {
       "Switch or add account": [
-        "Vaihda tiliä tai lisää uusi"
+        "Vaihda tai lisää tili"
       ]
     },
     "new_plans: feature": {
@@ -4895,7 +4904,7 @@
     },
     "Notification in holidays calendar modal": {
       "Adding holidays calendar failed": [
-        "Arkipyhäkalenterin lisäys epäonnistui"
+        "Juhlapäiväkalenterin lisääminen epäonnistui"
       ],
       "Calendar added": [
         "Kalenteri lisättiin"
@@ -4941,7 +4950,7 @@
         "tapahtuman alkaessa"
       ],
       "day before": [
-        "päivä aiemmin",
+        "päivää aiemmin",
         "päivää aiemmin"
       ],
       "hour before": [
@@ -5010,19 +5019,19 @@
         "${ value } minuuttia aiemmin klo ${ time }"
       ],
       "${ value } week after": [
-        "${ value } viikkoa myöhemmin",
+        "${ value } viikko myöhemmin",
         "${ value } viikkoa myöhemmin"
       ],
       "${ value } week after at ${ time }": [
-        "${ value } viikkoa myöhemmin klo ${ time }",
+        "${ value } viikko myöhemmin klo ${ time }",
         "${ value } viikkoa myöhemmin klo ${ time }"
       ],
       "${ value } week before": [
-        "${ value } viikkoa aiemmin",
+        "${ value } viikko aiemmin",
         "${ value } viikkoa aiemmin"
       ],
       "${ value } week before at ${ time }": [
-        "${ value } viikkoa aiemmin klo ${ time }",
+        "${ value } viikko aiemmin klo ${ time }",
         "${ value } viikkoa aiemmin klo ${ time }"
       ],
       "At time of event": [
@@ -5103,8 +5112,8 @@
         "Mukautettu"
       ],
       "Day": [
-        "Päivä",
-        "Päivää"
+        "päivä",
+        "päivä"
       ],
       "Does not repeat": [
         "Ei toistu"
@@ -5125,8 +5134,8 @@
         "Ohita ryhmä"
       ],
       "Month": [
-        "Kuukausi",
-        "Kuukautta"
+        "kuukausi",
+        "kuukausi"
       ],
       "No parent folder": [
         "Ei yläkansiota"
@@ -5138,12 +5147,12 @@
         "Vain tämän tapahtumakerran"
       ],
       "Week": [
-        "Viikko",
-        "Viikkoa"
+        "viikko",
+        "viikko"
       ],
       "Year": [
-        "Vuosi",
-        "Vuotta"
+        "vuosi",
+        "vuosi"
       ]
     },
     "Option group label": {
@@ -5161,7 +5170,7 @@
     },
     "Participants collapse button label": {
       "Collapse participants list": [
-        "Supista osallistujalista"
+        "Pienennä osallistujalista"
       ]
     },
     "Participants expand button label": {
@@ -5192,7 +5201,7 @@
     },
     "Placeholder": {
       "A way to contact you": [
-        "Miten tavoitamme sinut"
+        "Tapa, jolla tavoitamme sinut"
       ],
       "Add a calendar description": [
         "Lisää kalenterille kuvaus"
@@ -5210,7 +5219,7 @@
         "Lisää osallistujia"
       ],
       "Add title": [
-        "Lisää nimike"
+        "Lisää nimi"
       ],
       "E.g., ": [
         "Esim. "
@@ -5234,7 +5243,7 @@
         "Salasana"
       ],
       "Please describe the problem and include any error messages": [
-        "Kuvaile ongelmaa ja sisällytä mahdolliset virheviestit"
+        "Kuvaile ongelmaa ja sisällytä mahdolliset virheilmoitukset"
       ],
       "Please select a country": [
         "Valitse maa"
@@ -5327,7 +5336,7 @@
     },
     "Refresh on apply warning": {
       "Note: the service will reload after you click the Apply button.": [
-        "Huomioi: palvelu latautuu uudelleen kun painat Käytä-painiketta."
+        "Huomioi: palvelu latautuu uudelleen kun painat Käytä."
       ]
     },
     "Reload event button tooltip": {
@@ -5337,7 +5346,7 @@
     },
     "Select files": {
       "Upload": [
-        "Tallenna"
+        "Lataa"
       ]
     },
     "Select search results": {
@@ -5647,7 +5656,7 @@
     },
     "Spotlight": {
       "Add your country's public holidays to your calendar.": [
-        "Lisää maasi arkipyhät kalenteriisi."
+        "Lisää maasi juhlapäivät kalenteriisi."
       ],
       "Get up to ${ credits } in credits.": [
         "Ansaitse jopa ${ credits } krediittiä."
@@ -5656,7 +5665,7 @@
         "Kutsu kavereita ${ BRAND_NAME }iin"
       ],
       "Public holidays are here!": [
-        "Arkipyhät ovat täällä!"
+        "Juhlapäivät ovat täällä!"
       ]
     },
     "Storage": {
@@ -5744,7 +5753,7 @@
         "Peruutus lähetettiin ja ketjun kaikki tapahtumat poistettiin"
       ],
       "Cancellation sent and event deleted": [
-        "Perumisilmoitus lähetettiin ja tapahtuma poistettiin"
+        "Peruutus lähetettiin ja tapahtuma poistettiin"
       ],
       "Cancellation sent and participants removed": [
         "Peruutus lähetettiin ja osallistujat poistettiin"
@@ -5949,7 +5958,7 @@
         "Tili on jäädytetty"
       ],
       "Add another notification to remind you of this event": [
-        "Lisää uusi ilmoitus muistuttamaan sinua tapahtumasta"
+        "Lisää uusi ilmoitus muistuttamaan tapahtumasta"
       ],
       "Add contact group name": [
         "Lisää yhteystietoryhmän nimi"
@@ -5958,7 +5967,7 @@
         "Lisää tapahtuman sijainti"
       ],
       "Add event title": [
-        "Lisää tapahtumanimike"
+        "Lisää tapahtuman nimi"
       ],
       "Add more information related to this event": [
         "Lisää tarkempia tietoja tapahtumasta"
@@ -6063,7 +6072,7 @@
         "Poistetaan yhteystietoja"
       ],
       "Drop to upload": [
-        "Lisää pudottamalla"
+        "Lataa pudottamalla"
       ],
       "Edit contact": [
         "Muokkaa yhteystietoa"
@@ -6175,7 +6184,7 @@
         "Yhteystietojen allekirjoitus uudelleen"
       ],
       "Reactivate calendar keys": [
-        "Aktivoi kalenteriavaimet uudelleen"
+        "Aktivoi kalenterin avaimet uudelleen"
       ],
       "Reconnect your account": [
         "Yhdistä tilisi uudelleen"
@@ -6211,7 +6220,7 @@
         "Valitse yhteystietoryhmä"
       ],
       "Select event end date": [
-        "Valitse tapahtuman päätöspäivä"
+        "Valitse tapahtuman päättymispäivä"
       ],
       "Select event end time": [
         "Valitse tapahtuman päätösaika"
@@ -6232,7 +6241,7 @@
         "Valitse viimeinen tapahtumapäivä"
       ],
       "Select the time to send this notification": [
-        "Valitse mihin aikaan haluat ilmoituksen tapahtuvan"
+        "Valitse ilmoituksen lähetysaika"
       ],
       "Select the time zone for the event end time": [
         "Valitse tapahtuman päätössajan aikavyöhyke"
@@ -6247,7 +6256,7 @@
         "Valitse milloin tapahtuman järjestäminen päättyy"
       ],
       "Select when you want this notification to be sent": [
-        "Valitse milloin haluat ilmoituksen tapahtuvan"
+        "Valitse ilmoituksen lähetyspäivä"
       ],
       "Select which calendar to add this event to": [
         "Valitse kalenteri, johon tapahtuma lisätään"
@@ -6310,7 +6319,7 @@
         "Mitä uutta"
       ],
       "You have invited participants with equivalent emails": [
-        "Olet kutsunut osallistujia, joilla on samat sähköpostiosoitteet"
+        "Olet kutsunut eri osallistujia samoilla sähköpostiosoitteilla"
       ],
       "Your calendar link": [
         "Linkki kalenteriisi"
@@ -6349,7 +6358,7 @@
         "Automaattiasetuksella viestit lähetetään tälle käyttäjälle käyttäen kirjoituksessa käytettyä muotoilua. Käytettäessä pelkkä teksti -asetusta poistetaan viestistä lähetettäessä mahdolliset muotoilut."
       ],
       "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
-        "Vaihda valitsemiasi päivä- ja yöteemoja järjestelmäsi päivä- ja yötilojen mukana automaattisesti"
+        "Vaihda määrittämiesi päivä-/yöteemojen välillä automaattisesti järjestelmäsi päivä-/yötilan vaihtuessa"
       ],
       "Customize import to reduce the number of folders": [
         "Vähennä kansioiden määrää mukauttamalla tuontia"
@@ -6409,7 +6418,7 @@
         "Valittu teema aktivoidaan järjestelmän ollessa \"vaaleassa tilassa\""
       ],
       "Upload a public key to enable sending end-to-end encrypted emails to this email": [
-        "Lisää julkinen avain mahdollistaaksesi päästä päähän -salattujen viestien lähetyksen tähän osoitteeseen"
+        "Lataa julkinen avain mahdollistaaksesi päästä päähän -salattujen viestien lähetyksen tähän osoitteeseen"
       ],
       "You do not have any contacts to export": [
         "Sinulla ei ole vietäviä yhteystietoja"
@@ -6507,7 +6516,7 @@
         "Tämä tuonti saattaa ylittää ${ BRAND_NAME }-tilisi tämänhetkisen vapaan tallennuskapasiteetin. Harkitse tuontisi mukautusta."
       ],
       "Unfortunately, we’re not online at the moment. Please complete the form below to describe your issue, and we will look into it and be in touch when we’re back online.": [
-        "Valitettavasti emme ole juuri nyt tavoitettavissa. Täytä alla oleva lomake ja kuvaile ongelmaasi, niin perehdymme siihen ja otamme yhteyttä kun olemme taas paikalla."
+        "Valitettavasti emme ole juuri nyt tavoitettavissa. Kuvaile ongelmasi täyttämällä alla oleva lomake, niin tutustumme siihen ja otamme yhteyttä kun olemme taas paikalla."
       ],
       "We couldn't verify the mail server. If you trust it, you can skip this verification.": [
         "Sähköpostipalvelinta ei voitu vahvistaa. Jos luotat siihen, voit ohittaa tämän vahvistuksen."
@@ -6529,8 +6538,8 @@
     },
     "Weekly recurring event, frequency": {
       "Every ${ interval } week on ${ multipleDaysString }": [
-        "Joka ${ interval } viikko ${ multipleDaysString }",
-        "Joka ${ interval } viikko ${ multipleDaysString }"
+        "${ interval } viikon välein ${ multipleDaysString }",
+        "${ interval } viikon välein ${ multipleDaysString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ timesString }": [
         "${ interval } viikon välein ${ multipleDaysString }, ${ timesString }",
@@ -6541,100 +6550,100 @@
         "${ interval } viikon välein ${ multipleDaysString }, ${ untilString }"
       ],
       "Every ${ interval } week on all days": [
-        "${ interval } viikon välein joka päivä",
-        "${ interval } viikon välein joka päivä"
+        "${ interval } viikon välein kaikkina päivinä",
+        "${ interval } viikon välein kaikkina päivinä"
       ],
       "Every ${ interval } week on all days, ${ timesString }": [
-        "Joka ${ interval } viikko kaikkina päivinä, ${ timesString }",
-        "Joka ${ interval } viikko kaikkina päivinä, ${ timesString }"
+        "${ interval } viikon välein kaikkina päivinä, ${ timesString }",
+        "${ interval } viikon välein kaikkina päivinä, ${ timesString }"
       ],
       "Every ${ interval } week on all days, ${ untilString }": [
-        "Joka ${ interval } viikko kaikkina päivinä, ${ untilString }",
-        "Joka ${ interval } viikko kaikkina päivinä, ${ untilString }"
+        "${ interval } viikon välein kaikkina päivinä, ${ untilString }",
+        "${ interval } viikon välein kaikkina päivinä, ${ untilString }"
       ],
       "Every ${ interval } week on Friday": [
-        "Joka ${ interval }. viikko perjantaisin",
-        "Joka ${ interval }. viikko perjantaisin"
+        "${ interval } viikon välein perjantaisin",
+        "${ interval } viikon välein perjantaisin"
       ],
       "Every ${ interval } week on Friday, ${ timesString }": [
-        "Joka ${ interval }. viikko perjantaisin, ${ timesString }",
-        "Joka ${ interval }. viikko perjantaisin, ${ timesString }"
+        "${ interval } viikon välein perjantaisin, ${ timesString }",
+        "${ interval } viikon välein perjantaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Friday, ${ untilString }": [
-        "Joka ${ interval }. viikko perjantaisin, ${ untilString }",
-        "Joka ${ interval }. viikko perjantaisin, ${ untilString }"
+        "${ interval } viikon välein perjantaisin, ${ untilString }",
+        "${ interval } viikon välein perjantaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Monday": [
-        "Joka ${ interval }. viikko maanantaisin",
-        "Joka ${ interval }. viikko maanantaisin"
+        "${ interval } viikon välein maanantaisin",
+        "${ interval } viikon välein maanantaisin"
       ],
       "Every ${ interval } week on Monday, ${ timesString }": [
-        "Joka ${ interval }. viikko maanantaisin, ${ timesString }",
-        "Joka ${ interval }. viikko maanantaisin, ${ timesString }"
+        "${ interval } viikon välein maanantaisin, ${ timesString }",
+        "${ interval } viikon välein maanantaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Monday, ${ untilString }": [
-        "Joka ${ interval }. viikko maanantaisin, ${ untilString }",
-        "Joka ${ interval }. viikko maanantaisin, ${ untilString }"
+        "${ interval } viikon välein maanantaisin, ${ untilString }",
+        "${ interval } viikon välein maanantaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Saturday": [
-        "Joka ${ interval }. viikko lauantaisin",
-        "Joka ${ interval }. viikko lauantaisin"
+        "${ interval } viikon välein lauantaisin",
+        "${ interval } viikon välein lauantaisin"
       ],
       "Every ${ interval } week on Saturday, ${ timesString }": [
-        "Joka ${ interval }. viikko lauantaisin, ${ timesString }",
-        "Joka ${ interval }. viikko lauantaisin, ${ timesString }"
+        "${ interval } viikon välein lauantaisin, ${ timesString }",
+        "${ interval } viikon välein lauantaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
-        "Joka ${ interval }. viikko lauantaisin, ${ untilString }",
-        "Joka ${ interval }. viikko lauantaisin, ${ untilString }"
+        "${ interval } viikon välein lauantaisin, ${ untilString }",
+        "${ interval } viikon välein lauantaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Sunday": [
-        "Joka ${ interval }. viikko sunnuntaisin",
-        "Joka ${ interval }. viikko sunnuntaisin"
+        "${ interval } viikon välein sunnuntaisin",
+        "${ interval } viikon välein sunnuntaisin"
       ],
       "Every ${ interval } week on Sunday, ${ timesString }": [
-        "Joka ${ interval }. viikko sunnuntaisin, ${ timesString }",
-        "Joka ${ interval }. viikko sunnuntaisin, ${ timesString }"
+        "${ interval } viikon välein sunnuntaisin, ${ timesString }",
+        "${ interval } viikon välein sunnuntaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Sunday, ${ untilString }": [
-        "Joka ${ interval }. viikko sunnuntaisin, ${ untilString }",
-        "Joka ${ interval }. viikko sunnuntaisin, ${ untilString }"
+        "${ interval } viikon välein sunnuntaisin, ${ untilString }",
+        "${ interval } viikon välein sunnuntaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Thursday": [
-        "Joka ${ interval }. viikko torstaisin",
-        "Joka ${ interval }. viikko torstaisin"
+        "${ interval } viikon välein torstaisin",
+        "${ interval } viikon välein torstaisin"
       ],
       "Every ${ interval } week on Thursday, ${ timesString }": [
-        "Joka ${ interval }. viikko torstaisin, ${ timesString }",
-        "Joka ${ interval }. viikko torstaisin, ${ timesString }"
+        "${ interval } viikon välein torstaisin, ${ timesString }",
+        "${ interval } viikon välein torstaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Thursday, ${ untilString }": [
-        "Joka ${ interval }. viikko torstaisin, ${ untilString }",
-        "Joka ${ interval }. viikko torstaisin, ${ untilString }"
+        "${ interval } viikon välein torstaisin, ${ untilString }",
+        "${ interval } viikon välein torstaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Tuesday": [
-        "Joka ${ interval }. viikko tiistaisin",
-        "Joka ${ interval }. viikko tiistaisin"
+        "${ interval } viikon välein tiistaisin",
+        "${ interval } viikon välein tiistaisin"
       ],
       "Every ${ interval } week on Tuesday, ${ timesString }": [
-        "Joka ${ interval }. viikko tiistaisin, ${ timesString }",
-        "Joka ${ interval }. viikko tiistaisin, ${ timesString }"
+        "${ interval } viikon välein tiistaisin, ${ timesString }",
+        "${ interval } viikon välein tiistaisin, ${ timesString }"
       ],
       "Every ${ interval } week on Tuesday, ${ untilString }": [
-        "Joka ${ interval }. viikko tiistaisin, ${ untilString }",
-        "Joka ${ interval }. viikko tiistaisin, ${ untilString }"
+        "${ interval } viikon välein tiistaisin, ${ untilString }",
+        "${ interval } viikon välein tiistaisin, ${ untilString }"
       ],
       "Every ${ interval } week on Wednesday": [
-        "Joka ${ interval }. viikko keskiviikkoisin",
-        "Joka ${ interval }. viikko keskiviikkoisin"
+        "${ interval } viikon välein keskiviikkoisin",
+        "${ interval } viikon välein keskiviikkoisin"
       ],
       "Every ${ interval } week on Wednesday, ${ timesString }": [
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ timesString }",
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ timesString }"
+        "${ interval } viikon välein keskiviikkoisin, ${ timesString }",
+        "${ interval } viikon välein keskiviikkoisin, ${ timesString }"
       ],
       "Every ${ interval } week on Wednesday, ${ untilString }": [
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ untilString }",
-        "Joka ${ interval }. viikko keskiviikkoisin, ${ untilString }"
+        "${ interval } viikon välein keskiviikkoisin, ${ untilString }",
+        "${ interval } viikon välein keskiviikkoisin, ${ untilString }"
       ],
       "Weekly on ${ multipleDaysString }": [
         "Viikottain ${ multipleDaysString }"
@@ -6646,13 +6655,13 @@
         "Viikottain ${ multipleDaysString }, ${ untilString }"
       ],
       "Weekly on all days": [
-        "Viikottain joka päivä"
+        "Viikottain kaikkina päivinä"
       ],
       "Weekly on all days, ${ timesString }": [
-        "Viikottain joka päivä, ${ timesString }"
+        "Viikottain kaikkina päivinä, ${ timesString }"
       ],
       "Weekly on all days, ${ untilString }": [
-        "Viikottain joka päivä, ${ untilString }"
+        "Viikottain kaikkina päivinä, ${ untilString }"
       ],
       "Weekly on Friday": [
         "Viikottain perjantaisin"
@@ -6720,25 +6729,25 @@
     },
     "Weekly recurring event, repeats on (multiple days), frequency": {
       "Friday": [
-        "perjantaisin"
+        "perjantai"
       ],
       "Monday": [
-        "maanantaisin"
+        "maanantai"
       ],
       "Saturday": [
-        "lauantaisin"
+        "lauantai"
       ],
       "Sunday": [
-        "sunnuntaisin"
+        "sunnuntai"
       ],
       "Thursday": [
-        "torstaisin"
+        "torstai"
       ],
       "Tuesday": [
-        "tiistaisin"
+        "tiistai"
       ],
       "Wednesday": [
-        "keskiviikkoisin"
+        "keskiviikko"
       ]
     },
     "Yearly recurring event, frequency": {
@@ -6751,8 +6760,8 @@
         "${ interval } vuoden välein, ${ timesString }"
       ],
       "Every ${ interval } year, ${ untilString }": [
-        "Joka ${ interval } vuosi, ${ untilString }",
-        "Joka ${ interval } vuosi, ${ untilString }"
+        "${ interval } vuoden välein, ${ untilString }",
+        "${ interval } vuoden välein, ${ untilString }"
       ],
       "Yearly": [
         "Vuosittain"
@@ -6762,6 +6771,70 @@
       ],
       "Yearly, ${ untilString }": [
         "Vuosittain, ${ untilString }"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 vuosi"
+      ],
+      "2 years": [
+        "2 vuotta"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Premium Drive"
+      ],
+      "Premium Mail and Calendar": [
+        "Premium Mail ja Calendar"
+      ],
+      "Premium Password Manager": [
+        "Premium salasanahallinta"
+      ]
+    },
+    "summer2023: Describe Proton Pass": {
+      "Securely store your passwords and autofill them on websites. Includes unlimited passwords, autofill, password generator, and more.": [
+        "Tallenna salasanasi turvallisesti ja täytä ne automaattisesti verkkosivustoilla. Sisältää rajattomasti salasanoja, automaattisen täytön, salasanageneraattorin ja paljon muuta."
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Salasanahallinta"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Luo turvallisia kirjautumistietoja kaikilla laitteillasi. Sisältää rajattomasti aliaksia, 20 holvia, sisäänrakennetun 2FA:n, luottokorttitietojen automaattisen täytön ja paljon muuta."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Sisältää 2950+ palvelinta yli 65+ maassa, 10 samanaikaista laitetta, tuen suoratoistopalveluille eri puolilta maailmaa, haittaohjelma- ja mainoseston sekä paljon muuta."
+      ],
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Sisältää tuen yhdelle omalle sähköpostin verkkotunnukselle, 10 sähköpostiosoitteelle, 10 hide-my-email-aliakselle, kalenterijaolle sekä paljon muuta."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Suojaa tiedostosi salatulla pilvitallennustilalla. Sisältää versiohistorian, salatun tiedostojen jakamisen ja paljon muuta."
+      ]
+    },
+    "summer2023:Footer": {
+      "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
+        "*Tilauksesi uudistetaan automaattisesti samalla alennetulla hinnalla laskutuskautesi lopussa."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Alennukset perustuvat tavalliseen kuukausihinnoitteluun. Tämä tarjous on saatavilla vain ensitilaajille."
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "Vain rajoitetun ajan saat parasta, mitä ${ BRAND_NAME } tarjoaa, erinomaiseen hintaan."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Juhlimme joukkorahoituksemme yhdeksänvuotisjuhlaa!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME } Vuosipäivän alennusmyynti"
       ]
     }
   }
