@@ -35,6 +35,7 @@ export interface StatusIcon {
 
 export interface SenderVerificationDetails {
     description: string;
+    showKeyTransparencyLearnMore?: boolean;
 }
 
 export interface MapStatusIcons {
