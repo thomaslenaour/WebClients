@@ -2945,6 +2945,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "您可以选择稍后删除既不想合并也不想保留的联系人，点击合并按钮后他们就会被删除"
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "我们未在此邮件中发现任何跟踪器与跟踪链接。"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4070,6 +4073,9 @@
     "Font face option": {
       "System default": [
         "跟随系统"
+      ],
+      "Theme font": [
+        "跟随配色"
       ]
     },
     "Font Size Default": {
@@ -4210,6 +4216,9 @@
       ],
       "You've unlocked 1 GB": [
         "您已解锁 1 GB"
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "设置${ strongText } Gmail 邮件"
       ]
     },
     "Gmail forwarding": {
@@ -8510,7 +8519,7 @@
         "更改我的回复"
       ],
       "Clear out the junk": [
-        "辞旧迎新"
+        "邮件也需辞旧迎新"
       ],
       "Clearing data": [
         "数据清除中"

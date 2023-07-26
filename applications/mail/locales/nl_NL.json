@@ -602,7 +602,7 @@
         "Misschien"
       ],
       "Maybe I'll attend": [
-        "Misschien zal ik aanwezig zijn"
+        "Misschien zal ik deelnemen"
       ],
       "Merge": [
         "Samenvoegen"
@@ -710,7 +710,7 @@
         "Nee"
       ],
       "No, I won't attend": [
-        "Nee, ik zal niet aanwezig zijn"
+        "Nee, ik zal niet deelnemen"
       ],
       "Not saved": [
         "Niet opgeslagen"
@@ -1155,7 +1155,7 @@
         "Ja"
       ],
       "Yes, I'll attend": [
-        "Ja, ik zal aanwezig zijn"
+        "Ja, ik zal deelnemen"
       ],
       "Zoom in": [
         "Inzoomen"
@@ -1266,7 +1266,7 @@
         "Versleuteld"
       ],
       "New email": [
-        "Nieuwe e-mailadres"
+        "Nieuwe e-mail"
       ]
     },
     "Apps dropdown": {
@@ -1407,7 +1407,7 @@
     },
     "Calendar invite buttons label": {
       "Attending?": [
-        "Aanwezig?"
+        "Deelnemen?"
       ]
     },
     "Calendar invite info": {
@@ -2955,6 +2955,12 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "U kunt contactpersonen markeren die u niet wilt samenvoegen of behouden. Ze worden pas verwijderd na het klikken op 'samenvoegen'"
+      ],
+      "Turn on email tracker protection to prevent advertisers and others from tracking your location and online activity.": [
+        "Schakel e-mail tracker beveiliging in om te voorkomen dat adverteerders en anderen je locatie en online activiteit kunnen volgen."
+      ],
+      "We didn't find any known trackers and tracking URLs in this email.": [
+        "We hebben geen bekende trackers en tracking URL's in deze e-mail gevonden."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -4182,6 +4188,51 @@
       ],
       "Set recovery method": [
         "Herstelmethode instellen"
+      ],
+      "Checklist complete": [
+        "Controlelijst voltooid"
+      ],
+      "Congratulation, you completed all the steps!": [
+        "Gefeliciteerd, je hebt alle stappen voltooid!"
+      ],
+      "Continue setting up your email": [
+        "Ga door met het instellen van uw e-mail"
+      ],
+      "Double your free storage to 1 GB when you complete the following:": [
+        "Verdubbel je gratis opslag naar 1 GB wanneer je het volgende hebt voltooid:"
+      ],
+      "Get free storage": [
+        "Verkrijg gratis opslag"
+      ],
+      "Import data": [
+        "Importeer gegevens"
+      ],
+      "Nice! You've updated all services in this category.": [
+        "Mooi! Je hebt alle diensten in deze categorie bijgewerkt."
+      ],
+      "Open checklist": [
+        "Checklist openen"
+      ],
+      "Popular online services": [
+        "Populaire online diensten"
+      ],
+      "Protect and simplify your email": [
+        "Bescherm en vereenvoudig je e-mail"
+      ],
+      "Protection from trackers": [
+        "Bescherming van trackers"
+      ],
+      "Sign in to the mobile app to complete this step": [
+        "Log in op de mobiele app om deze stap te voltooien"
+      ],
+      "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
+        "Met gebruik van je mobiele apparaat scan je deze QR-code of bezoek je de iOS of Android winkel."
+      ],
+      "We stop advertisers and data collectors from profiling you.": [
+        "We stoppen adverteerders en gegevens verzamelaars om een profiel van je te maken."
+      ],
+      "You've unlocked 1 GB": [
+        "Je hebt nu de beschikking over 1 GB"
       ]
     },
     "Gmail forwarding": {
@@ -5927,6 +5978,26 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Uw herstelzin is een reeks van 12 woorden in een specifieke volgorde."
+      ],
+      "${ numberOfImageTrackers } email tracker blocked": [
+        "${ numberOfImageTrackers } email tracker geblokkeerd",
+        "${ numberOfImageTrackers } email trackers geblokkeerd"
+      ],
+      "${ numberOfImageTrackers } tracker blocked": [
+        "${ numberOfImageTrackers } tracker geblokkeerd",
+        "${ numberOfImageTrackers } trackers geblokkeerd"
+      ],
+      "Trackers blocked:": [
+        "Trackers geblokkeerd:"
+      ],
+      "Turn off to only search by date, name, email address, or subject line. To disable search message content and delete downloaded messages, go to settings.": [
+        "Uitschakelen om enkel te zoeken op datum, naam, e-mailadres of onderwerp. Om zoeken in berichten inhoud en het verwijderen van gedownloade berichten uit te schakelen, ga je naar instellingen."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "We hebben de volgende adverteerders en organisaties geblokkeerd zodat ze niet kunnen zien dat je deze email hebt geopend, welk apparaat je gebruikt, en waar je bent."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "We hebben traceer informatie verwijderd van de volgende links om je te helpen beschermen van adverteerders en anderen die proberen om je online activiteit te volgen."
       ]
     },
     "info": {
@@ -7341,6 +7412,18 @@
       ],
       "Travel": [
         "Reizen"
+      ],
+      "E-commerce and Retail": [
+        "E-commerce en Retail"
+      ],
+      "Entertainment": [
+        "Entertainment"
+      ],
+      "Food and beverage": [
+        "Eten en drinken"
+      ],
+      "Most popular": [
+        "Meest populair"
       ]
     },
     "Option": {
@@ -9062,6 +9145,13 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Uw Mail Plus proefversie eindigt op ${ textDate }"
+      ],
+      "Protect yourself from trackers": [
+        "Bescherm jezelf van trackers"
+      ],
+      "We protected you from ${ trackersCount } tracker": [
+        "We beschermden je van ${ trackersCount } tracker",
+        "We beschermden je van ${ trackersCount } trackers"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -9492,6 +9582,11 @@
       ],
       "Yearly, ${ untilString }": [
         "Jaarlijks ${ untilString }"
+      ]
+    },
+    "Online accounts": {
+      "Have an account with one of these services? Just click to change the email address to your ${ MAIL_APP_NAME } address.": [
+        "Heb je een account bij één van deze diensten? Klik om het e-mailadres te wijzigen naar je ${ MAIL_APP_NAME } adres."
       ]
     }
   }

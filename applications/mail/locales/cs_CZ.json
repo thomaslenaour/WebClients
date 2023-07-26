@@ -4321,6 +4321,27 @@
       ],
       "You've unlocked 1 GB": [
         "Odemkli jste 1 GB"
+      ],
+      "${ MAIL_APP_NAME } app": [
+        "${ MAIL_APP_NAME } aplikace"
+      ],
+      "account logins": [
+        "přihlášení k účtům"
+      ],
+      "Auto-forward Gmail": [
+        "Automatické přeposílání Gmailu"
+      ],
+      "Change ${ strongText } to your ${ BRAND_NAME } address": [
+        "Změňte adresu ${ strongText } na adresu ${ BRAND_NAME }."
+      ],
+      "Get the ${ strongText } on Android or iOS": [
+        "Získání ${ strongText } pro Android nebo iOS"
+      ],
+      "Set up ${ strongText } from Gmail": [
+        "Nastavit ${ strongText } z Gmailu"
+      ],
+      "Update your logins": [
+        "Aktualizace přihlašovacích údajů"
       ]
     },
     "Gmail forwarding": {
@@ -6229,6 +6250,12 @@
       ],
       "Your recovery phrase is a series of 12 words in a specific order.": [
         "Obnovovací fráze je série 12 slov v určitém pořadí."
+      ],
+      "We blocked the following advertisers and organizations from seeing when you open this email, what device you’re using, and where you’re located.": [
+        "Následujícím inzerentům a organizacím jsme zabránili, aby při otevření tohoto e-mailu viděli, jaké zařízení používáte a kde se nacházíte."
+      ],
+      "We removed tracking information from the following links to help protect you from advertisers and others trying to track your online activity.": [
+        "Z následujících odkazů jsme odstranili informace ke sledování, abychom vás ochránili před inzerenty a dalšími subjekty, kteří se snaží sledovat vaši online aktivitu."
       ]
     },
     "info": {
@@ -9521,10 +9548,10 @@
         "Varování: podezření na falešnou webovou stránku"
       ],
       "We protected you from ${ trackersCount } tracker": [
-        "Ochránili jsme vás před ${ trackersCount } sledováním",
-        "Ochránili jsme vás před ${ trackersCount } sledováními",
-        "Ochránili jsme vás před ${ trackersCount } sledování",
-        "Ochránili jsme vás před ${ trackersCount } sledování"
+        "Ochránili jsme vás před ${ trackersCount } sledovacím prvkem",
+        "Ochránili jsme vás před ${ trackersCount } sledovacími prvky",
+        "Ochránili jsme vás před ${ trackersCount } sledovacími prvky",
+        "Ochránili jsme vás před ${ trackersCount } sledovacími prvky"
       ],
       "Welcome": [
         "Vítejte"

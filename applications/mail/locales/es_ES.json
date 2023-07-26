@@ -125,7 +125,7 @@
         "Bloquear"
       ],
       "Block email tracking": [
-        "Bloquear el rastreo de correo electrónico"
+        "Bloquear el rastreo del correo electrónico"
       ],
       "Block messages from this sender": [
         "Bloquear mensajes de este remitente"
@@ -1022,7 +1022,7 @@
         "Este mensaje contiene contenido remoto."
       ],
       "To search your emails securely, we need to download a copy of your messages to your browser. The initial download may take a moment.": [
-        "Para buscar tus correos electrónicos de manera segura, necesitamos descargar una copia de tus mensajes en tu navegador. La descarga inicial puede tardar un momento."
+        "Para buscar tus correos electrónicos de manera segura, necesitamos descargar una copia de tus mensajes en tu navegador. La descarga inicial puede llevar un tiempo."
       ],
       "Toggle Calendar app": [
         "Cambiar a la aplicación Calendar"
@@ -1107,7 +1107,7 @@
         "Utilizar código de autenticación"
       ],
       "Use for sending": [
-        "Usar para enviar"
+        "Utilizar para el envío"
       ],
       "Use recovery code": [
         "Utilizar código de recuperación"
@@ -1735,7 +1735,7 @@
         "bosque"
       ],
       "gainsboro": [
-        "gainsboro"
+        "gris claro"
       ],
       "japanese laurel": [
         "laurel japonés"
@@ -4196,7 +4196,7 @@
         "Descubre las funciones de privacidad"
       ],
       "Double your free storage to 1 GB when you complete the following:": [
-        "Duplica tu almacenamiento gratuito a 1 GB cuando completes los siguientes:"
+        "Duplica tu almacenamiento gratuito a 1 GB cuando completes lo siguiente:"
       ],
       "Encryption so strong, only you and intended recipients can view your emails.": [
         "Cifrado tan sólido que solo tú y los destinatarios pueden ver tus correos electrónicos."
@@ -4277,7 +4277,7 @@
         "Actualiza tus inicios de sesión"
       ],
       "Using your mobile device, scan this QR code or visit the iOS or Android store.": [
-        "Usando tu dispositivo móvil, escanea este código QR o visita la tienda de iOS o Android."
+        "Escanea este código QR con tu dispositivo móvil o visita la tienda de iOS o Android."
       ],
       "We stop advertisers and data collectors from profiling you.": [
         "Impedimos que los anunciantes y recopiladores de datos te perfilen."
@@ -5625,8 +5625,8 @@
         "Error al verificar ${ contactName }: el contacto no está firmado correctamente.\nEsto puede ser el resultado de un restablecimiento de contraseña.\nDebes volver a firmar el contacto para enviar un mensaje a ${ contactAddress } o editar el contacto."
       ],
       "The verification of ${ contactNames } has failed: the contact is not signed correctly.\nThis may be the result of a password reset.\nYou must re-sign the contact in order to send a message to ${ contactAddresses } or edit the contact.": [
-        "Error al verificar ${ contactNames }: el contacto no está firmado correctamente.\nEsto puede ser resultado de un restablecimiento de contraseña.\nDebe volver a firmar el contacto para enviar un mensaje a ${ contactAddresses } o editar el contacto.",
-        "Error al verificar ${ contactNames }: los contactos no están firmados correctamente.\nEsto puede ser resultado de un restablecimiento de contraseña.\nDebe volver a firmar los contactos para enviar un mensaje a ${ contactAddresses } o editar los contactos."
+        "Error al verificar ${ contactNames }: el contacto no está firmado correctamente.\nEsto puede ser resultado de un restablecimiento de contraseña.\nDebes volver a firmar el contacto para enviar un mensaje a ${ contactAddresses } o editar el contacto.",
+        "Error al verificar ${ contactNames }: los contactos no están firmados correctamente.\nEsto puede ser resultado de un restablecimiento de contraseña.\nDebes volver a firmar los contactos para enviar un mensaje a ${ contactAddresses } o editar los contactos."
       ],
       "Themes can give your inbox a new look.": [
         "Los temas pueden darle un aspecto diferente a tu bandeja de entrada."
@@ -5663,7 +5663,7 @@
         "Estas conversaciones serán marcadas como spam. ¿Te gustaría también cancelar la suscripción para no recibir más correos?"
       ],
       "This email has failed its domain's authentication requirements. It may be spoofed or improperly forwarded.": [
-        "Este correo electrónico ha fallado los requisitos de autenticación del dominio. Puede estar falsificado o reenviado incorrectamente."
+        "Este correo electrónico no cumple con con los requisitos de autenticación del dominio. Puede estar falsificado o reenviado incorrectamente."
       ],
       "This invitation is saved in a disabled calendar.": [
         "Esta invitación está guardada en un calendario deshabilitado."
@@ -5808,16 +5808,16 @@
         "Mejora tu plan para enviar correos electrónicos desde tu dominio de correo electrónico personalizado."
       ],
       "Upgrade to send emails to contact groups easily.": [
-        "Pasa a un plan superior para enviar fácilmente correos electrónicos a grupos de contactos."
+        "Mejora tu plan para enviar fácilmente correos electrónicos a grupos de contactos."
       ],
       "Upgrade to support a privacy-first internet.": [
-        "Pasa a un plan superior para apoyar un internet que dé prioridad a la privacidad."
+        "Mejora tu plan para apoyar un internet que dé prioridad a la privacidad."
       ],
       "Upgrade to support our mission of privacy for all.": [
-        "Pasa a un plan superior para apoyar nuestra misión de traer privacidad a todos."
+        "Mejora tu plan superior para apoyar nuestra misión de traer privacidad a todos."
       ],
       "Upgrade to support privacy and get more features.": [
-        "Pasa a un plan superior para apoyar la privacidad y obtener más funciones."
+        "Mejora tu un plan para apoyar la privacidad y obtener más funciones."
       ],
       "Upgrade to unlock premium features.": [
         "Mejora tu plan para desbloquear funciones premium."
@@ -6874,7 +6874,7 @@
         "Para añadir un calendario, elimina uno existente."
       ],
       "To add a new calendar, remove another calendar or upgrade your ${ BRAND_NAME } plan to a ${ MAIL_SHORT_APP_NAME } paid plan.": [
-        "Para añadir un calendario, elimina otro calendario o actualiza tu plan ${ BRAND_NAME } a un plan de pago ${ MAIL_SHORT_APP_NAME }."
+        "Para añadir un calendario, elimina otro calendario o mejora tu plan ${ BRAND_NAME } a un plan de pago ${ MAIL_SHORT_APP_NAME }."
       ],
       "You've reached the maximum number of calendars available in your plan.": [
         "Has alcanzado el número máximo de calendarios disponibles en tu plan."
@@ -7322,7 +7322,7 @@
     },
     "new_plans: Action": {
       "Upgrade now": [
-        "Mejorar ahora"
+        "Actualizar el plan ahora"
       ]
     },
     "new_plans: action": {
@@ -7367,7 +7367,7 @@
         "El espacio de almacenamiento es compartido entre ${ MAIL_APP_NAME }, ${ CALENDAR_APP_NAME } y ${ DRIVE_APP_NAME }."
       ],
       "Use your own custom email domain address, e.g., you@yourname.com": [
-        "Utiliza tu propia dirección de correo personalizada, p. ej. tú@tunombre.com"
+        "Utiliza tu propia dirección de correo personalizada, p. ej. tu@tunombre.com"
       ]
     },
     "new_plans: label": {
@@ -8720,7 +8720,7 @@
         "Bloquear remitente"
       ],
       "Cannot add more addresses": [
-        "No se pueden añadir más direcciones."
+        "No se pueden añadir más direcciones"
       ],
       "Carbon Copy": [
         "Con copia"
@@ -8866,7 +8866,7 @@
         "Contenido del correo electrónico"
       ],
       "Email settings": [
-        "Configuración del correo electrónico"
+        "Ajustes del correo"
       ],
       "Enable message content search": [
         "Habilitar la búsqueda de contenido de mensajes"
@@ -8908,8 +8908,8 @@
         "Imagen"
       ],
       "Import as simple event?": [
-        "¿Importar como evento simple?",
-        "¿Importar como eventos simples?"
+        "¿Importar como evento sin detalles?",
+        "¿Importar como eventos sin detalles?"
       ],
       "Import contacts": [
         "Importar contactos"
@@ -9029,7 +9029,7 @@
         "No se ha encontrado ningún archivo adjunto."
       ],
       "No trackers found": [
-        "No se han encontrado rastreadores."
+        "No se han encontrado rastreadores"
       ],
       "Open actions dropdown": [
         "Abrir lista desplegable de acciones"

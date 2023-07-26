@@ -140,7 +140,7 @@
         "Lihavointi"
       ],
       "Cancel": [
-        "Peru"
+        "Peruuta"
       ],
       "Carbon Copy": [
         "Kopio"
@@ -502,13 +502,13 @@
         "tuo"
       ],
       "Import calendars": [
-        "Tuo kalentereita"
+        "Tuo kalenterit"
       ],
       "Import contacts": [
-        "Tuo yhteystietoja"
+        "Tuo yhteystiedot"
       ],
       "Import emails": [
-        "Tuo viestejä"
+        "Tuo viestit"
       ],
       "Import from .csv or vCard": [
         "Tuo .csv- tai vCard-tiedostosta"
@@ -935,7 +935,7 @@
         "Aseta palautuslauseke"
       ],
       "Share via link": [
-        "Jaa linkin kautta"
+        "Jaa linkkinä"
       ],
       "Sharing options": [
         "Jakovalinnat"
@@ -1113,7 +1113,7 @@
         "Käytä palautuskoodia"
       ],
       "Use your mouse to resize the view. If you're using your keyboard, you can use left and right arrow keys to resize.": [
-        "Muuta näkymän kokoa hiirellä. Näppäimistöä käyttäessäsi voit muuttaa kokoa vasemmalla ja oikealla nuolipainikkeella."
+        "Muuta näkymän kokoa hiirellä. Jos käytät näppäimistöä, voit muuttaa kokoa vasemmalla ja oikealla nuolipainikkeella."
       ],
       "Use “${ label }” setting": [
         "Käytä \"${ label }\" -asetusta"
@@ -1257,10 +1257,10 @@
         "5 seurantaa poistetaan"
       ],
       "Auto forwarded": [
-        "Se välitetään automaattisesti"
+        "Se ohjataan automaattisesti"
       ],
       "Email received": [
-        "Välitetty viesti vastaanotetaan"
+        "Viesti vastaanotetaan"
       ],
       "Encrypted": [
         "ja viesti salataan"
@@ -2929,7 +2929,7 @@
         "Proton Mail -logo ja plus-merkki"
       ],
       "Save time by sending emails or invitations to everyone at once, a premium feature amongst many others. Upgrade today.": [
-        "Säästä aikaa lähettämällä viestit tai kutsut saman tien koko purukalle. Yksi premium-ominaisuus monien muiden joukossa. Päivitä tänään."
+        "Säästä aikaa lähettämällä viestit tai kutsut saman tien koko porukalle. Yksi premium-ominaisuus monien muiden joukossa. Päivitä tilauksesi tänään."
       ],
       "The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have ${ MAX_IMPORT_CONTACTS_STRING } contact. If your file is bigger, please split it into smaller files.": [
         "Tiedosto voi olla enintään ${ MAX_IMPORT_FILE_SIZE_STRING } kokoinen ja sisältää ${ MAX_IMPORT_CONTACTS_STRING } yhteystiedon. Jos tiedosto on suurempi, jaa se pienempiin tiedostoihin.",
@@ -2939,7 +2939,7 @@
         "Avaa mukautettu viestien ajoitus sekä muita etuja päivittämällä tilauksesi."
       ],
       "Unlock unlimited filters that sort your inbox for you and more premium features when you upgrade.": [
-        "Avaa rajattomasti suodattimia, jotka lajittelevat postilaatikkosi puolestasi, ja muita premium-ominaisuuksia päivittäessäsi."
+        "Hanki rajaton määrä postilaatikkosi puolestasi lajittelevia suodattimia päivittämällä tilauksesi ja avaa samalla myös muita premium-ominaisuuksia."
       ],
       "Unlock unlimited folders, labels and more premium features when you upgrade.": [
         "Päivittämällä avaat rajattomasti kansioita, tunnisteita ja muita premium-ominaisuuksia."
@@ -3836,7 +3836,7 @@
         "${ BRAND_NAME }-ryhmää"
       ],
       "Accounts with custom domains cannot join a Visionary or family plan.": [
-        "Omia verkkotunnuksia käyttävät tilit eivät voi liittyä Visionary- tai Family-tilaukseen."
+        "Omia verkkotunnuksia käyttävät tilit eivät voi liittyä Visionary- tai perhetilaukseen."
       ],
       "customer support": [
         "asiakaspalveluun"
@@ -3929,10 +3929,10 @@
     },
     "familyOffer_2023:Tooltip": {
       "Includes 2700 servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
-        "Sisältää 2700 palvelinta yli 65+ maassa, 10 samanaikaista laitetta, tuen suoratoistopalveluille eri puolilta maailmaa, haittaohjelma- ja mainoseston sekä paljon muuta."
+        "Sisältää 2950+ palvelinta yli 65+ maassa, 10 samanaikaista laitetta, maailmanlaajuisen tuen suoratoistopalveluille, haittasisällön- ja mainoseston sekä paljon muuta."
       ],
       "Includes support for 3 custom email domains, 90 email addresses, unlimited hide-my-email aliases, calendar sharing and more.": [
-        "Sisältää tuen 3 omalle sähköpostin verkkotunnukselle, 90 sähköpostiosoitteelle, rajattomasti Hide-my-email-aliaksia, kalenterijaon sekä paljon muuta."
+        "Sisältää tuen kolmelle omalle sähköpostiverkkotunnukselle, 90 sähköpostiosoitteelle, rajattomasti Hide-my-email-aliaksia, kalenterijaon sekä paljon muuta."
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Suojaa tiedostosi salatulla pilvitallennustilalla. Sisältää automaattisen synkronoinnin, salatun tiedostojen jakamisen ja paljon muuta."
@@ -4163,7 +4163,7 @@
         "Automaattinen edelleenlähetys Gmailiin"
       ],
       "auto-forwarding": [
-        "automaattinen edelleenlähetys"
+        "automaattiohjaus"
       ],
       "Block email communications from scammers permanently.": [
         "Estä huijareiden sähköpostiviestintä pysyvästi."
@@ -4288,7 +4288,7 @@
     },
     "Gmail forwarding": {
       "Automatically forward": [
-        "Välitä automaattisesti"
+        "Automaattiohjaa"
       ],
       "Gmail messages to your inbox": [
         "Gmail-viestit postilaatikkoosi"
@@ -4817,7 +4817,7 @@
         "Yksittäisellä puhelinnumerolla voidaan vahvistaa ainoastaan yksi ${ BRAND_NAME }-tili"
       ],
       "A recovery phrase is one of the safest ways to protect access to your account. You can use it to access your account and recover your encrypted data if you ever forget your password.": [
-        "Palautuslauseke on yksi turvallisimpia tilisi suojaustapoja. Sen avulla pääset tililesi ja voit palauttaa salatut tietosi, jos joskus unohdat salasanasi."
+        "Palautuslauseke on yksi turvallisimpia tapoja suojata tilisi. Sen avulla pääset tililesi ja voit palauttaa salatut tietosi, jos joskus unohdat salasanasi."
       ],
       "A request to unsubscribe from this mailing list will be sent to the sender of the newsletter and automatically processed.": [
         "Postituslistatilauksen perumispyyntö lähetetään uutiskirjeen lähettäjälle ja käsitellään automaattisesti."
@@ -5006,7 +5006,7 @@
         "Oma kuukausittainen"
       ],
       "Custom weekly": [
-        "Mukautettu viikottainen"
+        "Mukautettu viikoittainen"
       ],
       "Custom yearly": [
         "Oma vuosittainen"
@@ -5742,7 +5742,7 @@
         "Vahvista olevasi ihminen roskapostin ja väärinkäytösten torjumiseksi."
       ],
       "To import events, first create a calendar in ${ CALENDAR_APP_NAME }. This is where the events will appear after the import.": [
-        "Tapahtumien tuomiseksi sinun on ensin luotava ${ CALENDAR_APP_NAME }iin kalenteri, johon tapahtumat tuonnin jälkeen lisätään."
+        "Tuodaksesi tapahtumia, luo ensin ${ CALENDAR_APP_NAME }iin kalenteri, johon tapahtumat lisätään."
       ],
       "To re-sign your contacts, we need to check every contact against the list of encryption keys available in your account. If no match is found, your contact will be re-signed with the primary encryption key.": [
         "Allekirjoittaaksesi yhteystietosi uudelleen, on jokainen yhteystieto tarkistettava tilisi salausavainluetteloa vasten. Jos vastaavuutta ei löydy, allekirjoitetaan yhteystietosi ensisijaisella salausavaimella."
@@ -6389,7 +6389,7 @@
         "Selaimen versio"
       ],
       "Calendar": [
-        "Kalenteri"
+        "Kalenterin"
       ],
       "Calendars": [
         "Kalenterit"
@@ -7367,7 +7367,7 @@
         "Tallennustila jaetaan ${ MAIL_APP_NAME }in, ${ CALENDAR_APP_NAME }in ja ${ DRIVE_APP_NAME }n välillä"
       ],
       "Use your own custom email domain address, e.g., you@yourname.com": [
-        "Käytä omaa mukautettua sähköpostin verkkotunnustasi, esim. sina@nimesi.fi"
+        "Käytä sähköpostiosoitteissasi omaa verkkotunnustasi, kuten nimesi@esimerkki.fi"
       ]
     },
     "new_plans: label": {
@@ -7410,7 +7410,7 @@
     },
     "Oauth instructions video": {
       "For the import to work, you must select all requested items as shown in the GIF.": [
-        "Jotta tuonti toimii, sinun on valittava kaikki pyydetyt kohteet GIF-animaatiossa esitetyllä tavalla."
+        "Jotta tuonti toimii, sinun on valittava kaikki pyydetyt kohteet GIF-animaatiossa kuvatulla tavalla."
       ]
     },
     "Oauth instructions video alternative": {
@@ -8149,15 +8149,15 @@
         "Säästä enemmän 2-vuotisella ${ planName }-tilauksella"
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
-        "Päivitä ja säästä enemmän 2 vuoden ${ planName }-tilauksella"
+        "Päivitä tilauksesi ja säästä lisää kahden vuoden ${ planName } -tilauksella"
       ]
     },
     "specialoffer: Tooltip": {
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections per user, worldwide streaming services, malware and ad-blocker, and more.": [
-        "Käytä estettyä sisältöä ja selaa yksityisesti. Sisältää 1700 palvelinta yli 60+ maassa, korkeimman VPN-nopeuden, 10 VPN-yhteyttä käyttäjää kohden, suoratoistopalvelut maailmanlaajuisesti, haittaohjelma- ja mainoseston sekä paljon muuta."
+        "Käytä estettyä sisältöä ja selaa yksityisesti. Sisältää 1700 palvelinta yli 60+ maassa, korkeimman VPN-nopeuden, 10 VPN-yhteyttä/käyttäjä, suoratoistopalvelut maailmanlaajuisesti, haittasisällön- ja mainoseston sekä paljon muuta."
       ],
       "Access blocked content and browse privately. Includes 1700 servers in 60+ countries, highest VPN speed, 10 VPN connections, worldwide streaming services, malware and ad-blocker, and more.": [
-        "Käytä estettyä sisältöä ja selaa yksityisesti. Sisältää 1700 palvelinta yli 60+ maassa, korkeimman VPN-nopeuden, 10 VPN-yhteyttä käyttäjää kohden, suoratoistopalvelut maailmanlaajuisesti, haittaohjelma- ja mainoseston sekä paljon muuta."
+        "Käytä estettyä sisältöä ja selaa yksityisesti. Sisältää 1700 palvelinta yli 60+ maassa, korkeimman VPN-nopeuden, 10 VPN-yhteyttä/käyttäjä, suoratoistopalvelut maailmanlaajuisesti, haittasisällön- ja mainoseston sekä paljon muuta."
       ],
       "Access content on streaming services, including Netflix, Disney+, and Prime Video, from anywhere.": [
         "Käytä mm. Netflixin, Disney+:n ja Prime Videon kaltaisten suoratoistopalveluiden sisältöä mistä tahansa."
@@ -8166,13 +8166,13 @@
         "Kaikki premium-palvelumme parhaimmillaan: 100 sähköpostiosoitetta, tuki 10 omalle verkkotunnukselle, rajattomasti Hide-my-email-aliaksia, kalenterijako, salattu pilvitallennus tiedostojen jaolla sekä paljon muuta."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Sisältää tuen yhdelle omalle sähköpostin verkkotunnukselle, 10 sähköpostiosoitteelle, 10 Hide-my-email-aliakselle, kalenterijaolle sekä paljon muuta."
+        "Sisältää tuen yhdelle omalle sähköpostiverkkotunnukselle, 10 sähköpostiosoitteelle, 10 Hide-my-email-aliakselle, kalenterijaolle sekä paljon muuta."
       ],
       "Includes support for 3 custom email domains, 15 email addresses, unlimited hide-my-email aliases, calendar sharing, and more.": [
-        "Sisältää tuen 3 omalle sähköpostin verkkotunnukselle, 15 sähköpostiosoitteelle, rajattomasti Hide-my-email-aliaksia, kalenterijaon sekä paljon muuta."
+        "Sisältää tuen kolmelle omalle sähköpostiverkkotunnukselle, 15 sähköpostiosoitteelle, rajattomasti Hide-my-email-aliaksia, kalenterijaon sekä paljon muuta."
       ],
       "Perfect for families or small teams, each can have their own inbox and aliases. Requires a custom domain.": [
-        "Täydellinen perheille tai pienille ryhmille, jokaisella voi olla oma postilaatikko ja alias. Vaatii mukautetun verkkotunnuksen."
+        "Täydellinen perheille tai pienille ryhmille, joilla jokaisella voi olla oma postilaatikko ja alias. Vaatii oman verkkotunnuksen."
       ],
       "Receive at no extra cost the paid versions of all new privacy services we release in the future, along with early access to all future features and products.": [
         "Saat ilmaiseksi maksulliset versiot kaikista uusista tietosuojapalveluista, jotka julkaisemme tulevaisuudessa, sekä pääsyn kaikkiin tuleviin ominaisuuksiin ja tuotteisiin."
@@ -8535,10 +8535,10 @@
         "Luo turvallisia kirjautumistietoja kaikilla laitteillasi. Sisältää rajattomasti aliaksia, 20 holvia, sisäänrakennetun 2FA:n, luottokorttitietojen automaattisen täytön ja paljon muuta."
       ],
       "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
-        "Sisältää 2950+ palvelinta yli 65+ maassa, 10 samanaikaista laitetta, tuen suoratoistopalveluille eri puolilta maailmaa, haittaohjelma- ja mainoseston sekä paljon muuta."
+        "Sisältää 2950+ palvelinta yli 65+ maassa, 10 samanaikaista laitetta, maailmanlaajuisen tuen suoratoistopalveluille, haittasisällön- ja mainoseston sekä paljon muuta."
       ],
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
-        "Sisältää tuen yhdelle omalle sähköpostin verkkotunnukselle, 10 sähköpostiosoitteelle, 10 hide-my-email-aliakselle, kalenterijaolle sekä paljon muuta."
+        "Sisältää tuen yhdelle omalle sähköpostiverkkotunnukselle, 10 sähköpostiosoitteelle, 10 hide-my-email-aliakselle, kalenterijaolle sekä paljon muuta."
       ],
       "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
         "Suojaa tiedostosi salatulla pilvitallennustilalla. Sisältää versiohistorian, salatun tiedostojen jakamisen ja paljon muuta."
@@ -8633,8 +8633,8 @@
         "${ hours } t"
       ],
       "${ hoursInt }.5 h": [
-        "${ hoursInt }.5 h",
-        "${ hoursInt }.5 h"
+        "${ hoursInt }.5 t",
+        "${ hoursInt }.5 t"
       ],
       "${ minutes } min": [
         "${ minutes } min",
@@ -9245,7 +9245,7 @@
         "Automaattiasetuksella viestit lähetetään tälle käyttäjälle käyttäen kirjoituksessa käytettyä muotoilua. Käytettäessä pelkkä teksti -asetusta poistetaan viestistä lähetettäessä mahdolliset muotoilut."
       ],
       "Automatically switch between your preferred themes for day and night in sync with your system’s day and night modes": [
-        "Vaihda määrittämiesi päivä-/yöteemojen välillä automaattisesti järjestelmäsi päivä-/yötilan vaihtuessa"
+        "Vaihda valitsemasi päivä- ja yöteeman välillä automaattisesti järjestelmäsi päivä- ja yötilan vaihtuessa"
       ],
       "Customize import to reduce the number of folders": [
         "Vähennä kansioiden määrää mukauttamalla tuontia"
@@ -9538,85 +9538,85 @@
         "${ interval } viikon välein keskiviikkoisin, ${ untilString }"
       ],
       "Weekly on ${ multipleDaysString }": [
-        "Viikottain ${ multipleDaysString }"
+        "Viikoittain ${ multipleDaysString }"
       ],
       "Weekly on ${ multipleDaysString }, ${ timesString }": [
-        "Viikottain ${ multipleDaysString }, ${ timesString }"
+        "Viikoittain ${ multipleDaysString }, ${ timesString }"
       ],
       "Weekly on ${ multipleDaysString }, ${ untilString }": [
-        "Viikottain ${ multipleDaysString }, ${ untilString }"
+        "Viikoittain ${ multipleDaysString }, ${ untilString }"
       ],
       "Weekly on all days": [
-        "Viikottain kaikkina päivinä"
+        "Viikoittain kaikkina päivinä"
       ],
       "Weekly on all days, ${ timesString }": [
-        "Viikottain kaikkina päivinä, ${ timesString }"
+        "Viikoittain kaikkina päivinä, ${ timesString }"
       ],
       "Weekly on all days, ${ untilString }": [
-        "Viikottain kaikkina päivinä, ${ untilString }"
+        "Viikoittain kaikkina päivinä, ${ untilString }"
       ],
       "Weekly on Friday": [
-        "Viikottain perjantaisin"
+        "Viikoittain perjantaisin"
       ],
       "Weekly on Friday, ${ timesString }": [
-        "Viikottain perjantaisin, ${ timesString }"
+        "Viikoittain perjantaisin, ${ timesString }"
       ],
       "Weekly on Friday, ${ untilString }": [
-        "Viikottain perjantaisin, ${ untilString }"
+        "Viikoittain perjantaisin, ${ untilString }"
       ],
       "Weekly on Monday": [
-        "Viikottain maanantaisin"
+        "Viikoittain maanantaisin"
       ],
       "Weekly on Monday, ${ timesString }": [
-        "Viikottain maanantaisin, ${ timesString }"
+        "Viikoittain maanantaisin, ${ timesString }"
       ],
       "Weekly on Monday, ${ untilString }": [
-        "Viikottain maanantaisin, ${ untilString }"
+        "Viikoittain maanantaisin, ${ untilString }"
       ],
       "Weekly on Saturday": [
-        "Viikottain lauantaisin"
+        "Viikoittain lauantaisin"
       ],
       "Weekly on Saturday, ${ timesString }": [
-        "Viikottain lauantaisin, ${ timesString }"
+        "Viikoittain lauantaisin, ${ timesString }"
       ],
       "Weekly on Saturday, ${ untilString }": [
-        "Viikottain lauantaisin, ${ untilString }"
+        "Viikoittain lauantaisin, ${ untilString }"
       ],
       "Weekly on Sunday": [
-        "Viikottain sunnuntaisin"
+        "Viikoittain sunnuntaisin"
       ],
       "Weekly on Sunday, ${ timesString }": [
-        "Viikottain sunnuntaisin, ${ timesString }"
+        "Viikoittain sunnuntaisin, ${ timesString }"
       ],
       "Weekly on Sunday, ${ untilString }": [
-        "Viikottain sunnuntaisin, ${ untilString }"
+        "Viikoittain sunnuntaisin, ${ untilString }"
       ],
       "Weekly on Thursday": [
-        "Viikottain torstaisin"
+        "Viikoittain torstaisin"
       ],
       "Weekly on Thursday, ${ timesString }": [
-        "Viikottain torstaisin, ${ timesString }"
+        "Viikoittain torstaisin, ${ timesString }"
       ],
       "Weekly on Thursday, ${ untilString }": [
-        "Viikottain torstaisin, ${ untilString }"
+        "Viikoittain torstaisin, ${ untilString }"
       ],
       "Weekly on Tuesday": [
-        "Viikottain tiistaisin"
+        "Viikoittain tiistaisin"
       ],
       "Weekly on Tuesday, ${ timesString }": [
-        "Viikottain tiistaisin, ${ timesString }"
+        "Viikoittain tiistaisin, ${ timesString }"
       ],
       "Weekly on Tuesday, ${ untilString }": [
-        "Viikottain tiistaisin, ${ untilString }"
+        "Viikoittain tiistaisin, ${ untilString }"
       ],
       "Weekly on Wednesday": [
-        "Viikottain keskiviikkoisin"
+        "Viikoittain keskiviikkoisin"
       ],
       "Weekly on Wednesday, ${ timesString }": [
-        "Viikottain keskiviikkoisin, ${ timesString }"
+        "Viikoittain keskiviikkoisin, ${ timesString }"
       ],
       "Weekly on Wednesday, ${ untilString }": [
-        "Viikottain keskiviikkoisin, ${ untilString }"
+        "Viikoittain keskiviikkoisin, ${ untilString }"
       ]
     },
     "Weekly recurring event, repeats on (multiple days), frequency": {
