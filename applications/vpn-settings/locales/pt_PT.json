@@ -189,7 +189,7 @@
         "Aumentar"
       ],
       "Keep my ${ vpnPlanNameShort } subscription": [
-        "Mantenha a minha subscrição ${ vpnPlanNameShort }"
+        "Manter a minha subscrição ${ vpnPlanNameShort }"
       ],
       "Load more": [
         "Carregar mais"
@@ -294,7 +294,7 @@
         "Enviar código"
       ],
       "Send my username": [
-        "Enviar nome de utilizador"
+        "Enviar o meu nome de utilizador"
       ],
       "Set new password": [
         "Definir uma nova palavra-passe"
@@ -324,7 +324,7 @@
         "Registe-se gratuitamente"
       ],
       "Signing in": [
-        "Inicio de sessão"
+        "A iniciar sessão"
       ],
       "Signing out": [
         "A terminar sessão"
@@ -5525,6 +5525,32 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "O seu teste gratuito termina em ${ textDate }. ${ action }"
+      ]
+    },
+    "Metadata title": {
+      "${ appName }: Sign-in": [
+        "${ appName }: início de sessão"
+      ],
+      "${ appName }: Sign-up": [
+        "${ appName }: Inscrição"
+      ],
+      "Create a new ${ appName } account": [
+        "Criar uma conta do ${ appName }"
+      ],
+      "Find ${ BRAND_NAME } Account username": [
+        "Encontre o nome de usuário da conta ${ BRAND_NAME }"
+      ],
+      "Forgot your ${ BRAND_NAME } Account password? Reset it here using a recovery code, email, or SMS and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Esqueceu-se do seu nome de utilizador da conta ${ BRAND_NAME }? Redefina-o aqui utilizando um código de recuperação, e-mail ou SMS e recupere o acesso a ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } e muito mais."
+      ],
+      "Forgot your ${ BRAND_NAME } Account username? Find it using your recovery email or phone number and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Esqueceu-se do seu nome de utilizador da conta ${ BRAND_NAME }? Encontre-o utilizando o seu e-mail ou número de telefone de recuperação e recupere o acesso a ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } e muito mais."
+      ],
+      "Reset your ${ BRAND_NAME } Account password": [
+        "Redefina a palavra-passe da sua conta ${ BRAND_NAME }"
+      ],
+      "Sign in to access your ${ appName } account": [
+        "Inicie sessão para aceder à sua conta ${ appName }"
       ]
     }
   }

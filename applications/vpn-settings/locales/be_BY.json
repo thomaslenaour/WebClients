@@ -5640,6 +5640,32 @@
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Ваш бясплатны выпрабавальны перыяд міне ${ textDate }. ${ action }"
       ]
+    },
+    "Metadata title": {
+      "${ appName }: Sign-in": [
+        "${ appName }: Увайсці"
+      ],
+      "${ appName }: Sign-up": [
+        "${ appName }: Зарэгістравацца"
+      ],
+      "Create a new ${ appName } account": [
+        "Стварыць новы ўліковы запіс ${ appName }"
+      ],
+      "Find ${ BRAND_NAME } Account username": [
+        "Знайдзіце імя карыстальніка ўліковага запісу ${ BRAND_NAME }"
+      ],
+      "Forgot your ${ BRAND_NAME } Account password? Reset it here using a recovery code, email, or SMS and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Забылі пароль ад свайго ўліковага запісу ${ BRAND_NAME }? Знайдзіце яго выкарыстоўваючы код аднаўлення, электронную пошту або SMS і аднавіце доступ да вашых сэрвісаў ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } і іншых."
+      ],
+      "Forgot your ${ BRAND_NAME } Account username? Find it using your recovery email or phone number and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Забылі сваё імя карыстальніка ўліковага запісу ${ BRAND_NAME }? Знайдзіце яго выкарыстоўваючы пошту або нумар тэлефона і аднавіце доступ да вашых сэрвісаў ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } і іншых."
+      ],
+      "Reset your ${ BRAND_NAME } Account password": [
+        "Скінуць пароль уліковага запісу ${ BRAND_NAME }"
+      ],
+      "Sign in to access your ${ appName } account": [
+        "Увайсці, каб атрымаць доступ да свайго ўліковага запісу ${ appName }"
+      ]
     }
   }
 }

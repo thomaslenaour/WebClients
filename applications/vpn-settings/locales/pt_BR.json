@@ -5529,6 +5529,26 @@
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Sua avaliação gratuita termina em ${ textDate }. ${ action }"
       ]
+    },
+    "Metadata title": {
+      "${ appName }: Sign-in": [
+        "${ appName }: Entrar"
+      ],
+      "${ appName }: Sign-up": [
+        "${ appName }: Inscrever-se"
+      ],
+      "Create a new ${ appName } account": [
+        "Criar uma conta no ${ appName }"
+      ],
+      "Find ${ BRAND_NAME } Account username": [
+        "Encontre o nome de usuário da conta ${ BRAND_NAME }"
+      ],
+      "Reset your ${ BRAND_NAME } Account password": [
+        "Redefina a senha da sua conta ${ BRAND_NAME }"
+      ],
+      "Sign in to access your ${ appName } account": [
+        "Faça login para acessar sua conta ${ appName }"
+      ]
     }
   }
 }
