@@ -2724,7 +2724,7 @@
         "Kişiler şifreleniyor ve içe aktarılıyor... Bu işlem birkaç dakika sürebilir. İşlem tamamlandığında, bu pencereyi kapatabilirsiniz."
       ],
       "Get up to ${ credits } in credits by inviting friends to ${ BRAND_NAME }.": [
-        "Arkadaşlarınızı ${ BRAND_NAME } kullanmaya çağırarak ${ credits } krediye kadar hediye kazanın."
+        "Arkadaşlarınızı ${ BRAND_NAME } kullanmaya davet ederek ${ credits } krediye kadar hediye kazanın."
       ],
       "It looks like the contact list you are importing contains some groups. Please review how these groups should be imported.": [
         "İçe aktardığınız kişi listesinde bazı gruplar var gibi görünüyor. Lütfen bu grupların nasıl içe aktarılması gerektiğini gözden geçirin."
@@ -2758,7 +2758,7 @@
         "${ BRAND_NAME } logosu ardından bir artı işareti bulunan ek satış simgesi"
       ],
       "You can continue to invite friends, but you wont be able to earn more credits": [
-        "Arkadaşlarınızı çağırmayı sürdürebilirsiniz ancak artık daha fazla kredi kazanamazsınız"
+        "Arkadaşlarınızı davet etmeyi sürdürebilirsiniz ancak artık daha fazla kredi kazanamazsınız"
       ],
       "You can import events in iCal format (ICS file). The file should have a maximum size of ${ MAX_IMPORT_FILE_SIZE_STRING } and have up to ${ MAX_IMPORT_EVENTS_STRING } events. If your file is bigger, please split it into smaller files.": [
         "Etkinlikleri iCal biçiminde içe aktarabilirsiniz (ICS dosyası).\nDosya en fazla ${ MAX_IMPORT_FILE_SIZE_STRING } boyutunda olmalı ve en fazla ${ MAX_IMPORT_EVENTS_STRING } etkinlik kaydı içermelidir.\nDosyanız daha büyükse, daha küçük dosyalara bölün."
@@ -5150,7 +5150,7 @@
         "+${ organization.BonusVPN } ${ VPN_APP_NAME } bağlantısı (daha fazla aygıt için VPN bağlantısı sağlar)"
       ],
       "1. Invite friends to ${ BRAND_NAME }": [
-        "1. Arkadaşlarınızı ${ BRAND_NAME } kullanmaya çağırın"
+        "1. Arkadaşlarınızı ${ BRAND_NAME } kullanmaya davet edin"
       ],
       "10 email addresses": [
         "10 e-posta adresi"
@@ -10710,7 +10710,7 @@
     },
     "Share calendar assistive text": {
       "To invite non-${ BRAND_NAME } users, share your calendar with a link.": [
-        "${ BRAND_NAME } kullanmayan kişileri çağırmak için takviminizi bir bağlantı ile paylaşın."
+        "${ BRAND_NAME } kullanmayan kişileri davet etmek için takviminizi bir bağlantı ile paylaşın."
       ]
     },
     "Share calendar max shares reached error": {
@@ -11028,7 +11028,7 @@
         "${ credits } tutarına kadar kredi kazanın."
       ],
       "Invite friends to ${ BRAND_NAME }": [
-        "Arkadaşlarınızı ${ BRAND_NAME } üzerine çağırın"
+        "Arkadaşlarınızı ${ BRAND_NAME } kullanmaya davet edin"
       ]
     },
     "State": {
@@ -13321,6 +13321,50 @@
       ],
       "Yearly, ${ untilString }": [
         "Yılda bir, ${ untilString }"
+      ]
+    },
+    "Metadata title": {
+      "${ appName }: Sign-in": [
+        "${ appName }: Oturum aç"
+      ],
+      "${ appName }: Sign-up": [
+        "${ appName }: Hesap aç"
+      ],
+      "Create a ${ BRAND_NAME } Account to use all encrypted ${ BRAND_NAME } services such as ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more, with just one login. Get a Free ${ BRAND_NAME } Account.": [
+        "${ BRAND_NAME } hesabı açarak, tek hesap ile ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } gibi şifrelenmiş tüm ${ BRAND_NAME } hizmetlerini kullanın. Ücretsiz bir ${ BRAND_NAME } hesabı açın."
+      ],
+      "Create a ${ BRAND_NAME } Account | Take back your privacy": [
+        "Bir ${ BRAND_NAME } hesabı açın | Gizliliğinizi geri alın"
+      ],
+      "Create a new ${ appName } account": [
+        "Yeni bir ${ appName } hesabı açın"
+      ],
+      "Find ${ BRAND_NAME } Account username": [
+        "${ BRAND_NAME } hesabı kullanıcı adınızı bulun"
+      ],
+      "Forgot your ${ BRAND_NAME } Account password? Reset it here using a recovery code, email, or SMS and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "${ BRAND_NAME } hesabınızın parolasını unuttunuz mu? Kurtarma kodu, e-posta ya da SMS ile sıfırlayarak ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } gibi hizmetlere yeniden erişin."
+      ],
+      "Forgot your ${ BRAND_NAME } Account username? Find it using your recovery email or phone number and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "${ BRAND_NAME } hesabınızın kullanıcı adını unuttunuz mu? Kurtarma e-posta adresinizi ya da telefon numaranızı kullanarak ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } gibi hizmetlere yeniden erişin."
+      ],
+      "Private and secure email, no credit card required": [
+        "Gizli ve güvenli e-posta. Kredi kartı bilgilerinizi vermeniz gerekmez"
+      ],
+      "Reset your ${ BRAND_NAME } Account password": [
+        "${ BRAND_NAME } hesabınızın parolasını sıfırlayın"
+      ],
+      "Sign in to access your ${ appName } account": [
+        "${ appName } hesabınıza erişmek için oturum açın"
+      ],
+      "Sign in to your ${ BRAND_NAME } Account to access all encrypted ${ BRAND_NAME } services such as ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more. Don't have an account? Create one for FREE.": [
+        "${ BRAND_NAME } hesabınızda oturum açarak, ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } gibi şifrelenmiş tüm ${ BRAND_NAME } hizmetlerine erişin. Hesabınız yok mu? Ücretsiz bir hesap açın."
+      ],
+      "Sign in | ${ BRAND_NAME } Account - Access ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, and more": [
+        "| ${ BRAND_NAME } hesabınızda oturum açın - ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME } ve diğer uygulamalara erişin"
+      ],
+      "Try ${ planName } for free with this link": [
+        "Bu bağlantı ile ${ planName } tarifesini ücretsiz olarak deneyin"
       ]
     }
   }

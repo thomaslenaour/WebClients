@@ -9448,6 +9448,12 @@
       ],
       "Vault and Item sharing (coming soon)": [
         "Спільний доступ до сховища та елементів (незабаром)"
+      ],
+      "${ PASS_APP_NAME } with ${ n } hide-my-email alias": [
+        "${ PASS_APP_NAME } з ${ n } hide-my-email псевдонімом",
+        "${ PASS_APP_NAME } з ${ n } hide-my-email псевдонімами",
+        "${ PASS_APP_NAME } з ${ n } hide-my-email псевдонімами",
+        "${ PASS_APP_NAME } з ${ n } hide-my-email псевдонімами"
       ]
     },
     "new_plans: feature info": {
@@ -13681,6 +13687,50 @@
       ],
       "Yearly, ${ untilString }": [
         "Щороку, ${ untilString }"
+      ]
+    },
+    "Metadata title": {
+      "${ appName }: Sign-in": [
+        "${ appName }: Увійти"
+      ],
+      "${ appName }: Sign-up": [
+        "${ appName }: Зареєструватися"
+      ],
+      "Create a ${ BRAND_NAME } Account to use all encrypted ${ BRAND_NAME } services such as ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more, with just one login. Get a Free ${ BRAND_NAME } Account.": [
+        "Створіть ${ BRAND_NAME }, щоб користуватися всіма зашифрованими сервісами ${ BRAND_NAME }, такими як ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } та іншими, за допомогою одного входу. Отримайте безплатний обліковий запис ${ BRAND_NAME }."
+      ],
+      "Create a ${ BRAND_NAME } Account | Take back your privacy": [
+        "Створіть обліковий запис ${ BRAND_NAME } | Поверніть свою приватність"
+      ],
+      "Create a new ${ appName } account": [
+        "Створіть новий обліковий запис ${ appName }"
+      ],
+      "Find ${ BRAND_NAME } Account username": [
+        "Знайдіть ім'я користувача облікового запису ${ BRAND_NAME }"
+      ],
+      "Forgot your ${ BRAND_NAME } Account password? Reset it here using a recovery code, email, or SMS and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Забули свій пароль від облікового запису ${ BRAND_NAME }? Відновіть його тут за допомогою коду відновлення, пошти або SMS і отримайте доступ до ваших ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } тощо."
+      ],
+      "Forgot your ${ BRAND_NAME } Account username? Find it using your recovery email or phone number and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Забули своє ім'я користувача ${ BRAND_NAME }? Знайдіть його за допомогою пошти або номера телефону для відновлення та отримайте доступ до ваших ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } та багато іншого."
+      ],
+      "Private and secure email, no credit card required": [
+        "Приватна та захищена електронна пошта, кредитна картка не потрібна"
+      ],
+      "Reset your ${ BRAND_NAME } Account password": [
+        "Скинути пароль облікового запису ${ BRAND_NAME }"
+      ],
+      "Sign in to access your ${ appName } account": [
+        "Увійдіть, щоб отримати доступ до свого облікового запису ${ appName }"
+      ],
+      "Sign in to your ${ BRAND_NAME } Account to access all encrypted ${ BRAND_NAME } services such as ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more. Don't have an account? Create one for FREE.": [
+        "Увійдіть у свій обліковий запис ${ BRAND_NAME }, щоб отримати доступ до всіх зашифрованих сервісів ${ BRAND_NAME }, таких як ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } тощо. Не маєте облікового запису? Створіть його БЕЗПЛАТНО."
+      ],
+      "Sign in | ${ BRAND_NAME } Account - Access ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, and more": [
+        "Увійти | Обліковий запис ${ BRAND_NAME } - Доступ до ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME } та багато іншого"
+      ],
+      "Try ${ planName } for free with this link": [
+        "Спробуйте ${ planName } безплатно за цим посиланням"
       ]
     }
   }

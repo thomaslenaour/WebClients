@@ -1060,6 +1060,15 @@
       ],
       "Set as default": [
         "Establecer como predeterminado"
+      ],
+      "Disable E2EE mail": [
+        "Deshabiliar correo E2EE"
+      ],
+      "Disallow unsigned mail": [
+        "Non permitir correos sin firma"
+      ],
+      "Enable E2EE mail": [
+        "Habiliar correo E2EE"
       ]
     },
     "Address status": {
@@ -1086,6 +1095,12 @@
       ],
       "Orphan": [
         "Huérfana"
+      ],
+      "Allow unsigned mail": [
+        "Permitir correos sin firma"
+      ],
+      "No E2EE mail": [
+        "Sin correo E2EE"
       ]
     },
     "Admin": {
@@ -3431,7 +3446,7 @@
         "Has utilizado todas las direcciones de tu plan. Pasa a un plan superior para añadir una dirección."
       ],
       "You have used all users in your plan. Please upgrade your plan to add a new user.": [
-        "Has utilizado todos los usuarios de tu plan. Mejora tu plan para añadir un usuario."
+        "Has utilizado todos los usuarios de tu plan. Mejora tu plan para añadir un nuevo usuario."
       ],
       "You must activate your organization keys. Without activation you will not be able to create new users, add addresses to existing users, or access non-private user accounts.": [
         "Debes activar las claves de tu organización. Sin la activación no serás capaz de crear nuevos usuarios, agregar direcciones a los usuarios o acceder a cuentas de usuario no privadas."
@@ -8104,7 +8119,7 @@
         "Mostrar imágenes del remitente"
       ],
       "Show unread count in Favicon": [
-        "Mostrar contador sin leer en el favicono"
+        "Mostrar contador sin leer en el favicon"
       ],
       "Show week numbers": [
         "Mostrar los números de la semana"
@@ -8657,6 +8672,27 @@
       ],
       "Sign in to access your ${ appName } account": [
         "Inicia sesión para acceder a tu cuenta de ${ appName }"
+      ],
+      "Create a ${ BRAND_NAME } Account to use all encrypted ${ BRAND_NAME } services such as ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more, with just one login. Get a Free ${ BRAND_NAME } Account.": [
+        "Crea una cuenta de ${ BRAND_NAME } para usar todos los servicios cifrados de ${ BRAND_NAME } como ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } y más con solo un inicio de sesión. Obtén una cuenta de ${ BRAND_NAME } gratuita."
+      ],
+      "Create a ${ BRAND_NAME } Account | Take back your privacy": [
+        "Crea una cuenta de ${ BRAND_NAME } | Recupera Tu privacidad."
+      ],
+      "Forgot your ${ BRAND_NAME } Account username? Find it using your recovery email or phone number and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "¿Has olvidado tu nombre de usuario de ${ BRAND_NAME }? Encuéntralo con tu correo de recuperación o número de teléfono y retoma el acceso a ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } y más."
+      ],
+      "Private and secure email, no credit card required": [
+        "Correo seguro y privado, sin tarjeta de crédito"
+      ],
+      "Sign in to your ${ BRAND_NAME } Account to access all encrypted ${ BRAND_NAME } services such as ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more. Don't have an account? Create one for FREE.": [
+        "Inicia sesión en tu cuenta de ${ BRAND_NAME } para acceder a todos los servicios cifrados de ${ BRAND_NAME } como ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } y más. ¿No tienes una cuenta? Crea una GRATIS."
+      ],
+      "Sign in | ${ BRAND_NAME } Account - Access ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, and more": [
+        "Iniciar sesión | Cuenta de ${ BRAND_NAME } - Accede a ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME } y más"
+      ],
+      "Try ${ planName } for free with this link": [
+        "Prueba ${ planName } gratis con este enlace"
       ]
     },
     "Modal title": {

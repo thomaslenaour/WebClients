@@ -1060,6 +1060,15 @@
       ],
       "Set as default": [
         "Establecer por defecto"
+      ],
+      "Disable E2EE mail": [
+        "Deshabilitar correo E2EE"
+      ],
+      "Disallow unsigned mail": [
+        "No permitir correos sin firma"
+      ],
+      "Enable E2EE mail": [
+        "Habilitar correo E2EE"
       ]
     },
     "Address status": {
@@ -1086,6 +1095,12 @@
       ],
       "Orphan": [
         "Huérfana"
+      ],
+      "Allow unsigned mail": [
+        "Permitir correos sin firma"
+      ],
+      "No E2EE mail": [
+        "Sin correo E2EE"
       ]
     },
     "Admin": {

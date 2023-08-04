@@ -174,7 +174,7 @@
         "Zmień hasło"
       ],
       "Chat with us": [
-        "Czatuj z nami"
+        "Czat z nami"
       ],
       "Check import progress": [
         "Sprawdź postęp importowania"
@@ -1064,6 +1064,15 @@
       ],
       "Set as default": [
         "Ustaw jako domyślny"
+      ],
+      "Disable E2EE mail": [
+        "Wyłącz E2EE"
+      ],
+      "Disallow unsigned mail": [
+        "Nie zezwalaj na niepodpisane wiadomości"
+      ],
+      "Enable E2EE mail": [
+        "Włącz E2EE"
       ]
     },
     "Address status": {
@@ -1090,6 +1099,12 @@
       ],
       "Orphan": [
         "Osierocony"
+      ],
+      "Allow unsigned mail": [
+        "Zezwalaj na niepodpisane wiadomości"
+      ],
+      "No E2EE mail": [
+        "Brak E2EE"
       ]
     },
     "Admin": {
@@ -8821,7 +8836,7 @@
         "Nie pamiętasz nazwy użytkownika ${ BRAND_NAME }? Zresetuj konto za pomocą kodu odzyskiwania, adresu e-mail lub numeru telefonu, aby odzyskać dostęp do ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } i wiele więcej."
       ],
       "Forgot your ${ BRAND_NAME } Account username? Find it using your recovery email or phone number and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
-        "Nie pamiętasz nazwy użytkownika ${ BRAND_NAME }? Znajdź je za pomocą adresu pomocniczego lub numeru telefonu, aby odzyskać dostęp do ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } i wiele więcej."
+        "Nie pamiętasz nazwy użytkownika ${ BRAND_NAME }? Znajdź je za pomocą adresu pomocniczego lub numeru telefonu, aby odzyskać dostęp do ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } i innych."
       ],
       "Private and secure email, no credit card required": [
         "Prywatna i bezpieczna poczta. Karta płatnicza nie jest wymagana"

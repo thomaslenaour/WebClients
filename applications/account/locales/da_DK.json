@@ -10150,6 +10150,9 @@
       ],
       "The discount will continue to apply upon renewal until the subscription is canceled or modified": [
         "Rabatten vil fortsat gælde ved fornyelse, indtil abonnementet opsiges eller ændres"
+      ],
+      "Lifetime deal": [
+        "Livsvarigt tilbud"
       ]
     },
     "specialoffer: Link": {
@@ -10238,6 +10241,9 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "Opgradér og spar mere med 2 års ${ planName }"
+      ],
+      "End of year offer": [
+        "Tilbud i slutningen af året"
       ]
     },
     "specialoffer: Tooltip": {
@@ -10672,6 +10678,9 @@
       ],
       "Premium Mail and Calendar": [
         "Premium Mail og Kalender"
+      ],
+      "Premium Password Manager": [
+        "Premium Adgangskodeadministrator"
       ]
     },
     "summer2023: Describe Proton Pass": {
@@ -10687,11 +10696,23 @@
     "summer2023: Tooltip": {
       "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
         "Inkluderer support for 1 tilpasset e-maildomæne, 10 e-mailadresser, 10 Hide-my-email-aliasser, kalenderdeling med mere."
+      ],
+      "Create secure login details on all your devices. Includes unlimited aliases, 20 vaults, integrated 2FA, credit card auto-fill and more.": [
+        "Opret sikre login-oplysninger på alle dine enheder. Inkludere ubegrænsede aliasser, 20 bokse, integreret 2FA, kreditkort-autofyld og meget mere."
+      ],
+      "Includes 2950+ servers in 65+ countries, connect up to 10 devices, access worldwide streaming services, malware and ad-blocker, and more.": [
+        "Inkluderer 2950+ servere i 65+ lande, forbind op til 10 enheder, tilgå verdensomspændende streamingtjenester, malware- og ad-blocker og meget mere."
+      ],
+      "Secure your files with encrypted cloud storage. Includes version history, encrypted file sharing, and more.": [
+        "Beskyt dine filer med krypteret lagring i skyen. Inkluderer versionshistorik, krypteret fildeling og meget mere."
       ]
     },
     "summer2023:Footer": {
       "*Your subscription will automatically renew at the standard discounted rate at the end of your billing cycle.": [
         "*Dit abonnement vil automatisk blive fornyet til den nedsatte standardpris ved slutningen af din faktureringscyklus."
+      ],
+      "Discounts are based on the standard monthly pricing. This offer is only available to first-time subscribers.": [
+        "Rabatter er baseret på den månedlige standardpris. Dette tilbud er kun tilgængeligt for førstegangsabonnenter."
       ]
     },
     "summer2023:Offer title": {
@@ -12387,6 +12408,45 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligt, ${ untilString }"
+      ]
+    },
+    "Metadata title": {
+      "${ appName }: Sign-in": [
+        "${ appName }: Login"
+      ],
+      "${ appName }: Sign-up": [
+        "${ appName }: Tilmelding"
+      ],
+      "Create a new ${ appName } account": [
+        "Opret en ny ${ appName }-konto"
+      ],
+      "Find ${ BRAND_NAME } Account username": [
+        "Find brugernavn til ${ BRAND_NAME }-konto"
+      ],
+      "Forgot your ${ BRAND_NAME } Account password? Reset it here using a recovery code, email, or SMS and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Glemt adgangskoden til din ${ BRAND_NAME }-konto? Nulstil den her ved hjælp af en gendannelseskode, e-mail eller SMS, og få adgang til din ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } og mere."
+      ],
+      "Forgot your ${ BRAND_NAME } Account username? Find it using your recovery email or phone number and regain access to your ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, and more.": [
+        "Glemt dit brugernavn til ${ BRAND_NAME }-konto? Find den ved hjælp af din gendannelses-e-mail eller dit telefonnummer, og få adgang til din ${ MAIL_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME } og mere."
+      ],
+      "Reset your ${ BRAND_NAME } Account password": [
+        "Nulstil adgangskoden til din ${ BRAND_NAME }-konto"
+      ],
+      "Sign in to access your ${ appName } account": [
+        "Log ind for at få adgang til din ${ appName }-konto"
+      ]
+    },
+    "specialoffer: Action, Unlimited is a plan name": {
+      "Go Unlimited": [
+        "Få Unlimited"
+      ]
+    },
+    "summer2023:Info": {
+      "For a limited time, get the best ${ BRAND_NAME } has to offer at an exclusive discount.": [
+        "I en begrænset periode kan du få det bedste, ${ BRAND_NAME } har at tilbyde til en eksklusiv rabat."
+      ],
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Vi fejrer niårsdagen for vores crowdfunding!"
       ]
     }
   }

@@ -1060,6 +1060,15 @@
       ],
       "Set as default": [
         "Ορισμός ως προεπιλογή"
+      ],
+      "Disable E2EE mail": [
+        "Απενεργοποίηση E2EE mail"
+      ],
+      "Disallow unsigned mail": [
+        "Να μην επιτρέπεται η ανυπόγραφη αλληλογραφία"
+      ],
+      "Enable E2EE mail": [
+        "Ενεργοποίηση E2EE mail"
       ]
     },
     "Address status": {
@@ -1086,6 +1095,12 @@
       ],
       "Orphan": [
         "Ορφανό"
+      ],
+      "Allow unsigned mail": [
+        "Να επιτρέπεται η ανυπόγραφη αλληλογραφία"
+      ],
+      "No E2EE mail": [
+        "Χωρίς E2EE mail"
       ]
     },
     "Admin": {

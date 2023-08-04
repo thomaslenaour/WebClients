@@ -13348,6 +13348,32 @@
       "Yearly, ${ untilString }": [
         "Anualmente, ${ untilString }"
       ]
+    },
+    "Metadata title": {
+      "${ appName }: Sign-in": [
+        "${ appName }: Entrar"
+      ],
+      "${ appName }: Sign-up": [
+        "${ appName }: Inscrever-se"
+      ],
+      "Create a new ${ appName } account": [
+        "Criar uma conta no ${ appName }"
+      ],
+      "Find ${ BRAND_NAME } Account username": [
+        "Encontre o nome de usuário da conta ${ BRAND_NAME }"
+      ],
+      "Private and secure email, no credit card required": [
+        "Email privado e seguro, sem necessidade de cartão de crédito"
+      ],
+      "Reset your ${ BRAND_NAME } Account password": [
+        "Redefina a senha da sua conta ${ BRAND_NAME }"
+      ],
+      "Sign in to access your ${ appName } account": [
+        "Faça login para acessar sua conta ${ appName }"
+      ],
+      "Try ${ planName } for free with this link": [
+        "Experimente ${ planName } gratuitamente com este link"
+      ]
     }
   }
 }

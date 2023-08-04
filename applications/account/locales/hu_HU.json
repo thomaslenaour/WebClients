@@ -928,6 +928,36 @@
       ],
       "Zoom out": [
         "Távolítás"
+      ],
+      "Add address or domain": [
+        "Adjon hozzá címet vagy tartományt"
+      ],
+      "Allow": [
+        "Engedélyez"
+      ],
+      "Continue anyway": [
+        "Mindenképpen folytassa"
+      ],
+      "Get more addresses": [
+        "Több cím megszerzése"
+      ],
+      "Get more folders": [
+        "Több mappa megszerzése"
+      ],
+      "Keep my ${ vpnPlanNameShort } subscription": [
+        "Folytassa a ${ vpnPlanNameShort } előfizetésemet"
+      ],
+      "Pay ${ price } now": [
+        "Fizessen ${ price } összeget"
+      ],
+      "Save changes": [
+        "Módosítások mentése"
+      ],
+      "Send email reminder": [
+        "E-mail emlékeztető beállítása"
+      ],
+      "Send reminder": [
+        "Emlékeztető beállítása"
       ]
     },
     "Action for user session": {
@@ -3248,6 +3278,12 @@
       ],
       "Zero keys reactivated": [
         "Nulla kulcs újraaktiválva"
+      ],
+      "${ errorMessage }. You can also check our ${ statusPageLink }": [
+        "${ errorMessage }. Továbbá meglátogathatja a ${ statusPageLink } oldalunkat"
+      ],
+      "status page": [
+        "állapot lap"
       ]
     },
     "Error importing calendar": {
@@ -3954,6 +3990,9 @@
     "Font face option": {
       "System default": [
         "Rendszer alapértelmezett"
+      ],
+      "Theme font": [
+        "Téma betűtípus"
       ]
     },
     "Font Size Default": {
@@ -6165,6 +6204,39 @@
       ],
       "Your subscription is managed by Mozilla. Please contact Mozilla support.": [
         "Az előfizetését a Mozilla kezeli. Kérjük, forduljon a Mozilla ügyfélszolgálatához az előfizetés lemondásához."
+      ],
+      "Amount above maximum (${ amount }).": [
+        "Az összeg (${ amount }) a maximum fölött van."
+      ],
+      "Auto-renewal: ": [
+        "Automatikus megújítás: "
+      ],
+      "If you cancel, your ${ vpnPlanName } subscription will not be renewed when it expires on ${ expiryDate }.": [
+        "Ha törli, az Ön ${ vpnPlanName } előfizetése nem lesz megújítva amikor az lejár, ${ expiryDate } napján."
+      ],
+      "Mastercard SecureCode logo": [
+        "Mastercard Biztonsági Kód logó"
+      ],
+      "MM/YY": [
+        "HH/ÉÉ"
+      ],
+      "Please try again using a different payment method, or contact your bank.": [
+        "Kérjük, próbálkozzon újra egy másik fizetési mód használatával, vagy lépjen kapcsolatba a bankjával."
+      ],
+      "Verification may take a few minutes.": [
+        "Az ellenőrzés néhány percet is igénybe vehet."
+      ],
+      "Visa Secure logo": [
+        "Visa biztonsági logó"
+      ],
+      "We couldn’t process your payment.": [
+        "Nem tudjuk feldolgozni az Ön befizetését."
+      ],
+      "We use 3-D Secure to protect your payments": [
+        "Erős ügyfélhitelesítést használunk az Ön fizetésének biztonsága érdekében."
+      ],
+      "You have no calendars to export.": [
+        "Önnek nincs exportálható naptára."
       ]
     },
     "info": {
@@ -11500,6 +11572,47 @@
       ],
       "Yearly, ${ untilString }": [
         "Évente, ${ untilString }"
+      ]
+    },
+    "Shared calendar; Info about calendar owner": {
+      "Shared by ${ ownerName }": [
+        "${ ownerName } által megosztva"
+      ]
+    },
+    "summer2023: Billing cycle option": {
+      "1 year": [
+        "1 év"
+      ],
+      "2 years": [
+        "2 év"
+      ]
+    },
+    "summer2023: Deal details": {
+      "Premium Drive": [
+        "Prémium tárhely"
+      ],
+      "Premium Mail and Calendar": [
+        "Prémium levelezés és naptár"
+      ]
+    },
+    "summer2023: Short tool name to present Proton Pass": {
+      "Password manager": [
+        "Jelszókezelő"
+      ]
+    },
+    "summer2023: Tooltip": {
+      "Includes support for 1 custom email domain, 10 email addresses, 10 hide-my-email aliases, calendar sharing, and more.": [
+        "Tartalmaz 1 darab egyéni e-mail tartománynevet,10 darab e-mail címet, 10 darab hide-my-email álnevet, naptár megosztást és egyebeket"
+      ]
+    },
+    "summer2023:Info": {
+      "We’re celebrating the nine-year anniversary of our crowdfunding!": [
+        "Közösségi finanszírozásunk kilenc éves jubileumát ünnepeljük!"
+      ]
+    },
+    "summer2023:Offer title": {
+      "${ BRAND_NAME } Anniversary Sale": [
+        "${ BRAND_NAME } jubileumi kiárusítás"
       ]
     }
   }

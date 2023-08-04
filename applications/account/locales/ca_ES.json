@@ -357,7 +357,7 @@
         "Edita"
       ],
       "Edit billing details": [
-        "Edita les dades de pagament"
+        "Edita les dades de facturació"
       ],
       "Edit display name": [
         "Edita el nom a mostrar"
@@ -597,7 +597,7 @@
         "Pagar"
       ],
       "Pay ${ price } now": [
-        "Paga ${ price }"
+        "Paga ${ price } ara"
       ],
       "Preview": [
         "Vista prèvia"
@@ -762,7 +762,7 @@
         "Selecciona l'idioma per als correus electrònics d'invitació"
       ],
       "Select time zone": [
-        "Selecciona la zona horària"
+        "Selecciona el fus horari"
       ],
       "send auto-reply email": [
         "enviar correu d’auto-resposta"
@@ -939,7 +939,7 @@
         "Utilitza un codi de recuperació"
       ],
       "Use your current email instead": [
-        "Utilitzeu el vostre correu electrònic actual"
+        "Utilitzeu el vostre correu electrònic actual."
       ],
       "Use “${ label }” setting": [
         "Utilitza la configuració \"${ label }\""
@@ -6661,7 +6661,7 @@
         "La verificació obrirà una pestanya nova. Desactiveu els bloquejadors de finestres emergents. No se us farà cap càrrec. Qualsevol quantitat utilitzada per verificar la targeta serà retornada immediatament."
       ],
       "Verify your identity with a time-based one-time password from an authenticator app": [
-        "Verifiqueu la vostra identitat amb una contrasenya d'ús únic i de durada limitada que es genera per una aplicació d'autenticació."
+        "Verifiqueu la vostra identitat amb una contrasenya d'un sol ús i de durada limitada generada per una aplicació d'autenticació."
       ],
       "Verifying your payment": [
         "S'està verificant el pagament"
@@ -8639,6 +8639,9 @@
     "Metadata title": {
       "Create a new ${ appName } account": [
         "Crear un compte de ${ appName }"
+      ],
+      "Try ${ planName } for free with this link": [
+        "Proveu ${ planName } de forma gratuïta amb aquest enllaç."
       ]
     },
     "Modal title": {
@@ -12335,7 +12338,7 @@
         "Seleccionar grup de contactes"
       ],
       "Select the time to send this notification": [
-        "Seleccioneu l'hora per enviar aquesta notificació"
+        "Seleccioneu l'hora per enviar aquesta notificació."
       ],
       "Select the way to send this notification": [
         "Seleccioneu la manera d’enviar aquesta notificació"
@@ -12419,12 +12422,12 @@
         "Èxit"
       ],
       "Successfully created ${ localSuccessfullyCreatedUsers.length } user account": [
-        "S'ha creat ${ localSuccessfullyCreatedUsers.length } compte d'usuari",
-        "S'han creat ${ localSuccessfullyCreatedUsers.length } comptes d'usuari"
+        "S'ha creat ${ localSuccessfullyCreatedUsers.length } compte d'usuari.",
+        "S'han creat ${ localSuccessfullyCreatedUsers.length } comptes d'usuari."
       ],
       "Successfully created ${ successfullyCreatedUsers.length } user account": [
-        "S'ha creat ${ successfullyCreatedUsers.length } compte d'usuari",
-        "S'han creat ${ successfullyCreatedUsers.length } comptes d'usuari"
+        "S'ha creat ${ successfullyCreatedUsers.length } compte d'usuari.",
+        "S'han creat ${ successfullyCreatedUsers.length } comptes d'usuari."
       ],
       "Switch to one-password mode": [
         "Canviar al mode d'una sola contrasenya"
