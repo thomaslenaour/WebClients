@@ -101,6 +101,7 @@ export enum FeatureCode {
     OrgSpamBlockList = 'OrgSpamBlockList',
     ProtonSentinel = 'ProtonSentinel',
     ProtonSentinelUpsell = 'ProtonSentinelUpsell',
+    ProtonSentinelAuthLogUpsell = 'ProtonSentinelAuthLogUpsell',
     OrgTwoFactor = 'OrgTwoFactor',
     UnreadFavicon = 'UnreadFavicon',
     PassSignup = 'PassSignup',
