@@ -66,7 +66,7 @@ const PrivateApp = ({ onLogout, locales }: Props) => {
             }}
             onUserSettings={({ HideSidePanel }) => setShowDrawerSidebar(HideSidePanel === DRAWER_VISIBILITY.SHOW)}
             preloadModels={PRELOAD_MODELS}
-            preloadFeatures={[FeatureCode.CalendarFetchMetadataOnly, FeatureCode.HolidaysCalendars]}
+            preloadFeatures={[FeatureCode.CalendarFetchMetadataOnly, FeatureCode.AutoAddHolidaysCalendars]}
             eventModels={EVENT_MODELS}
             loader={<LoaderPage />}
             hasPrivateMemberKeyGeneration
