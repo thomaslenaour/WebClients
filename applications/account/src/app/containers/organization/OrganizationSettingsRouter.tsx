@@ -82,12 +82,10 @@ const OrganizationSettingsRouter = ({
             )}
             {getIsSectionAvailable(users) && (
                 <Route path={getSectionPath(path, users)}>
-                    <SubscriptionModalProvider app={app}>
-                        <PrivateMainSettingsArea config={users}>
-                            <UsersAndAddressesSection app={app} />
-                            <MultiUserCreationSection app={app} />
-                        </PrivateMainSettingsArea>
-                    </SubscriptionModalProvider>
+                    <PrivateMainSettingsArea config={users}>
+                        <UsersAndAddressesSection app={app} />
+                        <MultiUserCreationSection app={app} />
+                    </PrivateMainSettingsArea>
                 </Route>
             )}
             {getIsSectionAvailable(filter) && isOrgSpamBlockListEnabled && (
