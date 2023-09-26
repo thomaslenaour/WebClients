@@ -601,6 +601,35 @@
       ],
       "Yes, I'll attend": [
         "Kyllä, osallistun"
+      ],
+      "At most ${ maxContacts } contact is allowed per contact group": [
+        "Yhdessä yhteystietoryhmässä sallitaan enintään ${ maxContacts } yhteystieto",
+        "Yhdessä yhteystietoryhmässä sallitaan enintään ${ maxContacts } yhteystietoa"
+      ],
+      "Clear": [
+        "Tyhjennä"
+      ],
+      "Clear browser data": [
+        "Tyhjennä selaimen välimuisti"
+      ],
+      "Clear search": [
+        "Tyhjennä haku"
+      ],
+      "Pause indexing": [
+        "Pysäytä indeksointi"
+      ],
+      "Previous": [
+        "Edellinen"
+      ],
+      "Resume indexing": [
+        "Jatka indeksointia"
+      ],
+      "Search": [
+        "Hae"
+      ],
+      "You can't send vCard files of more than ${ maxAttachments } contacts": [
+        "Voit lähettää kerrallaan enintään ${ maxAttachments } yhteystiedon vCard-tiedostot",
+        "Voit lähettää kerrallaan enintään ${ maxAttachments } yhteystiedon vCard-tiedostot"
       ]
     },
     "Action subline": {
@@ -884,7 +913,7 @@
         "Hallitse jäseniä"
       ],
       "Unable to create more calendar links": [
-        "Enempää kalenterilinkkejä ei voida luoda"
+        "Kalenterikytköksiä ei voida luoda enempää"
       ],
       "Unable to share this calendar with more ${ BRAND_NAME } users": [
         "Kalenteria ei voida jakaa nykyistä useammalle ${ BRAND_NAME }-käyttäjälle"
@@ -941,10 +970,10 @@
         "Kalenteri on liian suuri"
       ],
       "Calendar link is not accessible": [
-        "Kalenterilinkkiä ei tavoiteta"
+        "Kalenterikytköstä ei tavoiteta"
       ],
       "Calendar link is temporarily inaccessible": [
-        "Kalenterilinkki on tilapäisesti tavoittamattomissa"
+        "Kalenterikytkös on tilapäisesti tavoittamattomissa"
       ],
       "Failed to sync calendar": [
         "Kalenterin synkronointi epäonnistui"
@@ -958,10 +987,10 @@
     },
     "Calendar subscription not synced error; long version": {
       "Calendar link is not accessible from outside the calendar provider's ecosystem.": [
-        "Kalenterilinkki ei toimi kalenterin toimittajan käyttöympäristön ulkopuolelta."
+        "Kytketty kalenteri ei ole käytettävissä sen toimittajan käyttöympäristön ulkopuolelta."
       ],
       "Calendar link is temporarily inaccessible. Please verify that the link from the calendar provider is still valid.": [
-        "Kalenterilinkki on tilapäisesti tavoittamattomissa. Varmista, että kalenterin toimittajan linkki on edelleen voimassa."
+        "Kalenterikytkös on tilapäisesti tavoittamattomissa. Varmista, että sen toimittajan linkki on edelleen voimassa."
       ],
       "More than 12 hours passed since last update — ${ CALENDAR_APP_NAME } will try to update the calendar in a few hours.": [
         "Edellisestä päivityksestä on kulunut yli 12 tuntia — ${ CALENDAR_APP_NAME } pyrkii päivittämään kalenterin muutaman tunnin kuluttua."
@@ -2056,6 +2085,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Voit merkitä yhteystiedot, joita et haluat yhdistää tai säilyttää, poistettaviksi. Poisto suoritetaan vasta Yhdistä-painiketta painettaessa."
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Tämä voi kestää muutaman minuutin. Sillä aikaa voit käyttää Calendaria normaalisti."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2518,7 +2550,7 @@
         "Voit lähettää kerrallaan enintään 10 yhteystiedon vCard-tiedostot"
       ],
       "You have reached the contacts limit for your account": [
-        "Tilisi yhteystietojen enimmäismäärä on savutettu"
+        "Tilisi yhteystietojen enimmäismäärä on saavutettu"
       ],
       "You have reached the maximum number of calendars. Some calendars couldn't be imported.": [
         "Olet saavuttanut kalentereiden enimmäismäärän. Joitakin kalentereita ei voitu tuoda."
@@ -2528,6 +2560,22 @@
       ],
       "Your import will not be processed.": [
         "Tuontiasi ei käsitellä."
+      ],
+      "A problem occurred, please try again.": [
+        "Ilmeni ongelma, yritä uudelleen."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Sisältöhakua ei voida käyttää tässä selaimessa. Poistu yksityisestä selaustilasta tai käytä eri selainta."
+      ],
+      "Event not found": [
+        "Tapahtumaa ei löydy"
+      ],
+      "Please activate your search again": [
+        "Aktivoi sisältöhakusi uudelleen"
+      ],
+      "You can't send a mail to more than ${ maxContacts } recipient": [
+        "Voit lähettää viestin enintään ${ maxContacts } vastaanottajalle",
+        "Voit lähettää viestin enintään ${ maxContacts } vastaanottajalle"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3084,6 +3132,9 @@
       ],
       "Name": [
         "Nimi"
+      ],
+      "Search": [
+        "Haku"
       ]
     },
     "Hint": {
@@ -4072,6 +4123,46 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Järjestelmäsi aikavyöhykkeeksi näyttää vaihtuneen ${ timezone }. Haluatko päivittää aikavyöhykeasetuksesi?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } ja ${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "Etkö löydä etsimiäsi tapahtumia? Jotkin tapahtumat piilotetuissa kalentereissa vastaavat hakuasi. Jos haluat nähdä nämä tulokset, ota näkyvyys käyttöön arvolle ${ hiddenWithItemsCalendarList }."
+      ],
+      "Clear data": [
+        "Tyhjennä tiedot"
+      ],
+      "Clear encrypted search data": [
+        "Tyhjennä salatun haun tiedot"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Selaimen tietojen tyhjentäminen tyhjentää tämän laitteen hakuindeksin. Kaikki kalenteritapahtumat on indeksoitava uudelleen hakutoiminnan käyttämiseksi."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Tyhjentää salattuun hakuun liittyvät tiedot selaimen välimuistista."
+      ],
+      "Edit email address": [
+        "Muokkaa sähköpostiosoitetta"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Aikaa jäljellä arviolta ${ estimatedMinutes } minuutti",
+        "Aikaa jäljellä arviolta ${ estimatedMinutes } minuuttia"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Aikaa jäljellä arviolta alle minuutti"
+      ],
+      "Estimating time remaining...": [
+        "Arvioidaan jäljellä olevaa aikaa..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Indeksoidaan tapahtumia: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Indeksointi on pysäytetty"
+      ],
+      "You cannot undo this action.": [
+        "Et voi kumota toimintoa."
       ]
     },
     "Info on errors": {
@@ -4124,6 +4215,10 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "Kutsujen luontia ei sallita jaetussa kalenterissa"
+      ],
+      "At most ${ maxAttendees } participant is allowed per invitation": [
+        "Kutsua kohden sallitaan enintään ${ maxAttendees } osallistuja",
+        "Kutsua kohden sallitaan enintään ${ maxAttendees } osallistujaa"
       ]
     },
     "Input label": {
@@ -5302,6 +5397,12 @@
       ],
       "Start typing an email address": [
         "Aloita sähköpostiosoitteen kirjoitus"
+      ],
+      "Indexing...": [
+        "Indeksoidaan..."
+      ],
+      "Search events": [
+        "Etsi tapahtumia"
       ]
     },
     "Placeholder for contact group name": {
@@ -5696,6 +5797,12 @@
       ],
       "Public holidays are here!": [
         "Yleiset vapaapäivät ovat täällä!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Löydä etsimäsi tapahtuma helposti uudella hakutoiminnollamme."
+      ],
+      "Search for events": [
+        "Etsi tapahtumia"
       ]
     },
     "Storage": {
@@ -5866,6 +5973,9 @@
       ],
       "Verification successful": [
         "Vahvistus onnistui"
+      ],
+      "Calendar search activated": [
+        "Kalenterihaku on aktivoitu"
       ]
     },
     "Success notification when user send feedback": {
@@ -6384,6 +6494,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ilmainen Mail Plus -kokeilusi päättyy ${ textDate }"
+      ],
+      "We're setting up Calendar search": [
+        "Määritämme kalenterihakua"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6505,6 +6618,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Avaa uudessa välilehdessä"
+      ],
+      "Navigate to event": [
+        "Siirry tapahtumaan"
       ]
     },
     "Warning": {
@@ -6820,6 +6936,33 @@
       ],
       "Yearly, ${ untilString }": [
         "Vuosittain, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Ei tuloksia"
+      ],
+      "Results": [
+        "Tulokset"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Koko päivä"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "Koko päivä, kestää ${ plusDaysToEnd } päivän",
+        "Koko päivä, kestää ${ plusDaysToEnd } päivää"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Voit joko päivittää hakutermejäsi tai sulkea haun palataksesi takaisin kalenterinäkymiin"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Tuloksia ei löytynyt"
       ]
     }
   }

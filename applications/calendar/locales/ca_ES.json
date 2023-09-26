@@ -601,6 +601,27 @@
       ],
       "Yes, I'll attend": [
         "Sí, hi assistiré"
+      ],
+      "Clear": [
+        "Neteja"
+      ],
+      "Clear browser data": [
+        "Netejar les dades del navegador"
+      ],
+      "Clear search": [
+        "Esborra la cerca"
+      ],
+      "Pause indexing": [
+        "Pausa l'Indexació"
+      ],
+      "Previous": [
+        "Anterior"
+      ],
+      "Resume indexing": [
+        "Continua l'Indexació"
+      ],
+      "Search": [
+        "Cerca"
       ]
     },
     "Action subline": {
@@ -2525,6 +2546,18 @@
       ],
       "Your import will not be processed.": [
         "La vostra importació no es processarà."
+      ],
+      "A problem occurred, please try again.": [
+        "S'ha produït un problema. Intenteu-ho de nou."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "La cerca de continguts no es pot activar en aquest navegador. Tanqueu el mode de navegació privada o utilitzeu un altre navegador."
+      ],
+      "Event not found": [
+        "No s'ha trobat l'esdeveniment."
+      ],
+      "Please activate your search again": [
+        "Activeu de nou la vostra cerca."
       ]
     },
     "Error accepting calendar invitation": {
@@ -2571,6 +2604,9 @@
       ],
       "vCard versions < 3.0 not supported": [
         "Les versions de vCard < 3.0 no són compatibles"
+      ],
+      "Missing FN property": [
+        "Falta la propietat FN."
       ]
     },
     "Error importing contacts": {
@@ -3078,6 +3114,9 @@
       ],
       "Name": [
         "Nom"
+      ],
+      "Search": [
+        "Cerca"
       ]
     },
     "Hint": {
@@ -4066,6 +4105,37 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Sembla que el fus horari del sistema ha canviat a ${ timezone }. Voleu actualitzar la vostra preferència de fus horari?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } i ${ lastItem }"
+      ],
+      "Clear data": [
+        "Neteja les dades"
+      ],
+      "Clear encrypted search data": [
+        "Esborra les dades de la cerca xifrada"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Si netegeu les dades del navegador, netejareu l'índex de cerques en aquest dispositiu. Tots els esdeveniments del calendari haurien de reindexar-se una altra vegada per utilitzar la funcionalitat de cerca."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Esborra les dades del navegador relacionades amb la cerca xifrada."
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Temps restant estimat: ${ estimatedMinutes } minut",
+        "Temps restant estimat: ${ estimatedMinutes } minuts"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Temps restant estimat: Menys d'un minut"
+      ],
+      "Estimating time remaining...": [
+        "Calculant el temps restant..."
+      ],
+      "Indexing paused": [
+        "Indexació pausada"
+      ],
+      "You cannot undo this action.": [
+        "No pots desfer aquesta acció."
       ]
     },
     "Info on errors": {
@@ -5296,6 +5366,12 @@
       ],
       "Start typing an email address": [
         "Començi a escriure una adreça de correu electrònic"
+      ],
+      "Indexing...": [
+        "Indexació..."
+      ],
+      "Search events": [
+        "Cerca esdeveniments"
       ]
     },
     "Placeholder for contact group name": {
@@ -5690,6 +5766,9 @@
       ],
       "Public holidays are here!": [
         "Els dies festius són aquí!"
+      ],
+      "Search for events": [
+        "Cerca esdeveniments"
       ]
     },
     "Storage": {
@@ -5860,6 +5939,9 @@
       ],
       "Verification successful": [
         "Èxit de verificació"
+      ],
+      "Calendar search activated": [
+        "S'ha activat la cerca dels calendaris."
       ]
     },
     "Success notification when user send feedback": {
@@ -6378,6 +6460,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "La prova gratuïta de Mail Plus finalitza el ${ textDate }"
+      ],
+      "We're setting up Calendar search": [
+        "Estem configurant la cerca als calendaris."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6814,6 +6899,24 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualment, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Sense resultats"
+      ],
+      "Results": [
+        "Resultats"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Tot el dia"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "No s'ha trobat cap resultat."
       ]
     }
   }

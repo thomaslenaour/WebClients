@@ -603,6 +603,27 @@
       ],
       "Yes, I'll attend": [
         "Da, voi participa"
+      ],
+      "Clear": [
+        "Eliminare"
+      ],
+      "Clear browser data": [
+        "Ștergere date din navigator"
+      ],
+      "Clear search": [
+        "Golire căutare"
+      ],
+      "Pause indexing": [
+        "Pauză indexare"
+      ],
+      "Previous": [
+        "Anteriorul"
+      ],
+      "Resume indexing": [
+        "Reluare indexare"
+      ],
+      "Search": [
+        "Căutare"
       ]
     },
     "Action subline": {
@@ -2067,6 +2088,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puteți marca pentru ștergere contactele pe care nu doriți nici să le îmbinați, nici să le păstrați. Ștergerea va fi efectuată doar după apăsarea butonului de îmbinare."
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Aceasta ar putea dura câteva minute. Între timp puteți continua să folosiți calendarul."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2550,6 +2574,18 @@
       ],
       "Your import will not be processed.": [
         "Importarea nu va fi procesată."
+      ],
+      "A problem occurred, please try again.": [
+        "A apărut o problemă. Reîncercați."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Căutarea în conținutul mesajelor nu poate fi activată în acest navigator. Închideți modul de navigare privat sau folosiți alt navigator."
+      ],
+      "Event not found": [
+        "Evenimentul nu a fost găsit."
+      ],
+      "Please activate your search again": [
+        "Reactivați căutarea."
       ]
     },
     "Error accepting calendar invitation": {
@@ -3113,6 +3149,9 @@
       ],
       "Name": [
         "Nume"
+      ],
+      "Search": [
+        "Căutare"
       ]
     },
     "Hint": {
@@ -4133,6 +4172,47 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Fusul orar al sistemului pare să se fi schimbat la ${ timezone }. Actualizați fusul orar preferat?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } și ${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "Nu găsiți evenimentele căutate? Unele evenimente din calendarele ascunse se potrivesc cu textul căutat. Pentru a vedea aceste rezultate, activați vizibilitatea pentru ${ hiddenWithItemsCalendarList }."
+      ],
+      "Clear data": [
+        "Ștergere date"
+      ],
+      "Clear encrypted search data": [
+        "Ștergere date de căutare criptate."
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Ștergerea datelor din navigator va șterge indexul de căutare de pe acest dispozitiv. Toate evenimentele din calendar vor trebui reindexate pentru a folosi funcția de căutare."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Se șterg datele din navigator legate de căutarea criptată."
+      ],
+      "Edit email address": [
+        "Editare adresă de e-mail"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Timp estimat rămas: ${ estimatedMinutes } minut",
+        "Timp estimat rămas: ${ estimatedMinutes } minute",
+        "Timp estimat rămas: ${ estimatedMinutes } de minute"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Timp estimat rămas: mai puțin de un minut"
+      ],
+      "Estimating time remaining...": [
+        "Se estimează timpul rămas..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Se indexează evenimentele: ${ current } / ${ total }"
+      ],
+      "Indexing paused": [
+        "Indexare întreruptă."
+      ],
+      "You cannot undo this action.": [
+        "Nu puteți anula această acțiune."
       ]
     },
     "Info on errors": {
@@ -5398,6 +5478,12 @@
       ],
       "Start typing an email address": [
         "Introduceți o adresă de e-mail"
+      ],
+      "Indexing...": [
+        "Se indexează..."
+      ],
+      "Search events": [
+        "Căutare evenimente"
       ]
     },
     "Placeholder for contact group name": {
@@ -5802,6 +5888,12 @@
       ],
       "Public holidays are here!": [
         "Sărbătorile publice sunt aici!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Căutați ușor evenimentul dorit cu noua funcție de căutare."
+      ],
+      "Search for events": [
+        "Căutare evenimente"
       ]
     },
     "Storage": {
@@ -5975,6 +6067,9 @@
       ],
       "Verification successful": [
         "Verificare reușită"
+      ],
+      "Calendar search activated": [
+        "Căutare în calendar activată"
       ]
     },
     "Success notification when user send feedback": {
@@ -6504,6 +6599,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Perioada de încercare pentru Mail Plus se încheie la ${ textDate } "
+      ],
+      "We're setting up Calendar search": [
+        "Se setează căutarea calendarului"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6627,6 +6725,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Deschidere in filă nouă"
+      ],
+      "Navigate to event": [
+        "Deplasare la eveniment."
       ]
     },
     "Warning": {
@@ -6974,6 +7075,34 @@
       ],
       "Yearly, ${ untilString }": [
         "Anual, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Nu există rezultate"
+      ],
+      "Results": [
+        "Rezultate"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Toată ziua"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "Toată ziua, durează ${ plusDaysToEnd } zi",
+        "Toată ziua, durează ${ plusDaysToEnd } zile",
+        "Toată ziua, durează ${ plusDaysToEnd } de zile"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Puteți modifica textul căutat sau să închideți căutarea și să reveniți la afișarea calendarului."
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Nu s-au găsit rezultate."
       ]
     }
   }

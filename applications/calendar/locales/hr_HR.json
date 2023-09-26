@@ -488,6 +488,15 @@
       ],
       "Yes, I'll attend": [
         "Da, prisustvovati ću"
+      ],
+      "Clear": [
+        "Očisti"
+      ],
+      "Previous": [
+        "Prethodno"
+      ],
+      "Search": [
+        "Pretraga"
       ]
     },
     "Actions message": {
@@ -1989,6 +1998,9 @@
       ],
       "Name": [
         "Naziv"
+      ],
+      "Search": [
+        "Pretraga"
       ]
     },
     "Hint": {
@@ -2600,6 +2612,23 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Vremenska zona vašeg sustava promijenjena je u ${ timezone }. Želite li ažurirati svoje postavke vremenske zone?"
+      ],
+      "Clear data": [
+        "Izbriši podatke"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Procijenjeno preostalo vrijeme: ${ estimatedMinutes } minuta",
+        "Procijenjeno preostalo vrijeme: ${ estimatedMinutes } minute",
+        "Procijenjeno preostalo vrijeme: ${ estimatedMinutes } minuta"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Procijenjeno preostalo vrijeme: manje od minute"
+      ],
+      "Estimating time remaining...": [
+        "Procjena preostalog vremena..."
+      ],
+      "You cannot undo this action.": [
+        "Ne možete poništiti ovu radnju."
       ]
     },
     "Info on errors": {

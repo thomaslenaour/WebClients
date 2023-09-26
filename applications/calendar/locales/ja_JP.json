@@ -599,6 +599,27 @@
       ],
       "Yes, I'll attend": [
         "はい、参加します"
+      ],
+      "Clear": [
+        "消去"
+      ],
+      "Clear browser data": [
+        "ブラウザーデータをクリア"
+      ],
+      "Clear search": [
+        "検索をクリア"
+      ],
+      "Pause indexing": [
+        "インデックス作成を一時停止"
+      ],
+      "Previous": [
+        "前へ"
+      ],
+      "Resume indexing": [
+        "インデックス作成"
+      ],
+      "Search": [
+        "検索"
       ]
     },
     "Action subline": {
@@ -2045,6 +2066,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "結合または保持する必要のない連絡先を削除するためにマークができます。 削除はマージボタンがクリックされた後にのみ行われます"
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "これには数分かかります。その間は、通常通りカレンダーをお使いいただけます。"
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2506,6 +2530,18 @@
       ],
       "Your import will not be processed.": [
         "インポートできませんでした。"
+      ],
+      "A problem occurred, please try again.": [
+        "問題が発生しました。もう一度お試しください。"
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "このブラウザでは、内容の検索を有効にできません。プライベートブラウジングモードを閉じるか別のブラウザーを使用してください。"
+      ],
+      "Event not found": [
+        "イベントが見つかりません"
+      ],
+      "Please activate your search again": [
+        "検索を再度有効にしてください"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3055,6 +3091,9 @@
       ],
       "Name": [
         "名前"
+      ],
+      "Search": [
+        "検索"
       ]
     },
     "Hint": {
@@ -4011,6 +4050,45 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "システムのタイムゾーンが${ timezone }に変更されたようです。タイムゾーンの設定を更新しますか？"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems }と${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "お探しのイベントが見つかりませんか？非表示のカレンダーの中には、あなたのクエリと一致するイベントがあります。これらの結果を見るには、${ hiddenWithItemsCalendarList }の可視性をオンにしてください。"
+      ],
+      "Clear data": [
+        "データをクリア"
+      ],
+      "Clear encrypted search data": [
+        "暗号化検索のデータを削除"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "ブラウザーからデータを削除すると、検索インデックスも削除されます。検索機能を再度利用するには、またインデックスが必要になります。"
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "暗号化検索のデータをブラウザから削除します。"
+      ],
+      "Edit email address": [
+        "メールアドレスを編集"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minutes": [
+        "推定残り時間: ${ estimatedMinutes } 分"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "推定残り時間: まもなく完了します"
+      ],
+      "Estimating time remaining...": [
+        "残り時間..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "イベントのインデックスを作成します： ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "インデックス作成を一時停止中"
+      ],
+      "You cannot undo this action.": [
+        "この操作は取り消すことができません。"
       ]
     },
     "Info on errors": {
@@ -4062,6 +4140,9 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "共有カレンダーで招待を作成することはできません"
+      ],
+      "At most ${ maxAttendees } participants are allowed per invitation": [
+        "招待状ごとに最大 ${ maxAttendees } 人の参加者が許可されます"
       ]
     },
     "Input label": {
@@ -5206,6 +5287,12 @@
       ],
       "Start typing an email address": [
         "電子メールアドレスを入力"
+      ],
+      "Indexing...": [
+        "インデックス中…"
+      ],
+      "Search events": [
+        "イベントを検索"
       ]
     },
     "Placeholder for contact group name": {
@@ -5590,6 +5677,12 @@
       ],
       "Public holidays are here!": [
         "祝日はこちらです！"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "新しい検索機能でお探しの予定を簡単に見つけることができま"
+      ],
+      "Search for events": [
+        "予定を検索"
       ]
     },
     "Storage": {
@@ -5754,6 +5847,9 @@
       ],
       "Verification successful": [
         "検証に成功しました"
+      ],
+      "Calendar search activated": [
+        "カレンダーの検索が有効になりました"
       ]
     },
     "Success notification when user send feedback": {
@@ -6261,6 +6357,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Mial Plusのトライアル期間が ${ textDate } に終了します。"
+      ],
+      "We're setting up Calendar search": [
+        "カレンダー検索をセットアップしています"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6380,6 +6479,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "新しいタブで開く"
+      ],
+      "Navigate to event": [
+        "要素に移動する"
       ]
     },
     "Warning": {
@@ -6663,6 +6765,32 @@
       ],
       "Yearly, ${ untilString }": [
         "毎年、${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "結果なし"
+      ],
+      "Results": [
+        "結果"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "終日"
+      ],
+      "All day, lasts ${ plusDaysToEnd } days": [
+        "終日、${ plusDaysToEnd }日間続く。"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "検索クエリを更新するか、検索を閉じてカレンダービューに戻ることができます。"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "該当する項目がありません"
       ]
     }
   }

@@ -574,6 +574,21 @@
       ],
       "Yes, I'll attend": [
         "हां, हम भाग लेंगे"
+      ],
+      "Clear": [
+        "साफ करें"
+      ],
+      "Clear browser data": [
+        "ब्राउज़र डेटा साफ़ करें"
+      ],
+      "Clear search": [
+        "खोज इतिहास मिटाएं"
+      ],
+      "Previous": [
+        "पिछला"
+      ],
+      "Search": [
+        "खोजें"
       ]
     },
     "Action subline": {
@@ -2483,6 +2498,15 @@
       ],
       "Your import will not be processed.": [
         "आपका आयात संसाधित नहीं किया जाएगा।"
+      ],
+      "A problem occurred, please try again.": [
+        "कोई गड़बड़ हुई, कृपया फिर से कोशिश करें।"
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "इस ब्राउज़र में सामग्री खोज सक्षम नहीं की जा सकती है। कृपया निजी ब्राउज़िंग मोड छोड़ें या किसी अन्य ब्राउज़र का उपयोग करें।"
+      ],
+      "Please activate your search again": [
+        "कृपया अपना खोज वापिस सक्षम करें"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2944,6 +2968,9 @@
       ],
       "Name": [
         "नाम"
+      ],
+      "Search": [
+        "खोजें"
       ]
     },
     "Hint": {
@@ -3887,6 +3914,28 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "आपका सिस्टम समय क्षेत्र ${ timezone } में बदल गया है। अपने समय क्षेत्र पसंद को अपडेट करें?"
+      ],
+      "Clear data": [
+        "डाटा मिटाएं"
+      ],
+      "Clear encrypted search data": [
+        "एन्क्रिप्ट किया खोज डाटा साफ करें"
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "एन्क्रिप्टेड खोज से संबंधित ब्राउज़र डेटा साफ़ करता है।"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "अनुमानित समय शेष: ${ estimatedMinutes } मिनट",
+        "अनुमानित समय शेष: ${ estimatedMinutes } मिनट"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "अनुमानित समय शेष: एक मिनट से भी कम"
+      ],
+      "Estimating time remaining...": [
+        "शेष समय का अनुमान लगाया जा रहा है..."
+      ],
+      "You cannot undo this action.": [
+        "आप इस क्रिया को पूर्ववत नहीं कर सकते।"
       ]
     },
     "Info on errors": {

@@ -605,6 +605,39 @@
       ],
       "Yes, I'll attend": [
         "Tak, będę uczestniczyć"
+      ],
+      "At most ${ maxContacts } contact is allowed per contact group": [
+        "Grupa kontaktów może zawierać maksymalnie ${ maxContacts } kontakt",
+        "Grupa kontaktów może zawierać maksymalnie ${ maxContacts } kontakty",
+        "Grupa kontaktów może zawierać maksymalnie ${ maxContacts } kontaktów",
+        "Grupa kontaktów może zawierać maksymalnie ${ maxContacts } kontaktów"
+      ],
+      "Clear": [
+        "Wyczyść"
+      ],
+      "Clear browser data": [
+        "Wyczyść pamięć podręczną przeglądarki"
+      ],
+      "Clear search": [
+        "Wyczyść wyszukiwanie"
+      ],
+      "Pause indexing": [
+        "Wstrzymaj indeksowanie"
+      ],
+      "Previous": [
+        "Wstecz"
+      ],
+      "Resume indexing": [
+        "Wznów indeksowanie"
+      ],
+      "Search": [
+        "Szukaj"
+      ],
+      "You can't send vCard files of more than ${ maxAttachments } contacts": [
+        "Nie możesz wysyłać plików vCard zawierających więcej niż ${ maxAttachments } kontakt",
+        "Nie możesz wysyłać plików vCard zawierających więcej niż ${ maxAttachments } kontakty",
+        "Nie możesz wysyłać plików vCard zawierających więcej niż ${ maxAttachments } kontaktów",
+        "Nie możesz wysyłać plików vCard zawierających więcej niż ${ maxAttachments } kontaktów"
       ]
     },
     "Action subline": {
@@ -2078,6 +2111,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Możesz oznaczyć do usunięcia te kontakty, których nie chcesz scalić ani zachować. Usunięcie nastąpi dopiero po kliknięciu przycisku Scal"
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Proces może potrwać kilka minut. Możesz nadal korzystać z kalendarza."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2572,6 +2608,24 @@
       ],
       "Your import will not be processed.": [
         "Twój import nie zostanie przetworzony."
+      ],
+      "A problem occurred, please try again.": [
+        "Wystąpił problem. Spróbuj ponownie."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Nie można włączyć wyszukiwania zawartości w tej przeglądarce. Wyjdź z trybu prywatnego przeglądarki lub spróbuj użyć innej."
+      ],
+      "Event not found": [
+        "Wydarzenie nie zostało znalezione"
+      ],
+      "Please activate your search again": [
+        "Włącz ponownie wyszukiwanie"
+      ],
+      "You can't send a mail to more than ${ maxContacts } recipient": [
+        "Nie możesz wysłać wiadomości do ponad ${ maxContacts } odbiorcy",
+        "Nie możesz wysłać wiadomości do ponad ${ maxContacts } odbiorców",
+        "Nie możesz wysłać wiadomości do ponad ${ maxContacts } odbiorców",
+        "Nie możesz wysłać wiadomości do ponad ${ maxContacts } odbiorców"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3142,6 +3196,9 @@
       ],
       "Name": [
         "Nazwa"
+      ],
+      "Search": [
+        "Szukaj"
       ]
     },
     "Hint": {
@@ -4194,6 +4251,48 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Twoja strefa czasowa w systemie zmieniła się na ${ timezone }. Czy chcesz zaktualizować ustawienia strefy czasowej?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } i ${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "Nie możesz znaleźć wydarzeń? Niektóre wydarzenia w ukrytych kalendarzach pasują do wyszukiwania. Aby zobaczyć te wyniki, włącz widoczność kalendarzy ${ hiddenWithItemsCalendarList }."
+      ],
+      "Clear data": [
+        "Usuń dane"
+      ],
+      "Clear encrypted search data": [
+        "Wyczyść zaszyfrowane dane wyszukiwania"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Wyczyszczenie pamięci podręcznej przeglądarki spowoduje wyczyszczenie indeksu wyszukiwania na tym urządzeniu. Aby włączyć tę opcję, musisz ponownie zaindeksować wszystkie kalendarze."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Wyczyszczenie pamięci podręcznej przeglądarki wpływa na funkcję wyszukiwania zawartości."
+      ],
+      "Edit email address": [
+        "Edytuj adres e-mail"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Szacowany pozostały czas: ${ estimatedMinutes } minuta",
+        "Szacowany pozostały czas: ${ estimatedMinutes } minuty",
+        "Szacowany pozostały czas: ${ estimatedMinutes } minut",
+        "Szacowany pozostały czas: ${ estimatedMinutes } minuty"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Szacowany pozostały czas: mniej niż minuta"
+      ],
+      "Estimating time remaining...": [
+        "Szacowanie pozostałego czasu..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Indeksowanie wydarzeń: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Indeksowanie zostało wstrzymane"
+      ],
+      "You cannot undo this action.": [
+        "Tej akcji nie można cofnąć."
       ]
     },
     "Info on errors": {
@@ -4248,6 +4347,12 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "Tworzenie zaproszeń w udostępnionym kalendarzu nie jest dozwolone"
+      ],
+      "At most ${ maxAttendees } participant is allowed per invitation": [
+        "Zaproszenie może zawierać maksymalnie ${ maxAttendees } uczestnika",
+        "Zaproszenie może zawierać maksymalnie ${ maxAttendees } uczestników",
+        "Zaproszenie może zawierać maksymalnie ${ maxAttendees } uczestników",
+        "Zaproszenie może zawierać maksymalnie ${ maxAttendees } uczestników"
       ]
     },
     "Input label": {
@@ -5494,6 +5599,12 @@
       ],
       "Start typing an email address": [
         "Wpisz adres e-mail"
+      ],
+      "Indexing...": [
+        "Indeksowanie..."
+      ],
+      "Search events": [
+        "Szukaj wydarzeń"
       ]
     },
     "Placeholder for contact group name": {
@@ -5911,6 +6022,12 @@
       ],
       "Public holidays are here!": [
         "Święta są tutaj"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Znajdź łatwo wydarzenie za pomocą naszej nowej wyszukiwarki."
+      ],
+      "Search for events": [
+        "Szukaj wydarzeń"
       ]
     },
     "Storage": {
@@ -6087,6 +6204,9 @@
       ],
       "Verification successful": [
         "Weryfikacja powiodła się"
+      ],
+      "Calendar search activated": [
+        "Wyszukiwanie kalendarzy zostało włączone"
       ]
     },
     "Success notification when user send feedback": {
@@ -6627,6 +6747,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Darmowa wersja próbna planu Mail Plus zakończy się ${ textDate }"
+      ],
+      "We're setting up Calendar search": [
+        "Konfiguracja wyszukiwania kalendarzy"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6752,6 +6875,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Otwórz w nowej karcie"
+      ],
+      "Navigate to event": [
+        "Przejdź do wydarzenia"
       ]
     },
     "Warning": {
@@ -7131,6 +7257,35 @@
       ],
       "Yearly, ${ untilString }": [
         "Co rok, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Nie znaleziono żadnych wyników"
+      ],
+      "Results": [
+        "Wyniki"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Cały dzień"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "Cały dzień, trwa ${ plusDaysToEnd } dzień",
+        "Cały dzień, trwa ${ plusDaysToEnd } dni",
+        "Cały dzień, trwa ${ plusDaysToEnd } dni",
+        "Cały dzień, trwa ${ plusDaysToEnd } dnia"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Możesz zaktualizować zapytanie lub zamknąć wyszukiwanie i wrócić do kalendarza"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Nie znaleziono żadnych wyników"
       ]
     }
   }

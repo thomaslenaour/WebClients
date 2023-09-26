@@ -590,6 +590,36 @@
       ],
       "Yes, I'll attend": [
         "Да, я участвую"
+      ],
+      "Clear": [
+        "Очистить"
+      ],
+      "Clear browser data": [
+        "Очистить данные браузера"
+      ],
+      "Clear search": [
+        "Очистить поиск"
+      ],
+      "Help": [
+        "Помощь"
+      ],
+      "Previous": [
+        "Предыдущий"
+      ],
+      "Search": [
+        "Поиск"
+      ],
+      "Settings": [
+        "Настройки"
+      ],
+      "Show side panel": [
+        "Показать боковую панель"
+      ],
+      "Switch or add account": [
+        "Переключить или добавить аккаунт"
+      ],
+      "Toggle settings": [
+        "Включить/выключить настройки"
       ]
     },
     "Action subline": {
@@ -2548,6 +2578,18 @@
       ],
       "Your import will not be processed.": [
         "Импорт не будет обработан."
+      ],
+      "A problem occurred, please try again.": [
+        "Что-то пошло не так. Попробуйте ещё раз."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Поиск содержимого невозможен в этом браузере. Пожалуйста, выйдите из режима приватного просмотра или используйте другой браузер."
+      ],
+      "Please activate your search again": [
+        "Активируйте поиск снова"
+      ],
+      "You have reached the contacts limit for your account": [
+        "Вы достигли лимита контактов для вашего аккаунта."
       ]
     },
     "Error accepting calendar invitation": {
@@ -3115,6 +3157,9 @@
       ],
       "Name": [
         "Название"
+      ],
+      "Search": [
+        "Поиск"
       ]
     },
     "Hint": {
@@ -4149,6 +4194,51 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Похоже, что ваш часовой пояс изменился на ${ timezone }. Вы хотите обновить настройки часового пояса?"
+      ],
+      "${ contactsLength } contact": [
+        "${ contactsLength } контакт",
+        "${ contactsLength } контакта",
+        "${ contactsLength } контактов",
+        "${ contactsLength } контакта"
+      ],
+      "${ selectedContactsLength }/${ contactsLength } contact selected": [
+        "Выбран ${ selectedContactsLength } контакт из ${ contactsLength }",
+        "Выбрано ${ selectedContactsLength } контакта из ${ contactsLength }",
+        "Выбрано ${ selectedContactsLength } контактов из ${ contactsLength }",
+        "Выбрано ${ selectedContactsLength } контакта из ${ contactsLength }"
+      ],
+      "Are you sure you want to discard your import?": [
+        "Вы уверены, что хотите сбросить импорт?"
+      ],
+      "Clear data": [
+        "Очистить данные"
+      ],
+      "Clear encrypted search data": [
+        "Очистить зашифрованные данные поиска"
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Очищает данные браузера, связанные с зашифрованным поиском."
+      ],
+      "Edit email address": [
+        "Изменить адрес эл. почты"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Оставшееся время: ${ estimatedMinutes } минута",
+        "Оставшееся время: ${ estimatedMinutes } минуты",
+        "Оставшееся время: ${ estimatedMinutes } минут",
+        "Оставшееся время: ${ estimatedMinutes } минут"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Оставшееся время: меньше минуты"
+      ],
+      "Estimating time remaining...": [
+        "Оценка оставшегося времени..."
+      ],
+      "Try new ${ BRAND_NAME } features, updates and products before they are released to the public. This will reload the application": [
+        "Испытайте новые функции, обновления и продукты ${ BRAND_NAME } до их выпуска широкой публике. Приложение будет перезапущено."
+      ],
+      "You cannot undo this action.": [
+        "Это действие нельзя отменить."
       ]
     },
     "Info on errors": {
@@ -4576,6 +4666,15 @@
       ],
       "Your password (admin)": [
         "Ваш пароль (admin)"
+      ],
+      "Beta Access": [
+        "Бета доступ"
+      ],
+      "Sync with system": [
+        "Синхронизировать с системой"
+      ],
+      "Theme": [
+        "Тема"
       ]
     },
     "Label for contact group color": {
@@ -6555,6 +6654,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваша бесплатная пробная версия Mail Plus заканчивается ${ textDate }"
+      ],
+      "All settings": [
+        "Все настройки"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6639,6 +6741,12 @@
       ],
       "You do not have any contacts to export": [
         "У вас нет контактов для экспорта"
+      ],
+      "Hide side panel": [
+        "Скрыть боковую панель"
+      ],
+      "Show side panel": [
+        "Показать боковую панель"
       ]
     },
     "Tooltip; share calendar modal ": {

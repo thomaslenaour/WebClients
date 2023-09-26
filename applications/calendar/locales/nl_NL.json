@@ -601,6 +601,27 @@
       ],
       "Yes, I'll attend": [
         "Ja, ik zal deelnemen"
+      ],
+      "Clear": [
+        "Wissen"
+      ],
+      "Clear browser data": [
+        "Wis browsergegevens"
+      ],
+      "Clear search": [
+        "Zoekveld leegmaken"
+      ],
+      "Pause indexing": [
+        "Pauzeer indexeren"
+      ],
+      "Previous": [
+        "Vorige"
+      ],
+      "Resume indexing": [
+        "Hervat indexeren"
+      ],
+      "Search": [
+        "Zoeken"
       ]
     },
     "Action subline": {
@@ -2056,6 +2077,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "U kunt contactpersonen markeren die u niet wilt samenvoegen of behouden. Ze worden pas verwijderd na het klikken op 'samenvoegen'"
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Dit kan enkele minuten duren. U kan ondertussen uw Proton Calender gebruik zoals gewoonlijk."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2528,6 +2552,18 @@
       ],
       "Your import will not be processed.": [
         "Uw import zal niet worden verwerkt."
+      ],
+      "A problem occurred, please try again.": [
+        "Er is een probleem opgetreden, probeer het opnieuw."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Zoeken op inhoud kan niet worden ingeschakeld in deze browser. Gelieve de private browsing modus te verlaten of een andere browser te gebruiken."
+      ],
+      "Event not found": [
+        "Afspraak niet gevonden"
+      ],
+      "Please activate your search again": [
+        "Activeer het zoeken opnieuw"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3084,6 +3120,9 @@
       ],
       "Name": [
         "Naam"
+      ],
+      "Search": [
+        "Zoeken"
       ]
     },
     "Hint": {
@@ -4072,6 +4111,40 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Uw systeemtijdzone lijkt te zijn veranderd naar ${ timezone }. Wilt u uw voorkeur voor uw tijdzone bijwerken?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } en ${ lastItem }"
+      ],
+      "Clear data": [
+        "Gegevens wissen"
+      ],
+      "Clear encrypted search data": [
+        "Versleutelde zoekgegevens wissen"
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Wist browsergegevens gerelateerd aan het versleuteld zoeken."
+      ],
+      "Edit email address": [
+        "Wijzig e-mailadres"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Geschatte resterende tijd: ${ estimatedMinutes } minuut",
+        "Geschatte resterende tijd: ${ estimatedMinutes } minuten"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Geschatte resterende tijd: minder dan een minuut"
+      ],
+      "Estimating time remaining...": [
+        "Geschatte resterende tijd..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Afspraken indexeren: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Indexeren gepauzeerd"
+      ],
+      "You cannot undo this action.": [
+        "U kunt deze actie niet ongedaan maken."
       ]
     },
     "Info on errors": {
@@ -5302,6 +5375,12 @@
       ],
       "Start typing an email address": [
         "Voer een e-mailadres in"
+      ],
+      "Indexing...": [
+        "Indexeren..."
+      ],
+      "Search events": [
+        "Afspraken zoeken"
       ]
     },
     "Placeholder for contact group name": {
@@ -5696,6 +5775,12 @@
       ],
       "Public holidays are here!": [
         "Wettelijke feestdagen zijn hier!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Vind eenvoudig de afspraken waar u naar zoekt met onze nieuwe zoekfunctie."
+      ],
+      "Search for events": [
+        "Zoek naar afspraken"
       ]
     },
     "Storage": {
@@ -5866,6 +5951,9 @@
       ],
       "Verification successful": [
         "Verificatie gelukt"
+      ],
+      "Calendar search activated": [
+        "Agenda's doorzoeken geactiveerd"
       ]
     },
     "Success notification when user send feedback": {
@@ -6505,6 +6593,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Openen in een nieuw tabblad"
+      ],
+      "Navigate to event": [
+        "Navigeren naar afspraak"
       ]
     },
     "Warning": {
@@ -6820,6 +6911,28 @@
       ],
       "Yearly, ${ untilString }": [
         "Jaarlijks ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Geen resultaat"
+      ],
+      "Results": [
+        "Resultaten"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Hele dag"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "Hele dag, duurt ${ plusDaysToEnd } dag",
+        "Hele dag, duurt ${ plusDaysToEnd } dagen"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Geen resultaten gevonden"
       ]
     }
   }

@@ -605,6 +605,39 @@
       ],
       "Yes, I'll attend": [
         "Так, я далучуся"
+      ],
+      "At most ${ maxContacts } contact is allowed per contact group": [
+        "На адну групу кантактаў дапускаецца не больш за ${ maxContacts } кантакт",
+        "На адну групу кантактаў дапускаецца не больш за ${ maxContacts } кантакта",
+        "На адну групу кантактаў дапускаецца не больш за ${ maxContacts } кантактаў",
+        "На адну групу кантактаў дапускаецца не больш за ${ maxContacts } кантактаў"
+      ],
+      "Clear": [
+        "Ачысціць"
+      ],
+      "Clear browser data": [
+        "Ачысціць даныя браўзера"
+      ],
+      "Clear search": [
+        "Ачысціць пошук"
+      ],
+      "Pause indexing": [
+        "Прыпыніць індэксаванне"
+      ],
+      "Previous": [
+        "Папярэдні"
+      ],
+      "Resume indexing": [
+        "Працягнуць індэксаванне"
+      ],
+      "Search": [
+        "Пошук"
+      ],
+      "You can't send vCard files of more than ${ maxAttachments } contacts": [
+        "Вы не можаце адправіць файлы vCard больш чым ${ maxAttachments } кантакту",
+        "Вы не можаце адправіць файлы vCard больш чым ${ maxAttachments } кантактам",
+        "Вы не можаце адправіць файлы vCard больш чым ${ maxAttachments } кантактам",
+        "Вы не можаце адправіць файлы vCard больш чым ${ maxAttachments } кантактам"
       ]
     },
     "Action subline": {
@@ -2078,6 +2111,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Вы можаце пазначыць тыя кантакты, якія вы не хочаце аб'яднаць і пакідаць. Выдаленне адбываецца толькі пасля націску кнопкі аб'яднання"
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Гэта можа заняць некалькі хвілін. Тым часам вы можаце працягнуць карыстацца Proton Calendar."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2572,6 +2608,24 @@
       ],
       "Your import will not be processed.": [
         "Ваша імпартаванне не будзе апрацавана."
+      ],
+      "A problem occurred, please try again.": [
+        "Узнікла праблема. Паспрабуйце яшчэ раз."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Немагчыма ўключыць пошук змесціва ў гэтым браўзеры. Выйдзіце з рэжыму прыватнага прагляду або скарыстайцеся іншым браўзерам."
+      ],
+      "Event not found": [
+        "Падзея не знойдзена"
+      ],
+      "Please activate your search again": [
+        "Актывуйце пошук яшчэ раз"
+      ],
+      "You can't send a mail to more than ${ maxContacts } recipient": [
+        "Вы не можаце адправіць ліст больш чым ${ maxContacts } атрымальніку",
+        "Вы не можаце адправіць ліст больш чым ${ maxContacts } атрымальнікам",
+        "Вы не можаце адправіць ліст больш чым ${ maxContacts } атрымальнікам",
+        "Вы не можаце адправіць ліст больш чым ${ maxContacts } атрымальнікам"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3142,6 +3196,9 @@
       ],
       "Name": [
         "Назва"
+      ],
+      "Search": [
+        "Пошук"
       ]
     },
     "Hint": {
@@ -4194,6 +4251,48 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Падобна, што ваш часавы пояс змяніўся на ${ timezone }. Вы сапраўды хочаце абнавіць налады вашага часавога пояса?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } і ${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "Не можаце знайсці падзеі, якія шукаеце? Некаторыя падзеі ў схаваных календарах адпавядаюць вашаму пошуку. Уключыце бачнасць для ${ hiddenWithItemsCalendarList }, каб убачыць гэтыя вынікі."
+      ],
+      "Clear data": [
+        "Ачысціць даныя"
+      ],
+      "Clear encrypted search data": [
+        "Ачысціць пошук зашыфраваных даных"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Ачыстка даных браўзера таксама ачысціць індэкс пошуку на гэтай прыладзе. Вам спатрэбіцца паўторна праіндэксаваць усе падзеі календара, каб зноў ужываць функцыю пошуку."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Ачышчае даныя браўзера, якія звязаны з зашыфраваным пошукам."
+      ],
+      "Edit email address": [
+        "Рэдагаваць адрас электроннай пошты"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Засталося часу: ${ estimatedMinutes } хвіліна",
+        "Засталося часу: ${ estimatedMinutes } хвіліны",
+        "Засталося часу: ${ estimatedMinutes } хвілін",
+        "Засталося часу: ${ estimatedMinutes } хвіліны"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Прыблізна засталося часу: менш за хвіліну"
+      ],
+      "Estimating time remaining...": [
+        "Прыблізна засталося часу..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Індэксаванне падзей: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Індэксаванне прыпынена"
+      ],
+      "You cannot undo this action.": [
+        "Гэта дзеянне немагчыма адрабіць."
       ]
     },
     "Info on errors": {
@@ -4248,6 +4347,12 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "Не дазваляецца стварэнне запрашэнняў у абагуленым календары"
+      ],
+      "At most ${ maxAttendees } participant is allowed per invitation": [
+        "На адно запрашэнне дапускаецца не больш за ${ maxAttendees } удзельніка",
+        "На адно запрашэнне дапускаецца не больш за ${ maxAttendees } удзельніка",
+        "На адно запрашэнне дапускаецца не больш за ${ maxAttendees } удзельнікаў",
+        "На адно запрашэнне дапускаецца не больш за ${ maxAttendees } удзельнікаў"
       ]
     },
     "Input label": {
@@ -5494,6 +5599,12 @@
       ],
       "Start typing an email address": [
         "Пачніце ўводзіць адрас электроннай пошты"
+      ],
+      "Indexing...": [
+        "Індэксаванне..."
+      ],
+      "Search events": [
+        "Пошук падзей"
       ]
     },
     "Placeholder for contact group name": {
@@ -5908,6 +6019,12 @@
       ],
       "Public holidays are here!": [
         "Дзяржаўныя святы знаходзяцца тут!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Лёгка знаходзьце падзею, якую шукаеце з нашай новай функцыяй пошуку."
+      ],
+      "Search for events": [
+        "Пошук падзей"
       ]
     },
     "Storage": {
@@ -6084,6 +6201,9 @@
       ],
       "Verification successful": [
         "Паспяхова праверана"
+      ],
+      "Calendar search activated": [
+        "Пошук у календары актываваны"
       ]
     },
     "Success notification when user send feedback": {
@@ -6624,6 +6744,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Ваш бясплатны выпрабавальны перыяд Mail Plus завершыцца ${ textDate }"
+      ],
+      "We're setting up Calendar search": [
+        "Наладжванне пошуку ў календары"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6749,6 +6872,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Адкрыць у новай укладцы"
+      ],
+      "Navigate to event": [
+        "Перайсці да падзеі"
       ]
     },
     "Warning": {
@@ -7128,6 +7254,35 @@
       ],
       "Yearly, ${ untilString }": [
         "Штогод, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Няма вынікаў"
+      ],
+      "Results": [
+        "Вынікі"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Увесь дзень"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "Увесь дзень на працягу ${ plusDaysToEnd } дня",
+        "Увесь дзень на працягу ${ plusDaysToEnd } дзён",
+        "Увесь дзень на працягу ${ plusDaysToEnd } дзён",
+        "Увесь дзень на працягу ${ plusDaysToEnd } дзён"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Вы можаце або абнавіць ваш пошукавы запыт, або закрыць пошук і вярнуцца да прагляду календара."
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Вынікі не знойдзены"
       ]
     }
   }

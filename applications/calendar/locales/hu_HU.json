@@ -595,6 +595,21 @@
       ],
       "Yes, I'll attend": [
         "Igen, ott leszek"
+      ],
+      "Clear": [
+        "Törlés"
+      ],
+      "Clear browser data": [
+        "Böngészőadatok törlése"
+      ],
+      "Clear search": [
+        "Keresés törlése"
+      ],
+      "Previous": [
+        "Előző"
+      ],
+      "Search": [
+        "Keresés"
       ]
     },
     "Action subline": {
@@ -977,7 +992,7 @@
     },
     "Calendar view selector": {
       "Change time range": [
-        "Időtartomány megváltoztatása"
+        "Intervallum megváltoztatása"
       ],
       "Change time range to": [
         "Időintervallum átállítása:"
@@ -2512,7 +2527,7 @@
         "Egyszerre nem küldhet el több mint 10 vCard névjegyfájlt"
       ],
       "You have reached the contacts limit for your account": [
-        "Ön elérte az előfizetéséhez tartozó maximális kapcsolatok számát"
+        "Elérte a fiókhoz létrehozható névjegyek maximális számát"
       ],
       "You have reached the maximum number of calendars. Some calendars couldn't be imported.": [
         "Elérte a csomagjában maximálisan létrehozható naptárak számát. Néhány naptár importálása nem sikerült."
@@ -2522,6 +2537,15 @@
       ],
       "Your import will not be processed.": [
         "Az importálás nem lesz feldolgozva."
+      ],
+      "A problem occurred, please try again.": [
+        "Hiba történt, próbálja meg újra."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Ebben a böngészőben nem lehetséges az üzenetek tartalmában való keresés. Lépjen ki a privát módból vagy próbáljon másik böngészőt."
+      ],
+      "Please activate your search again": [
+        "Aktiválja újra a keresést"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2567,7 +2591,7 @@
         "Titkosítás sikertelen"
       ],
       "Missing FN property": [
-        "FN tulajdon hiányzik"
+        "FN tulajdonság hiányzik"
       ],
       "vCard versions < 3.0 not supported": [
         "A 3.0-nál régebbi vCard verziók nem támogatottak"
@@ -3078,6 +3102,9 @@
       ],
       "Name": [
         "Név"
+      ],
+      "Search": [
+        "Keresés"
       ]
     },
     "Hint": {
@@ -4052,6 +4079,28 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Úgy tűnik, hogy a rendszer időzónája ${ timezone } -re változott. Szeretne erre az időzónára frissíteni?"
+      ],
+      "Clear data": [
+        "Adatok törlése"
+      ],
+      "Clear encrypted search data": [
+        "Titkosított keresési adatok törlése"
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Törli a böngésző adatait a titkosított keresésre vonatkozólag."
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Becsült hátralévő idő: ${ estimatedMinutes } perc",
+        "Becsült hátralévő idő: ${ estimatedMinutes } perc"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Becsült hátralévő idő: kevesebb mint 1 perc"
+      ],
+      "Estimating time remaining...": [
+        "Hátralévő idő becslése..."
+      ],
+      "You cannot undo this action.": [
+        "Ez a művelet nem vonható vissza."
       ]
     },
     "Info on errors": {

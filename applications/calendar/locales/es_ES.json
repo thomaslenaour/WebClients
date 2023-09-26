@@ -601,6 +601,35 @@
       ],
       "Yes, I'll attend": [
         "Sí, asistiré"
+      ],
+      "At most ${ maxContacts } contact is allowed per contact group": [
+        "Se permite como máximo ${ maxContacts } contacto por grupo de contactos.",
+        "Se permiten como máximo ${ maxContacts } contactos por grupo de contactos."
+      ],
+      "Clear": [
+        "Borrar"
+      ],
+      "Clear browser data": [
+        "Borrar datos del navegador"
+      ],
+      "Clear search": [
+        "Limpiar búsqueda"
+      ],
+      "Pause indexing": [
+        "Pausar la indexación"
+      ],
+      "Previous": [
+        "Anterior"
+      ],
+      "Resume indexing": [
+        "Reanudar la indexación"
+      ],
+      "Search": [
+        "Buscar"
+      ],
+      "You can't send vCard files of more than ${ maxAttachments } contacts": [
+        "No puedes enviar archivos vCard de más de ${ maxAttachments } contactos.",
+        "No puedes enviar archivos vCard de más de ${ maxAttachments } contactos."
       ]
     },
     "Action subline": {
@@ -2056,6 +2085,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Puedes marcar los contactos que no quieres ni combinar ni mantener para eliminarlos. Se eliminarán solo después de que pulses el botón."
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Esto puede tomar unos minutos. Mientras tanto puedes continuar utilizando el calendario."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2528,6 +2560,22 @@
       ],
       "Your import will not be processed.": [
         "No se procesará tu importación."
+      ],
+      "A problem occurred, please try again.": [
+        "Se ha producido un error, inténtalo de nuevo."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "No puedes habilitar la búsqueda de contenido en este navegador. Sal del modo de navegación privada o utiliza otro navegador."
+      ],
+      "Event not found": [
+        "No se ha encontrado el evento."
+      ],
+      "Please activate your search again": [
+        "Activa de nuevo tu búsqueda."
+      ],
+      "You can't send a mail to more than ${ maxContacts } recipient": [
+        "No puedes enviar un correo a más de ${ maxContacts } destinatario.",
+        "No puedes enviar un correo a más de ${ maxContacts } destinatarios."
       ]
     },
     "Error accepting calendar invitation": {
@@ -2987,15 +3035,15 @@
     },
     "fido2: Info": {
       "Insert a security key linked to your ${ BRAND_NAME } Account.": [
-        "Inserta una clave de seguridad asociada con tu cuenta de ${ BRAND_NAME }."
+        "Inserta una llave de seguridad asociada con tu cuenta de ${ BRAND_NAME }."
       ],
       "Security key": [
-        "Clave de seguridad"
+        "Llave de seguridad"
       ]
     },
     "fido2: Label": {
       "Security key": [
-        "Clave de seguridad"
+        "Llave de seguridad"
       ]
     },
     "file size format": {
@@ -3084,6 +3132,9 @@
       ],
       "Name": [
         "Nombre"
+      ],
+      "Search": [
+        "Buscar"
       ]
     },
     "Hint": {
@@ -4064,6 +4115,54 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "La zona horaria del sistema parece haber cambiado a ${ timezone }. ¿Quieres actualizar tu preferencia de zona horaria?"
+      ],
+      "${ contactsLength } contact": [
+        "${ contactsLength } contacto",
+        "${ contactsLength } contactos"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } y ${ lastItem }"
+      ],
+      "${ selectedContactsLength }/${ contactsLength } contact selected": [
+        "${ selectedContactsLength }/${ contactsLength } contacto seleccionado",
+        "${ selectedContactsLength }/${ contactsLength } contactos seleccionados"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "¿No encuentras los eventos que buscas? Algunos eventos en calendarios ocultos coinciden con tu búsqueda. Para ver esos resultados activa la visibilidad para ${ hiddenWithItemsCalendarList }."
+      ],
+      "Clear data": [
+        "Limpiar datos"
+      ],
+      "Clear encrypted search data": [
+        "Borrar datos de búsqueda cifrada"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Borrar los datos del navegador borrará el índice de búsqueda en este dispositivo. Todos los eventos de calendario deberán volver a indexarse para utilizar la función de búsqueda."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Borra los datos del navegador relacionados con la búsqueda cifrada."
+      ],
+      "Edit email address": [
+        "Editar dirección de correo electrónico"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Tiempo restante estimado: ${ estimatedMinutes } minuto",
+        "Tiempo restante estimado: ${ estimatedMinutes } minutos"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Tiempo restante estimado: menos de un minuto"
+      ],
+      "Estimating time remaining...": [
+        "Tiempo restante estimado..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Indexando eventos: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Indexación pausada"
+      ],
+      "You cannot undo this action.": [
+        "No puedes deshacer esta acción."
       ]
     },
     "Info on errors": {
@@ -4116,6 +4215,10 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "No se pueden crear invitaciones en un calendario compartido"
+      ],
+      "At most ${ maxAttendees } participant is allowed per invitation": [
+        "Se permite hasta ${ maxAttendees } participante por invitación.",
+        "Se permiten hasta ${ maxAttendees } participantes por invitación."
       ]
     },
     "Input label": {
@@ -4733,8 +4836,8 @@
         "Cada ${ interval } meses los ${ onDayString }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ timesString }": [
-        "Cada mes ${ onDayString } a las ${ timesString } ${ interval }",
-        "Cada ${ interval } meses ${ onDayString } a las ${ timesString }"
+        "Cada mes ${ onDayString }, ${ timesString } ${ interval }",
+        "Cada mes ${ onDayString }, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } month ${ onDayString }, ${ untilString }": [
         "Cada mes ${ onDayString }, ${ untilString } ${ interval }",
@@ -4873,7 +4976,7 @@
     },
     "new_plans: Action": {
       "Upgrade now": [
-        "Actualizar el plan ahora"
+        "Mejorar ahora"
       ]
     },
     "new_plans: feature": {
@@ -5294,6 +5397,12 @@
       ],
       "Start typing an email address": [
         "Comienza a escribir una dirección de correo electrónico."
+      ],
+      "Indexing...": [
+        "Indexando..."
+      ],
+      "Search events": [
+        "Buscar eventos"
       ]
     },
     "Placeholder for contact group name": {
@@ -5688,6 +5797,12 @@
       ],
       "Public holidays are here!": [
         "¡Los días festivos están aquí!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Encuentra fácilmente el evento que estás buscando con nuestra función de búsqueda nueva."
+      ],
+      "Search for events": [
+        "Buscar eventos"
       ]
     },
     "Storage": {
@@ -5858,6 +5973,9 @@
       ],
       "Verification successful": [
         "Verificación completada"
+      ],
+      "Calendar search activated": [
+        "La búsqueda en el calendario ha sido activada."
       ]
     },
     "Success notification when user send feedback": {
@@ -6342,7 +6460,7 @@
         "Iniciar el proceso de importación"
       ],
       "Unlock contacts groups": [
-        "Desbloquear los grupos de contactos"
+        "Desbloquear grupos de contactos"
       ],
       "Update event": [
         "Actualizar el evento"
@@ -6376,6 +6494,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Tu prueba gratuita de Mail Plus termina el ${ textDate }."
+      ],
+      "We're setting up Calendar search": [
+        "Estamos configurando la búsqueda del calendario."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6497,6 +6618,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Abrir en una pestaña nueva"
+      ],
+      "Navigate to event": [
+        "Navegar al evento"
       ]
     },
     "Warning": {
@@ -6583,8 +6707,8 @@
         "Cada ${ interval } semanas los ${ multipleDaysString }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ timesString }": [
-        "Cada semana los ${ multipleDaysString } a las ${ timesString } ${ interval }",
-        "Cada ${ interval } semanas los ${ multipleDaysString } a las ${ timesString }"
+        "Cada semana los ${ multipleDaysString }, ${ timesString } ${ interval }",
+        "Cada semana los ${ multipleDaysString }, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on ${ multipleDaysString }, ${ untilString }": [
         "Cada semana los ${ multipleDaysString }, ${ untilString } ${ interval }",
@@ -6607,8 +6731,8 @@
         "Cada ${ interval } semanas los viernes"
       ],
       "Every ${ interval } week on Friday, ${ timesString }": [
-        "Cada semana los viernes a las ${ timesString } ${ interval }",
-        "Cada ${ interval } semanas los viernes a las ${ timesString }"
+        "Cada semana los viernes, ${ timesString } ${ interval }",
+        "Cada semana los viernes, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on Friday, ${ untilString }": [
         "Cada semana los viernes, ${ untilString } ${ interval }",
@@ -6619,8 +6743,8 @@
         "Cada ${ interval } semanas los lunes"
       ],
       "Every ${ interval } week on Monday, ${ timesString }": [
-        "Los lunes de cada ${ interval } semana, a las ${ timesString }",
-        "Los lunes cada ${ interval } semanas, a las ${ timesString }"
+        "Cada semana los lunes, ${ timesString } ${ interval }",
+        "Cada semana los lunes, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on Monday, ${ untilString }": [
         "Cada semana los lunes, ${ untilString } ${ interval }",
@@ -6631,8 +6755,8 @@
         "Cada ${ interval } semanas los sábados"
       ],
       "Every ${ interval } week on Saturday, ${ timesString }": [
-        "Cada semana los sábados a las ${ timesString } ${ interval }",
-        "Cada ${ interval } semanas los sábados a las ${ timesString }"
+        "Cada semana los sábados, ${ timesString } ${ interval }",
+        "Cada semana los sábados, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on Saturday, ${ untilString }": [
         "Cada semana los sábados, ${ untilString } ${ interval }",
@@ -6643,8 +6767,8 @@
         "Cada ${ interval } semanas los domingos"
       ],
       "Every ${ interval } week on Sunday, ${ timesString }": [
-        "Los domingos de cada ${ interval } semana, a las ${ timesString }",
-        "Los domingos cada ${ interval } semanas, a las ${ timesString }"
+        "Cada semana los domingos, ${ timesString } ${ interval }",
+        "Cada semana los domingos, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on Sunday, ${ untilString }": [
         "Cada semana los domingos, ${ untilString } ${ interval }",
@@ -6655,8 +6779,8 @@
         "Cada ${ interval } semanas los jueves"
       ],
       "Every ${ interval } week on Thursday, ${ timesString }": [
-        "Cada semana los jueves a las ${ timesString } ${ interval }",
-        "Cada ${ interval } semanas los jueves a las ${ timesString }"
+        "Cada semana los jueves, ${ timesString } ${ interval }",
+        "Cada semana los jueves, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on Thursday, ${ untilString }": [
         "Cada semana los jueves, ${ untilString } ${ interval }",
@@ -6667,8 +6791,8 @@
         "Cada ${ interval } semanas los martes"
       ],
       "Every ${ interval } week on Tuesday, ${ timesString }": [
-        "Cada semana los martes a las ${ timesString } ${ interval }",
-        "Cada ${ interval } semanas los martes a las ${ timesString }"
+        "Cada semana los martes, ${ timesString } ${ interval }",
+        "Cada semana los martes, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on Tuesday, ${ untilString }": [
         "Cada semana los martes, ${ untilString } ${ interval }",
@@ -6679,8 +6803,8 @@
         "Cada ${ interval } semanas los miércoles"
       ],
       "Every ${ interval } week on Wednesday, ${ timesString }": [
-        "Cada semana los miércoles a las ${ timesString } ${ interval }",
-        "Cada ${ interval } semanas los miércoles a las ${ timesString }"
+        "Cada semana los miércoles, ${ timesString } ${ interval }",
+        "Cada semana los miércoles, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } week on Wednesday, ${ untilString }": [
         "Cada semana los miércoles, ${ untilString } ${ interval }",
@@ -6797,8 +6921,8 @@
         "Cada ${ interval } años"
       ],
       "Every ${ interval } year, ${ timesString }": [
-        "Cada año a las ${ timesString } ${ interval }",
-        "Cada ${ interval } años a las ${ timesString }"
+        "Cada año, ${ timesString } ${ interval }",
+        "Cada año, ${ timesString } ${ interval }"
       ],
       "Every ${ interval } year, ${ untilString }": [
         "Cada año, ${ untilString } ${ interval }",
@@ -6812,6 +6936,33 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualmente, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Sin resultados"
+      ],
+      "Results": [
+        "Resultados"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Todo el día"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "Todo el día, último ${ plusDaysToEnd } día",
+        "Todo el día, últimos ${ plusDaysToEnd } días"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Puedes actualizar tu consulta de búsqueda o cerrarla para volver a la vista del calendario."
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "No se han encontrado resultados."
       ]
     }
   }

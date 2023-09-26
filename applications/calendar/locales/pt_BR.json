@@ -601,6 +601,35 @@
       ],
       "Yes, I'll attend": [
         "Sim, eu vou participar"
+      ],
+      "At most ${ maxContacts } contact is allowed per contact group": [
+        "São permitidos no máximo ${ maxContacts } contato por grupo de contatos.",
+        "São permitidos no máximo ${ maxContacts } contatos por grupo de contatos."
+      ],
+      "Clear": [
+        "Limpar"
+      ],
+      "Clear browser data": [
+        "Limpar dados do navegador"
+      ],
+      "Clear search": [
+        "Limpar pesquisa"
+      ],
+      "Pause indexing": [
+        "Pausar indexação"
+      ],
+      "Previous": [
+        "Anterior"
+      ],
+      "Resume indexing": [
+        "Retomar indexação"
+      ],
+      "Search": [
+        "Pesquisar"
+      ],
+      "You can't send vCard files of more than ${ maxAttachments } contacts": [
+        "Você não pode enviar arquivos vCards de mais de ${ maxAttachments } contatos",
+        "Você não pode enviar arquivos vCards de mais de ${ maxAttachments } contatos"
       ]
     },
     "Action subline": {
@@ -2056,6 +2085,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Você pode marcar para exclusão os contatos que não quer mesclar nem manter. A exclusão somente ocorrerá após o botão de mesclagem ser clicado"
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Isso pode demorar alguns minutos. Enquanto isso, você pode continuar usando Calendar normalmente."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2443,7 +2475,7 @@
         "A hora de início deve ser antes da hora de término"
       ],
       "status page": [
-        "Página de status"
+        "página de status"
       ],
       "The address might be misspelled": [
         "O endereço pode estar incorreto"
@@ -2528,6 +2560,22 @@
       ],
       "Your import will not be processed.": [
         "Sua importação não será processada."
+      ],
+      "A problem occurred, please try again.": [
+        "Ocorreu um erro. Tente novamente."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Não é possível ativar a pesquisa de conteúdo neste navegador. Saia do modo de navegação privada ou use outro navegador."
+      ],
+      "Event not found": [
+        "Evento não encontrado"
+      ],
+      "Please activate your search again": [
+        "Ative a pesquisa novamente."
+      ],
+      "You can't send a mail to more than ${ maxContacts } recipient": [
+        "Você não pode enviar um e-mail para mais de ${ maxContacts } destinatário",
+        "Você não pode enviar um e-mail para mais de ${ maxContacts } destinatários"
       ]
     },
     "Error accepting calendar invitation": {
@@ -2576,7 +2624,7 @@
         "Propriedade FN ausente"
       ],
       "vCard versions < 3.0 not supported": [
-        "versões vCard <3.0 não são suportadas"
+        "Versões vCard <3.0 não são suportadas"
       ]
     },
     "Error importing contacts": {
@@ -3084,6 +3132,9 @@
       ],
       "Name": [
         "Nome"
+      ],
+      "Search": [
+        "Pesquisar"
       ]
     },
     "Hint": {
@@ -4072,6 +4123,46 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "O fuso horário de seu sistema parece ter mudado para ${ timezone }. Você deseja atualizar suas preferências de fuso horário?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } e ${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "Não consegue encontrar os eventos que procura? Alguns eventos em calendários ocultos correspondem à sua consulta. Para ver esses resultados, ative a visibilidade para ${ hiddenWithItemsCalendarList }."
+      ],
+      "Clear data": [
+        "Limpar dados"
+      ],
+      "Clear encrypted search data": [
+        "Limpar dados de pesquisa criptografada"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Limpar os dados do navegador limpará o índice de pesquisa neste dispositivo. Todos os eventos do calendário precisariam ser reindexados novamente para usar a funcionalidade de pesquisa."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Limpa os dados do navegador relacionados à pesquisa criptografada."
+      ],
+      "Edit email address": [
+        "Editar endereço de e-mail"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Tempo restante estimado: ${ estimatedMinutes } minuto",
+        "Tempo restante estimado: ${ estimatedMinutes } minutos"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Tempo restante estimado: menos de um minuto"
+      ],
+      "Estimating time remaining...": [
+        "Estimando o tempo restante..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Indexando eventos: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Indexação pausada"
+      ],
+      "You cannot undo this action.": [
+        "Você não pode desfazer está ação."
       ]
     },
     "Info on errors": {
@@ -4124,6 +4215,10 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "A criação de convites em um calendário compartilhado não é permitida"
+      ],
+      "At most ${ maxAttendees } participant is allowed per invitation": [
+        "É permitido no máximo ${ maxAttendees } participante por convite",
+        "São permitidos no máximo ${ maxAttendees } participantes por convite"
       ]
     },
     "Input label": {
@@ -5302,6 +5397,12 @@
       ],
       "Start typing an email address": [
         "Comece a digitar um endereço de e-mail"
+      ],
+      "Indexing...": [
+        "Indexando..."
+      ],
+      "Search events": [
+        "Pesquisar eventos"
       ]
     },
     "Placeholder for contact group name": {
@@ -5699,6 +5800,12 @@
       ],
       "Public holidays are here!": [
         "Feriados estão aqui!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Encontre facilmente o evento que você procura com nosso novo recurso de pesquisa."
+      ],
+      "Search for events": [
+        "Pesquisar por eventos"
       ]
     },
     "Storage": {
@@ -5869,6 +5976,9 @@
       ],
       "Verification successful": [
         "Verificado com sucesso"
+      ],
+      "Calendar search activated": [
+        "Pesquisa em calendário ativada"
       ]
     },
     "Success notification when user send feedback": {
@@ -6387,6 +6497,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Sua avaliação gratuita do Mail Plus termina em ${ textDate }"
+      ],
+      "We're setting up Calendar search": [
+        "Estamos configurando a pesquisa de calendário"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6508,6 +6621,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Abrir em uma nova guia"
+      ],
+      "Navigate to event": [
+        "Navegador até o evento"
       ]
     },
     "Warning": {
@@ -6823,6 +6939,33 @@
       ],
       "Yearly, ${ untilString }": [
         "Anualmente, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Nenhum resultado"
+      ],
+      "Results": [
+        "Resultados"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Todo o dia"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "O dia todo, resta ${ plusDaysToEnd } dia",
+        "O dia todo, restam ${ plusDaysToEnd } dias"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Você pode atualizar sua consulta de pesquisa ou fechá-la para voltar às visualizações da agenda"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Nenhum resultado encontrado"
       ]
     }
   }

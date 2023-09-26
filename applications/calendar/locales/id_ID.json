@@ -599,6 +599,33 @@
       ],
       "Yes, I'll attend": [
         "Ya, saya akan hadir"
+      ],
+      "At most ${ maxContacts } contacts are allowed per contact group": [
+        "Hanya ${ maxContacts } kontak yang dapat disisipkan dalam satu grup kontak"
+      ],
+      "Clear": [
+        "Bersihkan"
+      ],
+      "Clear browser data": [
+        "Hapus data browser"
+      ],
+      "Clear search": [
+        "Hapus pencarian"
+      ],
+      "Pause indexing": [
+        "Jeda pengindeksan"
+      ],
+      "Previous": [
+        "Sebelumnya"
+      ],
+      "Resume indexing": [
+        "Lanjutkan pengindeksan"
+      ],
+      "Search": [
+        "Pencarian"
+      ],
+      "You can't send vCard files of more than ${ maxAttachments } contacts": [
+        "Anda tidak dapat mengirim berkas vCard ke lebih dari ${ maxAttachments } kontak"
       ]
     },
     "Action subline": {
@@ -2045,6 +2072,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Anda dapat menandai kontak-kontak yang tidak ingin digabung atau disimpan. Penghapusan akan dilakukan setelah Anda menekan tombol gabung"
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Ini dapat berlangsung selama beberapa menit. Selagi menunggu, Anda juga dapat menggunakan Proton Calendar seperti biasanya."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2506,6 +2536,21 @@
       ],
       "Your import will not be processed.": [
         "Impor Anda tidak akan diproses."
+      ],
+      "A problem occurred, please try again.": [
+        "Terdapat suatu masalah, silakan coba lagi."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Pencarian konten tidak dapat dilangsungkan pada browser ini. Mohon keluar dari mode private browsing atau gunakan browser lain."
+      ],
+      "Event not found": [
+        "Acara tidak ditemukan"
+      ],
+      "Please activate your search again": [
+        "Silakan aktifkan kembali pencarian konten Anda"
+      ],
+      "You can't send a mail to more than ${ maxContacts } recipients": [
+        "Anda tidak dapat mengirim email ke lebih dari ${ maxContacts } penerima"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3055,6 +3100,9 @@
       ],
       "Name": [
         "Nama"
+      ],
+      "Search": [
+        "Pencarian"
       ]
     },
     "Hint": {
@@ -4011,6 +4059,45 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Zona waktu sistem Anda sepertinya berubah menjadi ${ timezone }. Anda ingin memperbarui preferensi zona waktu?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } dan ${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "Tidak dapat menemukan acara yang Anda cari? Beberapa acara dalam kalender tersembunyi cocok dengan kueri Anda. Untuk melihat hasilnya, aktifkan keterlihatan untuk ${ hiddenWithItemsCalendarList }."
+      ],
+      "Clear data": [
+        "Bersihkan data"
+      ],
+      "Clear encrypted search data": [
+        "Hapus data pencarian terenkripsi"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Menghapus data peramban akan membersihkan indeks pencarian di perangkat ini. Semua acara kalender harus diindeks lagi supaya fungsi pencarian dapat digunakan."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Menghapus data browser yang berhubungan dengan pencarian terenkripsi."
+      ],
+      "Edit email address": [
+        "Sunting alamat surel"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minutes": [
+        "Perkiraan waktu yang tersisa: ${ estimatedMinutes } menit"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Waktu yang diperkirakan tersisa: Kurang dari satu menit"
+      ],
+      "Estimating time remaining...": [
+        "Mengestimasi waktu tersisa..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Mengindeks acara: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Pengindeksan dijeda"
+      ],
+      "You cannot undo this action.": [
+        "Anda tidak bisa membatalkannya."
       ]
     },
     "Info on errors": {
@@ -4062,6 +4149,9 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "Pembuatan alamat pada kalender bersama tidak diperkenankan"
+      ],
+      "At most ${ maxAttendees } participants are allowed per invitation": [
+        "Hanya ${ maxAttendees } peserta yang dapat diundang per undangannya"
       ]
     },
     "Input label": {
@@ -4407,7 +4497,7 @@
         "Alamat jalan"
       ],
       "Sync with system": [
-        "Sinkronisasikan dengan sistem"
+        "Sinkronkan dengan sistem"
       ],
       "System information": [
         "Informasi sistem"
@@ -5206,6 +5296,12 @@
       ],
       "Start typing an email address": [
         "Mulai ketik alamat email"
+      ],
+      "Indexing...": [
+        "Mengindeks..."
+      ],
+      "Search events": [
+        "Cari acara"
       ]
     },
     "Placeholder for contact group name": {
@@ -5590,6 +5686,12 @@
       ],
       "Public holidays are here!": [
         "Liburan umum telah hadir!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Cari acara dengan mudah dengan fitur pencarian kami yang baru."
+      ],
+      "Search for events": [
+        "Cari acara"
       ]
     },
     "Storage": {
@@ -5754,6 +5856,9 @@
       ],
       "Verification successful": [
         "Verifikasi berhasil"
+      ],
+      "Calendar search activated": [
+        "Pencarian kalender diaktifkan"
       ]
     },
     "Success notification when user send feedback": {
@@ -6261,6 +6366,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Uji coba Mail Plus Anda akan berakhir pada ${ textDate }"
+      ],
+      "We're setting up Calendar search": [
+        "Kami menyiapkan pencarian kalender"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6380,6 +6488,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Buka di tab baru"
+      ],
+      "Navigate to event": [
+        "Navigasi ke acara"
       ]
     },
     "Warning": {
@@ -6663,6 +6774,32 @@
       ],
       "Yearly, ${ untilString }": [
         "Tahunan, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Tidak ada hasil"
+      ],
+      "Results": [
+        "Hasil"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Seharian"
+      ],
+      "All day, lasts ${ plusDaysToEnd } days": [
+        "Seharian, berlaku ${ plusDaysToEnd } hari"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Anda dapat memperbarui kueri pencarian Anda atau tutup pencarian untuk kembali ke tampilan kalender"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Tidak ada hasil yang ditemukan"
       ]
     }
   }

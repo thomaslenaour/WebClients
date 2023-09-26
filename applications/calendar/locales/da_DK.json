@@ -601,6 +601,35 @@
       ],
       "Yes, I'll attend": [
         "Ja, jeg deltager"
+      ],
+      "At most ${ maxContacts } contact is allowed per contact group": [
+        "Højst ${ maxContacts } kontakt er tilladt pr. kontaktgruppe",
+        "Højst ${ maxContacts } kontakter er tilladt pr. kontaktgruppe"
+      ],
+      "Clear": [
+        "Ryd"
+      ],
+      "Clear browser data": [
+        "Ryd browserdata"
+      ],
+      "Clear search": [
+        "Ryd søgning"
+      ],
+      "Pause indexing": [
+        "Pause indeksering"
+      ],
+      "Previous": [
+        "Forrige"
+      ],
+      "Resume indexing": [
+        "Genoptag indeksering"
+      ],
+      "Search": [
+        "Søg"
+      ],
+      "You can't send vCard files of more than ${ maxAttachments } contacts": [
+        "Du kan ikke sende vCard filer på flere end ${ maxAttachments } kontaktperson",
+        "Du kan ikke sende vCard filer på flere end ${ maxAttachments } kontaktpersoner"
       ]
     },
     "Action subline": {
@@ -2056,6 +2085,9 @@
       ],
       "You can mark for deletion the contacts that you do not want neither to merge nor to keep. Deletion will only take place after the merge button is clicked": [
         "Du kan markere de kontakter til sletning, som du hverken ønsker at flette eller beholde.\nSletning vil kun ske, når der er klikket på fletningsknappen"
+      ],
+      "This can take a few minutes. Meanwhile, you can continue using Calendar as usual.": [
+        "Dette kan tage et par minutter. I mellemtiden kan du fortsætte med at bruge Kalender som sædvanligt."
       ]
     },
     "Description of the purpose of the import CSV modal": {
@@ -2528,6 +2560,22 @@
       ],
       "Your import will not be processed.": [
         "Din import vil ikke blive behandlet."
+      ],
+      "A problem occurred, please try again.": [
+        "Der opstod et problem. Prøv venligst igen."
+      ],
+      "Content search cannot be enabled in this browser. Please quit private browsing mode or use another browser.": [
+        "Indholdssøgning kan ikke aktiveres i denne browser. Afslut privat browsing eller brug en anden browser."
+      ],
+      "Event not found": [
+        "Begivenhed ikke fundet"
+      ],
+      "Please activate your search again": [
+        "Aktiver venligst din søgning igen"
+      ],
+      "You can't send a mail to more than ${ maxContacts } recipient": [
+        "Du kan ikke sende en e-mail til flere end ${ maxContacts } modtager",
+        "Du kan ikke sende en e-mail til flere end ${ maxContacts } modtagere"
       ]
     },
     "Error accepting calendar invitation": {
@@ -3084,6 +3132,9 @@
       ],
       "Name": [
         "Navn"
+      ],
+      "Search": [
+        "Søg"
       ]
     },
     "Hint": {
@@ -4072,6 +4123,46 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Din systemtidszone ser ud til at være ændret til ${ timezone }. Vil du opdatere din tidszone præferencer?"
+      ],
+      "${ firstItems } and ${ lastItem }": [
+        "${ firstItems } og ${ lastItem }"
+      ],
+      "Can't find the events you're looking for? Some events in hidden calendars match your query. To see those results, turn on visibility for ${ hiddenWithItemsCalendarList }.": [
+        "Kan du ikke finde den begivenhed du leder efter? Nogle begivenheder i skjulte kalendere matcher din forespørgsel. For at se disse resultater, skal du slå synlighed til for ${ hiddenWithItemsCalendarList }."
+      ],
+      "Clear data": [
+        "Ryd data"
+      ],
+      "Clear encrypted search data": [
+        "Ryd krypterede søgedata"
+      ],
+      "Clearing browser data will clear the search index on this device. All calendar events would need to be re-indexed again to use the search functionality.": [
+        "Rydning af browserdata vil rydde søgeindekset på denne enhed. Alle kalenderbegivenheder skal indekseres igen for at bruge søgefunktionen."
+      ],
+      "Clears browser data related to the encrypted search.": [
+        "Rydder browserdata relateret til den krypterede søgning."
+      ],
+      "Edit email address": [
+        "Rediger e-mailadresse"
+      ],
+      "Estimated time remaining: ${ estimatedMinutes } minute": [
+        "Anslået resterende tid: ${ estimatedMinutes } minut",
+        "Anslået resterende tid: ${ estimatedMinutes } minutter"
+      ],
+      "Estimated time remaining: Less than a minute": [
+        "Anslået resterende tid: Mindre end et minut"
+      ],
+      "Estimating time remaining...": [
+        "Estimerer resterende tid..."
+      ],
+      "Indexing events: ${ current }/${ total }": [
+        "Indekserer begivenheder: ${ current }/${ total }"
+      ],
+      "Indexing paused": [
+        "Indeksering sat på pause"
+      ],
+      "You cannot undo this action.": [
+        "Du kan ikke fortryde denne handling."
       ]
     },
     "Info on errors": {
@@ -4124,6 +4215,10 @@
       ],
       "Creating invites in a shared calendar is not allowed": [
         "Det er ikke tilladt at oprette invitationer i en delt kalender"
+      ],
+      "At most ${ maxAttendees } participant is allowed per invitation": [
+        "Højst ${ maxAttendees } deltager er tilladt pr. invitation",
+        "Højst ${ maxAttendees } deltagere er tilladt pr. invitation"
       ]
     },
     "Input label": {
@@ -5302,6 +5397,12 @@
       ],
       "Start typing an email address": [
         "Begynd at indtaste en e-mailadresse"
+      ],
+      "Indexing...": [
+        "Indekserer..."
+      ],
+      "Search events": [
+        "Søg efter begivenheder"
       ]
     },
     "Placeholder for contact group name": {
@@ -5696,6 +5797,12 @@
       ],
       "Public holidays are here!": [
         "Nationale helligdage er her!"
+      ],
+      "Easily find the event you're looking for with our new search feature.": [
+        "Find nemt den begivenhed du leder efter, med vores nye søgefunktion."
+      ],
+      "Search for events": [
+        "Søg efter begivenheder"
       ]
     },
     "Storage": {
@@ -5866,6 +5973,9 @@
       ],
       "Verification successful": [
         "Bekræftelse gennemført"
+      ],
+      "Calendar search activated": [
+        "Søgning i kalender aktiveret"
       ]
     },
     "Success notification when user send feedback": {
@@ -6384,6 +6494,9 @@
       ],
       "Your Mail Plus free trial ends on ${ textDate }": [
         "Din Mail Plus prøveperiode slutter ${ textDate }"
+      ],
+      "We're setting up Calendar search": [
+        "Vi opretter en kalender-søgning"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -6505,6 +6618,9 @@
     "View event button tooltip": {
       "Open in a new tab": [
         "Åbn i en ny fane"
+      ],
+      "Navigate to event": [
+        "Gå til begivenhed"
       ]
     },
     "Warning": {
@@ -6820,6 +6936,33 @@
       ],
       "Yearly, ${ untilString }": [
         "Årligt, ${ untilString }"
+      ]
+    },
+    "esCalendar": {
+      "No result": [
+        "Intet resultat"
+      ],
+      "Results": [
+        "Resultater"
+      ]
+    },
+    "Event info in search view; event duration": {
+      "All day": [
+        "Hele dagen"
+      ],
+      "All day, lasts ${ plusDaysToEnd } day": [
+        "Hele dagen, varer ${ plusDaysToEnd } dag",
+        "Hele dagen, varer ${ plusDaysToEnd } dage"
+      ]
+    },
+    "Info calendar search": {
+      "You can either update your search query or close search to go back to calendar views": [
+        "Du kan enten opdatere din søgeforespørgsel, eller lukke søgningen for at gå tilbage til kalendervisninger"
+      ]
+    },
+    "Info message": {
+      "No results found": [
+        "Ingen resultater fundet"
       ]
     }
   }
