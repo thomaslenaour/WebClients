@@ -624,7 +624,6 @@ const CalendarContainerView = ({
             calendars={calendars}
             addresses={addresses}
             calendarUserSettings={calendarUserSettings}
-            isSearchView={isSearchView}
             logo={logo}
             expanded={expanded}
             isNarrow={isNarrow}
